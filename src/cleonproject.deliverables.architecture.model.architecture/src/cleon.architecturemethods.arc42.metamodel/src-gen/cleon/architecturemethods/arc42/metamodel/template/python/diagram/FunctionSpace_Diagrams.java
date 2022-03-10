@@ -23,6 +23,9 @@ public class FunctionSpace_Diagrams {
     @IDynamicResourceExtension.MethodId("d0d6e4aa-9fd4-11ec-a0ca-03d8d5268a60")
     public java.lang.String RenderUmlElement();
 
+    @IDynamicResourceExtension.MethodId("d6c880af-a068-11ec-b8bd-93035f893c15")
+    public java.lang.String RenderImports();
+
   }
   
   public static interface IDomainContextDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -48,6 +51,9 @@ public class FunctionSpace_Diagrams {
     @IDynamicResourceExtension.MethodId("d0d6e4da-9fd4-11ec-a0ca-03d8d5268a60")
     public java.lang.String RenderUmlElement();
 
+    @IDynamicResourceExtension.MethodId("c8adaa3f-a068-11ec-b8bd-93035f893c15")
+    public java.lang.String RenderImports();
+
   }
   
   public static interface ITechnicalContextDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -70,4 +76,4 @@ public class FunctionSpace_Diagrams {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d0d6be29-9fd4-11ec-a0ca-03d8d5268a60,tPb1j5o9j5rFe+3OSUQdF14p9HQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d0d6be29-9fd4-11ec-a0ca-03d8d5268a60,udXP/jgktzy5bBYeczZ3EjyqCjA=] */

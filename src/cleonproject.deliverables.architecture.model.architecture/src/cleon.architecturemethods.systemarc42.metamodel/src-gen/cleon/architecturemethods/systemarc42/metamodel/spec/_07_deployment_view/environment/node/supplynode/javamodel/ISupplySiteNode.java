@@ -8,8 +8,8 @@ public interface ISupplySiteNode extends cleon.architecturemethods.systemarc42.m
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectSite();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectDeployedInSite();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,1emTaMl0igbsKARG9DgmeVXLvc4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,jrx9ZlwEz8W7d/lLSRudUDQcud8=] */

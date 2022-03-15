@@ -52,22 +52,22 @@ public class SupplySiteNode extends DynamicResource implements ISupplySiteNode {
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectDeployedInSite() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_deployedInSite);
+  }
+
+  public SupplySiteNode setDeployedInSite(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite deployedInSite) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_deployedInSite, deployedInSite);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> selectNodes() {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.Node_nodes);
   }
 
   public SupplySiteNode setNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodes) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.Node_nodes, nodes);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectSite() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_site);
-  }
-
-  public SupplySiteNode setSite(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite site) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_site, site);
     return this;
   }
     
@@ -98,16 +98,16 @@ public class SupplySiteNode extends DynamicResource implements ISupplySiteNode {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.RootNode_buildNodes, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_site, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_deployedInSite, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode selectToMeSite(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_site, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode selectToMeDeployedInSite(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.SupplySiteNode_deployedInSite, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,ZblbYioOfTJcGNSO+6GcmZi9lfE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,+5W+SPXklDasd2x6HvV7FHhK6Sg=] */

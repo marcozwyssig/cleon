@@ -202,6 +202,11 @@
             <resource statement-guid="c8a12c0b-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="c8a104f8-6cef-11e9-a6d3-775c09e81e2d" />
           </owns>
         </resource>
+        <resource statement-guid="008bc4d8-a433-11ec-a02c-0578282f8413" type="resource" guid="008ab45f-a433-11ec-a02c-0578282f8413">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="008ab465-a433-11ec-a02c-0578282f8413" type="resource" guid="008ab460-a433-11ec-a02c-0578282f8413" />
+          </owns>
+        </resource>
         <resource statement-guid="4de7df27-7bb1-11e9-94aa-f1ea7ea33f46" type="resource" guid="4de742de-7bb1-11e9-94aa-f1ea7ea33f46">
           <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
             <resource statement-guid="4de742e4-7bb1-11e9-94aa-f1ea7ea33f46" type="resource" guid="4de742df-7bb1-11e9-94aa-f1ea7ea33f46" />
@@ -978,6 +983,34 @@
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
                 <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="008bc4d8-a433-11ec-a02c-0578282f8413">
+            <resource guid="008ab45f-a433-11ec-a02c-0578282f8413">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="008ab461-a433-11ec-a02c-0578282f8413" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="008ab462-a433-11ec-a02c-0578282f8413" type="literal">OnlyWindows</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="008ab465-a433-11ec-a02c-0578282f8413">
+                  <resource guid="008ab460-a433-11ec-a02c-0578282f8413">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="008ab463-a433-11ec-a02c-0578282f8413" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="008ab464-a433-11ec-a02c-0578282f8413" type="resource" guid="853a8e37-ef41-11e8-be8a-b748ff8f0a75" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="008ab466-a433-11ec-a02c-0578282f8413" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="008ab467-a433-11ec-a02c-0578282f8413" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.operatingsystem.javamodel.IWindowsSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
               </predicate>
             </resource>
           </object>

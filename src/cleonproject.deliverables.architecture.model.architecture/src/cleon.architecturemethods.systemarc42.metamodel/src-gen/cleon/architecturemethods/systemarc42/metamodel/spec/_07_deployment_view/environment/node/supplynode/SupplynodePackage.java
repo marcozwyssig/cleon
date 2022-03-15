@@ -10,7 +10,7 @@ public class SupplynodePackage {
   public static final Resource SupplySiteNode = new Resource("0674e77a-0aaf-11e9-a8f9-abf1763bbc53");
   public static final Resource FunctionSpace_aE_SupplyNode_SupplySiteNode = new Resource("0fbb5398-0aaf-11e9-a8f9-abf1763bbc53");
   public static final Resource FunctionSpace_aE_SupplyNode_SupplyNode = new Resource("719fc352-2aba-11e9-a3f8-336d9e792e17");
-  public static final Resource SupplySiteNode_site = new Resource("62caf8b4-8941-11ea-b3b4-8399156700e6");
+  public static final Resource SupplySiteNode_deployedInSite = new Resource("62caf8b4-8941-11ea-b3b4-8399156700e6");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +31,4 @@ public class SupplynodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,fqHnGLeCL7QXPnHCGBmoY3zJQwY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,TWTmWX+Z2Ga4yaFgE86cJttK6iE=] */

@@ -6,6 +6,8 @@ public interface IDestination extends cleon.common.doc.metamodel.spec.chapter.ja
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("54bec968-877a-11e9-a61b-279ebde48b48");
   
+  public java.lang.String selectOverrideDestinationGroupName();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDestinationSystemConfiguration();
@@ -14,4 +16,4 @@ public interface IDestination extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,tkAA4hAZFzOpR6GEaVxSg7zOCgg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,S2U7YAQ7hPzVKFks6VdbNJnzrn8=] */

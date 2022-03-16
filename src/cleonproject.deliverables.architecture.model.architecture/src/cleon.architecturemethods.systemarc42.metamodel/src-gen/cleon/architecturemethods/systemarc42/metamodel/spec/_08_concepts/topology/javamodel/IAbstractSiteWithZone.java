@@ -10,8 +10,8 @@ public interface IAbstractSiteWithZone extends cleon.architecturemethods.systema
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone> selectZones();
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> selectZones();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,olhyhCbWmwr2Q/Md2hwcjL+FpJc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,23TKLy5H9qQoWvBkr2u3NZNG+J8=] */

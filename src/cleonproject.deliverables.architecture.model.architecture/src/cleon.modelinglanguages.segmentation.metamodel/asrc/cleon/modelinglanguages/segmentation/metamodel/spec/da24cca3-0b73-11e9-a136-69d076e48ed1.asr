@@ -226,7 +226,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="da24cca6-0b73-11e9-a136-69d076e48ed1" type="literal">NetDomainZone</object>
+    <object statement-guid="da24cca6-0b73-11e9-a136-69d076e48ed1" type="literal">NetdomainZone</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="a4d37d57-0b7a-11e9-a136-69d076e48ed1">
@@ -373,6 +373,9 @@
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="fad01c99-a542-11ec-9f8a-6b362fcb922a" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
   </predicate>
 </resource>
 

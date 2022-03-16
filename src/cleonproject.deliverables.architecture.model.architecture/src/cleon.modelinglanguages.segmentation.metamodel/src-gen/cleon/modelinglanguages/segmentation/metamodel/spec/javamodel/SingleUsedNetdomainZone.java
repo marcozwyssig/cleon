@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NetDomainZone extends DynamicResource implements INetDomainZone {
+public class SingleUsedNetdomainZone extends DynamicResource implements ISingleUsedNetdomainZone {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomainZone> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomainZone>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISingleUsedNetdomainZone> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISingleUsedNetdomainZone>() {
     
     @Override
-    public INetDomainZone create() {
-      return new NetDomainZone();
+    public ISingleUsedNetdomainZone create() {
+      return new SingleUsedNetdomainZone();
     }
     
     @Override
-    public INetDomainZone create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NetDomainZone(resourceRepository, resource);
+    public ISingleUsedNetdomainZone create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new SingleUsedNetdomainZone(resourceRepository, resource);
     }
   
   };
 
-  public NetDomainZone() {
-    super(INetDomainZone.TYPE_ID);
+  public SingleUsedNetdomainZone() {
+    super(ISingleUsedNetdomainZone.TYPE_ID);
   }
   
-  public NetDomainZone(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INetDomainZone.TYPE_ID);
+  public SingleUsedNetdomainZone(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISingleUsedNetdomainZone.TYPE_ID);
   }
 
   // attributes
@@ -60,12 +60,12 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone> selectAllowed() {
-    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_allowed);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> selectAllowed() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_allowed);
   }
 
-  public NetDomainZone setAllowed(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone> allowed) {
-    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_allowed, allowed);
+  public SingleUsedNetdomainZone setAllowed(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> allowed) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_allowed, allowed);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo);
   }
 
-  public NetDomainZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> allowedAccessTo) {
+  public SingleUsedNetdomainZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> allowedAccessTo) {
     _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo, allowedAccessTo);
     return this;
   }
@@ -84,7 +84,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public NetDomainZone setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public SingleUsedNetdomainZone setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -94,7 +94,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public NetDomainZone setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public SingleUsedNetdomainZone setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -104,7 +104,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
   }
 
-  public NetDomainZone setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+  public SingleUsedNetdomainZone setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
     return this;
   }
@@ -114,18 +114,18 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public NetDomainZone setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public SingleUsedNetdomainZone setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
   @Override
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone> selectSegments() {
-    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_segments);
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_segments);
   }
 
-  public NetDomainZone setSegments(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone> segments) {
-    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_segments, segments);
+  public SingleUsedNetdomainZone setSegments(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone> segments) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_segments, segments);
     return this;
   }
     
@@ -134,7 +134,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NetDomainZone setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public SingleUsedNetdomainZone setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -144,7 +144,7 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_zones);
   }
 
-  public NetDomainZone setZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zones) {
+  public SingleUsedNetdomainZone setZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zones) {
     _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_zones, zones);
     return this;
   }
@@ -157,20 +157,10 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_allowed, visitor);
-    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_segments, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_allowed, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetdomainZone_segments, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone selectToMeSegments(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_segments, object.getResource());
-  }
-  
-  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone> selectToMeAllowed(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetDomainZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_allowed, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,Y6CP7e/vCGKjGHYpGnLgft6rnFI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c556d70e-a542-11ec-9f8a-6b362fcb922a,ZIKTVlTTBqmA8qUqq9S0QdD9Hno=] */

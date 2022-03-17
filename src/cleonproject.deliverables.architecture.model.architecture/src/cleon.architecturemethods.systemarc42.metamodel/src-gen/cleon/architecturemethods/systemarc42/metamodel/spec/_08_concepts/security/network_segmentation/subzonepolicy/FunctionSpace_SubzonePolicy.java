@@ -10,9 +10,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[0ea7300c-b846-11e9-8760-2d4a9d15ec14,imports]] */
 import java.util.stream.Collectors;
 
-import ch.actifsource.core.dynamic.DynamicResourceUtil;
-import ch.actifsource.core.dynamic.IDynamicResourceExtension;
-import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemConfiguration;
@@ -120,6 +117,11 @@ public class FunctionSpace_SubzonePolicy {
       final var zoneFunctions = destinationSubZone.extension(IZoneFunctions.class);
       final var sourceFunctions = src.extension(ISourceFunctions.class);
       final var destination = sourceFunctions.Destination();
+
+      if( destination.selectOverrideDestinationGroupName() != null) {
+      	return destination.selectOverrideDestinationGroupName();
+      }
+
       final var sysCfgFunction = destination.selectDestinationSystemConfiguration()
       		.extension(ISystemConfigurationFunctions.class);
 

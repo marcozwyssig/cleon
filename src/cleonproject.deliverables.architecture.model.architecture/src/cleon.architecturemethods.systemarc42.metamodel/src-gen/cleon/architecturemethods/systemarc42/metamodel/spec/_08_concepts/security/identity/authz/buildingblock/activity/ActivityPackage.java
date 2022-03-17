@@ -28,6 +28,10 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForActiveDirectoryManagingActorPermission_activeDirectoryManagingActor = new Resource("4e74456e-df5c-11eb-95f9-6d420979d010");
   public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("7c378291-df5c-11eb-95f9-6d420979d010");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("56917d65-df5d-11eb-95f9-6d420979d010");
+  public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForBackupSystemConfigurationBackupJobs = new Resource("8dab5dc9-a608-11ec-9968-b970a72504b8");
+  public static final Resource AuthZBuildingBlockForBackupJobs = new Resource("12f44f26-a609-11ec-9968-b970a72504b8");
+  public static final Resource AuthZBuildingBlockForBackupJobs_backupJob = new Resource("12f44f27-a609-11ec-9968-b970a72504b8");
+  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForBackupJobs = new Resource("1f449810-a60c-11ec-9968-b970a72504b8");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +52,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,4FwhpP65y3Eo0D7uQfg58Ok2Woo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,1Gx4mxpAQ8mtHCe9SbWCz+letMc=] */

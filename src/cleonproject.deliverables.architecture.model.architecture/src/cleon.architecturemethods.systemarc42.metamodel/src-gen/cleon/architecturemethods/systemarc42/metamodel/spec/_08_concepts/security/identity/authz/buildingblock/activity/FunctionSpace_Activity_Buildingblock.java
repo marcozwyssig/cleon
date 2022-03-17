@@ -226,6 +226,40 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
+  public static interface IAuthZBuildingBlockForBackupJobsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1f44bf46-a60c-11ec-9968-b970a72504b8")
+    public java.lang.String SimpleName();
+
+    @IDynamicResourceExtension.MethodId("1f44bf4f-a60c-11ec-9968-b970a72504b8")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration SystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("1f44bf58-a60c-11ec-9968-b970a72504b8")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IPermission Permission();
+
+    @IDynamicResourceExtension.MethodId("1f44bf6c-a60c-11ec-9968-b970a72504b8")
+    public java.lang.String CommonNameSpecific();
+
+  }
+  
+  public static interface IAuthZBuildingBlockForBackupJobsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AuthZBuildingBlockForBackupJobsFunctionsImpl implements IAuthZBuildingBlockForBackupJobsFunctionsImpl {
+
+    public static final IAuthZBuildingBlockForBackupJobsFunctionsImpl INSTANCE = new AuthZBuildingBlockForBackupJobsFunctionsImpl();
+
+    private AuthZBuildingBlockForBackupJobsFunctionsImpl() {}
+
+  }
+  
+  public static class AuthZBuildingBlockForBackupJobsFunctions {
+
+    private AuthZBuildingBlockForBackupJobsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,EaSZSfAOQoTC7ieqfSgHs8V4KQU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,70ivYLZ0HyzHZsoUZl0odvpdW8I=] */

@@ -14,15 +14,12 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.AccessConcept;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZone;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.TopologyEnvironment;
 import cleon.modelinglanguages.segmentation.metamodel.spec.FunctionSpace_Segmentation.IZoneFunctions;
-import cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone;
 import ch.actifsource.util.character.StringUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import java.util.ArrayList;
@@ -112,6 +109,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("72386078-8bde-11eb-a832-91f5636963f2")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService> AllServicesDistinct();
 
+    @IDynamicResourceExtension.MethodId("5532725a-a5f6-11ec-9968-b970a72504b8")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
+
   }
   
   public static interface IDestinationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -121,6 +121,9 @@ public class FunctionSpace_Communication {
 
     @IDynamicResourceExtension.MethodId("66ad1d73-0b72-11ea-891d-81e208cfce61")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> destinationList);
+
+    @IDynamicResourceExtension.MethodId("5532725a-a5f6-11ec-9968-b970a72504b8")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destination);
 
   }
   
@@ -134,7 +137,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> OnlyInter(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> destinationList) {
       /* Begin Protected Region [[7c66a18d-0b19-11ea-b483-3fffd745ba7d]] */
       return destinationList.stream()
-      		.filter(x -> x.extension(IDestinationFunctions.class).OnlyInterSourcesDistinct().isEmpty() == false)
+      		.filter(x -> !x.extension(IDestinationFunctions.class).OnlyInterSourcesDistinct().isEmpty())
       		.collect(Collectors.toList());
       /* End Protected Region   [[7c66a18d-0b19-11ea-b483-3fffd745ba7d]] */
     }
@@ -143,9 +146,17 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> destinationList) {
       /* Begin Protected Region [[66ad1d73-0b72-11ea-891d-81e208cfce61]] */
       return destinationList.stream()
-      		.filter(x -> x.extension(IDestinationFunctions.class).OnlyIntraSourcesDistinct().isEmpty() == false)
+      		.filter(x -> !x.extension(IDestinationFunctions.class).OnlyIntraSourcesDistinct().isEmpty())
       		.collect(Collectors.toList());
       /* End Protected Region   [[66ad1d73-0b72-11ea-891d-81e208cfce61]] */
+    }
+
+    @Override
+    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destination) {
+      /* Begin Protected Region [[5532725a-a5f6-11ec-9968-b970a72504b8]] */
+      final var interface_ = destination.selectDestinationSystemConfiguration().selectInterface().get(subzone.getResource());
+      return destination.selectDestinationSubSecurityZone().get(interface_.getResource()); 
+      /* End Protected Region   [[5532725a-a5f6-11ec-9968-b970a72504b8]] */
     }
 
   }
@@ -160,6 +171,10 @@ public class FunctionSpace_Communication {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> destinationList) {
       return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destinationList).OnlyIntra(destinationList);
+    }
+
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destination) {
+      return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destination).GetDestinationPolicy(subzone, destination);
     }
 
   }
@@ -306,7 +321,7 @@ public class FunctionSpace_Communication {
       /* Begin Protected Region [[85bc9b26-df87-11e9-9827-a1514ee8d06a]] */
       final List<ISource> result = new ArrayList<>();
       for (final ISource source : sourceList) {
-      	final ISourceFunctions functions = source.extension(ISourceFunctions.class);
+      	final var functions = source.extension(ISourceFunctions.class);
       	if (!functions.GetInterConnection().isEmpty()) {
       		result.add(source);
       	}
@@ -321,7 +336,7 @@ public class FunctionSpace_Communication {
       /* Begin Protected Region [[820fd60a-e042-11e9-aa67-4505845acdbd]] */
       final List<ISource> result = new ArrayList<>();
       for (final ISource source : sourceList) {
-      	final ISourceFunctions functions = source.extension(ISourceFunctions.class);
+      	final var functions = source.extension(ISourceFunctions.class);
       	if (!functions.GetIntraConnection().isEmpty()) {
       		result.add(source);
       	}
@@ -334,7 +349,7 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[983f4fe1-e042-11e9-aa67-4505845acdbd]] */
-      final ISourceFunctions sourceFunctions = source.extension(ISourceFunctions.class);
+      final var sourceFunctions = source.extension(ISourceFunctions.class);
       if (!sourceFunctions.GetInterConnection().isEmpty()) {
       	return null;
       }
@@ -356,7 +371,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[130d994a-f346-11ea-9268-b5c52a12d7f9]] */
       final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
-      	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
+      	final var functions = x.extension(ISourceFunctions.class);
       	return functions.Destination();
       }, ISource::selectCommunicatesWith);
       return sourceList.stream().filter(distinctByKeys).collect(Collectors.toList());
@@ -367,7 +382,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestination(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[9d900304-3d2f-11eb-986d-0d884ba5cf53]] */
       final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
-      	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
+      	final var functions = x.extension(ISourceFunctions.class);
       	return functions.Destination();
       });
       return sourceList.stream().filter(distinctByKeys).collect(Collectors.toList());
@@ -377,15 +392,14 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyMgmt(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom src, final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[bcff4b1e-1a08-11eb-818d-6dbd3a659d3c]] */
-      final IAccessConceptFunctions accessConceptFunctions = AccessConcept.selectToMeAccessFrom(src)
+      final var accessConceptFunctions = AccessConcept.selectToMeAccessFrom(src)
       		.extension(IAccessConceptFunctions.class);
-      final List<IPortService> portServices = accessConceptFunctions.AllCommunicationServices();
+      final var portServices = accessConceptFunctions.AllCommunicationServices();
 
       return sourceList.stream().filter(x -> {
-      	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
-      	final boolean hasManagement = functions.AllServices().stream().filter(IPortService.class::isInstance)
+      	final var functions = x.extension(ISourceFunctions.class);
+      	return functions.AllServices().stream().filter(IPortService.class::isInstance)
       			.map(IPortService.class::cast).anyMatch(y -> portServices.contains(y));
-      	return hasManagement;
       }).collect(Collectors.toList());
       /* End Protected Region   [[bcff4b1e-1a08-11eb-818d-6dbd3a659d3c]] */
     }
@@ -401,15 +415,15 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[3489ae51-0ae8-11ea-bf24-ff0f7ff0bb53]] */
-      final HashSet<String> results = new HashSet<>();
-      final IDestinationSubSecurityZoneFunctions destinationfunctions = dst
+      final var results = new HashSet<String>();
+      final var destinationfunctions = dst
       		.extension(IDestinationSubSecurityZoneFunctions.class);
       for (final ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
       	if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith())) {
       		for (final ISourceInSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-      			final ISourceInSubSecurityZoneFunctions functions = sourceSubsecurity
+      			final var functions = sourceSubsecurity
       					.extension(ISourceInSubSecurityZoneFunctions.class);
-      			final String grpResults = functions.RenderSourceGroups(src, env);
+      			final var grpResults = functions.RenderSourceGroups(src, env);
       			for (final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {
       				if (result.length() != 0) {
       					results.add(result);
@@ -419,7 +433,7 @@ public class FunctionSpace_Communication {
       	}
       }
 
-      final StringBuilder builder = new StringBuilder();
+      final var builder = new StringBuilder();
       for (final String result : results) {
       	builder.append(result + ",");
       }
@@ -430,15 +444,15 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[81c86001-0b16-11ea-b483-3fffd745ba7d]] */
-      final HashSet<String> results = new HashSet<>();
-      final IDestinationSubSecurityZoneFunctions destinationfunctions = dst
+      final var results = new HashSet<String>();
+      final var destinationfunctions = dst
       		.extension(IDestinationSubSecurityZoneFunctions.class);
       for (final ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
       	if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith())) {
       		for (final ISourceInSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-      			final ISourceInSubSecurityZoneFunctions functions = sourceSubsecurity
+      			final var functions = sourceSubsecurity
       					.extension(ISourceInSubSecurityZoneFunctions.class);
-      			final String grpResults = functions.RenderDestinationGroups(src, env);
+      			final var grpResults = functions.RenderDestinationGroups(src, env);
       			for (final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {
       				if (result.length() != 0) {
       					results.add(result);
@@ -448,7 +462,7 @@ public class FunctionSpace_Communication {
       		}
       	}
       }
-      final StringBuilder builder = new StringBuilder();
+      final var builder = new StringBuilder();
       for (final String result : results) {
       	builder.append(result + ",");
       }
@@ -459,15 +473,15 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[5e8db34c-0b82-11ea-ab86-a9f1f5c47ebb]] */
-      final HashSet<String> results = new HashSet<>();
-      final IDestinationSubSecurityZoneFunctions destinationfunctions = dst
+      final var results = new HashSet<String>();
+      final var destinationfunctions = dst
       		.extension(IDestinationSubSecurityZoneFunctions.class);
       for (final ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
       	if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith())) {
       		for (final ISourceInSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-      			final ISourceInSubSecurityZoneFunctions functions = sourceSubsecurity
+      			final var functions = sourceSubsecurity
       					.extension(ISourceInSubSecurityZoneFunctions.class);
-      			final String grpResults = functions.RenderSourceGroups(src, env);
+      			final var grpResults = functions.RenderSourceGroups(src, env);
       			for (final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {
       				if (result.length() != 0) {
       					results.add(result);
@@ -477,7 +491,7 @@ public class FunctionSpace_Communication {
       	}
       }
 
-      final StringBuilder builder = new StringBuilder();
+      final var builder = new StringBuilder();
       for (final String result : results) {
       	builder.append(result + ",");
       }
@@ -488,15 +502,15 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[66f3d07d-0b82-11ea-ab86-a9f1f5c47ebb]] */
-      final HashSet<String> results = new HashSet<>();
-      final IDestinationSubSecurityZoneFunctions destinationfunctions = dst
+      final var results = new HashSet<String>();
+      final var destinationfunctions = dst
       		.extension(IDestinationSubSecurityZoneFunctions.class);
       for (final ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
       	if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith())) {
       		for (final ISourceInSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-      			final ISourceInSubSecurityZoneFunctions functions = sourceSubsecurity
+      			final var functions = sourceSubsecurity
       					.extension(ISourceInSubSecurityZoneFunctions.class);
-      			final String grpResults = functions.RenderDestinationGroups(src, env);
+      			final var grpResults = functions.RenderDestinationGroups(src, env);
       			for (final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {
       				if (result.length() != 0) {
       					results.add(result);
@@ -505,7 +519,7 @@ public class FunctionSpace_Communication {
       		}
       	}
       }
-      final StringBuilder builder = new StringBuilder();
+      final var builder = new StringBuilder();
       for (final String result : results) {
       	builder.append(result + ",");
       }
@@ -516,23 +530,23 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[21fa0b77-1eb9-11eb-9eef-0dadb2b460da]] */
-      final List<ISecuritySubZone> srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
-      final List<ISecuritySubZone> dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();
+      final var srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
+      final var dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();
 
       final var dstService = accessConfigurationService.selectService();
 
       return source.selectAccessAllowed().values().stream().anyMatch(x -> {
-      	final List<IAbstractService> abstractServices = x.extension(ISourceInSubSecurityZoneFunctions.class)
+      	final var abstractServices = x.extension(ISourceInSubSecurityZoneFunctions.class)
       			.CommunicatesWithFlatten();
-      	if (abstractServices.stream().anyMatch(svc -> svc.equals(dstService)) == false) {
+      	if (!abstractServices.stream().anyMatch(svc -> svc.equals(dstService))) {
       		return false;
       	}
 
-      	final ISecuritySubZone dstSecuritySubZone = x.selectSubZoneAccessPolicy()
+      	final var dstSecuritySubZone = x.selectSubZoneAccessPolicy()
       			.selectPolicyForDestinationSecuritySubZone();
-      	final boolean isInDst = dstSubzones.stream().anyMatch(y -> y.equals(dstSecuritySubZone));
+      	final var isInDst = dstSubzones.stream().anyMatch(y -> y.equals(dstSecuritySubZone));
       	if (isInDst) {
-      		final ISourceSubZone sourceSubSone = SourceSubZone
+      		final var sourceSubSone = SourceSubZone
       				.selectToMeDestinationSubZonePolicy(x.selectSubZoneAccessPolicy());
       		return srcSubzones.stream().anyMatch(y -> y.equals(sourceSubSone.selectSourceSecuritySubZone()));
       	}
@@ -670,12 +684,12 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
       /* Begin Protected Region [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
-      final int maxSize = MAX_COLUMNS - 2;
+      final var maxSize = MAX_COLUMNS - 2;
       if (textLiteral.length() == 0) {
       	return StringUtil.repeat(",", maxSize);
       }
 
-      final int size = textLiteral.split(",").length;
+      final var size = textLiteral.split(",").length;
       if (maxSize - size < 0) {
       	throw new RuntimeException(String.format("Size %d for missingCommas to high", size));
       }
@@ -726,6 +740,9 @@ public class FunctionSpace_Communication {
 
     @IDynamicResourceExtension.MethodId("29249a94-b9e7-11ea-b29c-1fc1209c2c7a")
     public java.lang.Boolean IsAny();
+
+    @IDynamicResourceExtension.MethodId("e2b85ad2-a5e1-11ec-9968-b970a72504b8")
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
   }
   
@@ -786,24 +803,24 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       /* Begin Protected Region [[e0f3afa5-c77c-11ea-b0b6-e5df79e86bc2]] */
-      final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions sysCfgFunction = src
+      final var sysCfgFunction = src
       		.selectSourceSystemConfiguration().extension(
       				cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
-      final List<ISystemConfiguration> sysCfgs = sysCfgFunction.GetAllDependsFromWithSelfOnlyConcrete();
+      final var sysCfgs = sysCfgFunction.GetAllDependsFromWithSelfOnlyConcrete();
 
-      final ISourceInSubSecurityZoneFunctions functions = sourceInSubSecurityZoneByHost
+      final var functions = sourceInSubSecurityZoneByHost
       		.extension(ISourceInSubSecurityZoneFunctions.class);
 
-      final ISecuritySubZone sourceSubZone = functions.SourceSubZone();
-      final ISecuritySubZoneFunctions sourceSubZoneFunctions = sourceSubZone
+      final var sourceSubZone = functions.SourceSubZone();
+      final var sourceSubZoneFunctions = sourceSubZone
       		.extension(ISecuritySubZoneFunctions.class);
 
-      final StringBuilder result = new StringBuilder();
+      final var result = new StringBuilder();
       for (final ISystemConfiguration sysCfg : sysCfgs) {
-      	final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions configurationFunctions = sysCfg
+      	final var configurationFunctions = sysCfg
       			.extension(
       					cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
-      	final IZoneFunctions zoneFunctions = sourceSubZone.extension(IZoneFunctions.class);
+      	final var zoneFunctions = sourceSubZone.extension(IZoneFunctions.class);
       	if (zoneFunctions.IsLocalOnly()) {
       		for (final IAbstractSiteWithHosts hosts : sourceSubZoneFunctions
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
@@ -812,11 +829,11 @@ public class FunctionSpace_Communication {
       			result.append("\n");
       		}
       	} else {
-      		final List<ISystemConfiguration> hosts = sourceSubZoneFunctions
+      		final var hosts = sourceSubZoneFunctions
       				.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg,
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env));
       		for (final ISystemConfiguration concreteSysCfg : hosts) {
-      			final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg
+      			final var concreteSysCfgFunctions = concreteSysCfg
       					.extension(
       							cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
       			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone));
@@ -893,4 +910,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,5Pp+pG1o65CSks9p0MTUgXbhz48=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,5FxQ2i5aGtPQcEmZcX6qTmoqsV8=] */

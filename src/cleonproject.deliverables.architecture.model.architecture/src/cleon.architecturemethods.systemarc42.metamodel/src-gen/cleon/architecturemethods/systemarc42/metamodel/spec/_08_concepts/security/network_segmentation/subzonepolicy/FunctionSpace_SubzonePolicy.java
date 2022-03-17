@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.IDestinationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.DestinationSubSecurityZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
@@ -117,9 +118,11 @@ public class FunctionSpace_SubzonePolicy {
       final var zoneFunctions = destinationSubZone.extension(IZoneFunctions.class);
       final var sourceFunctions = src.extension(ISourceFunctions.class);
       final var destination = sourceFunctions.Destination();
+      final var destinationFunction = destination.extension(IDestinationFunctions.class);
+      final var destinationSubSecurityZone = destinationFunction.GetDestinationPolicy(destinationSubZone);
 
-      if( destination.selectOverrideDestinationGroupName() != null) {
-      	return destination.selectOverrideDestinationGroupName();
+      if( (destinationSubSecurityZone != null) && (destinationSubSecurityZone.selectOverrideDestinationGroupName() != null)) {
+      	return destinationSubSecurityZone.selectOverrideDestinationGroupName();
       }
 
       final var sysCfgFunction = destination.selectDestinationSystemConfiguration()

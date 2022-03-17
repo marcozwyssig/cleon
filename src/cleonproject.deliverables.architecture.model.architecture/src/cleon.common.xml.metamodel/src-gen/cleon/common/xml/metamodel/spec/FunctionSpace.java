@@ -1,12 +1,12 @@
 package cleon.common.xml.metamodel.spec;
 
-import java.util.stream.Collectors;
-
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 /* Begin Protected Region [[37550eeb-f2bd-11e5-8010-7b34e2b59618,imports]] */
 import ch.actifsource.util.character.StringUtil;
+import java.util.stream.Collectors;
+
 /* End Protected Region   [[37550eeb-f2bd-11e5-8010-7b34e2b59618,imports]] */
 
 public class FunctionSpace {
@@ -22,6 +22,8 @@ public class FunctionSpace {
 
 		@IDynamicResourceExtension.MethodId("272cfa17-a066-11ec-b8bd-93035f893c15") java.lang.String removeDuplicates();
 
+		@IDynamicResourceExtension.MethodId("add08ac5-a5e2-11ec-9968-b970a72504b8") java.lang.Boolean isNullOrEmpty();
+
 	}
 
 	public interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -29,6 +31,8 @@ public class FunctionSpace {
 		@IDynamicResourceExtension.MethodId("891e4724-3767-11e5-95d9-2b04d7ab02d9") java.lang.String escapeXml(final java.lang.String textLiteral);
 
 		@IDynamicResourceExtension.MethodId("272cfa17-a066-11ec-b8bd-93035f893c15") java.lang.String removeDuplicates(final java.lang.String textLiteral);
+
+		@IDynamicResourceExtension.MethodId("add08ac5-a5e2-11ec-9968-b970a72504b8") java.lang.Boolean isNullOrEmpty(final java.lang.String textLiteral);
 
 	}
 
@@ -84,6 +88,16 @@ public class FunctionSpace {
 			/* End Protected Region   [[272cfa17-a066-11ec-b8bd-93035f893c15]] */
 		}
 
+		@Override
+		public java.lang.Boolean isNullOrEmpty(final java.lang.String textLiteral) {
+			/* Begin Protected Region [[add08ac5-a5e2-11ec-9968-b970a72504b8]] */
+			if( textLiteral == null ) {
+				return true;
+			}
+			return textLiteral.isEmpty();
+			/* End Protected Region   [[add08ac5-a5e2-11ec-9968-b970a72504b8]] */
+		}
+
 	}
 
 	public static class TextLiteralFunctions {
@@ -96,6 +110,10 @@ public class FunctionSpace {
 
 		public static java.lang.String removeDuplicates(final java.lang.String textLiteral) {
 			return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).removeDuplicates(textLiteral);
+		}
+
+		public static java.lang.Boolean isNullOrEmpty(final java.lang.String textLiteral) {
+			return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).isNullOrEmpty(textLiteral);
 		}
 
 	}
@@ -159,4 +177,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,Gxiei+026rGEX6BPAj0rvQcSIjE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,4W9uuQoq6ngTB1lYJIWR+4v9ZQI=] */

@@ -70,6 +70,7 @@ public class Communications__T_xml {
       	return false;
       }
       return implementedState.selectImplementationStateIn().get(env.getResource()).extension(IImplentationStateForEnvironmentFunctions.class).IsImplemented();
+
       /* End Protected Region   [[98d07593-2046-11eb-88ac-6db033a610cb]] */
     }
 
@@ -318,15 +319,15 @@ public class Communications__T_xml {
     @Override
     public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
-		if( sourceInSubSecurityZone.selectIsTemporary() != null) {
-			return sourceInSubSecurityZone.selectIsTemporary().booleanValue();
-		} else {
-			var source = Source.selectToMeAccessAllowed(sourceInSubSecurityZone);    	
-	    	if( source.selectIsTemporary() == null ) {
-	    		return false;
-	    	}
-	    	return source.selectIsTemporary().booleanValue();
-		}    	
+      if( sourceInSubSecurityZone.selectIsTemporary() != null) {
+      	return sourceInSubSecurityZone.selectIsTemporary().booleanValue();
+      }
+      final var source = Source.selectToMeAccessAllowed(sourceInSubSecurityZone);    	
+      if( source.selectIsTemporary() == null ) {
+      	return false;
+      }
+      return source.selectIsTemporary().booleanValue();
+
       /* End Protected Region   [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
     }
 
@@ -344,4 +345,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,/1U2p8lvYpwOJtxOOiQ2HbDKz5A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,kMuVJPbfdfbKcqFNNZMVxCUgMac=] */

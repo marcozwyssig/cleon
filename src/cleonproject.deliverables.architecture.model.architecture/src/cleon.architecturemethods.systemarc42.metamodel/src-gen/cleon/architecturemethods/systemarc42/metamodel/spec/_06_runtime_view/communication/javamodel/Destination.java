@@ -57,15 +57,6 @@ public class Destination extends DynamicResource implements IDestination {
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
-  @Override
-  public java.lang.String selectOverrideDestinationGroupName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_overrideDestinationGroupName);
-  }
-    
-  public void setOverrideDestinationGroupName(java.lang.String overrideDestinationGroupName) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_overrideDestinationGroupName, overrideDestinationGroupName);
-  }
-
   // relations
   
   @Override
@@ -153,7 +144,6 @@ public class Destination extends DynamicResource implements IDestination {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_overrideDestinationGroupName, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_destinationSubSecurityZone, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, visitor);
@@ -172,4 +162,4 @@ public class Destination extends DynamicResource implements IDestination {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,5DA0LeqBs+vyOzIU3t3SUSBpKdg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,lySorpuOWrb9YtcOX4jABQ3fJUw=] */

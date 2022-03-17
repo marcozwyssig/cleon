@@ -28,6 +28,17 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
     super(resourceRepository, resource, IDestinationSubSecurityZone.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectOverrideDestinationGroupName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName);
+  }
+    
+  public void setOverrideDestinationGroupName(java.lang.String overrideDestinationGroupName) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName, overrideDestinationGroupName);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_hasCommunicationFrom, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, visitor);
@@ -90,4 +103,4 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,6u0wEVtjXKEVJh8CB8z9XapEk10=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,CWwRLes1R+QELEiNY0Tu27cPoDs=] */

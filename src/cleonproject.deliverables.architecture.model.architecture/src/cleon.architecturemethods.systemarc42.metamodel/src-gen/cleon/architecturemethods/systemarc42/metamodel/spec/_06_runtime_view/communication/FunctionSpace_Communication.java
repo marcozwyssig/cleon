@@ -751,6 +751,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("73e2a655-e05b-11e9-aa67-4505845acdbd")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList);
 
+    @IDynamicResourceExtension.MethodId("e2b85ad2-a5e1-11ec-9968-b970a72504b8")
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
+
   }
   
   public static class SourceInSubSecurityZoneFunctionsImpl implements ISourceInSubSecurityZoneFunctionsImpl {
@@ -768,6 +771,13 @@ public class FunctionSpace_Communication {
       /* End Protected Region   [[73e2a655-e05b-11e9-aa67-4505845acdbd]] */
     }
 
+    @Override
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
+      /* Begin Protected Region [[e2b85ad2-a5e1-11ec-9968-b970a72504b8]] */
+      return !sourceInSubSecurityZone.extension(ISourceInSubSecurityZoneFunctions.class).RenderDestinationGroups(src, env).isEmpty() && !sourceInSubSecurityZone.extension(ISourceInSubSecurityZoneFunctions.class).RenderSourceGroups(src, env).isEmpty(); 
+      /* End Protected Region   [[e2b85ad2-a5e1-11ec-9968-b970a72504b8]] */
+    }
+
   }
   
   public static class SourceInSubSecurityZoneFunctions {
@@ -776,6 +786,10 @@ public class FunctionSpace_Communication {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZoneList).OnlyInter(sourceInSubSecurityZoneList);
+    }
+
+    public static java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
+      return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).HasDestinationGroups(src, env, sourceInSubSecurityZone);
     }
 
   }
@@ -910,4 +924,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,5FxQ2i5aGtPQcEmZcX6qTmoqsV8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,Ia/SFZTNohtpLnm8gQzLtAuavTY=] */

@@ -16,7 +16,7 @@ public class XmlPackage {
   public static final Resource Zones__T_xml_SecuritySubZone = new Resource("e9882e0b-c856-11ea-b1f9-8da009c98a7a");
   public static final Resource ServerNodes__T_xml_Node = new Resource("4691953f-e37b-11ea-90a0-29b751c6ace9");
   public static final Resource Communications__T_xml_ImplementedState = new Resource("98d04e7f-2046-11eb-88ac-6db033a610cb");
-  public static final Resource Communications__T_xml_ImplentationStateForEnvironment = new Resource("902cbda3-2047-11eb-88ac-6db033a610cb");
+  public static final Resource Communications__T_xml_ImplementationStateForEnvironment = new Resource("902cbda3-2047-11eb-88ac-6db033a610cb");
   public static final Resource Communications__T_xml_ImplementedForEnvironmentState = new Resource("a8b282f9-2047-11eb-88ac-6db033a610cb");
   public static final Resource Communications__T_xml_NotImplementedForEnvironmentState = new Resource("104e686b-2048-11eb-88ac-6db033a610cb");
   public static final Resource Communications__T_xml_ImplementationState = new Resource("a5b9fbbd-204a-11eb-88ac-6db033a610cb");
@@ -28,6 +28,7 @@ public class XmlPackage {
   public static final Resource ServiceAccounts__T_xml_ServiceAccount = new Resource("52056adf-9ef7-11ec-8d98-a946e0e0308e");
   public static final Resource ServiceAccounts__T_xml_gMSA_aE_ServiceAccount = new Resource("823badfe-9ef8-11ec-8d98-a946e0e0308e");
   public static final Resource Topology__T_xml_AbstractHost = new Resource("5319ef75-a5cd-11ec-9968-b970a72504b8");
+  public static final Resource Communications__T_xml_PlannedImplementationForEnvironmentState = new Resource("c267b344-aaae-11ec-bac1-dba85299d623");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +49,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,che0SibpmPaR1hxqpY8BbDb4Tm0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,h/HAUnMpXpIbkLo1V1zCx2vQpaw=] */

@@ -69,7 +69,7 @@ public class Communications__T_xml {
       if (implementedState.selectImplementationStateIn() == null || !implementedState.selectImplementationStateIn().containsKey(env.getResource())) {
       	return false;
       }
-      return implementedState.selectImplementationStateIn().get(env.getResource()).extension(IImplentationStateForEnvironmentFunctions.class).IsImplemented();
+      return implementedState.selectImplementationStateIn().get(env.getResource()).extension(IImplementationStateForEnvironmentFunctions.class).IsImplemented();
 
       /* End Protected Region   [[98d07593-2046-11eb-88ac-6db033a610cb]] */
     }
@@ -86,28 +86,28 @@ public class Communications__T_xml {
 
   }
 
-  public static interface IImplentationStateForEnvironmentFunctions extends IDynamicResourceExtension {
+  public static interface IImplementationStateForEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("99a07a70-2047-11eb-88ac-6db033a610cb")
     public java.lang.Boolean IsImplemented();
 
   }
   
-  public static interface IImplentationStateForEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IImplementationStateForEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ImplentationStateForEnvironmentFunctionsImpl implements IImplentationStateForEnvironmentFunctionsImpl {
+  public static class ImplementationStateForEnvironmentFunctionsImpl implements IImplementationStateForEnvironmentFunctionsImpl {
 
-    public static final IImplentationStateForEnvironmentFunctionsImpl INSTANCE = new ImplentationStateForEnvironmentFunctionsImpl();
+    public static final IImplementationStateForEnvironmentFunctionsImpl INSTANCE = new ImplementationStateForEnvironmentFunctionsImpl();
 
-    private ImplentationStateForEnvironmentFunctionsImpl() {}
+    private ImplementationStateForEnvironmentFunctionsImpl() {}
 
   }
   
-  public static class ImplentationStateForEnvironmentFunctions {
+  public static class ImplementationStateForEnvironmentFunctions {
 
-    private ImplentationStateForEnvironmentFunctions() {}
+    private ImplementationStateForEnvironmentFunctions() {}
 
   }
 
@@ -121,7 +121,7 @@ public class Communications__T_xml {
   public static interface IImplementedForEnvironmentStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("fa52820b-2047-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState);
 
   }
   
@@ -132,7 +132,7 @@ public class Communications__T_xml {
     private ImplementedForEnvironmentStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState) {
       return true;
     }
 
@@ -142,7 +142,7 @@ public class Communications__T_xml {
 
     private ImplementedForEnvironmentStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedForEnvironmentState implementedForEnvironmentState) {
       return DynamicResourceUtil.invoke(IImplementedForEnvironmentStateFunctionsImpl.class, ImplementedForEnvironmentStateFunctionsImpl.INSTANCE, implementedForEnvironmentState).IsImplemented(implementedForEnvironmentState);
     }
 
@@ -158,7 +158,7 @@ public class Communications__T_xml {
   public static interface IImplementedNotRequiredForEnvironmentStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("56e10b4f-0a3b-11ec-8912-0f9ef89df758")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState);
 
   }
   
@@ -169,7 +169,7 @@ public class Communications__T_xml {
     private ImplementedNotRequiredForEnvironmentStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState) {
       return false;
     }
 
@@ -179,7 +179,7 @@ public class Communications__T_xml {
 
     private ImplementedNotRequiredForEnvironmentStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IImplementedNotRequiredForEnvironmentState implementedNotRequiredForEnvironmentState) {
       return DynamicResourceUtil.invoke(IImplementedNotRequiredForEnvironmentStateFunctionsImpl.class, ImplementedNotRequiredForEnvironmentStateFunctionsImpl.INSTANCE, implementedNotRequiredForEnvironmentState).IsImplemented(implementedNotRequiredForEnvironmentState);
     }
 
@@ -195,7 +195,7 @@ public class Communications__T_xml {
   public static interface INotImplementedForEnvironmentStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("104e686d-2048-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState);
 
   }
   
@@ -206,7 +206,7 @@ public class Communications__T_xml {
     private NotImplementedForEnvironmentStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState) {
       return false;
     }
 
@@ -216,8 +216,45 @@ public class Communications__T_xml {
 
     private NotImplementedForEnvironmentStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.INotImplementedForEnvironmentState notImplementedForEnvironmentState) {
       return DynamicResourceUtil.invoke(INotImplementedForEnvironmentStateFunctionsImpl.class, NotImplementedForEnvironmentStateFunctionsImpl.INSTANCE, notImplementedForEnvironmentState).IsImplemented(notImplementedForEnvironmentState);
+    }
+
+  }
+
+  public static interface IPlannedImplementationForEnvironmentStateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c267b346-aaae-11ec-bac1-dba85299d623")
+    public java.lang.Boolean IsImplemented();
+
+  }
+  
+  public static interface IPlannedImplementationForEnvironmentStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("c267b346-aaae-11ec-bac1-dba85299d623")
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState);
+
+  }
+  
+  public static class PlannedImplementationForEnvironmentStateFunctionsImpl implements IPlannedImplementationForEnvironmentStateFunctionsImpl {
+
+    public static final IPlannedImplementationForEnvironmentStateFunctionsImpl INSTANCE = new PlannedImplementationForEnvironmentStateFunctionsImpl();
+
+    private PlannedImplementationForEnvironmentStateFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState) {
+      return true;
+    }
+
+  }
+  
+  public static class PlannedImplementationForEnvironmentStateFunctions {
+
+    private PlannedImplementationForEnvironmentStateFunctions() {}
+
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState) {
+      return DynamicResourceUtil.invoke(IPlannedImplementationForEnvironmentStateFunctionsImpl.class, PlannedImplementationForEnvironmentStateFunctionsImpl.INSTANCE, plannedImplementationForEnvironmentState).IsImplemented(plannedImplementationForEnvironmentState);
     }
 
   }
@@ -345,4 +382,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,kMuVJPbfdfbKcqFNNZMVxCUgMac=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,a0GFKZE0Bns2j+UzUo79kPJ4mV0=] */

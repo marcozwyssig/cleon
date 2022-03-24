@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
 	<db:title>Sample Requirements Anforderungen</db:title>
+	
 	<db:chapter xml:id="ea.9dfe5e0a-e8f3-11e8-b810-cdb2b421fd42">
 		<db:title>Einleitung</db:title>
 		<db:section xml:id="ea.a0ff68ad-e8f3-11e8-b810-cdb2b421fd42">
@@ -16,7 +17,6 @@
 					<db:para>Test</db:para>
 				</db:listitem>
 			</db:itemizedlist>
-			<db:para></db:para>
 		</db:section>
 		<db:section xml:id="ea.ac81ffd2-09b2-11e9-8c40-11db3668c0c9">
 			<db:title>Methode / Vorgehensweise</db:title>
@@ -176,7 +176,7 @@
 			        </db:tbody>
 			    </db:informaltable>
 			    <db:para><db:emphasis role="bold">Legende:</db:emphasis>
-			        <db:emphasis role="italic">(1)</db:emphasis> Abstraktionsebene (<db:emphasis role="underline">CAP</db:emphasis>ability, <db:emphasis role="underline">FEA</db:emphasis>ture, <db:emphasis role="underline">FUN</db:emphasis>ction, <db:emphasis role="underline">COM</db:emphasis>ponent) <db:emphasis role="italic">(2)</db:emphasis> ID <db:emphasis role="italic">(3)</db:emphasis> Name <db:emphasis role="italic">(4)</db:emphasis> Status <db:emphasis role="italic">(5)</db:emphasis> Attribute <db:emphasis role="italic">(6)</db:emphasis> Wert
+			        <db:emphasis role="italic">(1)</db:emphasis> Abstraktionsebene (<db:emphasis role="underline">CAP</db:emphasis>ability, <db:emphasis role="underline">FEA</db:emphasis>ture, <db:emphasis role="underline">FUN</db:emphasis>ction, <db:emphasis role="underline">COM (CMP)</db:emphasis>ponent) <db:emphasis role="italic">(2)</db:emphasis> ID <db:emphasis role="italic">(3)</db:emphasis> Name <db:emphasis role="italic">(4)</db:emphasis> Status <db:emphasis role="italic">(5)</db:emphasis> Attribute <db:emphasis role="italic">(6)</db:emphasis> Wert
 			        der Attribute</db:para>  
 			</db:section>
 		</db:section>
@@ -557,29 +557,9 @@
 							<db:para>Anforderungen</db:para>
 						</db:td>
 						<db:td>
-							<db:itemizedlist>
-								<db:listitem>
-									<db:para>AF-001_ddd (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4f2b2d26-d652-11e5-beff-c5494779b7d9"/>]</db:para>
-								</db:listitem>
-								<db:listitem>
-									<db:para>AF-002_Constraint (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.429176da-debe-11e5-bf7d-117d548070bb"/>]</db:para>
-								</db:listitem>
-								<db:listitem>
-									<db:para>AF-003_Requirements_2_(ssss) (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.23f6e412-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
-								</db:listitem>
-								<db:listitem>
-									<db:para>AF-004_Requirements_2_1 (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2769003c-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
-								</db:listitem>
-								<db:listitem>
-									<db:para>AF-006_Requirements_1 (FEA) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.57838399-bb81-11e5-b2f7-f515c847fa35"/>]</db:para>
-								</db:listitem>
-								<db:listitem>
-									<db:para>AF-007_sss (FEA) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ad463858-d56d-11e5-89ea-2d8d86e9ef89"/>]</db:para>
-								</db:listitem>
-							</db:itemizedlist>
+							<db:para>AF-001 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4f2b2d26-d652-11e5-beff-c5494779b7d9"/>], AF-002 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.429176da-debe-11e5-bf7d-117d548070bb"/>], AF-003 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.23f6e412-bf5b-11e5-a56a-35b34376b412"/>], AF-004 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2769003c-bf5b-11e5-a56a-35b34376b412"/>], AF-006 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.57838399-bb81-11e5-b2f7-f515c847fa35"/>], AF-007 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ad463858-d56d-11e5-89ea-2d8d86e9ef89"/>]</db:para>
 						</db:td>
 					</db:tr>
-			
 				</db:tbody>
 			</db:informaltable>
 			<db:section xml:id="ea.a2146300-0e01-11e6-ae01-ef640c578b9b">
@@ -645,17 +625,9 @@
 								<db:para>Anforderungen</db:para>
 							</db:td>
 							<db:td>
-								<db:itemizedlist>
-									<db:listitem>
-										<db:para>AF-004_Requirements_2_1 (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2769003c-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
-									</db:listitem>
-									<db:listitem>
-										<db:para>AF-006_Requirements_1 (FEA) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.57838399-bb81-11e5-b2f7-f515c847fa35"/>]</db:para>
-									</db:listitem>
-								</db:itemizedlist>
+								<db:para>AF-004 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2769003c-bf5b-11e5-a56a-35b34376b412"/>], AF-006 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.57838399-bb81-11e5-b2f7-f515c847fa35"/>]</db:para>
 							</db:td>
 						</db:tr>
-				
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
@@ -717,7 +689,14 @@
 								</db:itemizedlist>
 							</db:td>
 						</db:tr>
-				
+						<db:tr>
+							<db:td>
+								<db:para>Anforderungen</db:para>
+							</db:td>
+							<db:td>
+								<db:para></db:para>
+							</db:td>
+						</db:tr>
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
@@ -780,7 +759,14 @@
 							</db:itemizedlist>
 						</db:td>
 					</db:tr>
-			
+					<db:tr>
+						<db:td>
+							<db:para>Anforderungen</db:para>
+						</db:td>
+						<db:td>
+							<db:para></db:para>
+						</db:td>
+					</db:tr>
 				</db:tbody>
 			</db:informaltable>
 			<db:section xml:id="ea.e38578c3-0e01-11e6-ae01-ef640c578b9b">
@@ -841,7 +827,14 @@
 								</db:itemizedlist>
 							</db:td>
 						</db:tr>
-				
+						<db:tr>
+							<db:td>
+								<db:para>Anforderungen</db:para>
+							</db:td>
+							<db:td>
+								<db:para></db:para>
+							</db:td>
+						</db:tr>
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
@@ -1271,9 +1264,33 @@
 						<db:para>6</db:para>
 					</db:td>
 				</db:tr>		
+			</db:tbody>	
+		</db:informaltable>
+		<db:para>In der nachfolgenden Tabelle werden alle abgelehnten Anforderungen zusammengefasst. In den jeweiligen Anforderungen werden der entsprechende Ablehnungsgrund aufgeführt und erklärt.</db:para>
+		<db:informaltable style="HERMES 5">
+			<db:col width="20%" />
+			<db:col width="40%" />
+			<db:col width="20%" />
+			<db:col width="20%" />
+			<db:thead>
+				<db:tr>
+					<db:th>ID</db:th>
+					<db:th>Name</db:th>
+					<db:th>Kapitel</db:th>
+					<db:th>Seite</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td colspan="2">
+						<db:para>Total Anforderungen</db:para>
+					</db:td>
+					<db:td colspan="2">
+						<db:para>0</db:para>
+					</db:td>
+				</db:tr>
 			</db:tbody>
 		</db:informaltable>
-		
 		<db:section xml:id="ea.59fb9f5f-0c78-11e6-86c5-87a8b520dd59">
 			<db:title>SU-01_Funktionalit&#228;t</db:title>
 			<db:informaltable style="HERMES 5">
@@ -2038,7 +2055,7 @@
 								<db:para>Formale Definition</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Die Aussenhülle des Smartphones kann so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20°C bis 60°C betrieben werden kann    </db:para>
+								<db:para>Die Aussenhülle des Smartphones kann so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20°C bis 60°C betrieben werden kann</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>

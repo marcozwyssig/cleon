@@ -78,7 +78,4 @@ public class FunctionSpace_Diagrams {
 
 }
 
-      /* Begin Protected Region [[e4eef884-a065-11ec-b8bd-93035f893c15]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[e4eef884-a065-11ec-b8bd-93035f893c15]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fdab4fd0-9fc1-11ec-a0ca-03d8d5268a60,kfz2U+mDRE2FYzFlhoD/R81FDbM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fdab4fd0-9fc1-11ec-a0ca-03d8d5268a60,nZPUt27h69ve4t50bkm+CqtLBUM=] */

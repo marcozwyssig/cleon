@@ -14,4 +14,4 @@ public interface ISampleBuildingBlock extends cleon.modelinglanguages.uml.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,z3Zjwpx8x8Ju7dbXjEN/aKxrAyc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,mZntoX6umPvxv/smbF+o5Fu+734=] */

@@ -23,4 +23,4 @@ public class DddPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.sample.ddd,SIpidxbmEJlgMEHXbtVraw78vxw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.sample.ddd,R/lPnwO1RU2fZr5zA5U9mILzhRs=] */

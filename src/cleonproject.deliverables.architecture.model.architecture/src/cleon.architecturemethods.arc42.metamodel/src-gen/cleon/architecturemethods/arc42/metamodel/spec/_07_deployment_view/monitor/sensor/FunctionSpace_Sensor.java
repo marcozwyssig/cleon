@@ -124,6 +124,34 @@ public class FunctionSpace_Sensor {
 
   }
 
+  public static interface IwmidiskspaceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("009f865c-b966-11ec-a408-4ba6a2d760ef")
+    public java.lang.String Drive();
+
+    @IDynamicResourceExtension.MethodId("c245602e-b963-11ec-a408-4ba6a2d760ef")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IwmidiskspaceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmidiskspaceFunctionsImpl implements IwmidiskspaceFunctionsImpl {
+
+    public static final IwmidiskspaceFunctionsImpl INSTANCE = new wmidiskspaceFunctionsImpl();
+
+    private wmidiskspaceFunctionsImpl() {}
+
+  }
+  
+  public static class wmidiskspaceFunctions {
+
+    private wmidiskspaceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,/x4xslnOJHSm/tTPgcENcx7mUj0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,POfkuEq7BSrTC0wDa3M64H9Lm4I=] */

@@ -40,11 +40,11 @@ public class Wmidiskspace extends DynamicResource implements IWmidiskspace {
   }
 
   @Override
-  public java.lang.Integer selectDrive() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmidiskspace_drive);
+  public java.lang.String selectDrive() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmidiskspace_drive);
   }
     
-  public void setDrive(java.lang.Integer drive) {
+  public void setDrive(java.lang.String drive) {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmidiskspace_drive, drive);
   }
 
@@ -74,11 +74,11 @@ public class Wmidiskspace extends DynamicResource implements IWmidiskspace {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmidiskspace_drive, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmidiskspace_drive, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae3a-c1eb-11ea-820f-9931558a898c,AIsnkeRAN8XKYGPtIqctF9x08fU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae3a-c1eb-11ea-820f-9931558a898c,0c+9xRCO0GN3+/J4L3yoBrdHBJg=] */

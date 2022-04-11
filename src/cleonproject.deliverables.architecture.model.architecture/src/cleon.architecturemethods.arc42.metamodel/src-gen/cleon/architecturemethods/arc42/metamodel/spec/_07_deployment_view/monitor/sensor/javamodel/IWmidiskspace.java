@@ -8,8 +8,8 @@ public interface IWmidiskspace extends cleon.architecturemethods.arc42.metamodel
   
   // attributes
   
-  public java.lang.Integer selectDrive();
+  public java.lang.String selectDrive();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae3a-c1eb-11ea-820f-9931558a898c,8uM9Lc2mqoDcnFdk9BvtuBVquuI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae3a-c1eb-11ea-820f-9931558a898c,8i8jzwq7CJZaQ93czSQBmzrIy8I=] */

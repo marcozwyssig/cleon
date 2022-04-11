@@ -392,6 +392,31 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
+  public static interface IwmidiskspaceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("930e98dc-b967-11ec-a408-4ba6a2d760ef")
+    public java.lang.String Parameters();
+
+  }
+  
+  public static interface IwmidiskspaceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmidiskspaceFunctionsImpl implements IwmidiskspaceFunctionsImpl {
+
+    public static final IwmidiskspaceFunctionsImpl INSTANCE = new wmidiskspaceFunctionsImpl();
+
+    private wmidiskspaceFunctionsImpl() {}
+
+  }
+  
+  public static class wmidiskspaceFunctions {
+
+    private wmidiskspaceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,AHPVoAadgRoEggHufSUhMVFdjhw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,eMwthIMjUqvbwvhi7L1XdE/NPL0=] */

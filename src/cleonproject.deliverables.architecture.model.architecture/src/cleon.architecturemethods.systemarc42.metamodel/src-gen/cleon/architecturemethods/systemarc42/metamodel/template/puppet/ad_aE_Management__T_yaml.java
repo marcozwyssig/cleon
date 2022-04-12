@@ -11,6 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.ActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.FunctionSpace_Activity_Buildingblock.IAbstractAuthZBuildingBlockPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
 import java.util.stream.Collectors;
@@ -93,12 +94,27 @@ public class ad_aE_Management__T_yaml {
     @IDynamicResourceExtension.MethodId("8247b809-b873-11eb-8e8b-1d4fd4efa35e")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue();
 
+    @IDynamicResourceExtension.MethodId("8ec5c942-ba41-11ec-a408-4ba6a2d760ef")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite();
+
+    @IDynamicResourceExtension.MethodId("9312f1cb-ba43-11ec-a408-4ba6a2d760ef")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WithoutNMS();
+
+    @IDynamicResourceExtension.MethodId("5937518e-ba45-11ec-a408-4ba6a2d760ef")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8247b809-b873-11eb-8e8b-1d4fd4efa35e")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList);
+
+    @IDynamicResourceExtension.MethodId("8ec5c942-ba41-11ec-a408-4ba6a2d760ef")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList);
+
+    @IDynamicResourceExtension.MethodId("9312f1cb-ba43-11ec-a408-4ba6a2d760ef")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WithoutNMS(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList);
 
   }
   
@@ -115,6 +131,20 @@ public class ad_aE_Management__T_yaml {
       /* End Protected Region   [[8247b809-b873-11eb-8e8b-1d4fd4efa35e]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      /* Begin Protected Region [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
+        return networkSiteList.stream().filter(x -> x.selectIsADSite() == null || x.selectIsADSite().booleanValue()).collect(Collectors.toList());   
+      /* End Protected Region   [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WithoutNMS(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      /* Begin Protected Region [[9312f1cb-ba43-11ec-a408-4ba6a2d760ef]] */
+    	return networkSiteList.stream().filter(x -> x.extension(INetworkSiteFunctions.class).SimpleName().contains("NMS") == false).collect(Collectors.toList());   
+      /* End Protected Region   [[9312f1cb-ba43-11ec-a408-4ba6a2d760ef]] */
+    }
+
   }
   
   public static class NetworkSiteFunctions {
@@ -125,8 +155,16 @@ public class ad_aE_Management__T_yaml {
       return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSiteList).WhereOUExportIsTrue(networkSiteList);
     }
 
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSiteList).WhereIsADSite(networkSiteList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WithoutNMS(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSiteList).WithoutNMS(networkSiteList);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,HbWqW26b9Rfnc72KxHI1ipX+d60=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,7jTNadEipyKcffmU4V2T/9aFZaA=] */

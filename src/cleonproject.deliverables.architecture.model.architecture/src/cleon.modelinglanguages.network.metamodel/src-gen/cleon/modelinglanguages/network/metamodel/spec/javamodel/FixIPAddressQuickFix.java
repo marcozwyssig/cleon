@@ -31,7 +31,7 @@ public class FixIPAddressQuickFix extends AbstractQuickFix {
 		final IIPRange range = _abstractPhysicalNetwork.extension(IAbstractNetworkFunctions.class).GetIPRange();
 		final IIPRangeFunctions functions = range.extension(IIPRangeFunctions.class);
 
-		_abstractPhysicalNetwork.selectCidr().stream().forEach(x -> {
+		_abstractPhysicalNetwork.selectCidrs().stream().forEach(x -> {
 			final String cidrRange = x.selectIPv4();
 			final String[] parts = cidrRange.trim().split("\\.");
 

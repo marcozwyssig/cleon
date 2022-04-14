@@ -10,7 +10,7 @@ public class Ipv4Package {
   public static final Resource IPv4_aE_Mask = new Resource("621bbad2-0932-11e9-8c40-11db3668c0c9");
   public static final Resource IPv4_aE_Mask_mask = new Resource("774d25ed-0932-11e9-8c40-11db3668c0c9");
   public static final Resource IPv4_aE_Mask_aE_Aware = new Resource("8d46e8a9-0932-11e9-8c40-11db3668c0c9");
-  public static final Resource IPv4_aE_Mask_aE_Aware_cidr = new Resource("8d46e8aa-0932-11e9-8c40-11db3668c0c9");
+  public static final Resource IPv4_aE_Mask_aE_Aware_cidrs = new Resource("8d46e8aa-0932-11e9-8c40-11db3668c0c9");
   public static final Resource IPv4_aE_Addresses_aE_Aware = new Resource("fbcaa90e-09a4-11e9-8c40-11db3668c0c9");
   public static final Resource IPv4_aE_Addresses_aE_Aware_iPv4s = new Resource("fbcaa90f-09a4-11e9-8c40-11db3668c0c9");
   public static final Resource AbstractIPv4 = new Resource("22c1cb63-71ac-11e9-98e0-2719d32d2629");
@@ -53,4 +53,4 @@ public class Ipv4Package {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec.ipv4,6aIvbPy4l3BDTilEN5RMzyLCgvI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec.ipv4,Ni0FPeCSkyjVuUcHvBxIaX/Q6ME=] */

@@ -26,7 +26,7 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		
 		try {
 			SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-			ch.actifsource.core.Statement cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IPv4_Mask_Aware.selectToMeCidr(cidr).getResource());
+			ch.actifsource.core.Statement cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, IPv4_Mask_Aware.selectToMeCidrs(cidr).getResource());
 			
 			for( String ip : subnet.getInfo().getAllAddresses())
 			{

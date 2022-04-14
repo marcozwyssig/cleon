@@ -36,7 +36,7 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 			return;
 		}
 
-		final List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
+		final List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidrs();
 		final Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
 		final ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<>();
 		for (final IAbstractNetworkNode node : nodes) {

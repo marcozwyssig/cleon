@@ -30,7 +30,7 @@ public class MoveIpAndHostRefactorAspect extends AbstractAllInstancesRefactorerA
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, node);
-		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
+		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidrs();
 		if (cidrs.isEmpty()) {
 			return;
 		}

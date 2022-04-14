@@ -103,6 +103,9 @@ public class ad_aE_Management__T_yaml {
     @IDynamicResourceExtension.MethodId("5937518e-ba45-11ec-a408-4ba6a2d760ef")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("953981e0-bbc8-11ec-815c-69b4d4138e89")
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCidrs();
+
   }
   
   public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -134,7 +137,7 @@ public class ad_aE_Management__T_yaml {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
       /* Begin Protected Region [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
-        return networkSiteList.stream().filter(x -> x.selectIsADSite() == null || x.selectIsADSite().booleanValue()).collect(Collectors.toList());   
+        return networkSiteList.stream().filter(x -> x.selectExportADSite() == null || x.selectExportADSite().booleanValue()).collect(Collectors.toList());   
       /* End Protected Region   [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
     }
 
@@ -167,4 +170,4 @@ public class ad_aE_Management__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,7jTNadEipyKcffmU4V2T/9aFZaA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,D0+x+3ciB360ALxBLcGh8uzcyrA=] */

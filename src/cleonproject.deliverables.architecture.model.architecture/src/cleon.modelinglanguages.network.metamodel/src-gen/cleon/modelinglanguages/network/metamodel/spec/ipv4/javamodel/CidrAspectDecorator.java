@@ -66,7 +66,7 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 
 		final IAbstractPhysicalNetwork network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject); 
 		final NodeSet ipNodeSet = new NodeSet();
-		final List<? extends IIPv4_Mask> cidrs = network.selectCidr();
+		final List<? extends IIPv4_Mask> cidrs = network.selectCidrs();
 		cidrs.stream().forEach(x -> addNetworks(executor, x, ipNodeSet));
 		return ipNodeSet;
 	}

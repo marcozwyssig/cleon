@@ -77,7 +77,7 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 					continue;
 				}
 				IIPv4_Mask cidr = null;
-				for (final IIPv4_Mask maskObj : subZone.selectCidr()) {
+				for (final IIPv4_Mask maskObj : subZone.selectCidrs()) {
 					final String ip = maskObj.selectIPv4();
 					if (ipName.equals(ip)) {
 						cidr = maskObj;
@@ -87,7 +87,7 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 				if (cidr == null) {
 					final ch.actifsource.core.Resource cidrObject = Update.createAndInitializeResource(
 							context.getWriteJobExecutor(), context.getPackage(), Ipv4Package.IPv4_aE_Mask,
-							subZone.getResource(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IStatementPosition.AT_END);
+							subZone.getResource(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, IStatementPosition.AT_END);
 
 					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
 							Ipv4Package.IPv4_aE_Address_aE_Aware_iPv4, LiteralUtil.create(ipName));

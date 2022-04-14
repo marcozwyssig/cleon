@@ -222,7 +222,7 @@ public class FunctionSpace_Network {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
       /* Begin Protected Region [[17b56361-cff2-11ea-99e7-03141914df18]] */
-      final List<? extends IIPv4_Mask> cidrs =  AbstractPhysicalNetwork.selectToMeNodes(abstractNetworkNode).selectCidr();
+      final List<? extends IIPv4_Mask> cidrs =  AbstractPhysicalNetwork.selectToMeNodes(abstractNetworkNode).selectCidrs();
       final IAbstractIPv4Functions abstractIPv4Functions = abstractNetworkNode.selectIPv4_D().extension(IAbstractIPv4Functions.class);
       final String  ipv4 = abstractIPv4Functions.SimpleName();
       return cidrs.stream().filter(x -> {

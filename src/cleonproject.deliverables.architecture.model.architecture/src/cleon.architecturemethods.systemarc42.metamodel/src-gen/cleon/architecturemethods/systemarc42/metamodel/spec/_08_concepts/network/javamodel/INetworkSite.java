@@ -8,7 +8,7 @@ public interface INetworkSite extends ch.actifsource.core.javamodel.IDecorator, 
   
   public java.lang.Boolean selectExportOU();
   
-  public java.lang.Boolean selectIsADSite();
+  public java.lang.Boolean selectExportADSite();
   
   // relations
   
@@ -16,6 +16,8 @@ public interface INetworkSite extends ch.actifsource.core.javamodel.IDecorator, 
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone();
   
+  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> selectExcludeCIDRForADSite();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,G+eA3UAFafOTgnh6F102PFlrGaQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,E3El/u+a5wGtQu6ZgLaLP6homN4=] */

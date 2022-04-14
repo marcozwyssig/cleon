@@ -134,7 +134,7 @@ public class FunctionSpace_XML {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone networkSubZone) {
       /* Begin Protected Region [[388e8b74-b213-11ea-a3a2-e9d3344bee73]] */
-    	for( final IIPv4_Mask mask : networkSubZone.selectCidr() ) {
+    	for( final IIPv4_Mask mask : networkSubZone.selectCidrs() ) {
     		final String ip = mask.selectIPv4();
 			if (ip.equals(cidr)) {
     			return mask;
@@ -256,6 +256,31 @@ public class FunctionSpace_XML {
 
   }
 
+  public static interface IServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("be4907b4-ba5b-11ec-a408-4ba6a2d760ef")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> UsedSources();
+
+  }
+  
+  public static interface IServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceFunctionsImpl implements IServiceFunctionsImpl {
+
+    public static final IServiceFunctionsImpl INSTANCE = new ServiceFunctionsImpl();
+
+    private ServiceFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceFunctions {
+
+    private ServiceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,Is8dNngSoB2ogeNSmiRNJEIOYt8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,gOmlpTPbOnqJu/WcgV1rmlbXZJk=] */

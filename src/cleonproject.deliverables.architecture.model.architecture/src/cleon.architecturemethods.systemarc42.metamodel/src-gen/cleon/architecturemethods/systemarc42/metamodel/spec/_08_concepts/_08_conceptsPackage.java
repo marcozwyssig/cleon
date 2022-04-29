@@ -31,7 +31,6 @@ public class _08_conceptsPackage {
   public static final Resource SystemConcepts_resourceConcept = new Resource("ee89dfe1-dfe5-11eb-9a61-ab419054c47d");
   public static final Resource SystemConcepts_chapters = new Resource("521eda8d-00bf-11ec-adfa-e1caed9b1433");
   public static final Resource SystemConcepts_scheduleConcept = new Resource("95dd9bf8-1f61-11ec-a206-f571806bf8d3");
-  public static final Resource SystemConcepts_updateConcept = new Resource("887c4493-b65a-11ec-b559-05e0c6b23962");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +51,4 @@ public class _08_conceptsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,Ca8xdKw35NjXhpIWBCgf7YuehB4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,Y2zwbfDmOo4ejPYrmEEvKSXwBFU=] */

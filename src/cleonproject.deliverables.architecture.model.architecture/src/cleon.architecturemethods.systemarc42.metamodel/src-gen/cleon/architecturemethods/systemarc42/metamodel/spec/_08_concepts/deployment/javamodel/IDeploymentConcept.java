@@ -14,6 +14,8 @@ public interface IDeploymentConcept extends cleon.architecturemethods.systemarc4
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureConcept selectDeploymentProcedure();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept selectUpdateConcept();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,5S57YiDI7mEFz31O+hfJ1Oxq2HM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,CgU8OtqsPMI+DpYhAitklPdUQYs=] */

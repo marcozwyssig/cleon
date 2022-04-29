@@ -120,6 +120,16 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
     return this;
   }
     
+  @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept selectUpdateConcept() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_updateConcept);
+  }
+
+  public DeploymentConcept setUpdateConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept updateConcept) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_updateConcept, updateConcept);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -132,6 +142,7 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_deploymentProcedure, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_updateConcept, visitor);
   }
 
   // toMeRelations
@@ -148,5 +159,9 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_deploymentProcedure, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept selectToMeUpdateConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update.javamodel.IUpdateConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.DeploymentPackage.DeploymentConcept_updateConcept, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,/q0Io2iEJ9V5wRmNA/659tfD9A8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,6QVM00C5JePKrmwLytcYUzFo8Ps=] */

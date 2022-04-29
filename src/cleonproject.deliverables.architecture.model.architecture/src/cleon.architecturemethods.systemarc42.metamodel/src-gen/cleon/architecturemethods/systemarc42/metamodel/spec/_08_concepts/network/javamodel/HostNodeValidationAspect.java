@@ -28,7 +28,7 @@ public class HostNodeValidationAspect implements IResourceValidationAspect {
 		final var hostNodes = hostNodeFunctions.AllHostNodes();
 		var count = 0;
 		for (final IHostNode host : hostNodes) {
-			if (host.selectExportDNSRecord() == null || host.selectExportDNSRecord().booleanValue()) {
+			if ((host.selectExportDNSRecord() == null) || host.selectExportDNSRecord().booleanValue()) {
 				++count;
 			}
 		}

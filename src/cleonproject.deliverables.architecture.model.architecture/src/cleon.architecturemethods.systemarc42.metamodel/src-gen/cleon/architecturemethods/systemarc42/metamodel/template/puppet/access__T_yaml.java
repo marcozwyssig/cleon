@@ -235,7 +235,7 @@ public class access__T_yaml {
       for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
       	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
-      		final ISourceFunctions sourceFunctions = accessTo.selectSource().extension(ISourceFunctions.class);
+      		final ISourceFunctions sourceFunctions = accessTo.selectSourceForAccess().extension(ISourceFunctions.class);
       		if (sourceFunctions.Destination().selectDestinationSystemConfiguration()
       				.equals(dst.selectInstanceOf()) == false) {
       			continue;
@@ -267,7 +267,7 @@ public class access__T_yaml {
       for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
       	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
-      		final ISourceFunctions sourceFunctions = accessTo.selectSource().extension(ISourceFunctions.class);
+      		final ISourceFunctions sourceFunctions = accessTo.selectSourceForAccess().extension(ISourceFunctions.class);
       		if (sourceFunctions.Destination().selectDestinationSystemConfiguration()
       				.equals(dst.selectInstanceOf()) == false) {
       			continue;

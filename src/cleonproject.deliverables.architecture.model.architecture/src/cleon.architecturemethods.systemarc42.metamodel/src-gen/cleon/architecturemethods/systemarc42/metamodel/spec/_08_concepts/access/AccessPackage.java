@@ -10,7 +10,7 @@ public class AccessPackage {
   public static final Resource SystemConfigurationAccessFrom_sourceAccess = new Resource("02e17889-19c3-11eb-8585-65084a06c07f");
   public static final Resource AccessSystemConfigurationTo = new Resource("885b4821-19c4-11eb-8585-65084a06c07f");
   public static final Resource SystemConfigurationAccessFrom_accessTo = new Resource("d635b34a-19c4-11eb-8585-65084a06c07f");
-  public static final Resource AccessSystemConfigurationTo_source = new Resource("d803eeb6-19c5-11eb-8585-65084a06c07f");
+  public static final Resource AccessSystemConfigurationTo_sourceForAccess = new Resource("d803eeb6-19c5-11eb-8585-65084a06c07f");
   public static final Resource FunctionSpace_aE_Access_SystemConfigurationAccessFrom = new Resource("e724788d-19c9-11eb-8585-65084a06c07f");
   public static final Resource AccessCommunicationType = new Resource("a028c2b5-1e98-11eb-9eef-0dadb2b460da");
   public static final Resource AccessConcept_accessCommunicationType = new Resource("a6ed1740-1e98-11eb-9eef-0dadb2b460da");
@@ -77,4 +77,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,K3YjxozVpd6BY3+zWxzCXU+exOU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,/JFuKn26kSzT5KC4qb3Oo5TbPFQ=] */

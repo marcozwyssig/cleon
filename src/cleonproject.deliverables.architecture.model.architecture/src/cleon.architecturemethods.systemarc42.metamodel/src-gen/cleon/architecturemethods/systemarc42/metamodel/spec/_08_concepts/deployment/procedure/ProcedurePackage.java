@@ -10,7 +10,7 @@ public class ProcedurePackage {
   public static final Resource DeploymentProcedureStage = new Resource("5886b9d2-7e84-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureOrder = new Resource("4ed2390c-7e86-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureOrder_stages = new Resource("4ed2390d-7e86-11ec-b55c-f5ca121c82b7");
-  public static final Resource DeploymentProcedureOrder_afftectedCmp = new Resource("f20fc8ac-7e8a-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureOrder_affectedCmp = new Resource("f20fc8ac-7e8a-11ec-b55c-f5ca121c82b7");
   public static final Resource FunctionSpace_aE_Procedure_DeploymentProcedureOrder = new Resource("7b1fb74e-7e8c-11ec-b55c-f5ca121c82b7");
   public static final Resource FunctionSpace_aE_Procedure_DeploymentProcedureConcept = new Resource("99a138f1-7eab-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureExclude_excludeCmpInInstallationOrder = new Resource("ce6aeb07-7eb0-11ec-b55c-f5ca121c82b7");
@@ -40,4 +40,4 @@ public class ProcedurePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,P5JE/4eIIRAh9g6v8vPYFuvymt4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,yspE0nnFsGrxpGUK2MAQBMfECIE=] */

@@ -517,6 +517,7 @@
         <resource statement-guid="648a285c-aaae-11ec-bac1-dba85299d623" type="resource" guid="648a0149-aaae-11ec-bac1-dba85299d623" />
         <resource statement-guid="30bf86cd-b65b-11ec-b559-05e0c6b23962" type="resource" guid="30be9c6a-b65b-11ec-b559-05e0c6b23962" />
         <resource statement-guid="b26758df-c7b8-11ec-a6a4-0b12dcfbdf90" type="resource" guid="b26758db-c7b8-11ec-a6a4-0b12dcfbdf90" />
+        <resource statement-guid="c5d72b71-c7ba-11ec-a6a4-0b12dcfbdf90" type="resource" guid="c5d72b6e-c7ba-11ec-a6a4-0b12dcfbdf90" />
       </owns>
     </resource>
   </owns>
@@ -5665,6 +5666,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="b26758e1-c7b8-11ec-a6a4-0b12dcfbdf90" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.update</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="c5d72b71-c7ba-11ec-a6a4-0b12dcfbdf90">
+            <resource guid="c5d72b6e-c7ba-11ec-a6a4-0b12dcfbdf90">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c5d72b70-c7ba-11ec-a6a4-0b12dcfbdf90" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c5d72b72-c7ba-11ec-a6a4-0b12dcfbdf90" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns</object>
               </predicate>
             </resource>
           </object>

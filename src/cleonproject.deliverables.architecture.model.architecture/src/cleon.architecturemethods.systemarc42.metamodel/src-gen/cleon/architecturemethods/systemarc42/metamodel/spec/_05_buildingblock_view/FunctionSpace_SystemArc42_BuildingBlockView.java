@@ -157,9 +157,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("2b39227b-c77f-11ea-b0b6-e5df79e86bc2")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyConcrete(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList);
 
-    @IDynamicResourceExtension.MethodId("f1883319-9b95-11ec-8985-9dc243cc3ec6")
-    public java.lang.Boolean AllowDNSRecordExport(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
-
   }
   
   public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
@@ -203,17 +200,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
       /* End Protected Region   [[2b39227b-c77f-11ea-b0b6-e5df79e86bc2]] */
     }
 
-    @Override
-    public java.lang.Boolean AllowDNSRecordExport(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      /* Begin Protected Region [[f1883319-9b95-11ec-8985-9dc243cc3ec6]] */
-      if( systemConfiguration.selectAllowDNSRecords() == null) {
-    	  return true;
-      }
-      
-      return systemConfiguration.selectAllowDNSRecords().booleanValue();
-      /* End Protected Region   [[f1883319-9b95-11ec-8985-9dc243cc3ec6]] */
-    }
-
   }
   
   public static class SystemConfigurationFunctions {
@@ -238,10 +224,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyConcrete(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfigurationList).OnlyConcrete(systemConfigurationList);
-    }
-
-    public static java.lang.Boolean AllowDNSRecordExport(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).AllowDNSRecordExport(systemConfiguration);
     }
 
   }
@@ -413,4 +395,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,aVtTa3UibXg5Yv1AQ1E0ZcsVD+Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,JLtxda9oaXmYwEJ+UV/sMNWR9F0=] */

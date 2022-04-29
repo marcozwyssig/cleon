@@ -37,7 +37,7 @@ public class DeploymentProcedureConceptValidatorAspect implements IResourceValid
 			for (var stage : deploymentProcedureConcept.selectDeploymentStages()) {
 				int count = 0;
 				for (var order : deploymentProcedureConcept.selectDeploymentOrder()) {
-					if (order.selectStages().contains(stage) && order.selectAfftectedCmp().contains(sysCfg)) {
+					if (order.selectStages().contains(stage) && order.selectAffectedCmp().contains(sysCfg)) {
 						count++;
 					}
 				}
@@ -63,7 +63,7 @@ public class DeploymentProcedureConceptValidatorAspect implements IResourceValid
 		for (var order : deploymentProcedureConcept.selectDeploymentOrder()) {
 			for (var stage : order.selectStages()) {
 				var list = completeList.get(stage);
-				list.removeAll(order.selectAfftectedCmp());
+				list.removeAll(order.selectAffectedCmp());
 			}
 		}
 

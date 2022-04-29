@@ -8,7 +8,7 @@ public interface IAccessSystemConfigurationTo extends ch.actifsource.core.javamo
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource selectSource();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource selectSourceForAccess();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationRDP();
   
@@ -20,4 +20,4 @@ public interface IAccessSystemConfigurationTo extends ch.actifsource.core.javamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,daAUj6FiKBIAP4QRpQtms82yh6c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,7Hy5o/Sjwz+/PlmGicjV1t6OCUk=] */

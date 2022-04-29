@@ -84,6 +84,9 @@ public class FunctionSpace_Access {
     @IDynamicResourceExtension.MethodId("dded61bf-300a-11eb-b17d-af74b7cf0bc4")
     public java.lang.String SourceVLAN();
 
+    @IDynamicResourceExtension.MethodId("e865b56d-c7cf-11ec-a59e-d1c88102a398")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> AllAccessConfigurations();
+
   }
   
   public static interface IAccessSystemConfigurationToFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -130,7 +133,7 @@ public class FunctionSpace_Access {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
       /* Begin Protected Region [[eb8338db-1ea3-11eb-9eef-0dadb2b460da]] */
-      final ISourceFunctions sourceFunctions = to.selectSource().extension(ISourceFunctions.class);
+      final ISourceFunctions sourceFunctions = to.selectSourceForAccess().extension(ISourceFunctions.class);
       final List<IAbstractService> portServices = sourceFunctions.AllServicesFlatten();
       return accessCommunicationTypeList.stream()
       		.filter(x -> x.selectServicesForAccess().stream().anyMatch(y -> portServices.contains(y)))
@@ -178,7 +181,7 @@ public class FunctionSpace_Access {
       /* Begin Protected Region [[d85d517f-bfcc-11eb-af9a-7dff6e60ee1f]] */
       final var accessConfigurationFunction = accessConfiguration.extension(IAccessConfigurationFunctions.class);
       final var to = accessConfigurationFunction.Parent();
-      final var sourceFunctions = to.selectSource().extension(ISourceFunctions.class);
+      final var sourceFunctions = to.selectSourceForAccess().extension(ISourceFunctions.class);
       final var validServices = accessConfiguration.selectAccessCommunicationType().selectServicesForAccess();
       final var allServices = sourceFunctions.AllServicesFlatten();
       return allServices.stream().filter( x -> validServices.contains(x)).collect(Collectors.toList());
@@ -426,4 +429,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,YD9vl3kax3e3qWCVce8536SpGkE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,p5HyHdCqeDfdNo8O0UKRg+G5drE=] */

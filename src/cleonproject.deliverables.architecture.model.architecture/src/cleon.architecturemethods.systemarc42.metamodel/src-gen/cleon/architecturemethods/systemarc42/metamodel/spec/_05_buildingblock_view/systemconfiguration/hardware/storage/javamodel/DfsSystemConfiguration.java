@@ -31,12 +31,12 @@ public class DfsSystemConfiguration extends DynamicResource implements IDfsSyste
   // attributes
   
   @Override
-  public java.lang.Boolean selectAllowDNSRecords() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords);
+  public java.lang.Boolean selectAllowDNSRecord() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecord);
   }
     
-  public void setAllowDNSRecords(java.lang.Boolean allowDNSRecords) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords, allowDNSRecords);
+  public void setAllowDNSRecord(java.lang.Boolean allowDNSRecord) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecord, allowDNSRecord);
   }
 
   @Override
@@ -256,7 +256,7 @@ public class DfsSystemConfiguration extends DynamicResource implements IDfsSyste
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecord, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_brutto_aE_capacity_aE__aA_GB_aC_, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
@@ -279,4 +279,4 @@ public class DfsSystemConfiguration extends DynamicResource implements IDfsSyste
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ed42aff-0a87-11e9-a59d-d7a0c53e291c,uGj8MW7Y6+K6SIgOj89Wqyfex5o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ed42aff-0a87-11e9-a59d-d7a0c53e291c,Oyv1BMb2xSmEbaVYIZanRoQV5aI=] */

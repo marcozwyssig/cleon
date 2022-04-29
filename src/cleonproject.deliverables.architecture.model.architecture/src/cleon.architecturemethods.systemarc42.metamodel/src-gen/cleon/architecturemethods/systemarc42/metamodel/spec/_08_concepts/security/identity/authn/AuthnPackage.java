@@ -26,6 +26,7 @@ public class AuthnPackage {
   public static final Resource AbstractRealmForDependentSystemConfiguration = new Resource("55667c1c-fd8c-11ea-8a95-19b98046e6db");
   public static final Resource RealmBasedOnDependentSystemConfiguration = new Resource("de1dc42e-fd8d-11ea-8a95-19b98046e6db");
   public static final Resource RealmBasedOnDependentSystemConfiguration_basedOn = new Resource("f27c2947-fd9c-11ea-aa08-3550db97e5ec");
+  public static final Resource ActiveDirectoryConfigurationUsage = new Resource("5ab9c632-c7cd-11ec-a59e-d1c88102a398");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +47,4 @@ public class AuthnPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn,hsxpqOPSxEZoPGQ5IVJEIAy2lkA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn,BDXZX2NNNa3otfxCg+szBl+ffBA=] */

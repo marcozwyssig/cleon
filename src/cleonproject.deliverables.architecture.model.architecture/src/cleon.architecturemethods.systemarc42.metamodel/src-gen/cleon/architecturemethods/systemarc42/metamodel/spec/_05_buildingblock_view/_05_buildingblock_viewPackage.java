@@ -62,7 +62,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
-  public static final Resource SystemConfiguration_allowDNSRecords = new Resource("bc63db35-9ac8-11ec-ab52-6fe59505f62a");
+  public static final Resource SystemConfiguration_allowDNSRecord = new Resource("4f6e6cc7-c7ce-11ec-a59e-d1c88102a398");
   
   /* Begin Protected Region [[user]] */
   
@@ -83,4 +83,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,jvTKlLU2DF7uAQBe1gWZizbALnw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,GoeDSKqUvKK/dvVKNxC3ecz5C9s=] */

@@ -133,8 +133,8 @@ public class FunctionSpace_Access {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
       /* Begin Protected Region [[eb8338db-1ea3-11eb-9eef-0dadb2b460da]] */
-      final ISourceFunctions sourceFunctions = to.selectSourceForAccess().extension(ISourceFunctions.class);
-      final List<IAbstractService> portServices = sourceFunctions.AllServicesFlatten();
+      final var sourceFunctions = to.selectSourceForAccess().extension(ISourceFunctions.class);
+      final var portServices = sourceFunctions.AllServicesFlatten();
       return accessCommunicationTypeList.stream()
       		.filter(x -> x.selectServicesForAccess().stream().anyMatch(y -> portServices.contains(y)))
       		.collect(Collectors.toList());
@@ -231,7 +231,7 @@ public class FunctionSpace_Access {
     public java.lang.String Decorate(final java.lang.String hostName);
 
     @IDynamicResourceExtension.MethodId("eed5880a-c906-11eb-afd9-772a261eb5f0")
-    public java.lang.Boolean SkipDomainPrefix();
+    public java.lang.Boolean UseFQDN();
 
   }
   
@@ -241,7 +241,7 @@ public class FunctionSpace_Access {
     public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("eed5880a-c906-11eb-afd9-772a261eb5f0")
-    public java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
+    public java.lang.Boolean UseFQDN(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
   }
   
@@ -257,8 +257,8 @@ public class FunctionSpace_Access {
     }
 
     @Override
-    public java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
-      return accessConfigurationService.selectSkipDomainPrefix() == null || accessConfigurationService.selectSkipDomainPrefix().booleanValue() == false;
+    public java.lang.Boolean UseFQDN(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+      return accessConfigurationService.selectUseFQDN() == null || accessConfigurationService.selectUseFQDN().booleanValue();
     }
 
   }
@@ -271,8 +271,8 @@ public class FunctionSpace_Access {
       return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).Decorate(hostName, accessConfigurationService);
     }
 
-    public static java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
-      return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).SkipDomainPrefix(accessConfigurationService);
+    public static java.lang.Boolean UseFQDN(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+      return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).UseFQDN(accessConfigurationService);
     }
 
   }
@@ -429,4 +429,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,p5HyHdCqeDfdNo8O0UKRg+G5drE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,0b9mbS4Rqh39+npwuoPO8K7FdQk=] */

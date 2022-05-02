@@ -51,7 +51,7 @@ public class AccessPackage {
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeVNC = new Resource("488bdfae-c1f0-11eb-8c09-03c14294ecfb");
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeWebSecure = new Resource("50b3467d-c1f0-11eb-8c09-03c14294ecfb");
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeWebUnsecure = new Resource("58b4fc9f-c1f0-11eb-8c09-03c14294ecfb");
-  public static final Resource AccessConfigurationService_skipDomainPrefix = new Resource("d39c08d9-c905-11eb-afd9-772a261eb5f0");
+  public static final Resource AccessConfigurationService_useFQDN = new Resource("d39c08d9-c905-11eb-afd9-772a261eb5f0");
   public static final Resource AccessConfiguration_purpose = new Resource("aae217f5-84df-11ec-8ce3-4fc564ebb802");
   public static final Resource Purpose = new Resource("b7bb9567-84df-11ec-8ce3-4fc564ebb802");
   public static final Resource Purpose_Management = new Resource("bbb3d127-84df-11ec-8ce3-4fc564ebb802");
@@ -77,4 +77,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,/JFuKn26kSzT5KC4qb3Oo5TbPFQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,bG42uKEQQG2fyu89zHjhAPBzW64=] */

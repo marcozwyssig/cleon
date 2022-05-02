@@ -31,21 +31,21 @@ public class AccessConfigurationWebService extends DynamicResource implements IA
   // attributes
   
   @Override
-  public java.lang.Boolean selectSkipDomainPrefix() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix);
-  }
-    
-  public void setSkipDomainPrefix(java.lang.Boolean skipDomainPrefix) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix, skipDomainPrefix);
-  }
-
-  @Override
   public java.lang.String selectUrlpath() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWebService_urlpath);
   }
     
   public void setUrlpath(java.lang.String urlpath) {
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWebService_urlpath, urlpath);
+  }
+
+  @Override
+  public java.lang.Boolean selectUseFQDN() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_useFQDN);
+  }
+    
+  public void setUseFQDN(java.lang.Boolean useFQDN) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_useFQDN, useFQDN);
   }
 
   // relations
@@ -94,8 +94,8 @@ public class AccessConfigurationWebService extends DynamicResource implements IA
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWebService_urlpath, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_useFQDN, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IHostAccessMode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_hostAccessMode, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_service, visitor);
@@ -103,4 +103,4 @@ public class AccessConfigurationWebService extends DynamicResource implements IA
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f9a055fc-bfcc-11eb-af9a-7dff6e60ee1f,HdkQlf9j7cwiyWMvqIYFZK/TqW4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f9a055fc-bfcc-11eb-af9a-7dff6e60ee1f,7mtpFzGqT3nYgNWHsRPtodHL6Zw=] */

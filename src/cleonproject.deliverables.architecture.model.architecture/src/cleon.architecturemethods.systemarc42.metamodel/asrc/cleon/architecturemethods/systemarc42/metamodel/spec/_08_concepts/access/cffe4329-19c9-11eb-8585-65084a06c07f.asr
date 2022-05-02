@@ -1990,7 +1990,7 @@
                 <object statement-guid="eed5af1c-c906-11eb-afd9-772a261eb5f0" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="efea79f1-c906-11eb-afd9-772a261eb5f0" type="literal">SkipDomainPrefix</object>
+                <object statement-guid="efea79f1-c906-11eb-afd9-772a261eb5f0" type="literal">UseFQDN</object>
               </predicate>
               <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
                 <object statement-guid="f9eae6ef-c906-11eb-afd9-772a261eb5f0">
@@ -2008,7 +2008,7 @@
                 <object statement-guid="eed5d62d-c906-11eb-afd9-772a261eb5f0" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="fcbea063-c906-11eb-afd9-772a261eb5f0" type="literal">return accessConfigurationService.selectSkipDomainPrefix() == null || accessConfigurationService.selectSkipDomainPrefix().booleanValue() == false;</object>
+                <object statement-guid="fcbea063-c906-11eb-afd9-772a261eb5f0" type="literal">return accessConfigurationService.selectUseFQDN() == null || accessConfigurationService.selectUseFQDN().booleanValue();</object>
               </predicate>
             </resource>
           </object>

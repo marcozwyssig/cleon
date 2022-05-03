@@ -41,11 +41,11 @@ public class Text extends DynamicResource implements IText {
 
   @Override
   public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text);
   }
     
   public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, text);
   }
 
   // relations
@@ -85,15 +85,17 @@ public class Text extends DynamicResource implements IText {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, visitor);
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
   public static java.util.List<cleon.common.doc.metamodel.spec.paragraph.javamodel.IText> selectToMeStyle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle object) {
     return _getToMeList(object.getRepository(), cleon.common.doc.metamodel.spec.paragraph.javamodel.IText.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,SMnNwsNsnRKxQVchracbtF8Qdi4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,BXQ7uekaX/4Z1Nhmf+nhiUaZB54=] */

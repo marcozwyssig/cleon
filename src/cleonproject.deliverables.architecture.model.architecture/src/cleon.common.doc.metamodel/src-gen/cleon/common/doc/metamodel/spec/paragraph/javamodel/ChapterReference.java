@@ -41,11 +41,11 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
 
   @Override
   public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text);
   }
     
   public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, text);
   }
 
   // relations
@@ -95,7 +95,7 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, visitor);
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapter, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
@@ -109,4 +109,4 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,OXJO64Vu7X4VCPhUHsaYqggSOHU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,r6BMDqel4Pyeb77T6no+faeuKF0=] */

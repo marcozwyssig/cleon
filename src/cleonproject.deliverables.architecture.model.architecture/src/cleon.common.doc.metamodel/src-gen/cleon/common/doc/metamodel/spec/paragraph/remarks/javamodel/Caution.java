@@ -50,11 +50,11 @@ public class Caution extends DynamicResource implements ICaution {
 
   @Override
   public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text);
   }
     
   public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, text);
   }
 
   // relations
@@ -101,4 +101,4 @@ public class Caution extends DynamicResource implements ICaution {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,msaRLzBqmuDme790GMC+JrL2GCY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,Ynae/5ZZ05U6ifoQ24MgriZEa68=] */

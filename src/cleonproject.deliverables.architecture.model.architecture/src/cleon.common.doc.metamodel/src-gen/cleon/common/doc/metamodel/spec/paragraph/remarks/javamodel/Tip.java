@@ -50,11 +50,11 @@ public class Tip extends DynamicResource implements ITip {
 
   @Override
   public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text);
   }
     
   public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, text);
   }
 
   // relations
@@ -101,4 +101,4 @@ public class Tip extends DynamicResource implements ITip {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4596644-466d-11e5-ba74-cb2e95044e1c,ZO3d4a0W9nBKUquD/Q/NP3x9gQc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4596644-466d-11e5-ba74-cb2e95044e1c,zTTxc6CPkLMJIWAF0X7Iu3EKqAA=] */

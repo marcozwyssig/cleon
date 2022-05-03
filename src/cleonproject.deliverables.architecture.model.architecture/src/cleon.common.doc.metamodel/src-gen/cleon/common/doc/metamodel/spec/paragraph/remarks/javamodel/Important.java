@@ -50,11 +50,11 @@ public class Important extends DynamicResource implements IImportant {
 
   @Override
   public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text);
   }
     
   public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, text);
   }
 
   // relations
@@ -101,4 +101,4 @@ public class Important extends DynamicResource implements IImportant {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a88de814-466d-11e5-ba74-cb2e95044e1c,Bm2nRc6PkfqW4HWdlU3bk/JmH+Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a88de814-466d-11e5-ba74-cb2e95044e1c,rHASNg15BsjBu5o0N/dXmGbaZdk=] */

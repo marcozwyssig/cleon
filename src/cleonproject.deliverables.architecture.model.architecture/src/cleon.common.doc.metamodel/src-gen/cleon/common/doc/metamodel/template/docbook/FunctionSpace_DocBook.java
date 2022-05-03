@@ -222,6 +222,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface INamedTextFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("68c5ffd3-cac4-11ec-8012-87976b97438b")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface INamedTextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedTextFunctionsImpl implements INamedTextFunctionsImpl {
+
+    public static final INamedTextFunctionsImpl INSTANCE = new NamedTextFunctionsImpl();
+
+    private NamedTextFunctionsImpl() {}
+
+  }
+  
+  public static class NamedTextFunctions {
+
+    private NamedTextFunctions() {}
+
+  }
+
   public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("221b5218-dbc4-11ea-b71c-ade06d3dafe4")
@@ -929,4 +954,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,yRvZkN7dY3fOu50tFd8R/ALAEz8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,JSIG33y3C80w4JYSDoR5L0FNCsE=] */

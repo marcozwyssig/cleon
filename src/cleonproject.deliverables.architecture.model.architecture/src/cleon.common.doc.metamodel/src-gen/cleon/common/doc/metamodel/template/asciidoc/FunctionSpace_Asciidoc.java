@@ -118,6 +118,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface INamedTextFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1186af39-cac5-11ec-8012-87976b97438b")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface INamedTextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedTextFunctionsImpl implements INamedTextFunctionsImpl {
+
+    public static final INamedTextFunctionsImpl INSTANCE = new NamedTextFunctionsImpl();
+
+    private NamedTextFunctionsImpl() {}
+
+  }
+  
+  public static class NamedTextFunctions {
+
+    private NamedTextFunctions() {}
+
+  }
+
   public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b627b635-dbc4-11ea-b71c-ade06d3dafe4")
@@ -800,4 +825,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Iq51VEXUE2GmsBWiHokqp3MO02s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cM5Oa+iuk+1219HTsqfPdGMMZXc=] */

@@ -13,7 +13,7 @@ public class SpecPackage {
   public static final Resource OnlyStandardElementsChapter = new Resource("7ab7c627-e98b-11e8-af5c-a5aa9dc47205");
   public static final Resource StandardDocumentElement = new Resource("a1b0bb10-e98b-11e8-af5c-a5aa9dc47205");
   public static final Resource ChapterAware_chapters = new Resource("6b3c6f05-ff96-11e8-9d0c-c96c1e9b7b46");
-  public static final Resource OnlyStandardElementsChapter_paragraphs = new Resource("35ca8713-ff97-11e8-9d0c-c96c1e9b7b46");
+  public static final Resource OnlyStandardElementsChapter_standardParagraphs = new Resource("35ca8713-ff97-11e8-9d0c-c96c1e9b7b46");
   public static final Resource OnlyStandardElementsChapter_chapters = new Resource("35ca8714-ff97-11e8-9d0c-c96c1e9b7b46");
   public static final Resource FunctionSpace_aE_Doc_DocumentElement = new Resource("ce8cc81a-084c-11e9-9ee8-c54fda7ab431");
   public static final Resource ChapterAware = new Resource("a97ec1a8-2169-11e9-a054-db6d80fba790");
@@ -41,4 +41,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec,n678mtBBQDTPdzmoEWBG23PJbWc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec,x9ZUCAQkyYsfDAUldO5c4KXbJtI=] */

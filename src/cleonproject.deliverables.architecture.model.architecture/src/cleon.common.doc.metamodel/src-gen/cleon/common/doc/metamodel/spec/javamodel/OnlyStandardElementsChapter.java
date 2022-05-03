@@ -13,8 +13,8 @@ public abstract class OnlyStandardElementsChapter extends DynamicResource implem
   
   // toMeRelations
   
-  public static cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter selectToMeParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_paragraphs, object.getResource());
+  public static cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter selectToMeStandardParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs, object.getResource());
   }
   
   public static cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter selectToMeChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter object) {
@@ -22,4 +22,4 @@ public abstract class OnlyStandardElementsChapter extends DynamicResource implem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ab7c627-e98b-11e8-af5c-a5aa9dc47205,j5WgJFJC0pTmGht4/2R4WzAivgs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ab7c627-e98b-11e8-af5c-a5aa9dc47205,hzYiENmru6y1u2BM/6iPfSrSd9w=] */

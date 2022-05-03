@@ -61,12 +61,12 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemScope> selectDnsSystemScope() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemScope.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_dnsSystemScope);
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectCustomChapters() {
+    return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_customChapters);
   }
 
-  public DNSConcept setDnsSystemScope(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemScope> dnsSystemScope) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_dnsSystemScope, dnsSystemScope);
+  public DNSConcept setCustomChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> customChapters) {
+    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_customChapters, customChapters);
     return this;
   }
     
@@ -91,12 +91,12 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcept> selectSystemConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystem_systemConcept);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope selectScope() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_scope);
   }
 
-  public DNSConcept setSystemConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcept> systemConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystem_systemConcept, systemConcept);
+  public DNSConcept setScope(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope scope) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_scope, scope);
     return this;
   }
     
@@ -117,16 +117,21 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemScope.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_dnsSystemScope, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_customChapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_scope, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept selectToMeDnsSystemScope(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemScope object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_dnsSystemScope, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept selectToMeCustomChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_customChapters, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept selectToMeScope(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.DnsPackage.DNSConcept_scope, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,/ZAJKmGMLK4o4Ugca5ZbdqQOLlw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,aSvVZgvIZUZuc1gjl6jemQASbrw=] */

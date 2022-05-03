@@ -53,7 +53,7 @@ public class FunctionSpace_Network {
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> GetNodes();
 
     @IDynamicResourceExtension.MethodId("e7ef1f46-5176-11ea-b9cb-85bbdfd861be")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodes();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> AllHostNodes();
 
     @IDynamicResourceExtension.MethodId("fd85db1d-5176-11ea-b9cb-85bbdfd861be")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllAbstractHosts();
@@ -184,7 +184,7 @@ public class FunctionSpace_Network {
 
   }
 
-  public static interface IHostNodeFunctions extends IDynamicResourceExtension {
+  public static interface INetworkHostNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da20bbed-ca55-11e9-83b0-559396620907")
     public java.lang.String Name();
@@ -199,7 +199,7 @@ public class FunctionSpace_Network {
     public java.lang.String Guid(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts abstractNetdomainHosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
     @IDynamicResourceExtension.MethodId("fd907b14-a0f4-11ea-9ce3-334b0943657e")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodes();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> AllNetworkHostNodes();
 
     @IDynamicResourceExtension.MethodId("80fe48ff-f40a-11ea-ade2-eb32c9704a85")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept NetworkConcept();
@@ -208,34 +208,34 @@ public class FunctionSpace_Network {
     public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain DefaultDomain();
 
     @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
 
     @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
     public java.lang.Boolean DNSRecordSet();
 
   }
   
-  public static interface IHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList);
 
     @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
-    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode);
+    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode);
 
   }
   
-  public static class HostNodeFunctionsImpl implements IHostNodeFunctionsImpl {
+  public static class NetworkHostNodeFunctionsImpl implements INetworkHostNodeFunctionsImpl {
 
-    public static final IHostNodeFunctionsImpl INSTANCE = new HostNodeFunctionsImpl();
+    public static final INetworkHostNodeFunctionsImpl INSTANCE = new NetworkHostNodeFunctionsImpl();
 
-    private HostNodeFunctionsImpl() {}
+    private NetworkHostNodeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList) {
       /* Begin Protected Region [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
-      return hostNodeList.stream().filter(x -> {
-      	final var functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions.class);
+      return networkHostNodeList.stream().filter(x -> {
+      	final var functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkHostNodeFunctions.class);
       	if( x.selectRestrictToDomains().isEmpty() ) {
       		return functions.DefaultDomain().equals(domain);
       	}
@@ -246,28 +246,28 @@ public class FunctionSpace_Network {
     }
 
     @Override
-    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode) {
+    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode) {
       /* Begin Protected Region [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
-      if( hostNode.selectExportDNSRecord() == null) {
+      if( networkHostNode.selectExportDNSRecord() == null) {
       	return true;
       }
 
-      return hostNode.selectExportDNSRecord();
+      return networkHostNode.selectExportDNSRecord();
       /* End Protected Region   [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
     }
 
   }
   
-  public static class HostNodeFunctions {
+  public static class NetworkHostNodeFunctions {
 
-    private HostNodeFunctions() {}
+    private NetworkHostNodeFunctions() {}
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
-      return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNodeList).InDomain(domain, hostNodeList);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList) {
+      return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNodeList).InDomain(domain, networkHostNodeList);
     }
 
-    public static java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode) {
-      return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNode).DNSRecordSet(hostNode);
+    public static java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode) {
+      return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNode).DNSRecordSet(networkHostNode);
     }
 
   }
@@ -370,4 +370,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,SNC9ertsHJ9q/aHZSEt1KIeBskM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,d8zQTwwB/JDcg/pf9kUa99qDWgA=] */

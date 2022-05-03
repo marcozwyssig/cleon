@@ -11,7 +11,7 @@ public class XmlPackage {
   public static final Resource FunctionSpace_aE_XML_AbstractNetworkNode = new Resource("be1cf660-90da-11e9-b29b-f1077960b1fa");
   public static final Resource FunctionSpace_aE_XML_GatewayNode = new Resource("d41225d8-90da-11e9-b29b-f1077960b1fa");
   public static final Resource FunctionSpace_aE_XML_NamedNetworkNode = new Resource("f089bf0e-90da-11e9-b29b-f1077960b1fa");
-  public static final Resource FunctionSpace_aE_XML_HostNode = new Resource("de1344b9-4836-11ea-a9d8-93d0ce680cba");
+  public static final Resource FunctionSpace_aE_XML_NetworkHostNode = new Resource("de1344b9-4836-11ea-a9d8-93d0ce680cba");
   public static final Resource Architecture__T_xml_BuildingBlock = new Resource("f84a8b66-bfa7-11ea-b8b1-7728028c2e32");
   public static final Resource Zones__T_xml_SecuritySubZone = new Resource("e9882e0b-c856-11ea-b1f9-8da009c98a7a");
   public static final Resource ServerNodes__T_xml_Node = new Resource("4691953f-e37b-11ea-90a0-29b751c6ace9");
@@ -50,4 +50,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,oSd20F5ARsPwSRofB55oUY9WDsI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,VE3ej9ff1pCpi5j2LF4N6VmKFic=] */

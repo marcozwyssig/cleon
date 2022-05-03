@@ -16,7 +16,7 @@ import ch.actifsource.core.validation.inconsistency.SingleResourceInconsistency;
 import ch.actifsource.core.validation.quickfix.AbstractQuickFix;
 import ch.actifsource.util.inconsistency.InconsistencyType;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkHostNodeFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
 
 public class HostNodeValidationAspect implements IResourceValidationAspect {
@@ -25,11 +25,11 @@ public class HostNodeValidationAspect implements IResourceValidationAspect {
 	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
 		final var typeSystem = TypeSystem.create(context.getReadJobExecutor());
 		final var resourceRepository = typeSystem.getResourceRepository();
-		final var hostNode = resourceRepository.getResource(IHostNode.class, context.getResource());
-		final var hostNodeFunctions = hostNode.extension(IHostNodeFunctions.class);
-		final var hostNodes = hostNodeFunctions.AllHostNodes();
+		final var hostNode = resourceRepository.getResource(INetworkHostNode.class, context.getResource());
+		final var hostNodeFunctions = hostNode.extension(INetworkHostNodeFunctions.class);
+		final var hostNodes = hostNodeFunctions.AllNetworkHostNodes();
 		var count = 0;
-		for (final IHostNode host : hostNodes) {
+		for (final var host : hostNodes) {
 			if ((host.selectExportDNSRecord() == null) || host.selectExportDNSRecord().booleanValue()) {
 				++count;
 			}

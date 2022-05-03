@@ -24,7 +24,7 @@ public class Hosts_aE_Site__T_csv {
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite HasData(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
 
     @IDynamicResourceExtension.MethodId("b9388bca-f834-11ea-8aa5-7b39f57c0cbc")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> HasDataInSite(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> HasDataInSite(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
 
   }
   
@@ -66,4 +66,4 @@ public class Hosts_aE_Site__T_csv {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,980e7efe-517d-11ea-a946-13c393300b57,4UnkTNYgP+dtmEnhXtoF0gTtzNA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,980e7efe-517d-11ea-a946-13c393300b57,IMyfM+ge6iPrSl3BWOEMuok5L5Y=] */

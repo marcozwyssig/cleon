@@ -10,9 +10,11 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
+import ch.actifsource.core.validation.inconsistency.IResourceInconsistency.NodeRole;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
-import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
+import ch.actifsource.core.validation.inconsistency.SingleResourceInconsistency;
 import ch.actifsource.core.validation.quickfix.AbstractQuickFix;
+import ch.actifsource.util.inconsistency.InconsistencyType;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
@@ -37,28 +39,34 @@ public class HostNodeValidationAspect implements IResourceValidationAspect {
 					Select.simpleName(context.getReadJobExecutor(), hostNode.selectHost().getResource()), count);
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					SpecPackage.AbstractPhysicalNetwork_nodes, errormessage));
+		} else {
+			final var systemConfigurationFunction = hostNode.selectHost().selectInstanceOf()
+					.extension(ISystemConfigurationFunctions.class);
+
+
+			if ( hostNodeFunctions.DNSRecordSet() && !systemConfigurationFunction.AllowDNSRecordExport()) {
+				final var errormessage = "Exporting DNS Records is not allowed. Please disable DNS record export.";
+
+				final AbstractQuickFix quickfix = new AbstractQuickFix("Set export DNS record to false", "", () -> true) {
+
+					@Override
+					protected void doApply(IModifiable modifiable) {
+						Update.createOrModifyStatement(modifiable, context.getPackage(), context.getResource(), SpecPackage.AbstractNetworkNode_exportDNSRecord, LiteralUtil.create(false));
+					}
+				};
+
+				// final var attributeRelation = Select.statementForAttributeOrNull(context.getReadJobExecutor(),
+				// SpecPackage.AbstractNetworkNode_exportDNSRecord,
+				// context.getResource());
+				inconsistencyList.add(new SingleResourceInconsistency(context.getPackage(), context.getResource(), NodeRole.Object, errormessage, InconsistencyType.Error, quickfix ));
+				//inconsistencyList.add(new SingleStatementInconsistency(attributeRelation, errormessage, quickfix));
+			}
+
+
+
 		}
 
-		final var systemConfigurationFunction = hostNode.selectHost().selectInstanceOf()
-				.extension(ISystemConfigurationFunctions.class);
-		if (!(hostNodeFunctions.DNSRecordSet().equals(systemConfigurationFunction.AllowDNSRecordExport()))) {
-			final var errormessage = "Exporting DNS Records is not allowed. Please disable DNS record export.";
 
-			final AbstractQuickFix quickfix = new AbstractQuickFix("Set export DNS record to false", "", () -> true) {
-
-				@Override
-				protected void doApply(IModifiable modifiable) {
-					Update.createOrModifyStatement(modifiable, context.getPackage(), context.getResource(), SpecPackage.AbstractNetworkNode_exportDNSRecord, LiteralUtil.create(false));
-				}
-
-			};
-
-			final var attributeRelation = Select.statementForAttributeOrNull(context.getReadJobExecutor(),
-					SpecPackage.AbstractNetworkNode_exportDNSRecord,
-					context.getResource());
-			inconsistencyList.add(new SingleStatementInconsistency(attributeRelation, errormessage, quickfix));
-
-		}
 
 	}
 }

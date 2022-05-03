@@ -235,7 +235,7 @@ public class FunctionSpace_Network {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
       /* Begin Protected Region [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
       return hostNodeList.stream().filter(x -> {
-      	final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions.class);
+      	final var functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions.class);
       	if( x.selectRestrictToDomains().isEmpty() ) {
       		return functions.DefaultDomain().equals(domain);
       	}
@@ -248,17 +248,11 @@ public class FunctionSpace_Network {
     @Override
     public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode) {
       /* Begin Protected Region [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
-    	var functionSpace = hostNode.selectHost().selectInstanceOf().extension(ISystemConfigurationFunctions.class);
-    	boolean allowedDNSRecord = functionSpace.AllowDNSRecordExport();
-    	if( allowedDNSRecord ) {
-    		return true;
-    	} else {
-    		if (hostNode.selectExportDNSRecord() == null) {
-    			return false;
-    		} else {
-        		return hostNode.selectExportDNSRecord().booleanValue();    			
-    		}
-    	}
+      if( hostNode.selectExportDNSRecord() == null) {
+      	return true;
+      }
+
+      return hostNode.selectExportDNSRecord();
       /* End Protected Region   [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
     }
 
@@ -305,8 +299,8 @@ public class FunctionSpace_Network {
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
       for( final INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().values() ) {
-      	final INetworkSubZoneFunctions subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
-      	final String subzoneName = subZoneFunctions.Name();
+      	final var subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
+      	final var subzoneName = subZoneFunctions.Name();
       	if( subzoneName.equalsIgnoreCase(name)) {
       		return networkSubZone;
       	}

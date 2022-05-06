@@ -23,19 +23,19 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 	private static final String UTF_8 = "UTF-8";
 
 	private static String translate(String langFrom, String langTo, String text) throws IOException {
-		final String urlStr = "https://script.google.com/macros/s/AKfycby_k95UjogH_lhEjy6CGYUW6wZg2ELAKQIp3uB5Iw2PExxRx1RV/exec" + "?q=" + URLEncoder.encode(text, UTF_8) + "&target="
+		final var urlStr = "https://script.google.com/macros/s/AKfycby_k95UjogH_lhEjy6CGYUW6wZg2ELAKQIp3uB5Iw2PExxRx1RV/exec" + "?q=" + URLEncoder.encode(text, UTF_8) + "&target="
 				+ langTo + "&source=" + langFrom;
-		final URL url = new URL(urlStr);
-		final URLConnection con = url.openConnection();
+		final var url = new URL(urlStr);
+		final var con = url.openConnection();
 		con.setRequestProperty("User-Agent", "Mozilla/5.0");
-		try (BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream(), UTF_8)))
+		try (var in = new BufferedReader(new InputStreamReader(con.getInputStream(), UTF_8)))
 		{
-			final StringBuilder response = new StringBuilder();			
+			final var response = new StringBuilder();
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				response.append(inputLine);
 			}
-			return response.toString();		
+			return response.toString();
 		}
 	}
 
@@ -48,18 +48,18 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 	public void initialize(IModifiable modifiable, INode clazz, Package pkg, INode newInstance) {
 
 		try {
-			final ITypeSystem typeSystem = TypeSystem.create(modifiable); 
-			final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+			final var typeSystem = TypeSystem.create(modifiable);
+			final var resourceRepository = typeSystem.getResourceRepository();
 
-			final String targetLanguage = getTargetLanguage(resourceRepository, newInstance);
-			final String sourceLanguage = getSourceLanguage(resourceRepository, newInstance);
+			final var targetLanguage = getTargetLanguage(resourceRepository, newInstance);
+			final var sourceLanguage = getSourceLanguage(resourceRepository, newInstance);
 
 			getSourceText(resourceRepository, newInstance).forEach(sourceText -> {
 				String targetText;
 				try {
 					targetText = translate(sourceLanguage, targetLanguage, sourceText);
 					ch.actifsource.util.log.Logger.instance().logInfo(String.format("Source Language: %s; Target Language: %s; Source Text: %s; Target Text: %s;", sourceLanguage, targetLanguage, sourceText, targetText));
-					setTargetText(modifiable, pkg, newInstance, LiteralUtil.create(targetText));				
+					setTargetText(modifiable, pkg, newInstance, LiteralUtil.create(targetText));
 				} catch (final IOException e) {
 					throw new RuntimeException(e);
 				}
@@ -67,10 +67,10 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 		} catch (final Exception e) {
 			if( e != null)
 			{
-				final StringWriter sw = new StringWriter();
-				final PrintWriter pw = new PrintWriter(sw);
-				e.printStackTrace(pw);			
-				ch.actifsource.util.log.Logger.instance().logError("Exception: " + e.getMessage() + " StackTrace: " + sw);				
+				final var sw = new StringWriter();
+				final var pw = new PrintWriter(sw);
+				e.printStackTrace(pw);
+				ch.actifsource.util.log.Logger.instance().logError("Exception: " + e.getMessage() + " StackTrace: " + sw);
 			}
 
 		}

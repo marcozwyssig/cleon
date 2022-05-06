@@ -6,23 +6,26 @@ import ch.actifsource.core.Package;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.update.IModifiable;
+import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractMultilingualFunctions;
+
 import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 
-public class DescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
+public class LanguageDescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
 	@Override
 	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		final ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
-		return description.selectLanguage().selectCode();		
+		final var description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		return description.selectLanguage().selectCode();
 	}
 
 	@Override
 	protected String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		return getDefaultDescription(dynamicResourceRepository, newInstance).selectLanguageSettings().selectDefaultLanguage().selectCode();
+		final var multilingualDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
+		return multilingualDescription.extension(IAbstractMultilingualFunctions.class).LanguageSettings().selectDefaultLanguage().selectCode();
 	}
 
 	private IMultilingualDescription getDefaultDescription(IDynamicResourceRepository dynamicResourceRepository,
 			INode newInstance) {
-		final ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		final var description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
 		return MultilingualDescription.selectToMeTranslation(description);
 	}
 
@@ -33,7 +36,7 @@ public class DescriptionInitializationAspect extends AbstractMultiLanguageInitia
 
 	@Override
 	protected void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal) {
-		Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions, literal);									
+		Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions, literal);
 	}
 
 }

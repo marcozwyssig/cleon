@@ -87,6 +87,81 @@ public class FunctionSpace_Language {
 
   }
 
+  public static interface IAbstractMultilingualFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5dc9f105-cd3c-11ec-85c9-011c467ea292")
+    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IAbstractMultilingualFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractMultilingualFunctionsImpl implements IAbstractMultilingualFunctionsImpl {
+
+    public static final IAbstractMultilingualFunctionsImpl INSTANCE = new AbstractMultilingualFunctionsImpl();
+
+    private AbstractMultilingualFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractMultilingualFunctions {
+
+    private AbstractMultilingualFunctions() {}
+
+  }
+
+  public static interface IMultilingualNameWithLanguageSettingsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("92a82004-cd42-11ec-85c9-011c467ea292")
+    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IMultilingualNameWithLanguageSettingsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MultilingualNameWithLanguageSettingsFunctionsImpl implements IMultilingualNameWithLanguageSettingsFunctionsImpl {
+
+    public static final IMultilingualNameWithLanguageSettingsFunctionsImpl INSTANCE = new MultilingualNameWithLanguageSettingsFunctionsImpl();
+
+    private MultilingualNameWithLanguageSettingsFunctionsImpl() {}
+
+  }
+  
+  public static class MultilingualNameWithLanguageSettingsFunctions {
+
+    private MultilingualNameWithLanguageSettingsFunctions() {}
+
+  }
+
+  public static interface IMultilingualDescriptionWithLanguageSettingsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fccce81d-cd44-11ec-85c9-011c467ea292")
+    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IMultilingualDescriptionWithLanguageSettingsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MultilingualDescriptionWithLanguageSettingsFunctionsImpl implements IMultilingualDescriptionWithLanguageSettingsFunctionsImpl {
+
+    public static final IMultilingualDescriptionWithLanguageSettingsFunctionsImpl INSTANCE = new MultilingualDescriptionWithLanguageSettingsFunctionsImpl();
+
+    private MultilingualDescriptionWithLanguageSettingsFunctionsImpl() {}
+
+  }
+  
+  public static class MultilingualDescriptionWithLanguageSettingsFunctions {
+
+    private MultilingualDescriptionWithLanguageSettingsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,1RYzpJ+o8sn9yarKwLJ247d4dQc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,4jfg0xjkkIqER0saaz+QRMXaljw=] */

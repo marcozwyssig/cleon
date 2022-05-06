@@ -152,6 +152,31 @@ public class FunctionSpace_Sensor {
 
   }
 
+  public static interface ISensorClassFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("70061dc5-cd41-11ec-85c9-011c467ea292")
+    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface ISensorClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SensorClassFunctionsImpl implements ISensorClassFunctionsImpl {
+
+    public static final ISensorClassFunctionsImpl INSTANCE = new SensorClassFunctionsImpl();
+
+    private SensorClassFunctionsImpl() {}
+
+  }
+  
+  public static class SensorClassFunctions {
+
+    private SensorClassFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,POfkuEq7BSrTC0wDa3M64H9Lm4I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,G//8QS8ym0EPpD6ZyOd5pGlnrDs=] */

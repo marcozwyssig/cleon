@@ -17,7 +17,7 @@ public class SpecPackage {
   public static final Resource LanguageDescription_language = new Resource("e27afaae-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualDescription_translation = new Resource("ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName = new Resource("1564455b-3360-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource AbstractMultilingual_languageSettings = new Resource("1564455c-3360-11e8-a9fe-87ba35d8f5c4");
+  public static final Resource LanguageSettingsAware_languageSettings = new Resource("1564455c-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName_defaultName = new Resource("15644565-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName_names = new Resource("1564456e-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageName = new Resource("27d0007a-3360-11e8-a9fe-87ba35d8f5c4");
@@ -25,6 +25,12 @@ public class SpecPackage {
   public static final Resource AbstractMultilingual = new Resource("a302d9a3-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource FunctionSpace_aE_Language_LanguageSettings = new Resource("7cee5ac4-3361-11e8-a9fe-87ba35d8f5c4");
   public static final Resource FunctionSpace_aE_Language_MultilingualDescription = new Resource("9e273939-f382-11ea-9268-b5c52a12d7f9");
+  public static final Resource LanguageSettingsAware = new Resource("ffbf6300-cd3b-11ec-85c9-011c467ea292");
+  public static final Resource FunctionSpace_aE_Language_AbstractMultilingual = new Resource("543b0ae3-cd3c-11ec-85c9-011c467ea292");
+  public static final Resource MultilingualNameWithLanguageSettings = new Resource("7164f4d7-cd42-11ec-85c9-011c467ea292");
+  public static final Resource FunctionSpace_aE_Language_MultilingualNameWithLanguageSettings = new Resource("8999db0e-cd42-11ec-85c9-011c467ea292");
+  public static final Resource MultilingualDescriptionWithLanguageSettings = new Resource("e33e3da3-cd44-11ec-85c9-011c467ea292");
+  public static final Resource FunctionSpace_aE_Language_MultilingualDescriptionWithLanguageSettings = new Resource("fccce815-cd44-11ec-85c9-011c467ea292");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +51,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,YSSTd+tzLfSCxeaj3ASnFmOCGsA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,WLuwQ9w8Z1a0WHtnBRZMl0yAb3c=] */

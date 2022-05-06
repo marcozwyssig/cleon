@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db51ae5e-c1eb-11ea-820f-9931558a898c">
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
-    <resource statement-guid="6b9f31fe-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="6b9ee3da-f380-11ea-9268-b5c52a12d7f9" />
+    <resource statement-guid="90a1685e-cd44-11ec-85c9-011c467ea292" type="resource" guid="90a11a3a-cd44-11ec-85c9-011c467ea292" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db51ae60-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
@@ -16,22 +16,22 @@
     <object statement-guid="f430032f-f37d-11ea-9268-b5c52a12d7f9" type="literal">Monitors the performance of an instance of Microsoft SQL Server 2012</object>
   </predicate>
   <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
-    <object statement-guid="6b9f31fe-f380-11ea-9268-b5c52a12d7f9">
-      <resource guid="6b9ee3da-f380-11ea-9268-b5c52a12d7f9">
+    <object statement-guid="90a1685e-cd44-11ec-85c9-011c467ea292">
+      <resource guid="90a11a3a-cd44-11ec-85c9-011c467ea292">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6b9ee3dc-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="90a1414c-cd44-11ec-85c9-011c467ea292" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
         </predicate>
         <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="6c30275f-f380-11ea-9268-b5c52a12d7f9" type="literal">Überwacht die Leistung einer Instanz von Microsoft SQL Server 2012</object>
+          <object statement-guid="924e2e01-cd44-11ec-85c9-011c467ea292" type="literal">Überwacht die Leistung einer Instanz von Microsoft SQL Server 2012</object>
         </predicate>
         <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
-          <object statement-guid="6b9f0aed-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="90a1685d-cd44-11ec-85c9-011c467ea292" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
         </predicate>
       </resource>
     </object>
   </predicate>
   <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
-    <object statement-guid="553c3795-f37e-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
+    <object statement-guid="87e86fac-cd44-11ec-85c9-011c467ea292" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c268e651-cfeb-11ea-99e7-03141914df18" type="literal">WMI Microsoft SQL Server 2012</object>

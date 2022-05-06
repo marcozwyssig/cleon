@@ -20,7 +20,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.glossary.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
- ch.actifsource.generator;bundle-version="9.0.0"
+ ch.actifsource.generator;bundle-version="9.0.0",
+ cleon.common.language.metamodel.builtin;bundle-version="0.4.149"
 Export-Package: 
  cleon.projectmethods.hermes.metamodel.spec,
  cleon.projectmethods.hermes.metamodel.spec.javamodel,

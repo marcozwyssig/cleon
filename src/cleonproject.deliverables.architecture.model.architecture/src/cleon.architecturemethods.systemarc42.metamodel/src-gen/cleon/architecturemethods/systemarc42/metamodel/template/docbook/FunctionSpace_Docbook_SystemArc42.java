@@ -1164,6 +1164,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IDNSSystemIntegrationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("393210f8-d0f5-11ec-a32f-e7eb43a099bd")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDNSSystemIntegrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DNSSystemIntegrationFunctionsImpl implements IDNSSystemIntegrationFunctionsImpl {
+
+    public static final IDNSSystemIntegrationFunctionsImpl INSTANCE = new DNSSystemIntegrationFunctionsImpl();
+
+    private DNSSystemIntegrationFunctionsImpl() {}
+
+  }
+  
+  public static class DNSSystemIntegrationFunctions {
+
+    private DNSSystemIntegrationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,YkSl7peDPrKvvsg0C4MtjYihRJY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,eZ2JPbCgYFX21HHm75Mzgp88so0=] */

@@ -79,7 +79,7 @@
           <object statement-guid="be754220-c7bb-11ec-a6a4-0b12dcfbdf90" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="be754221-c7bb-11ec-a6a4-0b12dcfbdf90" type="literal">dnsSystemConfigurationScope</object>
+          <object statement-guid="be754221-c7bb-11ec-a6a4-0b12dcfbdf90" type="literal">dnsSystemConfigurationIntegration</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="cacd59b4-c7bb-11ec-a6a4-0b12dcfbdf90">
@@ -194,7 +194,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="e74ed33b-c7ba-11ec-a6a4-0b12dcfbdf90" type="literal">DNSSystemScope</object>
+    <object statement-guid="e74ed33b-c7ba-11ec-a6a4-0b12dcfbdf90" type="literal">DNSSystemIntegration</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="0167aa4e-cacd-11ec-8012-87976b97438b">
@@ -279,7 +279,7 @@
                       <object statement-guid="1be2af34-cacd-11ec-8012-87976b97438b" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="1be2af35-cacd-11ec-8012-87976b97438b" type="literal"> DNS Gültigkeit </object>
+                      <object statement-guid="1be2af35-cacd-11ec-8012-87976b97438b" type="literal"> DNS Integration </object>
                     </predicate>
                   </resource>
                 </object>

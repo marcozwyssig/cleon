@@ -18,7 +18,7 @@ public class FunctionSpace_DNS {
   /* End Protected Region   [[c770edb4-c7ce-11ec-a59e-d1c88102a398]] */
 
 
-  public static interface IDNSSystemConfigurationScopeFunctions extends IDynamicResourceExtension {
+  public static interface IDNSSystemConfigurationIntegrationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("daff088a-c7ce-11ec-a59e-d1c88102a398")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessSystemConfigurationTo> AllAccessConfigurationTo();
@@ -28,24 +28,24 @@ public class FunctionSpace_DNS {
 
   }
   
-  public static interface IDNSSystemConfigurationScopeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDNSSystemConfigurationIntegrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DNSSystemConfigurationScopeFunctionsImpl implements IDNSSystemConfigurationScopeFunctionsImpl {
+  public static class DNSSystemConfigurationIntegrationFunctionsImpl implements IDNSSystemConfigurationIntegrationFunctionsImpl {
 
-    public static final IDNSSystemConfigurationScopeFunctionsImpl INSTANCE = new DNSSystemConfigurationScopeFunctionsImpl();
+    public static final IDNSSystemConfigurationIntegrationFunctionsImpl INSTANCE = new DNSSystemConfigurationIntegrationFunctionsImpl();
 
-    private DNSSystemConfigurationScopeFunctionsImpl() {}
+    private DNSSystemConfigurationIntegrationFunctionsImpl() {}
 
   }
   
-  public static class DNSSystemConfigurationScopeFunctions {
+  public static class DNSSystemConfigurationIntegrationFunctions {
 
-    private DNSSystemConfigurationScopeFunctions() {}
+    private DNSSystemConfigurationIntegrationFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,YQ6X1BFEk0tFDtZ77FP1vmayLj8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,uo23eB9NltF0s19DoJSf54eIuRI=] */

@@ -10,8 +10,8 @@ public interface IDNSConcept extends cleon.architecturemethods.systemarc42.metam
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectCustomChapters();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSScope selectScope();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSIntegration selectIntegration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,DfI4TKHbkZi+XKhZiDKzbh0JkRQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,xEvnVbBeYS/XHuhNcIX4OxSpFw4=] */

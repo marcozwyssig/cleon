@@ -31,7 +31,7 @@
           <object statement-guid="eed82629-c7ba-11ec-a6a4-0b12dcfbdf90" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="efcd5bcd-c7ba-11ec-a6a4-0b12dcfbdf90" type="literal">dnsSystemScope</object>
+          <object statement-guid="efcd5bcd-c7ba-11ec-a6a4-0b12dcfbdf90" type="literal">dnsSystemIntegration</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="1c8fd57a-c7bc-11ec-a6a4-0b12dcfbdf90">
@@ -64,7 +64,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="a7794207-cad1-11ec-896e-55850dc397b1" type="literal">DNSScope</object>
+    <object statement-guid="a7794207-cad1-11ec-896e-55850dc397b1" type="literal">DNSIntegration</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b7cc876b-cad2-11ec-896e-55850dc397b1">
@@ -88,7 +88,7 @@
                       <object statement-guid="b9e6dc1e-cad2-11ec-896e-55850dc397b1" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="b9e6dc1f-cad2-11ec-896e-55850dc397b1" type="literal">DNS Gültigkeitsbereich</object>
+                      <object statement-guid="b9e6dc1f-cad2-11ec-896e-55850dc397b1" type="literal">DNS Integration</object>
                     </predicate>
                   </resource>
                 </object>

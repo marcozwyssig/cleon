@@ -106,6 +106,31 @@ public class FunctionsSpace_systemArc42_Template {
 
   }
 
+  public static interface IDNSConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b80b64b4-d0f2-11ec-a32f-e7eb43a099bd")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface IDNSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DNSConceptFunctionsImpl implements IDNSConceptFunctionsImpl {
+
+    public static final IDNSConceptFunctionsImpl INSTANCE = new DNSConceptFunctionsImpl();
+
+    private DNSConceptFunctionsImpl() {}
+
+  }
+  
+  public static class DNSConceptFunctions {
+
+    private DNSConceptFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,3lBf4yP05+W3iVeEnIntWxEPiy0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,SQTGZC0gDncy1pKJfjvvQqVCVO4=] */

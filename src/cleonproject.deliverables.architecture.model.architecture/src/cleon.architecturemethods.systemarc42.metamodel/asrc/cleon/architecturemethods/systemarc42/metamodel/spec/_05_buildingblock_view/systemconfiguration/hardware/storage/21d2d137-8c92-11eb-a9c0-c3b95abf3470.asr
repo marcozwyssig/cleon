@@ -3,6 +3,8 @@
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
     <resource statement-guid="25c5b63a-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="25c58f27-8c92-11eb-a9c0-c3b95abf3470" />
     <resource statement-guid="274eeda6-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="274ec693-8c92-11eb-a9c0-c3b95abf3470" />
+    <resource statement-guid="9edd2cd2-d032-11ec-a5f1-8f0526a5c708" type="resource" guid="9edd05bf-d032-11ec-a5f1-8f0526a5c708" />
+    <resource statement-guid="a299e6b7-d032-11ec-a5f1-8f0526a5c708" type="resource" guid="a299e6b4-d032-11ec-a5f1-8f0526a5c708" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="21d2f849-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -31,6 +33,26 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="27fedd6c-8c92-11eb-a9c0-c3b95abf3470" type="literal">Nfs</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9edd2cd2-d032-11ec-a5f1-8f0526a5c708">
+      <resource guid="9edd05bf-d032-11ec-a5f1-8f0526a5c708">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9edd05c1-d032-11ec-a5f1-8f0526a5c708" type="resource" guid="21d2d137-8c92-11eb-a9c0-c3b95abf3470" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9f554303-d032-11ec-a5f1-8f0526a5c708" type="literal">SMBv3</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a299e6b7-d032-11ec-a5f1-8f0526a5c708">
+      <resource guid="a299e6b4-d032-11ec-a5f1-8f0526a5c708">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a299e6b6-d032-11ec-a5f1-8f0526a5c708" type="resource" guid="21d2d137-8c92-11eb-a9c0-c3b95abf3470" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2d6efb8-d032-11ec-a5f1-8f0526a5c708" type="literal">SMBv2</object>
         </predicate>
       </resource>
     </object>

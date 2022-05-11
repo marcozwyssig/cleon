@@ -66,6 +66,8 @@ public class Protocol extends DynamicResource implements IProtocol {
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isCifs()) return visitor.visitCifs();
     if (isNfs()) return visitor.visitNfs();
+    if (isSMBv3()) return visitor.visitSMBv3();
+    if (isSMBv2()) return visitor.visitSMBv2();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -77,6 +79,14 @@ public class Protocol extends DynamicResource implements IProtocol {
     }
     if (isNfs()) {
       visitor.visitNfs();
+      return;
+    }
+    if (isSMBv3()) {
+      visitor.visitSMBv3();
+      return;
+    }
+    if (isSMBv2()) {
+      visitor.visitSMBv2();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -94,5 +104,15 @@ public class Protocol extends DynamicResource implements IProtocol {
     return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.Protocol_Nfs);
   }
   
+  @Override
+  public boolean isSMBv3() {
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.Protocol_SMBv3);
+  }
+  
+  @Override
+  public boolean isSMBv2() {
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.Protocol_SMBv2);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21d2d137-8c92-11eb-a9c0-c3b95abf3470,3fQrKMJQFHcUdoSHhZdJ0AM1ZqU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21d2d137-8c92-11eb-a9c0-c3b95abf3470,pmPXK+ZYmxi7ch3PmM+adnU8l0s=] */

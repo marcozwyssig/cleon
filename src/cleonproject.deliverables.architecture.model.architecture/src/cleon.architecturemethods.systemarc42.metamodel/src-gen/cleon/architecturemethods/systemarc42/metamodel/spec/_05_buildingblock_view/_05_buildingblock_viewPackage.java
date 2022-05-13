@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class _05_buildingblock_viewPackage {
   
   public static final Resource SystemWithLayer = new Resource("d6859a6c-99aa-11e8-8f58-219af2c5d6d9");
-  public static final Resource SystemWithLayer_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
+  public static final Resource SystemLayerCompositionAware_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemComponent = new Resource("c0436bff-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
@@ -63,6 +63,9 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfiguration_allowDNSRecord = new Resource("4f6e6cc7-c7ce-11ec-a59e-d1c88102a398");
+  public static final Resource NamedSystemWithSystemLayer = new Resource("4be8fc8d-d28b-11ec-90fa-eddb29a5483c");
+  public static final Resource SystemWithSystemLayer = new Resource("57022c90-d28b-11ec-90fa-eddb29a5483c");
+  public static final Resource SystemLayerCompositionAware = new Resource("710765f1-d28b-11ec-90fa-eddb29a5483c");
   
   /* Begin Protected Region [[user]] */
   
@@ -83,4 +86,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,GoeDSKqUvKK/dvVKNxC3ecz5C9s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,hf037p2IB8BhrGDWXLjdVeyUX6c=] */

@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="d6859a6c-99aa-11e8-8f58-219af2c5d6d9">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="a638b90e-99ac-11e8-8f58-219af2c5d6d9" type="resource" guid="a6381cc7-99ac-11e8-8f58-219af2c5d6d9" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d685c17e-99aa-11e8-8f58-219af2c5d6d9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d6865dc0-99aa-11e8-8f58-219af2c5d6d9" type="resource" guid="5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a" />
     <object statement-guid="4f3137d3-3ec0-11ea-9af7-ad5bf30c585a" type="resource" guid="a3ea83ea-2660-11e6-ae54-e50d44645ae7" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="a638b90e-99ac-11e8-8f58-219af2c5d6d9">
-      <resource guid="a6381cc7-99ac-11e8-8f58-219af2c5d6d9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="366306b3-24c8-11ea-ab3a-c1dd8902bf06" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a6381cc9-99ac-11e8-8f58-219af2c5d6d9" type="literal">layers</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a6381cca-99ac-11e8-8f58-219af2c5d6d9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a6381ccb-99ac-11e8-8f58-219af2c5d6d9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="9449af34-e0fb-11e8-8499-a3b0fb3cad90" type="resource" guid="b894901a-d0b2-11e8-b005-f7630e4c29c0" />
-        </predicate>
-        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
-          <object statement-guid="9852eb48-09cc-11e9-9915-0d353533f3da" type="resource" guid="25752303-85c2-11e3-926c-e10829e9e6c2" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="8772d6b7-d28b-11ec-90fa-eddb29a5483c" type="resource" guid="710765f1-d28b-11ec-90fa-eddb29a5483c" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d6860f9f-99aa-11e8-8f58-219af2c5d6d9" type="literal">SystemWithLayer</object>

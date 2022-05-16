@@ -94,7 +94,7 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("55c53842-394f-11eb-93f1-c3f5ad8bb73f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem> AllSystemsWithAllowedManaged();
 
-    @IDynamicResourceExtension.MethodId("e0c1e137-1bac-11ec-b20c-778c25ff7c96")
+    @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
     public java.lang.String Owner();
 
   }
@@ -222,9 +222,6 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("b22935c5-4ffc-11eb-8df9-adb928521f3a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration sysCfg);
 
-    @IDynamicResourceExtension.MethodId("ed99b08f-1bac-11ec-b20c-778c25ff7c96")
-    public java.lang.String Owner();
-
   }
   
   public static interface IAbstractSiteWithHostsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -306,9 +303,6 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
     public java.lang.String SimpleName();
 
-    @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
-    public java.lang.String Owner();
-
     @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController();
 
@@ -332,6 +326,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("8cf5948b-b259-11eb-84da-a358b37bb644")
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
+
+    @IDynamicResourceExtension.MethodId("e786e6c2-d515-11ec-ad12-8d6f8e00bc94")
+    public java.lang.String Owner();
 
   }
   
@@ -779,6 +776,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IOwnerAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ed99b08f-1bac-11ec-b20c-778c25ff7c96")
+    public java.lang.String Owner();
+
+  }
+  
+  public static interface IOwnerAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OwnerAwareFunctionsImpl implements IOwnerAwareFunctionsImpl {
+
+    public static final IOwnerAwareFunctionsImpl INSTANCE = new OwnerAwareFunctionsImpl();
+
+    private OwnerAwareFunctionsImpl() {}
+
+  }
+  
+  public static class OwnerAwareFunctions {
+
+    private OwnerAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mJqgA4OuzRe5VBWhKk1JE+W4tdE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,u+f0N8caThpfsXp3ziN/FH6EmX8=] */

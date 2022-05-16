@@ -12,7 +12,7 @@ public class TopologyPackage {
   public static final Resource AbstractSiteWithHosts_hosts = new Resource("f6adaa1c-9286-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractHost_instanceOf = new Resource("7c6b2ebe-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractNumberAware_number = new Resource("bccd44a8-9287-11e9-959e-8115c2f9e41e");
-  public static final Resource AbstractSiteWithZone_owner = new Resource("dbfb2465-9287-11e9-959e-8115c2f9e41e");
+  public static final Resource OwnerAware_owner = new Resource("dbfb2465-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractSiteWithZone_zones = new Resource("eb2fa145-928a-11e9-959e-8115c2f9e41e");
   public static final Resource TDM = new Resource("d18bebe1-92b3-11e9-b2b4-f340ae70802c");
   public static final Resource RN = new Resource("3615fdfa-936d-11e9-8139-e76b19cfb4bf");
@@ -81,6 +81,8 @@ public class TopologyPackage {
   public static final Resource Topology_domainPrefix = new Resource("3ddcde7e-2a4f-11eb-903e-7d97d99d39d5");
   public static final Resource AbstractSite_allowedToCentralAccess = new Resource("ffb80d0f-3954-11eb-978d-47c0228773ba");
   public static final Resource AbstractHost_isVirtualized = new Resource("3a6d9100-81a8-11eb-9038-39fb7f2a1e54");
+  public static final Resource OwnerAware = new Resource("ca3494bb-d50c-11ec-ad12-8d6f8e00bc94");
+  public static final Resource FunctionSpace_aE_Topology_OwnerAware = new Resource("99e14b22-d50e-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -101,4 +103,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,eewjbmmWMSZqr6RcqNRSlTa5Yzk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,IV83qL7YRF8gRHajeGVV0fUsPRI=] */

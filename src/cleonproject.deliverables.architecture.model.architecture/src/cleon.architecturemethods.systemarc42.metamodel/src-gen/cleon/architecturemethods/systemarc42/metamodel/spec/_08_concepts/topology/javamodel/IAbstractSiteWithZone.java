@@ -6,12 +6,10 @@ public interface IAbstractSiteWithZone extends cleon.architecturemethods.systema
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fd112c3e-ec15-11e9-8e1e-d59e76bdbf06");
   
-  public java.lang.String selectOwner();
-  
   // relations
   
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> selectZones();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,23TKLy5H9qQoWvBkr2u3NZNG+J8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,PAzCbW8m7gnVXKcSAXUsghISAzs=] */

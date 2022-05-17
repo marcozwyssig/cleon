@@ -20,10 +20,6 @@ public class ActivityPackage {
   public static final Resource AbstractAuthZBuildingBlockPermission = new Resource("912699fe-864a-11eb-9869-4317e18e6c88");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForPermission = new Resource("d21d0b45-864b-11eb-9869-4317e18e6c88");
   public static final Resource ActivityTemplateAware = new Resource("c8872d57-d426-11eb-9862-7f597b9587dd");
-  public static final Resource AuthZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("4e74456d-df5c-11eb-95f9-6d420979d010");
-  public static final Resource AuthZBuildingBlockForActiveDirectoryManagingActorPermission_activeDirectoryManagingActor = new Resource("4e74456e-df5c-11eb-95f9-6d420979d010");
-  public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("7c378291-df5c-11eb-95f9-6d420979d010");
-  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("56917d65-df5d-11eb-95f9-6d420979d010");
   public static final Resource AuthZBuildingBlockPropertyPermission = new Resource("2ec70497-d5be-11ec-ad12-8d6f8e00bc94");
   public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockPropertyPermission = new Resource("4250b2b2-d5be-11ec-ad12-8d6f8e00bc94");
   public static final Resource AuthZBuildingBlockPropertyPermission_property = new Resource("ca64aa16-d5be-11ec-ad12-8d6f8e00bc94");
@@ -48,4 +44,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,ZufCriRaF89sxFyIA81PjGKWdME=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,e8Ds+OAEhV/GnGSIpuVwPk11ScM=] */

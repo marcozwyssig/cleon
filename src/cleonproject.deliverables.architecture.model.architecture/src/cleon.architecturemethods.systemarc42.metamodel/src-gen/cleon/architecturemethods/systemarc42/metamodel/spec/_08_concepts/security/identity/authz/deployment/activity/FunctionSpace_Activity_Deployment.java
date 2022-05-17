@@ -126,17 +126,18 @@ public class FunctionSpace_Activity_Deployment {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
       		for( final var all : authZBuildingBlockForSystemComponent.extension(IAuthZBuildingBlockForSystemComponentFunctions.class).AllBasedOnReverse()) {
       			for( final var roleSystemComponent : RoleSystemComponent.selectToMeSystemComponentRoleTemplate(all)) {
-      				final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);            		
-      				final var abstractSites = roleSystemComponentFunctions.GetAllowedSiteForRoleSystemComponent();
       				if( roleSystemComponent.selectExcludeActivities().contains(activityPermission)) {
       					continue;
       				}
+
+      				final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
+      				final var abstractSites = roleSystemComponentFunctions.GetAllowedSiteForRoleSystemComponent();
       				if( abstractSites.contains(abstractSite) && !roleSystemComponentResult.contains(roleSystemComponent)) {
       					roleSystemComponentResult.add(roleSystemComponent);
       				}
       			}
       		}
-      	}        	
+      	}
       }
       return roleSystemComponentResult;
 

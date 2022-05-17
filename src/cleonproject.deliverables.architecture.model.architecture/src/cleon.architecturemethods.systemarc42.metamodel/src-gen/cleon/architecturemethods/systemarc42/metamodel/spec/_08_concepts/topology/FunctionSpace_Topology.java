@@ -97,6 +97,15 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
     public java.lang.String Owner();
 
+    @IDynamicResourceExtension.MethodId("970d4edc-d5c8-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponents();
+
+    @IDynamicResourceExtension.MethodId("dfb6b05b-d5c8-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith();
+
+    @IDynamicResourceExtension.MethodId("971cc33b-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponentsDistinct();
+
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -176,10 +185,16 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("a808f3f8-9370-11e9-8139-e76b19cfb4bf")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology Topology();
 
+    @IDynamicResourceExtension.MethodId("7090bff2-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith();
+
   }
   
   public static interface IRNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("7090bff2-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN rN);
+
   }
   
   public static class RNFunctionsImpl implements IRNFunctionsImpl {
@@ -188,11 +203,20 @@ public class FunctionSpace_Topology {
 
     private RNFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN rN) {
+      return null;
+    }
+
   }
   
   public static class RNFunctions {
 
     private RNFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN rN) {
+      return DynamicResourceUtil.invoke(IRNFunctionsImpl.class, RNFunctionsImpl.INSTANCE, rN).AllowAccessWith(rN);
+    }
 
   }
 
@@ -263,10 +287,16 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("8289bc8e-93e1-11e9-8139-e76b19cfb4bf")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology Topology();
 
+    @IDynamicResourceExtension.MethodId("8c45cc13-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith();
+
   }
   
   public static interface ITDMFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("8c45cc13-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM tDM);
+
   }
   
   public static class TDMFunctionsImpl implements ITDMFunctionsImpl {
@@ -275,11 +305,20 @@ public class FunctionSpace_Topology {
 
     private TDMFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM tDM) {
+      return null;
+    }
+
   }
   
   public static class TDMFunctions {
 
     private TDMFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM tDM) {
+      return DynamicResourceUtil.invoke(ITDMFunctionsImpl.class, TDMFunctionsImpl.INSTANCE, tDM).AllowAccessWith(tDM);
+    }
 
   }
 
@@ -694,6 +733,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("66d2a1b5-8e02-11ea-b01b-6bc31a0e971d")
     public java.lang.String ShortName();
 
+    @IDynamicResourceExtension.MethodId("3ede2031-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith();
+
   }
   
   public static interface ISiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -801,6 +843,43 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IRemoteSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("87195624-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith();
+
+  }
+  
+  public static interface IRemoteSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("87195624-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRemoteSite remoteSite);
+
+  }
+  
+  public static class RemoteSiteFunctionsImpl implements IRemoteSiteFunctionsImpl {
+
+    public static final IRemoteSiteFunctionsImpl INSTANCE = new RemoteSiteFunctionsImpl();
+
+    private RemoteSiteFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRemoteSite remoteSite) {
+      return null;
+    }
+
+  }
+  
+  public static class RemoteSiteFunctions {
+
+    private RemoteSiteFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRemoteSite remoteSite) {
+      return DynamicResourceUtil.invoke(IRemoteSiteFunctionsImpl.class, RemoteSiteFunctionsImpl.INSTANCE, remoteSite).AllowAccessWith(remoteSite);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,u+f0N8caThpfsXp3ziN/FH6EmX8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,v3zJ5Ei9hK96PFnMYmYVPkTUDC8=] */

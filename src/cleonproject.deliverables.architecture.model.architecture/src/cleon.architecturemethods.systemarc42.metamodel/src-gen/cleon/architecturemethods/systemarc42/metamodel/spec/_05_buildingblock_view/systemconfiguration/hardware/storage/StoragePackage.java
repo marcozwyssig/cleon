@@ -23,6 +23,7 @@ public class StoragePackage {
   public static final Resource StorageSystemConfiguration_netto_aE_capacity_aE__aA_GB_aC_ = new Resource("8b65a3c3-098f-11ec-b426-8bacb7070b3e");
   public static final Resource Protocol_SMBv3 = new Resource("9edd05bf-d032-11ec-a5f1-8f0526a5c708");
   public static final Resource Protocol_SMBv2 = new Resource("a299e6b4-d032-11ec-a5f1-8f0526a5c708");
+  public static final Resource FunctionSpace_aE_Storage_Share = new Resource("1e788a9e-d5d1-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -43,4 +44,4 @@ public class StoragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,Ck5lAdfpeyfCU48Z+cUjFzXVwco=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,xVSM0VTMvnb4CZdlGzJOn6tfbd8=] */

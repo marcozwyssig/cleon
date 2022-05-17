@@ -68,6 +68,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemLayerCompositionAware = new Resource("710765f1-d28b-11ec-90fa-eddb29a5483c");
   public static final Resource SystemConfigurationProperty = new Resource("c4bfa256-d5b6-11ec-ad12-8d6f8e00bc94");
   public static final Resource SystemConfiguration_properties = new Resource("cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfigurationProperty = new Resource("0183aaf2-d5d1-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -88,4 +89,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,zndODV8rzJCpiUYIs8IF/akXhWI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,ZOjV6oI3b62563ewTzhPglfZ+dw=] */

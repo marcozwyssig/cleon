@@ -134,6 +134,31 @@ public class FunctionSpace_Storage {
 
   }
 
+  public static interface IShareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("22579933-d5d1-11ec-ad12-8d6f8e00bc94")
+    public java.lang.String PermissionName();
+
+  }
+  
+  public static interface IShareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ShareFunctionsImpl implements IShareFunctionsImpl {
+
+    public static final IShareFunctionsImpl INSTANCE = new ShareFunctionsImpl();
+
+    private ShareFunctionsImpl() {}
+
+  }
+  
+  public static class ShareFunctions {
+
+    private ShareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,FKMAF6Vi5Iy6QFyZOPfH4Qu9nlA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,YoDrCCaOel0Iq1UDi0Ufz0du5Bw=] */

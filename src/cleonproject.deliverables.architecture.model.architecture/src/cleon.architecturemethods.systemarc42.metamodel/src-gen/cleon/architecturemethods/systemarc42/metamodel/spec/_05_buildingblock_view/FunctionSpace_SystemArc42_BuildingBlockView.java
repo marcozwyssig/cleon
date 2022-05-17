@@ -393,6 +393,31 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   }
 
+  public static interface ISystemConfigurationPropertyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0c3c6b00-d5d1-11ec-ad12-8d6f8e00bc94")
+    public java.lang.String PermissionName();
+
+  }
+  
+  public static interface ISystemConfigurationPropertyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemConfigurationPropertyFunctionsImpl implements ISystemConfigurationPropertyFunctionsImpl {
+
+    public static final ISystemConfigurationPropertyFunctionsImpl INSTANCE = new SystemConfigurationPropertyFunctionsImpl();
+
+    private SystemConfigurationPropertyFunctionsImpl() {}
+
+  }
+  
+  public static class SystemConfigurationPropertyFunctions {
+
+    private SystemConfigurationPropertyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,JLtxda9oaXmYwEJ+UV/sMNWR9F0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,fieaAmNTKvR213l9PdOoxI6k7Mg=] */

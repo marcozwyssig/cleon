@@ -82,6 +82,8 @@ public class TopologyPackage {
   public static final Resource AbstractHost_isVirtualized = new Resource("3a6d9100-81a8-11eb-9038-39fb7f2a1e54");
   public static final Resource OwnerAware = new Resource("ca3494bb-d50c-11ec-ad12-8d6f8e00bc94");
   public static final Resource FunctionSpace_aE_Topology_OwnerAware = new Resource("99e14b22-d50e-11ec-ad12-8d6f8e00bc94");
+  public static final Resource AbstractSite_allowAccessWith = new Resource("62f38fd7-d5c7-11ec-ad12-8d6f8e00bc94");
+  public static final Resource FunctionSpace_aE_Topology_RemoteSite = new Resource("83f643d5-d5c9-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -102,4 +104,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,Z5ASUEQgcIbke+5Kailhxv0M1QU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,zitkmzLuj5SEDnf+IlZoHiEL8r8=] */

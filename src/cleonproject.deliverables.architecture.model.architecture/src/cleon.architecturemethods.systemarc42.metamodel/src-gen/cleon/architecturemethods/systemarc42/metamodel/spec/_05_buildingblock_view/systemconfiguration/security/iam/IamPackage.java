@@ -13,6 +13,7 @@ public class IamPackage {
   public static final Resource ActiveDirectoryManagerSystemConfiguration_managingActor = new Resource("d151343f-df5b-11eb-95f9-6d420979d010");
   public static final Resource ActiveDirectoryManagingActor = new Resource("e0d363b0-df5b-11eb-95f9-6d420979d010");
   public static final Resource ActiveDirectoryManagingActor_actor = new Resource("bbe75fd5-df5c-11eb-95f9-6d420979d010");
+  public static final Resource FunctionSpace_aE_IAM_ActiveDirectoryManagingActor = new Resource("ad5db25a-d5d2-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class IamPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,wH9NCMdP7l9aHJnqDCwaB9Z3Jg8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,5w6x5kbaoXzmBU9S9eMw96wDzSc=] */

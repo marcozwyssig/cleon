@@ -96,16 +96,6 @@ public class CentralSite extends DynamicResource implements ICentralSite {
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectAllowedToCentralAccess() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSite_allowedToCentralAccess);
-  }
-
-  public CentralSite setAllowedToCentralAccess(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite allowedToCentralAccess) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSite_allowedToCentralAccess, allowedToCentralAccess);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> selectAllowedToManage() {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSite_allowedToManage);
   }
@@ -157,7 +147,6 @@ public class CentralSite extends DynamicResource implements ICentralSite {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.ShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSite_allowedToCentralAccess, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSite_allowedToManage, visitor);
     _acceptMultiMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSiteWithHosts_hosts, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -165,4 +154,4 @@ public class CentralSite extends DynamicResource implements ICentralSite {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d27c071d-936e-11e9-8139-e76b19cfb4bf,rYtO30duLspeTvIcQZx8suXldhc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d27c071d-936e-11e9-8139-e76b19cfb4bf,2Xyz33xoGqi7Tl1HM1/8IQLTo/g=] */

@@ -19,7 +19,7 @@ public class DNSSystemConfigurationIntegrationValidationAspect implements IResou
 		final var dnsSystemConfigurationScope = resourceRepository.getResource(IDNSSystemConfigurationIntegration.class, context.getResource());
 		final var dnsSystemConfigurationScopeFunctions = dnsSystemConfigurationScope.extension(IDNSSystemConfigurationIntegrationFunctions.class);
 
-		if (dnsSystemConfigurationScopeFunctions.HasAccessConfigurationTo() && !dnsSystemConfigurationScope.selectAllowDNSRecords() ) {
+		if (dnsSystemConfigurationScopeFunctions.HasAccessConfigurationTo() && !(dnsSystemConfigurationScope.selectAllowDNSRecords()) ) {
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					DnsPackage.DNSSystemConfigurationIntegration_allowDNSRecords, "allowed DNS records needs to be enabled (used in access)"));
 		}

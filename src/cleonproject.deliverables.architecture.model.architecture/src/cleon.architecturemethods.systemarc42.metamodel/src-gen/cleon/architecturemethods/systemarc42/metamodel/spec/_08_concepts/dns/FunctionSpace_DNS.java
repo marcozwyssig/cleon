@@ -8,13 +8,13 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[c770edb4-c7ce-11ec-a59e-d1c88102a398,imports]] */
-
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.FunctionSpace_Access.IAccessSystemConfigurationToFunctions;
 /* End Protected Region   [[c770edb4-c7ce-11ec-a59e-d1c88102a398,imports]] */
 
 public class FunctionSpace_DNS {
 
   /* Begin Protected Region [[c770edb4-c7ce-11ec-a59e-d1c88102a398]] */
-  
+
   /* End Protected Region   [[c770edb4-c7ce-11ec-a59e-d1c88102a398]] */
 
 
@@ -30,6 +30,9 @@ public class FunctionSpace_DNS {
   
   public static interface IDNSSystemConfigurationIntegrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("97fc3aec-c7cf-11ec-a59e-d1c88102a398")
+    public java.lang.Boolean HasAccessConfigurationTo(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration);
+
   }
   
   public static class DNSSystemConfigurationIntegrationFunctionsImpl implements IDNSSystemConfigurationIntegrationFunctionsImpl {
@@ -38,14 +41,32 @@ public class FunctionSpace_DNS {
 
     private DNSSystemConfigurationIntegrationFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean HasAccessConfigurationTo(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration) {
+      /* Begin Protected Region [[97fc3aec-c7cf-11ec-a59e-d1c88102a398]] */
+      final var dNSSystemConfigurationIntegrationFunctions = dNSSystemConfigurationIntegration.extension(IDNSSystemConfigurationIntegrationFunctions.class);
+      final var list = dNSSystemConfigurationIntegrationFunctions.AllAccessConfigurationTo();
+      if( (list == null) || list.isEmpty()) {
+      	return false;
+      }
+
+      return !list.stream().allMatch(x -> x.extension(IAccessSystemConfigurationToFunctions.class).AllAccessConfigurations().isEmpty());
+
+      /* End Protected Region   [[97fc3aec-c7cf-11ec-a59e-d1c88102a398]] */
+    }
+
   }
   
   public static class DNSSystemConfigurationIntegrationFunctions {
 
     private DNSSystemConfigurationIntegrationFunctions() {}
 
+    public static java.lang.Boolean HasAccessConfigurationTo(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration) {
+      return DynamicResourceUtil.invoke(IDNSSystemConfigurationIntegrationFunctionsImpl.class, DNSSystemConfigurationIntegrationFunctionsImpl.INSTANCE, dNSSystemConfigurationIntegration).HasAccessConfigurationTo(dNSSystemConfigurationIntegration);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,uo23eB9NltF0s19DoJSf54eIuRI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,KgDu46nika9crPziKNqr3EU1d2A=] */

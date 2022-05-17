@@ -28,6 +28,7 @@ public class NetworkPackage {
   public static final Resource NetworkSite_exportOU = new Resource("62eb27be-b873-11eb-8e8b-1d4fd4efa35e");
   public static final Resource NetworkSite_exportADSite = new Resource("b71611d5-ba41-11ec-a408-4ba6a2d760ef");
   public static final Resource NetworkSite_excludeCIDRForADSite = new Resource("bbef666a-bbc6-11ec-815c-69b4d4138e89");
+  public static final Resource NetworkSite_isEnabled = new Resource("195c10da-d5ba-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +49,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,nVfJkr3ZTA3L8XTtKcxA9ZaJAI8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,prIDnc9yq1M2+AntmJkJhT/en2Y=] */

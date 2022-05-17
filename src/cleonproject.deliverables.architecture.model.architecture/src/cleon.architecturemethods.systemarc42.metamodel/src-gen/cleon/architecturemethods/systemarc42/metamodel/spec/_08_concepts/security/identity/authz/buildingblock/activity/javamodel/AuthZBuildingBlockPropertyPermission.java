@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class AuthZBuildingBlockForSharePermission extends DynamicResource implements IAuthZBuildingBlockForSharePermission {
+public class AuthZBuildingBlockPropertyPermission extends DynamicResource implements IAuthZBuildingBlockPropertyPermission {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuthZBuildingBlockForSharePermission> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuthZBuildingBlockForSharePermission>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuthZBuildingBlockPropertyPermission> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuthZBuildingBlockPropertyPermission>() {
     
     @Override
-    public IAuthZBuildingBlockForSharePermission create() {
-      return new AuthZBuildingBlockForSharePermission();
+    public IAuthZBuildingBlockPropertyPermission create() {
+      return new AuthZBuildingBlockPropertyPermission();
     }
     
     @Override
-    public IAuthZBuildingBlockForSharePermission create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new AuthZBuildingBlockForSharePermission(resourceRepository, resource);
+    public IAuthZBuildingBlockPropertyPermission create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new AuthZBuildingBlockPropertyPermission(resourceRepository, resource);
     }
   
   };
 
-  public AuthZBuildingBlockForSharePermission() {
-    super(IAuthZBuildingBlockForSharePermission.TYPE_ID);
+  public AuthZBuildingBlockPropertyPermission() {
+    super(IAuthZBuildingBlockPropertyPermission.TYPE_ID);
   }
   
-  public AuthZBuildingBlockForSharePermission(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IAuthZBuildingBlockForSharePermission.TYPE_ID);
+  public AuthZBuildingBlockPropertyPermission(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IAuthZBuildingBlockPropertyPermission.TYPE_ID);
   }
 
   // attributes
@@ -69,12 +69,12 @@ public class AuthZBuildingBlockForSharePermission extends DynamicResource implem
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare selectShare() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockForSharePermission_share);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty selectProperty() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockPropertyPermission_property);
   }
 
-  public AuthZBuildingBlockForSharePermission setShare(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare share) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockForSharePermission_share, share);
+  public AuthZBuildingBlockPropertyPermission setProperty(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty property) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockPropertyPermission_property, property);
     return this;
   }
     
@@ -83,7 +83,7 @@ public class AuthZBuildingBlockForSharePermission extends DynamicResource implem
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public AuthZBuildingBlockForSharePermission setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public AuthZBuildingBlockPropertyPermission setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -93,7 +93,7 @@ public class AuthZBuildingBlockForSharePermission extends DynamicResource implem
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public AuthZBuildingBlockForSharePermission setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public AuthZBuildingBlockPropertyPermission setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -106,15 +106,15 @@ public class AuthZBuildingBlockForSharePermission extends DynamicResource implem
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockForSharePermission_share, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockPropertyPermission_property, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSharePermission> selectToMeShare(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSharePermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockForSharePermission_share, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockPropertyPermission> selectToMeProperty(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockPropertyPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockPropertyPermission_property, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7424ddb6-862f-11eb-9869-4317e18e6c88,v2ypi1JORCzVb0wvIjAgXJZb6gU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec70497-d5be-11ec-ad12-8d6f8e00bc94,9Ga0aPWGjnP5LW/1Fj88i+PrtIM=] */

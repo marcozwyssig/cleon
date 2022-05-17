@@ -190,6 +190,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="cdc6ba65-d5b6-11ec-ad12-8d6f8e00bc94" type="resource" guid="cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="2ba6c003-6cf0-11e9-a6d3-775c09e81e2d" type="resource" guid="2724469c-0218-11e9-b327-17da2da63a8f">
@@ -902,6 +903,25 @@
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
           <object statement-guid="70e7c39c-c7ce-11ec-a59e-d1c88102a398" type="literal">Replicated DNS record attribute from DNS concept (Konzepte -&gt; DNS)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="cdc6ba65-d5b6-11ec-ad12-8d6f8e00bc94">
+      <resource guid="cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cdc66c43-d5b6-11ec-ad12-8d6f8e00bc94" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cdc69354-d5b6-11ec-ad12-8d6f8e00bc94" type="literal">properties</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="cdc756a6-d5b6-11ec-ad12-8d6f8e00bc94" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="cdc756a7-d5b6-11ec-ad12-8d6f8e00bc94" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="cdc7a4c8-d5b6-11ec-ad12-8d6f8e00bc94" type="resource" guid="c4bfa256-d5b6-11ec-ad12-8d6f8e00bc94" />
         </predicate>
       </resource>
     </object>

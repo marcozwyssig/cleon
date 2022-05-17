@@ -17,10 +17,6 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForPermission_permission = new Resource("19527039-0a01-11eb-a857-d17d567fc174");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AbstractAuthZBuildingBlockPermission = new Resource("a29f1a46-0a1c-11eb-a857-d17d567fc174");
   public static final Resource ActivityTemplateAware_activityTemplates = new Resource("a73f40da-6d4a-11eb-bd4b-f974d73611ae");
-  public static final Resource AuthZBuildingBlockForSharePermission = new Resource("7424ddb6-862f-11eb-9869-4317e18e6c88");
-  public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForSharePermissions = new Resource("b4f9d9bc-862f-11eb-9869-4317e18e6c88");
-  public static final Resource AuthZBuildingBlockForSharePermission_share = new Resource("68fbbbd1-8647-11eb-9869-4317e18e6c88");
-  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForSharePermission = new Resource("36cd3f0c-8648-11eb-9869-4317e18e6c88");
   public static final Resource AbstractAuthZBuildingBlockPermission = new Resource("912699fe-864a-11eb-9869-4317e18e6c88");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForPermission = new Resource("d21d0b45-864b-11eb-9869-4317e18e6c88");
   public static final Resource ActivityTemplateAware = new Resource("c8872d57-d426-11eb-9862-7f597b9587dd");
@@ -28,10 +24,10 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForActiveDirectoryManagingActorPermission_activeDirectoryManagingActor = new Resource("4e74456e-df5c-11eb-95f9-6d420979d010");
   public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("7c378291-df5c-11eb-95f9-6d420979d010");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForActiveDirectoryManagingActorPermission = new Resource("56917d65-df5d-11eb-95f9-6d420979d010");
-  public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForBackupSystemConfigurationBackupJobs = new Resource("8dab5dc9-a608-11ec-9968-b970a72504b8");
-  public static final Resource AuthZBuildingBlockForBackupJobs = new Resource("12f44f26-a609-11ec-9968-b970a72504b8");
-  public static final Resource AuthZBuildingBlockForBackupJobs_backupJob = new Resource("12f44f27-a609-11ec-9968-b970a72504b8");
-  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForBackupJobs = new Resource("1f449810-a60c-11ec-9968-b970a72504b8");
+  public static final Resource AuthZBuildingBlockPropertyPermission = new Resource("2ec70497-d5be-11ec-ad12-8d6f8e00bc94");
+  public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockPropertyPermission = new Resource("4250b2b2-d5be-11ec-ad12-8d6f8e00bc94");
+  public static final Resource AuthZBuildingBlockPropertyPermission_property = new Resource("ca64aa16-d5be-11ec-ad12-8d6f8e00bc94");
+  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockPropertyPermission = new Resource("4011c9f0-d5bf-11ec-ad12-8d6f8e00bc94");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +48,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,1Gx4mxpAQ8mtHCe9SbWCz+letMc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,ZufCriRaF89sxFyIA81PjGKWdME=] */

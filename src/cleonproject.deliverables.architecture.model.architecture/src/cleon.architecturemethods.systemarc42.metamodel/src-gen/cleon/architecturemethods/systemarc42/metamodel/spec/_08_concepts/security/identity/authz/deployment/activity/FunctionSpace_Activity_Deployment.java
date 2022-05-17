@@ -378,12 +378,6 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("f98f93cf-864a-11eb-9869-4317e18e6c88")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForPermission> AllAuthZBuildingBlockForPermission();
 
-    @IDynamicResourceExtension.MethodId("2df608bd-864b-11eb-9869-4317e18e6c88")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSharePermission> AllAuthZBuildingBlockShareForPermission();
-
-    @IDynamicResourceExtension.MethodId("a8677f31-a9e6-11ec-8786-b5b84a4e2c8a")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForBackupJobs> AllAuthZBuildingBlockBackupJobForPermission();
-
     @IDynamicResourceExtension.MethodId("7b95168c-df5e-11eb-95f9-6d420979d010")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForActiveDirectoryManagingActorPermission> AllAuthZBuildingBlockActiveDirectoryManagingForPermission();
 
@@ -415,4 +409,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,7ZZYfKUQeZT1+bjDzvaHotDnIzw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,mCCbHzEwrihxpd73HIpnVFn4/vA=] */

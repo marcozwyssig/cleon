@@ -11,7 +11,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.ActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.FunctionSpace_Activity_Buildingblock.IAbstractAuthZBuildingBlockPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
 import java.util.stream.Collectors;
@@ -67,7 +66,7 @@ public class ad_aE_Management__T_yaml {
       		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream()
       				.filter(x -> {
       					final var activityPermissionFunctions = x.selectActivityTemplate().extension(IAbstractAuthZBuildingBlockPermissionFunctions.class);
-      					return activityPermissionFunctions.Permission().selectName().equals("write");
+      					return "write".equals(activityPermissionFunctions.Permission().selectName());
       				})
       				.findFirst().orElse(null);
       	}
@@ -130,21 +129,21 @@ public class ad_aE_Management__T_yaml {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
       /* Begin Protected Region [[8247b809-b873-11eb-8e8b-1d4fd4efa35e]] */
-      return networkSiteList.stream().filter(x -> x.selectExportOU() == null || x.selectExportOU().booleanValue()).collect(Collectors.toList());
+      return networkSiteList.stream().filter(x -> (x.selectExportOU() == null) || x.selectExportOU().booleanValue()).collect(Collectors.toList());
       /* End Protected Region   [[8247b809-b873-11eb-8e8b-1d4fd4efa35e]] */
     }
 
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereIsADSite(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
       /* Begin Protected Region [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
-        return networkSiteList.stream().filter(x -> x.selectExportADSite() == null || x.selectExportADSite().booleanValue()).collect(Collectors.toList());   
+      return networkSiteList.stream().filter(x -> (x.selectExportADSite() == null) || x.selectExportADSite().booleanValue()).collect(Collectors.toList());
       /* End Protected Region   [[8ec5c942-ba41-11ec-a408-4ba6a2d760ef]] */
     }
 
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WithoutNMS(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
       /* Begin Protected Region [[9312f1cb-ba43-11ec-a408-4ba6a2d760ef]] */
-    	return networkSiteList.stream().filter(x -> x.extension(INetworkSiteFunctions.class).SimpleName().contains("NMS") == false).collect(Collectors.toList());   
+      return networkSiteList.stream().filter(x -> !x.extension(INetworkSiteFunctions.class).SimpleName().contains("NMS")).collect(Collectors.toList());
       /* End Protected Region   [[9312f1cb-ba43-11ec-a408-4ba6a2d760ef]] */
     }
 

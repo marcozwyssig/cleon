@@ -10,6 +10,8 @@ public interface INetworkSite extends ch.actifsource.core.javamodel.IDecorator, 
   
   public java.lang.Boolean selectExportADSite();
   
+  public java.lang.Boolean selectIsEnabled();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite selectSite();
@@ -20,4 +22,4 @@ public interface INetworkSite extends ch.actifsource.core.javamodel.IDecorator, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,E3El/u+a5wGtQu6ZgLaLP6homN4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,Ly+NzycS4HBFosm8twZdMQw5aNQ=] */

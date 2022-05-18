@@ -57,6 +57,7 @@ public class AccessPackage {
   public static final Resource Purpose_Management = new Resource("bbb3d127-84df-11ec-8ce3-4fc564ebb802");
   public static final Resource Purpose_Management__F___N_Fallback__O_ = new Resource("be7cb512-84df-11ec-8ce3-4fc564ebb802");
   public static final Resource Purpose_User = new Resource("4d4634bb-84e0-11ec-8ce3-4fc564ebb802");
+  public static final Resource AccessSystemConfigurationTo_useIP = new Resource("fe09e68a-d5f8-11ec-a7a6-4fd61db5d1ee");
   
   /* Begin Protected Region [[user]] */
   
@@ -77,4 +78,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,bG42uKEQQG2fyu89zHjhAPBzW64=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,W94GTiJQiPHktoMclYSWdS8EeFI=] */

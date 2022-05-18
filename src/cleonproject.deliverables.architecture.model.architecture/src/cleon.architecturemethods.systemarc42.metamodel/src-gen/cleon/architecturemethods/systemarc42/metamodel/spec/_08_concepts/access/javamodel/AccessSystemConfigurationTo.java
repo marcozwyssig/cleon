@@ -28,6 +28,26 @@ public class AccessSystemConfigurationTo extends DynamicResource implements IAcc
     super(resourceRepository, resource, IAccessSystemConfigurationTo.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultFalseAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultFalseAware_isEnabled, isEnabled);
+  }
+
+  @Override
+  public java.lang.Boolean selectUseIP() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessSystemConfigurationTo_useIP);
+  }
+    
+  public void setUseIP(java.lang.Boolean useIP) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessSystemConfigurationTo_useIP, useIP);
+  }
+
   // relations
   
   @Override
@@ -103,6 +123,8 @@ public class AccessSystemConfigurationTo extends DynamicResource implements IAcc
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessSystemConfigurationTo_useIP, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessSystemConfigurationTo_accessConfigurationRDP, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessSystemConfigurationTo_accessConfigurationSSH, visitor);
@@ -135,4 +157,4 @@ public class AccessSystemConfigurationTo extends DynamicResource implements IAcc
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,Cp7WufrArZd/YEfPwxS0EnhZazM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,eWg7VTRcULA6/o2vVIwI9sCsk0Y=] */

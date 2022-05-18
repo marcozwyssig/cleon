@@ -87,6 +87,9 @@ public class FunctionSpace_Access {
     @IDynamicResourceExtension.MethodId("e865b56d-c7cf-11ec-a59e-d1c88102a398")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> AllAccessConfigurations();
 
+    @IDynamicResourceExtension.MethodId("91fe0a27-d677-11ec-925d-2b3c72f15572")
+    public java.lang.Boolean UseIP();
+
   }
   
   public static interface IAccessSystemConfigurationToFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -429,4 +432,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,0b9mbS4Rqh39+npwuoPO8K7FdQk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,cvK48SNBkaBQjQlzwO3Iw8O879o=] */

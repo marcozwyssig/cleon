@@ -19,7 +19,5 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.applications.actifsource.sample.category_a.builtin_a.model.test1,
- cleon.applications.actifsource.sample.category_a.builtin_a.model.test1.spec,
- cleon.applications.actifsource.sample.category_a.builtin_a.model.test1.spec.javamodel,
- cleon.applications.actifsource.sample.category_a.builtin_a.model.test1.javamodel
-
+ cleon.applications.actifsource.sample.category_a.builtin_a.model.test1.javamodel,
+ cleon.applications.actifsource.sample.category_a.builtin_a.model.test1.spec.javamodel

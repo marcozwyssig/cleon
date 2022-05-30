@@ -66,6 +66,15 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.Integer selectUniqueId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.ActivityPackage.ActivityPermission_uniqueId);
+  }
+    
+  public void setUniqueId(java.lang.Integer uniqueId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.ActivityPackage.ActivityPermission_uniqueId, uniqueId);
+  }
+
   // relations
   
   @Override
@@ -154,6 +163,7 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.ActivityPackage.ActivityPermission_uniqueId, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.ActivityPackage.ActivityPermission_activityTemplate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -166,4 +176,4 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,SN1QTrWWlBFj3gl0Ieo8hUO0sYw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,Hz3ToUidMP9qoM2LzYzabs8yb5A=] */

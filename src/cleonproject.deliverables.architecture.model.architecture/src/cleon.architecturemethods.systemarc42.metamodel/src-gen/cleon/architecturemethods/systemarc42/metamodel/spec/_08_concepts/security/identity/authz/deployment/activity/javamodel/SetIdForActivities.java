@@ -25,39 +25,37 @@ public class SetIdForActivities extends AbstractAllInstancesRefactorerAspect {
 
 	@Override
 	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
-		final ITypeSystem typeSystem = TypeSystem.create(executor);
-		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final var typeSystem = TypeSystem.create(executor);
+		final var resourceRepository = typeSystem.getResourceRepository();
 
-		final INodeSet nodeSet = Select.instances(executor, ActivityPackage.ActivityRootGroups);
+		final var nodeSet = Select.instances(executor, ActivityPackage.ActivityRootGroups);
 
 		try {
-			for(final INode node : nodeSet) {
-				final IActivityRootGroups groups = resourceRepository.getResource(IActivityRootGroups.class, node);
-				final IActivityRootGroupsFunctions groupsFunctions = groups.extension(IActivityRootGroupsFunctions.class);
+			for(final var node : nodeSet) {
+				final var groups = resourceRepository.getResource(IActivityRootGroups.class, node);
+				final var groupsFunctions = groups.extension(IActivityRootGroupsFunctions.class);
 
-				for(final IActivitySiteGroup domainGroup : groupsFunctions.AllActivityNetDomaingroups()) {
-					final IActivitySiteGroupFunctions netDomainGroupFunctions = domainGroup.extension(IActivitySiteGroupFunctions.class);
-					final IAbstractGroupFunctions abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
+				for(final IActivitySiteGroup domainGroup : groupsFunctions.AllActivitySiteGroups()) {
+					final var netDomainGroupFunctions = domainGroup.extension(IActivitySiteGroupFunctions.class);
+					final var abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
 
-					int i = 0;
-					for( final IActivityPermission activityPermission : netDomainGroupFunctions.AllActivityPermissions() ) {
-						if( activityPermission.selectIdentifier() == null || activityPermission.selectIdentifier().intValue() == 0) {
+					var i = 0;
+					for( final var activityPermission : netDomainGroupFunctions.AllActivityPermissions() ) {
+						if( (activityPermission.selectIdentifier() == null) || (activityPermission.selectIdentifier().intValue() == 0)) {
 							final Integer id = abstractGroupFunctions.GetSiteId() + i;
 
 							Update.createOrModifyStatement(executor, activityPermission.getPackage(), activityPermission.getResource(),
 									IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
 							++i;
-						} else {
-							if ( i < activityPermission.selectIdentifier() ) {
-								i = activityPermission.selectIdentifier();
-							}
+						} else if ( i < activityPermission.selectIdentifier() ) {
+							i = activityPermission.selectIdentifier();
 						}
 					}
 				}
 			}
 		}
 		catch(final Exception e) {
-			ch.actifsource.util.log.Logger.instance().logError(e.toString());				
+			ch.actifsource.util.log.Logger.instance().logError(e.toString());
 		}
 	}
 }

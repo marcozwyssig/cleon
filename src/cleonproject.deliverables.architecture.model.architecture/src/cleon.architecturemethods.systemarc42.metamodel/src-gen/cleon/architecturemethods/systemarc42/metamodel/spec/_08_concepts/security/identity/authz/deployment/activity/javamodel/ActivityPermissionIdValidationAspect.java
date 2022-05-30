@@ -7,7 +7,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityPermissionFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdUniqueValidationAspect;
 
-public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUniqueValidationAspect<IActivityPermission> 
+public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUniqueValidationAspect<IActivityPermission>
 {
 	public ActivityPermissionIdValidationAspect()
 	{
@@ -15,15 +15,15 @@ public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUnique
 	}
 
 	@Override
-	protected List<IActivityPermission> getResources(IDynamicResourceRepository resourceRepository, ValidationContext context) 
+	protected List<IActivityPermission> getResources(IDynamicResourceRepository resourceRepository, ValidationContext context)
 	{
-		final IActivityPermission component = resourceRepository.getResource(IActivityPermission.class, context.getResource());
-		final IActivityPermissionFunctions functions = component.extension(IActivityPermissionFunctions.class);
-		return functions.AllActivityPermissionInDomain();
-	}	
+		final var component = resourceRepository.getResource(IActivityPermission.class, context.getResource());
+		final var functions = component.extension(IActivityPermissionFunctions.class);
+		return functions.AllActivityPermissionInEnvironment();
+	}
 
-	@Override 
+	@Override
 	protected Integer GetIdentifier( IActivityPermission activityPermission ) {
-		return activityPermission.extension(IActivityPermissionFunctions.class).GetId();
+		return activityPermission.selectUniqueId();
 	}
 }

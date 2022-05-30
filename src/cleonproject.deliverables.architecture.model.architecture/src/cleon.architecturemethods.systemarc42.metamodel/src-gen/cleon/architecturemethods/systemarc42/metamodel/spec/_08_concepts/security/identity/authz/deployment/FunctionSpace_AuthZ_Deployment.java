@@ -121,7 +121,7 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
-      return GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup) - 1;
+      return (GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup)) - 1;
       /* End Protected Region   [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
     }
 
@@ -141,7 +141,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
       final var functions = abstractSiteGroup.extension(IAbstractSiteGroupFunctions.class);
-      return (functions.Max() + 99) / 100 * 100;
+      return ((functions.Max() + 99) / 100) * 100;
       /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }
 
@@ -189,7 +189,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleRootGroups GetRootRoleGroup();
 
     @IDynamicResourceExtension.MethodId("34e81fa9-c56f-11e9-9daa-cf9f9f7341e8")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> GetAllChildren();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> AllGroupChildren();
 
     @IDynamicResourceExtension.MethodId("b4566d55-0deb-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> GetAllRoleSystemComponents();
@@ -204,7 +204,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public java.lang.Boolean IsActiveOrDefaultTrueRecursive();
 
     @IDynamicResourceExtension.MethodId("ef96cb9e-621e-11eb-b695-271c721aa03b")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup GetParent();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup ParentGroup();
 
     @IDynamicResourceExtension.MethodId("9e1f46dd-621f-11eb-b695-271c721aa03b")
     public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList();
@@ -246,24 +246,20 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList(final List<T> abstractGroupList) {
       /* Begin Protected Region [[9e1f46dd-621f-11eb-b695-271c721aa03b]] */
-    	return abstractGroupList.stream().filter( x -> {
-    		return IsEnabled(x);
-    	}).collect(Collectors.toList());   
+      return abstractGroupList.stream().filter( this::IsEnabled).collect(Collectors.toList());
       /* End Protected Region   [[9e1f46dd-621f-11eb-b695-271c721aa03b]] */
     }
 
     @Override
     public java.lang.Boolean IsEnabled(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup abstractGroup) {
       /* Begin Protected Region [[9dc7296d-6221-11eb-b695-271c721aa03b]] */
-		IAbstractGroupFunctions functions = abstractGroup.extension(IAbstractGroupFunctions.class);
-		IAbstractGroup parent = functions.GetParent();
-		if( parent != null ) {					
-			if (IsEnabled(parent) == false) {
-				return false;
-			}
-		}
-		IEnabledWithDefaultTrueAwareFunctions defaultTrueAwareFunctions = abstractGroup.extension(IEnabledWithDefaultTrueAwareFunctions.class);
-		return defaultTrueAwareFunctions.IsActiveOrDefaultTrue();		
+      final var functions = abstractGroup.extension(IAbstractGroupFunctions.class);
+      final var parent = functions.ParentGroup();
+      if ((parent != null) && !IsEnabled(parent)) {
+      	return false;
+      }
+      final var defaultTrueAwareFunctions = abstractGroup.extension(IEnabledWithDefaultTrueAwareFunctions.class);
+      return defaultTrueAwareFunctions.IsActiveOrDefaultTrue();
       /* End Protected Region   [[9dc7296d-6221-11eb-b695-271c721aa03b]] */
     }
 
@@ -290,7 +286,7 @@ public class FunctionSpace_AuthZ_Deployment {
   public static interface IAbstractGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("792154d6-c56f-11e9-9daa-cf9f9f7341e8")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> GetAllChildren();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup> AllGroupChildren();
 
   }
   
@@ -339,4 +335,4 @@ public class FunctionSpace_AuthZ_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,gmPHOAs1ZXSVteESJMJtdAOrMUg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,v72D3SVKsr9E9QiLiixngRSgomg=] */

@@ -43,7 +43,10 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer PermissionCount();
 
     @IDynamicResourceExtension.MethodId("f259b386-c56e-11e9-9daa-cf9f9f7341e8")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInDomain();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInSite();
+
+    @IDynamicResourceExtension.MethodId("51adcb01-dfed-11ec-8f56-b9160f87f47a")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInEnvironment();
 
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
     public java.lang.String FormatId();
@@ -352,7 +355,7 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer PermissionCount();
 
     @IDynamicResourceExtension.MethodId("6024626b-9c98-11e9-9b32-35cf2fd07621")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup> AllActivityNetDomaingroups();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup> AllActivitySiteGroups();
 
   }
   
@@ -407,4 +410,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,bhz2d2i4nGFnCvkt4Hps7fozsHM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,EQgTz4cwXDWWlngBVRbbSyQrWMs=] */

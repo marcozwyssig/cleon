@@ -22,7 +22,7 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 		_classInstance = classInstance;
 	}
 
-	protected List<T> getResources(final IDynamicResourceRepository resourceRepository, final ValidationContext context) 
+	protected List<T> getResources(final IDynamicResourceRepository resourceRepository, final ValidationContext context)
 	{
 		return resourceRepository.getAllResources(_classInstance);
 	}
@@ -39,19 +39,20 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 
 	@Override
 	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
-		final ITypeSystem typeSystem = context.getTypeSystem();
-		resourceRepository = typeSystem.getResourceRepository();			
+		final var typeSystem = context.getTypeSystem();
+		resourceRepository = typeSystem.getResourceRepository();
 
-		final List<T> resources = getResources(resourceRepository, context);
-		final T businessObjectId = getObject(resourceRepository, context);
+		final var resources = getResources(resourceRepository, context);
+		final var businessObjectId = getObject(resourceRepository, context);
 
-		final List<T> duplicateItems = resources.stream()
-				.filter(x -> x.selectIdentifier().equals(GetIdentifier(businessObjectId)))
+		final var duplicateItems = resources.stream()
+				.filter(x -> GetIdentifier(x).equals(GetIdentifier(businessObjectId)))
 				.collect(Collectors.toList());
-		if (!duplicateItems.isEmpty() && duplicateItems.size() != 1) {
-			final String name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());
-			final String errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
-					businessObjectId.selectIdentifier());
+
+		if (!duplicateItems.isEmpty() && (duplicateItems.size() != 1)) {
+			final var name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());
+			final var errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
+					GetIdentifier(businessObjectId));
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					IdPackage.IntegerBusinessObjectId_identifier, errormessage));
 		}

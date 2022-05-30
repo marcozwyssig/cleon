@@ -7,7 +7,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityPermissionFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdInitializerAspect;
 
-public class ActivityPermissionIdInitializerAspect extends BusinessObjectIdInitializerAspect<IActivityPermission> 
+public class ActivityPermissionIdInitializerAspect extends BusinessObjectIdInitializerAspect<IActivityPermission>
 {
 	public ActivityPermissionIdInitializerAspect()
 	{
@@ -16,13 +16,13 @@ public class ActivityPermissionIdInitializerAspect extends BusinessObjectIdIniti
 
 	@Override
 	protected List<IActivityPermission> selectRessources(IDynamicResourceRepository resourceRepository, IActivityPermission activityPermission) {
-		final IActivityPermissionFunctions activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class); 
-		return activityPermissionFunctions.AllActivityPermissionInDomain();
+		final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
+		return activityPermissionFunctions.AllActivityPermissionInEnvironment();
 	}
 
 	@Override
 	protected Integer getStartId(IActivityPermission activityPermission) {
-		final IAbstractGroupFunctions abstractGroupFunctions = activityPermission.extension(IAbstractGroupFunctions.class);
+		final var abstractGroupFunctions = activityPermission.extension(IAbstractGroupFunctions.class);
 		return abstractGroupFunctions.GetSiteId();
-	}		
+	}
 }

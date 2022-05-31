@@ -95,11 +95,11 @@ public class VeeamBackupProxySystemConfiguration extends DynamicResource impleme
 
   @Override
   public java.lang.Boolean selectSkipHostGenerate() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate);
   }
     
   public void setSkipHostGenerate(java.lang.Boolean skipHostGenerate) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, skipHostGenerate);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, skipHostGenerate);
   }
 
   // relations
@@ -255,7 +255,7 @@ public class VeeamBackupProxySystemConfiguration extends DynamicResource impleme
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.bcm.javamodel.IBackupJob.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.bcm.BcmPackage.BackupSystemConfiguration_backupJobs, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
@@ -269,4 +269,4 @@ public class VeeamBackupProxySystemConfiguration extends DynamicResource impleme
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91e4a96c-09f5-11e9-abef-3d869859c931,OZtCFsWEisBWWfglle+NJ0/3d/o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91e4a96c-09f5-11e9-abef-3d869859c931,JcT1znVnW1qPzSnY5b/3Shq2DeM=] */

@@ -95,11 +95,11 @@ public class ActiveDirectoryManagerSystemConfiguration extends DynamicResource i
 
   @Override
   public java.lang.Boolean selectSkipHostGenerate() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate);
   }
     
   public void setSkipHostGenerate(java.lang.Boolean skipHostGenerate) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, skipHostGenerate);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, skipHostGenerate);
   }
 
   // relations
@@ -255,7 +255,7 @@ public class ActiveDirectoryManagerSystemConfiguration extends DynamicResource i
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone, visitor);
@@ -275,4 +275,4 @@ public class ActiveDirectoryManagerSystemConfiguration extends DynamicResource i
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15f0d90d-09ef-11e9-abef-3d869859c931,VD8BwhG1CRiO0oCKWievphGwuVw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15f0d90d-09ef-11e9-abef-3d869859c931,4EPT5tegshf97EQjs/vLO18ivdo=] */

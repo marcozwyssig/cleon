@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topolo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISkipMonitoringAware {
+public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISkipMonitoringAware, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISkipHostGenerationAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c6ffaf13-6da4-11e9-8af5-2346ca56c2e2");
   
@@ -20,4 +20,4 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,D6W6mjV2ZfukbT2GNfQSsKRv+E8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,cjAFUlH9NtlGS3FgPADWtiwSntg=] */

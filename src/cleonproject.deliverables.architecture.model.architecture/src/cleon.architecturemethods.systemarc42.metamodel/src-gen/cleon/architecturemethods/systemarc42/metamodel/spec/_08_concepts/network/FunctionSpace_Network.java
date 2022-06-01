@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 import java.util.stream.Collectors;
@@ -213,6 +214,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
     public java.lang.Boolean DNSRecordSet();
 
+    @IDynamicResourceExtension.MethodId("7c03499a-e186-11ec-bbb2-25acacf78f08")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate();
+
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -222,6 +226,9 @@ public class FunctionSpace_Network {
 
     @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
     public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode);
+
+    @IDynamicResourceExtension.MethodId("7c03499a-e186-11ec-bbb2-25acacf78f08")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList);
 
   }
   
@@ -256,6 +263,28 @@ public class FunctionSpace_Network {
       /* End Protected Region   [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList) {
+      /* Begin Protected Region [[7c03499a-e186-11ec-bbb2-25acacf78f08]] */
+      return networkHostNodeList.stream().filter( x -> {
+      	final var skipHostGeneration = x.selectHost().selectSkipHostGeneration();
+      	if( (skipHostGeneration == null) || !skipHostGeneration.booleanValue()) {
+
+      		final var functions = x.selectHost().extension(IAbstractHostFunctions.class);
+      		final var centralorTnSite = functions.CentralOrTNSite();
+
+      		final var skipHostGenerationFor = centralorTnSite.selectSkipHostGenerationFor();
+      		final var cmp = x.selectHost().selectInstanceOf();
+      		if ((skipHostGenerationFor != null) && skipHostGenerationFor.contains(cmp)) {
+      			return false;
+      		}
+      		return true;
+      	}
+      	return false;
+      }).collect(Collectors.toList());
+      /* End Protected Region   [[7c03499a-e186-11ec-bbb2-25acacf78f08]] */
+    }
+
   }
   
   public static class NetworkHostNodeFunctions {
@@ -268,6 +297,10 @@ public class FunctionSpace_Network {
 
     public static java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode) {
       return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNode).DNSRecordSet(networkHostNode);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList) {
+      return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNodeList).OnlyToGenerate(networkHostNodeList);
     }
 
   }
@@ -370,4 +403,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,d8zQTwwB/JDcg/pf9kUa99qDWgA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,8P6FQDh23bKj2tEyVqlOLo2jlCU=] */

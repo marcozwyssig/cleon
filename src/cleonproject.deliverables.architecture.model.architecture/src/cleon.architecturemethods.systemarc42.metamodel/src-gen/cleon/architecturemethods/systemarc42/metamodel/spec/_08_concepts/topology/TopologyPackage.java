@@ -84,6 +84,7 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_OwnerAware = new Resource("99e14b22-d50e-11ec-ad12-8d6f8e00bc94");
   public static final Resource AbstractSite_allowAccessWith = new Resource("62f38fd7-d5c7-11ec-ad12-8d6f8e00bc94");
   public static final Resource FunctionSpace_aE_Topology_RemoteSite = new Resource("83f643d5-d5c9-11ec-ad12-8d6f8e00bc94");
+  public static final Resource AbstractSiteWithFunctionID_skipHostGenerationFor = new Resource("db859f3a-e185-11ec-bbb2-25acacf78f08");
   
   /* Begin Protected Region [[user]] */
   
@@ -104,4 +105,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,zitkmzLuj5SEDnf+IlZoHiEL8r8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,JOfowoVGrKtUJEzF56DFJF4jtT4=] */

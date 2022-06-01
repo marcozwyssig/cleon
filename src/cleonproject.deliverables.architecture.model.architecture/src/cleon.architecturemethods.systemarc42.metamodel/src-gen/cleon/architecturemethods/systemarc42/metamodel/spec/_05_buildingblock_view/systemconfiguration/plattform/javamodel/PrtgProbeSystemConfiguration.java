@@ -94,12 +94,12 @@ public class PrtgProbeSystemConfiguration extends DynamicResource implements IPr
   }
 
   @Override
-  public java.lang.Boolean selectSkipHostGenerate() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate);
+  public java.lang.Boolean selectSkipHostGeneration() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration);
   }
     
-  public void setSkipHostGenerate(java.lang.Boolean skipHostGenerate) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, skipHostGenerate);
+  public void setSkipHostGeneration(java.lang.Boolean skipHostGeneration) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration, skipHostGeneration);
   }
 
   // relations
@@ -245,7 +245,7 @@ public class PrtgProbeSystemConfiguration extends DynamicResource implements IPr
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.HostGenerationAware_skipHostGenerate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone, visitor);
@@ -259,4 +259,4 @@ public class PrtgProbeSystemConfiguration extends DynamicResource implements IPr
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,021afd02-0c2f-11e9-83ba-4d57b06560a2,/dh55be2ZovOEwO9E7djrBi8i6s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,021afd02-0c2f-11e9-83ba-4d57b06560a2,GhJaK7Gjez7VFqlHmIRFI99uy6c=] */

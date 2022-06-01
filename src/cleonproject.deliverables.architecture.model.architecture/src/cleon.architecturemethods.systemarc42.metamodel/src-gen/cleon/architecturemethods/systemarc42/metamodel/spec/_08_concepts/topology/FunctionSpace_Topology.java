@@ -369,6 +369,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("e786e6c2-d515-11ec-ad12-8d6f8e00bc94")
     public java.lang.String Owner();
 
+    @IDynamicResourceExtension.MethodId("c81ef871-e187-11ec-bbb2-25acacf78f08")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID CentralOrTNSite();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -882,4 +885,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,v3zJ5Ei9hK96PFnMYmYVPkTUDC8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,h7IkgjPCqaYWOp86+AvgBVgKIfU=] */

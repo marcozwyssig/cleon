@@ -19,7 +19,7 @@
           <object statement-guid="79c39353-06bc-11ea-8f17-2da21adc8e34" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="773dabc2-06bc-11ea-8f17-2da21adc8e34" type="literal">skipHostGenerate</object>
+          <object statement-guid="773dabc2-06bc-11ea-8f17-2da21adc8e34" type="literal">skipHostGeneration</object>
         </predicate>
         <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
           <object statement-guid="7b9964c4-06bc-11ea-8f17-2da21adc8e34" type="literal">false</object>
@@ -31,7 +31,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="326d5195-e0aa-11ec-afcf-1feb072e53ef" type="literal">HostGenerationAware</object>
+    <object statement-guid="326d5195-e0aa-11ec-afcf-1feb072e53ef" type="literal">SkipHostGenerationAware</object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="326d9fb7-e0aa-11ec-afcf-1feb072e53ef" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

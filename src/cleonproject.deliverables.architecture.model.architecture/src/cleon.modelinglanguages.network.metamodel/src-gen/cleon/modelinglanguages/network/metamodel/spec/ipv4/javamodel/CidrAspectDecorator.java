@@ -21,52 +21,48 @@ import cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysica
 public class CidrAspectDecorator extends AspectImplementationDecorator {
 
 	private static void addNetworks(IReadJobExecutor executor, IIPv4_Mask cidr, NodeSet ipNodeSet) {
-		final IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
-		if( range == null) {			
-			return;
-		}
-
-		if (cidr.selectMask() <= 20 && cidr.selectMask() > 32) {
+		final var range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
+		if ((range == null) || ((cidr.selectMask() <= 20) && (cidr.selectMask() > 32))) {
 			return;
 		}
 
 		try {
-			final SubnetUtils subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
+			final var subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
 
 			if (cidr.selectMask() == 32 ) {
-				final IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(subnet.getInfo().getAddress());				
+				final var ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(subnet.getInfo().getAddress());
 				if( ipv4 != null) {
 					ipNodeSet.add(ipv4.getResource());
-				}				
+				}
 			} else {
 				for( final String ip : subnet.getInfo().getAllAddresses())
 				{
-					final IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
+					final var ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
 					if( ipv4 != null) {
 						ipNodeSet.add(ipv4.getResource());
 					}
-				}				
+				}
 			}
 		} catch (final IllegalArgumentException e) {
-			final StringWriter out = new StringWriter();
-			final PrintWriter writer = new PrintWriter(out);
+			final var out = new StringWriter();
+			final var writer = new PrintWriter(out);
 
 			e.printStackTrace(writer);
 			writer.flush();
 
 			Logger.instance().logInfo(out.toString());
 
-		}		
+		}
 	}
 
 	@Override
 	public INodeSet getDecoratableNodes(IReadJobExecutor executor, INode subject, INode decoratingRelation) {
-		final ITypeSystem typeSystem = TypeSystem.create(executor);
-		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final var typeSystem = TypeSystem.create(executor);
+		final var resourceRepository = typeSystem.getResourceRepository();
 
-		final IAbstractPhysicalNetwork network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject); 
-		final NodeSet ipNodeSet = new NodeSet();
-		final List<? extends IIPv4_Mask> cidrs = network.selectCidrs();
+		final var network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject);
+		final var ipNodeSet = new NodeSet();
+		final var cidrs = network.selectCidrs();
 		cidrs.stream().forEach(x -> addNetworks(executor, x, ipNodeSet));
 		return ipNodeSet;
 	}

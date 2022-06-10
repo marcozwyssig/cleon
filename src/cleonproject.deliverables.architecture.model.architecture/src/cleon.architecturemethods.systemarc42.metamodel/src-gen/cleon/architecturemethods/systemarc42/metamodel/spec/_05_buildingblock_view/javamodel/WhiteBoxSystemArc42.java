@@ -61,11 +61,11 @@ public class WhiteBoxSystemArc42 extends DynamicResource implements IWhiteBoxSys
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuditing selectAuditing() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuditing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_auditing);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.INonRepudiation selectAuditing() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.INonRepudiation.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_auditing);
   }
 
-  public WhiteBoxSystemArc42 setAuditing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuditing auditing) {
+  public WhiteBoxSystemArc42 setAuditing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.INonRepudiation auditing) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_auditing, auditing);
     return this;
   }
@@ -258,7 +258,7 @@ public class WhiteBoxSystemArc42 extends DynamicResource implements IWhiteBoxSys
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAccess.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_access, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuditing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_auditing, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.INonRepudiation.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_auditing, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAuthenticationSystemArc42.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.WhiteBoxSystemArc42_authn, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAutorizationSystemArc42.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.WhiteBoxSystemArc42_authz, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAvailabilitySystemArc42.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.WhiteBoxSystemArc42_availability, visitor);
@@ -298,4 +298,4 @@ public class WhiteBoxSystemArc42 extends DynamicResource implements IWhiteBoxSys
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,Ixr54keqTSV5ycU7HiJ8NC2iMTQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,NyuSHj1GAjlh6J+QnwJr4LXhAq4=] */

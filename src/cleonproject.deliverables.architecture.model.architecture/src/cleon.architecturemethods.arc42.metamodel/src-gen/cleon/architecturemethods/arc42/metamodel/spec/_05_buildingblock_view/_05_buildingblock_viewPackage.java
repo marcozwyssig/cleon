@@ -31,7 +31,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Autorization = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Confidentiality = new Resource("918907d3-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Integrity = new Resource("afdbf036-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Auditing = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource NonRepudiation = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
@@ -72,4 +72,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,d1rQsXBOeO0Ef5nYf6jJjVvBRfo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,4TtTacw4dOEAEcunPKSCGX+SSG4=] */

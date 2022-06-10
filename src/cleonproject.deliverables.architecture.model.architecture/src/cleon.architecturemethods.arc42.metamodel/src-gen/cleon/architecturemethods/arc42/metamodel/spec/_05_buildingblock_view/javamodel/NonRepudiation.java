@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Auditing extends DynamicResource implements IAuditing {
+public class NonRepudiation extends DynamicResource implements INonRepudiation {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuditing> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAuditing>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INonRepudiation> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INonRepudiation>() {
     
     @Override
-    public IAuditing create() {
-      return new Auditing();
+    public INonRepudiation create() {
+      return new NonRepudiation();
     }
     
     @Override
-    public IAuditing create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Auditing(resourceRepository, resource);
+    public INonRepudiation create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NonRepudiation(resourceRepository, resource);
     }
   
   };
 
-  public Auditing() {
-    super(IAuditing.TYPE_ID);
+  public NonRepudiation() {
+    super(INonRepudiation.TYPE_ID);
   }
   
-  public Auditing(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IAuditing.TYPE_ID);
+  public NonRepudiation(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INonRepudiation.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class Auditing extends DynamicResource implements IAuditing {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Auditing setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public NonRepudiation setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class Auditing extends DynamicResource implements IAuditing {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Auditing setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NonRepudiation setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class Auditing extends DynamicResource implements IAuditing {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Auditing setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NonRepudiation setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -85,7 +85,7 @@ public class Auditing extends DynamicResource implements IAuditing {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Auditing setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NonRepudiation setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -103,4 +103,4 @@ public class Auditing extends DynamicResource implements IAuditing {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1610616-7ed2-11ea-9262-7b7e0e9cb204,OB1WOo4KeBGG4vEiBWmzfkBjklo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1610616-7ed2-11ea-9262-7b7e0e9cb204,mRa7m7ASEmAddDtf5VyoN08hXqs=] */

@@ -313,6 +313,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("c47a831a-b212-11ea-a3a2-e9d3344bee73")
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name);
 
+    @IDynamicResourceExtension.MethodId("38a08e41-eb06-11ec-84eb-43814bf81118")
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> ExcludeCIDRForADSite();
+
   }
   
   public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -403,4 +406,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,8P6FQDh23bKj2tEyVqlOLo2jlCU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,MTCM0xMWZX2E/kUvXGLqFdWMqE8=] */

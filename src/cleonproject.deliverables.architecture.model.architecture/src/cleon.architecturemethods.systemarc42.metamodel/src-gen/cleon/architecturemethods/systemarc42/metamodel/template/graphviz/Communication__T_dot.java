@@ -46,6 +46,31 @@ public class Communication__T_dot {
 
   }
 
+  public static interface ISourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("65f5212f-eb05-11ec-84eb-43814bf81118")
+    public java.lang.String Spaces();
+
+  }
+  
+  public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SourceFunctionsImpl implements ISourceFunctionsImpl {
+
+    public static final ISourceFunctionsImpl INSTANCE = new SourceFunctionsImpl();
+
+    private SourceFunctionsImpl() {}
+
+  }
+  
+  public static class SourceFunctions {
+
+    private SourceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,52a8009b-80b1-11ea-939b-457d27a57c8c,I0UR7bJTGErl1Bc87FpWY+qB/6c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,52a8009b-80b1-11ea-939b-457d27a57c8c,t0zgKiWzNKUTNBFkWNMwQkffYrc=] */

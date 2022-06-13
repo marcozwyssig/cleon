@@ -18,7 +18,7 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept selectBusinessContinuityConcept();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept selectNetworkConcept();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IIPNetworkConcept selectNetworkConcept();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.javamodel.IResourceConcept selectResourceConcept();
   
@@ -34,4 +34,4 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,ygDwTahsKK1Uq647RZBcqSVSuGY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,jU2LfmRKczU/DFKuh4qxdeKWbfQ=] */

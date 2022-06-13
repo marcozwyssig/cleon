@@ -203,7 +203,7 @@ public class FunctionSpace_Network {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> AllNetworkHostNodes();
 
     @IDynamicResourceExtension.MethodId("80fe48ff-f40a-11ea-ade2-eb32c9704a85")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept NetworkConcept();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.IConcept NetworkConcept();
 
     @IDynamicResourceExtension.MethodId("aacd4176-f40a-11ea-ade2-eb32c9704a85")
     public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain DefaultDomain();
@@ -406,4 +406,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,MTCM0xMWZX2E/kUvXGLqFdWMqE8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,vGYf64apx4cnz4bsJ4okbKnBYsI=] */

@@ -10,7 +10,7 @@
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
         <resource statement-guid="160ab022-7e82-11ec-b55c-f5ca121c82b7" type="resource" guid="160aaff2-7e82-11ec-b55c-f5ca121c82b7">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-            <resource statement-guid="160ab021-7e82-11ec-b55c-f5ca121c82b7" type="resource" guid="160aaff1-7e82-11ec-b55c-f5ca121c82b7" />
+            <resource statement-guid="e3520d72-eb27-11ec-84eb-43814bf81118" type="resource" guid="e351e65d-eb27-11ec-84eb-43814bf81118" />
           </owns>
         </resource>
       </owns>
@@ -101,13 +101,13 @@
                 <object statement-guid="160ab01e-7e82-11ec-b55c-f5ca121c82b7" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                <object statement-guid="160ab021-7e82-11ec-b55c-f5ca121c82b7">
-                  <resource guid="160aaff1-7e82-11ec-b55c-f5ca121c82b7">
+                <object statement-guid="e3520d72-eb27-11ec-84eb-43814bf81118">
+                  <resource guid="e351e65d-eb27-11ec-84eb-43814bf81118">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="160ab01f-7e82-11ec-b55c-f5ca121c82b7" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                      <object statement-guid="e3520d70-eb27-11ec-84eb-43814bf81118" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="160ab020-7e82-11ec-b55c-f5ca121c82b7" type="literal">Verteilreihenfolge</object>
+                      <object statement-guid="e3520d71-eb27-11ec-84eb-43814bf81118" type="literal">Verteilungsreihenfolge</object>
                     </predicate>
                   </resource>
                 </object>

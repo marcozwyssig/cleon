@@ -3,12 +3,8 @@ package cleon.architecturemethods.systemarc42.metamodel.importer.csv;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.List;
-
-import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.patch.IStatementPosition;
-import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.ui.wizard.importer.IImportContext;
@@ -19,17 +15,11 @@ import cleon.architecturemethods.systemarc42.metamodel.spec.FunctionSpace_System
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkEnvironmentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkSiteFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document;
 import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D;
-import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 
 public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
 

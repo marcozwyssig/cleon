@@ -73,7 +73,7 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 			if (!match) {
 				final var message = String.format(
 						"Packages %s doesnt exist in packages. Remove package %s from the packages.",
-						packageNode.selectName());
+						packageNode.selectName(), packageNode.selectName());
 				final var packageRelation = Select.statementOrNull(validationContext.getReadJobExecutor(),
 						validationContext.getResource(), SystemPackage.Packages_packages, packageNode.getResource());
 				Objects.requireNonNull(packageRelation);

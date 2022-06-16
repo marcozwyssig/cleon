@@ -40,7 +40,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Whitebox_authz = new Resource("63f76bcb-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_confidentialy = new Resource("702b0cee-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_integrity = new Resource("808fd3d8-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_auditing = new Resource("8cada1db-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Whitebox_nonRepudiation = new Resource("8cada1db-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
@@ -72,4 +72,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,4TtTacw4dOEAEcunPKSCGX+SSG4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,W3DxWVa1HmSXMKtqj+R9DASX2ZM=] */

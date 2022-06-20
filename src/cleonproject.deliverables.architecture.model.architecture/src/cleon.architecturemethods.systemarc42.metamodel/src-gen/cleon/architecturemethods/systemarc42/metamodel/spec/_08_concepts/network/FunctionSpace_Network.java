@@ -268,14 +268,14 @@ public class FunctionSpace_Network {
       /* Begin Protected Region [[7c03499a-e186-11ec-bbb2-25acacf78f08]] */
       return networkHostNodeList.stream().filter( x -> {
       	final var skipHostGeneration = x.selectHost().selectSkipHostGeneration();
-      	if( (skipHostGeneration == null) || !skipHostGeneration.booleanValue()) {
+      	if( skipHostGeneration == null || !skipHostGeneration.booleanValue()) {
 
       		final var functions = x.selectHost().extension(IAbstractHostFunctions.class);
       		final var centralorTnSite = functions.CentralOrTNSite();
 
       		final var skipHostGenerationFor = centralorTnSite.selectSkipHostGenerationFor();
       		final var cmp = x.selectHost().selectInstanceOf();
-      		if ((skipHostGenerationFor != null) && skipHostGenerationFor.contains(cmp)) {
+      		if (skipHostGenerationFor != null && skipHostGenerationFor.contains(cmp)) {
       			return false;
       		}
       		return true;
@@ -316,12 +316,18 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("38a08e41-eb06-11ec-84eb-43814bf81118")
     public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> ExcludeCIDRForADSite();
 
+    @IDynamicResourceExtension.MethodId("9ed2d99e-f079-11ec-9c6a-1f9bef34e8b6")
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCIDRForADSite();
+
   }
   
   public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("c47a831a-b212-11ea-a3a2-e9d3344bee73")
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite);
+
+    @IDynamicResourceExtension.MethodId("9ed2d99e-f079-11ec-9c6a-1f9bef34e8b6")
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCIDRForADSite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite);
 
   }
   
@@ -345,6 +351,17 @@ public class FunctionSpace_Network {
       /* End Protected Region   [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
     }
 
+    @Override
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCIDRForADSite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
+      /* Begin Protected Region [[9ed2d99e-f079-11ec-9c6a-1f9bef34e8b6]] */
+      if( !networkSite.selectExportADSite()) {
+      	return null;
+      }
+
+      return networkSite.extension(INetworkSiteFunctions.class).ExcludeCIDRForADSite();
+      /* End Protected Region   [[9ed2d99e-f079-11ec-9c6a-1f9bef34e8b6]] */
+    }
+
   }
   
   public static class NetworkSiteFunctions {
@@ -353,6 +370,10 @@ public class FunctionSpace_Network {
 
     public static cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSite).GetNetworkSubZone(name, networkSite);
+    }
+
+    public static List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCIDRForADSite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
+      return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSite).SelectCIDRForADSite(networkSite);
     }
 
   }
@@ -406,4 +427,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,uzG/zGSZ0Hcmg2Z77pFEkfiQSuM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,D5GZ4YtogbuR+IY53J2Az7HEwIA=] */

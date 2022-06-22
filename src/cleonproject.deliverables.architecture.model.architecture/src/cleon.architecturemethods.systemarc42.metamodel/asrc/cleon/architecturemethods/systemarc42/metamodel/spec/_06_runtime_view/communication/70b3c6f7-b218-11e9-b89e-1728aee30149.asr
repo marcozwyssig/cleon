@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="70b3c6f7-b218-11e9-b89e-1728aee30149">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5440d00f-f164-11ec-ac33-079e260f3153" type="resource" guid="544081ec-f164-11ec-ac33-079e260f3153" />
+  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="77f6b905-b389-11e9-99ca-e7d80a545df8" type="resource" guid="77f691f1-b389-11e9-99ca-e7d80a545df8">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -38,6 +41,24 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="e93d33fd-c773-11ea-b0b6-e5df79e86bc2" type="resource" guid="df9fa746-c773-11ea-b0b6-e5df79e86bc2" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5440d00f-f164-11ec-ac33-079e260f3153">
+      <resource guid="544081ec-f164-11ec-ac33-079e260f3153">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5440a8fe-f164-11ec-ac33-079e260f3153" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2d8b1e46-f167-11ec-ac33-079e260f3153" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="56764df6-f164-11ec-ac33-079e260f3153" type="literal">restricteHostGroupForSiteToDestination</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5441ba70-f164-11ec-ac33-079e260f3153" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="70b5268a-b218-11e9-b89e-1728aee30149" type="literal">SourceInSubSecurityZoneByHost</object>

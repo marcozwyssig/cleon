@@ -49,6 +49,7 @@ public class CommunicationPackage {
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneCustom = new Resource("1f4156fb-ad95-11eb-a3eb-5dbdee6f3a54");
   public static final Resource IsTemporaryAware = new Resource("78dece5e-e564-11eb-ad65-91bb8c730454");
   public static final Resource DestinationSubSecurityZone_overrideDestinationGroupName = new Resource("2b2545ab-a512-11ec-9f8a-6b362fcb922a");
+  public static final Resource SourceInSubSecurityZoneByHost_restricteHostGroupForSiteToDestination = new Resource("544081ec-f164-11ec-ac33-079e260f3153");
   
   /* Begin Protected Region [[user]] */
   
@@ -69,4 +70,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,INuVR3xhtFrlz25KkYeTyuQWLv8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,lIUqn1UoW3Lj82Idi2wi6WGrLzE=] */

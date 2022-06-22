@@ -40,7 +40,7 @@ public class FunctionSpace_Segmentation {
     public List<cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification> GetAllClassifications();
 
     @IDynamicResourceExtension.MethodId("63d03ca5-b9d3-11e9-828c-091526d036b6")
-    public java.lang.Boolean IsLocalOnly();
+    public java.lang.Boolean IsSingleUsed();
 
     @IDynamicResourceExtension.MethodId("0bb8e351-c365-11e9-a43f-07b58a157d3c")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN();
@@ -344,14 +344,14 @@ public class FunctionSpace_Segmentation {
   public static interface IMulitpleUsedNetdomainZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("252e0f1a-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsLocalOnly();
+    public java.lang.Boolean IsSingleUsed();
 
   }
   
   public static interface IMulitpleUsedNetdomainZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("252e0f1a-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone);
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone);
 
   }
   
@@ -362,7 +362,7 @@ public class FunctionSpace_Segmentation {
     private MulitpleUsedNetdomainZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
       return false;
     }
 
@@ -372,8 +372,8 @@ public class FunctionSpace_Segmentation {
 
     private MulitpleUsedNetdomainZoneFunctions() {}
 
-    public static java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
-      return DynamicResourceUtil.invoke(IMulitpleUsedNetdomainZoneFunctionsImpl.class, MulitpleUsedNetdomainZoneFunctionsImpl.INSTANCE, mulitpleUsedNetdomainZone).IsLocalOnly(mulitpleUsedNetdomainZone);
+    public static java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
+      return DynamicResourceUtil.invoke(IMulitpleUsedNetdomainZoneFunctionsImpl.class, MulitpleUsedNetdomainZoneFunctionsImpl.INSTANCE, mulitpleUsedNetdomainZone).IsSingleUsed(mulitpleUsedNetdomainZone);
     }
 
   }
@@ -381,14 +381,14 @@ public class FunctionSpace_Segmentation {
   public static interface ISingleUsedNetdomainZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2f0e9808-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsLocalOnly();
+    public java.lang.Boolean IsSingleUsed();
 
   }
   
   public static interface ISingleUsedNetdomainZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2f0e9808-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone);
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone);
 
   }
   
@@ -399,7 +399,7 @@ public class FunctionSpace_Segmentation {
     private SingleUsedNetdomainZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
       return true;
     }
 
@@ -409,8 +409,8 @@ public class FunctionSpace_Segmentation {
 
     private SingleUsedNetdomainZoneFunctions() {}
 
-    public static java.lang.Boolean IsLocalOnly(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
-      return DynamicResourceUtil.invoke(ISingleUsedNetdomainZoneFunctionsImpl.class, SingleUsedNetdomainZoneFunctionsImpl.INSTANCE, singleUsedNetdomainZone).IsLocalOnly(singleUsedNetdomainZone);
+    public static java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
+      return DynamicResourceUtil.invoke(ISingleUsedNetdomainZoneFunctionsImpl.class, SingleUsedNetdomainZoneFunctionsImpl.INSTANCE, singleUsedNetdomainZone).IsSingleUsed(singleUsedNetdomainZone);
     }
 
   }
@@ -442,4 +442,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,7SNbkskb5R8cgta5zxMZ1X7f8L0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,3BrFp8XzaIn+SbA+9jb9/QTiLLQ=] */

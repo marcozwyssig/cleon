@@ -4387,7 +4387,7 @@
                 <object statement-guid="e02913d1-09f4-11ea-baed-218c3e076b56" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="e2c5b7b4-09f4-11ea-baed-218c3e076b56" type="literal">AllNetdomainWhereSystemConfiguration</object>
+                <object statement-guid="e2c5b7b4-09f4-11ea-baed-218c3e076b56" type="literal">AllSitesWhereSystemConfiguration</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="15061976-09f5-11ea-baed-218c3e076b56">
@@ -4499,7 +4499,7 @@
                 <object statement-guid="4f4ff944-09f5-11ea-baed-218c3e076b56" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="4f4ff946-09f5-11ea-baed-218c3e076b56" type="literal">AllNetdomainWhereSystemConfigurationDistinct</object>
+                <object statement-guid="4f4ff946-09f5-11ea-baed-218c3e076b56" type="literal">AllSitesWhereSystemConfigurationDistinct</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="4f4ff94f-09f5-11ea-baed-218c3e076b56">
@@ -4611,7 +4611,7 @@
                 <object statement-guid="7be91534-09fd-11ea-baed-218c3e076b56" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7be91536-09fd-11ea-baed-218c3e076b56" type="literal">AllNetdomainWhereSystemConfigurationEnvironment</object>
+                <object statement-guid="7be91536-09fd-11ea-baed-218c3e076b56" type="literal">AllSitesWhereSystemConfigurationEnvironment</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="82af8bf9-09fd-11ea-baed-218c3e076b56">
@@ -4745,7 +4745,7 @@
                 <object statement-guid="7bad0d85-517a-11ea-b9cb-85bbdfd861be" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7bad0d86-517a-11ea-b9cb-85bbdfd861be" type="literal">AllNetdomainWhereSystemConfigurationAndEnvironmentAndSite</object>
+                <object statement-guid="7bad0d86-517a-11ea-b9cb-85bbdfd861be" type="literal">AllSitesWhereSystemConfigurationAndEnvironmentAndSite</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="7bad0d8c-517a-11ea-b9cb-85bbdfd861be">

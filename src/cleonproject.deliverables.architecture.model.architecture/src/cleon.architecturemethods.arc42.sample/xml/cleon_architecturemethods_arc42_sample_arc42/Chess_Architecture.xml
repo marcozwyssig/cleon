@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
 	<db:title>Chess_Architecture</db:title>
+	
 	<db:chapter xml:id="ea.cba854f5-eaa5-11e8-88d3-bfc6b992bdec">
 		<db:title>Einleitung</db:title>
 		
@@ -29,7 +30,6 @@
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>
-			
 		</db:section>
 		<db:section xml:id="ea.f30baebc-4819-11e6-82f6-0f210765495b">
 			<db:title>Qualit&#228;tsziele</db:title>
@@ -367,7 +367,7 @@
 									<db:para>Von Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1"/>] zu Test1</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein verwendet den Test1 Baustein.</db:para>
+									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -400,7 +400,7 @@
 									<db:para>Von Test2 zu Test1_2_1 </db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein verwendet den Test1_2_1 Baustein.</db:para>
+									<db:para>Der Test2 Baustein ist abhängig vom Test1_2_1 Baustein.</db:para>
 								</db:td>
 							</db:tr>
 							<db:tr>
@@ -408,7 +408,7 @@
 									<db:para>Von Test2 zu Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1"/>] </db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein verwendet den Test1 Baustein.</db:para>
+									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -550,10 +550,6 @@
 		<db:title>Qualit&#228;tsszenarios</db:title>
 		
 	</db:chapter>
-	<db:chapter xml:id="ea.d2d99c23-eaa5-11e8-88d3-bfc6b992bdec">
-		<db:title>Risiken und technische Schulden</db:title>
-		
-	</db:chapter>
 	<db:chapter xml:id="ea.8d7e385c-2ad9-11e9-b83f-8be423c00623">
 		<db:title>Produktesicht</db:title>
 		<db:informaltable style="HERMES 5">
@@ -578,6 +574,7 @@
 						<db:para>Microsoft Windows 2016</db:para>
 					</db:td>
 					<db:td>
+						<db:para>FTP</db:para>
 					</db:td>			
 					<db:td>
 						<db:para>Microsoft Windows 2016 Standard 1.0</db:para>

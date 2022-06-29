@@ -222,43 +222,6 @@ public class Communications__T_xml {
 
   }
 
-  public static interface IPlannedImplementationForEnvironmentStateFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("c267b346-aaae-11ec-bac1-dba85299d623")
-    public java.lang.Boolean IsImplemented();
-
-  }
-  
-  public static interface IPlannedImplementationForEnvironmentStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("c267b346-aaae-11ec-bac1-dba85299d623")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState);
-
-  }
-  
-  public static class PlannedImplementationForEnvironmentStateFunctionsImpl implements IPlannedImplementationForEnvironmentStateFunctionsImpl {
-
-    public static final IPlannedImplementationForEnvironmentStateFunctionsImpl INSTANCE = new PlannedImplementationForEnvironmentStateFunctionsImpl();
-
-    private PlannedImplementationForEnvironmentStateFunctionsImpl() {}
-
-    @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState) {
-      return true;
-    }
-
-  }
-  
-  public static class PlannedImplementationForEnvironmentStateFunctions {
-
-    private PlannedImplementationForEnvironmentStateFunctions() {}
-
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.implementationstateforenvironment.javamodel.IPlannedImplementationForEnvironmentState plannedImplementationForEnvironmentState) {
-      return DynamicResourceUtil.invoke(IPlannedImplementationForEnvironmentStateFunctionsImpl.class, PlannedImplementationForEnvironmentStateFunctionsImpl.INSTANCE, plannedImplementationForEnvironmentState).IsImplemented(plannedImplementationForEnvironmentState);
-    }
-
-  }
-
   public static interface IImplementedButNotRequiredOnFirewallStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cfd89ba6-204a-11eb-88ac-6db033a610cb")
@@ -345,4 +308,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,xQxjNzIofo+a18gHMXA/c8OFCL0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,ICAsbAlr+68UsTfVqgoTE1EXK4Q=] */

@@ -27,7 +27,6 @@ public class XmlPackage {
   public static final Resource ServiceAccounts__T_xml_ServiceAccount = new Resource("52056adf-9ef7-11ec-8d98-a946e0e0308e");
   public static final Resource ServiceAccounts__T_xml_gMSA_aE_ServiceAccount = new Resource("823badfe-9ef8-11ec-8d98-a946e0e0308e");
   public static final Resource Topology__T_xml_AbstractHost = new Resource("5319ef75-a5cd-11ec-9968-b970a72504b8");
-  public static final Resource Communications__T_xml_PlannedImplementationForEnvironmentState = new Resource("c267b344-aaae-11ec-bac1-dba85299d623");
   public static final Resource FunctionSpace_aE_XML_Service = new Resource("b99913ac-ba5b-11ec-a408-4ba6a2d760ef");
   
   /* Begin Protected Region [[user]] */
@@ -49,4 +48,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,nP/DJvDx2ecpGrQKscJWsqxd0ZQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,qaokDkdCZFIpqiJc985nrHcTMKg=] */

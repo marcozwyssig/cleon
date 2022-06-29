@@ -3,11 +3,7 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="114157d6-c774-11ea-b0b6-e5df79e86bc2" type="resource" guid="8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a" />
     <resource statement-guid="2a3ebdf5-c774-11ea-b0b6-e5df79e86bc2" type="resource" guid="8d2238b2-b218-11e9-b89e-1728aee30149" />
-    <resource statement-guid="2a3ebdf6-c774-11ea-b0b6-e5df79e86bc2" type="resource" guid="739ab4da-0c5a-11ea-af20-c193d8bcdd26">
-      <owns predicate="d73790da-9ae7-11df-820b-41dcee1d1fcf">
-        <resource statement-guid="e78e3de4-0c5a-11ea-af20-c193d8bcdd26" type="resource" guid="e78defc1-0c5a-11ea-af20-c193d8bcdd26" />
-      </owns>
-    </resource>
+    <resource statement-guid="2a3ebdf6-c774-11ea-b0b6-e5df79e86bc2" type="resource" guid="739ab4da-0c5a-11ea-af20-c193d8bcdd26" />
     <resource statement-guid="2a3ebdf7-c774-11ea-b0b6-e5df79e86bc2" type="resource" guid="6ab91243-69cc-11ea-89d6-375d99542010">
       <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
         <resource statement-guid="6ab9126a-69cc-11ea-89d6-375d99542010" type="resource" guid="6ab9124d-69cc-11ea-89d6-375d99542010">
@@ -174,15 +170,6 @@
         </predicate>
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="739c3b80-0c5a-11ea-af20-c193d8bcdd26" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="d73790da-9ae7-11df-820b-41dcee1d1fcf">
-          <object statement-guid="e78e3de4-0c5a-11ea-af20-c193d8bcdd26">
-            <resource guid="e78defc1-0c5a-11ea-af20-c193d8bcdd26">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="e78e16d3-0c5a-11ea-af20-c193d8bcdd26" type="resource" guid="e19a0a43-0c5a-11ea-af20-c193d8bcdd26" />
-              </predicate>
-            </resource>
-          </object>
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="739c89a1-0c5a-11ea-af20-c193d8bcdd26" type="resource" guid="698b7b5e-0c5a-11ea-af20-c193d8bcdd26" />

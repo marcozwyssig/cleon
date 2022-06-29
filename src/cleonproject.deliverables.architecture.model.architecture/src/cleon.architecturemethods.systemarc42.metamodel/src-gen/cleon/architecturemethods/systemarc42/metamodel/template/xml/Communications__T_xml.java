@@ -296,43 +296,6 @@ public class Communications__T_xml {
 
   }
 
-  public static interface IPlannedmplementationStateFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
-
-  }
-  
-  public static interface IPlannedmplementationStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState);
-
-  }
-  
-  public static class PlannedmplementationStateFunctionsImpl implements IPlannedmplementationStateFunctionsImpl {
-
-    public static final IPlannedmplementationStateFunctionsImpl INSTANCE = new PlannedmplementationStateFunctionsImpl();
-
-    private PlannedmplementationStateFunctionsImpl() {}
-
-    @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
-      return true;
-    }
-
-  }
-  
-  public static class PlannedmplementationStateFunctions {
-
-    private PlannedmplementationStateFunctions() {}
-
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
-      return DynamicResourceUtil.invoke(IPlannedmplementationStateFunctionsImpl.class, PlannedmplementationStateFunctionsImpl.INSTANCE, plannedmplementationState).IsImplemented(env, plannedmplementationState);
-    }
-
-  }
-
   public static interface ISourceInSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
@@ -382,4 +345,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,a0GFKZE0Bns2j+UzUo79kPJ4mV0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,xQxjNzIofo+a18gHMXA/c8OFCL0=] */

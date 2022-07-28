@@ -1164,6 +1164,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IDeploymentProcedureOrderGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("86e5ffd3-0e86-11ed-992a-279da38c72c5")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDeploymentProcedureOrderGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentProcedureOrderGroupFunctionsImpl implements IDeploymentProcedureOrderGroupFunctionsImpl {
+
+    public static final IDeploymentProcedureOrderGroupFunctionsImpl INSTANCE = new DeploymentProcedureOrderGroupFunctionsImpl();
+
+    private DeploymentProcedureOrderGroupFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentProcedureOrderGroupFunctions {
+
+    private DeploymentProcedureOrderGroupFunctions() {}
+
+  }
+
   public static interface IDNSSystemIntegrationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("393210f8-d0f5-11ec-a32f-e7eb43a099bd")
@@ -1191,4 +1216,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,eZ2JPbCgYFX21HHm75Mzgp88so0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,VoSO92HjbV7iXJUTEXCJGTU1UPU=] */

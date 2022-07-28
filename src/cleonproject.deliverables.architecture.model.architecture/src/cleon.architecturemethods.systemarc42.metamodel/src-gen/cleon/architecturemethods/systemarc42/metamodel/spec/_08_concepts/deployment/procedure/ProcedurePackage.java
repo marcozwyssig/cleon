@@ -6,7 +6,7 @@ public class ProcedurePackage {
   
   public static final Resource DeploymentProcedureConcept = new Resource("160aafe5-7e82-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureConcept_deploymentStages = new Resource("160aafe6-7e82-11ec-b55c-f5ca121c82b7");
-  public static final Resource DeploymentProcedureConcept_deploymentOrder = new Resource("160aaff0-7e82-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureOrderGroup_deploymentOrder = new Resource("160aaff0-7e82-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureStage = new Resource("5886b9d2-7e84-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureOrder = new Resource("4ed2390c-7e86-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureOrder_stages = new Resource("4ed2390d-7e86-11ec-b55c-f5ca121c82b7");
@@ -20,6 +20,8 @@ public class ProcedurePackage {
   public static final Resource DeploymentProcedurePhaseUsageCount_usageCountFor = new Resource("f9f5327b-7ebc-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureConcept_excludeInInstallationOrder = new Resource("f109c010-8036-11ec-a0b4-330278d4f5d1");
   public static final Resource DeploymentProcedureExclude = new Resource("f828df38-8036-11ec-a0b4-330278d4f5d1");
+  public static final Resource DeploymentProcedureOrderGroup = new Resource("a610bc88-0e84-11ed-992a-279da38c72c5");
+  public static final Resource DeploymentProcedureConcept_deploymentProcedureOrderGroup = new Resource("b464a5a3-0e84-11ed-992a-279da38c72c5");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +42,4 @@ public class ProcedurePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,yspE0nnFsGrxpGUK2MAQBMfECIE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,krA7n7Oe7HHl3DP7tKdwdGjgBqs=] */

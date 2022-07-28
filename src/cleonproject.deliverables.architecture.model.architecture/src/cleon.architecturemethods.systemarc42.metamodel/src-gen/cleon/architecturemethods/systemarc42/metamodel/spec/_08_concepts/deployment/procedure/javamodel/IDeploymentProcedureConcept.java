@@ -2,6 +2,9 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deploy
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
+/**
+ * Includes the overall order procedure for deployming the system
+ */
 public interface IDeploymentProcedureConcept extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("160aafe5-7e82-11ec-b55c-f5ca121c82b7");
@@ -16,4 +19,4 @@ public interface IDeploymentProcedureConcept extends cleon.common.doc.metamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,160aafe5-7e82-11ec-b55c-f5ca121c82b7,aE+SLblTIaULJCqlyOBbmxLt1Ds=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,160aafe5-7e82-11ec-b55c-f5ca121c82b7,zVdXpSDuy57XONNlWUicqKQH9oQ=] */

@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class AutonomyPackage {
   
-  public static final Resource AutonomyConcept = new Resource("804f82c0-00e4-11eb-89a7-8344c130228c");
+  public static final Resource FallbackConcept = new Resource("804f82c0-00e4-11eb-89a7-8344c130228c");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class AutonomyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy,LnoPdq7E8s4zt76tKkmaWR0+m4I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy,C2rMS8O/2MEk1PprA2d9jFEEmjs=] */

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class AutonomyConcept extends DynamicResource implements IAutonomyConcept {
+public class FallbackConcept extends DynamicResource implements IFallbackConcept {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAutonomyConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAutonomyConcept>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IFallbackConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IFallbackConcept>() {
     
     @Override
-    public IAutonomyConcept create() {
-      return new AutonomyConcept();
+    public IFallbackConcept create() {
+      return new FallbackConcept();
     }
     
     @Override
-    public IAutonomyConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new AutonomyConcept(resourceRepository, resource);
+    public IFallbackConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new FallbackConcept(resourceRepository, resource);
     }
   
   };
 
-  public AutonomyConcept() {
-    super(IAutonomyConcept.TYPE_ID);
+  public FallbackConcept() {
+    super(IFallbackConcept.TYPE_ID);
   }
   
-  public AutonomyConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IAutonomyConcept.TYPE_ID);
+  public FallbackConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IFallbackConcept.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class AutonomyConcept extends DynamicResource implements IAutonomyConcept
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public AutonomyConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public FallbackConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class AutonomyConcept extends DynamicResource implements IAutonomyConcept
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public AutonomyConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public FallbackConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class AutonomyConcept extends DynamicResource implements IAutonomyConcept
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public AutonomyConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public FallbackConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -85,7 +85,7 @@ public class AutonomyConcept extends DynamicResource implements IAutonomyConcept
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public AutonomyConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public FallbackConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -103,4 +103,4 @@ public class AutonomyConcept extends DynamicResource implements IAutonomyConcept
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,804f82c0-00e4-11eb-89a7-8344c130228c,t3oxXa0NL7SB1BK2EImL5GrMajU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,804f82c0-00e4-11eb-89a7-8344c130228c,huViJ95LV6K+LTg9FnH7H7ji2xs=] */

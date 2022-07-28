@@ -51,11 +51,11 @@ public class BusinessContinuityConcept extends DynamicResource implements IBusin
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept selectAutonomy() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IFallbackConcept selectAutonomy() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IFallbackConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy);
   }
 
-  public BusinessContinuityConcept setAutonomy(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept autonomy) {
+  public BusinessContinuityConcept setAutonomy(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IFallbackConcept autonomy) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy, autonomy);
     return this;
   }
@@ -127,7 +127,7 @@ public class BusinessContinuityConcept extends DynamicResource implements IBusin
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IFallbackConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_availability, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -144,9 +144,9 @@ public class BusinessContinuityConcept extends DynamicResource implements IBusin
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept selectToMeAutonomy(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept selectToMeAutonomy(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IFallbackConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_autonomy, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2395fff-0eae-11e9-9f19-6d15636f4ecc,aa2jzwi/wep6fz5886z+Yuvt8rM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2395fff-0eae-11e9-9f19-6d15636f4ecc,cA5hMOY6EL9S5Gs1yjqBWmoYQl4=] */

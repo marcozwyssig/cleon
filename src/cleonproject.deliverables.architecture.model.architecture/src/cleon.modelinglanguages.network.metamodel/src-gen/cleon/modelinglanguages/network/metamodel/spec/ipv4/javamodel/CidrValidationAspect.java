@@ -22,15 +22,14 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		final var cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
 
 		try {
-			final var range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
-			final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());
-
 			// Performance with validation of big networks
-			if( cidr.selectMask() < 21 ) {
+			final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());
+			if( cidr.selectMask() < 24 ) {
 				Logger.instance().logInfo(String.format("Validation skipped (%s)", network));
 				return;
 			}
 
+			final var range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 			final var subnet = new SubnetUtils(network);
 			final var cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, IPv4_Mask_Aware.selectToMeCidrs(cidr).getResource());
 

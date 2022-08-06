@@ -34,7 +34,10 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 	}
 
 	protected Integer GetIdentifier( T businessObjectId ) {
-		return businessObjectId.selectIdentifier();
+		if( businessObjectId != null ) {
+			return businessObjectId.selectIdentifier();
+		}
+		return -1;
 	}
 
 	@Override
@@ -49,13 +52,12 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 				.filter(x -> GetIdentifier(x).equals(GetIdentifier(businessObjectId)))
 				.collect(Collectors.toList());
 
-		if (!duplicateItems.isEmpty() && (duplicateItems.size() != 1)) {
+		if (!duplicateItems.isEmpty() && duplicateItems.size() != 1) {
 			final var name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());
 			final var errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
 					GetIdentifier(businessObjectId));
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					IdPackage.IntegerBusinessObjectId_identifier, errormessage));
 		}
-
 	}
 }

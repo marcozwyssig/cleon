@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.common.calendar.metamodel.spec.javamodel.*;
 /* End Protected Region   [[5c700e8e-c391-11e5-a9c9-53d676410f3e,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Calendar {
 
   /* Begin Protected Region [[5c700e8e-c391-11e5-a9c9-53d676410f3e]] */
 
@@ -65,65 +65,59 @@ public class FunctionSpace {
     @Override
     public java.util.Date GetDate(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
       /* Begin Protected Region [[64248f6f-c391-11e5-a9c9-53d676410f3e]] */
-		IMonth month = Month.selectToMeDays(day);
-		IYear year = Year.selectToMeMonths(month);
-		java.time.LocalDate localDateTime = java.time.LocalDate.of(year.selectIdentifier(),
-				month.selectIdentifier(), day.selectIdentifier());
-		return java.util.Date
-				.from(localDateTime.atStartOfDay().atZone(java.time.ZoneId.systemDefault()).toInstant());
+      final var month = Month.selectToMeDays(day);
+      final var year = Year.selectToMeMonths(month);
+      final var localDateTime = java.time.LocalDate.of(year.selectIdentifier(),
+      		month.selectIdentifier(), day.selectIdentifier());
+      return java.util.Date
+      		.from(localDateTime.atStartOfDay().atZone(java.time.ZoneId.systemDefault()).toInstant());
       /* End Protected Region   [[64248f6f-c391-11e5-a9c9-53d676410f3e]] */
     }
 
     @Override
     public java.lang.String FormattedDate(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
-      /* Begin Protected Region [[8f42ec9d-c4c4-11e5-8558-4b8affb7767c]] */
-		if (day == null)
-		{
-			return null;
-		}
-    	java.util.Date date = GetDate(day);
-		java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd_EEE",
-				java.util.Locale.ENGLISH);
-		return dateFormat.format(date);
-      /* End Protected Region   [[8f42ec9d-c4c4-11e5-8558-4b8affb7767c]] */
+      if (day == null) { return null; }
+      final var date = GetDate(day);
+      final var dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd_EEE", java.util.Locale.ENGLISH);
+      return dateFormat.format(date);
     }
 
     @Override
     public java.lang.Boolean IsWeekend(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
       /* Begin Protected Region [[7fe5f4be-c4cb-11e5-8558-4b8affb7767c]] */
-    	java.util.Date date = GetDate(day);
-		java.time.DayOfWeek dayOfWeek = date.toInstant().atZone(java.time.ZoneId.systemDefault()).getDayOfWeek();
-		if (dayOfWeek == java.time.DayOfWeek.SATURDAY || dayOfWeek == java.time.DayOfWeek.SUNDAY) {
-			return true;
-		}
-		return false;
+      final var date = GetDate(day);
+      final var dayOfWeek = date.toInstant().atZone(java.time.ZoneId.systemDefault()).getDayOfWeek();
+      if (dayOfWeek == java.time.DayOfWeek.SATURDAY || dayOfWeek == java.time.DayOfWeek.SUNDAY) {
+      	return true;
+      }
+      return false;
       /* End Protected Region   [[7fe5f4be-c4cb-11e5-8558-4b8affb7767c]] */
     }
 
     @Override
     public java.lang.String ShortFormattedDate(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
       /* Begin Protected Region [[3df57966-4e70-11e6-a89e-4beefb17234f]] */
-		if (day == null)
-		{
-			return null;
-		}
+      if (day == null)
+      {
+      	return null;
+      }
 
-    	java.util.Date date = GetDate(day);
-    	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyyMMdd", java.util.Locale.ENGLISH);
-		return dateFormat.format(date);
+      final var date = GetDate(day);
+      final var dateFormat = new java.text.SimpleDateFormat("yyyyMMdd", java.util.Locale.ENGLISH);
+      return dateFormat.format(date);
       /* End Protected Region   [[3df57966-4e70-11e6-a89e-4beefb17234f]] */
     }
 
     @Override
     public java.lang.String FormattedDay(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
       /* Begin Protected Region [[21fe9ba8-d6a9-11e6-a1b8-05a222dbc1bd]] */
-		if (day == null)
-		{
-			return null;
-		}    	
-		java.util.Date date = GetDate(day);
-		java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.ENGLISH);
-		return dateFormat.format(date);   
+      if (day == null)
+      {
+      	return null;
+      }
+      final var date = GetDate(day);
+      final var dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.ENGLISH);
+      return dateFormat.format(date);
       /* End Protected Region   [[21fe9ba8-d6a9-11e6-a1b8-05a222dbc1bd]] */
     }
 
@@ -184,22 +178,22 @@ public class FunctionSpace {
     @Override
     public cleon.common.calendar.metamodel.spec.javamodel.IDay GetDay(final java.util.Date time, final cleon.common.calendar.metamodel.spec.javamodel.ICalendar calendar) {
       /* Begin Protected Region [[0c672790-8a12-11e6-8085-d9bdba2de943]] */
-	java.time.LocalDate date = time.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
-	int year = date.getYear();
-	int month = date.getMonthValue();
-	int day = date.getDayOfMonth();
-	IYear yearObj = calendar.selectYears().stream().filter(x -> x.selectIdentifier().equals(year)).findFirst()
-.get();
-	IMonth monthObj = yearObj.selectMonths().stream().filter(x -> x.selectIdentifier().equals(month))
-.findFirst().get();
-	return monthObj.selectDays().stream().filter(x -> x.selectIdentifier().equals(day)).findFirst().get();
+      final var date = time.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
+      final var year = date.getYear();
+      final var month = date.getMonthValue();
+      final var day = date.getDayOfMonth();
+      final IYear yearObj = calendar.selectYears().stream().filter(x -> x.selectIdentifier().equals(year)).findFirst()
+      		.get();
+      final IMonth monthObj = yearObj.selectMonths().stream().filter(x -> x.selectIdentifier().equals(month))
+      		.findFirst().get();
+      return monthObj.selectDays().stream().filter(x -> x.selectIdentifier().equals(day)).findFirst().get();
       /* End Protected Region   [[0c672790-8a12-11e6-8085-d9bdba2de943]] */
     }
 
     @Override
     public cleon.common.calendar.metamodel.spec.javamodel.IDay Now(final cleon.common.calendar.metamodel.spec.javamodel.ICalendar calendar) {
       /* Begin Protected Region [[0098270f-d6a8-11e6-a1b8-05a222dbc1bd]] */
-    	return GetDay(new java.util.Date(), calendar);
+      return GetDay(new java.util.Date(), calendar);
       /* End Protected Region   [[0098270f-d6a8-11e6-a1b8-05a222dbc1bd]] */
     }
 
@@ -221,4 +215,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5c700e8e-c391-11e5-a9c9-53d676410f3e,PoauRbC/Rf7xw/Jxg7cGH5iDp94=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5c700e8e-c391-11e5-a9c9-53d676410f3e,lsA096N4Iv7yqoQSjhBCKPeMBZA=] */

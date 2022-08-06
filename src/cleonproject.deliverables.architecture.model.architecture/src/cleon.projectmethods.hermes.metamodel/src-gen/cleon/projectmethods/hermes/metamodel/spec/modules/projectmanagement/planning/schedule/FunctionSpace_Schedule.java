@@ -9,17 +9,14 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[acb90998-20c6-11e6-9bb5-2b7a5dccc043,imports]] */
 import java.util.ArrayList;
-import java.time.LocalDate;
-import cleon.common.calendar.metamodel.spec.FunctionSpace.DayFunctions;
+import cleon.common.calendar.metamodel.spec.FunctionSpace_Calendar.IDayFunctions;
 import cleon.common.calendar.metamodel.spec.javamodel.*;
-import cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases;
-
 /* End Protected Region   [[acb90998-20c6-11e6-9bb5-2b7a5dccc043,imports]] */
 
 public class FunctionSpace_Schedule {
 
   /* Begin Protected Region [[acb90998-20c6-11e6-9bb5-2b7a5dccc043]] */
-  
+
   /* End Protected Region   [[acb90998-20c6-11e6-9bb5-2b7a5dccc043]] */
 
 
@@ -48,13 +45,13 @@ public class FunctionSpace_Schedule {
       /* Begin Protected Region [[b5d11302-20c6-11e6-9bb5-2b7a5dccc043]] */
       if( targetDate.selectState().isDone())
       {
-    	  return false;
+      	return false;
       }
-      java.util.Date day = DayFunctions.GetDate(targetDate.selectDeadline());
-      LocalDate today = java.time.LocalDateTime.now().toLocalDate();
-      LocalDate targetDateDate = day.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
+      final var day = targetDate.selectDeadline().extension(IDayFunctions.class).GetDate();
+      final var today = java.time.LocalDateTime.now().toLocalDate();
+      final var targetDateDate = day.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
       return today.isAfter(targetDateDate);
-      
+
       /* End Protected Region   [[b5d11302-20c6-11e6-9bb5-2b7a5dccc043]] */
     }
 
@@ -93,28 +90,28 @@ public class FunctionSpace_Schedule {
     @Override
     public List<cleon.common.calendar.metamodel.spec.javamodel.IMonth> SelectMonths(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.javamodel.ISchedule schedule) {
       /* Begin Protected Region [[234caa05-aaa6-11e8-b25a-7dd9f85a27ad]] */
-    	IReleases releases = schedule.selectReleases();
-    	ICalendar calendar = schedule.selectCalendar();
-    	IMonth startMonth = Month.selectToMeDays(releases.selectStart());
-    	IYear startYear = Year.selectToMeMonths(startMonth);
-    	IMonth endMonth = Month.selectToMeDays(releases.selectEnd());
-    	IYear endyear = Year.selectToMeMonths(endMonth);
-    	List<IMonth> months = new ArrayList<>();    	    	
-    	
-    	for(IYear year : calendar.selectYears())
-    	{
-    		if(year.selectIdentifier() >= startYear.selectIdentifier() && year.selectIdentifier() <= endyear.selectIdentifier())
-    		{
-    			for(IMonth month : year.selectMonths())
-    			{
-    				if( month.selectIdentifier() >= startMonth.selectIdentifier() && month.selectIdentifier() <= endMonth.selectIdentifier())
-    				{
-    					months.add(month);
-    				}
-    			}
-    		}
-    	}
-    	return months;
+      final var releases = schedule.selectReleases();
+      final var calendar = schedule.selectCalendar();
+      final var startMonth = Month.selectToMeDays(releases.selectStart());
+      final var startYear = Year.selectToMeMonths(startMonth);
+      final var endMonth = Month.selectToMeDays(releases.selectEnd());
+      final var endyear = Year.selectToMeMonths(endMonth);
+      final List<IMonth> months = new ArrayList<>();
+
+      for(final IYear year : calendar.selectYears())
+      {
+      	if(year.selectIdentifier() >= startYear.selectIdentifier() && year.selectIdentifier() <= endyear.selectIdentifier())
+      	{
+      		for(final IMonth month : year.selectMonths())
+      		{
+      			if( month.selectIdentifier() >= startMonth.selectIdentifier() && month.selectIdentifier() <= endMonth.selectIdentifier())
+      			{
+      				months.add(month);
+      			}
+      		}
+      	}
+      }
+      return months;
       /* End Protected Region   [[234caa05-aaa6-11e8-b25a-7dd9f85a27ad]] */
     }
 

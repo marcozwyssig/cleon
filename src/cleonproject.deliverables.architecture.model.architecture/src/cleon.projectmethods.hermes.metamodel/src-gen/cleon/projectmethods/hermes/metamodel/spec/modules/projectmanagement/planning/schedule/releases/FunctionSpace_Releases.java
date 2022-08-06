@@ -8,17 +8,16 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7833baaa-349b-11e6-8839-1f6631cc77ac,imports]] */
-import cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.*;
-import cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.*;
+
+import cleon.common.calendar.metamodel.spec.FunctionSpace_Calendar.IDayFunctions;
+import cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint;
 import cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.javamodel.Schedule;
-import cleon.common.calendar.metamodel.spec.FunctionSpace.DayFunctionsImpl;
-import cleon.common.calendar.metamodel.spec.FunctionSpace.IDayFunctions;
 /* End Protected Region   [[7833baaa-349b-11e6-8839-1f6631cc77ac,imports]] */
 
 public class FunctionSpace_Releases {
 
   /* Begin Protected Region [[7833baaa-349b-11e6-8839-1f6631cc77ac]] */
-  
+
   /* End Protected Region   [[7833baaa-349b-11e6-8839-1f6631cc77ac]] */
 
 
@@ -66,40 +65,40 @@ public class FunctionSpace_Releases {
     @Override
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       /* Begin Protected Region [[9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e]] */
-    	java.util.Date now = new java.util.Date();
-   
-    	for( ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
-    	{
-		  	java.util.Date startDateOfSprint = sprint.selectStart().extension(IDayFunctions.class).GetDate();
-		  	java.util.Date endDateOfSprint = sprint.selectEnd().extension(IDayFunctions.class).GetDate();
-		  	if( startDateOfSprint.before(now) && endDateOfSprint.after(now))
-		  	{
-		  		return sprint;
-		  	}    		  
-  		}
-  		return null;
+      final var now = new java.util.Date();
+
+      for( final ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
+      {
+      	final var startDateOfSprint = sprint.selectStart().extension(IDayFunctions.class).GetDate();
+      	final var endDateOfSprint = sprint.selectEnd().extension(IDayFunctions.class).GetDate();
+      	if( startDateOfSprint.before(now) && endDateOfSprint.after(now))
+      	{
+      		return sprint;
+      	}
+      }
+      return null;
       /* End Protected Region   [[9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e]] */
     }
 
     @Override
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       /* Begin Protected Region [[9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e]] */
-        ISprint currentSprint = CurrentSprint(releases);
-        if(currentSprint == null)
-        {
-      	  return null;
-        }
-        
-        int lastSprint = currentSprint.selectIdentifier() - 1;
-        for( ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
-        {
-        	if( sprint.selectIdentifier() == lastSprint)
-        	{
-        		return sprint;
-        	}    		  
-  	  	}
+      final var currentSprint = CurrentSprint(releases);
+      if(currentSprint == null)
+      {
+      	return null;
+      }
 
-  	  	return null;
+      final var lastSprint = currentSprint.selectIdentifier() - 1;
+      for( final ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
+      {
+      	if( sprint.selectIdentifier() == lastSprint)
+      	{
+      		return sprint;
+      	}
+      }
+
+      return null;
       /* End Protected Region   [[9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e]] */
     }
 
@@ -216,4 +215,4 @@ public class FunctionSpace_Releases {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,7XTTe+H+ldU58q95bGmR22fba0A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,iFp6S8y4epQB1SVwu8fyfUQiuks=] */

@@ -9,14 +9,14 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[9f8f1638-ca32-11e8-82ac-e1eb952f770a,imports]] */
 import java.util.*;
-import cleon.common.calendar.metamodel.spec.FunctionSpace.DayFunctions;
-
+import cleon.common.calendar.metamodel.spec.FunctionSpace_Calendar.IDayFunctions;
+import cleon.common.calendar.metamodel.spec.javamodel.IDay;
 /* End Protected Region   [[9f8f1638-ca32-11e8-82ac-e1eb952f770a,imports]] */
 
 public class FunctionSpace_ProjectManagement {
 
   /* Begin Protected Region [[9f8f1638-ca32-11e8-82ac-e1eb952f770a]] */
-  
+
   /* End Protected Region   [[9f8f1638-ca32-11e8-82ac-e1eb952f770a]] */
 
 
@@ -177,17 +177,14 @@ public class FunctionSpace_ProjectManagement {
     @Override
     public <T extends cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList) {
       /* Begin Protected Region [[9f8f3dd0-ca32-11e8-82ac-e1eb952f770a]] */
-		ArrayList<T> taskSortedList = new ArrayList<>(taskList);
-		Collections.sort(taskSortedList, new java.util.Comparator<T>() {
-			public int compare(T o1, T o2)
-			{
-				Date deadline1 = DayFunctions.GetDate(o1.selectDeadline());
-				Date deadline2 = DayFunctions.GetDate(o2.selectDeadline());
-				return deadline1.compareTo(deadline2);
-			}
-		});
-		
-		return taskSortedList;   
+      final var taskSortedList = new ArrayList<>(taskList);
+      Collections.sort(taskSortedList, (o1, o2) -> {
+      	final var deadline1 = o1.selectDeadline().extension(IDayFunctions.class).GetDate();
+      	final var deadline2 = o2.selectDeadline().extension(IDayFunctions.class).GetDate();
+      	return deadline1.compareTo(deadline2);
+      });
+
+      return taskSortedList;
       /* End Protected Region   [[9f8f3dd0-ca32-11e8-82ac-e1eb952f770a]] */
     }
 
@@ -460,14 +457,14 @@ public class FunctionSpace_ProjectManagement {
     @Override
     public java.lang.String renderMissingSeparator(final cleon.common.calendar.metamodel.spec.javamodel.IMonth month) {
       /* Begin Protected Region [[9f8ddde8-ca32-11e8-82ac-e1eb952f770a]] */
-        int max = month.selectDays().stream().mapToInt(x -> x.selectIdentifier()).max().getAsInt();
-        int mod = 5 - Math.floorMod(max, 5);
-        String result = "";
-        for(int i = 0; i<mod; ++i)
-        {
-      	  result += "|";
-        }
-        return result;        
+      final var max = month.selectDays().stream().mapToInt(IDay::selectIdentifier).max().getAsInt();
+      final var mod = 5 - Math.floorMod(max, 5);
+      final var result = new StringBuilder();
+      for(var i = 0; i<mod; ++i)
+      {
+      	result.append("|");
+      }
+      return result.toString();
       /* End Protected Region   [[9f8ddde8-ca32-11e8-82ac-e1eb952f770a]] */
     }
 

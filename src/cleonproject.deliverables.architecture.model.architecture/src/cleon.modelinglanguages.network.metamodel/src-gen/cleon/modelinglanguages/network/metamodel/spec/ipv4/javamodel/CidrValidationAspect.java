@@ -1,5 +1,7 @@
 package cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.List;
 
 import ch.actifsource.core.job.Select;
@@ -21,9 +23,11 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		final var resourceRepository = typeSystem.getResourceRepository();
 		final var cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
 
+		final var start = Instant.now();
+		final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());
 		try {
-			// Performance with validation of big networks
-			final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());
+			// Performance with validation of extensive networks
+
 			if( cidr.selectMask() < 24 ) {
 				Logger.instance().logInfo(String.format("Validation skipped (%s)", network));
 				return;
@@ -38,7 +42,7 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 				final var ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
 				if(ipv4 == null)
 				{
-					// Add quick fix
+					//Add final quick fix
 					final var fixMissingIP = new FixMissingIPQuickfix(subnet, range, () -> true);
 					validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip), fixMissingIP));
 				}
@@ -46,6 +50,14 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 			}
 		} catch (final IllegalArgumentException e) {
 			e.printStackTrace();
+		}
+		finally {
+			final var finish = Instant.now();
+			final var timeElapsed = Duration.between(start, finish).toMillis();
+			if( timeElapsed > 100 ) {
+				Logger.instance().logInfo(String.format("Validation time for %s took %d ms", this.getClass().getSimpleName(), timeElapsed));
+			}
+
 		}
 	}
 }

@@ -98,7 +98,6 @@
       </owns>
     </resource>
     <resource statement-guid="ed382c1d-c569-11e9-9daa-cf9f9f7341e8" type="resource" guid="ed348299-c569-11e9-9daa-cf9f9f7341e8" />
-    <resource statement-guid="e61a4db9-c580-11e9-9daa-cf9f9f7341e8" type="resource" guid="e6193c45-c580-11e9-9daa-cf9f9f7341e8" />
     <resource statement-guid="a238c1d9-d851-11e9-8923-0d6897579abc" type="resource" guid="a22ed6c5-d851-11e9-8923-0d6897579abc" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -453,19 +452,6 @@
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="ed34829c-c569-11e9-9daa-cf9f9f7341e8" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="e61a4db9-c580-11e9-9daa-cf9f9f7341e8">
-      <resource guid="e6193c45-c580-11e9-9daa-cf9f9f7341e8">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e6193c46-c580-11e9-9daa-cf9f9f7341e8" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e6193c47-c580-11e9-9daa-cf9f9f7341e8" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.ActivityPermissionIdValidationAspect</object>
-        </predicate>
-        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e6193c48-c580-11e9-9daa-cf9f9f7341e8" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

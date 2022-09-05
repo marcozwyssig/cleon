@@ -505,6 +505,7 @@
         <resource statement-guid="b26758df-c7b8-11ec-a6a4-0b12dcfbdf90" type="resource" guid="b26758db-c7b8-11ec-a6a4-0b12dcfbdf90" />
         <resource statement-guid="c5d72b71-c7ba-11ec-a6a4-0b12dcfbdf90" type="resource" guid="c5d72b6e-c7ba-11ec-a6a4-0b12dcfbdf90" />
         <resource statement-guid="dc253498-ebb0-11ec-952f-b51fd3cf2827" type="resource" guid="dc250d85-ebb0-11ec-952f-b51fd3cf2827" />
+        <resource statement-guid="5c9da788-2cfc-11ed-90aa-a369c5227386" type="resource" guid="5c9d5965-2cfc-11ed-90aa-a369c5227386" />
       </owns>
     </resource>
   </owns>
@@ -5533,6 +5534,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="dc253499-ebb0-11ec-952f-b51fd3cf2827" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.time_synchronization</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="5c9da788-2cfc-11ed-90aa-a369c5227386">
+            <resource guid="5c9d5965-2cfc-11ed-90aa-a369c5227386">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="5c9d8077-2cfc-11ed-90aa-a369c5227386" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="5c9df5a9-2cfc-11ed-90aa-a369c5227386" type="literal">cleon.applications.actifsource.sample.category_b.feature_g.metamodel</object>
               </predicate>
             </resource>
           </object>

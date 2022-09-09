@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4ded4698-303c-11ed-b561-abe8147b73fc">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="4ded46a0-303c-11ed-b561-abe8147b73fc" type="resource" guid="4ded4699-303c-11ed-b561-abe8147b73fc" />
+    <resource statement-guid="4ded46a3-303c-11ed-b561-abe8147b73fc" type="resource" guid="4ded469a-303c-11ed-b561-abe8147b73fc" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4ded469b-303c-11ed-b561-abe8147b73fc" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4ded469c-303c-11ed-b561-abe8147b73fc" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4ded469d-303c-11ed-b561-abe8147b73fc" type="literal">LAGType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="4ded46a0-303c-11ed-b561-abe8147b73fc">
+      <resource guid="4ded4699-303c-11ed-b561-abe8147b73fc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4ded469e-303c-11ed-b561-abe8147b73fc" type="resource" guid="4ded4698-303c-11ed-b561-abe8147b73fc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4ded469f-303c-11ed-b561-abe8147b73fc" type="literal">H</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4ded46a3-303c-11ed-b561-abe8147b73fc">
+      <resource guid="4ded469a-303c-11ed-b561-abe8147b73fc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4ded46a1-303c-11ed-b561-abe8147b73fc" type="resource" guid="4ded4698-303c-11ed-b561-abe8147b73fc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4ded46a2-303c-11ed-b561-abe8147b73fc" type="literal">G</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

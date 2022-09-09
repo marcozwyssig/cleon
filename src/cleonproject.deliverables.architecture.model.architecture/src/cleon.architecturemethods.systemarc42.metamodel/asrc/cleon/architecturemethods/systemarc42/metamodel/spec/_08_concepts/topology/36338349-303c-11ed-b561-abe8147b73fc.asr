@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="36338349-303c-11ed-b561-abe8147b73fc">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="36338353-303c-11ed-b561-abe8147b73fc" type="resource" guid="3633834a-303c-11ed-b561-abe8147b73fc" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3633834b-303c-11ed-b561-abe8147b73fc" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3633834c-303c-11ed-b561-abe8147b73fc" type="resource" guid="45ee3865-570e-11ea-9b24-23fcad029119" />
+    <object statement-guid="3633834d-303c-11ed-b561-abe8147b73fc" type="resource" guid="57d5abe9-da24-11ea-ae00-5518e944c256" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="36338353-303c-11ed-b561-abe8147b73fc">
+      <resource guid="3633834a-303c-11ed-b561-abe8147b73fc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3633834e-303c-11ed-b561-abe8147b73fc" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3633834f-303c-11ed-b561-abe8147b73fc" type="literal">type</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="36338350-303c-11ed-b561-abe8147b73fc" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="36338351-303c-11ed-b561-abe8147b73fc" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="36338352-303c-11ed-b561-abe8147b73fc" type="resource" guid="4ded4698-303c-11ed-b561-abe8147b73fc" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="36338354-303c-11ed-b561-abe8147b73fc" type="literal">LAGHost</object>
+  </predicate>
+</resource>
+

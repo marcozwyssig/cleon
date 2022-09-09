@@ -685,6 +685,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface ILAGHostFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("aa462c7b-303c-11ed-b561-abe8147b73fc")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface ILAGHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LAGHostFunctionsImpl implements ILAGHostFunctionsImpl {
+
+    public static final ILAGHostFunctionsImpl INSTANCE = new LAGHostFunctionsImpl();
+
+    private LAGHostFunctionsImpl() {}
+
+  }
+  
+  public static class LAGHostFunctions {
+
+    private LAGHostFunctions() {}
+
+  }
+
   public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aa16144f-57cc-11ea-bd7a-4baf1bc87b3c")
@@ -885,4 +910,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,h7IkgjPCqaYWOp86+AvgBVgKIfU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,pWlr5gkD0/TTpOv1PY3VBXMpoj4=] */

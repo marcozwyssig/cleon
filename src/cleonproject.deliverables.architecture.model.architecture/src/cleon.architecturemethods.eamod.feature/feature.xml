@@ -457,13 +457,13 @@ and/or other countries. All other trademarks are the property
 of their respective owners.
    </license>   
    <requires>
-   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.generator" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.ui.wizard.generic" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.ui.wizard" version="11.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.xml" version="11.0.0" match="greaterOrEqual"/>
       <import feature="cleon.common.actifsource" version="0.4.149.qualifier"/>
       <import feature="cleon.common.building" version="0.4.149.qualifier"/>
       <import feature="cleon.common.calendar" version="0.4.149.qualifier"/>

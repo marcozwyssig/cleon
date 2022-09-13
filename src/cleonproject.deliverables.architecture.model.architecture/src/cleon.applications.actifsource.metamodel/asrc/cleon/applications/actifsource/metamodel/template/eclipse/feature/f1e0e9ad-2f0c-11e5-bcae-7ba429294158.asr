@@ -3,7 +3,6 @@
   <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
     <resource statement-guid="f7e12a79-2f0c-11e5-bcae-7ba429294158" type="resource" guid="f7e12a73-2f0c-11e5-bcae-7ba429294158" />
     <resource statement-guid="0ac22f85-089b-11e6-a630-c5f34c31623f" type="resource" guid="0ac22f81-089b-11e6-a630-c5f34c31623f" />
-    <resource statement-guid="11db81ed-089b-11e6-a630-c5f34c31623f" type="resource" guid="11d910e7-089b-11e6-a630-c5f34c31623f" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f1e0e9b5-2f0c-11e5-bcae-7ba429294158" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
@@ -47,25 +46,6 @@
         </predicate>
         <predicate guid="7579c7fe-1b35-11e5-a133-7174798b83c4">
           <object statement-guid="17631051-089b-11e6-a630-c5f34c31623f" type="literal">false</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="11db81ed-089b-11e6-a630-c5f34c31623f">
-      <resource guid="11d910e7-089b-11e6-a630-c5f34c31623f">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="11db81e9-089b-11e6-a630-c5f34c31623f" type="resource" guid="11b444f7-dc94-11dd-8de2-bb051d76fa6e" />
-        </predicate>
-        <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
-          <object statement-guid="12907a0e-089b-11e6-a630-c5f34c31623f" type="resource" guid="a22a27c5-2f0d-11e5-bcae-7ba429294158" />
-        </predicate>
-        <predicate guid="b8afc0be-fc5c-11de-a132-97280c50fe20">
-          <object statement-guid="11db81ea-089b-11e6-a630-c5f34c31623f" type="literal">false</object>
-        </predicate>
-        <predicate guid="39639f9c-1336-11e5-91df-c9d0b644ad03">
-          <object statement-guid="11db81eb-089b-11e6-a630-c5f34c31623f" type="literal">false</object>
-        </predicate>
-        <predicate guid="7579c7fe-1b35-11e5-a133-7174798b83c4">
-          <object statement-guid="11db81ec-089b-11e6-a630-c5f34c31623f" type="literal">false</object>
         </predicate>
       </resource>
     </object>

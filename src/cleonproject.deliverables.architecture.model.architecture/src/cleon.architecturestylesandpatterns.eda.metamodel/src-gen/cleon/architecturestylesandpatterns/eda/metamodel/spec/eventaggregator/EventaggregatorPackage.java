@@ -9,7 +9,7 @@ public class EventaggregatorPackage {
   public static final Resource EventAggregator_events = new Resource("834de244-d230-11e4-8b90-c7d981a5f2fd");
   public static final Resource PubSubEvent_event = new Resource("ae605763-d230-11e4-8b90-c7d981a5f2fd");
   public static final Resource EventAggregator_context = new Resource("c9502260-d231-11e4-8b90-c7d981a5f2fd");
-  public static final Resource Functions_PubSubEvent = new Resource("5100c4f1-d232-11e4-8b90-c7d981a5f2fd");
+  public static final Resource Functions_aE_Event_aE_Aggregator_PubSubEvent = new Resource("5100c4f1-d232-11e4-8b90-c7d981a5f2fd");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +30,4 @@ public class EventaggregatorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator,URPRa7L14OVLXm/ao/EJeUqtZXY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator,zdJVJdHCfJ/DT7AW1YR3pGXsWnE=] */

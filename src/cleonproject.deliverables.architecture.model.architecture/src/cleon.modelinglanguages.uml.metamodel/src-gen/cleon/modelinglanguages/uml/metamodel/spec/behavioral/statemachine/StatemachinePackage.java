@@ -14,7 +14,7 @@ public class StatemachinePackage {
   public static final Resource Transition_targetState = new Resource("e1424fb2-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource Transition_event = new Resource("16530f02-b07d-11e4-bca8-71d5b3e72cd6");
   public static final Resource StateMachineDiagram_subStateMachine = new Resource("f3b63c5c-345c-11e5-909a-4bcced25d7ee");
-  public static final Resource FunctionSpace_StateMachineDiagram = new Resource("8bf0dfe6-345d-11e5-909a-4bcced25d7ee");
+  public static final Resource FunctionSpace_aE_StateMachine_StateMachineDiagram = new Resource("8bf0dfe6-345d-11e5-909a-4bcced25d7ee");
   public static final Resource Transition_condition = new Resource("dacdf6f7-3474-11e5-909a-4bcced25d7ee");
   public static final Resource Condition = new Resource("e529a31f-3474-11e5-909a-4bcced25d7ee");
   public static final Resource State = new Resource("9294aba1-352f-11e5-909a-4bcced25d7ee");
@@ -42,4 +42,4 @@ public class StatemachinePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine,oMOq5+ZLIhmHylzl9h7E1w99dnQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine,8dJjFw56X+A1r9VQyabsoubKJKs=] */

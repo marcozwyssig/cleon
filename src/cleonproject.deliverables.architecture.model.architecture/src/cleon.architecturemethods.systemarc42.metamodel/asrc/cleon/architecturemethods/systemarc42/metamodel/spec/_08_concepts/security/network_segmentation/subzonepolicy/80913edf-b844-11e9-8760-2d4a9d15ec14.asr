@@ -63,7 +63,6 @@
         </resource>
       </owns>
     </resource>
-    <resource statement-guid="9d1c425f-0950-11ea-a9aa-d95ecdaa88c4" type="resource" guid="9d1bcd2b-0950-11ea-a9aa-d95ecdaa88c4" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="80913ee1-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -316,19 +315,6 @@
               </predicate>
             </resource>
           </object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="9d1c425f-0950-11ea-a9aa-d95ecdaa88c4">
-      <resource guid="9d1bcd2b-0950-11ea-a9aa-d95ecdaa88c4">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="9d1bcd2d-0950-11ea-a9aa-d95ecdaa88c4" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="9e2cc856-0950-11ea-a9aa-d95ecdaa88c4" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SubZoneAccessPolicyValidationAspect</object>
-        </predicate>
-        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="9d1c1b4e-0950-11ea-a9aa-d95ecdaa88c4" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

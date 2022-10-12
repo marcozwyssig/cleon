@@ -33,9 +33,11 @@
             </resource>
           </owns>
         </resource>
-        <resource statement-guid="2c90c6c9-195a-11ed-9005-8b5244ad6799" type="resource" guid="2c9078a5-195a-11ed-9005-8b5244ad6799" />
       </owns>
     </resource>
+  </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ad3c6cd0-4990-11ed-a393-71d110f47b9f" type="resource" guid="9d1bcd2b-0950-11ea-a9aa-d95ecdaa88c4" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="19162785-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -171,19 +173,6 @@
               </predicate>
             </resource>
           </object>
-          <object statement-guid="2c90c6c9-195a-11ed-9005-8b5244ad6799">
-            <resource guid="2c9078a5-195a-11ed-9005-8b5244ad6799">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="2c909fb7-195a-11ed-9005-8b5244ad6799" type="resource" guid="0bf63a76-de53-11eb-8e7e-69557daa5c9e" />
-              </predicate>
-              <predicate guid="594f40f4-de53-11eb-8e7e-69557daa5c9e">
-                <object statement-guid="2c909fb8-195a-11ed-9005-8b5244ad6799" type="resource" guid="2e611184-de52-11eb-8e7e-69557daa5c9e" />
-              </predicate>
-              <predicate guid="dcef9be9-de5c-11eb-8e7e-69557daa5c9e">
-                <object statement-guid="2d769384-195a-11ed-9005-8b5244ad6799" type="resource" guid="eef9ae92-de5c-11eb-8e7e-69557daa5c9e" />
-              </predicate>
-            </resource>
-          </object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="8c70f2ee-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
@@ -199,6 +188,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="19162786-b844-11e9-8760-2d4a9d15ec14" type="literal">SourceSubZone</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ad3c6cd0-4990-11ed-a393-71d110f47b9f">
+      <resource guid="9d1bcd2b-0950-11ea-a9aa-d95ecdaa88c4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9d1bcd2d-0950-11ea-a9aa-d95ecdaa88c4" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9e2cc856-0950-11ea-a9aa-d95ecdaa88c4" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZoneValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9d1c1b4e-0950-11ea-a9aa-d95ecdaa88c4" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="1ee45597-b847-11e9-8760-2d4a9d15ec14" type="literal">false</object>

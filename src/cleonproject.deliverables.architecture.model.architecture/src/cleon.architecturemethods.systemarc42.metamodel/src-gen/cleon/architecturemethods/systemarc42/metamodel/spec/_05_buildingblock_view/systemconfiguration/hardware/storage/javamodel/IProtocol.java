@@ -12,9 +12,7 @@ public interface IProtocol extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitNfs();
     
-    public void visitSMBv3();
-    
-    public void visitSMBv2();
+    public void visitSMB();
     
   }
   
@@ -24,9 +22,7 @@ public interface IProtocol extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visitNfs();
     
-    public R visitSMBv3();
-    
-    public R visitSMBv2();
+    public R visitSMB();
     
   }
   
@@ -42,11 +38,9 @@ public interface IProtocol extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isNfs();
   
-  public boolean isSMBv3();
-  
-  public boolean isSMBv2();
+  public boolean isSMB();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21d2d137-8c92-11eb-a9c0-c3b95abf3470,JZhv/FDOzsg+VhaYQybEDQ+ra1I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21d2d137-8c92-11eb-a9c0-c3b95abf3470,Fc+ozoFkgLe7J8+0F2xLTGXqaUM=] */

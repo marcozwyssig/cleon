@@ -421,6 +421,31 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   }
 
+  public static interface IOverrideShortNameAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4461f4ba-d8e6-11eb-9729-c33fe444cc71")
+    public java.lang.String OverrideOrName();
+
+  }
+  
+  public static interface IOverrideShortNameAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OverrideShortNameAwareFunctionsImpl implements IOverrideShortNameAwareFunctionsImpl {
+
+    public static final IOverrideShortNameAwareFunctionsImpl INSTANCE = new OverrideShortNameAwareFunctionsImpl();
+
+    private OverrideShortNameAwareFunctionsImpl() {}
+
+  }
+  
+  public static class OverrideShortNameAwareFunctions {
+
+    private OverrideShortNameAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,+tIo1ffpuEacM3+xOYAhRRRXxQg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,4d/1odz9hpr34tk8WZb7r7ztnAA=] */

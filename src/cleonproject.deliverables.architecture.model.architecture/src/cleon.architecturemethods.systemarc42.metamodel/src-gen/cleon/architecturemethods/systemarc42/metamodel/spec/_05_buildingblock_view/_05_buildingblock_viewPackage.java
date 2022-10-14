@@ -70,6 +70,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemConfiguration_properties = new Resource("cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfigurationProperty = new Resource("0183aaf2-d5d1-11ec-ad12-8d6f8e00bc94");
   public static final Resource SkipHostGenerationAware = new Resource("3252c4b2-e0aa-11ec-afcf-1feb072e53ef");
+  public static final Resource AbstractSystemOrSystemComponent = new Resource("8c3968c8-4bc0-11ed-9983-274ab90bcd39");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_OverrideShortNameAware = new Resource("51c045d1-4bc1-11ed-9983-274ab90bcd39");
   
   /* Begin Protected Region [[user]] */
   
@@ -90,4 +92,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,qsqz5BEjUn95dJ2jojNeMp3yk3w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,ga2+sP4jKSrsmLx7lhFG34GskMw=] */

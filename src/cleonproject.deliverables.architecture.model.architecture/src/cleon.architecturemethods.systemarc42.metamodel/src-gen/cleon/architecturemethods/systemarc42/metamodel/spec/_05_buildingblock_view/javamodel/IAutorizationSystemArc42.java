@@ -8,8 +8,8 @@ public interface IAutorizationSystemArc42 extends cleon.architecturemethods.arc4
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSystemConfiguration selectActivityBlock();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration selectActivityBlock();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c727191a-23f5-11eb-83b1-3d2a97975978,VZLA4vPgGWCvhi/+29+IeuMU/aQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c727191a-23f5-11eb-83b1-3d2a97975978,k7JZ7TJyYhCVF4bc3Urayi6btis=] */

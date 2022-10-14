@@ -9,7 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleRootGroups;
 import java.util.stream.Collectors;
 /* End Protected Region   [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 
@@ -123,7 +122,7 @@ public class FunctionSpace_Role {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
       /* Begin Protected Region [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
-      return roleSystemComponentList.stream().filter(x -> x.selectSystemComponentRoleTemplate().selectSystemComponent().equals(rolSysCmp.selectSystemComponentRoleTemplate().selectSystemComponent())).collect(Collectors.toList());
+      return roleSystemComponentList.stream().filter(x -> x.selectSystemComponentRoleTemplate().selectSystemOrSystemComponent().equals(rolSysCmp.selectSystemComponentRoleTemplate().selectSystemOrSystemComponent())).collect(Collectors.toList());
       /* End Protected Region   [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
     }
 
@@ -137,7 +136,7 @@ public class FunctionSpace_Role {
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       /* Begin Protected Region [[c1142c0c-d5df-11eb-b02a-03222c04a898]] */
-    	return roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetRoleSiteGroupId() + roleSystemComponent.selectSystemComponentRoleTemplate().selectIdentifier();
+      return roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetRoleSiteGroupId() + roleSystemComponent.selectSystemComponentRoleTemplate().selectIdentifier();
       /* End Protected Region   [[c1142c0c-d5df-11eb-b02a-03222c04a898]] */
     }
 
@@ -262,9 +261,9 @@ public class FunctionSpace_Role {
     @Override
     public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSiteGroup roleSiteGroup) {
       /* Begin Protected Region [[79ca7b0b-9c8f-11e9-9b32-35cf2fd07621]] */
-      final IAbstractGroupFunctions groupFunctions = roleSiteGroup.extension(IAbstractGroupFunctions.class);
-      final IRoleRootGroups roleRootGroups = groupFunctions.GetRootRoleGroup();   	
-      final IRoleRootGroupsFunctions roleRootGroupsFunctions = roleRootGroups.extension(IRoleRootGroupsFunctions.class);
+      final var groupFunctions = roleSiteGroup.extension(IAbstractGroupFunctions.class);
+      final var roleRootGroups = groupFunctions.GetRootRoleGroup();
+      final var roleRootGroupsFunctions = roleRootGroups.extension(IRoleRootGroupsFunctions.class);
       return roleRootGroupsFunctions.ActorCount() * roleRootGroupsFunctions.ResponsibilityCount() + roleRootGroupsFunctions.SystemComponentCount();
       /* End Protected Region   [[79ca7b0b-9c8f-11e9-9b32-35cf2fd07621]] */
     }

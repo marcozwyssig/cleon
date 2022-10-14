@@ -7,12 +7,9 @@ import java.util.List;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
-import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.util.log.Logger;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IEnvironmentRBACFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.FunctionSpace_Role.IRoleSystemComponentFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage;
 
 public class RoleSystemComponentIdenticalIdLikeMasterValidationAspect implements IResourceValidationAspect {
 	@Override
@@ -28,24 +25,24 @@ public class RoleSystemComponentIdenticalIdLikeMasterValidationAspect implements
 			final var roleSystemComponentFunctions = roleSystemComponent
 					.extension(IRoleSystemComponentFunctions.class);
 			final var master = abstractGroupFunctions.GetRBAC().selectMaster();
-			if (master == null) {
-				return;
+			if (master != null) {
+				//				final var environmentRBACFunctions = master.extension(IEnvironmentRBACFunctions.class);
+				//				final var masterRoleSystemComponent = environmentRBACFunctions.GetRoleSystemComponent(
+				//						roleSystemComponentFunctions.SiteGroup().selectSite(),
+				//						roleSystemComponentFunctions.Actor().selectActor(),
+				//						roleSystemComponentFunctions.Responsibility().selectResponsibility(),
+				//						roleSystemComponent.selectSystemComponentRoleTemplate().selectSystemComponent());
+				//
+				//				if (!roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId().equals(masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId())) {
+				//					final var errormessage = String.format(
+				//							"Id of role system component is different than the master (%1$d != %2$d)",
+				//							roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId(), masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId());
+				//					inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
+				//							RolePackage.RoleSystemComponent, errormessage));
+				//				}
 			}
 
-			final var environmentRBACFunctions = master.extension(IEnvironmentRBACFunctions.class);
-			final var masterRoleSystemComponent = environmentRBACFunctions.GetRoleSystemComponent(
-					roleSystemComponentFunctions.SiteGroup().selectSite(),
-					roleSystemComponentFunctions.Actor().selectActor(),
-					roleSystemComponentFunctions.Responsibility().selectResponsibility(),
-					roleSystemComponent.selectSystemComponentRoleTemplate().selectSystemComponent());
 
-			if (!roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId().equals(masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId())) {
-				final var errormessage = String.format(
-						"Id of role system component is different than the master (%1$d != %2$d)",
-						roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId(), masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId());
-				inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
-						RolePackage.RoleSystemComponent, errormessage));
-			}
 		} finally {
 			final var finish = Instant.now();
 			final var timeElapsed = Duration.between(start, finish).toMillis();

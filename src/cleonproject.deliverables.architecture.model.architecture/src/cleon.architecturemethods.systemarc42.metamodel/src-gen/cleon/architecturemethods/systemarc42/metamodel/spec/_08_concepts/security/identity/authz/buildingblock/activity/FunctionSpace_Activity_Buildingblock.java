@@ -192,6 +192,31 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
+  public static interface IAuthZBuildingBlockForSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("aa464d71-4bd3-11ed-bcee-57344264bda3")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystemOrSystemConfiguration> AllRelevantComponentsForAuthZBuildingBlockForSystem();
+
+  }
+  
+  public static interface IAuthZBuildingBlockForSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AuthZBuildingBlockForSystemFunctionsImpl implements IAuthZBuildingBlockForSystemFunctionsImpl {
+
+    public static final IAuthZBuildingBlockForSystemFunctionsImpl INSTANCE = new AuthZBuildingBlockForSystemFunctionsImpl();
+
+    private AuthZBuildingBlockForSystemFunctionsImpl() {}
+
+  }
+  
+  public static class AuthZBuildingBlockForSystemFunctions {
+
+    private AuthZBuildingBlockForSystemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,NU/iI/SLClSsf0B4XyjpAcd9lJM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,3nmHwSU+/OLqPnuC1VCdVLN4hvU=] */

@@ -22,6 +22,62 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   /* End Protected Region   [[8bc3420c-035a-11e9-a251-e3767b78f69f]] */
 
 
+  public static interface IAbstractSystemOrSystemComponentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9c052ed1-4bc1-11ed-9983-274ab90bcd39")
+    public java.lang.String ShortnameOrOverride();
+
+  }
+  
+  public static interface IAbstractSystemOrSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSystemOrSystemComponentFunctionsImpl implements IAbstractSystemOrSystemComponentFunctionsImpl {
+
+    public static final IAbstractSystemOrSystemComponentFunctionsImpl INSTANCE = new AbstractSystemOrSystemComponentFunctionsImpl();
+
+    private AbstractSystemOrSystemComponentFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSystemOrSystemComponentFunctions {
+
+    private AbstractSystemOrSystemComponentFunctions() {}
+
+  }
+
+  public static interface IAbstractSystemOrSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c8a093a3-4bd4-11ed-bcee-57344264bda3")
+    public java.lang.String GetShortname();
+
+    @IDynamicResourceExtension.MethodId("59dcc048-4bd5-11ed-bcee-57344264bda3")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("d71c7699-4bd4-11ed-bcee-57344264bda3")
+    public java.lang.String ShortnameOrOverride();
+
+  }
+  
+  public static interface IAbstractSystemOrSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSystemOrSystemConfigurationFunctionsImpl implements IAbstractSystemOrSystemConfigurationFunctionsImpl {
+
+    public static final IAbstractSystemOrSystemConfigurationFunctionsImpl INSTANCE = new AbstractSystemOrSystemConfigurationFunctionsImpl();
+
+    private AbstractSystemOrSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSystemOrSystemConfigurationFunctions {
+
+    private AbstractSystemOrSystemConfigurationFunctions() {}
+
+  }
+
   public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("661c4575-879b-11e9-bb4b-c57da735262b")
@@ -242,6 +298,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem System();
 
+    @IDynamicResourceExtension.MethodId("eadcbef1-4bc1-11ed-9983-274ab90bcd39")
+    public java.lang.String ShortnameOrOverride();
+
   }
   
   public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -259,6 +318,49 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   public static class SystemComponentFunctions {
 
     private SystemComponentFunctions() {}
+
+  }
+
+  public static interface IAbstractSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9d441428-616f-11ea-a72c-c14dab81a029")
+    public java.lang.String GetStereotypeName();
+
+    @IDynamicResourceExtension.MethodId("8364e39b-c78b-11ea-b0b6-e5df79e86bc2")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("5302a03f-94c2-11ec-ab3a-174a15580942")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
+
+    @IDynamicResourceExtension.MethodId("da82f449-4bc1-11ed-9983-274ab90bcd39")
+    public java.lang.String OverrideOrName();
+
+    @IDynamicResourceExtension.MethodId("efaea1fb-4bd5-11ed-bcee-57344264bda3")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("0c78c830-4bd6-11ed-bcee-57344264bda3")
+    public java.lang.String ShortnameOrOverride();
+
+    @IDynamicResourceExtension.MethodId("fa4dc007-4bd5-11ed-bcee-57344264bda3")
+    public java.lang.String GetShortname();
+
+  }
+  
+  public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSystemFunctionsImpl implements IAbstractSystemFunctionsImpl {
+
+    public static final IAbstractSystemFunctionsImpl INSTANCE = new AbstractSystemFunctionsImpl();
+
+    private AbstractSystemFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSystemFunctions {
+
+    private AbstractSystemFunctions() {}
 
   }
 
@@ -343,37 +445,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   }
 
-  public static interface IAbstractSystemFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("9d441428-616f-11ea-a72c-c14dab81a029")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("8364e39b-c78b-11ea-b0b6-e5df79e86bc2")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("5302a03f-94c2-11ec-ab3a-174a15580942")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
-
-  }
-  
-  public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractSystemFunctionsImpl implements IAbstractSystemFunctionsImpl {
-
-    public static final IAbstractSystemFunctionsImpl INSTANCE = new AbstractSystemFunctionsImpl();
-
-    private AbstractSystemFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractSystemFunctions {
-
-    private AbstractSystemFunctions() {}
-
-  }
-
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
   }
@@ -448,4 +519,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,4d/1odz9hpr34tk8WZb7r7ztnAA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,UNhtz39q9pt3SSlEFVYNclM/kDk=] */

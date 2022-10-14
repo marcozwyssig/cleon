@@ -10,8 +10,8 @@ public interface IAuthZBuildingBlockForSystem extends cleon.common.doc.metamodel
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem selectAuthZForSystem();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSystemConfiguration> selectAuthZForSystemConfigurations();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration> selectAuthZForSystemOrSystemConfigurations();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6649e36f-032a-11eb-af88-136a9a3b3817,YMXpPwaA369LBYWTESHsHuQSxlo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6649e36f-032a-11eb-af88-136a9a3b3817,y6bgCarGV0h11jMoVY9tNprrPDs=] */

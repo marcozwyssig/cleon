@@ -36,9 +36,6 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("8b08df13-7f26-11e9-9a52-07d4b074defc")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration();
 
-    @IDynamicResourceExtension.MethodId("188608b0-7f27-11e9-9a52-07d4b074defc")
-    public java.lang.Integer GetSystemConfigurationId();
-
     @IDynamicResourceExtension.MethodId("cd8a84f5-7f27-11e9-9a52-07d4b074defc")
     public java.lang.Integer PermissionCount();
 
@@ -377,37 +374,6 @@ public class FunctionSpace_Activity_Deployment {
 
   }
 
-  public static interface IActivitySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("f98f93cf-864a-11eb-9869-4317e18e6c88")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForPermission> AllAuthZBuildingBlockForPermission();
-
-    @IDynamicResourceExtension.MethodId("4bc40a7a-864b-11eb-9869-4317e18e6c88")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllAbstractAuthZBuildingBlockForPermission();
-
-    @IDynamicResourceExtension.MethodId("5f23c1fe-864b-11eb-9869-4317e18e6c88")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllAbstractAuthZBuildingBlockForPermissionSort();
-
-  }
-  
-  public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ActivitySystemConfigurationFunctionsImpl implements IActivitySystemConfigurationFunctionsImpl {
-
-    public static final IActivitySystemConfigurationFunctionsImpl INSTANCE = new ActivitySystemConfigurationFunctionsImpl();
-
-    private ActivitySystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class ActivitySystemConfigurationFunctions {
-
-    private ActivitySystemConfigurationFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,EQgTz4cwXDWWlngBVRbbSyQrWMs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,ak7GmfjUq9fb/A44jJaSQNE5O7Y=] */

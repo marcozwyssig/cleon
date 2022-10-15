@@ -18,7 +18,7 @@ public class RefactorDisableRoot extends AbstractAllInstancesRefactorerAspect {
 
 	@Override
 	protected void refactor(IModifiable executor, Package _package, INode clazz) {
-		INode modifier = Select.objectForRelationOrNull(executor, CorePackage.Class_modifier, clazz);
+		final var modifier = Select.objectForRelationOrNull(executor, CorePackage.Class_modifier, clazz);
 		if (modifier != null) {
 			Logger.instance().logInfo("modifier guid " + modifier.toString());
 			if (CorePackage.InheritanceModifier_Abstract.equals(modifier)) {
@@ -26,10 +26,10 @@ public class RefactorDisableRoot extends AbstractAllInstancesRefactorerAspect {
 			}
 		}
 
-		INode allowRoot = Select.objectForAttributeOrNull(executor, CorePackage.Class_allowRoot, clazz);
+		final var allowRoot = Select.objectForAttributeOrNull(executor, CorePackage.Class_allowRoot, clazz);
 		if (allowRoot != null) {
-			boolean boolValue = LiteralUtil.getBooleanValue(allowRoot);
-			if (boolValue == false) {
+			final boolean boolValue = LiteralUtil.getBooleanValue(allowRoot);
+			if (!boolValue) {
 				return;
 			}
 		}

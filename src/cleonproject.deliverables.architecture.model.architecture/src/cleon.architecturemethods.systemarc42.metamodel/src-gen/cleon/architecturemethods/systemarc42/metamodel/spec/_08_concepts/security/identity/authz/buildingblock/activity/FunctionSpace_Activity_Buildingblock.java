@@ -217,6 +217,31 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
+  public static interface IAuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e73b564e-4c9f-11ed-b0be-c9d58a207ca0")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllPermissionTemplates();
+
+  }
+  
+  public static interface IAuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl implements IAuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl {
+
+    public static final IAuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl INSTANCE = new AuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl();
+
+    private AuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class AuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctions {
+
+    private AuthZBuildingBlockForAbstractSystemOrSystemConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,3nmHwSU+/OLqPnuC1VCdVLN4hvU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,URDcT8b37uVmuwoqq/S2RO7iPGw=] */

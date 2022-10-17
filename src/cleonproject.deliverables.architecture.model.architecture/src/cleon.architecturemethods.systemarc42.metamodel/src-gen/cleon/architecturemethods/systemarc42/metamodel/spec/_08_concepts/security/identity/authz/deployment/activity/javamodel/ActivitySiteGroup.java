@@ -40,6 +40,15 @@ public class ActivitySiteGroup extends DynamicResource implements IActivitySiteG
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -145,6 +154,7 @@ public class ActivitySiteGroup extends DynamicResource implements IActivitySiteG
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.ActivityPackage.ActivitySiteGroup_activitiesForSystemConfiguration, visitor);
@@ -160,4 +170,4 @@ public class ActivitySiteGroup extends DynamicResource implements IActivitySiteG
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,v0tk0eTjR4z18xCN06SiEtMizcU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,catfGm+q70OsRCN1ag9R1jni9+E=] */

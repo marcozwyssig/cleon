@@ -58,6 +58,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("d71c7699-4bd4-11ed-bcee-57344264bda3")
     public java.lang.String ShortnameOrOverride();
 
+    @IDynamicResourceExtension.MethodId("4ed56cdc-4e0b-11ed-a85e-ff0e1a36b8ae")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
+
   }
   
   public static interface IAbstractSystemOrSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -196,6 +199,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     @IDynamicResourceExtension.MethodId("f1883319-9b95-11ec-8985-9dc243cc3ec6")
     public java.lang.Boolean AllowDNSRecordExport();
+
+    @IDynamicResourceExtension.MethodId("6b20030a-4e0b-11ed-a85e-ff0e1a36b8ae")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
 
   }
   
@@ -344,10 +350,16 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("fa4dc007-4bd5-11ed-bcee-57344264bda3")
     public java.lang.String GetShortname();
 
+    @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
+
   }
   
   public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem abstractSystem);
+
   }
   
   public static class AbstractSystemFunctionsImpl implements IAbstractSystemFunctionsImpl {
@@ -356,11 +368,20 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     private AbstractSystemFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem abstractSystem) {
+      return null;
+    }
+
   }
   
   public static class AbstractSystemFunctions {
 
     private AbstractSystemFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem abstractSystem) {
+      return DynamicResourceUtil.invoke(IAbstractSystemFunctionsImpl.class, AbstractSystemFunctionsImpl.INSTANCE, abstractSystem).SystemConfigurationProperties(abstractSystem);
+    }
 
   }
 
@@ -519,4 +540,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,UNhtz39q9pt3SSlEFVYNclM/kDk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,MX4EKvmT0xC5vmu1c6nbUEAh+yw=] */

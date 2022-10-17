@@ -8,9 +8,9 @@ public interface IEnvironmentRBAC extends ch.actifsource.core.javamodel.IDecorat
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleRootGroups selectRoles();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleRootGroups selectRoleRootGroups();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityRootGroups selectActivities();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityRootGroups selectActivityRootGroups();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode selectEnvironmentRBAC();
   
@@ -18,4 +18,4 @@ public interface IEnvironmentRBAC extends ch.actifsource.core.javamodel.IDecorat
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,gL8BcDkO/PI2Ey2lfSlMndjdMuw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,EMQs2yrsMgg2V0F0IFGkWphHcPM=] */

@@ -296,6 +296,9 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("40656397-0d2c-11ea-b914-3dd9896c252a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailableActivityPermissions();
 
+    @IDynamicResourceExtension.MethodId("0bafdc45-4e09-11ed-a85e-ff0e1a36b8ae")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IEnvironmentRBAC EnvironmentRBAC();
+
   }
   
   public static interface IActivitySiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -376,4 +379,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,ak7GmfjUq9fb/A44jJaSQNE5O7Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,/hd4JUfxn5aM+ytLrSaUhhh8D/o=] */

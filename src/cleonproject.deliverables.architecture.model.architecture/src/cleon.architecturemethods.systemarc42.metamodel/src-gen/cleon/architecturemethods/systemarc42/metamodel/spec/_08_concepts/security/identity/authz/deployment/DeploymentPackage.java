@@ -8,8 +8,8 @@ public class DeploymentPackage {
   public static final Resource AuthZEnvironmentConcept_environmentRBAC = new Resource("1fe0a9c6-1d5a-11e9-bba4-1d5db4cb1d61");
   public static final Resource AbstractRootGroups = new Resource("4e8cc1b1-1d99-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups = new Resource("ff9a619e-1d99-11e9-b601-db75aa6f89a4");
-  public static final Resource EnvironmentRBAC_activities = new Resource("8bdc2489-1d9a-11e9-b601-db75aa6f89a4");
-  public static final Resource EnvironmentRBAC_roles = new Resource("9604d995-1d9a-11e9-b601-db75aa6f89a4");
+  public static final Resource EnvironmentRBAC_activityRootGroups = new Resource("8bdc2489-1d9a-11e9-b601-db75aa6f89a4");
+  public static final Resource EnvironmentRBAC_roleRootGroups = new Resource("9604d995-1d9a-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups_responsible = new Resource("a53bab2f-1d9e-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups_approval = new Resource("1ee8598d-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSiteGroup_securityGroups = new Resource("9818f4c0-1e06-11e9-834d-77c41fccc6bf");
@@ -48,4 +48,4 @@ public class DeploymentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment,SRl8TKzB1tLqeOaeL/7rT8/6O64=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment,QZcn+gvQyWrWQiVReNNTZlqMyWo=] */

@@ -51,9 +51,6 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("a4552697-0def-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents();
 
-    @IDynamicResourceExtension.MethodId("e76ea796-0a1d-11eb-a857-d17d567fc174")
-    public java.lang.String GetIdAsString();
-
     @IDynamicResourceExtension.MethodId("601de2c0-0a1e-11eb-a857-d17d567fc174")
     public java.lang.Integer GetId();
 
@@ -77,6 +74,9 @@ public class FunctionSpace_Activity_Deployment {
 
     @IDynamicResourceExtension.MethodId("947f9071-ae40-11eb-9680-77b158711103")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponentOnlyEnabledDistinct();
+
+    @IDynamicResourceExtension.MethodId("236c6c0e-4e0e-11ed-a85e-ff0e1a36b8ae")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup ActivitySiteGroup();
 
   }
   
@@ -147,7 +147,8 @@ public class FunctionSpace_Activity_Deployment {
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
-      return Integer.valueOf(activityPermission.extension(IActivityPermissionFunctions.class).GetIdAsString());
+      final var activitySiteGroup = activityPermission.extension(IActivityPermissionFunctions.class).ActivitySiteGroup();
+      return activitySiteGroup.selectIdentifier() * 100 + activityPermission.selectActivityTemplate().selectIdentifier();
       /* End Protected Region   [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
     }
 
@@ -379,4 +380,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,/hd4JUfxn5aM+ytLrSaUhhh8D/o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,7hoRQyt7g9cp+gj9r9DEU3wLCvc=] */

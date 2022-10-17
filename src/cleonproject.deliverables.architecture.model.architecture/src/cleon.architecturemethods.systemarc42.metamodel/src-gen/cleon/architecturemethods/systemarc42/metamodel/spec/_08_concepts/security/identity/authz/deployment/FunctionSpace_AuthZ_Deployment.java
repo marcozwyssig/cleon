@@ -13,7 +13,6 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSiteGroup;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID;
 import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractGroup;
 import java.util.stream.Collectors;
 /* End Protected Region   [[189e1c41-1e07-11e9-834d-77c41fccc6bf,imports]] */
 
@@ -50,7 +49,7 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IEnvironmentRBAC environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
-      final IRoleSiteGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForSite().values()
+      final IRoleSiteGroup roleNetDomainGroup = environmentRBAC.selectRoleRootGroups().selectRoleForSite().values()
       		.stream().filter(x -> x.selectSite().selectName().equals(site.selectName())).findFirst()
       		.orElse(null);
       if (roleNetDomainGroup == null) {
@@ -121,7 +120,7 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
-      return (GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup)) - 1;
+      return GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup) - 1;
       /* End Protected Region   [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
     }
 
@@ -129,8 +128,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
       final var abstractSite = abstractSiteGroup.selectSite();
-      if (abstractSite instanceof IAbstractSiteWithFunctionID) {
-      	final var functionID = (IAbstractSiteWithFunctionID) abstractSite;
+      if (abstractSite instanceof IAbstractSiteWithFunctionID functionID) {
       	return functionID.selectFunctionID();
       }
       return 0;
@@ -141,7 +139,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
       final var functions = abstractSiteGroup.extension(IAbstractSiteGroupFunctions.class);
-      return ((functions.Max() + 99) / 100) * 100;
+      return (functions.Max() + 99) / 100 * 100;
       /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }
 
@@ -255,7 +253,7 @@ public class FunctionSpace_AuthZ_Deployment {
       /* Begin Protected Region [[9dc7296d-6221-11eb-b695-271c721aa03b]] */
       final var functions = abstractGroup.extension(IAbstractGroupFunctions.class);
       final var parent = functions.ParentGroup();
-      if ((parent != null) && !IsEnabled(parent)) {
+      if (parent != null && !IsEnabled(parent)) {
       	return false;
       }
       final var defaultTrueAwareFunctions = abstractGroup.extension(IEnabledWithDefaultTrueAwareFunctions.class);

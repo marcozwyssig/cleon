@@ -57,6 +57,15 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, overrideNumber);
   }
 
+  @Override
+  public java.lang.Integer selectUniqueId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId);
+  }
+    
+  public void setUniqueId(java.lang.Integer uniqueId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId, uniqueId);
+  }
+
   // relations
   
   @Override
@@ -105,6 +114,7 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_export, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_allocateActivitiesFromSite, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountTemplate.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_serviceAccountTemplate, visitor);
@@ -122,4 +132,4 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,6a+apAACeGvyvERTh5dab+NwNYs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,qPNWq1m7zXNHnmnI2EMY0+nvkdU=] */

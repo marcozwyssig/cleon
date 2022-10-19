@@ -57,6 +57,15 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, overrideNumber);
   }
 
+  @Override
+  public java.lang.Integer selectUniqueId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId);
+  }
+    
+  public void setUniqueId(java.lang.Integer uniqueId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId, uniqueId);
+  }
+
   // relations
   
   @Override
@@ -115,6 +124,7 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_export, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_uniqueId, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_allocateActivitiesFromSite, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.gMSA_aE_ServiceAccount_allowAdditionallyUsingOn, visitor);
@@ -129,4 +139,4 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,mNnF2PmxnbI9PAS1PDY4xq+yF6k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,WAQjA3bM0N2cvfvrMbMo2VjQiF4=] */

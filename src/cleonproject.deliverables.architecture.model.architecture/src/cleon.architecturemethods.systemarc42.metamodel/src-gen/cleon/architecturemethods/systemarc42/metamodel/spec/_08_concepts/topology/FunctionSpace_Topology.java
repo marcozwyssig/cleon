@@ -461,28 +461,28 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface IClusterFunctions extends IDynamicResourceExtension {
+  public static interface IClusterHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("95b634af-fb12-11e9-890e-576c93cea08c")
     public java.lang.String ShortName();
 
   }
   
-  public static interface IClusterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IClusterHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ClusterFunctionsImpl implements IClusterFunctionsImpl {
+  public static class ClusterHostFunctionsImpl implements IClusterHostFunctionsImpl {
 
-    public static final IClusterFunctionsImpl INSTANCE = new ClusterFunctionsImpl();
+    public static final IClusterHostFunctionsImpl INSTANCE = new ClusterHostFunctionsImpl();
 
-    private ClusterFunctionsImpl() {}
+    private ClusterHostFunctionsImpl() {}
 
   }
   
-  public static class ClusterFunctions {
+  public static class ClusterHostFunctions {
 
-    private ClusterFunctions() {}
+    private ClusterHostFunctions() {}
 
   }
 
@@ -910,4 +910,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,pWlr5gkD0/TTpOv1PY3VBXMpoj4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,ubrbynAdXOoKt8e5g4YFApHsvrY=] */

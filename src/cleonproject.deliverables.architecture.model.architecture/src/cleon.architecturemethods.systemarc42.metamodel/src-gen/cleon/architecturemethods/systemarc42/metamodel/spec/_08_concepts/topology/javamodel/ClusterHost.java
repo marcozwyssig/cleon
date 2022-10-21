@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Cluster extends DynamicResource implements ICluster {
+public class ClusterHost extends DynamicResource implements IClusterHost {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IClusterHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IClusterHost>() {
     
     @Override
-    public ICluster create() {
-      return new Cluster();
+    public IClusterHost create() {
+      return new ClusterHost();
     }
     
     @Override
-    public ICluster create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Cluster(resourceRepository, resource);
+    public IClusterHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ClusterHost(resourceRepository, resource);
     }
   
   };
 
-  public Cluster() {
-    super(ICluster.TYPE_ID);
+  public ClusterHost() {
+    super(IClusterHost.TYPE_ID);
   }
   
-  public Cluster(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ICluster.TYPE_ID);
+  public ClusterHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IClusterHost.TYPE_ID);
   }
 
   // attributes
@@ -127,7 +127,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public Cluster setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration instanceOf) {
+  public ClusterHost setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -137,7 +137,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public Cluster setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public ClusterHost setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -147,7 +147,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Cluster setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ClusterHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -171,4 +171,4 @@ public class Cluster extends DynamicResource implements ICluster {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,9x0Nvlk6aPfZ0XR5u5fxJsxelGc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,RzS2X0zRiCpc77tuHywG6HuL2Pw=] */

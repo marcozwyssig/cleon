@@ -9,13 +9,11 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.AbstractMonitoringBuildingBlock;
-import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IAbstractMonitoringBuildingBlock;
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.AbstractSiteWithHosts;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ICluster;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IClusterHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IManagedRN;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM;
@@ -71,24 +69,18 @@ public class sites__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
       return abstractHostList.stream().filter(x -> {
-      	if( x.selectSkipMonitoringGeneration() != null && x.selectSkipMonitoringGeneration().booleanValue()) {
+      	if (x.selectSkipMonitoringGeneration() != null && x.selectSkipMonitoringGeneration().booleanValue() || x.selectIsTemporary() != null && x.selectIsTemporary().booleanValue()) {
       		return false;
       	}
 
-      	if (x.selectIsTemporary() != null && x.selectIsTemporary().booleanValue()) {
-      		return false;
-      	}
-
-      	final IAbstractMonitoringBuildingBlock abstractMonitoringBuildingBlock = AbstractMonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
-      	if( abstractMonitoringBuildingBlock instanceof IMonitoringBuildingBlock) {
-      		final IMonitoringBuildingBlock buildingBlock = (IMonitoringBuildingBlock)abstractMonitoringBuildingBlock;
-
+      	final var abstractMonitoringBuildingBlock = AbstractMonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
+      	if( abstractMonitoringBuildingBlock instanceof final IMonitoringBuildingBlock buildingBlock) {
       		if( x instanceof IAbstractSingleHost) {
-      			return true; 
+      			return true;
       		}
-      		if (x instanceof ICluster) {
+      		if (x instanceof IClusterHost) {
       			return buildingBlock.selectCluster() != null;
-      		}      		
+      		}
       	}
 
       	return false;
@@ -99,16 +91,16 @@ public class sites__T_yaml {
     @Override
     public java.lang.String RenderToText(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[c0109767-dcb7-11ea-b5f8-77c3980a1d0a]] */
-      final IAbstractSiteFunctions localAbstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
+      final var localAbstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
 
-      final HashMap<String, HashMap<String, SortedSet<String>>> hashtable = new HashMap<>();
-      for( final IAbstractHost abstractHost : abstractHostList) { 
-      	final IAbstractHostFunctions abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
-      	final String probeName =  localAbstractSiteFunctions.GetProbeName(abstractHost);
+      final var hashtable = new HashMap<String, HashMap<String, SortedSet<String>>>();
+      for( final IAbstractHost abstractHost : abstractHostList) {
+      	final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
+      	final var probeName =  localAbstractSiteFunctions.GetProbeName(abstractHost);
       	if (!hashtable.containsKey(probeName)) {
       		hashtable.put(probeName, new HashMap<>());
       	}
-      	final String pathName = abstractHostFunctions.GetPath();
+      	final var pathName = abstractHostFunctions.GetPath();
       	if( pathName.contains("IP2.0")) {
       		continue;
       	}
@@ -118,18 +110,18 @@ public class sites__T_yaml {
       	hashtable.get(probeName).get(pathName).add(abstractHostFunctions.Entry());
       }
 
-      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions abstractSiteFunctions = site.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);      
-      final String siteName = abstractSiteFunctions.MonitoringSiteName();
+      final var abstractSiteFunctions = site.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);
+      final var siteName = abstractSiteFunctions.MonitoringSiteName();
 
-      final StringBuffer stringBuffer = new StringBuffer();
+      final var stringBuffer = new StringBuilder();
       for( final String probe : hashtable.keySet() ) {
-      	final HashMap<String, SortedSet<String>> pathTable = hashtable.get(probe);
+      	final var pathTable = hashtable.get(probe);
       	for( final String path : pathTable.keySet()) {
       		stringBuffer.append(String.format("  %s|%s|%s:\n", probe, siteName, path));
       		stringBuffer.append("    Profile: pf_grp_ikt\n");
       		stringBuffer.append("    Devices:\n");
       		for( final String entry : pathTable.get(path)) {
-      			stringBuffer.append(String.format("      %s\n",entry));						
+      			stringBuffer.append(String.format("      %s\n",entry));
       		}
       		stringBuffer.append("\n");
       	}
@@ -137,7 +129,7 @@ public class sites__T_yaml {
       if (stringBuffer.length() == 0) {
       	return null;
       }
-      return stringBuffer.toString(); 
+      return stringBuffer.toString();
       /* End Protected Region   [[c0109767-dcb7-11ea-b5f8-77c3980a1d0a]] */
     }
 
@@ -218,16 +210,15 @@ public class sites__T_yaml {
     @Override
     public java.lang.String GetProbeName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite) {
       /* Begin Protected Region [[b36df94a-e0b6-11ea-8443-8f528e21caa3]] */
-      final String hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource()); 
-      final char firstLetter = hostName.charAt(hostName.length() - 2);
-      final String siteName = abstractSite.selectName().toUpperCase().replace('X', '6');
-      var abstractSiteFunction = abstractSite.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);      
+      final var hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource());
+      final var firstLetter = hostName.charAt(hostName.length() - 2);
+      final var siteName = abstractSite.selectName().toUpperCase().replace('X', '6');
+      final var abstractSiteFunction = abstractSite.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);
 
       if(firstLetter == '0') {
       	return "PRP-" + siteName + "-" + abstractSiteFunction.Owner() + "-00";
-      } else {
-    	return "PRP-" + siteName + "-" + abstractSiteFunction.Owner() + "-10";
       }
+      return "PRP-" + siteName + "-" + abstractSiteFunction.Owner() + "-10";
       /* End Protected Region   [[b36df94a-e0b6-11ea-8443-8f528e21caa3]] */
     }
 
@@ -272,28 +263,28 @@ public class sites__T_yaml {
 
   }
 
-  public static interface IClusterFunctions extends IDynamicResourceExtension {
+  public static interface IClusterHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2bbd5be6-e08a-11ea-bb83-59933a3fa779")
     public java.lang.String Entry();
 
   }
   
-  public static interface IClusterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IClusterHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ClusterFunctionsImpl implements IClusterFunctionsImpl {
+  public static class ClusterHostFunctionsImpl implements IClusterHostFunctionsImpl {
 
-    public static final IClusterFunctionsImpl INSTANCE = new ClusterFunctionsImpl();
+    public static final IClusterHostFunctionsImpl INSTANCE = new ClusterHostFunctionsImpl();
 
-    private ClusterFunctionsImpl() {}
+    private ClusterHostFunctionsImpl() {}
 
   }
   
-  public static class ClusterFunctions {
+  public static class ClusterHostFunctions {
 
-    private ClusterFunctions() {}
+    private ClusterHostFunctions() {}
 
   }
 
@@ -399,12 +390,11 @@ public class sites__T_yaml {
     @Override
     public java.lang.String GetProbeName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN multi_TN) {
       /* Begin Protected Region [[77c22d9d-e0b8-11ea-8443-8f528e21caa3]] */
-      final IAbstractSiteWithHosts abstractSiteWithHosts = AbstractSiteWithHosts.selectToMeHosts(host);
-      final String hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource()); 
-      final char firstLetter = hostName.charAt(hostName.length() - 2); 
+      final var abstractSiteWithHosts = AbstractSiteWithHosts.selectToMeHosts(host);
+      final var hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource());
+      final var firstLetter = hostName.charAt(hostName.length() - 2);
 
-      if( abstractSiteWithHosts instanceof IRN) { 
-      	final IRN irn = (IRN)abstractSiteWithHosts;
+      if( abstractSiteWithHosts instanceof final IRN irn) {
       	if( Multi_TN.selectToMeMss(irn) != null) {
       		return AbstractSiteFunctionsImpl.INSTANCE.GetProbeName(host, multi_TN);
       	}
@@ -412,29 +402,24 @@ public class sites__T_yaml {
       	if( Multi_TN.selectToMeHss(irn) != null) {
 
       		final IManagedRN managedRN = multi_TN.selectManagedBy().get(irn.getResource());
-      		final String siteName = managedRN.selectManagedMss().selectName();
+      		final var siteName = managedRN.selectManagedMss().selectName();
 
       		if(firstLetter == '0') {
       			return "PRP-" + siteName + "-BABS-00";
-      		} else {
-      			return "PRP-" + siteName + "-BABS-10";
-      		}      		
+      		}
+      		return "PRP-" + siteName + "-BABS-10";
       	}
       }
 
-      if( abstractSiteWithHosts instanceof ITDM) { 
-      	final ITDM itdm = (ITDM)abstractSiteWithHosts;
-      	if( Multi_TN.selectToMeTdm(itdm) != null) {
+      if( abstractSiteWithHosts instanceof final ITDM itdm && Multi_TN.selectToMeTdm(itdm) != null) {
 
-      		final IManagedRN managedRN = multi_TN.selectManagedBy().get(itdm.getResource());
-      		final String siteName = managedRN.selectManagedMss().selectName();
+      	final IManagedRN managedRN = multi_TN.selectManagedBy().get(itdm.getResource());
+      	final var siteName = managedRN.selectManagedMss().selectName();
 
-      		if(firstLetter == '0') {
-      			return "PRP-" + siteName + "-BABS-00";
-      		} else {
-      			return "PRP-" + siteName + "-BABS-10";
-      		}      		
+      	if(firstLetter == '0') {
+      		return "PRP-" + siteName + "-BABS-00";
       	}
+      	return "PRP-" + siteName + "-BABS-10";
       }
 
       return null;
@@ -531,4 +516,4 @@ public class sites__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,LZkrIh2WEmGUIzaPWmlIXONl+f0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,u/dU2gxRprzcj/xq0+jfuS2hgzc=] */

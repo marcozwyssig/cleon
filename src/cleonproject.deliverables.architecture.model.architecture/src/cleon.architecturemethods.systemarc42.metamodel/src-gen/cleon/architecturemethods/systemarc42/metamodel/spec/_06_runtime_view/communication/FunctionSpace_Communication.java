@@ -18,10 +18,10 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IClusterHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.TopologyEnvironment;
 import cleon.modelinglanguages.segmentation.metamodel.spec.FunctionSpace_Segmentation.IZoneFunctions;
 import ch.actifsource.util.character.StringUtil;
-import ch.actifsource.util.log.Logger;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemConfiguration;
@@ -533,6 +533,10 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[21fa0b77-1eb9-11eb-9eef-0dadb2b460da]] */
+      if( dst instanceof IClusterHost ) {
+      	return true;
+      }
+
       final var srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
       final var dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();
 
@@ -1010,4 +1014,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,Hq2a+Hd2OHGLsO6ZoWUvfxoLytU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,tkKNIOWW3O7eGFrZ3US+pvPc1K4=] */

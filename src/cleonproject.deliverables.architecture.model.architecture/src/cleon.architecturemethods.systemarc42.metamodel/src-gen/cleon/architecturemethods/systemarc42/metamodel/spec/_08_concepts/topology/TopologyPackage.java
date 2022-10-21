@@ -26,14 +26,14 @@ public class TopologyPackage {
   public static final Resource Multi_aE_TN_tdm = new Resource("496549a8-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_TDM = new Resource("8289bc7e-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource NumberedHost = new Resource("887c437e-ca6a-11e9-83b0-559396620907");
-  public static final Resource Cluster = new Resource("a3888cf7-ca6a-11e9-83b0-559396620907");
+  public static final Resource ClusterHost = new Resource("a3888cf7-ca6a-11e9-83b0-559396620907");
   public static final Resource StackHost = new Resource("28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79");
   public static final Resource StackHost_host = new Resource("773fce65-ec06-11e9-8e1e-d59e76bdbf06");
   public static final Resource AbstractSiteWithZone = new Resource("fd112c3e-ec15-11e9-8e1e-d59e76bdbf06");
   public static final Resource FunctionSpace_aE_Topology_AbstractHost = new Resource("5baa9659-fb12-11e9-890e-576c93cea08c");
   public static final Resource FunctionSpace_aE_Topology_StackHost = new Resource("80d311cd-fb12-11e9-890e-576c93cea08c");
   public static final Resource FunctionSpace_aE_Topology_NumberedHost = new Resource("84ff2f5a-fb12-11e9-890e-576c93cea08c");
-  public static final Resource FunctionSpace_aE_Topology_Cluster = new Resource("879fcaed-fb12-11e9-890e-576c93cea08c");
+  public static final Resource FunctionSpace_aE_Topology_ClusterHost = new Resource("879fcaed-fb12-11e9-890e-576c93cea08c");
   public static final Resource TopologyEnvironment = new Resource("ecf82cf6-053e-11ea-b1c2-9163c84d2612");
   public static final Resource Topology_topologyEnvironment = new Resource("f95af3de-053e-11ea-b1c2-9163c84d2612");
   public static final Resource TopologyEnvironment_environmentForTopology = new Resource("085ecb6f-053f-11ea-b1c2-9163c84d2612");
@@ -111,4 +111,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,Mi/cEpu+XuMIsXSTwuyZaJ+rAEs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,bnlWMsXq8HPYFRMDCum5CRw7HQA=] */

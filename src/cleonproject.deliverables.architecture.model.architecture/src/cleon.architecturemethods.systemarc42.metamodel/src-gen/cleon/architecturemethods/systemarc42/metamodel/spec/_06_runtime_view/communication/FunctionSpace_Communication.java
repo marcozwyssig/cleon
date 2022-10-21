@@ -18,7 +18,6 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IClusterHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.TopologyEnvironment;
 import cleon.modelinglanguages.segmentation.metamodel.spec.FunctionSpace_Segmentation.IZoneFunctions;
 import ch.actifsource.util.character.StringUtil;
@@ -533,9 +532,6 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[21fa0b77-1eb9-11eb-9eef-0dadb2b460da]] */
-      if( dst instanceof IClusterHost ) {
-      	return true;
-      }
 
       final var srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
       final var dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();

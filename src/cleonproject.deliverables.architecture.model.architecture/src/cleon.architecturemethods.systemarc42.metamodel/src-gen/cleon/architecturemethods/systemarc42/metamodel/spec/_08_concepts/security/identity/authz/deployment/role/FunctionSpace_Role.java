@@ -91,7 +91,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetAllowedSiteForRoleSystemComponent();
 
     @IDynamicResourceExtension.MethodId("6564492a-537a-11ed-97eb-d7416a368b0b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetAllowedLocalSiteForRoleSystemComponent();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetAllowedLocalSiteForRoleSystemComponent();
 
   }
   
@@ -344,4 +344,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,2cd4IrdUqyK9bYx/irswFNPnUU0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,rM199IPbO8xGBYscc7mBsaq6co4=] */

@@ -152,7 +152,7 @@ public class FunctionSpace_Activity_Deployment {
 
       				final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
       				final var abstractSites = roleSystemComponentFunctions.GetAllowedLocalSiteForRoleSystemComponent();
-      				if( abstractSites.contains(abstractSite) && !roleSystemComponentResult.contains(roleSystemComponent)) {
+      				if( abstractSites.equals(abstractSite) && !roleSystemComponentResult.contains(roleSystemComponent)) {
       					roleSystemComponentResult.add(roleSystemComponent);
       				}
       			}

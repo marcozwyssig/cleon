@@ -8,8 +8,10 @@ public interface IActivityTemplateAware extends ch.actifsource.core.javamodel.IR
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> selectActivityTemplates();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> selectActivityTemplatesOnSites();
+  
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> selectActivityTemplatesOnLocalSite();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8872d57-d426-11eb-9862-7f597b9587dd,d2ELtulWwWZSQvSufGod207Ue2Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8872d57-d426-11eb-9862-7f597b9587dd,J41jK4MZ1ZagiPpHINh2Li5Zgbo=] */

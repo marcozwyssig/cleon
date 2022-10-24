@@ -16,7 +16,7 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForAbstractSystemOrSystemConfiguration_authZBuildingBlockForPermission = new Resource("eb1f0ad2-0a00-11eb-a857-d17d567fc174");
   public static final Resource AuthZBuildingBlockForPermission_permission = new Resource("19527039-0a01-11eb-a857-d17d567fc174");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AbstractAuthZBuildingBlockPermission = new Resource("a29f1a46-0a1c-11eb-a857-d17d567fc174");
-  public static final Resource ActivityTemplateAware_activityTemplates = new Resource("a73f40da-6d4a-11eb-bd4b-f974d73611ae");
+  public static final Resource ActivityTemplateAware_activityTemplatesOnSites = new Resource("a73f40da-6d4a-11eb-bd4b-f974d73611ae");
   public static final Resource AbstractAuthZBuildingBlockPermission = new Resource("912699fe-864a-11eb-9869-4317e18e6c88");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForPermission = new Resource("d21d0b45-864b-11eb-9869-4317e18e6c88");
   public static final Resource ActivityTemplateAware = new Resource("c8872d57-d426-11eb-9862-7f597b9587dd");
@@ -26,6 +26,7 @@ public class ActivityPackage {
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockPropertyPermission = new Resource("4011c9f0-d5bf-11ec-ad12-8d6f8e00bc94");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForSystem = new Resource("a4b71d7a-4bd3-11ed-bcee-57344264bda3");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForAbstractSystemOrSystemConfiguration = new Resource("d9da0bbc-4c9f-11ed-b0be-c9d58a207ca0");
+  public static final Resource ActivityTemplateAware_activityTemplatesOnLocalSite = new Resource("77309040-536f-11ed-97eb-d7416a368b0b");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +47,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,YjPT7qDI0I6BjWElOIS5FRf2NjU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity,vx2LunWzdp8bPtXSYeLnY2ntacc=] */

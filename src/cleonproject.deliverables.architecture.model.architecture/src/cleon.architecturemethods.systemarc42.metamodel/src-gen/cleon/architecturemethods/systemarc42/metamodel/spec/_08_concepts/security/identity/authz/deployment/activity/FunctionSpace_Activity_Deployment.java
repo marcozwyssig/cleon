@@ -120,8 +120,8 @@ public class FunctionSpace_Activity_Deployment {
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
-      final var accountTemplates = ActivityTemplateAware.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
-      for(final var accountTemplate  : accountTemplates.stream().filter(IAuthZBuildingBlockForSystemComponent.class::isInstance).map(IAuthZBuildingBlockForSystemComponent.class::cast).collect(Collectors.toList())) {
+      final var accountTemplatesOnAllSites = ActivityTemplateAware.selectToMeActivityTemplatesOnSites(activityPermission.selectActivityTemplate());
+      for(final var accountTemplate  : accountTemplatesOnAllSites.stream().filter(IAuthZBuildingBlockForSystemComponent.class::isInstance).map(IAuthZBuildingBlockForSystemComponent.class::cast).collect(Collectors.toList())) {
       	if( accountTemplate instanceof IAuthZBuildingBlockForSystemComponent) {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
       		for( final var all : authZBuildingBlockForSystemComponent.extension(IAuthZBuildingBlockForSystemComponentFunctions.class).AllBasedOnReverse()) {
@@ -139,8 +139,28 @@ public class FunctionSpace_Activity_Deployment {
       		}
       	}
       }
-      return roleSystemComponentResult;
 
+      final var accountTemplatesOnLocalSite = ActivityTemplateAware.selectToMeActivityTemplatesOnLocalSite(activityPermission.selectActivityTemplate());
+      for(final var accountTemplate  : accountTemplatesOnLocalSite.stream().filter(IAuthZBuildingBlockForSystemComponent.class::isInstance).map(IAuthZBuildingBlockForSystemComponent.class::cast).collect(Collectors.toList())) {
+      	if( accountTemplate instanceof IAuthZBuildingBlockForSystemComponent) {
+      		final var authZBuildingBlockForSystemComponent = accountTemplate;
+      		for( final var all : authZBuildingBlockForSystemComponent.extension(IAuthZBuildingBlockForSystemComponentFunctions.class).AllBasedOnReverse()) {
+      			for( final var roleSystemComponent : RoleSystemComponent.selectToMeSystemComponentRoleTemplate(all)) {
+      				if( roleSystemComponent.selectExcludeActivities().contains(activityPermission)) {
+      					continue;
+      				}
+
+      				final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
+      				final var abstractSites = roleSystemComponentFunctions.GetAllowedLocalSiteForRoleSystemComponent();
+      				if( abstractSites.contains(abstractSite) && !roleSystemComponentResult.contains(roleSystemComponent)) {
+      					roleSystemComponentResult.add(roleSystemComponent);
+      				}
+      			}
+      		}
+      	}
+      }
+
+      return roleSystemComponentResult;
       /* End Protected Region   [[a4552697-0def-11ea-91d3-b3e983305cb0]] */
     }
 
@@ -179,7 +199,7 @@ public class FunctionSpace_Activity_Deployment {
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
-      final var serviceAccountTemplates = ActivityTemplateAware.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
+      final var serviceAccountTemplates = ActivityTemplateAware.selectToMeActivityTemplatesOnSites(activityPermission.selectActivityTemplate());
       for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
       	if( !(serviceAccountTemplate instanceof IServiceAccountTemplate) ) {
       		continue;

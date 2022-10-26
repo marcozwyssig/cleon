@@ -36,7 +36,7 @@ public class SpecPackage {
   public static final Resource NetdomainZone_allowed = new Resource("4d3fe8f1-a937-11e9-b094-b12ff339b432");
   public static final Resource SegmentZone_allowed = new Resource("7037d269-a938-11e9-b094-b12ff339b432");
   public static final Resource SecurityZone_allowedAccessTo = new Resource("ad7e2a2b-a938-11e9-b094-b12ff339b432");
-  public static final Resource SecuritySubZone_allowedAccessTo = new Resource("fd840116-a938-11e9-b094-b12ff339b432");
+  public static final Resource SecuritySubZone_allowedAccessToSecuritySubZone = new Resource("fd840116-a938-11e9-b094-b12ff339b432");
   public static final Resource FunctionSpace_aE_Segmentation_SecurityZone = new Resource("35a3f4a4-a961-11e9-bf83-7bacdb6991f7");
   public static final Resource SecuritySubZone_mask = new Resource("556d25a3-f625-11e9-882b-7b3dd7e5bc17");
   public static final Resource SecuritySubZone_export = new Resource("deb1ca21-6913-11ea-bc2c-91c30a68f7c3");
@@ -67,4 +67,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,Dqe0qEhZP/x2zSWIsJaAVcxPcMw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,wFhcPLHv/xrEisd7NIE6OwRbA+s=] */

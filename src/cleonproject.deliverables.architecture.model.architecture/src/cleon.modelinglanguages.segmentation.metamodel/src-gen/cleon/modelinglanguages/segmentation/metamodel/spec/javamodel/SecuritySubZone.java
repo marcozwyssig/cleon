@@ -87,12 +87,22 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessTo() {
-    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectAllowedAccessTo() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo);
   }
 
-  public SecuritySubZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> allowedAccessTo) {
-    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, allowedAccessTo);
+  public SecuritySubZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> allowedAccessTo) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo, allowedAccessTo);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessToSecuritySubZone() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessToSecuritySubZone);
+  }
+
+  public SecuritySubZone setAllowedAccessToSecuritySubZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> allowedAccessToSecuritySubZone) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessToSecuritySubZone, allowedAccessToSecuritySubZone);
     return this;
   }
     
@@ -187,7 +197,7 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_mask, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessToSecuritySubZone, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification.class, cleon.common.resources.metamodel.spec.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -198,9 +208,9 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_noZones, object.getResource());
   }
   
-  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectToMeAllowedAccessTo(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, object.getResource());
+  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectToMeAllowedAccessToSecuritySubZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessToSecuritySubZone, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,xSm4F1OHZOOd8yQkHPPlLDsPgDM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,RwqzcSnwJHn/Ki430iDXItxYyR0=] */

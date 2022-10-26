@@ -18,6 +18,8 @@ public interface ISourceInSubSecurityZone extends ch.actifsource.core.javamodel.
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain> selectUsedInDomains();
   
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectSourceSubSecurityZone();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9fa746-c773-11ea-b0b6-e5df79e86bc2,yIzVmVkuucarxzwBJ7ZJZUEsGy4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9fa746-c773-11ea-b0b6-e5df79e86bc2,Q027Dn5f+ox3LLvXSfcA/tS6Amk=] */

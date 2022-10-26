@@ -10,8 +10,10 @@ public interface IDestinationSubSecurityZone extends ch.actifsource.core.javamod
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface selectInInterface();
   
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectDestinationSecuritySubZone();
+  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> selectHasCommunicationFrom();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,O9W0GA7YLHzeJuw66jLTs65aoIo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,MyooPyCIBpSjii6iJ9A+rAlEkTQ=] */

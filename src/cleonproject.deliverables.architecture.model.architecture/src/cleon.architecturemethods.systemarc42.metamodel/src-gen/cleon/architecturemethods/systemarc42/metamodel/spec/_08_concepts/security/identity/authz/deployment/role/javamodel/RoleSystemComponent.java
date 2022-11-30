@@ -48,6 +48,15 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.Integer selectUniqueId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage.RoleSystemComponent_uniqueId);
+  }
+    
+  public void setUniqueId(java.lang.Integer uniqueId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage.RoleSystemComponent_uniqueId, uniqueId);
+  }
+
   // relations
   
   @Override
@@ -156,6 +165,7 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage.RoleSystemComponent_uniqueId, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage.RoleSystemComponent_allocateActivitiesOfSite, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.RolePackage.RoleSystemComponent_excludeActivities, visitor);
@@ -179,4 +189,4 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,cOqvHm+j3o0Uyc/5xhYfXwgnVhI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,CJ/LL2pAgV+j1Dobb9J++xupc0M=] */

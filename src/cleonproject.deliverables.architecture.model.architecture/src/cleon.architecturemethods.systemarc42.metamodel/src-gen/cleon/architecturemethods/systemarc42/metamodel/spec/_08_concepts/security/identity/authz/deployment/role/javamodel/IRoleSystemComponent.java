@@ -6,6 +6,8 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e33fb742-35e4-11e9-9d58-25409887bb2a");
   
+  public java.lang.Integer selectUniqueId();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockForSystemComponent selectSystemComponentRoleTemplate();
@@ -16,4 +18,4 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,kwEk7sNPdE852elcp8mM7Cc15gI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,ARmvalXklUYNlrbr4gvT+74fL14=] */

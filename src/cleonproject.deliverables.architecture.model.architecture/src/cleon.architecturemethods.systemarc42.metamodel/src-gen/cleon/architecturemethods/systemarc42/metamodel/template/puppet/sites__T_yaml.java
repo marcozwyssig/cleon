@@ -47,6 +47,9 @@ public class sites__T_yaml {
     @IDynamicResourceExtension.MethodId("012a2be1-dcba-11ea-b5f8-77c3980a1d0a")
     public java.lang.String Entry();
 
+    @IDynamicResourceExtension.MethodId("87272289-7173-11ed-9fe1-719421dee1d1")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -94,7 +97,7 @@ public class sites__T_yaml {
       final var localAbstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
 
       final var hashtable = new HashMap<String, HashMap<String, SortedSet<String>>>();
-      for( final IAbstractHost abstractHost : abstractHostList) {
+      for( final var abstractHost : abstractHostList) {
       	final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
       	final var probeName =  localAbstractSiteFunctions.GetProbeName(abstractHost);
       	if (!hashtable.containsKey(probeName)) {
@@ -114,13 +117,13 @@ public class sites__T_yaml {
       final var siteName = abstractSiteFunctions.MonitoringSiteName();
 
       final var stringBuffer = new StringBuilder();
-      for( final String probe : hashtable.keySet() ) {
+      for( final var probe : hashtable.keySet() ) {
       	final var pathTable = hashtable.get(probe);
-      	for( final String path : pathTable.keySet()) {
+      	for( final var path : pathTable.keySet()) {
       		stringBuffer.append(String.format("  %s|%s|%s:\n", probe, siteName, path));
       		stringBuffer.append("    Profile: pf_grp_ikt\n");
       		stringBuffer.append("    Devices:\n");
-      		for( final String entry : pathTable.get(path)) {
+      		for( final var entry : pathTable.get(path)) {
       			stringBuffer.append(String.format("      %s\n",entry));
       		}
       		stringBuffer.append("\n");
@@ -210,6 +213,10 @@ public class sites__T_yaml {
     @Override
     public java.lang.String GetProbeName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite) {
       /* Begin Protected Region [[b36df94a-e0b6-11ea-8443-8f528e21caa3]] */
+        if ( host.selectMonitoringWith() != null ) {
+      	  return host.selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
+        }
+    	
       final var hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource());
       final var firstLetter = hostName.charAt(hostName.length() - 2);
       final var siteName = abstractSite.selectName().toUpperCase().replace('X', '6');
@@ -348,6 +355,10 @@ public class sites__T_yaml {
     @Override
     public java.lang.String GetProbeName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ICentralSite centralSite) {
       /* Begin Protected Region [[3c5435f5-e0b7-11ea-8443-8f528e21caa3]] */
+      if ( host.selectMonitoringWith() != null ) {
+    	  return host.selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
+      }
+      
       if( centralSite.selectName().equalsIgnoreCase("NMS")) {
       	return "Cluster Probe";
       }
@@ -390,6 +401,10 @@ public class sites__T_yaml {
     @Override
     public java.lang.String GetProbeName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN multi_TN) {
       /* Begin Protected Region [[77c22d9d-e0b8-11ea-8443-8f528e21caa3]] */
+        if ( host.selectMonitoringWith() != null ) {
+        	  return host.selectMonitoringWith().selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
+          }
+    	
       final var abstractSiteWithHosts = AbstractSiteWithHosts.selectToMeHosts(host);
       final var hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource());
       final var firstLetter = hostName.charAt(hostName.length() - 2);
@@ -516,4 +531,4 @@ public class sites__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,u/dU2gxRprzcj/xq0+jfuS2hgzc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,Z5xaEthDJ55puG90c8CcEiDcWrQ=] */

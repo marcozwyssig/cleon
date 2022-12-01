@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class ReadOnlyDomainController extends DynamicResource implements IReadOnlyDomainController {
+public class ReadOnlyDomainControllerSystemConfiguration extends DynamicResource implements IReadOnlyDomainControllerSystemConfiguration {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IReadOnlyDomainController> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IReadOnlyDomainController>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IReadOnlyDomainControllerSystemConfiguration> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IReadOnlyDomainControllerSystemConfiguration>() {
     
     @Override
-    public IReadOnlyDomainController create() {
-      return new ReadOnlyDomainController();
+    public IReadOnlyDomainControllerSystemConfiguration create() {
+      return new ReadOnlyDomainControllerSystemConfiguration();
     }
     
     @Override
-    public IReadOnlyDomainController create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new ReadOnlyDomainController(resourceRepository, resource);
+    public IReadOnlyDomainControllerSystemConfiguration create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ReadOnlyDomainControllerSystemConfiguration(resourceRepository, resource);
     }
   
   };
 
-  public ReadOnlyDomainController() {
-    super(IReadOnlyDomainController.TYPE_ID);
+  public ReadOnlyDomainControllerSystemConfiguration() {
+    super(IReadOnlyDomainControllerSystemConfiguration.TYPE_ID);
   }
   
-  public ReadOnlyDomainController(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IReadOnlyDomainController.TYPE_ID);
+  public ReadOnlyDomainControllerSystemConfiguration(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IReadOnlyDomainControllerSystemConfiguration.TYPE_ID);
   }
 
   // attributes
@@ -109,7 +109,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public ReadOnlyDomainController setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
+  public ReadOnlyDomainControllerSystemConfiguration setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
@@ -119,7 +119,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
   }
 
-  public ReadOnlyDomainController setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> decomposePackages) {
+  public ReadOnlyDomainControllerSystemConfiguration setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> decomposePackages) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, decomposePackages);
     return this;
   }
@@ -129,7 +129,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_destinationCommunications);
   }
 
-  public ReadOnlyDomainController setDestinationCommunications(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destinationCommunications) {
+  public ReadOnlyDomainControllerSystemConfiguration setDestinationCommunications(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destinationCommunications) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_destinationCommunications, destinationCommunications);
     return this;
   }
@@ -139,7 +139,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency);
   }
 
-  public ReadOnlyDomainController setHasDependency(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency> hasDependency) {
+  public ReadOnlyDomainControllerSystemConfiguration setHasDependency(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency> hasDependency) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency, hasDependency);
     return this;
   }
@@ -149,7 +149,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone);
   }
 
-  public ReadOnlyDomainController setInSubZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> inSubZone) {
+  public ReadOnlyDomainControllerSystemConfiguration setInSubZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> inSubZone) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone, inSubZone);
     return this;
   }
@@ -159,7 +159,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inheritServices);
   }
 
-  public ReadOnlyDomainController setInheritServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> inheritServices) {
+  public ReadOnlyDomainControllerSystemConfiguration setInheritServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> inheritServices) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inheritServices, inheritServices);
     return this;
   }
@@ -169,7 +169,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IInteraction.class, cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts);
   }
 
-  public ReadOnlyDomainController setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
+  public ReadOnlyDomainControllerSystemConfiguration setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts, interacts);
     return this;
   }
@@ -179,7 +179,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_interface);
   }
 
-  public ReadOnlyDomainController setInterface(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface> interface_) {
+  public ReadOnlyDomainControllerSystemConfiguration setInterface(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface> interface_) {
     _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_interface, interface_);
     return this;
   }
@@ -189,7 +189,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.Component_noPackages);
   }
 
-  public ReadOnlyDomainController setNoPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noPackages) {
+  public ReadOnlyDomainControllerSystemConfiguration setNoPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noPackages) {
     _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.Component_noPackages, noPackages);
     return this;
   }
@@ -199,7 +199,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In);
   }
 
-  public ReadOnlyDomainController setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
+  public ReadOnlyDomainControllerSystemConfiguration setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
     _setMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, ports_In);
     return this;
   }
@@ -209,7 +209,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out);
   }
 
-  public ReadOnlyDomainController setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
+  public ReadOnlyDomainControllerSystemConfiguration setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, ports_Out);
     return this;
   }
@@ -219,7 +219,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_properties);
   }
 
-  public ReadOnlyDomainController setProperties(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> properties) {
+  public ReadOnlyDomainControllerSystemConfiguration setProperties(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> properties) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_properties, properties);
     return this;
   }
@@ -229,7 +229,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_provides);
   }
 
-  public ReadOnlyDomainController setProvides(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> provides) {
+  public ReadOnlyDomainControllerSystemConfiguration setProvides(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> provides) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_provides, provides);
     return this;
   }
@@ -239,7 +239,7 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public ReadOnlyDomainController setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ReadOnlyDomainControllerSystemConfiguration setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -270,4 +270,4 @@ public class ReadOnlyDomainController extends DynamicResource implements IReadOn
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,07c583f3-09eb-11e9-abef-3d869859c931,TI2lq0f8cq5c2cbuEbBjInXvv9I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,07c583f3-09eb-11e9-abef-3d869859c931,kOzDb2JcI614PKg3UhvJbbCOoIM=] */

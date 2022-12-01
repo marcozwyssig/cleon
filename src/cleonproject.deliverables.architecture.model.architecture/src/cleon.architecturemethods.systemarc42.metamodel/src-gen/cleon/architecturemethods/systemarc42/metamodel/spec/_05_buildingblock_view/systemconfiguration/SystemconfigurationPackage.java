@@ -15,7 +15,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_VCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_TerminalServerSystemConfiguration = new Resource("abdbca02-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ServerSystemConfiguration = new Resource("4ce9691e-02d7-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_ReadOnlyDomainController = new Resource("0e5e8263-09eb-11e9-abef-3d869859c931");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_ReadOnlyDomainControllerSystemConfiguration = new Resource("0e5e8263-09eb-11e9-abef-3d869859c931");
   public static final Resource DhcpSystemConfiguration = new Resource("bf347ac8-09ec-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DhcpSystemConfiguration = new Resource("dccf5d95-09ec-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ActiveDirectoryManagerSystemConfiguration = new Resource("26eb7687-09ef-11e9-abef-3d869859c931");
@@ -65,4 +65,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,ZffAlYev5mRrNBS+6WIaUuorCls=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,mKJ2RU+dE+rAphAS0RWGuD8zISY=] */

@@ -91,6 +91,7 @@ public class TopologyPackage {
   public static final Resource LAGType_H = new Resource("4ded4699-303c-11ed-b561-abe8147b73fc");
   public static final Resource LAGType_G = new Resource("4ded469a-303c-11ed-b561-abe8147b73fc");
   public static final Resource FunctionSpace_aE_Topology_LAGHost = new Resource("aa462c6d-303c-11ed-b561-abe8147b73fc");
+  public static final Resource AbstractHost_monitoringWith = new Resource("afd8b6b6-716e-11ed-b3a1-8773ed130054");
   
   /* Begin Protected Region [[user]] */
   
@@ -111,4 +112,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,bnlWMsXq8HPYFRMDCum5CRw7HQA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,1d2bL7CsLyTBmvOqcrjTR/d+CX4=] */

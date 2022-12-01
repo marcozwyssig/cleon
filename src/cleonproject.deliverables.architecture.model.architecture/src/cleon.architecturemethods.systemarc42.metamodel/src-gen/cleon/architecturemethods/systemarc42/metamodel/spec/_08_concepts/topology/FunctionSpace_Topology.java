@@ -14,7 +14,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topolog
 import ch.actifsource.util.log.Logger;
 import java.util.stream.Collectors;
 
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IReadOnlyDomainController;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.plattform.javamodel.IPrtgProbeSystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IReadOnlyDomainControllerSystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 /* End Protected Region   [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf,imports]] */
@@ -345,6 +346,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController();
 
+    @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe();
+
     @IDynamicResourceExtension.MethodId("0f06e336-1eb7-11eb-9eef-0dadb2b460da")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> Subzones();
 
@@ -372,12 +376,18 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("c81ef871-e187-11ec-bbb2-25acacf78f08")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID CentralOrTNSite();
 
+    @IDynamicResourceExtension.MethodId("5d096aa9-716f-11ed-b3a1-8773ed130054")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment TopologyEnvironment();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
 
   }
   
@@ -391,9 +401,19 @@ public class FunctionSpace_Topology {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[0112faa4-b073-11ea-b791-9b401fd02359]] */
       return abstractHostList.stream()
-      		.filter(x -> x.selectInstanceOf() instanceof IReadOnlyDomainController)
+      		.filter(x -> x.selectInstanceOf() instanceof IReadOnlyDomainControllerSystemConfiguration)
       		.collect(Collectors.toList());
       /* End Protected Region   [[0112faa4-b073-11ea-b791-9b401fd02359]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[ba04ab33-716f-11ed-b3a1-8773ed130054]] */
+        return abstractHostList.stream()
+          		.filter(x -> x.selectInstanceOf() instanceof IPrtgProbeSystemConfiguration)
+          		.collect(Collectors.toList());
+   
+      /* End Protected Region   [[ba04ab33-716f-11ed-b3a1-8773ed130054]] */
     }
 
   }
@@ -404,6 +424,10 @@ public class FunctionSpace_Topology {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyReadonlyDomainController(abstractHostList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyPrtgProbe(abstractHostList);
     }
 
   }
@@ -910,4 +934,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,ubrbynAdXOoKt8e5g4YFApHsvrY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,SGVMaeFBefPf/fDbuY2VsG4lCLQ=] */

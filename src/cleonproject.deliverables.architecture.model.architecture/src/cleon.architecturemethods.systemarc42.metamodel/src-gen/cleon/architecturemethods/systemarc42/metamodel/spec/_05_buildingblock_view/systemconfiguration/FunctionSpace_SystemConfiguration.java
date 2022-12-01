@@ -306,7 +306,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IReadOnlyDomainControllerFunctions extends IDynamicResourceExtension {
+  public static interface IReadOnlyDomainControllerSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7d9b94f0-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -316,21 +316,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IReadOnlyDomainControllerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IReadOnlyDomainControllerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ReadOnlyDomainControllerFunctionsImpl implements IReadOnlyDomainControllerFunctionsImpl {
+  public static class ReadOnlyDomainControllerSystemConfigurationFunctionsImpl implements IReadOnlyDomainControllerSystemConfigurationFunctionsImpl {
 
-    public static final IReadOnlyDomainControllerFunctionsImpl INSTANCE = new ReadOnlyDomainControllerFunctionsImpl();
+    public static final IReadOnlyDomainControllerSystemConfigurationFunctionsImpl INSTANCE = new ReadOnlyDomainControllerSystemConfigurationFunctionsImpl();
 
-    private ReadOnlyDomainControllerFunctionsImpl() {}
+    private ReadOnlyDomainControllerSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class ReadOnlyDomainControllerFunctions {
+  public static class ReadOnlyDomainControllerSystemConfigurationFunctions {
 
-    private ReadOnlyDomainControllerFunctions() {}
+    private ReadOnlyDomainControllerSystemConfigurationFunctions() {}
 
   }
 
@@ -924,4 +924,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,yw6Q09h3UzJVEn8iXNTvFr9LVOg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,4yt1l9dF3ekP7ZeAtpdVfHlXKGc=] */

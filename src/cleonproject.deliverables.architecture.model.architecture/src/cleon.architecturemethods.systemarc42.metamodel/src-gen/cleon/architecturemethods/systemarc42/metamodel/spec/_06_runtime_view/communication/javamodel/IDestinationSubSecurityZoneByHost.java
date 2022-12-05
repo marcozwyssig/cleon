@@ -6,10 +6,6 @@ public interface IDestinationSubSecurityZoneByHost extends cleon.architecturemet
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2c509b70-b218-11e9-b89e-1728aee30149");
   
-  // attributes
-  
-  public java.lang.String selectOverrideDestinationGroupName();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,9PdTNQ1sohLurnEutAc0BnFjbq8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,iew0ec2vUYOTnzpipeLcfuB4nkA=] */

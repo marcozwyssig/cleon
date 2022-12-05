@@ -32,11 +32,11 @@ public class DestinationSubSecurityZoneByHost extends DynamicResource implements
   
   @Override
   public java.lang.String selectOverrideDestinationGroupName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZoneByHost_overrideDestinationGroupName);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName);
   }
     
   public void setOverrideDestinationGroupName(java.lang.String overrideDestinationGroupName) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZoneByHost_overrideDestinationGroupName, overrideDestinationGroupName);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName, overrideDestinationGroupName);
   }
 
   // relations
@@ -95,7 +95,7 @@ public class DestinationSubSecurityZoneByHost extends DynamicResource implements
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZoneByHost_overrideDestinationGroupName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_overrideDestinationGroupName, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_destinationSecuritySubZone, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_hasCommunicationFrom, visitor);
@@ -104,4 +104,4 @@ public class DestinationSubSecurityZoneByHost extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,dv1hYeM48WzWuilU8sIJB7pvC+M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,iQlnLUqvhqNPpOr8TqljSkj4oJU=] */

@@ -48,14 +48,14 @@ public class CommunicationPackage {
   public static final Resource SourceInSubSecurityZoneCustom = new Resource("cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54");
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneCustom = new Resource("1f4156fb-ad95-11eb-a3eb-5dbdee6f3a54");
   public static final Resource IsTemporaryAware = new Resource("78dece5e-e564-11eb-ad65-91bb8c730454");
-  public static final Resource DestinationSubSecurityZoneByHost_overrideDestinationGroupName = new Resource("2b2545ab-a512-11ec-9f8a-6b362fcb922a");
-  public static final Resource SourceInSubSecurityZoneByHost_restricteHostGroupForSiteToDestination = new Resource("544081ec-f164-11ec-ac33-079e260f3153");
+  public static final Resource DestinationSubSecurityZone_overrideDestinationGroupName = new Resource("2b2545ab-a512-11ec-9f8a-6b362fcb922a");
   public static final Resource DestinationSubSecurityZone = new Resource("0b182d4f-5528-11ed-a5a9-572b13f613fe");
   public static final Resource FunctionSpace_aE_Communication_DestinationSubSecurityZone = new Resource("3a03f063-5529-11ed-a5a9-572b13f613fe");
   public static final Resource DestinationSubSecurityZoneByNetwork = new Resource("61856e2e-5537-11ed-a5a9-572b13f613fe");
   public static final Resource FunctionSpace_aE_Communication_DestinationSubSecurityZoneByNetwork = new Resource("c088180b-5537-11ed-a5a9-572b13f613fe");
   public static final Resource SourceInSubSecurityZone_sourceSubSecurityZone = new Resource("6e8ff36e-5547-11ed-9c8a-c5df55207139");
   public static final Resource DestinationSubSecurityZone_destinationSecuritySubZone = new Resource("13381746-5549-11ed-9c8a-c5df55207139");
+  public static final Resource SourceInSubSecurityZoneByHost_overrideDestinationGroupName = new Resource("4e0de70c-724f-11ed-8c7b-bf13a6bd0e0e");
   
   /* Begin Protected Region [[user]] */
   
@@ -76,4 +76,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,8Bs5CYXa65GGlXV6fBHhme6ntF4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,2GLk/R2k6CQ/OfXGUQGaNxhqVPM=] */

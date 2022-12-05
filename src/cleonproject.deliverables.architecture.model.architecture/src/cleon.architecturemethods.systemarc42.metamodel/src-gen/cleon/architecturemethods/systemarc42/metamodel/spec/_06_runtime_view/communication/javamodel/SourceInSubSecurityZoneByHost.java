@@ -48,15 +48,6 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.IsTemporaryAware_isTemporary, isTemporary);
   }
 
-  @Override
-  public java.lang.String selectRestricteHostGroupForSiteToDestination() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_restricteHostGroupForSiteToDestination);
-  }
-    
-  public void setRestricteHostGroupForSiteToDestination(java.lang.String restricteHostGroupForSiteToDestination) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_restricteHostGroupForSiteToDestination, restricteHostGroupForSiteToDestination);
-  }
-
   // relations
   
   @Override
@@ -66,6 +57,16 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
 
   public SourceInSubSecurityZoneByHost setOnlyCommunicatesWith(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> onlyCommunicatesWith) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, onlyCommunicatesWith);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.restrict.javamodel.IAbstractOverrideHostGroupForDestination selectOverrideDestinationGroupName() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.restrict.javamodel.IAbstractOverrideHostGroupForDestination.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_overrideDestinationGroupName);
+  }
+
+  public SourceInSubSecurityZoneByHost setOverrideDestinationGroupName(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.restrict.javamodel.IAbstractOverrideHostGroupForDestination overrideDestinationGroupName) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_overrideDestinationGroupName, overrideDestinationGroupName);
     return this;
   }
     
@@ -145,9 +146,9 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.IsTemporaryAware_isTemporary, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_restricteHostGroupForSiteToDestination, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.restrict.javamodel.IAbstractOverrideHostGroupForDestination.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_overrideDestinationGroupName, visitor);
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_sourceSubSecurityZone, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_state, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_subZoneAccessPolicy, visitor);
@@ -156,5 +157,11 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_usedInDomains, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByHost selectToMeOverrideDestinationGroupName(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.restrict.javamodel.IAbstractOverrideHostGroupForDestination object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByHost.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneByHost_overrideDestinationGroupName, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70b3c6f7-b218-11e9-b89e-1728aee30149,dw6k8SZ8CCSlLKPeQqwd2hzi61U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70b3c6f7-b218-11e9-b89e-1728aee30149,f6RhVc83tsvS8PZ7zSRvk5XyRF8=] */

@@ -9,7 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
 import cleon.common.doc.metamodel.spec.javamodel.DocumentElementComposite;
-import cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite;
+import cleon.common.doc.metamodel.spec.chapter.javamodel.IPart;
 /* End Protected Region   [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
 
 public class FunctionSpace_Asciidoc {
@@ -216,15 +216,18 @@ public class FunctionSpace_Asciidoc {
     @Override
     public java.lang.String GetIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       /* Begin Protected Region [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
-      final IDocumentElementComposite parent = DocumentElementComposite.selectToMeDocumentElements(documentElementComposite);
+      final var parent = DocumentElementComposite.selectToMeDocumentElements(documentElementComposite);
 
       if( parent == null )
       {
       	return "=";
       }
 
-      final IDocumentElementComposite parentCollection = parent; 	
-      return "=" + GetIndent(parentCollection);
+      if ( documentElementComposite instanceof IPart ) {
+    	  return GetIndent(parent);
+      }
+	return "=" + GetIndent(parent);
+
       /* End Protected Region   [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     }
 

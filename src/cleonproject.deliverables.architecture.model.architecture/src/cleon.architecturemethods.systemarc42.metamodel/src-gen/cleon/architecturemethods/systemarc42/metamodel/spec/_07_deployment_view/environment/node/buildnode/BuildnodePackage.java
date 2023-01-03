@@ -12,16 +12,10 @@ public class BuildnodePackage {
   public static final Resource ExecutionEnvironmentBuildNode = new Resource("62e7ca85-02d8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_BuildNode_ExecutionEnvironmentBuildNode = new Resource("fccf8332-02d8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_BuildNode_BuildNode = new Resource("06f15a34-02d9-11e9-9e58-33d596257b14");
-  public static final Resource Runtime = new Resource("8a0ef5c9-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Physical = new Resource("8e9fc8a4-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Virtual = new Resource("986575b6-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Container = new Resource("9dbbe34b-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource OsExecutionEnvironmentBuildNode_runtime = new Resource("c03ae927-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource BuildNode_productVariants = new Resource("07b27c11-2adc-11e9-be63-d74669278acd");
   public static final Resource BuildNode_cpu = new Resource("964206ca-2afe-11e9-9692-65766bc2daa5");
   public static final Resource BuildNode_memory = new Resource("3f760a27-2b02-11e9-9692-65766bc2daa5");
   public static final Resource BuildNode_disks = new Resource("1b503c7b-2b03-11e9-9692-65766bc2daa5");
-  public static final Resource OsExecutionEnvironmentBuildNode = new Resource("0a438c62-01ec-11ea-bd6c-dd6cdcfeff45");
   public static final Resource ServiceBuildNode_host = new Resource("edf18afa-5e17-11ea-b835-fbb06fdf6352");
   public static final Resource ApplicationBuildNode = new Resource("7aa00b70-84d9-11ea-ade9-0f308d716192");
   public static final Resource FunctionSpace_aE_BuildNode_ApplicationBuildNode = new Resource("0706e2de-84da-11ea-ade9-0f308d716192");
@@ -45,4 +39,4 @@ public class BuildnodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode,KjcEMHdoexYMIjV2dcfeNygnmpw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode,ETHncjkeClQWclDJIbEqSDSBubQ=] */

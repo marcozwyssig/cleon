@@ -376,7 +376,12 @@
 				<db:section xml:id="ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Anforderungsabdeckung</db:title>
 					<db:para>Mit diesem Kapitel wird die Nachvollziehbarkeit der formellen Anforderungen an den Baustein Test1 gewährleistet.</db:para> 
-					<db:para>Der Baustein Test1 erfüllt keine expliziten Anforderungen. Bei Bausteinen, welche durch die Dekomposition weitere Sub-Bausteine umfassen, werden die entsprechenden formellen Anforderungen durch die Sub-Bausteine erfüllt.</db:para>
+					<db:para>Nachfolgend wird der Funktionsumfang auf der Grundlage von Anforderungen aufgeführt, welcher der Baustein Test1 erfüllt:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>AF-007_sss (FEA)</db:para>
+						</db:listitem>
+					</db:itemizedlist>
 				</db:section>
 			</db:section>
 			<db:section xml:id="ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1">
@@ -611,6 +616,18 @@
 								</db:listitem>
 								<db:listitem>
 									<db:para>Test1_2 &lt;SampleBuildingBlock&gt; </db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-007_sss (FEA)</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Test1 &lt;SampleBuildingBlock&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
 								</db:listitem>
 							</db:itemizedlist>
 						</db:td>			

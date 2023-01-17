@@ -12,6 +12,8 @@ public interface ICPU_Configuration extends ch.actifsource.core.javamodel.IResou
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.ICore selectCore();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept selectResourceBuildingBlockForSystemConfiguration();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,zgKSsFVuUBas7v6Lq5hEsMbxPWg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,+nvPTxp04vgLxuX7iNCS7mgUrg8=] */

@@ -167,8 +167,8 @@ public class ResourceBuildingBlockSystemConfigurationConcept extends DynamicReso
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept> selectToMeResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept selectToMeResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, object.getResource());
   }
   
   public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept> selectToMeCoreUsage(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.ICore object) {
@@ -184,4 +184,4 @@ public class ResourceBuildingBlockSystemConfigurationConcept extends DynamicReso
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,5QEozYkDUyNndeyelBRNBRI0Ixc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,pMma1LQTizqsRCmxrQtqthbMB/s=] */

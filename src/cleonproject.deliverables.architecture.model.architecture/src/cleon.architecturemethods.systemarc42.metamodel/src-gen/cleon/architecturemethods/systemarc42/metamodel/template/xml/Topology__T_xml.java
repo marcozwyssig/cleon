@@ -24,6 +24,9 @@ public class Topology__T_xml {
     @IDynamicResourceExtension.MethodId("531a3d99-a5cd-11ec-9968-b970a72504b8")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> NoApplications();
 
+    @IDynamicResourceExtension.MethodId("104650c1-b298-11ed-82e1-97f8ff4d3f62")
+    public java.lang.String Hosts();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -60,4 +63,4 @@ public class Topology__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f140501e-ca57-11e9-83b0-559396620907,RYHMUcrUi5SM22TNiAPjHp2KPFQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f140501e-ca57-11e9-83b0-559396620907,gGqEnNqVc8Um71WS0p4J1I5wNe0=] */

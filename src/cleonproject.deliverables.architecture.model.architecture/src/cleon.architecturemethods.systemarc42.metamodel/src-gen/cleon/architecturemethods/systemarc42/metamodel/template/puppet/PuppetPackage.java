@@ -43,16 +43,6 @@ public class PuppetPackage {
   public static final Resource qos__T_yaml_QoSSystemConfigurationSource = new Resource("da9dbbab-5289-11ec-9fcc-f3bdcf3059b2");
   public static final Resource qos__T_yaml_QoSSystemConfigurationConcept = new Resource("d11117fb-528c-11ec-9fcc-f3bdcf3059b2");
   public static final Resource ad_aE_gMSAccounts__T_yaml_AbstractSingleHost = new Resource("4d9cd115-a434-11ec-a02c-0578282f8413");
-  public static final Resource target_aE_computers__T_yaml_AbstractHost = new Resource("bfff7c34-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_AbstractComponent = new Resource("bfff7c4b-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_AbstractSite = new Resource("bfff7c52-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_AbstractSingleHost = new Resource("bfff7c61-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_ClusterHost = new Resource("bfff7c70-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_AbstractClusterHost = new Resource("bfff7c73-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_CentralSite = new Resource("bfff7c78-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_Multi_aE_TN = new Resource("bfff7c7d-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_TN = new Resource("bfff7c82-c3fc-11ed-a679-b5536fa2b4b3");
-  public static final Resource target_aE_computers__T_yaml_Application = new Resource("bfff7c85-c3fc-11ed-a679-b5536fa2b4b3");
   
   /* Begin Protected Region [[user]] */
   
@@ -73,4 +63,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,6HprIjUix2YGBmrpF8N1hnVFc/0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,LtOjLSecUtNSP869UKg1LjwYMns=] */

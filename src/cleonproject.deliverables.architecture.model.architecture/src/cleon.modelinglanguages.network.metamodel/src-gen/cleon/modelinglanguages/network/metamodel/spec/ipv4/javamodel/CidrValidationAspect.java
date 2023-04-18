@@ -14,6 +14,8 @@ import ch.actifsource.util.log.Logger;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPRangeFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package;
+import cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork;
+
 import java.util.stream.Stream;
 
 public class CidrValidationAspect implements IResourceValidationAspect {
@@ -23,6 +25,10 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		final var typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final var resourceRepository = typeSystem.getResourceRepository();
 		final var cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
+		final var networkObj = IPv4_Mask_Aware.selectToMeCidrs(cidr);
+		if( !(networkObj instanceof IAbstractPhysicalNetwork)) {
+			return;
+		}
 
 		final var start = Instant.now();
 		final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());

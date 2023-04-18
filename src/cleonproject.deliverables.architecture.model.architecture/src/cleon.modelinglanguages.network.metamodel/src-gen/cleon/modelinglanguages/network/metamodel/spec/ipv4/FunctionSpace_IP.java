@@ -380,6 +380,12 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("7b3e443d-786c-11e9-97e0-b7c808aefc46")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A FindIP(final java.lang.String ip);
 
+    @IDynamicResourceExtension.MethodId("81edba6b-dede-11ed-9050-a9d4e0258e36")
+    public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D> AllIPs();
+
+    @IDynamicResourceExtension.MethodId("623f925a-dedf-11ed-8ba2-cfc07dc2fa2a")
+    public List<java.lang.String> AllIPsAsString();
+
   }
   
   public static interface IIPRangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -427,14 +433,13 @@ public class FunctionSpace_IP {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A FindIP(final java.lang.String ip, final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange iPRange) {
       /* Begin Protected Region [[7b3e443d-786c-11e9-97e0-b7c808aefc46]] */
-		for( IIPv4_A ipv4 : iPRange.selectIPv4_A())
-		{
-			if( ipv4.selectIp().equals(Integer.parseInt(ip)))
-			{
-				return ipv4;
-			}
-		}
-		return null;   
+    	final int ipv4_int = Integer.parseInt(ip);
+    	for (IIPv4_A ipv4 : iPRange.selectIPv4_A()) {
+    	    if (ipv4.selectIp() == ipv4_int) {
+    	        return ipv4;
+    	    }
+    	}
+    	return null;
       /* End Protected Region   [[7b3e443d-786c-11e9-97e0-b7c808aefc46]] */
     }
 
@@ -456,4 +461,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,qrBEsMv1FZZNduMH/1cd9ZrOhfI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,mgu3pMQcueDOP+EQU8QxBxQjGkM=] */

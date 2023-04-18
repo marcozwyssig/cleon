@@ -56,6 +56,9 @@ public class CommunicationPackage {
   public static final Resource SourceInSubSecurityZone_sourceSubSecurityZone = new Resource("6e8ff36e-5547-11ed-9c8a-c5df55207139");
   public static final Resource DestinationSubSecurityZone_destinationSecuritySubZone = new Resource("13381746-5549-11ed-9c8a-c5df55207139");
   public static final Resource SourceInSubSecurityZoneByHost_overrideDestinationGroupName = new Resource("4e0de70c-724f-11ed-8c7b-bf13a6bd0e0e");
+  public static final Resource SourceInSubSecurityZone_destinationSubSecurityZone = new Resource("1391a552-dde3-11ed-b308-ed6374548c27");
+  public static final Resource Source_destinationSystemConfiguration = new Resource("13acffa3-dde4-11ed-b308-ed6374548c27");
+  public static final Resource Source_oppositeCommunication = new Resource("53cd4c33-ddf6-11ed-b308-ed6374548c27");
   
   /* Begin Protected Region [[user]] */
   
@@ -76,4 +79,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,2GLk/R2k6CQ/OfXGUQGaNxhqVPM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,ny7xIc9LOljrPAmprWqpi+qYc3U=] */

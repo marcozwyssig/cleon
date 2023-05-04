@@ -217,6 +217,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("7c03499a-e186-11ec-bbb2-25acacf78f08")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate();
 
+    @IDynamicResourceExtension.MethodId("7f82ff07-ea83-11ed-8ef9-93417a35a5ab")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts();
+
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -427,4 +430,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,D5GZ4YtogbuR+IY53J2Az7HEwIA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,xlrOQdJtR1ZblTLV+U7ZPKv58ag=] */

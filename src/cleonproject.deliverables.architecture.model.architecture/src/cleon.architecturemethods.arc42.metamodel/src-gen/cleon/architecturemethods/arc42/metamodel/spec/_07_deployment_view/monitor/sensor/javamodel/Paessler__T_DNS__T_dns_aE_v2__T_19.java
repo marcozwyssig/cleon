@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Dns extends DynamicResource implements IDns {
+public class Paessler__T_DNS__T_dns_aE_v2__T_19 extends DynamicResource implements IPaessler__T_DNS__T_dns_aE_v2__T_19 {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDns> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDns>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPaessler__T_DNS__T_dns_aE_v2__T_19> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPaessler__T_DNS__T_dns_aE_v2__T_19>() {
     
     @Override
-    public IDns create() {
-      return new Dns();
+    public IPaessler__T_DNS__T_dns_aE_v2__T_19 create() {
+      return new Paessler__T_DNS__T_dns_aE_v2__T_19();
     }
     
     @Override
-    public IDns create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Dns(resourceRepository, resource);
+    public IPaessler__T_DNS__T_dns_aE_v2__T_19 create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Paessler__T_DNS__T_dns_aE_v2__T_19(resourceRepository, resource);
     }
   
   };
 
-  public Dns() {
-    super(IDns.TYPE_ID);
+  public Paessler__T_DNS__T_dns_aE_v2__T_19() {
+    super(IPaessler__T_DNS__T_dns_aE_v2__T_19.TYPE_ID);
   }
   
-  public Dns(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IDns.TYPE_ID);
+  public Paessler__T_DNS__T_dns_aE_v2__T_19(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IPaessler__T_DNS__T_dns_aE_v2__T_19.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class Dns extends DynamicResource implements IDns {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Dns setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Paessler__T_DNS__T_dns_aE_v2__T_19 setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -71,4 +71,4 @@ public class Dns extends DynamicResource implements IDns {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db426c08-c1eb-11ea-820f-9931558a898c,C15z1LFJN93YayVvspyv2AM0DgU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db426c08-c1eb-11ea-820f-9931558a898c,xRdAYw8aaqYriMKFY7gVFKxDV3s=] */

@@ -29,7 +29,7 @@ public class SensorPackage {
   public static final Resource dicombandwidth = new Resource("db426bf6-c1eb-11ea-820f-9931558a898c");
   public static final Resource dicomcecho = new Resource("db426bfc-c1eb-11ea-820f-9931558a898c");
   public static final Resource dicomqueryretrieve = new Resource("db426c02-c1eb-11ea-820f-9931558a898c");
-  public static final Resource dns = new Resource("db426c08-c1eb-11ea-820f-9931558a898c");
+  public static final Resource paessler__T_DNS__T_dns_aE_v2__T_19 = new Resource("db426c08-c1eb-11ea-820f-9931558a898c");
   public static final Resource dockercontainer = new Resource("db426c0e-c1eb-11ea-820f-9931558a898c");
   public static final Resource dropbox = new Resource("db426c14-c1eb-11ea-820f-9931558a898c");
   public static final Resource eva = new Resource("db426c1a-c1eb-11ea-820f-9931558a898c");
@@ -319,4 +319,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,3XOAENNPLqKpJbFemU6oQRaBGsE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,WbpbUP7KBmg3KJUuQSJHgweKjPQ=] */

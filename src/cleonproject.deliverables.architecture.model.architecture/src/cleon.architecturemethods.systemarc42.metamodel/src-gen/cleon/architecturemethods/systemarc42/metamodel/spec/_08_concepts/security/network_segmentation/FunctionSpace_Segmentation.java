@@ -49,6 +49,9 @@ public class FunctionSpace_Segmentation {
   public static interface ISecuritySubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c56d1562-b20d-11e9-b89e-1728aee30149")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDepedendsOnWith();
+
+    @IDynamicResourceExtension.MethodId("a1e84ca9-0ab8-11ee-a86d-478d6a2bb65d")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("df2d7303-b9ce-11e9-828c-091526d036b6")
@@ -196,4 +199,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,rnWf3Lk/lHoXt4tbPf0tot3MUNg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,TBGdOoO2LhlYy6I1YJZodPLwxYM=] */

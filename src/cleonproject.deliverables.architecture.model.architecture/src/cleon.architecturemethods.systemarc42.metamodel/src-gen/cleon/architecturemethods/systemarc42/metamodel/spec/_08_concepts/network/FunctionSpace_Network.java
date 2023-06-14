@@ -135,56 +135,6 @@ public class FunctionSpace_Network {
 
   }
 
-  public static interface INamedNetworkNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b2bccfa0-ca55-11e9-83b0-559396620907")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface INamedNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NamedNetworkNodeFunctionsImpl implements INamedNetworkNodeFunctionsImpl {
-
-    public static final INamedNetworkNodeFunctionsImpl INSTANCE = new NamedNetworkNodeFunctionsImpl();
-
-    private NamedNetworkNodeFunctionsImpl() {}
-
-  }
-  
-  public static class NamedNetworkNodeFunctions {
-
-    private NamedNetworkNodeFunctions() {}
-
-  }
-
-  public static interface IGatewayNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("d345aafb-ca55-11e9-83b0-559396620907")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface IGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class GatewayNodeFunctionsImpl implements IGatewayNodeFunctionsImpl {
-
-    public static final IGatewayNodeFunctionsImpl INSTANCE = new GatewayNodeFunctionsImpl();
-
-    private GatewayNodeFunctionsImpl() {}
-
-  }
-  
-  public static class GatewayNodeFunctions {
-
-    private GatewayNodeFunctions() {}
-
-  }
-
   public static interface INetworkHostNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da20bbed-ca55-11e9-83b0-559396620907")
@@ -220,6 +170,24 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("7f82ff07-ea83-11ed-8ef9-93417a35a5ab")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts();
 
+    @IDynamicResourceExtension.MethodId("71b29b11-0ab6-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHostsSorted();
+
+    @IDynamicResourceExtension.MethodId("521dd1a0-0ab8-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts_2();
+
+    @IDynamicResourceExtension.MethodId("db40846a-0ab9-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllAbstractHosts();
+
+    @IDynamicResourceExtension.MethodId("29fee71c-0aba-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsInNetwork();
+
+    @IDynamicResourceExtension.MethodId("7a2454c6-0aba-11ee-a86d-478d6a2bb65d")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubZone();
+
+    @IDynamicResourceExtension.MethodId("aa3a661e-0abb-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllAbstractHostsWhereSecuritySubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -232,6 +200,9 @@ public class FunctionSpace_Network {
 
     @IDynamicResourceExtension.MethodId("7c03499a-e186-11ec-bbb2-25acacf78f08")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList);
+
+    @IDynamicResourceExtension.MethodId("521dd1a0-0ab8-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts_2(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode);
 
   }
   
@@ -288,6 +259,15 @@ public class FunctionSpace_Network {
       /* End Protected Region   [[7c03499a-e186-11ec-bbb2-25acacf78f08]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts_2(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode) {
+      /* Begin Protected Region [[521dd1a0-0ab8-11ee-a86d-478d6a2bb65d]] */
+		var networkHostNodeFunctions = networkHostNode.extension(INetworkHostNodeFunctions.class);
+		var securitySubZone = networkHostNodeFunctions.SecuritySubZone();
+		return networkHostNodeFunctions.AllAbstractHostsWhereSecuritySubzone(securitySubZone);
+      /* End Protected Region   [[521dd1a0-0ab8-11ee-a86d-478d6a2bb65d]] */
+    }
+
   }
   
   public static class NetworkHostNodeFunctions {
@@ -304,6 +284,10 @@ public class FunctionSpace_Network {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode> networkHostNodeList) {
       return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNodeList).OnlyToGenerate(networkHostNodeList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SelectHosts_2(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkHostNode networkHostNode) {
+      return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNode).SelectHosts_2(networkHostNode);
     }
 
   }
@@ -430,4 +414,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,xlrOQdJtR1ZblTLV+U7ZPKv58ag=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,WxBPXDa/1jdQ8mR7Am3qnITuCOU=] */

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.plattform.javamodel.IPrtgProbeSystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IReadOnlyDomainControllerSystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 /* End Protected Region   [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf,imports]] */
@@ -379,6 +380,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("5d096aa9-716f-11ed-b3a1-8773ed130054")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment TopologyEnvironment();
 
+    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -388,6 +392,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
 
   }
   
@@ -416,6 +423,18 @@ public class FunctionSpace_Topology {
       /* End Protected Region   [[ba04ab33-716f-11ed-b3a1-8773ed130054]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
+    	var securitySubZoneFunctions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
+    	var systemConfigurations = securitySubZoneFunctions.AllSystemConfigurations();
+    	
+    	return abstractHostList.stream().filter(x -> {
+    		return systemConfigurations.contains(x.selectInstanceOf());    		
+    	}).collect(Collectors.toList());
+      /* End Protected Region   [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
+    }
+
   }
   
   public static class AbstractHostFunctions {
@@ -428,6 +447,10 @@ public class FunctionSpace_Topology {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyPrtgProbe(abstractHostList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).WhereSubzone(securitySubZone, abstractHostList);
     }
 
   }
@@ -934,4 +957,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,SGVMaeFBefPf/fDbuY2VsG4lCLQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,Xv8swQkEwgu93PEeX0xr+Lwsdhw=] */

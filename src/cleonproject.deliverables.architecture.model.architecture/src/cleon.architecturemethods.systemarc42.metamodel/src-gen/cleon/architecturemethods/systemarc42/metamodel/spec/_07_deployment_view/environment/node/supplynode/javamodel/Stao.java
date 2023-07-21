@@ -66,8 +66,6 @@ public class Stao extends DynamicResource implements IStao {
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isA()) return visitor.visitA();
     if (isB()) return visitor.visitB();
-    if (is__V_()) return visitor.visit__V_();
-    if (is__W_()) return visitor.visit__W_();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -79,14 +77,6 @@ public class Stao extends DynamicResource implements IStao {
     }
     if (isB()) {
       visitor.visitB();
-      return;
-    }
-    if (is__V_()) {
-      visitor.visit__V_();
-      return;
-    }
-    if (is__W_()) {
-      visitor.visit__W_();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -104,15 +94,5 @@ public class Stao extends DynamicResource implements IStao {
     return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.Stao_B);
   }
   
-  @Override
-  public boolean is__V_() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.Stao___V_);
-  }
-  
-  @Override
-  public boolean is__W_() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.SupplynodePackage.Stao___W_);
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a148fc4-e28d-11ed-99b7-d1ac0e4a4893,w3ePGuSM52B9nz8l5ziRuKKQ7ck=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a148fc4-e28d-11ed-99b7-d1ac0e4a4893,IuH8nlXqr7eX3ZFdeQJ/bodsQag=] */

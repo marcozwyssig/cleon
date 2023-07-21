@@ -15,8 +15,6 @@ public class SupplynodePackage {
   public static final Resource SupplyDataCenter_stao = new Resource("318159c7-e28d-11ed-99b7-d1ac0e4a4893");
   public static final Resource Stao_A = new Resource("3a79565b-e28d-11ed-99b7-d1ac0e4a4893");
   public static final Resource Stao_B = new Resource("3d681236-e28d-11ed-99b7-d1ac0e4a4893");
-  public static final Resource Stao___V_ = new Resource("3e279152-e28d-11ed-99b7-d1ac0e4a4893");
-  public static final Resource Stao___W_ = new Resource("3f1329f0-e28d-11ed-99b7-d1ac0e4a4893");
   public static final Resource SupplyLocation = new Resource("b9e6f395-e28d-11ed-99b7-d1ac0e4a4893");
   public static final Resource FunctionSpace_aE_SupplyNode_SupplyLocation = new Resource("cd26f846-e28e-11ed-99b7-d1ac0e4a4893");
   
@@ -39,4 +37,4 @@ public class SupplynodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,uOC+4FaeJvnxM1WHV7Rp3xCRJmA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,iGChlo7fuJQwflEDMc3i6Nu+D6E=] */

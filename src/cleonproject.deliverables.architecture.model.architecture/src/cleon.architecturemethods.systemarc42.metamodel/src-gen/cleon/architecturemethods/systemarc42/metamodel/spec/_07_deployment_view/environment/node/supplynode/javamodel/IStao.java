@@ -12,10 +12,6 @@ public interface IStao extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitB();
     
-    public void visit__V_();
-    
-    public void visit__W_();
-    
   }
   
   public static interface IValueVisitor<R> {
@@ -23,10 +19,6 @@ public interface IStao extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitA();
     
     public R visitB();
-    
-    public R visit__V_();
-    
-    public R visit__W_();
     
   }
   
@@ -42,11 +34,7 @@ public interface IStao extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isB();
   
-  public boolean is__V_();
-  
-  public boolean is__W_();
-  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a148fc4-e28d-11ed-99b7-d1ac0e4a4893,vDgUQS4FC1yVBShJX5RRgXVGjeM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a148fc4-e28d-11ed-99b7-d1ac0e4a4893,3tQCaNgM0IVrUhxp3IBDENwVhBk=] */

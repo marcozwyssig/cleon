@@ -3,8 +3,6 @@
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
     <resource statement-guid="3a797d6e-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="3a79565b-e28d-11ed-99b7-d1ac0e4a4893" />
     <resource statement-guid="3d683949-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="3d681236-e28d-11ed-99b7-d1ac0e4a4893" />
-    <resource statement-guid="3e279157-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="3e279152-e28d-11ed-99b7-d1ac0e4a4893" />
-    <resource statement-guid="3f1329f3-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="3f1329f0-e28d-11ed-99b7-d1ac0e4a4893" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2a148fc6-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -33,26 +31,6 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="3dba9eb8-e28d-11ed-99b7-d1ac0e4a4893" type="literal">B</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="3e279157-e28d-11ed-99b7-d1ac0e4a4893">
-      <resource guid="3e279152-e28d-11ed-99b7-d1ac0e4a4893">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3e279154-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="2a148fc4-e28d-11ed-99b7-d1ac0e4a4893" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3ea4d7bf-e28d-11ed-99b7-d1ac0e4a4893" type="literal">0</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="3f1329f3-e28d-11ed-99b7-d1ac0e4a4893">
-      <resource guid="3f1329f0-e28d-11ed-99b7-d1ac0e4a4893">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3f1329f2-e28d-11ed-99b7-d1ac0e4a4893" type="resource" guid="2a148fc4-e28d-11ed-99b7-d1ac0e4a4893" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3f4f6fa4-e28d-11ed-99b7-d1ac0e4a4893" type="literal">1</object>
         </predicate>
       </resource>
     </object>

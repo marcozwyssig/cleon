@@ -94,6 +94,15 @@ public class NamedHost extends DynamicResource implements INamedHost {
   }
 
   @Override
+  public java.lang.Boolean selectSkipBookmarkGeneration() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration);
+  }
+    
+  public void setSkipBookmarkGeneration(java.lang.Boolean skipBookmarkGeneration) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration, skipBookmarkGeneration);
+  }
+
+  @Override
   public java.lang.Boolean selectSkipHostGeneration() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration);
   }
@@ -174,6 +183,7 @@ public class NamedHost extends DynamicResource implements INamedHost {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
@@ -184,4 +194,4 @@ public class NamedHost extends DynamicResource implements INamedHost {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9004db0d-570d-11ea-9b24-23fcad029119,HTmgrdmltbJoPsGsPJYelCHMt18=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9004db0d-570d-11ea-9b24-23fcad029119,1bK49UAWMh8tFKL18/nx2cAuu7Y=] */

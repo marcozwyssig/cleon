@@ -152,6 +152,9 @@ public class access__T_yaml {
     @IDynamicResourceExtension.MethodId("7687af9c-1e76-11eb-b08c-d72de2e3f55f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyTerminals();
 
+    @IDynamicResourceExtension.MethodId("d1d28aad-2d4a-11ee-a93f-27f66cbd8b98")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyNotSkipped();
+
     @IDynamicResourceExtension.MethodId("0a7ac816-c221-11eb-abce-359bcb502761")
     public java.lang.String FQDNAliasOrHostname(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
@@ -167,6 +170,9 @@ public class access__T_yaml {
     
     @IDynamicResourceExtension.MethodId("7687af9c-1e76-11eb-b08c-d72de2e3f55f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyTerminals(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("d1d28aad-2d4a-11ee-a93f-27f66cbd8b98")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyNotSkipped(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList);
 
   }
   
@@ -185,6 +191,15 @@ public class access__T_yaml {
       /* End Protected Region   [[7687af9c-1e76-11eb-b08c-d72de2e3f55f]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyNotSkipped(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[d1d28aad-2d4a-11ee-a93f-27f66cbd8b98]] */
+        return abstractHostList.stream()
+          		.filter(x -> x.selectSkipBookmarkGeneration() == null || x.selectSkipBookmarkGeneration() == false)
+          		.collect(Collectors.toList());   
+      /* End Protected Region   [[d1d28aad-2d4a-11ee-a93f-27f66cbd8b98]] */
+    }
+
   }
   
   public static class AbstractHostFunctions {
@@ -193,6 +208,10 @@ public class access__T_yaml {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyTerminals(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyTerminals(abstractHostList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyNotSkipped(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyNotSkipped(abstractHostList);
     }
 
   }
@@ -232,7 +251,7 @@ public class access__T_yaml {
       final var abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       final var siteTable = new HashMap<String, HashMap<String, List<String>>>();
 
-      for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
+      for (final IAbstractHost dst : AbstractHostFunctionsImpl.INSTANCE.OnlyNotSkipped(abstractSiteFunctions.AllHostsWithAllowedManaged())) {
       	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
       		final var sourceFunctions = accessTo.selectSourceForAccess().extension(ISourceFunctions.class);
@@ -264,7 +283,7 @@ public class access__T_yaml {
       final var abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       final var siteTable = new HashMap<String, HashMap<String, List<String>>>();
 
-      for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
+      for (final IAbstractHost dst : AbstractHostFunctionsImpl.INSTANCE.OnlyNotSkipped(abstractSiteFunctions.AllHostsWithAllowedManaged())) {
       	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
       		final var sourceFunctions = accessTo.selectSourceForAccess().extension(ISourceFunctions.class);
@@ -302,4 +321,4 @@ public class access__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,eB6pcggx76xCS9Ue9rKNhFNMomM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,amJmJyuech7P4kXm2ddewlrkhn0=] */

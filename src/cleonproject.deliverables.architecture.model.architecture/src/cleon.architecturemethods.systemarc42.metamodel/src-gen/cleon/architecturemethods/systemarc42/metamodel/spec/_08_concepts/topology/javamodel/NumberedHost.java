@@ -103,6 +103,15 @@ public class NumberedHost extends DynamicResource implements INumberedHost {
   }
 
   @Override
+  public java.lang.Boolean selectSkipBookmarkGeneration() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration);
+  }
+    
+  public void setSkipBookmarkGeneration(java.lang.Boolean skipBookmarkGeneration) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration, skipBookmarkGeneration);
+  }
+
+  @Override
   public java.lang.Boolean selectSkipHostGeneration() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration);
   }
@@ -183,6 +192,7 @@ public class NumberedHost extends DynamicResource implements INumberedHost {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractNumberAware_number, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SkipHostGenerationAware_skipHostGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
@@ -193,4 +203,4 @@ public class NumberedHost extends DynamicResource implements INumberedHost {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,887c437e-ca6a-11e9-83b0-559396620907,+jdZim4tMrs+1wQLYjevG56VVe4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,887c437e-ca6a-11e9-83b0-559396620907,Iry9fCoZGEyGBVZ8XyUJIVk5BSs=] */

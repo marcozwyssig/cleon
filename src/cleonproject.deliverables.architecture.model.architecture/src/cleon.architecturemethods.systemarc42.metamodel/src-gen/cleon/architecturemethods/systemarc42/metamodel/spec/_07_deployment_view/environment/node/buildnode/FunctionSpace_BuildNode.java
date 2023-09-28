@@ -64,12 +64,18 @@ public static class HelperFunctionClass {
     @IDynamicResourceExtension.MethodId("4eb6b4cb-84cd-11ea-aadc-ada99ddb5122")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment();
 
+    @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC();
+
   }
   
   public static interface IServiceBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode);
+
+    @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList);
 
   }
   
@@ -115,6 +121,13 @@ public static class HelperFunctionClass {
       /* End Protected Region   [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList) {
+      /* Begin Protected Region [[88b738ac-5dfa-11ee-aa0e-795a14516714]] */
+    	return serviceBuildNodeList.stream().filter(x -> (x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IWriteableDomainControllerSystemConfiguration == false)).collect(java.util.stream.Collectors.toList());   
+      /* End Protected Region   [[88b738ac-5dfa-11ee-aa0e-795a14516714]] */
+    }
+
   }
   
   public static class ServiceBuildNodeFunctions {
@@ -123,6 +136,10 @@ public static class HelperFunctionClass {
 
     public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode) {
       return DynamicResourceUtil.invoke(IServiceBuildNodeFunctionsImpl.class, ServiceBuildNodeFunctionsImpl.INSTANCE, serviceBuildNode).GetHost(cmp, site, owner, id, serviceBuildNode);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList) {
+      return DynamicResourceUtil.invoke(IServiceBuildNodeFunctionsImpl.class, ServiceBuildNodeFunctionsImpl.INSTANCE, serviceBuildNodeList).NoWDC(serviceBuildNodeList);
     }
 
   }
@@ -529,4 +546,4 @@ public static class HelperFunctionClass {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,A7VGB31qR/U6wjQkN6wxtrslc2Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,wCo8HrQU2/xam9ufUugUbUWBpAc=] */

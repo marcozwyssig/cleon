@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="0bba3407-2d73-11e6-959f-d1cef44ff5fd">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="0f616a6b-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="0f616a68-2d73-11e6-959f-d1cef44ff5fd" />
+    <resource statement-guid="1cb21387-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="1cb21384-2d73-11e6-959f-d1cef44ff5fd" />
+    <resource statement-guid="6550c64c-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="6550c649-2d73-11e6-959f-d1cef44ff5fd" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bba3409-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bba5b1b-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bba5b1a-2d73-11e6-959f-d1cef44ff5fd" type="literal">CpuArchitecture</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="0f616a6b-2d73-11e6-959f-d1cef44ff5fd">
+      <resource guid="0f616a68-2d73-11e6-959f-d1cef44ff5fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0f616a6a-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="0bba3407-2d73-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0fd53a6c-2d73-11e6-959f-d1cef44ff5fd" type="literal">x86_32bit</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1cb21387-2d73-11e6-959f-d1cef44ff5fd">
+      <resource guid="1cb21384-2d73-11e6-959f-d1cef44ff5fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1cb21386-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="0bba3407-2d73-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="89b8d7b1-2d73-11e6-959f-d1cef44ff5fd" type="literal">x86_64bit</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6550c64c-2d73-11e6-959f-d1cef44ff5fd">
+      <resource guid="6550c649-2d73-11e6-959f-d1cef44ff5fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6550c64b-2d73-11e6-959f-d1cef44ff5fd" type="resource" guid="0bba3407-2d73-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="785d2dae-2d73-11e6-959f-d1cef44ff5fd" type="literal">x86_32_64_bit</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="b36e39a2-2a7f-11ea-8727-89a169c94892" type="literal">false</object>
+  </predicate>
+</resource>
+

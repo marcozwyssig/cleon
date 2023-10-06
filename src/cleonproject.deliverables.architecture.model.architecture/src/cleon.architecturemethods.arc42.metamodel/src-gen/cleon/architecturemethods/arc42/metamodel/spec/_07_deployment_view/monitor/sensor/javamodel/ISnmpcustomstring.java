@@ -14,6 +14,10 @@ public interface ISnmpcustomstring extends cleon.architecturemethods.arc42.metam
   
   public java.lang.String selectIncludeMustType();
   
+  public java.lang.String selectIncludeMustWarning();
+  
+  public java.lang.String selectIncludeMustWarningType();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db4b9474-c1eb-11ea-820f-9931558a898c,KJLnqJtV0mOQcZlK4yDGxRVIZ4U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db4b9474-c1eb-11ea-820f-9931558a898c,h23ekzmeSEFQVkiXDTqCNWW1GoM=] */

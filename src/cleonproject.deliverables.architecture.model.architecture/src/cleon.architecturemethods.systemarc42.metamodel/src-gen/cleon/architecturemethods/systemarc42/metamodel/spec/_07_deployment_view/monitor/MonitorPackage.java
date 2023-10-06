@@ -9,6 +9,7 @@ public class MonitorPackage {
   public static final Resource MonitoringCompositeBuildingBlocksForSystem = new Resource("9bdd8ad4-08a7-11eb-a18e-c7dfa3f96804");
   public static final Resource SystemMonitoringBuildingBlocks_forSystems = new Resource("21fe0f09-08ab-11eb-a18e-c7dfa3f96804");
   public static final Resource MonitoringCompositeBuildingBlocksForSystem_systemConfiguration = new Resource("37d55979-08af-11eb-a18e-c7dfa3f96804");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_Monitoring_MonitoringBuildingBlock = new Resource("fe69b891-6440-11ee-9870-a3a9b6fe8f95");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class MonitorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.monitor,hS8IOXkEnfM25oqlh9CMNR0+1co=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.monitor,I3RmjMWQfpbdp+D2ULMcIZ/6GvM=] */

@@ -203,6 +203,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("6b20030a-4e0b-11ed-a85e-ff0e1a36b8ae")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
 
+    @IDynamicResourceExtension.MethodId("4dd43ac6-6441-11ee-9870-a3a9b6fe8f95")
+    public java.lang.Boolean IsConcrete();
+
   }
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -221,6 +224,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     @IDynamicResourceExtension.MethodId("2b39227b-c77f-11ea-b0b6-e5df79e86bc2")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyConcrete(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList);
+
+    @IDynamicResourceExtension.MethodId("4dd43ac6-6441-11ee-9870-a3a9b6fe8f95")
+    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
 
   }
   
@@ -261,8 +267,15 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyConcrete(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       /* Begin Protected Region [[2b39227b-c77f-11ea-b0b6-e5df79e86bc2]] */
-      return systemConfigurationList.stream().filter(x -> SystemConfiguration.selectToMeInheritServices(x).isEmpty()).collect(Collectors.toList());
+      return systemConfigurationList.stream().filter(x -> IsConcrete(x)).collect(Collectors.toList());
       /* End Protected Region   [[2b39227b-c77f-11ea-b0b6-e5df79e86bc2]] */
+    }
+
+    @Override
+    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      /* Begin Protected Region [[4dd43ac6-6441-11ee-9870-a3a9b6fe8f95]] */
+    	return SystemConfiguration.selectToMeInheritServices(systemConfiguration).isEmpty();
+      /* End Protected Region   [[4dd43ac6-6441-11ee-9870-a3a9b6fe8f95]] */
     }
 
   }
@@ -289,6 +302,10 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyConcrete(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfigurationList).OnlyConcrete(systemConfigurationList);
+    }
+
+    public static java.lang.Boolean IsConcrete(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).IsConcrete(systemConfiguration);
     }
 
   }
@@ -540,4 +557,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,MX4EKvmT0xC5vmu1c6nbUEAh+yw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,uD4ZYQHAfoJDuM5ocfQF6G2A6Bw=] */

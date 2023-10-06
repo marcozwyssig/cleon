@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2825a27d-c1f3-11ea-820f-9931558a898c,imports]] */
-
+import java.util.stream.Collectors;
 /* End Protected Region   [[2825a27d-c1f3-11ea-820f-9931558a898c,imports]] */
 
 public class FunctionSpace_Monitoring_Building_Blocks {
@@ -63,10 +63,22 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     @IDynamicResourceExtension.MethodId("2ec1c20e-d8f1-11eb-b083-d9bf2ecd74ec")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> SelectAllSensors();
 
+    @IDynamicResourceExtension.MethodId("6c3a47fa-643f-11ee-9870-a3a9b6fe8f95")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete();
+
+    @IDynamicResourceExtension.MethodId("673030f3-6440-11ee-9870-a3a9b6fe8f95")
+    public java.lang.Boolean IsConcrete();
+
   }
   
   public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("6c3a47fa-643f-11ee-9870-a3a9b6fe8f95")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList);
+
+    @IDynamicResourceExtension.MethodId("673030f3-6440-11ee-9870-a3a9b6fe8f95")
+    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock);
+
   }
   
   public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
@@ -75,11 +87,33 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
     private MonitoringBuildingBlockFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList) {
+      /* Begin Protected Region [[6c3a47fa-643f-11ee-9870-a3a9b6fe8f95]] */
+    	return monitoringBuildingBlockList.stream().filter(x -> {
+    		return x.extension(IMonitoringBuildingBlockFunctions.class).IsConcrete();
+    	}).collect(Collectors.toList());  
+      /* End Protected Region   [[6c3a47fa-643f-11ee-9870-a3a9b6fe8f95]] */
+    }
+
+    @Override
+    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+      return true;
+    }
+
   }
   
   public static class MonitoringBuildingBlockFunctions {
 
     private MonitoringBuildingBlockFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList) {
+      return DynamicResourceUtil.invoke(IMonitoringBuildingBlockFunctionsImpl.class, MonitoringBuildingBlockFunctionsImpl.INSTANCE, monitoringBuildingBlockList).OnlyConcrete(monitoringBuildingBlockList);
+    }
+
+    public static java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+      return DynamicResourceUtil.invoke(IMonitoringBuildingBlockFunctionsImpl.class, MonitoringBuildingBlockFunctionsImpl.INSTANCE, monitoringBuildingBlock).IsConcrete(monitoringBuildingBlock);
+    }
 
   }
 
@@ -419,4 +453,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,eMwthIMjUqvbwvhi7L1XdE/NPL0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,fhLyZEWP+HZ8wPhC7M6aQqM1Yno=] */

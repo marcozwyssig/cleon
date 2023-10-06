@@ -43,6 +43,31 @@ public class FunctionSpace_SystemArc42_Monitoring {
 
   }
 
+  public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("01faa787-6441-11ee-9870-a3a9b6fe8f95")
+    public java.lang.Boolean IsConcrete();
+
+  }
+  
+  public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IMonitoringBuildingBlockFunctionsImpl INSTANCE = new MonitoringBuildingBlockFunctionsImpl();
+
+    private MonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class MonitoringBuildingBlockFunctions {
+
+    private MonitoringBuildingBlockFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,nzO8RLeE8OOWhm8poVWMc5rnIkg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,eNVVEWD9KRw+xXAPECgRhR0X/p4=] */

@@ -8,12 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
-import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 import java.util.stream.Collectors;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 /* End Protected Region   [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
@@ -27,6 +23,12 @@ public class FunctionSpace_Network {
 
     @IDynamicResourceExtension.MethodId("b8d3f6b9-ca3f-11e9-b209-f7d5bd0d6e0f")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> GetNodes();
+
+    @IDynamicResourceExtension.MethodId("1892b598-6416-11ee-8110-b92476c997e7")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IIPNetworkConcept NetworkConcept();
+
+    @IDynamicResourceExtension.MethodId("0e8bc3ec-6417-11ee-8110-b92476c997e7")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite NetworkSite();
 
   }
   
@@ -298,7 +300,7 @@ public class FunctionSpace_Network {
     public java.lang.Integer FunctionId();
 
     @IDynamicResourceExtension.MethodId("c47a831a-b212-11ea-a3a2-e9d3344bee73")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name);
 
     @IDynamicResourceExtension.MethodId("38a08e41-eb06-11ec-84eb-43814bf81118")
     public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> ExcludeCIDRForADSite();
@@ -311,7 +313,7 @@ public class FunctionSpace_Network {
   public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("c47a831a-b212-11ea-a3a2-e9d3344bee73")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite);
 
     @IDynamicResourceExtension.MethodId("9ed2d99e-f079-11ec-9c6a-1f9bef34e8b6")
     public List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> SelectCIDRForADSite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite);
@@ -325,10 +327,10 @@ public class FunctionSpace_Network {
     private NetworkSiteFunctionsImpl() {}
 
     @Override
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
-      for( final INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().values() ) {
-      	final var subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
+      for( final var networkSubZone : networkSite.selectNetworkSubZone().values() ) {
+      	final var subZoneFunctions = networkSubZone.extension(cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions.class);
       	final var subzoneName = subZoneFunctions.Name();
       	if( subzoneName.equalsIgnoreCase(name)) {
       		return networkSubZone;
@@ -355,7 +357,7 @@ public class FunctionSpace_Network {
 
     private NetworkSiteFunctions() {}
 
-    public static cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSite).GetNetworkSubZone(name, networkSite);
     }
 
@@ -391,7 +393,7 @@ public class FunctionSpace_Network {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
       /* Begin Protected Region [[2a3f2c0c-b212-11ea-a3a2-e9d3344bee73]] */
-      for( final INetworkSite networkSite : networkEnvironment.selectNetworkSite().values()) {
+      for( final var networkSite : networkEnvironment.selectNetworkSite().values()) {
       	if( networkSite.selectSite().selectName().equalsIgnoreCase(name)) {
       		return networkSite;
       	}
@@ -412,6 +414,31 @@ public class FunctionSpace_Network {
 
   }
 
+  public static interface INetworkSubZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7")
+    public java.lang.String Vlan();
+
+  }
+  
+  public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NetworkSubZoneFunctionsImpl implements INetworkSubZoneFunctionsImpl {
+
+    public static final INetworkSubZoneFunctionsImpl INSTANCE = new NetworkSubZoneFunctionsImpl();
+
+    private NetworkSubZoneFunctionsImpl() {}
+
+  }
+  
+  public static class NetworkSubZoneFunctions {
+
+    private NetworkSubZoneFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,WxBPXDa/1jdQ8mR7Am3qnITuCOU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,y1Ss/QGieUYuGfOY0M6fri479Gs=] */

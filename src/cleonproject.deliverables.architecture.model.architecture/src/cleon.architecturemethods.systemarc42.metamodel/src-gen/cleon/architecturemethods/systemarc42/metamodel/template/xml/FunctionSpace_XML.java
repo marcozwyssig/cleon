@@ -21,7 +21,7 @@ public class FunctionSpace_XML {
   public static interface IAbstractNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2cdd8a41-90d9-11e9-b29b-f1077960b1fa")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_XML {
   public static interface IAbstractLogicalNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6bded80b-90d9-11e9-b29b-f1077960b1fa")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
@@ -71,14 +71,14 @@ public class FunctionSpace_XML {
   public static interface INamedPhysicalNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7f94024f-90d9-11e9-b29b-f1077960b1fa")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
   public static interface INamedPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7f94024f-90d9-11e9-b29b-f1077960b1fa")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork);
 
   }
   
@@ -89,7 +89,7 @@ public class FunctionSpace_XML {
     private NamedPhysicalNetworkFunctionsImpl() {}
 
     @Override
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
       return null;
     }
 
@@ -99,7 +99,7 @@ public class FunctionSpace_XML {
 
     private NamedPhysicalNetworkFunctions() {}
 
-    public static List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
       return DynamicResourceUtil.invoke(INamedPhysicalNetworkFunctionsImpl.class, NamedPhysicalNetworkFunctionsImpl.INSTANCE, namedPhysicalNetwork).allNetworkSubZone(namedPhysicalNetwork);
     }
 
@@ -108,7 +108,7 @@ public class FunctionSpace_XML {
   public static interface INetworkSubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8bcea7c8-90d9-11e9-b29b-f1077960b1fa")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> allNetworkSubZone();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
     @IDynamicResourceExtension.MethodId("388e8b74-b213-11ea-a3a2-e9d3344bee73")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr);
@@ -121,7 +121,7 @@ public class FunctionSpace_XML {
   public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("388e8b74-b213-11ea-a3a2-e9d3344bee73")
-    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone networkSubZone);
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone networkSubZone);
 
   }
   
@@ -132,7 +132,7 @@ public class FunctionSpace_XML {
     private NetworkSubZoneFunctionsImpl() {}
 
     @Override
-    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone networkSubZone) {
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone networkSubZone) {
       /* Begin Protected Region [[388e8b74-b213-11ea-a3a2-e9d3344bee73]] */
     	for( final IIPv4_Mask mask : networkSubZone.selectCidrs() ) {
     		final String ip = mask.selectIPv4();
@@ -150,7 +150,7 @@ public class FunctionSpace_XML {
 
     private NetworkSubZoneFunctions() {}
 
-    public static cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone networkSubZone) {
+    public static cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSubZone networkSubZone) {
       return DynamicResourceUtil.invoke(INetworkSubZoneFunctionsImpl.class, NetworkSubZoneFunctionsImpl.INSTANCE, networkSubZone).GetCidr(cidr, networkSubZone);
     }
 
@@ -233,4 +233,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,xCdfBxRwlg2CES0YnKeJxt/OxOU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,AKQDJyHaqpdqT1GCmPN4SURlCzA=] */

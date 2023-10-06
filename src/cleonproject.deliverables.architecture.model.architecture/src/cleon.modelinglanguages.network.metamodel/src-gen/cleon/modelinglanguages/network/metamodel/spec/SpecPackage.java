@@ -19,8 +19,6 @@ public class SpecPackage {
   public static final Resource GroupAware_groups = new Resource("c7d8bbf5-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group_nodes = new Resource("f02f4565-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group_color = new Resource("42c675d8-09af-11e9-8c40-11db3668c0c9");
-  public static final Resource NetworkSubZone = new Resource("1f0c1a61-4b29-11e9-8338-41c203971ecb");
-  public static final Resource NetworkSubZone_securitySubZone = new Resource("b97893c6-4b29-11e9-8338-41c203971ecb");
   public static final Resource AbstractNetworks_range = new Resource("f9f6687c-7403-11e9-8765-0925552fc2b7");
   public static final Resource AbstractNetworkNode_iPv4_aE_D = new Resource("09a79db2-740c-11e9-8765-0925552fc2b7");
   public static final Resource AbstractPhysicalNetwork = new Resource("679da3a6-7ac9-11e9-a70f-4dc03941a024");
@@ -34,8 +32,6 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Network_AbstractNetworks = new Resource("e84bd910-7acd-11e9-a70f-4dc03941a024");
   public static final Resource FunctionSpace_aE_Network_AbstractNetworkNode = new Resource("bdf5a09e-7b97-11e9-94aa-f1ea7ea33f46");
   public static final Resource AbstractNetworkNode_exportDNSRecord = new Resource("75d652ad-3ea4-11ea-8cb4-0b006790b142");
-  public static final Resource NetworkSubZone_overrideVLAN = new Resource("a97bbeb9-4cf1-11ea-b2c1-57c8b0ec51b7");
-  public static final Resource FunctionSpace_aE_Network_NetworkSubZone = new Resource("e8eff278-4cf1-11ea-b2c1-57c8b0ec51b7");
   
   /* Begin Protected Region [[user]] */
   
@@ -56,4 +52,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,y0zi87Uyg1+V567Gm7OXMRf5xKY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,7NN8h0HlD80oDpUvLU/HZpwegtk=] */

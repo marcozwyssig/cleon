@@ -10,7 +10,7 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.util.log.Logger;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.AuthnPackage;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.javamodel.IRealmUsageForDependentSystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.javamodel.IRealmConnection;
 
 public class RealmForDependentSysCfgValidation implements IResourceValidationAspect {
 
@@ -21,10 +21,10 @@ public class RealmForDependentSysCfgValidation implements IResourceValidationAsp
 
 			final var typeSystem = validationContext.getTypeSystem();
 			final var resourceRepository = typeSystem.getResourceRepository();
-			final var directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmUsageForDependentSystemConfiguration.class, validationContext.getResource());
+			final var directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmConnection.class, validationContext.getResource());
 			if( directoryServiceForSystemConfiguration.selectUsage().isEmpty()) {
 				inconsistencyList.add(new PredicateInconsistency(validationContext.getPackage(), validationContext.getResource(),
-						AuthnPackage.RealmUsageForDependentSystemConfiguration_usage, "at least one usage needs to be specfied"));
+						AuthnPackage.RealmConnection_usage, "at least one usage needs to be specfied"));
 			}
 		} finally {
 			final var finish = Instant.now();

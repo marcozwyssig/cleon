@@ -25,9 +25,9 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_ServiceAccountEnvironment = new Resource("032fbd2e-d1b4-11ea-aaa2-e3554b4f77be");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Whitebox = new Resource("ff70064d-d7dc-11ea-ae00-5518e944c256");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmForSystemConfiguration = new Resource("a7661974-fd92-11ea-aa08-3550db97e5ec");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractRealmForDependentSystemConfiguration = new Resource("2fd4180f-fd93-11ea-aa08-3550db97e5ec");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmBasedOnDependentSystemConfiguration = new Resource("a84cda5a-fd93-11ea-aa08-3550db97e5ec");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmUsageForDependentSystemConfiguration = new Resource("bec8ed1f-fd93-11ea-aa08-3550db97e5ec");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractRealmHandlers = new Resource("2fd4180f-fd93-11ea-aa08-3550db97e5ec");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmDependent = new Resource("a84cda5a-fd93-11ea-aa08-3550db97e5ec");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmConnection = new Resource("bec8ed1f-fd93-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmConcept = new Resource("5df19b4d-fd99-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmConfigurationUsage = new Resource("4f425a87-fd9e-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentMethodConcept = new Resource("c172fb35-fe53-11ea-abcb-bfad67a56d79");
@@ -66,4 +66,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,PEQhw60i9Au0eVjs8xtdxgWvdnw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,lBgvFmbYYopYL/kuSeNMgoqAMUs=] */

@@ -10,7 +10,7 @@ public class AuthnPackage {
   public static final Resource RealmForSystemConfiguration_realmForSystemConfiguration = new Resource("ffab8a4e-7e65-11ea-9262-7b7e0e9cb204");
   public static final Resource RealmConcept_realmConfigurations = new Resource("b6019763-e6c3-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfiguration = new Resource("d0f6ae54-e6c3-11ea-92fa-2db17cc89b0c");
-  public static final Resource RealmUsageForDependentSystemConfiguration_usage = new Resource("4eddab52-e6c4-11ea-92fa-2db17cc89b0c");
+  public static final Resource RealmConnection_usage = new Resource("4eddab52-e6c4-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfigurationUsage = new Resource("67bf2569-e6c4-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfigurationUsage_directoryService = new Resource("a580d1d6-e6c5-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfiguration_standardDescription = new Resource("7b7e731e-fca1-11ea-beda-ffc67490e42f");
@@ -21,11 +21,11 @@ public class AuthnPackage {
   public static final Resource RealmForSystem = new Resource("7f66c720-fd7e-11ea-8062-0d8dc98d6158");
   public static final Resource RealmForSystem_realmForSystem = new Resource("930fbc61-fd7e-11ea-8062-0d8dc98d6158");
   public static final Resource RealmForSystemConfiguration_usageForComponents = new Resource("5dffeaf6-fd82-11ea-b638-e1cc8a02b192");
-  public static final Resource RealmUsageForDependentSystemConfiguration = new Resource("9ea1f053-fd82-11ea-b638-e1cc8a02b192");
-  public static final Resource AbstractRealmForDependentSystemConfiguration_realmForDependentSystemConfiguration = new Resource("eb0c2941-fd82-11ea-b638-e1cc8a02b192");
-  public static final Resource AbstractRealmForDependentSystemConfiguration = new Resource("55667c1c-fd8c-11ea-8a95-19b98046e6db");
-  public static final Resource RealmBasedOnDependentSystemConfiguration = new Resource("de1dc42e-fd8d-11ea-8a95-19b98046e6db");
-  public static final Resource RealmBasedOnDependentSystemConfiguration_basedOn = new Resource("f27c2947-fd9c-11ea-aa08-3550db97e5ec");
+  public static final Resource RealmConnection = new Resource("9ea1f053-fd82-11ea-b638-e1cc8a02b192");
+  public static final Resource AbstractRealmHandlers_realmForComponent = new Resource("eb0c2941-fd82-11ea-b638-e1cc8a02b192");
+  public static final Resource AbstractRealmHandlers = new Resource("55667c1c-fd8c-11ea-8a95-19b98046e6db");
+  public static final Resource RealmDependent = new Resource("de1dc42e-fd8d-11ea-8a95-19b98046e6db");
+  public static final Resource RealmDependent_basedOn = new Resource("f27c2947-fd9c-11ea-aa08-3550db97e5ec");
   public static final Resource ActiveDirectoryConfigurationUsage = new Resource("5ab9c632-c7cd-11ec-a59e-d1c88102a398");
   
   /* Begin Protected Region [[user]] */
@@ -47,4 +47,4 @@ public class AuthnPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn,BDXZX2NNNa3otfxCg+szBl+ffBA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn,OBXuHn/ImDSPf1JhjeyDJhDfSfk=] */

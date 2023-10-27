@@ -626,78 +626,78 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IAbstractRealmForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractRealmHandlersFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c93a7167-fd9b-11ea-aa08-3550db97e5ec")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IAbstractRealmForDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractRealmHandlersFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractRealmForDependentSystemConfigurationFunctionsImpl implements IAbstractRealmForDependentSystemConfigurationFunctionsImpl {
+  public static class AbstractRealmHandlersFunctionsImpl implements IAbstractRealmHandlersFunctionsImpl {
 
-    public static final IAbstractRealmForDependentSystemConfigurationFunctionsImpl INSTANCE = new AbstractRealmForDependentSystemConfigurationFunctionsImpl();
+    public static final IAbstractRealmHandlersFunctionsImpl INSTANCE = new AbstractRealmHandlersFunctionsImpl();
 
-    private AbstractRealmForDependentSystemConfigurationFunctionsImpl() {}
+    private AbstractRealmHandlersFunctionsImpl() {}
 
   }
   
-  public static class AbstractRealmForDependentSystemConfigurationFunctions {
+  public static class AbstractRealmHandlersFunctions {
 
-    private AbstractRealmForDependentSystemConfigurationFunctions() {}
+    private AbstractRealmHandlersFunctions() {}
 
   }
 
-  public static interface IRealmBasedOnDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IRealmDependentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e1c2a7c8-fd9b-11ea-aa08-3550db97e5ec")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IRealmBasedOnDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRealmDependentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RealmBasedOnDependentSystemConfigurationFunctionsImpl implements IRealmBasedOnDependentSystemConfigurationFunctionsImpl {
+  public static class RealmDependentFunctionsImpl implements IRealmDependentFunctionsImpl {
 
-    public static final IRealmBasedOnDependentSystemConfigurationFunctionsImpl INSTANCE = new RealmBasedOnDependentSystemConfigurationFunctionsImpl();
+    public static final IRealmDependentFunctionsImpl INSTANCE = new RealmDependentFunctionsImpl();
 
-    private RealmBasedOnDependentSystemConfigurationFunctionsImpl() {}
+    private RealmDependentFunctionsImpl() {}
 
   }
   
-  public static class RealmBasedOnDependentSystemConfigurationFunctions {
+  public static class RealmDependentFunctions {
 
-    private RealmBasedOnDependentSystemConfigurationFunctions() {}
+    private RealmDependentFunctions() {}
 
   }
 
-  public static interface IRealmUsageForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IRealmConnectionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("27b99338-fd9c-11ea-aa08-3550db97e5ec")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IRealmUsageForDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRealmConnectionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RealmUsageForDependentSystemConfigurationFunctionsImpl implements IRealmUsageForDependentSystemConfigurationFunctionsImpl {
+  public static class RealmConnectionFunctionsImpl implements IRealmConnectionFunctionsImpl {
 
-    public static final IRealmUsageForDependentSystemConfigurationFunctionsImpl INSTANCE = new RealmUsageForDependentSystemConfigurationFunctionsImpl();
+    public static final IRealmConnectionFunctionsImpl INSTANCE = new RealmConnectionFunctionsImpl();
 
-    private RealmUsageForDependentSystemConfigurationFunctionsImpl() {}
+    private RealmConnectionFunctionsImpl() {}
 
   }
   
-  public static class RealmUsageForDependentSystemConfigurationFunctions {
+  public static class RealmConnectionFunctions {
 
-    private RealmUsageForDependentSystemConfigurationFunctions() {}
+    private RealmConnectionFunctions() {}
 
   }
 
@@ -1216,4 +1216,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,VoSO92HjbV7iXJUTEXCJGTU1UPU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,M2V8Rc+WQ363x3sEOHny4a0bHZ0=] */

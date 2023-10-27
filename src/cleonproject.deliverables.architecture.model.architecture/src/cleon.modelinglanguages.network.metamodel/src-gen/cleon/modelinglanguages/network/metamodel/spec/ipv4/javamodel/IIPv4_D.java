@@ -6,6 +6,12 @@ public interface IIPv4_D extends cleon.modelinglanguages.network.metamodel.spec.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("baf38e44-71af-11e9-98e0-2719d32d2629");
   
+  public java.lang.Boolean selectAllowDuplicatedIP();
+  
+  // relations
+  
+  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> selectUsed();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,baf38e44-71af-11e9-98e0-2719d32d2629,l5GTug4Umbbs7DQNRH+sIRsF91U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,baf38e44-71af-11e9-98e0-2719d32d2629,f5itXF/KX2q+CbuzffNqMjsm7yY=] */

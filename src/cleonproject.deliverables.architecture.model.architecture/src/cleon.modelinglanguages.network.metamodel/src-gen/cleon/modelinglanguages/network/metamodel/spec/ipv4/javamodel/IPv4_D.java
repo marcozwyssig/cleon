@@ -60,16 +60,6 @@ public class IPv4_D extends DynamicResource implements IIPv4_D {
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> selectUsed() {
-    return _getList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_D_used);
-  }
-
-  public IPv4_D setUsed(java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> used) {
-    _setList(cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_D_used, used);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -78,14 +68,7 @@ public class IPv4_D extends DynamicResource implements IIPv4_D {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.AbstractIPv4_ip, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_D_used, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D> selectToMeUsed(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_D_used, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,baf38e44-71af-11e9-98e0-2719d32d2629,/KeFu4pn3hs808+1NDyTDnGeqnE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,baf38e44-71af-11e9-98e0-2719d32d2629,xLp9fWwu7YJZMICWOgfXV75fcXg=] */

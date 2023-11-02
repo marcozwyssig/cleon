@@ -252,6 +252,7 @@ public class FunctionSpace_Network {
       		final var skipHostGenerationFor = centralorTnSite.selectSkipHostGenerationFor();
       		final var cmp = x.selectHost().selectInstanceOf();
       		if (skipHostGenerationFor != null && skipHostGenerationFor.contains(cmp)) {
+      			ch.actifsource.util.log.Logger.instance().logInfo("Generation skipped " + functions.AliasOrHostname());
       			return false;
       		}
       		return true;

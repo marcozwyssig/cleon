@@ -43,6 +43,7 @@ public class PuppetPackage {
   public static final Resource qos__T_yaml_QoSSystemConfigurationSource = new Resource("da9dbbab-5289-11ec-9fcc-f3bdcf3059b2");
   public static final Resource qos__T_yaml_QoSSystemConfigurationConcept = new Resource("d11117fb-528c-11ec-9fcc-f3bdcf3059b2");
   public static final Resource ad_aE_gMSAccounts__T_yaml_AbstractSingleHost = new Resource("4d9cd115-a434-11ec-a02c-0578282f8413");
+  public static final Resource profiles__T_yaml_snmpcustom = new Resource("1788a3ae-7a35-11ee-911b-27377c0d1919");
   
   /* Begin Protected Region [[user]] */
   
@@ -63,4 +64,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,LtOjLSecUtNSP869UKg1LjwYMns=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,TUZ9gKDyVQaE+Q+WBitSus83hdk=] */

@@ -457,6 +457,31 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IsnmpcustomFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1788a400-7a35-11ee-911b-27377c0d1919")
+    public java.lang.String RenderSpecificSensor();
+
+  }
+  
+  public static interface IsnmpcustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class snmpcustomFunctionsImpl implements IsnmpcustomFunctionsImpl {
+
+    public static final IsnmpcustomFunctionsImpl INSTANCE = new snmpcustomFunctionsImpl();
+
+    private snmpcustomFunctionsImpl() {}
+
+  }
+  
+  public static class snmpcustomFunctions {
+
+    private snmpcustomFunctions() {}
+
+  }
+
   public static interface ISnmpcustomtableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f5785ac3-1ba2-11ec-b0bc-a9ea4d75c042")
@@ -531,4 +556,4 @@ public class profiles__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,+dEDE0QHZeaWvJOpmeGeu5nS3x8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,3f2Sb/ROj9oS5uKIHV4BjG7xGx4=] */

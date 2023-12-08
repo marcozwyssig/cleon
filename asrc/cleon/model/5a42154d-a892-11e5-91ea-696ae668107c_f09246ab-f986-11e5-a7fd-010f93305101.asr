@@ -533,6 +533,7 @@
         <resource statement-guid="beabedb6-724d-11ed-8c7b-bf13a6bd0e0e" type="resource" guid="beab9f93-724d-11ed-8c7b-bf13a6bd0e0e" />
         <resource statement-guid="c83e1610-98f7-11ee-84f1-a79852821ebc" type="resource" guid="c83dc7ed-98f7-11ee-84f1-a79852821ebc" />
         <resource statement-guid="dfd4155f-98fd-11ee-aa72-593773060f63" type="resource" guid="dfd3c73c-98fd-11ee-aa72-593773060f63" />
+        <resource statement-guid="88dbb527-9487-11ee-ba8b-9bc1381f8047" type="resource" guid="88da086e-9487-11ee-ba8b-9bc1381f8047" />
       </owns>
     </resource>
   </owns>
@@ -5843,6 +5844,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="dfd48a90-98fd-11ee-aa72-593773060f63" type="literal">cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="88dbb527-9487-11ee-ba8b-9bc1381f8047">
+            <resource guid="88da086e-9487-11ee-ba8b-9bc1381f8047">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="88da5590-9487-11ee-ba8b-9bc1381f8047" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="88dcc699-9487-11ee-ba8b-9bc1381f8047" type="literal">ch.actifsource.diagram.glsp</object>
               </predicate>
             </resource>
           </object>

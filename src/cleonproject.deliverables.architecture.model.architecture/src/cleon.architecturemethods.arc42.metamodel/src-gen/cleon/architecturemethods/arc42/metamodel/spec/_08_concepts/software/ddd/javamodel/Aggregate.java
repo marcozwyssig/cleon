@@ -121,6 +121,16 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage selectNoSubPackages() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_noSubPackages);
+  }
+
+  public Aggregate setNoSubPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noSubPackages) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_noSubPackages, noSubPackages);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.repository.javamodel.IRepository> selectRepository() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.repository.javamodel.IRepository.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_repository);
   }
@@ -173,7 +183,6 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptList(cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_eventAggregator, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.exceptions.javamodel.IDomainException.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_exceptions, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.repository.javamodel.IRepository.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_repository, visitor);
-    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_subPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.valueobjects.javamodel.IValueObject.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_valueObjects, visitor);
   }
@@ -208,5 +217,9 @@ public class Aggregate extends DynamicResource implements IAggregate {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_eventAggregator, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IAggregate selectToMeNoSubPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.DddPackage.Aggregate_noSubPackages, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,FKau8EnATJPGFYByFF6ejOsr50Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,5i+QmNBJSw7kXqJ+pYGmyp72ORU=] */

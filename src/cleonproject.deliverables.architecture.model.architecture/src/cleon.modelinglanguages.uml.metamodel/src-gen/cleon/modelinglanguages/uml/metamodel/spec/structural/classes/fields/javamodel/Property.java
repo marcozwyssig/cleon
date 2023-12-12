@@ -85,6 +85,15 @@ public class Property extends DynamicResource implements IProperty {
   }
 
   @Override
+  public java.lang.Boolean selectNullable() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Field_nullable);
+  }
+    
+  public void setNullable(java.lang.Boolean nullable) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Field_nullable, nullable);
+  }
+
+  @Override
   public java.lang.Boolean selectSetter() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Field_setter);
   }
@@ -145,6 +154,7 @@ public class Property extends DynamicResource implements IProperty {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Obsolete_isObsolete, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Virtual_isVirtual, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Field_nullable, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Field_setter, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.FieldsPackage.Property_asCollection, visitor);
@@ -159,4 +169,4 @@ public class Property extends DynamicResource implements IProperty {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,0BzEuXho9tWhROrp9qA3b0DtACo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,l6u1Xbu8MNjEWZFIZ5O6oSK08Dc=] */

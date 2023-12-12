@@ -361,7 +361,6 @@
         <resource statement-guid="9aeb6ee4-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9aeb6ee1-49de-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="9ae8619a-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9ae83a87-49de-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="9af225b8-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9af225b5-49de-11eb-a257-57f1ec3994e6" />
-        <resource statement-guid="9afb2672-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9afb266f-49de-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="9b007db1-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9b00569e-49de-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="9aed1c99-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9aed1c96-49de-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="9b10aa83-49de-11eb-a257-57f1ec3994e6" type="resource" guid="9b108370-49de-11eb-a257-57f1ec3994e6" />
@@ -4123,16 +4122,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="9af225b9-49de-11eb-a257-57f1ec3994e6" type="literal">cleon.common.resources.metamodel.spec.priority</object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="9afb2672-49de-11eb-a257-57f1ec3994e6">
-            <resource guid="9afb266f-49de-11eb-a257-57f1ec3994e6">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="9afb2671-49de-11eb-a257-57f1ec3994e6" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="9afb2673-49de-11eb-a257-57f1ec3994e6" type="literal">cleon.common.resources.metamodel.spec.string</object>
               </predicate>
             </resource>
           </object>

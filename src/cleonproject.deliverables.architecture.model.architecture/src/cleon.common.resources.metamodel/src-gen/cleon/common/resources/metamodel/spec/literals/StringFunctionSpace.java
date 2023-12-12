@@ -1,6 +1,7 @@
-package cleon.common.resources.metamodel.spec.string;
+package cleon.common.resources.metamodel.spec.literals;
 
 import ch.actifsource.util.Assert;
+
 import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
@@ -8,10 +9,10 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7548ad35-0d5f-11e6-9f44-9d0000bae4df,imports]] */
-
+import ch.actifsource.util.character.StringUtil;
 /* End Protected Region   [[7548ad35-0d5f-11e6-9f44-9d0000bae4df,imports]] */
 
-public class FunctionSpace_String {
+public class StringFunctionSpace {
 
   /* Begin Protected Region [[7548ad35-0d5f-11e6-9f44-9d0000bae4df]] */
   
@@ -35,6 +36,9 @@ public class FunctionSpace_String {
     @IDynamicResourceExtension.MethodId("59ce2e08-4884-11ec-b3cc-9dd8204a254a")
     public java.lang.String replaceParenthesesToUnderscore();
 
+    @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
+    public java.lang.String whitespacesToDash();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -53,6 +57,9 @@ public class FunctionSpace_String {
 
     @IDynamicResourceExtension.MethodId("59ce2e08-4884-11ec-b3cc-9dd8204a254a")
     public java.lang.String replaceParenthesesToUnderscore(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
+    public java.lang.String whitespacesToDash(final java.lang.String stringLiteral);
 
   }
   
@@ -97,6 +104,13 @@ public class FunctionSpace_String {
       /* End Protected Region   [[59ce2e08-4884-11ec-b3cc-9dd8204a254a]] */
     }
 
+    @Override
+    public java.lang.String whitespacesToDash(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[780f8f16-98fc-11ee-aa72-593773060f63]] */
+    	return StringUtil.whitespacesTo(stringLiteral, "-");   
+      /* End Protected Region   [[780f8f16-98fc-11ee-aa72-593773060f63]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -121,6 +135,10 @@ public class FunctionSpace_String {
 
     public static java.lang.String replaceParenthesesToUnderscore(final java.lang.String stringLiteral) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replaceParenthesesToUnderscore(stringLiteral);
+    }
+
+    public static java.lang.String whitespacesToDash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespacesToDash(stringLiteral);
     }
 
   }
@@ -179,4 +197,4 @@ public class FunctionSpace_String {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,sTBcYPyVzIIku0WewyIMAPbZsL0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,LDl43lHvyo0Nx4bB20Wr8Booy28=] */

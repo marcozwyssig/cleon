@@ -81,6 +81,16 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept> selectConcepts() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts);
+  }
+
+  public SystemConcepts setConcepts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept> concepts) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts, concepts);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept selectDeploymentConcept() {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_deploymentConcept);
   }
@@ -230,6 +240,7 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_accessConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_businessContinuityConcept, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_chapters, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_deploymentConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_dnsConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IIPNetworkConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_networkConcept, visitor);
@@ -298,4 +309,4 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,rxgcfEylVJ1ijiAYfov/T/8iIWo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,Z7uBenXT4pyLFjklNLdxNgIe+7I=] */

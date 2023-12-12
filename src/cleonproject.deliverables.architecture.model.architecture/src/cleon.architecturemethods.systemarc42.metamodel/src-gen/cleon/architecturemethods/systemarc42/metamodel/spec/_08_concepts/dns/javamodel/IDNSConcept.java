@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.dns.ja
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDNSConcept extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.IConcept {
+public interface IDNSConcept extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90");
   
@@ -14,4 +14,4 @@ public interface IDNSConcept extends cleon.architecturemethods.systemarc42.metam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,xEvnVbBeYS/XHuhNcIX4OxSpFw4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,bdIDBrCNoLjdLivx+cNubOa5M5o=] */

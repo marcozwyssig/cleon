@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class _08_conceptsPackage {
   
   public static final Resource SystemConcepts = new Resource("6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05");
-  public static final Resource Concept = new Resource("8819d927-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource Deployment = new Resource("971f5e82-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource SystemComponentConcept = new Resource("ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource ConceptForSystemComponent_systemConcept = new Resource("c489a5e0-f190-11e8-b3e7-15e2dd8d9b05");
@@ -53,4 +52,4 @@ public class _08_conceptsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,EpYMtWQUMYSGxv6nUD6/iH8zn74=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,9blMnd31gWhirZjRvL1WGclzLdU=] */

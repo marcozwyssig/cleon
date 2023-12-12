@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.networ
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IIPNetworkConcept extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.IConcept {
+public interface IIPNetworkConcept extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b4d4ca85-4b28-11e9-8338-41c203971ecb");
   
@@ -14,4 +14,4 @@ public interface IIPNetworkConcept extends cleon.architecturemethods.systemarc42
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,acdmDuRYl0ExxkAzDAmTGAhXUH4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,JyFDEWed+Gl/9ofvTKGi9cin7pE=] */

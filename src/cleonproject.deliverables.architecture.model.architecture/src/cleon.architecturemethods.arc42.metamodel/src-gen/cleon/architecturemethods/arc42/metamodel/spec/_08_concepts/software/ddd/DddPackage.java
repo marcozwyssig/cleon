@@ -12,6 +12,8 @@ public class DddPackage {
   public static final Resource Aggregate_domainServices = new Resource("067069f6-01e0-11e4-ab1e-81fd30785d6d");
   public static final Resource Aggregate_enums = new Resource("aeb489a4-b1bd-11e4-a1b5-85bab1cb6ada");
   public static final Resource Aggregate_eventAggregator = new Resource("4772e9f6-d22a-11e4-8b90-c7d981a5f2fd");
+  public static final Resource DDD_aE_Concept = new Resource("d33672d4-98fe-11ee-aa72-593773060f63");
+  public static final Resource DDD_aE_Concept_aggregates = new Resource("6825e36e-98ff-11ee-aa72-593773060f63");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +34,4 @@ public class DddPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd,N6P3yjTn0nZCsNuYjr5lYAeyc5o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd,r29U+HlMX2sdIZr1U5qVqwjxdDE=] */

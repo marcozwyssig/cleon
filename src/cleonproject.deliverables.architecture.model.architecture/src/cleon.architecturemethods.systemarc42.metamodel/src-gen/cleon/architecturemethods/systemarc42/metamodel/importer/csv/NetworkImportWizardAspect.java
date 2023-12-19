@@ -2,6 +2,8 @@ package cleon.architecturemethods.systemarc42.metamodel.importer.csv;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.patch.IStatementPosition;
@@ -92,7 +94,13 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 				}
 			}
 		} catch (final IOException e) {
-			context.putError(e.toString());
+			StringWriter sw = new StringWriter();
+			PrintWriter pw = new PrintWriter(sw);
+			e.printStackTrace(pw);
+			String sStackTrace = sw.toString(); // stack trace as a string
+			
+			
+			context.putError(e.toString() + " Stracktrace: " + sStackTrace);
 		}
 
 	}

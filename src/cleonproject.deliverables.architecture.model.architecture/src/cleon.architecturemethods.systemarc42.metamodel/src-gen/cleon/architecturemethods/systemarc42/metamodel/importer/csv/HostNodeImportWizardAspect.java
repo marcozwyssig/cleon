@@ -25,29 +25,29 @@ public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
 
 	@Override
 	public void importFile(final IImportContext context, final InputStream inputStream) {
-
-		final var typeSystem = TypeSystem.create(context.getWriteJobExecutor());
-		final var resourceRepository = typeSystem.getResourceRepository();
-		final var arc42Document = resourceRepository.getResource(ISystemArc42Document.class,
-				context.getResouce());
-		final var arc42DocumentFunctions = arc42Document
-				.extension(ISystemArc42DocumentFunctions.class);
-		final var networkConcept = arc42DocumentFunctions.Network();
-		final var topology = arc42DocumentFunctions.Topology();
-		final INetworkEnvironment networkEnvironment = networkConcept.selectNetworkEnvironment().values().stream()
-				.findFirst().get();
-
-		final var networkEnvironmentFunctions = networkEnvironment
-				.extension(INetworkEnvironmentFunctions.class);
-
-		final ITopologyEnvironment topologyEnvironment = topology.selectTopologyEnvironment().values().stream()
-				.findFirst().get();
-
-		final var topologyEnvironmentFunctions = topologyEnvironment
-				.extension(ITopologyEnvironmentFunctions.class);
-
-		final var parser = new CSVParser(';', CSVParser.RFC_QUOTE);
 		try {
+			final var typeSystem = TypeSystem.create(context.getWriteJobExecutor());
+			final var resourceRepository = typeSystem.getResourceRepository();
+			final var arc42Document = resourceRepository.getResource(ISystemArc42Document.class,
+					context.getResouce());
+			final var arc42DocumentFunctions = arc42Document
+					.extension(ISystemArc42DocumentFunctions.class);
+			final var networkConcept = arc42DocumentFunctions.Network();
+			final var topology = arc42DocumentFunctions.Topology();
+			final INetworkEnvironment networkEnvironment = networkConcept.selectNetworkEnvironment().values().stream()
+					.findFirst().get();
+
+			final var networkEnvironmentFunctions = networkEnvironment
+					.extension(INetworkEnvironmentFunctions.class);
+
+			final ITopologyEnvironment topologyEnvironment = topology.selectTopologyEnvironment().values().stream()
+					.findFirst().get();
+
+			final var topologyEnvironmentFunctions = topologyEnvironment
+					.extension(ITopologyEnvironmentFunctions.class);
+
+			final var parser = new CSVParser(';', CSVParser.RFC_QUOTE);
+			
 			var first = false;
 			final var rows = parser.read(inputStream);
 			for (final Row row : rows) {

@@ -109,6 +109,16 @@ public class Website extends DynamicResource implements IWebsite {
   }
     
   @Override
+  public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings selectLanguageSettings() {
+    return _getSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.LanguageSettingsAware_languageSettings);
+  }
+
+  public Website setLanguageSettings(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings languageSettings) {
+    _setSingle(cleon.common.language.metamodel.spec.SpecPackage.LanguageSettingsAware_languageSettings, languageSettings);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.ILayout> selectLayouts() {
     return _getList(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.ILayout.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_layouts);
   }
@@ -170,6 +180,7 @@ public class Website extends DynamicResource implements IWebsite {
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_cover, visitor);
     _acceptList(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_images, visitor);
+    _acceptSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.LanguageSettingsAware_languageSettings, visitor);
     _acceptList(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.ILayout.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_layouts, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_logo, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
@@ -196,4 +207,4 @@ public class Website extends DynamicResource implements IWebsite {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,8YLljp2YKmTWsfh0wsSPmvQfsSs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,i/vaiPz8lBJzr+lf8HCfhWZPz1Q=] */

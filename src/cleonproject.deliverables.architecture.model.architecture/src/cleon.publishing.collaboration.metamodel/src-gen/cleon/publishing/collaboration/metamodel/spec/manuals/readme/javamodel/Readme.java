@@ -90,16 +90,6 @@ public class Readme extends DynamicResource implements IReadme {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage);
-  }
-
-  public Readme setDocumentLanguage(java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
-    _setList(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
-    return this;
-  }
-    
-  @Override
   public cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.IGettingStarted selectGettingStarted() {
     return _getSingle(cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.IGettingStarted.class, cleon.publishing.collaboration.metamodel.spec.manuals.readme.ReadmePackage.Readme_gettingStarted);
   }
@@ -168,7 +158,6 @@ public class Readme extends DynamicResource implements IReadme {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.ICopyright.class, cleon.publishing.collaboration.metamodel.spec.manuals.readme.ReadmePackage.Readme_copyright, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.IGettingStarted.class, cleon.publishing.collaboration.metamodel.spec.manuals.readme.ReadmePackage.Readme_gettingStarted, visitor);
     _acceptSingle(cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.IIntroduction.class, cleon.publishing.collaboration.metamodel.spec.manuals.readme.ReadmePackage.Readme_introduction, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
@@ -196,4 +185,4 @@ public class Readme extends DynamicResource implements IReadme {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,mQY7kwULn1sCZOkJsm38IhuQgyc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,Zw0is3w3F+ntwvKKI883dqbJya8=] */

@@ -742,40 +742,6 @@ public class FunctionSpace_Asciidoc {
 
   }
 
-  public static interface IAsciidocFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ccfc5d7a-2236-11e9-a054-db6d80fba790")
-    public java.lang.String RenderContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IText text);
-
-    @IDynamicResourceExtension.MethodId("8147c739-1e85-11ea-862b-25dce7587113")
-    public java.lang.String RenderTextContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IText text);
-
-    @IDynamicResourceExtension.MethodId("8147c741-1e85-11ea-862b-25dce7587113")
-    public java.lang.String RenderDocumentContent(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document);
-
-    @IDynamicResourceExtension.MethodId("9eff80a0-2fcc-11ea-9245-a54d8c3bd9df")
-    public java.lang.String PluginId();
-
-  }
-  
-  public static interface IAsciidocFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AsciidocFunctionsImpl implements IAsciidocFunctionsImpl {
-
-    public static final IAsciidocFunctionsImpl INSTANCE = new AsciidocFunctionsImpl();
-
-    private AsciidocFunctionsImpl() {}
-
-  }
-  
-  public static class AsciidocFunctions {
-
-    private AsciidocFunctions() {}
-
-  }
-
   public static interface IAboutFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1a9fdfd6-9949-11ec-8ab2-a107e9aafcc3")
@@ -828,4 +794,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cM5Oa+iuk+1219HTsqfPdGMMZXc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,qq3xVuiRYXJntSFcQq933ZM52E4=] */

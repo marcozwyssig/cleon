@@ -824,34 +824,6 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IDocBookFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("c0d81b31-2235-11e9-a054-db6d80fba790")
-    public java.lang.String RenderContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IText text);
-
-    @IDynamicResourceExtension.MethodId("2fa0c3bf-1e85-11ea-862b-25dce7587113")
-    public java.lang.String RenderDocumentContent(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document);
-
-  }
-  
-  public static interface IDocBookFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DocBookFunctionsImpl implements IDocBookFunctionsImpl {
-
-    public static final IDocBookFunctionsImpl INSTANCE = new DocBookFunctionsImpl();
-
-    private DocBookFunctionsImpl() {}
-
-  }
-  
-  public static class DocBookFunctions {
-
-    private DocBookFunctions() {}
-
-  }
-
   public static interface IAboutFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("39ac902d-08f9-11e9-9ee8-c54fda7ab431")
@@ -954,4 +926,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,JSIG33y3C80w4JYSDoR5L0FNCsE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,kH5SPOWln6NoRHFBa8Py3vT6fwE=] */

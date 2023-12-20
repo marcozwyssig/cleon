@@ -16,8 +16,6 @@ public interface IDocument extends cleon.common.doc.metamodel.spec.javamodel.ICh
   
   public cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties selectProperties();
   
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,CKNikj6kIS6+/U1yRj3XQghcA30=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,iYSHkvqK/0V4PF5e7V9+w5951i4=] */

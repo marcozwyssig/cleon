@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -62,12 +62,12 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryCreator selectFactory() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.FactorymethodPackage.FactoryPackage_factory);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryCreator selectFactory() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.FactorymethodPackage.FactoryPackage_factory);
   }
 
-  public FactoryPackage setFactory(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryCreator factory) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.FactorymethodPackage.FactoryPackage_factory, factory);
+  public FactoryPackage setFactory(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryCreator factory) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.FactorymethodPackage.FactoryPackage_factory, factory);
     return this;
   }
     
@@ -98,16 +98,16 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.FactorymethodPackage.FactoryPackage_factory, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.FactorymethodPackage.FactoryPackage_factory, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_subPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryPackage selectToMeFactory(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryCreator object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.javamodel.IFactoryPackage.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod.FactorymethodPackage.FactoryPackage_factory, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryPackage selectToMeFactory(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryCreator object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.javamodel.IFactoryPackage.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.architecture_and_design_patterns.factorymethod.FactorymethodPackage.FactoryPackage_factory, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,23qrfpEaUHe60mGRExTS8D5pN8Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,zVCadI3oBut3D/3cdPqVBvlG+r8=] */

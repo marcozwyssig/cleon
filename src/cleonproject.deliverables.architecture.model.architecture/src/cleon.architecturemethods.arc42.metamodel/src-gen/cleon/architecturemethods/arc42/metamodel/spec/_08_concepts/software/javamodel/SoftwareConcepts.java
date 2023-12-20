@@ -61,21 +61,21 @@ public class SoftwareConcepts extends DynamicResource implements ISoftwareConcep
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept> selectConcepts() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IAbstractConcept> selectConcepts() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts);
   }
 
-  public SoftwareConcepts setConcepts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept> concepts) {
+  public SoftwareConcepts setConcepts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IAbstractConcept> concepts) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._08_concepts._08_conceptsPackage.Concepts_concepts, concepts);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IDDD_Concept selectDdd() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IDDD_Concept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts selectDdd() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd);
   }
 
-  public SoftwareConcepts setDdd(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IDDD_Concept ddd) {
+  public SoftwareConcepts setDdd(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts ddd) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd, ddd);
     return this;
   }
@@ -117,16 +117,16 @@ public class SoftwareConcepts extends DynamicResource implements ISoftwareConcep
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IDDD_Concept.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.javamodel.ISoftwareConcepts selectToMeDdd(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.ddd.javamodel.IDDD_Concept object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.javamodel.ISoftwareConcepts selectToMeDdd(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.javamodel.ISoftwareConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.SoftwarePackage.SoftwareConcepts_ddd, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,ME9HGHXlRQrWzkO+xr8fo0pf0y4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,xBgPs4ywUCS7JQAByM+lFzRrx8o=] */

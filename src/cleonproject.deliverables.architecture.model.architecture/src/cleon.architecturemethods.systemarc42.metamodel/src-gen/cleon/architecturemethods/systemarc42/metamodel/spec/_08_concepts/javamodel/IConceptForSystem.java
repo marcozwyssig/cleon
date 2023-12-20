@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IConceptForSystem extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcept {
+public interface IConceptForSystem extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IAbstractConcept {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("26771b9a-c93d-11eb-adc4-d18d1353eb6e");
   
@@ -12,4 +12,4 @@ public interface IConceptForSystem extends cleon.architecturemethods.arc42.metam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,26771b9a-c93d-11eb-adc4-d18d1353eb6e,imXtvBfyQxo6pvZXX01F3ftxP5c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,26771b9a-c93d-11eb-adc4-d18d1353eb6e,w+chsVjIZKN9e67MveHh+adH6Gs=] */

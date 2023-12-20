@@ -33,8 +33,6 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_ItemizedList = new Resource("39b91626-e8f6-11e8-b810-cdb2b421fd42");
   public static final Resource FunctionSpace_aE_Asciidoc_ChapterAware = new Resource("4f9728ea-2174-11e9-a054-db6d80fba790");
   public static final Resource FunctionSpace_aE_Asciidoc_ParagraphAware = new Resource("5f385195-2174-11e9-a054-db6d80fba790");
-  public static final Resource Asciidoc = new Resource("b1f0d77d-2236-11e9-a054-db6d80fba790");
-  public static final Resource FunctionSpace_aE_Asciidoc_Asciidoc = new Resource("ccfc5d72-2236-11e9-a054-db6d80fba790");
   public static final Resource FunctionSpace_aE_Asciidoc_ChapterReference = new Resource("b627b62c-dbc4-11ea-b71c-ade06d3dafe4");
   public static final Resource FunctionSpace_aE_Asciidoc_About = new Resource("1a9fdf65-9949-11ec-8ab2-a107e9aafcc3");
   public static final Resource FunctionSpace_aE_Asciidoc_References = new Resource("2be31f81-9949-11ec-8ab2-a107e9aafcc3");
@@ -59,4 +57,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,0DutGLSwOHiVunnMedgri0ZBMoY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,OFtVr0lZ8CnBPjZLYcTgRZpMCvE=] */

@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="7bf3ff71-98fd-11ee-aa72-593773060f63">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="8fea82df-98fe-11ee-aa72-593773060f63" type="resource" guid="8fea34bc-98fe-11ee-aa72-593773060f63" />
+    <resource statement-guid="feecbb58-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="feec1f11-b930-11ee-a0d0-e953bcbfaeef" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7bf42683-98fd-11ee-aa72-593773060f63" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -16,7 +17,7 @@
           <object statement-guid="8fea34be-98fe-11ee-aa72-593773060f63" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="90727792-98fe-11ee-aa72-593773060f63" type="literal">ddd</object>
+          <object statement-guid="90727792-98fe-11ee-aa72-593773060f63" type="literal">domain_concepts</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="8feaf810-98fe-11ee-aa72-593773060f63" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -29,6 +30,28 @@
         </predicate>
         <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
           <object statement-guid="04fdd398-98ff-11ee-aa72-593773060f63" type="resource" guid="cdd3c716-98fd-11ee-aa72-593773060f63" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="feecbb58-b930-11ee-a0d0-e953bcbfaeef">
+      <resource guid="feec1f11-b930-11ee-a0d0-e953bcbfaeef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="feec1f12-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="feec1f13-b930-11ee-a0d0-e953bcbfaeef" type="literal">under_the_hood_concepts</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="feec1f14-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="feec1f15-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="feec1f16-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="f80c7a78-b930-11ee-a0d0-e953bcbfaeef" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="feec1f17-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="cdd3c716-98fd-11ee-aa72-593773060f63" />
         </predicate>
       </resource>
     </object>

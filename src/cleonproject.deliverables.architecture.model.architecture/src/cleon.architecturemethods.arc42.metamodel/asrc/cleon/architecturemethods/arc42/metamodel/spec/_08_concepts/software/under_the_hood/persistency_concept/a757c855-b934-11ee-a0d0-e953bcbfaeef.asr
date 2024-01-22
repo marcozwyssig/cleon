@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="a757c855-b934-11ee-a0d0-e953bcbfaeef">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ee28c0a0-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="ee28c09d-b934-11ee-a0d0-e953bcbfaeef" />
+    <resource statement-guid="64113a8f-b935-11ee-a0d0-e953bcbfaeef" type="resource" guid="6411137c-b935-11ee-a0d0-e953bcbfaeef" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a757ef67-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a7583d89-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="ba522e78-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ee28c0a0-b934-11ee-a0d0-e953bcbfaeef">
+      <resource guid="ee28c09d-b934-11ee-a0d0-e953bcbfaeef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ee28c09f-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="04190e14-b935-11ee-a0d0-e953bcbfaeef" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f13e3e03-b934-11ee-a0d0-e953bcbfaeef" type="literal">nullable</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="062e5985-b935-11ee-a0d0-e953bcbfaeef" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ee290ec1-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="0e5d61ef-b935-11ee-a0d0-e953bcbfaeef" type="literal">"Nullable" refers to the ability of a data field or variable to accept a null value, which means it can either hold a specific value or indicate the absence of any value.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="64113a8f-b935-11ee-a0d0-e953bcbfaeef">
+      <resource guid="6411137c-b935-11ee-a0d0-e953bcbfaeef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6411137e-b935-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7bb2e185-b935-11ee-a0d0-e953bcbfaeef" type="literal">type</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="641161a0-b935-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="78a94b04-b935-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="d417b13b-b93d-11ee-a0d0-e953bcbfaeef" type="resource" guid="b63e5078-748e-11e0-a531-4537b2bc6a0b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a7581678-b934-11ee-a0d0-e953bcbfaeef" type="literal">Column</object>
+  </predicate>
+</resource>
+

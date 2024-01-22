@@ -8,8 +8,10 @@ public interface ISoftwareConcepts extends cleon.architecturemethods.arc42.metam
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts selectDdd();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.domain_concept.javamodel.IDomain_Concepts selectDomain_concepts();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts selectUnder_the_hood_concepts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,oONxGGo4N15r7jXa97/HwK4qaXs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,rksmoea80khQXAXlCbWB7S76CZQ=] */

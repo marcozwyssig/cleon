@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f80c7a78-b930-11ee-a0d0-e953bcbfaeef">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ca8967aa-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="ca891987-b932-11ee-a0d0-e953bcbfaeef" />
+  </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="10a26bd2-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="10a244be-b931-11ee-a0d0-e953bcbfaeef">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="121e0f56-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="121de843-b931-11ee-a0d0-e953bcbfaeef">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="122cdc70-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="122c8e4c-b931-11ee-a0d0-e953bcbfaeef" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f80ca18a-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="80916726-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="8819d927-f190-11e8-b3e7-15e2dd8d9b05" />
+    <object statement-guid="f80cefac-b930-11ee-a0d0-e953bcbfaeef" type="resource" guid="648f65bf-d0b4-11e8-b005-f7630e4c29c0" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ca8967aa-b932-11ee-a0d0-e953bcbfaeef">
+      <resource guid="ca891987-b932-11ee-a0d0-e953bcbfaeef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ca894099-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb68a41d-b932-11ee-a0d0-e953bcbfaeef" type="literal">persistency_concept</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ca89dcdb-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ca89dcdc-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="cf5b621e-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="f5505543-b932-11ee-a0d0-e953bcbfaeef" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f80cefab-b930-11ee-a0d0-e953bcbfaeef" type="literal">UnderTheHood_Concepts</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="10a26bd2-b931-11ee-a0d0-e953bcbfaeef">
+      <resource guid="10a244be-b931-11ee-a0d0-e953bcbfaeef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="10a244c0-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="10a26bd1-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="121e0f56-b931-11ee-a0d0-e953bcbfaeef">
+            <resource guid="121de843-b931-11ee-a0d0-e953bcbfaeef">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="121de845-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="122cdc70-b931-11ee-a0d0-e953bcbfaeef">
+                  <resource guid="122c8e4c-b931-11ee-a0d0-e953bcbfaeef">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="122cb55e-b931-11ee-a0d0-e953bcbfaeef" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="122cb55f-b931-11ee-a0d0-e953bcbfaeef" type="literal">Under-the-Hood Concepts</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

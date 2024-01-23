@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="57091525-ba10-11ee-876d-0f01c87670c8" type="resource" guid="5708c702-ba10-11ee-876d-0f01c87670c8" />
+    <resource statement-guid="59b3e9da-ba10-11ee-876d-0f01c87670c8" type="resource" guid="59b34d97-ba10-11ee-876d-0f01c87670c8" />
+    <resource statement-guid="5ce553ae-ba10-11ee-876d-0f01c87670c8" type="resource" guid="5ce4de7b-ba10-11ee-876d-0f01c87670c8" />
+    <resource statement-guid="6ef559b4-ba10-11ee-876d-0f01c87670c8" type="resource" guid="6ef50b91-ba10-11ee-876d-0f01c87670c8" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f46cf0a3-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f46cc992-ba0f-11ee-876d-0f01c87670c8" type="literal">ColumnValue</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="57091525-ba10-11ee-876d-0f01c87670c8">
+      <resource guid="5708c702-ba10-11ee-876d-0f01c87670c8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5708ee14-ba10-11ee-876d-0f01c87670c8" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="575b53d6-ba10-11ee-876d-0f01c87670c8" type="literal">1 - 2^12</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="59b3e9da-ba10-11ee-876d-0f01c87670c8">
+      <resource guid="59b34d97-ba10-11ee-876d-0f01c87670c8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59b34d98-ba10-11ee-876d-0f01c87670c8" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59b34d99-ba10-11ee-876d-0f01c87670c8" type="literal">1 - 2^32</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5ce553ae-ba10-11ee-876d-0f01c87670c8">
+      <resource guid="5ce4de7b-ba10-11ee-876d-0f01c87670c8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5ce4de7c-ba10-11ee-876d-0f01c87670c8" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5ce4de7d-ba10-11ee-876d-0f01c87670c8" type="literal">1 - 2^64</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6ef559b4-ba10-11ee-876d-0f01c87670c8">
+      <resource guid="6ef50b91-ba10-11ee-876d-0f01c87670c8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6ef532a3-ba10-11ee-876d-0f01c87670c8" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6f26c9f5-ba10-11ee-876d-0f01c87670c8" type="literal">0 = FALSE; 1 = TRUE</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

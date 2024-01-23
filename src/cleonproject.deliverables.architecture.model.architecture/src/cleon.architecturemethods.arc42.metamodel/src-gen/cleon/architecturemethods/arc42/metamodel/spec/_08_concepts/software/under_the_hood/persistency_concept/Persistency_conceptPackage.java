@@ -19,6 +19,12 @@ public class Persistency_conceptPackage {
   public static final Resource FunctionSpace_aE_Persistency_aE_Concept_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
   public static final Resource FunctionSpace_aE_Persistency_aE_Concept_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
   public static final Resource Table_persistent = new Resource("f1d9291e-b9c9-11ee-a257-01d178f494ca");
+  public static final Resource Column_value = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
+  public static final Resource ColumnValue = new Resource("f46c2d4f-ba0f-11ee-876d-0f01c87670c8");
+  public static final Resource ColumnValue___W___F___S___F_2_aD_12 = new Resource("5708c702-ba10-11ee-876d-0f01c87670c8");
+  public static final Resource ColumnValue___W___F___S___F_2_aD_32 = new Resource("59b34d97-ba10-11ee-876d-0f01c87670c8");
+  public static final Resource ColumnValue___W___F___S___F_2_aD_64 = new Resource("5ce4de7b-ba10-11ee-876d-0f01c87670c8");
+  public static final Resource ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE = new Resource("6ef50b91-ba10-11ee-876d-0f01c87670c8");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +45,4 @@ public class Persistency_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,NM8FdIemlY8NDevhao6nPdXgBT4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,u3Z5E/UEKgf7v4pawpaK2ZOeB9c=] */

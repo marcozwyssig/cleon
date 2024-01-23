@@ -6,12 +6,14 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a757c855-b934-11ee-a0d0-e953bcbfaeef");
   
-  // attributes
-  
   public java.lang.Boolean selectNullable();
+  
+  // relations
   
   public ch.actifsource.solution.datatype.generic.datatype.javamodel.IType selectType();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel.IColumnValue selectValue();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,S20Didbrt+waQa6bAdH5F1oIab4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,xkw4tpbrCTeRhDW7cvPzTuhW+IA=] */

@@ -5,6 +5,7 @@
     <resource statement-guid="59b3e9da-ba10-11ee-876d-0f01c87670c8" type="resource" guid="59b34d97-ba10-11ee-876d-0f01c87670c8" />
     <resource statement-guid="5ce553ae-ba10-11ee-876d-0f01c87670c8" type="resource" guid="5ce4de7b-ba10-11ee-876d-0f01c87670c8" />
     <resource statement-guid="6ef559b4-ba10-11ee-876d-0f01c87670c8" type="resource" guid="6ef50b91-ba10-11ee-876d-0f01c87670c8" />
+    <resource statement-guid="b9ace5d9-baca-11ee-839d-1b253eaf2d14" type="resource" guid="b9acbec6-baca-11ee-839d-1b253eaf2d14" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -53,6 +54,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="6f26c9f5-ba10-11ee-876d-0f01c87670c8" type="literal">0 = FALSE; 1 = TRUE</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b9ace5d9-baca-11ee-839d-1b253eaf2d14">
+      <resource guid="b9acbec6-baca-11ee-839d-1b253eaf2d14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b9acbec8-baca-11ee-839d-1b253eaf2d14" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b9ed710d-baca-11ee-839d-1b253eaf2d14" type="literal">JSON</object>
         </predicate>
       </resource>
     </object>

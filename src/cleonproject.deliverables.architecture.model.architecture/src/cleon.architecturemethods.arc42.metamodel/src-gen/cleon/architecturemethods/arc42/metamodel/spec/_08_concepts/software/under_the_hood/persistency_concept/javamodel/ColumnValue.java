@@ -68,6 +68,7 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (is__W___F___S___F_2_aD_32()) return visitor.visit__W___F___S___F_2_aD_32();
     if (is__W___F___S___F_2_aD_64()) return visitor.visit__W___F___S___F_2_aD_64();
     if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) return visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    if (isJSON()) return visitor.visitJSON();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -87,6 +88,10 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) {
       visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+      return;
+    }
+    if (isJSON()) {
+      visitor.visitJSON();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -114,5 +119,10 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
   }
   
+  @Override
+  public boolean isJSON() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_JSON);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,96+0jKySEbpR1tJlYkuHYNPJqjs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,+ewF6mEdZng6TrGCP2L7RQa67yo=] */

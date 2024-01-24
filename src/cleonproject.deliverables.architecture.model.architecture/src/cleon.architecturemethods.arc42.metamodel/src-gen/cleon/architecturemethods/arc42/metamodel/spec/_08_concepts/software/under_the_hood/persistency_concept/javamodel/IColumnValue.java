@@ -16,6 +16,8 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
     
+    public void visitJSON();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -27,6 +29,8 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visit__W___F___S___F_2_aD_64();
     
     public R visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    
+    public R visitJSON();
     
   }
   
@@ -46,7 +50,9 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
   
+  public boolean isJSON();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,3kzl296imzuoUBgU/8OZCwiMGQ0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,65KAeTDk7qyf8fKX/wBnhXHVAxE=] */

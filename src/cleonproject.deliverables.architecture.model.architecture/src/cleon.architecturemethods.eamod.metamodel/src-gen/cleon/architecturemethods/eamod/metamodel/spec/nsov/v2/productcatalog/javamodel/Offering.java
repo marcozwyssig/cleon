@@ -42,12 +42,12 @@ public class Offering extends DynamicResource implements IOffering {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectAggregates() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectAggregates() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates);
   }
 
-  public Offering setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> aggregates) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
+  public Offering setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> aggregates) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
     return this;
   }
     
@@ -133,4 +133,4 @@ public class Offering extends DynamicResource implements IOffering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,GxSAo5kz40+PhjaxmqgSILnAdsI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,+Q1QuaPvyX1Dv5SHIqZByhTo9mw=] */

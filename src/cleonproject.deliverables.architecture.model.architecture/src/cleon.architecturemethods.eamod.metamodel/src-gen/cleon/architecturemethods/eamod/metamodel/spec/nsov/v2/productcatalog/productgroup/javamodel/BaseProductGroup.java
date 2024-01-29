@@ -42,12 +42,12 @@ public class BaseProductGroup extends DynamicResource implements IBaseProductGro
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectAggregates() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectAggregates() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates);
   }
 
-  public BaseProductGroup setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> aggregates) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
+  public BaseProductGroup setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> aggregates) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
     return this;
   }
     
@@ -98,4 +98,4 @@ public class BaseProductGroup extends DynamicResource implements IBaseProductGro
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3dfe296-67c8-11e7-afcc-6df3a81a4d17,GY/vrK7eYYefvqlqVJQQFT5gn9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3dfe296-67c8-11e7-afcc-6df3a81a4d17,IEvQH8YvE6cnbPGAILup1Zf8huI=] */

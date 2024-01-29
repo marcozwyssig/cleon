@@ -51,12 +51,12 @@ public class InfrastructureProduct extends DynamicResource implements IInfrastru
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectAssociations() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAssociation_associations);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectAssociations() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAssociation_associations);
   }
 
-  public InfrastructureProduct setAssociations(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> associations) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAssociation_associations, associations);
+  public InfrastructureProduct setAssociations(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> associations) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAssociation_associations, associations);
     return this;
   }
     
@@ -71,12 +71,12 @@ public class InfrastructureProduct extends DynamicResource implements IInfrastru
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectComposites() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiComposite_composites);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectComposites() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiComposite_composites);
   }
 
-  public InfrastructureProduct setComposites(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> composites) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiComposite_composites, composites);
+  public InfrastructureProduct setComposites(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> composites) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiComposite_composites, composites);
     return this;
   }
     
@@ -138,4 +138,4 @@ public class InfrastructureProduct extends DynamicResource implements IInfrastru
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c2b426c5-67bf-11e7-afcc-6df3a81a4d17,yfeZK+CspGez7aSGaHOVFwhf0jQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c2b426c5-67bf-11e7-afcc-6df3a81a4d17,chZFEXFw3hu5VBeWPB294CPuxUk=] */

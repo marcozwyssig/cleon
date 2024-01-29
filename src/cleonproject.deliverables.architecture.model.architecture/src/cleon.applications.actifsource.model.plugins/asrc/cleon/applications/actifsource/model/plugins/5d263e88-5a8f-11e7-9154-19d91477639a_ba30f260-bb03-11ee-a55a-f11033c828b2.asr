@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ba30f260-bb03-11ee-a55a-f11033c828b2">
+  <owns predicate="37b032e2-3fd8-11e8-bd50-b94594551673">
+    <resource statement-guid="ba32c726-bb03-11ee-a55a-f11033c828b2" type="resource" guid="ba32a013-bb03-11ee-a55a-f11033c828b2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ba30f262-bb03-11ee-a55a-f11033c828b2" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="37b032e2-3fd8-11e8-bd50-b94594551673">
+    <object statement-guid="ba32c726-bb03-11ee-a55a-f11033c828b2">
+      <resource guid="ba32a013-bb03-11ee-a55a-f11033c828b2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ba32a014-bb03-11ee-a55a-f11033c828b2" type="resource" guid="cc2363fe-3fd7-11e8-bd50-b94594551673" />
+        </predicate>
+        <predicate guid="270990d0-5a93-11e7-a34c-4176bbc6413e">
+          <object statement-guid="ba32a015-bb03-11ee-a55a-f11033c828b2" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

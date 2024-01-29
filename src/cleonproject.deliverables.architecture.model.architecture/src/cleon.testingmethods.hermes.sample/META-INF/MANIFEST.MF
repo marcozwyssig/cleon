@@ -6,13 +6,13 @@ Automatic-Module-Name: cleon.testingmethods.hermes.sample.singleton.true
 Bundle-Name: cleon.testingmethods.hermes.sample
 Bundle-SymbolicName: cleon.testingmethods.hermes.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier
-Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
- ch.actifsource.environment;bundle-version="9.0.0",
- ch.actifsource.util;bundle-version="9.0.0",
- ch.actifsource.xml;bundle-version="9.0.0",
- ch.actifsource.template;bundle-version="9.0.0",
- ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
- ch.actifsource.ui.wizard;bundle-version="9.0.0",
+Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
+ ch.actifsource.environment;bundle-version="11.0.0",
+ ch.actifsource.util;bundle-version="11.0.0",
+ ch.actifsource.xml;bundle-version="11.0.0",
+ ch.actifsource.template;bundle-version="11.0.0",
+ ch.actifsource.ui.wizard.generic;bundle-version="11.0.0",
+ ch.actifsource.ui.wizard;bundle-version="11.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
  cleon.common.actifsource.metamodel.builtin;bundle-version="0.4.149",
  cleon.architecturemethods.arc42.metamodel.builtin;bundle-version="0.4.149",
@@ -37,7 +37,4 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.architecturemethods.systemarc42.sample.builtin;bundle-version="0.4.149",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
- ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.testingmethods.hermes.sample,
- cleon.testingmethods.hermes.sample.execution_1,
- cleon.testingmethods.hermes.sample.execution_2
+ ch.actifsource.generator;bundle-version="11.0.0"

@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.ja
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IOffering extends ch.actifsource.core.javamodel.INamedResource, cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiAggregation {
+public interface IOffering extends ch.actifsource.core.javamodel.INamedResource, cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiAggregation {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a1a10c17-67bf-11e7-afcc-6df3a81a4d17");
   
@@ -18,4 +18,4 @@ public interface IOffering extends ch.actifsource.core.javamodel.INamedResource,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,slpTjiPKsd4KAUQ1fO5lbH9CEL8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,l1nR0g8IDAEfSOj5BCMzstqZdec=] */

@@ -17,7 +17,5 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.applications.actifsource.sample.category_b.feature_g.metamodel,
- cleon.applications.actifsource.sample.category_b.feature_g.metamodel.javamodel,
- cleon.applications.actifsource.sample.category_b.feature_g.metamodel.spec.javamodel
+Export-Package: cleon.applications.actifsource.sample.category_b.feature_g.metamodel
 

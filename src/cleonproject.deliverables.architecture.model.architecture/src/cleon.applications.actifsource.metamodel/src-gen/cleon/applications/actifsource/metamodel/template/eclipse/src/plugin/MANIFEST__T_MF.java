@@ -29,7 +29,7 @@ public class MANIFEST__T_MF {
     public java.lang.String PackageNames();
 
     @IDynamicResourceExtension.MethodId("2bf6b6ed-49fb-11eb-82ab-0d86130a47ce")
-    public java.lang.Boolean existJavaModelPackage();
+    public java.lang.Boolean WithJavaModel();
 
   }
   
@@ -37,9 +37,6 @@ public class MANIFEST__T_MF {
     
     @IDynamicResourceExtension.MethodId("9715e34c-49ee-11eb-a257-57f1ec3994e6")
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> OnlyExports(final List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> exportPackageList);
-
-    @IDynamicResourceExtension.MethodId("2bf6b6ed-49fb-11eb-82ab-0d86130a47ce")
-    public java.lang.Boolean existJavaModelPackage(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage);
 
   }
   
@@ -56,19 +53,6 @@ public class MANIFEST__T_MF {
       /* End Protected Region   [[9715e34c-49ee-11eb-a257-57f1ec3994e6]] */
     }
 
-    @Override
-    public java.lang.Boolean existJavaModelPackage(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage) {
-      /* Begin Protected Region [[2bf6b6ed-49fb-11eb-82ab-0d86130a47ce]] */
-      final var packageName = exportPackage.selectPackage().selectName() + ".javamodel";
-      // Thread.currentThread().getContextClassLoader()
-
-      final var _package = Package.getPackage(packageName);
-      final var found = _package != null;
-      Logger.instance().logInfo("searching " + packageName + "-> " + found);
-      return found;
-      /* End Protected Region   [[2bf6b6ed-49fb-11eb-82ab-0d86130a47ce]] */
-    }
-
   }
   
   public static class ExportPackageFunctions {
@@ -79,12 +63,8 @@ public class MANIFEST__T_MF {
       return DynamicResourceUtil.invoke(IExportPackageFunctionsImpl.class, ExportPackageFunctionsImpl.INSTANCE, exportPackageList).OnlyExports(exportPackageList);
     }
 
-    public static java.lang.Boolean existJavaModelPackage(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage) {
-      return DynamicResourceUtil.invoke(IExportPackageFunctionsImpl.class, ExportPackageFunctionsImpl.INSTANCE, exportPackage).existJavaModelPackage(exportPackage);
-    }
-
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,80a3b9c4-2d5d-11e5-a80e-a94c0ceb2081,Gf995fbuz1/XxCqKHluErfkm3P4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,80a3b9c4-2d5d-11e5-a80e-a94c0ceb2081,a80EJ+a2QRcXgrmbFsuDAL9f6ek=] */

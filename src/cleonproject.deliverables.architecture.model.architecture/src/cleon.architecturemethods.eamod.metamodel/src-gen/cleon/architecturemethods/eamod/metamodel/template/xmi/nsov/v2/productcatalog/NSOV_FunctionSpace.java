@@ -242,7 +242,7 @@ public class NSOV_FunctionSpace {
   public static interface IXmiClassFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cc7e43a0-6c80-11e7-acfe-cd993eb63ee2")
-    public java.lang.String GetRelationId(final cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass dst);
+    public java.lang.String GetRelationId(final cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass dst);
 
   }
   
@@ -294,4 +294,4 @@ public class NSOV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6597f854-67d6-11e7-afcc-6df3a81a4d17,F+HX6gLUoCG0HDFTNOYNniWNhxg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6597f854-67d6-11e7-afcc-6df3a81a4d17,4NHezhK1SE7mARXkFQ/SepP6iqA=] */

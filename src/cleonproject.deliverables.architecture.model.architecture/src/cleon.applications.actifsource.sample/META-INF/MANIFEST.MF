@@ -6,13 +6,13 @@ Automatic-Module-Name: cleon.applications.actifsource.sample.singleton.true
 Bundle-Name: cleon.applications.actifsource.sample
 Bundle-SymbolicName: cleon.applications.actifsource.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier
-Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
- ch.actifsource.environment;bundle-version="9.0.0",
- ch.actifsource.util;bundle-version="9.0.0",
- ch.actifsource.xml;bundle-version="9.0.0",
- ch.actifsource.template;bundle-version="9.0.0",
- ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
- ch.actifsource.ui.wizard;bundle-version="9.0.0",
+Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
+ ch.actifsource.environment;bundle-version="11.0.0",
+ ch.actifsource.util;bundle-version="11.0.0",
+ ch.actifsource.xml;bundle-version="11.0.0",
+ ch.actifsource.template;bundle-version="11.0.0",
+ ch.actifsource.ui.wizard.generic;bundle-version="11.0.0",
+ ch.actifsource.ui.wizard;bundle-version="11.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
  cleon.applications.actifsource.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.actifsource.metamodel.builtin;bundle-version="0.4.149",
@@ -33,8 +33,4 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.architecturestylesandpatterns.soa.metamodel.builtin;bundle-version="0.4.149",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
- ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.applications.actifsource.sample,
- cleon.applications.actifsource.sample.importer,
- cleon.applications.actifsource.sample.importer.javamodel,
- cleon.applications.actifsource.sample.importer.test
+ ch.actifsource.generator;bundle-version="11.0.0"

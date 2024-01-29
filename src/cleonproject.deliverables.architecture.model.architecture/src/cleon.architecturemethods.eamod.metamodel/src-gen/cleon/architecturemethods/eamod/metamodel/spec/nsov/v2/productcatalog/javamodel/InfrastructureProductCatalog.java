@@ -31,12 +31,12 @@ public class InfrastructureProductCatalog extends DynamicResource implements IIn
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectAggregates() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectAggregates() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates);
   }
 
-  public InfrastructureProductCatalog setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> aggregates) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
+  public InfrastructureProductCatalog setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> aggregates) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
     return this;
   }
     
@@ -85,4 +85,4 @@ public class InfrastructureProductCatalog extends DynamicResource implements IIn
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,pcT8DPt+CH84AGEDz+siSD/YbM8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,ntkQZ+F9dTC9uKsLSJZgQpvi43I=] */

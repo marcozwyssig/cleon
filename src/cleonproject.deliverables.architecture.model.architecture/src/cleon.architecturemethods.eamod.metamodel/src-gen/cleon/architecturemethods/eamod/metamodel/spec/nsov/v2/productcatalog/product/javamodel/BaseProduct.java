@@ -51,11 +51,11 @@ public class BaseProduct extends DynamicResource implements IBaseProduct {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectComposites() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_composites);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectComposites() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_composites);
   }
 
-  public BaseProduct setComposites(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> composites) {
+  public BaseProduct setComposites(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> composites) {
     _setList(cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_composites, composites);
     return this;
   }
@@ -112,9 +112,9 @@ public class BaseProduct extends DynamicResource implements IBaseProduct {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IBaseProduct.class, cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_infrastructureProductUsage, object.getResource());
   }
   
-  public static cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IBaseProduct selectToMeComposites(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass object) {
+  public static cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IBaseProduct selectToMeComposites(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IBaseProduct.class, cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_composites, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,h1IDIb2H9ppGChHe35Km2bnWivw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,e7hUvXsuIOQGqeA+M1SQCEcTLqI=] */

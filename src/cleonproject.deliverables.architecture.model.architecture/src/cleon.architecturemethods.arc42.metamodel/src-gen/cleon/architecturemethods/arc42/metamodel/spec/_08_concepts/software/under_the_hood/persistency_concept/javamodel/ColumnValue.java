@@ -64,16 +64,30 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
 
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
+    if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) return visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    if (is__V___S_15()) return visitor.visit__V___S_15();
     if (is__W___F___S___F_2_aD_12()) return visitor.visit__W___F___S___F_2_aD_12();
     if (is__W___F___S___F_2_aD_32()) return visitor.visit__W___F___S___F_2_aD_32();
     if (is__W___F___S___F_2_aD_64()) return visitor.visit__W___F___S___F_2_aD_64();
-    if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) return visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    if (is__W___S_9()) return visitor.visit__W___S_9();
+    if (isGUID__F_1__F___S___F_2_aD_128()) return visitor.visitGUID__F_1__F___S___F_2_aD_128();
     if (isJSON()) return visitor.visitJSON();
+    if (isParts__F_per__F_million__F___N_ppm__O_()) return visitor.visitParts__F_per__F_million__F___N_ppm__O_();
+    if (isSeconds()) return visitor.visitSeconds();
+    if (isString()) return visitor.visitString();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
   @Override
   public void accept(IValueVoidVisitor visitor) {
+    if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) {
+      visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+      return;
+    }
+    if (is__V___S_15()) {
+      visitor.visit__V___S_15();
+      return;
+    }
     if (is__W___F___S___F_2_aD_12()) {
       visitor.visit__W___F___S___F_2_aD_12();
       return;
@@ -86,12 +100,28 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visit__W___F___S___F_2_aD_64();
       return;
     }
-    if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) {
-      visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    if (is__W___S_9()) {
+      visitor.visit__W___S_9();
+      return;
+    }
+    if (isGUID__F_1__F___S___F_2_aD_128()) {
+      visitor.visitGUID__F_1__F___S___F_2_aD_128();
       return;
     }
     if (isJSON()) {
       visitor.visitJSON();
+      return;
+    }
+    if (isParts__F_per__F_million__F___N_ppm__O_()) {
+      visitor.visitParts__F_per__F_million__F___N_ppm__O_();
+      return;
+    }
+    if (isSeconds()) {
+      visitor.visitSeconds();
+      return;
+    }
+    if (isString()) {
+      visitor.visitString();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -99,6 +129,16 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   
   // isValue-Methods
     
+  @Override
+  public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
+  }
+  
+  @Override
+  public boolean is__V___S_15() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___S_15);
+  }
+  
   @Override
   public boolean is__W___F___S___F_2_aD_12() {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___F___S___F_2_aD_12);
@@ -115,8 +155,13 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
+  public boolean is__W___S_9() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___S_9);
+  }
+  
+  @Override
+  public boolean isGUID__F_1__F___S___F_2_aD_128() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_GUID__F_1__F___S___F_2_aD_128);
   }
   
   @Override
@@ -124,5 +169,20 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_JSON);
   }
   
+  @Override
+  public boolean isParts__F_per__F_million__F___N_ppm__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_Parts__F_per__F_million__F___N_ppm__O_);
+  }
+  
+  @Override
+  public boolean isSeconds() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_Seconds);
+  }
+  
+  @Override
+  public boolean isString() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_String);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,+ewF6mEdZng6TrGCP2L7RQa67yo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,QNUBXWcFAMvK3BOONE6EN96KT30=] */

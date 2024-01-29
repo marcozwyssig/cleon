@@ -42,12 +42,12 @@ public class InfrastructureProductGroup extends DynamicResource implements IInfr
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectAggregates() {
-    return _getList(cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectAggregates() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass.class, cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates);
   }
 
-  public InfrastructureProductGroup setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> aggregates) {
-    _setList(cleon.modelinglanguages.uml.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
+  public InfrastructureProductGroup setAggregates(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> aggregates) {
+    _setList(cleon.modelinglanguages.uml.metamodel.template.xmi.XmiPackage.XmiAggregation_aggregates, aggregates);
     return this;
   }
     
@@ -113,4 +113,4 @@ public class InfrastructureProductGroup extends DynamicResource implements IInfr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,761e31cd-6897-11e7-9be5-6dfce969ae4e,Y/tXscCUPotbKc9rUltizZc6kIY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,761e31cd-6897-11e7-9be5-6dfce969ae4e,tFlJoC07AuP6TRiCRc3CH4R6kOc=] */

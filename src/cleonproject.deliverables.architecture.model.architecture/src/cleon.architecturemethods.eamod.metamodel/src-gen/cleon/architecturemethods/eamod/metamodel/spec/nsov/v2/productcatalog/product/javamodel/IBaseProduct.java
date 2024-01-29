@@ -12,8 +12,8 @@ public interface IBaseProduct extends cleon.architecturemethods.eamod.metamodel.
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IInfrastructureProductUsage> selectInfrastructureProductUsage();
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.template.xmi.javamodel.IXmiClass> selectComposites();
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.template.xmi.javamodel.IXmiClass> selectComposites();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,/gRVB+f06GKKMMwkR/Qs4h1XW4I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,PtGYzEGcrYVhQP3x0fkg2JoMbIU=] */

@@ -6,9 +6,6 @@ Automatic-Module-Name: cleon.testingmethods.hermes.sample.singleton.true
 Bundle-Name: cleon.testingmethods.hermes.sample
 Bundle-SymbolicName: cleon.testingmethods.hermes.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier
-Export-Package: cleon.testingmethods.hermes.sample,
- cleon.testingmethods.hermes.sample.execution_1,
- cleon.testingmethods.hermes.sample.execution_2
 Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  ch.actifsource.environment;bundle-version="11.0.0",
  ch.actifsource.util;bundle-version="11.0.0",
@@ -21,6 +18,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  cleon.architecturemethods.arc42.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.building.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.calendar.metamodel.builtin;bundle-version="0.4.149",
+ ch.actifsource.solution.datatype;bundle-version="10.10.0",
  cleon.common.doc.metamodel.builtin;bundle-version="0.4.149",
  cleon.architecturemethods.eamod.metamodel.builtin;bundle-version="0.4.149",
  cleon.architecturemethods.eamod.sample.builtin;bundle-version="0.4.149",

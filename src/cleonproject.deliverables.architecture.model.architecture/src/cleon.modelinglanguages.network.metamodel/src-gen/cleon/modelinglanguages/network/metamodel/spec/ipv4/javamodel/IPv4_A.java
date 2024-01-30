@@ -31,6 +31,15 @@ public class IPv4_A extends DynamicResource implements IIPv4_A {
   // attributes
   
   @Override
+  public java.lang.Integer selectCount() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_A_Count);
+  }
+    
+  public void setCount(java.lang.Integer count) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_A_Count, count);
+  }
+
+  @Override
   public java.lang.Integer selectIp() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.AbstractIPv4_ip);
   }
@@ -65,17 +74,16 @@ public class IPv4_A extends DynamicResource implements IIPv4_A {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_A_Count, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.AbstractIPv4_ip, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_B.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_A_iPv4_aE_B, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
   public static cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A selectToMeIPv4_B(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_B object) {
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_A_iPv4_aE_B, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,34d1f845-71ac-11e9-98e0-2719d32d2629,kHWaLZ6wYRLkS3jOLSrYwrsVyAk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,34d1f845-71ac-11e9-98e0-2719d32d2629,SbI5miG+VwRcB+uueHVYZZBRpl0=] */

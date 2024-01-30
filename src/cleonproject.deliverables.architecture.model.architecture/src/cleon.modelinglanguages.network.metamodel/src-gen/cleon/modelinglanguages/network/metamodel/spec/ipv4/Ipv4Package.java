@@ -34,6 +34,7 @@ public class Ipv4Package {
   public static final Resource FunctionSpace_aE_IP_IPv4_aE_Mask = new Resource("a238fcad-749a-11e9-8765-0925552fc2b7");
   public static final Resource FunctionSpace_aE_IP_IPRange = new Resource("83d1a561-7867-11e9-97e0-b7c808aefc46");
   public static final Resource IPv4_aE_D_allowDuplicatedIP = new Resource("88389fae-74c7-11ee-a93b-59f8f73e74c1");
+  public static final Resource IPv4_aE_A_Count = new Resource("18883014-bfb8-11ee-84f4-9995cd350d8f");
   
   /* Begin Protected Region [[user]] */
   
@@ -54,4 +55,4 @@ public class Ipv4Package {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec.ipv4,GctFZlYx1GuQRMFSym04hPmJrP4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec.ipv4,2/48z1i83HYOACU4QHC5KlItcWg=] */

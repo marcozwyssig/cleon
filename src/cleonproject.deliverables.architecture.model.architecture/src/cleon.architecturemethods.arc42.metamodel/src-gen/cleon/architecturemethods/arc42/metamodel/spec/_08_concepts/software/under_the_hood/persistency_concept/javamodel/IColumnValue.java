@@ -30,6 +30,18 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitString();
     
+    public void visit__S_90__F_to__F___Q_90();
+    
+    public void visit__S_180__F_to__F___Q_180();
+    
+    public void visit__V___F_b_s___F_10000();
+    
+    public void visit__V___F_b_s___F_1000__F_();
+    
+    public void visit__S_360__F_to__F___Q_360();
+    
+    public void visit__W___F___S___F_256();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -55,6 +67,18 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitSeconds();
     
     public R visitString();
+    
+    public R visit__S_90__F_to__F___Q_90();
+    
+    public R visit__S_180__F_to__F___Q_180();
+    
+    public R visit__V___F_b_s___F_10000();
+    
+    public R visit__V___F_b_s___F_1000__F_();
+    
+    public R visit__S_360__F_to__F___Q_360();
+    
+    public R visit__W___F___S___F_256();
     
   }
   
@@ -88,7 +112,19 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isString();
   
+  public boolean is__S_90__F_to__F___Q_90();
+  
+  public boolean is__S_180__F_to__F___Q_180();
+  
+  public boolean is__V___F_b_s___F_10000();
+  
+  public boolean is__V___F_b_s___F_1000__F_();
+  
+  public boolean is__S_360__F_to__F___Q_360();
+  
+  public boolean is__W___F___S___F_256();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,FFmhuB8Q+105O8E+lPS/+OdUENc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,n27tgzXofdYShO7qmdsv6wbAgso=] */

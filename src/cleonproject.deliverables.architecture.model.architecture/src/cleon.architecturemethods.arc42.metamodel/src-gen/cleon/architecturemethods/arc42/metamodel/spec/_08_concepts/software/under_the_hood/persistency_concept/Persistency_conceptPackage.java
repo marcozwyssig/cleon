@@ -32,6 +32,17 @@ public class Persistency_conceptPackage {
   public static final Resource ColumnValue_Parts__F_per__F_million__F___N_ppm__O_ = new Resource("b55f0908-bebb-11ee-b472-311c1c5af015");
   public static final Resource ColumnValue___W___S_9 = new Resource("ed324e5a-bebc-11ee-b472-311c1c5af015");
   public static final Resource ColumnValue_GUID__F_1__F___S___F_2_aD_128 = new Resource("fe0762bd-bebc-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___S_90__F_to__F___Q_90 = new Resource("f7fc13a9-bebe-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___S_180__F_to__F___Q_180 = new Resource("fdc5b48e-bebe-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___V___F_b_s___F_10000 = new Resource("48c6728a-bebf-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___V___F_b_s___F_1000__F_ = new Resource("4bae503f-bebf-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___S_360__F_to__F___Q_360 = new Resource("4ee47504-bebf-11ee-b472-311c1c5af015");
+  public static final Resource ColumnValue___W___F___S___F_256 = new Resource("c6a60d5a-bf3f-11ee-ae98-9d32d1b90e58");
+  public static final Resource Column_comment = new Resource("d7c2c066-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource Comment = new Resource("dfa83c82-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource Comment_Who = new Resource("ec46fa89-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource Comment_When = new Resource("efc3295f-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource Comment_What = new Resource("f4b15e65-bf44-11ee-ae98-9d32d1b90e58");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +63,4 @@ public class Persistency_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,3KQ2HpYShchciuDmy1NVV1YbMR4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,IvvbnvMBbti2kgI9IyynFir7pwg=] */

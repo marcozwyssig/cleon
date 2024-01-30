@@ -92,9 +92,9 @@ public class Comment extends DynamicResource implements IComment {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel.IComment selectToMeWho(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IPerson object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.Comment_Who, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel.IComment> selectToMeWho(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IPerson object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.Comment_Who, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dfa83c82-bf44-11ee-ae98-9d32d1b90e58,srXQkwDCo1YTbFiTf3dYQMuDUes=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dfa83c82-bf44-11ee-ae98-9d32d1b90e58,esaIDBBS/fAVqK1yBsrSwIKlqlE=] */

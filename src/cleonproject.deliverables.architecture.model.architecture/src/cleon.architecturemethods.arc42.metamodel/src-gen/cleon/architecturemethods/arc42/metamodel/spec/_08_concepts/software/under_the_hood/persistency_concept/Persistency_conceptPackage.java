@@ -38,11 +38,13 @@ public class Persistency_conceptPackage {
   public static final Resource ColumnValue___V___F_b_s___F_1000__F_ = new Resource("4bae503f-bebf-11ee-b472-311c1c5af015");
   public static final Resource ColumnValue___S_360__F_to__F___Q_360 = new Resource("4ee47504-bebf-11ee-b472-311c1c5af015");
   public static final Resource ColumnValue___W___F___S___F_256 = new Resource("c6a60d5a-bf3f-11ee-ae98-9d32d1b90e58");
-  public static final Resource Column_comment = new Resource("d7c2c066-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource CommentAware_comment = new Resource("d7c2c066-bf44-11ee-ae98-9d32d1b90e58");
   public static final Resource Comment = new Resource("dfa83c82-bf44-11ee-ae98-9d32d1b90e58");
   public static final Resource Comment_Who = new Resource("ec46fa89-bf44-11ee-ae98-9d32d1b90e58");
   public static final Resource Comment_When = new Resource("efc3295f-bf44-11ee-ae98-9d32d1b90e58");
   public static final Resource Comment_What = new Resource("f4b15e65-bf44-11ee-ae98-9d32d1b90e58");
+  public static final Resource CommentAware = new Resource("29dd605d-bf65-11ee-bc81-331d6caf9305");
+  public static final Resource ColumnValue_Min__F___8___F_0__R___F_Max__F___8___F_8 = new Resource("28cc78f0-bf7d-11ee-b188-131fa688415c");
   
   /* Begin Protected Region [[user]] */
   
@@ -63,4 +65,4 @@ public class Persistency_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,IvvbnvMBbti2kgI9IyynFir7pwg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept,QHXFiKuqxsisEBsXVFOpfDtOsFI=] */

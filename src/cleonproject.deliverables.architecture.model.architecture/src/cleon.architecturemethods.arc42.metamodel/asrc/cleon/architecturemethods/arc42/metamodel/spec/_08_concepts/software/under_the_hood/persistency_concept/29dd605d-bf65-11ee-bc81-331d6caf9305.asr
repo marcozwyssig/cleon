@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="29dd605d-bf65-11ee-bc81-331d6caf9305">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="38c01b9e-bf65-11ee-bc81-331d6caf9305" type="resource" guid="d7c2c066-bf44-11ee-ae98-9d32d1b90e58" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="29dd605f-bf65-11ee-bc81-331d6caf9305" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="29ddfca1-bf65-11ee-bc81-331d6caf9305" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="38c01b9e-bf65-11ee-bc81-331d6caf9305">
+      <resource guid="d7c2c066-bf44-11ee-ae98-9d32d1b90e58">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d7c2e778-bf44-11ee-ae98-9d32d1b90e58" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d8a5cd25-bf44-11ee-ae98-9d32d1b90e58" type="literal">comment</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d7c3d1da-bf44-11ee-ae98-9d32d1b90e58" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d7c3f8eb-bf44-11ee-ae98-9d32d1b90e58" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="de450301-bf44-11ee-ae98-9d32d1b90e58" type="resource" guid="dfa83c82-bf44-11ee-ae98-9d32d1b90e58" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="29ddd590-bf65-11ee-bc81-331d6caf9305" type="literal">CommentAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="29de4ac2-bf65-11ee-bc81-331d6caf9305" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

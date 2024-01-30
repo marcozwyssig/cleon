@@ -6,6 +6,9 @@ Automatic-Module-Name: cleon.testingmethods.hermes.sample.singleton.true
 Bundle-Name: cleon.testingmethods.hermes.sample
 Bundle-SymbolicName: cleon.testingmethods.hermes.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier
+Export-Package: cleon.testingmethods.hermes.sample,
+ cleon.testingmethods.hermes.sample.execution_1,
+ cleon.testingmethods.hermes.sample.execution_2
 Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  ch.actifsource.environment;bundle-version="11.0.0",
  ch.actifsource.util;bundle-version="11.0.0",

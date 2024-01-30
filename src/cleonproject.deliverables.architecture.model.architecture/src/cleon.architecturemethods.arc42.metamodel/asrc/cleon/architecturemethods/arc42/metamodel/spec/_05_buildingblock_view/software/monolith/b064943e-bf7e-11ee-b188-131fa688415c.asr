@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b064943e-bf7e-11ee-b188-131fa688415c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e62542b8-bf7e-11ee-b188-131fa688415c" type="resource" guid="e6245851-bf7e-11ee-b188-131fa688415c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b0649440-bf7e-11ee-b188-131fa688415c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ba733151-bf7e-11ee-b188-131fa688415c" type="resource" guid="a3ea83ea-2660-11e6-ae54-e50d44645ae7" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e62542b8-bf7e-11ee-b188-131fa688415c">
+      <resource guid="e6245851-bf7e-11ee-b188-131fa688415c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6245852-bf7e-11ee-b188-131fa688415c" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6245853-bf7e-11ee-b188-131fa688415c" type="literal">applications</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e6245854-bf7e-11ee-b188-131fa688415c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e6245855-bf7e-11ee-b188-131fa688415c" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="02ccc5a9-bf7f-11ee-b188-131fa688415c" type="resource" guid="f3fd43df-bf7e-11ee-b188-131fa688415c" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="e6245857-bf7e-11ee-b188-131fa688415c" type="resource" guid="25752303-85c2-11e3-926c-e10829e9e6c2" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b064e261-bf7e-11ee-b188-131fa688415c" type="literal">SoftwareMonolithSystem</object>
+  </predicate>
+</resource>
+

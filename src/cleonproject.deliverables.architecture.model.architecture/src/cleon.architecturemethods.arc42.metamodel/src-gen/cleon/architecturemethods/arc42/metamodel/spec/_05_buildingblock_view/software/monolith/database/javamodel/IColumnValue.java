@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -133,4 +133,4 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,Ims08+rwdca1dcvMBP/aRHQKOIE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,Wid6kZNjlovFMlKNXK6j3G7Sm3g=] */

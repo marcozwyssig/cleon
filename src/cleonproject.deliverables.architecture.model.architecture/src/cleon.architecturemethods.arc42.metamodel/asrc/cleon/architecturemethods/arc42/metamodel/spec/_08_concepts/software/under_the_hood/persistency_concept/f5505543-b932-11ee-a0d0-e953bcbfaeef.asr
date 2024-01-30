@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="f5505543-b932-11ee-a0d0-e953bcbfaeef">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="10956cb1-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="10951e8d-b934-11ee-a0d0-e953bcbfaeef" />
-  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="46496678-b933-11ee-a0d0-e953bcbfaeef" type="resource" guid="46491854-b933-11ee-a0d0-e953bcbfaeef">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -19,30 +16,6 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f550f187-b932-11ee-a0d0-e953bcbfaeef" type="resource" guid="8819d927-f190-11e8-b3e7-15e2dd8d9b05" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="10956cb1-b934-11ee-a0d0-e953bcbfaeef">
-      <resource guid="10951e8d-b934-11ee-a0d0-e953bcbfaeef">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="1095459f-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="109545a0-b934-11ee-a0d0-e953bcbfaeef" type="literal">tableAreas</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="1095e1e2-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="109608f3-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="10963005-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="01f5d505-b934-11ee-a0d0-e953bcbfaeef" />
-        </predicate>
-        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
-          <object statement-guid="109608f4-b934-11ee-a0d0-e953bcbfaeef" type="resource" guid="6b3c6f05-ff96-11e8-9d0c-c96c1e9b7b46" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f550ca76-b932-11ee-a0d0-e953bcbfaeef" type="literal">Persistency_Concept</object>

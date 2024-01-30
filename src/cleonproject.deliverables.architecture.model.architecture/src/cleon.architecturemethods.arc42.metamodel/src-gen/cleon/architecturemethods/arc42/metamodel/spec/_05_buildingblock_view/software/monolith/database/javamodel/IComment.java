@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -16,4 +16,4 @@ public interface IComment extends ch.actifsource.solution.datatype.generic.datat
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dfa83c82-bf44-11ee-ae98-9d32d1b90e58,e9xL2/jVC/2GTewM6DItaT4R5Z8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dfa83c82-bf44-11ee-ae98-9d32d1b90e58,7ZCHYfAx6dUcDxeA7IL8VDsogIQ=] */

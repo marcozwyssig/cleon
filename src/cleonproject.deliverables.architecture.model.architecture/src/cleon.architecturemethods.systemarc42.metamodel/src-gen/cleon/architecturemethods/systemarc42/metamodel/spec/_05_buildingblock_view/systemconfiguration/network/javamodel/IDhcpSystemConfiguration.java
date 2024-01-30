@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.network.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IDhcpSystemConfiguration extends cleon.architecturemethods.syst
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,wTD5wa8GYhT7MLPeLFmu2TVRuNI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,Iiws/nnOoP+OHJ7Yw5XJiCHWa1Q=] */

@@ -453,6 +453,8 @@
         <resource statement-guid="7e370e1b-bb02-11ee-a55a-f11033c828b2" type="resource" guid="7e370e18-bb02-11ee-a55a-f11033c828b2" />
         <resource statement-guid="7fe9a0bd-bb02-11ee-a55a-f11033c828b2" type="resource" guid="7fe979aa-bb02-11ee-a55a-f11033c828b2" />
         <resource statement-guid="8030e226-bb02-11ee-a55a-f11033c828b2" type="resource" guid="8030e223-bb02-11ee-a55a-f11033c828b2" />
+        <resource statement-guid="0f6baa25-bf7f-11ee-b188-131fa688415c" type="resource" guid="0f6b5c02-bf7f-11ee-b188-131fa688415c" />
+        <resource statement-guid="c2965da7-bf7f-11ee-b188-131fa688415c" type="resource" guid="c2960f84-bf7f-11ee-b188-131fa688415c" />
       </owns>
     </resource>
   </owns>
@@ -4969,6 +4971,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="8031cc87-bb02-11ee-a55a-f11033c828b2" type="literal">cleon.modelinglanguages.uml.metamodel.template.asciidoc</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="0f6baa25-bf7f-11ee-b188-131fa688415c">
+            <resource guid="0f6b5c02-bf7f-11ee-b188-131fa688415c">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0f6b5c04-bf7f-11ee-b188-131fa688415c" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0f6c1f56-bf7f-11ee-b188-131fa688415c" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="c2965da7-bf7f-11ee-b188-131fa688415c">
+            <resource guid="c2960f84-bf7f-11ee-b188-131fa688415c">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c2963696-bf7f-11ee-b188-131fa688415c" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c296f9e8-bf7f-11ee-b188-131fa688415c" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database</object>
               </predicate>
             </resource>
           </object>

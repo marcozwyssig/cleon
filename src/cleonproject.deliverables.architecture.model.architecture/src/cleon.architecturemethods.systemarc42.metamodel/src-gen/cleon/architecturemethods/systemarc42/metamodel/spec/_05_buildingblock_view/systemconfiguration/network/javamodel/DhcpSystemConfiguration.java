@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.network.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -280,4 +280,4 @@ public class DhcpSystemConfiguration extends DynamicResource implements IDhcpSys
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,GTSO5RGAFRtrFEd2gNK33CP3aDQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,nodzpYApmY9oItyIUtB4G1bl3lA=] */

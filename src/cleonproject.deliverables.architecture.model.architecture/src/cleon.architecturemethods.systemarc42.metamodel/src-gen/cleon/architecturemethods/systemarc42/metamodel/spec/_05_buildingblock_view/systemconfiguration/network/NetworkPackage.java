@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class NetworkPackage {
   
+  public static final Resource DhcpSystemConfiguration = new Resource("bf347ac8-09ec-11e9-abef-3d869859c931");
   public static final Resource InternetFirewallSystemConfiguration = new Resource("8f061e0a-ca39-11e9-ab4d-95a547edc6e9");
   public static final Resource PerimeterRouterSystemConfiguration = new Resource("d0629946-ca39-11e9-ab4d-95a547edc6e9");
   public static final Resource PerimeterSwitchSystemConfiguration = new Resource("15a3efed-ca3a-11e9-ab4d-95a547edc6e9");
@@ -30,4 +31,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.network,nJftRfRMw0B4nhbY6ztQS/JtPCk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.network,45im1Ucp3QbQXDL81SQRQQaO49w=] */

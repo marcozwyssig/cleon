@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -166,93 +166,93 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     
   @Override
   public boolean is__S_90__F_to__F___Q_90() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___S_90__F_to__F___Q_90);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___S_90__F_to__F___Q_90);
   }
   
   @Override
   public boolean is__S_180__F_to__F___Q_180() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___S_180__F_to__F___Q_180);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___S_180__F_to__F___Q_180);
   }
   
   @Override
   public boolean is__S_360__F_to__F___Q_360() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___S_360__F_to__F___Q_360);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___S_360__F_to__F___Q_360);
   }
   
   @Override
   public boolean is__V___F_b_s___F_1000__F_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F_b_s___F_1000__F_);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___V___F_b_s___F_1000__F_);
   }
   
   @Override
   public boolean is__V___F_b_s___F_10000() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F_b_s___F_10000);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___V___F_b_s___F_10000);
   }
   
   @Override
   public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
   }
   
   @Override
   public boolean is__V___S_15() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___V___S_15);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___V___S_15);
   }
   
   @Override
   public boolean is__W___F___S___F_2_aD_12() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___F___S___F_2_aD_12);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___W___F___S___F_2_aD_12);
   }
   
   @Override
   public boolean is__W___F___S___F_2_aD_32() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___F___S___F_2_aD_32);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___W___F___S___F_2_aD_32);
   }
   
   @Override
   public boolean is__W___F___S___F_2_aD_64() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___F___S___F_2_aD_64);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___W___F___S___F_2_aD_64);
   }
   
   @Override
   public boolean is__W___F___S___F_256() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___F___S___F_256);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___W___F___S___F_256);
   }
   
   @Override
   public boolean is__W___S_9() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue___W___S_9);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue___W___S_9);
   }
   
   @Override
   public boolean isGUID__F_1__F___S___F_2_aD_128() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_GUID__F_1__F___S___F_2_aD_128);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_GUID__F_1__F___S___F_2_aD_128);
   }
   
   @Override
   public boolean isJSON() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_JSON);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_JSON);
   }
   
   @Override
   public boolean isMin__F___8___F_0__R___F_Max__F___8___F_8() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_Min__F___8___F_0__R___F_Max__F___8___F_8);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_Min__F___8___F_0__R___F_Max__F___8___F_8);
   }
   
   @Override
   public boolean isParts__F_per__F_million__F___N_ppm__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_Parts__F_per__F_million__F___N_ppm__O_);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_Parts__F_per__F_million__F___N_ppm__O_);
   }
   
   @Override
   public boolean isSeconds() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_Seconds);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_Seconds);
   }
   
   @Override
   public boolean isString() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.under_the_hood.persistency_concept.Persistency_conceptPackage.ColumnValue_String);
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.DatabasePackage.ColumnValue_String);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,kEkDu/97MNrnbQJwAhuFlqYhXUk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,lX5KRJ52fwQ7VHV/z61BLButSRk=] */

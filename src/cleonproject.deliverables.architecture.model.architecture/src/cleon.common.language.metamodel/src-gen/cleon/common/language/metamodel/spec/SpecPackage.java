@@ -18,7 +18,6 @@ public class SpecPackage {
   public static final Resource MultilingualDescription_translation = new Resource("ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName = new Resource("1564455b-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageSettingsAware_languageSettings = new Resource("1564455c-3360-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource MultilingualName_defaultName = new Resource("15644565-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName_names = new Resource("1564456e-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageName = new Resource("27d0007a-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageName_language = new Resource("3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4");
@@ -51,4 +50,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,WLuwQ9w8Z1a0WHtnBRZMl0yAb3c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,1tSuTQz8cvFQYUcpaK0a+o2aXvU=] */

@@ -18,7 +18,7 @@ public class DatabasePackage {
   public static final Resource FunctionSpace_aE_Persistency_aE_Concept_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
   public static final Resource FunctionSpace_aE_Persistency_aE_Concept_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
   public static final Resource Table_persistent = new Resource("f1d9291e-b9c9-11ee-a257-01d178f494ca");
-  public static final Resource Column_value = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
+  public static final Resource Column_valueRange = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
   public static final Resource ColumnValue = new Resource("f46c2d4f-ba0f-11ee-876d-0f01c87670c8");
   public static final Resource ColumnValue___W___F_b_s___F_2_aD_12 = new Resource("5708c702-ba10-11ee-876d-0f01c87670c8");
   public static final Resource ColumnValue___W___F_b_s___F_2_aD_32 = new Resource("59b34d97-ba10-11ee-876d-0f01c87670c8");
@@ -49,6 +49,12 @@ public class DatabasePackage {
   public static final Resource ColumnValue___W___F_b_s___F_n = new Resource("4b59f742-c014-11ee-b73c-c3f9bd2ce1e0");
   public static final Resource ColumnValue_IPv4__F_Address = new Resource("86c60f7b-c014-11ee-b73c-c3f9bd2ce1e0");
   public static final Resource ColumnValue_IPv6__F_Address = new Resource("98009d98-c014-11ee-b73c-c3f9bd2ce1e0");
+  public static final Resource ColumnValue___3___F_to__F_16__F_chars = new Resource("fea554e5-c018-11ee-b73c-c3f9bd2ce1e0");
+  public static final Resource ColumnValue___H___H___F_or__F_SID = new Resource("9fb63b7d-c02f-11ee-b73c-c3f9bd2ce1e0");
+  public static final Resource ColumnValue___W_000__F_b_s___F_9999 = new Resource("da9e0cad-c033-11ee-a353-4bf80e47b5e4");
+  public static final Resource ColumnValue___W___F_b_s___F_MAX__N_2_aD_32__S_1__O_ = new Resource("4d6374f8-c034-11ee-a353-4bf80e47b5e4");
+  public static final Resource ColumnValue_UTC__Q_0 = new Resource("92a4cbdf-c034-11ee-a353-4bf80e47b5e4");
+  public static final Resource ColumnValue_TRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive = new Resource("a2a1d0ee-c034-11ee-a353-4bf80e47b5e4");
   
   /* Begin Protected Region [[user]] */
   
@@ -69,4 +75,4 @@ public class DatabasePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,uI1+kJe2W7WQVSyPmu/w4j6oQuk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,01kMmIwNg5dFhoiUmLsvhHDCH0Q=] */

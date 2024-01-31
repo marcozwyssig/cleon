@@ -12,8 +12,8 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
   public ch.actifsource.solution.datatype.generic.datatype.javamodel.IType selectType();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.IColumnValue selectValue();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.IColumnValue selectValueRange();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,QxjZY3DBj6EhlmVNA8e/gpm2eHw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,0sN/c9DlBLHbGjp4rzbPdKmWpfk=] */

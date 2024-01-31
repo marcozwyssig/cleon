@@ -34,6 +34,8 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visit__W___F_b_s___F_n();
     
+    public void visit__W_000__F_b_s___F_9999();
+    
     public void visitGUID__F_1__F_b_s___F_2_aD_128();
     
     public void visitIP__F___N_CIDR__O_();
@@ -51,6 +53,16 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public void visitSeconds();
     
     public void visitString();
+    
+    public void visit__3___F_to__F_16__F_chars();
+    
+    public void visit__H___H___F_or__F_SID();
+    
+    public void visit__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_();
+    
+    public void visitUTC__Q_0();
+    
+    public void visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
     
   }
   
@@ -82,6 +94,8 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visit__W___F_b_s___F_n();
     
+    public R visit__W_000__F_b_s___F_9999();
+    
     public R visitGUID__F_1__F_b_s___F_2_aD_128();
     
     public R visitIP__F___N_CIDR__O_();
@@ -99,6 +113,16 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitSeconds();
     
     public R visitString();
+    
+    public R visit__3___F_to__F_16__F_chars();
+    
+    public R visit__H___H___F_or__F_SID();
+    
+    public R visit__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_();
+    
+    public R visitUTC__Q_0();
+    
+    public R visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
     
   }
   
@@ -136,6 +160,8 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean is__W___F_b_s___F_n();
   
+  public boolean is__W_000__F_b_s___F_9999();
+  
   public boolean isGUID__F_1__F_b_s___F_2_aD_128();
   
   public boolean isIP__F___N_CIDR__O_();
@@ -154,7 +180,17 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isString();
   
+  public boolean is__3___F_to__F_16__F_chars();
+  
+  public boolean is__H___H___F_or__F_SID();
+  
+  public boolean is__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_();
+  
+  public boolean isUTC__Q_0();
+  
+  public boolean isTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,m0+T3OxTqXjF7YK4p6ytg/FIGIg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,vOAEAkhS37fv9fB9WQYvv//9aXI=] */

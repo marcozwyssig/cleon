@@ -14,6 +14,7 @@
     <resource statement-guid="ed32756d-bebc-11ee-b472-311c1c5af015" type="resource" guid="ed324e5a-bebc-11ee-b472-311c1c5af015" />
     <resource statement-guid="c6a65b7d-bf3f-11ee-ae98-9d32d1b90e58" type="resource" guid="c6a60d5a-bf3f-11ee-ae98-9d32d1b90e58" />
     <resource statement-guid="4b5a1e55-c014-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="4b59f742-c014-11ee-b73c-c3f9bd2ce1e0" />
+    <resource statement-guid="da9e5ad0-c033-11ee-a353-4bf80e47b5e4" type="resource" guid="da9e0cad-c033-11ee-a353-4bf80e47b5e4" />
     <resource statement-guid="fe0789d0-bebc-11ee-b472-311c1c5af015" type="resource" guid="fe0762bd-bebc-11ee-b472-311c1c5af015" />
     <resource statement-guid="ccf90f85-c013-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="ccf8e872-c013-11ee-b73c-c3f9bd2ce1e0" />
     <resource statement-guid="86c6368e-c014-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="86c60f7b-c014-11ee-b73c-c3f9bd2ce1e0" />
@@ -23,6 +24,11 @@
     <resource statement-guid="b55f301b-bebb-11ee-b472-311c1c5af015" type="resource" guid="b55f0908-bebb-11ee-b472-311c1c5af015" />
     <resource statement-guid="96744cc9-bebb-11ee-b472-311c1c5af015" type="resource" guid="967425b6-bebb-11ee-b472-311c1c5af015" />
     <resource statement-guid="6ff5b7eb-bebb-11ee-b472-311c1c5af015" type="resource" guid="6ff569c8-bebb-11ee-b472-311c1c5af015" />
+    <resource statement-guid="fea5a308-c018-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="fea554e5-c018-11ee-b73c-c3f9bd2ce1e0" />
+    <resource statement-guid="9fb66290-c02f-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="9fb63b7d-c02f-11ee-b73c-c3f9bd2ce1e0" />
+    <resource statement-guid="4d639c0b-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="4d6374f8-c034-11ee-a353-4bf80e47b5e4" />
+    <resource statement-guid="92a4f2f2-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="92a4cbdf-c034-11ee-a353-4bf80e47b5e4" />
+    <resource statement-guid="a2a1f801-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="a2a1d0ee-c034-11ee-a353-4bf80e47b5e4" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -164,6 +170,16 @@
         </predicate>
       </resource>
     </object>
+    <object statement-guid="da9e5ad0-c033-11ee-a353-4bf80e47b5e4">
+      <resource guid="da9e0cad-c033-11ee-a353-4bf80e47b5e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="da9e0cae-c033-11ee-a353-4bf80e47b5e4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="da9e0caf-c033-11ee-a353-4bf80e47b5e4" type="literal">1000 – 9999</object>
+        </predicate>
+      </resource>
+    </object>
     <object statement-guid="fe0789d0-bebc-11ee-b472-311c1c5af015">
       <resource guid="fe0762bd-bebc-11ee-b472-311c1c5af015">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -251,6 +267,56 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="7057d51c-bebb-11ee-b472-311c1c5af015" type="literal">String</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fea5a308-c018-11ee-b73c-c3f9bd2ce1e0">
+      <resource guid="fea554e5-c018-11ee-b73c-c3f9bd2ce1e0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fea57bf7-c018-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="020b8a59-c019-11ee-b73c-c3f9bd2ce1e0" type="literal">8 to 16 chars</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9fb66290-c02f-11ee-b73c-c3f9bd2ce1e0">
+      <resource guid="9fb63b7d-c02f-11ee-b73c-c3f9bd2ce1e0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9fb6628f-c02f-11ee-b73c-c3f9bd2ce1e0" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a01412f1-c02f-11ee-b73c-c3f9bd2ce1e0" type="literal">"" or SID</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4d639c0b-c034-11ee-a353-4bf80e47b5e4">
+      <resource guid="4d6374f8-c034-11ee-a353-4bf80e47b5e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4d6374fa-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4da279cc-c034-11ee-a353-4bf80e47b5e4" type="literal">1 – MAX(2^32-1)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="92a4f2f2-c034-11ee-a353-4bf80e47b5e4">
+      <resource guid="92a4cbdf-c034-11ee-a353-4bf80e47b5e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="92a4cbe1-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="92cf1033-c034-11ee-a353-4bf80e47b5e4" type="literal">UTC+0</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a2a1f801-c034-11ee-a353-4bf80e47b5e4">
+      <resource guid="a2a1d0ee-c034-11ee-a353-4bf80e47b5e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2a1f800-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2e394e2-c034-11ee-a353-4bf80e47b5e4" type="literal">TRUE: condition is active; FALSE: condition is inactive</object>
         </predicate>
       </resource>
     </object>

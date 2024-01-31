@@ -52,11 +52,11 @@ public class MultilingualDescriptionWithLanguageSettings extends DynamicResource
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> selectTranslation() {
-    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation> selectTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation);
   }
 
-  public MultilingualDescriptionWithLanguageSettings setTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> translation) {
+  public MultilingualDescriptionWithLanguageSettings setTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation> translation) {
     _setMap(cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, translation);
     return this;
   }
@@ -78,9 +78,9 @@ public class MultilingualDescriptionWithLanguageSettings extends DynamicResource
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.LanguageSettingsAware_languageSettings, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33e3da3-cd44-11ec-85c9-011c467ea292,mrYzK7N3Yx+OrldiG/GD2yIqVcM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33e3da3-cd44-11ec-85c9-011c467ea292,6XScQ5Pt711rrWsvpXBDPpEpEMo=] */

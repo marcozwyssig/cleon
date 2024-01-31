@@ -52,11 +52,11 @@ public class MultilingualNameWithLanguageSettings extends DynamicResource implem
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageName> selectNames() {
-    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageName.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualName_names);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageNameTranslation> selectNames() {
+    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualName_names);
   }
 
-  public MultilingualNameWithLanguageSettings setNames(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageName> names) {
+  public MultilingualNameWithLanguageSettings setNames(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageNameTranslation> names) {
     _setMap(cleon.common.language.metamodel.spec.SpecPackage.MultilingualName_names, names);
     return this;
   }
@@ -78,9 +78,9 @@ public class MultilingualNameWithLanguageSettings extends DynamicResource implem
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.LanguageSettingsAware_languageSettings, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageName.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualName_names, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualName_names, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7164f4d7-cd42-11ec-85c9-011c467ea292,8+aIoxXQqxJtB5Z7qsJZ9G/7afI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7164f4d7-cd42-11ec-85c9-011c467ea292,8WGWQCmc6Q8hZdjNZgyjsOscHWk=] */

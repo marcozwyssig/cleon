@@ -14,7 +14,7 @@ import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractMult
 public class LanguageNameInitializationAspect extends AbstractMultiLanguageInitializationAspect {
 	@Override
 	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		final var name = dynamicResourceRepository.getResource(ILanguageName.class, newInstance);
+		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
 		return name.selectLanguage().selectCode();
 	}
 
@@ -26,7 +26,7 @@ public class LanguageNameInitializationAspect extends AbstractMultiLanguageIniti
 
 	private IMultilingualName getDefaultName(IDynamicResourceRepository dynamicResourceRepository,
 			INode newInstance) {
-		final var name = dynamicResourceRepository.getResource(ILanguageName.class, newInstance);
+		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
 		return MultilingualName.selectToMeNames(name);
 	}
 

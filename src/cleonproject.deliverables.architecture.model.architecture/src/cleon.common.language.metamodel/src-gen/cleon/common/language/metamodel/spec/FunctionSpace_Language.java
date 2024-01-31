@@ -9,7 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 import cleon.common.language.metamodel.spec.instances.InstancesModel;
-import cleon.common.language.metamodel.spec.javamodel.ILanguageDescription;
+import cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -68,7 +68,7 @@ public class FunctionSpace_Language {
     public java.lang.String de(final cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription multilingualDescription) {
       /* Begin Protected Region [[a441e094-f382-11ea-9268-b5c52a12d7f9]] */
       if( multilingualDescription.selectTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
-      	final ILanguageDescription description = multilingualDescription.selectTranslation().get(InstancesModel.de__F___S___F_German);
+      	final var description = multilingualDescription.selectTranslation().get(InstancesModel.de__F___S___F_German);
       	return String.join("\n", description.selectDescriptions());
       }
       return null;

@@ -13,7 +13,7 @@ import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 public class LanguageDescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
 	@Override
 	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		final var description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		final var description = dynamicResourceRepository.getResource(ILanguageDescriptionTranslation.class, newInstance);
 		return description.selectLanguage().selectCode();
 	}
 
@@ -25,7 +25,7 @@ public class LanguageDescriptionInitializationAspect extends AbstractMultiLangua
 
 	private IMultilingualDescription getDefaultDescription(IDynamicResourceRepository dynamicResourceRepository,
 			INode newInstance) {
-		final var description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		final var description = dynamicResourceRepository.getResource(ILanguageDescriptionTranslation.class, newInstance);
 		return MultilingualDescription.selectToMeTranslation(description);
 	}
 

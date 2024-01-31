@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	
 	<classpathentry kind="src" path="src-gen"/>
-	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins">
-		<accessrules>
-			<accessrule kind="accessible" pattern="cleon/**"/>
-		</accessrules>
-	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 	<!-- Begin Protected Region [[custom]] -->
 	

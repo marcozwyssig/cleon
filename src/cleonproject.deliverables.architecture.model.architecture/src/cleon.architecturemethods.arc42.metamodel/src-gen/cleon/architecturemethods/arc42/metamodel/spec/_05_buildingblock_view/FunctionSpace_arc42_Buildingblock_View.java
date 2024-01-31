@@ -92,6 +92,9 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("198fb09a-d56d-11ea-9bae-37ef2cb951a8")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox ParentWhiteBox();
 
+    @IDynamicResourceExtension.MethodId("2a5dae64-c03b-11ee-a353-4bf80e47b5e4")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -145,6 +148,9 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("fdd666c9-6dbb-11ea-98d4-4d756e6b7091")
     public java.lang.String Name();
 
+    @IDynamicResourceExtension.MethodId("824bc093-c03b-11ee-a353-4bf80e47b5e4")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -167,4 +173,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,UcwJJCqb/gm7tpYs2c6ZAbrcjIo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,ntrqZQpeHUYEviAJ4zrewCMb/78=] */

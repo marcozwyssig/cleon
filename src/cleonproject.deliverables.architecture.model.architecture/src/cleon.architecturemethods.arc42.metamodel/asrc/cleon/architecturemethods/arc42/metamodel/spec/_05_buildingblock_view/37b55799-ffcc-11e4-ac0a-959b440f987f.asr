@@ -39,8 +39,11 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="80fd1461-c050-11ee-bc88-af1934b8c942" type="resource" guid="80fcc63d-c050-11ee-bc88-af1934b8c942" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="37b57eab-ffcc-11e4-ac0a-959b440f987f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="37b57eab-ffcc-11e4-ac0a-959b440f987f" type="resource" guid="af81de75-c04e-11ee-bc88-af1934b8c942" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="6a2c9432-118c-11e8-95d7-5d9fd9835602" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
@@ -196,6 +199,24 @@ This is the most important view, that must be part of each architecture document
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="75b4d9fc-2a78-11ea-8727-89a169c94892" type="literal">false</object>
+  </predicate>
+  <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="7fb1f6ac-c050-11ee-bc88-af1934b8c942" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
+  </predicate>
+  <predicate guid="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="80fd1461-c050-11ee-bc88-af1934b8c942">
+      <resource guid="80fcc63d-c050-11ee-bc88-af1934b8c942">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="80fcc63f-c050-11ee-bc88-af1934b8c942" type="resource" guid="27d0007a-3360-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="81b98693-c050-11ee-bc88-af1934b8c942" type="literal">Bausteinsicht</object>
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="80fced50-c050-11ee-bc88-af1934b8c942" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

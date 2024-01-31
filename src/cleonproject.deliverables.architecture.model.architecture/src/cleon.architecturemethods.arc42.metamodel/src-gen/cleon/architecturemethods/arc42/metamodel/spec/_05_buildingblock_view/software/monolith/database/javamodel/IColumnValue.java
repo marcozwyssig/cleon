@@ -14,25 +14,33 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visit__S_360__F_to__F___Q_360();
     
+    public void visit__V___F_b_s___F_15();
+    
     public void visit__V___F_b_s___F_1000__F_();
     
     public void visit__V___F_b_s___F_10000();
     
     public void visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
     
-    public void visit__V___S_15();
+    public void visit__W___F_b_s___F_2_aD_12();
     
-    public void visit__W___F___S___F_2_aD_12();
+    public void visit__W___F_b_s___F_2_aD_32();
     
-    public void visit__W___F___S___F_2_aD_32();
+    public void visit__W___F_b_s___F_2_aD_64();
     
-    public void visit__W___F___S___F_2_aD_64();
+    public void visit__W___F_b_s___F_9();
     
-    public void visit__W___F___S___F_256();
+    public void visit__W___F_b_s___F_256();
     
-    public void visit__W___S_9();
+    public void visit__W___F_b_s___F_n();
     
-    public void visitGUID__F_1__F___S___F_2_aD_128();
+    public void visitGUID__F_1__F_b_s___F_2_aD_128();
+    
+    public void visitIP__F___N_CIDR__O_();
+    
+    public void visitIPv4__F_Address();
+    
+    public void visitIPv6__F_Address();
     
     public void visitJSON();
     
@@ -54,25 +62,33 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visit__S_360__F_to__F___Q_360();
     
+    public R visit__V___F_b_s___F_15();
+    
     public R visit__V___F_b_s___F_1000__F_();
     
     public R visit__V___F_b_s___F_10000();
     
     public R visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
     
-    public R visit__V___S_15();
+    public R visit__W___F_b_s___F_2_aD_12();
     
-    public R visit__W___F___S___F_2_aD_12();
+    public R visit__W___F_b_s___F_2_aD_32();
     
-    public R visit__W___F___S___F_2_aD_32();
+    public R visit__W___F_b_s___F_2_aD_64();
     
-    public R visit__W___F___S___F_2_aD_64();
+    public R visit__W___F_b_s___F_9();
     
-    public R visit__W___F___S___F_256();
+    public R visit__W___F_b_s___F_256();
     
-    public R visit__W___S_9();
+    public R visit__W___F_b_s___F_n();
     
-    public R visitGUID__F_1__F___S___F_2_aD_128();
+    public R visitGUID__F_1__F_b_s___F_2_aD_128();
+    
+    public R visitIP__F___N_CIDR__O_();
+    
+    public R visitIPv4__F_Address();
+    
+    public R visitIPv6__F_Address();
     
     public R visitJSON();
     
@@ -100,25 +116,33 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean is__S_360__F_to__F___Q_360();
   
+  public boolean is__V___F_b_s___F_15();
+  
   public boolean is__V___F_b_s___F_1000__F_();
   
   public boolean is__V___F_b_s___F_10000();
   
   public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
   
-  public boolean is__V___S_15();
+  public boolean is__W___F_b_s___F_2_aD_12();
   
-  public boolean is__W___F___S___F_2_aD_12();
+  public boolean is__W___F_b_s___F_2_aD_32();
   
-  public boolean is__W___F___S___F_2_aD_32();
+  public boolean is__W___F_b_s___F_2_aD_64();
   
-  public boolean is__W___F___S___F_2_aD_64();
+  public boolean is__W___F_b_s___F_9();
   
-  public boolean is__W___F___S___F_256();
+  public boolean is__W___F_b_s___F_256();
   
-  public boolean is__W___S_9();
+  public boolean is__W___F_b_s___F_n();
   
-  public boolean isGUID__F_1__F___S___F_2_aD_128();
+  public boolean isGUID__F_1__F_b_s___F_2_aD_128();
+  
+  public boolean isIP__F___N_CIDR__O_();
+  
+  public boolean isIPv4__F_Address();
+  
+  public boolean isIPv6__F_Address();
   
   public boolean isJSON();
   
@@ -133,4 +157,4 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,Wid6kZNjlovFMlKNXK6j3G7Sm3g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,m0+T3OxTqXjF7YK4p6ytg/FIGIg=] */

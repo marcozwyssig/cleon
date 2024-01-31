@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.so
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITable extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ICommentAware {
+public interface ITable extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ICommentAware, cleon.common.doc.metamodel.spec.chapter.javamodel.INoParagraph {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("09a46257-b934-11ee-a0d0-e953bcbfaeef");
   
@@ -16,4 +16,4 @@ public interface ITable extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,JYKHnIUzabWXwIlnuEZ5hAkHjBY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,uCJAH3UZh91XVN8PCrQuFwVfnrg=] */

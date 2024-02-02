@@ -413,6 +413,9 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("623f925a-dedf-11ed-8ba2-cfc07dc2fa2a")
     public List<java.lang.String> AllIPsAsString();
 
+    @IDynamicResourceExtension.MethodId("1725e3ed-c1e3-11ee-a2ec-e9b92c9fe940")
+    public java.lang.Integer Sum();
+
   }
   
   public static interface IIPRangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -488,4 +491,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,839aQcVhkyvlp9drzqdRM+GBAZo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,91cgB534jUMMkKvQq88RCnERM7Y=] */

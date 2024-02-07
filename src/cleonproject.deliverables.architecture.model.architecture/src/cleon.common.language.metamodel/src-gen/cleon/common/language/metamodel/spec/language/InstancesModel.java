@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.instances;
+package cleon.common.language.metamodel.spec.language;
 
 import ch.actifsource.core.Resource;
 

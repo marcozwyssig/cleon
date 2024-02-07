@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.javamodel;
+package cleon.common.language.metamodel.spec.language.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -32,38 +32,38 @@ public class Language extends DynamicResource implements ILanguage {
   
   @Override
   public java.lang.String selectISOLanguageName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_ISOLanguageName);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_ISOLanguageName);
   }
     
   public void setISOLanguageName(java.lang.String iSOLanguageName) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.Language_ISOLanguageName, iSOLanguageName);
+     _setSingleAttribute(cleon.common.language.metamodel.spec.language.LanguagePackage.Language_ISOLanguageName, iSOLanguageName);
   }
 
   @Override
   public java.lang.String selectCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_code);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_code);
   }
     
   public void setCode(java.lang.String code) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.Language_code, code);
+     _setSingleAttribute(cleon.common.language.metamodel.spec.language.LanguagePackage.Language_code, code);
   }
 
   @Override
   public java.lang.String selectLanguageFamily() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_languageFamily);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_languageFamily);
   }
     
   public void setLanguageFamily(java.lang.String languageFamily) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.Language_languageFamily, languageFamily);
+     _setSingleAttribute(cleon.common.language.metamodel.spec.language.LanguagePackage.Language_languageFamily, languageFamily);
   }
 
   @Override
   public java.lang.String selectNativeName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_nativeName);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_nativeName);
   }
     
   public void setNativeName(java.lang.String nativeName) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.Language_nativeName, nativeName);
+     _setSingleAttribute(cleon.common.language.metamodel.spec.language.LanguagePackage.Language_nativeName, nativeName);
   }
 
   // relations
@@ -82,13 +82,13 @@ public class Language extends DynamicResource implements ILanguage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_ISOLanguageName, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_code, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_languageFamily, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.Language_nativeName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_ISOLanguageName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_code, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_languageFamily, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.language.LanguagePackage.Language_nativeName, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ac6b9d2-3334-11e8-a9fe-87ba35d8f5c4,P4/Nqb05lfN/hjNH/pqtuVoUKmo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ac6b9d2-3334-11e8-a9fe-87ba35d8f5c4,CH3A0TQX5OQy2Cma5jXo1mcfwm8=] */

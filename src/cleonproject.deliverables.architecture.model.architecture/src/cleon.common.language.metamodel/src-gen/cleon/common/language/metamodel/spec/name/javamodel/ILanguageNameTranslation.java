@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.javamodel;
+package cleon.common.language.metamodel.spec.name.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,8 +8,8 @@ public interface ILanguageNameTranslation extends ch.actifsource.core.javamodel.
   
   // relations
   
-  public cleon.common.language.metamodel.spec.javamodel.ILanguage selectLanguage();
+  public cleon.common.language.metamodel.spec.language.javamodel.ILanguage selectLanguage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,oGtZeEZZ1JlhK4RUI+1/o+p1Tek=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,mRbTyqVS9gWaM5PzeH5q/+7EOV8=] */

@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.javamodel;
+package cleon.common.language.metamodel.spec.description.javamodel;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Literal;
@@ -7,7 +7,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.update.IModifiable;
 import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractMultilingualFunctions;
-
+import cleon.common.language.metamodel.spec.javamodel.AbstractMultiLanguageInitializationAspect;
 import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 
 public class LanguageDescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {

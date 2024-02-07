@@ -19,5 +19,11 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
 Export-Package: 
  cleon.common.language.metamodel.spec,
  cleon.common.language.metamodel.spec.javamodel,
- cleon.common.language.metamodel.spec.instances,
- cleon.common.language.metamodel.spec.languagesettings
+ cleon.common.language.metamodel.spec.description,
+ cleon.common.language.metamodel.spec.description.javamodel,
+ cleon.common.language.metamodel.spec.language,
+ cleon.common.language.metamodel.spec.language.javamodel,
+ cleon.common.language.metamodel.spec.languagesettings,
+ cleon.common.language.metamodel.spec.languagesettings.javamodel,
+ cleon.common.language.metamodel.spec.name,
+ cleon.common.language.metamodel.spec.name.javamodel

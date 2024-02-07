@@ -8,8 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
-import cleon.common.language.metamodel.spec.instances.InstancesModel;
-import cleon.common.language.metamodel.spec.javamodel.ILanguageDescriptionTranslation;
+import cleon.common.language.metamodel.spec.language.InstancesModel;
+import cleon.common.language.metamodel.spec.description.javamodel.ILanguageDescriptionTranslation;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -54,7 +54,7 @@ public class FunctionSpace_Language {
   public static interface IMultilingualDescriptionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a441e094-f382-11ea-9268-b5c52a12d7f9")
-    public java.lang.String de(final cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription multilingualDescription);
+    public java.lang.String de(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription);
 
   }
   
@@ -65,7 +65,7 @@ public class FunctionSpace_Language {
     private MultilingualDescriptionFunctionsImpl() {}
 
     @Override
-    public java.lang.String de(final cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription multilingualDescription) {
+    public java.lang.String de(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription) {
       /* Begin Protected Region [[a441e094-f382-11ea-9268-b5c52a12d7f9]] */
       if( multilingualDescription.selectTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
       	final var description = multilingualDescription.selectTranslation().get(InstancesModel.de__F___S___F_German);
@@ -81,7 +81,7 @@ public class FunctionSpace_Language {
 
     private MultilingualDescriptionFunctions() {}
 
-    public static java.lang.String de(final cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription multilingualDescription) {
+    public static java.lang.String de(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription) {
       return DynamicResourceUtil.invoke(IMultilingualDescriptionFunctionsImpl.class, MultilingualDescriptionFunctionsImpl.INSTANCE, multilingualDescription).de(multilingualDescription);
     }
 
@@ -90,7 +90,7 @@ public class FunctionSpace_Language {
   public static interface IAbstractMultilingualFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5dc9f105-cd3c-11ec-85c9-011c467ea292")
-    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+    public cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -115,7 +115,7 @@ public class FunctionSpace_Language {
   public static interface IMultilingualNameWithLanguageSettingsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("92a82004-cd42-11ec-85c9-011c467ea292")
-    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+    public cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -140,7 +140,7 @@ public class FunctionSpace_Language {
   public static interface IMultilingualDescriptionWithLanguageSettingsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fccce81d-cd44-11ec-85c9-011c467ea292")
-    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+    public cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -164,4 +164,4 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,4jfg0xjkkIqER0saaz+QRMXaljw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,CpWKE7lhrnWDSPiTBAIhX4M21Ao=] */

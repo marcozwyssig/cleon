@@ -21,7 +21,7 @@ public class FunctionSpace_Glossary {
   public static interface ITermFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("79775c13-cd3c-11ec-85c9-011c467ea292")
-    public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings LanguageSettings();
+    public cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,29100f47-cd3d-11ec-85c9-011c467ea292,tA3dMQRsSZy6vGyZD5g6k6EyaCo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,29100f47-cd3d-11ec-85c9-011c467ea292,vi8xTtBOM+aISebZ8NnqcKp2w6U=] */

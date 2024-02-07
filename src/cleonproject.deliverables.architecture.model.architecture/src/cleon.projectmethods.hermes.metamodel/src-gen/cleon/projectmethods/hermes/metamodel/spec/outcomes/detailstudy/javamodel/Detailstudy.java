@@ -31,6 +31,15 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
   // attributes
   
   @Override
+  public java.lang.String selectCurrentLanguageCode() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  }
+    
+  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -211,6 +220,7 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -245,4 +255,4 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,teYy+x+xg1zWj3FSOvUOEW8BHrs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,9jbvHLedMOrMR7cmZHAKLqkqsbw=] */

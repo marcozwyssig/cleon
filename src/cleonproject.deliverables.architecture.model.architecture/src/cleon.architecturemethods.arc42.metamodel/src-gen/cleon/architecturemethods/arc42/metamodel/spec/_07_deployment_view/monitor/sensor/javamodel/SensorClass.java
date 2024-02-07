@@ -58,6 +58,15 @@ public class SensorClass extends DynamicResource implements ISensorClass {
   }
 
   @Override
+  public java.lang.String selectCurrentLanguageCode() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  }
+    
+  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -212,6 +221,7 @@ public class SensorClass extends DynamicResource implements ISensorClass {
     _acceptSingleAttribute(java.lang.Boolean.class, ch.actifsource.core.CorePackage.Class_allowRoot, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Class_classIcon, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.SensorClass_displayName, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
@@ -231,4 +241,4 @@ public class SensorClass extends DynamicResource implements ISensorClass {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,6tDnHN7VJS29kiwoYL91jg3Y72o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,BKw51jvXfajTPhA6AYRc3M2eTL4=] */

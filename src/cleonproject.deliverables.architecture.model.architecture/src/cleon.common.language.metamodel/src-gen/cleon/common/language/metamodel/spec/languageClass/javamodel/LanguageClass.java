@@ -58,6 +58,15 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
   }
 
   @Override
+  public java.lang.String selectCurrentLanguageCode() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  }
+    
+  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -185,6 +194,7 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
     _acceptSingleAttribute(java.lang.Boolean.class, ch.actifsource.core.CorePackage.Class_allowRoot, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Class_classIcon, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptMultiMap(ch.actifsource.core.javamodel.IAbstractAspectImplementation.class, ch.actifsource.core.CorePackage.AspectProvider_aspect, visitor);
@@ -207,4 +217,4 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af81de75-c04e-11ee-bc88-af1934b8c942,MYLZFZmrUF5womSeJ9fLZnyhfi0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af81de75-c04e-11ee-bc88-af1934b8c942,BirXnn/MZkRT8QHGbv22oWxpzb4=] */

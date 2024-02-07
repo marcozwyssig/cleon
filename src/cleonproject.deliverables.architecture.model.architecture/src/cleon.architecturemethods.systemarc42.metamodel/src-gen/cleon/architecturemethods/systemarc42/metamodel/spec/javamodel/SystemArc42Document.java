@@ -31,6 +31,15 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
   // attributes
   
   @Override
+  public java.lang.String selectCurrentLanguageCode() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  }
+    
+  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -312,6 +321,7 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -342,4 +352,4 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,1M0hQsjwqToxpk252Yo3/PQsAFg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,t3LGR1cbBQxFAu4Ll7kEB707TlE=] */

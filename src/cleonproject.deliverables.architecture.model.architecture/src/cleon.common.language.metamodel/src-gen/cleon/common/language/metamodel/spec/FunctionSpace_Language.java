@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 import cleon.common.language.metamodel.spec.language.InstancesModel;
+import cleon.common.language.metamodel.spec.language.javamodel.CurrentLanguage;
 import cleon.common.language.metamodel.spec.description.javamodel.ILanguageDescriptionTranslation;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
@@ -162,6 +163,45 @@ public class FunctionSpace_Language {
 
   }
 
+  public static interface IAbstractLanguageSettingsAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("41427efa-c5ea-11ee-a17d-a7a71cc7c14b")
+    public java.lang.String CurrentLanguageCode();
+
+  }
+  
+  public static interface IAbstractLanguageSettingsAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("41427efa-c5ea-11ee-a17d-a7a71cc7c14b")
+    public java.lang.String CurrentLanguageCode(final cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware abstractLanguageSettingsAware);
+
+  }
+  
+  public static class AbstractLanguageSettingsAwareFunctionsImpl implements IAbstractLanguageSettingsAwareFunctionsImpl {
+
+    public static final IAbstractLanguageSettingsAwareFunctionsImpl INSTANCE = new AbstractLanguageSettingsAwareFunctionsImpl();
+
+    private AbstractLanguageSettingsAwareFunctionsImpl() {}
+
+    @Override
+    public java.lang.String CurrentLanguageCode(final cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware abstractLanguageSettingsAware) {
+      /* Begin Protected Region [[41427efa-c5ea-11ee-a17d-a7a71cc7c14b]] */
+      return CurrentLanguage.getInstance().LanguageCode();
+      /* End Protected Region   [[41427efa-c5ea-11ee-a17d-a7a71cc7c14b]] */
+    }
+
+  }
+  
+  public static class AbstractLanguageSettingsAwareFunctions {
+
+    private AbstractLanguageSettingsAwareFunctions() {}
+
+    public static java.lang.String CurrentLanguageCode(final cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware abstractLanguageSettingsAware) {
+      return DynamicResourceUtil.invoke(IAbstractLanguageSettingsAwareFunctionsImpl.class, AbstractLanguageSettingsAwareFunctionsImpl.INSTANCE, abstractLanguageSettingsAware).CurrentLanguageCode(abstractLanguageSettingsAware);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,CpWKE7lhrnWDSPiTBAIhX4M21Ao=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,Wz2VQs7HC6ua2MVylzaIfiMhggo=] */

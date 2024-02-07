@@ -28,7 +28,7 @@ public class LanguageNameInitializationAspect extends AbstractMultiLanguageIniti
 	private IMultilingualName getDefaultName(IDynamicResourceRepository dynamicResourceRepository,
 			INode newInstance) {
 		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
-		return MultilingualName.selectToMeNames(name);
+		return MultilingualName.selectToMeTranslation(name);
 	}
 
 	@Override

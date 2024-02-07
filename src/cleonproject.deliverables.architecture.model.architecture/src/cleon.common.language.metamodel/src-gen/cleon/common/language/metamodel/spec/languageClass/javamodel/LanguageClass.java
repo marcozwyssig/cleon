@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.javamodel;
+package cleon.common.language.metamodel.spec.languageClass.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -139,16 +139,6 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation> selectNames() {
-    return _getMap(cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.name.NamePackage.MultilingualName_names);
-  }
-
-  public LanguageClass setNames(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation> names) {
-    _setMap(cleon.common.language.metamodel.spec.name.NamePackage.MultilingualName_names, names);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends ch.actifsource.core.javamodel.IProperty> selectProperty() {
     return _getList(ch.actifsource.core.javamodel.IProperty.class, ch.actifsource.core.CorePackage.Class_property);
   }
@@ -165,6 +155,16 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
 
   public LanguageClass setShape(ch.actifsource.core.javamodel.IAbstractShape shape) {
     _setSingle(ch.actifsource.core.CorePackage.Class_shape, shape);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageNameAspectTranslation> selectTranslations() {
+    return _getMap(cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageNameAspectTranslation.class, cleon.common.language.metamodel.spec.languageClass.LanguageClassPackage.LanguageClass_translations);
+  }
+
+  public LanguageClass setTranslations(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageNameAspectTranslation> translations) {
+    _setMap(cleon.common.language.metamodel.spec.languageClass.LanguageClassPackage.LanguageClass_translations, translations);
     return this;
   }
     
@@ -194,11 +194,17 @@ public class LanguageClass extends DynamicResource implements ILanguageClass {
     _acceptSingle(cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IColor.class, ch.actifsource.core.CorePackage.Class_lineColor, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IInheritanceModifier.class, ch.actifsource.core.CorePackage.Class_modifier, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.name.NamePackage.MultilingualName_names, visitor);
     _acceptList(ch.actifsource.core.javamodel.IProperty.class, ch.actifsource.core.CorePackage.Class_property, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IAbstractShape.class, ch.actifsource.core.CorePackage.Class_shape, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageNameAspectTranslation.class, cleon.common.language.metamodel.spec.languageClass.LanguageClassPackage.LanguageClass_translations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageClass selectToMeTranslations(cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageNameAspectTranslation object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageClass.class, cleon.common.language.metamodel.spec.languageClass.LanguageClassPackage.LanguageClass_translations, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af81de75-c04e-11ee-bc88-af1934b8c942,NWKhA73Xu+L8lDzxWWCv88ZKoqA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af81de75-c04e-11ee-bc88-af1934b8c942,MYLZFZmrUF5womSeJ9fLZnyhfi0=] */

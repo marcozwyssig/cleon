@@ -1,4 +1,4 @@
-package cleon.testingmethods.hermes.metamodel.spec.javamodel;
+package cleon.testingmethods.hermes.metamodel.spec._01_concept.javamodel;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;

@@ -9,8 +9,13 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 import cleon.common.language.metamodel.spec.language.InstancesModel;
+import cleon.common.language.metamodel.spec.language.LanguagePackage;
 import cleon.common.language.metamodel.spec.language.javamodel.CurrentLanguage;
-import cleon.common.language.metamodel.spec.description.javamodel.ILanguageDescriptionTranslation;
+import cleon.common.language.metamodel.spec.languageClass.LanguageClassPackage;
+import ch.actifsource.core.job.Select;
+import ch.actifsource.core.model.aspects.INameAspect;
+import ch.actifsource.core.model.aspects.impl.SelectOverridableResourceAspectImpl;
+import ch.actifsource.util.character.StringUtil;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -202,6 +207,55 @@ public class FunctionSpace_Language {
 
   }
 
+  public static interface ILanguageClassFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
+    public java.lang.String simpleName();
+
+  }
+  
+  public static interface ILanguageClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
+    public java.lang.String simpleName(final cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageClass languageClass);
+
+  }
+  
+  public static class LanguageClassFunctionsImpl implements ILanguageClassFunctionsImpl {
+
+    public static final ILanguageClassFunctionsImpl INSTANCE = new LanguageClassFunctionsImpl();
+
+    private LanguageClassFunctionsImpl() {}
+
+    @Override
+    public java.lang.String simpleName(final cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageClass languageClass) {
+      /* Begin Protected Region [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
+      final var currentLanguageCode = CurrentLanguage.getInstance().LanguageCode();
+      if( !currentLanguageCode.equals(languageClass.selectLanguageSettings().selectDefaultLanguage().selectCode())) {
+      	final var node = languageClass.getResource();
+      	final var aspect = LanguageClassPackage.LanguageClass_DefaultNameAspect;
+      	final var nameAspect = Select.aspect(languageClass.getReadJobExecutor(), SelectOverridableResourceAspectImpl.forResource(languageClass.getReadJobExecutor(), aspect, INameAspect.class));
+
+      	return nameAspect == null ? null : StringUtil.firstLine(nameAspect.getSimpleName(languageClass.getReadJobExecutor(), node));
+      }
+      return "en";
+
+      // XXX implement template function here
+      /* End Protected Region   [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
+    }
+
+  }
+  
+  public static class LanguageClassFunctions {
+
+    private LanguageClassFunctions() {}
+
+    public static java.lang.String simpleName(final cleon.common.language.metamodel.spec.languageClass.javamodel.ILanguageClass languageClass) {
+      return DynamicResourceUtil.invoke(ILanguageClassFunctionsImpl.class, LanguageClassFunctionsImpl.INSTANCE, languageClass).simpleName(languageClass);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,Wz2VQs7HC6ua2MVylzaIfiMhggo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,v48uvP8dYDgnGs5aoJnBslae4kw=] */

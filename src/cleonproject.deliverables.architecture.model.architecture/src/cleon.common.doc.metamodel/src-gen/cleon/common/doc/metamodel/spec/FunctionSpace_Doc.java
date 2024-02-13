@@ -66,6 +66,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("741b9c04-5e36-11e6-a777-551543f10110")
     public java.lang.String GetDocumentName();
 
+    @IDynamicResourceExtension.MethodId("272db3bd-c9ee-11ee-953e-1bc687172a5b")
+    public java.lang.String GetTitleName();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -206,4 +209,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,vrlVgo+Rg4Dsya+f9zHtO41iGdU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,WTRpIYtTo5Am5dK2KCefl7XF5/0=] */

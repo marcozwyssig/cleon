@@ -1,6 +1,7 @@
 package cleon.common.resources.metamodel.spec.net;
 
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 
 import ch.actifsource.core.INode;
@@ -29,10 +30,10 @@ public class UrlLiteralAspect extends AbstractStatelessAspectImpl implements IGe
 
 	@Override
 	public URL getValue(IReadJobExecutor paramIReadJobExecutor, IResourceScope paramIResourceScope, INode literal) {
-		String url = getValue(literal);
+		final var url = getValue(literal);
 		try {
-			return new URL(url);
-		} catch (MalformedURLException e) {
+			return URL.of(URI.create(url), null);
+		} catch (final MalformedURLException e) {
 			return null;
 		}
 	}
@@ -45,23 +46,25 @@ public class UrlLiteralAspect extends AbstractStatelessAspectImpl implements IGe
 	@Override
 	public String getJavaConstructionExpression(IReadJobExecutor paramIReadJobExecutor,
 			IResourceScope paramIResourceScope, INode literal) {
-		String url = getValue(literal);
-		if (url == null)
+		final var url = getValue(literal);
+		if (url == null) {
 			return null;
+		}
 		return "\"" + StringUtil.encodeStringForJava(url) + "\"";
 	}
 
 	public static String getValue(INode literal) {
-		if (!(literal instanceof Literal))
+		if (!(literal instanceof Literal)) {
 			return null;
+		}
 		return ((Literal) literal).getValue();
 	}
 
 	protected String doValidate(String value) {
 		try {
-			URL urlObj = new URL(value);
+			final var urlObj = URL.of(URI.create(value), null);
 			return DoIsUrlValid(urlObj);
-		} catch (MalformedURLException e) {
+		} catch (final MalformedURLException e) {
 			return "Uri is not well formatted";
 		}
 	}

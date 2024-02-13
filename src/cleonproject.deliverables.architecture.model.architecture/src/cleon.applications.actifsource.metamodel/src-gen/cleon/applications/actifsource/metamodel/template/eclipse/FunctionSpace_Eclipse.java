@@ -125,6 +125,9 @@ public class FunctionSpace_Eclipse {
     @IDynamicResourceExtension.MethodId("04cab634-8e7d-11e8-bdd7-2510a77680f5")
     public java.lang.String GetActifSourceVersion();
 
+    @IDynamicResourceExtension.MethodId("9b3c23d4-ca53-11ee-9333-85190b249041")
+    public java.lang.String GetJavaVersion();
+
   }
   
   public static interface IEclipseEcosystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -405,4 +408,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,as80g4Rs43htk6hx0oyqrkudGN8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,6puIo/ahagxwcoa6Zt7LUQBaZy0=] */

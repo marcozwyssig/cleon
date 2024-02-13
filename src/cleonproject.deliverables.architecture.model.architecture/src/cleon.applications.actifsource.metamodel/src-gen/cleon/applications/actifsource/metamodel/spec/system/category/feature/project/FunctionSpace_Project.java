@@ -60,13 +60,16 @@ public class FunctionSpace_Project {
     public java.lang.String GetVersion();
 
     @IDynamicResourceExtension.MethodId("88c4e02e-8e7d-11e8-bdd7-2510a77680f5")
-    public java.lang.String GetAcitfSourceVersion();
+    public java.lang.String GetActifSourceVersion();
 
     @IDynamicResourceExtension.MethodId("231ce01b-d7c7-11ea-ae00-5518e944c256")
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("ee7e9c00-d7c7-11ea-ae00-5518e944c256")
     public java.lang.String BuiltinFullBuildingBlockName();
+
+    @IDynamicResourceExtension.MethodId("9278a354-ca53-11ee-9333-85190b249041")
+    public java.lang.String GetJavaVersion();
 
   }
   
@@ -264,4 +267,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,WaFtVvjPdw2+TZjyLVyEseIxoQc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,i8U3Eefrv79PvkwFL0mOtg3r1Yg=] */

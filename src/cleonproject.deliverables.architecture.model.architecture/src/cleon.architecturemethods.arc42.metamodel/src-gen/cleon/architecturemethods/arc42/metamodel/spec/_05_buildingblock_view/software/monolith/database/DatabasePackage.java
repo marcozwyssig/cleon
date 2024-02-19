@@ -55,6 +55,8 @@ public class DatabasePackage {
   public static final Resource ColumnValue___W___F_b_s___F_MAX__N_2_aD_32__S_1__O_ = new Resource("4d6374f8-c034-11ee-a353-4bf80e47b5e4");
   public static final Resource ColumnValue_UTC__Q_0 = new Resource("92a4cbdf-c034-11ee-a353-4bf80e47b5e4");
   public static final Resource ColumnValue_TRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive = new Resource("a2a1d0ee-c034-11ee-a353-4bf80e47b5e4");
+  public static final Resource Table_scope = new Resource("8fc07ea7-cf29-11ee-8c06-a5102392725a");
+  public static final Resource SoftwareMonolithDatabase_scope = new Resource("b5670448-cf29-11ee-8c06-a5102392725a");
   
   /* Begin Protected Region [[user]] */
   
@@ -75,4 +77,4 @@ public class DatabasePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,01kMmIwNg5dFhoiUmLsvhHDCH0Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,nKCTAZGNZaPmL4uaknuWWLMPiGk=] */

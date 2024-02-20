@@ -15,8 +15,8 @@ public class DatabasePackage {
   public static final Resource Table_primary_aE_key = new Resource("e1db6107-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey = new Resource("fc12f568-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey_columns = new Resource("786dfb0c-b936-11ee-a0d0-e953bcbfaeef");
-  public static final Resource FunctionSpace_aE_Persistency_aE_Concept_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
-  public static final Resource FunctionSpace_aE_Persistency_aE_Concept_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
+  public static final Resource FunctionSpace_aE_Database_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
+  public static final Resource FunctionSpace_aE_Database_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
   public static final Resource Table_persistent = new Resource("f1d9291e-b9c9-11ee-a257-01d178f494ca");
   public static final Resource Column_valueRange = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
   public static final Resource ColumnValue = new Resource("f46c2d4f-ba0f-11ee-876d-0f01c87670c8");
@@ -57,6 +57,13 @@ public class DatabasePackage {
   public static final Resource ColumnValue_TRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive = new Resource("a2a1d0ee-c034-11ee-a353-4bf80e47b5e4");
   public static final Resource Table_scope = new Resource("8fc07ea7-cf29-11ee-8c06-a5102392725a");
   public static final Resource SoftwareMonolithDatabase_scope = new Resource("b5670448-cf29-11ee-8c06-a5102392725a");
+  public static final Resource FunctionSpace_aE_Database_Table = new Resource("d5b9ef6b-cf36-11ee-8c06-a5102392725a");
+  public static final Resource TableMappingView = new Resource("fe7d7631-cffb-11ee-9bb8-5f4f5b483c01");
+  public static final Resource EnumerationMappingView_tableMappingView = new Resource("07f50443-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource TableMappingView_enumerationValue = new Resource("1704c1ff-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource TableMappingView_tables = new Resource("2be9b9d6-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource EnumerationMappingView = new Resource("8fa61b6b-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource SoftwareMonolithDatabase_enumerationMappingView = new Resource("9d296d8a-cffc-11ee-9bb8-5f4f5b483c01");
   
   /* Begin Protected Region [[user]] */
   
@@ -77,4 +84,4 @@ public class DatabasePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,nKCTAZGNZaPmL4uaknuWWLMPiGk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,PQeqUtiQ1Bhx6RzsWNF3REbJjFc=] */

@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
 
-public class FunctionSpace_Persistency_Concept {
+public class FunctionSpace_Database {
 
   /* Begin Protected Region [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef]] */
   
@@ -68,6 +68,37 @@ public class FunctionSpace_Persistency_Concept {
 
   }
 
+  public static interface ITableFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("de1b7980-cf36-11ee-8c06-a5102392725a")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> AllEnumerationValues();
+
+    @IDynamicResourceExtension.MethodId("00a6db1b-cf37-11ee-8c06-a5102392725a")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> UsedEnumerationValues();
+
+    @IDynamicResourceExtension.MethodId("16cc69f4-cf37-11ee-8c06-a5102392725a")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> AvailableEnumerationValues();
+
+  }
+  
+  public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableFunctionsImpl implements ITableFunctionsImpl {
+
+    public static final ITableFunctionsImpl INSTANCE = new TableFunctionsImpl();
+
+    private TableFunctionsImpl() {}
+
+  }
+  
+  public static class TableFunctions {
+
+    private TableFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,dyIc5uqokDFRMi28JOSdaAlTTYk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,F2SKNsrsAE877GhFd8wXc/xgPb4=] */

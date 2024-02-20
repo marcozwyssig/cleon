@@ -64,6 +64,8 @@ public class DatabasePackage {
   public static final Resource TableMappingView_tables = new Resource("2be9b9d6-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource EnumerationMappingView = new Resource("8fa61b6b-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource SoftwareMonolithDatabase_enumerationMappingView = new Resource("9d296d8a-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource EnumerationMappingView_scope = new Resource("4e7901cd-cffe-11ee-9bb8-5f4f5b483c01");
+  public static final Resource Table_history = new Resource("ae635a5d-d003-11ee-8ad8-7318f4718a69");
   
   /* Begin Protected Region [[user]] */
   
@@ -84,4 +86,4 @@ public class DatabasePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,PQeqUtiQ1Bhx6RzsWNF3REbJjFc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,mgBAQaJjLfdh9vpKbEvDMcW4fwY=] */

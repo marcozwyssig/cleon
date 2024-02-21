@@ -12,6 +12,9 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db40e5ed-c1eb-11ea-820f-9931558a898c" type="literal">cloudwatchebs</object>
   </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="12f7ab74-d0f5-11ee-9dff-9fcfe85e4c54" type="literal">false</object>
+  </predicate>
   <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
     <object statement-guid="786472e0-f37a-11ea-9268-b5c52a12d7f9" type="literal">Monitors the performance of an Amazon Elastic Block Store (EBS) by reading its data from the AWS CloudWatch API</object>
   </predicate>

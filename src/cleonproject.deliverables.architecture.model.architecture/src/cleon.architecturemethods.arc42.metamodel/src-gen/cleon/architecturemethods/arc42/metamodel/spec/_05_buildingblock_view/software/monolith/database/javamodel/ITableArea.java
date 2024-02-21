@@ -10,6 +10,8 @@ public interface ITableArea extends ch.actifsource.core.javamodel.INamedResource
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ITable> selectTables();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.IView> selectViews();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,+3KkPSKBw+npBCK1BOp96uaFWCM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,Uf6EEuC1QRjNUEjTOYg//imvwnQ=] */

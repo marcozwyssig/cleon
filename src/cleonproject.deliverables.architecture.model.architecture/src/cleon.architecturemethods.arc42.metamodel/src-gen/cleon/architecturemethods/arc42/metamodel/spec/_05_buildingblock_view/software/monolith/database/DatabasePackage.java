@@ -66,6 +66,35 @@ public class DatabasePackage {
   public static final Resource SoftwareMonolithDatabase_enumerationMappingView = new Resource("9d296d8a-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource EnumerationMappingView_scope = new Resource("4e7901cd-cffe-11ee-9bb8-5f4f5b483c01");
   public static final Resource Table_history = new Resource("ae635a5d-d003-11ee-8ad8-7318f4718a69");
+  public static final Resource View = new Resource("d1f10a4f-d0ca-11ee-a38e-0b82bafb3097");
+  public static final Resource TableArea_views = new Resource("eeb4c752-d0ca-11ee-a38e-0b82bafb3097");
+  public static final Resource View_from = new Resource("007881e6-d0cb-11ee-a38e-0b82bafb3097");
+  public static final Resource Select = new Resource("2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource View_select = new Resource("3576adf7-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource SelectField = new Resource("50a4626f-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource Select_selectField = new Resource("68353fd1-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource AbstractField_column = new Resource("83570d6a-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource SelectAggregate = new Resource("b9b422de-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource SelectAggregate_MAX = new Resource("bc053e17-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource SelectField_aggregate = new Resource("c4a3d0c1-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource FunctionSpace_aE_Database_SelectField = new Resource("d2664ea8-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource Select_selectAllFields = new Resource("254e852a-d0cd-11ee-a38e-0b82bafb3097");
+  public static final Resource View_groupby = new Resource("66dd343d-d0cd-11ee-a38e-0b82bafb3097");
+  public static final Resource Group_aE_By = new Resource("7bb8684b-d0cd-11ee-a38e-0b82bafb3097");
+  public static final Resource Group_aE_By_groupByField = new Resource("7bb86856-d0cd-11ee-a38e-0b82bafb3097");
+  public static final Resource AbstractField = new Resource("b32e6875-d0cd-11ee-a38e-0b82bafb3097");
+  public static final Resource GroupByField = new Resource("0cf70641-d0ce-11ee-a38e-0b82bafb3097");
+  public static final Resource FunctionSpace_aE_Database_Select = new Resource("f8cc72f8-d0cf-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Database_Group_aE_By = new Resource("8f1e32d1-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource Having = new Resource("e3e8e579-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource Having_havingField = new Resource("e3e8e584-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource HavingField = new Resource("f75c24b0-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource View_having = new Resource("21fa2d67-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Database_Having = new Resource("2f08013a-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource HavingField_operator = new Resource("c900d077-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource HavingField_value = new Resource("dcaab079-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Database_HavingField = new Resource("65904fd4-d0d2-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Database_ConditionalOperator = new Resource("eda61cec-d0d2-11ee-bd60-4767a6be68d4");
   
   /* Begin Protected Region [[user]] */
   
@@ -86,4 +115,4 @@ public class DatabasePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,mgBAQaJjLfdh9vpKbEvDMcW4fwY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database,Uxc9riotOmLfL5WuDp7xxY633YQ=] */

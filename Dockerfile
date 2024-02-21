@@ -12,8 +12,24 @@ ENV ECLIPSE_VERSION=4.30
 ENV ECLIPSE_INSTALL_DIR=/opt
 
 # Download and install Eclipse
-#RUN wget -qO- "https://download.eclipse.org/eclipse/downloads/drops4/R-4.30-202312010110/download.php?dropFile=eclipse-SDK-4.30-linux-gtk-x86_64.tar.gz"
+RUN wget -qO- https://mirror.dogado.de/eclipse/eclipse/downloads/drops4/R-4.30-202312010110/eclipse-SDK-4.30-linux-gtk-aarch64.tar.gz | tar xvz -C ${ECLIPSE_INSTALL_DIR}
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.pde.feature.group \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository https://updates.actifsource.com/updates \
+  -installIU ch.actifsource \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+# Add the Eclipse installation directory to the PATH
+ENV PATH=${ECLIPSE_INSTALL_DIR}/eclipse:${PATH}
 
 # Set the working directory to the Eclipse installation directory
-#WORKDIR ${ECLIPSE_INSTALL_DIR}/eclipse
+WORKDIR ${ECLIPSE_INSTALL_DIR}/eclipse
 

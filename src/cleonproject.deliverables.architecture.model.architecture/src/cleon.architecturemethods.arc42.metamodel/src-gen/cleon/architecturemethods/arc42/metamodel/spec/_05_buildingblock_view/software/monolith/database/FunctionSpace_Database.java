@@ -338,7 +338,4 @@ public class FunctionSpace_Database {
 
 }
 
-      /* Begin Protected Region [[f1420861-d0d2-11ee-bd60-4767a6be68d4]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[f1420861-d0d2-11ee-bd60-4767a6be68d4]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,zr9cSBmsE7ysSQy0Q0wXacTu/Ok=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,JuQhl60ohGlQSpyDXH6lNXiLcmc=] */

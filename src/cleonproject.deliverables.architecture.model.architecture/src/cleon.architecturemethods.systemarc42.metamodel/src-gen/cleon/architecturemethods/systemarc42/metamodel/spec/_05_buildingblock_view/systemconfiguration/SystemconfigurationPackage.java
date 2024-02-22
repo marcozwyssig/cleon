@@ -43,6 +43,7 @@ public class SystemconfigurationPackage {
   public static final Resource InterfaceType_MGMT = new Resource("a18ac5aa-878f-11e9-a61b-279ebde48b48");
   public static final Resource InterfaceType_EXT = new Resource("a531ada4-878f-11e9-a61b-279ebde48b48");
   public static final Resource SystemConfiguration_inheritServices = new Resource("8d65e85b-879a-11e9-bb4b-c57da735262b");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfiguration = new Resource("624ced8e-879b-11e9-bb4b-c57da735262b");
   public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
   public static final Resource SystemConfiguration_provides = new Resource("95567bd3-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
@@ -82,4 +83,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,dYqzyh2jl8NdtebDxLDy1SdQClw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,7mUeZrQib9F6+RWmi2rALNEo2wk=] */

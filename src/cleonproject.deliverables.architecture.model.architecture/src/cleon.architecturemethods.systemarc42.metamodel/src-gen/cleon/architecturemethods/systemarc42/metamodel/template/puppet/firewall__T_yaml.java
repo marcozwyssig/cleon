@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f7e5720e-8bdb-11eb-a832-91f5636963f2,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import java.util.stream.Collectors;
 
 /* End Protected Region   [[f7e5720e-8bdb-11eb-a832-91f5636963f2,imports]] */

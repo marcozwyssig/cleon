@@ -9,7 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7efd3326-a0e1-11ea-8daa-afb4679c3497,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import java.util.stream.Collectors;
 /* End Protected Region   [[7efd3326-a0e1-11ea-8daa-afb4679c3497,imports]] */
 

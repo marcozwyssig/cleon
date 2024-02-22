@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[c678fea2-7258-11ed-8c7b-bf13a6bd0e0e,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 /* End Protected Region   [[c678fea2-7258-11ed-8c7b-bf13a6bd0e0e,imports]] */
 
 public class FunctionSpace_Restrict {

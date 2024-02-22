@@ -20,6 +20,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IClusterHost;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 
 import java.util.stream.Collectors;
 import java.util.ArrayList;
@@ -115,8 +116,7 @@ public class access__T_yaml {
 
   		final var configuration = abstractHost.selectInstanceOf();
   		final var systemConfigurationFunctions = configuration
-  				.extension(
-  						cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
+  				.extension(ISystemConfigurationFunctions.class);
 
   		final var systemName = systemConfigurationFunctions.SystemName();
 

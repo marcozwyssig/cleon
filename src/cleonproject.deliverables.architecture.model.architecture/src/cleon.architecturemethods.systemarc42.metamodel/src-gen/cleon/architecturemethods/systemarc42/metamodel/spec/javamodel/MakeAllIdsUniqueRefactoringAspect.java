@@ -11,6 +11,7 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.DomainPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
@@ -37,7 +38,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 
 	@Override
 	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
-		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfiguration);
+		makeUnique(executor, paramPackage, SystemconfigurationPackage.FunctionSpace_aE_SystemConfiguration_SystemConfiguration);
 		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemComponent);
 		makeUnique(executor, paramPackage, DomainPackage.Actor);
 	}

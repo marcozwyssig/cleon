@@ -17,7 +17,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZone;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.SystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
@@ -1023,7 +1023,7 @@ public class FunctionSpace_Communication {
     public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       /* Begin Protected Region [[e0f3afa5-c77c-11ea-b0b6-e5df79e86bc2]] */
       final var sysCfgFunction = src.selectSourceSystemConfiguration().extension(
-      		cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
+      		ISystemConfigurationFunctions.class);
       final var sysCfgs = sysCfgFunction.GetAllDependsFromWithSelfOnlyConcrete();
 
       final var functions = sourceInSubSecurityZoneByHost.extension(ISourceInSubSecurityZoneFunctions.class);
@@ -1033,8 +1033,7 @@ public class FunctionSpace_Communication {
 
       final var result = new StringBuilder();
       for (final var sysCfg : sysCfgs) {
-      	final var configurationFunctions = sysCfg.extension(
-      			cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
+      	final var configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);
 
       	final var zoneFunctions = sourceSubZone.extension(IZoneFunctions.class);
       	if (zoneFunctions.IsSingleUsed()) {
@@ -1049,8 +1048,7 @@ public class FunctionSpace_Communication {
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env));
 
       		for (final var concreteSysCfg : hosts) {
-      			final var concreteSysCfgFunctions = concreteSysCfg.extension(
-      					cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);
+      			final var concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);
       			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone));
       			result.append("\n");
       		}

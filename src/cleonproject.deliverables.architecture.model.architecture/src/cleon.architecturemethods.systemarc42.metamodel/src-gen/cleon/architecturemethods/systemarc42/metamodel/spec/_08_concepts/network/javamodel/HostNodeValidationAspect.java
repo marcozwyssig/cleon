@@ -18,7 +18,7 @@ import ch.actifsource.core.validation.inconsistency.SingleResourceInconsistency;
 import ch.actifsource.core.validation.quickfix.AbstractQuickFix;
 import ch.actifsource.util.inconsistency.InconsistencyType;
 import ch.actifsource.util.log.Logger;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkHostNodeFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
 

@@ -22,10 +22,48 @@ RUN /opt/eclipse/eclipse -nosplash \
 
 RUN /opt/eclipse/eclipse -nosplash \
   -application org.eclipse.equinox.p2.director \
-  -repository https://updates.actifsource.com/updates \
-  -installIU ch.actifsource \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.emf.mwe2.runtime \
   -destination ${ECLIPSE_INSTALL_DIR} \
   -profile SDKProfile
+
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.emf.mwe.core \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.ui.browser \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.platform.feature.group \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+RUN /opt/eclipse/eclipse -nosplash \
+  -application org.eclipse.equinox.p2.director \
+  -repository http://download.eclipse.org/releases/latest \
+  -installIU org.eclipse.gef \
+  -destination ${ECLIPSE_INSTALL_DIR} \
+  -profile SDKProfile
+
+COPY actifsource.der .
+RUN keytool -import -trustcacerts -cacerts -storepass changeit -noprompt -alias actifsource -file actifsource.der
+
+# RUN /opt/eclipse/eclipse -nosplash \
+#   -application org.eclipse.equinox.p2.director \
+#   -repository https://updates.actifsource.com/updates \
+#   -installIU ch.actifsource.feature.group \
+#   -destination ${ECLIPSE_INSTALL_DIR} \
+#   -profile SDKProfile
 
 # Add the Eclipse installation directory to the PATH
 ENV PATH=${ECLIPSE_INSTALL_DIR}/eclipse:${PATH}

@@ -8,8 +8,8 @@ public interface ISystemConfigurationServiceGroup extends cleon.architecturemeth
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectServiceProvider();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectServiceProvider();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,P9eph0EK+sn6lLRReWoJewDUgFI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,0zV5UJkCKOsA1zRHQl0CSoQukM8=] */

@@ -8,8 +8,8 @@ public interface IAbstractRealmHandlers extends ch.actifsource.core.javamodel.ID
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectRealmForComponent();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectRealmForComponent();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55667c1c-fd8c-11ea-8a95-19b98046e6db,XIjHWmFhO/0iFFRv6HVSCscG8hw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55667c1c-fd8c-11ea-8a95-19b98046e6db,83uto7PubW4jbI3l+qILBC9qqho=] */

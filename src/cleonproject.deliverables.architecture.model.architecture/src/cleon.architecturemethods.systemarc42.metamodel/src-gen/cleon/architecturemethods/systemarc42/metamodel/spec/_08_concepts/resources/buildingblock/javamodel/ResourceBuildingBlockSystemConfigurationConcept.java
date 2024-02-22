@@ -121,11 +121,11 @@ public class ResourceBuildingBlockSystemConfigurationConcept extends DynamicReso
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectResourceBuildingBlockForSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectResourceBuildingBlockForSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration);
   }
 
-  public ResourceBuildingBlockSystemConfigurationConcept setResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration resourceBuildingBlockForSystemConfiguration) {
+  public ResourceBuildingBlockSystemConfigurationConcept setResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration resourceBuildingBlockForSystemConfiguration) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, resourceBuildingBlockForSystemConfiguration);
     return this;
   }
@@ -161,13 +161,13 @@ public class ResourceBuildingBlockSystemConfigurationConcept extends DynamicReso
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IDisk.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_diskUsage, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IMemory.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_memoryUsage, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept selectToMeResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept selectToMeResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration, object.getResource());
   }
   
@@ -184,4 +184,4 @@ public class ResourceBuildingBlockSystemConfigurationConcept extends DynamicReso
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,pMma1LQTizqsRCmxrQtqthbMB/s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,rVJBviqpfzNkl2ubbs0N+JS75lY=] */

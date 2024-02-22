@@ -8,10 +8,10 @@ public interface IResourcePlanningSystemConfigurationConcept extends cleon.commo
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectResourcePlanningForSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectResourcePlanningForSystemConfiguration();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningEnvironmentConcept> selectResourcePlanningEnvironmentConcept();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfc55eeb-dfe7-11eb-aeba-a92c9a2e1772,dbzT/kMihgKuQWW7MICEp4dQQW0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfc55eeb-dfe7-11eb-aeba-a92c9a2e1772,ajxxJeNVa1Uk7JAqAw9uIVMeZXo=] */

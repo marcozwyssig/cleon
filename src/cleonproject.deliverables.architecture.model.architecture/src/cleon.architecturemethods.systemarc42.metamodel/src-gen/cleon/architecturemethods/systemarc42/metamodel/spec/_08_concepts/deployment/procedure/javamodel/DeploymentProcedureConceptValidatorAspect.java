@@ -15,7 +15,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.util.log.Logger;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.ProcedurePackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.FunctionSpace_Procedure.IDeploymentProcedureConceptFunctions;
 

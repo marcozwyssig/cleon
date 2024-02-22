@@ -34,7 +34,7 @@ public class FunctionSpace_Activity_Deployment {
   public static interface IActivityPermissionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8b08df13-7f26-11e9-9a52-07d4b074defc")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("cd8a84f5-7f27-11e9-9a52-07d4b074defc")
     public java.lang.Integer PermissionCount();
@@ -403,4 +403,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,CfMTN1uPIpB5GfPJY/vz0coU3aw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,okqckyxG1Rnd5hrZz/gtNGI6hWE=] */

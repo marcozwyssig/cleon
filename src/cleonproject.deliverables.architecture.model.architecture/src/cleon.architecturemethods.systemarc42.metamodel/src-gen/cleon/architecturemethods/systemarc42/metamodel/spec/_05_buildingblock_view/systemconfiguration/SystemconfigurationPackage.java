@@ -4,6 +4,11 @@ import ch.actifsource.core.Resource;
 
 public class SystemconfigurationPackage {
   
+  public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemConfigurationCompositionAware_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemConfigurationDependency = new Resource("4134540e-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfigurationDependency_to = new Resource("41345417-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfiguration_hasDependency = new Resource("886c9874-01d9-11e9-9c9d-8d52d6745026");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WindowsSystemConfiguration = new Resource("bbce4593-021f-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WriteableDomainControllerSystemConfiguration = new Resource("3562b171-0220-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_HypervisorSystemConfiguration = new Resource("0184c8b1-02bb-11e9-9e58-33d596257b14");
@@ -37,13 +42,26 @@ public class SystemconfigurationPackage {
   public static final Resource InterfaceType_INT = new Resource("a08bf345-878f-11e9-a61b-279ebde48b48");
   public static final Resource InterfaceType_MGMT = new Resource("a18ac5aa-878f-11e9-a61b-279ebde48b48");
   public static final Resource InterfaceType_EXT = new Resource("a531ada4-878f-11e9-a61b-279ebde48b48");
+  public static final Resource SystemConfiguration_inheritServices = new Resource("8d65e85b-879a-11e9-bb4b-c57da735262b");
+  public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
+  public static final Resource SystemConfiguration_provides = new Resource("95567bd3-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfiguration_interface = new Resource("f474273d-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface_interfaceInSecuritySubZone = new Resource("0ab04b4e-b372-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface_providesService = new Resource("1c01bc62-b372-11e9-91da-d1f3b9a7fba4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_MailRelaySystemConfiguration = new Resource("80279277-c81b-11e9-ba65-a5b6bc4916e7");
   public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
+  public static final Resource SystemConfigurationCompositionAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
   public static final Resource FunctionSpace_aE_SystemConfiguration_Interface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
+  public static final Resource SystemConfigurationAware = new Resource("a56c2a54-2994-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource Interface_vlan = new Resource("2eea6e8c-8841-11ec-9c31-bf70c9f1a926");
+  public static final Resource SystemConfiguration_allowDNSRecord = new Resource("4f6e6cc7-c7ce-11ec-a59e-d1c88102a398");
+  public static final Resource SystemConfigurationProperty = new Resource("c4bfa256-d5b6-11ec-ad12-8d6f8e00bc94");
+  public static final Resource SystemConfiguration_properties = new Resource("cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94");
+  public static final Resource SystemConfiguration_destinationCommunications = new Resource("9e5574db-5764-11ed-9e7a-7366730de801");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +82,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,2SokHlJjdYKM8i97TdEhQo2RREM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,dYqzyh2jl8NdtebDxLDy1SdQClw=] */

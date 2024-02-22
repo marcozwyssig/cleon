@@ -8,8 +8,8 @@ public interface IDeploymentProcedureExclude extends cleon.common.resources.meta
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectExcludeCmpInInstallationOrder();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectExcludeCmpInInstallationOrder();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f828df38-8036-11ec-a0b4-330278d4f5d1,2sw0a7OkT8vWYajtAY5Eft1oStU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f828df38-8036-11ec-a0b4-330278d4f5d1,XNg1yWM0IvZrb0Rc1GnVFk8CeeI=] */

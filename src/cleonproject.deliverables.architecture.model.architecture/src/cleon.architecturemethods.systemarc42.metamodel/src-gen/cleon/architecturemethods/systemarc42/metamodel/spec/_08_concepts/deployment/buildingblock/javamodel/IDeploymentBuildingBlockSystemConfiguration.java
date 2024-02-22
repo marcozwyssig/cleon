@@ -8,8 +8,8 @@ public interface IDeploymentBuildingBlockSystemConfiguration extends ch.actifsou
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDeployed();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectDeployed();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3d5f83dd-fe50-11ea-abcb-bfad67a56d79,0MWM5x6ROvibim1uTpuJAAnVUlQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3d5f83dd-fe50-11ea-abcb-bfad67a56d79,z3Sdt5IS38yslZaUkgZcqCk/8I8=] */

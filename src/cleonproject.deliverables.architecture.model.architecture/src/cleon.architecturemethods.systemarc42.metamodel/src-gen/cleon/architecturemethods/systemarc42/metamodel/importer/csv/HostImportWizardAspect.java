@@ -16,7 +16,7 @@ import ch.actifsource.ui.wizard.importer.aspect.IGenericImportWizardAspect;
 import ch.actifsource.util.csv.CSVParser;
 import ch.actifsource.util.csv.CSVParser.Row;
 import cleon.architecturemethods.systemarc42.metamodel.spec.FunctionSpace_SystemArc42.ISystemArc42DocumentFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN;

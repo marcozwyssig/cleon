@@ -8,8 +8,8 @@ public interface IAuthZBuildingBlockPropertyPermission extends cleon.architectur
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationProperty selectProperty();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfigurationProperty selectProperty();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ec70497-d5be-11ec-ad12-8d6f8e00bc94,WjgeGlXDr4eHCDN3O3jjLw6NiFo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ec70497-d5be-11ec-ad12-8d6f8e00bc94,Ptq1CExALhKRCS9Hj8H0o4SeadE=] */

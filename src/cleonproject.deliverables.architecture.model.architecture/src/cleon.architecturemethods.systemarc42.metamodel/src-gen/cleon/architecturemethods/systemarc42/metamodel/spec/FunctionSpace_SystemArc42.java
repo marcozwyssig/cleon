@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[1270d567-5d76-11ea-a17e-876aff2eba30,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration;
 /* End Protected Region   [[1270d567-5d76-11ea-a17e-876aff2eba30,imports]] */
 
 public class FunctionSpace_SystemArc42 {
@@ -21,13 +21,13 @@ public class FunctionSpace_SystemArc42 {
   public static interface Iarc42DocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("45c60299-5d76-11ea-a17e-876aff2eba30")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("74fb7141-2f40-11eb-a94a-69eb35614fc8")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllBuildSystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration> AllBuildSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("da0e8af9-95ca-11ea-9744-7dd962dc1878")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d6f12bfe-fd72-11ea-bd30-fd04439335e1")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem> AllSystems();
@@ -61,14 +61,14 @@ public class FunctionSpace_SystemArc42 {
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IIPNetworkConcept Network();
 
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name);
 
   }
   
   public static interface ISystemArc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document);
 
   }
   
@@ -79,7 +79,7 @@ public class FunctionSpace_SystemArc42 {
     private SystemArc42DocumentFunctionsImpl() {}
 
     @Override
-    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document) {
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document) {
       /* Begin Protected Region [[5d3590b9-b20a-11ea-a3a2-e9d3344bee73]] */
     	final Iarc42DocumentFunctions iarc42DocumentFunctions = systemArc42Document.extension(Iarc42DocumentFunctions.class);
     	final List<ISystemConfiguration> systemConfigurations = iarc42DocumentFunctions.AllSystemConfigurations();
@@ -98,7 +98,7 @@ public class FunctionSpace_SystemArc42 {
 
     private SystemArc42DocumentFunctions() {}
 
-    public static cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document) {
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document systemArc42Document) {
       return DynamicResourceUtil.invoke(ISystemArc42DocumentFunctionsImpl.class, SystemArc42DocumentFunctionsImpl.INSTANCE, systemArc42Document).GetSystemConfiguration(name, systemArc42Document);
     }
 
@@ -106,4 +106,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,dgabS6U9tYaj7M6NbpNlvpd1wtw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,9q73o8hIgM7zvaUDnX3HII4si+8=] */

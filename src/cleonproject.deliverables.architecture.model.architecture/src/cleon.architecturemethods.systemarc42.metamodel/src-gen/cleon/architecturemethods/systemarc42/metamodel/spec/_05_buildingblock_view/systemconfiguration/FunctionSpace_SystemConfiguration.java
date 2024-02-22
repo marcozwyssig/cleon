@@ -12,8 +12,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.service
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.SystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.FunctionSpace_Services.IAbstractServiceFunctions;
 import ch.actifsource.core.Resource;

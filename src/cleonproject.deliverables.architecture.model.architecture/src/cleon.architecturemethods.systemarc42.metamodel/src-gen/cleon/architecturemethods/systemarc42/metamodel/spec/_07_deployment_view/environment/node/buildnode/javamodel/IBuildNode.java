@@ -8,7 +8,7 @@ public interface IBuildNode extends cleon.architecturemethods.systemarc42.metamo
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectInstanceOf();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectInstanceOf();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> selectBuildNodes();
   
@@ -22,4 +22,4 @@ public interface IBuildNode extends cleon.architecturemethods.systemarc42.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,9sk3NJQPodLe1YOyy39MvSp3BKg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,zpE4c+GMYATHe1vWqiIiGmSGTcQ=] */

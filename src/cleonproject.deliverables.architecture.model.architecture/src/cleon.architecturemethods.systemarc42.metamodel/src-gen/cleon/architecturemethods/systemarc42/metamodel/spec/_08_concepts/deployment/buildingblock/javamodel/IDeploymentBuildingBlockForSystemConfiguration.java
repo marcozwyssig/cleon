@@ -8,8 +8,8 @@ public interface IDeploymentBuildingBlockForSystemConfiguration extends cleon.co
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDeploymentBuildingBlockForSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectDeploymentBuildingBlockForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0223c676-fe4c-11ea-892b-df291bae18c5,EmDP4HbAaeUGCaodYrXlNjPzNsU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0223c676-fe4c-11ea-892b-df291bae18c5,EkL7Vg7ZbfSklYRlqr7O1BYt6n0=] */

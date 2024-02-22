@@ -91,11 +91,11 @@ public class ResourcePlanningSystemConfigurationConcept extends DynamicResource 
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectResourcePlanningForSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectResourcePlanningForSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration);
   }
 
-  public ResourcePlanningSystemConfigurationConcept setResourcePlanningForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration resourcePlanningForSystemConfiguration) {
+  public ResourcePlanningSystemConfigurationConcept setResourcePlanningForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration resourcePlanningForSystemConfiguration) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration, resourcePlanningForSystemConfiguration);
     return this;
   }
@@ -129,13 +129,13 @@ public class ResourcePlanningSystemConfigurationConcept extends DynamicResource 
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningEnvironmentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningEnvironmentConcept, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningSystemConfigurationConcept> selectToMeResourcePlanningForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningSystemConfigurationConcept> selectToMeResourcePlanningForSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.PlanningPackage.ResourcePlanningSystemConfigurationConcept_resourcePlanningForSystemConfiguration, object.getResource());
   }
   
@@ -144,4 +144,4 @@ public class ResourcePlanningSystemConfigurationConcept extends DynamicResource 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cfc55eeb-dfe7-11eb-aeba-a92c9a2e1772,kQ4OTjHUZXdXYdjc6nQbckm8jV8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cfc55eeb-dfe7-11eb-aeba-a92c9a2e1772,vxZCqw3FdcgHEqPixen+rrtsmlE=] */

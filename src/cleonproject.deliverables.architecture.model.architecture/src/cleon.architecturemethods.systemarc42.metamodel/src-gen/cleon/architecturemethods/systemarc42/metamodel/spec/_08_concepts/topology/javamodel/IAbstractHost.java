@@ -16,7 +16,7 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectInstanceOf();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectInstanceOf();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost selectMonitoringWith();
   
@@ -24,4 +24,4 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,lOWl2K21XS+e4Q3IIYqRcbOLyhc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,d1KydaUYJGK+OX004iF8TpTolG0=] */

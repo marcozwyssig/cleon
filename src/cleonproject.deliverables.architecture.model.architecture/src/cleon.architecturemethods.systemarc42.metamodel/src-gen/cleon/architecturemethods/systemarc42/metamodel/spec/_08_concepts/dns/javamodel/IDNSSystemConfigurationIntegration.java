@@ -10,8 +10,8 @@ public interface IDNSSystemConfigurationIntegration extends ch.actifsource.core.
   
   public java.lang.Boolean selectAllowDNSRecords();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDnsForSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectDnsForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bc16fa5-c7bb-11ec-a6a4-0b12dcfbdf90,jzcesdxWkYuQoqqS/a//DYoOM/Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bc16fa5-c7bb-11ec-a6a4-0b12dcfbdf90,sMAzryI5Fs6xSBYdzoxVexxUXxs=] */

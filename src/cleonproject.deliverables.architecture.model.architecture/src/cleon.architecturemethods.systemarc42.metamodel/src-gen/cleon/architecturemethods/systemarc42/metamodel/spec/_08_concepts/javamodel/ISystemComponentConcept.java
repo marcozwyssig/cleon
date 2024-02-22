@@ -8,8 +8,8 @@ public interface ISystemComponentConcept extends ch.actifsource.core.javamodel.I
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent selectSystemComponent();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemcomponent.javamodel.ISystemComponent selectSystemComponent();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,j/HrD4hNisoKnclkoErcFCd/eNk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,FhsrJmZAuWwbVFHh7DCETZE24J0=] */

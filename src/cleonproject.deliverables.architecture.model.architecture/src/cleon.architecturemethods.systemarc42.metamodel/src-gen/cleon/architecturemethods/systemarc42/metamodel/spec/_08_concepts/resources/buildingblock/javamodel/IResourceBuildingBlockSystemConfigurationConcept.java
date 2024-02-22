@@ -8,7 +8,7 @@ public interface IResourceBuildingBlockSystemConfigurationConcept extends cleon.
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectResourceBuildingBlockForSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration selectResourceBuildingBlockForSystemConfiguration();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.ICore> selectCoreUsage();
   
@@ -18,4 +18,4 @@ public interface IResourceBuildingBlockSystemConfigurationConcept extends cleon.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,QJG2hO9E/p5egDl1jJmVYRo+V9g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,sQgJhS+qFQctiZvu/peVvSZ3LgA=] */

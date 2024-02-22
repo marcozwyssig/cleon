@@ -216,7 +216,7 @@ public class FunctionSpace_Accounts {
   public static interface IServiceAccountEnvironmentSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("061362f5-3951-11eb-93f1-c3f5ad8bb73f")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration> SystemConfigurations();
 
   }
   
@@ -290,4 +290,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,/kYWfvdeGw3Wi7wdaGib9OQgToU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,mWOOARaPFYFSvLnoS8iz7GQ3Uyw=] */

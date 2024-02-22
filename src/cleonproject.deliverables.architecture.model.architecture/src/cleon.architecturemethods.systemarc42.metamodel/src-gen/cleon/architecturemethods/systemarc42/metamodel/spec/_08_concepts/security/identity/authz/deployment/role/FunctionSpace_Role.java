@@ -292,7 +292,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorResponsibility> AllRoleActorResponsibilityInDomain();
 
     @IDynamicResourceExtension.MethodId("4633316d-9043-11ea-8028-45f28a9dbef3")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllRoleSystemComponents();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemcomponent.javamodel.ISystemComponent> AllRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d2a1ec2d-d4b8-11eb-9bf5-6901ef778b9c")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockForSystemComponent> AllRelatedAuthZBuildingBlockForSystemComponent();
@@ -344,4 +344,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,rM199IPbO8xGBYscc7mBsaq6co4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,9aGcvxrPjtVyuFDQAbTFvJ+pAEU=] */

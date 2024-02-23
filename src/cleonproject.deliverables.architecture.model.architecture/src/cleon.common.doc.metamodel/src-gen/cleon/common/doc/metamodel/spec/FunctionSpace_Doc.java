@@ -1,8 +1,6 @@
 package cleon.common.doc.metamodel.spec;
 
 import ch.actifsource.util.Assert;
-import ch.actifsource.util.character.StringUtil;
-
 import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
@@ -130,6 +128,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
     public java.lang.Boolean InASeparateFile();
 
+    @IDynamicResourceExtension.MethodId("9b297769-d24b-11ee-b255-49ab47716ebd")
+    public java.lang.String ChapterPath();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -226,6 +227,31 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface IResourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("570310a9-d24c-11ee-b255-49ab47716ebd")
+    public java.lang.String FileName();
+
+  }
+  
+  public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResourceFunctionsImpl implements IResourceFunctionsImpl {
+
+    public static final IResourceFunctionsImpl INSTANCE = new ResourceFunctionsImpl();
+
+    private ResourceFunctionsImpl() {}
+
+  }
+  
+  public static class ResourceFunctions {
+
+    private ResourceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,fePVWIRGog6B034lAHGQnQ9DHDk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,JYOqglD9AUaJ0kUUybgau2b1lYU=] */

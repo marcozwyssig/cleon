@@ -57,6 +57,9 @@ public class FunctionSpace_Asciidoc_Glossary {
     @IDynamicResourceExtension.MethodId("02cdf937-98ad-11ec-aefb-ab0e6078b7ea")
     public java.lang.String GetIndent();
 
+    @IDynamicResourceExtension.MethodId("1cb80d58-d24e-11ee-b255-49ab47716ebd")
+    public java.lang.String RenderContent_EN();
+
   }
   
   public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -79,4 +82,4 @@ public class FunctionSpace_Asciidoc_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,V/lWA1xzYG2JJXyUJmTJ4jxLmbM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,kB61rtU443SpgnqDuMLuEJqJ85U=] */

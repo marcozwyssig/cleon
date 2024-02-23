@@ -21,6 +21,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Doc_AbstractChapter = new Resource("284bd834-53fa-11ea-93a1-15e540ad9e0c");
   public static final Resource FunctionSpace_aE_Doc_Text = new Resource("52a30ce0-dcb5-11ea-b5f8-77c3980a1d0a");
   public static final Resource FunctionSpace_aE_Doc_NamedDocument = new Resource("009d695e-c040-11ee-a353-4bf80e47b5e4");
+  public static final Resource FunctionSpace_aE_Doc_Resource = new Resource("51808b2e-d24c-11ee-b255-49ab47716ebd");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +42,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec,+IZ8NH+WI3xY/RNFGB3nPIbynPc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec,afa2uqviI+7WZ8Tvi8fPc5qkF7A=] */

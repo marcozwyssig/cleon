@@ -31,6 +31,15 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.lang.String selectCurrentLanguageCode() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
   }
@@ -201,6 +210,7 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
@@ -225,4 +235,4 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,iNl5vqliX+uGmPc/LwfvoLqZsNA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,5NNu1s9o9hI0V4aHdt57gkJpRc4=] */

@@ -1,6 +1,8 @@
 package cleon.common.doc.metamodel.spec;
 
 import ch.actifsource.util.Assert;
+import ch.actifsource.util.character.StringUtil;
+
 import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
@@ -125,12 +127,18 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderStandardDescription();
 
+    @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
+    public java.lang.Boolean InASeparateFile();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderStandardDescription(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+    @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
+    public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
@@ -145,6 +153,13 @@ public class FunctionSpace_Doc {
       return null;
     }
 
+    @Override
+    public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      /* Begin Protected Region [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
+       return abstractChapter.selectChapterPath() != null;
+      /* End Protected Region   [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
+    }
+
   }
   
   public static class AbstractChapterFunctions {
@@ -153,6 +168,10 @@ public class FunctionSpace_Doc {
 
     public static java.lang.String RenderStandardDescription(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderStandardDescription(abstractChapter);
+    }
+
+    public static java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).InASeparateFile(abstractChapter);
     }
 
   }
@@ -209,4 +228,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,WTRpIYtTo5Am5dK2KCefl7XF5/0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,fePVWIRGog6B034lAHGQnQ9DHDk=] */

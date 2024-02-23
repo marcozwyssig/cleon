@@ -31,6 +31,15 @@ public class GettingStarted extends DynamicResource implements IGettingStarted {
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -94,6 +103,7 @@ public class GettingStarted extends DynamicResource implements IGettingStarted {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -103,4 +113,4 @@ public class GettingStarted extends DynamicResource implements IGettingStarted {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,e5O4D6v0SlLQMEgeuUv983W2wdo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,DSE5niJbiCsJXgxdPPpRC1gPpi0=] */

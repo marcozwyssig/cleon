@@ -31,6 +31,15 @@ public class Integrity extends DynamicResource implements IIntegrity {
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -94,6 +103,7 @@ public class Integrity extends DynamicResource implements IIntegrity {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -103,4 +113,4 @@ public class Integrity extends DynamicResource implements IIntegrity {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afdbf036-7ed2-11ea-9262-7b7e0e9cb204,ax3WHdw5P9D6u+vu01OOMceQWIw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afdbf036-7ed2-11ea-9262-7b7e0e9cb204,Gx8fQzpRzxXqI8S2Edm0Hq+ZAD8=] */

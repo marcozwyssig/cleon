@@ -31,6 +31,15 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -104,6 +113,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -113,4 +123,4 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,dzCtq3El7o+VcOAWO23zZbKPBY4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,XV0sUDpkhZ5Pt7ct5Z6Bc0/GLKQ=] */

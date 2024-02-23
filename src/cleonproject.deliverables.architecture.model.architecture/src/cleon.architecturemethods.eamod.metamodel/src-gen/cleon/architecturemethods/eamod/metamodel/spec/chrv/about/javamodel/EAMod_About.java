@@ -31,6 +31,15 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -174,6 +183,7 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -196,4 +206,4 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,rZEfOFTcOn6ZLfoPXlxQxVY0h2s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,Qen6xooJ3cOe6IMXv66u9LoF9YA=] */

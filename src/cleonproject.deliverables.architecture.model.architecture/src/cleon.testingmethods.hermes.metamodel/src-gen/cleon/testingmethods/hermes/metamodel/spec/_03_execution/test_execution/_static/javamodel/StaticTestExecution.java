@@ -31,6 +31,15 @@ public class StaticTestExecution extends DynamicResource implements IStaticTestE
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -114,6 +123,7 @@ public class StaticTestExecution extends DynamicResource implements IStaticTestE
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -130,4 +140,4 @@ public class StaticTestExecution extends DynamicResource implements IStaticTestE
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a969a6c-20d7-11e6-9368-9172b77c2cff,kuLFPoK/IqwYnCYakphqU1RO3Gk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a969a6c-20d7-11e6-9368-9172b77c2cff,lB+Zig/6y/y3vMp6+fZYTtNd7cI=] */

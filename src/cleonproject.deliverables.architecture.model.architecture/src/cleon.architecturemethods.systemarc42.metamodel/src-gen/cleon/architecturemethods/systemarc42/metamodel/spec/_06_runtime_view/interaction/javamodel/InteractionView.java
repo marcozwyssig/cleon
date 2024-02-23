@@ -31,6 +31,15 @@ public class InteractionView extends DynamicResource implements IInteractionView
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -104,6 +113,7 @@ public class InteractionView extends DynamicResource implements IInteractionView
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -119,4 +129,4 @@ public class InteractionView extends DynamicResource implements IInteractionView
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,KcbxKAMl6ULJ+9WfXpKfmfGtHTM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,XJevmKpk2wVFO9Htec2jzuPwgWI=] */

@@ -31,6 +31,15 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -134,6 +143,7 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -164,4 +174,4 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,6QVM00C5JePKrmwLytcYUzFo8Ps=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,9J83gvIFYcHNr0JxVGD/KuSiodQ=] */

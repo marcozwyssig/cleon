@@ -31,6 +31,15 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.lang.String selectCurrentLanguageCode() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
   }
@@ -350,6 +359,7 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
@@ -383,4 +393,4 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,dmm1r66dGTgLzHzdfFWXIIgjN6A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,f6vKZBwLbwFrmC9ux3y+sQONq0s=] */

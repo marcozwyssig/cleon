@@ -31,6 +31,15 @@ public class FallbackConcept extends DynamicResource implements IFallbackConcept
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -94,6 +103,7 @@ public class FallbackConcept extends DynamicResource implements IFallbackConcept
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -103,4 +113,4 @@ public class FallbackConcept extends DynamicResource implements IFallbackConcept
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,804f82c0-00e4-11eb-89a7-8344c130228c,huViJ95LV6K+LTg9FnH7H7ji2xs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,804f82c0-00e4-11eb-89a7-8344c130228c,Z05vSvq1d6rGSktbVdrD04FHAdA=] */

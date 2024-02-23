@@ -479,6 +479,11 @@
             <resource statement-guid="6a280f9e-d57d-11ea-9bae-37ef2cb951a8" type="resource" guid="6a27e88b-d57d-11ea-9bae-37ef2cb951a8" />
           </owns>
         </resource>
+        <resource statement-guid="3820cad5-d24a-11ee-b255-49ab47716ebd" type="resource" guid="38207cb1-d24a-11ee-b255-49ab47716ebd">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="7f45af20-d24a-11ee-b255-49ab47716ebd" type="resource" guid="60347fb9-d24a-11ee-b255-49ab47716ebd" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="52a333f3-dcb5-11ea-b5f8-77c3980a1d0a" type="resource" guid="52a30ce0-dcb5-11ea-b5f8-77c3980a1d0a">
@@ -2081,6 +2086,31 @@
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
                 <object statement-guid="6ca544dc-d57d-11ea-9bae-37ef2cb951a8" type="literal">return null;</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3820cad5-d24a-11ee-b255-49ab47716ebd">
+            <resource guid="38207cb1-d24a-11ee-b255-49ab47716ebd">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="77e0d44f-d24a-11ee-b255-49ab47716ebd" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="470051c0-d24a-11ee-b255-49ab47716ebd" type="literal">InASeparateFile</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="7f45af20-d24a-11ee-b255-49ab47716ebd">
+                  <resource guid="60347fb9-d24a-11ee-b255-49ab47716ebd">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="6034a6cb-d24a-11ee-b255-49ab47716ebd" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="60f7a7d5-d24a-11ee-b255-49ab47716ebd" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="3820cad4-d24a-11ee-b255-49ab47716ebd" type="literal">true</object>
               </predicate>
             </resource>
           </object>

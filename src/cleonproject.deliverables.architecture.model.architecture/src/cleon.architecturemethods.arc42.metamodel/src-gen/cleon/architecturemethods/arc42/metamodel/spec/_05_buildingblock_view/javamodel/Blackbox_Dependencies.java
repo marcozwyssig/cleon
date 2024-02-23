@@ -31,6 +31,15 @@ public class Blackbox_Dependencies extends DynamicResource implements IBlackbox_
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -104,6 +113,7 @@ public class Blackbox_Dependencies extends DynamicResource implements IBlackbox_
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -112,4 +122,4 @@ public class Blackbox_Dependencies extends DynamicResource implements IBlackbox_
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22633574-0df0-11e9-a28e-8b950dcca323,1D3G4pVG6m3/tTXiKGC7Smbrn54=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22633574-0df0-11e9-a28e-8b950dcca323,ob2zn2aYbM6O7x+N5Xn90seS5So=] */

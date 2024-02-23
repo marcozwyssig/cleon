@@ -31,6 +31,15 @@ public class NonFunctionalDynamicTest extends DynamicResource implements INonFun
   // attributes
   
   @Override
+  public java.lang.String selectChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+  }
+    
+  public void setChapterPath(java.lang.String chapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -218,6 +227,7 @@ public class NonFunctionalDynamicTest extends DynamicResource implements INonFun
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_executionTime_aE__aA_m_aC_, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_externalReferenceId, visitor);
@@ -236,4 +246,4 @@ public class NonFunctionalDynamicTest extends DynamicResource implements INonFun
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e68767f9-4f8c-11e9-ad5d-977b17aab907,GM0WlGxozN7seTdr7OKDQ91j+ew=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e68767f9-4f8c-11e9-ad5d-977b17aab907,y3mXPW4r2nkW/Uy4pXc85DwWgJ8=] */

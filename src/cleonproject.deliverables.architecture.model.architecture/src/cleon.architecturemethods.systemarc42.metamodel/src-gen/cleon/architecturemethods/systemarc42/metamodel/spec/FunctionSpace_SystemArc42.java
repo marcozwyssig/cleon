@@ -26,6 +26,9 @@ public class FunctionSpace_SystemArc42 {
     @IDynamicResourceExtension.MethodId("74fb7141-2f40-11eb-a94a-69eb35614fc8")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.ISystemConfiguration> AllBuildSystemConfigurations();
 
+    @IDynamicResourceExtension.MethodId("032975f9-d21c-11ee-9471-713ee8ae5987")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemcomponent.javamodel.ISystemComponent> AllBuildSystemComponents();
+
     @IDynamicResourceExtension.MethodId("da0e8af9-95ca-11ea-9744-7dd962dc1878")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
@@ -106,4 +109,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,9q73o8hIgM7zvaUDnX3HII4si+8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,/1d4/8Cf+ya9daJ64MMBHYuVQtg=] */

@@ -23,6 +23,9 @@ public class FunctionSpace_Asciidoc_Glossary {
     @IDynamicResourceExtension.MethodId("97c78af6-4f0b-11e6-9af7-359fc86da633")
     public java.lang.String RenderGlossary();
 
+    @IDynamicResourceExtension.MethodId("40921bc6-d239-11ee-b255-49ab47716ebd")
+    public java.lang.String RenderGlossary_EN();
+
   }
   
   public static interface IGlossaryAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -47,6 +50,9 @@ public class FunctionSpace_Asciidoc_Glossary {
 
     @IDynamicResourceExtension.MethodId("42df1433-0de0-11e6-a33d-238391a68770")
     public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("5102f098-d239-11ee-b255-49ab47716ebd")
+    public java.lang.String RenderContentElement_EN();
 
     @IDynamicResourceExtension.MethodId("02cdf937-98ad-11ec-aefb-ab0e6078b7ea")
     public java.lang.String GetIndent();
@@ -73,4 +79,4 @@ public class FunctionSpace_Asciidoc_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,q3QrBHgDnmTsjFPzOOEsZgwqDIU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,V/lWA1xzYG2JJXyUJmTJ4jxLmbM=] */

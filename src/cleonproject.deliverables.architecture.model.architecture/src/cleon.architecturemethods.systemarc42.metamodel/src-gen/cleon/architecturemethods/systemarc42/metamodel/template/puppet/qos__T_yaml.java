@@ -107,7 +107,7 @@ public class qos__T_yaml {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept> OnlyWithOperationSystem(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept> qoSSystemConfigurationConceptList) {
       /* Begin Protected Region [[d111661f-528c-11ec-9fcc-f3bdcf3059b2]] */
-    	return qoSSystemConfigurationConceptList.stream().filter(x -> x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).DependsOnLinux() || x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).DependsOnWindows() ).collect(Collectors.toList());  
+    	return qoSSystemConfigurationConceptList.stream().filter(x -> x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).IsDependsOnLinux() || x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).IsDependsOnWindows() ).collect(Collectors.toList());  
       /* End Protected Region   [[d111661f-528c-11ec-9fcc-f3bdcf3059b2]] */
     }
 

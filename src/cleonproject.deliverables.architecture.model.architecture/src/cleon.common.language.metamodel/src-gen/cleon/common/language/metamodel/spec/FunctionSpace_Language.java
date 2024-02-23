@@ -55,12 +55,18 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("a441e094-f382-11ea-9268-b5c52a12d7f9")
     public java.lang.String de();
 
+    @IDynamicResourceExtension.MethodId("3ca8bf73-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String en();
+
   }
   
   public static interface IMultilingualDescriptionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a441e094-f382-11ea-9268-b5c52a12d7f9")
     public java.lang.String de(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription);
+
+    @IDynamicResourceExtension.MethodId("3ca8bf73-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String en(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription);
 
   }
   
@@ -81,6 +87,17 @@ public class FunctionSpace_Language {
       /* End Protected Region   [[a441e094-f382-11ea-9268-b5c52a12d7f9]] */
     }
 
+    @Override
+    public java.lang.String en(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription) {
+      /* Begin Protected Region [[3ca8bf73-d22c-11ee-b255-49ab47716ebd]] */
+      if( multilingualDescription.selectTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
+      	final var description = multilingualDescription.selectTranslation().get(InstancesModel.en__F___S___F_English);
+      	return String.join("\n", description.selectDescriptions());
+      }
+      return null; 
+      /* End Protected Region   [[3ca8bf73-d22c-11ee-b255-49ab47716ebd]] */
+    }
+
   }
   
   public static class MultilingualDescriptionFunctions {
@@ -89,6 +106,74 @@ public class FunctionSpace_Language {
 
     public static java.lang.String de(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription) {
       return DynamicResourceUtil.invoke(IMultilingualDescriptionFunctionsImpl.class, MultilingualDescriptionFunctionsImpl.INSTANCE, multilingualDescription).de(multilingualDescription);
+    }
+
+    public static java.lang.String en(final cleon.common.language.metamodel.spec.description.javamodel.IMultilingualDescription multilingualDescription) {
+      return DynamicResourceUtil.invoke(IMultilingualDescriptionFunctionsImpl.class, MultilingualDescriptionFunctionsImpl.INSTANCE, multilingualDescription).en(multilingualDescription);
+    }
+
+  }
+
+  public static interface IMultilingualNameFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("47e137a4-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String de();
+
+    @IDynamicResourceExtension.MethodId("47e137a6-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String en();
+
+  }
+  
+  public static interface IMultilingualNameFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("47e137a4-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String de(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName);
+
+    @IDynamicResourceExtension.MethodId("47e137a6-d22c-11ee-b255-49ab47716ebd")
+    public java.lang.String en(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName);
+
+  }
+  
+  public static class MultilingualNameFunctionsImpl implements IMultilingualNameFunctionsImpl {
+
+    public static final IMultilingualNameFunctionsImpl INSTANCE = new MultilingualNameFunctionsImpl();
+
+    private MultilingualNameFunctionsImpl() {}
+
+    @Override
+    public java.lang.String de(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName) {
+      /* Begin Protected Region [[47e137a4-d22c-11ee-b255-49ab47716ebd]] */
+        if( multilingualName.selectTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
+          	final var name = multilingualName.selectTranslation().get(InstancesModel.de__F___S___F_German);
+          	return String.join("\n", name.selectName());
+          }  
+        return null; 
+      /* End Protected Region   [[47e137a4-d22c-11ee-b255-49ab47716ebd]] */
+    }
+
+    @Override
+    public java.lang.String en(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName) {
+      /* Begin Protected Region [[47e137a6-d22c-11ee-b255-49ab47716ebd]] */
+        if( multilingualName.selectTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
+          	final var name = multilingualName.selectTranslation().get(InstancesModel.en__F___S___F_English);
+          	return String.join("\n", name.selectName());
+          }  
+        return null;
+      /* End Protected Region   [[47e137a6-d22c-11ee-b255-49ab47716ebd]] */
+    }
+
+  }
+  
+  public static class MultilingualNameFunctions {
+
+    private MultilingualNameFunctions() {}
+
+    public static java.lang.String de(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName) {
+      return DynamicResourceUtil.invoke(IMultilingualNameFunctionsImpl.class, MultilingualNameFunctionsImpl.INSTANCE, multilingualName).de(multilingualName);
+    }
+
+    public static java.lang.String en(final cleon.common.language.metamodel.spec.name.javamodel.IMultilingualName multilingualName) {
+      return DynamicResourceUtil.invoke(IMultilingualNameFunctionsImpl.class, MultilingualNameFunctionsImpl.INSTANCE, multilingualName).en(multilingualName);
     }
 
   }
@@ -258,4 +343,4 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,v48uvP8dYDgnGs5aoJnBslae4kw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,4HvWDTAJGeqPxDtKLaFLmn5gcUw=] */

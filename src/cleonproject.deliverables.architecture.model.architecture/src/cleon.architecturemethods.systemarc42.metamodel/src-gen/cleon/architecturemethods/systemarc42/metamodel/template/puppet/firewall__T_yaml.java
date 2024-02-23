@@ -76,7 +76,7 @@ public class firewall__T_yaml {
       /* Begin Protected Region [[4a15ac8e-0674-11ec-b623-f16d27d7978c]] */
     	return destinationList.stream().filter(x -> {
     		var functions = x.selectDestinationSystemConfiguration().extension(ISystemConfigurationFunctions.class);
-    		return functions.DependsOnLinux();
+    		return functions.IsDependsOnLinux();
     	}).collect(Collectors.toList());
   
       /* End Protected Region   [[4a15ac8e-0674-11ec-b623-f16d27d7978c]] */

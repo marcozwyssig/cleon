@@ -53,7 +53,7 @@ public class ad_aE_DNS__T_yaml {
       		continue;
       	}
       	final var node = hostNode.selectHost();
-      	if( ((node instanceof INumberedHost) || (node instanceof INamedHost)) && node.selectInstanceOf().extension(ISystemConfigurationFunctions.class).DependsOnWindows()) {
+      	if( ((node instanceof INumberedHost) || (node instanceof INamedHost)) && node.selectInstanceOf().extension(ISystemConfigurationFunctions.class).IsDependsOnWindows()) {
       		continue;
       	}
       	validNodes.add(hostNode);

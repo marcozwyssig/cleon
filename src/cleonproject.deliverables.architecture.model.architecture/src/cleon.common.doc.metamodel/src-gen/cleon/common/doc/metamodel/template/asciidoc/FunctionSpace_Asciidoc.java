@@ -61,12 +61,18 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("036777ee-2806-11ec-988b-e1826086c18c")
     public java.lang.String RenderReference();
 
+    @IDynamicResourceExtension.MethodId("f5c4a168-d243-11ee-b255-49ab47716ebd")
+    public java.lang.String GetChapterPath();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1bb83b01-d580-11ea-9bae-37ef2cb951a8")
     public java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+    @IDynamicResourceExtension.MethodId("f5c4a168-d243-11ee-b255-49ab47716ebd")
+    public java.lang.String GetChapterPath(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
@@ -81,6 +87,11 @@ public class FunctionSpace_Asciidoc {
       return null;
     }
 
+    @Override
+    public java.lang.String GetChapterPath(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return null;
+    }
+
   }
   
   public static class AbstractChapterFunctions {
@@ -89,6 +100,10 @@ public class FunctionSpace_Asciidoc {
 
     public static java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderContentElement(abstractChapter);
+    }
+
+    public static java.lang.String GetChapterPath(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).GetChapterPath(abstractChapter);
     }
 
   }
@@ -794,4 +809,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,qq3xVuiRYXJntSFcQq933ZM52E4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,bsNlZ1dUcDEI9R7kiEtU6uZT88M=] */

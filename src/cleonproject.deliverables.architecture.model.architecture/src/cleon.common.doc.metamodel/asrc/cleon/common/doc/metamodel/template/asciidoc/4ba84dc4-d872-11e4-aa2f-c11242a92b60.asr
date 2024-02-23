@@ -458,6 +458,11 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="0695be90-d244-11ee-b255-49ab47716ebd" type="resource" guid="f5c4a168-d243-11ee-b255-49ab47716ebd">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="09ccf4f6-d244-11ee-b255-49ab47716ebd" type="resource" guid="09cccde3-d244-11ee-b255-49ab47716ebd" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="8e946a39-d872-11e4-aa2f-c11242a92b60" type="resource" guid="8e93cdf6-d872-11e4-aa2f-c11242a92b60">
@@ -4464,6 +4469,34 @@
                     </predicate>
                   </resource>
                 </object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="0695be90-d244-11ee-b255-49ab47716ebd">
+            <resource guid="f5c4a168-d243-11ee-b255-49ab47716ebd">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f5c4c87a-d243-11ee-b255-49ab47716ebd" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f68f925e-d243-11ee-b255-49ab47716ebd" type="literal">GetChapterPath</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="09ccf4f6-d244-11ee-b255-49ab47716ebd">
+                  <resource guid="09cccde3-d244-11ee-b255-49ab47716ebd">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="09cccde5-d244-11ee-b255-49ab47716ebd" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="0a119f4a-d244-11ee-b255-49ab47716ebd" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="f5c4ef8b-d243-11ee-b255-49ab47716ebd" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="0c43e85b-d244-11ee-b255-49ab47716ebd" type="literal">return null;</object>
               </predicate>
             </resource>
           </object>

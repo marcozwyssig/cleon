@@ -338,6 +338,9 @@ public class FunctionSpace_arc42_Docbook {
     @IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("c719d575-d60a-11ee-bd6b-33f9fa76fac6")
+    public java.lang.String RenderReference();
+
   }
   
   public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -660,4 +663,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,+VLSqLLuLJojDRZ+xk7jxBeyBUg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,tRqVOTn4pBScrbSeJmdog1nWV0Y=] */

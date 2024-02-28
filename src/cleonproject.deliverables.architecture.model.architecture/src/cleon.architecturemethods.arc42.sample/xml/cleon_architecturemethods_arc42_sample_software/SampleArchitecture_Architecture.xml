@@ -8,7 +8,50 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.63136381-436d-11e6-a9d7-97cf4f7c398b">
 		<db:title>Bausteinsicht</db:title>
-		
+		<db:section xml:id="ea.4c05785e-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:title>
+			<db:para>ddfdf</db:para>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MySampleSoftware in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_software/BuildingBlockOverviewDiagram_Ebene_1__MySampleSoftware__SoftwareSystem___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MySampleSoftware tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>MyComponent []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.4c3402de-d579-11ee-903e-9f564e4de07e">
+				<db:title>MyComponent &lt;NamedComponent&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins MyComponent beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.4c58c842-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 2: MyComponent &lt;NamedComponent&gt; (Whitebox)</db:title>
+			
+		</db:section>
 	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,c9d5ac2b-3f61-11e6-a833-6352f3897082,Hash] -->

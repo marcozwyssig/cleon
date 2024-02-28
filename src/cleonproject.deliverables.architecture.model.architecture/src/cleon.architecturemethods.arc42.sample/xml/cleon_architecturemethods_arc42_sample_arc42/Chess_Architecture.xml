@@ -321,7 +321,7 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+								<db:para>Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
 							</db:td>
 							<db:td>
 								<db:para>purpose...</db:para>
@@ -329,7 +329,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+								<db:para>Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6a82cd52-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
 							</db:td>
 							<db:td>
 								<db:para>purpose...</db:para>
@@ -337,7 +337,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Test3 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af9f7205-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+								<db:para>Test3 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.7516799a-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
 							</db:td>
 							<db:td>
 								<db:para>purpose...</db:para>
@@ -364,7 +364,7 @@
 						<db:tbody>			
 							<db:tr>
 								<db:td>
-									<db:para>Von Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1"/>] zu Test1</db:para>
+									<db:para>Von Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6a82cd52-0df0-11e9-a28e-8b950dcca323"/>] zu Test1</db:para>
 								</db:td>
 								<db:td>
 									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
@@ -402,7 +402,7 @@
 						<db:tbody>			
 							<db:tr>
 								<db:td>
-									<db:para>Von Test2 zu Test1_2_1 </db:para>
+									<db:para>Von Test2 zu Test1_2_1 [] </db:para>
 								</db:td>
 								<db:td>
 									<db:para>Der Test2 Baustein ist abhängig vom Test1_2_1 Baustein.</db:para>
@@ -410,7 +410,7 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>Von Test2 zu Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1"/>] </db:para>
+									<db:para>Von Test2 zu Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323"/>] </db:para>
 								</db:td>
 								<db:td>
 									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
@@ -438,6 +438,215 @@
 					<db:para>Der Baustein Test3 erfüllt keine expliziten Anforderungen. Bei Bausteinen, welche durch die Dekomposition weitere Sub-Bausteine umfassen, werden die entsprechenden formellen Anforderungen durch die Sub-Bausteine erfüllt.</db:para>
 				</db:section>
 			</db:section>
+		</db:section>
+		<db:section xml:id="ea.48213901-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:para>dfasdfasdfasdf</db:para>
+			<db:para>sdfgsdfgsdfg</db:para>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1 in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_2__Test1__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.4833138a-d579-11ee-903e-9f564e4de07e">
+				<db:title>Test1_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2 beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.48213902-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test2 in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_2__Test2__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test2 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test2_2 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.48400c07-d579-11ee-903e-9f564e4de07e">
+				<db:title>Test2_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2_2 beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.48213903-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test3 in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_2__Test3__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test3 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test3_1 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.48386ac7-d579-11ee-903e-9f564e4de07e">
+				<db:title>Test3_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3_1 beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.489cd282-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2 in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_3__Test1_2__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.48ddd2cc-d579-11ee-903e-9f564e4de07e">
+				<db:title>Test1_2_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1 beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.489cd283-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 3: Test2_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.489cd281-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 3: Test3_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.4965ee24-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2_1 in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_4__Test1_2_1__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2_1 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1_1 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.4a666efd-d579-11ee-903e-9f564e4de07e">
+				<db:title>Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1_1 beschrieben.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.7f52b647-d579-11ee-903e-9f564e4de07e">
+			<db:title>Ebene 5: Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.86e7e102-31f5-11e5-bd99-eda9ce254b0b">
@@ -612,10 +821,10 @@
 						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
-									<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt; </db:para>
+									<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt; []</db:para>
 								</db:listitem>
 								<db:listitem>
-									<db:para>Test1_2 &lt;SampleBuildingBlock&gt; </db:para>
+									<db:para>Test1_2 &lt;SampleBuildingBlock&gt; []</db:para>
 								</db:listitem>
 							</db:itemizedlist>
 						</db:td>			

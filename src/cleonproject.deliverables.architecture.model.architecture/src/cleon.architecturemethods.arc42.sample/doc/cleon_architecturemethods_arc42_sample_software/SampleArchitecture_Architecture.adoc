@@ -12,30 +12,9 @@ In diesem Kapitel wird der Kontext betrachteten Systems (MySampleSoftware) aufge
 
 // End Protected Region   [[d60666fd-3f61-11e6-a833-6352f3897082,customText]]
 
-[#63136381-436d-11e6-a9d7-97cf4f7c398b]
-== Bausteinsicht
-// Begin Protected Region [[63136381-436d-11e6-a9d7-97cf4f7c398b,customText]]
-
-// End Protected Region   [[63136381-436d-11e6-a9d7-97cf4f7c398b,customText]]
-
-[#4c05785e-d579-11ee-903e-9f564e4de07e]
-=== Ebene 1: MySampleSoftware <SoftwareSystem> (Whitebox)
-// Begin Protected Region [[4c05785e-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4c05785e-d579-11ee-903e-9f564e4de07e,customText]]
-
-[#4c3402de-d579-11ee-903e-9f564e4de07e]
-==== MyComponent <NamedComponent> (Blackbox)
-// Begin Protected Region [[4c3402de-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4c3402de-d579-11ee-903e-9f564e4de07e,customText]]
-
-[#4c58c842-d579-11ee-903e-9f564e4de07e]
-=== Ebene 2: MyComponent <NamedComponent> (Whitebox)
-// Begin Protected Region [[4c58c842-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4c58c842-d579-11ee-903e-9f564e4de07e,customText]]
-
+<<<
+include::buildingblockview/bausteinsicht.adoc[]
+ 
 
 
 // Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,c9d5ac2b-3f61-11e6-a833-6352f3897082,Hash]

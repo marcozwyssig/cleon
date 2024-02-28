@@ -14,7 +14,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 public class FunctionSpace_Doc {
 
   /* Begin Protected Region [[cc8dc39e-084c-11e9-9ee8-c54fda7ab431]] */
-  
+
   /* End Protected Region   [[cc8dc39e-084c-11e9-9ee8-c54fda7ab431]] */
 
 
@@ -131,6 +131,12 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("9b297769-d24b-11ee-b255-49ab47716ebd")
     public java.lang.String ChapterPath();
 
+    @IDynamicResourceExtension.MethodId("9533b8ea-d64b-11ee-8014-c150876d6b6e")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> OnlyWithChapterPath();
+
+    @IDynamicResourceExtension.MethodId("9d0e1eb8-d650-11ee-8014-c150876d6b6e")
+    public java.lang.String FullChapterPath();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -140,6 +146,9 @@ public class FunctionSpace_Doc {
 
     @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
     public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+    @IDynamicResourceExtension.MethodId("9533b8ea-d64b-11ee-8014-c150876d6b6e")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> OnlyWithChapterPath(final List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> abstractChapterList);
 
   }
   
@@ -157,8 +166,15 @@ public class FunctionSpace_Doc {
     @Override
     public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       /* Begin Protected Region [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
-       return abstractChapter.selectChapterPath() != null;
+      return abstractChapter.extension(IAbstractChapterFunctions.class).ChapterPath() != null;
       /* End Protected Region   [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
+    }
+
+    @Override
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> OnlyWithChapterPath(final List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> abstractChapterList) {
+      /* Begin Protected Region [[9533b8ea-d64b-11ee-8014-c150876d6b6e]] */
+      return abstractChapterList.stream().filter(x -> x.extension(IAbstractChapterFunctions.class).ChapterPath() != null).toList();
+      /* End Protected Region   [[9533b8ea-d64b-11ee-8014-c150876d6b6e]] */
     }
 
   }
@@ -173,6 +189,10 @@ public class FunctionSpace_Doc {
 
     public static java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).InASeparateFile(abstractChapter);
+    }
+
+    public static List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> OnlyWithChapterPath(final List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> abstractChapterList) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapterList).OnlyWithChapterPath(abstractChapterList);
     }
 
   }
@@ -254,4 +274,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,JYOqglD9AUaJ0kUUybgau2b1lYU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,6jMtgGkdJk+YuvR2NyHGZCeIxiQ=] */

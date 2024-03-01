@@ -51,6 +51,16 @@ public class Package extends DynamicResource implements IPackage {
     return this;
   }
     
+  @Override
+  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> selectUsedIn() {
+    return _getList(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.Package_usedIn);
+  }
+
+  public Package setUsedIn(java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> usedIn) {
+    _setList(cleon.applications.actifsource.metamodel.spec.system.SystemPackage.Package_usedIn, usedIn);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -58,7 +68,14 @@ public class Package extends DynamicResource implements IPackage {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.Package_usedIn, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> selectToMeUsedIn(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage object) {
+    return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.Package_usedIn, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5ebf28c6-46d0-11eb-b318-ab9601344039,/pxCDPIslXxxEUdoqG8w2GDGCS0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5ebf28c6-46d0-11eb-b318-ab9601344039,KjA12vw4i4svYlvLWaGa9T08MZ4=] */

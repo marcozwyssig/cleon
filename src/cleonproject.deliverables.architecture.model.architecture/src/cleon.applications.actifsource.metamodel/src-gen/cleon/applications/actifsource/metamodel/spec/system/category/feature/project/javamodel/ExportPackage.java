@@ -93,9 +93,9 @@ public class ExportPackage extends DynamicResource implements IExportPackage {
 
   // toMeRelations
   
-  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> selectToMePackage(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage object) {
-    return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package, object.getResource());
+  public static cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage selectToMePackage(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,JKmzLR5c9Nr+12VG9xje39tiL7U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,PlNjitUPJ8MRtUAJromDmwaN3ts=] */

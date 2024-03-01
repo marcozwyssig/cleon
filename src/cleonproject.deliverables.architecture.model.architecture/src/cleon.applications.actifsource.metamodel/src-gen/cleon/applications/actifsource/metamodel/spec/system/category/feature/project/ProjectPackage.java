@@ -32,7 +32,7 @@ public class ProjectPackage {
   public static final Resource FunctionSpace_aE_Project_Sample = new Resource("7bd82120-2637-11ea-8c59-871562e3b5c4");
   public static final Resource NamedMetaModel = new Resource("1e7fabc7-2703-11ea-8c59-871562e3b5c4");
   public static final Resource FunctionSpace_aE_Project_NamedMetaModel = new Resource("56140877-2703-11ea-8c59-871562e3b5c4");
-  public static final Resource ExportPackage_package = new Resource("7c8975f7-491b-11eb-9bd7-6114c4f17e0c");
+  public static final Resource ExportPackage_exportPackage = new Resource("7c8975f7-491b-11eb-9bd7-6114c4f17e0c");
   public static final Resource ExportPackage_isExport = new Resource("ef0abea4-491d-11eb-9bd7-6114c4f17e0c");
   public static final Resource ExportPackage_withJavaModel = new Resource("1c3f29cd-491e-11eb-9bd7-6114c4f17e0c");
   
@@ -55,4 +55,4 @@ public class ProjectPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,u0ZI8Z5G3OHRDuvFs35eyGWrCN8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,AKrzf1s6xl8ZrXI6FPyWd4Q6LDE=] */

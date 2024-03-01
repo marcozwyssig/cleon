@@ -12,8 +12,8 @@ public interface IExportPackage extends ch.actifsource.core.javamodel.IDecorator
   
   // relations
   
-  public cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage selectPackage();
+  public cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage selectExportPackage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,XtEH927LMjk2WiiFBc1uWYK2e70=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,Pbl/GTnqMTSKOtjFJpBI7bb0/vM=] */

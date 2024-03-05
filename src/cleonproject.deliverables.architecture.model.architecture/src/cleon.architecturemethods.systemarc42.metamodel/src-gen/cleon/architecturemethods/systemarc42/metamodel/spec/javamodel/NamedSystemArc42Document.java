@@ -156,72 +156,72 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_7_aE_deploymentview() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_deploymentview);
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview);
   }
 
-  public NamedSystemArc42Document set__V_7_aE_deploymentview(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView __V_7_aE_deploymentview) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_deploymentview, __V_7_aE_deploymentview);
+  public NamedSystemArc42Document set__V_8_aE_deploymentview(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView __V_8_aE_deploymentview) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview, __V_8_aE_deploymentview);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts select__V_8_aE_concepts() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_concepts);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts select__V_9_aE_concepts() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts);
   }
 
-  public NamedSystemArc42Document set__V_8_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts __V_8_aE_concepts) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_concepts, __V_8_aE_concepts);
+  public NamedSystemArc42Document set__V_9_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts __V_9_aE_concepts) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, __V_9_aE_concepts);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision select__V_9_aE_designdecision() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_designdecision);
+  public cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision);
   }
 
-  public NamedSystemArc42Document set__V_9_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision __V_9_aE_designdecision) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_designdecision, __V_9_aE_designdecision);
+  public NamedSystemArc42Document set__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision __W_0_aE_designdecision) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, __W_0_aE_designdecision);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios select__W_0_aE_quality_aE_scenarios() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_quality_aE_scenarios);
+  public cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios);
   }
 
-  public NamedSystemArc42Document set__W_0_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios __W_0_aE_quality_aE_scenarios) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_quality_aE_scenarios, __W_0_aE_quality_aE_scenarios);
+  public NamedSystemArc42Document set__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios __W_1_aE_quality_aE_scenarios) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, __W_1_aE_quality_aE_scenarios);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks select__W_1_aE_technical_aE_risks() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_technical_aE_risks);
+  public cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks);
   }
 
-  public NamedSystemArc42Document set__W_1_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks __W_1_aE_technical_aE_risks) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_technical_aE_risks, __W_1_aE_technical_aE_risks);
+  public NamedSystemArc42Document set__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks __W_2_aE_technical_aE_risks) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, __W_2_aE_technical_aE_risks);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView select__W_2_aE_productview() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_productview);
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView select__W_3_aE_productview() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_productview);
   }
 
-  public NamedSystemArc42Document set__W_2_aE_productview(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView __W_2_aE_productview) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_productview, __W_2_aE_productview);
+  public NamedSystemArc42Document set__W_3_aE_productview(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView __W_3_aE_productview) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_productview, __W_3_aE_productview);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_3_aE_requirements_aE_coverage() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_requirements_aE_coverage);
+  public cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_4_aE_requirements_aE_coverage() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage);
   }
 
-  public NamedSystemArc42Document set__W_3_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages __W_3_aE_requirements_aE_coverage) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_requirements_aE_coverage, __W_3_aE_requirements_aE_coverage);
+  public NamedSystemArc42Document set__W_4_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages __W_4_aE_requirements_aE_coverage) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, __W_4_aE_requirements_aE_coverage);
     return this;
   }
     
@@ -363,13 +363,13 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_6_aE_runtimeview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_deploymentview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_concepts, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_designdecision, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_quality_aE_scenarios, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_technical_aE_risks, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_productview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_requirements_aE_coverage, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_productview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
     _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
@@ -383,4 +383,4 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,BbUeSU6REh6tYGtB5buSwZnOrnU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,/I6Vp93cdSIC8S4A1Osofq9asg0=] */

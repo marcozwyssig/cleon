@@ -20,20 +20,20 @@ public interface IArc42Document extends cleon.common.doc.metamodel.spec.document
   
   public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView select__V_6_aE_runtimeview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_7_aE_deploymentview();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts select__V_8_aE_concepts();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts select__V_9_aE_concepts();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision select__V_9_aE_designdecision();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios select__W_0_aE_quality_aE_scenarios();
+  public cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks select__W_1_aE_technical_aE_risks();
+  public cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView select__W_2_aE_productview();
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView select__W_3_aE_productview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_3_aE_requirements_aE_coverage();
+  public cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_4_aE_requirements_aE_coverage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,w7sHnekEc5lncDaAGzKreHQnX44=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,24JixhxBQX7V0+bEhLkg+UqAd8g=] */

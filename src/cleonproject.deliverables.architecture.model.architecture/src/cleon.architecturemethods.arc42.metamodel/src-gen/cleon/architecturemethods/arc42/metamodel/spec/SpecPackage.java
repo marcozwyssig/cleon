@@ -22,6 +22,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Arc42_arc42Document = new Resource("1ffbe967-09c9-11e9-9915-0d353533f3da");
   public static final Resource arc42Document___V_6_aE_runtimeview = new Resource("8d297d8a-480e-11ea-8815-a3c0ce8e776e");
   public static final Resource FunctionSpace_aE_Arc42_DocumentElement = new Resource("937c2066-8017-11ea-b039-9728191a5cdc");
+  public static final Resource arc42Document___V_7_aE_dataview = new Resource("e1c4703c-db09-11ee-8b28-393a78550a86");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,oAphwdXCEzfzC5Eh7oNran3IM5s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,HptqaqUf33liFQ0XQeTEhnvXMfk=] */

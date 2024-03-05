@@ -147,6 +147,16 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView select__V_7_aE_dataview() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview);
+  }
+
+  public Arc42Document set__V_7_aE_dataview(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView __V_7_aE_dataview) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview, __V_7_aE_dataview);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview);
   }
@@ -157,41 +167,41 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts select__V_9_aE_concepts() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts);
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts select__V_9_aE_concepts() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts);
   }
 
-  public Arc42Document set__V_9_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts __V_9_aE_concepts) {
+  public Arc42Document set__V_9_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts __V_9_aE_concepts) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, __V_9_aE_concepts);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision);
+  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision);
   }
 
-  public Arc42Document set__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision __W_0_aE_designdecision) {
+  public Arc42Document set__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision __W_0_aE_designdecision) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, __W_0_aE_designdecision);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios);
+  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios);
   }
 
-  public Arc42Document set__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios __W_1_aE_quality_aE_scenarios) {
+  public Arc42Document set__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios __W_1_aE_quality_aE_scenarios) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, __W_1_aE_quality_aE_scenarios);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks);
+  public cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks);
   }
 
-  public Arc42Document set__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks __W_2_aE_technical_aE_risks) {
+  public Arc42Document set__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks __W_2_aE_technical_aE_risks) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, __W_2_aE_technical_aE_risks);
     return this;
   }
@@ -207,11 +217,11 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_4_aE_requirements_aE_coverage() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage);
+  public cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_4_aE_requirements_aE_coverage() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage);
   }
 
-  public Arc42Document set__W_4_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages __W_4_aE_requirements_aE_coverage) {
+  public Arc42Document set__W_4_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages __W_4_aE_requirements_aE_coverage) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, __W_4_aE_requirements_aE_coverage);
     return this;
   }
@@ -343,13 +353,14 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_6_aE_runtimeview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_productview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
     _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
@@ -387,23 +398,27 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_6_aE_runtimeview, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_7_aE_dataview(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview, object.getResource());
+  }
+  
   public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_8_aE_deploymentview(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_9_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_9_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, object.getResource());
   }
   
@@ -411,9 +426,9 @@ public class Arc42Document extends DynamicResource implements IArc42Document {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_productview, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_4_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_4_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_4_aE_requirements_aE_coverage, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,G38D5Mpm40A6xCa5LnNMXqBAWhQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,94OotOxaULy8476kooaJn8Hbj+M=] */

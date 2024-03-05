@@ -1,8 +1,6 @@
 package cleon.common.resources.metamodel.spec.literals;
 
 import ch.actifsource.util.Assert;
-
-
 import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
@@ -14,7 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 /* End Protected Region   [[687a9337-070f-11ec-a1d2-b10f798ffb28,imports]] */
-
 
 public class GuidFunctionSpace {
 

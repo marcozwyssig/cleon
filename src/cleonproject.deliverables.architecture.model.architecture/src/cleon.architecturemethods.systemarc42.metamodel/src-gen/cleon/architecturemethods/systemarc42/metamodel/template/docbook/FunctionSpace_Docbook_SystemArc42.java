@@ -943,7 +943,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
   public static interface IAvailabilityBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ee33f9b5-00e0-11eb-89a7-8344c130228c")
-    public java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock);
+    public java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock);
 
   }
   
@@ -954,7 +954,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private AvailabilityBuildingBlockFunctionsImpl() {}
 
     @Override
-    public java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock) {
+    public java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock) {
       /* Begin Protected Region [[ee33f9b5-00e0-11eb-89a7-8344c130228c]] */
       if (availabilityBuildingBlock.selectDescriptions().isEmpty()) {
       	return String.join("\n", availabilityBuildingBlock.selectAvailability().selectStandardDescription());
@@ -969,7 +969,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private AvailabilityBuildingBlockFunctions() {}
 
-    public static java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock) {
+    public static java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock) {
       return DynamicResourceUtil.invoke(IAvailabilityBuildingBlockFunctionsImpl.class, AvailabilityBuildingBlockFunctionsImpl.INSTANCE, availabilityBuildingBlock).Text(availabilityBuildingBlock);
     }
 
@@ -1216,4 +1216,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,M2V8Rc+WQ363x3sEOHny4a0bHZ0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,6oy6dmbEwiDcXz01WVUc/8M7/3U=] */

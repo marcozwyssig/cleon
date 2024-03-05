@@ -8,8 +8,8 @@ public interface IAvailabilitySystemArc42 extends cleon.architecturemethods.arc4
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock selectUsedAvailability();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock selectUsedAvailability();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,abd0d2ce-fe66-11ea-abcb-bfad67a56d79,xEK1Bq5jO1msyZ+3D2qsvoH4PVo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,abd0d2ce-fe66-11ea-abcb-bfad67a56d79,6FUoaL4ot+AzWHsJAnatiwqJZ7Y=] */

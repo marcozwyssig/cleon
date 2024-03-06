@@ -6,7 +6,7 @@ import ch.actifsource.core.dynamic.*;
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
 public class TestClass123 extends DynamicResource implements ITestClass123 {
 
-	public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestClass123> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestClass123>() {
+	public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestClass123> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<>() {
 
 		@Override
 		public ITestClass123 create() {
@@ -14,7 +14,7 @@ public class TestClass123 extends DynamicResource implements ITestClass123 {
 		}
 
 		@Override
-		public ITestClass123 create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+		public ITestClass123 create(final IDynamicResourceRepository resourceRepository, final ch.actifsource.core.Resource resource) {
 			return new TestClass123(resourceRepository, resource);
 		}
 
@@ -61,4 +61,4 @@ public class TestClass123 extends DynamicResource implements ITestClass123 {
 	}
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e58da639-bad5-11ee-9b9a-eba49b146468,EkqIP5nVGsj/PoxbrDhE4BiVWqg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e58da639-bad5-11ee-9b9a-eba49b146468,aZcJ729a88Sx/DIwY0DTbkk2Rx8=] */

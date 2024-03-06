@@ -20,7 +20,7 @@ public interface IArc42Document extends cleon.common.doc.metamodel.spec.document
   
   public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView select__V_6_aE_runtimeview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView select__V_7_aE_dataview();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDataView select__V_7_aE_dataview();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview();
   
@@ -38,4 +38,4 @@ public interface IArc42Document extends cleon.common.doc.metamodel.spec.document
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,sIdfy3GgJLNwLjtVG7XHUcHSFzA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,bJxIW4yRNwV1ZLyNqgM76nBFWxI=] */

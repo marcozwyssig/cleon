@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bf962400-a733-11ea-8610-b1288d56c208">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="d28d55f6-a733-11ea-8610-b1288d56c208" type="resource" guid="d28d55f2-a733-11ea-8610-b1288d56c208" />
+  </owns>
+  <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <resource statement-guid="d1761991-a733-11ea-8610-b1288d56c208" type="resource" guid="d176198e-a733-11ea-8610-b1288d56c208" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bf962402-a733-11ea-8610-b1288d56c208" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bf989503-a733-11ea-8610-b1288d56c208" type="literal">HostImportWizard</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d28d55f6-a733-11ea-8610-b1288d56c208">
+      <resource guid="d28d55f2-a733-11ea-8610-b1288d56c208">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d28d55f4-a733-11ea-8610-b1288d56c208" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2963418d-a734-11ea-8610-b1288d56c208" type="literal">cleon.architecturemethods.arc42.metamodel.importer.csv.HostImportWizardAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d28d55f5-a733-11ea-8610-b1288d56c208" type="resource" guid="521f1dd5-0e46-11e7-bc08-e928dcbbca14" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="c11c00e9-a733-11ea-8610-b1288d56c208" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="461126a0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="c326c50a-a733-11ea-8610-b1288d56c208" type="literal">Marco Zwyssig</object>
+  </predicate>
+  <predicate guid="57635ae9-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="c6ce493c-a733-11ea-8610-b1288d56c208" type="literal">Imports hosts</object>
+  </predicate>
+  <predicate guid="60f8f7f0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="cd0ad02d-a733-11ea-8610-b1288d56c208" type="literal"> </object>
+  </predicate>
+  <predicate guid="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="d1761991-a733-11ea-8610-b1288d56c208">
+      <resource guid="d176198e-a733-11ea-8610-b1288d56c208">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d2a616ce-b1f7-11ea-a3a2-e9d3344bee73" type="resource" guid="06e1bd57-0f10-11e7-9a20-dfec81ac21a9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ff5671f2-0f13-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="c59b959b-a733-11ea-8610-b1288d56c208" type="literal">csv</object>
+  </predicate>
+</resource>
+

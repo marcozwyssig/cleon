@@ -45,7 +45,7 @@ public class FunctionSpace_BusinessContinuity {
 
   public static interface IAvailabilityConceptFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5d2dadda-c93b-11eb-adc4-d18d1353eb6e")
+    @IDynamicResourceExtension.MethodId("c1858b61-c93b-11eb-adc4-d18d1353eb6e")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllComponents();
 
   }
@@ -70,4 +70,4 @@ public class FunctionSpace_BusinessContinuity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4d1f95f6-c1d2-11ea-b956-0ffede25a02d,ndKGYtPxTfGgfXhcQnTrhzMvS2g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4d1f95f6-c1d2-11ea-b956-0ffede25a02d,aV8dmo3ptoFBevAGMpXjP7QVSXM=] */

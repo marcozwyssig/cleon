@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.so
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISoftwareMonolithCommunication extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent, cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponent {
+public interface ISoftwareMonolithCommunication extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.INamedComponent, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a6e41a31-cf1a-11ee-8c06-a5102392725a");
   
@@ -12,4 +12,4 @@ public interface ISoftwareMonolithCommunication extends cleon.architecturemethod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6e41a31-cf1a-11ee-8c06-a5102392725a,HbDTAaJHTdV4NnO5qc+di/kaGVM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6e41a31-cf1a-11ee-8c06-a5102392725a,IXwXUGGaf+GXo3lWYqbHD28IkDI=] */

@@ -117,12 +117,12 @@ public class FunctionSpace_arc42_Buildingblock_View {
       	return null;
       }
 
-      final IWhiteboxFunctions whiteboxFunctions = whitebox.extension(IWhiteboxFunctions.class);
-      final IWhitebox parent = whiteboxFunctions.ParentWhiteBox();
+      final var whiteboxFunctions = whitebox.extension(IWhiteboxFunctions.class);
+      final var parent = whiteboxFunctions.ParentWhiteBox();
       if (parent == null) {
       	return 1;
       } else {
-      	final IWhiteboxFunctions parentWhiteboxFunctions = parent.extension(IWhiteboxFunctions.class);
+      	final var parentWhiteboxFunctions = parent.extension(IWhiteboxFunctions.class);
       	return parentWhiteboxFunctions.GetLevelNr() + 1;
       }
       /* End Protected Region   [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */

@@ -16,7 +16,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalConstraints = new Resource("5cda20e5-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_OrganizationalConstraints = new Resource("5cda2151-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DecisionTopic = new Resource("5cda21c1-2516-11ec-beea-a9d94a6f89e0");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Whitebox = new Resource("5cda4973-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_WhiteboxSystem = new Resource("5cda4973-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox = new Resource("5cda96a5-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ProductView = new Resource("5cda96b3-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox_aE_Dependencies = new Resource("5cdabd86-2516-11ec-beea-a9d94a6f89e0");
@@ -51,4 +51,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,APql+ZCBPkdr9HsivJfjE4IY1rc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,CIAhLLfOIfRUnHV9LIvTopEoUls=] */

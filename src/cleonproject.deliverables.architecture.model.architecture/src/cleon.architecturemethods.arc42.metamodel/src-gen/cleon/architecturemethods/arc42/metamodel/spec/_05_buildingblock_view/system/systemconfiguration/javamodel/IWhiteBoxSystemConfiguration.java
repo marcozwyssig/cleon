@@ -1,8 +1,8 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IWhiteBoxSystemArc42 extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox {
+public interface IWhiteBoxSystemConfiguration extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a296733a-fe57-11ea-abcb-bfad67a56d79");
   
@@ -20,4 +20,4 @@ public interface IWhiteBoxSystemArc42 extends cleon.architecturemethods.arc42.me
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,zKwxx/70O1V57j5ONupSJJ26Dow=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,0ARVOkWJnuQjlByWdso0EdsTaj4=] */

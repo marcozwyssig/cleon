@@ -8,7 +8,6 @@ public class _05_buildingblock_viewPackage {
   public static final Resource AbstractRootSystem = new Resource("a3ea83ea-2660-11e6-ae54-e50d44645ae7");
   public static final Resource FunctionSpace_aE_arc42_aE_Buildingblock_aE_View_BuildingBlockView = new Resource("f94c7f5e-437a-11e6-a9d7-97cf4f7c398b");
   public static final Resource BuildingBlockView_rootSystem = new Resource("57fece11-498a-11e6-8d4d-09f3feb92353");
-  public static final Resource Whitebox = new Resource("1551fb66-2857-11e8-9af4-b7d7a3bbddc1");
   public static final Resource BuildingBlockView_level_aE_1_aE_whitebox = new Resource("bb714aca-2857-11e8-9af4-b7d7a3bbddc1");
   public static final Resource Blackbox = new Resource("d58842b6-2858-11e8-9af4-b7d7a3bbddc1");
   public static final Resource Whitebox_whitebox = new Resource("e0fb2a82-2858-11e8-9af4-b7d7a3bbddc1");
@@ -25,7 +24,6 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Blackbox_blackbox_aE_requirements = new Resource("5eef16f5-0df0-11e9-a28e-8b950dcca323");
   public static final Resource FunctionSpace_aE_arc42_aE_Buildingblock_aE_View_Blackbox = new Resource("db3c90fd-6dbc-11ea-98d4-4d756e6b7091");
   public static final Resource Functionality = new Resource("8999b3d6-7e70-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_functionality = new Resource("94971eeb-7e70-11ea-9262-7b7e0e9cb204");
   public static final Resource Deployment = new Resource("ec1f72cf-7ed1-11ea-9262-7b7e0e9cb204");
   public static final Resource Authentication = new Resource("00a7cb94-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Autorization = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
@@ -35,19 +33,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_deployment = new Resource("483e67cc-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_authn = new Resource("569bedb8-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_authz = new Resource("63f76bcb-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_confidentialy = new Resource("702b0cee-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_integrity = new Resource("808fd3d8-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_nonRepudiation = new Resource("8cada1db-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Whitebox_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource UsedProduct = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource Whitebox_usedProducts = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource Whitebox_availability = new Resource("b85567f0-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Backup_aE_and_aE_Recovery_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
   public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
   public static final Resource BuildingBlockView_level_aE_2_aE_whitebox = new Resource("1f2736f1-d568-11ea-80a3-dbf7eb525c3c");
@@ -56,6 +43,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_level_aE_4_aE_whitebox = new Resource("39082c08-d579-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_5_aE_whitebox = new Resource("6c166472-d579-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_6_aE_whitebox = new Resource("eb081b4f-d579-11ee-903e-9f564e4de07e");
+  public static final Resource Whitebox = new Resource("7bbfe5fd-e085-11ee-a506-c5335c4d5040");
   
   /* Begin Protected Region [[user]] */
   
@@ -76,4 +64,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,pW7wSiKJRj66O9qCnis60kBheMU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,btaWVi629ezc3Un4E78wC8RUYD8=] */

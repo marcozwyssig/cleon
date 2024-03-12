@@ -54,6 +54,12 @@ public class SystemconfigurationPackage {
   public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   public static final Resource SystemConfigurationCompositionAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
   public static final Resource FunctionSpace_aE_SystemConfiguration_Interface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
+  public static final Resource WhiteBoxSystemConfiguration = new Resource("a296733a-fe57-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemConfiguration_deployment = new Resource("abb1fe65-fe57-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemConfiguration_availability = new Resource("a2cb1978-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemConfiguration_authn = new Resource("f442cb91-fe6d-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemConfiguration_functionality = new Resource("c2508dcb-0245-11eb-9410-a9adaf556564");
+  public static final Resource WhiteBoxSystemConfiguration_authz = new Resource("07023a7a-0322-11eb-a5fc-d7dbe77075ea");
   public static final Resource SystemConfigurationAware = new Resource("a56c2a54-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
@@ -83,4 +89,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,3nafzhD8qNREH3p0sYBhCQHtSzQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,ISGln9EFrDxegREpfbz9ezFeDl4=] */

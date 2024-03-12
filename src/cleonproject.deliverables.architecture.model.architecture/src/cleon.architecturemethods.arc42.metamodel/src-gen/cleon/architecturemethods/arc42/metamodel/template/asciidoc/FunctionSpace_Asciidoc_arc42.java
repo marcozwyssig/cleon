@@ -293,7 +293,7 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
+  public static interface IWhiteboxSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda704d-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement();
@@ -318,21 +318,21 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
   
-  public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWhiteboxSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
+  public static class WhiteboxSystemFunctionsImpl implements IWhiteboxSystemFunctionsImpl {
 
-    public static final IWhiteboxFunctionsImpl INSTANCE = new WhiteboxFunctionsImpl();
+    public static final IWhiteboxSystemFunctionsImpl INSTANCE = new WhiteboxSystemFunctionsImpl();
 
-    private WhiteboxFunctionsImpl() {}
+    private WhiteboxSystemFunctionsImpl() {}
 
   }
   
-  public static class WhiteboxFunctions {
+  public static class WhiteboxSystemFunctions {
 
-    private WhiteboxFunctions() {}
+    private WhiteboxSystemFunctions() {}
 
   }
 
@@ -688,4 +688,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,iRo7u6oHiB0c5u9moUjHO4mcsac=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,+Ir/vGfWmnt5NmXQp7aRfVthqxI=] */

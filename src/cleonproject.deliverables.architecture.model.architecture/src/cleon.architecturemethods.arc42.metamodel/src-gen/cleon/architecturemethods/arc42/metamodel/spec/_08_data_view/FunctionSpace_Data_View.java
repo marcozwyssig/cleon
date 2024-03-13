@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
-
+import java.util.Arrays;
 /* End Protected Region   [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
 
 public class FunctionSpace_Data_View {
@@ -138,6 +138,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("fd0365ed-d0cf-11ee-bd60-4767a6be68d4")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("810deeb5-e149-11ee-9375-43bf1495bfd9")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> FieldsDependingSelectAll();
+
     @IDynamicResourceExtension.MethodId("13182fab-e11c-11ee-995f-5faf5f77d478")
     public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Fields();
 
@@ -148,6 +151,9 @@ public class FunctionSpace_Data_View {
   
   public static interface ISelectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("810deeb5-e149-11ee-9375-43bf1495bfd9")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect select);
+
   }
   
   public static class SelectFunctionsImpl implements ISelectFunctionsImpl {
@@ -156,11 +162,27 @@ public class FunctionSpace_Data_View {
 
     private SelectFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect select) {
+      /* Begin Protected Region [[810deeb5-e149-11ee-9375-43bf1495bfd9]] */
+    	if( select.selectSelectAllFields()) {
+    		 return Arrays.asList();
+    	}
+    	final var selectFunctions = select.extension(ISelectFunctions.class);
+    	return selectFunctions.Fields();
+      // XXX implement template function here   
+      /* End Protected Region   [[810deeb5-e149-11ee-9375-43bf1495bfd9]] */
+    }
+
   }
   
   public static class SelectFunctions {
 
     private SelectFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect select) {
+      return DynamicResourceUtil.invoke(ISelectFunctionsImpl.class, SelectFunctionsImpl.INSTANCE, select).FieldsDependingSelectAll(select);
+    }
 
   }
 
@@ -655,4 +677,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,yGVPt20fyFEtObmMj9KQ17SAhzw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,08V105GT//xxaLgkUC/i8oyl7jc=] */

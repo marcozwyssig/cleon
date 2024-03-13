@@ -13,9 +13,9 @@ public abstract class Conditional extends DynamicResource implements IConditiona
   
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IConditional selectToMeCondition(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IConditional.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_condition, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IConditional selectToMeOperand(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IConditional.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_operand, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,982ba3b6-e11a-11ee-995f-5faf5f77d478,RXzDkZlw58re2hROXde2Xn1DS1I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,982ba3b6-e11a-11ee-995f-5faf5f77d478,JNztnxtMPQnf1v9/gAncndAuanc=] */

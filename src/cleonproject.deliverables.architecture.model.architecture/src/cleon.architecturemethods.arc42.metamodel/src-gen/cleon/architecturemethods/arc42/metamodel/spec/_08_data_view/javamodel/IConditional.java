@@ -8,8 +8,8 @@ public interface IConditional extends ch.actifsource.core.javamodel.IResource {
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> selectCondition();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> selectOperand();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,982ba3b6-e11a-11ee-995f-5faf5f77d478,63oHb68ZAKUeqyH2SAMXGUfqgfc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,982ba3b6-e11a-11ee-995f-5faf5f77d478,ws3SufcF1yfWKfndw9nHcXQBrn8=] */

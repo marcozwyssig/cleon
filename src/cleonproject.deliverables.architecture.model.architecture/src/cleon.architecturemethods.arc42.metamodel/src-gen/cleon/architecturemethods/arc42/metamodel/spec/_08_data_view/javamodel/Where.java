@@ -31,12 +31,12 @@ public class Where extends DynamicResource implements IWhere {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> selectCondition() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_condition);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> selectOperand() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_operand);
   }
 
-  public Where setCondition(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> condition) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_condition, condition);
+  public Where setOperand(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition> operand) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_operand, operand);
     return this;
   }
     
@@ -54,9 +54,9 @@ public class Where extends DynamicResource implements IWhere {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_condition, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Conditional_operand, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42d94ad2-e11a-11ee-995f-5faf5f77d478,7e8UdngJ4FU2zmtMdan8KYhJ76c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42d94ad2-e11a-11ee-995f-5faf5f77d478,nUXPUtUO5M2LnExR56I7lcFTG+g=] */

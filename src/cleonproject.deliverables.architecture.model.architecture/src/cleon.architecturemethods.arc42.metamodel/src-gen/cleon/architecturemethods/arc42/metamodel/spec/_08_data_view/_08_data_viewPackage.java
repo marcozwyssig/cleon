@@ -86,7 +86,7 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_Select = new Resource("f8cc72f8-d0cf-11ee-bd60-4767a6be68d4");
   public static final Resource FunctionSpace_aE_Data_aE_View_Group_aE_By = new Resource("8f1e32d1-d0d0-11ee-bd60-4767a6be68d4");
   public static final Resource Having = new Resource("e3e8e579-d0d0-11ee-bd60-4767a6be68d4");
-  public static final Resource Conditional_condition = new Resource("e3e8e584-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource Conditional_operand = new Resource("e3e8e584-d0d0-11ee-bd60-4767a6be68d4");
   public static final Resource Condition = new Resource("f75c24b0-d0d0-11ee-bd60-4767a6be68d4");
   public static final Resource Group_aE_By_having = new Resource("21fa2d67-d0d1-11ee-bd60-4767a6be68d4");
   public static final Resource FunctionSpace_aE_Data_aE_View_Having = new Resource("2f08013a-d0d1-11ee-bd60-4767a6be68d4");
@@ -152,4 +152,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,seQm++2au6KL+gWXZ4RsG+Ov6vg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,Ti6eZEIbg1LqM0/2GoC9z58EwCw=] */

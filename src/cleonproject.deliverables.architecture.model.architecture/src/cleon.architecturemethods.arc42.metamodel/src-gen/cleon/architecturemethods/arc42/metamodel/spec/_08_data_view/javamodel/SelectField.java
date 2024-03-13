@@ -28,6 +28,17 @@ public class SelectField extends DynamicResource implements ISelectField {
     super(resourceRepository, resource, ISelectField.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectAlias() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.SelectField_alias);
+  }
+    
+  public void setAlias(java.lang.String alias) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.SelectField_alias, alias);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class SelectField extends DynamicResource implements ISelectField {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.SelectField_alias, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectAggregate.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.SelectField_aggregate, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractField_column, visitor);
@@ -86,4 +99,4 @@ public class SelectField extends DynamicResource implements ISelectField {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50a4626f-d0cc-11ee-a38e-0b82bafb3097,K5thWzTcZeWNMQBRLIko5gHWc6k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50a4626f-d0cc-11ee-a38e-0b82bafb3097,R1shfG1MYkBc3zNzj7p3dPsd1zM=] */

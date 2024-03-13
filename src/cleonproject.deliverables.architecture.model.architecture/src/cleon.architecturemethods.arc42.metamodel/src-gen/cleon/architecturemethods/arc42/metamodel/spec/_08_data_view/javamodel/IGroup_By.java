@@ -10,6 +10,8 @@ public interface IGroup_By extends ch.actifsource.core.javamodel.IResource {
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField> selectGroupByField();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IHaving selectHaving();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bb8684b-d0cd-11ee-a38e-0b82bafb3097,kaozovSo8VIWQ6vje+ICwuQfs8Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bb8684b-d0cd-11ee-a38e-0b82bafb3097,BAnbpTT5E79WEH3tQX1aGnnxyy4=] */

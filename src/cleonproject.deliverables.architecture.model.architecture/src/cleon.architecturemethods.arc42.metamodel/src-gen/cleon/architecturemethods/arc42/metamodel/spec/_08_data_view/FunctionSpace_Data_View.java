@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
 
-public class FunctionSpace_Database {
+public class FunctionSpace_Data_View {
 
   /* Begin Protected Region [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef]] */
   
@@ -129,6 +129,12 @@ public class FunctionSpace_Database {
     @IDynamicResourceExtension.MethodId("fd0365ed-d0cf-11ee-bd60-4767a6be68d4")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("13182fab-e11c-11ee-995f-5faf5f77d478")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Fields();
+
+    @IDynamicResourceExtension.MethodId("2aa08299-e11c-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView View();
+
   }
   
   public static interface ISelectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -179,6 +185,9 @@ public class FunctionSpace_Database {
     @IDynamicResourceExtension.MethodId("33466ec3-d0d1-11ee-bd60-4767a6be68d4")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("df924bc2-e11a-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
   }
   
   public static interface IHavingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -199,28 +208,28 @@ public class FunctionSpace_Database {
 
   }
 
-  public static interface IHavingFieldFunctions extends IDynamicResourceExtension {
+  public static interface IConditionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("69420d3a-d0d2-11ee-bd60-4767a6be68d4")
     public java.lang.String SimpleName();
 
   }
   
-  public static interface IHavingFieldFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IConditionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class HavingFieldFunctionsImpl implements IHavingFieldFunctionsImpl {
+  public static class ConditionFunctionsImpl implements IConditionFunctionsImpl {
 
-    public static final IHavingFieldFunctionsImpl INSTANCE = new HavingFieldFunctionsImpl();
+    public static final IConditionFunctionsImpl INSTANCE = new ConditionFunctionsImpl();
 
-    private HavingFieldFunctionsImpl() {}
+    private ConditionFunctionsImpl() {}
 
   }
   
-  public static class HavingFieldFunctions {
+  public static class ConditionFunctions {
 
-    private HavingFieldFunctions() {}
+    private ConditionFunctions() {}
 
   }
 
@@ -336,6 +345,81 @@ public class FunctionSpace_Database {
 
   }
 
+  public static interface IConditionalFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c371368a-e11a-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
+  }
+  
+  public static interface IConditionalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ConditionalFunctionsImpl implements IConditionalFunctionsImpl {
+
+    public static final IConditionalFunctionsImpl INSTANCE = new ConditionalFunctionsImpl();
+
+    private ConditionalFunctionsImpl() {}
+
+  }
+  
+  public static class ConditionalFunctions {
+
+    private ConditionalFunctions() {}
+
+  }
+
+  public static interface IWhereFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("09d674b8-e11b-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
+  }
+  
+  public static interface IWhereFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WhereFunctionsImpl implements IWhereFunctionsImpl {
+
+    public static final IWhereFunctionsImpl INSTANCE = new WhereFunctionsImpl();
+
+    private WhereFunctionsImpl() {}
+
+  }
+  
+  public static class WhereFunctions {
+
+    private WhereFunctions() {}
+
+  }
+
+  public static interface IColumnFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b59ccd48-e11c-11ee-995f-5faf5f77d478")
+    public java.lang.String FullName();
+
+  }
+  
+  public static interface IColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ColumnFunctionsImpl implements IColumnFunctionsImpl {
+
+    public static final IColumnFunctionsImpl INSTANCE = new ColumnFunctionsImpl();
+
+    private ColumnFunctionsImpl() {}
+
+  }
+  
+  public static class ColumnFunctions {
+
+    private ColumnFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,aqY/vys6VXJ6nuV2WfrsZYa57LM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,We4nsS5Xs8L8TjycSZMF7E4Vl+U=] */

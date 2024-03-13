@@ -10,8 +10,8 @@ public interface ISelect extends ch.actifsource.core.javamodel.IResource {
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField> selectSelectField();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField> selectSelect();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097,Www0zott3/RAYcpFZ1hz5fmGpyM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097,DxGyU3WoYHPijQBPOsnKKbCbN3M=] */

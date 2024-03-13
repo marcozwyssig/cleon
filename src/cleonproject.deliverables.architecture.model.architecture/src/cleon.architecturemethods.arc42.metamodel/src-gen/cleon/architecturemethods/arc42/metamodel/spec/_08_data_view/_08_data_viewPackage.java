@@ -15,8 +15,8 @@ public class _08_data_viewPackage {
   public static final Resource Table_primary_aE_key = new Resource("e1db6107-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey = new Resource("fc12f568-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey_columns = new Resource("786dfb0c-b936-11ee-a0d0-e953bcbfaeef");
-  public static final Resource FunctionSpace_aE_Database_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
-  public static final Resource FunctionSpace_aE_Database_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
+  public static final Resource FunctionSpace_aE_Data_aE_View_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
   public static final Resource Table_persistent = new Resource("f1d9291e-b9c9-11ee-a257-01d178f494ca");
   public static final Resource Column_valueRange = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
   public static final Resource ColumnValue = new Resource("f46c2d4f-ba0f-11ee-876d-0f01c87670c8");
@@ -56,7 +56,7 @@ public class _08_data_viewPackage {
   public static final Resource ColumnValue_TRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive = new Resource("a2a1d0ee-c034-11ee-a353-4bf80e47b5e4");
   public static final Resource Table_scope = new Resource("8fc07ea7-cf29-11ee-8c06-a5102392725a");
   public static final Resource DatabaseView_scope = new Resource("b5670448-cf29-11ee-8c06-a5102392725a");
-  public static final Resource FunctionSpace_aE_Database_Table = new Resource("d5b9ef6b-cf36-11ee-8c06-a5102392725a");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Table = new Resource("d5b9ef6b-cf36-11ee-8c06-a5102392725a");
   public static final Resource TableMappingView = new Resource("fe7d7631-cffb-11ee-9bb8-5f4f5b483c01");
   public static final Resource EnumerationMappingView_tableMappingView = new Resource("07f50443-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource TableMappingView_enumerationValue = new Resource("1704c1ff-cffc-11ee-9bb8-5f4f5b483c01");
@@ -71,33 +71,47 @@ public class _08_data_viewPackage {
   public static final Resource Select = new Resource("2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource View_select = new Resource("3576adf7-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource SelectField = new Resource("50a4626f-d0cc-11ee-a38e-0b82bafb3097");
-  public static final Resource Select_selectField = new Resource("68353fd1-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource Select_select = new Resource("68353fd1-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource AbstractField_column = new Resource("83570d6a-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource SelectAggregate = new Resource("b9b422de-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource SelectAggregate_MAX = new Resource("bc053e17-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource SelectField_aggregate = new Resource("c4a3d0c1-d0cc-11ee-a38e-0b82bafb3097");
-  public static final Resource FunctionSpace_aE_Database_SelectField = new Resource("d2664ea8-d0cc-11ee-a38e-0b82bafb3097");
+  public static final Resource FunctionSpace_aE_Data_aE_View_SelectField = new Resource("d2664ea8-d0cc-11ee-a38e-0b82bafb3097");
   public static final Resource Select_selectAllFields = new Resource("254e852a-d0cd-11ee-a38e-0b82bafb3097");
   public static final Resource View_groupby = new Resource("66dd343d-d0cd-11ee-a38e-0b82bafb3097");
   public static final Resource Group_aE_By = new Resource("7bb8684b-d0cd-11ee-a38e-0b82bafb3097");
   public static final Resource Group_aE_By_groupByField = new Resource("7bb86856-d0cd-11ee-a38e-0b82bafb3097");
   public static final Resource AbstractField = new Resource("b32e6875-d0cd-11ee-a38e-0b82bafb3097");
   public static final Resource GroupByField = new Resource("0cf70641-d0ce-11ee-a38e-0b82bafb3097");
-  public static final Resource FunctionSpace_aE_Database_Select = new Resource("f8cc72f8-d0cf-11ee-bd60-4767a6be68d4");
-  public static final Resource FunctionSpace_aE_Database_Group_aE_By = new Resource("8f1e32d1-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Select = new Resource("f8cc72f8-d0cf-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Group_aE_By = new Resource("8f1e32d1-d0d0-11ee-bd60-4767a6be68d4");
   public static final Resource Having = new Resource("e3e8e579-d0d0-11ee-bd60-4767a6be68d4");
-  public static final Resource Having_havingField = new Resource("e3e8e584-d0d0-11ee-bd60-4767a6be68d4");
-  public static final Resource HavingField = new Resource("f75c24b0-d0d0-11ee-bd60-4767a6be68d4");
-  public static final Resource View_having = new Resource("21fa2d67-d0d1-11ee-bd60-4767a6be68d4");
-  public static final Resource FunctionSpace_aE_Database_Having = new Resource("2f08013a-d0d1-11ee-bd60-4767a6be68d4");
-  public static final Resource HavingField_operator = new Resource("c900d077-d0d1-11ee-bd60-4767a6be68d4");
-  public static final Resource HavingField_value = new Resource("dcaab079-d0d1-11ee-bd60-4767a6be68d4");
-  public static final Resource FunctionSpace_aE_Database_HavingField = new Resource("65904fd4-d0d2-11ee-bd60-4767a6be68d4");
-  public static final Resource FunctionSpace_aE_Database_ConditionalOperator = new Resource("eda61cec-d0d2-11ee-bd60-4767a6be68d4");
+  public static final Resource Conditional_condition = new Resource("e3e8e584-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource Condition = new Resource("f75c24b0-d0d0-11ee-bd60-4767a6be68d4");
+  public static final Resource Group_aE_By_having = new Resource("21fa2d67-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Having = new Resource("2f08013a-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource Condition_operator = new Resource("c900d077-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource Condition_value = new Resource("dcaab079-d0d1-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Condition = new Resource("65904fd4-d0d2-11ee-bd60-4767a6be68d4");
+  public static final Resource FunctionSpace_aE_Data_aE_View_ConditionalOperator = new Resource("eda61cec-d0d2-11ee-bd60-4767a6be68d4");
   public static final Resource DataView = new Resource("0738a3fd-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DatabaseView = new Resource("846aa8f6-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DataView_databaseView = new Resource("8d89dd07-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DatabaseView_softwareMonolithDatabase = new Resource("d4d004c3-db90-11ee-bf0f-4753d26fac10");
+  public static final Resource View_join = new Resource("087bf1e1-e114-11ee-995f-5faf5f77d478");
+  public static final Resource Join = new Resource("31b588e1-e114-11ee-995f-5faf5f77d478");
+  public static final Resource Join_with = new Resource("9b552d06-e114-11ee-995f-5faf5f77d478");
+  public static final Resource Join_on = new Resource("fb1f4ff4-e115-11ee-995f-5faf5f77d478");
+  public static final Resource OnField = new Resource("01933a9d-e116-11ee-995f-5faf5f77d478");
+  public static final Resource OnField_onColumn = new Resource("6fe6d480-e117-11ee-995f-5faf5f77d478");
+  public static final Resource View_used = new Resource("5223972c-e119-11ee-995f-5faf5f77d478");
+  public static final Resource View_where = new Resource("3b52b796-e11a-11ee-995f-5faf5f77d478");
+  public static final Resource Where = new Resource("42d94ad2-e11a-11ee-995f-5faf5f77d478");
+  public static final Resource Conditional = new Resource("982ba3b6-e11a-11ee-995f-5faf5f77d478");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Conditional = new Resource("bd359a30-e11a-11ee-995f-5faf5f77d478");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Where = new Resource("07bae7b2-e11b-11ee-995f-5faf5f77d478");
+  public static final Resource SelectField_alias = new Resource("d0e5034b-e11b-11ee-995f-5faf5f77d478");
+  public static final Resource FunctionSpace_aE_Data_aE_View_Column = new Resource("afaa6e87-e11c-11ee-995f-5faf5f77d478");
   
   /* Begin Protected Region [[user]] */
   
@@ -118,4 +132,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,IEo3TlygsgbDkKJinOo1S1lSRSY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,LCtwpB5Ernw4hGkNwuEoOvuYs0k=] */

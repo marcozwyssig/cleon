@@ -10,7 +10,7 @@ public interface IDatabaseView extends cleon.common.doc.metamodel.spec.chapter.j
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase selectSoftwareMonolithDatabase();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea> selectTableAreas();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea> selectTableAreas();
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumeration selectScope();
   
@@ -18,4 +18,4 @@ public interface IDatabaseView extends cleon.common.doc.metamodel.spec.chapter.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,gkW7hEt9nm60eX2n3ZjJCBt7tEM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,ozw0+SwGbzaQm3WGlaxlcg10IH4=] */

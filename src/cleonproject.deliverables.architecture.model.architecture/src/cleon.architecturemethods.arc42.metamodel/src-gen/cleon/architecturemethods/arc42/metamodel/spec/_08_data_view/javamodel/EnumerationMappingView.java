@@ -52,11 +52,11 @@ public class EnumerationMappingView extends DynamicResource implements IEnumerat
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableMappingView> selectTableMappingView() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView> selectTableMappingView() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView);
   }
 
-  public EnumerationMappingView setTableMappingView(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableMappingView> tableMappingView) {
+  public EnumerationMappingView setTableMappingView(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView> tableMappingView) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView, tableMappingView);
     return this;
   }
@@ -78,13 +78,13 @@ public class EnumerationMappingView extends DynamicResource implements IEnumerat
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumeration.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_scope, visitor);
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IEnumerationMappingView selectToMeTableMappingView(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableMappingView object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IEnumerationMappingView selectToMeTableMappingView(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IEnumerationMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.EnumerationMappingView_tableMappingView, object.getResource());
   }
   
@@ -93,4 +93,4 @@ public class EnumerationMappingView extends DynamicResource implements IEnumerat
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fa61b6b-cffc-11ee-9bb8-5f4f5b483c01,NkiwbuutxONa5s7Z/U8JkQ7nEXE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fa61b6b-cffc-11ee-9bb8-5f4f5b483c01,N6kmHtXQVY5Jt8Sjof9FWro+RQI=] */

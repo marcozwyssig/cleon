@@ -456,6 +456,8 @@
         <resource statement-guid="b9f7ce9f-4918-11eb-9bd7-6114c4f17e0c" type="resource" guid="b9f7a78c-4918-11eb-9bd7-6114c4f17e0c" />
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
         <resource statement-guid="edef2427-db90-11ee-bf0f-4753d26fac10" type="resource" guid="edeeaef4-db90-11ee-bf0f-4753d26fac10" />
+        <resource statement-guid="c75f58a4-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="c75ebc61-e14d-11ee-9375-43bf1495bfd9" />
+        <resource statement-guid="c773a3f9-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="c77355d6-e14d-11ee-9375-43bf1495bfd9" />
       </owns>
     </resource>
   </owns>
@@ -5002,6 +5004,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="edefc068-db90-11ee-bf0f-4753d26fac10" type="literal">cleon.architecturemethods.arc42.metamodel.spec._08_data_view</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="c75f58a4-e14d-11ee-9375-43bf1495bfd9">
+            <resource guid="c75ebc61-e14d-11ee-9375-43bf1495bfd9">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c75ebc63-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c75ff4e5-e14d-11ee-9375-43bf1495bfd9" type="literal">cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="c773a3f9-e14d-11ee-9375-43bf1495bfd9">
+            <resource guid="c77355d6-e14d-11ee-9375-43bf1495bfd9">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c77355d8-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c774674a-e14d-11ee-9375-43bf1495bfd9" type="literal">cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view</object>
               </predicate>
             </resource>
           </object>

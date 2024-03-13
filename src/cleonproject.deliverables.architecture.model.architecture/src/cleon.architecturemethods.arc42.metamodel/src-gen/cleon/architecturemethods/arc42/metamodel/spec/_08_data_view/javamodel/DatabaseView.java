@@ -120,11 +120,11 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea> selectTableAreas() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea> selectTableAreas() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas);
   }
 
-  public DatabaseView setTableAreas(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea> tableAreas) {
+  public DatabaseView setTableAreas(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea> tableAreas) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, tableAreas);
     return this;
   }
@@ -162,7 +162,7 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumeration.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_scope, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -172,7 +172,7 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView selectToMeTableAreas(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITableArea object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView selectToMeTableAreas(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, object.getResource());
   }
   
@@ -185,4 +185,4 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,ugIxYyIp490qemaqdTtE33BEw4M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,FCwoaq0d24fCkL3C15dTAtNO3Z8=] */

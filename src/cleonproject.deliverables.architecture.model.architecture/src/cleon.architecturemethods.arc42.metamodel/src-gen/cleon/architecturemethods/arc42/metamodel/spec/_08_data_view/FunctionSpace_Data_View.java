@@ -79,6 +79,12 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("16cc69f4-cf37-11ee-8c06-a5102392725a")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> AvailableEnumerationValues();
 
+    @IDynamicResourceExtension.MethodId("3186a2cd-e134-11ee-995f-5faf5f77d478")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Columns();
+
+    @IDynamicResourceExtension.MethodId("ae2b8d22-e135-11ee-995f-5faf5f77d478")
+    public java.lang.String Name();
+
   }
   
   public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -99,28 +105,28 @@ public class FunctionSpace_Data_View {
 
   }
 
-  public static interface ISelectFieldFunctions extends IDynamicResourceExtension {
+  public static interface ISelectColumnFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d6df2c9e-d0cc-11ee-a38e-0b82bafb3097")
     public java.lang.String SimpleName();
 
   }
   
-  public static interface ISelectFieldFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISelectColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SelectFieldFunctionsImpl implements ISelectFieldFunctionsImpl {
+  public static class SelectColumnFunctionsImpl implements ISelectColumnFunctionsImpl {
 
-    public static final ISelectFieldFunctionsImpl INSTANCE = new SelectFieldFunctionsImpl();
+    public static final ISelectColumnFunctionsImpl INSTANCE = new SelectColumnFunctionsImpl();
 
-    private SelectFieldFunctionsImpl() {}
+    private SelectColumnFunctionsImpl() {}
 
   }
   
-  public static class SelectFieldFunctions {
+  public static class SelectColumnFunctions {
 
-    private SelectFieldFunctions() {}
+    private SelectColumnFunctions() {}
 
   }
 
@@ -420,6 +426,149 @@ public class FunctionSpace_Data_View {
 
   }
 
+  public static interface IWhereAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7100449a-e120-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
+  }
+  
+  public static interface IWhereAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WhereAwareFunctionsImpl implements IWhereAwareFunctionsImpl {
+
+    public static final IWhereAwareFunctionsImpl INSTANCE = new WhereAwareFunctionsImpl();
+
+    private WhereAwareFunctionsImpl() {}
+
+  }
+  
+  public static class WhereAwareFunctions {
+
+    private WhereAwareFunctions() {}
+
+  }
+
+  public static interface IViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("82d5b266-e120-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
+    @IDynamicResourceExtension.MethodId("b0f451a0-e132-11ee-995f-5faf5f77d478")
+    public java.lang.String SimpleName();
+
+    @IDynamicResourceExtension.MethodId("85517bef-e135-11ee-995f-5faf5f77d478")
+    public java.lang.String Name();
+
+    @IDynamicResourceExtension.MethodId("e333e7d7-e135-11ee-995f-5faf5f77d478")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Columns();
+
+  }
+  
+  public static interface IViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ViewFunctionsImpl implements IViewFunctionsImpl {
+
+    public static final IViewFunctionsImpl INSTANCE = new ViewFunctionsImpl();
+
+    private ViewFunctionsImpl() {}
+
+  }
+  
+  public static class ViewFunctions {
+
+    private ViewFunctions() {}
+
+  }
+
+  public static interface IJoinFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8d6344b2-e120-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+
+    @IDynamicResourceExtension.MethodId("04094cda-e122-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable FromView();
+
+    @IDynamicResourceExtension.MethodId("fb8095db-e12d-11ee-995f-5faf5f77d478")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IJoinFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class JoinFunctionsImpl implements IJoinFunctionsImpl {
+
+    public static final IJoinFunctionsImpl INSTANCE = new JoinFunctionsImpl();
+
+    private JoinFunctionsImpl() {}
+
+  }
+  
+  public static class JoinFunctions {
+
+    private JoinFunctions() {}
+
+  }
+
+  public static interface IJoinBaseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c579861e-e121-11ee-995f-5faf5f77d478")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable FromView();
+
+  }
+  
+  public static interface IJoinBaseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class JoinBaseFunctionsImpl implements IJoinBaseFunctionsImpl {
+
+    public static final IJoinBaseFunctionsImpl INSTANCE = new JoinBaseFunctionsImpl();
+
+    private JoinBaseFunctionsImpl() {}
+
+  }
+  
+  public static class JoinBaseFunctions {
+
+    private JoinBaseFunctions() {}
+
+  }
+
+  public static interface IDatabaseElementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("12f74d6d-e134-11ee-995f-5faf5f77d478")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Columns();
+
+    @IDynamicResourceExtension.MethodId("5e2ef9f3-e134-11ee-995f-5faf5f77d478")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IDatabaseElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DatabaseElementFunctionsImpl implements IDatabaseElementFunctionsImpl {
+
+    public static final IDatabaseElementFunctionsImpl INSTANCE = new DatabaseElementFunctionsImpl();
+
+    private DatabaseElementFunctionsImpl() {}
+
+  }
+  
+  public static class DatabaseElementFunctions {
+
+    private DatabaseElementFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,We4nsS5Xs8L8TjycSZMF7E4Vl+U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,bLOO3dvEA1s4s6tGfskIKhjqiWQ=] */

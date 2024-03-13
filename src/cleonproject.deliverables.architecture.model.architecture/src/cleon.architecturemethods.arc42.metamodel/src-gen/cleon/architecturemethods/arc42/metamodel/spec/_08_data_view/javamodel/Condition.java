@@ -43,11 +43,11 @@ public class Condition extends DynamicResource implements ICondition {
   
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn selectColumn() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractField_column);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractColumn_column);
   }
 
   public Condition setColumn(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn column) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractField_column, column);
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractColumn_column, column);
     return this;
   }
     
@@ -87,7 +87,7 @@ public class Condition extends DynamicResource implements ICondition {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Condition_value, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractField_column, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AbstractColumn_column, visitor);
     _acceptSingle(ch.actifsource.core.validation.javamodel.IConditionalOperator.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Condition_operator, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -99,4 +99,4 @@ public class Condition extends DynamicResource implements ICondition {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f75c24b0-d0d0-11ee-bd60-4767a6be68d4,9LiCLRW0kLRbPzOSUaXZkkmgppY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f75c24b0-d0d0-11ee-bd60-4767a6be68d4,9qyAr9bxFlnRvgHGba9ziSCkGyE=] */

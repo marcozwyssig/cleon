@@ -31,6 +31,15 @@ public class View extends DynamicResource implements IView {
   // attributes
   
   @Override
+  public java.lang.String selectAlias() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AliasAware_alias);
+  }
+    
+  public void setAlias(java.lang.String alias) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AliasAware_alias, alias);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -41,52 +50,52 @@ public class View extends DynamicResource implements IView {
 
   @Override
   public java.lang.Boolean selectUsed() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_used);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_used);
   }
     
   public void setUsed(java.lang.Boolean used) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_used, used);
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_used, used);
   }
 
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable selectFrom() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_from);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement selectFrom() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_from);
   }
 
-  public View setFrom(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable from) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_from, from);
+  public View setFrom(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement from) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_from, from);
     return this;
   }
     
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By selectGroupby() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_groupby);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_groupby);
   }
 
   public View setGroupby(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By groupby) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_groupby, groupby);
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_groupby, groupby);
     return this;
   }
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin> selectJoin() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_join);
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_join);
   }
 
   public View setJoin(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin> join) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_join, join);
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_join, join);
     return this;
   }
     
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect selectSelect() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_select);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_select);
   }
 
   public View setSelect(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect select) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_select, select);
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_select, select);
     return this;
   }
     
@@ -112,11 +121,11 @@ public class View extends DynamicResource implements IView {
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere> selectWhere() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_where);
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.WhereAware_where);
   }
 
   public View setWhere(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere> where) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_where, where);
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.WhereAware_where, where);
     return this;
   }
     
@@ -124,38 +133,17 @@ public class View extends DynamicResource implements IView {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.AliasAware_alias, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_used, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_used, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_from, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_groupby, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_join, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_select, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_from, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_groupby, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_join, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.ViewBase_select, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_where, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.WhereAware_where, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView selectToMeSelect(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_select, object.getResource());
-  }
-  
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView> selectToMeFrom(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_from, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView selectToMeGroupby(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_groupby, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView selectToMeJoin(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IJoin object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_join, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView selectToMeWhere(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.View_where, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,lq2ICYjR5WbUFCad1V0ATiUpQ64=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,YZ5x4+B4zQNohtAkNRtc2JnIqqE=] */

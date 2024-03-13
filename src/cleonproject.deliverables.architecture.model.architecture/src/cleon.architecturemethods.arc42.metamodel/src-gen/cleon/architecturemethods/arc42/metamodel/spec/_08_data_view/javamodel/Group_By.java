@@ -31,12 +31,12 @@ public class Group_By extends DynamicResource implements IGroup_By {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField> selectGroupByField() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupByField);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField> selectGroupBy() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupBy);
   }
 
-  public Group_By setGroupByField(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField> groupByField) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupByField, groupByField);
+  public Group_By setGroupBy(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField> groupBy) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupBy, groupBy);
     return this;
   }
     
@@ -64,15 +64,15 @@ public class Group_By extends DynamicResource implements IGroup_By {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupByField, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupBy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IHaving.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_having, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By selectToMeGroupByField(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupByField, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By selectToMeGroupBy(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroupByField object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Group_aE_By_groupBy, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IGroup_By selectToMeHaving(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IHaving object) {
@@ -80,4 +80,4 @@ public class Group_By extends DynamicResource implements IGroup_By {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bb8684b-d0cd-11ee-a38e-0b82bafb3097,56EdAcovLRDgG1bCC/0OHS9zHbk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bb8684b-d0cd-11ee-a38e-0b82bafb3097,DD9P5OYZB2lj8rciNJ1PAPTZDWw=] */

@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IOnField extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IAbstractField {
+public interface IOnField extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IAbstractColumn {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("01933a9d-e116-11ee-995f-5faf5f77d478");
   
@@ -12,4 +12,4 @@ public interface IOnField extends cleon.architecturemethods.arc42.metamodel.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01933a9d-e116-11ee-995f-5faf5f77d478,+W5iz3wC8BHKcA1yeLnANybKR0k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01933a9d-e116-11ee-995f-5faf5f77d478,eJkxugdYx1am6IaP9ZiHYIhMlLw=] */

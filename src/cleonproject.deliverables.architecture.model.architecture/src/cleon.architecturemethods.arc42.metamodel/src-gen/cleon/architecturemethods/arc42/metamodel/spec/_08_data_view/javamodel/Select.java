@@ -42,11 +42,11 @@ public class Select extends DynamicResource implements ISelect {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField> selectSelect() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectColumn> selectSelect() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select);
   }
 
-  public Select setSelect(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField> select) {
+  public Select setSelect(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectColumn> select) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select, select);
     return this;
   }
@@ -67,15 +67,13 @@ public class Select extends DynamicResource implements ISelect {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_selectAllFields, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect selectToMeSelect(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectField object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect selectToMeSelect(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelectColumn object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.Select_select, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097,ZdDOPGGqWK/f7TqBnjyRs/wOP8Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2dc7aaf7-d0cc-11ee-a38e-0b82bafb3097,HXQuaptVkxCC4Yaszrn2e636YH4=] */

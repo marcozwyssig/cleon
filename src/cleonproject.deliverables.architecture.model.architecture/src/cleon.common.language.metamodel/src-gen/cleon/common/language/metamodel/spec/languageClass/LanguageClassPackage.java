@@ -10,7 +10,7 @@ public class LanguageClassPackage {
   public static final Resource LanguageNameAspectTranslation_language = new Resource("f637a5f2-c5d2-11ee-8549-1528e55916a4");
   public static final Resource LanguageClass_translations = new Resource("0c6b8bb4-c5d3-11ee-8549-1528e55916a4");
   public static final Resource TranslationClass = new Resource("df37793e-c5d3-11ee-8549-1528e55916a4");
-  public static final Resource LanguageNameAspectTranslation_translations = new Resource("7a111686-c5d5-11ee-8549-1528e55916a4");
+  public static final Resource LanguageNameAspectTranslation_translationValue = new Resource("7a111686-c5d5-11ee-8549-1528e55916a4");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +31,4 @@ public class LanguageClassPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languageClass,Syh7VMif2+ZOYNOOo2M/navVIDE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languageClass,vbymIJ5PoQ/22eLODqjzeZHg5ws=] */

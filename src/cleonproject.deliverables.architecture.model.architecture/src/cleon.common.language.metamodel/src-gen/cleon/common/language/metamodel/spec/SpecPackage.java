@@ -14,7 +14,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Language_MultilingualDescriptionWithLanguageSettings = new Resource("fccce815-cd44-11ec-85c9-011c467ea292");
   public static final Resource FunctionSpace_aE_Language_AbstractLanguageSettingsAware = new Resource("338a136f-c5ea-11ee-a17d-a7a71cc7c14b");
   public static final Resource AbstractLanguageSettingsAware_currentLanguageCode = new Resource("75a57282-c5ea-11ee-a17d-a7a71cc7c14b");
-  public static final Resource FunctionSpace_aE_Language_LanguageClass = new Resource("6fd050df-c5f0-11ee-a17d-a7a71cc7c14b");
+  public static final Resource FunctionSpace_aE_Language_Resource = new Resource("6fd050df-c5f0-11ee-a17d-a7a71cc7c14b");
   public static final Resource FunctionSpace_aE_Language_MultilingualName = new Resource("47e137a2-d22c-11ee-b255-49ab47716ebd");
   
   /* Begin Protected Region [[user]] */
@@ -36,4 +36,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,mt+7nsy2WKvGM2lmC/F7uAddMD4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,Qf2C3q7RPTQjUMVw1kZOOlGQfXY=] */

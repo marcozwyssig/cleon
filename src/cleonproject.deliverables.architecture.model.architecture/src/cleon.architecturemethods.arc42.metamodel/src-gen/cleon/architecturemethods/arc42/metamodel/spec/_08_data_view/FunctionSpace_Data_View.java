@@ -239,31 +239,6 @@ public class FunctionSpace_Data_View {
 
   }
 
-  public static interface IConditionFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("69420d3a-d0d2-11ee-bd60-4767a6be68d4")
-    public java.lang.String SimpleName();
-
-  }
-  
-  public static interface IConditionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ConditionFunctionsImpl implements IConditionFunctionsImpl {
-
-    public static final IConditionFunctionsImpl INSTANCE = new ConditionFunctionsImpl();
-
-    private ConditionFunctionsImpl() {}
-
-  }
-  
-  public static class ConditionFunctions {
-
-    private ConditionFunctions() {}
-
-  }
-
   public static interface IConditionalOperatorFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f1420861-d0d2-11ee-bd60-4767a6be68d4")
@@ -675,6 +650,84 @@ public class FunctionSpace_Data_View {
 
   }
 
+  public static interface IColumnExpressionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0f27da92-e14f-11ee-9375-43bf1495bfd9")
+    public java.lang.String code();
+
+  }
+  
+  public static interface IColumnExpressionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ColumnExpressionFunctionsImpl implements IColumnExpressionFunctionsImpl {
+
+    public static final IColumnExpressionFunctionsImpl INSTANCE = new ColumnExpressionFunctionsImpl();
+
+    private ColumnExpressionFunctionsImpl() {}
+
+  }
+  
+  public static class ColumnExpressionFunctions {
+
+    private ColumnExpressionFunctions() {}
+
+  }
+
+  public static interface IBooleanExpressionBaseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a20ee6bd-e151-11ee-9375-43bf1495bfd9")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IConditional Conditional();
+
+    @IDynamicResourceExtension.MethodId("c3a97f9e-e151-11ee-9375-43bf1495bfd9")
+    public ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase Parent();
+
+  }
+  
+  public static interface IBooleanExpressionBaseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BooleanExpressionBaseFunctionsImpl implements IBooleanExpressionBaseFunctionsImpl {
+
+    public static final IBooleanExpressionBaseFunctionsImpl INSTANCE = new BooleanExpressionBaseFunctionsImpl();
+
+    private BooleanExpressionBaseFunctionsImpl() {}
+
+  }
+  
+  public static class BooleanExpressionBaseFunctions {
+
+    private BooleanExpressionBaseFunctions() {}
+
+  }
+
+  public static interface IDataExpressionBaseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ce99fcee-e152-11ee-9375-43bf1495bfd9")
+    public ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase Parent();
+
+  }
+  
+  public static interface IDataExpressionBaseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DataExpressionBaseFunctionsImpl implements IDataExpressionBaseFunctionsImpl {
+
+    public static final IDataExpressionBaseFunctionsImpl INSTANCE = new DataExpressionBaseFunctionsImpl();
+
+    private DataExpressionBaseFunctionsImpl() {}
+
+  }
+  
+  public static class DataExpressionBaseFunctions {
+
+    private DataExpressionBaseFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,tzrh50fpeZdlWjr6XtBZJQYxM8g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,pAJozyLZ6m8ZIu1AxGrkk2Yj+C0=] */

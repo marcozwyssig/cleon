@@ -17,7 +17,6 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_Select = new Resource("f8cc72f8-d0cf-11ee-bd60-4767a6be68d4");
   public static final Resource FunctionSpace_aE_Data_aE_View_Group_aE_By = new Resource("8f1e32d1-d0d0-11ee-bd60-4767a6be68d4");
   public static final Resource FunctionSpace_aE_Data_aE_View_Having = new Resource("2f08013a-d0d1-11ee-bd60-4767a6be68d4");
-  public static final Resource FunctionSpace_aE_Data_aE_View_Condition = new Resource("65904fd4-d0d2-11ee-bd60-4767a6be68d4");
   public static final Resource FunctionSpace_aE_Data_aE_View_ConditionalOperator = new Resource("eda61cec-d0d2-11ee-bd60-4767a6be68d4");
   public static final Resource DataView = new Resource("0738a3fd-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DatabaseView = new Resource("846aa8f6-db90-11ee-bf0f-4753d26fac10");
@@ -35,6 +34,9 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_TableArea = new Resource("d8a42c83-e138-11ee-b0cd-2573623ee439");
   public static final Resource FunctionSpace_aE_Data_aE_View_OrderBy = new Resource("d6054fa5-e141-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_OrderByColumn = new Resource("0451c4e6-e143-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_ColumnExpression = new Resource("0250f586-e14f-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_BooleanExpressionBase = new Resource("959efff1-e151-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_DataExpressionBase = new Resource("c9ff3eef-e152-11ee-9375-43bf1495bfd9");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +57,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,Y0cmhdKScaCMtvvKAGfkoeRvk34=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,KySeFzHAxdGHyOVtJYNu5x0HJOs=] */

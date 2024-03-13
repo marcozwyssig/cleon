@@ -31,11 +31,11 @@ public class InnerJoin extends DynamicResource implements IInnerJoin {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnField> selectOn() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnColumn> selectOn() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on);
   }
 
-  public InnerJoin setOn(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnField> on) {
+  public InnerJoin setOn(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnColumn> on) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on, on);
     return this;
   }
@@ -51,12 +51,12 @@ public class InnerJoin extends DynamicResource implements IInnerJoin {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere> selectWhere() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere selectWhere() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where);
   }
 
-  public InnerJoin setWhere(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere> where) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where, where);
+  public InnerJoin setWhere(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere where) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where, where);
     return this;
   }
     
@@ -74,11 +74,11 @@ public class InnerJoin extends DynamicResource implements IInnerJoin {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_with, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,82dbfef2-e121-11ee-995f-5faf5f77d478,PPg31k/1tUQV9N1KfAXM/D9Hrfk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,82dbfef2-e121-11ee-995f-5faf5f77d478,/MiqukYbXMlZAWWrnu2agchZYZg=] */

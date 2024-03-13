@@ -31,12 +31,12 @@ public class Having extends DynamicResource implements IHaving {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition> selectOperand() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand);
+  public ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase selectExpression() {
+    return _getSingle(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression);
   }
 
-  public Having setOperand(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition> operand) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand, operand);
+  public Having setExpression(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase expression) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression, expression);
     return this;
   }
     
@@ -54,9 +54,9 @@ public class Having extends DynamicResource implements IHaving {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand, visitor);
+    _acceptSingle(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3e8e579-d0d0-11ee-bd60-4767a6be68d4,SNaD3AVhaDzUyQO3Cq5UswE78k8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3e8e579-d0d0-11ee-bd60-4767a6be68d4,PhgKlTnNSC2H7xvKs9hF8iZKrPo=] */

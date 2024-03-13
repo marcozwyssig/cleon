@@ -14,10 +14,10 @@ public interface IViewBase extends ch.actifsource.core.javamodel.IDecorator, cle
   
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement selectFrom();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IGroup_By selectGroupby();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IGroup_By selectGroup();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoin> selectJoin();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,+4Nm+Dx7pgbdo9UZfkzGvkZgJe0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,lcQNj/YV/JjQjMbFflpxY+SVCTY=] */

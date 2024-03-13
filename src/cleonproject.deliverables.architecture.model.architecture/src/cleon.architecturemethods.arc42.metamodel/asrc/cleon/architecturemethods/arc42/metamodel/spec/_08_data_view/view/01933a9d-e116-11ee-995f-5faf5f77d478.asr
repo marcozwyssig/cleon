@@ -44,6 +44,7 @@
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
         <resource statement-guid="57df838d-e116-11ee-995f-5faf5f77d478" type="resource" guid="57df5c7a-e116-11ee-995f-5faf5f77d478">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="86e2e945-e168-11ee-819d-a1dba0e838c2" type="resource" guid="86e24d00-e168-11ee-819d-a1dba0e838c2" />
             <resource statement-guid="f0eb99dd-e11c-11ee-995f-5faf5f77d478" type="resource" guid="f0e77b09-e11c-11ee-995f-5faf5f77d478">
               <owns predicate="6a2968dd-d2ac-11de-87dc-a9aeefa4174b">
                 <resource statement-guid="f0eb99dc-e11c-11ee-995f-5faf5f77d478" type="resource" guid="f0e77afd-e11c-11ee-995f-5faf5f77d478">
@@ -227,7 +228,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="0193fdf0-e116-11ee-995f-5faf5f77d478" type="literal">OnField</object>
+    <object statement-guid="0193fdf0-e116-11ee-995f-5faf5f77d478" type="literal">OnColumn</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="574f7888-e116-11ee-995f-5faf5f77d478">
@@ -245,6 +246,16 @@
                 <object statement-guid="57df5c7c-e116-11ee-995f-5faf5f77d478" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="86e2e945-e168-11ee-819d-a1dba0e838c2">
+                  <resource guid="86e24d00-e168-11ee-819d-a1dba0e838c2">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="86e29b23-e168-11ee-819d-a1dba0e838c2" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="86e2c234-e168-11ee-819d-a1dba0e838c2" type="literal">ON </object>
+                    </predicate>
+                  </resource>
+                </object>
                 <object statement-guid="f0eb99dd-e11c-11ee-995f-5faf5f77d478">
                   <resource guid="f0e77b09-e11c-11ee-995f-5faf5f77d478">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

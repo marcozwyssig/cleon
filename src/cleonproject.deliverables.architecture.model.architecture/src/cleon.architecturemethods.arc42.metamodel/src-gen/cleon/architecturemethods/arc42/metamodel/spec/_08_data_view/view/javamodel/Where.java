@@ -31,22 +31,12 @@ public class Where extends DynamicResource implements IWhere {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition> selectOperand() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand);
+  public ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase selectExpression() {
+    return _getSingle(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression);
   }
 
-  public Where setOperand(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition> operand) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand, operand);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase> selectStatement() {
-    return _getList(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Where_statement);
-  }
-
-  public Where setStatement(java.util.List<? extends ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase> statement) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Where_statement, statement);
+  public Where setExpression(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase expression) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression, expression);
     return this;
   }
     
@@ -64,16 +54,9 @@ public class Where extends DynamicResource implements IWhere {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ICondition.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_operand, visitor);
-    _acceptList(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Where_statement, visitor);
+    _acceptSingle(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Conditional_expression, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere selectToMeStatement(ch.actifsource.solution.datatype.generic.expression.bool.javamodel.IBooleanExpressionBase object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.Where_statement, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42d94ad2-e11a-11ee-995f-5faf5f77d478,5kSTdSqaYUVZwCytP/tawSkSoso=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42d94ad2-e11a-11ee-995f-5faf5f77d478,NEbTYhVe6Hx8XSCQ1EolRqK06N4=] */

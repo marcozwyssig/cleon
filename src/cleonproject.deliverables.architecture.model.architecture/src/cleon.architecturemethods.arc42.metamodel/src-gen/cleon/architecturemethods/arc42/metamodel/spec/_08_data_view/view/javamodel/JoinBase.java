@@ -17,9 +17,9 @@ public abstract class JoinBase extends DynamicResource implements IJoinBase {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoinBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_with, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoinBase selectToMeOn(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnField object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoinBase selectToMeOn(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOnColumn object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoinBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.JoinBase_on, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8c051e4d-e121-11ee-995f-5faf5f77d478,X1WIroacyo1Igp+cwN1b5tR8j8c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8c051e4d-e121-11ee-995f-5faf5f77d478,08xGY0ulCdXTlPsCKSOrLItoJvo=] */

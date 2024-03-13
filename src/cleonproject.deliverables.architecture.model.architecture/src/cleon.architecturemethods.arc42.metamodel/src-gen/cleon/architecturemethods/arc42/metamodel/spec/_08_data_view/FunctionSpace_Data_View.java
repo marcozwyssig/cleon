@@ -85,6 +85,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("ae2b8d22-e135-11ee-995f-5faf5f77d478")
     public java.lang.String Name();
 
+    @IDynamicResourceExtension.MethodId("1b3b6de1-e140-11ee-9375-43bf1495bfd9")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> CriteriaFields();
+
   }
   
   public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -354,7 +357,7 @@ public class FunctionSpace_Data_View {
   public static interface IConditionalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c371368a-e11a-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -379,7 +382,7 @@ public class FunctionSpace_Data_View {
   public static interface IWhereFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("09d674b8-e11b-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -429,7 +432,7 @@ public class FunctionSpace_Data_View {
   public static interface IWhereAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7100449a-e120-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -454,7 +457,7 @@ public class FunctionSpace_Data_View {
   public static interface IViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("82d5b266-e120-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
     @IDynamicResourceExtension.MethodId("b0f451a0-e132-11ee-995f-5faf5f77d478")
     public java.lang.String SimpleName();
@@ -464,6 +467,9 @@ public class FunctionSpace_Data_View {
 
     @IDynamicResourceExtension.MethodId("e333e7d7-e135-11ee-995f-5faf5f77d478")
     public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> Columns();
+
+    @IDynamicResourceExtension.MethodId("8c4b05a2-e13f-11ee-9375-43bf1495bfd9")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> CriteriaFields();
 
   }
   
@@ -491,7 +497,7 @@ public class FunctionSpace_Data_View {
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable From();
 
     @IDynamicResourceExtension.MethodId("04094cda-e122-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable FromView();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement FromView();
 
     @IDynamicResourceExtension.MethodId("fb8095db-e12d-11ee-995f-5faf5f77d478")
     public java.lang.String SimpleName();
@@ -519,7 +525,7 @@ public class FunctionSpace_Data_View {
   public static interface IJoinBaseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c579861e-e121-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable FromView();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement FromView();
 
   }
   
@@ -549,6 +555,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("5e2ef9f3-e134-11ee-995f-5faf5f77d478")
     public java.lang.String Name();
 
+    @IDynamicResourceExtension.MethodId("53de3789-e141-11ee-9375-43bf1495bfd9")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IColumn> CriteriaFields();
+
   }
   
   public static interface IDatabaseElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -569,6 +578,81 @@ public class FunctionSpace_Data_View {
 
   }
 
+  public static interface ITableAreaFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("de076a79-e138-11ee-b0cd-2573623ee439")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.ITable> Tables();
+
+  }
+  
+  public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableAreaFunctionsImpl implements ITableAreaFunctionsImpl {
+
+    public static final ITableAreaFunctionsImpl INSTANCE = new TableAreaFunctionsImpl();
+
+    private TableAreaFunctionsImpl() {}
+
+  }
+  
+  public static class TableAreaFunctions {
+
+    private TableAreaFunctions() {}
+
+  }
+
+  public static interface IOrderByFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("dc3ad1be-e141-11ee-9375-43bf1495bfd9")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
+
+  }
+  
+  public static interface IOrderByFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OrderByFunctionsImpl implements IOrderByFunctionsImpl {
+
+    public static final IOrderByFunctionsImpl INSTANCE = new OrderByFunctionsImpl();
+
+    private OrderByFunctionsImpl() {}
+
+  }
+  
+  public static class OrderByFunctions {
+
+    private OrderByFunctions() {}
+
+  }
+
+  public static interface IOrderByColumnFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ef559ad9-e142-11ee-9375-43bf1495bfd9")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IOrderByColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OrderByColumnFunctionsImpl implements IOrderByColumnFunctionsImpl {
+
+    public static final IOrderByColumnFunctionsImpl INSTANCE = new OrderByColumnFunctionsImpl();
+
+    private OrderByColumnFunctionsImpl() {}
+
+  }
+  
+  public static class OrderByColumnFunctions {
+
+    private OrderByColumnFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,bLOO3dvEA1s4s6tGfskIKhjqiWQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,yGVPt20fyFEtObmMj9KQ17SAhzw=] */

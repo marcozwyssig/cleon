@@ -10,8 +10,8 @@ public interface IJoinBase extends ch.actifsource.core.javamodel.IResource {
   
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement selectWith();
   
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> selectOn();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> selectOn();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c051e4d-e121-11ee-995f-5faf5f77d478,G2n5u0MROodIMAPCr0FHKhyKeS8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c051e4d-e121-11ee-995f-5faf5f77d478,6ziH1zVm8PwgJtpdqqXXJLlGnms=] */

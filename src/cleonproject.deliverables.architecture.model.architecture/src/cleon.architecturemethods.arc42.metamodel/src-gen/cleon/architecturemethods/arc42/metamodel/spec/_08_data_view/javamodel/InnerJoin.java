@@ -31,12 +31,12 @@ public class InnerJoin extends DynamicResource implements IInnerJoin {
   // relations
   
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> selectOn() {
-    return _getMultiMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> selectOn() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on);
   }
 
-  public InnerJoin setOn(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> on) {
-    _setMultiMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on, on);
+  public InnerJoin setOn(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField> on) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on, on);
     return this;
   }
     
@@ -74,11 +74,11 @@ public class InnerJoin extends DynamicResource implements IInnerJoin {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOnField.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_on, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.WhereAware_where, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.JoinBase_with, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,82dbfef2-e121-11ee-995f-5faf5f77d478,CWxFlQB5cl584SemAGiwGA8Hsfc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,82dbfef2-e121-11ee-995f-5faf5f77d478,EH5BsRcOEkc1i2i4t93iLXQaPUE=] */

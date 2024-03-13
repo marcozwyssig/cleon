@@ -6,6 +6,10 @@ public interface IView extends cleon.architecturemethods.arc42.metamodel.spec._0
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d1f10a4f-d0ca-11ee-a38e-0b82bafb3097");
   
+  // relations
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IOrderBy selectOrderBy();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,5b/AEr1JX+QgQpFhSr9SN04vGoQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,AIAQluFYPrDT5/i/NoX6ToDpSYk=] */

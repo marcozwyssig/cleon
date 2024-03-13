@@ -124,6 +124,14 @@ public class _08_data_viewPackage {
   public static final Resource AliasAware = new Resource("7a86e81f-e132-11ee-995f-5faf5f77d478");
   public static final Resource DatabaseElement = new Resource("7027282b-e133-11ee-995f-5faf5f77d478");
   public static final Resource FunctionSpace_aE_Data_aE_View_DatabaseElement = new Resource("0d10fc7f-e134-11ee-995f-5faf5f77d478");
+  public static final Resource FunctionSpace_aE_Data_aE_View_TableArea = new Resource("d8a42c83-e138-11ee-b0cd-2573623ee439");
+  public static final Resource TableArea_subview = new Resource("cdcc7d5d-e139-11ee-9375-43bf1495bfd9");
+  public static final Resource OrderBy = new Resource("9fb09ec9-e141-11ee-9375-43bf1495bfd9");
+  public static final Resource View_orderBy = new Resource("bd743eed-e141-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_OrderBy = new Resource("d6054fa5-e141-11ee-9375-43bf1495bfd9");
+  public static final Resource OrderBy_orderby = new Resource("0e17b5b4-e142-11ee-9375-43bf1495bfd9");
+  public static final Resource OrderByColumn = new Resource("30593d8e-e142-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_OrderByColumn = new Resource("0451c4e6-e143-11ee-9375-43bf1495bfd9");
   
   /* Begin Protected Region [[user]] */
   
@@ -144,4 +152,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,sBwJYbCDk1FCgnsEpqRFq2wgceQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,seQm++2au6KL+gWXZ4RsG+Ov6vg=] */

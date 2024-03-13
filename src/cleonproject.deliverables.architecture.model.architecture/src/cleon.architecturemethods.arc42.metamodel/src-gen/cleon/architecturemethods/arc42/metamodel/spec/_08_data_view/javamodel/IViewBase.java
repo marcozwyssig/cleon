@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IViewBase extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
+public interface IViewBase extends ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IAliasAware, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c400e4bd-e120-11ee-995f-5faf5f77d478");
   
@@ -20,4 +20,4 @@ public interface IViewBase extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,0LIkTKv+uydba+1x+xrKV3WfTaM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,rMQB0HuW3MPQkHfhYHBHkz6t0jc=] */

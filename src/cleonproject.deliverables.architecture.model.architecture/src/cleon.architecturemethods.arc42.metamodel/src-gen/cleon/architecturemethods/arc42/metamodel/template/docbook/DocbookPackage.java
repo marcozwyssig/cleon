@@ -47,7 +47,6 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_BuildingBlock = new Resource("6527ef4b-d574-11ea-9bae-37ef2cb951a8");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_WhiteboxSystem = new Resource("ff70064d-d7dc-11ea-ae00-5518e944c256");
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_Backup_aE_and_aE_Recovery = new Resource("0c926178-de24-11ea-9e94-c51d7f8d96d1");
-  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_Sensor = new Resource("b02d76f6-f3f8-11ea-ade2-eb32c9704a85");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmForSystemConfiguration = new Resource("a7661974-fd92-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractRealmHandlers = new Resource("2fd4180f-fd93-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmDependent = new Resource("a84cda5a-fd93-11ea-aa08-3550db97e5ec");
@@ -71,6 +70,9 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentProcedureConcept = new Resource("43974723-7e9f-11ec-b55c-f5ca121c82b7");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DNSSystemIntegration = new Resource("2bc023c7-d0f5-11ec-a32f-e7eb43a099bd");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentProcedureOrderGroup = new Resource("801d8c46-0e86-11ed-992a-279da38c72c5");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_AbstractSensorMonitoringBuildingBlock = new Resource("92c11a04-e2e9-11ee-8945-4df0f2e1f411");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_NodeSensorMonitoringBuildingBlock = new Resource("c673d09a-e2e9-11ee-8945-4df0f2e1f411");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_ClusterSensorMonitoringBuildingBlock = new Resource("d93e9ad4-e2e9-11ee-8945-4df0f2e1f411");
   
   /* Begin Protected Region [[user]] */
   
@@ -91,4 +93,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.docbook,Vh+GCYMxy0w/Gpu2CWDTeKNRVPI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.docbook,nqSFo65ilFjogXAsFywsKwXmro4=] */

@@ -50,6 +50,15 @@ public class sites__T_yaml {
     @IDynamicResourceExtension.MethodId("87272289-7173-11ed-9fe1-719421dee1d1")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("a7f3d593-e2ef-11ee-8945-4df0f2e1f411")
+    public java.lang.String TypeNameForSensor();
+
+    @IDynamicResourceExtension.MethodId("c830228b-e2f0-11ee-8945-4df0f2e1f411")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubzoneFromIP();
+
+    @IDynamicResourceExtension.MethodId("35d12a50-e2f1-11ee-8945-4df0f2e1f411")
+    public java.lang.String TypeName();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -59,6 +68,9 @@ public class sites__T_yaml {
 
     @IDynamicResourceExtension.MethodId("c0109767-dcb7-11ea-b5f8-77c3980a1d0a")
     public java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("a7f3d593-e2ef-11ee-8945-4df0f2e1f411")
+    public java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
 
   }
   
@@ -136,6 +148,23 @@ public class sites__T_yaml {
       /* End Protected Region   [[c0109767-dcb7-11ea-b5f8-77c3980a1d0a]] */
     }
 
+    @Override
+    public java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      /* Begin Protected Region [[a7f3d593-e2ef-11ee-8945-4df0f2e1f411]] */
+    	final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
+    	var securitySubzone = abstractHostFunctions.SecuritySubzoneFromIP();
+    	if( securitySubzone != null) {
+    		var securitySubzoneFunctions = securitySubzone.extension(ISecuritySubZoneFunctions.class);
+    		var ifcMonitoring = securitySubzoneFunctions.InterfaceSensorMonitorBuildingBlock();
+    		if( ifcMonitoring != null ) {
+    			return ifcMonitoring.selectShortName();
+    		}
+    	}
+    	return abstractHostFunctions.TypeName();
+   
+      /* End Protected Region   [[a7f3d593-e2ef-11ee-8945-4df0f2e1f411]] */
+    }
+
   }
   
   public static class AbstractHostFunctions {
@@ -148,6 +177,10 @@ public class sites__T_yaml {
 
     public static java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).RenderToText(site, abstractHostList);
+    }
+
+    public static java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).TypeNameForSensor(abstractHost);
     }
 
   }
@@ -529,6 +562,31 @@ public class sites__T_yaml {
 
   }
 
+  public static interface ISecuritySubZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1e7d71b0-e2f0-11ee-8945-4df0f2e1f411")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IInterfaceSensorMonitorBuildingBlock InterfaceSensorMonitorBuildingBlock();
+
+  }
+  
+  public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SecuritySubZoneFunctionsImpl implements ISecuritySubZoneFunctionsImpl {
+
+    public static final ISecuritySubZoneFunctionsImpl INSTANCE = new SecuritySubZoneFunctionsImpl();
+
+    private SecuritySubZoneFunctionsImpl() {}
+
+  }
+  
+  public static class SecuritySubZoneFunctions {
+
+    private SecuritySubZoneFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,U7Q7I3yxzZXW1BxyPc6kXG1thdk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,vZUtE5UfCvn/PJys6fh4rL3kH3Y=] */

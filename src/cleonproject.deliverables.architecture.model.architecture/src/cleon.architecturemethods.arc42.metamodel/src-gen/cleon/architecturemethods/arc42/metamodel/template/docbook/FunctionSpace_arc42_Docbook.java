@@ -611,31 +611,6 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface ISensorFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b02d76fa-f3f8-11ea-ade2-eb32c9704a85")
-    public java.lang.String SensorNote();
-
-  }
-  
-  public static interface ISensorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SensorFunctionsImpl implements ISensorFunctionsImpl {
-
-    public static final ISensorFunctionsImpl INSTANCE = new SensorFunctionsImpl();
-
-    private SensorFunctionsImpl() {}
-
-  }
-  
-  public static class SensorFunctions {
-
-    private SensorFunctions() {}
-
-  }
-
   public static interface ITechnical_RisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("326312b7-2b4a-11eb-863c-b9f41a0a3f06")
@@ -661,6 +636,81 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IAbstractSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a07dcc05-e2e9-11ee-8945-4df0f2e1f411")
+    public java.lang.String BuildingBlockName();
+
+  }
+  
+  public static interface IAbstractSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSensorMonitoringBuildingBlockFunctionsImpl implements IAbstractSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IAbstractSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new AbstractSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private AbstractSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSensorMonitoringBuildingBlockFunctions {
+
+    private AbstractSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface INodeSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cb11e9cc-e2e9-11ee-8945-4df0f2e1f411")
+    public java.lang.String BuildingBlockName();
+
+  }
+  
+  public static interface INodeSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NodeSensorMonitoringBuildingBlockFunctionsImpl implements INodeSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final INodeSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new NodeSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private NodeSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class NodeSensorMonitoringBuildingBlockFunctions {
+
+    private NodeSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface IClusterSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d93e9ad7-e2e9-11ee-8945-4df0f2e1f411")
+    public java.lang.String BuildingBlockName();
+
+  }
+  
+  public static interface IClusterSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ClusterSensorMonitoringBuildingBlockFunctionsImpl implements IClusterSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IClusterSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new ClusterSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private ClusterSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class ClusterSensorMonitoringBuildingBlockFunctions {
+
+    private ClusterSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,tqpbYRDcz5SwSo2LIBwXnCa1BB8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,mteUAxVDkEZF7RMvgSWldrRXG4o=] */

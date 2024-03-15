@@ -34,6 +34,11 @@ public class BuildingblocksPackage {
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_snmpcustomstring = new Resource("29718d97-0c99-11ec-a707-cfc3a993d4d5");
   public static final Resource AbstractSensorMonitoringBuildingBlock_excludeSensorFromBasedn = new Resource("44c163ad-b966-11ec-a408-4ba6a2d760ef");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_wmidiskspace = new Resource("8c49a7d7-b967-11ec-a408-4ba6a2d760ef");
+  public static final Resource InterfaceSensorMonitorBuildingBlock = new Resource("3e634cd5-e2e4-11ee-8945-4df0f2e1f411");
+  public static final Resource MonitoringBuildingBlock_nodeInterface = new Resource("47e2546b-e2e4-11ee-8945-4df0f2e1f411");
+  public static final Resource InterfaceSensorMonitorBuildingBlock_interface = new Resource("c6c89906-e2e4-11ee-8945-4df0f2e1f411");
+  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_InterfaceSensorMonitorBuildingBlock = new Resource("a7729b6d-e2e8-11ee-8945-4df0f2e1f411");
+  public static final Resource InterfaceSensorMonitorBuildingBlock_shortName = new Resource("1b39cac1-e2ee-11ee-8945-4df0f2e1f411");
   
   /* Begin Protected Region [[user]] */
   
@@ -54,4 +59,4 @@ public class BuildingblocksPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,KbgyXfx5dumskj4cDk5/kqV42Jk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,49LWaqNmCfNlo5upBb+zG4ATpDo=] */

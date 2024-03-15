@@ -488,9 +488,6 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5cdb32c9-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
-
   }
   
   public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -512,9 +509,6 @@ public class FunctionSpace_Asciidoc_arc42 {
   }
 
   public static interface IMonitoringFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5cdb332e-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderChapter();
 
   }
   
@@ -688,4 +682,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,+Ir/vGfWmnt5NmXQp7aRfVthqxI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,2D8WCxdOoFn6l3AT9K7XMGD4RjA=] */

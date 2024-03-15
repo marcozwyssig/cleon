@@ -18,8 +18,6 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept selectBusinessContinuityConcept();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.IIPNetworkConcept selectNetworkConcept();
-  
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.javamodel.IResourceConcept selectResourceConcept();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.javamodel.IDeploymentConcept selectDeploymentConcept();
@@ -32,8 +30,10 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectChapters();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.IIPNetworkConcept selectNetworkConcept();
+  
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortServices selectPortServiceConcept();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,i4mF/9gu67dcb7s0rC40WsmrDwg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,DywcUEkFWU8HE6Z9BAGg/0AsGN8=] */

@@ -734,7 +734,7 @@ public class FunctionSpace_Communication {
       		for (final var hosts : destinationSubZoneFunctions
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
-      			result.append("GRP-HOS-" + configurationFunctions.TypeName() + "-" + hosts.selectName()
+      			result.append("GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + hosts.selectName()
       			+ "-" + destinationSubZone.selectVLAN_No());
       			result.append(System.lineSeparator());
       		}

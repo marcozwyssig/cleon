@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
-
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;;
 /* End Protected Region   [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
 
 public class FunctionSpace_Segmentation {
@@ -123,11 +123,17 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("e99aad2f-a965-11e9-bf83-7bacdb6991f7")
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
 
+    /**
+     * 
+     */
     @IDynamicResourceExtension.MethodId("e641276b-51a3-11ea-a946-13c393300b57")
     public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
     @IDynamicResourceExtension.MethodId("f44b9356-0aa0-11ea-97f4-9d91b2097bad")
     public java.lang.String GroupNameAll(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment env);
+
+    @IDynamicResourceExtension.MethodId("88247d98-e2d8-11ee-bcaf-bf4e173adc8d")
+    public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
   }
   
@@ -138,6 +144,9 @@ public class FunctionSpace_Segmentation {
 
     @IDynamicResourceExtension.MethodId("e99aad2f-a965-11e9-bf83-7bacdb6991f7")
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
+    @IDynamicResourceExtension.MethodId("88247d98-e2d8-11ee-bcaf-bf4e173adc8d")
+    public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
@@ -181,6 +190,15 @@ public class FunctionSpace_Segmentation {
       /* End Protected Region   [[e99aad2f-a965-11e9-bf83-7bacdb6991f7]] */
     }
 
+    @Override
+    public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
+      /* Begin Protected Region [[88247d98-e2d8-11ee-bcaf-bf4e173adc8d]] */
+    	final var sysCfgFunction = systemConfiguration.extension(ISystemConfigurationFunctions.class);
+    	return sysCfgFunction.TypeName(securitySubZone);
+      // XXX implement template function here   
+      /* End Protected Region   [[88247d98-e2d8-11ee-bcaf-bf4e173adc8d]] */
+    }
+
   }
   
   public static class SecuritySubZoneFunctions {
@@ -195,8 +213,12 @@ public class FunctionSpace_Segmentation {
       return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZone).EvaluatePolicy(source, securitySubZone);
     }
 
+    public static java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
+      return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZone).TypeName(systemConfiguration, securitySubZone);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,jyPsAn65EeWBNcPKn3TQBIeDEPk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,pgDdwjkOUvQAgFWZYdY0SalCHWA=] */

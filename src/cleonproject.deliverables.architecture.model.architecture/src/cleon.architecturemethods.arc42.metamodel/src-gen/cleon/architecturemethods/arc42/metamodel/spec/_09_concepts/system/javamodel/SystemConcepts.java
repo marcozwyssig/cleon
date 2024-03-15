@@ -286,10 +286,6 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_businessContinuityConcept, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeNetworkConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.IIPNetworkConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_networkConcept, object.getResource());
-  }
-  
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeResourceConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.javamodel.IResourceConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_resourceConcept, object.getResource());
   }
@@ -314,9 +310,13 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_chapters, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeNetworkConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.IIPNetworkConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_networkConcept, object.getResource());
+  }
+  
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMePortServiceConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortServices object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_portServiceConcept, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,0ZP/OygFH/nIL98jKKsKR9F4+dc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,ARtNQ+9MDmqDPtbv86bj+MQ3qHU=] */

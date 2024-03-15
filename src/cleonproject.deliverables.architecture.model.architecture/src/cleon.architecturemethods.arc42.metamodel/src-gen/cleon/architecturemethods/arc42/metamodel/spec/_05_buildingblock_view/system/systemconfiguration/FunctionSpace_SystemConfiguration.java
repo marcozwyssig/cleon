@@ -1065,7 +1065,10 @@ public class FunctionSpace_SystemConfiguration {
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem System();
 
     @IDynamicResourceExtension.MethodId("cc7b2d08-678f-11ea-b072-516c5e04c87a")
-    public java.lang.String TypeName();
+    public java.lang.String TypeName(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
+    @IDynamicResourceExtension.MethodId("9227704f-e2da-11ee-bcaf-bf4e173adc8d")
+    public java.lang.String TypeNameFromInterface(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
@@ -1100,6 +1103,9 @@ public class FunctionSpace_SystemConfiguration {
 
     @IDynamicResourceExtension.MethodId("1e2f66c0-06bd-11ea-8f17-2da21adc8e34")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> OnlyToGenerate(final List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> systemConfigurationList);
+
+    @IDynamicResourceExtension.MethodId("9227704f-e2da-11ee-bcaf-bf4e173adc8d")
+    public java.lang.String TypeNameFromInterface(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
   }
   
@@ -1181,6 +1187,21 @@ public class FunctionSpace_SystemConfiguration {
       /* End Protected Region   [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
     }
 
+    @Override
+    public java.lang.String TypeNameFromInterface(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
+      /* Begin Protected Region [[9227704f-e2da-11ee-bcaf-bf4e173adc8d]] */
+    	final var ifc = systemConfiguration.selectInterface().get(securitySubZone.getResource());
+    	if( ifc != null ) {
+    		var shortName = ifc.selectOverrideShortName();
+    		if (shortName != null ) {
+    			return shortName;
+    		}
+    	}
+    	final var sysCfg = systemConfiguration.extension(ISystemConfigurationFunctions.class);
+    	return sysCfg.GetShortname();  
+      /* End Protected Region   [[9227704f-e2da-11ee-bcaf-bf4e173adc8d]] */
+    }
+
   }
   
   public static class SystemConfigurationFunctions {
@@ -1227,8 +1248,12 @@ public class FunctionSpace_SystemConfiguration {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfigurationList).OnlyToGenerate(systemConfigurationList);
     }
 
+    public static java.lang.String TypeNameFromInterface(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).TypeNameFromInterface(securitySubZone, systemConfiguration);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,YFTp63gYAdDosIG8iNQeeT+14XI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,xuJQfZRgCcKhtcY2c/kiIg4yXuw=] */

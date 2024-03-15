@@ -31,6 +31,15 @@ public class Interface extends DynamicResource implements IInterface {
   // attributes
   
   @Override
+  public java.lang.String selectOverrideShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.OverrideShortNameAware_overrideShortName);
+  }
+    
+  public void setOverrideShortName(java.lang.String overrideShortName) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.OverrideShortNameAware_overrideShortName, overrideShortName);
+  }
+
+  @Override
   public java.lang.Integer selectVlan() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.Interface_vlan);
   }
@@ -95,6 +104,7 @@ public class Interface extends DynamicResource implements IInterface {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.Interface_vlan, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.Interface_interfaceInSecuritySubZone, visitor);
@@ -118,4 +128,4 @@ public class Interface extends DynamicResource implements IInterface {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,pXs+N8le93B4YFeDO/kG8CyiGtY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,tiMKmeAjdqyfx9VC1nOJMW0lOw4=] */

@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topol
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IOverrideShortNameAware {
+public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c6ffaf13-6da4-11e9-8af5-2346ca56c2e2");
   
@@ -24,4 +24,4 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,bMJmM0NnMPLrTUiEg226QnpSoxQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,YUC3103ZyDIB9ajudDKl6t88nH0=] */

@@ -15,6 +15,7 @@ import ch.actifsource.util.log.Logger;
 import java.util.stream.Collectors;
 
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.plattform.javamodel.IPrtgProbeSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.security.iam.javamodel.IReadOnlyDomainControllerSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost;
@@ -386,6 +387,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
     public java.lang.String TypeName();
 
+    @IDynamicResourceExtension.MethodId("0a417e16-e2e0-11ee-bcaf-bf4e173adc8d")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubzoneFromIP();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -398,6 +402,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
+    public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
 
   }
   
@@ -438,6 +445,20 @@ public class FunctionSpace_Topology {
       /* End Protected Region   [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
     }
 
+    @Override
+    public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      /* Begin Protected Region [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
+      final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
+      final var securitySubZone = abstractHostFunctions.SecuritySubzoneFromIP();
+	  final var sysCfgFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);      
+      if( securitySubZone != null ) {
+    	  return sysCfgFunctions.TypeName(securitySubZone);    	  
+      } else {
+    	  return sysCfgFunctions.GetShortname();
+      }      
+      /* End Protected Region   [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
+    }
+
   }
   
   public static class AbstractHostFunctions {
@@ -454,6 +475,10 @@ public class FunctionSpace_Topology {
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).WhereSubzone(securitySubZone, abstractHostList);
+    }
+
+    public static java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).TypeName(abstractHost);
     }
 
   }
@@ -783,14 +808,10 @@ public class FunctionSpace_Topology {
     @Override
     public java.lang.String AddDash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
-      try {
-      	if (!stringLiteral.isEmpty()) {
-      		return "-";
-      	}
-      	return "";
-      } catch (final java.lang.NullPointerException e) {
-      	return null;
-      }
+	  	if (stringLiteral != null && !stringLiteral.isEmpty()) {
+	  		return "-";
+	  	}
+	  	return "";
       /* End Protected Region   [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
     }
 
@@ -960,4 +981,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,j2hDp5IdaBRaVWYDxohmcBenMFw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,hNzeK6Ad7NCTSSNKlDpy1bvvQi8=] */

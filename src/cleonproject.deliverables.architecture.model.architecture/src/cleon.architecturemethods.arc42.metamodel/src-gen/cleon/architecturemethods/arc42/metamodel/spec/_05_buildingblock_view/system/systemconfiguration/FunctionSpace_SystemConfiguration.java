@@ -1192,7 +1192,7 @@ public class FunctionSpace_SystemConfiguration {
       /* Begin Protected Region [[9227704f-e2da-11ee-bcaf-bf4e173adc8d]] */
     	final var ifc = systemConfiguration.selectInterface().get(securitySubZone.getResource());
     	if( ifc != null ) {
-    		var shortName = ifc.selectOverrideShortName();
+    		var shortName = ifc.selectGenericShortName();
     		if (shortName != null ) {
     			return shortName;
     		}

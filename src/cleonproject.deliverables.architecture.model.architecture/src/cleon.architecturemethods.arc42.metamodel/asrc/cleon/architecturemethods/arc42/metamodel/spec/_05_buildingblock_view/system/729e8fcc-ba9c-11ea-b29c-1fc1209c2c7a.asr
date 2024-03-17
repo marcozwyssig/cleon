@@ -19,19 +19,19 @@
           <object statement-guid="9e60f58f-678f-11ea-b072-516c5e04c87a" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="8e026fff-678f-11ea-b072-516c5e04c87a" type="literal">overrideShortName</object>
+          <object statement-guid="8e026fff-678f-11ea-b072-516c5e04c87a" type="literal">genericShortName</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="8d4d29be-678f-11ea-b072-516c5e04c87a" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-          <object statement-guid="a08ed210-678f-11ea-b072-516c5e04c87a" type="literal">Some of the shortnames needs to be overwritten because this has an impact on the implementation.</object>
+          <object statement-guid="a08ed210-678f-11ea-b072-516c5e04c87a" type="literal">For a name that encompasses multiple components, such as "WIN" for both "WIN2016" and "WIN10", you can use "WIN" as a prefix followed by a differentiator to indicate the version or category.</object>
         </predicate>
       </resource>
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="72a100cf-ba9c-11ea-b29c-1fc1209c2c7a" type="literal">OverrideShortNameAware</object>
+    <object statement-guid="72a100cf-ba9c-11ea-b29c-1fc1209c2c7a" type="literal">GenericShortNameAware</object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="72a100d1-ba9c-11ea-b29c-1fc1209c2c7a" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

@@ -297,31 +297,31 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   }
 
-  public static interface IOverrideShortNameAwareFunctions extends IDynamicResourceExtension {
+  public static interface IGenericShortNameAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4461f4ba-d8e6-11eb-9729-c33fe444cc71")
     public java.lang.String OverrideOrName();
 
   }
   
-  public static interface IOverrideShortNameAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IGenericShortNameAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class OverrideShortNameAwareFunctionsImpl implements IOverrideShortNameAwareFunctionsImpl {
+  public static class GenericShortNameAwareFunctionsImpl implements IGenericShortNameAwareFunctionsImpl {
 
-    public static final IOverrideShortNameAwareFunctionsImpl INSTANCE = new OverrideShortNameAwareFunctionsImpl();
+    public static final IGenericShortNameAwareFunctionsImpl INSTANCE = new GenericShortNameAwareFunctionsImpl();
 
-    private OverrideShortNameAwareFunctionsImpl() {}
+    private GenericShortNameAwareFunctionsImpl() {}
 
   }
   
-  public static class OverrideShortNameAwareFunctions {
+  public static class GenericShortNameAwareFunctions {
 
-    private OverrideShortNameAwareFunctions() {}
+    private GenericShortNameAwareFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,EjBeSd/PhUyNgvaKouzVnOzt13o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,6ZIu4uIGB0n/41BFsXfuRw+IqAI=] */

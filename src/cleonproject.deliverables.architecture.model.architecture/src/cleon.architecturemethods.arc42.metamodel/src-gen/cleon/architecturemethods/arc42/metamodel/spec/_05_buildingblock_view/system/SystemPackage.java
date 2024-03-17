@@ -19,7 +19,7 @@ public class SystemPackage {
   public static final Resource SystemWithSystemComponent = new Resource("cb55af14-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource NamedSystemWithSystemComponent = new Resource("e8941a6b-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystem = new Resource("a271ea42-616f-11ea-a72c-c14dab81a029");
-  public static final Resource OverrideShortNameAware_overrideShortName = new Resource("8d4c184a-678f-11ea-b072-516c5e04c87a");
+  public static final Resource GenericShortNameAware_genericShortName = new Resource("8d4c184a-678f-11ea-b072-516c5e04c87a");
   public static final Resource WhiteboxSystem_functionality = new Resource("94971eeb-7e70-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_deployment = new Resource("483e67cc-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_authn = new Resource("569bedb8-7ed3-11ea-9262-7b7e0e9cb204");
@@ -32,7 +32,7 @@ public class SystemPackage {
   public static final Resource WhiteboxSystem_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_usedProducts = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource WhiteboxSystem_availability = new Resource("b85567f0-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource OverrideShortNameAware = new Resource("729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a");
+  public static final Resource GenericShortNameAware = new Resource("729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_BuildingBlock = new Resource("53b1bef9-c1cf-11ea-b956-0ffede25a02d");
   public static final Resource DeploymentSystemArc42 = new Resource("33c30f60-fe58-11ea-abcb-bfad67a56d79");
   public static final Resource DeploymentSystemArc42_usedDeploymentMethod = new Resource("97c8aeae-fe58-11ea-abcb-bfad67a56d79");
@@ -47,7 +47,7 @@ public class SystemPackage {
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfigurationProperty = new Resource("0183aaf2-d5d1-11ec-ad12-8d6f8e00bc94");
   public static final Resource SkipHostGenerationAware = new Resource("3252c4b2-e0aa-11ec-afcf-1feb072e53ef");
   public static final Resource AbstractSystemOrSystemComponent = new Resource("8c3968c8-4bc0-11ed-9983-274ab90bcd39");
-  public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_OverrideShortNameAware = new Resource("51c045d1-4bc1-11ed-9983-274ab90bcd39");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_GenericShortNameAware = new Resource("51c045d1-4bc1-11ed-9983-274ab90bcd39");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystemOrSystemComponent = new Resource("936081e5-4bc1-11ed-9983-274ab90bcd39");
   public static final Resource AbstractSystemOrSystemConfiguration = new Resource("cb1b0e28-4bcd-11ed-9983-274ab90bcd39");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystemOrSystemConfiguration = new Resource("bb5a23f2-4bd4-11ed-bcee-57344264bda3");
@@ -71,4 +71,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,qafLfIlEsarZFAmJDKsiuLjiBaQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,678IAQGD7hHwaSH3b+ZkjyDhAvE=] */

@@ -27,7 +27,7 @@ import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.securi
 public class FunctionSpace_Activity_Deployment {
 
   /* Begin Protected Region [[512e5470-7f07-11e9-98a3-b1bd805f0a31]] */
-
+  
   /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31]] */
 
 
@@ -403,4 +403,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,CGInq8+A6/9t4V7FHf7snuPqnwE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,ihF3S+p8w58rkwZ+tsouUoPebFM=] */

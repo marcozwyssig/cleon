@@ -50,6 +50,9 @@ public class FunctionSpace_Activity_Buildingblock {
     @IDynamicResourceExtension.MethodId("76754559-864e-11eb-9869-4317e18e6c88")
     public java.lang.String CommonNameSpecific();
 
+    @IDynamicResourceExtension.MethodId("c258e93e-e44f-11ee-89a2-d75dd4a11557")
+    public java.lang.String TypeName();
+
   }
   
   public static interface IAbstractAuthZBuildingBlockPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -155,7 +158,7 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
-  public static interface IAuthZBuildingBlockForPermissionFunctions extends IDynamicResourceExtension {
+  public static interface IAuthZBuildingBlockPermissionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f5ec10ef-864b-11eb-9869-4317e18e6c88")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemConfiguration AbstractSystemOrSystemConfiguration();
@@ -169,23 +172,26 @@ public class FunctionSpace_Activity_Buildingblock {
     @IDynamicResourceExtension.MethodId("db1f3ad7-864e-11eb-9869-4317e18e6c88")
     public java.lang.String CommonNameSpecific();
 
+    @IDynamicResourceExtension.MethodId("d46fde89-e44d-11ee-89a2-d75dd4a11557")
+    public java.lang.String TypeName();
+
   }
   
-  public static interface IAuthZBuildingBlockForPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAuthZBuildingBlockPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AuthZBuildingBlockForPermissionFunctionsImpl implements IAuthZBuildingBlockForPermissionFunctionsImpl {
+  public static class AuthZBuildingBlockPermissionFunctionsImpl implements IAuthZBuildingBlockPermissionFunctionsImpl {
 
-    public static final IAuthZBuildingBlockForPermissionFunctionsImpl INSTANCE = new AuthZBuildingBlockForPermissionFunctionsImpl();
+    public static final IAuthZBuildingBlockPermissionFunctionsImpl INSTANCE = new AuthZBuildingBlockPermissionFunctionsImpl();
 
-    private AuthZBuildingBlockForPermissionFunctionsImpl() {}
+    private AuthZBuildingBlockPermissionFunctionsImpl() {}
 
   }
   
-  public static class AuthZBuildingBlockForPermissionFunctions {
+  public static class AuthZBuildingBlockPermissionFunctions {
 
-    private AuthZBuildingBlockForPermissionFunctions() {}
+    private AuthZBuildingBlockPermissionFunctions() {}
 
   }
 
@@ -202,6 +208,9 @@ public class FunctionSpace_Activity_Buildingblock {
 
     @IDynamicResourceExtension.MethodId("4011ca3b-d5bf-11ec-ad12-8d6f8e00bc94")
     public java.lang.String CommonNameSpecific();
+
+    @IDynamicResourceExtension.MethodId("39e01fe9-e450-11ee-89a2-d75dd4a11557")
+    public java.lang.String TypeName();
 
   }
   
@@ -275,4 +284,4 @@ public class FunctionSpace_Activity_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,Z52nMMAXN8cz4dbJJL2izrAa9hU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,fFWyt4iSDTOjbWnX2Ddv+r+EWws=] */

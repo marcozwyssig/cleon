@@ -15,7 +15,7 @@ import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.jav
 public class FunctionSpace_arc42_Buildingblock_View {
 
   /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b]] */
-
+  
   /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b]] */
 
 
@@ -173,4 +173,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,ntrqZQpeHUYEviAJ4zrewCMb/78=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,8f0wnpTihfNl3Y/uc72l3FNG0eU=] */

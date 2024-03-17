@@ -31,21 +31,21 @@ public class AuthZBuildingBlockPermission extends DynamicResource implements IAu
   // attributes
   
   @Override
+  public java.lang.String selectContextQualifier() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.ContextQualifierAware_contextQualifier);
+  }
+    
+  public void setContextQualifier(java.lang.String contextQualifier) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.ContextQualifierAware_contextQualifier, contextQualifier);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
     
   public void setDescriptions(java.util.List<java.lang.String> descriptions) {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
-  }
-
-  @Override
-  public java.lang.String selectGenericShortName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.GenericShortNameAware_genericShortName);
-  }
-    
-  public void setGenericShortName(java.lang.String genericShortName) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.GenericShortNameAware_genericShortName, genericShortName);
   }
 
   @Override
@@ -121,7 +121,7 @@ public class AuthZBuildingBlockPermission extends DynamicResource implements IAu
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.GenericShortNameAware_genericShortName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.ContextQualifierAware_contextQualifier, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
@@ -142,4 +142,4 @@ public class AuthZBuildingBlockPermission extends DynamicResource implements IAu
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,w+FasRZwLZg11v4hVHK0kEJ6oig=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,myp5q1G42WxtfO5kjq8U8mwTuOA=] */

@@ -44,6 +44,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_level_aE_5_aE_whitebox = new Resource("6c166472-d579-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_6_aE_whitebox = new Resource("eb081b4f-d579-11ee-903e-9f564e4de07e");
   public static final Resource Whitebox = new Resource("7bbfe5fd-e085-11ee-a506-c5335c4d5040");
+  public static final Resource GenericShortNameAware = new Resource("c051f0ba-e486-11ee-8a89-3f870c06659f");
+  public static final Resource GenericShortNameAware_genericShortName = new Resource("c051f0bb-e486-11ee-8a89-3f870c06659f");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +66,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,btaWVi629ezc3Un4E78wC8RUYD8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,fNteHsuDg5aj2iFqzKtT8CAJNPs=] */

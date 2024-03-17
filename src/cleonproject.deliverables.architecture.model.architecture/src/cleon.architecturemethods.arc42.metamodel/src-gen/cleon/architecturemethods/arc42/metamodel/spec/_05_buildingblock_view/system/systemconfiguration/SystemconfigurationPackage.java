@@ -46,14 +46,14 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfiguration = new Resource("624ced8e-879b-11e9-bb4b-c57da735262b");
   public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
   public static final Resource SystemConfiguration_provides = new Resource("95567bd3-b371-11e9-91da-d1f3b9a7fba4");
-  public static final Resource Interface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfigurationInterface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource SystemConfiguration_interface = new Resource("f474273d-b371-11e9-91da-d1f3b9a7fba4");
-  public static final Resource Interface_interfaceInSecuritySubZone = new Resource("0ab04b4e-b372-11e9-91da-d1f3b9a7fba4");
-  public static final Resource Interface_providesService = new Resource("1c01bc62-b372-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfigurationInterface_interfaceInSecuritySubZone = new Resource("0ab04b4e-b372-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfigurationInterface_providesService = new Resource("1c01bc62-b372-11e9-91da-d1f3b9a7fba4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_MailRelaySystemConfiguration = new Resource("80279277-c81b-11e9-ba65-a5b6bc4916e7");
-  public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
+  public static final Resource SystemConfigurationInterface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   public static final Resource SystemConfigurationCompositionAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_Interface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfigurationInterface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
   public static final Resource WhiteBoxSystemConfiguration = new Resource("a296733a-fe57-11ea-abcb-bfad67a56d79");
   public static final Resource WhiteBoxSystemConfiguration_deployment = new Resource("abb1fe65-fe57-11ea-abcb-bfad67a56d79");
   public static final Resource WhiteBoxSystemConfiguration_availability = new Resource("a2cb1978-fe66-11ea-abcb-bfad67a56d79");
@@ -64,7 +64,7 @@ public class SystemconfigurationPackage {
   public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
-  public static final Resource Interface_vlan = new Resource("2eea6e8c-8841-11ec-9c31-bf70c9f1a926");
+  public static final Resource SystemConfigurationInterface_vlan = new Resource("2eea6e8c-8841-11ec-9c31-bf70c9f1a926");
   public static final Resource SystemConfiguration_allowDNSRecord = new Resource("4f6e6cc7-c7ce-11ec-a59e-d1c88102a398");
   public static final Resource SystemConfigurationProperty = new Resource("c4bfa256-d5b6-11ec-ad12-8d6f8e00bc94");
   public static final Resource SystemConfiguration_properties = new Resource("cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94");
@@ -89,4 +89,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,ISGln9EFrDxegREpfbz9ezFeDl4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,oG5VW3cw6UV+Tr/62qaVgaymXow=] */

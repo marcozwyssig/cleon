@@ -49,7 +49,7 @@ public class FunctionSpace_SystemArc42_Monitoring {
     public java.lang.Boolean IsConcrete();
 
     @IDynamicResourceExtension.MethodId("d6bf5c78-e2e4-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface> SelectInterfaces();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface> SelectInterfaces();
 
   }
   
@@ -73,4 +73,4 @@ public class FunctionSpace_SystemArc42_Monitoring {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,0xf7vU4GabRpOaeAxDrAHgsUmU8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,FIDAqZpjTj0J1/Ri+2WCPLMBXvg=] */

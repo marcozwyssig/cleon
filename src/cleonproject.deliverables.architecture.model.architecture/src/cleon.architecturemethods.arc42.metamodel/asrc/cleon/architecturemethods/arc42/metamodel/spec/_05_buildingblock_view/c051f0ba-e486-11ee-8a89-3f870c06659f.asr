@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c051f0ba-e486-11ee-8a89-3f870c06659f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="c051f0c3-e486-11ee-8a89-3f870c06659f" type="resource" guid="c051f0bb-e486-11ee-8a89-3f870c06659f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c051f0bc-e486-11ee-8a89-3f870c06659f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c051f0bd-e486-11ee-8a89-3f870c06659f" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c051f0c3-e486-11ee-8a89-3f870c06659f">
+      <resource guid="c051f0bb-e486-11ee-8a89-3f870c06659f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c051f0be-e486-11ee-8a89-3f870c06659f" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c051f0bf-e486-11ee-8a89-3f870c06659f" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c051f0c0-e486-11ee-8a89-3f870c06659f" type="literal">genericShortName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="c051f0c1-e486-11ee-8a89-3f870c06659f" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="c051f0c2-e486-11ee-8a89-3f870c06659f" type="literal">For a name that encompasses multiple components, such as "WIN" for both "WIN2016" and "WIN10", you can use "WIN" as a prefix followed by a differentiator to indicate the version or category.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c051f0c4-e486-11ee-8a89-3f870c06659f" type="literal">GenericShortNameAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="c051f0c5-e486-11ee-8a89-3f870c06659f" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

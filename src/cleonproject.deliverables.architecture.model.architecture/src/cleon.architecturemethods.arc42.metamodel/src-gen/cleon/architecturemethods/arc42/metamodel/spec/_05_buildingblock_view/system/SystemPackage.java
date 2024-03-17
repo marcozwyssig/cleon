@@ -51,6 +51,8 @@ public class SystemPackage {
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystemOrSystemComponent = new Resource("936081e5-4bc1-11ed-9983-274ab90bcd39");
   public static final Resource AbstractSystemOrSystemConfiguration = new Resource("cb1b0e28-4bcd-11ed-9983-274ab90bcd39");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystemOrSystemConfiguration = new Resource("bb5a23f2-4bd4-11ed-bcee-57344264bda3");
+  public static final Resource ContextQualifierAware = new Resource("063f8c95-e487-11ee-8a89-3f870c06659f");
+  public static final Resource ContextQualifierAware_contextQualifier = new Resource("063f8c96-e487-11ee-8a89-3f870c06659f");
   
   /* Begin Protected Region [[user]] */
   
@@ -71,4 +73,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,678IAQGD7hHwaSH3b+ZkjyDhAvE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,pc3yyS4VqJc2+vl8KBmZtdbscIc=] */

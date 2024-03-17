@@ -13,7 +13,7 @@ public abstract class DestinationSubSecurityZone extends DynamicResource impleme
   
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone> selectToMeInInterface(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone> selectToMeInInterface(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, object.getResource());
   }
   
@@ -26,4 +26,4 @@ public abstract class DestinationSubSecurityZone extends DynamicResource impleme
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,5fDtTyMnIqjm3YbHTduRX6xHChg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,mwr0CupS8AxX6V3hq92yn5jNvgM=] */

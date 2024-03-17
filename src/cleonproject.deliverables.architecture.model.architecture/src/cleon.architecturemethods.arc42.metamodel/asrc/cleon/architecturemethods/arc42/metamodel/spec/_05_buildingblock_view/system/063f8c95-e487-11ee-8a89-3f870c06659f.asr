@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="063f8c95-e487-11ee-8a89-3f870c06659f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="063f8c9e-e487-11ee-8a89-3f870c06659f" type="resource" guid="063f8c96-e487-11ee-8a89-3f870c06659f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="063f8c97-e487-11ee-8a89-3f870c06659f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="063f8c98-e487-11ee-8a89-3f870c06659f" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="063f8c9e-e487-11ee-8a89-3f870c06659f">
+      <resource guid="063f8c96-e487-11ee-8a89-3f870c06659f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="063f8c99-e487-11ee-8a89-3f870c06659f" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="063f8c9a-e487-11ee-8a89-3f870c06659f" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="063f8c9b-e487-11ee-8a89-3f870c06659f" type="literal">contextQualifier</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="063f8c9c-e487-11ee-8a89-3f870c06659f" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="365fa663-e487-11ee-8a89-3f870c06659f" type="literal">A contextQualifier is an element of a naming convention that provides additional context to a base name, enhancing the specificity and clarity of identification for an item. It serves as a distinguishing factor that can denote the item's purpose, location, function, or relationship within a broader system. In essence, a contextQualifier modifies or elaborates on the base name to convey more precise information about the item's role or usage scenario.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="063f8c9f-e487-11ee-8a89-3f870c06659f" type="literal">ContextQualifierAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="063f8ca0-e487-11ee-8a89-3f870c06659f" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

@@ -10,7 +10,7 @@ public interface IDestinationSubSecurityZone extends ch.actifsource.core.javamod
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface selectInInterface();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface selectInInterface();
   
   public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectDestinationSecuritySubZone();
   
@@ -18,4 +18,4 @@ public interface IDestinationSubSecurityZone extends ch.actifsource.core.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,kmDnNOrjqgVEfeWIawbtaMSObbo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0b182d4f-5528-11ed-a5a9-572b13f613fe,69OdV3QsJ00ZhUqwvIp7bLGLKps=] */

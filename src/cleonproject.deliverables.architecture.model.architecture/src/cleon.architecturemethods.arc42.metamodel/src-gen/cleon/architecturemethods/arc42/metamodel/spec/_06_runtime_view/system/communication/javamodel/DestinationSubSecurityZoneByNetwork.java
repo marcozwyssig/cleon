@@ -62,11 +62,11 @@ public class DestinationSubSecurityZoneByNetwork extends DynamicResource impleme
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface selectInInterface() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface selectInInterface() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface);
   }
 
-  public DestinationSubSecurityZoneByNetwork setInInterface(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface inInterface) {
+  public DestinationSubSecurityZoneByNetwork setInInterface(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface inInterface) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, inInterface);
     return this;
   }
@@ -99,9 +99,9 @@ public class DestinationSubSecurityZoneByNetwork extends DynamicResource impleme
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_destinationSecuritySubZone, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_hasCommunicationFrom, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,61856e2e-5537-11ed-a5a9-572b13f613fe,tnm4dIJTOWdyuziLVw2XdnfcXas=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,61856e2e-5537-11ed-a5a9-572b13f613fe,+oEuYibvaDKDa8Y4gz/H7DgUB0w=] */

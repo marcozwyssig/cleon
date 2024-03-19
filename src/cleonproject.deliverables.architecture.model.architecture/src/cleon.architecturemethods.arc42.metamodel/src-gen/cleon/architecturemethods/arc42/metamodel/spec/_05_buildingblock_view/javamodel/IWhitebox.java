@@ -10,10 +10,10 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
   public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhitebox();
   
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
-  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox> selectBlackboxes();
+  
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bbfe5fd-e085-11ee-a506-c5335c4d5040,WIgs3Jiicv8ZQ7ZSMa54Ke6zHU4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bbfe5fd-e085-11ee-a506-c5335c4d5040,wfjBfQ3uBlvvCTRg5LslLTV2TZo=] */

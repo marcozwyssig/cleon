@@ -8,8 +8,8 @@ public interface IView extends cleon.architecturemethods.arc42.metamodel.spec._0
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectOrderBy();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectOrder();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,DCtwTna5CEdQ30QwgWogUNRG9po=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,dMquukRFZaEQX4c9H1ck/w5F++E=] */

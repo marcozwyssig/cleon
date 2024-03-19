@@ -90,12 +90,12 @@ public class View extends DynamicResource implements IView {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectOrderBy() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_orderBy);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectOrder() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_order);
   }
 
-  public View setOrderBy(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy orderBy) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_orderBy, orderBy);
+  public View setOrder(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy order) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_order, order);
     return this;
   }
     
@@ -150,7 +150,7 @@ public class View extends DynamicResource implements IView {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_from, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IGroup_By.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_group, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoin.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_join, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_orderBy, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_order, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_select, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhere.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.WhereAware_where, visitor);
@@ -158,9 +158,9 @@ public class View extends DynamicResource implements IView {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView selectToMeOrderBy(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_orderBy, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView selectToMeOrder(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.View_order, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,zGC6PL6VnplY88yx4EyPm1f/WYs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1f10a4f-d0ca-11ee-a38e-0b82bafb3097,hULDGCMyJQ3OdnPtqcThgwwlKVU=] */

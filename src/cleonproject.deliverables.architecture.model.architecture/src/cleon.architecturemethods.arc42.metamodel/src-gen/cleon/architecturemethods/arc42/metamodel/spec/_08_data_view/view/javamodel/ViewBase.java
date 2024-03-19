@@ -21,13 +21,13 @@ public abstract class ViewBase extends DynamicResource implements IViewBase {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_from, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase selectToMeGroup(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IGroup_By object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_group, object.getResource());
-  }
-  
   public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase selectToMeJoin(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IJoin object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_join, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase selectToMeGroup(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IGroup_By object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IViewBase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.ViewBase_group, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,xoOzqM/btVGNhOhoDh6V5EEr9IE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c400e4bd-e120-11ee-995f-5faf5f77d478,mWMm0BJC1r/L1g/YcnLWa7pZ8nY=] */

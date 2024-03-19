@@ -605,6 +605,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("dc3ad1be-e141-11ee-9375-43bf1495bfd9")
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
+    @IDynamicResourceExtension.MethodId("cdda9c4d-e529-11ee-a074-d7afe74e4a27")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IOrderByFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -622,31 +625,6 @@ public class FunctionSpace_Data_View {
   public static class OrderByFunctions {
 
     private OrderByFunctions() {}
-
-  }
-
-  public static interface IOrderByColumnFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ef559ad9-e142-11ee-9375-43bf1495bfd9")
-    public java.lang.String SimpleName();
-
-  }
-  
-  public static interface IOrderByColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class OrderByColumnFunctionsImpl implements IOrderByColumnFunctionsImpl {
-
-    public static final IOrderByColumnFunctionsImpl INSTANCE = new OrderByColumnFunctionsImpl();
-
-    private OrderByColumnFunctionsImpl() {}
-
-  }
-  
-  public static class OrderByColumnFunctions {
-
-    private OrderByColumnFunctions() {}
 
   }
 
@@ -730,4 +708,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,pAJozyLZ6m8ZIu1AxGrkk2Yj+C0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,D8WMCk3EQvfsZ5gqxBSVFwS2P64=] */

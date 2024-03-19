@@ -64,12 +64,18 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("1eafa94b-d24c-11ee-b255-49ab47716ebd")
     public java.lang.String RenderInclude();
 
+    @IDynamicResourceExtension.MethodId("42642fc6-e5d9-11ee-a627-83563cb3bdc6")
+    public java.lang.String RenderMetaData();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1bb83b01-d580-11ea-9bae-37ef2cb951a8")
     public java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+    @IDynamicResourceExtension.MethodId("42642fc6-e5d9-11ee-a627-83563cb3bdc6")
+    public java.lang.String RenderMetaData(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
@@ -84,6 +90,11 @@ public class FunctionSpace_Asciidoc {
       return null;
     }
 
+    @Override
+    public java.lang.String RenderMetaData(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return null;
+    }
+
   }
   
   public static class AbstractChapterFunctions {
@@ -92,6 +103,10 @@ public class FunctionSpace_Asciidoc {
 
     public static java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderContentElement(abstractChapter);
+    }
+
+    public static java.lang.String RenderMetaData(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderMetaData(abstractChapter);
     }
 
   }
@@ -795,6 +810,90 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cd0d9a73-e527-11ee-a074-d7afe74e4a27")
+    public java.lang.String escapeAdoc();
+
+  }
+  
+  public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("cd0d9a73-e527-11ee-a074-d7afe74e4a27")
+    public java.lang.String escapeAdoc(final java.lang.String stringLiteral);
+
+  }
+  
+  public static class StringLiteralFunctionsImpl implements IStringLiteralFunctionsImpl {
+
+    public static final IStringLiteralFunctionsImpl INSTANCE = new StringLiteralFunctionsImpl();
+
+    private StringLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String escapeAdoc(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[cd0d9a73-e527-11ee-a074-d7afe74e4a27]] */
+    	if (stringLiteral == null) {
+            return null;
+        }
+        return stringLiteral.replace("|", "\\|");   
+      /* End Protected Region   [[cd0d9a73-e527-11ee-a074-d7afe74e4a27]] */
+    }
+
+  }
+  
+  public static class StringLiteralFunctions {
+
+    private StringLiteralFunctions() {}
+
+    public static java.lang.String escapeAdoc(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).escapeAdoc(stringLiteral);
+    }
+
+  }
+
+  public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e41d1e3b-e528-11ee-a074-d7afe74e4a27")
+    public java.lang.String escapeAdoc();
+
+  }
+  
+  public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("e41d1e3b-e528-11ee-a074-d7afe74e4a27")
+    public java.lang.String escapeAdoc(final java.lang.String textLiteral);
+
+  }
+  
+  public static class TextLiteralFunctionsImpl implements ITextLiteralFunctionsImpl {
+
+    public static final ITextLiteralFunctionsImpl INSTANCE = new TextLiteralFunctionsImpl();
+
+    private TextLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String escapeAdoc(final java.lang.String textLiteral) {
+      /* Begin Protected Region [[e41d1e3b-e528-11ee-a074-d7afe74e4a27]] */
+    	if (textLiteral == null) {
+            return null;
+        }
+        return textLiteral.replace("|", "\\|");    
+      /* End Protected Region   [[e41d1e3b-e528-11ee-a074-d7afe74e4a27]] */
+    }
+
+  }
+  
+  public static class TextLiteralFunctions {
+
+    private TextLiteralFunctions() {}
+
+    public static java.lang.String escapeAdoc(final java.lang.String textLiteral) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).escapeAdoc(textLiteral);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,IcaMHTC5l3BhHHtYfkkOwm/Q9O8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,W8H/2LviJvu0SiSEnn1zCAiyoXM=] */

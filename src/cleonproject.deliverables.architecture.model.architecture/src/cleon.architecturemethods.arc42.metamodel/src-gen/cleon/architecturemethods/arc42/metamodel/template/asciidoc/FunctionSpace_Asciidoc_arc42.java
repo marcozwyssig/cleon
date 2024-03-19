@@ -338,6 +338,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5cda96b2-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("048c0e46-e5db-11ee-a627-83563cb3bdc6")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -657,6 +660,15 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("7582dbf7-d64d-11ee-8014-c150876d6b6e")
     public java.lang.String ChapterPath();
 
+    @IDynamicResourceExtension.MethodId("c0ea662e-e5cc-11ee-9463-7b6f2009e56e")
+    public java.lang.String FileName();
+
+    @IDynamicResourceExtension.MethodId("ce9eb334-e5cc-11ee-9463-7b6f2009e56e")
+    public java.lang.String BuildingBlockName();
+
+    @IDynamicResourceExtension.MethodId("24208986-e5d9-11ee-a627-83563cb3bdc6")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -682,6 +694,12 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("c0be5947-d64d-11ee-8014-c150876d6b6e")
     public java.lang.String ChapterPath();
 
+    @IDynamicResourceExtension.MethodId("00a195ac-e5cd-11ee-9463-7b6f2009e56e")
+    public java.lang.String FileName();
+
+    @IDynamicResourceExtension.MethodId("5b3e882f-e5da-11ee-a627-83563cb3bdc6")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -704,4 +722,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,bf73KQfLcibpUsz+9Q67+sdiW3M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,ArHnynMxc5j+l8FCyOGYlZ2v7ag=] */

@@ -31,12 +31,12 @@ public class OrderBy extends DynamicResource implements IOrderBy {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderByColumn> selectOrderby() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderByColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_orderby);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectBy() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_by);
   }
 
-  public OrderBy setOrderby(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderByColumn> orderby) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_orderby, orderby);
+  public OrderBy setBy(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> by) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_by, by);
     return this;
   }
     
@@ -54,15 +54,15 @@ public class OrderBy extends DynamicResource implements IOrderBy {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderByColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_orderby, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_by, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectToMeOrderby(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderByColumn object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_orderby, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy selectToMeBy(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IOrderBy.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.ViewPackage.OrderBy_by, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb09ec9-e141-11ee-9375-43bf1495bfd9,wr2jE8OFVDZoSkklKRfFRDWaR9E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb09ec9-e141-11ee-9375-43bf1495bfd9,tj3EgwV8QfNUzlU7F+Auqv7GSeg=] */

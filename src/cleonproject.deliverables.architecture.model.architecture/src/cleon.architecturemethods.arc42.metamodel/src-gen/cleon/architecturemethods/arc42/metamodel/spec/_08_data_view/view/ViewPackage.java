@@ -40,9 +40,8 @@ public class ViewPackage {
   public static final Resource SelectColumn_distinct = new Resource("77e3a774-e12d-11ee-995f-5faf5f77d478");
   public static final Resource AliasAware = new Resource("7a86e81f-e132-11ee-995f-5faf5f77d478");
   public static final Resource OrderBy = new Resource("9fb09ec9-e141-11ee-9375-43bf1495bfd9");
-  public static final Resource View_orderBy = new Resource("bd743eed-e141-11ee-9375-43bf1495bfd9");
-  public static final Resource OrderBy_orderby = new Resource("0e17b5b4-e142-11ee-9375-43bf1495bfd9");
-  public static final Resource OrderByColumn = new Resource("30593d8e-e142-11ee-9375-43bf1495bfd9");
+  public static final Resource View_order = new Resource("bd743eed-e141-11ee-9375-43bf1495bfd9");
+  public static final Resource OrderBy_by = new Resource("0e17b5b4-e142-11ee-9375-43bf1495bfd9");
   public static final Resource Conditional_expression = new Resource("89b04001-e14b-11ee-9375-43bf1495bfd9");
   public static final Resource ColumnExpression = new Resource("786ef45e-e14e-11ee-9375-43bf1495bfd9");
   public static final Resource ColumnExpression_column = new Resource("8a21e652-e14e-11ee-9375-43bf1495bfd9");
@@ -66,4 +65,4 @@ public class ViewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view,bcZQhQUtULfR2o7vJ2iBKIiZtZU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view,+9VfSvc6bJ3r3qZnjue47Xfk7+Y=] */

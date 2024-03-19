@@ -27,6 +27,9 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("0726680c-83dd-11ea-bd03-8dee7901cd7f")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> Level1();
 
+    @IDynamicResourceExtension.MethodId("1316cf7f-e5d9-11ee-a627-83563cb3bdc6")
+    public java.lang.String Description_EN();
+
   }
   
   public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -94,6 +97,9 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
     @IDynamicResourceExtension.MethodId("2a5dae64-c03b-11ee-a353-4bf80e47b5e4")
     public java.lang.String SimpleName();
+
+    @IDynamicResourceExtension.MethodId("3b089a04-e5d8-11ee-a627-83563cb3bdc6")
+    public java.lang.String Level();
 
   }
   
@@ -173,4 +179,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,8f0wnpTihfNl3Y/uc72l3FNG0eU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,FCvtZ2YnufTjS1ZDTIDv9T0lx7s=] */

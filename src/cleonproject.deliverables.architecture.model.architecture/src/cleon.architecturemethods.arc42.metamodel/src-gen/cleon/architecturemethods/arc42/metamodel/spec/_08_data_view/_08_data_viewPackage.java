@@ -33,7 +33,6 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_DatabaseElement = new Resource("0d10fc7f-e134-11ee-995f-5faf5f77d478");
   public static final Resource FunctionSpace_aE_Data_aE_View_TableArea = new Resource("d8a42c83-e138-11ee-b0cd-2573623ee439");
   public static final Resource FunctionSpace_aE_Data_aE_View_OrderBy = new Resource("d6054fa5-e141-11ee-9375-43bf1495bfd9");
-  public static final Resource FunctionSpace_aE_Data_aE_View_OrderByColumn = new Resource("0451c4e6-e143-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_ColumnExpression = new Resource("0250f586-e14f-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_BooleanExpressionBase = new Resource("959efff1-e151-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_DataExpressionBase = new Resource("c9ff3eef-e152-11ee-9375-43bf1495bfd9");
@@ -57,4 +56,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,KySeFzHAxdGHyOVtJYNu5x0HJOs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,R4PsehAc//l2r9lLdioJl7GNrMw=] */

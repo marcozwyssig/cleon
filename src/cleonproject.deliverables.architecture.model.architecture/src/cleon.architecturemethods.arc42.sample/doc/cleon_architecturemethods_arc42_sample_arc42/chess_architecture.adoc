@@ -1,0 +1,264 @@
+= Chess_Architecture
+// Begin Protected Region [[documentsettings]]
+
+// End Protected Region   [[documentsettings]]
+
+
+
+[#cba854f5-eaa5-11e8-88d3-bfc6b992bdec]
+== Einleitung
+// Begin Protected Region [[cba854f5-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+// End Protected Region   [[cba854f5-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+[#4d676de1-11fd-11e5-848b-017a3a98ae34]
+== Einführung und Ziele
+// Begin Protected Region [[4d676de1-11fd-11e5-848b-017a3a98ae34,customText]]
+
+// End Protected Region   [[4d676de1-11fd-11e5-848b-017a3a98ae34,customText]]
+
+<db:section xml:id="ea.b5bb072c-e101-11e8-8499-a3b0fb3cad90">
+	<db:title>Aufgabenstellung</db:title>
+	<db:para>In der nachfolgenden Tabelle werden die geltenden Betrachtungsräume der Anforderungen aufgeführt:</db:para>  
+	<db:informaltable style="HERMES 5">
+		<db:col width="40%" />
+		<db:col width="60%" />
+		<db:thead>
+			<db:tr>
+				<db:th>Name</db:th>
+				<db:th>Beschreibung</db:th>
+			</db:tr>
+		</db:thead>
+		<db:tbody>
+			<db:tr>
+				<db:td>
+					<db:para>SU-01_Funktionalit&#228;t</db:para>
+				</db:td>
+				<db:td>
+				</db:td>
+			</db:tr>
+		</db:tbody>
+	</db:informaltable>
+</db:section>
+<db:section xml:id="ea.f30baebc-4819-11e6-82f6-0f210765495b">
+	<db:title>Qualit&#228;tsziele</db:title>
+	<db:informaltable style="HERMES 5">
+		<db:col width="40%" />
+		<db:col width="60%" />
+		<db:thead>
+			<db:tr>
+				<db:th>Name</db:th>
+				<db:th>Beschreibung</db:th>
+			</db:tr>
+		</db:thead>
+		<db:tbody>
+			<db:tr>
+				<db:td>
+					<db:para>dddd</db:para>
+				</db:td>
+				<db:td>
+				</db:td>
+			</db:tr>
+			<db:tr>
+				<db:td>
+					<db:para>ddd</db:para>
+				</db:td>
+				<db:td>
+				</db:td>
+			</db:tr>
+			<db:tr>
+				<db:td>
+					<db:para>ssss</db:para>
+				</db:td>
+				<db:td>
+				</db:td>
+			</db:tr>
+			<db:tr>
+				<db:td>
+					<db:para>ddd</db:para>
+				</db:td>
+				<db:td>
+				</db:td>
+			</db:tr>
+		</db:tbody>
+	</db:informaltable>
+</db:section>
+[#55399595-99a9-11e8-8f58-219af2c5d6d9]
+== Randbedingungen
+// Begin Protected Region [[55399595-99a9-11e8-8f58-219af2c5d6d9,customText]]
+
+// End Protected Region   [[55399595-99a9-11e8-8f58-219af2c5d6d9,customText]]
+
+[#ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec]
+=== Technische Randbedingungen
+// Begin Protected Region [[ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+// End Protected Region   [[ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+[#ee9fe5ca-eaa5-11e8-88d3-bfc6b992bdec]
+=== Organisatorische Randbedingungen
+// Begin Protected Region [[ee9fe5ca-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+// End Protected Region   [[ee9fe5ca-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+[#bfc8585e-2661-11e6-ae54-e50d44645ae7]
+== Kontextabgrenzung
+In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
+// Begin Protected Region [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
+
+[#cb488719-2661-11e6-ae54-e50d44645ae7]
+=== Fachlicher Kontext
+<db:para>In diesem Kapitel werden die Aktoren (Actor) des betrachteten Systems (Chess) aufgeführt.</db:para>
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
+component Chess as "Chess" <<SoftwareSystem>>
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_B -down-> Chess : interacts
+...
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+[cols="40%,60%"]
+|===
+|Aktor|Beschreibung		
+|Player A
+|
+|Player B
+|
+|===
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System
+[cols="15%,15%,20%,50%"]
+|===
+|Von|Zu|Interaktion|Beschreibung
+|Chess
+|Player A</db:para>
+|gets</db:para>
+|
+|Player A
+|Chess</db:para>
+|interacts</db:para>
+|
+|Player B
+|Chess</db:para>
+|interacts</db:para>
+|
+|===
+// Begin Protected Region [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+[#d6de1d03-27f5-11e6-b263-9db62e053e59]
+=== Technischer Kontext
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+component FTP as "FTP" <<ExternalSystem>>
+component Chess as "Chess" <<SoftwareSystem>>
+FTP --> Chess : "verwendet"
+Chess --> FTP : "verwendet"
+...
+Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
+[cols="40%,60%"]
+|===
+|Nachbarsystem|Beschreibung
+|FTP</db:para>
+|
+dsfasdf</db:para>
+<db:section>
+	<db:title>FTP</db:title>
+	<db:para>dsfasdf</db:para>
+</db:section>
+
+// Begin Protected Region [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+// End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+[#38080160-e989-11e8-af5c-a5aa9dc47205]
+== Lösungsstrategie
+// Begin Protected Region [[38080160-e989-11e8-af5c-a5aa9dc47205,customText]]
+
+// End Protected Region   [[38080160-e989-11e8-af5c-a5aa9dc47205,customText]]
+
+<<<
+include::chapters/05_building_block_view/05_building_block_view.adoc[]
+ 
+[#86e7e102-31f5-11e5-bd99-eda9ce254b0b]
+== Verteilsicht
+// Begin Protected Region [[86e7e102-31f5-11e5-bd99-eda9ce254b0b,customText]]
+
+// End Protected Region   [[86e7e102-31f5-11e5-bd99-eda9ce254b0b,customText]]
+
+<db:section xml:id="ea.31cbdba9-d181-11e8-b18f-df1540bb7a5c">
+	<db:title>Bauen</db:title>
+	
+</db:section>
+<db:section xml:id="ea.3005c135-d181-11e8-b18f-df1540bb7a5c">
+	<db:title>Paketierung</db:title>
+	
+</db:section>
+<db:section xml:id="ea.2e214a51-d181-11e8-b18f-df1540bb7a5c">
+	<db:title>Verteilung</db:title>
+	<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
+	<db:itemizedlist>
+	</db:itemizedlist>
+</db:section>
+<db:section xml:id="ea.2b9bd77d-d181-11e8-b18f-df1540bb7a5c">
+	<db:title>Test</db:title>
+	
+</db:section>
+<db:section xml:id="ea.deaf41b7-d7c8-11ea-ae00-5518e944c256">
+	<db:title>&#220;berwachung</db:title>
+	
+</db:section>
+[#d004d0f6-eaa5-11e8-88d3-bfc6b992bdec]
+== Entwurfsentscheidungen
+// Begin Protected Region [[d004d0f6-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+// End Protected Region   [[d004d0f6-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+[#388aa5bd-ece0-11e8-8149-8542373915bf]
+=== Entwurfsentscheidung Einsatz von PAM in AD 
+// Begin Protected Region [[388aa5bd-ece0-11e8-8149-8542373915bf,customText]]
+
+// End Protected Region   [[388aa5bd-ece0-11e8-8149-8542373915bf,customText]]
+
+[#c836bccb-ece0-11e8-8149-8542373915bf]
+=== Entwurfsentscheidung dsfsdf 
+// Begin Protected Region [[c836bccb-ece0-11e8-8149-8542373915bf,customText]]
+
+// End Protected Region   [[c836bccb-ece0-11e8-8149-8542373915bf,customText]]
+
+[#d178d3ad-eaa5-11e8-88d3-bfc6b992bdec]
+== Qualitätsszenarios
+// Begin Protected Region [[d178d3ad-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+// End Protected Region   [[d178d3ad-eaa5-11e8-88d3-bfc6b992bdec,customText]]
+
+[#8d7e385c-2ad9-11e9-b83f-8be423c00623]
+== Produktesicht
+// Begin Protected Region [[8d7e385c-2ad9-11e9-b83f-8be423c00623,customText]]
+
+// End Protected Region   [[8d7e385c-2ad9-11e9-b83f-8be423c00623,customText]]
+
+[#878f2cbb-ee58-11e8-9756-27a593be2ffb]
+== Anforderungsabdeckung
+// Begin Protected Region [[878f2cbb-ee58-11e8-9756-27a593be2ffb,customText]]
+
+// End Protected Region   [[878f2cbb-ee58-11e8-9756-27a593be2ffb,customText]]
+
+[#886baa13-ee58-11e8-9756-27a593be2ffb]
+=== SU-01_Funktionalität
+// Begin Protected Region [[886baa13-ee58-11e8-9756-27a593be2ffb,customText]]
+
+// End Protected Region   [[886baa13-ee58-11e8-9756-27a593be2ffb,customText]]
+
+
+
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,bb88c324-11f5-11e5-848b-017a3a98ae34,Hash]

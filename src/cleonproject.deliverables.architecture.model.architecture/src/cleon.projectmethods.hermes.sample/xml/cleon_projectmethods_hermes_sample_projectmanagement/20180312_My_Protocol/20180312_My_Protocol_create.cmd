@@ -17,7 +17,7 @@ REM render
 :render
 echo now rendering
 "%ProgramFiles(x86)%\DocumentGenerator\bin\render.exe" -z -t template.docx -L 2 -P -l=de-CH -f "20180312_My_Protocol.xml" ^
--D=Title:"20180312_My Protocol" ^
+-D=Title:"20180312_My_Protocol" ^
 -D=EAMod_Reviewers:""
 echo rendering maybe done
 
@@ -50,4 +50,4 @@ pause
 
 :exit
 
-REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,6da0fcd3-afad-11e8-8dd5-0f53f3e4ddbb,kGfGPN0WtgxnBuYBKpHA48w2Qp4=]
+REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,6da0fcd3-afad-11e8-8dd5-0f53f3e4ddbb,VMgbshqvDfMniQv4yoZiFkQ30II=]

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface IMonitoringCompositeBuildingBlocksForSystem extends cleon.archi
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bdd8ad4-08a7-11eb-a18e-c7dfa3f96804,EKa/0iWqGtwAfiajvX0d6UWNnVs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bdd8ad4-08a7-11eb-a18e-c7dfa3f96804,xbguSTnMSOMlUBfn+Hh6G3FNgIw=] */

@@ -686,6 +686,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IInterfaceSensorMonitorBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d4a9f1f0-f1f6-11ee-bb2f-ad05301d8ee2")
+    public java.lang.String BuildingBlockName();
+
+  }
+  
+  public static interface IInterfaceSensorMonitorBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InterfaceSensorMonitorBuildingBlockFunctionsImpl implements IInterfaceSensorMonitorBuildingBlockFunctionsImpl {
+
+    public static final IInterfaceSensorMonitorBuildingBlockFunctionsImpl INSTANCE = new InterfaceSensorMonitorBuildingBlockFunctionsImpl();
+
+    private InterfaceSensorMonitorBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class InterfaceSensorMonitorBuildingBlockFunctions {
+
+    private InterfaceSensorMonitorBuildingBlockFunctions() {}
+
+  }
+
   public static interface IClusterSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d93e9ad7-e2e9-11ee-8945-4df0f2e1f411")
@@ -713,4 +738,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,mteUAxVDkEZF7RMvgSWldrRXG4o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,ciP9qgVQK3bUw8dq1BDGMu43PYQ=] */

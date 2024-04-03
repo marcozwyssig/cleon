@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SystemMonitoringBuildingBlocks extends DynamicResource implements ISystemMonitoringBuildingBlocks {
+public class MonitoringBuildingBlocksForSystem extends DynamicResource implements IMonitoringBuildingBlocksForSystem {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystemMonitoringBuildingBlocks> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystemMonitoringBuildingBlocks>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMonitoringBuildingBlocksForSystem> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMonitoringBuildingBlocksForSystem>() {
     
     @Override
-    public ISystemMonitoringBuildingBlocks create() {
-      return new SystemMonitoringBuildingBlocks();
+    public IMonitoringBuildingBlocksForSystem create() {
+      return new MonitoringBuildingBlocksForSystem();
     }
     
     @Override
-    public ISystemMonitoringBuildingBlocks create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SystemMonitoringBuildingBlocks(resourceRepository, resource);
+    public IMonitoringBuildingBlocksForSystem create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new MonitoringBuildingBlocksForSystem(resourceRepository, resource);
     }
   
   };
 
-  public SystemMonitoringBuildingBlocks() {
-    super(ISystemMonitoringBuildingBlocks.TYPE_ID);
+  public MonitoringBuildingBlocksForSystem() {
+    super(IMonitoringBuildingBlocksForSystem.TYPE_ID);
   }
   
-  public SystemMonitoringBuildingBlocks(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISystemMonitoringBuildingBlocks.TYPE_ID);
+  public MonitoringBuildingBlocksForSystem(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IMonitoringBuildingBlocksForSystem.TYPE_ID);
   }
 
   // attributes
@@ -73,7 +73,7 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public SystemMonitoringBuildingBlocks setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public MonitoringBuildingBlocksForSystem setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -83,18 +83,18 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public SystemMonitoringBuildingBlocks setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public MonitoringBuildingBlocksForSystem setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitoringCompositeBuildingBlocksForSystem> selectForSystems() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitoringCompositeBuildingBlocksForSystem.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.SystemMonitoringBuildingBlocks_forSystems);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringCompositeBuildingBlocksForSystem> selectForSystems() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringCompositeBuildingBlocksForSystem.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocksForSystem_forSystems);
   }
 
-  public SystemMonitoringBuildingBlocks setForSystems(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitoringCompositeBuildingBlocksForSystem> forSystems) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.SystemMonitoringBuildingBlocks_forSystems, forSystems);
+  public MonitoringBuildingBlocksForSystem setForSystems(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringCompositeBuildingBlocksForSystem> forSystems) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocksForSystem_forSystems, forSystems);
     return this;
   }
     
@@ -103,7 +103,7 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IAbstractMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocks_monitoringBuildingBlocks);
   }
 
-  public SystemMonitoringBuildingBlocks setMonitoringBuildingBlocks(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IAbstractMonitoringBuildingBlock> monitoringBuildingBlocks) {
+  public MonitoringBuildingBlocksForSystem setMonitoringBuildingBlocks(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IAbstractMonitoringBuildingBlock> monitoringBuildingBlocks) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocks_monitoringBuildingBlocks, monitoringBuildingBlocks);
     return this;
   }
@@ -113,7 +113,7 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public SystemMonitoringBuildingBlocks setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public MonitoringBuildingBlocksForSystem setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -123,7 +123,7 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SystemMonitoringBuildingBlocks setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public MonitoringBuildingBlocksForSystem setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -137,16 +137,16 @@ public class SystemMonitoringBuildingBlocks extends DynamicResource implements I
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitoringCompositeBuildingBlocksForSystem.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.SystemMonitoringBuildingBlocks_forSystems, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringCompositeBuildingBlocksForSystem.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocksForSystem_forSystems, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.ISystemMonitoringBuildingBlocks selectToMeForSystems(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitoringCompositeBuildingBlocksForSystem object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.ISystemMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.SystemMonitoringBuildingBlocks_forSystems, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocksForSystem selectToMeForSystems(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringCompositeBuildingBlocksForSystem object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocksForSystem.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlocksForSystem_forSystems, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6037c44c-08a7-11eb-a18e-c7dfa3f96804,tbEHofEMZYYnnp/oBjcyNDgjixY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6037c44c-08a7-11eb-a18e-c7dfa3f96804,B4nx8EItQmmdtwBxgH8TygETkxE=] */

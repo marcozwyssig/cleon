@@ -31,6 +31,15 @@ public class InterfaceSensorMonitorBuildingBlock extends DynamicResource impleme
   // attributes
   
   @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
   public java.lang.String selectShortName() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.InterfaceSensorMonitorBuildingBlock_shortName);
   }
@@ -105,6 +114,7 @@ public class InterfaceSensorMonitorBuildingBlock extends DynamicResource impleme
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.InterfaceSensorMonitorBuildingBlock_shortName, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.AbstractSensorMonitoringBuildingBlock_basedOn, visitor);
@@ -121,4 +131,4 @@ public class InterfaceSensorMonitorBuildingBlock extends DynamicResource impleme
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e634cd5-e2e4-11ee-8945-4df0f2e1f411,TYHt7539Fb1gSdTKWt++jX9YNM4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e634cd5-e2e4-11ee-8945-4df0f2e1f411,aD2S3SQZLxVsuTSnpDDEapfpIXo=] */

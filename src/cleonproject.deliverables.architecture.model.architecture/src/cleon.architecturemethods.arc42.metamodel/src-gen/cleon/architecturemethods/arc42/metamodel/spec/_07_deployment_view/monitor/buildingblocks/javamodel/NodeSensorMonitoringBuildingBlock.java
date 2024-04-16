@@ -28,17 +28,6 @@ public class NodeSensorMonitoringBuildingBlock extends DynamicResource implement
     super(resourceRepository, resource, INodeSensorMonitoringBuildingBlock.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -84,8 +73,6 @@ public class NodeSensorMonitoringBuildingBlock extends DynamicResource implement
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.AbstractSensorMonitoringBuildingBlock_basedOn, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.AbstractSensorMonitoringBuildingBlock_excludeSensorFromBasedn, visitor);
@@ -94,4 +81,4 @@ public class NodeSensorMonitoringBuildingBlock extends DynamicResource implement
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,GM+ysNNL4ciajJUUMThUCgN4LIw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,fJCTaf5zmKEPGM5AWgXJ4F6Gmks=] */

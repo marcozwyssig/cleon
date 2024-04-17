@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Your dependencies here
+}
+
+eclipse {
+    project {
+        // Configure natures and build commands if necessary
+        natures 'org.eclipse.pde.FeatureNature'
+        buildCommand 'org.eclipse.pde.FeatureBuilder'
+    }
+}

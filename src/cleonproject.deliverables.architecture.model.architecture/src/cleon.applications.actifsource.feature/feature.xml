@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,c47b7953-3b8a-11e5-b8db-7513250f5f90,Hash] -->
-<feature
-      id="cleon.applications.actifsource"
-      label="cleon.applications.actifsource"
-      version="0.4.149.qualifier">
-
+<feature id="cleon.applications.actifsource" label="cleon.applications.actifsource" version="0.4.149.qualifier">
    <description url="http://www.zwyssig.info/description">
-      No description available
+    No description available
    </description>
-
    <copyright url="http://www.zwyssig.info/copyright">
-      Zwyssig Informatik GmbH
+   Zwyssig Informatik GmbH
    </copyright>
-
    <license url="http://www.zwyssig.info/license">
-      cleon.applications.actifsource Software License Agreement
+cleon.applications.actifsource Software License Agreement
 NOTICE TO USER: PLEASE READ THIS AGREEMENT CAREFULLY. BY COPYING,
 INSTALLING OR USING ALL OR ANY PORTION OF THE SOFTWARE YOU ACCEPT
 ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT, INCLUDING, IN
@@ -462,10 +455,9 @@ contact cleon.applications.actifsource.
 cleon.applications.actifsource is a registered trademark of cleon.applications.actifsource in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="11.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="11.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="11.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="11.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="11.0.0" match="greaterOrEqual"/>
@@ -478,6 +470,7 @@ of their respective owners.
       <import feature="cleon.architecturemethods.arc42" version="0.4.149.qualifier"/>
       <import feature="cleon.common.building" version="0.4.149.qualifier"/>
       <import feature="cleon.common.calendar" version="0.4.149.qualifier"/>
+      <import feature="actifsource.solutions.ch.actifsource.solution.datatype" version="10.10.0.qualifier"/>
       <import feature="cleon.common.doc" version="0.4.149.qualifier"/>
       <import feature="cleon.architecturemethods.eamod" version="0.4.149.qualifier"/>
       <import feature="cleon.common.glossary" version="0.4.149.qualifier"/>
@@ -490,15 +483,8 @@ of their respective owners.
       <import feature="cleon.modelinglanguages.segmentation" version="0.4.149.qualifier"/>
       <import feature="cleon.modelinglanguages.uml" version="0.4.149.qualifier"/>
       <import feature="cleon.common.xml" version="0.4.149.qualifier"/>
-      <import plugin="ch.actifsource.solution.datatype" version="11.0.0" match="greaterOrEqual"/>
    </requires>
-
-   <plugin
-         id="cleon.applications.actifsource.metamodel.builtin"
-         version="0.0.0"/>
-
-   <plugin
-         id="cleon.applications.actifsource.model.plugins.builtin"
-         version="0.0.0"/>
-
+   <plugin id="cleon.applications.actifsource.metamodel.builtin" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="cleon.applications.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.0.0" unpack="false"/>   
 </feature>
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,c47b7953-3b8a-11e5-b8db-7513250f5f90,Hash] -->

@@ -470,7 +470,7 @@ of their respective owners.
       <import feature="cleon.architecturemethods.arc42" version="0.4.149.qualifier"/>
       <import feature="cleon.common.building" version="0.4.149.qualifier"/>
       <import feature="cleon.common.calendar" version="0.4.149.qualifier"/>
-      <import feature="actifsource.solutions.ch.actifsource.solution.datatype" version="10.10.0.qualifier"/>
+	  <import plugin="ch.actifsource.solution.datatype" version="11.0.0" match="greaterOrEqual"/>
       <import feature="cleon.common.doc" version="0.4.149.qualifier"/>
       <import feature="cleon.architecturemethods.eamod" version="0.4.149.qualifier"/>
       <import feature="cleon.common.glossary" version="0.4.149.qualifier"/>

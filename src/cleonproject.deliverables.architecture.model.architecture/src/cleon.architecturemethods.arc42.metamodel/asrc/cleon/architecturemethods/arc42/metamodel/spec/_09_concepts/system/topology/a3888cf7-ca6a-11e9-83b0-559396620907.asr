@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="a3888cf7-ca6a-11e9-83b0-559396620907">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5f79dfe4-fe52-11ee-8a28-b37fc0f6bfb9" type="resource" guid="5f7991c1-fe52-11ee-8a28-b37fc0f6bfb9" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="a388b409-ca6a-11e9-83b0-559396620907" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -7,6 +10,27 @@
     <object statement-guid="39f09ff6-da24-11ea-ae00-5518e944c256" type="resource" guid="2e1dbcf7-da24-11ea-ae00-5518e944c256" />
     <object statement-guid="81ecf83c-da24-11ea-ae00-5518e944c256" type="resource" guid="57d5abe9-da24-11ea-ae00-5518e944c256" />
     <object statement-guid="bb86873d-fd78-11ea-ab46-e355b3ca0d5e" type="resource" guid="b2d68f10-fd78-11ea-ab46-e355b3ca0d5e" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5f79dfe4-fe52-11ee-8a28-b37fc0f6bfb9">
+      <resource guid="5f7991c1-fe52-11ee-8a28-b37fc0f6bfb9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5f79b8d3-fe52-11ee-8a28-b37fc0f6bfb9" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bbc3aab3-fe52-11ee-8a28-b37fc0f6bfb9" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="62e1c2fa-fe52-11ee-8a28-b37fc0f6bfb9" type="literal">clusterAbbrevation</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="be7a3f34-fe52-11ee-8a28-b37fc0f6bfb9" type="literal">C</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5f7aca45-fe52-11ee-8a28-b37fc0f6bfb9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="a389c57a-ca6a-11e9-83b0-559396620907" type="literal">ClusterHost</object>

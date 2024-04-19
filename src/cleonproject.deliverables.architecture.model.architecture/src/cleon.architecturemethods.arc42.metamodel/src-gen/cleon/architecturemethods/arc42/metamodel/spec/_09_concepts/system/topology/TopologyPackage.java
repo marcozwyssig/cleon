@@ -95,6 +95,7 @@ public class TopologyPackage {
   public static final Resource AbstractHost_ips = new Resource("9f31b13b-be92-11ed-a54c-bd3e7f68cfbd");
   public static final Resource SkipBookmarkAware = new Resource("163a8eac-2d4a-11ee-a93f-27f66cbd8b98");
   public static final Resource SkipBookmarkAware_skipBookmarkGeneration = new Resource("163a8ead-2d4a-11ee-a93f-27f66cbd8b98");
+  public static final Resource ClusterHost_clusterAbbrevation = new Resource("5f7991c1-fe52-11ee-8a28-b37fc0f6bfb9");
   
   /* Begin Protected Region [[user]] */
   
@@ -115,4 +116,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,UqwVlF3xkAZnFDcnEAomoCGkca8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,0Y8bNo7gL2pfuSXSec4lHK7pnNU=] */

@@ -1,20 +1,8 @@
-plugins {
-    id 'java'
-    id 'eclipse'
-}
+// Example configuration for a plugin project
+apply plugin: 'java'
+apply plugin: 'org.standardout.bnd-platform'
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    // Your dependencies here
-}
-
-eclipse {
-    project {
-        // Configure natures and build commands if necessary
-        natures 'org.eclipse.pde.FeatureNature'
-        buildCommand 'org.eclipse.pde.FeatureBuilder'
-    }
+platform {
+    // Configuration for creating an OSGi bundle
+    bundle project('.project')
 }

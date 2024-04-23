@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDirs =  ['src-gen']
+        }
+        resources {
+            srcDirs = ['asrc', 'ico']
+        }
+    }
+}
+
+dependencies {
+	implementation fileTree('lib').include('*.jar')
+}
+
+jar {
+    manifest {
+        from('META-INF/MANIFEST.MF')
+    }
+}

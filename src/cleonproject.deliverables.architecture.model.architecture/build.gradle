@@ -1,57 +1,10 @@
 plugins {
-    // Apply the Java plugin to all projects
-    id 'java'
-    
-    // Plugin for Eclipse integration
-    id 'eclipse'
+    id "org.standardout.bnd-platform" version "3.0.1"
 }
 
-// Repository where dependencies will be downloaded from
-repositories {
-    mavenCentral()  // Most common public repository
-}
-
-// Dependency management that applies to all subprojects
-dependencies {
-    // Example: Common libraries used across multiple projects
-    // implementation 'org.slf4j:slf4j-api:1.7.30'
-    // testImplementation 'junit:junit:4.13.2'
-}
-
-// Configuration block for all subprojects
-subprojects {
-    apply plugin: 'java'        // Apply the Java plugin to each subproject
-    apply plugin: 'eclipse'     // Apply the Eclipse plugin to each subproject
-
-
-    // Repository available to all subprojects
+allprojects {
     repositories {
         mavenCentral()
     }
-
-    // Example of subproject specific dependencies that all subprojects might need
-    dependencies {
-        implementation 'org.slf4j:slf4j-simple:1.7.30'  // Simple binding for SLF4J
-    }
-
-    // Eclipse plugin specific configurations, if using Eclipse
-    eclipse {
-        // Configure Eclipse project natures and build commands if necessary
-    }
 }
 
-// Task to clean all subprojects
-task cleanAll {
-    description = 'Cleans all subprojects'
-    doLast {
-        subprojects.each {
-            it.tasks.clean.execute()
-        }
-    }
-}
-
-// Ensure that all subprojects can be built with a single command
-task buildAll {
-    description = 'Builds all subprojects'
-    dependsOn subprojects*.tasks.build
-}

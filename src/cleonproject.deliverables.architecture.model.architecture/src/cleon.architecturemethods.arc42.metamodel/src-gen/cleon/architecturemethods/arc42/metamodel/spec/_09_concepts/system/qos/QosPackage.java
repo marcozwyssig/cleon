@@ -23,7 +23,7 @@ public class QosPackage {
   public static final Resource DSCP_value = new Resource("f7c066ef-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource DSCP_CS6__F___S___F_Network__F_Control__F___N_Access__O_ = new Resource("3fcac901-1d89-11e9-b601-db75aa6f89a4");
   public static final Resource DSCP_CS7__F___S___F_Network__F_Control__F___N_Backbone__O___F_ = new Resource("48898e07-1d89-11e9-b601-db75aa6f89a4");
-  public static final Resource QoSSystemConfigurationSource_serviceClass = new Resource("7019937d-1d89-11e9-b601-db75aa6f89a4");
+  public static final Resource ServiceClassAware_serviceClass = new Resource("7019937d-1d89-11e9-b601-db75aa6f89a4");
   public static final Resource QoSSystemConfigurationSource = new Resource("fcc35d62-a0c3-11ea-8daa-afb4679c3497");
   public static final Resource QoSSystemConfigurationConcept_qoSSystemConfigurationDestination = new Resource("115c30f0-a0c4-11ea-8daa-afb4679c3497");
   public static final Resource QoSSystemConfigurationSource_source = new Resource("9cb345ae-a0c4-11ea-8daa-afb4679c3497");
@@ -46,6 +46,10 @@ public class QosPackage {
   public static final Resource BandwithAndQoSConcept_averageBandwithAndQoSConcept = new Resource("2b8b0e74-203d-11ec-8288-d50c101f2ec5");
   public static final Resource PeakBandwithConcept = new Resource("8090f57d-2057-11ec-8288-d50c101f2ec5");
   public static final Resource BandwithAndQoSConcept_peakBandwithConcept = new Resource("19880c73-2058-11ec-8288-d50c101f2ec5");
+  public static final Resource ServiceClassAware = new Resource("df6aa85c-02e5-11ef-90b2-b7186629189e");
+  public static final Resource QoSSpecifcServiceClass = new Resource("3ac9c52b-02e6-11ef-90b2-b7186629189e");
+  public static final Resource QoSSystemConfigurationSource_specifcServiceClass = new Resource("441f4bfc-02e6-11ef-90b2-b7186629189e");
+  public static final Resource QoSSpecifcServiceClass_service = new Resource("6fc8f810-02e6-11ef-90b2-b7186629189e");
   
   /* Begin Protected Region [[user]] */
   
@@ -66,4 +70,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos,8yLljhoSgVk+l6sU8I90xbos66Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos,flXCNiLdGcrq9Dhp5NcFcnpcck4=] */

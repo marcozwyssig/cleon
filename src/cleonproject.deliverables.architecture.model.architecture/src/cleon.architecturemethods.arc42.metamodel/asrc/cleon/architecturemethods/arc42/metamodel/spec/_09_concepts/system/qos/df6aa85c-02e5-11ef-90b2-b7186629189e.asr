@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="df6aa85c-02e5-11ef-90b2-b7186629189e">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="eb65fb21-02e5-11ef-90b2-b7186629189e" type="resource" guid="7019937d-1d89-11e9-b601-db75aa6f89a4" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="df6acf6e-02e5-11ef-90b2-b7186629189e" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="df6ca430-02e5-11ef-90b2-b7186629189e" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eb65fb21-02e5-11ef-90b2-b7186629189e">
+      <resource guid="7019937d-1d89-11e9-b601-db75aa6f89a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7019937f-1d89-11e9-b601-db75aa6f89a4" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="74408113-1d89-11e9-b601-db75aa6f89a4" type="literal">serviceClass</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="701aa4f1-1d89-11e9-b601-db75aa6f89a4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="701aa4f2-1d89-11e9-b601-db75aa6f89a4" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="2dbaaa6a-657c-11eb-bf13-ade897aac2eb" type="resource" guid="caaaa752-1d88-11e9-b601-db75aa6f89a4" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="76a91bc4-1d89-11e9-b601-db75aa6f89a4" type="resource" guid="af43badb-1d88-11e9-b601-db75aa6f89a4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="df6c7d1f-02e5-11ef-90b2-b7186629189e" type="literal">ServiceClassAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="df6ccb41-02e5-11ef-90b2-b7186629189e" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

@@ -62,11 +62,11 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP selectServiceClass() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_serviceClass);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.ServiceClassAware_serviceClass);
   }
 
   public QoSSystemConfigurationSource setServiceClass(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP serviceClass) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, serviceClass);
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.ServiceClassAware_serviceClass, serviceClass);
     return this;
   }
     
@@ -77,6 +77,16 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
 
   public QoSSystemConfigurationSource setSource(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_source, source);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSpecifcServiceClass> selectSpecifcServiceClass() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSpecifcServiceClass.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_specifcServiceClass);
+  }
+
+  public QoSSystemConfigurationSource setSpecifcServiceClass(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSpecifcServiceClass> specifcServiceClass) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_specifcServiceClass, specifcServiceClass);
     return this;
   }
     
@@ -108,8 +118,9 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_loaddistribution_aE__aA___K__aC_, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSCommunicationOnNetwork.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.ServiceClassAware_serviceClass, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_source, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSpecifcServiceClass.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_specifcServiceClass, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -119,13 +130,13 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_source, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> selectToMeServiceClass(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IDSCP object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, object.getResource());
-  }
-  
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource selectToMeCommunicationOnNetwork(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSCommunicationOnNetwork object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource selectToMeSpecifcServiceClass(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSpecifcServiceClass object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.QoSSystemConfigurationSource_specifcServiceClass, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,oelU1wOKep60ZlL7i5UeXO6z+eI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,xsLP7ICtLdjlmY9Rdg6DbWqOMnA=] */

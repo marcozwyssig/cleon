@@ -20,7 +20,7 @@ public class SpecPackage {
   public static final Resource Group_nodes = new Resource("f02f4565-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group_color = new Resource("42c675d8-09af-11e9-8c40-11db3668c0c9");
   public static final Resource AbstractNetworks_range = new Resource("f9f6687c-7403-11e9-8765-0925552fc2b7");
-  public static final Resource AbstractNetworkNode_iPv4_aE_D = new Resource("09a79db2-740c-11e9-8765-0925552fc2b7");
+  public static final Resource AbstractNetworkNode_ip = new Resource("09a79db2-740c-11e9-8765-0925552fc2b7");
   public static final Resource AbstractPhysicalNetwork = new Resource("679da3a6-7ac9-11e9-a70f-4dc03941a024");
   public static final Resource AbstractLogicalNetwork = new Resource("89c5d6c2-7ac9-11e9-a70f-4dc03941a024");
   public static final Resource AbstractNetworkAware = new Resource("dba046bb-7ac9-11e9-a70f-4dc03941a024");
@@ -52,4 +52,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,7NN8h0HlD80oDpUvLU/HZpwegtk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,9L9Wp1VFXnvZAVBBkbtaghBPNN4=] */

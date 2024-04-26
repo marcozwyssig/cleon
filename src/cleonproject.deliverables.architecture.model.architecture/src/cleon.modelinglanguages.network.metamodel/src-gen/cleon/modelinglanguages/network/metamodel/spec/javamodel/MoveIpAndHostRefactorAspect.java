@@ -5,18 +5,14 @@ import java.util.List;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Resource;
-import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.model.aspects.impl.AbstractAllInstancesRefactorerAspect;
-import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.update.IModifiable;
 import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
 import cleon.modelinglanguages.network.metamodel.spec.FunctionSpace_Network.IAbstractNetworkFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPRangeFunctions;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
 
 public class MoveIpAndHostRefactorAspect extends AbstractAllInstancesRefactorerAspect {
@@ -25,38 +21,38 @@ public class MoveIpAndHostRefactorAspect extends AbstractAllInstancesRefactorerA
 	}
 
 	@Override
-	protected void refactor(IModifiable modifiable, ch.actifsource.core.Package _package, INode node) {
-		ITypeSystem typeSystem = TypeSystem.create(modifiable);
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
+	protected void refactor(final IModifiable modifiable, final ch.actifsource.core.Package _package, final INode node) {
+		final var typeSystem = TypeSystem.create(modifiable);
+		final var resourceRepository = typeSystem.getResourceRepository();
+		final var abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, node);
-		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidrs();
+		final List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidrs();
 		if (cidrs.isEmpty()) {
 			return;
 		}
 		refactor(modifiable, abstractPhysicalNetwork);		
 	}
 
-	private void refactor(IModifiable modifiable, IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-		java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
+	private void refactor(final IModifiable modifiable, final IAbstractPhysicalNetwork abstractPhysicalNetwork) {
+		final java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
 		if (nodeMap == null) {
 			return;
 		}
 
-		IIPRange range = abstractPhysicalNetwork.extension(IAbstractNetworkFunctions.class).GetIPRange();
-		IIPRangeFunctions functions = range.extension(IIPRangeFunctions.class);
+		final var range = abstractPhysicalNetwork.extension(IAbstractNetworkFunctions.class).GetIPRange();
+		final var functions = range.extension(IIPRangeFunctions.class);
 
-		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
-		for (IAbstractNetworkNode networkNode : nodes) {
+		final Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
+		for (final IAbstractNetworkNode networkNode : nodes) {
 
-			String newIP = Select.simpleName(modifiable, networkNode.selectIPv4_D().getResource());
-			IIPv4_D newIPObj = functions.toIPv4(newIP);
+			final var newIP = Select.simpleName(modifiable, networkNode.selectIp().getResource());
+			final var newIPObj = functions.toIPv4(newIP);
 			if (newIPObj == null) {
 				throw new RuntimeException("IP " + newIP + " has not been found");
 			}
 
 			Update.createOrModifyStatement(modifiable, abstractPhysicalNetwork.getPackage(), networkNode.getResource(),
-					SpecPackage.AbstractNetworkNode_iPv4_aE_D, newIPObj.getResource());
+					SpecPackage.AbstractNetworkNode_ip, newIPObj.getResource());
 		}
 	}
 }

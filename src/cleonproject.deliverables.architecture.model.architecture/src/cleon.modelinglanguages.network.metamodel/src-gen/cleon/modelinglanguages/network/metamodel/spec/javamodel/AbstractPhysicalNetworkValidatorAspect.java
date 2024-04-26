@@ -21,7 +21,7 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 	private final int LOW = 32;
 
 	@Override
-	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
+	public void validate(final ValidationContext validationContext, final List<IResourceInconsistency> validationList) {
 		final var typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final var resourceRepository = typeSystem.getResourceRepository();
 		final var abstractPhysicalNetwork = resourceRepository
@@ -30,8 +30,8 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 		validate(validationContext, validationList, abstractPhysicalNetwork);
 	}
 
-	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList,
-			IAbstractPhysicalNetwork abstractPhysicalNetwork) {
+	private void validate(final ValidationContext validationContext, final List<IResourceInconsistency> validationList,
+			final IAbstractPhysicalNetwork abstractPhysicalNetwork) {
 		final var start = Instant.now();
 		try {
 
@@ -47,7 +47,7 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 				var isInRange = false;
 				for (final IIPv4_Mask cidr : cidrs) {
 					final var ip = Select.simpleName(validationContext.getReadJobExecutor(),
-							node.selectIPv4_D().getResource());
+							node.selectIp().getResource());
 					if (cidr.selectMask() == LOW) {
 						isInRange = cidr.selectIPv4().equals(ip);
 
@@ -73,7 +73,7 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 
 				for (final IAbstractNetworkNode node : toFixedList) {
 					final var ip = Select.simpleName(validationContext.getReadJobExecutor(),
-							node.selectIPv4_D().getResource());
+							node.selectIp().getResource());
 
 					final var nodeNetwork = Select.relationStatementOrNull(
 							validationContext.getReadJobExecutor(),

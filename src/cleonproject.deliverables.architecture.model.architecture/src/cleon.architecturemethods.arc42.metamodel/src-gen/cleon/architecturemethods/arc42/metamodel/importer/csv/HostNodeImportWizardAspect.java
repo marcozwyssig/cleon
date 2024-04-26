@@ -98,7 +98,7 @@ public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
 						NetworkPackage.NetworkHostNode_host, abstractHost.getResource());
 
 				Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), hostNodeObject,
-						SpecPackage.AbstractNetworkNode_iPv4_aE_D, ip4.getResource());
+						SpecPackage.AbstractNetworkNode_ip, ip4.getResource());
 
 				Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), hostNodeObject,
 						SpecPackage.AbstractNetworkNode_exportDNSRecord,

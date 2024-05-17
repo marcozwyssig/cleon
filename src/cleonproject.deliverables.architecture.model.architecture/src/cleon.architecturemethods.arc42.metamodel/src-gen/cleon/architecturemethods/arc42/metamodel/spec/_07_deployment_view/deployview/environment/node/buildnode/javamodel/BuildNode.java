@@ -25,6 +25,10 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_productVariants, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode> selectToMeResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_resourceBuildingBlockForSystemConfiguration, object.getResource());
+  }
+  
   public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode selectToMeCpu(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_cpu, object.getResource());
   }
@@ -38,4 +42,4 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,Viikjejpx+mV5Pt7HV/Kd0rgSCk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,FAMX5hbwQUGCj8i9PGzEe0a2S10=] */

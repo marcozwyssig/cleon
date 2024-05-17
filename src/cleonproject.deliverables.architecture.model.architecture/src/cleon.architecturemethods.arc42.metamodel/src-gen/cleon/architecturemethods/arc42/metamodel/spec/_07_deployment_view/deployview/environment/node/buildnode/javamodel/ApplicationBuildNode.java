@@ -112,6 +112,16 @@ public class ApplicationBuildNode extends DynamicResource implements IApplicatio
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept selectResourceBuildingBlockForSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_resourceBuildingBlockForSystemConfiguration);
+  }
+
+  public ApplicationBuildNode setResourceBuildingBlockForSystemConfiguration(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept resourceBuildingBlockForSystemConfiguration) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_resourceBuildingBlockForSystemConfiguration, resourceBuildingBlockForSystemConfiguration);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.supplynode.javamodel.ISupplyNode> selectSuppliedNodes() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes);
   }
@@ -153,9 +163,10 @@ public class ApplicationBuildNode extends DynamicResource implements IApplicatio
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_instanceOf, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_memory, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_productVariants, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.BuildnodePackage.BuildNode_resourceBuildingBlockForSystemConfiguration, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aa00b70-84d9-11ea-ade9-0f308d716192,SedRvXsgj9rLKo8D+C5dZnbMY7I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aa00b70-84d9-11ea-ade9-0f308d716192,d2b/XUFQgqR8nRPs8EJ8BfZeQGA=] */

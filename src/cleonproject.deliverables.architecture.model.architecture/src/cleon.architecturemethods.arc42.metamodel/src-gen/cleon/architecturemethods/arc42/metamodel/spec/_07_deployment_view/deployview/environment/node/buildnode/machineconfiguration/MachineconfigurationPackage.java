@@ -16,7 +16,6 @@ public class MachineconfigurationPackage {
   public static final Resource FunctionSpace_aE_MachineConfiguration_CPU_aE_Configuration = new Resource("0a636d12-87f8-11ec-894d-7968efa38b99");
   public static final Resource FunctionSpace_aE_MachineConfiguration_Memory_aE_Configuration = new Resource("4e926972-87f8-11ec-894d-7968efa38b99");
   public static final Resource FunctionSpace_aE_MachineConfiguration_Disk_aE_Configuration = new Resource("e07a18d2-87f8-11ec-894d-7968efa38b99");
-  public static final Resource CPU_aE_Configuration_resourceBuildingBlockForSystemConfiguration = new Resource("93241ae4-966a-11ed-8477-832487bcda65");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +36,4 @@ public class MachineconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.machineconfiguration,/JZHGUSQbdXZUV/cSSS8ATFglbU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.machineconfiguration,tIL2h82r4HcxooK+NKgT4WRLohc=] */

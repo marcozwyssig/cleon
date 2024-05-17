@@ -19,6 +19,7 @@ public class BuildnodePackage {
   public static final Resource ServiceBuildNode_host = new Resource("edf18afa-5e17-11ea-b835-fbb06fdf6352");
   public static final Resource ApplicationBuildNode = new Resource("7aa00b70-84d9-11ea-ade9-0f308d716192");
   public static final Resource FunctionSpace_aE_BuildNode_ApplicationBuildNode = new Resource("0706e2de-84da-11ea-ade9-0f308d716192");
+  public static final Resource BuildNode_resourceBuildingBlockForSystemConfiguration = new Resource("93241ae4-966a-11ed-8477-832487bcda65");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +40,4 @@ public class BuildnodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode,2guWulWoH67KaqK6Z7wv/ibIHEw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode,pLzQq620jhraPXc8zp4KhbBhBXQ=] */

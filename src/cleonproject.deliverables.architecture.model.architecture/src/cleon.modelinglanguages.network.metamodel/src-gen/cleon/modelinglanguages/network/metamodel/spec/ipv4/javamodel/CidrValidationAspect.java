@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 public class CidrValidationAspect implements IResourceValidationAspect {
 
 	@Override
-	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
+	public void validate(final ValidationContext validationContext, final List<IResourceInconsistency> validationList) {
 		final var typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final var resourceRepository = typeSystem.getResourceRepository();
 		final var cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
@@ -34,17 +34,28 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		final var network = Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource());
 
 		try {
+			final var range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
+			final var subnet = new SubnetUtils(network);
+			final var cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, IPv4_Mask_Aware.selectToMeCidrs(cidr).getResource());
+			
+			final var subNetInfo = subnet.getInfo();
+			final var calculatedNetworkAddress = subNetInfo.getNetworkAddress();
+
+	        // Check if the provided CIDR notation correctly matches the calculated network range
+			final var isCidrNotationCorrect = network.split("/")[0].equals(calculatedNetworkAddress);
+	        if( !isCidrNotationCorrect && cidr.selectMask() != 32) {
+		        validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("Invalid CIDR " + network + ". Expected Network Address: " + calculatedNetworkAddress, cidrStatement)));
+		        return;
+	        }
+	        
 			// Performance with validation of extensive networks		
 			if (cidr.selectMask() < 24) {
 			    Logger.instance().logInfo(String.format("Validation skipped (%s)", network));
 			    return;
 			}
-	
-			final var range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
-			final var subnet = new SubnetUtils(network);
-			final var cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, IPv4_Mask_Aware.selectToMeCidrs(cidr).getResource());
-			final var allAddresses = subnet.getInfo().getAllAddresses();
-	
+	        
+			final var allAddresses = subNetInfo.getAllAddresses();
+
 			Stream.of(allAddresses).forEach(ip -> {
 			    final var ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
 			    if (ipv4 == null) {

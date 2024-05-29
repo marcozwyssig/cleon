@@ -14,7 +14,6 @@ TODO: Describe the motivation for the building block view.
 Contained Building Blocks::
 
 The actifsource <Feature> is decomposed into the following components:
-
 . actifsource <MetaModel> <MetaModel> (Blackbox)
 . actifsource <Sample> <Sample> (Blackbox)
 . plugins <Model> <Model> (Blackbox)
@@ -25,27 +24,41 @@ The actifsource <Feature> is decomposed into the following components:
 
 [#497a129f-d579-11ee-903e-9f564e4de07e]
 ==== actifsource <MetaModel> <MetaModel> (Blackbox)
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,purpose]]
+
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,purpose]]
+
 [cols="20,80a"]
 |===
 |*Interface(s)*
 |
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,interface]]
 TODO: Describe the interface(s).
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,interface]]
 
 |*Quality/Performance Characteristics*
 |
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,quality]]
 TODO: Describe the quality/performance characteristics.
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,quality]]
 
 |*Fulfilled Requirements*
 |
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,reqs]]
 TODO: Describe the fulfilled requirements.
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,reqs]]
 
 |*Directory/File Location*
 |
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,location]]
 TODO: Describe the directory/file location.
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,location]]
 
 |*Open Issues/Problems/Risks*
-|
+a|
+// Begin Protected Region [[520089d0-3b69-11e5-86bc-73aedc28563d,issues]]
 TODO: Describe the open issues/problems/risks.
+// End Protected Region   [[520089d0-3b69-11e5-86bc-73aedc28563d,issues]]
 
 |===
 // Begin Protected Region [[497a129f-d579-11ee-903e-9f564e4de07e,customText]]
@@ -54,27 +67,41 @@ TODO: Describe the open issues/problems/risks.
 
 [#497a129e-d579-11ee-903e-9f564e4de07e]
 ==== actifsource <Sample> <Sample> (Blackbox)
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,purpose]]
+
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,purpose]]
+
 [cols="20,80a"]
 |===
 |*Interface(s)*
 |
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,interface]]
 TODO: Describe the interface(s).
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,interface]]
 
 |*Quality/Performance Characteristics*
 |
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,quality]]
 TODO: Describe the quality/performance characteristics.
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,quality]]
 
 |*Fulfilled Requirements*
 |
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,reqs]]
 TODO: Describe the fulfilled requirements.
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,reqs]]
 
 |*Directory/File Location*
 |
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,location]]
 TODO: Describe the directory/file location.
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,location]]
 
 |*Open Issues/Problems/Risks*
-|
+a|
+// Begin Protected Region [[424f6a5b-ca2d-11e8-a7f6-af071215645c,issues]]
 TODO: Describe the open issues/problems/risks.
+// End Protected Region   [[424f6a5b-ca2d-11e8-a7f6-af071215645c,issues]]
 
 |===
 // Begin Protected Region [[497a129e-d579-11ee-903e-9f564e4de07e,customText]]
@@ -83,31 +110,45 @@ TODO: Describe the open issues/problems/risks.
 
 [#497a129d-d579-11ee-903e-9f564e4de07e]
 ==== plugins <Model> <Model> (Blackbox)
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,purpose]]
+
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,purpose]]
+
 [cols="20,80a"]
 |===
 |*Interface(s)*
 |
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,interface]]
 TODO: Describe the interface(s).
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,interface]]
 
 |*Quality/Performance Characteristics*
 |
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,quality]]
 TODO: Describe the quality/performance characteristics.
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,quality]]
 
 |*Fulfilled Requirements*
 |
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,reqs]]
 TODO: Describe the fulfilled requirements.
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,reqs]]
 
 |*Directory/File Location*
 |
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,location]]
 TODO: Describe the directory/file location.
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,location]]
 
 |*Open Issues/Problems/Risks*
-|
+a|
+// Begin Protected Region [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,issues]]
 TODO: Describe the open issues/problems/risks.
+// End Protected Region   [[192de10b-5a75-11e7-b8a6-4b5d9075cdd8,issues]]
 
 |===
 // Begin Protected Region [[497a129d-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[497a129d-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f39-d579-11ee-903e-9f564e4de07e,vAC64srGPUPJ4BuMy1eCWf871hw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f39-d579-11ee-903e-9f564e4de07e,VHw64TK0nYymM+MssbHH1XMbkb0=]

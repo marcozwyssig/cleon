@@ -32,11 +32,11 @@ public class Guideline extends DynamicResource implements IGuideline {
   
   @Override
   public java.lang.String selectChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
     
   public void setChapterPath(java.lang.String chapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, chapterPath);
   }
 
   @Override
@@ -73,6 +73,15 @@ public class Guideline extends DynamicResource implements IGuideline {
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+  }
+    
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
   }
 
   @Override
@@ -170,7 +179,6 @@ public class Guideline extends DynamicResource implements IGuideline {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -183,4 +191,4 @@ public class Guideline extends DynamicResource implements IGuideline {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,AKnGxhqTO2SjBJaQxpmpmjJVZ2k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,/3l3u1wuKwBhdUP6jFaSuJj38hk=] */

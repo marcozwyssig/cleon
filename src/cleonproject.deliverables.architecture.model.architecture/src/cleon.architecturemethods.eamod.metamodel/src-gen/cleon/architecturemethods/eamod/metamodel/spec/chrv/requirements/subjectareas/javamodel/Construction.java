@@ -32,11 +32,11 @@ public class Construction extends DynamicResource implements IConstruction {
   
   @Override
   public java.lang.String selectChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
     
   public void setChapterPath(java.lang.String chapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, chapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, chapterPath);
   }
 
   @Override
@@ -161,7 +161,7 @@ public class Construction extends DynamicResource implements IConstruction {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterPath, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -176,4 +176,4 @@ public class Construction extends DynamicResource implements IConstruction {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,641a1033-0c77-11e6-86c5-87a8b520dd59,Ie4dMBjRHAcPzsH9q0UCsqXF+e8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,641a1033-0c77-11e6-86c5-87a8b520dd59,S8jkUKMWEFDhWkP2gwFjrabemno=] */

@@ -20,9 +20,6 @@ public class FunctionSpace_Paragraph {
 
   public static interface IListItemFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("ec60bd2b-24e8-11ef-83a6-fdf80672957b")
-    public List<java.lang.String> AllItems();
-
     @IDynamicResourceExtension.MethodId("54f9b83f-24ef-11ef-83a6-fdf80672957b")
     public java.lang.String AllItemsPlain();
 
@@ -48,4 +45,4 @@ public class FunctionSpace_Paragraph {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,mpUMm1+mk4byyq531gCKwK/iwzQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,fd/nfcVgFsiaf+mliW5BGDKHnBY=] */

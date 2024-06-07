@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -42,12 +42,22 @@ public class UsedProduct extends DynamicResource implements IUsedProduct {
   // relations
   
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode selectInstallationMode() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_installationMode);
+  }
+
+  public UsedProduct setInstallationMode(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode installationMode) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_installationMode, installationMode);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct selectProduct() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.UsedProduct_product);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_product);
   }
 
   public UsedProduct setProduct(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct product) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.UsedProduct_product, product);
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_product, product);
     return this;
   }
     
@@ -77,15 +87,20 @@ public class UsedProduct extends DynamicResource implements IUsedProduct {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.UsedProduct_product, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_installationMode, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_product, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IUsedProduct> selectToMeProduct(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IUsedProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.UsedProduct_product, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct> selectToMeProduct(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_product, object.getResource());
+  }
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct> selectToMeInstallationMode(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.UsedProduct_installationMode, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,2MrbAMyE6DjS6xSItmijV9GtMJY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,+AKZfjAS3V0J5DhN8egmD/IFVxw=] */

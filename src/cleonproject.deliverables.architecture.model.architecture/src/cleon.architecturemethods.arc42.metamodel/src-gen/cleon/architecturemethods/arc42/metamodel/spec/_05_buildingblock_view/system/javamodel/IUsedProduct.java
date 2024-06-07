@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -10,6 +10,8 @@ public interface IUsedProduct extends ch.actifsource.core.javamodel.IDecorator, 
   
   public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct selectProduct();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IInstallationMode selectInstallationMode();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,eKQKsRMuFnqSWidU2fdhov18Yys=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,NyCt/swET0l03Y4W9F+gmpv7xA4=] */

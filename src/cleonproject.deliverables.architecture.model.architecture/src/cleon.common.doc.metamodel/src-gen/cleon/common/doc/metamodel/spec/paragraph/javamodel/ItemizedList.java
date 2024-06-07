@@ -31,15 +31,6 @@ public class ItemizedList extends DynamicResource implements IItemizedList {
   // attributes
   
   @Override
-  public java.util.List<java.lang.String> selectDescriptions() {
-    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
-  }
-    
-  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
-     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
-  }
-
-  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -57,6 +48,16 @@ public class ItemizedList extends DynamicResource implements IItemizedList {
 
   public ItemizedList setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem> selectListItem() {
+    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.AbstractList_listItem);
+  }
+
+  public ItemizedList setListItem(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem> listItem) {
+    _setList(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.AbstractList_listItem, listItem);
     return this;
   }
     
@@ -84,12 +85,11 @@ public class ItemizedList extends DynamicResource implements IItemizedList {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.AbstractList_listItem, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f18903b6-e8f5-11e8-b810-cdb2b421fd42,ojM5NwNIuw/XA2jtZh3I5tAfwc8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f18903b6-e8f5-11e8-b810-cdb2b421fd42,lZvL5LnvPyfwwqJ0nUnC5NL8m9E=] */

@@ -894,6 +894,43 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IListItemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7c48a0a7-24f0-11ef-83a6-fdf80672957b")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IListItemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("7c48a0a7-24f0-11ef-83a6-fdf80672957b")
+    public java.lang.String RenderContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem listItem);
+
+  }
+  
+  public static class ListItemFunctionsImpl implements IListItemFunctionsImpl {
+
+    public static final IListItemFunctionsImpl INSTANCE = new ListItemFunctionsImpl();
+
+    private ListItemFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem listItem) {
+      return null;
+    }
+
+  }
+  
+  public static class ListItemFunctions {
+
+    private ListItemFunctions() {}
+
+    public static java.lang.String RenderContent(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IListItem listItem) {
+      return DynamicResourceUtil.invoke(IListItemFunctionsImpl.class, ListItemFunctionsImpl.INSTANCE, listItem).RenderContent(listItem);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,W8H/2LviJvu0SiSEnn1zCAiyoXM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cTJBChc0FZDqPKrm+Lv2GcrHtnM=] */

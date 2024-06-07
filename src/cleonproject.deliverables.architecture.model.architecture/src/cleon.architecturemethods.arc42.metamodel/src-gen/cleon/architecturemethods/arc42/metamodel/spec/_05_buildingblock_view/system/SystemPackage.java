@@ -30,6 +30,7 @@ public class SystemPackage {
   public static final Resource WhiteboxSystem_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource UsedProduct = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource WhiteboxSystem_usedProducts = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource WhiteboxSystem_availability = new Resource("b85567f0-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource GenericShortNameAware = new Resource("729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a");
@@ -42,6 +43,7 @@ public class SystemPackage {
   public static final Resource AuthenticationSystemArc42_realmForSystemConfiguration = new Resource("a67d798d-fe6e-11ea-abcb-bfad67a56d79");
   public static final Resource AutorizationSystemArc42 = new Resource("c727191a-23f5-11eb-83b1-3d2a97975978");
   public static final Resource AutorizationSystemArc42_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
+  public static final Resource UsedProduct_product = new Resource("4be44043-29a3-11eb-8baa-95d9107006e8");
   public static final Resource NamedSystemWithSystemLayer = new Resource("4be8fc8d-d28b-11ec-90fa-eddb29a5483c");
   public static final Resource SystemWithSystemLayer = new Resource("57022c90-d28b-11ec-90fa-eddb29a5483c");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfigurationProperty = new Resource("0183aaf2-d5d1-11ec-ad12-8d6f8e00bc94");
@@ -53,6 +55,11 @@ public class SystemPackage {
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystemOrSystemConfiguration = new Resource("bb5a23f2-4bd4-11ed-bcee-57344264bda3");
   public static final Resource ContextQualifierAware = new Resource("063f8c95-e487-11ee-8a89-3f870c06659f");
   public static final Resource ContextQualifierAware_contextQualifier = new Resource("063f8c96-e487-11ee-8a89-3f870c06659f");
+  public static final Resource InstallationMode = new Resource("e0506385-23fc-11ef-86fc-7d48003eb647");
+  public static final Resource UsedProduct_installationMode = new Resource("e8ff97fa-23fc-11ef-86fc-7d48003eb647");
+  public static final Resource InstallationMode_Manual = new Resource("f88b3c7a-23fc-11ef-86fc-7d48003eb647");
+  public static final Resource InstallationMode_Automatic = new Resource("fa9ae2ff-23fc-11ef-86fc-7d48003eb647");
+  public static final Resource InstallationMode_AutomaticUpdate = new Resource("54148f41-2403-11ef-86fc-7d48003eb647");
   
   /* Begin Protected Region [[user]] */
   
@@ -73,4 +80,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,pc3yyS4VqJc2+vl8KBmZtdbscIc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,SgdEkQNCtio8Ixy831MLBusbNow=] */

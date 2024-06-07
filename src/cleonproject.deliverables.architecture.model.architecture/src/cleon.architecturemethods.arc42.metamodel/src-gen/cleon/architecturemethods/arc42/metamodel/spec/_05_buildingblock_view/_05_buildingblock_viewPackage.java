@@ -33,12 +33,10 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource UsedProduct = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Backup_aE_and_aE_Recovery_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
   public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
   public static final Resource BuildingBlockView_level_aE_2_aE_whitebox = new Resource("1f2736f1-d568-11ea-80a3-dbf7eb525c3c");
-  public static final Resource UsedProduct_product = new Resource("4be44043-29a3-11eb-8baa-95d9107006e8");
   public static final Resource BuildingBlockView_level_aE_3_aE_whitebox = new Resource("a603addf-d576-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_4_aE_whitebox = new Resource("39082c08-d579-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_5_aE_whitebox = new Resource("6c166472-d579-11ee-903e-9f564e4de07e");
@@ -66,4 +64,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,fNteHsuDg5aj2iFqzKtT8CAJNPs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,bw1obaIT2YSQh76oYqCy40JXdrw=] */

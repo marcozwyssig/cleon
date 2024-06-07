@@ -18,31 +18,34 @@ public class FunctionSpace_Paragraph {
   /* End Protected Region   [[2fcc117b-ed42-11ec-97a2-3feebb03f72b]] */
 
 
-  public static interface INumberedListFunctions extends IDynamicResourceExtension {
+  public static interface IListItemFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("3ed0368c-ed42-11ec-97a2-3feebb03f72b")
+    @IDynamicResourceExtension.MethodId("ec60bd2b-24e8-11ef-83a6-fdf80672957b")
     public List<java.lang.String> AllItems();
+
+    @IDynamicResourceExtension.MethodId("54f9b83f-24ef-11ef-83a6-fdf80672957b")
+    public java.lang.String AllItemsPlain();
 
   }
   
-  public static interface INumberedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IListItemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NumberedListFunctionsImpl implements INumberedListFunctionsImpl {
+  public static class ListItemFunctionsImpl implements IListItemFunctionsImpl {
 
-    public static final INumberedListFunctionsImpl INSTANCE = new NumberedListFunctionsImpl();
+    public static final IListItemFunctionsImpl INSTANCE = new ListItemFunctionsImpl();
 
-    private NumberedListFunctionsImpl() {}
+    private ListItemFunctionsImpl() {}
 
   }
   
-  public static class NumberedListFunctions {
+  public static class ListItemFunctions {
 
-    private NumberedListFunctions() {}
+    private ListItemFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,MXP25gndn4Oj26ILCVd13vO+bZo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,mpUMm1+mk4byyq531gCKwK/iwzQ=] */

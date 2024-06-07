@@ -573,34 +573,6 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IWhiteboxSystemFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("17d0424a-d7dd-11ea-ae00-5518e944c256")
-    public java.lang.String RenderAdditionalChapters();
-
-    @IDynamicResourceExtension.MethodId("457549ba-d7dd-11ea-ae00-5518e944c256")
-    public java.lang.String RenderNetworkSegmentation();
-
-  }
-  
-  public static interface IWhiteboxSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class WhiteboxSystemFunctionsImpl implements IWhiteboxSystemFunctionsImpl {
-
-    public static final IWhiteboxSystemFunctionsImpl INSTANCE = new WhiteboxSystemFunctionsImpl();
-
-    private WhiteboxSystemFunctionsImpl() {}
-
-  }
-  
-  public static class WhiteboxSystemFunctions {
-
-    private WhiteboxSystemFunctions() {}
-
-  }
-
   public static interface IRealmForSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b01db1fa-fd92-11ea-aa08-3550db97e5ec")
@@ -1214,6 +1186,74 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IProductViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3e5368c9-092e-11e9-8c40-11db3668c0c9")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IProductViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProductViewFunctionsImpl implements IProductViewFunctionsImpl {
+
+    public static final IProductViewFunctionsImpl INSTANCE = new ProductViewFunctionsImpl();
+
+    private ProductViewFunctionsImpl() {}
+
+  }
+  
+  public static class ProductViewFunctions {
+
+    private ProductViewFunctions() {}
+
+  }
+
+  public static interface IWhiteboxSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("47549860-7edd-11ea-9262-7b7e0e9cb204")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+    @IDynamicResourceExtension.MethodId("f0930eda-d5a9-11ea-96bb-39ddde1b696a")
+    public java.lang.String RenderDescriptions();
+
+    @IDynamicResourceExtension.MethodId("20b43820-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderChapters();
+
+    @IDynamicResourceExtension.MethodId("cffa0fb1-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderProduct();
+
+    @IDynamicResourceExtension.MethodId("17d0424a-d7dd-11ea-ae00-5518e944c256")
+    public java.lang.String RenderAdditionalChapters();
+
+    @IDynamicResourceExtension.MethodId("457549ba-d7dd-11ea-ae00-5518e944c256")
+    public java.lang.String RenderNetworkSegmentation();
+
+  }
+  
+  public static interface IWhiteboxSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WhiteboxSystemFunctionsImpl implements IWhiteboxSystemFunctionsImpl {
+
+    public static final IWhiteboxSystemFunctionsImpl INSTANCE = new WhiteboxSystemFunctionsImpl();
+
+    private WhiteboxSystemFunctionsImpl() {}
+
+  }
+  
+  public static class WhiteboxSystemFunctions {
+
+    private WhiteboxSystemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,VjKJo58zVOSNDO1JdljnvD5tsPQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,0NPS7e4FO7tF3GlaX/8LMsOqvQE=] */

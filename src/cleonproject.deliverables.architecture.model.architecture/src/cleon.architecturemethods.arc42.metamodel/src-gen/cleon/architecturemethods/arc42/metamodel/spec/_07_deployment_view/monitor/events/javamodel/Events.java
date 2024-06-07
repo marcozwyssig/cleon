@@ -117,6 +117,7 @@ public class Events extends DynamicResource implements IEvents {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -129,4 +130,4 @@ public class Events extends DynamicResource implements IEvents {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bbf19ba-8f32-11e8-90f3-6f51c1a0b373,DlfhE+a+SesSQectpvtDIlaeFII=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bbf19ba-8f32-11e8-90f3-6f51c1a0b373,psKOCpHBqtLiDLbiN0eje1eC53k=] */

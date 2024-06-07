@@ -14,6 +14,8 @@ public interface IProduct extends ch.actifsource.core.javamodel.INamedResource, 
   
   public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> selectUsedIn();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct> selectUsedInProduct();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,0CfQB2Yuf6g3EDi321v7RWC8Fvg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,0lDT7FEt1NZ6TVzPS4jRpJoKbj8=] */

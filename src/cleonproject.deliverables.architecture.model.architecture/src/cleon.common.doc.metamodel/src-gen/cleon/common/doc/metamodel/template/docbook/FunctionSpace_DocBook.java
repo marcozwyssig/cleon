@@ -10,7 +10,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
 import cleon.common.doc.metamodel.spec.document.javamodel.IDocument;
 import cleon.common.doc.metamodel.spec.javamodel.DocumentElementComposite;
-import cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite;
 /* End Protected Region   [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
 
 public class FunctionSpace_DocBook {
@@ -88,6 +87,9 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("7544a4e7-2233-11e9-a054-db6d80fba790")
     public java.lang.String td__U_();
 
+    @IDynamicResourceExtension.MethodId("37499c76-24bb-11ef-86fc-7d48003eb647")
+    public List<cleon.common.doc.metamodel.spec.paragraph.javamodel.INumberedList> ParentNumberedList();
+
   }
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -164,15 +166,12 @@ public class FunctionSpace_DocBook {
     @Override
     public java.lang.String RenderElementName(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       /* Begin Protected Region [[7a904f0e-3e12-11e6-9bf8-29c5fda07fa3]] */
-    	IDocumentElementComposite composite = DocumentElementComposite.selectToMeDocumentElements(abstractChapter);
+    	final var composite = DocumentElementComposite.selectToMeDocumentElements(abstractChapter);
     	if (composite instanceof IDocument)
     	{
     		return "chapter";
     	}
-    	else
-    	{
-    		return "section";    		
-    	}
+		return "section";
       /* End Protected Region   [[7a904f0e-3e12-11e6-9bf8-29c5fda07fa3]] */
     }
 
@@ -277,10 +276,16 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("619f53cf-3df2-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderContent();
 
+    @IDynamicResourceExtension.MethodId("1006fe4a-24bc-11ef-86fc-7d48003eb647")
+    public java.lang.Boolean IsEmpty();
+
   }
   
   public static interface INumberedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("1006fe4a-24bc-11ef-86fc-7d48003eb647")
+    public java.lang.Boolean IsEmpty(final List<cleon.common.doc.metamodel.spec.paragraph.javamodel.INumberedList> numberedListList);
+
   }
   
   public static class NumberedListFunctionsImpl implements INumberedListFunctionsImpl {
@@ -289,11 +294,23 @@ public class FunctionSpace_DocBook {
 
     private NumberedListFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean IsEmpty(final List<cleon.common.doc.metamodel.spec.paragraph.javamodel.INumberedList> numberedListList) {
+      if( numberedListList == null) {
+          	return true;
+      }
+      return numberedListList.isEmpty();   
+    }
+
   }
   
   public static class NumberedListFunctions {
 
     private NumberedListFunctions() {}
+
+    public static java.lang.Boolean IsEmpty(final List<cleon.common.doc.metamodel.spec.paragraph.javamodel.INumberedList> numberedListList) {
+      return DynamicResourceUtil.invoke(INumberedListFunctionsImpl.class, NumberedListFunctionsImpl.INSTANCE, numberedListList).IsEmpty(numberedListList);
+    }
 
   }
 
@@ -726,19 +743,13 @@ public class FunctionSpace_DocBook {
 
   public static interface IItemizedListFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("0000c7ff-e8f6-11e8-b810-cdb2b421fd42")
+    @IDynamicResourceExtension.MethodId("d64cf548-2500-11ef-83a6-fdf80672957b")
     public java.lang.String RenderContent();
-
-    @IDynamicResourceExtension.MethodId("501eae2b-3d39-11eb-986d-0d884ba5cf53")
-    public java.lang.Integer Count();
 
   }
   
   public static interface IItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("501eae2b-3d39-11eb-986d-0d884ba5cf53")
-    public java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList);
-
   }
   
   public static class ItemizedListFunctionsImpl implements IItemizedListFunctionsImpl {
@@ -747,30 +758,11 @@ public class FunctionSpace_DocBook {
 
     private ItemizedListFunctionsImpl() {}
 
-    @Override
-    public java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList) {
-      /* Begin Protected Region [[501eae2b-3d39-11eb-986d-0d884ba5cf53]] */
-    	int count = 0;
-    	if( itemizedList.selectDescriptions() != null) {
-    		count = itemizedList.selectDescriptions().size();
-    	}
-    	
-    	if( itemizedList.selectParagraphs() != null ) {
-    		count += itemizedList.selectParagraphs().size();
-    	}
-    	return count;
-      /* End Protected Region   [[501eae2b-3d39-11eb-986d-0d884ba5cf53]] */
-    }
-
   }
   
   public static class ItemizedListFunctions {
 
     private ItemizedListFunctions() {}
-
-    public static java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList) {
-      return DynamicResourceUtil.invoke(IItemizedListFunctionsImpl.class, ItemizedListFunctionsImpl.INSTANCE, itemizedList).Count(itemizedList);
-    }
 
   }
 
@@ -924,6 +916,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IListItemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2da53ffe-24f0-11ef-83a6-fdf80672957b")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IListItemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ListItemFunctionsImpl implements IListItemFunctionsImpl {
+
+    public static final IListItemFunctionsImpl INSTANCE = new ListItemFunctionsImpl();
+
+    private ListItemFunctionsImpl() {}
+
+  }
+  
+  public static class ListItemFunctions {
+
+    private ListItemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,kH5SPOWln6NoRHFBa8Py3vT6fwE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,byKl3XlW+jMyDjWmeWgmOqGXx9g=] */

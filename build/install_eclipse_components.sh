@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the Eclipse installation directory
-ECLIPSE_INSTALL_DIR="/tmp/eclipse"
+ECLIPSE_INSTALL_DIR=$(pwd)
 
 # Check if the Eclipse installation directory exists
 if [ ! -d "$ECLIPSE_INSTALL_DIR" ]; then

@@ -128,6 +128,31 @@ public class Database_aE_View__T_adoc {
 
   }
 
+  public static interface ITableAreaFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("be85f5d4-27c7-11ef-9acc-81efe99aa8b6")
+    public java.lang.String ChapterRef();
+
+  }
+  
+  public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableAreaFunctionsImpl implements ITableAreaFunctionsImpl {
+
+    public static final ITableAreaFunctionsImpl INSTANCE = new TableAreaFunctionsImpl();
+
+    private TableAreaFunctionsImpl() {}
+
+  }
+  
+  public static class TableAreaFunctions {
+
+    private TableAreaFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,81ccce05-b9c6-11ee-a257-01d178f494ca,5vurf4klZCYEF+T5zjWo4FBQR0I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,81ccce05-b9c6-11ee-a257-01d178f494ca,qYrlOsfgHAxD4OztZlXWcMZkGrI=] */

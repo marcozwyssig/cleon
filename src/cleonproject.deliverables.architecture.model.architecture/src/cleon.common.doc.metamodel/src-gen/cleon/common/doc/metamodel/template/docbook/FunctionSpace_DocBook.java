@@ -944,6 +944,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IBooleanLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48023048-27c8-11ef-9acc-81efe99aa8b6")
+    public java.lang.String RenderReferenceAnchor(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+  }
+  
+  public static interface IBooleanLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BooleanLiteralFunctionsImpl implements IBooleanLiteralFunctionsImpl {
+
+    public static final IBooleanLiteralFunctionsImpl INSTANCE = new BooleanLiteralFunctionsImpl();
+
+    private BooleanLiteralFunctionsImpl() {}
+
+  }
+  
+  public static class BooleanLiteralFunctions {
+
+    private BooleanLiteralFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,mn0X48e451AfIlQurkUXQQerIv4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,y6gDJWU7LFNdm1le0otArZqrhMk=] */

@@ -157,7 +157,6 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IEnumerationMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_enumerationMappingView, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumeration.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_scope, visitor);
@@ -185,4 +184,4 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,3metD2rf6bX/xqLm8McOTtRvFUc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,b31+zsTSAPKRQ3/JHAv8JgM1Jnc=] */

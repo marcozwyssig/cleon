@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITable extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement, ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware {
+public interface ITable extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("09a46257-b934-11ee-a0d0-e953bcbfaeef");
   
@@ -20,4 +20,4 @@ public interface ITable extends cleon.architecturemethods.arc42.metamodel.spec._
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,FduuQ0is1j0IqVbWrAlwRLP0LOg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,AEqD4wRTRLxxGHY5oKbpgKJ9ih8=] */

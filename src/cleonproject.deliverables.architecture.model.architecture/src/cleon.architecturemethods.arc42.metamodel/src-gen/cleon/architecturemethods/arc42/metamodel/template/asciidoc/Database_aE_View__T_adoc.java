@@ -18,57 +18,6 @@ public class Database_aE_View__T_adoc {
   /* End Protected Region   [[81ccce05-b9c6-11ee-a257-01d178f494ca]] */
 
 
-  public static interface ITableFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ba830c78-c019-11ee-b73c-c3f9bd2ce1e0")
-    public java.lang.String Ref();
-
-    @IDynamicResourceExtension.MethodId("d4c6277a-cfff-11ee-9bb8-5f4f5b483c01")
-    public java.lang.String ChapterRef();
-
-    @IDynamicResourceExtension.MethodId("507f2375-d004-11ee-8ad8-7318f4718a69")
-    public java.lang.Boolean IsHistoryNullFalseOrTrue();
-
-    @IDynamicResourceExtension.MethodId("a33db0f5-e51f-11ee-a074-d7afe74e4a27")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("507f2375-d004-11ee-8ad8-7318f4718a69")
-    public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable table);
-
-  }
-  
-  public static class TableFunctionsImpl implements ITableFunctionsImpl {
-
-    public static final ITableFunctionsImpl INSTANCE = new TableFunctionsImpl();
-
-    private TableFunctionsImpl() {}
-
-    @Override
-    public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable table) {
-      /* Begin Protected Region [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
-        if( table.selectHistory() == null) {
-          	return false;
-          }
-          return table.selectHistory();
-      /* End Protected Region   [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
-    }
-
-  }
-  
-  public static class TableFunctions {
-
-    private TableFunctions() {}
-
-    public static java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable table) {
-      return DynamicResourceUtil.invoke(ITableFunctionsImpl.class, TableFunctionsImpl.INSTANCE, table).IsHistoryNullFalseOrTrue(table);
-    }
-
-  }
-
   public static interface IViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8de75e52-e50d-11ee-a074-d7afe74e4a27")
@@ -155,4 +104,4 @@ public class Database_aE_View__T_adoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,81ccce05-b9c6-11ee-a257-01d178f494ca,qYrlOsfgHAxD4OztZlXWcMZkGrI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,81ccce05-b9c6-11ee-a257-01d178f494ca,R0I9d368SJefU3lHUkkceRG1c14=] */

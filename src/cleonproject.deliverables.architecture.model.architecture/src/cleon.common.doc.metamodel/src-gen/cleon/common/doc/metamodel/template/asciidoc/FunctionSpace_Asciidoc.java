@@ -67,6 +67,12 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("42642fc6-e5d9-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderMetaData();
 
+    @IDynamicResourceExtension.MethodId("7fca9b48-27d0-11ef-9e2d-0b682fec1a77")
+    public java.lang.String RenderAnchorReference();
+
+    @IDynamicResourceExtension.MethodId("ce93a58d-27d3-11ef-9e2d-0b682fec1a77")
+    public java.lang.String Ref();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -933,4 +939,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cTJBChc0FZDqPKrm+Lv2GcrHtnM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,gdzTnlAwH2vJHbg+7jP2DR+Ra5g=] */

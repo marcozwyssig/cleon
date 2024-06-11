@@ -725,6 +725,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("fd5c8639-27c3-11ef-9acc-81efe99aa8b6")
     public java.lang.String ChapterPath();
 
+    @IDynamicResourceExtension.MethodId("3e680ed4-27dc-11ef-9e2d-0b682fec1a77")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IDatabaseViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -810,6 +813,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("9964c974-e51f-11ee-a074-d7afe74e4a27")
     public java.lang.String ElementName();
 
+    @IDynamicResourceExtension.MethodId("86ae41e2-27dc-11ef-9e2d-0b682fec1a77")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -863,6 +869,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("be85f5d4-27c7-11ef-9acc-81efe99aa8b6")
     public java.lang.String Ref();
 
+    @IDynamicResourceExtension.MethodId("62e9ea30-27dc-11ef-9e2d-0b682fec1a77")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -885,4 +894,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,W3GQUVvUAbQbCbSpeUSWw7df0II=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,D3NayxF9oar4GHR4gdxw+ZOK+JY=] */

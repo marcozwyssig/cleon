@@ -720,6 +720,31 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IDatabaseViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fd5c8639-27c3-11ef-9acc-81efe99aa8b6")
+    public java.lang.String ChapterPath();
+
+  }
+  
+  public static interface IDatabaseViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DatabaseViewFunctionsImpl implements IDatabaseViewFunctionsImpl {
+
+    public static final IDatabaseViewFunctionsImpl INSTANCE = new DatabaseViewFunctionsImpl();
+
+    private DatabaseViewFunctionsImpl() {}
+
+  }
+  
+  public static class DatabaseViewFunctions {
+
+    private DatabaseViewFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,ArHnynMxc5j+l8FCyOGYlZ2v7ag=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Tcp+e+Zx3E5EqIKVtVvgNAJ/dkY=] */

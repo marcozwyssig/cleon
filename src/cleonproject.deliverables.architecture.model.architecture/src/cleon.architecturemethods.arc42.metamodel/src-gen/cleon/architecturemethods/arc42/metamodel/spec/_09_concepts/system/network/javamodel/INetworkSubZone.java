@@ -8,6 +8,8 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.metamod
   
   public java.lang.Integer selectOverrideVLAN();
   
+  public java.lang.String selectVlan();
+  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite selectTopologySite();
@@ -18,4 +20,4 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,Q7KMcSLLmgrmUDoN14goL3ggFj8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,D6euIKrc6vtpOEv2xZmT1Jn1gdA=] */

@@ -11,8 +11,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.SystemConfiguration;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.ILinuxSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IWindowsSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration;
@@ -973,6 +973,9 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("c723b319-d192-11ee-b624-ff4effe3da71")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration GetDependsOnVM();
 
+    @IDynamicResourceExtension.MethodId("d9a52a72-2e56-11ef-a561-bb4702ab0f77")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration> GetDependsOnMachines();
+
     @IDynamicResourceExtension.MethodId("a01bd4a6-332f-11eb-bba8-618171a64c64")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetDependsToSystemConfiguration();
 
@@ -1091,6 +1094,9 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("c723b319-d192-11ee-b624-ff4effe3da71")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration GetDependsOnVM(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
+    @IDynamicResourceExtension.MethodId("d9a52a72-2e56-11ef-a561-bb4702ab0f77")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration> GetDependsOnMachines(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
+
     @IDynamicResourceExtension.MethodId("2a51e529-df6d-11e9-9827-a1514ee8d06a")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
@@ -1157,6 +1163,13 @@ public class FunctionSpace_SystemConfiguration {
     }
 
     @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration> GetDependsOnMachines(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
+      /* Begin Protected Region [[d9a52a72-2e56-11ef-a561-bb4702ab0f77]] */
+        return systemConfiguration.extension(ISystemConfigurationFunctions.class).AllDependsOnSystemConfiguration().stream().filter(IMachineSystemConfiguration.class::isInstance).map(IMachineSystemConfiguration.class::cast).toList();
+      /* End Protected Region   [[d9a52a72-2e56-11ef-a561-bb4702ab0f77]] */
+    }
+
+    @Override
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
       /* Begin Protected Region [[2a51e529-df6d-11e9-9827-a1514ee8d06a]] */
       return systemConfiguration.selectInterface().values().stream().filter(x -> x.selectInterfaceInSecuritySubZone().equals(subzone)).findFirst().orElse(null);
@@ -1191,7 +1204,7 @@ public class FunctionSpace_SystemConfiguration {
       /* Begin Protected Region [[9227704f-e2da-11ee-bcaf-bf4e173adc8d]] */
     	final var ifc = systemConfiguration.selectInterface().get(securitySubZone.getResource());
     	if( ifc != null ) {
-    		var shortName = ifc.selectContextQualifier();
+    		final var shortName = ifc.selectContextQualifier();
     		if (shortName != null ) {
     			return shortName;
     		}
@@ -1231,6 +1244,10 @@ public class FunctionSpace_SystemConfiguration {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetDependsOnVM(systemConfiguration);
     }
 
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration> GetDependsOnMachines(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetDependsOnMachines(systemConfiguration);
+    }
+
     public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration) {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).InterfaceType(subzone, systemConfiguration);
     }
@@ -1255,4 +1272,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,yLAVtfL4oCn2spByMq92lst7rWs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,mZ75XQegu/PkHbfzhcHEBRFRk78=] */

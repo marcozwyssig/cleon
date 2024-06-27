@@ -195,7 +195,7 @@ public class access__T_yaml {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyNotSkipped(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[d1d28aad-2d4a-11ee-a93f-27f66cbd8b98]] */
         return abstractHostList.stream()
-          		.filter(x -> x.selectSkipBookmarkGeneration() == null || x.selectSkipBookmarkGeneration() == false)
+          		.filter(x -> x.selectSkipBookmarkGeneration() == null || !x.selectSkipBookmarkGeneration())
           		.collect(Collectors.toList());   
       /* End Protected Region   [[d1d28aad-2d4a-11ee-a93f-27f66cbd8b98]] */
     }
@@ -252,11 +252,10 @@ public class access__T_yaml {
       final var siteTable = new HashMap<String, HashMap<String, List<String>>>();
 
       for (final IAbstractHost dst : AbstractHostFunctionsImpl.INSTANCE.OnlyNotSkipped(abstractSiteFunctions.AllHostsWithAllowedManaged())) {
-      	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
-      			.values()) {
+    	//Logger.instance().logInfo("Processing host " + Select.simpleName(dst.getReadJobExecutor(), dst.getResource()));
+      	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo().values()) {
       		final var sourceFunctions = accessTo.selectSourceForAccess().extension(ISourceFunctions.class);
-      		if (!sourceFunctions.Destination().selectDestinationSystemConfiguration()
-      				.equals(dst.selectInstanceOf())) {
+      		if (!sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(dst.selectInstanceOf())) {
       			continue;
       		}
 

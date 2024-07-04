@@ -22,11 +22,10 @@ import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.sys
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.SystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortService;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.FunctionSpace_Topology.IAbstractHostFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.FunctionSpace_Topology.IAbstractSiteFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.TopologyEnvironment;
 import cleon.modelinglanguages.segmentation.metamodel.spec.FunctionSpace_Segmentation.IZoneFunctions;
 import ch.actifsource.util.character.StringUtil;
-import ch.actifsource.util.log.Logger;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -731,11 +730,11 @@ public class FunctionSpace_Communication {
       		result.append(System.lineSeparator());
       	} else if (zoneFunctions.IsSingleUsed()) {
       		final var configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);
-      		for (final var hosts : destinationSubZoneFunctions
+      		for (final var siteWithHosts : destinationSubZoneFunctions
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
-      			result.append("GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + hosts.selectName()
-      			+ "-" + destinationSubZone.selectVLAN_No());
+      			final var siteFunctions = siteWithHosts.extension(IAbstractSiteFunctions.class);      			
+      			result.append("GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + siteFunctions.SiteName() + "-" + destinationSubZone.selectVLAN_No());
       			result.append(System.lineSeparator());
       		}
       	} else {

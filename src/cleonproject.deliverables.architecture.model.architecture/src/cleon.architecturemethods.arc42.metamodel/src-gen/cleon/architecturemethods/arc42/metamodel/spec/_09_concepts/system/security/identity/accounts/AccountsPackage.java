@@ -46,6 +46,7 @@ public class AccountsPackage {
   public static final Resource ServiceAccountTemplate_passwordNeverExpires = new Resource("5df07481-9eed-11ec-8d98-a946e0e0308e");
   public static final Resource gMSA_aE_ServiceAccount_allowAdditionallyUsingOn = new Resource("e957c9e3-a431-11ec-a02c-0578282f8413");
   public static final Resource ServiceAccount_uniqueId = new Resource("6958fb78-4f84-11ed-93f9-c3290c35c85a");
+  public static final Resource ServiceAccount_description = new Resource("9f449bf1-353f-11ef-86dc-5dad23d0566b");
   
   /* Begin Protected Region [[user]] */
   
@@ -66,4 +67,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,zO7W4anf/5s1Z4rFWlcdo7mnUCo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,fMhm8Hivzj93RvlcQ9B+5tQjdvw=] */

@@ -109,6 +109,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("971cc33b-d5c9-11ec-ad12-8d6f8e00bc94")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponentsDistinct();
 
+    @IDynamicResourceExtension.MethodId("d71cdd5a-3555-11ef-86dc-5dad23d0566b")
+    public java.lang.String SiteName();
+
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -982,6 +985,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IAbstractSiteWithFunctionIDFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("09072f1e-3556-11ef-86dc-5dad23d0566b")
+    public java.lang.String SiteName();
+
+  }
+  
+  public static interface IAbstractSiteWithFunctionIDFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSiteWithFunctionIDFunctionsImpl implements IAbstractSiteWithFunctionIDFunctionsImpl {
+
+    public static final IAbstractSiteWithFunctionIDFunctionsImpl INSTANCE = new AbstractSiteWithFunctionIDFunctionsImpl();
+
+    private AbstractSiteWithFunctionIDFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSiteWithFunctionIDFunctions {
+
+    private AbstractSiteWithFunctionIDFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mmMVmolxXVFioqJ22izw819Ze3M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,N5RBrNrSxqVYm59PjGMbxBFrq8w=] */

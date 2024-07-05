@@ -474,7 +474,7 @@ of their respective owners.
       <import feature="cleon.modelinglanguages.bpmn" version="0.4.149.qualifier"/>
       <import feature="cleon.common.building" version="0.4.149.qualifier"/>
       <import feature="cleon.common.calendar" version="0.4.149.qualifier"/>
-      <import feature="actifsource.solutions.ch.actifsource.solution.datatype" version="10.10.0.qualifier"/>
+      <import plugin="ch.actifsource.solution.datatype" match="greaterOrEqual"/>
       <import feature="cleon.devops.chocolatey" version="0.4.149.qualifier"/>
       <import feature="cleon.common.doc" version="0.4.149.qualifier"/>
       <import feature="cleon.architecturemethods.eamod" version="0.4.149.qualifier"/>

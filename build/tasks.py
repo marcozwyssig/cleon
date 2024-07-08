@@ -6,12 +6,10 @@ from tqdm import tqdm
 from invoke import task, Collection
 import subprocess
 
-# Define the base URL
-BASE_URL = "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
 
 # Specify the version (you can change this version as needed)
-VERSION_FILE = "21.0.3+9_openj9-0.44.0"
-VERSION = f"jdk-{VERSION_FILE}"
+VERSION_FILE_IBM_SEMERU = "21.0.3+9_openj9-0.44.0"
+VERSION_IBM_SEMERU = f"jdk-{VERSION_FILE_IBM_SEMERU}"
 
 # Determine the operating system and architecture
 system = platform.system().lower()
@@ -20,6 +18,12 @@ architecture = platform.machine()
 # Get the temporary directory from environment variables
 TEMP_DIR = os.getenv('TEMP', '/tmp')
 INSTALLED_CACHE = os.path.join(TEMP_DIR, "installed_components.txt")
+
+# Define the base URL for the IBM Semeru Open JDK
+BASE_URL_IBM_SEMERU = "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
+
+# Define the download URL for Eclipse
+BASE_URL_ECLIPSE = "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-java-2021-09-R-linux-gtk-x86_64.tar.gz"
 
 # Define the repository URLs
 REPO_URL = "http://download.eclipse.org/releases/latest"
@@ -42,35 +46,27 @@ install_units = {
 }
 
 # Map system and architecture to the corresponding download file
-download_files = {
-    ('linux', 'x86_64'): f"ibm-semeru-open-jdk_x64_linux_{VERSION_FILE.replace('+', '_')}.tar.gz",
-    ('darwin', 'x86_64'): f"ibm-semeru-open-jdk_x64_mac_{VERSION_FILE.replace('+', '_')}.tar.gz",
-    ('darwin', 'arm64'): f"ibm-semeru-open-jdk_aarch64_mac_{VERSION_FILE.replace('+', '_')}.tar.gz",
-    ('windows', 'AMD64'): f"ibm-semeru-open-jdk_x64_windows_{VERSION_FILE.replace('+', '_')}.zip",
-    ('windows', 'ARM64'): f"ibm-semeru-open-jdk_x64_windows_{VERSION_FILE.replace('+', '_')}.zip"
+download_files_ibm_semeru = {
+    ('linux', 'x86_64'): f"ibm-semeru-open-jdk_x64_linux_{VERSION_FILE_IBM_SEMERU.replace('+', '_')}.tar.gz",
+    ('darwin', 'x86_64'): f"ibm-semeru-open-jdk_x64_mac_{VERSION_FILE_IBM_SEMERU.replace('+', '_')}.tar.gz",
+    ('darwin', 'arm64'): f"ibm-semeru-open-jdk_aarch64_mac_{VERSION_FILE_IBM_SEMERU.replace('+', '_')}.tar.gz",
+    ('windows', 'AMD64'): f"ibm-semeru-open-jdk_x64_windows_{VERSION_FILE_IBM_SEMERU.replace('+', '_')}.zip",
+    ('windows', 'ARM64'): f"ibm-semeru-open-jdk_x64_windows_{VERSION_FILE_IBM_SEMERU.replace('+', '_')}.zip"
 }
 
+
+
 key = (system, architecture)
-if key not in download_files:
+if key not in download_files_ibm_semeru:
     raise RuntimeError(f"Unsupported operating system or architecture: {system} {architecture}")
 
-DOWNLOAD_URL = f"{BASE_URL}/{VERSION}/{download_files[key]}"
+DOWNLOAD_URL_IBM_SEMERU = f"{BASE_URL_IBM_SEMERU}/{VERSION_IBM_SEMERU}/{download_files_ibm_semeru[key]}"
 DEST_DIR = os.getcwd()  # Use the current directory
-
-@task
-def create_dest_dir(ctx):
-    os.makedirs(DEST_DIR, exist_ok=True)
-    print(f"Destination directory {DEST_DIR} is ready.")
-
-@task(pre=[create_dest_dir])
-def download_file(ctx):
-    """Download the file to the destination directory"""
-    download_file_helper(DOWNLOAD_URL, DEST_DIR)
 
 def download_file_helper(url, dest_dir):
     """Helper function to download a file with a progress bar"""
     print(f"Downloading {url} to {dest_dir}...")    
-    local_filename = os.path.join(dest_dir, download_files[key])
+    local_filename = os.path.join(dest_dir, download_files_ibm_semeru[key])
     response = requests.get(url, stream=True)
     if response.status_code == 200:
         total_size = int(response.headers.get('content-length', 0))
@@ -99,13 +95,23 @@ def is_installed(iu):
     return False
 
 @task
+def create_dest_dir(c):
+    os.makedirs(DEST_DIR, exist_ok=True)
+    print(f"Destination directory {DEST_DIR} is ready.")
+
+@task(pre=[create_dest_dir])
+def download_file_ibm_semeru(c):
+    """Download the file to the destination directory"""
+    download_file_helper(DOWNLOAD_URL_IBM_SEMERU, DEST_DIR)
+
+@task
 def check_install_dir(c, eclipse_install_dir=None):
     """Check if the Eclipse installation directory exists."""
-    global ECLIPSE_INSTALL_DIR
-    ECLIPSE_INSTALL_DIR = eclipse_install_dir or os.getcwd()
+    global ECLIPSE_EXEC_DIR
+    ECLIPSE_EXEC_DIR = eclipse_install_dir or os.getcwd()
     
-    if not os.path.isdir(ECLIPSE_INSTALL_DIR):
-        print(f"Error: Eclipse installation directory {ECLIPSE_INSTALL_DIR} does not exist.")
+    if not os.path.isdir(ECLIPSE_EXEC_DIR):
+        print(f"Error: Eclipse installation directory {ECLIPSE_EXEC_DIR} does not exist.")
         exit(1)
 
 @task
@@ -115,7 +121,7 @@ def populate_cache(c):
         os.remove(INSTALLED_CACHE)
     
     result = c.run(
-        f"{ECLIPSE_INSTALL_DIR}/eclipse -nosplash -application org.eclipse.equinox.p2.director -listInstalledRoots",
+        f"{ECLIPSE_EXEC_DIR}/eclipse -nosplash -application org.eclipse.equinox.p2.director -listInstalledRoots",
         hide=True,
         warn=True
     )
@@ -123,10 +129,12 @@ def populate_cache(c):
         f.write(result.stdout)
 
 @task(pre=[check_install_dir, populate_cache])
-def install_components(c, eclipse_install_dir=None):
+def install_eclipse_components(c, eclipse_exec_dir=None, eclipse_install_dir=None):
     """Install each component if not already installed."""
-    global ECLIPSE_INSTALL_DIR
-    ECLIPSE_INSTALL_DIR = eclipse_install_dir or os.getcwd()
+    global ECLIPSE_EXEC_DIR
+    ECLIPSE_EXEC_DIR = eclipse_exec_dir or os.getcwd()
+
+    ECLIPSE_INSTALL_DIR = eclipse_install_dir or ECLIPSE_EXEC_DIR
     
     for iu, repo_url in install_units.items():
         if is_installed(iu):
@@ -134,7 +142,7 @@ def install_components(c, eclipse_install_dir=None):
         else:
             print(f"Installing {iu}...")
             result = c.run(
-                f"{ECLIPSE_INSTALL_DIR}/eclipse -nosplash "
+                f"{ECLIPSE_EXEC_DIR}/eclipse -nosplash "
                 f"-application org.eclipse.equinox.p2.director "
                 f"-repository {repo_url},{REPO_URL},{ACTIFSOURCE_REPO_URL},{ECD_PLUGIN_REPO_URL} "
                 f"-installIU {iu} "
@@ -150,9 +158,9 @@ def install_components(c, eclipse_install_dir=None):
 
 @task
 def update_eclipse_ini(c, eclipse_install_dir=None):
-    global ECLIPSE_INSTALL_DIR
-    ECLIPSE_INSTALL_DIR = eclipse_install_dir or os.getcwd()
-    eclipse_ini = os.path.join(ECLIPSE_INSTALL_DIR, "eclipse.ini")
+    global ECLIPSE_EXEC_DIR
+    ECLIPSE_EXEC_DIR = eclipse_install_dir or os.getcwd()
+    eclipse_ini = os.path.join(ECLIPSE_EXEC_DIR, "eclipse.ini")
 
     # Read the existing contents of the file
     with open(eclipse_ini, 'r') as file:
@@ -202,11 +210,3 @@ def update_eclipse_ini(c, eclipse_install_dir=None):
 
     print("eclipse.ini file updated successfully.")
 
-
-# Define the namespace to group the tasks
-namespace = Collection(check_install_dir, populate_cache, install_components, update_eclipse_ini)
-namespace.configure({
-    'install_components': {
-        'eclipse_install_dir': None
-    }
-})

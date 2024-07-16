@@ -13,9 +13,7 @@ source "$VENV_DIR/bin/activate"
 
 # Install required packages
 pip3 install --upgrade pip
-pip3 install requests
-pip3 install invoke
-pip3 install tqdm
+pip3 install -r requirements.txt
 
 # Keep the virtual environment activated (for demonstration purposes, otherwise you can deactivate)
 exec $SHELL

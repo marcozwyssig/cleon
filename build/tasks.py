@@ -1,6 +1,6 @@
 from invoke import task, Collection
 import os
-from config import DEST_DIR, SYSTEM, ARCHITECTURE
+from config import DEST_DIR
 from download_manager import DownloadManager
 from installation_manager import InstallationManager
 
@@ -58,4 +58,20 @@ def upload_to_github(c):
     manager = InstallationManager(DEST_DIR)
     manager.upload_to_github()
 
+# Docker tasks
+@task(pre=[package_eclipse])
+def create_docker_image(c):
+    manager = InstallationManager(DEST_DIR)
+    dockerfile_path = manager.create_dockerfile()
+    manager.build_docker_image(dockerfile_path, "eclipse_image")
 
+@task(pre=[create_docker_image])
+def run_docker_container(c):
+    manager = InstallationManager(DEST_DIR)
+    manager.create_docker_container("eclipse_image", "eclipse_container")
+
+# Docker image upload task
+@task(pre=[create_docker_image])
+def upload_docker_image(c):
+    manager = InstallationManager(DEST_DIR)
+    manager.upload_docker_image("eclipse_image")

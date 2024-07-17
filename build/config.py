@@ -1,7 +1,8 @@
 import platform
 
 # Configuration constants
-VERSION_JDK_SHORT = "21.0.3+9"
+VERSION_JDK_SHORT = f"21.0.3+9"
+VERSION_JDK_DOCKER = VERSION_JDK_SHORT.replace('+', '_')
 VERSION_FILE_JDK_SHORT = f"jdk-{VERSION_JDK_SHORT}"
 VERSION_FILE_JDK = f"{VERSION_JDK_SHORT}_openj9-0.44.0"
 VERSION_JDK = f"jdk-{VERSION_FILE_JDK}"
@@ -63,6 +64,8 @@ DEST_DIR = os.path.join(TEMP_DIR, "eclipse")
 INSTALLED_CACHE = os.path.join(TEMP_DIR, "installed_components.txt")
 
 # GitHub configuration
-GITHUB_REPOSITORY = "your-github-username/your-repository-name"
+GITHUB_REPOSITORY = "marcozwyssig/cleon"
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Store your GitHub token in an environment variable for security
 GITHUB_API_URL = "https://api.github.com"
+GITHUB_DOCKER_REGISTRY = "ghcr.io"

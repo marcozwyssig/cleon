@@ -43,11 +43,6 @@ def update_eclipse_ini(c):
     manager.update_eclipse_ini()
 
 @task(pre=[update_eclipse_ini])
-def populate_cache(c):
-    manager = InstallationManager(DEST_DIR)
-    manager.populate_cache(c)
-
-@task(pre=[populate_cache])
 def install_eclipse_components(c):
     manager = InstallationManager(DEST_DIR)
     manager.install_eclipse_components(c)
@@ -61,7 +56,6 @@ def package_eclipse(c):
 @task(pre=[package_eclipse])
 def upload_to_github(c):
     manager = InstallationManager(DEST_DIR)
-    zip_filename = os.path.join(DEST_DIR, f"eclipse_{SYSTEM}_{ARCHITECTURE}.zip")
-    manager.upload_to_github(zip_filename)
+    manager.upload_to_github()
 
 

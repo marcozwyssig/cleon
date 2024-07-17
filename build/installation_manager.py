@@ -1,7 +1,6 @@
 import os
 import shutil
 from config import *
-from utils import is_installed
 import requests
 
 class InstallationManager:
@@ -79,18 +78,19 @@ class InstallationManager:
             f.write(result.stdout)
 
 
-    def is_installed(iu, installed_cache):
+    def is_installed(self, iu, installed_cache):
         """Check if an installable unit is already installed."""
         if os.path.isfile(installed_cache):
             with open(installed_cache, 'r') as f:
                 installed_units = f.read().splitlines()
-                return iu in installed_units
+                return any(iu == item.split('/')[0] for item in installed_units)
         return False
 
     def install_eclipse_components(self, c):
         """Install each component if not already installed."""   
+        self.populate_cache(c)
         for iu, repo_url in INSTALL_UNITS.items():
-            if is_installed(iu, INSTALLED_CACHE):
+            if self.is_installed(iu, INSTALLED_CACHE):
                 print(f"{iu} is already installed.")
             else:
                 print(f"Installing {iu}...")
@@ -111,7 +111,7 @@ class InstallationManager:
     def package_eclipse(self):
         """Package the Eclipse directory into a zip file."""
         eclipse_dir = os.path.join(self.dest_dir, "eclipse")
-        zip_filename = os.path.join(self.dest_dir, f"eclipse_{SYSTEM}_{ARCHITECTURE}.zip")
+        zip_filename = self.zip_file_name()
 
         if os.path.isfile(zip_filename):
             print(f"{zip_filename} already exists, skipping packaging.")
@@ -127,7 +127,11 @@ class InstallationManager:
             print(f"Error: Packaging failed due to {e}")
             return False
 
-    def upload_to_github(self, zip_filename, release_tag="latest"):
+    def zip_file_name(self):
+        zip_filename = os.path.join(self.dest_dir, f"eclipse_{SYSTEM}_{ARCHITECTURE}_{VERSION_ECLIPSE}_{VERSION_JDK}.zip")
+        return zip_filename
+
+    def upload_to_github(self, release_tag="latest"):
         """Upload the zip file to GitHub Package Registry."""
         headers = {
             "Authorization": f"token {GITHUB_TOKEN}",
@@ -145,6 +149,7 @@ class InstallationManager:
 
         release_id = response.json()["id"]
 
+        zip_filename = self.zip_file_name()
         # Upload asset
         upload_url = f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/releases/{release_id}/assets"
         params = {"name": os.path.basename(zip_filename)}

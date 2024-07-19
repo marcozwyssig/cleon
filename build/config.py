@@ -35,6 +35,7 @@ ARCHITECTURE = platform.machine()
 
 DOWNLOAD_FILES_JDK = {
     ('linux', 'x86_64'): f"ibm-semeru-open-jdk_x64_linux_{VERSION_FILE_JDK.replace('+', '_')}.tar.gz",
+    ('linux', 'aarch64'): f"ibm-semeru-open-jdk_aarch64_linux_{VERSION_FILE_JDK.replace('+', '_')}.tar.gz",    
     ('darwin', 'x86_64'): f"ibm-semeru-open-jdk_x64_mac_{VERSION_FILE_JDK.replace('+', '_')}.tar.gz",
     ('darwin', 'arm64'): f"ibm-semeru-open-jdk_aarch64_mac_{VERSION_FILE_JDK.replace('+', '_')}.tar.gz",
     ('windows', 'AMD64'): f"ibm-semeru-open-jdk_x64_windows_{VERSION_FILE_JDK.replace('+', '_')}.zip",
@@ -43,6 +44,7 @@ DOWNLOAD_FILES_JDK = {
 
 DOWNLOAD_FILES_ECLIPSE = {
     ('linux', 'x86_64'): f"R-{VERSION_ECLIPSE}-{VERSION_ECLIPSE_DATE}/eclipse-platform-{VERSION_ECLIPSE}-linux-gtk-x86_64.tar.gz",
+    ('linux', 'aarch64'): f"R-{VERSION_ECLIPSE}-{VERSION_ECLIPSE_DATE}/eclipse-platform-{VERSION_ECLIPSE}-linux-gtk-aarch64.tar.gz",
     ('darwin', 'x86_64'): f"R-{VERSION_ECLIPSE}-{VERSION_ECLIPSE_DATE}/eclipse-platform-{VERSION_ECLIPSE}-macosx-cocoa-x86_64.tar.gz",
     ('darwin', 'arm64'): f"R-{VERSION_ECLIPSE}-{VERSION_ECLIPSE_DATE}/eclipse-platform-{VERSION_ECLIPSE}-macosx-cocoa-aarch64.tar.gz",
     ('windows', 'AMD64'): f"R-{VERSION_ECLIPSE}-{VERSION_ECLIPSE_DATE}/eclipse-platform-{VERSION_ECLIPSE}-win32-x86_64.zip",

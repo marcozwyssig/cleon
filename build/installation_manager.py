@@ -101,7 +101,7 @@ class InstallationManager:
                     f"-repository {repo_url},{REPO_URL},{ACTIFSOURCE_REPO_URL},{ECD_PLUGIN_REPO_URL} "
                     f"-installIU {iu} "
                     f"-destination {self.eclipse_exec_dir} "
-                    f"-profile SDKProfile"
+                    f"-profile SDKProfile "
                 )
                 if result == 0:
                     with open(INSTALLED_CACHE, 'a') as f:

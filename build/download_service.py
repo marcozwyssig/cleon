@@ -2,7 +2,7 @@ import os
 from config import DEST_DIR, DOWNLOAD_URL_JDK, DOWNLOAD_URL_ECLIPSE, DOWNLOAD_FILES_JDK, DOWNLOAD_FILES_ECLIPSE, KEY
 from utils import download_file, extract_file
 
-class DownloadManager:
+class DownloadService:
     def __init__(self, dest_dir):
         self.dest_dir = dest_dir
 

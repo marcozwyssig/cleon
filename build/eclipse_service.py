@@ -4,7 +4,7 @@ from config import *
 import requests
 import docker
 
-class InstallationManager:
+class EclipseService:
     def __init__(self, dest_dir):
         self.dest_dir = dest_dir
         self.eclipse_exec_dir = os.path.join(dest_dir, "eclipse", "eclipse")
@@ -131,38 +131,6 @@ class InstallationManager:
     def zip_file_name(self):
         zip_filename = os.path.join(self.dest_dir, f"eclipse_{SYSTEM}_{ARCHITECTURE}_{VERSION_ECLIPSE}_{VERSION_JDK}.zip")
         return zip_filename
-
-    def upload_to_github(self, release_tag="latest"):
-        """Upload the zip file to GitHub Package Registry."""
-        headers = {
-            "Authorization": f"token {GITHUB_TOKEN}",
-            "Content-Type": "application/zip"
-        }
-
-        # Get release ID
-        response = requests.get(
-            f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/releases/tags/{release_tag}",
-            headers=headers
-        )
-        if response.status_code != 200:
-            print(f"Error: Failed to get release information. {response.json()}")
-            return False
-
-        release_id = response.json()["id"]
-
-        zip_filename = self.zip_file_name()
-        # Upload asset
-        upload_url = f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/releases/{release_id}/assets"
-        params = {"name": os.path.basename(zip_filename)}
-        with open(zip_filename, 'rb') as file_data:
-            response = requests.post(upload_url, headers=headers, params=params, data=file_data)
-
-        if response.status_code == 201:
-            print(f"Uploaded {zip_filename} to GitHub successfully.")
-            return True
-        else:
-            print(f"Error: Failed to upload asset. {response.json()}")
-            return False
 
     def create_dockerfile(self):
         zip_filename = self.zip_file_name()

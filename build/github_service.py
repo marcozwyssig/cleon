@@ -59,16 +59,16 @@ class GitHubService:
         print(f"Pushed Docker image {tagged_image} to GitHub Packages successfully.")
 
 
-ef create_or_update_workflow_file(github_token, repo_name, branch, commit_message, file_path, file_content):
-    # Initialize GitHub instance
-    g = Github(github_token)
-    repo = g.get_repo(repo_name)
+    def create_or_update_workflow_file(github_token, repo_name, branch, commit_message, file_path, file_content):
+        # Initialize GitHub instance
+        g = Github(github_token)
+        repo = g.get_repo(repo_name)
 
-    # Check if the file already exists
-    try:
-        contents = repo.get_contents(file_path, ref=branch)
-        repo.update_file(contents.path, commit_message, file_content, contents.sha, branch=branch)
-        print(f"Updated {file_path} in {repo_name} on branch {branch}.")
-    except:
-        repo.create_file(file_path, commit_message, file_content, branch=branch)
-        print(f"Created {file_path} in {repo_name} on branch {branch}.")
+        # Check if the file already exists
+        try:
+            contents = repo.get_contents(file_path, ref=branch)
+            repo.update_file(contents.path, commit_message, file_content, contents.sha, branch=branch)
+            print(f"Updated {file_path} in {repo_name} on branch {branch}.")
+        except:
+            repo.create_file(file_path, commit_message, file_content, branch=branch)
+            print(f"Created {file_path} in {repo_name} on branch {branch}.")

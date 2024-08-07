@@ -1,13 +1,48 @@
 import platform
+import tempfile
+import os
+import requests
+from bs4 import BeautifulSoup
+import re
 
 # Configuration constants
-VERSION_JDK_SHORT = f"21.0.3+9"
+def get_latest_jdk_version():
+    url = "https://api.github.com/repos/ibmruntimes/semeru21-binaries/releases/latest"
+    response = requests.get(url)
+    response.raise_for_status()
+    latest_release = response.json()
+    latest_version = latest_release['tag_name']
+    return latest_version
+
+def get_latest_eclipse_version_and_date():
+    url = "https://download.eclipse.org/eclipse/downloads/"
+    response = requests.get(url)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, 'html.parser')
+    latest_version_link = soup.find('a', title='Latest Release')
+    latest_version = latest_version_link.string.strip()
+
+    # Extract the latest version number and find the corresponding date
+    date_text = latest_version_link['href']
+    
+    # Extract the date in the format YYYYMMDDHHMM
+    match = re.search(r'(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})', date_text)
+    if match:
+        version_date = f"{match.group(1)}{match.group(2)}{match.group(3)}{match.group(4)}{match.group(5)}"
+    else:
+        raise RuntimeError("Unable to extract version date")
+    
+    return latest_version, version_date
+
+LATEST_JDK_VERSION = get_latest_jdk_version()
+
+VERSION_JDK_SHORT = (LATEST_JDK_VERSION.split("_")[0]).replace('jdk-', '')
 VERSION_JDK_DOCKER = VERSION_JDK_SHORT.replace('+', '_')
 VERSION_FILE_JDK_SHORT = f"jdk-{VERSION_JDK_SHORT}"
-VERSION_FILE_JDK = f"{VERSION_JDK_SHORT}_openj9-0.44.0"
+VERSION_FILE_JDK = f"{VERSION_JDK_SHORT}_" + LATEST_JDK_VERSION.split("_")[1]
 VERSION_JDK = f"jdk-{VERSION_FILE_JDK}"
-VERSION_ECLIPSE = "4.32"
-VERSION_ECLIPSE_DATE = "202406010610"
+
+VERSION_ECLIPSE, VERSION_ECLIPSE_DATE = get_latest_eclipse_version_and_date()
 
 BASE_URL_IBM_SEMERU = "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
 BASE_URL_ECLIPSE = "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
@@ -56,10 +91,6 @@ if KEY not in DOWNLOAD_FILES_JDK or KEY not in DOWNLOAD_FILES_ECLIPSE:
 
 DOWNLOAD_URL_JDK = f"{BASE_URL_IBM_SEMERU}/{VERSION_JDK}/{DOWNLOAD_FILES_JDK[KEY]}"
 DOWNLOAD_URL_ECLIPSE = f"{BASE_URL_ECLIPSE}{DOWNLOAD_FILES_ECLIPSE[KEY]}&r=1"
-
-# Directories
-import tempfile
-import os
 
 TEMP_DIR = os.getenv('TEMP', tempfile.gettempdir())
 DEST_DIR = os.path.join(TEMP_DIR, "eclipse")

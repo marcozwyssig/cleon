@@ -188,8 +188,8 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment> selectToMeEnvironmentForNetwork(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.ISystemEnvironmentNode object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment selectToMeEnvironmentForNetwork(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.ISystemEnvironmentNode object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment selectToMeNetworkSite(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite object) {
@@ -197,4 +197,4 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,Gnel24Us6wO1J+2Gm3j+sZrJZuQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,OYp2t2SGiKah4aqeiF5V34NgN2M=] */

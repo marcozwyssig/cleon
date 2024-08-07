@@ -133,7 +133,7 @@ public class FunctionSpace_Topology {
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList) {
       /* Begin Protected Region [[ad33683d-3775-11ea-bb06-17b9485a5d0a]] */
-      return abstractSiteList.stream().filter(x -> x instanceof IAbstractSiteWithFunctionID)
+      return abstractSiteList.stream().filter(IAbstractSiteWithFunctionID.class::isInstance)
       		.map(x -> (IAbstractSiteWithFunctionID) x)
       		.sorted(java.util.Comparator.comparing(IAbstractSiteWithFunctionID::selectFunctionID))
       		.collect(Collectors.toList());
@@ -432,22 +432,20 @@ public class FunctionSpace_Topology {
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[ba04ab33-716f-11ed-b3a1-8773ed130054]] */
-        return abstractHostList.stream()
-          		.filter(x -> x.selectInstanceOf() instanceof IPrtgProbeSystemConfiguration)
-          		.collect(Collectors.toList());
-   
+      return abstractHostList.stream()
+      		.filter(x -> x.selectInstanceOf() instanceof IPrtgProbeSystemConfiguration)
+      		.collect(Collectors.toList());
+
       /* End Protected Region   [[ba04ab33-716f-11ed-b3a1-8773ed130054]] */
     }
 
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
-    	var securitySubZoneFunctions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
-    	var systemConfigurations = securitySubZoneFunctions.AllSystemConfigurations();
-    	
-    	return abstractHostList.stream().filter(x -> {
-    		return systemConfigurations.contains(x.selectInstanceOf());    		
-    	}).collect(Collectors.toList());
+      final var securitySubZoneFunctions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
+      final var systemConfigurations = securitySubZoneFunctions.AllSystemConfigurations();
+
+      return abstractHostList.stream().filter(x -> systemConfigurations.contains(x.selectInstanceOf())).collect(Collectors.toList());
       /* End Protected Region   [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
     }
 
@@ -456,12 +454,11 @@ public class FunctionSpace_Topology {
       /* Begin Protected Region [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
       final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
       final var securitySubZone = abstractHostFunctions.SecuritySubzoneFromIP();
-	  final var sysCfgFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);      
+      final var sysCfgFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);
       if( securitySubZone != null ) {
-    	  return sysCfgFunctions.TypeName(securitySubZone);    	  
-      } else {
-    	  return sysCfgFunctions.GetShortname();
-      }      
+      	return sysCfgFunctions.TypeName(securitySubZone);
+      }
+      return sysCfgFunctions.GetShortname();
       /* End Protected Region   [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
     }
 
@@ -526,6 +523,9 @@ public class FunctionSpace_Topology {
   
   public static interface INumberedHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("945f300c-fb12-11e9-890e-576c93cea08c")
+    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost);
+
   }
   
   public static class NumberedHostFunctionsImpl implements INumberedHostFunctionsImpl {
@@ -534,11 +534,26 @@ public class FunctionSpace_Topology {
 
     private NumberedHostFunctionsImpl() {}
 
+    @Override
+    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost) {
+      /* Begin Protected Region [[945f300c-fb12-11e9-890e-576c93cea08c]] */
+      final var identifier = String.valueOf(numberedHost.selectIdentifier());
+      if (identifier.length() == 1) {
+      	return "0" + identifier;
+      }
+      return String.valueOf(numberedHost.selectIdentifier());
+      /* End Protected Region   [[945f300c-fb12-11e9-890e-576c93cea08c]] */
+    }
+
   }
   
   public static class NumberedHostFunctions {
 
     private NumberedHostFunctions() {}
+
+    public static java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost) {
+      return DynamicResourceUtil.invoke(INumberedHostFunctionsImpl.class, NumberedHostFunctionsImpl.INSTANCE, numberedHost).ShortName(numberedHost);
+    }
 
   }
 
@@ -612,6 +627,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("c108dd55-b1fc-11ea-a3a2-e9d3344bee73")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN GetRN(final java.lang.String rnName);
 
+    @IDynamicResourceExtension.MethodId("f58b42ff-5378-11ef-80ff-efa8d0dbdc0e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite GetSite(final java.lang.String siteName);
+
     @IDynamicResourceExtension.MethodId("d4ddc527-b1fc-11ea-a3a2-e9d3344bee73")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN> AllRNs();
 
@@ -627,6 +645,9 @@ public class FunctionSpace_Topology {
     
     @IDynamicResourceExtension.MethodId("c108dd55-b1fc-11ea-a3a2-e9d3344bee73")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN GetRN(final java.lang.String rnName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment);
+
+    @IDynamicResourceExtension.MethodId("f58b42ff-5378-11ef-80ff-efa8d0dbdc0e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite GetSite(final java.lang.String siteName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment);
 
     @IDynamicResourceExtension.MethodId("413834c0-b474-11ea-b938-599963fc0a84")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetAbstractHost(final java.lang.String siteName, final java.lang.String hostName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment);
@@ -654,6 +675,20 @@ public class FunctionSpace_Topology {
       }
       return null;
       /* End Protected Region   [[c108dd55-b1fc-11ea-a3a2-e9d3344bee73]] */
+    }
+
+    @Override
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite GetSite(final java.lang.String siteName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment) {
+      /* Begin Protected Region [[f58b42ff-5378-11ef-80ff-efa8d0dbdc0e]] */
+      final var allsites = topologyEnvironment.extension(ITopologyEnvironmentFunctions.class).AllAbstractSites();
+      for (final var site : allsites) {
+      	Logger.instance().logInfo("Verify " + siteName + " with " + site.selectName());
+      	if (site.selectName().equalsIgnoreCase(siteName)) {
+      		return site;
+      	}
+      }
+      return null;
+      /* End Protected Region   [[f58b42ff-5378-11ef-80ff-efa8d0dbdc0e]] */
     }
 
     @Override
@@ -704,6 +739,10 @@ public class FunctionSpace_Topology {
 
     public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN GetRN(final java.lang.String rnName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment) {
       return DynamicResourceUtil.invoke(ITopologyEnvironmentFunctionsImpl.class, TopologyEnvironmentFunctionsImpl.INSTANCE, topologyEnvironment).GetRN(rnName, topologyEnvironment);
+    }
+
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite GetSite(final java.lang.String siteName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment) {
+      return DynamicResourceUtil.invoke(ITopologyEnvironmentFunctionsImpl.class, TopologyEnvironmentFunctionsImpl.INSTANCE, topologyEnvironment).GetSite(siteName, topologyEnvironment);
     }
 
     public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetAbstractHost(final java.lang.String siteName, final java.lang.String hostName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment) {
@@ -814,10 +853,10 @@ public class FunctionSpace_Topology {
     @Override
     public java.lang.String AddDash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
-	  	if (stringLiteral != null && !stringLiteral.isEmpty()) {
-	  		return "-";
-	  	}
-	  	return "";
+      if (stringLiteral != null && !stringLiteral.isEmpty()) {
+      	return "-";
+      }
+      return "";
       /* End Protected Region   [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
     }
 
@@ -1010,6 +1049,46 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface ITopologyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f84476fa-5375-11ef-80ff-efa8d0dbdc0e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment(final java.lang.String envName);
+
+  }
+  
+  public static interface ITopologyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("f84476fa-5375-11ef-80ff-efa8d0dbdc0e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment(final java.lang.String envName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology topology);
+
+  }
+  
+  public static class TopologyFunctionsImpl implements ITopologyFunctionsImpl {
+
+    public static final ITopologyFunctionsImpl INSTANCE = new TopologyFunctionsImpl();
+
+    private TopologyFunctionsImpl() {}
+
+    @Override
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment(final java.lang.String envName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology topology) {
+      /* Begin Protected Region [[f84476fa-5375-11ef-80ff-efa8d0dbdc0e]] */
+      final var env = topology.selectEnvironments().selectEnvironments().stream().filter(x -> x.selectName().equals(envName)).findFirst().orElseThrow();
+      return topology.selectTopologyEnvironment().get(env.getResource());
+      /* End Protected Region   [[f84476fa-5375-11ef-80ff-efa8d0dbdc0e]] */
+    }
+
+  }
+  
+  public static class TopologyFunctions {
+
+    private TopologyFunctions() {}
+
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment(final java.lang.String envName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology topology) {
+      return DynamicResourceUtil.invoke(ITopologyFunctionsImpl.class, TopologyFunctionsImpl.INSTANCE, topology).GetTopologyEnvironment(envName, topology);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,N5RBrNrSxqVYm59PjGMbxBFrq8w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,DY51OVamDHg/dLlsyE1GhX66JCI=] */

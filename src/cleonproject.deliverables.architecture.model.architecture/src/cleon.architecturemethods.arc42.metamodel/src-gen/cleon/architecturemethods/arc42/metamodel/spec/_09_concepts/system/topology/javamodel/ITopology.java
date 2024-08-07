@@ -12,6 +12,8 @@ public interface ITopology extends cleon.common.doc.metamodel.spec.chapter.javam
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment> selectTopologyEnvironment();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IDeployView selectEnvironments();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fca3a39b-878a-11e9-a61b-279ebde48b48,Qh1Zn4qqMevostPLOJfYI+62ovk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fca3a39b-878a-11e9-a61b-279ebde48b48,wwWMCoJkVVtaT2pgTvxK1WHAlSo=] */

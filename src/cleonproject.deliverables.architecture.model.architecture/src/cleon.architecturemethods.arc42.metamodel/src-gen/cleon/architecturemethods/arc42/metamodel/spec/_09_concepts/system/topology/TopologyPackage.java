@@ -98,6 +98,10 @@ public class TopologyPackage {
   public static final Resource ClusterHost_clusterAbbrevation = new Resource("5f7991c1-fe52-11ee-8a28-b37fc0f6bfb9");
   public static final Resource AbstractSiteWithFunctionID_siteShortName = new Resource("a3aaaee6-3473-11ef-be24-9ba61316a859");
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithFunctionID = new Resource("f4ccf5f9-3555-11ef-86dc-5dad23d0566b");
+  public static final Resource FunctionSpace_aE_Topology_Topology = new Resource("f1ba4534-5375-11ef-80ff-efa8d0dbdc0e");
+  public static final Resource Topology_environments = new Resource("71c9c767-5376-11ef-80ff-efa8d0dbdc0e");
+  public static final Resource AbstractSite_networkSite = new Resource("b479feaf-53b3-11ef-80ff-efa8d0dbdc0e");
+  public static final Resource TopologyEnvironment_networkEnvironment = new Resource("2a02826d-53b8-11ef-80ff-efa8d0dbdc0e");
   
   /* Begin Protected Region [[user]] */
   
@@ -118,4 +122,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,bmWtyKkk/3MlKGbeP+pZ9tlqi/Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,Nzc4hwrTtF8QB7eLiF/Ur01xdR4=] */

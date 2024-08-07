@@ -41,6 +41,16 @@ public class TopologyEnvironment extends DynamicResource implements ITopologyEnv
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment selectNetworkEnvironment() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_networkEnvironment);
+  }
+
+  public TopologyEnvironment setNetworkEnvironment(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment networkEnvironment) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_networkEnvironment, networkEnvironment);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> selectSites() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_sites);
   }
@@ -75,6 +85,7 @@ public class TopologyEnvironment extends DynamicResource implements ITopologyEnv
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.ISystemEnvironmentNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_environmentForTopology, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_networkEnvironment, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_sites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -89,5 +100,9 @@ public class TopologyEnvironment extends DynamicResource implements ITopologyEnv
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_sites, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment selectToMeNetworkEnvironment(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkEnvironment object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.TopologyEnvironment_networkEnvironment, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,Jn1YRhNzu/18siBRoKZfGuv7pyQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,2eIJR8rK8TICWlEkO9zIlSBKrfc=] */

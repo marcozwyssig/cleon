@@ -4,6 +4,11 @@ from config import DEST_DIR
 from download_service import DownloadService
 from eclipse_service import EclipseService
 
+@task
+def clean_dest_dir(c):
+    os.system(f"rm -rf {DEST_DIR}")
+    print(f"Cleaned up {DEST_DIR}.")
+
 # Ensure the destination directory exists
 @task
 def create_dest_dir(c):

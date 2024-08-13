@@ -5,15 +5,15 @@ import requests
 import docker
 
 class EclipseService:
-    def __init__(self, dest_dir):
-        self.dest_dir = dest_dir
-        self.eclipse_exec_dir = os.path.join(dest_dir, "eclipse", "eclipse")
+    def __init__(self, config : Config):
+        self.config = config
+        self.eclipse_exec_dir = os.path.join(self.config.dest_dir, "eclipse", "eclipse")
 
     def move_jdk_to_eclipse(self):
         """Move the extracted JDK into the Eclipse folder and rename it."""
-        extracted_jdk_path = os.path.join(self.dest_dir, "jdk", VERSION_FILE_JDK_SHORT)
-        eclipse_dirname = [name for name in os.listdir(os.path.join(self.dest_dir, "eclipse")) if name.startswith("eclipse")][0]
-        eclipse_path = os.path.join(os.path.join(self.dest_dir, "eclipse"), eclipse_dirname)
+        extracted_jdk_path = os.path.join(self.config.dest_dir, "jdk", self.config.version_file_jdk_short)
+        eclipse_dirname = [name for name in os.listdir(os.path.join(self.config.dest_dir, "eclipse")) if name.startswith("eclipse")][0]
+        eclipse_path = os.path.join(os.path.join(self.config.dest_dir, "eclipse"), eclipse_dirname)
 
         if not os.path.isdir(extracted_jdk_path):
             print(f"Error: Extracted JDK path {extracted_jdk_path} does not exist.")
@@ -66,8 +66,8 @@ class EclipseService:
 
     def populate_cache(self, c):
         """Populate the cache file with installed components."""
-        if os.path.isfile(INSTALLED_CACHE):
-            os.remove(INSTALLED_CACHE)
+        if os.path.isfile(self.config.installed_cache):
+            os.remove(self.config.installed_cache)
 
         result = c.run(
             f"{self.eclipse_exec_dir}/eclipse -nosplash -application org.eclipse.equinox.p2.director -listInstalledRoots",
@@ -75,7 +75,7 @@ class EclipseService:
             warn=True
         )
 
-        with open(INSTALLED_CACHE, 'w') as f:
+        with open(self.config.installed_cache, 'w') as f:
             f.write(result.stdout)
 
 
@@ -90,28 +90,28 @@ class EclipseService:
     def install_eclipse_components(self, c):
         """Install each component if not already installed."""
         self.populate_cache(c)
-        for iu, repo_url in INSTALL_UNITS.items():
-            if self.is_installed(iu, INSTALLED_CACHE):
+        for iu in self.config.config['eclipse']['install_units']:
+            if self.is_installed(iu, self.config.installed_cache):
                 print(f"{iu} is already installed.")
             else:
                 print(f"Installing {iu}...")
                 result = c.run(
                     f"{self.eclipse_exec_dir}/eclipse -nosplash "
                     f"-application org.eclipse.equinox.p2.director "
-                    f"-repository {repo_url},{REPO_URL},{ACTIFSOURCE_REPO_URL},{ECD_PLUGIN_REPO_URL} "
+                    f"-repository {self.config.get_eclipse_url_string()} "
                     f"-installIU {iu} "
                     f"-destination {self.eclipse_exec_dir} "
                     f"-profile SDKProfile "
                 )
                 if result == 0:
-                    with open(INSTALLED_CACHE, 'a') as f:
+                    with open(self.config.installed_cache, 'a') as f:
                         f.write(f"{iu}\n")
 
         print("Eclipse components installation completed.")
 
     def package_eclipse(self):
         """Package the Eclipse directory into a zip file."""
-        eclipse_dir = os.path.join(self.dest_dir, "eclipse")
+        eclipse_dir = os.path.join(self.config.dest_dir, "eclipse")
         zip_filename = self.zip_file_name()
 
         if os.path.isfile(zip_filename):
@@ -129,14 +129,14 @@ class EclipseService:
             return False
 
     def zip_file_name(self):
-        zip_filename = os.path.join(self.dest_dir, f"eclipse_{SYSTEM}_{ARCHITECTURE}_{VERSION_ECLIPSE}_{VERSION_JDK}.zip")
+        zip_filename = os.path.join(self.config.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
         return zip_filename
 
     def create_dockerfile(self):
         zip_filename = self.zip_file_name()
 
         dockerfile_content = f"""
-        FROM ibm-semeru-runtimes:open-{VERSION_JDK_DOCKER}-jdk
+        FROM ibm-semeru-runtimes:open-{self.config.version_jdk_docker}-jdk
 
         # Install utilites
         RUN apt-get update && apt-get -y install apt-utils && apt-get -y install tar && apt-get -y install gzip && apt-get -y install wget && apt-get -y install unzip;
@@ -151,7 +151,7 @@ class EclipseService:
         WORKDIR /opt/eclipse
         """
 
-        dockerfile_path = os.path.join(self.dest_dir, "Dockerfile")
+        dockerfile_path = os.path.join(self.config.dest_dir, "Dockerfile")
         with open(dockerfile_path, 'w') as dockerfile:
             dockerfile.write(dockerfile_content)
 
@@ -159,7 +159,7 @@ class EclipseService:
 
     def build_docker_image(self, dockerfile_path, image_name):
         client = docker.from_env()
-        client.images.build(path=self.dest_dir, dockerfile=dockerfile_path, tag=image_name, quiet=False)
+        client.images.build(path=self.config.dest_dir, dockerfile=dockerfile_path, tag=image_name, quiet=False)
         print(f"Docker image {image_name} created.")
 
     def create_docker_container(self, c, image_name, container_name):
@@ -186,13 +186,13 @@ class EclipseService:
         image = client.images.get(image_name)
 
         # Tag the image
-        repo_name = f"{GITHUB_DOCKER_REGISTRY}/{GITHUB_REPOSITORY}"
-        tagged_image = f"{repo_name}:{SYSTEM}-{ARCHITECTURE}"
+        repo_name = f'{self.config.config["GITHUB_DOCKER_REGISTRY"]}/{self.config.config["GITHUB_REPOSITORY"]}'
+        tagged_image = f"{repo_name}:{self.config.system}-{self.config.architecture}"
         image.tag(tagged_image)
 
         # Log in to GitHub Docker registry
-        print(f"Logging in to GitHub Docker registry as {GITHUB_USERNAME}...")
-        client.login(username=GITHUB_USERNAME, password=GITHUB_TOKEN, registry=GITHUB_DOCKER_REGISTRY)
+        print(f'Logging in to GitHub Docker registry as {self.config.config["github_username"]}...')
+        client.login(username=self.config.config["github_username"], password=self.config.config["github_token"], registry=self.config.config["GITHUB_DOCKER_REGISTRY"])
 
         # Push the image
         print(f"Pushing Docker image {tagged_image} to GitHub Packages...")

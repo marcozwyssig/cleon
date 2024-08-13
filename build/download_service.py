@@ -1,5 +1,5 @@
 import os
-from config import DEST_DIR, DOWNLOAD_URL_JDK, DOWNLOAD_URL_ECLIPSE, DOWNLOAD_FILES_JDK, DOWNLOAD_FILES_ECLIPSE, KEY
+from config import Config
 import requests
 from tqdm import tqdm
 import tarfile
@@ -7,26 +7,26 @@ import zipfile
 
 
 class DownloadService:
-    def __init__(self, dest_dir):
-        self.dest_dir = dest_dir
+    def __init__(self, config: Config):
+        self.config = config
 
     def download_jdk(self):
         """Download the JDK file to the destination directory."""
-        DownloadService.__download_file(DOWNLOAD_URL_JDK, self.dest_dir, DOWNLOAD_FILES_JDK[KEY])
+        DownloadService.__download_file(self.config.download_url_jdk , self.config.dest_dir, self.config.get_download_file_jdk())
 
     def extract_jdk(self):
         """Extract the downloaded JDK file."""
-        jdk_filename = DOWNLOAD_FILES_JDK[KEY].split('/')[-1]
-        DownloadService.__extract_file(os.path.join(self.dest_dir, jdk_filename), os.path.join(self.dest_dir, "jdk"))
+        jdk_filename = self.config.get_download_file_jdk()
+        DownloadService.__extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, "jdk"))
 
     def download_eclipse(self):
         """Download the Eclipse file to the destination directory."""
-        DownloadService.__download_file(DOWNLOAD_URL_ECLIPSE, self.dest_dir, DOWNLOAD_FILES_ECLIPSE[KEY].split('/')[-1])
+        DownloadService.__download_file(self.config.download_url_eclipse, self.config.dest_dir, self.config.get_download_file_eclipse())
 
     def extract_eclipse(self):
         """Extract the downloaded Eclipse file."""
-        eclipse_filename = DOWNLOAD_FILES_ECLIPSE[KEY].split('/')[-1]
-        DownloadService.__extract_file(os.path.join(self.dest_dir, eclipse_filename), os.path.join(self.dest_dir, "eclipse"))
+        eclipse_filename = self.config.get_download_file_eclipse()
+        DownloadService.__extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, "eclipse"))
 
     @staticmethod
     def __download_file(url, dest_dir, filename):

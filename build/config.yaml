@@ -1,0 +1,27 @@
+jdk:
+  base_url_ibm_semeru: "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
+
+eclipse:
+  base_url_eclipse: "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
+  # ecd_plugin_repo_url: "https://ecd-plugin.github.io/update"
+  install_units:
+    org.eclipse.pde.feature.group: "http://download.eclipse.org/releases/latest"
+    org.eclipse.emf.mwe2.runtime: "http://download.eclipse.org/releases/latest"
+    org.eclipse.emf.mwe.core: "http://download.eclipse.org/releases/latest"
+    org.eclipse.egit.feature.group: "http://download.eclipse.org/releases/latest"
+    org.eclipse.ui.browser: "http://download.eclipse.org/releases/latest"
+    org.eclipse.platform.feature.group: "http://download.eclipse.org/releases/latest"
+    org.eclipse.draw2d.feature.group: "http://download.eclipse.org/releases/latest"
+    org.eclipse.gef.feature.group: "http://download.eclipse.org/releases/latest"
+    org.eclipse.gmf.feature.group: "http://download.eclipse.org/releases/latest"
+    ch.actifsource.enterprise.feature.group: "https://updates.actifsource.com/updates-enterprise"
+
+system:
+  temp_dir: null  # Uses system temp if null
+  dest_dir: "eclipse"
+  installed_cache: "installed_components.txt"
+
+github:
+  repository: "marcozwyssig/cleon"
+  api_url: "https://api.github.com"
+  docker_registry: "ghcr.io"

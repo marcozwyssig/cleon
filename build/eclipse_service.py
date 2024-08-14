@@ -32,6 +32,22 @@ class EclipseService:
             print(f"Error: Moving JDK failed due to {e}")
             return False
 
+    def __remove_unnecessary_directories_files(self):
+        self.__remove_directory("org.eclipse.equinox.app")
+        self.__remove_files(".log")
+    
+    def __remove_directory(self, directory):
+        dir = os.path.join(self.eclipse_exec_dir, "configuration", directory)
+        if os.path.exists(dir):
+            shutil.rmtree(dir)
+
+    def __remove_files(self, files):
+        cfgDir = os.path.join(self.eclipse_exec_dir, "configuration")
+        files_to_remove = [f for f in os.listdir(cfgDir) if f.endswith(files)]
+        for file in files_to_remove:
+            os.remove(os.path.join(cfgDir, file))
+
+
     def update_eclipse_ini(self):
         """Update the eclipse.ini file to include the JDK path."""
         eclipse_ini = os.path.join(self.eclipse_exec_dir, "eclipse.ini")
@@ -117,6 +133,8 @@ class EclipseService:
         if os.path.isfile(zip_filename):
             print(f"{zip_filename} already exists, skipping packaging.")
             return True
+
+        self.__remove_unnecessary_directories_files()
 
         print(f"Packing {eclipse_dir} into {zip_filename}...")
 

@@ -1,8 +1,0 @@
-// Example configuration for a plugin project
-apply plugin: 'java'
-apply plugin: 'org.standardout.bnd-platform'
-
-platform {
-    // Configuration for creating an OSGi bundle
-    bundle project('.project')
-}

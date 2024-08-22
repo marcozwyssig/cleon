@@ -70,12 +70,12 @@ public class SourceSubZone extends DynamicResource implements ISourceSubZone {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> selectDestinationSubZonePolicy() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> selectDestinationSubZonePolicy() {
+    return _getMultiMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy);
   }
 
-  public SourceSubZone setDestinationSubZonePolicy(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> destinationSubZonePolicy) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, destinationSubZonePolicy);
+  public SourceSubZone setDestinationSubZonePolicy(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> destinationSubZonePolicy) {
+    _setMultiMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, destinationSubZonePolicy);
     return this;
   }
     
@@ -138,7 +138,7 @@ public class SourceSubZone extends DynamicResource implements ISourceSubZone {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, visitor);
+    _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SourceSubZone_sourceSecuritySubZone, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -155,4 +155,4 @@ public class SourceSubZone extends DynamicResource implements ISourceSubZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,8aZfPuG1a6swn3CA6cuTnZ11No8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,d9vrQZVTQo5jYAa60V77O0l22Pc=] */

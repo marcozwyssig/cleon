@@ -18,22 +18,24 @@ import java.util.List;
 
 public class SourceSubZoneValidationAspect  implements IResourceValidationAspect {
 	@Override
-	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
+	public void validate(final ValidationContext validationContext, final List<IResourceInconsistency> validationList) {
 		final var start = Instant.now();
 		try {
 			final var typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 			final var resourceRepository = typeSystem.getResourceRepository();
 			final var sourceSubZone = resourceRepository.getResource(ISourceSubZone.class, validationContext.getResource());
-			
-			for( var subZoneAccessPolicy : sourceSubZone.selectDestinationSubZonePolicy().values()) {
-				final var functions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
-				if( sourceSubZone.selectSourceSecuritySubZone().equals(subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone())) {
-					return;
-				}
 
-				if( !functions.HasSources() ) {
-					validationList.add(new PredicateInconsistency(validationContext.getPackage(), subZoneAccessPolicy.getResource(), SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, String.format("no communication to this subzone")));
-				}				
+			for( final var subZoneAccessPolicyKey : sourceSubZone.selectDestinationSubZonePolicy().keyIterable()) {
+				for ( final var subZoneAccessPolicy : sourceSubZone.selectDestinationSubZonePolicy().get(subZoneAccessPolicyKey)) {
+					final var functions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
+					if( sourceSubZone.selectSourceSecuritySubZone().equals(subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone())) {
+						return;
+					}
+
+					if( !functions.HasSources() ) {
+						validationList.add(new PredicateInconsistency(validationContext.getPackage(), subZoneAccessPolicy.getResource(), SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, String.format("no communication to this subzone")));
+					}
+				}
 			}
 
 		} finally {

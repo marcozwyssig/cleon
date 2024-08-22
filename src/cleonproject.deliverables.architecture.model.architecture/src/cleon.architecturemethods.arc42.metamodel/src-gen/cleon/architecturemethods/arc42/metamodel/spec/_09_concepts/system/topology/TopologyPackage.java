@@ -28,7 +28,7 @@ public class TopologyPackage {
   public static final Resource NumberedHost = new Resource("887c437e-ca6a-11e9-83b0-559396620907");
   public static final Resource ClusterHost = new Resource("a3888cf7-ca6a-11e9-83b0-559396620907");
   public static final Resource StackHost = new Resource("28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79");
-  public static final Resource StackHost_host = new Resource("773fce65-ec06-11e9-8e1e-d59e76bdbf06");
+  public static final Resource AbstractNumberedHostAware_host = new Resource("773fce65-ec06-11e9-8e1e-d59e76bdbf06");
   public static final Resource AbstractSiteWithZone = new Resource("fd112c3e-ec15-11e9-8e1e-d59e76bdbf06");
   public static final Resource FunctionSpace_aE_Topology_AbstractHost = new Resource("5baa9659-fb12-11e9-890e-576c93cea08c");
   public static final Resource FunctionSpace_aE_Topology_StackHost = new Resource("80d311cd-fb12-11e9-890e-576c93cea08c");
@@ -102,6 +102,9 @@ public class TopologyPackage {
   public static final Resource Topology_environments = new Resource("71c9c767-5376-11ef-80ff-efa8d0dbdc0e");
   public static final Resource AbstractSite_networkSite = new Resource("b479feaf-53b3-11ef-80ff-efa8d0dbdc0e");
   public static final Resource TopologyEnvironment_networkEnvironment = new Resource("2a02826d-53b8-11ef-80ff-efa8d0dbdc0e");
+  public static final Resource AbstractNumberedHostAware = new Resource("2fcaf1bb-6064-11ef-93d4-a95e039110df");
+  public static final Resource InterfaceHost = new Resource("943f099f-6064-11ef-93d4-a95e039110df");
+  public static final Resource FunctionSpace_aE_Topology_InterfaceHost = new Resource("24c4431d-6065-11ef-93d4-a95e039110df");
   
   /* Begin Protected Region [[user]] */
   
@@ -122,4 +125,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,Nzc4hwrTtF8QB7eLiF/Ur01xdR4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,mikp7GwldAAqEaMhvsUccX2hJ5s=] */

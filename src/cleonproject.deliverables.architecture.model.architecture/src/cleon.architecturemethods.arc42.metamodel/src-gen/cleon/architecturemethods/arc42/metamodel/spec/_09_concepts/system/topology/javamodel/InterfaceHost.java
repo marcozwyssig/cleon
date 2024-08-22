@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class StackHost extends DynamicResource implements IStackHost {
+public class InterfaceHost extends DynamicResource implements IInterfaceHost {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IStackHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IStackHost>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInterfaceHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInterfaceHost>() {
     
     @Override
-    public IStackHost create() {
-      return new StackHost();
+    public IInterfaceHost create() {
+      return new InterfaceHost();
     }
     
     @Override
-    public IStackHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new StackHost(resourceRepository, resource);
+    public IInterfaceHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new InterfaceHost(resourceRepository, resource);
     }
   
   };
 
-  public StackHost() {
-    super(IStackHost.TYPE_ID);
+  public InterfaceHost() {
+    super(IInterfaceHost.TYPE_ID);
   }
   
-  public StackHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IStackHost.TYPE_ID);
+  public InterfaceHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IInterfaceHost.TYPE_ID);
   }
 
   // attributes
@@ -49,15 +49,6 @@ public class StackHost extends DynamicResource implements IStackHost {
   }
 
   @Override
-  public java.lang.Integer selectIdentifier() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
-  }
-    
-  public void setIdentifier(java.lang.Integer identifier) {
-     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
-  }
-
-  @Override
   public java.lang.Boolean selectIsTemporary() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_isTemporary);
   }
@@ -76,12 +67,12 @@ public class StackHost extends DynamicResource implements IStackHost {
   }
 
   @Override
-  public java.lang.Integer selectNumber() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractNumberAware_number);
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
-  public void setNumber(java.lang.Integer number) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractNumberAware_number, number);
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
   @Override
@@ -91,6 +82,15 @@ public class StackHost extends DynamicResource implements IStackHost {
     
   public void setOverrideOwner(java.lang.String overrideOwner) {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_overrideOwner, overrideOwner);
+  }
+
+  @Override
+  public java.lang.String selectOverrideRN() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.OverrideRNAware_overrideRN);
+  }
+    
+  public void setOverrideRN(java.lang.String overrideRN) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.OverrideRNAware_overrideRN, overrideRN);
   }
 
   @Override
@@ -127,7 +127,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractNumberedHostAware_host);
   }
 
-  public StackHost setHost(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost host) {
+  public InterfaceHost setHost(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost host) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractNumberedHostAware_host, host);
     return this;
   }
@@ -137,7 +137,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public StackHost setInstanceOf(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration instanceOf) {
+  public InterfaceHost setInstanceOf(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -147,7 +147,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_ips);
   }
 
-  public StackHost setIps(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> ips) {
+  public InterfaceHost setIps(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> ips) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_ips, ips);
     return this;
   }
@@ -157,7 +157,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_monitoringWith);
   }
 
-  public StackHost setMonitoringWith(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost monitoringWith) {
+  public InterfaceHost setMonitoringWith(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost monitoringWith) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_monitoringWith, monitoringWith);
     return this;
   }
@@ -167,7 +167,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public StackHost setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public InterfaceHost setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -177,7 +177,7 @@ public class StackHost extends DynamicResource implements IStackHost {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public StackHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public InterfaceHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -190,8 +190,9 @@ public class StackHost extends DynamicResource implements IStackHost {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_isTemporary, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_isVirtualized, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractNumberAware_number, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.OverrideRNAware_overrideRN, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.SkipBookmarkAware_skipBookmarkGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.SkipHostGenerationAware_skipHostGeneration, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
@@ -204,4 +205,4 @@ public class StackHost extends DynamicResource implements IStackHost {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79,ZsrPOe6MWG56/xgkCUGhFqRv2ZE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,943f099f-6064-11ef-93d4-a95e039110df,ua9uOHWFf0fq+qy7nNGWV3aGelU=] */

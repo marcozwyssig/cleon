@@ -9,7 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;;
 /* End Protected Region   [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
@@ -176,26 +175,31 @@ public class FunctionSpace_Segmentation {
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
       /* Begin Protected Region [[e99aad2f-a965-11e9-bf83-7bacdb6991f7]] */
       final var sourceFunctions = source.extension(ISecuritySubZoneFunctions.class);
-      final ISourceSubZone sourceSubZone = sourceFunctions.SourcePolicy();
+      final var sourceSubZone = sourceFunctions.SourcePolicy();
       if( sourceSubZone == null ) {
       	return "R";
       }
 
-      final ISubZoneAccessPolicy accesspolicy = sourceSubZone.selectDestinationSubZonePolicy().get(securitySubZone.getResource());
-      if( accesspolicy == null) {
+      final var accesspolicyKey = sourceSubZone.selectDestinationSubZonePolicy().get(securitySubZone.getResource());
+      if( accesspolicyKey.isEmpty()) {
       	return "R";
       }
-      final var accessPolicy = accesspolicy.extension(ISubZoneAccessPolicyFunctions.class);
-      return accessPolicy.EvaluatePolicy(source);
+
+      final var result = new StringBuilder();
+      for( final var accesspolicy : accesspolicyKey) {
+      	final var accessPolicy = accesspolicy.extension(ISubZoneAccessPolicyFunctions.class);
+      	result.append(accessPolicy.EvaluatePolicy(source));
+      }
+      return result.toString();
+
       /* End Protected Region   [[e99aad2f-a965-11e9-bf83-7bacdb6991f7]] */
     }
 
     @Override
     public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
       /* Begin Protected Region [[88247d98-e2d8-11ee-bcaf-bf4e173adc8d]] */
-    	final var sysCfgFunction = systemConfiguration.extension(ISystemConfigurationFunctions.class);
-    	return sysCfgFunction.TypeName(securitySubZone);
-      // XXX implement template function here   
+      final var sysCfgFunction = systemConfiguration.extension(ISystemConfigurationFunctions.class);
+      return sysCfgFunction.TypeName(securitySubZone);
       /* End Protected Region   [[88247d98-e2d8-11ee-bcaf-bf4e173adc8d]] */
     }
 

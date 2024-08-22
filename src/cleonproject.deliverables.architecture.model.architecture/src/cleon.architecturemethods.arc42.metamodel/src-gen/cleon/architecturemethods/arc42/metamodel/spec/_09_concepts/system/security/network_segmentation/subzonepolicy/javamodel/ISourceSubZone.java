@@ -10,8 +10,8 @@ public interface ISourceSubZone extends ch.actifsource.core.javamodel.IDecorator
   
   public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectSourceSecuritySubZone();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> selectDestinationSubZonePolicy();
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> selectDestinationSubZonePolicy();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,imin1cxPpc8/vXxzzVHbB/zhlWA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,Ru0Vo1Ph2MEPxR/blSf6JoRsnGw=] */

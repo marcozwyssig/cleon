@@ -174,6 +174,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
+    @IDynamicResourceExtension.MethodId("6dc2087f-615d-11ef-bbc5-a94c7bfbdf81")
+    public java.lang.String GetTypeName();
+
   }
   
   public static interface ISystemWithLayerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -324,4 +327,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,6ZIu4uIGB0n/41BFsXfuRw+IqAI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,Yxu/Jt2oFw5XHRWxUR42PBSkyhI=] */

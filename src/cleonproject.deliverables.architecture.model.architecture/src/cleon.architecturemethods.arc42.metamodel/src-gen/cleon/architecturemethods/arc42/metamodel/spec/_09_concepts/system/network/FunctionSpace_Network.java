@@ -190,6 +190,12 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("aa3a661e-0abb-11ee-a86d-478d6a2bb65d")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllAbstractHostsWhereSecuritySubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
+    @IDynamicResourceExtension.MethodId("df857591-63e9-11ef-ac12-136807d7f56d")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite NetworkSite();
+
+    @IDynamicResourceExtension.MethodId("45a2aa6c-63ea-11ef-ac12-136807d7f56d")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite Site();
+
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -459,4 +465,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,pLdMy3cfl19STFPHZiPvrKFy6nI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,wOiU7mVWtc5NORUuXkJ0O8LLl2U=] */

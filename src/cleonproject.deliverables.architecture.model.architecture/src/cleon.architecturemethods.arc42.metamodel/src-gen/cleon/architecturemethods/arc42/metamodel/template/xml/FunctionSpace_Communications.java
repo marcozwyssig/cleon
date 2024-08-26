@@ -7,15 +7,16 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
-/* Begin Protected Region [[46a3f5e0-87a3-11e9-bb4b-c57da735262b,imports]] */
+/* Begin Protected Region [[092ae3c2-63de-11ef-ac12-136807d7f56d,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.Source;
-/* End Protected Region   [[46a3f5e0-87a3-11e9-bb4b-c57da735262b,imports]] */
 
-public class Communications__T_xml {
+/* End Protected Region   [[092ae3c2-63de-11ef-ac12-136807d7f56d,imports]] */
 
-  /* Begin Protected Region [[46a3f5e0-87a3-11e9-bb4b-c57da735262b]] */
+public class FunctionSpace_Communications {
 
-  /* End Protected Region   [[46a3f5e0-87a3-11e9-bb4b-c57da735262b]] */
+  /* Begin Protected Region [[092ae3c2-63de-11ef-ac12-136807d7f56d]] */
+
+  /* End Protected Region   [[092ae3c2-63de-11ef-ac12-136807d7f56d]] */
 
 
   public static interface IImplementationStateFunctions extends IDynamicResourceExtension {
@@ -70,7 +71,6 @@ public class Communications__T_xml {
       	return false;
       }
       return implementedState.selectImplementationStateIn().get(env.getResource()).extension(IImplementationStateForEnvironmentFunctions.class).IsImplemented();
-
       /* End Protected Region   [[98d07593-2046-11eb-88ac-6db033a610cb]] */
     }
 
@@ -283,13 +283,13 @@ public class Communications__T_xml {
     public java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
       if( sourceInSubSecurityZone.selectIsTemporary() != null) {
-      	return sourceInSubSecurityZone.selectIsTemporary().booleanValue();
+      	return sourceInSubSecurityZone.selectIsTemporary();
       }
-      final var source = Source.selectToMeAccessAllowed(sourceInSubSecurityZone);    	
+      final var source = Source.selectToMeAccessAllowed(sourceInSubSecurityZone);
       if( source.selectIsTemporary() == null ) {
       	return false;
       }
-      return source.selectIsTemporary().booleanValue();
+      return source.selectIsTemporary();
 
       /* End Protected Region   [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
     }
@@ -308,4 +308,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,zOm2h0/ImZ7M8kIgkIXyiSg3ugA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,092ae3c2-63de-11ef-ac12-136807d7f56d,5z095h++cNyC64XQja+3HFQ55+M=] */

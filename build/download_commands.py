@@ -1,35 +1,38 @@
 import os
-from config import Config
+import logging
 import requests
 from tqdm import tqdm
 import tarfile
 import zipfile
-from abstract_command import AbstractCommand 
+from config import Config
+from abstract_command import AbstractCommand
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class AbstractDownloadCommand(AbstractCommand):
     def __init__(self, config: Config):
-        AbstractCommand.__init__(self, config)
+        super().__init__(config)
 
     def execute(self):
-        self.download()
-        self.extract()
+        if self.download():
+            self.extract()
 
-    def download(self):
+    def download(self) -> bool:
         raise NotImplementedError("The download method must be implemented by a subclass.")
 
-    def extract(self):
+    def extract(self) -> bool:
         raise NotImplementedError("The extract method must be implemented by a subclass.")
     
     @staticmethod
-    def __download_file(url, dest_dir, filename):
+    def _download_file(url: str, dest_dir: str, filename: str) -> bool:
         """Download a file from the specified URL to the destination directory."""
         local_filename = os.path.join(dest_dir, filename)
 
         if os.path.isfile(local_filename):
-            print(f"{filename} already exists, skipping download.")
+            logging.info(f"{filename} already exists, skipping download.")
             return True
 
-        print(f"Downloading {url} to {dest_dir}...")
+        logging.info(f"Downloading {url} to {dest_dir}...")
         
         try:
             response = requests.get(url, stream=True, allow_redirects=True)
@@ -48,20 +51,20 @@ class AbstractDownloadCommand(AbstractCommand):
                     size = f.write(chunk)
                     bar.update(size)
             
-            print(f"Download completed in {dest_dir} successfully.")
+            logging.info(f"Download completed in {dest_dir} successfully.")
             return True
         except requests.RequestException as e:
-            print(f"Error: Download failed due to {e}")
+            logging.error(f"Download failed due to: {e}")
             return False
         
     @staticmethod
-    def __extract_file(filepath, dest_dir):
+    def _extract_file(filepath: str, dest_dir: str) -> bool:
         """Extract a tar.gz or zip file to the specified directory."""
         if os.path.isdir(dest_dir) and os.listdir(dest_dir):
-            print(f"{dest_dir} already contains extracted content, skipping extraction.")
+            logging.info(f"{dest_dir} already contains extracted content, skipping extraction.")
             return True
         
-        print(f"Extracting {filepath} to {dest_dir}...")
+        logging.info(f"Extracting {filepath} to {dest_dir}...")
         try:
             if filepath.endswith(".tar.gz"):
                 with tarfile.open(filepath, "r:gz") as tar:
@@ -69,44 +72,38 @@ class AbstractDownloadCommand(AbstractCommand):
             elif filepath.endswith(".zip"):
                 with zipfile.ZipFile(filepath, "r") as zip_ref:
                     zip_ref.extractall(dest_dir)
-            print(f"Extraction completed successfully.")
+            else:
+                logging.error(f"Unsupported file format for extraction: {filepath}")
+                return False
+            logging.info(f"Extraction completed successfully.")
             return True
         except (tarfile.TarError, zipfile.BadZipFile) as e:
-            print(f"Error: Extraction failed due to {e}")
+            logging.error(f"Extraction failed due to: {e}")
             return False
 
     
 class DownloadJdkCommand(AbstractDownloadCommand):
     def __init__(self, config: Config):
-        AbstractDownloadCommand.__init__(self, config)
+        super().__init__(config)
 
-    def download(self):
-        self.config.download_service.download_jdk()
-
-    def extract(self):
-        self.config.download_service.extract_jdk()
-
-
-class DownloadService:
-    def __init__(self, config: Config):
-        self.config = config
-
-    def download_jdk(self):
+    def download(self) -> bool:
         """Download the JDK file to the destination directory."""
-        DownloadService.__download_file(self.config.download_url_jdk , self.config.dest_dir, self.config.get_download_file_jdk())
+        return self._download_file(self.config.download_url_jdk, self.config.dest_dir, self.config.get_download_file_jdk())
 
-    def extract_jdk(self):
+    def extract(self) -> bool:
         """Extract the downloaded JDK file."""
         jdk_filename = self.config.get_download_file_jdk()
-        DownloadService.__extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, "jdk"))
+        return self._extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, "jdk"))
 
-    def download_eclipse(self):
+class DownloadEclipseCommand(AbstractDownloadCommand):
+    def __init__(self, config: Config):
+        super().__init__(config)
+
+    def download(self) -> bool:
         """Download the Eclipse file to the destination directory."""
-        DownloadService.__download_file(self.config.download_url_eclipse, self.config.dest_dir, self.config.get_download_file_eclipse())
+        return self._download_file(self.config.download_url_eclipse, self.config.dest_dir, self.config.get_download_file_eclipse())
 
-    def extract_eclipse(self):
+    def extract(self) -> bool:
         """Extract the downloaded Eclipse file."""
         eclipse_filename = self.config.get_download_file_eclipse()
-        DownloadService.__extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, "eclipse"))
-
-
+        return self._extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, "eclipse"))

@@ -1,7 +1,7 @@
 from invoke import task
 import os
 from config import Config
-from download_service import DownloadService
+from download_commands import *
 from eclipse_service import EclipseService
 
 config = Config()
@@ -21,31 +21,19 @@ def create_dest_dir(c):
 
 # Download tasks
 @task(pre=[create_dest_dir])
-def download_jdk(c):
-    print("--> Downloading JDK...")
-    manager = DownloadService(config)
-    manager.download_jdk()
-
-@task(pre=[download_jdk])
-def extract_jdk(c):
-    print("--> Extracting JDK...")
-    manager = DownloadService(config)
-    manager.extract_jdk()
+def download_and_extract_jdk(c):
+    print("--> Downloading and extract JDK...")
+    command = DownloadJdkCommand(config)
+    command.execute()
 
 @task(pre=[create_dest_dir])
-def download_eclipse(c):
-    print("--> Downloading Eclipse...")
-    manager = DownloadService(config)
-    manager.download_eclipse()
-
-@task(pre=[download_eclipse])
-def extract_eclipse(c):
-    print("--> Extracting Eclipse...")
-    manager = DownloadService(config)
-    manager.extract_eclipse()
+def download_and_extract_eclipse(c):
+    print("--> Downloading and extract Eclipse...")
+    manager = DownloadEclipseCommand(config)
+    manager.execute()
 
 # Installation tasks
-@task(pre=[extract_jdk, extract_eclipse])
+@task(pre=[download_and_extract_jdk, download_and_extract_eclipse])
 def move_jdk_to_eclipse(c):
     print("--> Moving JDK to Eclipse...")
     manager = EclipseService(config)

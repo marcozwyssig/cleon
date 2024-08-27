@@ -93,7 +93,7 @@ class DownloadJdkCommand(AbstractDownloadCommand):
     def extract(self) -> bool:
         """Extract the downloaded JDK file."""
         jdk_filename = self.config.get_download_file_jdk()
-        return self._extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, "jdk"))
+        return self._extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, self.config.jdk_dir))
 
 class DownloadEclipseCommand(AbstractDownloadCommand):
     def __init__(self, config: Config):
@@ -106,4 +106,4 @@ class DownloadEclipseCommand(AbstractDownloadCommand):
     def extract(self) -> bool:
         """Extract the downloaded Eclipse file."""
         eclipse_filename = self.config.get_download_file_eclipse()
-        return self._extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, "eclipse"))
+        return self._extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, self.config.eclipse_dir))

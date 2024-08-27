@@ -18,7 +18,9 @@ eclipse:
 
 system:
   temp_dir: null  # Uses system temp if null
-  dest_dir: "eclipse"
+  dest_dir: "eclipse-working-dir"
+  eclipse_dir: "eclipse-extracted"
+  jdk_dir: "jdk-extracted"
   installed_cache: "installed_components.txt"
 
 github:

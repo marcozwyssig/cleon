@@ -28,6 +28,8 @@ class Config:
 
         self.temp_dir = Config.__ensure_dir_exists(os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir()))
         self.dest_dir = Config.__ensure_dir_exists(os.path.join(self.temp_dir, self.config['system']['dest_dir']))
+        self.eclipse_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['eclipse_dir']))
+        self.jdk_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['jdk_dir']))
         self.installed_cache = os.path.join(self.temp_dir, self.config['system']['installed_cache'])
 
     def load_config(self, yaml_file) -> dict:

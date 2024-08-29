@@ -32,6 +32,8 @@ public interface IWhiteboxSystem extends cleon.architecturemethods.arc42.metamod
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct> selectUsedProducts();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox selectBlackbox();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,JTgrzlT44QjbGsC5KNr2vsYgzHQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,plxB2hVYJhhzleDTss203HY/DU8=] */

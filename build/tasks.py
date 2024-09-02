@@ -48,6 +48,11 @@ def download_and_extract_eclipse(c):
     log_message("Downloading and extracting Eclipse...")
     DownloadEclipseCommand(config).execute()
 
+@task(pre=[create_dest_dir])
+def download_and_extract_ant(c):
+    log_message("Downloading and extracting Ant...")
+    DownloadAntCommand(config).execute()
+
 # Installation tasks
 @task(pre=[download_and_extract_jdk, download_and_extract_eclipse])
 def move_jdk_to_eclipse(c):

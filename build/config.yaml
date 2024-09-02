@@ -1,6 +1,9 @@
 jdk:
   base_url_ibm_semeru: "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
 
+ant:
+  base_url_ant: "https://archive.apache.org/dist/ant/binaries/"
+
 eclipse:
   base_url_eclipse: "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
   # ecd_plugin_repo_url: "https://ecd-plugin.github.io/update"
@@ -21,6 +24,7 @@ system:
   dest_dir: "eclipse-working-dir"
   eclipse_dir: "eclipse-extracted"
   jdk_dir: "jdk-extracted"
+  ant_dir: "ant-extracted"
   installed_cache: "installed_components.txt"
 
 github:

@@ -15,6 +15,7 @@ class Config:
         # Load JDK and Eclipse version details
         self.latest_jdk_version = self.get_latest_jdk_version()
         self.latest_eclipse_version, self.latest_eclipse_date = self.get_latest_eclipse_version_and_date()
+        self.latest_ant_version = self.get_latest_ant_version()
 
         # Configure URLs and file names
         self.version_jdk_short = (self.latest_jdk_version.split("_")[0]).replace('jdk-', '')
@@ -25,11 +26,13 @@ class Config:
 
         self.download_url_jdk = self.get_download_url_jdk()
         self.download_url_eclipse = self.get_download_url_eclipse()
+        self.download_url_ant = self.get_download_url_ant()
 
         self.temp_dir = Config.__ensure_dir_exists(os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir()))
         self.dest_dir = Config.__ensure_dir_exists(os.path.join(self.temp_dir, self.config['system']['dest_dir']))
         self.eclipse_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['eclipse_dir']))
         self.jdk_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['jdk_dir']))
+        self.ant_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['ant_dir']))
         self.installed_cache = os.path.join(self.temp_dir, self.config['system']['installed_cache'])
 
     def load_config(self, yaml_file) -> dict:
@@ -49,6 +52,15 @@ class Config:
         response.raise_for_status()
         latest_release = response.json()
         return latest_release['tag_name']
+    
+    def get_latest_ant_version(self) -> str:
+        url = base_url_ant = self.config['ant']['base_url_ant']
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        latest_version_link = soup.find('a', href=re.compile(r'^apache-ant-\d+\.\d+\.\d+-bin\.zip$'))
+        latest_version = latest_version_link.string.strip()
+        return latest_version
 
     def get_latest_eclipse_version_and_date(self) -> tuple:
         url = "https://download.eclipse.org/eclipse/downloads/"
@@ -103,8 +115,15 @@ class Config:
 
         return f"{base_url_eclipse}{download_files_eclipse[key]}&r=1"
 
+    def get_download_url_ant(self) -> str:
+        base_url_ant = self.config['ant']['base_url_ant']
+        return f"{base_url_ant}/{self.latest_ant_version}"
+
     def get_download_file_jdk(self) -> str:
         return self.download_url_jdk.split('/')[-1]
+    
+    def get_download_file_ant(self) -> str:
+        return self.download_url_ant.split('/')[-1]    
 
     def get_download_file_eclipse(self) -> str:
         file = self.download_url_eclipse.split('/')[-1]

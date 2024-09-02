@@ -107,3 +107,16 @@ class DownloadEclipseCommand(AbstractDownloadCommand):
         """Extract the downloaded Eclipse file."""
         eclipse_filename = self.config.get_download_file_eclipse()
         return self._extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, self.config.eclipse_dir))
+    
+
+class DownloadAntCommand(AbstractDownloadCommand):
+    def __init__(self, config: Config):
+        super().__init__(config)
+
+    def download(self) -> bool:
+        return self._download_file(self.config.download_url_ant, self.config.dest_dir, self.config.get_download_file_ant())
+
+    def extract(self) -> bool:
+        """Extract the downloaded Ant file."""
+        ant_filename = self.config.get_download_file_ant()
+        return self._extract_file(os.path.join(self.config.dest_dir, ant_filename), os.path.join(self.config.dest_dir, self.config.ant_dir))

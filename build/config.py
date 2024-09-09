@@ -28,12 +28,12 @@ class Config:
         self.download_url_eclipse = self.get_download_url_eclipse()
         self.download_url_ant = self.get_download_url_ant()
 
-        self.temp_dir = Config.__ensure_dir_exists(os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir()))
-        self.dest_dir = Config.__ensure_dir_exists(os.path.join(self.temp_dir, self.config['system']['dest_dir']))
-        self.eclipse_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['eclipse_dir']))
-        self.jdk_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['jdk_dir']))
-        self.ant_dir = Config.__ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['ant_dir']))
-        self.installed_cache = os.path.join(self.temp_dir, self.config['system']['installed_cache'])
+        self.temp_dir = Config.ensure_dir_exists(os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir()))
+        self.dest_dir = Config.ensure_dir_exists(os.path.join(self.temp_dir, self.config['system']['dest_dir']))
+        self.eclipse_dir = Config.ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['eclipse_dir']))
+        self.jdk_dir = Config.ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['jdk_dir']))
+        self.ant_dir = Config.ensure_dir_exists(os.path.join(self.dest_dir, self.config['system']['ant_dir']))
+        self.installed_cache = os.path.join(self.dest_dir, self.config['system']['installed_cache'])
 
     def load_config(self, yaml_file) -> dict:
         with open(yaml_file, 'r') as file:
@@ -41,7 +41,7 @@ class Config:
         return config
 
     @staticmethod
-    def __ensure_dir_exists(directory):
+    def ensure_dir_exists(directory):
         if not os.path.exists(directory):
             os.makedirs(directory)
         return directory

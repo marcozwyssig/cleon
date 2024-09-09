@@ -23,16 +23,11 @@ def ensure_directory_exists(directory):
 def clean_dest_dir(c):
     if dest_dir.exists():
         log_message(f"Cleaning up destination directory {dest_dir}...")
-        for item in dest_dir.iterdir():
-            if item.is_dir():
-                item.rmdir()
-            else:
-                item.unlink()
-        dest_dir.rmdir()
+        # Recursively remove the directory and all its contents
+        shutil.rmtree(dest_dir)
         log_message(f"Cleaned up {dest_dir}.")
     else:
         log_message(f"Destination directory {dest_dir} does not exist.")
-
 @task
 def create_dest_dir(c):
     ensure_directory_exists(dest_dir)

@@ -3,14 +3,68 @@ import shutil
 import logging
 from config import *
 from abstract_command import AbstractCommand
+from config import Config
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-class MoveJdkToEclipseCommand(AbstractCommand):
+import os
+
+class EclipseCommand(AbstractCommand):
+    def __init__(self, config: Config):
+        super().__init__(config)
+
+    def is_macos(self):
+        return self.config.system == "darwin"
+
+    def eclipse_directory(self):
+        """
+        Returns the Eclipse installation directory, accounting for the platform.
+        """
+        return self._eclipse_path(mac_subdirectory="Contents/Eclipse", non_mac_subdirectory="eclipse")
+
+    def eclipse_execution_directory(self):
+        """
+        Returns the directory containing the Eclipse executable, depending on the platform.
+        """
+        return self._eclipse_path(mac_subdirectory="Contents/MacOS", non_mac_subdirectory="eclipse")
+
+    def eclipse_package_directory(self):
+        """
+        Returns the root package directory where Eclipse is installed.
+        """
+        return self._eclipse_root_directory()
+
+    def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
+        """
+        Returns the full path to the Eclipse directory based on the platform and subdirectory.
+        """
+        eclipse_root = self._eclipse_root_directory()
+        subdirectory = mac_subdirectory if self.is_macos() else non_mac_subdirectory
+        eclipse_path = os.path.join(eclipse_root, subdirectory)
+
+        if not os.path.exists(eclipse_path):
+            raise FileNotFoundError(f"Eclipse path not found: {eclipse_path}")
+
+        return eclipse_path
+
+    def _eclipse_root_directory(self):
+        """
+        Finds the root directory where Eclipse is installed.
+        """
+        eclipse_root = os.path.join(self.config.dest_dir, self.config.eclipse_dir)
+        eclipse_dirs = [name for name in os.listdir(eclipse_root) 
+                        if name.startswith("Eclipse.app") if self.is_macos() else name.startswith("eclipse")]
+
+        if not eclipse_dirs:
+            raise FileNotFoundError(f"No Eclipse directory found for {'macOS' if self.is_macos() else 'non-macOS'}.")
+
+        return os.path.join(eclipse_root, eclipse_dirs[0])
+
+class MoveJdkToEclipseCommand(EclipseCommand):
     def execute(self):
         extracted_jdk_path = os.path.join(self.config.dest_dir, self.config.jdk_dir, self.config.version_file_jdk_short)
-        eclipse_dir = self.__find_eclipse_directory()
+        eclipse_dir = self.eclipse_directory()
 
         if not os.path.isdir(extracted_jdk_path):
             logging.error(f"Extracted JDK path {extracted_jdk_path} does not exist.")
@@ -23,13 +77,6 @@ class MoveJdkToEclipseCommand(AbstractCommand):
 
         return self.__move_directory(extracted_jdk_path, jdk_dest_path, "JDK")
 
-    def __find_eclipse_directory(self):
-        eclipse_root = os.path.join(self.config.dest_dir, self.config.eclipse_dir)
-        eclipse_dirs = [name for name in os.listdir(eclipse_root) if name.startswith("eclipse")]
-        if not eclipse_dirs:
-            raise FileNotFoundError("No Eclipse directory found.")
-        return os.path.join(eclipse_root, eclipse_dirs[0])
-
     def __move_directory(self, src, dest, name):
         try:
             shutil.move(src, dest)
@@ -39,62 +86,81 @@ class MoveJdkToEclipseCommand(AbstractCommand):
             logging.error(f"Moving {name} failed due to {e}")
             return False
 
-class RemoveUnnecessaryDirectoriesFilesCommand(AbstractCommand):
+class RemoveUnnecessaryDirectoriesFilesCommand(EclipseCommand):
     def execute(self):
         self.__remove_directory("org.eclipse.equinox.app")
         self.__remove_files(".log")
 
     def __remove_directory(self, directory):
-        dir_path = os.path.join(self.config.dest_dir, self.config.eclipse_dir, "eclipse", "configuration", directory)
+        dir_path = os.path.join(self.eclipse_directory(), "configuration", directory)
         if os.path.exists(dir_path):
             shutil.rmtree(dir_path)
             logging.info(f"Removed directory {dir_path}.")
 
     def __remove_files(self, file_extension):
-        config_dir = os.path.join(self.config.dest_dir, self.config.eclipse_dir, "eclipse", "configuration")
+        config_dir = os.path.join(self.eclipse_directory(), "configuration")
         files_to_remove = [f for f in os.listdir(config_dir) if f.endswith(file_extension)]
         for file in files_to_remove:
             os.remove(os.path.join(config_dir, file))
             logging.info(f"Removed file {file}.")
 
-class UpdateEclipseIniCommand(AbstractCommand):
+class UpdateEclipseIniCommand(EclipseCommand):
     def execute(self):
-        eclipse_ini = os.path.join(self.config.dest_dir, self.config.eclipse_dir, "eclipse", "eclipse.ini")
-        vm_path = 'jdk/bin/java'
+        eclipse_ini = os.path.join(self.eclipse_directory(), "eclipse.ini")
 
+        # Read the eclipse.ini file and preserve the newlines
         with open(eclipse_ini, 'r') as file:
             lines = file.readlines()
 
-        if '-vm' not in [line.strip() for line in lines]:
-            self.__update_eclipse_ini(lines, eclipse_ini, vm_path)
+        # Check if '-vm' exists in the file
+        if not any(line.strip() == '-vm' for line in lines):
+            self.__update_eclipse_ini(lines, eclipse_ini)
             logging.info("eclipse.ini file updated successfully.")
+        else:
+            logging.info("'-vm' option already exists in eclipse.ini.")
 
-    def __update_eclipse_ini(self, lines, ini_path, vm_path):
+    def __update_eclipse_ini(self, lines, ini_path):
+        """
+        Updates the eclipse.ini file with the '-vm' entry and the corresponding path.
+        Inserts it just before the '-vmargs' section.
+        """
         new_lines = []
         vm_inserted = False
+
         for line in lines:
-            new_lines.append(line)
+            # Insert '-vm' and the path just before '-vmargs'
             if not vm_inserted and line.strip() == '-vmargs':
-                new_lines.insert(-1, f'-vm\n{vm_path}\n')
+                if self.is_macos():
+                    vm_path = '../Eclipse/jdk/Contents/Home/lib/libjli.dylib'
+                else:
+                    vm_path = '../jdk/bin/java'
+
+                # Insert '-vm' and the path right before '-vmargs'
+                new_lines.append('-vm\n')
+                new_lines.append(f'{vm_path}\n')
                 vm_inserted = True
 
+            # Add the current line to the new list
+            new_lines.append(line)
+
+        # Write the updated lines back to the eclipse.ini file, preserving newlines
         with open(ini_path, 'w') as file:
             file.writelines(new_lines)
 
-class InstallEclipseComponentsCommand(AbstractCommand):
+class InstallEclipseComponentsCommand(EclipseCommand):
     def __init__(self, config, c):
         super().__init__(config)
         self.c = c
 
     def execute(self):
         self.__populate_cache()
-        
+
         for iu in self.config.config['eclipse']['install_units']:
             if self.is_installed(iu):
                 logging.info(f"{iu} is already installed.")
             else:
                 self.__install_component(iu)
-        
+
         logging.info("Eclipse components installation completed.")
 
     def is_installed(self, iu):
@@ -102,13 +168,10 @@ class InstallEclipseComponentsCommand(AbstractCommand):
             with open(self.config.installed_cache, 'r') as f:
                 installed_units = f.read().splitlines()
                 return any(iu == item.split('/')[0] for item in installed_units)
-        return False        
+        return False
 
     def __populate_cache(self):
-        if os.path.isfile(self.config.installed_cache):
-            os.remove(self.config.installed_cache)
-
-        eclipse_exec_dir = os.path.join(self.config.dest_dir, self.config.eclipse_dir, "eclipse")
+        eclipse_exec_dir = os.path.join(self.eclipse_execution_directory())
         result = self.c.run(
             f"{eclipse_exec_dir}/eclipse -nosplash -application org.eclipse.equinox.p2.director -listInstalledRoots",
             hide=True,
@@ -119,23 +182,24 @@ class InstallEclipseComponentsCommand(AbstractCommand):
             f.write(result.stdout)
 
     def __install_component(self, iu):
-        eclipse_exec_dir = os.path.join(self.config.dest_dir, self.config.eclipse_dir, "eclipse")
+        eclipse_exec_dir = self.eclipse_execution_directory()
+        eclipse_dir = self.eclipse_directory();
         logging.info(f"Installing {iu}...")
         result = self.c.run(
             f"{eclipse_exec_dir}/eclipse -nosplash "
             f"-application org.eclipse.equinox.p2.director "
             f"-repository {self.config.get_eclipse_url_string()} "
             f"-installIU {iu} "
-            f"-destination {eclipse_exec_dir} "
+            f"-destination {eclipse_dir} "
             f"-profile SDKProfile "
         )
         if result == 0:
             with open(self.config.installed_cache, 'a') as f:
                 f.write(f"{iu}\n")
 
-class PackageEclipseCommand(AbstractCommand):
+class PackageEclipseCommand(EclipseCommand):
     def execute(self):
-        eclipse_dir = os.path.join(self.config.dest_dir, self.config.eclipse_dir)
+        eclipse_dir = self.eclipse_package_directory()
         zip_filename = self.zip_file_name()
 
         if os.path.isfile(zip_filename):

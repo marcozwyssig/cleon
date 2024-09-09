@@ -14,14 +14,14 @@
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MySampleSoftware in einer Abbildung dargestellt:</db:para>
-				<db:mediaobject>
-					<db:imageobject>
-						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_software/BuildingBlockOverviewDiagram_Ebene_1__MySampleSoftware__SoftwareSystem___Whitebox_.png" format="PNG"/>
-					</db:imageobject>
-				 	<db:caption>
-				    		<db:para>Ebene 1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:para>
-				  	</db:caption>
-				</db:mediaobject>
+				<db:figure>
+				  <db:title>Ebene 1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software/BuildingBlockOverviewDiagram_Ebene_1__MySampleSoftware__SoftwareSystem___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MySampleSoftware tabellarisch aufgelistet:</db:para>
 				<db:informaltable style="HERMES 5">
 					<db:col width="40%" />
@@ -45,7 +45,7 @@
 			</db:section>
 			<db:section xml:id="ea.4c3402de-d579-11ee-903e-9f564e4de07e">
 				<db:title>MyComponent &lt;NamedComponent&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins MyComponent beschrieben.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins MyComponent beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c58c842-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.4c58c842-d579-11ee-903e-9f564e4de07e">

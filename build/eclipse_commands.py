@@ -53,8 +53,13 @@ class EclipseCommand(AbstractCommand):
         Finds the root directory where Eclipse is installed.
         """
         eclipse_root = os.path.join(self.config.dest_dir, self.config.eclipse_dir)
-        eclipse_dirs = [name for name in os.listdir(eclipse_root) 
-                        if name.startswith("Eclipse.app") if self.is_macos() else name.startswith("eclipse")]
+        
+        if self.is_macos():
+            # macOS: look for 'Eclipse.app'
+            eclipse_dirs = [name for name in os.listdir(eclipse_root) if name.startswith("Eclipse.app")]
+        else:
+            # Non-macOS: look for 'eclipse'
+            eclipse_dirs = [name for name in os.listdir(eclipse_root) if name.startswith("eclipse")]
 
         if not eclipse_dirs:
             raise FileNotFoundError(f"No Eclipse directory found for {'macOS' if self.is_macos() else 'non-macOS'}.")

@@ -69,6 +69,14 @@ def package_eclipse(c):
     log_message("Packaging Eclipse...")
     PackageEclipseCommand(config).execute()
 
+@task(pre=[package_eclipse])
+def install_eclipse(c, install_directory: str):
+    if not install_directory:
+        raise ValueError("Please provide an install directory.")
+    log_message(f"Installing Eclipse to {install_directory}...")
+    InstallEclipseCommand(config, install_directory).execute()
+
+
 # # Upload task
 # @task(pre=[package_eclipse])
 # def upload_to_github(c):

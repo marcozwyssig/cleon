@@ -33,7 +33,13 @@ class EclipseCommand(AbstractCommand):
         """
         Returns the root package directory where Eclipse is installed.
         """
-        return self._eclipse_root_directory()
+        if self.is_macos:
+            return os.path.dirname(self._eclipse_root_directory())
+        else:
+            return self._eclipse_root_directory()
+
+    def zip_file_name(self):
+        return os.path.join(self.config.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
 
     def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
         """
@@ -65,6 +71,7 @@ class EclipseCommand(AbstractCommand):
             raise FileNotFoundError(f"No Eclipse directory found for {'macOS' if self.is_macos() else 'non-macOS'}.")
 
         return os.path.join(eclipse_root, eclipse_dirs[0])
+    
 
 class MoveJdkToEclipseCommand(EclipseCommand):
     def execute(self):
@@ -110,6 +117,18 @@ class RemoveUnnecessaryDirectoriesFilesCommand(EclipseCommand):
             logging.info(f"Removed file {file}.")
 
 class UpdateEclipseIniCommand(EclipseCommand):
+    REQUIRED_VM_OPTIONS = {
+        'macos': '../Eclipse/jdk/Contents/Home/lib/libjli.dylib',
+        'default': '../jdk/bin/java'
+    }
+
+    REQUIRED_JVM_OPTIONS = {
+        '-Xmx': '16g',
+        '-Xms': '256m',
+        '-XX:+UseG1GC': None,
+        '-XX:+UseStringDeduplication': None
+    }
+
     def execute(self):
         eclipse_ini = os.path.join(self.eclipse_directory(), "eclipse.ini")
 
@@ -126,31 +145,43 @@ class UpdateEclipseIniCommand(EclipseCommand):
 
     def __update_eclipse_ini(self, lines, ini_path):
         """
-        Updates the eclipse.ini file with the '-vm' entry and the corresponding path.
-        Inserts it just before the '-vmargs' section.
+        Updates the eclipse.ini file with the '-vm' entry and the required JVM options.
+        Inserts the '-vm' just before the '-vmargs' section and JVM options after '-vmargs'.
         """
         new_lines = []
         vm_inserted = False
+        vmargs_found = False
+
+        # Get the correct VM path based on the OS
+        vm_path = REQUIRED_VM_OPTIONS['macos'] if self.is_macos() else REQUIRED_VM_OPTIONS['default']
 
         for line in lines:
             # Insert '-vm' and the path just before '-vmargs'
             if not vm_inserted and line.strip() == '-vmargs':
-                if self.is_macos():
-                    vm_path = '../Eclipse/jdk/Contents/Home/lib/libjli.dylib'
-                else:
-                    vm_path = '../jdk/bin/java'
-
-                # Insert '-vm' and the path right before '-vmargs'
                 new_lines.append('-vm\n')
                 new_lines.append(f'{vm_path}\n')
                 vm_inserted = True
 
-            # Add the current line to the new list
             new_lines.append(line)
+            
+            # Detect if '-vmargs' is reached, so we can append JVM options
+            if line.strip() == '-vmargs':
+                vmargs_found = True
+
+        # Add the JVM options if '-vmargs' exists
+        if vmargs_found:
+            for option, value in REQUIRED_JVM_OPTIONS.items():
+                if not any(option in line for line in lines):  # Avoid duplicates
+                    if value:
+                        new_lines.append(f'{option}={value}\n')
+                    else:
+                        new_lines.append(f'{option}\n')
 
         # Write the updated lines back to the eclipse.ini file, preserving newlines
         with open(ini_path, 'w') as file:
             file.writelines(new_lines)
+
+        logging.info("Added '-vm' and required JVM options successfully.")
 
 class InstallEclipseComponentsCommand(EclipseCommand):
     def __init__(self, config, c):
@@ -216,9 +247,6 @@ class PackageEclipseCommand(EclipseCommand):
 
         return self.__create_zip_archive(eclipse_dir, zip_filename)
 
-    def zip_file_name(self):
-        return os.path.join(self.config.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
-
     def __remove_unnecessary_files(self):
         remove_unnecessary_cmd = RemoveUnnecessaryDirectoriesFilesCommand(self.config)
         remove_unnecessary_cmd.execute()
@@ -230,4 +258,33 @@ class PackageEclipseCommand(EclipseCommand):
             return True
         except shutil.Error as e:
             logging.error(f"Error: Packaging failed due to {e}")
+            return False
+
+class InstallEclipseCommand(EclipseCommand):
+    def __init__(self, config, install_directory: str):
+        super().__init__(config)
+        self.install_directory = install_directory
+
+    def execute(self):
+        eclipse_dir = self.eclipse_package_directory()
+        zip_filename = self.zip_file_name()
+
+        if not os.path.exists(self.install_directory):
+            print(f"Creating {self.install_directory}...")
+            os.makedirs(self.install_directory)
+        else:
+            print(f"{self.install_directory} already exists.")
+            shutil.rmtree(self.install_directory)
+            print(f"Deleted {self.install_directory}.")
+            os.makedirs(self.install_directory)
+            print(f"Created {self.install_directory}.")
+
+        full_zip_filename = os.path.join(self.install_directory, zip_filename)        
+        try:
+            print(f"Extracting {zip_filename} to {self.install_directory}...")
+            shutil.unpack_archive(full_zip_filename, self.install_directory)
+            print(f"Extracted {zip_filename} to {self.install_directory} successfully.")
+            return True
+        except shutil.Error as e:
+            logging.error(f"Error: Extracting failed due to {e}")
             return False

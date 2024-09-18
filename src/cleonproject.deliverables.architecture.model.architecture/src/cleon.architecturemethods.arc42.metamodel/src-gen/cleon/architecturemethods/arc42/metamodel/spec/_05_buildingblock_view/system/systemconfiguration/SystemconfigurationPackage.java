@@ -70,6 +70,7 @@ public class SystemconfigurationPackage {
   public static final Resource SystemConfiguration_properties = new Resource("cdc66c41-d5b6-11ec-ad12-8d6f8e00bc94");
   public static final Resource SystemConfiguration_destinationCommunications = new Resource("9e5574db-5764-11ed-9e7a-7366730de801");
   public static final Resource SystemConfiguration_sourceCommunications = new Resource("5d404f83-5366-11ef-80ff-efa8d0dbdc0e");
+  public static final Resource SystemConfigurationInterface_contextualGroupName = new Resource("6e3b6d90-75ba-11ef-9e73-d7a16eeaf5fd");
   
   /* Begin Protected Region [[user]] */
   
@@ -90,4 +91,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,hm2DzO9YUwBJKBByZ1zHX4UmwW8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,2KKpysdcS7d1F0BYLXazIVCvFpA=] */

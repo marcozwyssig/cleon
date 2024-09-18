@@ -40,6 +40,15 @@ public class SystemConfigurationInterface extends DynamicResource implements ISy
   }
 
   @Override
+  public java.lang.String selectContextualGroupName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_contextualGroupName);
+  }
+    
+  public void setContextualGroupName(java.lang.String contextualGroupName) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_contextualGroupName, contextualGroupName);
+  }
+
+  @Override
   public java.lang.Integer selectVlan() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_vlan);
   }
@@ -105,6 +114,7 @@ public class SystemConfigurationInterface extends DynamicResource implements ISy
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.ContextQualifierAware_contextQualifier, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_contextualGroupName, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_vlan, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationInterface_interfaceInSecuritySubZone, visitor);
@@ -128,4 +138,4 @@ public class SystemConfigurationInterface extends DynamicResource implements ISy
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,55PdhQWhr6Bt2jN1T6l2daNzCyw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,CXQgQ1fJ3FRE0mEhI8PG/NaRC6Q=] */

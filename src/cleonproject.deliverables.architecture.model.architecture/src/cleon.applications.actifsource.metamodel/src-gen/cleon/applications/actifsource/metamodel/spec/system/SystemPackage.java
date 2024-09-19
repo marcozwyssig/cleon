@@ -12,6 +12,8 @@ public class SystemPackage {
   public static final Resource Packages_packages = new Resource("6bd735b4-46d0-11eb-b318-ab9601344039");
   public static final Resource FunctionSpace_aE_EclipseEcoSystem_Packages = new Resource("1da1c377-491a-11eb-9bd7-6114c4f17e0c");
   public static final Resource Package_usedIn = new Resource("1ecb4d61-d7b0-11ee-8935-7facceea0829");
+  public static final Resource UseSimpleNameAware = new Resource("0cc76cd4-7672-11ef-bdb9-ebb368e31a33");
+  public static final Resource UseSimpleNameAware_useSimpleName = new Resource("121a2fc7-7672-11ef-bdb9-ebb368e31a33");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +34,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system,CaZWAW8zr51kVbyG5MiYAvJSh+U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system,qCOKa98iyJ4cB9Ufml+DfDrjCJo=] */

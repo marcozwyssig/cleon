@@ -4,10 +4,15 @@
     <object statement-guid="734c4274-5a8f-11e7-9154-19d91477639a" type="resource" guid="98431561-d40b-11e5-8556-8f55ceb91287" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="74b4ac17-5a8f-11e7-9154-19d91477639a" type="literal">Documentation</object>
+    <object statement-guid="74b4ac17-5a8f-11e7-9154-19d91477639a" type="literal">ch.actifsource.enterprise</object>
   </predicate>
   <predicate guid="7dcc13e3-2635-11ea-8c59-871562e3b5c4">
+    <object statement-guid="fec02e43-767a-11ef-bdb9-ebb368e31a33" type="aggregate" guid="bb5d328d-5d85-11e7-b3de-5dfb634b4d92" />
+    <object statement-guid="fec07c64-767a-11ef-bdb9-ebb368e31a33" type="aggregate" guid="ba30f260-bb03-11ee-a55a-f11033c828b2" />
     <object statement-guid="b54a34ef-2636-11ea-8c59-871562e3b5c4" type="aggregate" guid="80b75125-5a8f-11e7-9154-19d91477639a" />
+  </predicate>
+  <predicate guid="121a2fc7-7672-11ef-bdb9-ebb368e31a33">
+    <object statement-guid="aed24577-767d-11ef-bdb9-ebb368e31a33" type="literal">true</object>
   </predicate>
 </resource>
 

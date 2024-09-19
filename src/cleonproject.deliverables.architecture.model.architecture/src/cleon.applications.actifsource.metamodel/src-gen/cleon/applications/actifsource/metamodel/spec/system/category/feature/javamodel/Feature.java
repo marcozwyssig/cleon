@@ -48,6 +48,15 @@ public class Feature extends DynamicResource implements IFeature {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.Boolean selectUseSimpleName() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.UseSimpleNameAware_useSimpleName);
+  }
+    
+  public void setUseSimpleName(java.lang.Boolean useSimpleName) {
+     _setSingleAttribute(cleon.applications.actifsource.metamodel.spec.system.SystemPackage.UseSimpleNameAware_useSimpleName, useSimpleName);
+  }
+
   // relations
   
   @Override
@@ -176,6 +185,7 @@ public class Feature extends DynamicResource implements IFeature {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.UseSimpleNameAware_useSimpleName, visitor);
     // relations
     _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IDiagram.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.Feature_diagram, visitor);
     _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.Feature_hasDependency, visitor);
@@ -215,4 +225,4 @@ public class Feature extends DynamicResource implements IFeature {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,9/PgCiqYEf6i9O5wIhuxvDZ4g8Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,4AfgYCP5AeDdUZr/Vy0e0a1tU64=] */

@@ -62,9 +62,6 @@ public class FunctionSpace_Project {
     @IDynamicResourceExtension.MethodId("88c4e02e-8e7d-11e8-bdd7-2510a77680f5")
     public java.lang.String GetActifSourceVersion();
 
-    @IDynamicResourceExtension.MethodId("231ce01b-d7c7-11ea-ae00-5518e944c256")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("ee7e9c00-d7c7-11ea-ae00-5518e944c256")
     public java.lang.String BuiltinFullBuildingBlockName();
 
@@ -267,4 +264,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,i8U3Eefrv79PvkwFL0mOtg3r1Yg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,KZvYlOXo2XFD9bo/SxmJsIzwhY0=] */

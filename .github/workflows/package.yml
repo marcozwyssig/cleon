@@ -1,0 +1,41 @@
+name: Package Eclipse for Windows, Linux and MacOS with x86_64 and arm64
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        arch: [x86_64, arm64]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python (or other environment if needed)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'  # Adapt depending on the environment
+
+      # Set up build tools based on the platform
+      - name: Init Build
+        run: |
+          if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
+            
+          elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
+            
+          elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+            
+          fi
+
+      - name: Build for ${{ matrix.arch }} architecture
+        run: |
+          invoke package-eclipse --cpu=${{ matrix.arch }} --os=${{ matrix.os }}

@@ -1,7 +1,20 @@
+from  import Config
 from config import *
 from github import Github
 import docker
 import os
+from abstract_command import AbstractCommand
+
+class GitHubCommand(AbstractCommand):
+    def __init__(self, config: Config):
+        super().__init__(config)
+
+class GitHubWofkflowCommand(GitHubCommand):
+    def __init__(self, config: Config):
+        super().__init__(config)
+
+    def execute(self):
+        
 
 class GitHubService:
     def __init__(self, dest_dir):

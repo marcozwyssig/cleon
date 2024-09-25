@@ -8,8 +8,6 @@ from config import Config
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-import os
-
 class EclipseCommand(AbstractCommand):
     def __init__(self, config: Config):
         super().__init__(config)

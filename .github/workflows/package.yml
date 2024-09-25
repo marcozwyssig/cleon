@@ -1,47 +1,60 @@
-name: Package Eclipse for Windows, Linux and MacOS with x86_64 and arm64
+name: Package Eclipse for Windows, Linux, and MacOS with x86_64 and arm64
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
-  build:
+  # Reusable steps for each OS
+  build-job-template:
+    runs-on: ${{ inputs.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
         arch: [x86_64, arm64]
-    runs-on: ${{ matrix.os }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           config: |
-            core.protectNTFS=false        
+            core.protectNTFS=false
 
-      - name: Set up Python (or other environment if needed)
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'  # Adapt depending on the environment
+          python-version: '3.12'
 
-      - name: Build for ${{ matrix.arch }} architecture
+      - name: Build for ${{ matrix.arch }} architecture on ${{ inputs.os }}
         run: |
           cd "${{ github.workspace }}/build"
-          if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
-            ./init.sh            
-          elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
-            ./init.ps1
-          elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+          if [[ "${{ inputs.os }}" == "ubuntu-latest" || "${{ inputs.os }}" == "macos-latest" ]]; then
             ./init.sh
+          elif [[ "${{ inputs.os }}" == "windows-latest" ]]; then
+            ./init.ps1
           fi
-
           ./myenv/bin/invoke package-eclipse
+
+  # Define the Linux job
+  build-linux:
+    uses: ./.github/workflows/build-job-template.yml
+    with:
+      os: ubuntu-latest
+
+  # Define the Windows job
+  build-windows:
+    needs: build-linux  # Ensures that this job waits for 'build-linux' to finish
+    uses: ./.github/workflows/build-job-template.yml
+    with:
+      os: windows-latest
+
+  # Define the macOS job
+  build-macos:
+    needs: build-windows  # Ensures that this job waits for 'build-windows' to finish
+    uses: ./.github/workflows/build-job-template.yml
+    with:
+      os: macos-latest

@@ -19,13 +19,13 @@ class EclipseCommand(AbstractCommand):
         """
         Returns the Eclipse installation directory, accounting for the platform.
         """
-        return self._eclipse_path(mac_subdirectory="Contents/Eclipse", non_mac_subdirectory="eclipse")
+        return self._eclipse_path(mac_subdirectory="Contents/Eclipse", non_mac_subdirectory="")
 
     def eclipse_execution_directory(self):
         """
         Returns the directory containing the Eclipse executable, depending on the platform.
         """
-        return self._eclipse_path(mac_subdirectory="Contents/MacOS", non_mac_subdirectory="eclipse")
+        return self._eclipse_path(mac_subdirectory="Contents/MacOS", non_mac_subdirectory="")
 
     def eclipse_package_directory(self):
         """
@@ -117,14 +117,14 @@ class RemoveUnnecessaryDirectoriesFilesCommand(EclipseCommand):
 class UpdateEclipseIniCommand(EclipseCommand):
     REQUIRED_VM_OPTIONS = {
         'macos': '../Eclipse/jdk/Contents/Home/lib/libjli.dylib',
-        'default': '../jdk/bin/java'
+        'default': 'jdk/bin/java'
     }
 
     REQUIRED_JVM_OPTIONS = {
-        '-Xmx': '16g',
-        '-Xms': '256m',
-        '-XX:+UseG1GC': None,
-        '-XX:+UseStringDeduplication': None
+        '-Xmx16g',
+        '-Xms256m',
+        '-XX:+UseG1GC',
+        '-XX:+UseStringDeduplication'
     }
 
     def execute(self):
@@ -168,12 +168,9 @@ class UpdateEclipseIniCommand(EclipseCommand):
 
         # Add the JVM options if '-vmargs' exists
         if vmargs_found:
-            for option, value in self.REQUIRED_JVM_OPTIONS.items():
+            for option in self.REQUIRED_JVM_OPTIONS:
                 if not any(option in line for line in lines):  # Avoid duplicates
-                    if value:
-                        new_lines.append(f'{option}={value}\n')
-                    else:
-                        new_lines.append(f'{option}\n')
+                    new_lines.append(f'{option}\n')
 
         # Write the updated lines back to the eclipse.ini file, preserving newlines
         with open(ini_path, 'w') as file:

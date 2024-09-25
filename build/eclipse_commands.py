@@ -207,7 +207,6 @@ class InstallEclipseComponentsCommand(EclipseCommand):
             print(f"The directory '{eclipse_dir}' already exists.")
 
     def execute(self):
-        self.__ensure_eclipse_user_home()
         self.__populate_cache()
 
         for iu in self.config.config['eclipse']['install_units']:
@@ -285,7 +284,6 @@ class InstallEclipseCommand(EclipseCommand):
         self.install_directory = install_directory
 
     def execute(self):
-        eclipse_dir = self.eclipse_package_directory()
         zip_filename = self.zip_file_name()
 
         if not os.path.exists(self.install_directory):

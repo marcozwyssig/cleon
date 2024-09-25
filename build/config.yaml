@@ -8,15 +8,26 @@ eclipse:
   base_url_eclipse: "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
   # ecd_plugin_repo_url: "https://ecd-plugin.github.io/update"
   install_units:
-    org.eclipse.pde.feature.group: "http://download.eclipse.org/releases/latest"
-    org.eclipse.emf.mwe2.runtime: "http://download.eclipse.org/releases/latest"
-    org.eclipse.emf.mwe.core: "http://download.eclipse.org/releases/latest"
-    org.eclipse.egit.feature.group: "http://download.eclipse.org/releases/latest"
-    org.eclipse.ui.browser: "http://download.eclipse.org/releases/latest"
-    org.eclipse.draw2d.feature.group: "http://download.eclipse.org/releases/latest"
-    org.eclipse.gef.feature.group: "http://download.eclipse.org/releases/latest"
-    org.eclipse.gmf.feature.group: "http://download.eclipse.org/releases/latest"
-    ch.actifsource.enterprise.feature.group: "https://updates.actifsource.com/updates-enterprise"
+    org.eclipse.pde.feature.group: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.emf.mwe2.runtime: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.emf.mwe.core: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.egit.feature.group: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.ui.browser: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.draw2d.feature.group: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.gef.feature.group: 
+      url: "http://download.eclipse.org/releases/latest"
+    org.eclipse.gmf.feature.group: 
+      url: "http://download.eclipse.org/releases/latest"
+    ch.actifsource.enterprise.feature.group: 
+      url: "https://updates.actifsource.com/updates-enterprise"
+      username: marco.zwyssig.ext@atos.net
+      password: LBkbCZ53tT
 
 system:
   temp_dir: null  # Uses system temp if null

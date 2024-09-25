@@ -145,7 +145,25 @@ class Config:
 
         # Add all unique URLs from install units
         for url in install_units.values():
-            urls.add(url)
+            username = url.get('username')
+            repo_url = url.get('url')
+            if username:
+                from urllib.parse import urlparse, urlunparse, quote
+                password = url.get('password')
+                parsed_url = urlparse(repo_url)
+                auth_part = f"{quote(username)}:{quote(password)}"
+                # Append credentials after the path
+                path_with_auth = f"{auth_part}@{parsed_url.netloc}"
+                repo_url = urlunparse((
+                    parsed_url.scheme,
+                    path_with_auth,
+                    parsed_url.path,
+                    parsed_url.params,
+                    parsed_url.query,
+                    parsed_url.fragment
+                ))
+
+            urls.add(repo_url)
 
         # Convert set to a list and sort
         return sorted(urls)  # Sort the URLs

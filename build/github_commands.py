@@ -9,12 +9,27 @@ class GitHubCommand(AbstractCommand):
     def __init__(self, config: Config):
         super().__init__(config)
 
+    def git_hub(self):
+        return Github(self.github_token)
+    
+    def git_hub_repository(self):
+        return self.git_hub.get_repo(self.github_repository)
+
 class GitHubWofkflowCommand(GitHubCommand):
     def __init__(self, config: Config):
         super().__init__(config)
 
     def execute(self):
-        
+        repo = self.git_hub_repository()
+
+        # Check if the file already exists
+        try:
+            contents = repo.get_contents(file_path, ref=branch)
+            repo.update_file(contents.path, commit_message, file_content, contents.sha, branch=branch)
+            print(f"Updated {file_path} in {repo_name} on branch {branch}.")
+        except:
+            repo.create_file(file_path, commit_message, file_content, branch=branch)
+            print(f"Created {file_path} in {repo_name} on branch {branch}.")
 
 class GitHubService:
     def __init__(self, dest_dir):
@@ -72,16 +87,3 @@ class GitHubService:
         print(f"Pushed Docker image {tagged_image} to GitHub Packages successfully.")
 
 
-    def create_or_update_workflow_file(github_token, repo_name, branch, commit_message, file_path, file_content):
-        # Initialize GitHub instance
-        g = Github(github_token)
-        repo = g.get_repo(repo_name)
-
-        # Check if the file already exists
-        try:
-            contents = repo.get_contents(file_path, ref=branch)
-            repo.update_file(contents.path, commit_message, file_content, contents.sha, branch=branch)
-            print(f"Updated {file_path} in {repo_name} on branch {branch}.")
-        except:
-            repo.create_file(file_path, commit_message, file_content, branch=branch)
-            print(f"Created {file_path} in {repo_name} on branch {branch}.")

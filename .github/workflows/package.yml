@@ -47,4 +47,5 @@ jobs:
 
       - name: Build for ${{ matrix.arch }} architecture
         run: |
+          cd "${{ github.workspace }}/build"
           invoke package-eclipse

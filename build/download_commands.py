@@ -34,11 +34,17 @@ class AbstractDownloadCommand(AbstractCommand):
         logging.info(f"Downloading {url} to {dest_dir}...")
         
         try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (compatible; DownloadScript/1.0)'
-            }
+            headers = {'User-Agent': 'Mozilla/5.0'}
             response = requests.get(url, stream=True, allow_redirects=True, headers=headers)
-            response.raise_for_status()
+            
+            if response.status_code == 403:
+                logging.error(f"Access forbidden when accessing {url}. The server returned a 403 status code.")
+                return False
+            elif response.status_code == 404:
+                logging.error(f"Resource not found at {url}. The server returned a 404 status code.")
+                return False
+            else:
+                response.raise_for_status()
             
             total_size = int(response.headers.get('content-length', 0))
             

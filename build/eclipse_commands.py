@@ -151,7 +151,7 @@ class UpdateEclipseIniCommand(EclipseCommand):
         vmargs_found = False
 
         # Get the correct VM path based on the OS
-        vm_path = REQUIRED_VM_OPTIONS['macos'] if self.is_macos() else REQUIRED_VM_OPTIONS['default']
+        vm_path = self.REQUIRED_VM_OPTIONS['macos'] if self.is_macos() else self.REQUIRED_VM_OPTIONS['default']
 
         for line in lines:
             # Insert '-vm' and the path just before '-vmargs'
@@ -168,7 +168,7 @@ class UpdateEclipseIniCommand(EclipseCommand):
 
         # Add the JVM options if '-vmargs' exists
         if vmargs_found:
-            for option, value in REQUIRED_JVM_OPTIONS.items():
+            for option, value in self.REQUIRED_JVM_OPTIONS.items():
                 if not any(option in line for line in lines):  # Avoid duplicates
                     if value:
                         new_lines.append(f'{option}={value}\n')

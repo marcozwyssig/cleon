@@ -35,7 +35,8 @@ class AbstractDownloadCommand(AbstractCommand):
         logging.info(f"Downloading {url} to {dest_dir}...")
         
         try:
-            response = requests.get(url, stream=True, allow_redirects=True)
+            headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+            response = requests.get(url, stream=True, allow_redirects=True, headers=headers)
             response.raise_for_status()
             
             total_size = int(response.headers.get('content-length', 0))

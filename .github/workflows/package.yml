@@ -33,7 +33,7 @@ jobs:
       # Set up build tools based on the platform
       - name: Init Build
         run: |
-          $GITHUB_WORKSPACE/cleon/build/init.sh
+          $GITHUB_WORKSPACE/build/init.sh
           if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
               
           elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then

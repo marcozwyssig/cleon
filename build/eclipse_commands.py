@@ -1,6 +1,8 @@
 import os
 import shutil
 import logging
+import zipfile
+
 from config import *
 from abstract_command import AbstractCommand
 from config import Config
@@ -183,7 +185,29 @@ class InstallEclipseComponentsCommand(EclipseCommand):
         super().__init__(config)
         self.c = c
 
+    def __ensure_eclipse_user_home(self):
+        home_dir = os.path.expanduser("~")
+        eclipse_dir = os.path.join(home_dir, '.eclipse')
+        current_dir = os.getcwd()  # Use current directory for the zip file
+        zip_file_name = '.eclipse.zip'
+
+        if not os.path.exists(eclipse_dir):
+            zip_file = os.path.join(current_dir, zip_file_name)
+            if not os.path.exists(zip_file):
+                raise FileNotFoundError(f"Zip file '{zip_file}' not found in the current directory.")
+            try:
+                with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+                    zip_ref.extractall(home_dir)
+                print(f"Extracted '{zip_file}' to '{home_dir}'.")
+            except zipfile.BadZipFile:
+                print(f"The file '{zip_file}' is not a valid zip file.")
+            except Exception as e:
+                print(f"An error occurred while extracting '{zip_file}': {e}")
+        else:
+            print(f"The directory '{eclipse_dir}' already exists.")
+
     def execute(self):
+        self.__ensure_eclipse_user_home()
         self.__populate_cache()
 
         for iu in self.config.config['eclipse']['install_units']:

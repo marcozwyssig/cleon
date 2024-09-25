@@ -24,6 +24,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          config: |
+            core.protectNTFS=false        
 
       - name: Set up Python (or other environment if needed)
         uses: actions/setup-python@v5

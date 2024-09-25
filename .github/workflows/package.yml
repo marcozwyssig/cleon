@@ -36,13 +36,13 @@ jobs:
       # Set up build tools based on the platform
       - name: Init Build
         run: |
-          cd $GITHUB_WORKSPACE/build
+          cd "${{ github.workspace }}/build"
           if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
-            init.sh
+            ./init.sh
           elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
-            init.ps1
+            ./init.ps1
           elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
-            init.sh
+            ./init.sh
           fi
 
       - name: Build for ${{ matrix.arch }} architecture

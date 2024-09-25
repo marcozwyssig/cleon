@@ -25,7 +25,6 @@ class AbstractDownloadCommand(AbstractCommand):
     
     @staticmethod
     def _download_file(url: str, dest_dir: str, filename: str) -> bool:
-        """Download a file from the specified URL to the destination directory."""
         local_filename = os.path.join(dest_dir, filename)
 
         if os.path.isfile(local_filename):
@@ -35,7 +34,9 @@ class AbstractDownloadCommand(AbstractCommand):
         logging.info(f"Downloading {url} to {dest_dir}...")
         
         try:
-            headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (compatible; DownloadScript/1.0)'
+            }
             response = requests.get(url, stream=True, allow_redirects=True, headers=headers)
             response.raise_for_status()
             
@@ -54,10 +55,13 @@ class AbstractDownloadCommand(AbstractCommand):
             
             logging.info(f"Download completed in {dest_dir} successfully.")
             return True
-        except requests.RequestException as e:
-            logging.error(f"Download failed due to: {e}")
+        except requests.HTTPError as e:
+            logging.error(f"HTTP error occurred: {e}")
             return False
-        
+        except Exception as e:
+            logging.error(f"An error occurred: {e}")
+            return False
+
     @staticmethod
     def _extract_file(filepath: str, dest_dir: str) -> bool:
         """Extract a tar.gz or zip file to the specified directory."""

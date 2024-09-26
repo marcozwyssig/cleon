@@ -37,6 +37,9 @@ class EclipseCommand(AbstractCommand):
             return os.path.dirname(self._eclipse_root_directory())
         else:
             return self._eclipse_root_directory()
+        
+    def jdk_target_directory(self):
+        return os.path.join(self.eclipse_directory(), "jdk")
 
     def zip_file_name(self):
         return os.path.join(self.config.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
@@ -76,13 +79,12 @@ class EclipseCommand(AbstractCommand):
 class MoveJdkToEclipseCommand(EclipseCommand):
     def execute(self):
         extracted_jdk_path = os.path.join(self.config.dest_dir, self.config.jdk_dir, self.config.version_file_jdk_short)
-        eclipse_dir = self.eclipse_directory()
 
         if not os.path.isdir(extracted_jdk_path):
             logging.error(f"Extracted JDK path {extracted_jdk_path} does not exist.")
             return False
 
-        jdk_dest_path = os.path.join(eclipse_dir, "jdk")
+        jdk_dest_path = self.jdk_target_directory();
         if os.path.isdir(jdk_dest_path) and os.listdir(jdk_dest_path):
             logging.info(f"{jdk_dest_path} already contains JDK, skipping move.")
             return True
@@ -185,26 +187,6 @@ class InstallEclipseComponentsCommand(EclipseCommand):
         super().__init__(config)
         self.c = c
 
-    def __ensure_eclipse_user_home(self):
-        home_dir = os.path.expanduser("~")
-        eclipse_dir = os.path.join(home_dir, '.eclipse')
-        current_dir = os.getcwd()  # Use current directory for the zip file
-        zip_file_name = '.eclipse.zip'
-
-        if not os.path.exists(eclipse_dir):
-            zip_file = os.path.join(current_dir, zip_file_name)
-            if not os.path.exists(zip_file):
-                raise FileNotFoundError(f"Zip file '{zip_file}' not found in the current directory.")
-            try:
-                with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-                    zip_ref.extractall(home_dir)
-                print(f"Extracted '{zip_file}' to '{home_dir}'.")
-            except zipfile.BadZipFile:
-                print(f"The file '{zip_file}' is not a valid zip file.")
-            except Exception as e:
-                print(f"An error occurred while extracting '{zip_file}': {e}")
-        else:
-            print(f"The directory '{eclipse_dir}' already exists.")
 
     def execute(self):
         self.__populate_cache()

@@ -21,7 +21,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="11.0.0"
 Export-Package: 
- cleon.common.glossary.metamodel.spec,
- cleon.common.glossary.metamodel.spec.javamodel,
+ cleon.common.glossary.metamodel.template.docbook,
  cleon.common.glossary.metamodel.template.asciidoc,
- cleon.common.glossary.metamodel.template.docbook
+ cleon.common.glossary.metamodel.spec,
+ cleon.common.glossary.metamodel.spec.javamodel

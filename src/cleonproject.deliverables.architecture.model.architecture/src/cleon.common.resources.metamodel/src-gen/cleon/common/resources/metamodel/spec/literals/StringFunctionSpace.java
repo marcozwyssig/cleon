@@ -71,7 +71,7 @@ public class StringFunctionSpace {
     @Override
     public java.lang.String convertToValidFileName(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7be8d784-0d5f-11e6-9f44-9d0000bae4df]] */
-      return stringLiteral.replaceAll("[^a-zA-Z0-9_-]", "_");
+      return stringLiteral.replaceAll("[^a-zA-Z0-9_\\\\\\\\/]", "_");
       /* End Protected Region   [[7be8d784-0d5f-11e6-9f44-9d0000bae4df]] */
     }
 

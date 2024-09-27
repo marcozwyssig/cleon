@@ -25,7 +25,7 @@ jobs:
       - name: Set Git Configuration
         if: ${{ runner.os == 'Windows' }}      
         run: |
-          git config core.protectNTFS false      
+          git config --global core.protectNTFS false      
       
       - name: Checkout code
         uses: actions/checkout@v4

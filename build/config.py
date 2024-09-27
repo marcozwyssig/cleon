@@ -156,11 +156,12 @@ class Config:
 
         # Add all unique URLs from install units
         for url in install_units.values():
-            username = url.get('username')
             repo_url = url.get('url')
-            if username:
+            username = url.get('username')
+            password = url.get('password')
+            if username and password:
                 from urllib.parse import urlparse, urlunparse, quote
-                password = url.get('password')
+                password = password
                 parsed_url = urlparse(repo_url)
                 auth_part = f"{quote(username)}:{quote(password)}"
                 # Append credentials after the path

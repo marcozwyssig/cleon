@@ -6,7 +6,7 @@ from eclipse_commands import *
 from docker_commands import *
 
 config = Config()
-dest_dir = Path(config.dest_dir)
+dest_dir = Path(config.directory_manager.dest_dir)
 
 def log_message(message):
     print(f"--> {message}")

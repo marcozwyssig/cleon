@@ -15,7 +15,7 @@ class EclipseCommand(AbstractCommand):
         super().__init__(config)
 
     def is_macos(self):
-        return self.config.system == "darwin"
+        return self.config.system_info.system == "darwin"
 
     def eclipse_directory(self):
         """
@@ -42,7 +42,7 @@ class EclipseCommand(AbstractCommand):
         return os.path.join(self.eclipse_directory(), "jdk")
 
     def zip_file_name(self):
-        return os.path.join(self.config.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
+        return os.path.join(self.config.directory_manager.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
 
     def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
         """
@@ -61,7 +61,7 @@ class EclipseCommand(AbstractCommand):
         """
         Finds the root directory where Eclipse is installed.
         """
-        eclipse_root = os.path.join(self.config.dest_dir, self.config.eclipse_dir)
+        eclipse_root = self.config.directory_manager.eclipse_dir
         
         if self.is_macos():
             # macOS: look for 'Eclipse.app'
@@ -78,7 +78,7 @@ class EclipseCommand(AbstractCommand):
 
 class MoveJdkToEclipseCommand(EclipseCommand):
     def execute(self):
-        extracted_jdk_path = os.path.join(self.config.dest_dir, self.config.jdk_dir, self.config.version_file_jdk_short)
+        extracted_jdk_path = os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.jdk_dir, self.config.versions["jdk_file_short"] .version_file_jdk_short)
 
         if not os.path.isdir(extracted_jdk_path):
             logging.error(f"Extracted JDK path {extracted_jdk_path} does not exist.")
@@ -192,7 +192,7 @@ class InstallEclipseComponentsCommand(EclipseCommand):
     def execute(self):
         self.__populate_cache()
 
-        for iu in self.config.get_eclipse_install_units(self.with_optional_components):
+        for iu in self.config.get_eclipse_url_processor(self.with_optional_components).get_eclipse_install_units():
             if self.is_installed(iu):
                 logging.info(f"{iu} is already installed.")
             else:
@@ -201,8 +201,8 @@ class InstallEclipseComponentsCommand(EclipseCommand):
         logging.info("Eclipse components installation completed.")
 
     def is_installed(self, iu):
-        if os.path.isfile(self.config.installed_cache):
-            with open(self.config.installed_cache, 'r') as f:
+        if os.path.isfile(self.config.directory_manager.installed_cache):
+            with open(self.config.directory_manager.installed_cache, 'r') as f:
                 installed_units = f.read().splitlines()
                 return any(iu == item.split('/')[0] for item in installed_units)
         return False
@@ -215,7 +215,7 @@ class InstallEclipseComponentsCommand(EclipseCommand):
             warn=True
         )
 
-        with open(self.config.installed_cache, 'w') as f:
+        with open(self.config.directory_manager.installed_cache, 'w') as f:
             f.write(result.stdout)
 
     def __install_component(self, iu):
@@ -231,7 +231,7 @@ class InstallEclipseComponentsCommand(EclipseCommand):
             f"-profile SDKProfile "
         )
         if result == 0:
-            with open(self.config.installed_cache, 'a') as f:
+            with open(self.config.directory_manager.installed_cache, 'a') as f:
                 f.write(f"{iu}\n")
 
 class PackageEclipseCommand(EclipseCommand):

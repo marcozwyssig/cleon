@@ -99,12 +99,12 @@ class DownloadJdkCommand(AbstractDownloadCommand):
 
     def download(self) -> bool:
         """Download the JDK file to the destination directory."""
-        return self._download_file(self.config.download_url_jdk, self.config.dest_dir, self.config.get_download_file_jdk())
+        return self._download_file(self.config.download_url_jdk, self.config.directory_manager.dest_dir, self.config.download_file_jdk)
 
     def extract(self) -> bool:
         """Extract the downloaded JDK file."""
-        jdk_filename = self.config.get_download_file_jdk()
-        return self._extract_file(os.path.join(self.config.dest_dir, jdk_filename), os.path.join(self.config.dest_dir, self.config.jdk_dir))
+        jdk_filename = self.config.download_file_jdk
+        return self._extract_file(os.path.join(self.config.directory_manager.dest_dir, jdk_filename), os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.jdk_dir))
 
 class DownloadEclipseCommand(AbstractDownloadCommand):
     def __init__(self, config: Config):
@@ -112,12 +112,12 @@ class DownloadEclipseCommand(AbstractDownloadCommand):
 
     def download(self) -> bool:
         """Download the Eclipse file to the destination directory."""
-        return self._download_file(self.config.download_url_eclipse, self.config.dest_dir, self.config.get_download_file_eclipse())
+        return self._download_file(self.config.download_url_eclipse, self.config.directory_manager.dest_dir, self.config.download_file_eclipse)
 
     def extract(self) -> bool:
         """Extract the downloaded Eclipse file."""
-        eclipse_filename = self.config.get_download_file_eclipse()
-        return self._extract_file(os.path.join(self.config.dest_dir, eclipse_filename), os.path.join(self.config.dest_dir, self.config.eclipse_dir))
+        eclipse_filename = self.config.download_file_eclipse
+        return self._extract_file(os.path.join(self.config.directory_manager.dest_dir, eclipse_filename), os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.eclipse_dir))
     
 
 class DownloadAntCommand(AbstractDownloadCommand):
@@ -125,9 +125,9 @@ class DownloadAntCommand(AbstractDownloadCommand):
         super().__init__(config)
 
     def download(self) -> bool:
-        return self._download_file(self.config.download_url_ant, self.config.dest_dir, self.config.get_download_file_ant())
+        return self._download_file(self.config.download_url_ant, self.config.directory_manager.dest_dir, self.config.download_file_ant)
 
     def extract(self) -> bool:
         """Extract the downloaded Ant file."""
-        ant_filename = self.config.get_download_file_ant()
-        return self._extract_file(os.path.join(self.config.dest_dir, ant_filename), os.path.join(self.config.dest_dir, self.config.ant_dir))
+        ant_filename = self.config.download_file_ant
+        return self._extract_file(os.path.join(self.config.directory_manager.dest_dir, ant_filename), os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.ant_dir))

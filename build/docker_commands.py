@@ -34,7 +34,7 @@ class BuildDockerImageCommand(AbstractCommand):
         """
 
     def create_docker_file(self, dockerfile_content: str) -> str:
-        dockerfile_path = os.path.join(self.config.dest_dir, "Dockerfile")
+        dockerfile_path = os.path.join(self.config.directory_manager.dest_dir, "Dockerfile")
         try:
             with open(dockerfile_path, 'w') as dockerfile:
                 dockerfile.write(dockerfile_content)
@@ -50,7 +50,7 @@ class BuildDockerImageCommand(AbstractCommand):
         dockerfile_path = self.create_docker_file(dockerfile_content)
 
         try:
-            client.images.build(path=self.config.dest_dir, dockerfile=dockerfile_path, tag=IMAGE_NAME, quiet=False)
+            client.images.build(path=self.config.directory_manager.dest_dir, dockerfile=dockerfile_path, tag=IMAGE_NAME, quiet=False)
             logger.info(f"Docker image {IMAGE_NAME} created.")
         except docker.errors.BuildError as e:
             logger.error(f"Failed to build Docker image: {e}")

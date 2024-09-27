@@ -1,10 +1,12 @@
 jdk:
+  api_url: "https://api.github.com/repos/ibmruntimes/semeru21-binaries/releases/latest"
   base_url_ibm_semeru: "https://github.com/ibmruntimes/semeru21-binaries/releases/download"
 
 ant:
   base_url_ant: "https://archive.apache.org/dist/ant/binaries/"
 
 eclipse:
+  api_url: "https://download.eclipse.org/eclipse/downloads/"
   base_url_eclipse: "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
   # ecd_plugin_repo_url: "https://ecd-plugin.github.io/update"
   install_units:

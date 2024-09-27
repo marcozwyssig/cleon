@@ -15,10 +15,10 @@ permissions:
 jobs:
   build:
     strategy:
-      max-parallel: 2  # This line ensures sequential execution
+      max-parallel: 1  # This line ensures sequential execution
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        arch: [x86_64, arm64]
+        arch: [x86_64, aarch64, arm64]
     runs-on: ${{ matrix.os }}
 
     steps:

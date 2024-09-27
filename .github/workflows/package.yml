@@ -38,7 +38,7 @@ jobs:
         run: |
           cd "${{ github.workspace }}/build"
           ./init.cmd
-          ./myenv/bin/invoke install-eclipse-components --no-with-optional package-eclipse
+          ./myenv/Scripts/invoke.exe install-eclipse-components --no-with-optional package-eclipse
 
       - name: Build for ${{ matrix.arch }} architecture
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'}}

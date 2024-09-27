@@ -18,21 +18,12 @@ class EclipseCommand(AbstractCommand):
         return self.config.system_info.system == "darwin"
 
     def eclipse_directory(self):
-        """
-        Returns the Eclipse installation directory, accounting for the platform.
-        """
         return self._eclipse_path(mac_subdirectory="Contents/Eclipse", non_mac_subdirectory="")
 
     def eclipse_execution_directory(self):
-        """
-        Returns the directory containing the Eclipse executable, depending on the platform.
-        """
         return self._eclipse_path(mac_subdirectory="Contents/MacOS", non_mac_subdirectory="")
 
     def eclipse_package_directory(self):
-        """
-        Returns the root package directory where Eclipse is installed.
-        """
         if self.is_macos:
             return os.path.dirname(self._eclipse_root_directory())
         else:
@@ -45,9 +36,6 @@ class EclipseCommand(AbstractCommand):
         return os.path.join(self.config.directory_manager.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
 
     def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
-        """
-        Returns the full path to the Eclipse directory based on the platform and subdirectory.
-        """
         eclipse_root = self._eclipse_root_directory()
         subdirectory = mac_subdirectory if self.is_macos() else non_mac_subdirectory
         eclipse_path = os.path.join(eclipse_root, subdirectory)
@@ -58,9 +46,6 @@ class EclipseCommand(AbstractCommand):
         return eclipse_path
 
     def _eclipse_root_directory(self):
-        """
-        Finds the root directory where Eclipse is installed.
-        """
         eclipse_root = self.config.directory_manager.eclipse_dir
         
         if self.is_macos():
@@ -78,7 +63,7 @@ class EclipseCommand(AbstractCommand):
 
 class MoveJdkToEclipseCommand(EclipseCommand):
     def execute(self):
-        extracted_jdk_path = os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.jdk_dir, self.config.versions["jdk_file_short"] .version_file_jdk_short)
+        extracted_jdk_path = os.path.join(self.config.directory_manager.jdk_dir, self.config.versions['jdk_file_short'])
 
         if not os.path.isdir(extracted_jdk_path):
             logging.error(f"Extracted JDK path {extracted_jdk_path} does not exist.")
@@ -158,7 +143,6 @@ class UpdateEclipseIniCommand(EclipseCommand):
         vm_path = self.REQUIRED_VM_OPTIONS['macos'] if self.is_macos() else self.REQUIRED_VM_OPTIONS['default']
 
         for line in lines:
-            # Insert '-vm' and the path just before '-vmargs'
             if not vm_inserted and line.strip() == '-vmargs':
                 new_lines.append('-vm\n')
                 new_lines.append(f'{vm_path}\n')
@@ -186,13 +170,12 @@ class InstallEclipseComponentsCommand(EclipseCommand):
     def __init__(self, config, c, with_optional_components: bool = True):
         super().__init__(config)
         self.c = c
-        self.with_optional_components = with_optional_components
-
+        self.eclipse_url_processor = self.config.get_eclipse_url_processor(with_optional_components)
 
     def execute(self):
         self.__populate_cache()
 
-        for iu in self.config.get_eclipse_url_processor(self.with_optional_components).get_eclipse_install_units():
+        for iu in self.eclipse_url_processor.get_eclipse_install_units():
             if self.is_installed(iu):
                 logging.info(f"{iu} is already installed.")
             else:
@@ -225,7 +208,7 @@ class InstallEclipseComponentsCommand(EclipseCommand):
         result = self.c.run(
             f"{eclipse_exec_dir}/eclipse -nosplash "
             f"-application org.eclipse.equinox.p2.director "
-            f"-repository {self.config.get_eclipse_url_string(self.with_optional_components)} "
+            f"-repository {self.eclipse_url_processor.get_eclipse_url_string()} "
             f"-installIU {iu} "
             f"-destination {eclipse_dir} "
             f"-profile SDKProfile "

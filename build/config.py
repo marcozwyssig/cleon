@@ -258,6 +258,11 @@ class DownloadManager:
         logger.info(f"Extracted filename from URL {url}: {filename}")
         return filename
 
+    @staticmethod
+    def get_filename_from_url_eclipse(url: str) -> str:
+        file = url.split('/')[-1]
+        return file.split('&')[0]
+
 
 class EclipseURLProcessor:
     """Processes Eclipse repository URLs, including authentication."""
@@ -265,26 +270,21 @@ class EclipseURLProcessor:
     def __init__(self, config: dict, with_optional: bool):
         self.config = config
         self.with_optional = with_optional
+        self.install_units = self.config['eclipse']['install_units'].copy()
 
-    def get_eclipse_install_units(self) -> Dict[str, dict]:
-        """Retrieves Eclipse install units, optionally excluding optional units."""
-        install_units = self.config['eclipse']['install_units'].copy()
         if not self.with_optional:
-            optional_keys = [k for k, v in install_units.items() if v.get('optional', False)]
+            optional_keys = [k for k, v in self.install_units.items() if v.get('optional', False)]
             for key in optional_keys:
                 logger.info(f"Skipping optional install unit: {key}")
-                install_units.pop(key)
-        return install_units
+                self.install_units.pop(key)
 
-    def get_eclipse_urls(self) -> List[str]:
+        self.url = self.__make_eclipse_urls()
+
+    def __make_eclipse_urls(self) -> List[str]:
         """Generates a list of Eclipse repository URLs."""
         urls = set()
-        base_url = self.config['eclipse'].get('base_url_eclipse')
-        if base_url:
-            urls.add(base_url)
-            logger.info(f"Added base Eclipse URL: {base_url}")
 
-        install_units = self.get_eclipse_install_units()
+        install_units = self.install_units
         for unit in install_units.values():
             repo_url = unit.get('url')
             username = unit.get('username')
@@ -309,13 +309,20 @@ class EclipseURLProcessor:
 
         return sorted(urls)
 
+    def get_eclipse_install_units(self) -> Dict[str, dict]:
+        """Retrieves Eclipse install units, optionally excluding optional units."""
+        return self.install_units
+
+    def get_eclipse_urls(self) -> List[str]:
+        """Returns a list of Eclipse repository URLs."""
+        return self.url
+
     def get_eclipse_url_string(self) -> str:
         """Returns a comma-separated string of Eclipse repository URLs."""
         urls = self.get_eclipse_urls()
         url_string = ",".join(urls)
         logger.info(f"Eclipse URL string: {url_string}")
         return url_string
-
 
 class Config:
     """Main configuration class that integrates all components."""
@@ -354,11 +361,11 @@ class Config:
         # Extract download filenames
         download_manager = DownloadManager()
         self.download_file_jdk = download_manager.get_filename_from_url(self.download_url_jdk)
-        self.download_file_eclipse = download_manager.get_filename_from_url(self.download_url_eclipse)
+        self.download_file_eclipse = download_manager.get_filename_from_url_eclipse(self.download_url_eclipse)
         self.download_file_ant = download_manager.get_filename_from_url(self.download_url_ant)
 
         # Setup directories
-        temp_dir = os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir())         
+        temp_dir = os.getenv('TEMP', self.config['system']['temp_dir'] or tempfile.gettempdir())
         dest_dir = os.path.join(temp_dir, self.config['system']['dest_dir'])
         eclipse_dir = os.path.join(dest_dir, self.config['system']['eclipse_dir'])
         jdk_dir = os.path.join(dest_dir, self.config['system']['jdk_dir'])

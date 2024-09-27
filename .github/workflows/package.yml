@@ -34,14 +34,16 @@ jobs:
           python-version: '3.12'
 
       - name: Build for ${{ matrix.arch }} architecture
+        if: ${{ matrix.os == 'windows-latest'}}
         run: |
           cd "${{ github.workspace }}/build"
-          if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
-            ./init.sh
-          elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
-            ./init.cmd
-          elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
-            ./init.sh
-          fi
-
+          ./init.cmd
           ./myenv/bin/invoke install-eclipse-components --no-with-optional package-eclipse
+
+      - name: Build for ${{ matrix.arch }} architecture
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'}}
+        run: |
+          cd "${{ github.workspace }}/build"
+          ./init.sh
+          ./myenv/bin/invoke install-eclipse-components --no-with-optional package-eclipse
+  

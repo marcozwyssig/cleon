@@ -3,6 +3,8 @@ name: Package Eclipse for Windows, Linux and MacOS with x86_64 and arm64
 on:
   push:
     branches: ["master"]
+    paths:
+      - 'build/**'  # Triggers the workflow only if changes are made in the build directory
   workflow_dispatch:
 
 permissions:
@@ -20,11 +22,13 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Set Git Configuration
+        if: ${{ runner.os == 'Windows' }}      
+        run: |
+          git config core.protectNTFS false      
+      
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          config: |
-            core.protectNTFS=false        
 
       - name: Set up Python (or other environment if needed)
         uses: actions/setup-python@v5
@@ -35,7 +39,7 @@ jobs:
         run: |
           cd "${{ github.workspace }}/build"
           if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
-            ./init.sh            
+            ./init.sh
           elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
             ./init.ps1
           elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then

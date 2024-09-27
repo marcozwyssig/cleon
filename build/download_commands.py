@@ -25,69 +25,69 @@ class AbstractDownloadCommand(AbstractCommand):
     def extract(self) -> bool:
         raise NotImplementedError("The extract method must be implemented by a subclass.")
     
-@staticmethod
-def _download_file(url: str, dest_dir: str, filename: str) -> bool:
-    local_filename = os.path.join(dest_dir, filename)
-    max_retries = 10
-    retry_delay = 15  # seconds
+    @staticmethod
+    def _download_file(url: str, dest_dir: str, filename: str) -> bool:
+        local_filename = os.path.join(dest_dir, filename)
+        max_retries = 10
+        retry_delay = 15  # seconds
 
-    if os.path.isfile(local_filename):
-        logging.info(f"{filename} already exists, skipping download.")
-        return True
+        if os.path.isfile(local_filename):
+            logging.info(f"{filename} already exists, skipping download.")
+            return True
 
-    logging.info(f"Downloading {url} to {dest_dir}...")
+        logging.info(f"Downloading {url} to {dest_dir}...")
 
-    session = requests.Session()
-    session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+        session = requests.Session()
+        session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
 
-    for attempt in range(1, max_retries + 1):
-        try:
-            with session.get(url, stream=True, allow_redirects=True, timeout=30) as response:
-                if response.status_code == 403:
-                    logging.warning(f"Attempt {attempt}: Access forbidden when accessing {url}. Retrying in {retry_delay} seconds...")
-                    if attempt == max_retries:
-                        logging.error(f"Failed to download {url} after {max_retries} attempts due to 403 Forbidden.")
+        for attempt in range(1, max_retries + 1):
+            try:
+                with session.get(url, stream=True, allow_redirects=True, timeout=30) as response:
+                    if response.status_code == 403:
+                        logging.warning(f"Attempt {attempt}: Access forbidden when accessing {url}. Retrying in {retry_delay} seconds...")
+                        if attempt == max_retries:
+                            logging.error(f"Failed to download {url} after {max_retries} attempts due to 403 Forbidden.")
+                            return False
+                        time.sleep(retry_delay)
+                        continue
+                    elif response.status_code == 404:
+                        logging.error(f"Resource not found at {url}. The server returned a 404 status code.")
                         return False
-                    time.sleep(retry_delay)
-                    continue
-                elif response.status_code == 404:
-                    logging.error(f"Resource not found at {url}. The server returned a 404 status code.")
-                    return False
-                else:
-                    response.raise_for_status()
+                    else:
+                        response.raise_for_status()
 
-                total_size = int(response.headers.get('content-length', 0))
-                block_size = 8192  # 8 Kibibytes
+                    total_size = int(response.headers.get('content-length', 0))
+                    block_size = 8192  # 8 Kibibytes
 
-                with open(local_filename, 'wb') as f, tqdm(
-                    desc=filename,
-                    total=total_size,
-                    unit='iB',
-                    unit_scale=True,
-                    unit_divisor=1024,
-                ) as bar:
-                    for chunk in response.iter_content(chunk_size=block_size):
-                        if chunk:  # filter out keep-alive new chunks
-                            f.write(chunk)
-                            bar.update(len(chunk))
+                    with open(local_filename, 'wb') as f, tqdm(
+                        desc=filename,
+                        total=total_size,
+                        unit='iB',
+                        unit_scale=True,
+                        unit_divisor=1024,
+                    ) as bar:
+                        for chunk in response.iter_content(chunk_size=block_size):
+                            if chunk:  # filter out keep-alive new chunks
+                                f.write(chunk)
+                                bar.update(len(chunk))
 
-                logging.info(f"Download completed successfully and saved to {local_filename}.")
-                return True
+                    logging.info(f"Download completed successfully and saved to {local_filename}.")
+                    return True
 
-        except requests.HTTPError as e:
-            logging.error(f"HTTP error occurred on attempt {attempt}: {e}")
-        except requests.RequestException as e:
-            logging.error(f"Request exception on attempt {attempt}: {e}")
-        except Exception as e:
-            logging.error(f"An unexpected error occurred on attempt {attempt}: {e}")
+            except requests.HTTPError as e:
+                logging.error(f"HTTP error occurred on attempt {attempt}: {e}")
+            except requests.RequestException as e:
+                logging.error(f"Request exception on attempt {attempt}: {e}")
+            except Exception as e:
+                logging.error(f"An unexpected error occurred on attempt {attempt}: {e}")
 
-        if attempt < max_retries:
-            logging.info(f"Retrying in {retry_delay} seconds...")
-            time.sleep(retry_delay)
+            if attempt < max_retries:
+                logging.info(f"Retrying in {retry_delay} seconds...")
+                time.sleep(retry_delay)
 
-    # If all retries fail
-    logging.error(f"All {max_retries} attempts to download {url} have failed.")
-    return False
+        # If all retries fail
+        logging.error(f"All {max_retries} attempts to download {url} have failed.")
+        return False
 
     @staticmethod
     def _extract_file(filepath: str, dest_dir: str) -> bool:

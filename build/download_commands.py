@@ -29,7 +29,7 @@ class AbstractDownloadCommand(AbstractCommand):
     def _download_file(url: str, dest_dir: str, filename: str) -> bool:
         local_filename = os.path.join(dest_dir, filename)
         max_retries = 10
-        retry_delay = 5  # seconds
+        retry_delay = 15  # seconds
 
         if os.path.isfile(local_filename):
             logging.info(f"{filename} already exists, skipping download.")

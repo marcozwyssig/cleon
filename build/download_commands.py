@@ -25,12 +25,6 @@ class AbstractDownloadCommand(AbstractCommand):
     def extract(self) -> bool:
         raise NotImplementedError("The extract method must be implemented by a subclass.")
     
- import os
-import logging
-import time
-import requests
-from tqdm import tqdm
-
 @staticmethod
 def _download_file(url: str, dest_dir: str, filename: str) -> bool:
     local_filename = os.path.join(dest_dir, filename)

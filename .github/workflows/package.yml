@@ -39,7 +39,7 @@ jobs:
           if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
             ./init.sh
           elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
-            ./init.ps1
+            ./init.cmd
           elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
             ./init.sh
           fi

@@ -42,4 +42,4 @@ jobs:
             ./init.sh
           fi
 
-          ./myenv/bin/invoke package-eclipse
+          ./myenv/bin/invoke install-eclipse-components --no-with-optional package-eclipse

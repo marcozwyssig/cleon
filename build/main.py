@@ -11,7 +11,7 @@ def main():
     ctx = Context()
 
     # Execute the download_file task
-    install_eclipse_components(ctx)
+    install_eclipse_components(ctx, False)
     
 if __name__ == '__main__':
     main()

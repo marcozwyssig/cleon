@@ -1,4 +1,4 @@
-from invoke import task
+from invoke import *
 from pathlib import Path
 from config import Config
 from download_commands import *
@@ -60,9 +60,9 @@ def update_eclipse_ini(c):
     UpdateEclipseIniCommand(config).execute()
 
 @task(pre=[update_eclipse_ini])
-def install_eclipse_components(c):
+def install_eclipse_components(c, with_optional: bool = True):
     log_message("Installing Eclipse components...")
-    InstallEclipseComponentsCommand(config, c).execute()
+    InstallEclipseComponentsCommand(config, c, with_optional).execute()
 
 @task(pre=[install_eclipse_components])
 def package_eclipse(c):

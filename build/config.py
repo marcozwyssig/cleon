@@ -130,14 +130,25 @@ class Config:
         return file.split('&')[0]
 
     def __key(self) -> str:
+
         return (self.system, self.architecture)
 
-    def get_eclipse_url(self) -> str:
+    def get_eclipse_install_units(self, with_optional: bool) -> dict:
+        install_units = self.config['eclipse']['install_units']
+        install_units_items = install_units.copy()
+        for key, value in install_units_items.items():
+            optional = value.get('optional', False)
+            if not with_optional and optional:
+                print(f"Skipping optional install unit: {key}")
+                install_units.pop(key)
+        return install_units
+
+    def get_eclipse_url(self, with_optional: bool) -> str:
         # Extract the base URL and install unit URLs
         urls = set()
         eclipse_data = self.config.get("eclipse", {})
         base_url_eclipse = eclipse_data.get("base_url_eclipse")
-        install_units = eclipse_data.get("install_units", {})
+        install_units = self.get_eclipse_install_units(with_optional)
 
         # Add base URL to the set if present
         if base_url_eclipse:
@@ -168,5 +179,5 @@ class Config:
         # Convert set to a list and sort
         return sorted(urls)  # Sort the URLs
     
-    def get_eclipse_url_string(self) -> str:
-        return ",".join(self.get_eclipse_url())
+    def get_eclipse_url_string(self, with_optional: bool) -> str:
+        return ",".join(self.get_eclipse_url(with_optional))

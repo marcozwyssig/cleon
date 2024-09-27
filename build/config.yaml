@@ -27,6 +27,7 @@ eclipse:
     ch.actifsource.enterprise.feature.group: 
       url: "https://updates.actifsource.com/updates-enterprise"
       username: marco.zwyssig.ext@atos.net
+      optional: true
 
 system:
   temp_dir: null  # Uses system temp if null

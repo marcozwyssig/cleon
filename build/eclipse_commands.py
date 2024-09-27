@@ -183,15 +183,16 @@ class UpdateEclipseIniCommand(EclipseCommand):
         logging.info("Added '-vm' and required JVM options successfully.")
 
 class InstallEclipseComponentsCommand(EclipseCommand):
-    def __init__(self, config, c):
+    def __init__(self, config, c, with_optional_components: bool = True):
         super().__init__(config)
         self.c = c
+        self.with_optional_components = with_optional_components
 
 
     def execute(self):
         self.__populate_cache()
 
-        for iu in self.config.config['eclipse']['install_units']:
+        for iu in self.config.get_eclipse_install_units(self.with_optional_components):
             if self.is_installed(iu):
                 logging.info(f"{iu} is already installed.")
             else:
@@ -224,7 +225,7 @@ class InstallEclipseComponentsCommand(EclipseCommand):
         result = self.c.run(
             f"{eclipse_exec_dir}/eclipse -nosplash "
             f"-application org.eclipse.equinox.p2.director "
-            f"-repository {self.config.get_eclipse_url_string()} "
+            f"-repository {self.config.get_eclipse_url_string(self.with_optional_components)} "
             f"-installIU {iu} "
             f"-destination {eclipse_dir} "
             f"-profile SDKProfile "

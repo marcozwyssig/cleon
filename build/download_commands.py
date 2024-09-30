@@ -24,7 +24,7 @@ class AbstractDownloadCommand(AbstractCommand):
 
     def extract(self) -> bool:
         raise NotImplementedError("The extract method must be implemented by a subclass.")
-    
+
     @staticmethod
     def _download_file(url: str, dest_dir: str, filename: str) -> bool:
         local_filename = os.path.join(dest_dir, filename)
@@ -95,7 +95,7 @@ class AbstractDownloadCommand(AbstractCommand):
         if os.path.isdir(dest_dir) and os.listdir(dest_dir):
             logging.info(f"{dest_dir} already contains extracted content, skipping extraction.")
             return True
-        
+
         logging.info(f"Extracting {filepath} to {dest_dir}...")
         try:
             if filepath.endswith(".tar.gz"):
@@ -113,7 +113,7 @@ class AbstractDownloadCommand(AbstractCommand):
             logging.error(f"Extraction failed due to: {e}")
             return False
 
-    
+
 class DownloadJdkCommand(AbstractDownloadCommand):
     def __init__(self, config: Config):
         super().__init__(config)
@@ -133,13 +133,16 @@ class DownloadEclipseCommand(AbstractDownloadCommand):
 
     def download(self) -> bool:
         """Download the Eclipse file to the destination directory."""
-        return self._download_file(self.config.download_url_eclipse, self.config.directory_manager.dest_dir, self.config.download_file_eclipse)
+        download_urls = self.config.download_url_eclipse
+        for url in download_urls:
+            if self._download_file(url, self.config.directory_manager.dest_dir, self.config.download_file_eclipse):
+                return True
+        return False
 
     def extract(self) -> bool:
         """Extract the downloaded Eclipse file."""
         eclipse_filename = self.config.download_file_eclipse
         return self._extract_file(os.path.join(self.config.directory_manager.dest_dir, eclipse_filename), os.path.join(self.config.directory_manager.dest_dir, self.config.directory_manager.eclipse_dir))
-    
 
 class DownloadAntCommand(AbstractDownloadCommand):
     def __init__(self, config: Config):

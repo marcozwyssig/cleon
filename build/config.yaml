@@ -8,6 +8,10 @@ ant:
 eclipse:
   api_url: "https://download.eclipse.org/eclipse/downloads/"
   base_url_eclipse: "https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/"
+  mirrors:
+    - https://eclipse.mirror.liteserver.nl/eclipse/downloads/drops4/
+    - https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/eclipse/downloads/drops4/
+
   # ecd_plugin_repo_url: "https://ecd-plugin.github.io/update"
   install_units:
     org.eclipse.pde.feature.group: 

@@ -216,10 +216,11 @@ class URLBuilder:
         logger.info(f"JDK download URL constructed: {download_url}")
         return download_url
 
-    def get_eclipse_download_url(self) -> str:
-        """Constructs the Eclipse download URL."""
+    def get_eclipse_download_urls(self) -> List[str]:
+        """Constructs a list of Eclipse download URLs using the primary base URL and mirrors."""
         key = self.get_key()
         base_url = self.config['eclipse']['base_url_eclipse']
+        mirrors = self.config['eclipse']['mirrors']
         latest_version = self.versions['eclipse']['version']
         latest_date = self.versions['eclipse']['date']
 
@@ -232,12 +233,24 @@ class URLBuilder:
         }
 
         if key not in download_files_eclipse:
-            logger.error(f"Unsupported OS or architecture: {self.system_info.system} {self.system_info.architecture}")
-            raise RuntimeError(f"Unsupported OS or architecture: {self.system_info.system} {self.system_info.architecture}")
+            error_msg = f"Unsupported OS or architecture: {self.system_info.system} {self.system_info.architecture}"
+            logger.error(error_msg)
+            raise RuntimeError(error_msg)
 
-        download_url = f"{base_url}{download_files_eclipse[key]}&r=1"
-        logger.info(f"Eclipse download URL constructed: {download_url}")
-        return download_url
+        download_path = download_files_eclipse[key]
+
+        # Construct the primary download URL with the query parameter
+        primary_url = f"{base_url}{download_path}&r=1"
+
+        # Construct mirror download URLs (assuming mirrors don't require the query parameter)
+        mirror_urls = [f"{mirror}{download_path}" for mirror in mirrors]
+
+        # Combine all URLs into a single list
+        download_urls = [primary_url] + mirror_urls
+
+        logger.info(f"Eclipse download URLs constructed: {download_urls}")
+        return download_urls
+
 
     def get_ant_download_url(self) -> str:
         """Constructs the Ant download URL."""
@@ -259,10 +272,13 @@ class DownloadManager:
         return filename
 
     @staticmethod
-    def get_filename_from_url_eclipse(url: str) -> str:
+    def get_filename_from_url_eclipse(urls: List[str]) -> str:
+        """Extracts the filename from a list of Eclipse URLs."""
+        if not urls:
+            return ""
+        url = urls[0] # Primary URL
         file = url.split('/')[-1]
         return file.split('&')[0]
-
 
 class EclipseURLProcessor:
     """Processes Eclipse repository URLs, including authentication."""
@@ -355,7 +371,7 @@ class Config:
         # Build download URLs
         url_builder = URLBuilder(self.config, self.system_info, self.versions)
         self.download_url_jdk = url_builder.get_jdk_download_url()
-        self.download_url_eclipse = url_builder.get_eclipse_download_url()
+        self.download_url_eclipse = url_builder.get_eclipse_download_urls()
         self.download_url_ant = url_builder.get_ant_download_url()
 
         # Extract download filenames

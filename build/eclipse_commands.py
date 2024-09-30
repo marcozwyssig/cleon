@@ -33,7 +33,7 @@ class EclipseCommand(AbstractCommand):
         return os.path.join(self.eclipse_directory(), "jdk")
 
     def zip_file_name(self):
-        return os.path.join(self.config.directory_manager.dest_dir, f"eclipse_{self.config.system}_{self.config.architecture}_{self.config.latest_eclipse_version}_{self.config.version_jdk}.zip")
+        return os.path.join(self.config.directory_manager.dest_dir, f"eclipse_{self.config.system_info.system}_{self.config.system_info.architecture}_{self.config.versions['eclipse']['version']}_{self.config.versions['jdk']}.zip")
 
     def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
         eclipse_root = self._eclipse_root_directory()
@@ -239,7 +239,6 @@ class PackageEclipseCommand(EclipseCommand):
         try:
             shutil.make_archive(zip_filename.replace('.zip', ''), 'zip', src_dir)
             logging.info(f"Packaged Eclipse into {zip_filename} successfully.")
-            return True
         except shutil.Error as e:
             logging.error(f"Error: Packaging failed due to {e}")
             return False

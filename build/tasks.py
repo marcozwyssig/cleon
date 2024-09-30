@@ -48,7 +48,6 @@ def download_and_extract_ant(c):
     log_message("Downloading and extracting Ant...")
     DownloadAntCommand(config).execute()
 
-# Installation tasks
 @task(pre=[download_and_extract_jdk, download_and_extract_eclipse])
 def move_jdk_to_eclipse(c):
     log_message("Moving JDK to Eclipse...")

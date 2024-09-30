@@ -286,10 +286,11 @@ class EclipseURLProcessor:
     def __init__(self, config: dict, with_optional: bool):
         self.config = config
         self.with_optional = with_optional
-        self.install_units = self.config['eclipse']['install_units'].copy()
+        self.install_units = self.config['eclipse']['install_units']
 
         if not self.with_optional:
-            optional_keys = [k for k, v in self.install_units.items() if v.get('optional', False)]
+            install_units = self.install_units.copy()
+            optional_keys = [k for k, v in install_units.items() if v.get('optional', False)]
             for key in optional_keys:
                 logger.info(f"Skipping optional install unit: {key}")
                 self.install_units.pop(key)
@@ -319,9 +320,10 @@ class EclipseURLProcessor:
                         parsed_url.fragment
                     ))
                     logger.info(f"Added authenticated Eclipse URL: {repo_url}")
-                else:
+
+                if not repo_url in urls:
                     logger.info(f"Added Eclipse URL: {repo_url}")
-                urls.add(repo_url)
+                    urls.add(repo_url)
 
         return sorted(urls)
 

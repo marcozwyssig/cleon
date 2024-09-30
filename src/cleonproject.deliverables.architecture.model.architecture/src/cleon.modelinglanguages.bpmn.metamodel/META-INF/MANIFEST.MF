@@ -21,13 +21,13 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="11.0.0"
 Export-Package: 
- cleon.modelinglanguages.bpmn.metamodel.spec.organisational.role,
- cleon.modelinglanguages.bpmn.metamodel.spec.organisational.role.javamodel,
- cleon.modelinglanguages.bpmn.metamodel.spec.organisational.unit,
- cleon.modelinglanguages.bpmn.metamodel.spec.organisational.unit.javamodel,
+ cleon.modelinglanguages.bpmn.metamodel.spec,
+ cleon.modelinglanguages.bpmn.metamodel.spec.javamodel,
  cleon.modelinglanguages.bpmn.metamodel.spec.organigram,
  cleon.modelinglanguages.bpmn.metamodel.spec.organigram.javamodel,
  cleon.modelinglanguages.bpmn.metamodel.spec.organisational,
  cleon.modelinglanguages.bpmn.metamodel.spec.organisational.javamodel,
- cleon.modelinglanguages.bpmn.metamodel.spec,
- cleon.modelinglanguages.bpmn.metamodel.spec.javamodel
+ cleon.modelinglanguages.bpmn.metamodel.spec.organisational.role,
+ cleon.modelinglanguages.bpmn.metamodel.spec.organisational.role.javamodel,
+ cleon.modelinglanguages.bpmn.metamodel.spec.organisational.unit,
+ cleon.modelinglanguages.bpmn.metamodel.spec.organisational.unit.javamodel

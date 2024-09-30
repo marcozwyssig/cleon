@@ -17,7 +17,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="11.0.0"
 Export-Package: 
- cleon.common.actifsource.metamodel.templatelanguage,
+ cleon.common.actifsource.metamodel.refactoring,
  cleon.common.actifsource.metamodel.template.generator,
  cleon.common.actifsource.metamodel.template.generator.javamodel,
- cleon.common.actifsource.metamodel.refactoring
+ cleon.common.actifsource.metamodel.templatelanguage

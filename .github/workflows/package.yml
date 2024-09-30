@@ -1,4 +1,4 @@
-name: Package Eclipse for Windows, Linux and MacOS with x86_64 and arm64
+name: Package Eclipse for Windows, Linux and MacOS
 
 on:
   push:
@@ -15,10 +15,9 @@ permissions:
 jobs:
   build:
     strategy:
-      max-parallel: 1  # This line ensures sequential execution
+      # max-parallel: 3  # This line ensures sequential execution
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        arch: [x86_64, aarch64, arm64]
+        os: [ubuntu-latest, macos-15-large, macos-15, windows-latest]  # Defined specific images
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -33,17 +32,16 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Build for ${{ matrix.arch }} architecture
-        if: ${{ matrix.os == 'windows-latest'}}
+      - name: Build for Windows
+        if: ${{ matrix.os == 'windows-latest' }}
         run: |
           cd "${{ github.workspace }}/build"
           ./init.cmd
           ./myenv/Scripts/invoke.exe install-eclipse-components --no-with-optional package-eclipse
 
-      - name: Build for ${{ matrix.arch }} architecture
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'}}
+      - name: Build for Linux/MacOS
+        if: ${{ matrix.os != 'windows-latest' }}
         run: |
           cd "${{ github.workspace }}/build"
           ./init.sh
           ./myenv/bin/invoke install-eclipse-components --no-with-optional package-eclipse
-  

@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
     strategy:
-      # max-parallel: 3  # This line ensures sequential execution
+      max-parallel: 1  # This line ensures sequential execution
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]  # Defined specific images
     runs-on: ${{ matrix.os }}

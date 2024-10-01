@@ -259,8 +259,7 @@ class URLBuilder:
         download_url = f"{base_url}/{ant_version}"
         logger.info(f"Ant download URL constructed: {download_url}")
         return download_url
-
-
+    
 class DownloadManager:
     """Handles operations related to download URLs."""
 
@@ -368,6 +367,7 @@ class Config:
         eclipse_version, eclipse_date = eclipse_fetcher.get_latest_version_and_date()
         versions['eclipse']['version'] = eclipse_version
         versions['eclipse']['date'] = eclipse_date
+
         self.versions = versions
 
         # Build download URLs
@@ -399,6 +399,7 @@ class Config:
             installed_cache=installed_cache
         )
         self.directory_manager = directory_manager
+        versions['eclipse']['zip_file_name'] = os.path.join(self.directory_manager.dest_dir, f"eclipse_{self.system_info.system}_{self.system_info.architecture}_{self.versions['eclipse']['version']}_{self.versions['jdk']}.zip")
 
         logger.info("Configuration setup completed.")
 

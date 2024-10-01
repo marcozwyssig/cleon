@@ -33,7 +33,7 @@ class EclipseCommand(AbstractCommand):
         return os.path.join(self.eclipse_directory(), "jdk")
 
     def zip_file_name(self):
-        return os.path.join(self.config.directory_manager.dest_dir, f"eclipse_{self.config.system_info.system}_{self.config.system_info.architecture}_{self.config.versions['eclipse']['version']}_{self.config.versions['jdk']}.zip")
+        return self.config.versions['eclipse']['zip_file_name']
 
     def _eclipse_path(self, mac_subdirectory: str, non_mac_subdirectory: str):
         eclipse_root = self._eclipse_root_directory()

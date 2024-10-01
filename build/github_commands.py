@@ -1,4 +1,3 @@
-from  import Config
 from config import *
 from github import Github
 import docker
@@ -15,21 +14,6 @@ class GitHubCommand(AbstractCommand):
     def git_hub_repository(self):
         return self.git_hub.get_repo(self.github_repository)
 
-class GitHubWofkflowCommand(GitHubCommand):
-    def __init__(self, config: Config):
-        super().__init__(config)
-
-    def execute(self):
-        repo = self.git_hub_repository()
-
-        # Check if the file already exists
-        try:
-            contents = repo.get_contents(file_path, ref=branch)
-            repo.update_file(contents.path, commit_message, file_content, contents.sha, branch=branch)
-            print(f"Updated {file_path} in {repo_name} on branch {branch}.")
-        except:
-            repo.create_file(file_path, commit_message, file_content, branch=branch)
-            print(f"Created {file_path} in {repo_name} on branch {branch}.")
 
 class GitHubService:
     def __init__(self, dest_dir):
@@ -85,5 +69,37 @@ class GitHubService:
                 print(log['error'])
 
         print(f"Pushed Docker image {tagged_image} to GitHub Packages successfully.")
+
+
+class UploadDockerImageCommand(AbstractCommand):
+    def execute(self):
+        client = docker.from_env()
+        try:
+            image = client.images.get(IMAGE_NAME)
+        except docker.errors.ImageNotFound as e:
+            logger.error(f"Docker image {IMAGE_NAME} not found: {e}")
+            raise
+
+        repo_name = f'{self.config.config["GITHUB_DOCKER_REGISTRY"]}/{self.config.config["GITHUB_REPOSITORY"]}'
+        tagged_image = f"{repo_name}:{self.config.system}-{self.config.architecture}"
+
+        try:
+            image.tag(tagged_image)
+            logger.info(f"Image tagged as {tagged_image}")
+
+            logger.info(f'Logging in to GitHub Docker registry as {self.config.config["github_username"]}...')
+            client.login(username=self.config.config["github_username"], password=self.config.config["github_token"], registry=self.config.config["GITHUB_DOCKER_REGISTRY"])
+
+            logger.info(f"Pushing Docker image {tagged_image} to GitHub Packages...")
+            push_logs = client.images.push(tagged_image, stream=True, decode=True)
+            for log in push_logs:
+                if 'status' in log:
+                    logger.info(log['status'])
+                elif 'error' in log:
+                    logger.error(log['error'])
+                    raise docker.errors.APIError(log['error'])
+        except docker.errors.APIError as e:
+            logger.error(f"Failed to upload Docker image: {e}")
+            raise        
 
 

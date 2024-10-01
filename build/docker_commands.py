@@ -14,11 +14,14 @@ class BuildDockerImageCommand(AbstractCommand):
     def __init__(self, config: Config):
         super().__init__(config)
 
+    def zip_file_name(self):
+        return self.config.versions['eclipse']['zip_file_name']
+
     def get_docker_file_content(self):
         zip_filename = os.path.basename(self.zip_file_name())
 
         return f"""
-        FROM ibm-semeru-runtimes:open-{self.config.version_jdk_docker}-jdk
+        FROM ibm-semeru-runtimes:open-{self.config.versions["jdk_docker"]}-jdk
 
         # Install utilities
         RUN apt-get update && apt-get -y install apt-utils tar gzip wget unzip
@@ -76,33 +79,3 @@ class CreateDockerContainerCommand(AbstractCommand):
             logger.error(f"Failed to create Docker container: {e}")
             raise
 
-class UploadDockerImageCommand(AbstractCommand):
-    def execute(self):
-        client = docker.from_env()
-        try:
-            image = client.images.get(IMAGE_NAME)
-        except docker.errors.ImageNotFound as e:
-            logger.error(f"Docker image {IMAGE_NAME} not found: {e}")
-            raise
-
-        repo_name = f'{self.config.config["GITHUB_DOCKER_REGISTRY"]}/{self.config.config["GITHUB_REPOSITORY"]}'
-        tagged_image = f"{repo_name}:{self.config.system}-{self.config.architecture}"
-
-        try:
-            image.tag(tagged_image)
-            logger.info(f"Image tagged as {tagged_image}")
-
-            logger.info(f'Logging in to GitHub Docker registry as {self.config.config["github_username"]}...')
-            client.login(username=self.config.config["github_username"], password=self.config.config["github_token"], registry=self.config.config["GITHUB_DOCKER_REGISTRY"])
-
-            logger.info(f"Pushing Docker image {tagged_image} to GitHub Packages...")
-            push_logs = client.images.push(tagged_image, stream=True, decode=True)
-            for log in push_logs:
-                if 'status' in log:
-                    logger.info(log['status'])
-                elif 'error' in log:
-                    logger.error(log['error'])
-                    raise docker.errors.APIError(log['error'])
-        except docker.errors.APIError as e:
-            logger.error(f"Failed to upload Docker image: {e}")
-            raise

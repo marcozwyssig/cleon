@@ -68,11 +68,11 @@ public class NamedLogicalNetwork extends DynamicResource implements INamedLogica
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -171,4 +171,4 @@ public class NamedLogicalNetwork extends DynamicResource implements INamedLogica
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fe550db0-7aca-11e9-a70f-4dc03941a024,3bCNGuhjMdhNfrLus/a023EnZ7w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fe550db0-7aca-11e9-a70f-4dc03941a024,ht3OyCBBPD5c4CcqO/rD02A1X+o=] */

@@ -59,11 +59,11 @@ public class Assessments extends DynamicResource implements IAssessments {
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -162,4 +162,4 @@ public class Assessments extends DynamicResource implements IAssessments {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,rd4vmSqEXd/dRZgI8ZidYTY4nKk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,qOzZJ6F/WflG2FhXflVxqq9oXQ4=] */

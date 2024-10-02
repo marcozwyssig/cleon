@@ -59,11 +59,11 @@ public class RealmForSystemConfiguration extends DynamicResource implements IRea
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -172,4 +172,4 @@ public class RealmForSystemConfiguration extends DynamicResource implements IRea
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,s/KnE5v1Ak8/hXHVlpMUbeY8xxk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,yXkkBb2eDDrEMtRol55uy56MVjk=] */

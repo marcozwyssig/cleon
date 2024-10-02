@@ -59,11 +59,11 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -147,4 +147,4 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,t3sNSPnRQjUeFjlPDfj4z2509OE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,BhH3tkAv6O5K6/OJVTw2qRHeZ/E=] */

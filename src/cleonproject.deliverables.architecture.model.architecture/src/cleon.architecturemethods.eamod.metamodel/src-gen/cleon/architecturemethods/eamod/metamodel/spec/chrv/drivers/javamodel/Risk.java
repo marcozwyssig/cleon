@@ -77,11 +77,11 @@ public class Risk extends DynamicResource implements IRisk {
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   @Override
@@ -191,4 +191,4 @@ public class Risk extends DynamicResource implements IRisk {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,093be8c9-a95a-11e5-bda2-a7fc3bd7c783,15Q0+PT5WtDur6zWBN10Jb+zURQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,093be8c9-a95a-11e5-bda2-a7fc3bd7c783,KpZLmoDGUKY31GMlI0/PHWVow90=] */

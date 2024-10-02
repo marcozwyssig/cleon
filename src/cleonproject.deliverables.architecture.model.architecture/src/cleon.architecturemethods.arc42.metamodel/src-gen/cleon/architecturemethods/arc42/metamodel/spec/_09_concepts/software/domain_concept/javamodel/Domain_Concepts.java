@@ -59,11 +59,11 @@ public class Domain_Concepts extends DynamicResource implements IDomain_Concepts
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -147,4 +147,4 @@ public class Domain_Concepts extends DynamicResource implements IDomain_Concepts
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,4mUuZr08uF5AhhEbd9B5zant5PY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,xl4nqogGY1rbVKyoMZ/yX+3G1Eg=] */

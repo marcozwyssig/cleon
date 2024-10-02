@@ -59,11 +59,11 @@ public class TestLevelForDynamicObject extends DynamicResource implements ITestL
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -157,4 +157,4 @@ public class TestLevelForDynamicObject extends DynamicResource implements ITestL
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9c8b82-5156-11e9-bb61-971a423d31e9,4hNo9wpkAL7h0gOaW2P9wxnUqe0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9c8b82-5156-11e9-bb61-971a423d31e9,WRs5RTo9l1h88XDXsyffRPCFOW0=] */

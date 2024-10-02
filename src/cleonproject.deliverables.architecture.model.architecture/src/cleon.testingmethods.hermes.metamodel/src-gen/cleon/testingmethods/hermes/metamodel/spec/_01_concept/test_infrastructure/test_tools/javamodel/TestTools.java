@@ -59,11 +59,11 @@ public class TestTools extends DynamicResource implements ITestTools {
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -147,4 +147,4 @@ public class TestTools extends DynamicResource implements ITestTools {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2ef13ac-eabf-11e5-8b69-0d7c429309c4,1D6hEn+iyECwf/lthZEeZXDH1ek=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2ef13ac-eabf-11e5-8b69-0d7c429309c4,6e4opf6rR8kmc/fcS72NjBSKdMo=] */

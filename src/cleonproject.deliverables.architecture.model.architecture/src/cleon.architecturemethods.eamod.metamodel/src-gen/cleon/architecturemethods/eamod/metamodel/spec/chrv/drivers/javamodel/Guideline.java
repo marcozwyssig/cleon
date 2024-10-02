@@ -77,11 +77,11 @@ public class Guideline extends DynamicResource implements IGuideline {
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   @Override
@@ -191,4 +191,4 @@ public class Guideline extends DynamicResource implements IGuideline {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,/3l3u1wuKwBhdUP6jFaSuJj38hk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,Sm8tJnE3cvGCKkPOoVLeccekTm0=] */

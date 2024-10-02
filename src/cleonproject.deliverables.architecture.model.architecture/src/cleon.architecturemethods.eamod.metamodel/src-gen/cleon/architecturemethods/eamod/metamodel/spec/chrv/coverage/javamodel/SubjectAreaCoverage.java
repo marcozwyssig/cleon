@@ -59,11 +59,11 @@ public class SubjectAreaCoverage extends DynamicResource implements ISubjectArea
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -172,4 +172,4 @@ public class SubjectAreaCoverage extends DynamicResource implements ISubjectArea
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92347cca-ece1-11e8-8149-8542373915bf,p2rIoHKhn+EyddRmwxbn8wTYZNI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92347cca-ece1-11e8-8149-8542373915bf,22XsxhKm5wt63SQvJ/moW1BEkR8=] */

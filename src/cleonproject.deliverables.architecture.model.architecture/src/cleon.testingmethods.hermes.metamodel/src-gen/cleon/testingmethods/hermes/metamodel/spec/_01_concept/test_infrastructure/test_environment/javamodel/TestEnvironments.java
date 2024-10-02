@@ -59,11 +59,11 @@ public class TestEnvironments extends DynamicResource implements ITestEnvironmen
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -147,4 +147,4 @@ public class TestEnvironments extends DynamicResource implements ITestEnvironmen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0681f04a-eabf-11e5-838a-6dbe7118dd11,pNg2uUw1WVutyZpZjzgxawQqz7s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0681f04a-eabf-11e5-838a-6dbe7118dd11,a4ZBogLdxYc3i+ulE0AG43SZMNI=] */

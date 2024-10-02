@@ -59,11 +59,11 @@ public class References extends DynamicResource implements IReferences {
 
   @Override
   public java.lang.String selectNoChapterPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
   public void setNoChapterPath(java.lang.String noChapterPath) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapterPath, noChapterPath);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
   // relations
@@ -147,4 +147,4 @@ public class References extends DynamicResource implements IReferences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f490007b-0765-11e9-9896-ef29067b4914,esZZlueIFvLkXbvrZg+CgOtxv84=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f490007b-0765-11e9-9896-ef29067b4914,ggipLs8bXSZfSoRoa7ljKquAse8=] */

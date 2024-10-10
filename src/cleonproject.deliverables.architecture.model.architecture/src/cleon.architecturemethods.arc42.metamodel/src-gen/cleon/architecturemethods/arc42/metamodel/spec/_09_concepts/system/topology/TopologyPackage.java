@@ -105,6 +105,8 @@ public class TopologyPackage {
   public static final Resource AbstractNumberedHostAware = new Resource("2fcaf1bb-6064-11ef-93d4-a95e039110df");
   public static final Resource InterfaceHost = new Resource("943f099f-6064-11ef-93d4-a95e039110df");
   public static final Resource FunctionSpace_aE_Topology_InterfaceHost = new Resource("24c4431d-6065-11ef-93d4-a95e039110df");
+  public static final Resource FunctionSpace_aE_Topology_AbstractNumberAware = new Resource("9b703d2a-86ed-11ef-b480-056cd62fd308");
+  public static final Resource AbstractHost_ip = new Resource("95804785-86fb-11ef-b480-056cd62fd308");
   
   /* Begin Protected Region [[user]] */
   
@@ -125,4 +127,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,mikp7GwldAAqEaMhvsUccX2hJ5s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,mPixRMFIAe29wJL87IYLbRtzVS0=] */

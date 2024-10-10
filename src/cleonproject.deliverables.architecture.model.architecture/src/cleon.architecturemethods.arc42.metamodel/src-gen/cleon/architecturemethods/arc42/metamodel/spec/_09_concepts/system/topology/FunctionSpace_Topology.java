@@ -396,6 +396,12 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("37f786aa-2fcb-11ef-94c3-df89315c4c49")
     public java.lang.String OverrideRN();
 
+    @IDynamicResourceExtension.MethodId("07818c92-86e8-11ef-b480-056cd62fd308")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
+
+    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -411,6 +417,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
     public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
+
+    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
 
   }
   
@@ -462,6 +471,16 @@ public class FunctionSpace_Topology {
       /* End Protected Region   [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
     }
 
+    @Override
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      /* Begin Protected Region [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
+    	if (abstractHost.selectIps().isEmpty()) {
+    		return null;
+    	}
+    	return abstractHost.selectIps().getFirst();
+      /* End Protected Region   [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
+    }
+
   }
   
   public static class AbstractHostFunctions {
@@ -482,6 +501,10 @@ public class FunctionSpace_Topology {
 
     public static java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).TypeName(abstractHost);
+    }
+
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).NetworkHostNode(abstractHost);
     }
 
   }
@@ -523,9 +546,6 @@ public class FunctionSpace_Topology {
   
   public static interface INumberedHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("945f300c-fb12-11e9-890e-576c93cea08c")
-    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost);
-
   }
   
   public static class NumberedHostFunctionsImpl implements INumberedHostFunctionsImpl {
@@ -534,26 +554,11 @@ public class FunctionSpace_Topology {
 
     private NumberedHostFunctionsImpl() {}
 
-    @Override
-    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost) {
-      /* Begin Protected Region [[945f300c-fb12-11e9-890e-576c93cea08c]] */
-      final var identifier = String.valueOf(numberedHost.selectIdentifier());
-      if (identifier.length() == 1) {
-      	return "0" + identifier;
-      }
-      return String.valueOf(numberedHost.selectIdentifier());
-      /* End Protected Region   [[945f300c-fb12-11e9-890e-576c93cea08c]] */
-    }
-
   }
   
   public static class NumberedHostFunctions {
 
     private NumberedHostFunctions() {}
-
-    public static java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.INumberedHost numberedHost) {
-      return DynamicResourceUtil.invoke(INumberedHostFunctionsImpl.class, NumberedHostFunctionsImpl.INSTANCE, numberedHost).ShortName(numberedHost);
-    }
 
   }
 
@@ -1114,6 +1119,50 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IAbstractNumberAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("47c52cbb-86ed-11ef-b480-056cd62fd308")
+    public java.lang.String FormatNumber();
+
+  }
+  
+  public static interface IAbstractNumberAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("47c52cbb-86ed-11ef-b480-056cd62fd308")
+    public java.lang.String FormatNumber(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractNumberAware abstractNumberAware);
+
+  }
+  
+  public static class AbstractNumberAwareFunctionsImpl implements IAbstractNumberAwareFunctionsImpl {
+
+    public static final IAbstractNumberAwareFunctionsImpl INSTANCE = new AbstractNumberAwareFunctionsImpl();
+
+    private AbstractNumberAwareFunctionsImpl() {}
+
+    @Override
+    public java.lang.String FormatNumber(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractNumberAware abstractNumberAware) {
+      /* Begin Protected Region [[47c52cbb-86ed-11ef-b480-056cd62fd308]] */
+        final var identifier = String.valueOf(abstractNumberAware.selectIdentifier());
+        if (identifier.length() == 1) {
+        	return "0" + identifier;
+        }
+        return String.valueOf(abstractNumberAware.selectIdentifier());
+
+      /* End Protected Region   [[47c52cbb-86ed-11ef-b480-056cd62fd308]] */
+    }
+
+  }
+  
+  public static class AbstractNumberAwareFunctions {
+
+    private AbstractNumberAwareFunctions() {}
+
+    public static java.lang.String FormatNumber(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractNumberAware abstractNumberAware) {
+      return DynamicResourceUtil.invoke(IAbstractNumberAwareFunctionsImpl.class, AbstractNumberAwareFunctionsImpl.INSTANCE, abstractNumberAware).FormatNumber(abstractNumberAware);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,IM8xP8GUJa5XkTFzkoKQgoIocpY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,s3nGCZ+ZLEH/SObSxW7IS1Wb11o=] */

@@ -14,6 +14,8 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
   public java.lang.Boolean selectIsVirtualized();
   
+  public java.lang.String selectIp();
+  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectInstanceOf();
@@ -24,4 +26,4 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,YUC3103ZyDIB9ajudDKl6t88nH0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,T5aSK6IuBZ5yPfy77LoYySQhBaA=] */

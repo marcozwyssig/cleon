@@ -38,6 +38,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
     public java.lang.String whitespacesToDash();
 
+    @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
+    public java.lang.String convertPascalCaseToSpacedString();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -59,6 +62,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
     public java.lang.String whitespacesToDash(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
+    public java.lang.String convertPascalCaseToSpacedString(final java.lang.String stringLiteral);
 
   }
   
@@ -110,6 +116,28 @@ public class StringFunctionSpace {
       /* End Protected Region   [[780f8f16-98fc-11ee-aa72-593773060f63]] */
     }
 
+    @Override
+    public java.lang.String convertPascalCaseToSpacedString(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[2a39baae-8afd-11ef-8165-6df4058a24dd]] */
+        if (stringLiteral == null || stringLiteral.isEmpty()) {
+            return stringLiteral;
+        }
+
+        StringBuilder result = new StringBuilder();
+        result.append(stringLiteral.charAt(0)); // start with the first character
+
+        for (int i = 1; i < stringLiteral.length(); i++) {
+            char currentChar = stringLiteral.charAt(i);
+            if (Character.isUpperCase(currentChar)) {
+                result.append(" "); // add space before the uppercase letter
+            }
+            result.append(currentChar);
+        }
+
+        return result.toString();
+      /* End Protected Region   [[2a39baae-8afd-11ef-8165-6df4058a24dd]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -138,6 +166,10 @@ public class StringFunctionSpace {
 
     public static java.lang.String whitespacesToDash(final java.lang.String stringLiteral) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespacesToDash(stringLiteral);
+    }
+
+    public static java.lang.String convertPascalCaseToSpacedString(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertPascalCaseToSpacedString(stringLiteral);
     }
 
   }
@@ -196,4 +228,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,LDl43lHvyo0Nx4bB20Wr8Booy28=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,sHH83aspwtg1wKsZhpGlLEIkOoM=] */

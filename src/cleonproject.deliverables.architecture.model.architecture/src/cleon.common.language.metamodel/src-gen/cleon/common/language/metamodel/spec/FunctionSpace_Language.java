@@ -23,8 +23,11 @@ import ch.actifsource.core.model.aspects.impl.SelectOverridableResourceAspectImp
 import ch.actifsource.util.character.StringUtil;
 import ch.actifsource.util.log.Logger;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
+import ch.actifsource.core.validation.aspects.AbstractValidationStrategyAspect;
 import ch.actifsource.core.javamodel.IClass;
 import ch.actifsource.core.selector.SelectSelectorUtil;
+import ch.actifsource.core.selector.code.ContentCodeEvaluator;
+import ch.actifsource.core.selector.code.IterationVariables;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -336,7 +339,7 @@ public class FunctionSpace_Language {
 
       // Obtain the language class for the shallow type
       final var languageClass = repository.getResource(ILanguageClass.class, shallowType);
-
+            
       // Check if the current language is different from the default language
       if (!currentLanguageCode.equals(languageClass.selectLanguageSettings().selectDefaultLanguage().selectCode())) {
       	// Find the translation key for the current language
@@ -353,19 +356,25 @@ public class FunctionSpace_Language {
       	if (languageKey != null) {
       		final ILanguageNameAspectTranslation languageTranslation = languageClass.selectTranslations().get(languageKey);
       		final var pack = Select.mainPackage(resource.getReadJobExecutor(), languageTranslation.selectTranslationValue().getResource());
-      		if( pack != null) {
+      		if( pack != null) {     			
+      			final var selector = Select.objectForRelationOrNull(resource.getReadJobExecutor(),
+      					LanguageClassPackage.LanguageNameAspectTranslation_translationValue, 
+      					languageTranslation.getResource());
+      			      			
       			final var value = SelectSelectorUtil.selectSelectorTextOrNull(
       					resource.getReadJobExecutor(),
-      					languageTranslation.selectTranslationValue().getResource(),
-      					languageTranslation.getResource());
-
+      					selector,
+      					resource.getResource());
+      			
       			// Return the translation value if it exists
       			if (value != null) {
-      				return value;
-      			}
-      		}
+      				return value; 
+      			}      		}
+      	} else {
+      		return "language code not been found";  
       	}
       }
+      
 
       // If the default language is used or no translation is found, try to get the simple name aspect translation
       final var declaredAspectImpl = resource.getReadJobExecutor().execute(
@@ -389,6 +398,8 @@ public class FunctionSpace_Language {
 
       // Return the simple name translation if the aspect is available, otherwise return a message
       return aspect == null ? "no aspect" : aspect.translateSimpleName(resource.getReadJobExecutor(), resource.getResource());
+ 
+ 
 
 
       /* End Protected Region   [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */

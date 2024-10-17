@@ -13,7 +13,7 @@ public abstract class AbstractSite extends DynamicResource implements IAbstractS
   
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> selectToMeAllowedToManage(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISite object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> selectToMeAllowedToManage(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_allowedToManage, object.getResource());
   }
   
@@ -26,4 +26,4 @@ public abstract class AbstractSite extends DynamicResource implements IAbstractS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,kDZhe4SrNv8pXYkTjStrMxk6LSI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,dO8tDGdZVurQK2VSFCeX6911cT0=] */

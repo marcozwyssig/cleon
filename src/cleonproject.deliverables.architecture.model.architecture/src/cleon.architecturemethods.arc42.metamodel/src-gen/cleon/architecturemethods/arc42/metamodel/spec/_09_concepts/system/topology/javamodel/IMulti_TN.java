@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topol
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IMulti_TN extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISite, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteComposition, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IOwnerAware {
+public interface IMulti_TN extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteOwnerAware, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteComposition {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e76727dd-e0ae-11ea-8946-bf83c1249a1c");
   
@@ -18,4 +18,4 @@ public interface IMulti_TN extends cleon.architecturemethods.arc42.metamodel.spe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e76727dd-e0ae-11ea-8946-bf83c1249a1c,IizMesSF/SoJ79pZJv6sXiePhUs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e76727dd-e0ae-11ea-8946-bf83c1249a1c,PO30oSsp+8QaXCauz9opVDdugyA=] */

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class TDM extends DynamicResource implements ITDM {
+public class RN_LogicalSite extends DynamicResource implements IRN_LogicalSite {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITDM> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITDM>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRN_LogicalSite> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRN_LogicalSite>() {
     
     @Override
-    public ITDM create() {
-      return new TDM();
+    public IRN_LogicalSite create() {
+      return new RN_LogicalSite();
     }
     
     @Override
-    public ITDM create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new TDM(resourceRepository, resource);
+    public IRN_LogicalSite create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new RN_LogicalSite(resourceRepository, resource);
     }
   
   };
 
-  public TDM() {
-    super(ITDM.TYPE_ID);
+  public RN_LogicalSite() {
+    super(IRN_LogicalSite.TYPE_ID);
   }
   
-  public TDM(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITDM.TYPE_ID);
+  public RN_LogicalSite(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IRN_LogicalSite.TYPE_ID);
   }
 
   // attributes
@@ -73,7 +73,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_allowAccessWith);
   }
 
-  public TDM setAllowAccessWith(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> allowAccessWith) {
+  public RN_LogicalSite setAllowAccessWith(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> allowAccessWith) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_allowAccessWith, allowAccessWith);
     return this;
   }
@@ -83,7 +83,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_allowedToManage);
   }
 
-  public TDM setAllowedToManage(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> allowedToManage) {
+  public RN_LogicalSite setAllowedToManage(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> allowedToManage) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_allowedToManage, allowedToManage);
     return this;
   }
@@ -93,7 +93,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getMultiMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSiteWithHosts_hosts);
   }
 
-  public TDM setHosts(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> hosts) {
+  public RN_LogicalSite setHosts(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> hosts) {
     _setMultiMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSiteWithHosts_hosts, hosts);
     return this;
   }
@@ -103,7 +103,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_networkSite);
   }
 
-  public TDM setNetworkSite(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite networkSite) {
+  public RN_LogicalSite setNetworkSite(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite networkSite) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSite_networkSite, networkSite);
     return this;
   }
@@ -113,7 +113,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public TDM setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public RN_LogicalSite setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -123,7 +123,7 @@ public class TDM extends DynamicResource implements ITDM {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSiteWithZone_zones);
   }
 
-  public TDM setZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> zones) {
+  public RN_LogicalSite setZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone> zones) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.TopologyPackage.AbstractSiteWithZone_zones, zones);
     return this;
   }
@@ -146,4 +146,4 @@ public class TDM extends DynamicResource implements ITDM {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d18bebe1-92b3-11e9-b2b4-f340ae70802c,AUXs4zekbLatXcsoBnui35JAT1A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,574d7320-8bcb-11ef-ae6c-d1c0dc132837,ECdinymDIdCPYQtn/fd/Ih8TSXE=] */

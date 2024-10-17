@@ -8,7 +8,7 @@ public interface IAbstractSite extends ch.actifsource.core.javamodel.INamedResou
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISite> selectAllowedToManage();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> selectAllowedToManage();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> selectAllowAccessWith();
   
@@ -16,4 +16,4 @@ public interface IAbstractSite extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,h6H6mvDfczfgka7nfv30ZNa5xD8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,l2P+80fMf4ze31pkTxppQ+gPBGk=] */

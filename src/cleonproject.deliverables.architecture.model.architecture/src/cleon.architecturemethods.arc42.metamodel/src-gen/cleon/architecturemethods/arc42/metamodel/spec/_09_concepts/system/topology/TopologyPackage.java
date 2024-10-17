@@ -12,7 +12,7 @@ public class TopologyPackage {
   public static final Resource AbstractSiteWithHosts_hosts = new Resource("f6adaa1c-9286-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractHost_instanceOf = new Resource("7c6b2ebe-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractNumberAware_number = new Resource("bccd44a8-9287-11e9-959e-8115c2f9e41e");
-  public static final Resource OwnerAware_owner = new Resource("dbfb2465-9287-11e9-959e-8115c2f9e41e");
+  public static final Resource AbstractSiteOwnerAware_owner = new Resource("dbfb2465-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractSiteWithZone_zones = new Resource("eb2fa145-928a-11e9-959e-8115c2f9e41e");
   public static final Resource TDM = new Resource("d18bebe1-92b3-11e9-b2b4-f340ae70802c");
   public static final Resource RN = new Resource("3615fdfa-936d-11e9-8139-e76b19cfb4bf");
@@ -58,8 +58,8 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_MBSHost = new Resource("cc7d5481-57c9-11ea-bd7a-4baf1bc87b3c");
   public static final Resource AbstractHost_overrideOwner = new Resource("10b9a1b5-57cb-11ea-bd7a-4baf1bc87b3c");
   public static final Resource FunctionSpace_aE_Topology_StringLiteral = new Resource("aa14669b-57cc-11ea-bd7a-4baf1bc87b3c");
-  public static final Resource Site = new Resource("617548ea-8940-11ea-b3b4-8399156700e6");
-  public static final Resource FunctionSpace_aE_Topology_Site = new Resource("63d20b76-8e02-11ea-b01b-6bc31a0e971d");
+  public static final Resource AbstractFunctionalSite = new Resource("617548ea-8940-11ea-b3b4-8399156700e6");
+  public static final Resource FunctionSpace_aE_Topology_AbstractFunctionalSite = new Resource("63d20b76-8e02-11ea-b01b-6bc31a0e971d");
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteComposition = new Resource("8a0694cd-b4a2-11ea-b938-599963fc0a84");
   public static final Resource AbstractClusterHost = new Resource("2e1dbcf7-da24-11ea-ae00-5518e944c256");
   public static final Resource AbstractNumberAware = new Resource("57d5abe9-da24-11ea-ae00-5518e944c256");
@@ -80,8 +80,8 @@ public class TopologyPackage {
   public static final Resource AbstractHost_alias = new Resource("c717bef0-2439-11eb-83b1-3d2a97975978");
   public static final Resource Topology_domainPrefix = new Resource("3ddcde7e-2a4f-11eb-903e-7d97d99d39d5");
   public static final Resource AbstractHost_isVirtualized = new Resource("3a6d9100-81a8-11eb-9038-39fb7f2a1e54");
-  public static final Resource OwnerAware = new Resource("ca3494bb-d50c-11ec-ad12-8d6f8e00bc94");
-  public static final Resource FunctionSpace_aE_Topology_OwnerAware = new Resource("99e14b22-d50e-11ec-ad12-8d6f8e00bc94");
+  public static final Resource AbstractSiteOwnerAware = new Resource("ca3494bb-d50c-11ec-ad12-8d6f8e00bc94");
+  public static final Resource FunctionSpace_aE_Topology_AbstractSiteOwnerAware = new Resource("99e14b22-d50e-11ec-ad12-8d6f8e00bc94");
   public static final Resource AbstractSite_allowAccessWith = new Resource("62f38fd7-d5c7-11ec-ad12-8d6f8e00bc94");
   public static final Resource FunctionSpace_aE_Topology_RemoteSite = new Resource("83f643d5-d5c9-11ec-ad12-8d6f8e00bc94");
   public static final Resource AbstractSiteWithFunctionID_skipHostGenerationFor = new Resource("db859f3a-e185-11ec-bbb2-25acacf78f08");
@@ -107,6 +107,9 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_InterfaceHost = new Resource("24c4431d-6065-11ef-93d4-a95e039110df");
   public static final Resource FunctionSpace_aE_Topology_AbstractNumberAware = new Resource("9b703d2a-86ed-11ef-b480-056cd62fd308");
   public static final Resource AbstractHost_ip = new Resource("95804785-86fb-11ef-b480-056cd62fd308");
+  public static final Resource RN_logicalSites = new Resource("258d8c78-8bcb-11ef-ae6c-d1c0dc132837");
+  public static final Resource RN_aE_LogicalSite = new Resource("574d7320-8bcb-11ef-ae6c-d1c0dc132837");
+  public static final Resource FunctionSpace_aE_Topology_RN_aE_LogicalSite = new Resource("a0e3f338-8bcb-11ef-ae6c-d1c0dc132837");
   
   /* Begin Protected Region [[user]] */
   
@@ -127,4 +130,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,mPixRMFIAe29wJL87IYLbRtzVS0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,OQphk36ywRh1+s3bbatput3Guj0=] */

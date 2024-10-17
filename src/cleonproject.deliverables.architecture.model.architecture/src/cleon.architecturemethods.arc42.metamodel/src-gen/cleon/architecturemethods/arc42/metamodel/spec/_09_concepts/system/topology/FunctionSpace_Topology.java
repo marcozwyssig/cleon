@@ -74,7 +74,7 @@ public class FunctionSpace_Topology {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsDistinct();
 
     @IDynamicResourceExtension.MethodId("0b8efbbd-19bb-11ea-bc72-af84f3c76c84")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISite> GetAllAllowedManage();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> GetAllAllowedManage();
 
     @IDynamicResourceExtension.MethodId("3b06b22a-1db6-11eb-9d1c-a7ed1ac99c53")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
@@ -877,7 +877,7 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface ISiteFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractFunctionalSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("66d2a1b5-8e02-11ea-b01b-6bc31a0e971d")
     public java.lang.String ShortName();
@@ -887,21 +887,21 @@ public class FunctionSpace_Topology {
 
   }
   
-  public static interface ISiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractFunctionalSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SiteFunctionsImpl implements ISiteFunctionsImpl {
+  public static class AbstractFunctionalSiteFunctionsImpl implements IAbstractFunctionalSiteFunctionsImpl {
 
-    public static final ISiteFunctionsImpl INSTANCE = new SiteFunctionsImpl();
+    public static final IAbstractFunctionalSiteFunctionsImpl INSTANCE = new AbstractFunctionalSiteFunctionsImpl();
 
-    private SiteFunctionsImpl() {}
+    private AbstractFunctionalSiteFunctionsImpl() {}
 
   }
   
-  public static class SiteFunctions {
+  public static class AbstractFunctionalSiteFunctions {
 
-    private SiteFunctions() {}
+    private AbstractFunctionalSiteFunctions() {}
 
   }
 
@@ -967,28 +967,28 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface IOwnerAwareFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSiteOwnerAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ed99b08f-1bac-11ec-b20c-778c25ff7c96")
     public java.lang.String Owner();
 
   }
   
-  public static interface IOwnerAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSiteOwnerAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class OwnerAwareFunctionsImpl implements IOwnerAwareFunctionsImpl {
+  public static class AbstractSiteOwnerAwareFunctionsImpl implements IAbstractSiteOwnerAwareFunctionsImpl {
 
-    public static final IOwnerAwareFunctionsImpl INSTANCE = new OwnerAwareFunctionsImpl();
+    public static final IAbstractSiteOwnerAwareFunctionsImpl INSTANCE = new AbstractSiteOwnerAwareFunctionsImpl();
 
-    private OwnerAwareFunctionsImpl() {}
+    private AbstractSiteOwnerAwareFunctionsImpl() {}
 
   }
   
-  public static class OwnerAwareFunctions {
+  public static class AbstractSiteOwnerAwareFunctions {
 
-    private OwnerAwareFunctions() {}
+    private AbstractSiteOwnerAwareFunctions() {}
 
   }
 
@@ -1163,6 +1163,49 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IRN_LogicalSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ab6e9dfb-8bcb-11ef-ae6c-d1c0dc132837")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith();
+
+    @IDynamicResourceExtension.MethodId("032f37fc-8bcc-11ef-ae6c-d1c0dc132837")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology Topology();
+
+    @IDynamicResourceExtension.MethodId("0598565c-8bd1-11ef-ae6c-d1c0dc132837")
+    public java.lang.String SiteName();
+
+  }
+  
+  public static interface IRN_LogicalSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("ab6e9dfb-8bcb-11ef-ae6c-d1c0dc132837")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN_LogicalSite rN_LogicalSite);
+
+  }
+  
+  public static class RN_LogicalSiteFunctionsImpl implements IRN_LogicalSiteFunctionsImpl {
+
+    public static final IRN_LogicalSiteFunctionsImpl INSTANCE = new RN_LogicalSiteFunctionsImpl();
+
+    private RN_LogicalSiteFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN_LogicalSite rN_LogicalSite) {
+      return null;
+    }
+
+  }
+  
+  public static class RN_LogicalSiteFunctions {
+
+    private RN_LogicalSiteFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN_LogicalSite rN_LogicalSite) {
+      return DynamicResourceUtil.invoke(IRN_LogicalSiteFunctionsImpl.class, RN_LogicalSiteFunctionsImpl.INSTANCE, rN_LogicalSite).AllowAccessWith(rN_LogicalSite);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,s3nGCZ+ZLEH/SObSxW7IS1Wb11o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,cA80OS2bxGwnXyEsVeOBfUHNSpM=] */

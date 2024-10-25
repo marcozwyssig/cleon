@@ -31,12 +31,12 @@ public class MultilingualDescriptionWithLanguageSettings extends DynamicResource
   // attributes
   
   @Override
-  public java.lang.String selectCurrentLanguageCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment);
   }
     
-  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  public void setCurrentLanguageCodeFromSystemEnvironment(java.lang.String currentLanguageCodeFromSystemEnvironment) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, currentLanguageCodeFromSystemEnvironment);
   }
 
   @Override
@@ -84,7 +84,7 @@ public class MultilingualDescriptionWithLanguageSettings extends DynamicResource
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
@@ -93,4 +93,4 @@ public class MultilingualDescriptionWithLanguageSettings extends DynamicResource
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33e3da3-cd44-11ec-85c9-011c467ea292,PYvcIX8V23Nq5pNbAGBJBpPz8Lk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33e3da3-cd44-11ec-85c9-011c467ea292,WuTyUNB/pLaPxYtDW1IAF7l8ruM=] */

@@ -40,12 +40,12 @@ public class Readme extends DynamicResource implements IReadme {
   }
 
   @Override
-  public java.lang.String selectCurrentLanguageCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment);
   }
     
-  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  public void setCurrentLanguageCodeFromSystemEnvironment(java.lang.String currentLanguageCodeFromSystemEnvironment) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, currentLanguageCodeFromSystemEnvironment);
   }
 
   @Override
@@ -182,7 +182,7 @@ public class Readme extends DynamicResource implements IReadme {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
@@ -216,4 +216,4 @@ public class Readme extends DynamicResource implements IReadme {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,Qu3CjY67pxOOfFpeMHS6IpsfvJ4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,VWWfmRd92gkvexxywe1oCpn/aNc=] */

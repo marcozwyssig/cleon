@@ -40,12 +40,12 @@ public class Steering extends DynamicResource implements ISteering {
   }
 
   @Override
-  public java.lang.String selectCurrentLanguageCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment);
   }
     
-  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  public void setCurrentLanguageCodeFromSystemEnvironment(java.lang.String currentLanguageCodeFromSystemEnvironment) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, currentLanguageCodeFromSystemEnvironment);
   }
 
   @Override
@@ -182,7 +182,7 @@ public class Steering extends DynamicResource implements ISteering {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
@@ -216,4 +216,4 @@ public class Steering extends DynamicResource implements ISteering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,wkGJZev8ONek5/h0s1aPvot0k7Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,SC+gbUYy/LLEiTKLD/mgIn8iuCY=] */

@@ -6,7 +6,7 @@ public interface IAbstractLanguageSettingsAware extends ch.actifsource.core.java
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ffbf6300-cd3b-11ec-85c9-011c467ea292");
   
-  public java.lang.String selectCurrentLanguageCode();
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment();
   
   // relations
   
@@ -14,4 +14,4 @@ public interface IAbstractLanguageSettingsAware extends ch.actifsource.core.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,L0sbP07i3QGyrjRV9YxqhXU8p5g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,ykcIhSvIn/anj3DTJwkTF1zaNkU=] */

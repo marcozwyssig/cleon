@@ -40,12 +40,12 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   }
 
   @Override
-  public java.lang.String selectCurrentLanguageCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment);
   }
     
-  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  public void setCurrentLanguageCodeFromSystemEnvironment(java.lang.String currentLanguageCodeFromSystemEnvironment) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, currentLanguageCodeFromSystemEnvironment);
   }
 
   @Override
@@ -211,7 +211,7 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -235,4 +235,4 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,j3qNEiPkzdDpUrkoOqrdVJYrjZg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,WY+4LjDQ5qcXDEw1yCdS8Tfn4AQ=] */

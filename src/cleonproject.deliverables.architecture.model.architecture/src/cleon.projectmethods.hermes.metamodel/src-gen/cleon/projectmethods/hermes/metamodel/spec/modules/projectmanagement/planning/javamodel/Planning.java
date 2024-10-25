@@ -40,12 +40,12 @@ public class Planning extends DynamicResource implements IPlanning {
   }
 
   @Override
-  public java.lang.String selectCurrentLanguageCode() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode);
+  public java.lang.String selectCurrentLanguageCodeFromSystemEnvironment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment);
   }
     
-  public void setCurrentLanguageCode(java.lang.String currentLanguageCode) {
-     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, currentLanguageCode);
+  public void setCurrentLanguageCodeFromSystemEnvironment(java.lang.String currentLanguageCodeFromSystemEnvironment) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, currentLanguageCodeFromSystemEnvironment);
   }
 
   @Override
@@ -222,7 +222,7 @@ public class Planning extends DynamicResource implements IPlanning {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCode, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
@@ -268,4 +268,4 @@ public class Planning extends DynamicResource implements IPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,e6p4SuXJNRBdAcNNPIxFN2P1hE0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,G9sBhMjt4IlhiwhehcLrHHmOqmk=] */

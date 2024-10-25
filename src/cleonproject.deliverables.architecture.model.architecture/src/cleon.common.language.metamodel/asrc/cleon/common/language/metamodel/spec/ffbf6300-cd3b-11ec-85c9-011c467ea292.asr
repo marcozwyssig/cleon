@@ -63,7 +63,7 @@
           <object statement-guid="7fa9137c-c5ea-11ee-a17d-a7a71cc7c14b" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="762947b9-c5ea-11ee-a17d-a7a71cc7c14b" type="literal">currentLanguageCode</object>
+          <object statement-guid="762947b9-c5ea-11ee-a17d-a7a71cc7c14b" type="literal">currentLanguageCodeFromSystemEnvironment</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="84a77521-c5ea-11ee-a17d-a7a71cc7c14b">
@@ -132,7 +132,7 @@
           <object statement-guid="75a60ec6-c5ea-11ee-a17d-a7a71cc7c14b" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-          <object statement-guid="534ddf5d-c5ec-11ee-a17d-a7a71cc7c14b" type="literal">Get the current language code from the environment. If the CLEON_USER_LANG has been set, it will use it primarily.</object>
+          <object statement-guid="534ddf5d-c5ec-11ee-a17d-a7a71cc7c14b" type="literal">Get the current language code from the system environment. If the CLEON_USER_LANG has been set, it will use it primarily.</object>
         </predicate>
       </resource>
     </object>

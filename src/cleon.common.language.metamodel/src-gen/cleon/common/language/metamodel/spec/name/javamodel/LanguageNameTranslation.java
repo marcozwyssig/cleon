@@ -43,11 +43,11 @@ public class LanguageNameTranslation extends DynamicResource implements ILanguag
   
   @Override
   public cleon.common.language.metamodel.spec.language.javamodel.ILanguage selectLanguage() {
-    return _getSingle(cleon.common.language.metamodel.spec.language.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.name.NamePackage.LanguageNameTranslation_language);
+    return _getSingle(cleon.common.language.metamodel.spec.language.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractTranslation_language);
   }
 
   public LanguageNameTranslation setLanguage(cleon.common.language.metamodel.spec.language.javamodel.ILanguage language) {
-    _setSingle(cleon.common.language.metamodel.spec.name.NamePackage.LanguageNameTranslation_language, language);
+    _setSingle(cleon.common.language.metamodel.spec.SpecPackage.AbstractTranslation_language, language);
     return this;
   }
     
@@ -77,15 +77,9 @@ public class LanguageNameTranslation extends DynamicResource implements ILanguag
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.common.language.metamodel.spec.language.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.name.NamePackage.LanguageNameTranslation_language, visitor);
+    _acceptSingle(cleon.common.language.metamodel.spec.language.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractTranslation_language, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation> selectToMeLanguage(cleon.common.language.metamodel.spec.language.javamodel.ILanguage object) {
-    return _getToMeList(object.getRepository(), cleon.common.language.metamodel.spec.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.name.NamePackage.LanguageNameTranslation_language, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,c9ifOAXh3/uInN3chPC3jRXHdzk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,Y5bI5xz9AvXoaIdoqhWt+qfXxwc=] */

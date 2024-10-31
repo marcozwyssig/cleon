@@ -16,7 +16,7 @@ public class ProjectPackage {
   public static final Resource ExportPackage = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
   public static final Resource PluginBuiltinDependency = new Resource("dc98b25c-0c6a-11e6-86c5-87a8b520dd59");
   public static final Resource PluginProjectDependency = new Resource("eb57b8c2-0c6a-11e6-86c5-87a8b520dd59");
-  public static final Resource FunctionSpace_aE_Project_Model = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Project_NamedModel = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Project_Template = new Resource("96d10a18-3c79-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Project_MetaModel = new Resource("d0ee34ab-3c79-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Project_Diagram = new Resource("f6381a35-3c79-11e6-aafa-bd565efc0ead");
@@ -35,6 +35,8 @@ public class ProjectPackage {
   public static final Resource ExportPackage_exportPackage = new Resource("7c8975f7-491b-11eb-9bd7-6114c4f17e0c");
   public static final Resource ExportPackage_isExport = new Resource("ef0abea4-491d-11eb-9bd7-6114c4f17e0c");
   public static final Resource ExportPackage_withJavaModel = new Resource("1c3f29cd-491e-11eb-9bd7-6114c4f17e0c");
+  public static final Resource NamedModel = new Resource("da55061a-978e-11ef-a385-611913ad635b");
+  public static final Resource FunctionSpace_aE_Project_Model = new Resource("207683a6-978f-11ef-a385-611913ad635b");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +57,4 @@ public class ProjectPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,AKrzf1s6xl8ZrXI6FPyWd4Q6LDE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,+hImr4syOdGKgKaqErQiSog7ZlE=] */

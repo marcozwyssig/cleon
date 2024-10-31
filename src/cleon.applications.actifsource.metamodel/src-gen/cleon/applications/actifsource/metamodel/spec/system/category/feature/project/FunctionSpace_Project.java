@@ -112,9 +112,34 @@ public class FunctionSpace_Project {
 
   }
 
-  public static interface IModelFunctions extends IDynamicResourceExtension {
+  public static interface INamedModelFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7d9d3c83-3c77-11e6-aafa-bd565efc0ead")
+    public java.lang.String BuildingBlockName();
+
+  }
+  
+  public static interface INamedModelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedModelFunctionsImpl implements INamedModelFunctionsImpl {
+
+    public static final INamedModelFunctionsImpl INSTANCE = new NamedModelFunctionsImpl();
+
+    private NamedModelFunctionsImpl() {}
+
+  }
+  
+  public static class NamedModelFunctions {
+
+    private NamedModelFunctions() {}
+
+  }
+
+  public static interface IModelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("207683b0-978f-11ef-a385-611913ad635b")
     public java.lang.String BuildingBlockName();
 
   }
@@ -264,4 +289,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,KZvYlOXo2XFD9bo/SxmJsIzwhY0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,MldnSYnvjIAHS2QLo6HNlNIh2rg=] */

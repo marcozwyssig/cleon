@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="26ed8b28-296c-11ea-aaaa-3133f8535a08">
+  <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
+    <resource statement-guid="39c59c3e-296c-11ea-aaaa-3133f8535a08" type="resource" guid="39c5270a-296c-11ea-aaaa-3133f8535a08" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="26ee005a-296c-11ea-aaaa-3133f8535a08" type="resource" guid="98431561-d40b-11e5-8556-8f55ceb91287" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="27d4b76e-296c-11ea-aaaa-3133f8535a08" type="literal">calendar</object>
+  </predicate>
+  <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
+    <object statement-guid="39c59c3e-296c-11ea-aaaa-3133f8535a08">
+      <resource guid="39c5270a-296c-11ea-aaaa-3133f8535a08">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="39c54e1c-296c-11ea-aaaa-3133f8535a08" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
+          <object statement-guid="3a59ed18-296c-11ea-aaaa-3133f8535a08" type="resource" guid="957e3ae3-d409-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="39c5752d-296c-11ea-aaaa-3133f8535a08" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="7dcc13e3-2635-11ea-8c59-871562e3b5c4">
+    <object statement-guid="332b3dbf-296c-11ea-aaaa-3133f8535a08" type="aggregate" guid="64293475-bbdc-11e6-8499-a544f3bd1f34" />
+  </predicate>
+</resource>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="0d1a374c-c0a8-11e7-a130-7198de5ddf3f">
+  <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
+    <resource statement-guid="8d14b704-5d03-11e8-a32e-7ba1b741dee8" type="resource" guid="8d14b701-5d03-11e8-a32e-7ba1b741dee8" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0d1a5e5e-c0a8-11e7-a130-7198de5ddf3f" type="resource" guid="98431561-d40b-11e5-8556-8f55ceb91287" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0e0819f9-c0a8-11e7-a130-7198de5ddf3f" type="literal">gradle</object>
+  </predicate>
+  <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
+    <object statement-guid="8d14b704-5d03-11e8-a32e-7ba1b741dee8">
+      <resource guid="8d14b701-5d03-11e8-a32e-7ba1b741dee8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8d14b703-5d03-11e8-a32e-7ba1b741dee8" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
+          <object statement-guid="8de685db-5d03-11e8-a32e-7ba1b741dee8" type="resource" guid="c47b7953-3b8a-11e5-b8db-7513250f5f90" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="d45b013c-2634-11ea-8c59-871562e3b5c4">
+    <object statement-guid="88b80d9f-2703-11ea-b671-7745dec2bf49" type="aggregate" guid="076f68cd-ca31-11e8-bb1d-0da5e2c3fe20" />
+  </predicate>
+  <predicate guid="7dcc13e3-2635-11ea-8c59-871562e3b5c4">
+    <object statement-guid="831a37f9-2703-11ea-b671-7745dec2bf49" type="aggregate" guid="131d8659-c0a8-11e7-a130-7198de5ddf3f" />
+  </predicate>
+</resource>
+

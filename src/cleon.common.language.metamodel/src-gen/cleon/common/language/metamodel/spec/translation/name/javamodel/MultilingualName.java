@@ -13,9 +13,9 @@ public abstract class MultilingualName extends DynamicResource implements IMulti
   
   // toMeRelations
   
-  public static cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName selectToMeTranslation(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation, object.getResource());
+  public static cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName selectToMeNameTranslation(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1564455b-3360-11e8-a9fe-87ba35d8f5c4,Zs7vp1noycKEqmq/fQN4bzz7pxA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1564455b-3360-11e8-a9fe-87ba35d8f5c4,PFwkbHiCIHE60zTuqTZ+fqxr2Fo=] */

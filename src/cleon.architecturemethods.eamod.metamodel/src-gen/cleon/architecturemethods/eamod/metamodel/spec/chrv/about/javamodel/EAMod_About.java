@@ -90,6 +90,16 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public EAMod_About setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction selectDistinction() {
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_distinction);
   }
@@ -189,6 +199,7 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAudiences.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_audiences, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDependencies.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_dependencies, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_distinction, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.ILayout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_layout, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.about.javamodel.IEAModMethod.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.about.AboutPackage.EAMod_aE_About_method, visitor);
@@ -206,4 +217,4 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,TpU7ud7G9FwjdDTwcCzvGuPu5gg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,gG/hQqMxo00dgZNjZoUCfmYe74g=] */

@@ -70,6 +70,16 @@ public class DNSIntegration extends DynamicResource implements IDNSIntegration {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public DNSIntegration setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemIntegration> selectDnsSystemIntegration() {
     return _getMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemIntegration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.DnsPackage.DNSIntegration_dnsSystemIntegration);
   }
@@ -127,6 +137,7 @@ public class DNSIntegration extends DynamicResource implements IDNSIntegration {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemIntegration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.DnsPackage.DNSIntegration_dnsSystemIntegration, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -139,4 +150,4 @@ public class DNSIntegration extends DynamicResource implements IDNSIntegration {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a778a5c4-cad1-11ec-896e-55850dc397b1,DHyvYDns89RVn4VniMyDhvuOmrI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a778a5c4-cad1-11ec-896e-55850dc397b1,CoNq8wBqgiTMkac4mEW4i0NHykQ=] */

@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class NamePackage {
   
   public static final Resource MultilingualName = new Resource("1564455b-3360-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource MultilingualName_translation = new Resource("1564456e-3360-11e8-a9fe-87ba35d8f5c4");
+  public static final Resource MultilingualName_nameTranslation = new Resource("1564456e-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageNameTranslation = new Resource("27d0007a-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualNameWithLanguageSettings = new Resource("7164f4d7-cd42-11ec-85c9-011c467ea292");
   
@@ -28,4 +28,4 @@ public class NamePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.translation.name,k4lmy7aSTQ7KcVuEpqGBKTh4+30=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.translation.name,5jg6loe7YT5U6OneoDtsT8nJ1mw=] */

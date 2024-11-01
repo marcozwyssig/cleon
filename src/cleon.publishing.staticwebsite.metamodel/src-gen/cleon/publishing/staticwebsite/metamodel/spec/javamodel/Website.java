@@ -157,6 +157,16 @@ public class Website extends DynamicResource implements IWebsite {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> selectNameTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
+  }
+
+  public Website setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties selectProperties() {
     return _getSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties);
   }
@@ -173,16 +183,6 @@ public class Website extends DynamicResource implements IWebsite {
 
   public Website setStyle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle style) {
     _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, style);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> selectTranslation() {
-    return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation);
-  }
-
-  public Website setTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> translation) {
-    _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation, translation);
     return this;
   }
     
@@ -213,9 +213,9 @@ public class Website extends DynamicResource implements IWebsite {
     _acceptSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptList(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.ILayout.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_layouts, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.metamodel.spec.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.metamodel.spec.SpecPackage.Website_logo, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -238,4 +238,4 @@ public class Website extends DynamicResource implements IWebsite {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,6k/HJXfdmRMW3xY4MoQ9sbLMDXY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,aP+GjSiJPtXRCTF2J9FuzNxQP8I=] */

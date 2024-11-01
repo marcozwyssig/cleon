@@ -147,6 +147,16 @@ public class ResourceManagementDocument extends DynamicResource implements IReso
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> selectNameTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
+  }
+
+  public ResourceManagementDocument setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.organisations.javamodel.IOrganisations selectOrganisations() {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.organisations.javamodel.IOrganisations.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_organisations);
   }
@@ -227,16 +237,6 @@ public class ResourceManagementDocument extends DynamicResource implements IReso
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> selectTranslation() {
-    return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation);
-  }
-
-  public ResourceManagementDocument setTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> translation) {
-    _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation, translation);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -261,6 +261,7 @@ public class ResourceManagementDocument extends DynamicResource implements IReso
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.infrastructure.javamodel.IInfrastructure.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_infrastructure, visitor);
     _acceptSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.locations.javamodel.ILocations.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_locations, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.organisations.javamodel.IOrganisations.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_organisations, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IPersons.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_persons, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, visitor);
@@ -269,7 +270,6 @@ public class ResourceManagementDocument extends DynamicResource implements IReso
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.skills.javamodel.ISkills.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_skills, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.teams.javamodel.ITeams.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.ResourcePackage.ResourceManagementDocument_teams, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_translation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -304,4 +304,4 @@ public class ResourceManagementDocument extends DynamicResource implements IReso
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,Rb+QGiQvRg6T32yqs2KmLKkTYGA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,kjUykKrm9if9oCwBB+rHXR0VZGQ=] */

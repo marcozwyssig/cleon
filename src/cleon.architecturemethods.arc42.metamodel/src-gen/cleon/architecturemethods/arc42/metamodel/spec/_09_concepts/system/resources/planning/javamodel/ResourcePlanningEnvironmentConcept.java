@@ -70,6 +70,16 @@ public class ResourcePlanningEnvironmentConcept extends DynamicResource implemen
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public ResourcePlanningEnvironmentConcept setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -137,6 +147,7 @@ public class ResourcePlanningEnvironmentConcept extends DynamicResource implemen
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningEnvironmentConcept_resourcePlanningForEnvironment, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.javamodel.IResourcePlanningNodeConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningEnvironmentConcept_resourcePlanningNode, visitor);
@@ -154,4 +165,4 @@ public class ResourcePlanningEnvironmentConcept extends DynamicResource implemen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb10b059-dfed-11eb-aeba-a92c9a2e1772,ZZ30759EoK/Kiwjiv/nN3EsRkt4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb10b059-dfed-11eb-aeba-a92c9a2e1772,r+yJvr7WuwRpT1IFEvxZP4MoBVA=] */

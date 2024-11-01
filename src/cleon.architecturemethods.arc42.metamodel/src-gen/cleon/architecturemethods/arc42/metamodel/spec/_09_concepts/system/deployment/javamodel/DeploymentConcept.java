@@ -100,6 +100,16 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public DeploymentConcept setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -150,6 +160,7 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.buildingblock.javamodel.IDeploymentBuildingBlockConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.DeploymentPackage.DeploymentConcept_deploymentBuildingBlock, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.method.javamodel.IDeploymentMethodConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.DeploymentPackage.DeploymentConcept_deploymentMethod, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.procedure.javamodel.IDeploymentProcedureConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.DeploymentPackage.DeploymentConcept_deploymentProcedure, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.update.javamodel.IUpdateConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.DeploymentPackage.DeploymentConcept_updateConcept, visitor);
@@ -174,4 +185,4 @@ public class DeploymentConcept extends DynamicResource implements IDeploymentCon
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,rZf+n56dtk/ZRzqdcTQ74ckbrKs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,lMZens8wYVvitUThFBiz9mWRRKU=] */

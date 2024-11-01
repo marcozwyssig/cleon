@@ -118,6 +118,16 @@ public class Capability extends DynamicResource implements ICapability {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Capability setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -160,6 +170,7 @@ public class Capability extends DynamicResource implements ICapability {
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.metamodel.spec.ncv.NcvPackage.Capability_capabilityComposition, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.metamodel.spec.ncv.NcvPackage.Capability_capabilityDependency, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.metamodel.spec.ncv.NcvPackage.Capability_capabilitySpecialisation, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -179,4 +190,4 @@ public class Capability extends DynamicResource implements ICapability {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c58e62c-bc80-11e6-beb6-85da12323ce9,0FgWjST59J7TIv+vIUhm4bmYtlY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c58e62c-bc80-11e6-beb6-85da12323ce9,uJozKzaCXH0p6HPk9O5izEvEDOI=] */

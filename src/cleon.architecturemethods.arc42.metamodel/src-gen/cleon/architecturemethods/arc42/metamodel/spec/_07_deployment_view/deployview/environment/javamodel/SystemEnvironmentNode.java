@@ -98,6 +98,16 @@ public class SystemEnvironmentNode extends DynamicResource implements ISystemEnv
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public SystemEnvironmentNode setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -238,6 +248,7 @@ public class SystemEnvironmentNode extends DynamicResource implements ISystemEnv
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.NodePackage.RootNode_buildNodes, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.EnvironmentPackage.SystemEnvironmentNode_level_aE_1, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.EnvironmentPackage.SystemEnvironmentNode_level_aE_2, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.EnvironmentPackage.SystemEnvironmentNode_level_aE_3, visitor);
@@ -286,4 +297,4 @@ public class SystemEnvironmentNode extends DynamicResource implements ISystemEnv
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,x8nz3qjDQvVXJgKwGrhn17TKbic=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,+ZvgxXQKlmgNPkLly5vmgKjnnFs=] */

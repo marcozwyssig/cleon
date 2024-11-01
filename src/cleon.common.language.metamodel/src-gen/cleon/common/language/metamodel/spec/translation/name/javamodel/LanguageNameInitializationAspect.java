@@ -13,31 +13,31 @@ import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractMult
 import cleon.common.language.metamodel.spec.javamodel.AbstractMultiLanguageInitializationAspect;
 
 public class LanguageNameInitializationAspect extends AbstractMultiLanguageInitializationAspect {
+	private IMultilingualName getDefaultName(final IDynamicResourceRepository dynamicResourceRepository,
+			final INode newInstance) {
+		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
+		return MultilingualName.selectToMeNameTranslation(name);
+	}
+
 	@Override
-	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
+	protected String getSourceLanguage(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
+		final var multilingualName = getDefaultName(dynamicResourceRepository, newInstance);
+		return multilingualName.extension(IAbstractMultilingualFunctions.class).LanguageSettings().selectDefaultLanguage().selectCode();
+	}
+
+	@Override
+	protected Iterable<String> getSourceText(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
+		return Arrays.asList(getDefaultName(dynamicResourceRepository, newInstance).selectName());
+	}
+
+	@Override
+	protected String getTargetLanguage(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
 		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
 		return name.selectLanguage().selectCode();
 	}
 
 	@Override
-	protected String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		final var multilingualName = getDefaultName(dynamicResourceRepository, newInstance);
-		return multilingualName.extension(IAbstractMultilingualFunctions.class).LanguageSettings().selectDefaultLanguage().selectCode();
-	}
-
-	private IMultilingualName getDefaultName(IDynamicResourceRepository dynamicResourceRepository,
-			INode newInstance) {
-		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);
-		return MultilingualName.selectToMeTranslation(name);
-	}
-
-	@Override
-	protected Iterable<String> getSourceText(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		return Arrays.asList(getDefaultName(dynamicResourceRepository, newInstance).selectName());
-	}
-
-	@Override
-	protected void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal) {
+	protected void setTargetText(final IModifiable modifiable, final Package pkg, final INode newInstance, final Literal literal) {
 		Update.createStatement(modifiable, pkg, newInstance, CorePackage.NamedResource_name, literal);
 	}
 

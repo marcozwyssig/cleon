@@ -79,6 +79,16 @@ public class SubjectAreaCoverage extends DynamicResource implements ISubjectArea
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public SubjectAreaCoverage setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -155,6 +165,7 @@ public class SubjectAreaCoverage extends DynamicResource implements ISubjectArea
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.eamod.metamodel.spec.chrv.coverage.javamodel.IRequirementCoverage.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.coverage.CoveragePackage.SubjectAreaCoverage_requirementCoverage, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.coverage.CoveragePackage.SubjectAreaCoverage_subjectArea, visitor);
@@ -172,4 +183,4 @@ public class SubjectAreaCoverage extends DynamicResource implements ISubjectArea
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92347cca-ece1-11e8-8149-8542373915bf,22XsxhKm5wt63SQvJ/moW1BEkR8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92347cca-ece1-11e8-8149-8542373915bf,e3WhXpTc4t2SXlLuU6fiFx+QVzM=] */

@@ -128,6 +128,16 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public DecisionTopic setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
@@ -189,6 +199,7 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IConsideredAlternatives.class, cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions._10_design_decisionsPackage.DecisionTopic_consideredAlternatives, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IConstraints.class, cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions._10_design_decisionsPackage.DecisionTopic_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDecision.class, cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions._10_design_decisionsPackage.DecisionTopic_decision, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IProblem.class, cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions._10_design_decisionsPackage.DecisionTopic_problem, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -217,4 +228,4 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,NG8dCBCTsN/WjfGOyPXriBi/U2M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,lXoLSrsF89hakAMrv2IG4W3NKyQ=] */

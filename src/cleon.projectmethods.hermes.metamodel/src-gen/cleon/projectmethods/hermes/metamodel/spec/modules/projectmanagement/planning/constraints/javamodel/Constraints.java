@@ -80,6 +80,16 @@ public class Constraints extends DynamicResource implements IConstraints {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Constraints setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IDistinctions selectDistinctions() {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IDistinctions.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraints_distinctions);
   }
@@ -128,6 +138,7 @@ public class Constraints extends DynamicResource implements IConstraints {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IDependencies.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraints_dependencies, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IDistinctions.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraints_distinctions, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -144,4 +155,4 @@ public class Constraints extends DynamicResource implements IConstraints {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8f6cf2c-d42d-11e6-8a1d-7fdd5d29730e,Cq3h0ZZq/jF3y7s1dmdOHUS5HoY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8f6cf2c-d42d-11e6-8a1d-7fdd5d29730e,ieIx3hQF1A9ZlAEyc8OJ/PB8uh4=] */

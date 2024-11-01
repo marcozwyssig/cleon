@@ -11,31 +11,31 @@ import cleon.common.language.metamodel.spec.javamodel.AbstractMultiLanguageIniti
 import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 
 public class LanguageDescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
+	private IMultilingualDescription getDefaultDescription(final IDynamicResourceRepository dynamicResourceRepository,
+			final INode newInstance) {
+		final var description = dynamicResourceRepository.getResource(ILanguageDescriptionTranslation.class, newInstance);
+		return MultilingualDescription.selectToMeDescriptionTranslation(description);
+	}
+
 	@Override
-	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
+	protected String getSourceLanguage(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
+		final var multilingualDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
+		return multilingualDescription.extension(IAbstractMultilingualFunctions.class).LanguageSettings().selectDefaultLanguage().selectCode();
+	}
+
+	@Override
+	protected Iterable<String> getSourceText(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
+		return getDefaultDescription(dynamicResourceRepository, newInstance).selectDescriptions();
+	}
+
+	@Override
+	protected String getTargetLanguage(final IDynamicResourceRepository dynamicResourceRepository, final INode newInstance) {
 		final var description = dynamicResourceRepository.getResource(ILanguageDescriptionTranslation.class, newInstance);
 		return description.selectLanguage().selectCode();
 	}
 
 	@Override
-	protected String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		final var multilingualDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
-		return multilingualDescription.extension(IAbstractMultilingualFunctions.class).LanguageSettings().selectDefaultLanguage().selectCode();
-	}
-
-	private IMultilingualDescription getDefaultDescription(IDynamicResourceRepository dynamicResourceRepository,
-			INode newInstance) {
-		final var description = dynamicResourceRepository.getResource(ILanguageDescriptionTranslation.class, newInstance);
-		return MultilingualDescription.selectToMeTranslation(description);
-	}
-
-	@Override
-	protected Iterable<String> getSourceText(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		return getDefaultDescription(dynamicResourceRepository, newInstance).selectDescriptions();
-	}
-
-	@Override
-	protected void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal) {
+	protected void setTargetText(final IModifiable modifiable, final Package pkg, final INode newInstance, final Literal literal) {
 		Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions, literal);
 	}
 

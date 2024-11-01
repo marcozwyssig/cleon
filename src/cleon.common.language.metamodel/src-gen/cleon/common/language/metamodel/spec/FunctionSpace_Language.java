@@ -93,8 +93,8 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String de(final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
       /* Begin Protected Region [[a441e094-f382-11ea-9268-b5c52a12d7f9]] */
-      if( multilingualDescription.selectTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
-      	final var description = multilingualDescription.selectTranslation().get(InstancesModel.de__F___S___F_German);
+      if( multilingualDescription.selectDescriptionTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
+      	final var description = multilingualDescription.selectDescriptionTranslation().get(InstancesModel.de__F___S___F_German);
       	return String.join("\n", description.selectDescriptions());
       }
       return null;
@@ -104,8 +104,8 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String en(final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
       /* Begin Protected Region [[3ca8bf73-d22c-11ee-b255-49ab47716ebd]] */
-      if( multilingualDescription.selectTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
-      	final var description = multilingualDescription.selectTranslation().get(InstancesModel.en__F___S___F_English);
+      if( multilingualDescription.selectDescriptionTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
+      	final var description = multilingualDescription.selectDescriptionTranslation().get(InstancesModel.en__F___S___F_English);
       	return String.join("\n", description.selectDescriptions());
       }
       return null;
@@ -157,8 +157,8 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String de(final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
       /* Begin Protected Region [[47e137a4-d22c-11ee-b255-49ab47716ebd]] */
-      if( multilingualName.selectTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
-      	final var name = multilingualName.selectTranslation().get(InstancesModel.de__F___S___F_German);
+      if( multilingualName.selectNameTranslation().containsKey(InstancesModel.de__F___S___F_German)) {
+      	final var name = multilingualName.selectNameTranslation().get(InstancesModel.de__F___S___F_German);
       	return String.join("\n", name.selectName());
       }
       return null;
@@ -168,8 +168,8 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String en(final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
       /* Begin Protected Region [[47e137a6-d22c-11ee-b255-49ab47716ebd]] */
-      if( multilingualName.selectTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
-      	final var name = multilingualName.selectTranslation().get(InstancesModel.en__F___S___F_English);
+      if( multilingualName.selectNameTranslation().containsKey(InstancesModel.en__F___S___F_English)) {
+      	final var name = multilingualName.selectNameTranslation().get(InstancesModel.en__F___S___F_English);
       	return String.join("\n", name.selectName());
       }
       return null;
@@ -329,112 +329,111 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource) {
       /* Begin Protected Region [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
-        final var currentLanguageCode = CurrentLanguage.getInstance().LanguageCode();
-        
-        // Create a type system and repository to work with resources
-        final var typeSystem = TypeSystem.create(resource.getReadJobExecutor());
-        final var repository = typeSystem.getResourceRepository(); 
+      final var currentLanguageCode = CurrentLanguage.getInstance().LanguageCode();
 
-        // Determine the shallow type of the resource
-        final var shallowType = Select.shallowType(resource.getReadJobExecutor(), resource.getResource());
-        Logger.instance().logInfo("Shallow type: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
+      // Create a type system and repository to work with resources
+      final var typeSystem = TypeSystem.create(resource.getReadJobExecutor());
+      final var repository = typeSystem.getResourceRepository();
 
-        // Anonymous recursive function to search for LanguageClass
-        Function<INode, INode> searchForLanguageClass = new Function<>() {
-            @Override
-            public INode apply(INode currentType) {
-            	final var shallowCurrentType = Select.shallowType(resource.getReadJobExecutor(), currentType);
-                Logger.instance().logInfo("Checking type: " + Select.simpleName(resource.getReadJobExecutor(), shallowCurrentType));
-                
-                if( currentType.equals(CorePackage.Resource) ) {
-                	Logger.instance().logInfo("currenType is a resource. Stop recursive calls.");
-                	return null;
-                }
+      // Determine the shallow type of the resource
+      final var shallowType = Select.shallowType(resource.getReadJobExecutor(), resource.getResource());
+      Logger.instance().logInfo("Shallow type: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
 
-                // Check if the current type is the LanguageClass
-                if (shallowCurrentType.equals(Language_classPackage.LanguageClass)) {
-                    Logger.instance().logInfo("Language class found for: " + Select.simpleName(resource.getReadJobExecutor(), currentType));
-                    return currentType; 
-                }
+      // Anonymous recursive function to search for LanguageClass
+      final Function<INode, INode> searchForLanguageClass = new Function<>() {
+      	@Override
+      	public INode apply(final INode currentType) {
+      		final var shallowCurrentType = Select.shallowType(resource.getReadJobExecutor(), currentType);
+      		Logger.instance().logInfo("Checking type: " + Select.simpleName(resource.getReadJobExecutor(), shallowCurrentType));
 
-                // Get the classes this type extends
-                final var extendsObjects = Select.objectsForRelation(resource.getReadJobExecutor(), CorePackage.Class_extends, currentType);
+      		if( currentType.equals(CorePackage.Resource) ) {
+      			Logger.instance().logInfo("currenType is a resource. Stop recursive calls.");
+      			return null;
+      		}
 
-                // Iterate over each extended object and apply the search function
-                for (var node : extendsObjects) {
-                    Logger.instance().logInfo("Inspecting extended type: " + Select.simpleName(resource.getReadJobExecutor(), node));
-                    final var resultNode = this.apply(node); // Recursive call within the lambda
-                    if( resultNode != null) {
-                    	return resultNode; // Stop searching once the LanguageClass is found
-                    }
-                }
+      		// Check if the current type is the LanguageClass
+      		if (shallowCurrentType.equals(Language_classPackage.LanguageClass)) {
+      			Logger.instance().logInfo("Language class found for: " + Select.simpleName(resource.getReadJobExecutor(), currentType));
+      			return currentType;
+      		}
 
-                return null;  // No match found in the hierarchy
-            }
-        };
-              
-        // Obtain the language class for the shallow type
-        final var languageClassNode = searchForLanguageClass.apply(shallowType);
-        final var languageClass = repository.getResource(ILanguageClass.class, languageClassNode);
-              
-        // Check if the current language is different from the default language
-        if (!currentLanguageCode.equals(languageClass.selectLanguageSettings().selectDefaultLanguage().selectCode())) {
-        	// Find the translation key for the current language
-        	final var languageKey = languageClass.selectTranslations().keySet().stream()
-        			.filter(key -> {
-        				// Fetch the language resource and compare its code with the current language code
-        				final var language = repository.getResource(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, key);
-        				return language.selectCode().equals(currentLanguageCode);
-        			})
-        			.findFirst()
-        			.orElse(null); // If no match is found, return null
+      		// Get the classes this type extends
+      		final var extendsObjects = Select.objectsForRelation(resource.getReadJobExecutor(), CorePackage.Class_extends, currentType);
 
-        	// If a language key is found, fetch the corresponding translation
-        	if (languageKey != null) {
-        		final ILanguageNameAspectTranslation languageTranslation = languageClass.selectTranslations().get(languageKey);
-        		final var pack = Select.mainPackage(resource.getReadJobExecutor(), languageTranslation.selectTranslationValue().getResource());
-        		if( pack != null) {     			
-        			final var selector = Select.objectForRelationOrNull(resource.getReadJobExecutor(),
-        					Language_classPackage.LanguageNameAspectTranslation_translationValue, 
-        					languageTranslation.getResource());
-        			      			
-        			final var value = SelectSelectorUtil.selectSelectorTextOrNull(
-        					resource.getReadJobExecutor(),
-        					selector,
-        					resource.getResource());
-        			
-        			// Return the translation value if it exists
-        			if (value != null) {
-        				return value; 
-        			}      		
-        		}
-        	} else {
-        		return "language code not been found";  
-        	}
-        }
-        
+      		// Iterate over each extended object and apply the search function
+      		for (final var node : extendsObjects) {
+      			Logger.instance().logInfo("Inspecting extended type: " + Select.simpleName(resource.getReadJobExecutor(), node));
+      			final var resultNode = this.apply(node); // Recursive call within the lambda
+      			if( resultNode != null) {
+      				return resultNode; // Stop searching once the LanguageClass is found
+      			}
+      		}
 
-        // If the default language is used or no translation is found, try to get the simple name aspect translation
-        final var declaredAspectImpl = resource.getReadJobExecutor().execute(
-        		SelectOverridableResourceAspectImpl.forResource(
-        				resource.getReadJobExecutor(),
-        				resource.getResource(),
-        				ITranslateSimpleNameAspect.class)
-        		);
+      		return null;  // No match found in the hierarchy
+      	}
+      };
 
-        // If no aspect implementation is declared, return a message
-        if (declaredAspectImpl == null) {
-        	return "no declaredAspectImpl";
-        }
+      // Obtain the language class for the shallow type
+      final var languageClassNode = searchForLanguageClass.apply(shallowType);
+      final var languageClass = repository.getResource(ILanguageClass.class, languageClassNode);
 
-        // Obtain the aspect using the declared aspect implementation
-        final var aspect = Select.aspect(
-        		resource.getReadJobExecutor(),
-        		ITranslateSimpleNameAspect.class,
-        		declaredAspectImpl.getPackagedAspectImpl());
+      // Check if the current language is different from the default language
+      if (!currentLanguageCode.equals(languageClass.selectLanguageSettings().selectDefaultLanguage().selectCode())) {
+      	// Find the translation key for the current language
+      	final var languageKey = languageClass.selectTranslations().keySet().stream()
+      			.filter(key -> {
+      				// Fetch the language resource and compare its code with the current language code
+      				final var language = repository.getResource(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, key);
+      				return language.selectCode().equals(currentLanguageCode);
+      			})
+      			.findFirst()
+      			.orElse(null); // If no match is found, return null
 
-        // Return the simple name translation if the aspect is available, otherwise return a message
-        return aspect == null ? "no aspect" : aspect.translateSimpleName(resource.getReadJobExecutor(), resource.getResource());
+      	// If a language key is found, fetch the corresponding translation
+      	if (languageKey == null) {
+      		return "language code not been found";
+      	}
+      	final ILanguageNameAspectTranslation languageTranslation = languageClass.selectTranslations().get(languageKey);
+      	final var pack = Select.mainPackage(resource.getReadJobExecutor(), languageTranslation.selectTranslationValue().getResource());
+      	if( pack != null) {
+      		final var selector = Select.objectForRelationOrNull(resource.getReadJobExecutor(),
+      				Language_classPackage.LanguageNameAspectTranslation_translationValue,
+      				languageTranslation.getResource());
+
+      		final var value = SelectSelectorUtil.selectSelectorTextOrNull(
+      				resource.getReadJobExecutor(),
+      				selector,
+      				resource.getResource());
+
+      		// Return the translation value if it exists
+      		if (value != null) {
+      			return value;
+      		}
+      	}
+      }
+
+
+      // If the default language is used or no translation is found, try to get the simple name aspect translation
+      final var declaredAspectImpl = resource.getReadJobExecutor().execute(
+      		SelectOverridableResourceAspectImpl.forResource(
+      				resource.getReadJobExecutor(),
+      				resource.getResource(),
+      				ITranslateSimpleNameAspect.class)
+      		);
+
+      // If no aspect implementation is declared, return a message
+      if (declaredAspectImpl == null) {
+      	return "no declaredAspectImpl";
+      }
+
+      // Obtain the aspect using the declared aspect implementation
+      final var aspect = Select.aspect(
+      		resource.getReadJobExecutor(),
+      		ITranslateSimpleNameAspect.class,
+      		declaredAspectImpl.getPackagedAspectImpl());
+
+      // Return the simple name translation if the aspect is available, otherwise return a message
+      return aspect == null ? "no aspect" : aspect.translateSimpleName(resource.getReadJobExecutor(), resource.getResource());
       /* End Protected Region   [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
     }
 

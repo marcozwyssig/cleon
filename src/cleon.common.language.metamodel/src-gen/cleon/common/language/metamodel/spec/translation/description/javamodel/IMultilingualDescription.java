@@ -8,8 +8,8 @@ public interface IMultilingualDescription extends cleon.common.resources.metamod
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectTranslation();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a9e3052c-335e-11e8-a9fe-87ba35d8f5c4,AfJJerWubTAb6QFRzUZ+v/EIY04=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a9e3052c-335e-11e8-a9fe-87ba35d8f5c4,lmjQWW3md++eBArEIiAZu1X12VY=] */

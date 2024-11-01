@@ -90,6 +90,16 @@ public class About extends DynamicResource implements IAbout {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public About setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction selectDistinction() {
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_distinction);
   }
@@ -189,6 +199,7 @@ public class About extends DynamicResource implements IAbout {
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAudiences.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_audiences, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDependencies.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_dependencies, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IDistinction.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_distinction, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.ILayout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_layout, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IMethod.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.About_method, visitor);
@@ -234,4 +245,4 @@ public class About extends DynamicResource implements IAbout {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,uBBMLvaPHADGtgD6VWVFggQYnes=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,Qn7fo5a+kgfWwdt+R6HlipNVU9A=] */

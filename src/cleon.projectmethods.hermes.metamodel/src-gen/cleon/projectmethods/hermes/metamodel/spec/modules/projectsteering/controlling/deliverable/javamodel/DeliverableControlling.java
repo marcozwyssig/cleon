@@ -90,6 +90,16 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public DeliverableControlling setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -179,6 +189,7 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
     // relations
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deadline, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.javamodel.IDeliverableImpediments.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_impediments, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_quality, visitor);
@@ -214,4 +225,4 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,mK06pzjwD5Rd63Vmw26zgVOlze0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,qgtbghEt4WbU74jJybU249XAm2g=] */

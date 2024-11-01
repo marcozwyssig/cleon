@@ -24,7 +24,7 @@ public class FunctionSpace_Asciidoc_SystemArc42 {
     public java.lang.String GetStandardDescription();
 
     @IDynamicResourceExtension.MethodId("ffb37747-d576-11ea-9bae-37ef2cb951a8")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -48,4 +48,4 @@ public class FunctionSpace_Asciidoc_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7cc503a4-d182-11e8-b18f-df1540bb7a5c,4xDccwdccj6+zB76tdDvNYlMAHs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7cc503a4-d182-11e8-b18f-df1540bb7a5c,HL5DQKN4GyYbdmNR6++AuJPu+J0=] */

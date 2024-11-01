@@ -1,8 +1,5 @@
 package cleon.common.language.metamodel.refactoring;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
 import ch.actifsource.core.job.Update;
@@ -13,28 +10,9 @@ import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractTranslationFunctions;
 import cleon.common.language.metamodel.spec.translation.TranslationPackage;
 import cleon.common.language.metamodel.spec.translation.javamodel.IAbstractTranslation;
+import cleon.common.resources.metamodel.spec.literals.StringFunctionSpace.StringLiteralFunctionsImpl;
 
 public class SetMD5OnTranslation extends AbstractAllInstancesRefactorerAspect {
-
-	private static String md5Hash(final String input) {
-		try {
-			// Create an MD5 MessageDigest instance
-			final var md = MessageDigest.getInstance("MD5");
-
-			// Calculate the MD5 digest for the input string
-			final var hashInBytes = md.digest(input.getBytes());
-
-			// Convert the byte array into a hex string
-			final var sb = new StringBuilder();
-			for (final byte b : hashInBytes) {
-				sb.append(String.format("%02x", b));
-			}
-
-			return sb.toString();
-		} catch (final NoSuchAlgorithmException e) {
-			throw new RuntimeException("MD5 algorithm not available", e);
-		}
-	}
 
 	public SetMD5OnTranslation() {
 		super("1.0", 2024, 11, 29, "Set MD5 for translation", TranslationPackage.AbstractTranslation);
@@ -49,9 +27,11 @@ public class SetMD5OnTranslation extends AbstractAllInstancesRefactorerAspect {
 		if( translation.selectMd5() == null ) {
 			final var function = translation.extension(IAbstractTranslationFunctions.class);
 			final var originText = function.OriginText();
+
 			if( originText != null ) {
+				final var md5HashCode = StringLiteralFunctionsImpl.INSTANCE.md5(originText);
 				Update.createOrModifyStatement(executor, _package, translationNode,
-						TranslationPackage.AbstractTranslation_md5, LiteralUtil.create(md5Hash(originText)));
+						TranslationPackage.AbstractTranslation_md5, LiteralUtil.create(md5HashCode));
 			}
 		}
 	}

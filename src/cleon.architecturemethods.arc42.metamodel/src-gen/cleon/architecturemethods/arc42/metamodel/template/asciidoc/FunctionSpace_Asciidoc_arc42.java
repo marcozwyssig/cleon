@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd8e8e4-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IDomainContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd95d91-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -71,7 +71,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd98524-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -96,7 +96,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IDecompositionBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd9d383-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderTitle();
+    public java.lang.String RenderTitle(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -121,7 +121,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IDeploymentViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd9f9db-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -146,7 +146,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IIntroductionAndGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd9f9f9-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -171,7 +171,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IQualityGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd9fa65-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -196,7 +196,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IRequirementsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda20e4-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -221,7 +221,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITechnicalConstraintsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda2150-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -246,7 +246,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IOrganizationalConstraintsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda21c0-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -271,7 +271,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IDecisionTopicFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda4972-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -296,22 +296,22 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IWhiteboxSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda704d-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda709e-2516-11ec-beea-a9d94a6f89e0")
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> _ChapterOrder();
 
     @IDynamicResourceExtension.MethodId("5cda95d2-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderDescriptions();
+    public java.lang.String _RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda95ed-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderChapters();
+    public java.lang.String _RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda95f5-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderAdditionalChapters();
+    public java.lang.String _RenderAdditionalChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda96a4-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderProduct();
+    public java.lang.String _RenderProduct(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -336,10 +336,10 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBlackboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda96b2-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("048c0e46-e5db-11ee-a627-83563cb3bdc6")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -364,7 +364,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IProductViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdabd85-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -389,7 +389,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBlackbox_DependenciesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdae4cf-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -414,7 +414,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBlackbox_RequirementsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b2e-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -439,7 +439,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBuildingBlockRequirementCoverageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b4d-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderCoverageName();
+    public java.lang.String _RenderCoverageName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -486,54 +486,10 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
-
-    public static final IMonitoringBuildingBlockFunctionsImpl INSTANCE = new MonitoringBuildingBlockFunctionsImpl();
-
-    private MonitoringBuildingBlockFunctionsImpl() {}
-
-  }
-  
-  public static class MonitoringBuildingBlockFunctions {
-
-    private MonitoringBuildingBlockFunctions() {}
-
-  }
-
-  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
-
-    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
-
-    private MonitoringFunctionsImpl() {}
-
-  }
-  
-  public static class MonitoringFunctions {
-
-    private MonitoringFunctions() {}
-
-  }
-
   public static interface IComponentCompositionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a04-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderComponents();
+    public java.lang.String _RenderComponents(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -558,7 +514,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a16-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderBlackboxReference();
+    public java.lang.String _RenderBlackboxReference(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -583,7 +539,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBackup_and_RecoveryFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a54-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -608,7 +564,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ISensorFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a58-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _SensorNote();
+    public java.lang.String _SensorNote(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -633,7 +589,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITechnical_RisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a6e-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement();
+    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -667,7 +623,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("24208986-e5d9-11ee-a627-83563cb3bdc6")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -698,7 +654,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String FileName();
 
     @IDynamicResourceExtension.MethodId("5b3e882f-e5da-11ee-a627-83563cb3bdc6")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -726,7 +682,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String ChapterPath();
 
     @IDynamicResourceExtension.MethodId("3e680ed4-27dc-11ef-9e2d-0b682fec1a77")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -751,7 +707,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("76bb50ae-27d1-11ef-9e2d-0b682fec1a77")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("ba830c78-c019-11ee-b73c-c3f9bd2ce1e0")
     public java.lang.String RefName();
@@ -814,7 +770,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String ElementName();
 
     @IDynamicResourceExtension.MethodId("86ae41e2-27dc-11ef-9e2d-0b682fec1a77")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -870,7 +826,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String Ref();
 
     @IDynamicResourceExtension.MethodId("62e9ea30-27dc-11ef-9e2d-0b682fec1a77")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -894,4 +850,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,D3NayxF9oar4GHR4gdxw+ZOK+JY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,YbT+OjR5VwGx8nF7jlyUfYKXl04=] */

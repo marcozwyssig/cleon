@@ -21,13 +21,13 @@ public class FunctionSpace_Steering {
   public static interface IDeliverableControllingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f904ee7-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f904f04-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f904f0c-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderDescriptions();
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -52,7 +52,7 @@ public class FunctionSpace_Steering {
   public static interface IDeliverableRisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f907587-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -80,7 +80,7 @@ public class FunctionSpace_Steering {
     public java.lang.String RenderState();
 
     @IDynamicResourceExtension.MethodId("9f9075bb-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderDescription();
+    public java.lang.String RenderDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -172,7 +172,7 @@ public class FunctionSpace_Steering {
   public static interface IDeliverableImpedimentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f90762b-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -197,7 +197,7 @@ public class FunctionSpace_Steering {
   public static interface IImpedimentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f911195-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -222,7 +222,7 @@ public class FunctionSpace_Steering {
   public static interface IRisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f9138e1-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -247,7 +247,7 @@ public class FunctionSpace_Steering {
   public static interface IAssessmentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f915f8b-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -271,4 +271,4 @@ public class FunctionSpace_Steering {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f8bc1-ca32-11e8-82ac-e1eb952f770a,/nH9KfIVHC/W+yqRVT1v4MOgENQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f8bc1-ca32-11e8-82ac-e1eb952f770a,dsgXZW67cWLsFVPgWwK1uKlyzYw=] */

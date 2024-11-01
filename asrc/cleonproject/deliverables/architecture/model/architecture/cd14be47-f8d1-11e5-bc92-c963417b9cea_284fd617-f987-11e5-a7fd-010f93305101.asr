@@ -261,7 +261,6 @@
         <resource statement-guid="5e591a50-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e58f33d-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e57e1b2-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e57ba9f-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e582fdc-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e582fd9-46d8-11eb-a37f-cf0277d52819" />
-        <resource statement-guid="5e576c78-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e576c75-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e594165-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e594162-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e598f8a-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e596877-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e574563-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e571e50-46d8-11eb-a37f-cf0277d52819" />
@@ -412,7 +411,6 @@
         <resource statement-guid="5e632cc4-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e632cc1-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e6501cf-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e64dabc-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e61cd02-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e61ccff-46d8-11eb-a37f-cf0277d52819" />
-        <resource statement-guid="5e61ccfd-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e61a5ea-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e64daba-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e64dab7-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e66aec5-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e66aec2-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e6130a9-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e6130a6-46d8-11eb-a37f-cf0277d52819" />
@@ -3061,16 +3059,6 @@
               </predicate>
             </resource>
           </object>
-          <object statement-guid="5e576c78-46d8-11eb-a37f-cf0277d52819">
-            <resource guid="5e576c75-46d8-11eb-a37f-cf0277d52819">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="5e576c77-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="5e579389-46d8-11eb-a37f-cf0277d52819" type="literal">cleon.common.doc.metamodel.spec.documentlanguage</object>
-              </predicate>
-            </resource>
-          </object>
           <object statement-guid="5e594165-46d8-11eb-a37f-cf0277d52819">
             <resource guid="5e594162-46d8-11eb-a37f-cf0277d52819">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -4568,16 +4556,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="5e61f413-46d8-11eb-a37f-cf0277d52819" type="literal">cleon.projectmethods.hermes.metamodel.template.docbook.projectmanagement.planning</object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="5e61ccfd-46d8-11eb-a37f-cf0277d52819">
-            <resource guid="5e61a5ea-46d8-11eb-a37f-cf0277d52819">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="5e61a5ec-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="5e61ccfe-46d8-11eb-a37f-cf0277d52819" type="literal">cleon.projectmethods.hermes.metamodel.template.docbook.projectmanagement</object>
               </predicate>
             </resource>
           </object>

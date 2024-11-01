@@ -58,19 +58,25 @@ public class FunctionSpace_Doc {
   public static interface IDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de5cc4d4-ba80-11e5-b56d-4f524d402f4b")
-    public java.lang.String GetDocumentPath();
+    public java.lang.String GetDocumentPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("3d579331-d3ec-11e5-9dfc-cf0f3e030023")
-    public java.lang.String GetFullFileName();
+    public java.lang.String GetFullFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("8eea2770-d3f0-11e5-9dfc-cf0f3e030023")
-    public java.lang.String GetFileName();
+    public java.lang.String GetFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("741b9c04-5e36-11e6-a777-551543f10110")
-    public java.lang.String GetDocumentName();
+    public java.lang.String GetDocumentName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("272db3bd-c9ee-11ee-953e-1bc687172a5b")
-    public java.lang.String GetTitleName();
+    public java.lang.String GetTitleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("dbb30828-c03f-11ee-a353-4bf80e47b5e4")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+    @IDynamicResourceExtension.MethodId("108703e6-9864-11ef-9d7c-b5806d5ad1be")
+    public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> Languages();
 
   }
   
@@ -120,13 +126,13 @@ public class FunctionSpace_Doc {
   public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2e076f33-53fa-11ea-93a1-15e540ad9e0c")
-    public java.lang.String Descriptions();
+    public java.lang.String Descriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("877562ec-7bdc-11ea-9c6c-c5ad5514988f")
-    public java.lang.String Comment();
+    public java.lang.String Comment(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderStandardDescription();
+    public java.lang.String RenderStandardDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
     public java.lang.Boolean InASeparateFile();
@@ -141,14 +147,20 @@ public class FunctionSpace_Doc {
     public java.lang.String FullChapterPath();
 
     @IDynamicResourceExtension.MethodId("e9f0dd95-d6e7-11ee-8fe2-9fdd0afb9b0b")
-    public java.lang.String ChapterName();
+    public java.lang.String ChapterName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("4d76e8a4-9862-11ef-9d7c-b5806d5ad1be")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+    @IDynamicResourceExtension.MethodId("9604b8e2-9867-11ef-9d7c-b5806d5ad1be")
+    public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> Languages();
 
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderStandardDescription(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+    public java.lang.String RenderStandardDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
     @IDynamicResourceExtension.MethodId("38207cb1-d24a-11ee-b255-49ab47716ebd")
     public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
@@ -165,7 +177,7 @@ public class FunctionSpace_Doc {
     private AbstractChapterFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderStandardDescription(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+    public java.lang.String RenderStandardDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return null;
     }
 
@@ -189,8 +201,8 @@ public class FunctionSpace_Doc {
 
     private AbstractChapterFunctions() {}
 
-    public static java.lang.String RenderStandardDescription(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
-      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderStandardDescription(abstractChapter);
+    public static java.lang.String RenderStandardDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderStandardDescription(language, abstractChapter);
     }
 
     public static java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
@@ -228,35 +240,10 @@ public class FunctionSpace_Doc {
 
   }
 
-  public static interface INamedDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("dbb30828-c03f-11ee-a353-4bf80e47b5e4")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
-
-  }
-  
-  public static interface INamedDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NamedDocumentFunctionsImpl implements INamedDocumentFunctionsImpl {
-
-    public static final INamedDocumentFunctionsImpl INSTANCE = new NamedDocumentFunctionsImpl();
-
-    private NamedDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class NamedDocumentFunctions {
-
-    private NamedDocumentFunctions() {}
-
-  }
-
   public static interface IResourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("570310a9-d24c-11ee-b255-49ab47716ebd")
-    public java.lang.String FileName();
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -280,4 +267,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,sLewzk+90kGDSAfspczUxXhxn6E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,JTPz3wwskCLiPMqRyD/aXZOTecs=] */

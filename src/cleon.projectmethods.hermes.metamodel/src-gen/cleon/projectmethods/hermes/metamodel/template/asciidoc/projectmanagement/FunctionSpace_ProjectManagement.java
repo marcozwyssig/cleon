@@ -23,10 +23,10 @@ public class FunctionSpace_ProjectManagement {
   public static interface IProtocolFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f3cf3-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f8f3d00-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderEnd();
+    public java.lang.String RenderEnd(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f8f3d10-ca32-11e8-82ac-e1eb952f770a")
     public java.lang.String GetDocumentPath();
@@ -54,7 +54,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IAgendaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f3d52-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -79,7 +79,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IProtocolItemsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f3dc3-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -228,7 +228,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IProtocolsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f645e-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f8f6463-ca32-11e8-82ac-e1eb952f770a")
     public java.lang.String GetDocumentName();
@@ -256,10 +256,10 @@ public class FunctionSpace_ProjectManagement {
   public static interface IScheduleFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f6467-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String GetDocumentName();
+    public java.lang.String GetDocumentName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f8ddde5-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -284,7 +284,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface ISprintBacklogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8cf242-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -309,7 +309,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface ISprintCapacityFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8d417c-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -334,7 +334,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IReleaseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8d41a8-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -359,10 +359,10 @@ public class FunctionSpace_ProjectManagement {
   public static interface ISprintFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8d41ca-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9f8dde14-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -387,7 +387,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IDeadlinesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8db5c6-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -412,7 +412,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface ISprintGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8ddd0e-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -483,7 +483,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IReleasesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8dde22-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -508,7 +508,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IPlanningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e037a-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -533,7 +533,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IOutcomeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e03d6-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -558,7 +558,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IBacklogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e2bbf-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -583,7 +583,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IResourceUtilizationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e2c14-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -608,7 +608,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IWorkpackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e5250-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -633,7 +633,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IWorkspaceGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f15d9-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -658,7 +658,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IScopeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f15f7-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -683,7 +683,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IDeliverablesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f1636-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -708,7 +708,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface ISkillsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f8af6-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -733,7 +733,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IPersonFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f8b2f-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -758,7 +758,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IAbsencesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f8b5e-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -783,7 +783,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface IExperiencesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f8b8b-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -808,7 +808,7 @@ public class FunctionSpace_ProjectManagement {
   public static interface ITeamFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8f8bbf-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderContentElement();
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -832,4 +832,4 @@ public class FunctionSpace_ProjectManagement {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,GGsSGvjLOa9m+RixjhFE5IlSPjI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,2uO+eGi1I8aW3M4sOoGCDX8UKyk=] */

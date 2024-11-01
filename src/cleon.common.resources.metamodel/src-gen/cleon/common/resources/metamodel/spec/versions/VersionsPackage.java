@@ -12,8 +12,8 @@ public class VersionsPackage {
   public static final Resource SemanticVersionAware_version = new Resource("165c7061-d410-11e5-8556-8f55ceb91287");
   public static final Resource Version = new Resource("6a0f54e6-2d72-11e6-959f-d1cef44ff5fd");
   public static final Resource Version_version = new Resource("dc432bb6-2d72-11e6-959f-d1cef44ff5fd");
-  public static final Resource VersionFunctionSpace_SemanticVersionAware = new Resource("11f57fef-7d8a-11e7-a9ca-85a6566b931d");
-  public static final Resource VersionFunctionSpace_SemanticVersion = new Resource("3d80f6ab-7d8a-11e7-a9ca-85a6566b931d");
+  public static final Resource FunctionSpace_aE_Version_SemanticVersionAware = new Resource("11f57fef-7d8a-11e7-a9ca-85a6566b931d");
+  public static final Resource FunctionSpace_aE_Version_SemanticVersion = new Resource("3d80f6ab-7d8a-11e7-a9ca-85a6566b931d");
   public static final Resource SystemStage = new Resource("21bbfa64-bfea-11e8-a3d0-5394fd9291a1");
   public static final Resource SystemStage_Pre__S_alpha__F___N_PA__O_ = new Resource("2a7519dc-bfea-11e8-a3d0-5394fd9291a1");
   public static final Resource SystemStage_Alpha__F___N_A__O_ = new Resource("3feb55bf-bfea-11e8-a3d0-5394fd9291a1");
@@ -46,4 +46,4 @@ public class VersionsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.versions,LxsnJr55t3sMdW9QUvU2KwoXTuI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.versions,X4recva2teKa4hpMb8dOHD60FhY=] */

@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class CardinalityPackage {
   
-  public static final Resource CardinalityFunctionSpace_Cardinality = new Resource("5396e80c-26a8-11e8-a805-991f3ff583b7");
+  public static final Resource FunctionSpace_aE_Cardinality_Cardinality = new Resource("5396e80c-26a8-11e8-a805-991f3ff583b7");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class CardinalityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.cardinality,GDdxXMHKJg9ULQhqPtMm8V52ulc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.cardinality,M/OHpe32NtJXz6stkb00xg38jJw=] */

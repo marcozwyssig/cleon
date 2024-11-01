@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="7920e620-97a2-11ef-a385-611913ad635b">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="7920e628-97a2-11ef-a385-611913ad635b" type="resource" guid="7920e621-97a2-11ef-a385-611913ad635b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7920e622-97a2-11ef-a385-611913ad635b" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7920e623-97a2-11ef-a385-611913ad635b" type="literal">LanguageRefactoring</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7920e628-97a2-11ef-a385-611913ad635b">
+      <resource guid="7920e621-97a2-11ef-a385-611913ad635b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7920e624-97a2-11ef-a385-611913ad635b" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bad63a98-97a3-11ef-a385-611913ad635b" type="literal">cleon.common.language.metamodel.refactoring.SetMD5OnTranslation</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7920e627-97a2-11ef-a385-611913ad635b" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

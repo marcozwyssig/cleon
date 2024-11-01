@@ -10,8 +10,8 @@ public interface IAbstractLanguageSettingsAware extends ch.actifsource.core.java
   
   // relations
   
-  public cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings selectLanguageSettings();
+  public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings selectLanguageSettings();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,ykcIhSvIn/anj3DTJwkTF1zaNkU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,sFtvbJKjlaUqUZadeeCl7kbjP30=] */

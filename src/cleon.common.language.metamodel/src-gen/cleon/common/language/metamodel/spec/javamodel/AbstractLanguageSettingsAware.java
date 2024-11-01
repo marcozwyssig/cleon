@@ -13,9 +13,9 @@ public abstract class AbstractLanguageSettingsAware extends DynamicResource impl
   
   // toMeRelations
   
-  public static java.util.List<cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware> selectToMeLanguageSettings(cleon.common.language.metamodel.spec.languagesettings.javamodel.ILanguageSettings object) {
+  public static java.util.List<cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware> selectToMeLanguageSettings(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings object) {
     return _getToMeList(object.getRepository(), cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,eoZTbEqMJCmiBhrVPpe17RLLwDo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbf6300-cd3b-11ec-85c9-011c467ea292,PCpz3EcMgVH1mjXPqicEqbIqHBY=] */

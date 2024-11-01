@@ -9,7 +9,7 @@ public class WorkstatePackage {
   public static final Resource WorkState_In__F_Progress = new Resource("93136a9c-c58a-11e5-aeea-1db9268c0ee9");
   public static final Resource WorkState_Done = new Resource("94e0b0a7-c58a-11e5-aeea-1db9268c0ee9");
   public static final Resource WorkStateAware_state = new Resource("ac925cb2-c58a-11e5-aeea-1db9268c0ee9");
-  public static final Resource FunctionSpace_WorkState = new Resource("1287e9fb-cb74-11e5-bc87-a1fadf56ded8");
+  public static final Resource FunctionSpace_aE_Workstate_WorkState = new Resource("1287e9fb-cb74-11e5-bc87-a1fadf56ded8");
   public static final Resource WorkStateAware = new Resource("4ae61945-0d05-11e6-be97-7d1235599779");
   
   /* Begin Protected Region [[user]] */
@@ -31,4 +31,4 @@ public class WorkstatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.workstate,W31Vk+ETZ/KRwp7GSDp9Mywj3Vo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.workstate,b32+Fmx3eKF9Ce9toXZhiEn+w6E=] */

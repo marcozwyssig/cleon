@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class SpecPackage {
   
   public static final Resource AbstractLanguageSettingsAware_languageSettings = new Resource("1564455c-3360-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource AbstractTranslation_language = new Resource("3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource AbstractMultilingual = new Resource("a302d9a3-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource FunctionSpace_aE_Language_LanguageSettings = new Resource("7cee5ac4-3361-11e8-a9fe-87ba35d8f5c4");
   public static final Resource FunctionSpace_aE_Language_MultilingualDescription = new Resource("9e273939-f382-11ea-9268-b5c52a12d7f9");
@@ -17,8 +16,9 @@ public class SpecPackage {
   public static final Resource AbstractLanguageSettingsAware_currentLanguageCodeFromSystemEnvironment = new Resource("75a57282-c5ea-11ee-a17d-a7a71cc7c14b");
   public static final Resource FunctionSpace_aE_Language_Resource = new Resource("6fd050df-c5f0-11ee-a17d-a7a71cc7c14b");
   public static final Resource FunctionSpace_aE_Language_MultilingualName = new Resource("47e137a2-d22c-11ee-b255-49ab47716ebd");
-  public static final Resource AbstractTranslation = new Resource("dc37c0c0-9794-11ef-a385-611913ad635b");
-  public static final Resource AbstractTranslation_md5 = new Resource("d6098da5-979b-11ef-a385-611913ad635b");
+  public static final Resource FunctionSpace_aE_Language_AbstractTranslation = new Resource("4857a9f5-97a4-11ef-a385-611913ad635b");
+  public static final Resource FunctionSpace_aE_Language_LanguageNameTranslation = new Resource("1ef2e09e-97ab-11ef-9bd3-25e6f963be24");
+  public static final Resource FunctionSpace_aE_Language_LanguageDescriptionTranslation = new Resource("2dcbfe42-97ab-11ef-9bd3-25e6f963be24");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +39,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,O4u1q1hJKUrUsNDoPxVf8VJmqGs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,VrrFykr2zs0ry/AOFvi6L1jvHHA=] */

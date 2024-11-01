@@ -4,6 +4,9 @@
     <resource statement-guid="feb20be1-9794-11ef-a385-611913ad635b" type="resource" guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4" />
     <resource statement-guid="d60a02d8-979b-11ef-a385-611913ad635b" type="resource" guid="d6098da5-979b-11ef-a385-611913ad635b" />
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e51d140f-986d-11ef-9d7c-b5806d5ad1be" type="resource" guid="e51cc5eb-986d-11ef-9d7c-b5806d5ad1be" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="dc37c0c2-9794-11ef-a385-611913ad635b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -52,6 +55,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="dc3af513-9794-11ef-a385-611913ad635b" type="literal">AbstractTranslation</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e51d140f-986d-11ef-9d7c-b5806d5ad1be">
+      <resource guid="e51cc5eb-986d-11ef-9d7c-b5806d5ad1be">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e51cc5ed-986d-11ef-9d7c-b5806d5ad1be" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f2a86031-986e-11ef-9d7c-b5806d5ad1be" type="literal">cleon.common.language.metamodel.spec.translation.AbstractTranslationInitializationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e51cecfe-986d-11ef-9d7c-b5806d5ad1be" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="5ed83508-979a-11ef-a385-611913ad635b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db4b94bc-c1eb-11ea-820f-9931558a898c">
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
-    <resource statement-guid="dd40b474-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="dd406650-f380-11ea-9268-b5c52a12d7f9" />
+    <resource statement-guid="7944bd21-9823-11ef-9bd3-25e6f963be24" type="resource" guid="79446efd-9823-11ef-9bd3-25e6f963be24" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db4b94be-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
@@ -15,14 +15,23 @@
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="12f672c2-d0f5-11ee-9dff-9fcfe85e4c54" type="literal">false</object>
   </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="7066b111-9823-11ef-9bd3-25e6f963be24" type="literal">Monitors a HP Laser Jet</object>
+  </predicate>
   <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
-    <object statement-guid="dd40b474-f380-11ea-9268-b5c52a12d7f9">
-      <resource guid="dd406650-f380-11ea-9268-b5c52a12d7f9">
+    <object statement-guid="7944bd21-9823-11ef-9bd3-25e6f963be24">
+      <resource guid="79446efd-9823-11ef-9bd3-25e6f963be24">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dd408d62-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="7944960f-9823-11ef-9bd3-25e6f963be24" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="79dba61e-9823-11ef-9bd3-25e6f963be24" type="literal">Überwacht einen HP Laser Jet</object>
         </predicate>
         <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
-          <object statement-guid="0315c1ef-979a-11ef-a385-611913ad635b" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="79449610-9823-11ef-9bd3-25e6f963be24" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d6098da5-979b-11ef-a385-611913ad635b">
+          <object statement-guid="83708031-9823-11ef-9bd3-25e6f963be24" type="literal">f2a1ee73cfe9e77c4945e9692004d15b</object>
         </predicate>
       </resource>
     </object>

@@ -16,40 +16,43 @@ import cleon.common.language.metamodel.spec.translation.javamodel.IAbstractTrans
 
 public class SetMD5OnTranslation extends AbstractAllInstancesRefactorerAspect {
 
+	private static String md5Hash(final String input) {
+		try {
+			// Create an MD5 MessageDigest instance
+			final var md = MessageDigest.getInstance("MD5");
+
+			// Calculate the MD5 digest for the input string
+			final var hashInBytes = md.digest(input.getBytes());
+
+			// Convert the byte array into a hex string
+			final var sb = new StringBuilder();
+			for (final byte b : hashInBytes) {
+				sb.append(String.format("%02x", b));
+			}
+
+			return sb.toString();
+		} catch (final NoSuchAlgorithmException e) {
+			throw new RuntimeException("MD5 algorithm not available", e);
+		}
+	}
+
 	public SetMD5OnTranslation() {
 		super("1.0", 2024, 11, 29, "Set MD5 for translation", TranslationPackage.AbstractTranslation);
 	}
 
 	@Override
-	protected void refactor(IModifiable executor, Package _package, INode translationNode) {
+	protected void refactor(final IModifiable executor, final Package _package, final INode translationNode) {
 		final var typeSystem = TypeSystem.create(executor);
 		final var resourceRepository = typeSystem.getResourceRepository();
 
 		final var translation = resourceRepository.getResource(IAbstractTranslation.class, translationNode);
 		if( translation.selectMd5() == null ) {
 			final var function = translation.extension(IAbstractTranslationFunctions.class);
-			Update.createOrModifyStatement(executor, _package, translationNode,
-					TranslationPackage.AbstractTranslation_md5, LiteralUtil.create(md5Hash(function.OriginText())));						
+			final var originText = function.OriginText();
+			if( originText != null ) {
+				Update.createOrModifyStatement(executor, _package, translationNode,
+						TranslationPackage.AbstractTranslation_md5, LiteralUtil.create(md5Hash(originText)));
+			}
 		}
 	}
-	
-	private static String md5Hash(String input) {
-        try {
-            // Create an MD5 MessageDigest instance
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            
-            // Calculate the MD5 digest for the input string
-            byte[] hashInBytes = md.digest(input.getBytes());
-
-            // Convert the byte array into a hex string
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hashInBytes) {
-                sb.append(String.format("%02x", b));
-            }
-
-            return sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("MD5 algorithm not available", e);
-        }
-    }	
 }

@@ -2,7 +2,6 @@ package cleon.common.resources.metamodel.spec.literals;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
-
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;

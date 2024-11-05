@@ -8,10 +8,12 @@ public interface IAbstractTranslation extends ch.actifsource.core.javamodel.IDec
   
   public java.lang.String selectMd5();
   
+  public java.lang.String selectMd5_origin();
+  
   // relations
   
   public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage selectLanguage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dc37c0c0-9794-11ef-a385-611913ad635b,3sc4Az9Xo/kb5IbDOF3lP2nzdUA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dc37c0c0-9794-11ef-a385-611913ad635b,XMMtlT9WYUVbb5Ur3iv12854euc=] */

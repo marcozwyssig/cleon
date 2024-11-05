@@ -40,6 +40,15 @@ public class LanguageNameTranslation extends DynamicResource implements ILanguag
   }
 
   @Override
+  public java.lang.String selectMd5_origin() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.translation.TranslationPackage.AbstractTranslation_md5_aE_origin);
+  }
+    
+  public void setMd5_origin(java.lang.String md5_origin) {
+     _setSingleAttribute(cleon.common.language.metamodel.spec.translation.TranslationPackage.AbstractTranslation_md5_aE_origin, md5_origin);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -85,6 +94,7 @@ public class LanguageNameTranslation extends DynamicResource implements ILanguag
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.translation.TranslationPackage.AbstractTranslation_md5, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.language.metamodel.spec.translation.TranslationPackage.AbstractTranslation_md5_aE_origin, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.translation.TranslationPackage.AbstractTranslation_language, visitor);
@@ -92,4 +102,4 @@ public class LanguageNameTranslation extends DynamicResource implements ILanguag
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,nD2Q7YkJp4mqs6DZkh44S2pG76U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,3khP6LpFHr9JBoRpQvRLouRPrWI=] */

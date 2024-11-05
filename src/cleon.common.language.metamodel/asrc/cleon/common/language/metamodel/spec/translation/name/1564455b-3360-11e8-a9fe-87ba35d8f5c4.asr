@@ -31,6 +31,7 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="f09e7316-9b8b-11ef-bb4f-3decea302a61" type="resource" guid="f09e4c02-9b8b-11ef-bb4f-3decea302a61" />
       </owns>
     </resource>
   </owns>
@@ -156,6 +157,19 @@
                     </predicate>
                   </resource>
                 </object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="f09e7316-9b8b-11ef-bb4f-3decea302a61">
+            <resource guid="f09e4c02-9b8b-11ef-bb4f-3decea302a61">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f09e4c04-9b8b-11ef-bb4f-3decea302a61" type="resource" guid="0bf63a76-de53-11eb-8e7e-69557daa5c9e" />
+              </predicate>
+              <predicate guid="594f40f4-de53-11eb-8e7e-69557daa5c9e">
+                <object statement-guid="f09e7315-9b8b-11ef-bb4f-3decea302a61" type="resource" guid="2e611184-de52-11eb-8e7e-69557daa5c9e" />
+              </predicate>
+              <predicate guid="dcef9be9-de5c-11eb-8e7e-69557daa5c9e">
+                <object statement-guid="f1c7ff19-9b8b-11ef-bb4f-3decea302a61" type="resource" guid="a345d690-de5d-11eb-8e7e-69557daa5c9e" />
               </predicate>
             </resource>
           </object>

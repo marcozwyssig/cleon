@@ -2,6 +2,7 @@ package cleon.common.resources.metamodel.spec.literals;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
+
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
@@ -11,6 +12,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import ch.actifsource.util.character.StringUtil;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.stream.Collectors;
 /* End Protected Region   [[7548ad35-0d5f-11e6-9f44-9d0000bae4df,imports]] */
 
 public class StringFunctionSpace {
@@ -46,6 +48,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("24f281dc-986b-11ef-9d7c-b5806d5ad1be")
     public java.lang.String md5();
 
+    @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
+    public java.lang.String combine();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -73,6 +78,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("24f281dc-986b-11ef-9d7c-b5806d5ad1be")
     public java.lang.String md5(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
+    public java.lang.String combine(final List<java.lang.String> stringLiteralList);
 
   }
   
@@ -169,6 +177,13 @@ public class StringFunctionSpace {
       /* End Protected Region   [[24f281dc-986b-11ef-9d7c-b5806d5ad1be]] */
     }
 
+    @Override
+    public java.lang.String combine(final List<java.lang.String> stringLiteralList) {
+      /* Begin Protected Region [[f4506904-9b89-11ef-bb4f-3decea302a61]] */
+    	return stringLiteralList.stream().collect(Collectors.joining());
+      /* End Protected Region   [[f4506904-9b89-11ef-bb4f-3decea302a61]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -207,6 +222,10 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).md5(stringLiteral);
     }
 
+    public static java.lang.String combine(final List<java.lang.String> stringLiteralList) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteralList).combine(stringLiteralList);
+    }
+
   }
 
   public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
@@ -217,6 +236,12 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("097160d4-d7bc-11ea-ae00-5518e944c256")
     public java.lang.String toString();
 
+    @IDynamicResourceExtension.MethodId("de4fe8e9-9b81-11ef-bb4f-3decea302a61")
+    public java.lang.String md5();
+
+    @IDynamicResourceExtension.MethodId("1f8226fb-9b8a-11ef-bb4f-3decea302a61")
+    public java.lang.String combine();
+
   }
   
   public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -226,6 +251,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("097160d4-d7bc-11ea-ae00-5518e944c256")
     public java.lang.String toString(final java.lang.String textLiteral);
+
+    @IDynamicResourceExtension.MethodId("1f8226fb-9b8a-11ef-bb4f-3decea302a61")
+    public java.lang.String combine(final List<java.lang.String> textLiteralList);
 
   }
   
@@ -245,6 +273,13 @@ public class StringFunctionSpace {
       return textLiteral;
     }
 
+    @Override
+    public java.lang.String combine(final List<java.lang.String> textLiteralList) {
+      /* Begin Protected Region [[1f8226fb-9b8a-11ef-bb4f-3decea302a61]] */
+    	return textLiteralList.stream().collect(Collectors.joining());   
+      /* End Protected Region   [[1f8226fb-9b8a-11ef-bb4f-3decea302a61]] */
+    }
+
   }
   
   public static class TextLiteralFunctions {
@@ -259,8 +294,12 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).toString(textLiteral);
     }
 
+    public static java.lang.String combine(final List<java.lang.String> textLiteralList) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteralList).combine(textLiteralList);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,0hBn07zW3ksf5cRs2QUdIeMR5Ks=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,TwQJ+qigniFa/c0nmTuva8t0zWY=] */

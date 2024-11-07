@@ -2,7 +2,7 @@ package cleon.applications.actifsource.metamodel.spec.system.category.feature.pr
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ILinkedResource extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.INamedResource {
+public interface ILinkedEclipseResource extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractNamedEclipseResource {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("af35c6ed-5201-11e5-89ac-35d4069568da");
   
@@ -12,4 +12,4 @@ public interface ILinkedResource extends cleon.applications.actifsource.metamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af35c6ed-5201-11e5-89ac-35d4069568da,jckLsFQ39tv+VGpL3+pCDH3ure8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af35c6ed-5201-11e5-89ac-35d4069568da,k+R5oGsBCooEDfQwLD3uJ+8Kkdc=] */

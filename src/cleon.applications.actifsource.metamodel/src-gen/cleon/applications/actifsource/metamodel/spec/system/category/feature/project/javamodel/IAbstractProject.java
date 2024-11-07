@@ -12,7 +12,7 @@ public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.
   
   public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPluginBuiltinDependency> selectDependsOnBuiltin();
   
-  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource> selectResources();
+  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> selectResources();
   
   public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.javamodel.IActifsource selectActifsource();
   
@@ -24,4 +24,4 @@ public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,yRV/rau5MvCHjL5OdJtfUJnWUnI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,Diz3hyxYF+fXjQxoGbb9Nd5Lzog=] */

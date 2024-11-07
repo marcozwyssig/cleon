@@ -4,12 +4,15 @@ import ch.actifsource.core.Resource;
 
 public class ResourcePackage {
   
-  public static final Resource Resource = new Resource("956ece77-5201-11e5-89ac-35d4069568da");
-  public static final Resource LinkedResource = new Resource("af35c6ed-5201-11e5-89ac-35d4069568da");
-  public static final Resource LinkedResource_locationURI = new Resource("bae1e78d-5201-11e5-89ac-35d4069568da");
-  public static final Resource Directory = new Resource("c8b68e26-5201-11e5-89ac-35d4069568da");
-  public static final Resource NamedResource = new Resource("ef449908-2fce-11ea-9afe-a5d974200782");
-  public static final Resource RootDirectory = new Resource("b012f106-3484-11ea-8a90-f5372e2e0d45");
+  public static final Resource AbstractEclipseResource = new Resource("956ece77-5201-11e5-89ac-35d4069568da");
+  public static final Resource LinkedEclipseResource = new Resource("af35c6ed-5201-11e5-89ac-35d4069568da");
+  public static final Resource LinkedEclipseResource_locationURI = new Resource("bae1e78d-5201-11e5-89ac-35d4069568da");
+  public static final Resource EclipseDirectory = new Resource("c8b68e26-5201-11e5-89ac-35d4069568da");
+  public static final Resource AbstractNamedEclipseResource = new Resource("ef449908-2fce-11ea-9afe-a5d974200782");
+  public static final Resource RootEclipseDirectory = new Resource("b012f106-3484-11ea-8a90-f5372e2e0d45");
+  public static final Resource EclipseDirectory_subdirectories = new Resource("be8b66ff-9ce7-11ef-924c-a99a7c25fee1");
+  public static final Resource FunctionSpace_aE_Eclipse_aE_Resources_AbstractEclipseResource = new Resource("215ea09b-9ce8-11ef-924c-a99a7c25fee1");
+  public static final Resource FunctionSpace_aE_Eclipse_aE_Resources_EclipseDirectory = new Resource("41b521d6-9ce8-11ef-924c-a99a7c25fee1");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +33,4 @@ public class ResourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource,rnR511WvTbN9obRz/a5cu1SmhNU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource,QOYqtn3aR6mAc/jmlnqZby09IJk=] */

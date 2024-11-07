@@ -8,10 +8,10 @@ public interface ITargetPath extends ch.actifsource.core.javamodel.IDecorator {
   
   // relations
   
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource selectResource();
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource selectResource();
   
   public java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> selectBuildConfigs();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,lJ8ugVMLsaCI/KtyQhfU8JrVjOU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,a+YBAKwyuEGGoXh3SEJKBu6pDFc=] */

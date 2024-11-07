@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="c8b68e26-5201-11e5-89ac-35d4069568da">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="be8bb522-9ce7-11ef-924c-a99a7c25fee1" type="resource" guid="be8b66ff-9ce7-11ef-924c-a99a7c25fee1" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c8b68e28-5201-11e5-89ac-35d4069568da" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ca938b1d-5201-11e5-89ac-35d4069568da" type="resource" guid="ef449908-2fce-11ea-9afe-a5d974200782" />
   </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="be8bb522-9ce7-11ef-924c-a99a7c25fee1">
+      <resource guid="be8b66ff-9ce7-11ef-924c-a99a7c25fee1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="be8b8e11-9ce7-11ef-924c-a99a7c25fee1" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bf6bb4e5-9ce7-11ef-924c-a99a7c25fee1" type="literal">subdirectories</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="be8c7873-9ce7-11ef-924c-a99a7c25fee1" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="be8c9f84-9ce7-11ef-924c-a99a7c25fee1" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="c557d1e6-9ce7-11ef-924c-a99a7c25fee1" type="resource" guid="c8b68e26-5201-11e5-89ac-35d4069568da" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="c8b68e29-5201-11e5-89ac-35d4069568da" type="literal">Directory</object>
+    <object statement-guid="c8b68e29-5201-11e5-89ac-35d4069568da" type="literal">EclipseDirectory</object>
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="da7ef69a-2a77-11ea-8727-89a169c94892" type="literal">false</object>

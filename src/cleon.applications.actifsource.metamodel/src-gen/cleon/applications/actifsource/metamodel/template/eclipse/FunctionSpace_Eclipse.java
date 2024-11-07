@@ -331,81 +331,81 @@ public class FunctionSpace_Eclipse {
 
   }
 
-  public static interface IResourceFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractEclipseResourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("909b8f92-3485-11ea-8a90-f5372e2e0d45")
     public java.lang.String Path();
 
   }
   
-  public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractEclipseResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ResourceFunctionsImpl implements IResourceFunctionsImpl {
+  public static class AbstractEclipseResourceFunctionsImpl implements IAbstractEclipseResourceFunctionsImpl {
 
-    public static final IResourceFunctionsImpl INSTANCE = new ResourceFunctionsImpl();
+    public static final IAbstractEclipseResourceFunctionsImpl INSTANCE = new AbstractEclipseResourceFunctionsImpl();
 
-    private ResourceFunctionsImpl() {}
+    private AbstractEclipseResourceFunctionsImpl() {}
 
   }
   
-  public static class ResourceFunctions {
+  public static class AbstractEclipseResourceFunctions {
 
-    private ResourceFunctions() {}
+    private AbstractEclipseResourceFunctions() {}
 
   }
 
-  public static interface INamedResourceFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractNamedEclipseResourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f012b42-3485-11ea-8a90-f5372e2e0d45")
     public java.lang.String Path();
 
   }
   
-  public static interface INamedResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractNamedEclipseResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NamedResourceFunctionsImpl implements INamedResourceFunctionsImpl {
+  public static class AbstractNamedEclipseResourceFunctionsImpl implements IAbstractNamedEclipseResourceFunctionsImpl {
 
-    public static final INamedResourceFunctionsImpl INSTANCE = new NamedResourceFunctionsImpl();
+    public static final IAbstractNamedEclipseResourceFunctionsImpl INSTANCE = new AbstractNamedEclipseResourceFunctionsImpl();
 
-    private NamedResourceFunctionsImpl() {}
+    private AbstractNamedEclipseResourceFunctionsImpl() {}
 
   }
   
-  public static class NamedResourceFunctions {
+  public static class AbstractNamedEclipseResourceFunctions {
 
-    private NamedResourceFunctions() {}
+    private AbstractNamedEclipseResourceFunctions() {}
 
   }
 
-  public static interface IRootDirectoryFunctions extends IDynamicResourceExtension {
+  public static interface IRootEclipseDirectoryFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c3df3055-3485-11ea-8a90-f5372e2e0d45")
     public java.lang.String Path();
 
   }
   
-  public static interface IRootDirectoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRootEclipseDirectoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RootDirectoryFunctionsImpl implements IRootDirectoryFunctionsImpl {
+  public static class RootEclipseDirectoryFunctionsImpl implements IRootEclipseDirectoryFunctionsImpl {
 
-    public static final IRootDirectoryFunctionsImpl INSTANCE = new RootDirectoryFunctionsImpl();
+    public static final IRootEclipseDirectoryFunctionsImpl INSTANCE = new RootEclipseDirectoryFunctionsImpl();
 
-    private RootDirectoryFunctionsImpl() {}
+    private RootEclipseDirectoryFunctionsImpl() {}
 
   }
   
-  public static class RootDirectoryFunctions {
+  public static class RootEclipseDirectoryFunctions {
 
-    private RootDirectoryFunctions() {}
+    private RootEclipseDirectoryFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,6puIo/ahagxwcoa6Zt7LUQBaZy0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,SRKpTQs0gkrnodhjHucSzhFW4Fc=] */

@@ -10,14 +10,14 @@ import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 public class LanguageDescriptionTranslationValidationAspect extends AbstractBaseTranslationValidationAspect {
 
 	@Override
-	protected boolean hasTranslation(ValidationContext context) {
-		final var descpriptionTransation = getRepository(context).getResource(ILanguageDescriptionTranslation.class, context.getResource());
-		return descpriptionTransation.selectDescriptions().isEmpty() == false;
+	protected void applyTranslation(final IModifiable modifiable, final ValidationContext context, final String translation) {
+		Update.createStatement(modifiable, context.getPackage(), context.getResource() , DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(translation));
 	}
 
 	@Override
-	protected void applyTranslation(IModifiable modifiable, ValidationContext context, String translation) {
-		Update.createStatement(modifiable, context.getPackage(), context.getResource() , DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(translation));		
+	protected boolean hasTranslation(final ValidationContext context) {
+		final var descpriptionTransation = getRepository(context).getResource(ILanguageDescriptionTranslation.class, context.getResource());
+		return descpriptionTransation.selectDescriptions() != null && !descpriptionTransation.selectDescriptions().isEmpty();
 	}
 
 }

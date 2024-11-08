@@ -10,14 +10,14 @@ import cleon.common.language.metamodel.spec.translation.javamodel.AbstractBaseTr
 public class LanguageNameTranslationValidationAspect extends AbstractBaseTranslationValidationAspect {
 
 	@Override
-	protected boolean hasTranslation(ValidationContext context) {
-		final var nameTransation = getRepository(context).getResource(ILanguageNameTranslation.class, context.getResource());
-		return nameTransation.selectName() != null;
+	protected void applyTranslation(final IModifiable modifiable, final ValidationContext context, final String translation) {
+		Update.createStatement(modifiable, context.getPackage(), context.getResource() , CorePackage.NamedResource_name, LiteralUtil.create(translation));
 	}
 
 	@Override
-	protected void applyTranslation(IModifiable modifiable, ValidationContext context, String translation) {
-		Update.createStatement(modifiable, context.getPackage(), context.getResource() , CorePackage.NamedResource_name, LiteralUtil.create(translation));		
+	protected boolean hasTranslation(final ValidationContext context) {
+		final var nameTransation = getRepository(context).getResource(ILanguageNameTranslation.class, context.getResource());
+		return nameTransation.selectName() != null;
 	}
 
 }

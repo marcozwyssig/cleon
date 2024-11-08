@@ -8,22 +8,12 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
-import java.util.function.Function;
-
-import ch.actifsource.core.CorePackage;
-import ch.actifsource.core.INode;
-
+import ch.actifsource.util.log.Logger;
 import cleon.common.language.metamodel.spec.languages.InstancesModel;
 import cleon.common.language.metamodel.spec.languages.javamodel.CurrentLanguage;
-import cleon.common.language.metamodel.spec.language_class.Language_classPackage;
-import cleon.common.language.metamodel.spec.language_class.javamodel.ILanguageClass;
-import cleon.common.language.metamodel.spec.language_class.javamodel.ILanguageNameAspectTranslation;
-import cleon.common.language.metamodel.spec.language_class.javamodel.ITranslateSimpleNameAspect;
-import ch.actifsource.core.job.Select;
-import ch.actifsource.core.model.aspects.impl.SelectOverridableResourceAspectImpl;
-import ch.actifsource.util.log.Logger;
-import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
-import ch.actifsource.core.selector.SelectSelectorUtil;
+import cleon.common.resources.metamodel.spec.literals.StringFunctionSpace;
+import cleon.common.language.metamodel.spec.javamodel.ResolveTranslationService;
+
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -72,6 +62,9 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("3ca8bf73-d22c-11ee-b255-49ab47716ebd")
     public java.lang.String en();
 
+    @IDynamicResourceExtension.MethodId("74641b99-9dd4-11ef-8e7d-336090501e1a")
+    public java.lang.String translation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IMultilingualDescriptionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -81,6 +74,9 @@ public class FunctionSpace_Language {
 
     @IDynamicResourceExtension.MethodId("3ca8bf73-d22c-11ee-b255-49ab47716ebd")
     public java.lang.String en(final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription);
+
+    @IDynamicResourceExtension.MethodId("74641b99-9dd4-11ef-8e7d-336090501e1a")
+    public java.lang.String translation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription);
 
   }
   
@@ -112,6 +108,17 @@ public class FunctionSpace_Language {
       /* End Protected Region   [[3ca8bf73-d22c-11ee-b255-49ab47716ebd]] */
     }
 
+    @Override
+    public java.lang.String translation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
+      /* Begin Protected Region [[74641b99-9dd4-11ef-8e7d-336090501e1a]] */
+      if( multilingualDescription.selectDescriptionTranslation().containsKey(language.getResource())) {
+      	final var description = multilingualDescription.selectDescriptionTranslation().get(language.getResource());
+      	return String.join("\n", description.selectDescriptions());
+      }
+      return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.combine(multilingualDescription.selectDescriptions());
+      /* End Protected Region   [[74641b99-9dd4-11ef-8e7d-336090501e1a]] */
+    }
+
   }
   
   public static class MultilingualDescriptionFunctions {
@@ -124,6 +131,10 @@ public class FunctionSpace_Language {
 
     public static java.lang.String en(final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
       return DynamicResourceUtil.invoke(IMultilingualDescriptionFunctionsImpl.class, MultilingualDescriptionFunctionsImpl.INSTANCE, multilingualDescription).en(multilingualDescription);
+    }
+
+    public static java.lang.String translation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
+      return DynamicResourceUtil.invoke(IMultilingualDescriptionFunctionsImpl.class, MultilingualDescriptionFunctionsImpl.INSTANCE, multilingualDescription).translation(language, multilingualDescription);
     }
 
   }
@@ -311,12 +322,18 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
     public java.lang.String translateSimpleName();
 
+    @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
+    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
     public java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource);
+
+    @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
+    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource);
 
   }
   
@@ -329,112 +346,17 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource) {
       /* Begin Protected Region [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
-      final var currentLanguageCode = CurrentLanguage.getInstance().LanguageCode();
-
-      // Create a type system and repository to work with resources
-      final var typeSystem = TypeSystem.create(resource.getReadJobExecutor());
-      final var repository = typeSystem.getResourceRepository();
-
-      // Determine the shallow type of the resource
-      final var shallowType = Select.shallowType(resource.getReadJobExecutor(), resource.getResource());
-      Logger.instance().logInfo("Shallow type: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
-
-      // Anonymous recursive function to search for LanguageClass
-      final Function<INode, INode> searchForLanguageClass = new Function<>() {
-      	@Override
-      	public INode apply(final INode currentType) {
-      		final var shallowCurrentType = Select.shallowType(resource.getReadJobExecutor(), currentType);
-      		Logger.instance().logInfo("Checking type: " + Select.simpleName(resource.getReadJobExecutor(), shallowCurrentType));
-
-      		if( currentType.equals(CorePackage.Resource) ) {
-      			Logger.instance().logInfo("currenType is a resource. Stop recursive calls.");
-      			return null;
-      		}
-
-      		// Check if the current type is the LanguageClass
-      		if (shallowCurrentType.equals(Language_classPackage.LanguageClass)) {
-      			Logger.instance().logInfo("Language class found for: " + Select.simpleName(resource.getReadJobExecutor(), currentType));
-      			return currentType;
-      		}
-
-      		// Get the classes this type extends
-      		final var extendsObjects = Select.objectsForRelation(resource.getReadJobExecutor(), CorePackage.Class_extends, currentType);
-
-      		// Iterate over each extended object and apply the search function
-      		for (final var node : extendsObjects) {
-      			Logger.instance().logInfo("Inspecting extended type: " + Select.simpleName(resource.getReadJobExecutor(), node));
-      			final var resultNode = this.apply(node); // Recursive call within the lambda
-      			if( resultNode != null) {
-      				return resultNode; // Stop searching once the LanguageClass is found
-      			}
-      		}
-
-      		return null;  // No match found in the hierarchy
-      	}
-      };
-
-      // Obtain the language class for the shallow type
-      final var languageClassNode = searchForLanguageClass.apply(shallowType);
-      final var languageClass = repository.getResource(ILanguageClass.class, languageClassNode);
-
-      // Check if the current language is different from the default language
-      if (!currentLanguageCode.equals(languageClass.selectLanguageSettings().selectDefaultLanguage().selectCode())) {
-      	// Find the translation key for the current language
-      	final var languageKey = languageClass.selectTranslations().keySet().stream()
-      			.filter(key -> {
-      				// Fetch the language resource and compare its code with the current language code
-      				final var language = repository.getResource(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, key);
-      				return language.selectCode().equals(currentLanguageCode);
-      			})
-      			.findFirst()
-      			.orElse(null); // If no match is found, return null
-
-      	// If a language key is found, fetch the corresponding translation
-      	if (languageKey == null) {
-      		return "language code not been found";
-      	}
-      	final ILanguageNameAspectTranslation languageTranslation = languageClass.selectTranslations().get(languageKey);
-      	final var pack = Select.mainPackage(resource.getReadJobExecutor(), languageTranslation.selectTranslationValue().getResource());
-      	if( pack != null) {
-      		final var selector = Select.objectForRelationOrNull(resource.getReadJobExecutor(),
-      				Language_classPackage.LanguageNameAspectTranslation_translationValue,
-      				languageTranslation.getResource());
-
-      		final var value = SelectSelectorUtil.selectSelectorTextOrNull(
-      				resource.getReadJobExecutor(),
-      				selector,
-      				resource.getResource());
-
-      		// Return the translation value if it exists
-      		if (value != null) {
-      			return value;
-      		}
-      	}
-      }
-
-
-      // If the default language is used or no translation is found, try to get the simple name aspect translation
-      final var declaredAspectImpl = resource.getReadJobExecutor().execute(
-      		SelectOverridableResourceAspectImpl.forResource(
-      				resource.getReadJobExecutor(),
-      				resource.getResource(),
-      				ITranslateSimpleNameAspect.class)
-      		);
-
-      // If no aspect implementation is declared, return a message
-      if (declaredAspectImpl == null) {
-      	return "no declaredAspectImpl";
-      }
-
-      // Obtain the aspect using the declared aspect implementation
-      final var aspect = Select.aspect(
-      		resource.getReadJobExecutor(),
-      		ITranslateSimpleNameAspect.class,
-      		declaredAspectImpl.getPackagedAspectImpl());
-
-      // Return the simple name translation if the aspect is available, otherwise return a message
-      return aspect == null ? "no aspect" : aspect.translateSimpleName(resource.getReadJobExecutor(), resource.getResource());
+      final var resolveTranslationService = new ResolveTranslationService(resource);
+      return resolveTranslationService.translate();
       /* End Protected Region   [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
+    }
+
+    @Override
+    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
+      /* Begin Protected Region [[17e0f1f3-9dc9-11ef-8e7d-336090501e1a]] */
+      final var resolveTranslationService = new ResolveTranslationService(resource);
+      return resolveTranslationService.translate(language);
+      /* End Protected Region   [[17e0f1f3-9dc9-11ef-8e7d-336090501e1a]] */
     }
 
   }
@@ -445,6 +367,10 @@ public class FunctionSpace_Language {
 
     public static java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource) {
       return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleName(resource);
+    }
+
+    public static java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
+      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translate(language, resource);
     }
 
   }
@@ -538,10 +464,4 @@ public class FunctionSpace_Language {
 
 }
 
-      /* Begin Protected Region [[c53942fc-9daa-11ef-b12a-15e52f90bd0b]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[c53942fc-9daa-11ef-b12a-15e52f90bd0b]] */
-      /* Begin Protected Region [[e41f1ca7-9daa-11ef-b12a-15e52f90bd0b]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[e41f1ca7-9daa-11ef-b12a-15e52f90bd0b]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,+AQZ4AswiWh7RxRth9Cwv3LEKbo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,Vu5qZww0owO+JRSHH7360xdz7gQ=] */

@@ -614,7 +614,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7582dbf7-d64d-11ee-8014-c150876d6b6e")
-    public java.lang.String ChapterPath();
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("c0ea662e-e5cc-11ee-9463-7b6f2009e56e")
     public java.lang.String FileName();
@@ -648,7 +648,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c0be5947-d64d-11ee-8014-c150876d6b6e")
-    public java.lang.String ChapterPath();
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("00a195ac-e5cd-11ee-9463-7b6f2009e56e")
     public java.lang.String FileName();
@@ -679,7 +679,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IDatabaseViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fd5c8639-27c3-11ef-9acc-81efe99aa8b6")
-    public java.lang.String ChapterPath();
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("3e680ed4-27dc-11ef-9e2d-0b682fec1a77")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -848,6 +848,31 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IAboutFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("18164d4e-9dde-11ef-bee3-bbbac6a8abc2")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IAboutFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AboutFunctionsImpl implements IAboutFunctionsImpl {
+
+    public static final IAboutFunctionsImpl INSTANCE = new AboutFunctionsImpl();
+
+    private AboutFunctionsImpl() {}
+
+  }
+  
+  public static class AboutFunctions {
+
+    private AboutFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,YbT+OjR5VwGx8nF7jlyUfYKXl04=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Iq7l8T9AaEGXBTLqwIkzO8EAodo=] */

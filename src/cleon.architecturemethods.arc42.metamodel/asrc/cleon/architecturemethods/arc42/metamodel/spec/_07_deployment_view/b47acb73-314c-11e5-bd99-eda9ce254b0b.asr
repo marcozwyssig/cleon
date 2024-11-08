@@ -50,6 +50,15 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="7e05e7b0-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="7e05c09a-9dcc-11ef-8e7d-336090501e1a">
+      <owns predicate="7a111686-c5d5-11ee-8549-1528e55916a4">
+        <resource statement-guid="80de5c65-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="80de0e42-9dcc-11ef-8e7d-336090501e1a">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="8141157b-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="8140ee64-9dcc-11ef-8e7d-336090501e1a" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b47acb75-314c-11e5-bd99-eda9ce254b0b" type="resource" guid="af81de75-c04e-11ee-bc88-af1934b8c942" />
@@ -329,6 +338,37 @@ Diagrams by your hardware-oriented colleagues who describe processors and channe
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
                       <object statement-guid="0073bf5d-8ad4-11ef-b43f-b7fea5de01d6" type="literal">Deployment View</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7e05e7b0-9dcc-11ef-8e7d-336090501e1a">
+      <resource guid="7e05c09a-9dcc-11ef-8e7d-336090501e1a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7e05e7ae-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="07e0a1d7-c5d2-11ee-8549-1528e55916a4" />
+        </predicate>
+        <predicate guid="f637a5f2-c5d2-11ee-8549-1528e55916a4">
+          <object statement-guid="7e05e7af-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="7a111686-c5d5-11ee-8549-1528e55916a4">
+          <object statement-guid="80de5c65-9dcc-11ef-8e7d-336090501e1a">
+            <resource guid="80de0e42-9dcc-11ef-8e7d-336090501e1a">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="80de3554-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="8141157b-9dcc-11ef-8e7d-336090501e1a">
+                  <resource guid="8140ee64-9dcc-11ef-8e7d-336090501e1a">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="81411579-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="8141157a-9dcc-11ef-8e7d-336090501e1a" type="literal">Verteilsicht</object>
                     </predicate>
                   </resource>
                 </object>

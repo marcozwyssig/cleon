@@ -406,6 +406,31 @@ public class FunctionSpace_Eclipse {
 
   }
 
+  public static interface IEclipseDirectoryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("04c4a08c-9cea-11ef-924c-a99a7c25fee1")
+    public java.lang.String Path();
+
+  }
+  
+  public static interface IEclipseDirectoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EclipseDirectoryFunctionsImpl implements IEclipseDirectoryFunctionsImpl {
+
+    public static final IEclipseDirectoryFunctionsImpl INSTANCE = new EclipseDirectoryFunctionsImpl();
+
+    private EclipseDirectoryFunctionsImpl() {}
+
+  }
+  
+  public static class EclipseDirectoryFunctions {
+
+    private EclipseDirectoryFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,SRKpTQs0gkrnodhjHucSzhFW4Fc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,GI/K5Hbj9szlRYhM+ImFm0pY1io=] */

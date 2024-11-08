@@ -17,6 +17,7 @@ public class EclipsePackage {
   public static final Resource FunctionSpace_aE_Eclipse_AbstractEclipseResource = new Resource("8819ac7d-3485-11ea-8a90-f5372e2e0d45");
   public static final Resource FunctionSpace_aE_Eclipse_AbstractNamedEclipseResource = new Resource("986c240d-3485-11ea-8a90-f5372e2e0d45");
   public static final Resource FunctionSpace_aE_Eclipse_RootEclipseDirectory = new Resource("c3df093d-3485-11ea-8a90-f5372e2e0d45");
+  public static final Resource FunctionSpace_aE_Eclipse_EclipseDirectory = new Resource("fabf0377-9ce9-11ef-924c-a99a7c25fee1");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +38,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse,CkU1/UFna0bI88n9kBO1Dz3XI8Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse,rHosWcS6by/p6yyrLy9iEv0rdpw=] */

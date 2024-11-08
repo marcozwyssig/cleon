@@ -26,6 +26,7 @@
       </owns>
     </resource>
     <resource statement-guid="62a491ca-374a-11e8-88ad-114c6ffe4a0c" type="resource" guid="2447d400-3748-11e8-88ad-114c6ffe4a0c" />
+    <resource statement-guid="9fe0212a-9db2-11ef-b12a-15e52f90bd0b" type="resource" guid="9fdfd306-9db2-11ef-b12a-15e52f90bd0b" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="27d0007c-3360-11e8-a9fe-87ba35d8f5c4" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -114,10 +115,23 @@
           <object statement-guid="24482223-3748-11e8-88ad-114c6ffe4a0c" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="24482222-3748-11e8-88ad-114c6ffe4a0c" type="literal">cleon.common.language.metamodel.spec.translation.name.javamodel.LanguageNameInitializationAspect</object>
+          <object statement-guid="24482222-3748-11e8-88ad-114c6ffe4a0c" type="literal">cleon.common.language.metamodel.spec.translation.name.javamodel.LanguageNameTranslationInitializationAspect</object>
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="2447fb11-3748-11e8-88ad-114c6ffe4a0c" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9fe0212a-9db2-11ef-b12a-15e52f90bd0b">
+      <resource guid="9fdfd306-9db2-11ef-b12a-15e52f90bd0b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9fdffa18-9db2-11ef-b12a-15e52f90bd0b" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a0646c7d-9db2-11ef-b12a-15e52f90bd0b" type="literal">cleon.common.language.metamodel.spec.translation.name.javamodel.LanguageNameTranslationValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9fdffa19-9db2-11ef-b12a-15e52f90bd0b" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

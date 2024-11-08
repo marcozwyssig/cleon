@@ -1,4 +1,4 @@
-package cleon.common.language.metamodel.spec.translation;
+package cleon.common.language.metamodel.spec.translation.javamodel;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
@@ -8,7 +8,7 @@ import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractTranslationFunctions;
-import cleon.common.language.metamodel.spec.translation.javamodel.IAbstractTranslation;
+import cleon.common.language.metamodel.spec.translation.TranslationPackage;
 import cleon.common.resources.metamodel.spec.literals.StringFunctionSpace.StringLiteralFunctionsImpl;
 
 public class AbstractTranslationInitializationAspect extends AbstractInitializationAspect {

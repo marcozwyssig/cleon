@@ -10,9 +10,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.update.IModifiable;
 import cleon.common.language.metamodel.spec.FunctionSpace_Language.IAbstractMultilingualFunctions;
-import cleon.common.language.metamodel.spec.javamodel.AbstractMultiLanguageInitializationAspect;
+import cleon.common.language.metamodel.spec.translation.javamodel.AbstractBaseLanguageInitializationAspect;
 
-public class LanguageNameInitializationAspect extends AbstractMultiLanguageInitializationAspect {
+public class LanguageNameTranslationInitializationAspect extends AbstractBaseLanguageInitializationAspect {
 	private IMultilingualName getDefaultName(final IDynamicResourceRepository dynamicResourceRepository,
 			final INode newInstance) {
 		final var name = dynamicResourceRepository.getResource(ILanguageNameTranslation.class, newInstance);

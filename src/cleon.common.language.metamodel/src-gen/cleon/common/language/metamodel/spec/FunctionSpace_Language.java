@@ -454,6 +454,12 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("5afebf57-97a4-11ef-a385-611913ad635b")
     public java.lang.String OriginText();
 
+    @IDynamicResourceExtension.MethodId("76af884e-9dae-11ef-b12a-15e52f90bd0b")
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage SourceLanguage();
+
+    @IDynamicResourceExtension.MethodId("bc796fff-9dae-11ef-b12a-15e52f90bd0b")
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage TargetLanguage();
+
   }
   
   public static interface IAbstractTranslationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -478,6 +484,9 @@ public class FunctionSpace_Language {
 
     @IDynamicResourceExtension.MethodId("22e6b038-97ab-11ef-9bd3-25e6f963be24")
     public java.lang.String OriginText();
+
+    @IDynamicResourceExtension.MethodId("7a0235c9-9dae-11ef-b12a-15e52f90bd0b")
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage SourceLanguage();
 
   }
   
@@ -504,6 +513,9 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("332418f3-97ab-11ef-9bd3-25e6f963be24")
     public java.lang.String OriginText();
 
+    @IDynamicResourceExtension.MethodId("8b8f0191-9dae-11ef-b12a-15e52f90bd0b")
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage SourceLanguage();
+
   }
   
   public static interface ILanguageDescriptionTranslationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -526,4 +538,10 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,DVKOunB4B6VpNmB+2p0bTMI1l1A=] */
+      /* Begin Protected Region [[c53942fc-9daa-11ef-b12a-15e52f90bd0b]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[c53942fc-9daa-11ef-b12a-15e52f90bd0b]] */
+      /* Begin Protected Region [[e41f1ca7-9daa-11ef-b12a-15e52f90bd0b]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[e41f1ca7-9daa-11ef-b12a-15e52f90bd0b]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,+AQZ4AswiWh7RxRth9Cwv3LEKbo=] */

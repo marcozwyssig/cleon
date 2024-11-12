@@ -9,6 +9,7 @@ public class LanguagesPackage {
   public static final Resource Language_ISOLanguageName = new Resource("f7844a09-3337-11e8-a9fe-87ba35d8f5c4");
   public static final Resource Language_nativeName = new Resource("fb858700-3337-11e8-a9fe-87ba35d8f5c4");
   public static final Resource Language_code = new Resource("fee1f877-3337-11e8-a9fe-87ba35d8f5c4");
+  public static final Resource FunctionSpace_aE_Language_aE_Instance_Language = new Resource("f0e701b6-a0f4-11ef-9443-0b421a1b8616");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class LanguagesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languages,GMn/YYQn+GE4K3m3txonQIOw7fk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languages,Bf8mDkcrYCw7nBFYN0C3MFtcSNo=] */

@@ -27,6 +27,10 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Arc42_DocumentElement = new Resource("937c2066-8017-11ea-b039-9728191a5cdc");
   public static final Resource FunctionSpace_aE_SystemArc42_SystemArc42Document = new Resource("3d010a8c-b1fa-11ea-a3a2-e9d3344bee73");
   public static final Resource arc42Document___V_7_aE_dataview = new Resource("e1c4703c-db09-11ee-8b28-393a78550a86");
+  public static final Resource SystemArc42Document___V_9_aE_system_aE_concepts = new Resource("707d9ab8-a283-11ef-9449-75f365af5f44");
+  public static final Resource SoftwareArc42Document = new Resource("e7b5b0b3-a28c-11ef-9aea-bfda14a4d373");
+  public static final Resource SoftwareArc42Document___V_9_aE_software_aE_concepts = new Resource("e7b5b0b4-a28c-11ef-9aea-bfda14a4d373");
+  public static final Resource NamedSoftwareArc42Document = new Resource("0f92ec08-a28d-11ef-9aea-bfda14a4d373");
   
   /* Begin Protected Region [[user]] */
   
@@ -47,4 +51,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,mByJxUuT3fOjSgSigg0SBOv5FwM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,8vwcsa6qxVXWm4nhk+wRAOjkeas=] */

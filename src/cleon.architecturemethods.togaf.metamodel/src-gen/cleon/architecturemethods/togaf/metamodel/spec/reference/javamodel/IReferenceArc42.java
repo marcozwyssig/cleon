@@ -10,6 +10,8 @@ public interface IReferenceArc42 extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.javamodel.I__V_5_aE_ArchitectureBuildingBlockView select__V_5_aE_architecturebuildingblockview();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts selectNo_concept();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,gM1zOWTdoGxG0Ro/hm8w5mmJDSc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,zLLRBKSh2LriUk8XerLH0s40VBQ=] */

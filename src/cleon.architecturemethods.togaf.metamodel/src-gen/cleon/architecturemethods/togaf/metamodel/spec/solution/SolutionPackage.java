@@ -7,6 +7,7 @@ public class SolutionPackage {
   public static final Resource SolutionArc42___V_5_aE_solutionbuildingblockview = new Resource("b56072fd-2d71-11e6-959f-d1cef44ff5fd");
   public static final Resource SolutionArc42 = new Resource("c90cdcfd-28f2-11e8-a684-8332c21c2f91");
   public static final Resource NamedSolutionArc42 = new Resource("c90cdd09-28f2-11e8-a684-8332c21c2f91");
+  public static final Resource SolutionArc42_no_aE_concept = new Resource("2e7340e9-a290-11ef-9aea-bfda14a4d373");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +28,4 @@ public class SolutionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.solution,8SXLbBTjqYQjgaYsNy5Ko8Fw0p0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.solution,/YSUbciFsz3NH/bB4vZqLBNSifM=] */

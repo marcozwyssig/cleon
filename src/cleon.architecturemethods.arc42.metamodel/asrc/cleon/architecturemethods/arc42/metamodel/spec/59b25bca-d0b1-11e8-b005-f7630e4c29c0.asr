@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="59b25bca-d0b1-11e8-b005-f7630e4c29c0">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="707f6f7f-a283-11ef-9449-75f365af5f44" type="resource" guid="707d9ab8-a283-11ef-9449-75f365af5f44" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="59b25bcc-d0b1-11e8-b005-f7630e4c29c0" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="59b25bce-d0b1-11e8-b005-f7630e4c29c0" type="resource" guid="2cbcf671-ffcc-11e4-ac0a-959b440f987f" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="707f6f7f-a283-11ef-9449-75f365af5f44">
+      <resource guid="707d9ab8-a283-11ef-9449-75f365af5f44">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="707d9ab9-a283-11ef-9449-75f365af5f44" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="707d9aba-a283-11ef-9449-75f365af5f44" type="literal">09_system_concepts</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="707d9abb-a283-11ef-9449-75f365af5f44" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="707d9abc-a283-11ef-9449-75f365af5f44" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="7705aa51-a283-11ef-9449-75f365af5f44" type="resource" guid="6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="724c8eed-a283-11ef-9449-75f365af5f44" type="resource" guid="1ca47d69-d0b5-11e8-b005-f7630e4c29c0" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="59b25bcd-d0b1-11e8-b005-f7630e4c29c0" type="literal">SystemArc42Document</object>

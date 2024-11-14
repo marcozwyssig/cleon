@@ -10,6 +10,8 @@ public interface ISolutionArc42 extends cleon.architecturemethods.arc42.metamode
   
   public cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.javamodel.I__V_5_aE_SolutionBuildingBlockView select__V_5_aE_solutionbuildingblockview();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts selectNo_concept();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90cdcfd-28f2-11e8-a684-8332c21c2f91,WM52Z2pPb3W7VdQJvnDBKd6fmPg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90cdcfd-28f2-11e8-a684-8332c21c2f91,VRklKVGlpOyDDL2noTlDIY7oNGs=] */

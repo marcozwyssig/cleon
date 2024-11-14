@@ -288,6 +288,16 @@ public class ReferenceArc42 extends DynamicResource implements IReferenceArc42 {
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts selectNo_concept() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts.class, cleon.architecturemethods.togaf.metamodel.spec.reference.ReferencePackage.ReferenceArc42_no_aE_concept);
+  }
+
+  public ReferenceArc42 setNo_concept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts no_concept) {
+    _setSingle(cleon.architecturemethods.togaf.metamodel.spec.reference.ReferencePackage.ReferenceArc42_no_aE_concept, no_concept);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning selectPlanning() {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning);
   }
@@ -345,7 +355,6 @@ public class ReferenceArc42 extends DynamicResource implements IReferenceArc42 {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_6_aE_runtimeview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDataView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_deploymentview, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_quality_aE_scenarios, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_technical_aE_risks, visitor);
@@ -367,5 +376,9 @@ public class ReferenceArc42 extends DynamicResource implements IReferenceArc42 {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.togaf.metamodel.spec.reference.javamodel.IReferenceArc42.class, cleon.architecturemethods.togaf.metamodel.spec.reference.ReferencePackage.ReferenceArc42___V_5_aE_architecturebuildingblockview, object.getResource());
   }
   
+  public static cleon.architecturemethods.togaf.metamodel.spec.reference.javamodel.IReferenceArc42 selectToMeNo_concept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.togaf.metamodel.spec.reference.javamodel.IReferenceArc42.class, cleon.architecturemethods.togaf.metamodel.spec.reference.ReferencePackage.ReferenceArc42_no_aE_concept, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,g1wOcdxLdH4bRtjWYBbu8oFtpX4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,tYizUiid8/xlhYAEnFeJISYxhlA=] */

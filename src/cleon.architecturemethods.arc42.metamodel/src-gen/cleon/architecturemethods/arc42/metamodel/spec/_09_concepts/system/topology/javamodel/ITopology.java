@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topol
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITopology extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface ITopology extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fca3a39b-878a-11e9-a61b-279ebde48b48");
   
@@ -16,4 +16,4 @@ public interface ITopology extends cleon.common.doc.metamodel.spec.chapter.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fca3a39b-878a-11e9-a61b-279ebde48b48,wwWMCoJkVVtaT2pgTvxK1WHAlSo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fca3a39b-878a-11e9-a61b-279ebde48b48,z9S/zBMQjKiMKSxSG7s9Q724vFk=] */

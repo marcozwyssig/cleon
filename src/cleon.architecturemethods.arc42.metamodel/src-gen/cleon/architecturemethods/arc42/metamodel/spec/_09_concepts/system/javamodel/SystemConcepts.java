@@ -260,7 +260,6 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_accessConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_businessContinuityConcept, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_chapters, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.javamodel.IDeploymentConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_deploymentConcept, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_dnsConcept, visitor);
@@ -330,4 +329,4 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,z5qEgofLOnEoWPU5mCJwZUMLN/U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,X0lCm11/6oQvDCGALTbUJfCAXKc=] */

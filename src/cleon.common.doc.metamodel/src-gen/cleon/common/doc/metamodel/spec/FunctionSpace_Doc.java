@@ -36,6 +36,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("cfd45266-24ba-11ef-86fc-7d48003eb647")
     public List<cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> GetParents();
 
+    @IDynamicResourceExtension.MethodId("4d76e8a4-9862-11ef-9d7c-b5806d5ad1be")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
   }
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -152,9 +155,6 @@ public class FunctionSpace_Doc {
 
     @IDynamicResourceExtension.MethodId("e9f0dd95-d6e7-11ee-8fe2-9fdd0afb9b0b")
     public java.lang.String ChapterName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("4d76e8a4-9862-11ef-9d7c-b5806d5ad1be")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
 
     @IDynamicResourceExtension.MethodId("9604b8e2-9867-11ef-9d7c-b5806d5ad1be")
     public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> Languages();
@@ -290,4 +290,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,phQcJfZDc4PZU8NKfWLlElGcxlY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,3MIZBs8/CgUEA2cB0/h/OSgC0U8=] */

@@ -81,6 +81,16 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation> selectTextTranslation() {
+    return _getMap(cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation);
+  }
+
+  public ChapterReference setTextTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation> textTranslation) {
+    _setMap(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation, textTranslation);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -99,6 +109,7 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapter, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
+    _acceptMap(cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -109,4 +120,4 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,r6BMDqel4Pyeb77T6no+faeuKF0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,vg5IRQSyQ23jfaHfFo8AFMJbZVk=] */

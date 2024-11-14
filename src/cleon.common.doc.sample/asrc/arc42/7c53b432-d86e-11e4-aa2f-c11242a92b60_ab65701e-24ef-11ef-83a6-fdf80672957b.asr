@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="ab65701e-24ef-11ef-83a6-fdf80672957b">
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="2ef1877a-9def-11ef-970e-cda72e282c65" type="resource" guid="2ef0eb36-9def-11ef-970e-cda72e282c65" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ab657020-24ef-11ef-83a6-fdf80672957b" type="resource" guid="1376580a-24e8-11ef-83a6-fdf80672957b" />
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="2ef1877a-9def-11ef-970e-cda72e282c65">
+      <resource guid="2ef0eb36-9def-11ef-970e-cda72e282c65">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2ef18779-9def-11ef-970e-cda72e282c65" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="2ef2e70f-9def-11ef-970e-cda72e282c65" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d6098da5-979b-11ef-a385-611913ad635b">
+          <object statement-guid="2ef2e70e-9def-11ef-970e-cda72e282c65" type="literal">d41d8cd98f00b204e9800998ecf8427e</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="5e8bd61d-ff96-11e8-9d0c-c96c1e9b7b46">
     <object statement-guid="add47484-24ef-11ef-83a6-fdf80672957b" type="aggregate" guid="b4c1cd3f-0bfd-11e6-92b5-27c7a314300c" />

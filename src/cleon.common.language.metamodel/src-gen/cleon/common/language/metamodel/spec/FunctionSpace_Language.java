@@ -29,7 +29,7 @@ public class FunctionSpace_Language {
     public java.lang.String formatLanguages();
 
     @IDynamicResourceExtension.MethodId("4d70765d-9856-11ef-9d7c-b5806d5ad1be")
-    public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> Languages();
+    public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> AllLanguages();
 
     @IDynamicResourceExtension.MethodId("1a04a259-9858-11ef-9d7c-b5806d5ad1be")
     public java.lang.String SimpleName();
@@ -464,4 +464,4 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,NN0YWjO25kyrroj9Bg8uroKLweo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,FYYBVihuJzlPdk4dcWbWx5T+XZs=] */

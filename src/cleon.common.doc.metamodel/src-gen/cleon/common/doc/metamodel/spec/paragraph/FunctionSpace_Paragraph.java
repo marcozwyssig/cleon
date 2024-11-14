@@ -43,6 +43,34 @@ public class FunctionSpace_Paragraph {
 
   }
 
+  public static interface ILanguageTextTranslationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1a72e07e-9df1-11ef-970e-cda72e282c65")
+    public java.lang.String OriginText();
+
+    @IDynamicResourceExtension.MethodId("1a72e089-9df1-11ef-970e-cda72e282c65")
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage SourceLanguage();
+
+  }
+  
+  public static interface ILanguageTextTranslationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LanguageTextTranslationFunctionsImpl implements ILanguageTextTranslationFunctionsImpl {
+
+    public static final ILanguageTextTranslationFunctionsImpl INSTANCE = new LanguageTextTranslationFunctionsImpl();
+
+    private LanguageTextTranslationFunctionsImpl() {}
+
+  }
+  
+  public static class LanguageTextTranslationFunctions {
+
+    private LanguageTextTranslationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,fd/nfcVgFsiaf+mliW5BGDKHnBY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,sU2w1FsJSrmungkwpb7SN7T2nM0=] */

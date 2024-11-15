@@ -49,15 +49,6 @@ public class LanguageTextTranslation extends DynamicResource implements ILanguag
   }
 
   @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
   public java.lang.String selectText() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.LanguageTextTranslation_text);
   }
@@ -111,4 +102,4 @@ public class LanguageTextTranslation extends DynamicResource implements ILanguag
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dfa128bc-9def-11ef-970e-cda72e282c65,ieYVCu8zv2Wy1w3aAgHbl8gNjfQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dfa128bc-9def-11ef-970e-cda72e282c65,HYbU0hpHqSgkLpqRYokewKRG3bk=] */

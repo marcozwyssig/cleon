@@ -241,6 +241,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("1f8226fb-9b8a-11ef-bb4f-3decea302a61")
     public java.lang.String combine();
 
+    @IDynamicResourceExtension.MethodId("a138d035-a354-11ef-9e2b-07f537981179")
+    public java.lang.String convertToValidFileName();
+
   }
   
   public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -253,6 +256,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("1f8226fb-9b8a-11ef-bb4f-3decea302a61")
     public java.lang.String combine(final List<java.lang.String> textLiteralList);
+
+    @IDynamicResourceExtension.MethodId("a138d035-a354-11ef-9e2b-07f537981179")
+    public java.lang.String convertToValidFileName(final java.lang.String textLiteral);
 
   }
   
@@ -279,6 +285,13 @@ public class StringFunctionSpace {
       /* End Protected Region   [[1f8226fb-9b8a-11ef-bb4f-3decea302a61]] */
     }
 
+    @Override
+    public java.lang.String convertToValidFileName(final java.lang.String textLiteral) {
+      /* Begin Protected Region [[a138d035-a354-11ef-9e2b-07f537981179]] */
+    	return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.convertToValidFileName(textLiteral);   
+      /* End Protected Region   [[a138d035-a354-11ef-9e2b-07f537981179]] */
+    }
+
   }
   
   public static class TextLiteralFunctions {
@@ -297,8 +310,12 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteralList).combine(textLiteralList);
     }
 
+    public static java.lang.String convertToValidFileName(final java.lang.String textLiteral) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).convertToValidFileName(textLiteral);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,TwQJ+qigniFa/c0nmTuva8t0zWY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,V/wQsu/O1vMtW2e65jaDI3KmwTg=] */

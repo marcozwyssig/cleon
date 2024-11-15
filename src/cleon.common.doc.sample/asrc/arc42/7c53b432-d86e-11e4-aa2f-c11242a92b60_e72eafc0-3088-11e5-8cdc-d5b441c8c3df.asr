@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="e72eafc0-3088-11e5-8cdc-d5b441c8c3df">
+  <owns predicate="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="a9bd57df-a364-11ef-9e2b-07f537981179" type="resource" guid="a9445747-a364-11ef-9e2b-07f537981179" />
+  </owns>
   <owns predicate="9bde0d3e-9def-11ef-970e-cda72e282c65">
     <resource statement-guid="89c1f88d-a262-11ef-a4ad-71a83c9376b0" type="resource" guid="89c1834c-a262-11ef-a4ad-71a83c9376b0" />
   </owns>
@@ -8,6 +11,24 @@
   </predicate>
   <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
     <object statement-guid="4ddfc8c5-9df3-11ef-970e-cda72e282c65" type="literal">Die Einleitung der Architekturdokumentation sollte die treibenden Kräfte auflisten, die Softwarearchitekten bei ihren Entscheidungen berücksichtigen müssen. Dazu gehört einerseits die Erfüllung der funktionalen Anforderungen der Stakeholder, andererseits die Einhaltung der erforderlichen Randbedingungen, stets unter Berücksichtigung der Architekturziele.</object>
+  </predicate>
+  <predicate guid="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="a9bd57df-a364-11ef-9e2b-07f537981179">
+      <resource guid="a9445747-a364-11ef-9e2b-07f537981179">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a9bd30cd-a364-11ef-9e2b-07f537981179" type="resource" guid="27d0007a-3360-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa4a2e99-a364-11ef-9e2b-07f537981179" type="literal">The introduction of the architecture documentation should list the driving forces that software architects must consider when making decisions. This includes, on the one hand, meeting the functional requirements of the stakeholders and, on the other hand, adhering to the necessary boundary conditions, always taking the architectural goals into account.</object>
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="a9bd57de-a364-11ef-9e2b-07f537981179" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d6098da5-979b-11ef-a385-611913ad635b">
+          <object statement-guid="a9be9061-a364-11ef-9e2b-07f537981179" type="literal">ef5af98678643dc6cf3c56744f265055</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="9bde0d3e-9def-11ef-970e-cda72e282c65">
     <object statement-guid="89c1f88d-a262-11ef-a4ad-71a83c9376b0">

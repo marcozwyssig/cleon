@@ -75,7 +75,7 @@ a|
 
 [#6f09b217-3088-11e5-8cdc-d5b441c8c3df]
 == Einführung und Ziele
-Text: Die Einleitung der Architekturdokumentation sollte die treibenden Kräfte
+Die Einleitung der Architekturdokumentation sollte die treibenden Kräfte auflisten, die Softwarearchitekten bei ihren Entscheidungen berücksichtigen müssen. Dazu gehört einerseits die Erfüllung der funktionalen Anforderungen der Stakeholder, andererseits die Einhaltung der erforderlichen Randbedingungen, stets unter Berücksichtigung der Architekturziele.
 // Begin Protected Region [[6f09b217-3088-11e5-8cdc-d5b441c8c3df,customText]]
 
 // End Protected Region   [[6f09b217-3088-11e5-8cdc-d5b441c8c3df,customText]]
@@ -98,9 +98,9 @@ asdfasdfasdfasdfsdf
 [cols="30a,70a" options="header"]
 |===========================
 |Name|Description
-|Text: Urs
- Text: Meister
-|Text: Beschreibung für Urs
+|Urs
+ Meister
+|Beschreibung für Urs
 |
 |
 |
@@ -110,8 +110,10 @@ asdfasdfasdfasdfsdf
 
 |===========================
 
-* <db:para>Text 1</db:para>
-* <db:para>Text 2</db:para>
+* * 
+  * <db:para>Text 1</db:para>
+* * 
+  * <db:para>Text 2</db:para>
 
 // Begin Protected Region [[af0d064b-3088-11e5-8cdc-d5b441c8c3df,customText]]
 

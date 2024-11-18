@@ -71,6 +71,49 @@ public class FunctionSpace_Paragraph {
 
   }
 
+  public static interface ITextAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("75aed152-a5a6-11ef-97d6-5b0fa6c90c00")
+    public java.lang.String translateText();
+
+  }
+  
+  public static interface ITextAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("75aed152-a5a6-11ef-97d6-5b0fa6c90c00")
+    public java.lang.String translateText(final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware);
+
+  }
+  
+  public static class TextAwareFunctionsImpl implements ITextAwareFunctionsImpl {
+
+    public static final ITextAwareFunctionsImpl INSTANCE = new TextAwareFunctionsImpl();
+
+    private TextAwareFunctionsImpl() {}
+
+    @Override
+    public java.lang.String translateText(final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware) {
+      /* Begin Protected Region [[75aed152-a5a6-11ef-97d6-5b0fa6c90c00]] */
+        if( textAware.selectTextTranslation().containsKey(textAware.getResource())) {
+          	final var name = textAware.selectTextTranslation().get(textAware.getResource());
+          	return name.selectText();
+          }
+        return textAware.selectText(); 
+      /* End Protected Region   [[75aed152-a5a6-11ef-97d6-5b0fa6c90c00]] */
+    }
+
+  }
+  
+  public static class TextAwareFunctions {
+
+    private TextAwareFunctions() {}
+
+    public static java.lang.String translateText(final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware) {
+      return DynamicResourceUtil.invoke(ITextAwareFunctionsImpl.class, TextAwareFunctionsImpl.INSTANCE, textAware).translateText(textAware);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,sU2w1FsJSrmungkwpb7SN7T2nM0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,VWlDjbbRbRDVxLfTCTc9aa7iepc=] */

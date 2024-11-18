@@ -82,6 +82,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("108703e6-9864-11ef-9d7c-b5806d5ad1be")
     public List<cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> Languages();
 
+    @IDynamicResourceExtension.MethodId("414c4c22-a5a9-11ef-99b4-af3541bfa2c3")
+    public java.lang.String TopDocumentPath();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -290,4 +293,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,3MIZBs8/CgUEA2cB0/h/OSgC0U8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,C9k01NVR0auxh7Bq9h/qG8qhPY4=] */

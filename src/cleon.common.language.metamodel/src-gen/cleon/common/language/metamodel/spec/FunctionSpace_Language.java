@@ -148,7 +148,7 @@ public class FunctionSpace_Language {
     public java.lang.String en();
 
     @IDynamicResourceExtension.MethodId("99d566b5-a299-11ef-9aea-bfda14a4d373")
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -161,7 +161,7 @@ public class FunctionSpace_Language {
     public java.lang.String en(final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName);
 
     @IDynamicResourceExtension.MethodId("99d566b5-a299-11ef-9aea-bfda14a4d373")
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName);
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName);
 
   }
   
@@ -194,7 +194,7 @@ public class FunctionSpace_Language {
     }
 
     @Override
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
       /* Begin Protected Region [[99d566b5-a299-11ef-9aea-bfda14a4d373]] */
         if( multilingualName.selectNameTranslation().containsKey(language.getResource())) {
           	final var name = multilingualName.selectNameTranslation().get(language.getResource());
@@ -218,8 +218,8 @@ public class FunctionSpace_Language {
       return DynamicResourceUtil.invoke(IMultilingualNameFunctionsImpl.class, MultilingualNameFunctionsImpl.INSTANCE, multilingualName).en(multilingualName);
     }
 
-    public static java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
-      return DynamicResourceUtil.invoke(IMultilingualNameFunctionsImpl.class, MultilingualNameFunctionsImpl.INSTANCE, multilingualName).translate(language, multilingualName);
+    public static java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
+      return DynamicResourceUtil.invoke(IMultilingualNameFunctionsImpl.class, MultilingualNameFunctionsImpl.INSTANCE, multilingualName).translateSimpleName(language, multilingualName);
     }
 
   }
@@ -341,20 +341,20 @@ public class FunctionSpace_Language {
   public static interface IResourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
-    public java.lang.String translateSimpleName();
+    public java.lang.String translateSimpleNameWithCurrentLanguage();
 
     @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8a21d594-c5f0-11ee-a17d-a7a71cc7c14b")
-    public java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource);
+    public java.lang.String translateSimpleNameWithCurrentLanguage(final ch.actifsource.core.javamodel.IResource resource);
 
     @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource);
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource);
 
   }
   
@@ -365,7 +365,7 @@ public class FunctionSpace_Language {
     private ResourceFunctionsImpl() {}
 
     @Override
-    public java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource) {
+    public java.lang.String translateSimpleNameWithCurrentLanguage(final ch.actifsource.core.javamodel.IResource resource) {
       /* Begin Protected Region [[8a21d594-c5f0-11ee-a17d-a7a71cc7c14b]] */
       final var resolveTranslationService = new ResolveTranslationService(resource);
       return resolveTranslationService.translate();
@@ -373,7 +373,7 @@ public class FunctionSpace_Language {
     }
 
     @Override
-    public java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
+    public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
       /* Begin Protected Region [[17e0f1f3-9dc9-11ef-8e7d-336090501e1a]] */
       final var resolveTranslationService = new ResolveTranslationService(resource);
       return resolveTranslationService.translate(language);
@@ -386,12 +386,12 @@ public class FunctionSpace_Language {
 
     private ResourceFunctions() {}
 
-    public static java.lang.String translateSimpleName(final ch.actifsource.core.javamodel.IResource resource) {
-      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleName(resource);
+    public static java.lang.String translateSimpleNameWithCurrentLanguage(final ch.actifsource.core.javamodel.IResource resource) {
+      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleNameWithCurrentLanguage(resource);
     }
 
-    public static java.lang.String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
-      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translate(language, resource);
+    public static java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
+      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleName(language, resource);
     }
 
   }
@@ -485,4 +485,4 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,VE/WTiAJQudtQodaa9U7mBVbu50=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,W/AeKaIErvhEF0imE1IhbnLsFfg=] */

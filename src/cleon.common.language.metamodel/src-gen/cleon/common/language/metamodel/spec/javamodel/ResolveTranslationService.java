@@ -29,11 +29,11 @@ public class ResolveTranslationService {
 
 	private ILanguageClass findLanguageClass() {
 		final var shallowType = Select.shallowType(resource.getReadJobExecutor(), resource.getResource());
-		Logger.instance().logInfo("Shallow type identified: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
+		Logger.instance().logVerbose("Shallow type identified: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
 
 		final var languageClassNode = searchForLanguageClass(shallowType);
 		if (languageClassNode == null) {
-			Logger.instance().logInfo("No language class found for resource.");
+			Logger.instance().logVerbose("No language class found for resource.");
 			return null;
 		}
 		return repository.getResource(ILanguageClass.class, languageClassNode);
@@ -91,15 +91,15 @@ public class ResolveTranslationService {
 		final Function<INode, INode> searchRecursive = new Function<>() {
 			@Override
 			public INode apply(final INode typeNode) {
-				Logger.instance().logInfo("Examining type: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
+				Logger.instance().logVerbose("Examining type: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
 
 				if (typeNode.equals(CorePackage.Resource)) {
-					Logger.instance().logInfo("Reached root resource type. Ending search.");
+					Logger.instance().logVerbose("Reached root resource type. Ending search.");
 					return null;
 				}
 
 				if (isLanguageClass(typeNode)) {
-					Logger.instance().logInfo("Language class found: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
+					Logger.instance().logVerbose("Language class found: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
 					return typeNode;
 				}
 
@@ -117,16 +117,26 @@ public class ResolveTranslationService {
 
 	public String translate() {
 		final var currentLanguageCode = CurrentLanguage.getInstance().LanguageCode();
-		return translate(currentLanguageCode);
+		return translate(currentLanguageCode, null);
 	}
 
 	public String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
-		return translate(language.selectCode());
+		return translate(language.selectCode(), null);
 	}
+	
+	public String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, Function<String, String> whenNotLanguageClass) {		
+		return translate(language.selectCode(), whenNotLanguageClass);
+	}
+	
 
-	private String translate(final String languageCode) {
+	private String translate(final String languageCode, Function<String, String> whenNotLanguageClass) {
 		if( languageClass == null) {
-			return Select.simpleName(resource.getReadJobExecutor(), resource.getResource());
+			if( whenNotLanguageClass == null) {
+				return Select.simpleName(resource.getReadJobExecutor(), resource.getResource());				
+			} else {
+				Logger.instance().logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()) + ". Execute whenNotLanguageClass lambda.");				
+				return whenNotLanguageClass.apply(languageCode);
+			}
 		}
 
 		final var languageKey = findTranslationKeyForLanguage(languageCode);
@@ -134,7 +144,7 @@ public class ResolveTranslationService {
 			Logger.instance().logError("No translation found for language code: " + languageCode);
 			return null;
 		}
-		Logger.instance().logInfo("Translation found for language code: " + languageCode);
+		Logger.instance().logVerbose("Translation found for language code: " + languageCode);
 
 		final var languageTranslation = languageClass.selectTranslations().get(languageKey);
 		return getTranslationValue(languageTranslation);

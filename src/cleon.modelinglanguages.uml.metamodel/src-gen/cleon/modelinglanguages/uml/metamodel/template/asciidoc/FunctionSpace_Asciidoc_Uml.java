@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc_Uml {
   public static interface IAbstractComponentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("434ceec8-481f-11e6-82f6-0f210765495b")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage languge);
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Asciidoc_Uml {
   public static interface IUmlDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("87394b7b-fa40-11e8-af47-e5bdd8100025")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage languge);
 
   }
   
@@ -71,7 +71,7 @@ public class FunctionSpace_Asciidoc_Uml {
   public static interface IStateMachineDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1e7396a0-fa41-11e8-af47-e5bdd8100025")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage languge);
 
     @IDynamicResourceExtension.MethodId("1e73beaa-fa41-11e8-af47-e5bdd8100025")
     public java.lang.String RenderEvents();
@@ -104,4 +104,4 @@ public class FunctionSpace_Asciidoc_Uml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8c99cddc-3525-11e5-909a-4bcced25d7ee,c9r4cTRXp0GRS4NQcBxzUvNa9AE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8c99cddc-3525-11e5-909a-4bcced25d7ee,TckHa0QJ17oL7EqAgJfQVS76tNw=] */

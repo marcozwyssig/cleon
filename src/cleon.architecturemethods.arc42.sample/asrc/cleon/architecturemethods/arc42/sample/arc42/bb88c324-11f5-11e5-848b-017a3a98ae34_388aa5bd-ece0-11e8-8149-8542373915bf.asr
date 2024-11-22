@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="388aa5bd-ece0-11e8-8149-8542373915bf">
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="701900f6-a8ad-11ef-a731-79afae83d29e" type="resource" guid="700b44ee-a8ad-11ef-a731-79afae83d29e" />
+  </owns>
+  <owns predicate="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="7196c6fc-a8ad-11ef-a731-79afae83d29e" type="resource" guid="718d78d6-a8ad-11ef-a731-79afae83d29e" />
+  </owns>
   <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
     <resource statement-guid="a64ddbf7-ece0-11e8-8149-8542373915bf" type="resource" guid="a64db4e4-ece0-11e8-8149-8542373915bf" />
   </owns>
@@ -11,6 +17,39 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="3c43b662-ece0-11e8-8149-8542373915bf" type="literal">Einsatz von PAM in AD</object>
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="701900f6-a8ad-11ef-a731-79afae83d29e">
+      <resource guid="700b44ee-a8ad-11ef-a731-79afae83d29e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="701900f4-a8ad-11ef-a731-79afae83d29e" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="701900f5-a8ad-11ef-a731-79afae83d29e" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d6098da5-979b-11ef-a385-611913ad635b">
+          <object statement-guid="70194f18-a8ad-11ef-a731-79afae83d29e" type="literal">d41d8cd98f00b204e9800998ecf8427e</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1564456e-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="7196c6fc-a8ad-11ef-a731-79afae83d29e">
+      <resource guid="718d78d6-a8ad-11ef-a731-79afae83d29e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7196c6fa-a8ad-11ef-a731-79afae83d29e" type="resource" guid="27d0007a-3360-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="722ff9c8-a8ad-11ef-a731-79afae83d29e" type="literal">Use of PAM in AD</object>
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="7196c6fb-a8ad-11ef-a731-79afae83d29e" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d6098da5-979b-11ef-a385-611913ad635b">
+          <object statement-guid="71973c2e-a8ad-11ef-a731-79afae83d29e" type="literal">2935073cded0b83d72167e83caf65897</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
     <object statement-guid="a64ddbf7-ece0-11e8-8149-8542373915bf">

@@ -8,10 +8,10 @@ public interface ILanguageSettings extends ch.actifsource.core.javamodel.IResour
   
   // relations
   
-  public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage selectDefaultLanguage();
+  public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage selectPrimaryLanguage();
   
   public java.util.List<? extends cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> selectLanguages();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,78TdYv2RSwqj3t01Nj6VKrQJgZQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,fBnsNzEW2Em+voK7nXknDp/TdhM=] */

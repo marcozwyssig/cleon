@@ -31,22 +31,22 @@ public class LanguageSettings extends DynamicResource implements ILanguageSettin
   // relations
   
   @Override
-  public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage selectDefaultLanguage() {
-    return _getSingle(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_defaultLanguage);
-  }
-
-  public LanguageSettings setDefaultLanguage(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage defaultLanguage) {
-    _setSingle(cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_defaultLanguage, defaultLanguage);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> selectLanguages() {
     return _getList(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_languages);
   }
 
   public LanguageSettings setLanguages(java.util.List<? extends cleon.common.language.metamodel.spec.languages.javamodel.ILanguage> languages) {
     _setList(cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_languages, languages);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage selectPrimaryLanguage() {
+    return _getSingle(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_primaryLanguage);
+  }
+
+  public LanguageSettings setPrimaryLanguage(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage primaryLanguage) {
+    _setSingle(cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_primaryLanguage, primaryLanguage);
     return this;
   }
     
@@ -64,15 +64,15 @@ public class LanguageSettings extends DynamicResource implements ILanguageSettin
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_defaultLanguage, visitor);
     _acceptList(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_languages, visitor);
+    _acceptSingle(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_primaryLanguage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings> selectToMeDefaultLanguage(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage object) {
-    return _getToMeList(object.getRepository(), cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_defaultLanguage, object.getResource());
+  public static java.util.List<cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings> selectToMePrimaryLanguage(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage object) {
+    return _getToMeList(object.getRepository(), cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.language_settings.Language_settingsPackage.LanguageSettings_primaryLanguage, object.getResource());
   }
   
   public static java.util.List<cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings> selectToMeLanguages(cleon.common.language.metamodel.spec.languages.javamodel.ILanguage object) {
@@ -80,4 +80,4 @@ public class LanguageSettings extends DynamicResource implements ILanguageSettin
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,YXwTQIJ3Bf7blhEiKWjwbRJKBGo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,hV7W1zZOpFDqRpAQK8B5v+iDY5w=] */

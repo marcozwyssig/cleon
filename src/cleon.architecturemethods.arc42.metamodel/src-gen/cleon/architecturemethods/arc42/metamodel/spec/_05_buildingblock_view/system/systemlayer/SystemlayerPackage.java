@@ -4,11 +4,14 @@ import ch.actifsource.core.Resource;
 
 public class SystemlayerPackage {
   
+  public static final Resource SystemWithLayer = new Resource("d6859a6c-99aa-11e8-8f58-219af2c5d6d9");
   public static final Resource SystemLayerCompositionAware_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayer_hasDependency = new Resource("c5658855-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource NamedSystemWithSystemLayer = new Resource("4be8fc8d-d28b-11ec-90fa-eddb29a5483c");
+  public static final Resource SystemWithSystemLayer = new Resource("57022c90-d28b-11ec-90fa-eddb29a5483c");
   public static final Resource SystemLayerCompositionAware = new Resource("710765f1-d28b-11ec-90fa-eddb29a5483c");
   
   /* Begin Protected Region [[user]] */
@@ -30,4 +33,4 @@ public class SystemlayerPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemlayer,Ohq9p2F1ByGAUbYV+boXGk6Ufsg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemlayer,9VAjHhqHw2/igLZJ0E8S5rgUrrU=] */

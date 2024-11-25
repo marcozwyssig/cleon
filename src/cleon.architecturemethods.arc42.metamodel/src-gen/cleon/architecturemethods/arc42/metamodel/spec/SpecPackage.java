@@ -31,6 +31,19 @@ public class SpecPackage {
   public static final Resource SoftwareArc42Document = new Resource("e7b5b0b3-a28c-11ef-9aea-bfda14a4d373");
   public static final Resource SoftwareArc42Document___V_9_aE_software_aE_concepts = new Resource("e7b5b0b4-a28c-11ef-9aea-bfda14a4d373");
   public static final Resource NamedSoftwareArc42Document = new Resource("0f92ec08-a28d-11ef-9aea-bfda14a4d373");
+  public static final Resource SoftwareArc42Document___V_5_aE_buildingblockview = new Resource("97c9ef06-ab33-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_1_aE_introduction_aE_and_aE_goals = new Resource("53dc4bd8-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_2_aE_architecture_aE_constraints = new Resource("53dc4bd9-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_3_aE_system_aE_scope_aE_and_aE_context = new Resource("53dc4bda-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_4_aE_solution_aE_strategy = new Resource("53dc4bdb-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_6_aE_runtimeview = new Resource("53dc4bdd-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_7_aE_dataview = new Resource("53dc4bde-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___V_8_aE_deploymentview = new Resource("53dc4bdf-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___W_0_aE_designdecision = new Resource("53dc4be1-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___W_1_aE_quality_aE_scenarios = new Resource("53dc4be2-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___W_2_aE_technical_aE_risks = new Resource("53dc4be3-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___W_3_aE_productview = new Resource("53dc4be4-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource SoftwareArc42Document___W_4_aE_requirements_aE_coverage = new Resource("53dc4be5-ab34-11ef-82e4-fbabda5366bc");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +64,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,8vwcsa6qxVXWm4nhk+wRAOjkeas=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,tCR8w4UvZ6G3x7G2D3a/D9EEwoQ=] */

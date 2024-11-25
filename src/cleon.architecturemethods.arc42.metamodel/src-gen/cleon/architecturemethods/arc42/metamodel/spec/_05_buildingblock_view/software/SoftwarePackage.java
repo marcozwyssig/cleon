@@ -5,6 +5,7 @@ import ch.actifsource.core.Resource;
 public class SoftwarePackage {
   
   public static final Resource WhiteboxSoftware = new Resource("084f8759-e5f2-11ee-8c4d-db3d1d62259b");
+  public static final Resource BuildingBlockViewSoftware = new Resource("a263f97e-ab32-11ef-82e4-fbabda5366bc");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +26,4 @@ public class SoftwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software,rZYAEAzGRmUx7DWycujQZSsNoDw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software,3eXm88l52BD48VcnsJPx32gLuRQ=] */

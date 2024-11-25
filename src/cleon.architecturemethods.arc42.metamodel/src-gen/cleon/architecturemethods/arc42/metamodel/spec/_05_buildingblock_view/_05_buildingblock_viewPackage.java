@@ -23,19 +23,6 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Blackbox_aE_Requirements = new Resource("4a655e3e-0df0-11e9-a28e-8b950dcca323");
   public static final Resource Blackbox_blackbox_aE_requirements = new Resource("5eef16f5-0df0-11e9-a28e-8b950dcca323");
   public static final Resource FunctionSpace_aE_arc42_aE_Buildingblock_aE_View_Blackbox = new Resource("db3c90fd-6dbc-11ea-98d4-4d756e6b7091");
-  public static final Resource Functionality = new Resource("8999b3d6-7e70-11ea-9262-7b7e0e9cb204");
-  public static final Resource Deployment = new Resource("ec1f72cf-7ed1-11ea-9262-7b7e0e9cb204");
-  public static final Resource Authentication = new Resource("00a7cb94-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Autorization = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Confidentiality = new Resource("918907d3-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Integrity = new Resource("afdbf036-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource NonRepudiation = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource Backup_aE_and_aE_Recovery_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
-  public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
   public static final Resource BuildingBlockView_level_aE_2_aE_whitebox = new Resource("1f2736f1-d568-11ea-80a3-dbf7eb525c3c");
   public static final Resource BuildingBlockView_level_aE_3_aE_whitebox = new Resource("a603addf-d576-11ee-903e-9f564e4de07e");
   public static final Resource BuildingBlockView_level_aE_4_aE_whitebox = new Resource("39082c08-d579-11ee-903e-9f564e4de07e");
@@ -65,4 +52,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,XOav8uKugHXU6nUfZTapXh1OQDE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,/EdppSNSGvkIOElV8Qqk0KPKA38=] */

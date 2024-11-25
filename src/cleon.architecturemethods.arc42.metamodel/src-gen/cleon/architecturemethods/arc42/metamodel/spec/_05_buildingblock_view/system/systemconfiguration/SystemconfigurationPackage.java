@@ -53,6 +53,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_MailRelaySystemConfiguration = new Resource("80279277-c81b-11e9-ba65-a5b6bc4916e7");
   public static final Resource SystemConfigurationInterface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   public static final Resource SystemConfigurationCompositionAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
+  public static final Resource SystemWithSystemConfiguration = new Resource("74ac16c6-3eb1-11ea-9af7-ad5bf30c585a");
   public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfigurationInterface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
   public static final Resource WhiteBoxSystemConfiguration = new Resource("a296733a-fe57-11ea-abcb-bfad67a56d79");
   public static final Resource WhiteBoxSystemConfiguration_deployment = new Resource("abb1fe65-fe57-11ea-abcb-bfad67a56d79");
@@ -91,4 +92,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,2KKpysdcS7d1F0BYLXazIVCvFpA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,+efDw76zrlN4fVRq+GrBbf6tvo8=] */

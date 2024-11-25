@@ -11,6 +11,8 @@ public class SystemcomponentPackage {
   public static final Resource SystemComponent_hasDependency = new Resource("4ff1859f-01d9-11e9-9c9d-8d52d6745026");
   public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
   public static final Resource SystemComponentCompositionAware = new Resource("0acee12f-5ca9-11ea-9014-eb1fa518f623");
+  public static final Resource SystemWithSystemComponent = new Resource("cb55af14-5ca9-11ea-9014-eb1fa518f623");
+  public static final Resource NamedSystemWithSystemComponent = new Resource("e8941a6b-5ca9-11ea-9014-eb1fa518f623");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +33,4 @@ public class SystemcomponentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent,4I+qyTcsKp8JZIaIxKEBeDVHa6k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent,itt9QcpA4JTytkqQdY6XPPGb1pg=] */

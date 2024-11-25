@@ -51,11 +51,11 @@ public class SoftwareMonolithSystem extends DynamicResource implements ISoftware
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithComponentComposition> selectComponentCompositions() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithComponentComposition.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent> selectComponentCompositions() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions);
   }
 
-  public SoftwareMonolithSystem setComponentCompositions(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithComponentComposition> componentCompositions) {
+  public SoftwareMonolithSystem setComponentCompositions(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent> componentCompositions) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions, componentCompositions);
     return this;
   }
@@ -137,7 +137,7 @@ public class SoftwareMonolithSystem extends DynamicResource implements ISoftware
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithComponentComposition.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -146,9 +146,9 @@ public class SoftwareMonolithSystem extends DynamicResource implements ISoftware
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithSystem selectToMeComponentCompositions(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithComponentComposition object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithSystem selectToMeComponentCompositions(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.ISoftwareMonolithSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithSystem_componentCompositions, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b064943e-bf7e-11ee-b188-131fa688415c,p5ypX9ShwEv/V2UgYdubJ/xvpxw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b064943e-bf7e-11ee-b188-131fa688415c,IdFeT38mk0lFfBhuOfokPPpSYf8=] */

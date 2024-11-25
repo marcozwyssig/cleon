@@ -461,6 +461,7 @@
         <resource statement-guid="f56cb44d-97a3-11ef-a385-611913ad635b" type="resource" guid="f56c662a-97a3-11ef-a385-611913ad635b" />
         <resource statement-guid="a181fe13-97aa-11ef-9bd3-25e6f963be24" type="resource" guid="a18188e0-97aa-11ef-9bd3-25e6f963be24" />
         <resource statement-guid="b44e9ecb-a8ab-11ef-a731-79afae83d29e" type="resource" guid="b44ddb78-a8ab-11ef-a731-79afae83d29e" />
+        <resource statement-guid="35ee8aa0-ab30-11ef-82e4-fbabda5366bc" type="resource" guid="35ee156d-ab30-11ef-82e4-fbabda5366bc" />
       </owns>
     </resource>
   </owns>
@@ -5057,6 +5058,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="b44e9ecc-a8ab-11ef-a731-79afae83d29e" type="literal">cleon.common.doc.metamodel.template.asciidoc.doctoolchain</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="35ee8aa0-ab30-11ef-82e4-fbabda5366bc">
+            <resource guid="35ee156d-ab30-11ef-82e4-fbabda5366bc">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="35ee156f-ab30-11ef-82e4-fbabda5366bc" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="35eed8c1-ab30-11ef-82e4-fbabda5366bc" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.library</object>
               </predicate>
             </resource>
           </object>

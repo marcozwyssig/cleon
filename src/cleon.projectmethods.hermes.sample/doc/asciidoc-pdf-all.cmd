@@ -1,6 +1,6 @@
 chcp 65001
-cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_detailstudy/de/Sample_Simple_Analyse.adoc
-cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/Sample.adoc
-cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/20180312_Mein_Protokoll_Protokoll.adoc
-cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/en/20180312_My_Protocol_Protocol.adoc
-cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/Sample_Planung.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_detailstudy/de/sample_simple_analyse.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/sample.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/20180312_mein_protokoll_protokoll.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/en/20180312_my_protocol_protocol.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_projectmethods_hermes_sample_projectmanagement/de/sample_planung.adoc

@@ -617,7 +617,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("c0ea662e-e5cc-11ee-9463-7b6f2009e56e")
-    public java.lang.String FileName();
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("ce9eb334-e5cc-11ee-9463-7b6f2009e56e")
     public java.lang.String BuildingBlockName();
@@ -651,7 +651,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("00a195ac-e5cd-11ee-9463-7b6f2009e56e")
-    public java.lang.String FileName();
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5b3e882f-e5da-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -875,4 +875,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Iq7l8T9AaEGXBTLqwIkzO8EAodo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,uzuSvlKbZbO7UrE4g81ecIGqw0g=] */

@@ -18,28 +18,34 @@ public class FunctionSpace_Asciidoc_arc42 {
   /* End Protected Region   [[65a357a1-2663-11e6-ae54-e50d44645ae7]] */
 
 
-  public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
+  public static interface ISystemScopeAndContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cd8e8e4-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("50aaa6c3-abeb-11ef-ad6e-61718268e815")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("50aaa6cc-abeb-11ef-ad6e-61718268e815")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
-  public static interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemScopeAndContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
+  public static class SystemScopeAndContextFunctionsImpl implements ISystemScopeAndContextFunctionsImpl {
 
-    public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
+    public static final ISystemScopeAndContextFunctionsImpl INSTANCE = new SystemScopeAndContextFunctionsImpl();
 
-    private System_Scope_and_ContextFunctionsImpl() {}
+    private SystemScopeAndContextFunctionsImpl() {}
 
   }
   
-  public static class System_Scope_and_ContextFunctions {
+  public static class SystemScopeAndContextFunctions {
 
-    private System_Scope_and_ContextFunctions() {}
+    private SystemScopeAndContextFunctions() {}
 
   }
 
@@ -148,6 +154,12 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5cd9f9f9-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("d78306c3-abea-11ef-ad6e-61718268e815")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("e2d1c612-abea-11ef-ad6e-61718268e815")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IIntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -193,28 +205,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IRequirementsFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementsOverviewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cda20e4-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementsOverviewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsFunctionsImpl implements IRequirementsFunctionsImpl {
+  public static class RequirementsOverviewFunctionsImpl implements IRequirementsOverviewFunctionsImpl {
 
-    public static final IRequirementsFunctionsImpl INSTANCE = new RequirementsFunctionsImpl();
+    public static final IRequirementsOverviewFunctionsImpl INSTANCE = new RequirementsOverviewFunctionsImpl();
 
-    private RequirementsFunctionsImpl() {}
+    private RequirementsOverviewFunctionsImpl() {}
 
   }
   
-  public static class RequirementsFunctions {
+  public static class RequirementsOverviewFunctions {
 
-    private RequirementsFunctions() {}
+    private RequirementsOverviewFunctions() {}
 
   }
 
@@ -873,6 +885,34 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IArchitectureConstraintsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b6211448-abeb-11ef-ad6e-61718268e815")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("b6211451-abeb-11ef-ad6e-61718268e815")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IArchitectureConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ArchitectureConstraintsFunctionsImpl implements IArchitectureConstraintsFunctionsImpl {
+
+    public static final IArchitectureConstraintsFunctionsImpl INSTANCE = new ArchitectureConstraintsFunctionsImpl();
+
+    private ArchitectureConstraintsFunctionsImpl() {}
+
+  }
+  
+  public static class ArchitectureConstraintsFunctions {
+
+    private ArchitectureConstraintsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,uzuSvlKbZbO7UrE4g81ecIGqw0g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,KaEWLcVQwdFWbhgF3a/qFmRnmfA=] */

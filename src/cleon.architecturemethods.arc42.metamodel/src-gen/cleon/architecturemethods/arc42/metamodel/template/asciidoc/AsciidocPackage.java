@@ -4,14 +4,14 @@ import ch.actifsource.core.Resource;
 
 public class AsciidocPackage {
   
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_System_aE_Scope_aE_and_aE_Context = new Resource("5cd8e8d9-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SystemScopeAndContext = new Resource("5cd8e8d9-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DomainContext = new Resource("5cd8e8e5-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalContext = new Resource("5cd95d92-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DecompositionBuildingBlock = new Resource("5cd9d375-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentView = new Resource("5cd9d384-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_IntroductionAndGoals = new Resource("5cd9f9dc-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_QualityGoals = new Resource("5cd9f9fa-2516-11ec-beea-a9d94a6f89e0");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Requirements = new Resource("5cd9fa66-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RequirementsOverview = new Resource("5cd9fa66-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalConstraints = new Resource("5cda20e5-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_OrganizationalConstraints = new Resource("5cda2151-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DecisionTopic = new Resource("5cda21c1-2516-11ec-beea-a9d94a6f89e0");
@@ -35,6 +35,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableArea = new Resource("bc0787ff-27c7-11ef-9acc-81efe99aa8b6");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Table = new Resource("6d007869-27d1-11ef-9e2d-0b682fec1a77");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_About = new Resource("15eb3001-9dde-11ef-bee3-bbbac6a8abc2");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ArchitectureConstraints = new Resource("a0d9897f-abeb-11ef-ad6e-61718268e815");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,N5lt5OS7APdQ4xjcarhMEUgJlfU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,6cs7mUUSp+3r9vx4mYRjj8TmyAA=] */

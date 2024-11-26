@@ -16,10 +16,10 @@ public interface IIntroductionAndGoals extends cleon.common.doc.metamodel.spec.c
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements selectRequirementsOverview();
+  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview selectRequirementsOverview();
   
   public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IQualityGoals selectQualityGoals();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,OMbxXRIt+15GymOZTv/EGJa5pTQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,43NQ6p/OmXHuAB3WqZk+QHq/UXw=] */

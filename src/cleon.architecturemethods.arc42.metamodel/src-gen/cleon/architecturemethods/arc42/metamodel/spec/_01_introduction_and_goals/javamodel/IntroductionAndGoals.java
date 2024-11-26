@@ -110,11 +110,11 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements selectRequirementsOverview() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview);
+  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview selectRequirementsOverview() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview);
   }
 
-  public IntroductionAndGoals setRequirementsOverview(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements requirementsOverview) {
+  public IntroductionAndGoals setRequirementsOverview(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview requirementsOverview) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview, requirementsOverview);
     return this;
   }
@@ -140,13 +140,13 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IQualityGoals.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_qualityGoals, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals selectToMeRequirementsOverview(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirements object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals selectToMeRequirementsOverview(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview, object.getResource());
   }
   
@@ -155,4 +155,4 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,UXVKslnVvYAtH41IzZE4A8khLng=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,6F11sytckTtjhmOB0iPvXmt0dlU=] */

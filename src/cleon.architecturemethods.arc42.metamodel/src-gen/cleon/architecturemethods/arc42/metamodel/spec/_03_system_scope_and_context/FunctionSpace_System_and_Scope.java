@@ -18,31 +18,31 @@ public class FunctionSpace_System_and_Scope {
   /* End Protected Region   [[251bbe8a-27f3-11e6-b263-9db62e053e59]] */
 
 
-  public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
+  public static interface ISystemScopeAndContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c21cdca8-4a71-11e6-b2ea-f94c9b140b76")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem GetSystem();
 
   }
   
-  public static interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemScopeAndContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
+  public static class SystemScopeAndContextFunctionsImpl implements ISystemScopeAndContextFunctionsImpl {
 
-    public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
+    public static final ISystemScopeAndContextFunctionsImpl INSTANCE = new SystemScopeAndContextFunctionsImpl();
 
-    private System_Scope_and_ContextFunctionsImpl() {}
+    private SystemScopeAndContextFunctionsImpl() {}
 
   }
   
-  public static class System_Scope_and_ContextFunctions {
+  public static class SystemScopeAndContextFunctions {
 
-    private System_Scope_and_ContextFunctions() {}
+    private SystemScopeAndContextFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,251bbe8a-27f3-11e6-b263-9db62e053e59,WLmy1v3Pl5imQkHDMEtWK6qXjxI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,251bbe8a-27f3-11e6-b263-9db62e053e59,6ZMi/uh1XRk9xlAeICW+p1/PPDM=] */

@@ -1,0 +1,80 @@
+// Begin Protected Region [[meta-data]]
+
+// End Protected Region   [[meta-data]]
+
+:toc:
+
+[#bfc8585e-2661-11e6-ae54-e50d44645ae7]
+== Kontextabgrenzung
+In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
+// Begin Protected Region [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
+
+[#cb488719-2661-11e6-ae54-e50d44645ae7]
+=== Fachlicher Kontext
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
+component Chess as "Chess" <<SoftwareSystem>>
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_B -down-> Chess : interacts
+...
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+[cols="40%,60%"]
+|===
+|Aktor|Beschreibung		
+|Player A
+|
+|Player B
+|
+|===
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System
+[cols="15%,15%,20%,50%"]
+|===
+|Von|Zu|Interaktion|Beschreibung
+|Chess
+|Player A</db:para>
+|gets</db:para>
+|
+|Player A
+|Chess</db:para>
+|interacts</db:para>
+|
+|Player B
+|Chess</db:para>
+|interacts</db:para>
+|
+|===
+// Begin Protected Region [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+[#d6de1d03-27f5-11e6-b263-9db62e053e59]
+=== Technischer Kontext
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+component FTP as "FTP" <<ExternalSystem>>
+component Chess as "Chess" <<SoftwareSystem>>
+FTP --> Chess : "verwendet"
+Chess --> FTP : "verwendet"
+...
+Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
+[cols="40%,60%"]
+|===
+|Nachbarsystem|Beschreibung
+|FTP</db:para>
+|
+dsfasdf</db:para>
+// Begin Protected Region [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+// End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,qSNz66PG/BEs4MWzBnd8SNdFdG8=]

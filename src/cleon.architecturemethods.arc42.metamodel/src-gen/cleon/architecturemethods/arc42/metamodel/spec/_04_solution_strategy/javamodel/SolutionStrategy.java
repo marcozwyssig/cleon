@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Solution_Strategy extends DynamicResource implements ISolution_Strategy {
+public class SolutionStrategy extends DynamicResource implements ISolutionStrategy {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolution_Strategy> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolution_Strategy>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolutionStrategy> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolutionStrategy>() {
     
     @Override
-    public ISolution_Strategy create() {
-      return new Solution_Strategy();
+    public ISolutionStrategy create() {
+      return new SolutionStrategy();
     }
     
     @Override
-    public ISolution_Strategy create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Solution_Strategy(resourceRepository, resource);
+    public ISolutionStrategy create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new SolutionStrategy(resourceRepository, resource);
     }
   
   };
 
-  public Solution_Strategy() {
-    super(ISolution_Strategy.TYPE_ID);
+  public SolutionStrategy() {
+    super(ISolutionStrategy.TYPE_ID);
   }
   
-  public Solution_Strategy(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISolution_Strategy.TYPE_ID);
+  public SolutionStrategy(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISolutionStrategy.TYPE_ID);
   }
 
   // attributes
@@ -64,7 +64,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters);
   }
 
-  public Solution_Strategy setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> chapters) {
+  public SolutionStrategy setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters, chapters);
     return this;
   }
@@ -74,7 +74,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public Solution_Strategy setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public SolutionStrategy setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -84,7 +84,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Solution_Strategy setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public SolutionStrategy setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -94,7 +94,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Solution_Strategy setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public SolutionStrategy setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -104,7 +104,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs);
   }
 
-  public Solution_Strategy setStandardParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> standardParagraphs) {
+  public SolutionStrategy setStandardParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> standardParagraphs) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs, standardParagraphs);
     return this;
   }
@@ -114,7 +114,7 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Solution_Strategy setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public SolutionStrategy setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -134,4 +134,4 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,hBW5mBTUV5tHKUsVAD77D8zj8po=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,eip1P13T0NlGRGIyHtuLB0RVrd0=] */

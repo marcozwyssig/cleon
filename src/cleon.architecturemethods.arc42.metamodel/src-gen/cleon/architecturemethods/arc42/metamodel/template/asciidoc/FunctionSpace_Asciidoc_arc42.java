@@ -913,6 +913,34 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface ISolutionStrategyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("25880f28-abec-11ef-ad6e-61718268e815")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("25880f31-abec-11ef-ad6e-61718268e815")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ISolutionStrategyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SolutionStrategyFunctionsImpl implements ISolutionStrategyFunctionsImpl {
+
+    public static final ISolutionStrategyFunctionsImpl INSTANCE = new SolutionStrategyFunctionsImpl();
+
+    private SolutionStrategyFunctionsImpl() {}
+
+  }
+  
+  public static class SolutionStrategyFunctions {
+
+    private SolutionStrategyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,KaEWLcVQwdFWbhgF3a/qFmRnmfA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,b08t/+uM9yYsNRc1kaPp9AUein4=] */

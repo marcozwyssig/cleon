@@ -117,11 +117,11 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy select__V_4_aE_solution_aE_strategy() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy);
+  public cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy select__V_4_aE_solution_aE_strategy() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy);
   }
 
-  public NamedSolutionArc42 set__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy __V_4_aE_solution_aE_strategy) {
+  public NamedSolutionArc42 set__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy __V_4_aE_solution_aE_strategy) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, __V_4_aE_solution_aE_strategy);
     return this;
   }
@@ -370,7 +370,7 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints.javamodel.IArchitectureConstraints.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystemScopeAndContext.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, visitor);
     _acceptSingle(cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.javamodel.I__V_5_aE_SolutionBuildingBlockView.class, cleon.architecturemethods.togaf.metamodel.spec.solution.SolutionPackage.SolutionArc42___V_5_aE_solutionbuildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_6_aE_runtimeview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDataView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_dataview, visitor);
@@ -392,4 +392,4 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,jDSIe97WVnsizhBKf+sdM+YJMwY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,RhC5vr6Vn/eFu+jeTfG8q02IP+o=] */

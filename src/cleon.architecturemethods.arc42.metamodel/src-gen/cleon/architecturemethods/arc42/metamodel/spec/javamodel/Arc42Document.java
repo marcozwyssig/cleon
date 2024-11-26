@@ -25,7 +25,7 @@ public abstract class Arc42Document extends DynamicResource implements IArc42Doc
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_3_aE_system_aE_scope_aE_and_aE_context, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, object.getResource());
   }
   
@@ -70,4 +70,4 @@ public abstract class Arc42Document extends DynamicResource implements IArc42Doc
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,o3jc/LaKnu/kpTlRmGt0W/oZUaE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,bdV6E/Qt0FY1RjG10TdsKnODHLo=] */

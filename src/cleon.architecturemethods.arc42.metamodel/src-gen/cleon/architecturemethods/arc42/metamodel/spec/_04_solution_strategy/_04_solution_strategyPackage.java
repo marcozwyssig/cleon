@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class _04_solution_strategyPackage {
   
-  public static final Resource Solution_aE_Strategy = new Resource("650ddeb2-e985-11e8-af5c-a5aa9dc47205");
+  public static final Resource SolutionStrategy = new Resource("650ddeb2-e985-11e8-af5c-a5aa9dc47205");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class _04_solution_strategyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy,6vdE9Zhl4x3j8SC0/POdACCfkeo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy,4kjh3u5l80H6S6ySO6lJwmOJJrI=] */

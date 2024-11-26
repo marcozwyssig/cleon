@@ -14,7 +14,7 @@ public interface ISoftwareArc42Document extends cleon.architecturemethods.arc42.
   
   public cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystemScopeAndContext select__V_3_aE_system_aE_scope_aE_and_aE_context();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy select__V_4_aE_solution_aE_strategy();
+  public cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy select__V_4_aE_solution_aE_strategy();
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.javamodel.IBuildingBlockViewSoftware select__V_5_aE_buildingblockview();
   
@@ -38,4 +38,4 @@ public interface ISoftwareArc42Document extends cleon.architecturemethods.arc42.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,G3tbIbD77rBncrVe7UePYiaMXRk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,BCw8WxaxEecyW+WtJ1NB09dLg6U=] */

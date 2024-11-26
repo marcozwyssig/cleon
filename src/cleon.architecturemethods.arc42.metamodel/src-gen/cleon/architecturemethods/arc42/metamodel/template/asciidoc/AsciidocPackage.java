@@ -36,6 +36,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Table = new Resource("6d007869-27d1-11ef-9e2d-0b682fec1a77");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_About = new Resource("15eb3001-9dde-11ef-bee3-bbbac6a8abc2");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ArchitectureConstraints = new Resource("a0d9897f-abeb-11ef-ad6e-61718268e815");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SolutionStrategy = new Resource("19cbe8cd-abec-11ef-ad6e-61718268e815");
   
   /* Begin Protected Region [[user]] */
   
@@ -56,4 +57,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,6cs7mUUSp+3r9vx4mYRjj8TmyAA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,afHoJIyRMuHYNo0WXcHkutI3qYo=] */

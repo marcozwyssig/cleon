@@ -31,7 +31,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * channels are also usable. You should abstract these to aspects relevant for
  * software deployment.
  */
-public interface IDeploymentView extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IDeploymentView extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b47acb73-314c-11e5-bd99-eda9ce254b0b");
   
@@ -51,4 +51,4 @@ public interface IDeploymentView extends cleon.common.doc.metamodel.spec.chapter
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,23Qa9RizSGhf+TuwKR03Jv94My0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,LuVxlZ1QmvdEWr6oEhUhyFw0loU=] */

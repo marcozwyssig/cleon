@@ -41,9 +41,6 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
     public java.lang.String whitespacesToDash();
 
-    @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
-    public java.lang.String removeWhiteSpaces();
-
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace();
 
@@ -55,6 +52,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
     public java.lang.String combine();
+
+    @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
+    public java.lang.String removeWhiteSpaces();
 
   }
   
@@ -78,9 +78,6 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
     public java.lang.String whitespacesToDash(final java.lang.String stringLiteral);
 
-    @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
-    public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral);
-
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral);
 
@@ -92,6 +89,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
     public java.lang.String combine(final List<java.lang.String> stringLiteralList);
+
+    @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
+    public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral);
 
   }
   
@@ -141,28 +141,6 @@ public class StringFunctionSpace {
       /* Begin Protected Region [[780f8f16-98fc-11ee-aa72-593773060f63]] */
       return StringUtil.whitespacesTo(stringLiteral, "-");
       /* End Protected Region   [[780f8f16-98fc-11ee-aa72-593773060f63]] */
-    }
-
-    @Override
-    public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
-      /* Begin Protected Region [[28b111dd-ac0d-11ef-afba-fb66280e2230]] */
-        if (stringLiteral == null || stringLiteral.isEmpty()) {
-          	return stringLiteral;
-          }
-
-          final var result = new StringBuilder();
-          result.append(stringLiteral.charAt(0)); // start with the first character
-
-          for (var i = 1; i < stringLiteral.length(); i++) {
-          	final var currentChar = stringLiteral.charAt(i);
-          	if (Character.isWhitespace(currentChar)) {
-          		continue;
-          	}
-          	result.append(currentChar);
-          }
-
-          return result.toString();
-      /* End Protected Region   [[28b111dd-ac0d-11ef-afba-fb66280e2230]] */
     }
 
     @Override
@@ -239,6 +217,28 @@ public class StringFunctionSpace {
       /* End Protected Region   [[f4506904-9b89-11ef-bb4f-3decea302a61]] */
     }
 
+    @Override
+    public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[28b111dd-ac0d-11ef-afba-fb66280e2230]] */
+        if (stringLiteral == null || stringLiteral.isEmpty()) {
+          	return stringLiteral;
+          }
+
+          final var result = new StringBuilder();
+          result.append(stringLiteral.charAt(0)); // start with the first character
+
+          for (var i = 1; i < stringLiteral.length(); ++i) {
+          	final var currentChar = stringLiteral.charAt(i);
+          	if (Character.isWhitespace(currentChar)) {
+          		continue;
+          	}
+          	result.append(currentChar);
+          }
+
+          return result.toString();
+      /* End Protected Region   [[28b111dd-ac0d-11ef-afba-fb66280e2230]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -269,10 +269,6 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespacesToDash(stringLiteral);
     }
 
-    public static java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeWhiteSpaces(stringLiteral);
-    }
-
     public static java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pascalCaseToWhitespace(stringLiteral);
     }
@@ -287,6 +283,10 @@ public class StringFunctionSpace {
 
     public static java.lang.String combine(final List<java.lang.String> stringLiteralList) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteralList).combine(stringLiteralList);
+    }
+
+    public static java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeWhiteSpaces(stringLiteral);
     }
 
   }
@@ -382,4 +382,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,HOzy5y/LYlPxWyJ1C8HWzSgheZM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,xckjUuL5Qi0zRr1YCs5XOQCd2gA=] */

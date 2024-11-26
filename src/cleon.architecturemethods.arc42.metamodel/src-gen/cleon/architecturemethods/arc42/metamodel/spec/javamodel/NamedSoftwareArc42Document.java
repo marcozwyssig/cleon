@@ -197,11 +197,11 @@ public class NamedSoftwareArc42Document extends DynamicResource implements IName
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios);
+  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios select__W_1_aE_quality_aE_scenarios() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios);
   }
 
-  public NamedSoftwareArc42Document set__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios __W_1_aE_quality_aE_scenarios) {
+  public NamedSoftwareArc42Document set__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios __W_1_aE_quality_aE_scenarios) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios, __W_1_aE_quality_aE_scenarios);
     return this;
   }
@@ -367,9 +367,8 @@ public class NamedSoftwareArc42Document extends DynamicResource implements IName
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___V_8_aE_deploymentview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___V_9_aE_software_aE_concepts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_0_aE_designdecision, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_3_aE_productview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_4_aE_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
@@ -383,4 +382,4 @@ public class NamedSoftwareArc42Document extends DynamicResource implements IName
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f92ec08-a28d-11ef-9aea-bfda14a4d373,Y+LoZuXK/0gp8QIiEHKNJQCfK+4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f92ec08-a28d-11ef-9aea-bfda14a4d373,zDOrxEj7nLcoq9M2gFhSf0KcSMM=] */

@@ -44,6 +44,7 @@ public class SpecPackage {
   public static final Resource SoftwareArc42Document___W_2_aE_technical_aE_risks = new Resource("53dc4be3-ab34-11ef-82e4-fbabda5366bc");
   public static final Resource SoftwareArc42Document___W_3_aE_productview = new Resource("53dc4be4-ab34-11ef-82e4-fbabda5366bc");
   public static final Resource SoftwareArc42Document___W_4_aE_requirements_aE_coverage = new Resource("53dc4be5-ab34-11ef-82e4-fbabda5366bc");
+  public static final Resource arc42TopLevelChapter = new Resource("e2111f60-ac0d-11ef-afba-fb66280e2230");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +65,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,tCR8w4UvZ6G3x7G2D3a/D9EEwoQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,hnpS+Dgk1Sr3NO8FktugCAOPOEM=] */

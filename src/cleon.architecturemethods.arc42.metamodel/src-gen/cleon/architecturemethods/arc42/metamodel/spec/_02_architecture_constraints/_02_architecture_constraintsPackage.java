@@ -13,6 +13,8 @@ public class _02_architecture_constraintsPackage {
   public static final Resource OrganizationalConstraint = new Resource("e6f2152e-eaa8-11e8-88d3-bfc6b992bdec");
   public static final Resource TechnicalConstraints_technicalConstraints = new Resource("edef05a3-eaa8-11e8-88d3-bfc6b992bdec");
   public static final Resource OrganizationalConstraints_organizationalConstraints = new Resource("f1ce623b-eaa8-11e8-88d3-bfc6b992bdec");
+  public static final Resource FunctionSpace_aE_Architecture_aE_Constraints_TechnicalConstraint = new Resource("3a0a153a-ac13-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Architecture_aE_Constraints_OrganizationalConstraint = new Resource("7d487060-ac13-11ef-afba-fb66280e2230");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +35,4 @@ public class _02_architecture_constraintsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints,5HzhcdPirqnSyUwZ2AQcMpRPqwI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints,kZA3weZ9s6A13Mmihcx6a4QU+b8=] */

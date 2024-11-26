@@ -16,10 +16,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * most!
  * 
  */
-public interface ISolutionStrategy extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter {
+public interface ISolutionStrategy extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter, cleon.common.doc.metamodel.spec.javamodel.IOnlyStandardElementsChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("650ddeb2-e985-11e8-af5c-a5aa9dc47205");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,64QQkv4i/hVERmKpJQXSoOrSMoc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,ySHULUcx05RJYtij1uJg21fEVHw=] */

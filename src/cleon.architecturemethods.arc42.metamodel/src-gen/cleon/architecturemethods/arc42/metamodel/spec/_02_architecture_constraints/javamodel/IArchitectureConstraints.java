@@ -16,7 +16,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * In the optimal case constraints are defined by requirements. In any case, at
  * least the architects must be aware of constraints.
  */
-public interface IArchitectureConstraints extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IArchitectureConstraints extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b06163b8-ffc9-11e5-bd7b-8b0acf27d441");
   
@@ -28,4 +28,4 @@ public interface IArchitectureConstraints extends cleon.common.doc.metamodel.spe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,E7qgu2FjA8sR2PJTJ6VmT9LKZ6g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,NgkADLXhkqTVZ/dAdaI0SJCRe3E=] */

@@ -18,16 +18,44 @@ public class FunctionSpace_Asciidoc_arc42 {
   /* End Protected Region   [[65a357a1-2663-11e6-ae54-e50d44645ae7]] */
 
 
-  public static interface ISystemScopeAndContextFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5cd8e8e4-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+  public static interface Iarc42TopLevelChapterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("50aaa6c3-abeb-11ef-ad6e-61718268e815")
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("50aaa6cc-abeb-11ef-ad6e-61718268e815")
     public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("d5d65e3b-ac0e-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface Iarc42TopLevelChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class arc42TopLevelChapterFunctionsImpl implements Iarc42TopLevelChapterFunctionsImpl {
+
+    public static final Iarc42TopLevelChapterFunctionsImpl INSTANCE = new arc42TopLevelChapterFunctionsImpl();
+
+    private arc42TopLevelChapterFunctionsImpl() {}
+
+  }
+  
+  public static class arc42TopLevelChapterFunctions {
+
+    private arc42TopLevelChapterFunctions() {}
+
+  }
+
+  public static interface ISystemScopeAndContextFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5cd8e8e4-2516-11ec-beea-a9d94a6f89e0")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("0afb4150-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -129,6 +157,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5cd9f9db-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("1e9a731b-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
   }
   
   public static interface IDeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -154,11 +185,8 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5cd9f9f9-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
-    @IDynamicResourceExtension.MethodId("d78306c3-abea-11ef-ad6e-61718268e815")
-    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("e2d1c612-abea-11ef-ad6e-61718268e815")
-    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    @IDynamicResourceExtension.MethodId("34391dec-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -377,6 +405,9 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     @IDynamicResourceExtension.MethodId("5cdabd85-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("f503ab5e-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -603,6 +634,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5cdb5a6e-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("7b8400db-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
   }
   
   public static interface ITechnical_RisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -625,17 +659,11 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("7582dbf7-d64d-11ee-8014-c150876d6b6e")
-    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("c0ea662e-e5cc-11ee-9463-7b6f2009e56e")
-    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("ce9eb334-e5cc-11ee-9463-7b6f2009e56e")
-    public java.lang.String BuildingBlockName();
-
     @IDynamicResourceExtension.MethodId("24208986-e5d9-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("641947c8-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -887,11 +915,8 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IArchitectureConstraintsFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("b6211448-abeb-11ef-ad6e-61718268e815")
-    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("b6211451-abeb-11ef-ad6e-61718268e815")
-    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    @IDynamicResourceExtension.MethodId("4b48e5ab-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -915,11 +940,8 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface ISolutionStrategyFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("25880f28-abec-11ef-ad6e-61718268e815")
-    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("25880f31-abec-11ef-ad6e-61718268e815")
-    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    @IDynamicResourceExtension.MethodId("42203a8e-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
 
   }
   
@@ -941,6 +963,156 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IConceptsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("99acf364-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ConceptsFunctionsImpl implements IConceptsFunctionsImpl {
+
+    public static final IConceptsFunctionsImpl INSTANCE = new ConceptsFunctionsImpl();
+
+    private ConceptsFunctionsImpl() {}
+
+  }
+  
+  public static class ConceptsFunctions {
+
+    private ConceptsFunctions() {}
+
+  }
+
+  public static interface IDataViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a11a0b3c-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IDataViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DataViewFunctionsImpl implements IDataViewFunctionsImpl {
+
+    public static final IDataViewFunctionsImpl INSTANCE = new DataViewFunctionsImpl();
+
+    private DataViewFunctionsImpl() {}
+
+  }
+  
+  public static class DataViewFunctions {
+
+    private DataViewFunctions() {}
+
+  }
+
+  public static interface IDesignDecisionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b3faf4f3-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IDesignDecisionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DesignDecisionFunctionsImpl implements IDesignDecisionFunctionsImpl {
+
+    public static final IDesignDecisionFunctionsImpl INSTANCE = new DesignDecisionFunctionsImpl();
+
+    private DesignDecisionFunctionsImpl() {}
+
+  }
+  
+  public static class DesignDecisionFunctions {
+
+    private DesignDecisionFunctions() {}
+
+  }
+
+  public static interface IRuntimeViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cfbb737c-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IRuntimeViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RuntimeViewFunctionsImpl implements IRuntimeViewFunctionsImpl {
+
+    public static final IRuntimeViewFunctionsImpl INSTANCE = new RuntimeViewFunctionsImpl();
+
+    private RuntimeViewFunctionsImpl() {}
+
+  }
+  
+  public static class RuntimeViewFunctions {
+
+    private RuntimeViewFunctions() {}
+
+  }
+
+  public static interface IQualityScenariosFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e799d58f-ac0f-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IQualityScenariosFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QualityScenariosFunctionsImpl implements IQualityScenariosFunctionsImpl {
+
+    public static final IQualityScenariosFunctionsImpl INSTANCE = new QualityScenariosFunctionsImpl();
+
+    private QualityScenariosFunctionsImpl() {}
+
+  }
+  
+  public static class QualityScenariosFunctions {
+
+    private QualityScenariosFunctions() {}
+
+  }
+
+  public static interface IArc42RequirementCoveragesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("164b1cb2-ac10-11ef-afba-fb66280e2230")
+    public java.lang.String No();
+
+  }
+  
+  public static interface IArc42RequirementCoveragesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Arc42RequirementCoveragesFunctionsImpl implements IArc42RequirementCoveragesFunctionsImpl {
+
+    public static final IArc42RequirementCoveragesFunctionsImpl INSTANCE = new Arc42RequirementCoveragesFunctionsImpl();
+
+    private Arc42RequirementCoveragesFunctionsImpl() {}
+
+  }
+  
+  public static class Arc42RequirementCoveragesFunctions {
+
+    private Arc42RequirementCoveragesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,b08t/+uM9yYsNRc1kaPp9AUein4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,06L9HnOXnoLcxpZxdGdI60GsYvE=] */

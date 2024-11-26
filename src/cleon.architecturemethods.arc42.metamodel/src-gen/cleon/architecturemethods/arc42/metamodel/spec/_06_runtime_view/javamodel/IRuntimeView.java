@@ -43,10 +43,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * well as instantiated relationships. The UML allows to distinguish between active
  * and passive objects.
  */
-public interface IRuntimeView extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IRuntimeView extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("64fa2d04-9984-11e8-b187-17b9138759f6");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,64fa2d04-9984-11e8-b187-17b9138759f6,ZgzGM7P4kKVk/shfbI2e5KkZ7Hg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,64fa2d04-9984-11e8-b187-17b9138759f6,1nJsRGc7EMTputaUwjbyyRc/Ls0=] */

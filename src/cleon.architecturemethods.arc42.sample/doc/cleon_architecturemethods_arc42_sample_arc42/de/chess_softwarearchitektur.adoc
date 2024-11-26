@@ -6,93 +6,35 @@
 
 
 <<<
-include::chapters/einleitung/einleitung.adoc[]
+include::einleitung/einleitung.adoc[]
  
 <<<
-include::chapters/01_introduction_and_goals/01_introduction_and_goals.adoc[]
+include::01_einführungund_ziele/01_einführungund_ziele.adoc[]
  
 <<<
-include::chapters/02_architecture_constraints/02_architecture_constraints.adoc[]
+include::02_randbedingungen/02_randbedingungen.adoc[]
  
 <<<
 include::03_kontextabgrenzung/03_kontextabgrenzung.adoc[]
  
 <<<
-include::chapters/04_solution_strategy/04_solution_strategy.adoc[]
+include::04_lösungsstrategie/04_lösungsstrategie.adoc[]
  
 <<<
-include::chapters/05_building_block_view/05_building_block_view.adoc[]
+include::05_bausteinsicht/05_bausteinsicht.adoc[]
  
-[#86e7e102-31f5-11e5-bd99-eda9ce254b0b]
-== Verteilsicht
-// Begin Protected Region [[86e7e102-31f5-11e5-bd99-eda9ce254b0b,customText]]
-
-// End Protected Region   [[86e7e102-31f5-11e5-bd99-eda9ce254b0b,customText]]
-
-<db:section xml:id="ea.31cbdba9-d181-11e8-b18f-df1540bb7a5c">
-	<db:title>Bauen</db:title>
-	
-</db:section>
-<db:section xml:id="ea.3005c135-d181-11e8-b18f-df1540bb7a5c">
-	<db:title>Paketierung</db:title>
-	
-</db:section>
-<db:section xml:id="ea.2e214a51-d181-11e8-b18f-df1540bb7a5c">
-	<db:title>Verteilung</db:title>
-	<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
-	<db:itemizedlist>
-	</db:itemizedlist>
-</db:section>
-<db:section xml:id="ea.2b9bd77d-d181-11e8-b18f-df1540bb7a5c">
-	<db:title>Test</db:title>
-	
-</db:section>
-<db:section xml:id="ea.deaf41b7-d7c8-11ea-ae00-5518e944c256">
-	<db:title>&#220;berwachung</db:title>
-	
-</db:section>
-[#d004d0f6-eaa5-11e8-88d3-bfc6b992bdec]
-== Entwurfsentscheidungen
-// Begin Protected Region [[d004d0f6-eaa5-11e8-88d3-bfc6b992bdec,customText]]
-
-// End Protected Region   [[d004d0f6-eaa5-11e8-88d3-bfc6b992bdec,customText]]
-
-[#388aa5bd-ece0-11e8-8149-8542373915bf]
-=== Einsatz von PAM in AD
-// Begin Protected Region [[388aa5bd-ece0-11e8-8149-8542373915bf,customText]]
-
-// End Protected Region   [[388aa5bd-ece0-11e8-8149-8542373915bf,customText]]
-
-[#c836bccb-ece0-11e8-8149-8542373915bf]
-=== dsfsdf
-// Begin Protected Region [[c836bccb-ece0-11e8-8149-8542373915bf,customText]]
-
-// End Protected Region   [[c836bccb-ece0-11e8-8149-8542373915bf,customText]]
-
-[#d178d3ad-eaa5-11e8-88d3-bfc6b992bdec]
-== Qualitätsszenarios
-// Begin Protected Region [[d178d3ad-eaa5-11e8-88d3-bfc6b992bdec,customText]]
-
-// End Protected Region   [[d178d3ad-eaa5-11e8-88d3-bfc6b992bdec,customText]]
-
-[#8d7e385c-2ad9-11e9-b83f-8be423c00623]
-== Produktesicht
-// Begin Protected Region [[8d7e385c-2ad9-11e9-b83f-8be423c00623,customText]]
-
-// End Protected Region   [[8d7e385c-2ad9-11e9-b83f-8be423c00623,customText]]
-
-[#878f2cbb-ee58-11e8-9756-27a593be2ffb]
-== Anforderungsabdeckung
-// Begin Protected Region [[878f2cbb-ee58-11e8-9756-27a593be2ffb,customText]]
-
-// End Protected Region   [[878f2cbb-ee58-11e8-9756-27a593be2ffb,customText]]
-
-[#886baa13-ee58-11e8-9756-27a593be2ffb]
-=== SU-01_Funktionalität
-// Begin Protected Region [[886baa13-ee58-11e8-9756-27a593be2ffb,customText]]
-
-// End Protected Region   [[886baa13-ee58-11e8-9756-27a593be2ffb,customText]]
-
+<<<
+include::08_verteilsicht/08_verteilsicht.adoc[]
+ 
+<<<
+include::10_entwurfsentscheidungen/10_entwurfsentscheidungen.adoc[]
+ 
+<<<
+include::11_qualitätsszenarios/11_qualitätsszenarios.adoc[]
+ 
+<<<
+include::14_anforderungsabdeckung/14_anforderungsabdeckung.adoc[]
+ 
 
 
 // Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,bb88c324-11f5-11e5-848b-017a3a98ae34,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bb88c324-11f5-11e5-848b-017a3a98ae34,Hash]

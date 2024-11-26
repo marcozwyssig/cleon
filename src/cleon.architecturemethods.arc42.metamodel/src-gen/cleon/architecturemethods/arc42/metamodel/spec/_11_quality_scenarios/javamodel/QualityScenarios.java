@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Quality_Scenarios extends DynamicResource implements IQuality_Scenarios {
+public class QualityScenarios extends DynamicResource implements IQualityScenarios {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQuality_Scenarios> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQuality_Scenarios>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQualityScenarios> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQualityScenarios>() {
     
     @Override
-    public IQuality_Scenarios create() {
-      return new Quality_Scenarios();
+    public IQualityScenarios create() {
+      return new QualityScenarios();
     }
     
     @Override
-    public IQuality_Scenarios create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Quality_Scenarios(resourceRepository, resource);
+    public IQualityScenarios create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new QualityScenarios(resourceRepository, resource);
     }
   
   };
 
-  public Quality_Scenarios() {
-    super(IQuality_Scenarios.TYPE_ID);
+  public QualityScenarios() {
+    super(IQualityScenarios.TYPE_ID);
   }
   
-  public Quality_Scenarios(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IQuality_Scenarios.TYPE_ID);
+  public QualityScenarios(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IQualityScenarios.TYPE_ID);
   }
 
   // attributes
@@ -57,6 +57,15 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
+  }
+    
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
+  }
+
   // relations
   
   @Override
@@ -64,7 +73,7 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Quality_Scenarios setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public QualityScenarios setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -74,7 +83,7 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public Quality_Scenarios setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public QualityScenarios setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -84,7 +93,7 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Quality_Scenarios setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public QualityScenarios setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -94,7 +103,7 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Quality_Scenarios setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public QualityScenarios setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -104,7 +113,7 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Quality_Scenarios setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public QualityScenarios setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -113,7 +122,6 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -124,4 +132,4 @@ public class Quality_Scenarios extends DynamicResource implements IQuality_Scena
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,000d4eb0-d0b5-11e8-b005-f7630e4c29c0,mtrTR3TO8wUM0RTdeWxrXCO+p34=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,000d4eb0-d0b5-11e8-b005-f7630e4c29c0,ain3I3pLqEWHkpD/w4J06n8CzkA=] */

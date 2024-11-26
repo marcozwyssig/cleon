@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITechnical_Risks extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
+public interface ITechnical_Risks extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7b9457e9-d0b4-11e8-b005-f7630e4c29c0");
   
@@ -12,4 +12,4 @@ public interface ITechnical_Risks extends cleon.common.doc.metamodel.spec.chapte
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,7gq7dWAVj+hj19pgSNJ2SAHkM0k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,sOX4zDzYrjtH0Z1lJqn13KtlpCc=] */

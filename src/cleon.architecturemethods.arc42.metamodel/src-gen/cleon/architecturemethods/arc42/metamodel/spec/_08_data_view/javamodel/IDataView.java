@@ -8,7 +8,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * • Data mic view
  * 
  */
-public interface IDataView extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IDataView extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0738a3fd-db90-11ee-bf0f-4753d26fac10");
   
@@ -18,4 +18,4 @@ public interface IDataView extends cleon.common.doc.metamodel.spec.chapter.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,/MRa/VLyAW/WUwJPQPr9/USOayw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,q5eCcIF3YtJrRXb3QFyADTFhc1A=] */

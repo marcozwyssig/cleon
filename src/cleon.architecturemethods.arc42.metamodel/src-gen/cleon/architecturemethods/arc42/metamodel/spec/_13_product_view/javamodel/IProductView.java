@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamode
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IProductView extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
+public interface IProductView extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a7023af1-d0b1-11e8-b005-f7630e4c29c0");
   
@@ -12,4 +12,4 @@ public interface IProductView extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,FuPWH/pdJQcujXrmpdyi2XLtkDY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,dkp5YdfMsX6isxHMhXq00Fwlbh0=] */

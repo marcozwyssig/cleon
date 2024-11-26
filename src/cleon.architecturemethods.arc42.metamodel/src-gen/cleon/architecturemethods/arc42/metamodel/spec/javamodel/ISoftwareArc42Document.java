@@ -28,7 +28,7 @@ public interface ISoftwareArc42Document extends cleon.architecturemethods.arc42.
   
   public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQuality_Scenarios select__W_1_aE_quality_aE_scenarios();
+  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios select__W_1_aE_quality_aE_scenarios();
   
   public cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks();
   
@@ -38,4 +38,4 @@ public interface ISoftwareArc42Document extends cleon.architecturemethods.arc42.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,BCw8WxaxEecyW+WtJ1NB09dLg6U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,gprz/k5gFHk8j5j7U/tCdv9DbEc=] */

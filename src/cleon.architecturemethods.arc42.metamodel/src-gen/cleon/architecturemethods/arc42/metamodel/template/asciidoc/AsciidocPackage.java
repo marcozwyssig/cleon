@@ -37,6 +37,13 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_About = new Resource("15eb3001-9dde-11ef-bee3-bbbac6a8abc2");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ArchitectureConstraints = new Resource("a0d9897f-abeb-11ef-ad6e-61718268e815");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SolutionStrategy = new Resource("19cbe8cd-abec-11ef-ad6e-61718268e815");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_arc42TopLevelChapter = new Resource("c3d795c4-ac0e-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Concepts = new Resource("97bfa22c-ac0f-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DataView = new Resource("a11a0b39-ac0f-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DesignDecision = new Resource("b3faf4f0-ac0f-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RuntimeView = new Resource("cfbb7379-ac0f-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_QualityScenarios = new Resource("e799d58c-ac0f-11ef-afba-fb66280e2230");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Arc42RequirementCoverages = new Resource("252dfeb4-ac10-11ef-afba-fb66280e2230");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +64,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,afHoJIyRMuHYNo0WXcHkutI3qYo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,qH6MgxSKnrOZd8tx/RfvKkuXjgI=] */

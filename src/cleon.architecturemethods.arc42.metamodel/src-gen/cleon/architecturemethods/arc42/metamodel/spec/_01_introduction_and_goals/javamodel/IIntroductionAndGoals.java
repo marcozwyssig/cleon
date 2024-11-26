@@ -10,7 +10,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * Berücksichtigung der Architekturziele. 
  * 
  */
-public interface IIntroductionAndGoals extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IIntroductionAndGoals extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b1708484-11fc-11e5-848b-017a3a98ae34");
   
@@ -22,4 +22,4 @@ public interface IIntroductionAndGoals extends cleon.common.doc.metamodel.spec.c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,43NQ6p/OmXHuAB3WqZk+QHq/UXw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,WHvCfRfPH9I4qsf+JGYTb1hIkvc=] */

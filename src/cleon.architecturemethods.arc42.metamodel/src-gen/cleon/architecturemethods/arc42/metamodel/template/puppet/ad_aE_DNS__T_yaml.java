@@ -74,45 +74,6 @@ public class ad_aE_DNS__T_yaml {
 
   }
 
-  public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String ReplacePointToUnderscore();
-
-  }
-  
-  public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String ReplacePointToUnderscore(final java.lang.String stringLiteral);
-
-  }
-  
-  public static class StringLiteralFunctionsImpl implements IStringLiteralFunctionsImpl {
-
-    public static final IStringLiteralFunctionsImpl INSTANCE = new StringLiteralFunctionsImpl();
-
-    private StringLiteralFunctionsImpl() {}
-
-    @Override
-    public java.lang.String ReplacePointToUnderscore(final java.lang.String stringLiteral) {
-      /* Begin Protected Region [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
-      return stringLiteral.replace('.', '-');
-      /* End Protected Region   [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
-    }
-
-  }
-  
-  public static class StringLiteralFunctions {
-
-    private StringLiteralFunctions() {}
-
-    public static java.lang.String ReplacePointToUnderscore(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).ReplacePointToUnderscore(stringLiteral);
-    }
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,47530bae-111d-11ea-b1a8-559fc9dee05c,+/BcfhsqwQjjapXMJGt0grWTwNY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,47530bae-111d-11ea-b1a8-559fc9dee05c,SaeaOyC9teVh/J92c0Oyr4OHX5o=] */

@@ -6,7 +6,7 @@
 
 [#chapter-system_scope_and_context]
 == System Scope and Context
-In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
+In this chapter, the context of the considered system (Chess) is outlined.
 // Begin Protected Region [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
 
 // End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
@@ -24,20 +24,20 @@ Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
 Player__F_B -down-> Chess : interacts
 ...
-Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+The following table describes the actuators of the considered system.
 [cols="40%,60%"]
 |===
-|Aktor|Beschreibung		
+|Actor | Description
 |Player A
 |
 |Player B
 |
 |===
 
-Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System
+The following table describes the communication flows (Flows) between all participants and the system.
 [cols="15%,15%,20%,50%"]
 |===
-|Von|Zu|Interaktion|Beschreibung
+|From | To | Interaction | Description
 |Chess
 |Player A</db:para>
 |gets</db:para>
@@ -66,10 +66,10 @@ component Chess as "Chess" <<SoftwareSystem>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ...
-Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
+The following table describes the neighboring systems of the considered system.
 [cols="40%,60%"]
 |===
-|Nachbarsystem|Beschreibung
+|Neighboring System | Description
 |FTP</db:para>
 |
 dsfasdf</db:para>
@@ -77,4 +77,4 @@ dsfasdf</db:para>
 
 // End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,lodoADzfv5zSdq0QFIrZ8UhWbaI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,vEwx5Q5csLwf0Pe0TsnIthz4Gt0=]

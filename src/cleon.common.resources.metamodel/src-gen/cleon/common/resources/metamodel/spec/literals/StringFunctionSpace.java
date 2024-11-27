@@ -30,7 +30,7 @@ public class StringFunctionSpace {
     public java.lang.String removeInvalidFileNameCharacters();
 
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
-    public java.lang.String convertDotToSlash();
+    public java.lang.String pointToSlash();
 
     @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
     public java.lang.String dashToUnderscore();
@@ -60,10 +60,10 @@ public class StringFunctionSpace {
     public java.lang.String removeWhiteSpaces();
 
     @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String replacePointToDash();
+    public java.lang.String pointToDash();
 
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
-    public java.lang.String replacePointToUnderscore();
+    public java.lang.String pointToUnderscore();
 
   }
   
@@ -76,7 +76,7 @@ public class StringFunctionSpace {
     public java.lang.String removeInvalidFileNameCharacters(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
-    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral);
+    public java.lang.String pointToSlash(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
     public java.lang.String dashToUnderscore(final java.lang.String stringLiteral);
@@ -106,10 +106,10 @@ public class StringFunctionSpace {
     public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String replacePointToDash(final java.lang.String stringLiteral);
+    public java.lang.String pointToDash(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
-    public java.lang.String replacePointToUnderscore(final java.lang.String stringLiteral);
+    public java.lang.String pointToUnderscore(final java.lang.String stringLiteral);
 
   }
   
@@ -134,7 +134,7 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
+    public java.lang.String pointToSlash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
       return stringLiteral.replace(".", "/");
       /* End Protected Region   [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
@@ -265,14 +265,14 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String replacePointToDash(final java.lang.String stringLiteral) {
+    public java.lang.String pointToDash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
         return stringLiteral.replace('.', '-');
       /* End Protected Region   [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
     }
 
     @Override
-    public java.lang.String replacePointToUnderscore(final java.lang.String stringLiteral) {
+    public java.lang.String pointToUnderscore(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[4e440fb7-acc6-11ef-a765-2382060a590e]] */
         return stringLiteral.replace('.', '_');
       /* End Protected Region   [[4e440fb7-acc6-11ef-a765-2382060a590e]] */
@@ -292,8 +292,8 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeInvalidFileNameCharacters(stringLiteral);
     }
 
-    public static java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertDotToSlash(stringLiteral);
+    public static java.lang.String pointToSlash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToSlash(stringLiteral);
     }
 
     public static java.lang.String dashToUnderscore(final java.lang.String stringLiteral) {
@@ -332,12 +332,12 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeWhiteSpaces(stringLiteral);
     }
 
-    public static java.lang.String replacePointToDash(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replacePointToDash(stringLiteral);
+    public static java.lang.String pointToDash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToDash(stringLiteral);
     }
 
-    public static java.lang.String replacePointToUnderscore(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replacePointToUnderscore(stringLiteral);
+    public static java.lang.String pointToUnderscore(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToUnderscore(stringLiteral);
     }
 
   }
@@ -450,4 +450,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,bWpAzLxWHCvYBsONMVdqMJFn4wQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,/JTCWK8UvRR3iJ5o/GxPMaxvtFI=] */

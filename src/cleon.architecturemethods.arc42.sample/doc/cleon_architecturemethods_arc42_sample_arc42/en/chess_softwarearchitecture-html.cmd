@@ -1,2 +1,2 @@
 chcp 65001
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Chess_Softwarearchitecture.adoc 
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri chess_softwarearchitecture.adoc 

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.applications.actifsource.sample</name>
-	<comment></comment>
+	<comment/>
 	<projects>
+		<!-- Begin Protected Region [[customProjects]] -->
+		
+		<!-- End Protected Region   [[customProjects]] -->
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -31,15 +34,10 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
 	</natures>
-	<filteredResources>
-		<filter>
-			<id>1732553272620</id>
-			<name></name>
-			<type>30</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
-			</matcher>
-		</filter>
-	</filteredResources>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,424f6a5b-ca2d-11e8-a7f6-af071215645c,Hash] -->

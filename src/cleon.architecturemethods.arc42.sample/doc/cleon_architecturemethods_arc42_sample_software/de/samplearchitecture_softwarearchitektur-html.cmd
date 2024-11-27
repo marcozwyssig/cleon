@@ -1,2 +1,2 @@
 chcp 65001
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri SampleArchitecture_Softwarearchitektur.adoc 
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri samplearchitecture_softwarearchitektur.adoc 

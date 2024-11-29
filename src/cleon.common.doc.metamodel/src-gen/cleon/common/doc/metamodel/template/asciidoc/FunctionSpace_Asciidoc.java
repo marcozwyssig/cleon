@@ -546,6 +546,9 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("8f719cd4-d3ef-11e5-9dfc-cf0f3e030023")
     public java.lang.String GetAdocFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("f60f64b6-ae5d-11ef-9f76-697f8eef04ad")
+    public java.lang.String DocumentType();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -933,4 +936,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,sDCVTLlpndEYJJEyeuCEgDQHi98=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Dlki9FWw0bEB6hVbA53Y2Lbr9RE=] */

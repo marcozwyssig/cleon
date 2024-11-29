@@ -245,6 +245,7 @@
           <owns predicate="c31f1af0-77ef-11e1-a134-5793980f7ff3">
             <resource statement-guid="bc47e24c-ddd9-11e9-bb03-150413ca6880" type="resource" guid="bc479429-ddd9-11e9-bb03-150413ca6880">
               <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+                <resource statement-guid="3f4d128e-ae5a-11ef-9f76-697f8eef04ad" type="resource" guid="3f4ceb79-ae5a-11ef-9f76-697f8eef04ad" />
                 <resource statement-guid="bca3be2c-ddd9-11e9-bb03-150413ca6880" type="resource" guid="bca2104f-ddd9-11e9-bb03-150413ca6880">
                   <owns predicate="6a2968dd-d2ac-11de-87dc-a9aeefa4174b">
                     <resource statement-guid="bca3971b-ddd9-11e9-bb03-150413ca6880" type="resource" guid="bca21050-ddd9-11e9-bb03-150413ca6880">
@@ -1167,6 +1168,16 @@
                       <object statement-guid="bc47bb3b-ddd9-11e9-bb03-150413ca6880" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
                     </predicate>
                     <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                      <object statement-guid="3f4d128e-ae5a-11ef-9f76-697f8eef04ad">
+                        <resource guid="3f4ceb79-ae5a-11ef-9f76-697f8eef04ad">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="3f4d128c-ae5a-11ef-9f76-697f8eef04ad" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                          </predicate>
+                          <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                            <object statement-guid="3f4d128d-ae5a-11ef-9f76-697f8eef04ad" type="literal">puml/</object>
+                          </predicate>
+                        </resource>
+                      </object>
                       <object statement-guid="bca3be2c-ddd9-11e9-bb03-150413ca6880">
                         <resource guid="bca2104f-ddd9-11e9-bb03-150413ca6880">
                           <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

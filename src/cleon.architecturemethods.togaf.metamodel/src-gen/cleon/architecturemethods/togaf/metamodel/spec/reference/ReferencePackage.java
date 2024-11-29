@@ -7,7 +7,6 @@ public class ReferencePackage {
   public static final Resource ReferenceArc42 = new Resource("0813a879-2d6d-11e6-959f-d1cef44ff5fd");
   public static final Resource NamedReferenceArc42 = new Resource("3a395933-2d71-11e6-959f-d1cef44ff5fd");
   public static final Resource ReferenceArc42___V_5_aE_architecturebuildingblockview = new Resource("a3a829de-2d71-11e6-959f-d1cef44ff5fd");
-  public static final Resource ReferenceArc42_no_aE_concept = new Resource("327fc82b-a290-11ef-9aea-bfda14a4d373");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +27,4 @@ public class ReferencePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference,jUDLZ+T453FrAcj4Y/5xLrG2XSI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference,PPLtrnvlCugYDZkAQpyjy9irnOY=] */

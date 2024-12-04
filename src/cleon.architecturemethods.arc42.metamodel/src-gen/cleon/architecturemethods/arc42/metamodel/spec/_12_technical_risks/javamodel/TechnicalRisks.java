@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Technical_Risks extends DynamicResource implements ITechnical_Risks {
+public class TechnicalRisks extends DynamicResource implements ITechnicalRisks {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnical_Risks> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnical_Risks>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnicalRisks> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnicalRisks>() {
     
     @Override
-    public ITechnical_Risks create() {
-      return new Technical_Risks();
+    public ITechnicalRisks create() {
+      return new TechnicalRisks();
     }
     
     @Override
-    public ITechnical_Risks create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Technical_Risks(resourceRepository, resource);
+    public ITechnicalRisks create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new TechnicalRisks(resourceRepository, resource);
     }
   
   };
 
-  public Technical_Risks() {
-    super(ITechnical_Risks.TYPE_ID);
+  public TechnicalRisks() {
+    super(ITechnicalRisks.TYPE_ID);
   }
   
-  public Technical_Risks(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITechnical_Risks.TYPE_ID);
+  public TechnicalRisks(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ITechnicalRisks.TYPE_ID);
   }
 
   // attributes
@@ -73,7 +73,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Technical_Risks setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public TechnicalRisks setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -83,7 +83,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public Technical_Risks setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public TechnicalRisks setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -93,7 +93,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Technical_Risks setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public TechnicalRisks setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -103,7 +103,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public Technical_Risks setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public TechnicalRisks setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -113,18 +113,18 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Technical_Risks setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public TechnicalRisks setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
   @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement selectRiskManagement() {
-    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.Technical_aE_Risks_riskManagement);
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.TechnicalRisks_riskManagement);
   }
 
-  public Technical_Risks setRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement riskManagement) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.Technical_aE_Risks_riskManagement, riskManagement);
+  public TechnicalRisks setRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement riskManagement) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.TechnicalRisks_riskManagement, riskManagement);
     return this;
   }
     
@@ -133,7 +133,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Technical_Risks setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public TechnicalRisks setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -147,15 +147,15 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.Technical_aE_Risks_riskManagement, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.TechnicalRisks_riskManagement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks> selectToMeRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.Technical_aE_Risks_riskManagement, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks> selectToMeRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks.class, cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks._12_technical_risksPackage.TechnicalRisks_riskManagement, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,fWs0AkK6CrbO8eIOYEj+F0aqYeY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,YWZtNoLcDf3UDZXSwLGHRyKyQHw=] */

@@ -198,11 +198,11 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks select__W_2_aE_technical_aE_risks() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks);
+  public cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks select__W_2_aE_technical_aE_risks() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks);
   }
 
-  public SoftwareArc42Document set__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks __W_2_aE_technical_aE_risks) {
+  public SoftwareArc42Document set__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks __W_2_aE_technical_aE_risks) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks, __W_2_aE_technical_aE_risks);
     return this;
   }
@@ -348,7 +348,7 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___V_9_aE_software_aE_concepts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_0_aE_designdecision, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_4_aE_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
@@ -406,7 +406,7 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISoftwareArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_1_aE_quality_aE_scenarios, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISoftwareArc42Document selectToMe__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnical_Risks object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISoftwareArc42Document selectToMe__W_2_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISoftwareArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_2_aE_technical_aE_risks, object.getResource());
   }
   
@@ -419,4 +419,4 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,YR9rbC54x8CdiIA8GtEwKH1v5BU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,xAk5ifmbFN6CNGnb0dFS40ioMo8=] */

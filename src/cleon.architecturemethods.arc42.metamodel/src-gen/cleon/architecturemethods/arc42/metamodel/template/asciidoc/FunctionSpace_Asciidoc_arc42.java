@@ -626,7 +626,7 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface ITechnical_RisksFunctions extends IDynamicResourceExtension {
+  public static interface ITechnicalRisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a6e-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -636,21 +636,21 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
   
-  public static interface ITechnical_RisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITechnicalRisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class Technical_RisksFunctionsImpl implements ITechnical_RisksFunctionsImpl {
+  public static class TechnicalRisksFunctionsImpl implements ITechnicalRisksFunctionsImpl {
 
-    public static final ITechnical_RisksFunctionsImpl INSTANCE = new Technical_RisksFunctionsImpl();
+    public static final ITechnicalRisksFunctionsImpl INSTANCE = new TechnicalRisksFunctionsImpl();
 
-    private Technical_RisksFunctionsImpl() {}
+    private TechnicalRisksFunctionsImpl() {}
 
   }
   
-  public static class Technical_RisksFunctions {
+  public static class TechnicalRisksFunctions {
 
-    private Technical_RisksFunctions() {}
+    private TechnicalRisksFunctions() {}
 
   }
 
@@ -1137,4 +1137,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,EZaXcBmMS1t71dT5Cm4hXq+wruo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,zojx04zsuMUoXjz8Em4MGK2SXrI=] */

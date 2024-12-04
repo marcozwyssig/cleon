@@ -57,6 +57,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("0afb4150-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
 
+    @IDynamicResourceExtension.MethodId("419f01aa-b242-11ef-918d-5f6110826920")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface ISystemScopeAndContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -187,6 +190,9 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     @IDynamicResourceExtension.MethodId("34391dec-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
+
+    @IDynamicResourceExtension.MethodId("7fa8ec6c-b241-11ef-918d-5f6110826920")
+    public java.lang.String FileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -1137,4 +1143,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,zojx04zsuMUoXjz8Em4MGK2SXrI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,vwvQGYcBXrqQEo6t+VdUvKFMMmw=] */

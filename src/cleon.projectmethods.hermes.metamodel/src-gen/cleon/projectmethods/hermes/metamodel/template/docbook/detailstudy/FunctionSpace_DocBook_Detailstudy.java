@@ -21,7 +21,7 @@ public class FunctionSpace_DocBook_Detailstudy {
   public static interface IBestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5df9e4b1-a6f0-11e8-9c81-8bd68c62e435")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -195,4 +195,4 @@ public class FunctionSpace_DocBook_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,AxXdJ0qI3bSmfuPeHkjinuyGEA8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,xGAtIzPbnCy0vl6mwMbkTzPmR1A=] */

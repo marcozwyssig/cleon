@@ -61,12 +61,6 @@ public class FunctionSpace_Doc {
 
   public static interface IDocumentFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("de5cc4d4-ba80-11e5-b56d-4f524d402f4b")
-    public java.lang.String GetDocumentPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-    @IDynamicResourceExtension.MethodId("3d579331-d3ec-11e5-9dfc-cf0f3e030023")
-    public java.lang.String GetFullFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
     @IDynamicResourceExtension.MethodId("8eea2770-d3f0-11e5-9dfc-cf0f3e030023")
     public java.lang.String GetFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
@@ -85,16 +79,10 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("414c4c22-a5a9-11ef-99b4-af3541bfa2c3")
     public java.lang.String TopDocumentPath();
 
-    @IDynamicResourceExtension.MethodId("811d73e9-ae5c-11ef-9f76-697f8eef04ad")
-    public java.lang.String DocumentType();
-
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("811d73e9-ae5c-11ef-9f76-697f8eef04ad")
-    public java.lang.String DocumentType(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document);
-
   }
   
   public static class DocumentFunctionsImpl implements IDocumentFunctionsImpl {
@@ -103,20 +91,11 @@ public class FunctionSpace_Doc {
 
     private DocumentFunctionsImpl() {}
 
-    @Override
-    public java.lang.String DocumentType(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document) {
-      return null;
-    }
-
   }
   
   public static class DocumentFunctions {
 
     private DocumentFunctions() {}
-
-    public static java.lang.String DocumentType(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document) {
-      return DynamicResourceUtil.invoke(IDocumentFunctionsImpl.class, DocumentFunctionsImpl.INSTANCE, document).DocumentType(document);
-    }
 
   }
 
@@ -308,4 +287,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,hZ7OKkHSWVQysHRU92HyxfsSNAc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,4CU3B/SO/IamVey1gSxOhPLVgqc=] */

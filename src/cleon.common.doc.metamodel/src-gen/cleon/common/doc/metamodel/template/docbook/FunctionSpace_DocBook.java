@@ -587,6 +587,15 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("53bf169f-8d64-11eb-b45a-ad6318208ab5")
     public java.lang.String RenderCmdScript(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("604b5f43-b18a-11ef-9247-39b36fec4bf1")
+    public java.lang.String DocumentType();
+
+    @IDynamicResourceExtension.MethodId("c489eed9-b226-11ef-918d-5f6110826920")
+    public java.lang.String GetDocumentPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("c489eef5-b226-11ef-918d-5f6110826920")
+    public java.lang.String GetFullFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -971,4 +980,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,Bu3VT3jnRyHVUJA5m4yRx9WPTyg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,QjrcD+KHY1F19flUSVEuJqCtSfM=] */

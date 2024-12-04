@@ -1,4 +1,4 @@
 chcp 65001
-cmd /c bundle exec asciidoctor-pdf arc42/de/arc42.adoc
-cmd /c bundle exec asciidoctor-pdf arc42/en/arc42.adoc
-cmd /c bundle exec asciidoctor-pdf reference/de/referencedocumentwith___.adoc
+cmd /c bundle exec asciidoctor-pdf arc42/adoc/de/arc42.adoc
+cmd /c bundle exec asciidoctor-pdf arc42/adoc/en/arc42.adoc
+cmd /c bundle exec asciidoctor-pdf reference/adoc/de/referencedocumentwith___.adoc

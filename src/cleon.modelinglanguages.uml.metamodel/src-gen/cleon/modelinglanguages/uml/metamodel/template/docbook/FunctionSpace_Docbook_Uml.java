@@ -21,7 +21,7 @@ public class FunctionSpace_Docbook_Uml {
   public static interface IUmlDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("02f97b23-fa42-11e8-af47-e5bdd8100025")
-    public java.lang.String RenderContent();
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("49992d11-0df3-11e9-a28e-8b950dcca323")
     public java.lang.Boolean CanGenerate();
@@ -60,4 +60,4 @@ public class FunctionSpace_Docbook_Uml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f406e1ac-fa41-11e8-af47-e5bdd8100025,tsjAlFqcmYC/GFaPRktKHl1y/Zs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f406e1ac-fa41-11e8-af47-e5bdd8100025,Vq3hZ3EEiiMVhosQ67dX/aFoFOc=] */

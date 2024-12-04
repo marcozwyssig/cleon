@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>arc42</db:title>
+	
+	<db:chapter xml:id="ea.e9eba81e-084d-11e9-9ee8-c54fda7ab431">
+		<db:title>About</db:title>
+		<db:para>Das ist die Einleitung f&#252;r die folgende Beschreibung</db:para>
+		<db:para>Vielleicht kann man noch erg&#228;nzen.</db:para>
+		<db:section xml:id="ea.cd3bea12-08fb-11e9-9ee8-c54fda7ab431">
+			<db:title>Task</db:title>
+			<db:para>sadfasdfsdf</db:para>
+			<db:para>asdfasdfasdfsadf</db:para>
+		</db:section>
+		<db:section xml:id="ea.d1d855f3-08fb-11e9-9ee8-c54fda7ab431">
+			<db:title>Purpose</db:title>
+			<db:para>adfasdfasdf</db:para>
+			<db:para>adsfasdfasdf</db:para>
+		</db:section>
+		<db:section xml:id="ea.d5571bd5-08fb-11e9-9ee8-c54fda7ab431">
+			<db:title>Distinction</db:title>
+			<db:para>asdfasdfas</db:para>
+			<db:para>dfasdfasdfsadf</db:para>
+			<db:para>asdfasdfsadf</db:para>
+		</db:section>
+		<db:section xml:id="ea.d85e1aa9-08fb-11e9-9ee8-c54fda7ab431">
+			<db:title>Dependencies</db:title>
+			<db:para>asdfasdfasd</db:para>
+			<db:para>fasdfasdfasdfdf</db:para>
+		</db:section>
+		<db:section xml:id="ea.dc2d999d-08fb-11e9-9ee8-c54fda7ab431">
+			<db:title>Leserkreis</db:title>
+			<db:para>adsfasdfasdfasdf</db:para>
+			<db:para>asdfasdfasdfa</db:para>
+			<db:para>sdfasdf</db:para>
+		</db:section>
+		<db:section xml:id="ea.085d8b0f-084e-11e9-9ee8-c54fda7ab431">
+			<db:title>Layout</db:title>
+			<db:para>Dieses vorliegende Dokument hat folgenden Aufbau:</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%"/>
+				<db:col width="60%"/>	
+				<db:thead>
+					<db:tr>
+						<db:th>Kapitel</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>About</db:para>
+						</db:td>
+						<db:td>
+							<db:para>fasdfasdf</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Einführung und Ziele</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sadfsadfasdf</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Architektur Randbedingungen</db:para>
+						</db:td>
+						<db:td>
+							<db:para>asdfasdfasdfasdfsdf </db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+		</db:section>
+		<db:section xml:id="ea.26c09ee9-0770-11e9-9ce3-b59baf185ea8">
+			<db:title>References</db:title>
+			<db:informaltable style="HERMES 5">
+				<db:col width="10%" />
+				<db:col width="45%" />
+				<db:col width="45%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nr.</db:th>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para><db:emphasis role="strong">[1]</db:emphasis></db:para>
+						</db:td>
+						<db:td>			
+							<db:para>Dok 1</db:para>
+						</db:td>
+						<db:td>			
+							<db:para>sdfadfasdf</db:para>
+							<db:para>asdfasdfsdaf</db:para>
+							<db:para>asdfasdfasdf</db:para>
+							<db:para>asdfasdf</db:para>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para><db:emphasis role="strong">[2]</db:emphasis></db:para>
+						</db:td>
+						<db:td>			
+							<db:para>dd</db:para>
+						</db:td>
+						<db:td>			
+							<db:para></db:para>
+						</db:td>			
+					</db:tr>
+				</db:tbody>	
+			</db:informaltable>
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.6f09b217-3088-11e5-8cdc-d5b441c8c3df">
+		<db:title>Einf&#252;hrung und Ziele</db:title>
+		<db:para>Die Einleitung der Architekturdokumentation sollte die treibenden Kr&#228;fte auflisten, die Softwarearchitekten bei ihren Entscheidungen ber&#252;cksichtigen m&#252;ssen. Dazu geh&#246;rt einerseits die Erf&#252;llung der funktionalen Anforderungen der Stakeholder, andererseits die Einhaltung der erforderlichen Randbedingungen, stets unter Ber&#252;cksichtigung der Architekturziele.</db:para>
+		<db:section xml:id="ea.5bdeec4e-15ec-11e6-b588-912e2ce0f2b0">
+			<db:title>Test</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.edd2f87d-3088-11e5-8cdc-d5b441c8c3df">
+			<db:title>Anforderungs&#252;bersicht</db:title>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.af0d064b-3088-11e5-8cdc-d5b441c8c3df">
+		<db:title>Architektur Randbedingungen</db:title>
+		<db:para>asdfasdfasdfasdfsdf</db:para>
+		<db:informaltable style="HERMES 5">
+			<db:col width="30" />
+			<db:col width="70" />
+			<db:thead>
+				<db:tr>
+					<db:th>Name</db:th>
+					<db:th>Description</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Urs</db:para>
+						<db:para>Meister</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Beschreibung f&#252;r Urs</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						
+					</db:td>
+					<db:td>
+						
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						
+					</db:td>
+					<db:td>
+						
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						
+					</db:td>
+					<db:td>
+						
+					</db:td>
+				</db:tr>
+			</db:tbody>	
+		</db:informaltable>
+		<db:orderedlist numeration="arabic">
+			<db:listitem>
+				<db:para>Text 1</db:para>
+			</db:listitem>
+			<db:listitem>
+				<db:para>Text 2</db:para>
+			</db:listitem>
+		</db:orderedlist>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[5e478da3-985e-11ef-9d7c-b5806d5ad1be,7c53b432-d86e-11e4-aa2f-c11242a92b60,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,7c53b432-d86e-11e4-aa2f-c11242a92b60,Hash] -->

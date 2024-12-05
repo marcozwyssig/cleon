@@ -71,6 +71,16 @@ public class Category extends DynamicResource implements ICategory {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Category setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature> selectFeatures() {
     return _getList(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.CategoryPackage.Category_features);
   }
@@ -137,6 +147,7 @@ public class Category extends DynamicResource implements ICategory {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.CategoryPackage.Category_features, visitor);
     _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.javamodel.ICategoryDependency.class, cleon.applications.actifsource.metamodel.spec.system.category.CategoryPackage.Category_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
@@ -155,4 +166,4 @@ public class Category extends DynamicResource implements ICategory {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,qQrCYN3gU12TLg7xQi54ZS6HEgo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,B0vkL/6/t1kxsq6s8GwKZJiu52I=] */

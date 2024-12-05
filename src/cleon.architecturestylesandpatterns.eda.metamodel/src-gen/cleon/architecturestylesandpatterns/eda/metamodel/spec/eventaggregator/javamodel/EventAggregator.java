@@ -61,6 +61,16 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public EventAggregator setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.javamodel.IPubSubEvent> selectEvents() {
     return _getMap(cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events);
   }
@@ -88,6 +98,7 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -103,4 +114,4 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,rqUeovu+N9bunR0oi9zzvg4jm2I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,4mJ3lxKtqUL3ploADLn60/Nu8x8=] */

@@ -61,6 +61,16 @@ public class DomainService extends DynamicResource implements IDomainService {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public DomainService setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturestylesandpatterns.soa.metamodel.spec.javamodel.IEvent> selectEvents() {
     return _getList(cleon.architecturestylesandpatterns.soa.metamodel.spec.javamodel.IEvent.class, cleon.architecturestylesandpatterns.soa.metamodel.spec.SpecPackage.DataService_events);
   }
@@ -98,10 +108,11 @@ public class DomainService extends DynamicResource implements IDomainService {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.InterfacesPackage.AbstractInterface_data, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.architecturestylesandpatterns.soa.metamodel.spec.javamodel.IEvent.class, cleon.architecturestylesandpatterns.soa.metamodel.spec.SpecPackage.DataService_events, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,TsddWWtxzilqEEPt4DGZYNOz2/o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,LjDZ28W2Jkv+ivTvGGToqy5oQ9s=] */

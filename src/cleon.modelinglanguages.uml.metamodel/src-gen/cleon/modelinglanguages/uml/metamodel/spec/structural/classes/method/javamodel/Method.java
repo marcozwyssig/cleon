@@ -78,6 +78,16 @@ public class Method extends DynamicResource implements IMethod {
   // relations
   
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Method setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange selectMep() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_mep);
   }
@@ -137,6 +147,7 @@ public class Method extends DynamicResource implements IMethod {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeDescription, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_mep, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_parameters, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnType, visitor);
@@ -157,4 +168,4 @@ public class Method extends DynamicResource implements IMethod {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,9w5Z7RkPLu+e4OycKvpw8DXKksk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,8z6cH9y1gs/etS3teifWX0Z2P9U=] */

@@ -89,6 +89,16 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public ViewModel setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier selectDisplay() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModel_display);
   }
@@ -199,6 +209,7 @@ public class ViewModel extends DynamicResource implements IViewModel {
     // relations
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.events.javamodel.ICustomEvent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Class_customEvents, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.javamodel.IDelegateCommand.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModel_delegateCommands, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModel_display, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.javamodel.IViewModel.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModel_extends, visitor);
     _acceptMap(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.events.javamodel.IEventForField.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
@@ -228,4 +239,4 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,RDjiSRUXd3axH45F6OaRAv5x9AQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,yJtBvuypnN0+AobtEwWdyngSqQQ=] */

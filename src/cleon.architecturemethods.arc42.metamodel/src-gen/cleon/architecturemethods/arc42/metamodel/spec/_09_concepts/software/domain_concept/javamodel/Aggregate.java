@@ -71,6 +71,16 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Aggregate setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.services.javamodel.IDomainService> selectDomainServices() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.services.javamodel.IDomainService.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_domainServices);
   }
@@ -177,6 +187,7 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.services.javamodel.IDomainService.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_domainServices, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_entities, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums.javamodel.IEnum.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_enums, visitor);
@@ -218,4 +229,4 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,Q4YmdCmI+9kbSbblFcRL0AuNhyk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,eZh0OaKoPAszP5xK2tlmASfG5tc=] */

@@ -52,6 +52,16 @@ public class Repository extends DynamicResource implements IRepository {
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public Repository setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod> selectGetBy() {
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.repository.RepositoryPackage.Repository_getBy);
   }
@@ -107,6 +117,7 @@ public class Repository extends DynamicResource implements IRepository {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.repository.RepositoryPackage.Repository_getBy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.repository.RepositoryPackage.Repository_search, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.repository.RepositoryPackage.Repository_searchBy, visitor);
@@ -128,4 +139,4 @@ public class Repository extends DynamicResource implements IRepository {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,zI87y5FwrN3eLkNS8uIaIuQ0QJ4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,oFC8hfk2E3c9K3CYFGCLNqJPOj0=] */

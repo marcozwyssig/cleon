@@ -51,6 +51,16 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
   // relations
   
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  }
+
+  public ForwardProperty setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.javamodel.IField selectField() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.javamodel.IField.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ForwardProperty_field);
   }
@@ -87,6 +97,7 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ForwardProperty_isReadOnly, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.javamodel.IField.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ForwardProperty_field, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -98,4 +109,4 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,KE56r9aC/CoEsdOZ0lLfACRII0I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,zgzurg8pEh/2UaBU6f1x2txTMXY=] */

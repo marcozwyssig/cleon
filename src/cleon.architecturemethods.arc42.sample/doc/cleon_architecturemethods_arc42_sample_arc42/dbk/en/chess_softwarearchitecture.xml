@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
-	<db:title>Chess Softwarearchitecture</db:title>
+	<db:title>Chess Softwarearchitektur</db:title>
 	
 	<db:chapter xml:id="ea.cba854f5-eaa5-11e8-88d3-bfc6b992bdec">
 		<db:title>About</db:title>
-		
+		<db:para></db:para>
 	</db:chapter>
 	<db:chapter xml:id="ea.4d676de1-11fd-11e5-848b-017a3a98ae34">
 		<db:title>Introduction and Goals</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.b5bb072c-e101-11e8-8499-a3b0fb3cad90">
 			<db:title>Requirements Overview</db:title>
+			<db:para></db:para>
 			<db:para>In der nachfolgenden Tabelle werden die geltenden Betrachtungsräume der Anforderungen aufgeführt:</db:para>  
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
@@ -33,6 +35,7 @@
 		</db:section>
 		<db:section xml:id="ea.f30baebc-4819-11e6-82f6-0f210765495b">
 			<db:title>Quality Goals</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -77,8 +80,10 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.55399595-99a9-11e8-8f58-219af2c5d6d9">
 		<db:title>Architecture Constraints</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec">
 			<db:title>Technical Constraints</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -114,6 +119,7 @@
 		</db:section>
 		<db:section xml:id="ea.ee9fe5ca-eaa5-11e8-88d3-bfc6b992bdec">
 			<db:title>Organizational Constraints</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -155,9 +161,11 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.bfc8585e-2661-11e6-ae54-e50d44645ae7">
 		<db:title>System Scope and Context</db:title>
+		<db:para></db:para>
 		<db:para>In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.</db:para>
 		<db:section xml:id="ea.cb488719-2661-11e6-ae54-e50d44645ae7">
 			<db:title>Fachlicher Kontext</db:title>
+			<db:para></db:para>
 			<db:figure>
 			  <db:title>Fachliches Kontext Diagramm</db:title>
 			  <db:mediaobject>
@@ -252,6 +260,7 @@
 		</db:section>
 		<db:section xml:id="ea.d6de1d03-27f5-11e6-b263-9db62e053e59">
 			<db:title>Technical Context</db:title>
+			<db:para></db:para>
 			<db:figure>
 			  <db:title>Technisches Kontext Diagramm</db:title>
 			  <db:mediaobject>
@@ -290,10 +299,11 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.38080160-e989-11e8-af5c-a5aa9dc47205">
 		<db:title>Solution Strategy</db:title>
-		
+		<db:para></db:para>
 	</db:chapter>
 	<db:chapter xml:id="ea.95b4d64f-1dc8-11e6-98be-b1fca84f9ccf">
 		<db:title>Building Block View</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1">
 			<db:title>Ebene 1: Chess &lt;SoftwareSystem&gt; (Whitebox)</db:title>
 			<db:section>
@@ -347,9 +357,11 @@
 			</db:section>
 			<db:section xml:id="ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1">
 				<db:title>Test1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test1 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.48213901-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 				<db:section xml:id="ea.9241f9dd-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Abh&#228;ngigkeiten</db:title>
+					<db:para></db:para>
 					<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Test1 tabellarisch aufgelistet:</db:para>
 					<db:informaltable style="HERMES 5">
 						<db:col width="40%" />
@@ -374,6 +386,7 @@
 				</db:section>
 				<db:section xml:id="ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Anforderungsabdeckung</db:title>
+					<db:para></db:para>
 					<db:para>Mit diesem Kapitel wird die Nachvollziehbarkeit der formellen Anforderungen an den Baustein Test1 gewährleistet.</db:para> 
 					<db:para>Nachfolgend wird der Funktionsumfang auf der Grundlage von Anforderungen aufgeführt, welcher der Baustein Test1 erfüllt:</db:para>
 					<db:itemizedlist>
@@ -385,9 +398,11 @@
 			</db:section>
 			<db:section xml:id="ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1">
 				<db:title>Test2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test2 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.48213902-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 				<db:section xml:id="ea.68787e68-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Abh&#228;ngigkeiten</db:title>
+					<db:para></db:para>
 					<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Test2 tabellarisch aufgelistet:</db:para>
 					<db:informaltable style="HERMES 5">
 						<db:col width="40%" />
@@ -420,19 +435,23 @@
 				</db:section>
 				<db:section xml:id="ea.6a82cd52-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Anforderungsabdeckung</db:title>
+					<db:para></db:para>
 					<db:para>Mit diesem Kapitel wird die Nachvollziehbarkeit der formellen Anforderungen an den Baustein Test2 gewährleistet.</db:para> 
 					<db:para>Der Baustein Test2 erfüllt keine expliziten Anforderungen. Bei Bausteinen, welche durch die Dekomposition weitere Sub-Bausteine umfassen, werden die entsprechenden formellen Anforderungen durch die Sub-Bausteine erfüllt.</db:para>
 				</db:section>
 			</db:section>
 			<db:section xml:id="ea.af9f7205-285a-11e8-9af4-b7d7a3bbddc1">
 				<db:title>Test3 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test3 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.48213903-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 				<db:section xml:id="ea.75df20cf-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Abh&#228;ngigkeiten</db:title>
+					<db:para></db:para>
 					<db:para>Der Baustein Test3 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
 				</db:section>
 				<db:section xml:id="ea.7516799a-0df0-11e9-a28e-8b950dcca323">
 					<db:title>Anforderungsabdeckung</db:title>
+					<db:para></db:para>
 					<db:para>Mit diesem Kapitel wird die Nachvollziehbarkeit der formellen Anforderungen an den Baustein Test3 gewährleistet.</db:para> 
 					<db:para>Der Baustein Test3 erfüllt keine expliziten Anforderungen. Bei Bausteinen, welche durch die Dekomposition weitere Sub-Bausteine umfassen, werden die entsprechenden formellen Anforderungen durch die Sub-Bausteine erfüllt.</db:para>
 				</db:section>
@@ -476,6 +495,7 @@
 			</db:section>
 			<db:section xml:id="ea.4833138a-d579-11ee-903e-9f564e4de07e">
 				<db:title>Test1_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test1_2 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.489cd282-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -515,6 +535,7 @@
 			</db:section>
 			<db:section xml:id="ea.48400c07-d579-11ee-903e-9f564e4de07e">
 				<db:title>Test2_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test2_2 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.489cd283-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -554,6 +575,7 @@
 			</db:section>
 			<db:section xml:id="ea.48386ac7-d579-11ee-903e-9f564e4de07e">
 				<db:title>Test3_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test3_1 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.489cd281-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -593,6 +615,7 @@
 			</db:section>
 			<db:section xml:id="ea.48ddd2cc-d579-11ee-903e-9f564e4de07e">
 				<db:title>Test1_2_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test1_2_1 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4965ee24-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -640,6 +663,7 @@
 			</db:section>
 			<db:section xml:id="ea.4a666efd-d579-11ee-903e-9f564e4de07e">
 				<db:title>Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test1_2_1_1 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.7f52b647-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -650,33 +674,37 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.86e7e102-31f5-11e5-bd99-eda9ce254b0b">
 		<db:title>Deployment View</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.31cbdba9-d181-11e8-b18f-df1540bb7a5c">
 			<db:title>Bauen</db:title>
-			
+			<db:para></db:para>
 		</db:section>
 		<db:section xml:id="ea.3005c135-d181-11e8-b18f-df1540bb7a5c">
 			<db:title>Paketierung</db:title>
-			
+			<db:para></db:para>
 		</db:section>
 		<db:section xml:id="ea.2e214a51-d181-11e8-b18f-df1540bb7a5c">
 			<db:title>Verteilung</db:title>
+			<db:para></db:para>
 			<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
 			<db:itemizedlist>
 			</db:itemizedlist>
 		</db:section>
 		<db:section xml:id="ea.2b9bd77d-d181-11e8-b18f-df1540bb7a5c">
 			<db:title>Test</db:title>
-			
+			<db:para></db:para>
 		</db:section>
 		<db:section xml:id="ea.deaf41b7-d7c8-11ea-ae00-5518e944c256">
 			<db:title>&#220;berwachung</db:title>
-			
+			<db:para></db:para>
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.d004d0f6-eaa5-11e8-88d3-bfc6b992bdec">
 		<db:title>Design Decision</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.388aa5bd-ece0-11e8-8149-8542373915bf">
-			<db:title>Entwurfsentscheidung Einsatz von PAM in AD </db:title>
+			<db:title>Use of PAM in AD</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -720,7 +748,8 @@
 			
 		</db:section>
 		<db:section xml:id="ea.c836bccb-ece0-11e8-8149-8542373915bf">
-			<db:title>Entwurfsentscheidung dsfsdf </db:title>
+			<db:title>dsfsdf</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -763,12 +792,14 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.d178d3ad-eaa5-11e8-88d3-bfc6b992bdec">
 		<db:title>Quality Scenarios</db:title>
-		
+		<db:para></db:para>
 	</db:chapter>
 	<db:chapter xml:id="ea.878f2cbb-ee58-11e8-9756-27a593be2ffb">
 		<db:title>Requirements Coverage</db:title>
+		<db:para></db:para>
 		<db:section xml:id="ea.886baa13-ee58-11e8-9756-27a593be2ffb">
 			<db:title>SU-01_Funktionalit&#228;t</db:title>
+			<db:para></db:para>
 			<db:para>In der nachfolgenden Tabelle wird die Abdeckung der Anforderungen auf die einzelnen Bausteine aufgezeigt:</db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
@@ -813,6 +844,7 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.facb470c-0de0-11e6-a33d-238391a68770">
 		<db:title>Glossar</db:title>
+		<db:para></db:para>
 		<db:informaltable style="HERMES 5">
 			<db:col width="25%"/>
 			<db:col width="75%"/>

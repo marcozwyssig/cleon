@@ -4,37 +4,30 @@
 	
 	<db:chapter xml:id="ea.e9eba81e-084d-11e9-9ee8-c54fda7ab431">
 		<db:title>About</db:title>
-		<db:para>Das ist die Einleitung f&#252;r die folgende Beschreibung</db:para>
-		<db:para>Vielleicht kann man noch erg&#228;nzen.</db:para>
+		<db:para>This is the introduction to the following description. Perhaps one can add more.</db:para>
 		<db:section xml:id="ea.cd3bea12-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Task</db:title>
-			<db:para>sadfasdfsdf</db:para>
-			<db:para>asdfasdfasdfsadf</db:para>
+			<db:para>sadfasdfsdfasdfasdfasdfsadf</db:para>
 		</db:section>
 		<db:section xml:id="ea.d1d855f3-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Purpose</db:title>
-			<db:para>adfasdfasdf</db:para>
-			<db:para>adsfasdfasdf</db:para>
+			<db:para>adfasdfasdfadsfasdfasdf</db:para>
 		</db:section>
 		<db:section xml:id="ea.d5571bd5-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Distinction</db:title>
-			<db:para>asdfasdfas</db:para>
-			<db:para>dfasdfasdfsadf</db:para>
-			<db:para>asdfasdfsadf</db:para>
+			<db:para>asdfasdfasdfasdfasdfsadfasdfasdfsadf</db:para>
 		</db:section>
 		<db:section xml:id="ea.d85e1aa9-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Dependencies</db:title>
-			<db:para>asdfasdfasd</db:para>
-			<db:para>fasdfasdfasdfdf</db:para>
+			<db:para>asdfasdfasdfasdfasdfasdfdf</db:para>
 		</db:section>
 		<db:section xml:id="ea.dc2d999d-08fb-11e9-9ee8-c54fda7ab431">
-			<db:title>Leserkreis</db:title>
-			<db:para>adsfasdfasdfasdf</db:para>
-			<db:para>asdfasdfasdfa</db:para>
-			<db:para>sdfasdf</db:para>
+			<db:title>Audiences</db:title>
+			<db:para>adsfasdfasdfasdfasdfasdfasdfasdfasdf</db:para>
 		</db:section>
 		<db:section xml:id="ea.085d8b0f-084e-11e9-9ee8-c54fda7ab431">
 			<db:title>Layout</db:title>
+			<db:para></db:para>
 			<db:para>Dieses vorliegende Dokument hat folgenden Aufbau:</db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%"/>
@@ -48,7 +41,7 @@
 				<db:tbody>
 					<db:tr>
 						<db:td>
-							<db:para>About</db:para>
+							<db:para>Einleitung</db:para>
 						</db:td>
 						<db:td>
 							<db:para>fasdfasdf</db:para>
@@ -75,6 +68,7 @@
 		</db:section>
 		<db:section xml:id="ea.26c09ee9-0770-11e9-9ce3-b59baf185ea8">
 			<db:title>References</db:title>
+			<db:para></db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="10%" />
 				<db:col width="45%" />
@@ -117,27 +111,28 @@
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.6f09b217-3088-11e5-8cdc-d5b441c8c3df">
-		<db:title>Einf&#252;hrung und Ziele</db:title>
-		<db:para>Die Einleitung der Architekturdokumentation sollte die treibenden Kr&#228;fte auflisten, die Softwarearchitekten bei ihren Entscheidungen ber&#252;cksichtigen m&#252;ssen. Dazu geh&#246;rt einerseits die Erf&#252;llung der funktionalen Anforderungen der Stakeholder, andererseits die Einhaltung der erforderlichen Randbedingungen, stets unter Ber&#252;cksichtigung der Architekturziele.</db:para>
+		<db:title>Introduction and objectives</db:title>
+		<db:para></db:para>
+		<db:para>The introduction of the architecture documentation should list the driving forces that software architects must consider when making decisions. This includes, on the one hand, meeting the functional requirements of the stakeholders and, on the other hand, adhering to the necessary boundary conditions, always taking the architectural goals into account.</db:para>
 		<db:section xml:id="ea.5bdeec4e-15ec-11e6-b588-912e2ce0f2b0">
-			<db:title>Test</db:title>
-			
+			<db:title>test</db:title>
+			<db:para></db:para>
 		</db:section>
 		<db:section xml:id="ea.edd2f87d-3088-11e5-8cdc-d5b441c8c3df">
-			<db:title>Anforderungs&#252;bersicht</db:title>
-			
+			<db:title>Requirements overview</db:title>
+			<db:para></db:para>
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.af0d064b-3088-11e5-8cdc-d5b441c8c3df">
-		<db:title>Architektur Randbedingungen</db:title>
+		<db:title>Architecture boundary conditions</db:title>
 		<db:para>asdfasdfasdfasdfsdf</db:para>
 		<db:informaltable style="HERMES 5">
 			<db:col width="30" />
 			<db:col width="70" />
 			<db:thead>
 				<db:tr>
-					<db:th>Name</db:th>
-					<db:th>Description</db:th>
+					<db:th>Col: Name</db:th>
+					<db:th>Col: Description</db:th>
 				</db:tr>
 			</db:thead>
 			<db:tbody>
@@ -178,9 +173,11 @@
 		</db:informaltable>
 		<db:orderedlist numeration="arabic">
 			<db:listitem>
+				<db:para></db:para>
 				<db:para>Text 1</db:para>
 			</db:listitem>
 			<db:listitem>
+				<db:para></db:para>
 				<db:para>Text 2</db:para>
 			</db:listitem>
 		</db:orderedlist>

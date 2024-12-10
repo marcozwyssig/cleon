@@ -5,6 +5,7 @@ import ch.actifsource.core.Resource;
 public class ApplicationPackage {
   
   public static final Resource SoftwareMonolithApplication = new Resource("37263a05-cf1c-11ee-8c06-a5102392725a");
+  public static final Resource NamedSoftwareMonolithApplication = new Resource("040253be-b643-11ef-ad51-ed17ff4e4b8e");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +26,4 @@ public class ApplicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.application,qxw4W2emK2Qsk6Bei666ExlCSVE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.application,/zdXwQhMX2WMUE5Nw0vtigioGE8=] */

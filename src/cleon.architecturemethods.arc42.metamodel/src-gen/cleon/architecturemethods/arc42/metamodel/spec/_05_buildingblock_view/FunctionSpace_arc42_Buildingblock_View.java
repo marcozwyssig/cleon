@@ -98,9 +98,6 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("2a5dae64-c03b-11ee-a353-4bf80e47b5e4")
     public java.lang.String SimpleName();
 
-    @IDynamicResourceExtension.MethodId("3b089a04-e5d8-11ee-a627-83563cb3bdc6")
-    public java.lang.String Level(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -179,4 +176,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,vcE109dckkVwWagakWGT+XUIBcw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,32yxdeLeM6tgn4t0E/s6jDo4aws=] */

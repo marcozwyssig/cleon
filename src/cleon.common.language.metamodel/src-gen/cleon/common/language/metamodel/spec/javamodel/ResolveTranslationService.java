@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import ch.actifsource.core.CorePackage;
 import ch.actifsource.core.INode;
+import ch.actifsource.core.Resource;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.selector.SelectSelectorUtil;
@@ -14,6 +15,7 @@ import cleon.common.language.metamodel.spec.language_class.Language_classPackage
 import cleon.common.language.metamodel.spec.language_class.javamodel.ILanguageClass;
 import cleon.common.language.metamodel.spec.language_class.javamodel.ILanguageNameAspectTranslation;
 import cleon.common.language.metamodel.spec.languages.javamodel.CurrentLanguage;
+import cleon.common.language.metamodel.spec.languages.javamodel.ILanguage;
 
 public class ResolveTranslationService {
 
@@ -122,6 +124,11 @@ public class ResolveTranslationService {
 
 	public String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
 		return translate(language.selectCode(), null);
+	}
+	
+	public String translate(final Resource language) {
+		final var languageObject = repository.getResource(ILanguage.class, language); 		
+		return translate(languageObject);
 	}
 	
 	public String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, Function<String, String> whenNotLanguageClass) {		

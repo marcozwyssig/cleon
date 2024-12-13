@@ -335,6 +335,12 @@ public class FunctionSpace_Language {
     @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
     public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("4ea7607c-b932-11ef-bd66-85d6377e7c75")
+    public java.lang.String translateSimpleNameDe();
+
+    @IDynamicResourceExtension.MethodId("5f84d9a8-b932-11ef-bd66-85d6377e7c75")
+    public java.lang.String translateSimpleNameEn();
+
   }
   
   public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -344,6 +350,12 @@ public class FunctionSpace_Language {
 
     @IDynamicResourceExtension.MethodId("17e0f1f3-9dc9-11ef-8e7d-336090501e1a")
     public java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource);
+
+    @IDynamicResourceExtension.MethodId("4ea7607c-b932-11ef-bd66-85d6377e7c75")
+    public java.lang.String translateSimpleNameDe(final ch.actifsource.core.javamodel.IResource resource);
+
+    @IDynamicResourceExtension.MethodId("5f84d9a8-b932-11ef-bd66-85d6377e7c75")
+    public java.lang.String translateSimpleNameEn(final ch.actifsource.core.javamodel.IResource resource);
 
   }
   
@@ -369,6 +381,22 @@ public class FunctionSpace_Language {
       /* End Protected Region   [[17e0f1f3-9dc9-11ef-8e7d-336090501e1a]] */
     }
 
+    @Override
+    public java.lang.String translateSimpleNameDe(final ch.actifsource.core.javamodel.IResource resource) {
+      /* Begin Protected Region [[4ea7607c-b932-11ef-bd66-85d6377e7c75]] */
+        final var resolveTranslationService = new ResolveTranslationService(resource);
+        return resolveTranslationService.translate(InstancesModel.de__F___S___F_German);   
+      /* End Protected Region   [[4ea7607c-b932-11ef-bd66-85d6377e7c75]] */
+    }
+
+    @Override
+    public java.lang.String translateSimpleNameEn(final ch.actifsource.core.javamodel.IResource resource) {
+      /* Begin Protected Region [[5f84d9a8-b932-11ef-bd66-85d6377e7c75]] */
+        final var resolveTranslationService = new ResolveTranslationService(resource);
+        return resolveTranslationService.translate(InstancesModel.en__F___S___F_English);      
+      /* End Protected Region   [[5f84d9a8-b932-11ef-bd66-85d6377e7c75]] */
+    }
+
   }
   
   public static class ResourceFunctions {
@@ -381,6 +409,14 @@ public class FunctionSpace_Language {
 
     public static java.lang.String translateSimpleName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final ch.actifsource.core.javamodel.IResource resource) {
       return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleName(language, resource);
+    }
+
+    public static java.lang.String translateSimpleNameDe(final ch.actifsource.core.javamodel.IResource resource) {
+      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleNameDe(resource);
+    }
+
+    public static java.lang.String translateSimpleNameEn(final ch.actifsource.core.javamodel.IResource resource) {
+      return DynamicResourceUtil.invoke(IResourceFunctionsImpl.class, ResourceFunctionsImpl.INSTANCE, resource).translateSimpleNameEn(resource);
     }
 
   }
@@ -474,4 +510,4 @@ public class FunctionSpace_Language {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,AiSZoXtt0s2H2BxxohjKdgX0ZgI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,nhZ6yITZ5tqMsxyZ/Fq9SGsd964=] */

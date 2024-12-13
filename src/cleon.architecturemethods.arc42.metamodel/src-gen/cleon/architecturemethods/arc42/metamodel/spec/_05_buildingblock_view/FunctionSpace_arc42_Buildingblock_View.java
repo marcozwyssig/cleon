@@ -99,7 +99,7 @@ public class FunctionSpace_arc42_Buildingblock_View {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("3b089a04-e5d8-11ee-a627-83563cb3bdc6")
-    public java.lang.String Level();
+    public java.lang.String Level(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -179,4 +179,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,FCvtZ2YnufTjS1ZDTIDv9T0lx7s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,vcE109dckkVwWagakWGT+XUIBcw=] */

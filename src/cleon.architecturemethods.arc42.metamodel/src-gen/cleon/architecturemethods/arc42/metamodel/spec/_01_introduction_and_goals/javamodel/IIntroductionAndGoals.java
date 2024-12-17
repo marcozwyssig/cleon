@@ -20,6 +20,8 @@ public interface IIntroductionAndGoals extends cleon.architecturemethods.arc42.m
   
   public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IQualityGoals selectQualityGoals();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders selectStakeholders();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,WHvCfRfPH9I4qsf+JGYTb1hIkvc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,JTddTuv3wCun0/mhaOzs+VQpfWE=] */

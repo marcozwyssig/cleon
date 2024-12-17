@@ -129,6 +129,16 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders selectStakeholders() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_stakeholders);
+  }
+
+  public IntroductionAndGoals setStakeholders(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders stakeholders) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_stakeholders, stakeholders);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -149,6 +159,7 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IQualityGoals.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_qualityGoals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IRequirementsOverview.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirementsOverview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_stakeholders, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -162,5 +173,9 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_qualityGoals, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals selectToMeStakeholders(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IStakeholders object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_stakeholders, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,QyeWl60YvZc+WKj5xPZJrIrUuAI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,kBcZ1UWS+deJsqDbVtgoCBhGbz4=] */

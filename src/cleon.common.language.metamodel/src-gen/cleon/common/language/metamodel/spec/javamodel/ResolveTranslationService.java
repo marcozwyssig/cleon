@@ -69,7 +69,7 @@ public class ResolveTranslationService {
 				resource.getResource());
 
 		if (translationValue == null) {
-			Logger.instance().logError("Translation value not found for selector.");
+			Logger.instance().logInfo("Translation value not found for selector.");
 		}
 		return translationValue;
 	}

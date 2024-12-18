@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.und
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IUnderTheHood_Concepts extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts {
+public interface IUnderTheHood_Concepts extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.ICrosscuttingConcepts {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f80c7a78-b930-11ee-a0d0-e953bcbfaeef");
   
@@ -12,4 +12,4 @@ public interface IUnderTheHood_Concepts extends cleon.architecturemethods.arc42.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,GtsUTdXLhVqjIbsaQ2KhaZ9SN2Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,Z3IjhM7Wk/uOsRrPR78q8ofUWgc=] */

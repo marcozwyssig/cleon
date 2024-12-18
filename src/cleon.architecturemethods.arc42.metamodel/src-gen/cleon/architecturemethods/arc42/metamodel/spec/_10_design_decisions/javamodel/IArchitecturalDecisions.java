@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.java
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDesignDecision extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
+public interface IArchitecturalDecisions extends cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42TopLevelChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0");
   
@@ -12,4 +12,4 @@ public interface IDesignDecision extends cleon.architecturemethods.arc42.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0,tuSfc1qfFiFrh7M0esnlqtnQHo0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0,BWyoRN0RP094seqOEhigBimqKdM=] */

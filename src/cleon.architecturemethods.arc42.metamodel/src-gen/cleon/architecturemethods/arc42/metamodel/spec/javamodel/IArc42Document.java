@@ -24,11 +24,11 @@ public interface IArc42Document extends cleon.common.doc.metamodel.spec.document
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IConcepts select__V_9_aE_concepts();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.ICrosscuttingConcepts select__V_9_aE_concepts();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IDesignDecision select__W_0_aE_designdecision();
+  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_designdecision();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityScenarios select__W_1_aE_quality_aE_scenarios();
+  public cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityRequirements select__W_1_aE_quality_aE_scenarios();
   
   public cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks select__W_2_aE_technical_aE_risks();
   
@@ -38,4 +38,4 @@ public interface IArc42Document extends cleon.common.doc.metamodel.spec.document
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,vGVB40RFAsWFlT/+pVTNdkUQGGY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,BPrdWRq1JUq+iWhGVz0maSezSyY=] */

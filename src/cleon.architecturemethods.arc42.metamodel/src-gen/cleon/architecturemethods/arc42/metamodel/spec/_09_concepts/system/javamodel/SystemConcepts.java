@@ -100,11 +100,11 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept> selectConcepts() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts);
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.CrosscuttingConcepts_concepts);
   }
 
   public SystemConcepts setConcepts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept> concepts) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts, concepts);
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.CrosscuttingConcepts_concepts, concepts);
     return this;
   }
     
@@ -337,4 +337,4 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,v/wjGfmGCksBrmqqKDLVlqIixhc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,IiLPYNfqaD5nhsWCbJxDMXwfnq0=] */

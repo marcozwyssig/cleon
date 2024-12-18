@@ -28,7 +28,7 @@
       <owns predicate="7a111686-c5d5-11ee-8549-1528e55916a4">
         <resource statement-guid="b79bf4bd-ac10-11ef-afba-fb66280e2230" type="resource" guid="000d4eb2-d0b5-11e8-b005-f7630e4c29c0">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-            <resource statement-guid="000d4ebc-d0b5-11e8-b005-f7630e4c29c0" type="resource" guid="000d4eb1-d0b5-11e8-b005-f7630e4c29c0" />
+            <resource statement-guid="8e8866a0-bd28-11ef-8b74-bd2b9f000e73" type="resource" guid="8e88187b-bd28-11ef-8b74-bd2b9f000e73" />
           </owns>
         </resource>
       </owns>
@@ -73,7 +73,7 @@
     <object statement-guid="61af1b6a-ac0e-11ef-afba-fb66280e2230" type="resource" guid="e2111f60-ac0d-11ef-afba-fb66280e2230" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="000d4eb6-d0b5-11e8-b005-f7630e4c29c0" type="literal">QualityScenarios</object>
+    <object statement-guid="000d4eb6-d0b5-11e8-b005-f7630e4c29c0" type="literal">QualityRequirements</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="000d4ebe-d0b5-11e8-b005-f7630e4c29c0">
@@ -160,13 +160,13 @@
                 <object statement-guid="000d4eb9-d0b5-11e8-b005-f7630e4c29c0" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                <object statement-guid="000d4ebc-d0b5-11e8-b005-f7630e4c29c0">
-                  <resource guid="000d4eb1-d0b5-11e8-b005-f7630e4c29c0">
+                <object statement-guid="8e8866a0-bd28-11ef-8b74-bd2b9f000e73">
+                  <resource guid="8e88187b-bd28-11ef-8b74-bd2b9f000e73">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="000d4eba-d0b5-11e8-b005-f7630e4c29c0" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                      <object statement-guid="8e883f8e-bd28-11ef-8b74-bd2b9f000e73" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="000d4ebb-d0b5-11e8-b005-f7630e4c29c0" type="literal">Qualitätsszenarios</object>
+                      <object statement-guid="8e88669f-bd28-11ef-8b74-bd2b9f000e73" type="literal">Qualitätsanforderungen</object>
                     </predicate>
                   </resource>
                 </object>

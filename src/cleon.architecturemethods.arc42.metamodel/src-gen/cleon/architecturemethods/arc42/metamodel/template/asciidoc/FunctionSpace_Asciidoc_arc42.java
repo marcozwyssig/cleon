@@ -963,28 +963,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IConceptsFunctions extends IDynamicResourceExtension {
+  public static interface ICrosscuttingConceptsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("99acf364-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
 
   }
   
-  public static interface IConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ICrosscuttingConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConceptsFunctionsImpl implements IConceptsFunctionsImpl {
+  public static class CrosscuttingConceptsFunctionsImpl implements ICrosscuttingConceptsFunctionsImpl {
 
-    public static final IConceptsFunctionsImpl INSTANCE = new ConceptsFunctionsImpl();
+    public static final ICrosscuttingConceptsFunctionsImpl INSTANCE = new CrosscuttingConceptsFunctionsImpl();
 
-    private ConceptsFunctionsImpl() {}
+    private CrosscuttingConceptsFunctionsImpl() {}
 
   }
   
-  public static class ConceptsFunctions {
+  public static class CrosscuttingConceptsFunctions {
 
-    private ConceptsFunctions() {}
+    private CrosscuttingConceptsFunctions() {}
 
   }
 
@@ -1013,28 +1013,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IDesignDecisionFunctions extends IDynamicResourceExtension {
+  public static interface IArchitecturalDecisionsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b3faf4f3-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
 
   }
   
-  public static interface IDesignDecisionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IArchitecturalDecisionsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DesignDecisionFunctionsImpl implements IDesignDecisionFunctionsImpl {
+  public static class ArchitecturalDecisionsFunctionsImpl implements IArchitecturalDecisionsFunctionsImpl {
 
-    public static final IDesignDecisionFunctionsImpl INSTANCE = new DesignDecisionFunctionsImpl();
+    public static final IArchitecturalDecisionsFunctionsImpl INSTANCE = new ArchitecturalDecisionsFunctionsImpl();
 
-    private DesignDecisionFunctionsImpl() {}
+    private ArchitecturalDecisionsFunctionsImpl() {}
 
   }
   
-  public static class DesignDecisionFunctions {
+  public static class ArchitecturalDecisionsFunctions {
 
-    private DesignDecisionFunctions() {}
+    private ArchitecturalDecisionsFunctions() {}
 
   }
 
@@ -1063,28 +1063,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IQualityScenariosFunctions extends IDynamicResourceExtension {
+  public static interface IQualityRequirementsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e799d58f-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
 
   }
   
-  public static interface IQualityScenariosFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IQualityRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class QualityScenariosFunctionsImpl implements IQualityScenariosFunctionsImpl {
+  public static class QualityRequirementsFunctionsImpl implements IQualityRequirementsFunctionsImpl {
 
-    public static final IQualityScenariosFunctionsImpl INSTANCE = new QualityScenariosFunctionsImpl();
+    public static final IQualityRequirementsFunctionsImpl INSTANCE = new QualityRequirementsFunctionsImpl();
 
-    private QualityScenariosFunctionsImpl() {}
+    private QualityRequirementsFunctionsImpl() {}
 
   }
   
-  public static class QualityScenariosFunctions {
+  public static class QualityRequirementsFunctions {
 
-    private QualityScenariosFunctions() {}
+    private QualityRequirementsFunctions() {}
 
   }
 
@@ -1140,4 +1140,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,/H9eyC3UmfaIYcgQlaXn+yo9uBE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,hrEZja+Oz+2Dudz+dxy/s7hWaaQ=] */

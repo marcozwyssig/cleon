@@ -63,7 +63,7 @@
       <owns predicate="7a111686-c5d5-11ee-8549-1528e55916a4">
         <resource statement-guid="986db323-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="986d8c10-9dcc-11ef-8e7d-336090501e1a">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-            <resource statement-guid="9899f363-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="9899f35e-9dcc-11ef-8e7d-336090501e1a" />
+            <resource statement-guid="031bf53a-bd28-11ef-8b74-bd2b9f000e73" type="resource" guid="031bce25-bd28-11ef-8b74-bd2b9f000e73" />
           </owns>
         </resource>
       </owns>
@@ -100,7 +100,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="6e3c0d45-d0b4-11e8-b005-f7630e4c29c0" type="literal">DesignDecision</object>
+    <object statement-guid="6e3c0d45-d0b4-11e8-b005-f7630e4c29c0" type="literal">ArchitecturalDecisions</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="6e3c0d4d-d0b4-11e8-b005-f7630e4c29c0">
@@ -281,13 +281,13 @@
                 <object statement-guid="986d8c12-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                <object statement-guid="9899f363-9dcc-11ef-8e7d-336090501e1a">
-                  <resource guid="9899f35e-9dcc-11ef-8e7d-336090501e1a">
+                <object statement-guid="031bf53a-bd28-11ef-8b74-bd2b9f000e73">
+                  <resource guid="031bce25-bd28-11ef-8b74-bd2b9f000e73">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="9899f361-9dcc-11ef-8e7d-336090501e1a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                      <object statement-guid="031bf538-bd28-11ef-8b74-bd2b9f000e73" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="9899f362-9dcc-11ef-8e7d-336090501e1a" type="literal">Entwurfsentscheidungen</object>
+                      <object statement-guid="031bf539-bd28-11ef-8b74-bd2b9f000e73" type="literal">Architekturentscheidungen</object>
                     </predicate>
                   </resource>
                 </object>

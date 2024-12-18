@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class _11_quality_scenariosPackage {
   
-  public static final Resource QualityScenarios = new Resource("000d4eb0-d0b5-11e8-b005-f7630e4c29c0");
+  public static final Resource QualityRequirements = new Resource("000d4eb0-d0b5-11e8-b005-f7630e4c29c0");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class _11_quality_scenariosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios,ERsASSQ5gi0UPwU1XR+NGqgIMzc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios,Io0ag4Bf5VkqscRUnxyA66a8Q24=] */

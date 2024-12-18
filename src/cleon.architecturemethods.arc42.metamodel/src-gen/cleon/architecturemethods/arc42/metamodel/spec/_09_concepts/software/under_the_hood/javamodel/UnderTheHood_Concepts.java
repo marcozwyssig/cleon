@@ -80,11 +80,11 @@ public class UnderTheHood_Concepts extends DynamicResource implements IUnderTheH
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept> selectConcepts() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts);
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.CrosscuttingConcepts_concepts);
   }
 
   public UnderTheHood_Concepts setConcepts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept> concepts) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts, concepts);
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.CrosscuttingConcepts_concepts, concepts);
     return this;
   }
     
@@ -145,7 +145,7 @@ public class UnderTheHood_Concepts extends DynamicResource implements IUnderTheH
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.Concepts_concepts, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts._09_conceptsPackage.CrosscuttingConcepts_concepts, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.persistency_concept.javamodel.IPersistency_Concept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.Under_the_hoodPackage.UnderTheHood_aE_Concepts_persistency_aE_concept, visitor);
@@ -159,4 +159,4 @@ public class UnderTheHood_Concepts extends DynamicResource implements IUnderTheH
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,jxBpUbTLdzrwS0lWa+Wx5owP5G4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,bXCahmm3Qi+aJP619cK62VtvnXg=] */

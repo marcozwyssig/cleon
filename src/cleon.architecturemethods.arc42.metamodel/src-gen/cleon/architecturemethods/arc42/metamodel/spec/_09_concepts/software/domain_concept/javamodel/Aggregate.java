@@ -131,12 +131,62 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.common.modularity.metamodel.spec.javamodel.IDependency.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_hasDependency);
+  }
+
+  public Aggregate setHasDependency(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> hasDependency) {
+    _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_hasDependency, hasDependency);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency> selectHasPackageDependency() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_hasPackageDependency);
+  }
+
+  public Aggregate setHasPackageDependency(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency> hasPackageDependency) {
+    _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_hasPackageDependency, hasPackageDependency);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> selectInteracts() {
+    return _getList(cleon.common.modularity.metamodel.spec.javamodel.IInteraction.class, cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts);
+  }
+
+  public Aggregate setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
+    _setList(cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts, interacts);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage selectNoSubPackages() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.NoSubPackages_noSubPackages);
   }
 
   public Aggregate setNoSubPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noSubPackages) {
     _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.NoSubPackages_noSubPackages, noSubPackages);
+    return this;
+  }
+    
+  @Override
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> selectPorts_In() {
+    return _getMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In);
+  }
+
+  public Aggregate setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
+    _setMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, ports_In);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> selectPorts_Out() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out);
+  }
+
+  public Aggregate setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
+    _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, ports_Out);
     return this;
   }
     
@@ -193,6 +243,9 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums.javamodel.IEnum.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_enums, visitor);
     _acceptList(cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_eventAggregator, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.exceptions.javamodel.IDomainException.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_exceptions, visitor);
+    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.Package_hasPackageDependency, visitor);
+    _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
+    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.repository.javamodel.IRepository.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_repository, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.valueobjects.javamodel.IValueObject.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.Aggregate_valueObjects, visitor);
@@ -229,4 +282,4 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,eZh0OaKoPAszP5xK2tlmASfG5tc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,WgKHas0EwK7UHKGj5Rwkk1gsqhA=] */

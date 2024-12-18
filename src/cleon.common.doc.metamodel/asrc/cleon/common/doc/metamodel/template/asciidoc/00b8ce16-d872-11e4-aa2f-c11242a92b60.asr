@@ -8,7 +8,7 @@
     <object statement-guid="00b8f528-d872-11e4-aa2f-c11242a92b60" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="00b94349-d872-11e4-aa2f-c11242a92b60" type="literal">BuildConfig_Asciidoctor</object>
+    <object statement-guid="00b94349-d872-11e4-aa2f-c11242a92b60" type="literal">BuildConfig_Asciidoctor_Windows</object>
   </predicate>
   <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
     <object statement-guid="00ba2dae-d872-11e4-aa2f-c11242a92b60">
@@ -37,6 +37,9 @@
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="f2c156bb-2a93-11df-8816-4f7e5baa3710">
+    <object statement-guid="9c79a1f1-bd43-11ef-8ef5-1f95735d55f6" type="resource" guid="ede15c68-2a94-11df-8816-4f7e5baa3710" />
   </predicate>
 </resource>
 

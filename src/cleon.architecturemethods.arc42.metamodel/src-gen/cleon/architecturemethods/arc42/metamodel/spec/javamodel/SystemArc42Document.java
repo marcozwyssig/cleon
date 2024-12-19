@@ -178,12 +178,12 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_designdecision() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_designdecision);
+  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_architectural_aE_decisions() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_architectural_aE_decisions);
   }
 
-  public SystemArc42Document set__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions __W_0_aE_designdecision) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_designdecision, __W_0_aE_designdecision);
+  public SystemArc42Document set__W_0_aE_architectural_aE_decisions(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions __W_0_aE_architectural_aE_decisions) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_architectural_aE_decisions, __W_0_aE_architectural_aE_decisions);
     return this;
   }
     
@@ -346,7 +346,7 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDataView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_7_aE_dataview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_8_aE_deploymentview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_9_aE_system_aE_concepts, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_designdecision, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_architectural_aE_decisions, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityRequirements.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_1_aE_quality_aE_scenarios, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._12_technical_risks.javamodel.ITechnicalRisks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_2_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_3_aE_productview, visitor);
@@ -399,8 +399,8 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_9_aE_system_aE_concepts, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectToMe__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_designdecision, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectToMe__W_0_aE_architectural_aE_decisions(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___W_0_aE_architectural_aE_decisions, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectToMe__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityRequirements object) {
@@ -420,4 +420,4 @@ public class SystemArc42Document extends DynamicResource implements ISystemArc42
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,ZmtLyWaOVQy8mZBJgTWnXxIXoQ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,KKuAGVr9URLZvDw9LLsH4BBOIRs=] */

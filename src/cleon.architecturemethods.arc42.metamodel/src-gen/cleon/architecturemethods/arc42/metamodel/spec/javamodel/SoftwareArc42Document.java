@@ -178,6 +178,16 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_architectural_aE_decisions() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_architectural_aE_decisions);
+  }
+
+  public SoftwareArc42Document set__W_0_aE_architectural_aE_decisions(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions __W_0_aE_architectural_aE_decisions) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_architectural_aE_decisions, __W_0_aE_architectural_aE_decisions);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_designdecision() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SoftwareArc42Document___W_0_aE_designdecision);
   }
@@ -419,4 +429,4 @@ public class SoftwareArc42Document extends DynamicResource implements ISoftwareA
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,IbV/FagWaT7iAnNXkyZmxIYyFI8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b5b0b3-a28c-11ef-9aea-bfda14a4d373,OAXIDUD8Po8luUhzqrwzLauVaNQ=] */

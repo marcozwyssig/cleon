@@ -16,7 +16,7 @@ public class SpecPackage {
   public static final Resource NamedSystemArc42Document = new Resource("600e2b4a-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource arc42Document___W_3_aE_productview = new Resource("733853a4-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource arc42Document___V_9_aE_concepts = new Resource("1ca47d69-d0b5-11e8-b005-f7630e4c29c0");
-  public static final Resource arc42Document___W_0_aE_designdecision = new Resource("285eceb5-d0b5-11e8-b005-f7630e4c29c0");
+  public static final Resource arc42Document___W_0_aE_architectural_aE_decisions = new Resource("285eceb5-d0b5-11e8-b005-f7630e4c29c0");
   public static final Resource arc42Document___W_1_aE_quality_aE_scenarios = new Resource("4b4e2311-d0b5-11e8-b005-f7630e4c29c0");
   public static final Resource arc42Document___W_2_aE_technical_aE_risks = new Resource("5e720a0b-d0b5-11e8-b005-f7630e4c29c0");
   public static final Resource arc42Document___W_4_aE_requirements_aE_coverage = new Resource("d02b754e-d183-11e8-b18f-df1540bb7a5c");
@@ -53,7 +53,7 @@ public class SpecPackage {
   public static final Resource SystemArc42Document___V_6_aE_runtimeview = new Resource("cdf5c616-ad80-11ef-8c8a-e185f276b1e7");
   public static final Resource SystemArc42Document___V_7_aE_dataview = new Resource("cdf5c617-ad80-11ef-8c8a-e185f276b1e7");
   public static final Resource SystemArc42Document___V_8_aE_deploymentview = new Resource("cdf5c618-ad80-11ef-8c8a-e185f276b1e7");
-  public static final Resource SystemArc42Document___W_0_aE_designdecision = new Resource("cdf5c61a-ad80-11ef-8c8a-e185f276b1e7");
+  public static final Resource SystemArc42Document___W_0_aE_architectural_aE_decisions = new Resource("cdf5c61a-ad80-11ef-8c8a-e185f276b1e7");
   public static final Resource SystemArc42Document___W_1_aE_quality_aE_scenarios = new Resource("cdf5c61b-ad80-11ef-8c8a-e185f276b1e7");
   public static final Resource SystemArc42Document___W_2_aE_technical_aE_risks = new Resource("cdf5c61c-ad80-11ef-8c8a-e185f276b1e7");
   public static final Resource SystemArc42Document___W_3_aE_productview = new Resource("cdf5c61d-ad80-11ef-8c8a-e185f276b1e7");
@@ -78,4 +78,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,7hd6abBW9EkzmJwRzmZRXvQ8xSY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec,nhIq2R12WDa6eHxhk06b9UEq5qI=] */

@@ -49,8 +49,8 @@ public abstract class Arc42Document extends DynamicResource implements IArc42Doc
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_concepts, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_0_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_designdecision, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_0_aE_architectural_aE_decisions(cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_architectural_aE_decisions, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec.javamodel.IArc42Document selectToMe__W_1_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._11_quality_scenarios.javamodel.IQualityRequirements object) {
@@ -70,4 +70,4 @@ public abstract class Arc42Document extends DynamicResource implements IArc42Doc
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,HMrXs1Zlk30T/Gndkrms+EDXoHU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,9uorB27dx2vU0I+nQwOKN0L13Tc=] */

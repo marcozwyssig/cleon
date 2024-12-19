@@ -12,7 +12,6 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
-import ch.actifsource.core.validation.inconsistency.IResourceInconsistency.NodeRole;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleResourceInconsistency;
 import ch.actifsource.core.validation.quickfix.AbstractQuickFix;
@@ -24,56 +23,73 @@ import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
 
 public class HostNodeValidationAspect implements IResourceValidationAspect {
 
-	@Override
-	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
-		final var start = Instant.now();
-		try {
-			final var typeSystem = TypeSystem.create(context.getReadJobExecutor());
-			final var resourceRepository = typeSystem.getResourceRepository();
-			final var hostNode = resourceRepository.getResource(INetworkHostNode.class, context.getResource());
-			final var hostNodeFunctions = hostNode.extension(INetworkHostNodeFunctions.class);
-			final var hostNodes = hostNodeFunctions.AllNetworkHostNodes();
-			var count = 0;
-			for (final var host : hostNodes) {
-				if (host.selectExportDNSRecord() == null || host.selectExportDNSRecord().booleanValue()) {
-					++count;
-				}
-			}
-			if (count > 1) {
-				final var errormessage = String.format("%1$s: to many exports (total %2$d)",
-						Select.simpleName(context.getReadJobExecutor(), hostNode.selectHost().getResource()), count);
-				inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
-						SpecPackage.AbstractPhysicalNetwork_nodes, errormessage));
-			} else {
-				final var systemConfigurationFunction = hostNode.selectHost().selectInstanceOf()
-						.extension(ISystemConfigurationFunctions.class);
+    private static final int LOG_THRESHOLD_MS = 100;
 
+    @Override
+    public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
+        final var start = Instant.now();
+        try {
+            final var typeSystem = TypeSystem.create(context.getReadJobExecutor());
+            final var resourceRepository = typeSystem.getResourceRepository();
+            final var hostNode = resourceRepository.getResource(INetworkHostNode.class, context.getResource());
+            final var hostNodeFunctions = hostNode.extension(INetworkHostNodeFunctions.class);
+            final var hostNodes = hostNodeFunctions.AllNetworkHostNodes();
 
-				if ( hostNodeFunctions.DNSRecordSet() && !systemConfigurationFunction.AllowDNSRecordExport()) {
-					final var errormessage = "Exporting DNS Records is not allowed. Please disable DNS record export.";
+            final var dnsExportCount = hostNodes.stream()
+                .filter(host -> host.selectExportDNSRecord() == null || host.selectExportDNSRecord())
+                .count();
 
-					final AbstractQuickFix quickfix = new AbstractQuickFix("Set export DNS record to false", "", () -> true) {
+            if (dnsExportCount > 1) {
+                handleExcessiveDNSExports(context, inconsistencyList, hostNode, dnsExportCount);
+            } else {
+                validateDNSRecordExport(context, inconsistencyList, hostNodeFunctions, hostNode);
+            }
+        } finally {
+            logExecutionTime(start);
+        }
+    }
 
-						@Override
-						protected void doApply(IModifiable modifiable) {
-							Update.createOrModifyStatement(modifiable, context.getPackage(), context.getResource(), SpecPackage.AbstractNetworkNode_exportDNSRecord, LiteralUtil.create(false));
-						}
-					};
+    private void handleExcessiveDNSExports(final ValidationContext context,
+            final List<IResourceInconsistency> inconsistencyList,
+            final INetworkHostNode hostNode,
+            final long count) {
+		final var errorMessage = String.format(
+				"The host node '%s' has too many DNS exports configured (total: %d). Only one DNS export is allowed per network.",
+				Select.simpleName(context.getReadJobExecutor(), hostNode.selectHost().getResource()), count);
+		
+		inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
+		SpecPackage.AbstractPhysicalNetwork_nodes, errorMessage));
+    }
 
-					// final var attributeRelation = Select.statementForAttributeOrNull(context.getReadJobExecutor(),
-					// SpecPackage.AbstractNetworkNode_exportDNSRecord,
-					// context.getResource());
-					inconsistencyList.add(new SingleResourceInconsistency(context.getPackage(), context.getResource(), NodeRole.Object, errormessage, InconsistencyType.Error, quickfix ));
-					//inconsistencyList.add(new SingleStatementInconsistency(attributeRelation, errormessage, quickfix));
-				}
-			}
-		} finally {
-			final var finish = Instant.now();
-			final var timeElapsed = Duration.between(start, finish).toMillis();
-			if( timeElapsed > 100 ) {
-				Logger.instance().logInfo(String.format("Validation time for %s took %d ms", this.getClass().getSimpleName(), timeElapsed));
-			}
-
+    private void validateDNSRecordExport(final ValidationContext context,
+            final List<IResourceInconsistency> inconsistencyList,
+            final INetworkHostNodeFunctions hostNodeFunctions,
+            final INetworkHostNode hostNode) {
+		final var systemConfigurationFunction = hostNode.selectHost().selectInstanceOf()
+		.extension(ISystemConfigurationFunctions.class);
+		
+		if (hostNodeFunctions.DNSRecordSet() && !systemConfigurationFunction.AllowDNSRecordExport()) {
+			final var errorMessage = "The system configuration does not permit exporting DNS records. Please disable DNS record export for this host node.";
+			final var quickfix = createDNSRecordExportQuickFix(context);			
+			inconsistencyList.add(new SingleResourceInconsistency(context.getPackage(), context.getResource(), IResourceInconsistency.NodeRole.Object, errorMessage, InconsistencyType.Error, quickfix));
 		}
-	}
+    }
+    
+    private AbstractQuickFix createDNSRecordExportQuickFix(final ValidationContext context) {
+        return new AbstractQuickFix("Set export DNS record to false", "", () -> true) {
+            @Override
+            protected void doApply(IModifiable modifiable) {
+                Update.createOrModifyStatement(modifiable, context.getPackage(), context.getResource(),
+                        SpecPackage.AbstractNetworkNode_exportDNSRecord, LiteralUtil.create(false));
+            }
+        };
+    }
+
+    private void logExecutionTime(final Instant start) {
+    	final var elapsed = Duration.between(start, Instant.now()).toMillis();
+        if (elapsed > LOG_THRESHOLD_MS) {
+            Logger.instance().logInfo(String.format("Validation time for %s took %d ms",
+                    this.getClass().getSimpleName(), elapsed));
+        }
+    }
 }

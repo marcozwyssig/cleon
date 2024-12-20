@@ -31,11 +31,11 @@ public class NotImplementedForEnvironmentState extends DynamicResource implement
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IEnvironment selectEnvironment() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.implementationstateforenvironment.ImplementationstateforenvironmentPackage.ImplementationStateForEnvironment_environment);
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment selectEnvironment() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.implementationstateforenvironment.ImplementationstateforenvironmentPackage.ImplementationStateForEnvironment_environment);
   }
 
-  public NotImplementedForEnvironmentState setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IEnvironment environment) {
+  public NotImplementedForEnvironmentState setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment environment) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.implementationstateforenvironment.ImplementationstateforenvironmentPackage.ImplementationStateForEnvironment_environment, environment);
     return this;
   }
@@ -64,9 +64,9 @@ public class NotImplementedForEnvironmentState extends DynamicResource implement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.implementationstateforenvironment.ImplementationstateforenvironmentPackage.ImplementationStateForEnvironment_environment, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.implementationstateforenvironment.ImplementationstateforenvironmentPackage.ImplementationStateForEnvironment_environment, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,78a45c59-1772-11eb-aff5-dd5c3dd3a631,l0l9TPZeocl/HspR9U4FBg5EDFY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,78a45c59-1772-11eb-aff5-dd5c3dd3a631,k9oo5wA9fOSiQV6OcpEQ/wGfANw=] */

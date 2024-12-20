@@ -8,7 +8,7 @@ public interface IAverageBandwithAndQoSConcept extends cleon.architecturemethods
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.ISystemEnvironmentNode> selectCalculationFor();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode> selectCalculationFor();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> selectQosConfigurationConcepts();
   
@@ -16,4 +16,4 @@ public interface IAverageBandwithAndQoSConcept extends cleon.architecturemethods
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,xdFgDcppVzl3xEPWR9LOHDbVyTM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,4kzEjqE+BVUCqmkYbskG11w65AM=] */

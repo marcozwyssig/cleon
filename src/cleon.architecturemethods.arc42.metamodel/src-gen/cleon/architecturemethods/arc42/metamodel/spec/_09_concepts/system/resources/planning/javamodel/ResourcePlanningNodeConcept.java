@@ -119,11 +119,11 @@ public class ResourcePlanningNodeConcept extends DynamicResource implements IRes
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode selectResourcePlanningForNode() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode);
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode selectResourcePlanningForNode() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode);
   }
 
-  public ResourcePlanningNodeConcept setResourcePlanningForNode(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode resourcePlanningForNode) {
+  public ResourcePlanningNodeConcept setResourcePlanningForNode(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode resourcePlanningForNode) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode, resourcePlanningForNode);
     return this;
   }
@@ -157,15 +157,15 @@ public class ResourcePlanningNodeConcept extends DynamicResource implements IRes
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.javamodel.IResourcePlanningNodeConcept> selectToMeResourcePlanningForNode(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.node.buildnode.javamodel.IBuildNode object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.javamodel.IResourcePlanningNodeConcept> selectToMeResourcePlanningForNode(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.javamodel.IResourcePlanningNodeConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.PlanningPackage.ResourcePlanningNodeConcept_resourcePlanningForNode, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69dd239f-dfef-11eb-93d3-9f230e4bb32b,ld7P05jNsO++kQ75wujflQHFhIg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69dd239f-dfef-11eb-93d3-9f230e4bb32b,PXlnHJGh/98fyJv/iYJjqpkSE04=] */

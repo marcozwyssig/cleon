@@ -73,7 +73,7 @@ public class FunctionSpace_Role {
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleActorGroup Actor();
 
     @IDynamicResourceExtension.MethodId("54ec73fb-de34-11eb-b028-df36f0dc7b24")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deployview.environment.javamodel.ISystemEnvironmentNode Environment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode Environment();
 
     @IDynamicResourceExtension.MethodId("765ffc6d-78e4-11ea-a009-ab381ce86597")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleActorResponsibility Responsibility();
@@ -344,4 +344,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,md5UNc6OlkIbyT1iJq0SEKGH7mc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,SlhW+qkBZ7FD9RuZE29+jOaxmnU=] */

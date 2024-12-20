@@ -68,6 +68,7 @@ public class SystemPackage {
   public static final Resource InstallationMode_Automatic = new Resource("fa9ae2ff-23fc-11ef-86fc-7d48003eb647");
   public static final Resource InstallationMode_AutomaticUpdate = new Resource("54148f41-2403-11ef-86fc-7d48003eb647");
   public static final Resource WhiteboxSystem_blackbox = new Resource("ca3401d1-65fa-11ef-a7d1-0f66f239ffd9");
+  public static final Resource BuildingBlockViewSystem = new Resource("23ce1130-beda-11ef-b498-058ee446f8e7");
   
   /* Begin Protected Region [[user]] */
   
@@ -88,4 +89,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,yy4Xj8gBnhpI/PuYUPUN6U1Jba0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,hf/RNfeDymLiZcgVsDE/dE10pm4=] */

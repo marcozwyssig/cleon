@@ -51,6 +51,26 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   // relations
   
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public PluginBuiltinDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectCmp() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp);
+  }
+
+  public PluginBuiltinDependency setCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent cmp) {
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp, cmp);
+    return this;
+  }
+    
+  @Override
   public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject selectTo() {
     return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.PluginBuiltinDependency_to);
   }
@@ -88,4 +108,4 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,18VweYfQqy51ethtqWKjcrFM2IU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,AWeC/cwfnCSVWhbwnssQAhCBmig=] */

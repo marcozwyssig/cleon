@@ -7,8 +7,8 @@ public class SystemconfigurationPackage {
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemConfigurationCompositionAware_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemConfigurationDependency = new Resource("4134540e-01d9-11e9-9c9d-8d52d6745026");
-  public static final Resource SystemConfigurationDependency_to = new Resource("41345417-01d9-11e9-9c9d-8d52d6745026");
-  public static final Resource SystemConfiguration_hasDependency = new Resource("886c9874-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfigurationDependency_sysCfg = new Resource("41345417-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfiguration_dependsOnSysCfg = new Resource("886c9874-01d9-11e9-9c9d-8d52d6745026");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WindowsSystemConfiguration = new Resource("bbce4593-021f-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WriteableDomainControllerSystemConfiguration = new Resource("3562b171-0220-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_HypervisorSystemConfiguration = new Resource("0184c8b1-02bb-11e9-9e58-33d596257b14");
@@ -92,4 +92,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,+efDw76zrlN4fVRq+GrBbf6tvo8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration,oquYEny4QGkHpHLHFJzSvZwi9g0=] */

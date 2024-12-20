@@ -89,6 +89,16 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> selectDependsOn() {
+    return _getList(cleon.common.modularity.metamodel.spec.javamodel.IDependency.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn);
+  }
+
+  public ViewModel setDependsOn(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> dependsOn) {
+    _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn, dependsOn);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
@@ -155,16 +165,6 @@ public class ViewModel extends DynamicResource implements IViewModel {
 
   public ViewModel setForwardPropertys(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.javamodel.IForwardPropertyDependency> forwardPropertys) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModel_forwardPropertys, forwardPropertys);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.common.modularity.metamodel.spec.javamodel.IDependency.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_hasDependency);
-  }
-
-  public ViewModel setHasDependency(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> hasDependency) {
-    _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -239,4 +239,4 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,yJtBvuypnN0+AobtEwWdyngSqQQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,KMLUxkVpFqMybz5TBUQBTy6xdLQ=] */

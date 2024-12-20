@@ -31,6 +31,36 @@ public class PackageComponent extends DynamicResource implements IPackageCompone
   // relations
   
   @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectComponent() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_component);
+  }
+
+  public PackageComponent setComponent(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent component) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_component, component);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent> selectPackage() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_package);
+  }
+
+  public PackageComponent setPackage(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent> package_) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_package, package_);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public PackageComponent setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -44,8 +74,20 @@ public class PackageComponent extends DynamicResource implements IPackageCompone
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_component, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_package, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent> selectToMeComponent(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_component, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent selectToMePackage(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageComponent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageComponent_package, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e96972fa-bed8-11ef-9199-8d2aaa4407a0,lIGWIMfzdIL7VhEEPRM7mX9Hkvc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e96972fa-bed8-11ef-9199-8d2aaa4407a0,wj4tnhpBZ1NhesAngUtB+WJEl3E=] */

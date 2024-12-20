@@ -51,6 +51,26 @@ public class PluginProjectDependency extends DynamicResource implements IPluginP
   // relations
   
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public PluginProjectDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectCmp() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp);
+  }
+
+  public PluginProjectDependency setCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent cmp) {
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp, cmp);
+    return this;
+  }
+    
+  @Override
   public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject selectTo() {
     return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.PluginProjectDependency_to);
   }
@@ -88,4 +108,4 @@ public class PluginProjectDependency extends DynamicResource implements IPluginP
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb57b8c2-0c6a-11e6-86c5-87a8b520dd59,PG3JtQoU9q/xHyLFui3fxAtU2hU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb57b8c2-0c6a-11e6-86c5-87a8b520dd59,0TYwWTbJAj8b7L9ws1haA/M8+4E=] */

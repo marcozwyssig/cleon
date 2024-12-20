@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="33e72201-bedd-11ef-b498-058ee446f8e7">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="38ae1f9f-bedd-11ef-b498-058ee446f8e7" type="resource" guid="38adf88a-bedd-11ef-b498-058ee446f8e7" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33e72203-bedd-11ef-b498-058ee446f8e7" type="resource" guid="2b7d739c-02c7-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="34ed6ee6-bedd-11ef-b498-058ee446f8e7" type="literal">VM</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="33eaf297-bedd-11ef-b498-058ee446f8e7" type="literal">3</object>
+  </predicate>
+  <predicate guid="e85c97a4-2d73-11e6-959f-d1cef44ff5fd">
+    <object statement-guid="36ba8d0c-bedd-11ef-b498-058ee446f8e7" type="literal">VM</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="38ae1f9f-bedd-11ef-b498-058ee446f8e7">
+      <resource guid="38adf88a-bedd-11ef-b498-058ee446f8e7">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="38adf88d-bedd-11ef-b498-058ee446f8e7" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="3989da17-bedd-11ef-b498-058ee446f8e7" type="resource" guid="a397fed4-beda-11ef-b498-058ee446f8e7" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="38ae1f9e-bedd-11ef-b498-058ee446f8e7" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="73d5a1ae-06bc-11ea-8f17-2da21adc8e34">
+    <object statement-guid="33e74915-bedd-11ef-b498-058ee446f8e7" type="literal">false</object>
+  </predicate>
+  <predicate guid="24d24283-259b-11eb-b9ae-4df44b18aa9b">
+    <object statement-guid="33e72204-bedd-11ef-b498-058ee446f8e7" type="literal">true</object>
+  </predicate>
+</resource>
+

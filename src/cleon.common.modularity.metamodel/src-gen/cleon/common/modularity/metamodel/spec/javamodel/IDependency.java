@@ -10,8 +10,8 @@ public interface IDependency extends ch.actifsource.core.javamodel.IResource, cl
   
   // relations
   
-  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectTo();
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,nfZ2QBH7jongXjFJZSRP3pADJXg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,sRu+9jqyfFbpv0kdhwLpc8IaslU=] */

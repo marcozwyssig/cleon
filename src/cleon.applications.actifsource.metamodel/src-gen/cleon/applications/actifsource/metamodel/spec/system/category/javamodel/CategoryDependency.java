@@ -51,6 +51,26 @@ public class CategoryDependency extends DynamicResource implements ICategoryDepe
   // relations
   
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public CategoryDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectCmp() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp);
+  }
+
+  public CategoryDependency setCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent cmp) {
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp, cmp);
+    return this;
+  }
+    
+  @Override
   public cleon.applications.actifsource.metamodel.spec.system.category.javamodel.ICategory selectTo() {
     return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.javamodel.ICategory.class, cleon.applications.actifsource.metamodel.spec.system.category.CategoryPackage.CategoryDependency_to);
   }
@@ -88,4 +108,4 @@ public class CategoryDependency extends DynamicResource implements ICategoryDepe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,szv47/p6KXCWaqAA/mr65CaXqqc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,J7xv7dsxq+aoCSNqCOiX9MKlRwA=] */

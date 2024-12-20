@@ -13,9 +13,9 @@ public abstract class DependentBuildingBlock extends DynamicResource implements 
   
   // toMeRelations
   
-  public static cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock selectToMeHasDependency(cleon.common.modularity.metamodel.spec.javamodel.IDependency object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_hasDependency, object.getResource());
+  public static cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock selectToMeDependsOn(cleon.common.modularity.metamodel.spec.javamodel.IDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2fc8dc46-ffba-11e4-ac0a-959b440f987f,daxIsBihSu7ajD2O9fWF8y3voAw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2fc8dc46-ffba-11e4-ac0a-959b440f987f,0lfyKE7MbHs1/96RDklLuC9bgSw=] */

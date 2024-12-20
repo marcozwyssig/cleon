@@ -51,12 +51,32 @@ public class FeatureDependency extends DynamicResource implements IFeatureDepend
   // relations
   
   @Override
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature selectTo() {
-    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_to);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
   }
 
-  public FeatureDependency setTo(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature to) {
-    _setSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_to, to);
+  public FeatureDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectCmp() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp);
+  }
+
+  public FeatureDependency setCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent cmp) {
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp, cmp);
+    return this;
+  }
+    
+  @Override
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature selectFeature() {
+    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_feature);
+  }
+
+  public FeatureDependency setFeature(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature feature) {
+    _setSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_feature, feature);
     return this;
   }
     
@@ -77,15 +97,15 @@ public class FeatureDependency extends DynamicResource implements IFeatureDepend
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_to, visitor);
+    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_feature, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency> selectToMeTo(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature object) {
-    return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_to, object.getResource());
+  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency> selectToMeFeature(cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature object) {
+    return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage.FeatureDependency_feature, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76b9cee-d40d-11e5-8556-8f55ceb91287,OvR1AD2iOjSHye/vtjagrMxItbE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76b9cee-d40d-11e5-8556-8f55ceb91287,ZBSKK/efW3UJCR79DHU6KT3BN/E=] */

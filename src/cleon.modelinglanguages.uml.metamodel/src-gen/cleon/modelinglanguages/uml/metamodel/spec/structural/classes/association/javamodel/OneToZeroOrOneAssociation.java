@@ -133,6 +133,16 @@ public class OneToZeroOrOneAssociation extends DynamicResource implements IOneTo
   }
     
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public OneToZeroOrOneAssociation setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier selectTo() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.AssociationPackage.Association_to);
   }
@@ -173,4 +183,4 @@ public class OneToZeroOrOneAssociation extends DynamicResource implements IOneTo
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01df895e-2784-11e3-a466-eda9d7258bca,ho4H8OZ6JrRgmvHPAX0+/1qr1+U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01df895e-2784-11e3-a466-eda9d7258bca,+guYJKM8RKp9NES5VIR/vwy5F5U=] */

@@ -51,6 +51,16 @@ public class SampleDependency extends DynamicResource implements ISampleDependen
   // relations
   
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public SampleDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleBuildingBlock selectTo() {
     return _getSingle(cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleDependency_to);
   }
@@ -88,4 +98,4 @@ public class SampleDependency extends DynamicResource implements ISampleDependen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,Wqc0L9ehyhRxSlkQyFe39oukrMU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,QDoWSg5SLBGf6GfHuvKY5SpBKec=] */

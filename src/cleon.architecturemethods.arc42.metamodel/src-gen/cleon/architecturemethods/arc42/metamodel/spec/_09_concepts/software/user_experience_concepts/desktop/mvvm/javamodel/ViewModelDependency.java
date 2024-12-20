@@ -51,6 +51,16 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   // relations
   
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public ViewModelDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.javamodel.IViewModel selectTo() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.javamodel.IViewModel.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.user_experience_concepts.desktop.mvvm.MvvmPackage.ViewModelDependency_to);
   }
@@ -88,4 +98,4 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,R0egUjlSi9t/GRAWvc4y5SaXCe0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,GPxTDLOYR3qhX4lZrVNdPSQ3/MU=] */

@@ -15,10 +15,10 @@ public interface ISolutionBuildingBlock extends cleon.modelinglanguages.uml.meta
   
   public cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel.IDeploymentArtefact selectDeploymentArtefact();
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponentCompositionDependency> selectHasDependency();
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency selectHasDependency();
   
   public java.util.List<? extends cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel.ISolutionBuildingBlockComponent> selectDecompose();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,+0lbhmK/SkhHdcg//P4ltgB16UM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,8kgxtMbttLezNO2OwC+JwF7JLrs=] */

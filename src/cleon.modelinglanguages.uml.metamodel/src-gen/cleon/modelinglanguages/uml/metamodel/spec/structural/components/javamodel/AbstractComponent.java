@@ -21,5 +21,9 @@ public abstract class AbstractComponent extends DynamicResource implements IAbst
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, object.getResource());
   }
   
+  public static cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectToMeDependsOnCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,Nu1XgqZWQ9M7iO/qV/BtlliHdWQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,3ByNwVS+lgV4JGbhcZP6a/fZf4g=] */

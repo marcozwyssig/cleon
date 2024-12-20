@@ -89,22 +89,42 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
   }
     
   @Override
+  public java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> selectDependsOn() {
+    return _getList(cleon.common.modularity.metamodel.spec.javamodel.IDependency.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn);
+  }
+
+  public NamedSystemComponent setDependsOn(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> dependsOn) {
+    _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn, dependsOn);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency> selectDependsOnCmp() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp);
+  }
+
+  public NamedSystemComponent setDependsOnCmp(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency> dependsOnCmp) {
+    _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp, dependsOnCmp);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> selectDependsOnSysCmp() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_dependsOnSysCmp);
+  }
+
+  public NamedSystemComponent setDependsOnSysCmp(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> dependsOnSysCmp) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_dependsOnSysCmp, dependsOnSysCmp);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
   public NamedSystemComponent setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> selectHasDependency() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_hasDependency);
-  }
-
-  public NamedSystemComponent setHasDependency(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> hasDependency) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_hasDependency, hasDependency);
     return this;
   }
     
@@ -167,8 +187,8 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_dependsOnSysCmp, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponent_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfigurationCompositionAware_systemConfigurations, visitor);
@@ -176,4 +196,4 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91ada0b6-35f7-11e9-9d58-25409887bb2a,5PcvrKAD2NFnxTiIitq4TwbGBxs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91ada0b6-35f7-11e9-9d58-25409887bb2a,/vOGnUm7IlZZ28bm9j6otz4hglQ=] */

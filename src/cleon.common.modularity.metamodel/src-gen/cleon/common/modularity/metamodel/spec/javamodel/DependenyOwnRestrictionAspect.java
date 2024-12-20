@@ -31,7 +31,7 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 				validationcontext.getResource());
 
 		final var dependency = resourceRepository.getResource(IDependency.class, statement.object());
-		final var dependencyBuildingBlock = dependency.selectTo();
+		final var dependencyBuildingBlock = dependency.selectBuidingBlock();
 
 		final var blockFunctions = dependentBuildingBlock.extension(IBuildingBlockFunctions.class);
 		final var indirectBuildingBlocks = blockFunctions.IndirectDependingBuildingBlocks();
@@ -40,7 +40,7 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 			inconsistencyList.add(new SingleStatementInconsistency(statement, "Dependency is inherited redundant."));
 		}
 
-		final var directBuildingBlocks = new ArrayList<>(blockFunctions.DependsOn());
+		final var directBuildingBlocks = new ArrayList<>(blockFunctions.DependsTo());
 
 		directBuildingBlocks.remove(dependencyBuildingBlock);
 

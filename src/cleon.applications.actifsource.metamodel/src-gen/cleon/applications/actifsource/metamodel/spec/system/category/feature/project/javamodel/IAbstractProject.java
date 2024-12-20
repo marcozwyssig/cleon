@@ -2,7 +2,7 @@ package cleon.applications.actifsource.metamodel.spec.system.category.feature.pr
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponent {
+public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponentWithPackage {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("04a544de-11e9-11e5-b568-55f5f05bd6f6");
   
@@ -24,4 +24,4 @@ public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,Diz3hyxYF+fXjQxoGbb9Nd5Lzog=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,e0eMdnPxXK/Sw6LnbGjBpghTSiw=] */

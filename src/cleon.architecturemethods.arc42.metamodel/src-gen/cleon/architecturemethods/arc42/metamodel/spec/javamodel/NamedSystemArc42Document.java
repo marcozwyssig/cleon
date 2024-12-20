@@ -127,11 +127,11 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView select__V_5_aE_buildingblockview() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_5_aE_buildingblockview);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBuildingBlockViewSystem select__V_5_aE_buildingblockview() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBuildingBlockViewSystem.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_5_aE_buildingblockview);
   }
 
-  public NamedSystemArc42Document set__V_5_aE_buildingblockview(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView __V_5_aE_buildingblockview) {
+  public NamedSystemArc42Document set__V_5_aE_buildingblockview(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBuildingBlockViewSystem __V_5_aE_buildingblockview) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
     return this;
   }
@@ -361,7 +361,7 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints.javamodel.IArchitectureConstraints.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystemScopeAndContext.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_4_aE_solution_aE_strategy, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_5_aE_buildingblockview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBuildingBlockViewSystem.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.javamodel.IRuntimeView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_6_aE_runtimeview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDataView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_7_aE_dataview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.SystemArc42Document___V_8_aE_deploymentview, visitor);
@@ -383,4 +383,4 @@ public class NamedSystemArc42Document extends DynamicResource implements INamedS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,Rp48h2rGStxcwkzD7IdPzY1xTPc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,jnHAfDv+txl78DDaUHYQKrhfGVQ=] */

@@ -10,7 +10,7 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationDependency> selectHasDependency();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationDependency> selectDependsOnSysCfg();
   
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectInSubZone();
   
@@ -28,4 +28,4 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,qyqoLiIexlJErOi+72Iu29LH/YM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,4OH4/mcgjv85R9U/B5Ul2UrfZjs=] */

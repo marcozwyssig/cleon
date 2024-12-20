@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>Sample System Systemarchitecture</db:title>
+	
+	<db:chapter xml:id="ea.521d3460-bedd-11ef-b498-058ee446f8e7">
+		<db:title>System Scope and Context</db:title>
+		<db:para></db:para>
+		<db:para>In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.</db:para>
+		<db:section xml:id="ea.539f18bc-bedd-11ef-b498-058ee446f8e7">
+			<db:title>Technical Context</db:title>
+			<db:para></db:para>
+			<db:para>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nachbarsystem</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>Applications</db:para>
+						</db:td>
+						<db:td>
+							<db:para>-</db:para>
+						</db:td>		
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			<db:section>
+				<db:title>Applications</db:title>
+				<db:para>In der nachfolgenden Tabelle werden die entsprechenden Komponenten aufgeführt:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="20%" />		
+					<db:col width="50%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Name</db:th>				
+							<db:th>Kürzel</db:th>
+							<db:th>Beschreibung</db:th>			
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Application 1</db:para>
+							</db:td>
+							<db:td>
+								<db:para>AP1</db:para>
+							</db:td>				
+							<db:td>
+								<db:para>-</db:para>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.38c4bd18-beda-11ef-b498-058ee446f8e7">
+		<db:title>Building Block View</db:title>
+		<db:para></db:para>
+		<db:section xml:id="ea.3f59c38b-beda-11ef-b498-058ee446f8e7">
+			<db:title>Level_1: IKT (IKT) &lt;System&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins IKT in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Level_1: IKT (IKT) &lt;System&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_1__IKT__IKT___System___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins IKT tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Application []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Infrastruture []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Platform []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.7f777d61-beda-11ef-b498-058ee446f8e7">
+				<db:title>Application &lt;SystemLayer&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.7f8cda2c-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.71ddbd54-beda-11ef-b498-058ee446f8e7">
+				<db:title>Infrastruture &lt;SystemLayer&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastruture beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.71fa6d1f-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.78893386-beda-11ef-b498-058ee446f8e7">
+				<db:title>Platform &lt;SystemLayer&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Platform beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.789fa1c1-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.7f8cda2c-beda-11ef-b498-058ee446f8e7">
+			<db:title>Level_2: Application &lt;SystemLayer&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.71fa6d1f-beda-11ef-b498-058ee446f8e7">
+			<db:title>Level_2: Infrastruture &lt;SystemLayer&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Infrastruture in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Level_2: Infrastruture &lt;SystemLayer&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_2__Infrastruture__SystemLayer___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Infrastruture tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Operating System []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Servers []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Virtualization []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.07d950cc-bee7-11ef-8dcb-a78def9ea3bd">
+				<db:title>Operating System &lt;SystemComponent&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Operating System beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.07fc9046-bee7-11ef-8dcb-a78def9ea3bd" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.86892f77-beda-11ef-b498-058ee446f8e7">
+				<db:title>Servers &lt;SystemComponent&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Servers beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.42db7e7f-bedf-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.97fe54fe-beda-11ef-b498-058ee446f8e7">
+				<db:title>Virtualization &lt;SystemComponent&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Virtualization beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.483100ca-bedf-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.789fa1c1-beda-11ef-b498-058ee446f8e7">
+			<db:title>Level_2: Platform &lt;SystemLayer&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.07fc9046-bee7-11ef-8dcb-a78def9ea3bd">
+			<db:title>Level_3: Operating System &lt;SystemComponent&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Operating System in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Level_3: Operating System &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Operating_System__SystemComponent___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Operating System tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>WIN2022 []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.1251fb2b-bee7-11ef-8dcb-a78def9ea3bd">
+				<db:title>WIN2022 &lt;WindowsSystemConfiguration&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins WIN2022 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1308a142-bee7-11ef-8dcb-a78def9ea3bd" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.42db7e7f-bedf-11ef-b498-058ee446f8e7">
+			<db:title>Level_3: Servers &lt;SystemComponent&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Servers in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Level_3: Servers &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Servers__SystemComponent___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Servers tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>HPE []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.69071be3-bee0-11ef-b498-058ee446f8e7">
+				<db:title>HPE &lt;ServerSystemConfiguration&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins HPE beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b582462c-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.483100ca-bedf-11ef-b498-058ee446f8e7">
+			<db:title>Level_3: Virtualization &lt;SystemComponent&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Virtualization in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Level_3: Virtualization &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Virtualization__SystemComponent___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Virtualization tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>VM []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>VMH []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.6915e917-bee0-11ef-b498-058ee446f8e7">
+				<db:title>VM &lt;VirtualMachineSystemConfiguration&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins VM beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b582462b-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.6915c206-bee0-11ef-b498-058ee446f8e7">
+				<db:title>VMH &lt;HypervisorSystemConfiguration&gt; (Blackbox)</db:title>
+				<db:para></db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins VMH beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b581f80a-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.b582462c-bee0-11ef-b498-058ee446f8e7">
+			<db:title>Level_4: HPE (HPE) &lt;ServerSystemConfiguration&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.b582462b-bee0-11ef-b498-058ee446f8e7">
+			<db:title>Level_4: VM (VM) &lt;VirtualMachineSystemConfiguration&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.b581f80a-bee0-11ef-b498-058ee446f8e7">
+			<db:title>Level_4: VMH (VMH) &lt;HypervisorSystemConfiguration&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.1308a142-bee7-11ef-8dcb-a78def9ea3bd">
+			<db:title>Level_4: WIN2022 (WIN 2022) &lt;WindowsSystemConfiguration&gt; (Whitebox)</db:title>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.5a709407-beda-11ef-b498-058ee446f8e7">
+		<db:title>Deployment View</db:title>
+		<db:para></db:para>
+		<db:section xml:id="ea.5c9b637f-beda-11ef-b498-058ee446f8e7">
+			<db:title>Package View</db:title>
+			<db:para></db:para>
+		</db:section>
+		<db:section xml:id="ea.579dda7f-bedc-11ef-b498-058ee446f8e7">
+			<db:title>Deploy View</db:title>
+			<db:para></db:para>
+			<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
+			<db:itemizedlist>
+				<db:listitem>
+					<db:para>PROD-Environment [<db:xref linkend="ea.58a3b203-bedc-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/>]</db:para>
+				</db:listitem>	
+			</db:itemizedlist>
+			<db:section xml:id="ea.58a3b203-bedc-11ef-b498-058ee446f8e7">
+				<db:title>PROD-Environment</db:title>
+				<db:para></db:para>
+				
+				
+			</db:section>
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.6bf8937e-bedc-11ef-b498-058ee446f8e7">
+		<db:title>Crosscutting Concepts</db:title>
+		<db:para></db:para>
+		<db:section xml:id="ea.6d5e1720-bedc-11ef-b498-058ee446f8e7">
+			<db:title>Topology</db:title>
+			<db:para></db:para>
+		</db:section>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[5e478da3-985e-11ef-9d7c-b5806d5ad1be,f62d507f-bed9-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,f62d507f-bed9-11ef-b498-058ee446f8e7,Hash] -->

@@ -12,6 +12,8 @@ public interface IAbstractComponent extends cleon.common.modularity.metamodel.sp
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> selectPorts_In();
   
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency> selectDependsOnCmp();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,gTSKqVIKRixOXkEKdZHS+hU+SL4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,ctkR665U+/UrGHUkkEaoyliaMgU=] */

@@ -133,6 +133,16 @@ public class OneToManyAssociation extends DynamicResource implements IOneToManyA
   }
     
   @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
+  }
+
+  public OneToManyAssociation setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType selectCollectionType() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.AssociationPackage.CollectionAssociation_collectionType);
   }
@@ -184,4 +194,4 @@ public class OneToManyAssociation extends DynamicResource implements IOneToManyA
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e11893b8-2783-11e3-a466-eda9d7258bca,/7/+YPkeyWcpEkBodOL+2DvzzEk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e11893b8-2783-11e3-a466-eda9d7258bca,oyygxNLn5rM6wyLH5zTMFd4S8Ag=] */

@@ -6,8 +6,8 @@ public class SpecPackage {
   
   public static final Resource BuildingBlock = new Resource("243b1867-7973-11e4-a6e2-23d949480f96");
   public static final Resource Dependency = new Resource("9416ead6-ffb9-11e4-ac0a-959b440f987f");
-  public static final Resource DependentBuildingBlock_hasDependency = new Resource("a2e49730-ffb9-11e4-ac0a-959b440f987f");
-  public static final Resource Dependency_to = new Resource("b3b677e8-ffb9-11e4-ac0a-959b440f987f");
+  public static final Resource DependentBuildingBlock_dependsOn = new Resource("a2e49730-ffb9-11e4-ac0a-959b440f987f");
+  public static final Resource Dependency_buidingBlock = new Resource("b3b677e8-ffb9-11e4-ac0a-959b440f987f");
   public static final Resource DependentBuildingBlock = new Resource("2fc8dc46-ffba-11e4-ac0a-959b440f987f");
   public static final Resource InheritableBuildingBlock = new Resource("b9115cb9-ffba-11e4-ac0a-959b440f987f");
   public static final Resource Inheritance = new Resource("d715af8c-ffba-11e4-ac0a-959b440f987f");
@@ -44,4 +44,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,v5t4CIYRb+atetc07kf6/m8H1P8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,ZG2yzpAwSRb2z/b4rm/3OckCSPU=] */

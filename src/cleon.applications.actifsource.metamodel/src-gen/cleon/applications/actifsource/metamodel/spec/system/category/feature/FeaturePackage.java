@@ -6,7 +6,7 @@ public class FeaturePackage {
   
   public static final Resource Feature = new Resource("98431561-d40b-11e5-8556-8f55ceb91287");
   public static final Resource FeatureDependency = new Resource("c76b9cee-d40d-11e5-8556-8f55ceb91287");
-  public static final Resource FeatureDependency_to = new Resource("eaac1ead-d40d-11e5-8556-8f55ceb91287");
+  public static final Resource FeatureDependency_feature = new Resource("eaac1ead-d40d-11e5-8556-8f55ceb91287");
   public static final Resource Feature_hasDependency = new Resource("027e4bdd-d40e-11e5-8556-8f55ceb91287");
   public static final Resource FunctionSpace_aE_Feature_Feature = new Resource("a36000bc-7e75-11e6-95c9-39c2ade57f78");
   public static final Resource Feature_sample = new Resource("d45b013c-2634-11ea-8c59-871562e3b5c4");
@@ -34,4 +34,4 @@ public class FeaturePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature,lcFwnUUE0L06w4pnruYw4OEbHXY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature,mWqG0HIIJ8sK2kp7BQoppwn2ATE=] */

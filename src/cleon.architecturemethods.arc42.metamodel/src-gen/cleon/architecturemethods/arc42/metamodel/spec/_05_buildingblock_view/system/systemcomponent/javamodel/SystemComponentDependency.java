@@ -51,12 +51,32 @@ public class SystemComponentDependency extends DynamicResource implements ISyste
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent selectTo() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_to);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuidingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock);
   }
 
-  public SystemComponentDependency setTo(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent to) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_to, to);
+  public SystemComponentDependency setBuidingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buidingBlock) {
+    _setSingle(cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_buidingBlock, buidingBlock);
+    return this;
+  }
+    
+  @Override
+  public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent selectCmp() {
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp);
+  }
+
+  public SystemComponentDependency setCmp(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent cmp) {
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponentDependency_cmp, cmp);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent selectSysCmp() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_sysCmp);
+  }
+
+  public SystemComponentDependency setSysCmp(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent sysCmp) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_sysCmp, sysCmp);
     return this;
   }
     
@@ -77,15 +97,15 @@ public class SystemComponentDependency extends DynamicResource implements ISyste
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.metamodel.spec.SpecPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_to, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_sysCmp, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> selectToMeTo(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_to, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency> selectToMeSysCmp(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.SystemcomponentPackage.SystemComponentDependency_sysCmp, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37c35592-01d9-11e9-9c9d-8d52d6745026,1qBTq5y9Bc49mYCm1ydvNhpz1KY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37c35592-01d9-11e9-9c9d-8d52d6745026,y3pY0SjVNDif7ssZ1/D9V88DV9Q=] */

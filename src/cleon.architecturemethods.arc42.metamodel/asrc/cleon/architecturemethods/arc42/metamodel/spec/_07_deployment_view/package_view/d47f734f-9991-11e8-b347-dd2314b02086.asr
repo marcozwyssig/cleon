@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="d47f734f-9991-11e8-b347-dd2314b02086">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="217dfbf0-bed9-11ef-9199-8d2aaa4407a0" type="resource" guid="217dadcc-bed9-11ef-9199-8d2aaa4407a0" />
+  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="41e2e2a1-d0bb-11e8-b005-f7630e4c29c0" type="resource" guid="41e2465d-d0bb-11e8-b005-f7630e4c29c0">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -16,6 +19,27 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="0512a5c2-d0bb-11e8-b005-f7630e4c29c0" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="217dfbf0-bed9-11ef-9199-8d2aaa4407a0">
+      <resource guid="217dadcc-bed9-11ef-9199-8d2aaa4407a0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="217dd4de-bed9-11ef-9199-8d2aaa4407a0" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="217dd4df-bed9-11ef-9199-8d2aaa4407a0" type="literal">packageSet</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="217e2301-bed9-11ef-9199-8d2aaa4407a0" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="217e2302-bed9-11ef-9199-8d2aaa4407a0" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="217e4a13-bed9-11ef-9199-8d2aaa4407a0" type="resource" guid="184f3428-bed5-11ef-b625-9d1578892e52" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d47fc172-9991-11e8-b347-dd2314b02086" type="literal">PackageView</object>

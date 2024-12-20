@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -90,6 +90,16 @@ public class PackageView extends DynamicResource implements IPackageView {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> selectPackageSet() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageView_packageSet);
+  }
+
+  public PackageView setPackageSet(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> packageSet) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageView_packageSet, packageSet);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -119,9 +129,16 @@ public class PackageView extends DynamicResource implements IPackageView {
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageView_packageSet, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageView selectToMePackageSet(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageView.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.PackageView_packageSet, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,frGQXSLOUJx7UsRmo/Yqy2wNsyk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,rpcdy19wT1jPYCbcVxPG2s+U2O4=] */

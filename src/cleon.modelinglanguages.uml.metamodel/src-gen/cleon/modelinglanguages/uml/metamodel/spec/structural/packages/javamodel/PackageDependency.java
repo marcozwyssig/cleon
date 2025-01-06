@@ -93,9 +93,9 @@ public class PackageDependency extends DynamicResource implements IPackageDepend
 
   // toMeRelations
   
-  public static cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency selectToMeToPackage(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.PackageDependency_toPackage, object.getResource());
+  public static java.util.List<cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency> selectToMeToPackage(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackageDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.packages.PackagesPackage.PackageDependency_toPackage, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0666770b-bd4b-11ef-8ef5-1f95735d55f6,TirwokYa5PF2x6s2QQCPzlXwVbk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0666770b-bd4b-11ef-8ef5-1f95735d55f6,X0nIfRf12mH7PHcBA8GFFJKIAME=] */

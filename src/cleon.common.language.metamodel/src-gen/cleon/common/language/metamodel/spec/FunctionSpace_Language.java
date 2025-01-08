@@ -8,12 +8,10 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
-import ch.actifsource.util.log.Logger;
 import cleon.common.language.metamodel.spec.languages.InstancesModel;
-import cleon.common.language.metamodel.spec.languages.javamodel.CurrentLanguage;
 import cleon.common.resources.metamodel.spec.literals.StringFunctionSpace;
 import cleon.common.language.metamodel.spec.javamodel.ResolveTranslationService;
-
+import ch.actifsource.core.job.Select;
 /* End Protected Region   [[7b8a1045-3361-11e8-a9fe-87ba35d8f5c4,imports]] */
 
 public class FunctionSpace_Language {
@@ -198,6 +196,10 @@ public class FunctionSpace_Language {
       /* Begin Protected Region [[99d566b5-a299-11ef-9aea-bfda14a4d373]] */
         final var resolveTranslationService = new ResolveTranslationService(multilingualName);
         return resolveTranslationService.translate(language, x -> {
+        	if (multilingualName.selectNameTranslation().isEmpty()) {
+        		return Select.simpleName(multilingualName.getReadJobExecutor(), multilingualName.getResource());
+        	}
+        	
             if( multilingualName.selectNameTranslation().containsKey(language.getResource())) {
               	final var name = multilingualName.selectNameTranslation().get(language.getResource());
               	return name.selectName();

@@ -134,14 +134,15 @@ public class ResolveTranslationService {
 	public String translate(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, Function<String, String> whenNotLanguageClass) {		
 		return translate(language.selectCode(), whenNotLanguageClass);
 	}
-	
 
 	private String translate(final String languageCode, Function<String, String> whenNotLanguageClass) {
 		if( languageClass == null) {
+			Logger.instance().logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()));
 			if( whenNotLanguageClass == null) {
+				Logger.instance().logInfo("Execute simpleName.");
 				return Select.simpleName(resource.getReadJobExecutor(), resource.getResource());				
 			} else {
-				Logger.instance().logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()) + ". Execute whenNotLanguageClass lambda.");				
+				Logger.instance().logInfo("Execute whenNotLanguageClass lambda.");				
 				return whenNotLanguageClass.apply(languageCode);
 			}
 		}

@@ -731,6 +731,9 @@ public class FunctionSpace_Asciidoc_arc42 {
   
   public static interface IDatabaseViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("a179d28c-cd14-11ef-947c-3b647dbecb9f")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView databaseView);
+
   }
   
   public static class DatabaseViewFunctionsImpl implements IDatabaseViewFunctionsImpl {
@@ -739,11 +742,20 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     private DatabaseViewFunctionsImpl() {}
 
+    @Override
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView databaseView) {
+      return "";
+    }
+
   }
   
   public static class DatabaseViewFunctions {
 
     private DatabaseViewFunctions() {}
+
+    public static java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView databaseView) {
+      return DynamicResourceUtil.invoke(IDatabaseViewFunctionsImpl.class, DatabaseViewFunctionsImpl.INSTANCE, databaseView).ChapterPath(language, databaseView);
+    }
 
   }
 
@@ -753,10 +765,10 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("ba830c78-c019-11ee-b73c-c3f9bd2ce1e0")
-    public java.lang.String RefName();
+    public java.lang.String RefName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("d4c6277a-cfff-11ee-9bb8-5f4f5b483c01")
-    public java.lang.String Ref();
+    public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("507f2375-d004-11ee-8ad8-7318f4718a69")
     public java.lang.Boolean IsHistoryNullFalseOrTrue();
@@ -804,10 +816,10 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8de75e52-e50d-11ee-a074-d7afe74e4a27")
-    public java.lang.String Ref();
+    public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9afb73f1-e50d-11ee-a074-d7afe74e4a27")
-    public java.lang.String RefName();
+    public java.lang.String RefName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("9964c974-e51f-11ee-a074-d7afe74e4a27")
     public java.lang.String ElementName();
@@ -841,7 +853,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     public java.lang.String ElementName();
 
     @IDynamicResourceExtension.MethodId("287ac3e9-e537-11ee-a074-d7afe74e4a27")
-    public java.lang.String Ref();
+    public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -866,7 +878,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITableAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be85f5d4-27c7-11ef-9acc-81efe99aa8b6")
-    public java.lang.String Ref();
+    public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("62e9ea30-27dc-11ef-9e2d-0b682fec1a77")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -1171,4 +1183,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,u7+LZlzDoQjaExG40BZnFTvDeYE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,7TR8R+6D/3pXWankgL0DleSgae4=] */

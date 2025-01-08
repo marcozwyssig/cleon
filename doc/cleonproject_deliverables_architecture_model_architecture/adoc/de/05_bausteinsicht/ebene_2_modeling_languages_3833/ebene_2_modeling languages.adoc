@@ -11,23 +11,24 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The Modeling Languages is decomposed into the following components:
-. bpmn <Feature> <Feature> (Blackbox)
-. graph <Feature> <Feature> (Blackbox)
-. network <Feature> <Feature> (Blackbox)
-. rack <Feature> <Feature> (Blackbox)
-. segmentation <Feature> <Feature> (Blackbox)
-. uml <Feature> <Feature> (Blackbox)
 
-// Begin Protected Region [[4843dca4-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4843dca4-d579-11ee-903e-9f564e4de07e,customText]]
+. <<#chapter-bpmn_feature_feature_blackbox>>
+. <<#chapter-graph_feature_feature_blackbox>>
+. <<#chapter-network_feature_feature_blackbox>>
+. <<#chapter-rack_feature_feature_blackbox>>
+. <<#chapter-segmentation_feature_feature_blackbox>>
+. <<#chapter-uml_feature_feature_blackbox>>
 
 [#chapter-bpmn_feature_feature_blackbox]
-==== bpmn <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins bpmn <Feature> beschrieben.
+===== bpmn <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins bpmn <Feature> ((<<#chapter-ebene_3_bpmn_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[0b7a0415-2e7f-11e8-ae27-4bd922d3ee56,purpose]]
 
@@ -71,8 +72,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[487ec2c2-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-graph_feature_feature_blackbox]
-==== graph <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins graph <Feature> beschrieben.
+===== graph <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins graph <Feature> ((<<#chapter-ebene_3_graph_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[18522b5b-2ac6-11e9-994e-b56db58a4c0f,purpose]]
 
@@ -116,8 +117,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[487ec2c3-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-network_feature_feature_blackbox]
-==== network <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins network <Feature> beschrieben.
+===== network <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins network <Feature> ((<<#chapter-ebene_3_network_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[e1295a2d-0510-11e9-b129-6590cd6315e4,purpose]]
 
@@ -161,8 +162,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[487ee9d5-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-rack_feature_feature_blackbox]
-==== rack <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins rack <Feature> beschrieben.
+===== rack <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins rack <Feature> ((<<#chapter-ebene_3_rack_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[17e657cc-051e-11e9-b129-6590cd6315e4,purpose]]
 
@@ -206,8 +207,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[487ec2c4-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-segmentation_feature_feature_blackbox]
-==== segmentation <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins segmentation <Feature> beschrieben.
+===== segmentation <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins segmentation <Feature> ((<<#chapter-ebene_3_segmentation_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[4f0157af-2972-11ea-aaaa-3133f8535a08,purpose]]
 
@@ -251,8 +252,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[487ec2c1-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-uml_feature_feature_blackbox]
-==== uml <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins uml <Feature> beschrieben.
+===== uml <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins uml <Feature> ((<<#chapter-ebene_3_uml_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[1da070f0-ca23-11e8-9418-61f1df21967c,purpose]]
 
@@ -295,4 +296,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[487ee9d6-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca4-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca4-d579-11ee-903e-9f564e4de07e,rmv6mY6CfbMyHcw4A+tR5FwVBOc=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca4-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca4-d579-11ee-903e-9f564e4de07e,qXk3SkzyZW5DiFtJ3wDvpk5UBIc=]

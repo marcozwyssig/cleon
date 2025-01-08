@@ -11,20 +11,21 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The IKT is decomposed into the following components:
-. Application <SystemLayer> (Blackbox)
-. Infrastruture <SystemLayer> (Blackbox)
-. Platform <SystemLayer> (Blackbox)
 
-// Begin Protected Region [[3f59c38b-beda-11ef-b498-058ee446f8e7,customText]]
-
-// End Protected Region   [[3f59c38b-beda-11ef-b498-058ee446f8e7,customText]]
+. <<#chapter-application_systemlayer_blackbox>>
+. <<#chapter-infrastruture_systemlayer_blackbox>>
+. <<#chapter-platform_systemlayer_blackbox>>
 
 [#chapter-application_systemlayer_blackbox]
-==== Application <SystemLayer> (Blackbox)
-This chapter describes the black-box properties of the component Application.
+===== Application <SystemLayer> (Blackbox)
+This chapter describes the black-box properties of the component Application ((<<#chapter-level_2_application_systemlayer_whitebox>>)).
 
 // Begin Protected Region [[7f5fb09d-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -68,8 +69,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[7f777d61-beda-11ef-b498-058ee446f8e7,customText]]
 
 [#chapter-infrastruture_systemlayer_blackbox]
-==== Infrastruture <SystemLayer> (Blackbox)
-This chapter describes the black-box properties of the component Infrastruture.
+===== Infrastruture <SystemLayer> (Blackbox)
+This chapter describes the black-box properties of the component Infrastruture ((<<#chapter-level_2_infrastruture_systemlayer_whitebox>>)).
 
 // Begin Protected Region [[71c26d20-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -113,8 +114,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[71ddbd54-beda-11ef-b498-058ee446f8e7,customText]]
 
 [#chapter-platform_systemlayer_blackbox]
-==== Platform <SystemLayer> (Blackbox)
-This chapter describes the black-box properties of the component Platform.
+===== Platform <SystemLayer> (Blackbox)
+This chapter describes the black-box properties of the component Platform ((<<#chapter-level_2_platform_systemlayer_whitebox>>)).
 
 // Begin Protected Region [[7870f092-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -157,4 +158,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[78893386-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3f59c38b-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,3f59c38b-beda-11ef-b498-058ee446f8e7,0A66RC/70UfxnxpC/aKtoJ/yyOk=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3f59c38b-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,3f59c38b-beda-11ef-b498-058ee446f8e7,ra+PIN863CLVRWuIxwUBOSE7e8o=]

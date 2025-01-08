@@ -11,6 +11,7 @@ public class MonolithPackage {
   public static final Resource SoftwareMonolithComponentComposition_components = new Resource("67772fd0-bf7f-11ee-b188-131fa688415c");
   public static final Resource SoftwareMonolithComponent = new Resource("874d49e9-cf1b-11ee-8c06-a5102392725a");
   public static final Resource SoftwareMonolithComponent_components = new Resource("874d49ea-cf1b-11ee-8c06-a5102392725a");
+  public static final Resource AbstractMonolithComponent = new Resource("1b356df1-cdac-11ef-aceb-ed2f5b1a4839");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class MonolithPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith,LbEZ5tmFv6YMvowSquE3SV1SB7w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith,kI2NR038qYLDJDAfeAPAcZWHDrU=] */

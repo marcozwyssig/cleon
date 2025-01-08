@@ -73,6 +73,11 @@
             <resource statement-guid="4e440fbd-acc6-11ef-a765-2382060a590e" type="resource" guid="4e440fb8-acc6-11ef-a765-2382060a590e" />
           </owns>
         </resource>
+        <resource statement-guid="f0b13263-cdaf-11ef-aceb-ed2f5b1a4839" type="resource" guid="975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="cd58e275-cdaf-11ef-aceb-ed2f5b1a4839" type="resource" guid="cd589452-cdaf-11ef-aceb-ed2f5b1a4839" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="4be65353-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="4be5de20-0aa8-11e9-b5db-cdf0b8dad9e4">
@@ -128,6 +133,11 @@
         <resource statement-guid="a0575f7a-acc5-11ef-a765-2382060a590e" type="resource" guid="a056ea42-acc5-11ef-a765-2382060a590e">
           <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
             <resource statement-guid="a056ea48-acc5-11ef-a765-2382060a590e" type="resource" guid="a056ea43-acc5-11ef-a765-2382060a590e" />
+          </owns>
+        </resource>
+        <resource statement-guid="443e5ac3-cdb0-11ef-aceb-ed2f5b1a4839" type="resource" guid="443dbe7a-cdb0-11ef-aceb-ed2f5b1a4839">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="443dbe81-cdb0-11ef-aceb-ed2f5b1a4839" type="resource" guid="443dbe7b-cdb0-11ef-aceb-ed2f5b1a4839" />
           </owns>
         </resource>
       </owns>
@@ -472,6 +482,34 @@
               </predicate>
             </resource>
           </object>
+          <object statement-guid="f0b13263-cdaf-11ef-aceb-ed2f5b1a4839">
+            <resource guid="975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="975ab64d-cdaf-11ef-aceb-ed2f5b1a4839" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="980c7a48-cdaf-11ef-aceb-ed2f5b1a4839" type="literal">convertToDirectoryPath</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="cd58e275-cdaf-11ef-aceb-ed2f5b1a4839">
+                  <resource guid="cd589452-cdaf-11ef-aceb-ed2f5b1a4839">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="cd589454-cdaf-11ef-aceb-ed2f5b1a4839" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="ce0500fa-cdaf-11ef-aceb-ed2f5b1a4839" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="975ab64e-cdaf-11ef-aceb-ed2f5b1a4839" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="d460f6cd-cdaf-11ef-aceb-ed2f5b1a4839" type="literal">return stringLiteral.replace(".", java.io.File.separator);</object>
+              </predicate>
+            </resource>
+          </object>
         </predicate>
         <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
           <object statement-guid="77b25952-0d5f-11e6-9f44-9d0000bae4df" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
@@ -700,6 +738,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="a056ea49-acc5-11ef-a765-2382060a590e" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="443e5ac3-cdb0-11ef-aceb-ed2f5b1a4839">
+            <resource guid="443dbe7a-cdb0-11ef-aceb-ed2f5b1a4839">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="443dbe7c-cdb0-11ef-aceb-ed2f5b1a4839" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="443dbe7e-cdb0-11ef-aceb-ed2f5b1a4839" type="literal">convertToDirectoryPath</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="443dbe81-cdb0-11ef-aceb-ed2f5b1a4839">
+                  <resource guid="443dbe7b-cdb0-11ef-aceb-ed2f5b1a4839">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="443dbe7f-cdb0-11ef-aceb-ed2f5b1a4839" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="443dbe80-cdb0-11ef-aceb-ed2f5b1a4839" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="443dbe7d-cdb0-11ef-aceb-ed2f5b1a4839" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="443dbe82-cdb0-11ef-aceb-ed2f5b1a4839" type="literal">return textLiteral.replace(".", java.io.File.separator);</object>
               </predicate>
             </resource>
           </object>

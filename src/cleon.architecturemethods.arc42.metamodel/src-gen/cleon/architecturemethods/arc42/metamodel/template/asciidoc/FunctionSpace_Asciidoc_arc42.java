@@ -381,6 +381,12 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("048c0e46-e5db-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("808098ba-cdc4-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String GetIndentChar();
+
+    @IDynamicResourceExtension.MethodId("9a57d270-cdc6-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String RenderWhiteBoxRef(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -696,10 +702,19 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("5b3e882f-e5da-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("4e006861-cdbc-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String RendererCustomElement();
+
+    @IDynamicResourceExtension.MethodId("c2afb89b-cdc2-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String RenderChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("4e006861-cdbc-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String RendererCustomElement(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
+
   }
   
   public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
@@ -708,11 +723,20 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     private WhiteboxFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RendererCustomElement(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+      return null;
+    }
+
   }
   
   public static class WhiteboxFunctions {
 
     private WhiteboxFunctions() {}
+
+    public static java.lang.String RendererCustomElement(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+      return DynamicResourceUtil.invoke(IWhiteboxFunctionsImpl.class, WhiteboxFunctionsImpl.INSTANCE, whitebox).RendererCustomElement(whitebox);
+    }
 
   }
 
@@ -1183,4 +1207,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,7TR8R+6D/3pXWankgL0DleSgae4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,MtSeBzOXdzz8O7OhJlBj0y9XNvk=] */

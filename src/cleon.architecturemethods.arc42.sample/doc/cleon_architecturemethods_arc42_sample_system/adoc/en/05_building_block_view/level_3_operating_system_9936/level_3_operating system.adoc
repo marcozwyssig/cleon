@@ -11,18 +11,19 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The Operating System is decomposed into the following components:
-. WIN2022 <WindowsSystemConfiguration> (Blackbox)
 
-// Begin Protected Region [[07fc9046-bee7-11ef-8dcb-a78def9ea3bd,customText]]
-
-// End Protected Region   [[07fc9046-bee7-11ef-8dcb-a78def9ea3bd,customText]]
+. <<#chapter-win2022_windowssystemconfiguration_blackbox>>
 
 [#chapter-win2022_windowssystemconfiguration_blackbox]
-==== WIN2022 <WindowsSystemConfiguration> (Blackbox)
-This chapter describes the black-box properties of the component WIN2022.
+===== WIN2022 <WindowsSystemConfiguration> (Blackbox)
+This chapter describes the black-box properties of the component WIN2022 ((<<#chapter-level_4_win2022_win_2022_windowssystemconfiguration_whitebox>>)).
 
 // Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,purpose]]
 
@@ -65,4 +66,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[1251fb2b-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,w+CDI3CNCVJy0FfVEoLy7DMMLwg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,EnPyqq0xnh1Xq0hg3uqkyWifMp8=]

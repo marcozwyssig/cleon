@@ -11,18 +11,19 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The Test3 is decomposed into the following components:
-. Test3_1 <SampleBuildingBlock> (Blackbox)
 
-// Begin Protected Region [[48213903-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[48213903-d579-11ee-903e-9f564e4de07e,customText]]
+. <<#chapter-test3_1_samplebuildingblock_blackbox>>
 
 [#chapter-test3_1_samplebuildingblock_blackbox]
-==== Test3_1 <SampleBuildingBlock> (Blackbox)
-This chapter describes the black-box properties of the component Test3_1.
+===== Test3_1 <SampleBuildingBlock> (Blackbox)
+This chapter describes the black-box properties of the component Test3_1 ((<<#chapter-level_3_test3_1_samplebuildingblock_whitebox>>)).
 
 // Begin Protected Region [[45f44ed1-c089-11e6-beed-bb6789615dd5,purpose]]
 
@@ -65,4 +66,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[48386ac7-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,wJlgL7ynHkoGFU1zjWE8fk3vIaE=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,3Fe9oO/8MF8NS6DlekqvAL2SsNg=]

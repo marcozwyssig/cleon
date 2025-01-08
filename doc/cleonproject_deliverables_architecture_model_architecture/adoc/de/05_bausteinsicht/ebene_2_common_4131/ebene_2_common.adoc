@@ -11,27 +11,28 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The Common is decomposed into the following components:
-. actifsource <Feature> <Feature> (Blackbox)
-. building <Feature> <Feature> (Blackbox)
-. calendar <Feature> <Feature> (Blackbox)
-. doc <Feature> <Feature> (Blackbox)
-. glossary <Feature> <Feature> (Blackbox)
-. knowledge <Feature> <Feature> (Blackbox)
-. language <Feature> <Feature> (Blackbox)
-. modularity <Feature> <Feature> (Blackbox)
-. resources <Feature> <Feature> (Blackbox)
-. xml <Feature> <Feature> (Blackbox)
 
-// Begin Protected Region [[4843dc9f-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4843dc9f-d579-11ee-903e-9f564e4de07e,customText]]
+. <<#chapter-actifsource_feature_feature_blackbox>>
+. <<#chapter-building_feature_feature_blackbox>>
+. <<#chapter-calendar_feature_feature_blackbox>>
+. <<#chapter-doc_feature_feature_blackbox>>
+. <<#chapter-glossary_feature_feature_blackbox>>
+. <<#chapter-knowledge_feature_feature_blackbox>>
+. <<#chapter-language_feature_feature_blackbox>>
+. <<#chapter-modularity_feature_feature_blackbox>>
+. <<#chapter-resources_feature_feature_blackbox>>
+. <<#chapter-xml_feature_feature_blackbox>>
 
 [#chapter-actifsource_feature_feature_blackbox]
-==== actifsource <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins actifsource <Feature> beschrieben.
+===== actifsource <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins actifsource <Feature> ((<<#chapter-ebene_3_actifsource_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[832b893f-0c86-11e9-b134-a7cd19ab9268,purpose]]
 
@@ -75,8 +76,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[4863e83f-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-building_feature_feature_blackbox]
-==== building <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins building <Feature> beschrieben.
+===== building <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins building <Feature> ((<<#chapter-ebene_3_building_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[1605fff5-2eed-11ea-a393-0bc3b1f5682f,purpose]]
 
@@ -120,8 +121,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f57-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-calendar_feature_feature_blackbox]
-==== calendar <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins calendar <Feature> beschrieben.
+===== calendar <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins calendar <Feature> ((<<#chapter-ebene_3_calendar_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[26ed8b28-296c-11ea-aaaa-3133f8535a08,purpose]]
 
@@ -165,8 +166,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f50-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-doc_feature_feature_blackbox]
-==== doc <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins doc <Feature> beschrieben.
+===== doc <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins doc <Feature> ((<<#chapter-ebene_3_doc_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[d2caf4fc-3b8a-11e5-b8db-7513250f5f90,purpose]]
 
@@ -210,8 +211,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f53-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-glossary_feature_feature_blackbox]
-==== glossary <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins glossary <Feature> beschrieben.
+===== glossary <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins glossary <Feature> ((<<#chapter-ebene_3_glossary_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[beac8a55-4f08-11e6-a115-99fb8013e67b,purpose]]
 
@@ -255,8 +256,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f51-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-knowledge_feature_feature_blackbox]
-==== knowledge <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins knowledge <Feature> beschrieben.
+===== knowledge <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins knowledge <Feature> ((<<#chapter-ebene_3_knowledge_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[a6b27739-b796-11e6-85e2-39e149963066,purpose]]
 
@@ -300,8 +301,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f54-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-language_feature_feature_blackbox]
-==== language <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins language <Feature> beschrieben.
+===== language <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins language <Feature> ((<<#chapter-ebene_3_language_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[46f835fc-296c-11ea-aaaa-3133f8535a08,purpose]]
 
@@ -345,8 +346,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f58-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-modularity_feature_feature_blackbox]
-==== modularity <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins modularity <Feature> beschrieben.
+===== modularity <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins modularity <Feature> ((<<#chapter-ebene_3_modularity_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[faa7f53e-ca22-11e8-9418-61f1df21967c,purpose]]
 
@@ -390,8 +391,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f52-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-resources_feature_feature_blackbox]
-==== resources <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins resources <Feature> beschrieben.
+===== resources <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins resources <Feature> ((<<#chapter-ebene_3_resources_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[957e3ae3-d409-11e5-8556-8f55ceb91287,purpose]]
 
@@ -435,8 +436,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[48640f56-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-xml_feature_feature_blackbox]
-==== xml <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins xml <Feature> beschrieben.
+===== xml <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins xml <Feature> ((<<#chapter-ebene_3_xml_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[f8d03bf8-3b8a-11e5-b8db-7513250f5f90,purpose]]
 
@@ -479,4 +480,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[48640f55-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,ivd2pyKvP+PAJHLBe2S+wytwEb8=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,ohsLXzT02/R1sOs/UIplRIpr/og=]

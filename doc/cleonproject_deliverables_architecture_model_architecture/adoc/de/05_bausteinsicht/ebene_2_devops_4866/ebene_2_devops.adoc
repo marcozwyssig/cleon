@@ -11,18 +11,19 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The DevOps is decomposed into the following components:
-. chocolatey <Feature> <Feature> (Blackbox)
 
-// Begin Protected Region [[4843dc9e-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[4843dc9e-d579-11ee-903e-9f564e4de07e,customText]]
+. <<#chapter-chocolatey_feature_feature_blackbox>>
 
 [#chapter-chocolatey_feature_feature_blackbox]
-==== chocolatey <Feature> <Feature> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins chocolatey <Feature> beschrieben.
+===== chocolatey <Feature> <Feature> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins chocolatey <Feature> ((<<#chapter-ebene_3_chocolatey_feature_feature_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[65a8030d-4d0a-11e6-9043-01b29b61e580,purpose]]
 
@@ -65,4 +66,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[489ece58-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9e-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9e-d579-11ee-903e-9f564e4de07e,vsILB0qCqjUPnpe/O+jKoL3tOWk=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9e-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9e-d579-11ee-903e-9f564e4de07e,KkO31au6wx3QCN67GYukrs4OPF0=]

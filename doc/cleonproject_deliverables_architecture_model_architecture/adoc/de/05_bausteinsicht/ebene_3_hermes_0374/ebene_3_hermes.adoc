@@ -11,19 +11,20 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
-Contained Building Blocks::
+// Begin Protected Region [[customText]]
+
+// End Protected Region   [[customText]]
+
+==== Contained Building Blocks (Blackbox)
 
 The hermes <Feature> is decomposed into the following components:
-. MetaModel <MetaModel> <MetaModel> (Blackbox)
-. Sample <Sample> <Sample> (Blackbox)
 
-// Begin Protected Region [[49057f35-d579-11ee-903e-9f564e4de07e,customText]]
-
-// End Protected Region   [[49057f35-d579-11ee-903e-9f564e4de07e,customText]]
+. <<#chapter-metamodel_metamodel_metamodel_blackbox>>
+. <<#chapter-sample_sample_sample_blackbox>>
 
 [#chapter-metamodel_metamodel_metamodel_blackbox]
-==== MetaModel <MetaModel> <MetaModel> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins MetaModel <MetaModel> beschrieben.
+===== MetaModel <MetaModel> <MetaModel> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins MetaModel <MetaModel> ((<<#chapter-ebene_4_metamodel_metamodel_metamodel_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[3610aa9e-4f84-11e9-bb70-f5c712ea0a4b,purpose]]
 
@@ -67,8 +68,8 @@ TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[499e63f3-d579-11ee-903e-9f564e4de07e,customText]]
 
 [#chapter-sample_sample_sample_blackbox]
-==== Sample <Sample> <Sample> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Sample <Sample> beschrieben.
+===== Sample <Sample> <Sample> (Blackbox)
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Sample <Sample> ((<<#chapter-ebene_4_sample_sample_sample_whitebox>>)) beschrieben.
 
 // Begin Protected Region [[a8fad9f5-4f84-11e9-bb70-f5c712ea0a4b,purpose]]
 
@@ -111,4 +112,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[499e63f4-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f35-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f35-d579-11ee-903e-9f564e4de07e,pyfTdCXKTbNYhlkriPDC2/xpOMM=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f35-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f35-d579-11ee-903e-9f564e4de07e,fDtrifR6AeDzr8FvqjqXRFq3Ug0=]

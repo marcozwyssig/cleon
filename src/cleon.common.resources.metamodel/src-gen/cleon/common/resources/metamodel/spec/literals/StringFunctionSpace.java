@@ -65,6 +65,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
     public java.lang.String pointToUnderscore();
 
+    @IDynamicResourceExtension.MethodId("975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String convertToDirectoryPath();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -110,6 +113,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
     public java.lang.String pointToUnderscore(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String convertToDirectoryPath(final java.lang.String stringLiteral);
 
   }
   
@@ -278,6 +284,11 @@ public class StringFunctionSpace {
       /* End Protected Region   [[4e440fb7-acc6-11ef-a765-2382060a590e]] */
     }
 
+    @Override
+    public java.lang.String convertToDirectoryPath(final java.lang.String stringLiteral) {
+      return stringLiteral.replace(".", java.io.File.separator);
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -340,6 +351,10 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToUnderscore(stringLiteral);
     }
 
+    public static java.lang.String convertToDirectoryPath(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertToDirectoryPath(stringLiteral);
+    }
+
   }
 
   public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
@@ -362,6 +377,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("a056ea42-acc5-11ef-a765-2382060a590e")
     public java.lang.String removeInvalidFileNameCharacters();
 
+    @IDynamicResourceExtension.MethodId("443dbe7a-cdb0-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String convertToDirectoryPath();
+
   }
   
   public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -380,6 +398,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("a056ea42-acc5-11ef-a765-2382060a590e")
     public java.lang.String removeInvalidFileNameCharacters(final java.lang.String textLiteral);
+
+    @IDynamicResourceExtension.MethodId("443dbe7a-cdb0-11ef-aceb-ed2f5b1a4839")
+    public java.lang.String convertToDirectoryPath(final java.lang.String textLiteral);
 
   }
   
@@ -420,6 +441,11 @@ public class StringFunctionSpace {
       /* End Protected Region   [[a056ea42-acc5-11ef-a765-2382060a590e]] */
     }
 
+    @Override
+    public java.lang.String convertToDirectoryPath(final java.lang.String textLiteral) {
+      return textLiteral.replace(".", java.io.File.separator);
+    }
+
   }
   
   public static class TextLiteralFunctions {
@@ -446,8 +472,12 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).removeInvalidFileNameCharacters(textLiteral);
     }
 
+    public static java.lang.String convertToDirectoryPath(final java.lang.String textLiteral) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).convertToDirectoryPath(textLiteral);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,/JTCWK8UvRR3iJ5o/GxPMaxvtFI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,XQH/Mt4QtUm362WYSCryRFUytNU=] */

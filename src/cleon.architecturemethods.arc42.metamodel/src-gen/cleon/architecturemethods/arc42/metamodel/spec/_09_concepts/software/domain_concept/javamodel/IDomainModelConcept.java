@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.dom
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDomain_Concepts extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
+public interface IDomainModelConcept extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.javamodel.IAbstractConcept, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d33672d4-98fe-11ee-aa72-593773060f63");
   
@@ -12,4 +12,4 @@ public interface IDomain_Concepts extends cleon.architecturemethods.arc42.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,U5DvjCyNTUlXF2Eg8Cbh/S8P1rI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,8uiH1YEK1PgOUuc5BrNMCBPy0qY=] */

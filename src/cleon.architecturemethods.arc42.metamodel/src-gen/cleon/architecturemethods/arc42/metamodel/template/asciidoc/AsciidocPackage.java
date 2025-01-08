@@ -45,6 +45,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_QualityRequirements = new Resource("e799d58c-ac0f-11ef-afba-fb66280e2230");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Arc42RequirementCoverages = new Resource("252dfeb4-ac10-11ef-afba-fb66280e2230");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractChapter = new Resource("9120d446-acc4-11ef-a765-2382060a590e");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_UnderTheHood_aE_Concepts = new Resource("bf0c117b-cd0e-11ef-947c-3b647dbecb9f");
   
   /* Begin Protected Region [[user]] */
   
@@ -65,4 +66,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,x/z15Wu3rYy5Dnk0tqQR1guQTls=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,58XMj5RswWU55di0HAk1FrHY/Ek=] */

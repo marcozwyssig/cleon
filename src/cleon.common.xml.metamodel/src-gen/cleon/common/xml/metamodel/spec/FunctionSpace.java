@@ -131,7 +131,7 @@ public class FunctionSpace {
   public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cfe377c2-39ab-11e5-ae84-4f300f079f41")
-    public java.lang.String sanitizeFileName();
+    public java.lang.String convertWhitespaceToUnderscoreAndFilterValidChars();
 
     @IDynamicResourceExtension.MethodId("28b063d0-2c90-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String escapeXml();
@@ -141,7 +141,7 @@ public class FunctionSpace {
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("cfe377c2-39ab-11e5-ae84-4f300f079f41")
-    public java.lang.String sanitizeFileName(final java.lang.String stringLiteral);
+    public java.lang.String convertWhitespaceToUnderscoreAndFilterValidChars(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("28b063d0-2c90-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String escapeXml(final java.lang.String stringLiteral);
@@ -155,7 +155,7 @@ public class FunctionSpace {
     private StringLiteralFunctionsImpl() {}
 
     @Override
-    public java.lang.String sanitizeFileName(final java.lang.String stringLiteral) {
+    public java.lang.String convertWhitespaceToUnderscoreAndFilterValidChars(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
       return stringLiteral.chars().mapToObj(i -> (char) i).map(c -> Character.isWhitespace(c) ? '_' : c)
       		.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_').map(String::valueOf)
@@ -179,8 +179,8 @@ public class FunctionSpace {
 
     private StringLiteralFunctions() {}
 
-    public static java.lang.String sanitizeFileName(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).sanitizeFileName(stringLiteral);
+    public static java.lang.String convertWhitespaceToUnderscoreAndFilterValidChars(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertWhitespaceToUnderscoreAndFilterValidChars(stringLiteral);
     }
 
     public static java.lang.String escapeXml(final java.lang.String stringLiteral) {
@@ -191,4 +191,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,4W9uuQoq6ngTB1lYJIWR+4v9ZQI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,O0rf9/IQ/+D1HIKeE0S4SqqPHGw=] */

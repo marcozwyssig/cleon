@@ -188,7 +188,8 @@ public class FunctionSpace_Doc {
     @Override
     public java.lang.Boolean InASeparateFile(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       /* Begin Protected Region [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
-      return abstractChapter.extension(IAbstractChapterFunctions.class).ChapterPathWithEN() != null;
+    	final var abstractFunctions = abstractChapter.extension(IAbstractChapterFunctions.class);
+    	return abstractFunctions.ChapterPathWithEN() != null;
       /* End Protected Region   [[38207cb1-d24a-11ee-b255-49ab47716ebd]] */
     }
 

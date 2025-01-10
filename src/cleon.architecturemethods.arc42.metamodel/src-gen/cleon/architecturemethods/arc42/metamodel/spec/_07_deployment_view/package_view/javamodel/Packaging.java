@@ -90,12 +90,12 @@ public class Packaging extends DynamicResource implements IPackaging {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> selectPackageSet() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet> selectPackageSet() {
+    return _getMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet);
   }
 
-  public Packaging setPackageSet(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> packageSet) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, packageSet);
+  public Packaging setPackageSet(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet> packageSet) {
+    _setMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, packageSet);
     return this;
   }
     
@@ -129,16 +129,16 @@ public class Packaging extends DynamicResource implements IPackaging {
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, visitor);
+    _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging selectToMePackageSet(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging selectToMePackageSet(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,u7EYCfUefaHlEAm1pricQDoRYAI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,iAxTP5WIOauhoV1d0qLas3c+8Jc=] */

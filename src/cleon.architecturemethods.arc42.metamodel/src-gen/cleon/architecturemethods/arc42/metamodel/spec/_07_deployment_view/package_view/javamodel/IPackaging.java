@@ -8,8 +8,8 @@ public interface IPackaging extends cleon.common.doc.metamodel.spec.chapter.java
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> selectPackageSet();
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackagetSet> selectPackageSet();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,PZhD++MgJDY2TmAO+tqHkyT+qkE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,KIQ47WVhKCVoqFR2CLjoFRVRxHM=] */

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="97e3ef29-beda-11ef-b498-058ee446f8e7">
-  <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
-    <resource statement-guid="ad9251c7-beda-11ef-b498-058ee446f8e7" type="resource" guid="ad922ab3-beda-11ef-b498-058ee446f8e7" />
+  <owns predicate="66c7af38-ffc5-11e4-ac0a-959b440f987f">
+    <resource statement-guid="69e3a8b3-cf52-11ef-a3e8-99fb4b8645f8" type="resource" guid="ad922ab3-beda-11ef-b498-058ee446f8e7" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="97e3ef2b-beda-11ef-b498-058ee446f8e7" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
@@ -9,15 +9,8 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="99945da5-beda-11ef-b498-058ee446f8e7" type="literal">Virtualization</object>
   </predicate>
-  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
-    <object statement-guid="9f735b5f-beda-11ef-b498-058ee446f8e7" type="literal">2</object>
-  </predicate>
-  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
-    <object statement-guid="a3984cf9-beda-11ef-b498-058ee446f8e7" type="aggregate" guid="a397fed4-beda-11ef-b498-058ee446f8e7" />
-    <object statement-guid="33e74916-bedd-11ef-b498-058ee446f8e7" type="aggregate" guid="33e72201-bedd-11ef-b498-058ee446f8e7" />
-  </predicate>
-  <predicate guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
-    <object statement-guid="ad9251c7-beda-11ef-b498-058ee446f8e7">
+  <predicate guid="66c7af38-ffc5-11e4-ac0a-959b440f987f">
+    <object statement-guid="69e3a8b3-cf52-11ef-a3e8-99fb4b8645f8">
       <resource guid="ad922ab3-beda-11ef-b498-058ee446f8e7">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="ad922ab5-beda-11ef-b498-058ee446f8e7" type="resource" guid="37c35592-01d9-11e9-9c9d-8d52d6745026" />
@@ -30,6 +23,13 @@
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="9f735b5f-beda-11ef-b498-058ee446f8e7" type="literal">2</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="a3984cf9-beda-11ef-b498-058ee446f8e7" type="aggregate" guid="a397fed4-beda-11ef-b498-058ee446f8e7" />
+    <object statement-guid="33e74916-bedd-11ef-b498-058ee446f8e7" type="aggregate" guid="33e72201-bedd-11ef-b498-058ee446f8e7" />
   </predicate>
 </resource>
 

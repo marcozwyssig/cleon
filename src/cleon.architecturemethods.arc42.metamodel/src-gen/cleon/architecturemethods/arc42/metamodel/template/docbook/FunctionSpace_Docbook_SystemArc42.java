@@ -94,28 +94,28 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
+  public static interface IDeploymentEnvironmentRootNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9b4d3279-0e9e-11e9-9f19-6d15636f4ecc")
     public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentEnvironmentRootNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
+  public static class DeploymentEnvironmentRootNodeFunctionsImpl implements IDeploymentEnvironmentRootNodeFunctionsImpl {
 
-    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
+    public static final IDeploymentEnvironmentRootNodeFunctionsImpl INSTANCE = new DeploymentEnvironmentRootNodeFunctionsImpl();
 
-    private SystemEnvironmentNodeFunctionsImpl() {}
+    private DeploymentEnvironmentRootNodeFunctionsImpl() {}
 
   }
   
-  public static class SystemEnvironmentNodeFunctions {
+  public static class DeploymentEnvironmentRootNodeFunctions {
 
-    private SystemEnvironmentNodeFunctions() {}
+    private DeploymentEnvironmentRootNodeFunctions() {}
 
   }
 
@@ -508,14 +508,14 @@ public class FunctionSpace_Docbook_SystemArc42 {
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("87ae5508-0a3b-11ec-8912-0f9ef89df758")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet);
 
   }
   
   public static interface IQoSSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("87ae5508-0a3b-11ec-8912-0f9ef89df758")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
 
   }
   
@@ -526,7 +526,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private QoSSystemConfigurationConceptFunctionsImpl() {}
 
     @Override
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       /* Begin Protected Region [[87ae5508-0a3b-11ec-8912-0f9ef89df758]] */
     	var bandwith = qoSSystemConfigurationConcept.extension(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.FunctionSpace_QoS.IQoSSystemConfigurationConceptFunctions.class).SumBandwithRequirements_aE__aA_byte_aC_(environment, transportNet);
     	if( bandwith > 0) {
@@ -542,7 +542,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private QoSSystemConfigurationConceptFunctions() {}
 
-    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       return DynamicResourceUtil.invoke(IQoSSystemConfigurationConceptFunctionsImpl.class, QoSSystemConfigurationConceptFunctionsImpl.INSTANCE, qoSSystemConfigurationConcept).OnlyWhereAreNotZero(environment, transportNet, qoSSystemConfigurationConcept);
     }
 
@@ -1256,4 +1256,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,5wnWru31LI6nlA57DANnBgsyPGA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,WClEa2/0Uw7PVXqtTGrKYUixzVY=] */

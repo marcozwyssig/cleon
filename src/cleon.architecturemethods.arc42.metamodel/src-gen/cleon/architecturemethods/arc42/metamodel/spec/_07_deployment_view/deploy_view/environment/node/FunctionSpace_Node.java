@@ -38,7 +38,7 @@ public class FunctionSpace_Node {
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.supplynode.javamodel.ISupplyDataCenter GetLocationNode();
 
     @IDynamicResourceExtension.MethodId("985b3d0d-c943-11eb-adc4-d18d1353eb6e")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode GetEnvironment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
 
     @IDynamicResourceExtension.MethodId("983747a2-0aa2-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
@@ -165,31 +165,31 @@ public class FunctionSpace_Node {
 
   }
 
-  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
+  public static interface IDeploymentEnvironmentRootNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d8ba71df-7ddb-11ec-be69-ab0911f63a77")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode GetEnvironment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
 
   }
   
-  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentEnvironmentRootNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
+  public static class DeploymentEnvironmentRootNodeFunctionsImpl implements IDeploymentEnvironmentRootNodeFunctionsImpl {
 
-    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
+    public static final IDeploymentEnvironmentRootNodeFunctionsImpl INSTANCE = new DeploymentEnvironmentRootNodeFunctionsImpl();
 
-    private SystemEnvironmentNodeFunctionsImpl() {}
+    private DeploymentEnvironmentRootNodeFunctionsImpl() {}
 
   }
   
-  public static class SystemEnvironmentNodeFunctions {
+  public static class DeploymentEnvironmentRootNodeFunctions {
 
-    private SystemEnvironmentNodeFunctions() {}
+    private DeploymentEnvironmentRootNodeFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,5ARuWYst7YuPqdv+FKMGOUtN4MU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,PYcOD/Sh8s0MLBa9W4jDhTZObjg=] */

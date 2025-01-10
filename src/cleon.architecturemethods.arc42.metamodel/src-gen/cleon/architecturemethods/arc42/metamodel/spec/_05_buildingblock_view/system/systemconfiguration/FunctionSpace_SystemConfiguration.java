@@ -932,19 +932,19 @@ public class FunctionSpace_SystemConfiguration {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllDependsOnSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("4c54396f-c784-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String AllHostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    public java.lang.String AllHostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
     @IDynamicResourceExtension.MethodId("b1e03eb1-a990-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHostsWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode systemEnvironment);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHostsWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode systemEnvironment);
 
     @IDynamicResourceExtension.MethodId("eb2a2ff7-05ed-11ea-9b1e-558d1275d95e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinctWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinctWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment);
 
     @IDynamicResourceExtension.MethodId("b38a2bca-de1f-11e9-b0cf-dd86691e664c")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinct();
 
     @IDynamicResourceExtension.MethodId("10e575cf-05ee-11ea-9b1e-558d1275d95e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode environment);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment);
 
     @IDynamicResourceExtension.MethodId("ae3f2508-dec8-11e9-b714-478bec98e62d")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNs();
@@ -1028,7 +1028,7 @@ public class FunctionSpace_SystemConfiguration {
     public java.lang.String GetType();
 
     @IDynamicResourceExtension.MethodId("014a8f50-deae-11e9-b714-478bec98e62d")
-    public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode env);
+    public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("c09a443e-c783-11ea-b0b6-e5df79e86bc2")
     public java.lang.String HostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts hosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
@@ -1289,4 +1289,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,SV+JxioayCmBexr3RPfFCKO3fCA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,X2kF8ik8p2jMA9EWZHkn0EZo8HE=] */

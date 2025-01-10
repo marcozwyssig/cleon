@@ -30,7 +30,7 @@ public class QosPackage {
   public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationConcept = new Resource("14c7cb65-a0c9-11ea-8daa-afb4679c3497");
   public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationSource = new Resource("1a46aad0-308e-11eb-9149-f1e36a7322e5");
   public static final Resource AverageBandwithAndQoSConcept_calculationFor = new Resource("ace7148a-a98d-11eb-8f9b-01c801f6a12b");
-  public static final Resource FunctionSpace_aE_QoS_SystemEnvironmentNode = new Resource("a120f056-a98f-11eb-8f9b-01c801f6a12b");
+  public static final Resource FunctionSpace_aE_QoS_DeploymentEnvironmentRootNode = new Resource("a120f056-a98f-11eb-8f9b-01c801f6a12b");
   public static final Resource QoSSystemConfigurationSource_loaddistribution_aE__aA___K__aC_ = new Resource("277afaa7-e092-11eb-9584-9144fca99be9");
   public static final Resource AverageBandwithAndQoSConcept_transportNetworks = new Resource("c489e721-fe9b-11eb-bbec-6b945b7259b1");
   public static final Resource TransportNetwork = new Resource("d1cad952-fe9b-11eb-bbec-6b945b7259b1");
@@ -70,4 +70,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos,flXCNiLdGcrq9Dhp5NcFcnpcck4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos,ws08OhbMPsLy+cfWzU2CTc48k4M=] */

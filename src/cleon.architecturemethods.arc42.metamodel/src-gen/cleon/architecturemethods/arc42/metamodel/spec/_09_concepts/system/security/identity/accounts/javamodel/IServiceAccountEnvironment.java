@@ -8,10 +8,10 @@ public interface IServiceAccountEnvironment extends cleon.common.doc.metamodel.s
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.ISystemEnvironmentNode selectSystemEnvironmentForAccounts();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode selectSystemEnvironmentForAccounts();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccountEnvironmentSite> selectServiceAccountSite();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e0be5246-a1a0-11ea-886d-354b9ee6fb2d,JeLi9vx8yHFPi+CZZ7lxrJcfuCA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e0be5246-a1a0-11ea-886d-354b9ee6fb2d,EKkN5L8oqD3+jmWTgbp6uich7os=] */

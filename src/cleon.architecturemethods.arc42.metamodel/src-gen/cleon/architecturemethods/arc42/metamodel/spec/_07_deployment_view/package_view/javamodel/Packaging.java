@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class DeployView extends DynamicResource implements IDeployView {
+public class Packaging extends DynamicResource implements IPackaging {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDeployView> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDeployView>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPackaging> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPackaging>() {
     
     @Override
-    public IDeployView create() {
-      return new DeployView();
+    public IPackaging create() {
+      return new Packaging();
     }
     
     @Override
-    public IDeployView create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new DeployView(resourceRepository, resource);
+    public IPackaging create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Packaging(resourceRepository, resource);
     }
   
   };
 
-  public DeployView() {
-    super(IDeployView.TYPE_ID);
+  public Packaging() {
+    super(IPackaging.TYPE_ID);
   }
   
-  public DeployView(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IDeployView.TYPE_ID);
+  public Packaging(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IPackaging.TYPE_ID);
   }
 
   // attributes
@@ -64,7 +64,7 @@ public class DeployView extends DynamicResource implements IDeployView {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public DeployView setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public Packaging setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -74,7 +74,7 @@ public class DeployView extends DynamicResource implements IDeployView {
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public DeployView setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public Packaging setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -84,18 +84,18 @@ public class DeployView extends DynamicResource implements IDeployView {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public DeployView setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public Packaging setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment> selectEnvironments() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.Deploy_viewPackage.DeployView_environments);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> selectPackageSet() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet);
   }
 
-  public DeployView setEnvironments(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment> environments) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.Deploy_viewPackage.DeployView_environments, environments);
+  public Packaging setPackageSet(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet> packageSet) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, packageSet);
     return this;
   }
     
@@ -104,7 +104,7 @@ public class DeployView extends DynamicResource implements IDeployView {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public DeployView setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public Packaging setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -114,7 +114,7 @@ public class DeployView extends DynamicResource implements IDeployView {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public DeployView setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Packaging setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -127,17 +127,18 @@ public class DeployView extends DynamicResource implements IDeployView {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.Deploy_viewPackage.DeployView_environments, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployView selectToMeEnvironments(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployView.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.Deploy_viewPackage.DeployView_environments, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging selectToMePackageSet(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageSet object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.Package_viewPackage.Packaging_packageSet, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,V5+b/KnU/HVvLRj6yA/Upqhuiag=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,u7EYCfUefaHlEAm1pricQDoRYAI=] */

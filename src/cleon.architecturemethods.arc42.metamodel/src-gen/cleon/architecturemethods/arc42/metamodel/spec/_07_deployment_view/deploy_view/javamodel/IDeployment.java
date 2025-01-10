@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deplo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDeployView extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IDeployment extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f642a2f1-9991-11e8-b347-dd2314b02086");
   
@@ -12,4 +12,4 @@ public interface IDeployView extends cleon.common.doc.metamodel.spec.chapter.jav
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,oDihBtHNy+xGLYWNeHdl1bSuBoQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,79NQy/CT5pxrj558EzC+WVHur/k=] */

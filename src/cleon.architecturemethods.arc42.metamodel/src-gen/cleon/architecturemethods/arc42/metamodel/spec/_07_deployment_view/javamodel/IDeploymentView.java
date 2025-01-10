@@ -41,9 +41,9 @@ public interface IDeploymentView extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IBuildView selectBuildView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackageView selectPackageView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging selectPackageView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployView selectDeployView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployment selectDeployView();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.ITestView selectTestView();
   
@@ -51,4 +51,4 @@ public interface IDeploymentView extends cleon.architecturemethods.arc42.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,puN3e7G5bpbQt9OJ1ioa7TFfagQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,7KtdIGpYW1I0GUE8/NQVtEBZBo0=] */

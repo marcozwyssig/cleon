@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class Deploy_viewPackage {
   
-  public static final Resource DeployView = new Resource("f642a2f1-9991-11e8-b347-dd2314b02086");
+  public static final Resource Deployment = new Resource("f642a2f1-9991-11e8-b347-dd2314b02086");
   public static final Resource Environment = new Resource("a3406c2f-d0bb-11e8-b005-f7630e4c29c0");
-  public static final Resource DeployView_environments = new Resource("aae4996c-d0bb-11e8-b005-f7630e4c29c0");
+  public static final Resource Deployment_environments = new Resource("aae4996c-d0bb-11e8-b005-f7630e4c29c0");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +27,4 @@ public class Deploy_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view,xaj/dPJJFd7WhO2CiWcE/A+Q0NM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view,Gkbo0iBv8KJLfGlgcBfxiFuNScI=] */

@@ -27,7 +27,7 @@ public class FunctionSpace_Arc42 {
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem GetRootSystem();
 
     @IDynamicResourceExtension.MethodId("c9c2693d-2ad6-11e9-b83f-8be423c00623")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployView GetDeployment();
+    public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter GetDeployment();
 
     @IDynamicResourceExtension.MethodId("0e855eeb-5a01-11ea-b898-0bc71a0508a9")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllComponents();
@@ -88,4 +88,4 @@ public class FunctionSpace_Arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,/kBfhZohCSYJuKUFwxzxNWDVXY0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,SVyka/I6wKaPi+AtxCWHL6dLfto=] */

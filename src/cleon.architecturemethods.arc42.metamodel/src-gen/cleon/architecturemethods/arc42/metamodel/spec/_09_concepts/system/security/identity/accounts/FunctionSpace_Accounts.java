@@ -60,7 +60,7 @@ public class FunctionSpace_Accounts {
     public java.lang.Boolean PasswordNeverExpires();
 
     @IDynamicResourceExtension.MethodId("45b67c3e-a432-11ec-a02c-0578282f8413")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
   }
   
@@ -290,4 +290,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,2FJqlnecISdd95bFk/TeYrF0Tp4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,rufVHJb8G4qfWKbUPcs/FmNLzfg=] */

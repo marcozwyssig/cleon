@@ -508,14 +508,14 @@ public class FunctionSpace_Docbook_SystemArc42 {
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("87ae5508-0a3b-11ec-8912-0f9ef89df758")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet);
 
   }
   
   public static interface IQoSSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("87ae5508-0a3b-11ec-8912-0f9ef89df758")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
 
   }
   
@@ -526,7 +526,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private QoSSystemConfigurationConceptFunctionsImpl() {}
 
     @Override
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       /* Begin Protected Region [[87ae5508-0a3b-11ec-8912-0f9ef89df758]] */
     	var bandwith = qoSSystemConfigurationConcept.extension(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.FunctionSpace_QoS.IQoSSystemConfigurationConceptFunctions.class).SumBandwithRequirements_aE__aA_byte_aC_(environment, transportNet);
     	if( bandwith > 0) {
@@ -542,7 +542,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private QoSSystemConfigurationConceptFunctions() {}
 
-    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept OnlyWhereAreNotZero(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.ITransportNetwork transportNet, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       return DynamicResourceUtil.invoke(IQoSSystemConfigurationConceptFunctionsImpl.class, QoSSystemConfigurationConceptFunctionsImpl.INSTANCE, qoSSystemConfigurationConcept).OnlyWhereAreNotZero(environment, transportNet, qoSSystemConfigurationConcept);
     }
 
@@ -830,78 +830,78 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IDeploymentSystemArc42Functions extends IDynamicResourceExtension {
+  public static interface IDeploymentAspectSystemArc42Functions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1eca449a-fe5c-11ea-abcb-bfad67a56d79")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IDeploymentSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentAspectSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DeploymentSystemArc42FunctionsImpl implements IDeploymentSystemArc42FunctionsImpl {
+  public static class DeploymentAspectSystemArc42FunctionsImpl implements IDeploymentAspectSystemArc42FunctionsImpl {
 
-    public static final IDeploymentSystemArc42FunctionsImpl INSTANCE = new DeploymentSystemArc42FunctionsImpl();
+    public static final IDeploymentAspectSystemArc42FunctionsImpl INSTANCE = new DeploymentAspectSystemArc42FunctionsImpl();
 
-    private DeploymentSystemArc42FunctionsImpl() {}
+    private DeploymentAspectSystemArc42FunctionsImpl() {}
 
   }
   
-  public static class DeploymentSystemArc42Functions {
+  public static class DeploymentAspectSystemArc42Functions {
 
-    private DeploymentSystemArc42Functions() {}
+    private DeploymentAspectSystemArc42Functions() {}
 
   }
 
-  public static interface IAvailabilitySystemArc42Functions extends IDynamicResourceExtension {
+  public static interface IAvailabilityAspectSystemArc42Functions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5450483f-fe69-11ea-abcb-bfad67a56d79")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IAvailabilitySystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAvailabilityAspectSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AvailabilitySystemArc42FunctionsImpl implements IAvailabilitySystemArc42FunctionsImpl {
+  public static class AvailabilityAspectSystemArc42FunctionsImpl implements IAvailabilityAspectSystemArc42FunctionsImpl {
 
-    public static final IAvailabilitySystemArc42FunctionsImpl INSTANCE = new AvailabilitySystemArc42FunctionsImpl();
+    public static final IAvailabilityAspectSystemArc42FunctionsImpl INSTANCE = new AvailabilityAspectSystemArc42FunctionsImpl();
 
-    private AvailabilitySystemArc42FunctionsImpl() {}
+    private AvailabilityAspectSystemArc42FunctionsImpl() {}
 
   }
   
-  public static class AvailabilitySystemArc42Functions {
+  public static class AvailabilityAspectSystemArc42Functions {
 
-    private AvailabilitySystemArc42Functions() {}
+    private AvailabilityAspectSystemArc42Functions() {}
 
   }
 
-  public static interface IAuthenticationSystemArc42Functions extends IDynamicResourceExtension {
+  public static interface IAuthenticationAspectSystemArc42Functions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e9bd53f7-fe71-11ea-a3a8-c10b28569251")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IAuthenticationSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAuthenticationAspectSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AuthenticationSystemArc42FunctionsImpl implements IAuthenticationSystemArc42FunctionsImpl {
+  public static class AuthenticationAspectSystemArc42FunctionsImpl implements IAuthenticationAspectSystemArc42FunctionsImpl {
 
-    public static final IAuthenticationSystemArc42FunctionsImpl INSTANCE = new AuthenticationSystemArc42FunctionsImpl();
+    public static final IAuthenticationAspectSystemArc42FunctionsImpl INSTANCE = new AuthenticationAspectSystemArc42FunctionsImpl();
 
-    private AuthenticationSystemArc42FunctionsImpl() {}
+    private AuthenticationAspectSystemArc42FunctionsImpl() {}
 
   }
   
-  public static class AuthenticationSystemArc42Functions {
+  public static class AuthenticationAspectSystemArc42Functions {
 
-    private AuthenticationSystemArc42Functions() {}
+    private AuthenticationAspectSystemArc42Functions() {}
 
   }
 
@@ -947,28 +947,28 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IAutorizationSystemArc42Functions extends IDynamicResourceExtension {
+  public static interface IAutorizationAspectSystemArc42AspectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c7bc48b5-25ac-11eb-b9ae-4df44b18aa9b")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IAutorizationSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAutorizationAspectSystemArc42AspectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AutorizationSystemArc42FunctionsImpl implements IAutorizationSystemArc42FunctionsImpl {
+  public static class AutorizationAspectSystemArc42AspectFunctionsImpl implements IAutorizationAspectSystemArc42AspectFunctionsImpl {
 
-    public static final IAutorizationSystemArc42FunctionsImpl INSTANCE = new AutorizationSystemArc42FunctionsImpl();
+    public static final IAutorizationAspectSystemArc42AspectFunctionsImpl INSTANCE = new AutorizationAspectSystemArc42AspectFunctionsImpl();
 
-    private AutorizationSystemArc42FunctionsImpl() {}
+    private AutorizationAspectSystemArc42AspectFunctionsImpl() {}
 
   }
   
-  public static class AutorizationSystemArc42Functions {
+  public static class AutorizationAspectSystemArc42AspectFunctions {
 
-    private AutorizationSystemArc42Functions() {}
+    private AutorizationAspectSystemArc42AspectFunctions() {}
 
   }
 
@@ -1256,4 +1256,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,WClEa2/0Uw7PVXqtTGrKYUixzVY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,eTSAjcQO9kYklNXWuGWdndt5FzY=] */

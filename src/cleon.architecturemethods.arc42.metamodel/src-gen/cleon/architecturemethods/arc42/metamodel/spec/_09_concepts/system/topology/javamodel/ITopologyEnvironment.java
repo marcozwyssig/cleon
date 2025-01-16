@@ -8,7 +8,7 @@ public interface ITopologyEnvironment extends ch.actifsource.core.javamodel.IRes
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode selectEnvironmentForTopology();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode selectEnvironmentForTopology();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> selectSites();
   
@@ -16,4 +16,4 @@ public interface ITopologyEnvironment extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,CoCe0bQuIaIrJPRmu8yeers1sQo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,U3p6AfUHW9HoqXKzXFuRhxf+LQc=] */

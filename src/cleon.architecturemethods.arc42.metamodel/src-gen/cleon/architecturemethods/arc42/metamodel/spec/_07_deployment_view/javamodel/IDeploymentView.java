@@ -37,18 +37,18 @@ public interface IDeploymentView extends cleon.architecturemethods.arc42.metamod
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.code.javamodel.ICodeView> selectSourceView();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.code.javamodel.ICode> selectSourceView();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IBuildView selectBuildView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.package_view.javamodel.IPackaging selectPackageView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.packaging.javamodel.IPackaging selectPackageView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IDeployment selectDeployView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IDeployment selectDeployView();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.ITestView selectTestView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView selectMonitorView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.javamodel.IMonitoring selectMonitorView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,7KtdIGpYW1I0GUE8/NQVtEBZBo0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,3a+uSuls6HvJiQ3NE5AREk2BsT0=] */

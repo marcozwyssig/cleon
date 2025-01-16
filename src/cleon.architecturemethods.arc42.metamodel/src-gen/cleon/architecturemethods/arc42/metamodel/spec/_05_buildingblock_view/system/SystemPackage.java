@@ -16,17 +16,17 @@ public class SystemPackage {
   public static final Resource NamedSystemWithSystemConfiguration = new Resource("f6f283bb-45e4-11ea-a150-53212f58490b");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystem = new Resource("a271ea42-616f-11ea-a72c-c14dab81a029");
   public static final Resource GenericShortNameAware_genericShortName = new Resource("8d4c184a-678f-11ea-b072-516c5e04c87a");
-  public static final Resource Functionality = new Resource("8999b3d6-7e70-11ea-9262-7b7e0e9cb204");
+  public static final Resource FunctionalityAspect = new Resource("8999b3d6-7e70-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_functionality = new Resource("94971eeb-7e70-11ea-9262-7b7e0e9cb204");
-  public static final Resource Deployment = new Resource("ec1f72cf-7ed1-11ea-9262-7b7e0e9cb204");
-  public static final Resource Authentication = new Resource("00a7cb94-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Autorization = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Confidentiality = new Resource("918907d3-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Integrity = new Resource("afdbf036-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource NonRepudiation = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
-  public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource DeploymentAspect = new Resource("ec1f72cf-7ed1-11ea-9262-7b7e0e9cb204");
+  public static final Resource AuthenticationAspect = new Resource("00a7cb94-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource AutorizationAspect = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource ConfidentialityAspect = new Resource("918907d3-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource IntegrityAspect = new Resource("afdbf036-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource NonRepudiationAspect = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource MonitoringAspect = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource BackupAndRecoveryAspect = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource AccessAspect = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_deployment = new Resource("483e67cc-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_authn = new Resource("569bedb8-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_authz = new Resource("63f76bcb-7ed3-11ea-9262-7b7e0e9cb204");
@@ -37,21 +37,21 @@ public class SystemPackage {
   public static final Resource WhiteboxSystem_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource WhiteboxSystem_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource UsedProduct = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
+  public static final Resource AvailabilityAspect = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource WhiteboxSystem_usedProducts = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource WhiteboxSystem_availability = new Resource("b85567f0-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource GenericShortNameAware = new Resource("729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_BuildingBlock = new Resource("53b1bef9-c1cf-11ea-b956-0ffede25a02d");
-  public static final Resource Backup_aE_and_aE_Recovery_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
-  public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
-  public static final Resource DeploymentSystemArc42 = new Resource("33c30f60-fe58-11ea-abcb-bfad67a56d79");
-  public static final Resource DeploymentSystemArc42_usedDeploymentMethod = new Resource("97c8aeae-fe58-11ea-abcb-bfad67a56d79");
-  public static final Resource AvailabilitySystemArc42 = new Resource("abd0d2ce-fe66-11ea-abcb-bfad67a56d79");
-  public static final Resource AvailabilitySystemArc42_usedAvailability = new Resource("abd0d2cf-fe66-11ea-abcb-bfad67a56d79");
-  public static final Resource AuthenticationSystemArc42 = new Resource("0d8ec749-fe6e-11ea-abcb-bfad67a56d79");
-  public static final Resource AuthenticationSystemArc42_realmForSystemConfiguration = new Resource("a67d798d-fe6e-11ea-abcb-bfad67a56d79");
-  public static final Resource AutorizationSystemArc42 = new Resource("c727191a-23f5-11eb-83b1-3d2a97975978");
-  public static final Resource AutorizationSystemArc42_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
+  public static final Resource BackupAndRecoveryAspect_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
+  public static final Resource MonitoringAspect_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
+  public static final Resource DeploymentAspectSystemArc42 = new Resource("33c30f60-fe58-11ea-abcb-bfad67a56d79");
+  public static final Resource DeploymentAspectSystemArc42_usedDeploymentMethod = new Resource("97c8aeae-fe58-11ea-abcb-bfad67a56d79");
+  public static final Resource AvailabilityAspectSystemArc42 = new Resource("abd0d2ce-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource AvailabilityAspectSystemArc42_usedAvailability = new Resource("abd0d2cf-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource AuthenticationAspectSystemArc42 = new Resource("0d8ec749-fe6e-11ea-abcb-bfad67a56d79");
+  public static final Resource AuthenticationAspectSystemArc42_realmForSystemConfiguration = new Resource("a67d798d-fe6e-11ea-abcb-bfad67a56d79");
+  public static final Resource AutorizationAspectSystemArc42Aspect = new Resource("c727191a-23f5-11eb-83b1-3d2a97975978");
+  public static final Resource AutorizationAspectSystemArc42Aspect_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
   public static final Resource UsedProduct_product = new Resource("4be44043-29a3-11eb-8baa-95d9107006e8");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfigurationProperty = new Resource("0183aaf2-d5d1-11ec-ad12-8d6f8e00bc94");
   public static final Resource SkipHostGenerationAware = new Resource("3252c4b2-e0aa-11ec-afcf-1feb072e53ef");
@@ -89,4 +89,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,hf/RNfeDymLiZcgVsDE/dE10pm4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system,U95oyvPvz1pWvE5Y9TxugVIZoCM=] */

@@ -1,0 +1,15 @@
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel;
+
+import ch.actifsource.util.collection.IMultiMapOrdered;
+
+public interface ISensorClass extends ch.actifsource.core.javamodel.IClass, cleon.common.language.metamodel.spec.javamodel.IAbstractLanguageSettingsAware, cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware {
+
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("33be3a6e-cfe0-11ea-99e7-03141914df18");
+  
+  // attributes
+  
+  public java.lang.String selectDisplayName();
+  
+}
+
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,nrX7hFVB5/CfMeLAVw/M4a7+jig=] */

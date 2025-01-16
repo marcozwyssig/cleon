@@ -21,7 +21,7 @@ public class FunctionSpace_Resource_Planning {
   public static interface IResourcePlanningEnvironmentConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("83701dea-dff0-11eb-93d3-9f230e4bb32b")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.buildnode.javamodel.IBuildNode> AllBuildNodes();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllBuildNodes();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Resource_Planning {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,77a132eb-dff0-11eb-93d3-9f230e4bb32b,9+ggzS5WV9przeuPtrXOaoxVu40=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,77a132eb-dff0-11eb-93d3-9f230e4bb32b,d+Z63uhPJavWeP6MQS1oZo/nMK4=] */

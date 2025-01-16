@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f247dcd9-02db-11e9-9e58-33d596257b14,imports]] */
-import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.javamodel.INode;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode;
 /* End Protected Region   [[f247dcd9-02db-11e9-9e58-33d596257b14,imports]] */
 
 public class FunctionSpace_SystemArc42_PlantUml {
@@ -112,7 +112,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5254da7b-18e9-11e9-84df-097eeec74d2d")
-    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.javamodel.INode> nodeList);
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
 
   }
   
@@ -123,7 +123,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
     private NodeFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.javamodel.INode> nodeList) {
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[5254da7b-18e9-11e9-84df-097eeec74d2d]] */
       final StringBuilder builder = new StringBuilder();
       INode last = null;
@@ -148,7 +148,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
     private NodeFunctions() {}
 
-    public static java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.javamodel.INode> nodeList) {
+    public static java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).RenderHidden(nodeList);
     }
 
@@ -259,4 +259,4 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,xw6a1osJ5S35YURkpxDyFJI3Las=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,arUAIp9ERsw/lpZJDGkh/3m5nKo=] */

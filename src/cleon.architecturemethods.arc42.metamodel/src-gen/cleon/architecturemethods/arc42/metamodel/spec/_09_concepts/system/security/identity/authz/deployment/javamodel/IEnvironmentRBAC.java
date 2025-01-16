@@ -12,10 +12,10 @@ public interface IEnvironmentRBAC extends ch.actifsource.core.javamodel.IDecorat
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityRootGroups selectActivityRootGroups();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode selectEnvironmentRBAC();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode selectEnvironmentRBAC();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IEnvironmentRBAC selectMaster();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,z0s4rd0MUyVyA4B5CP35Y3XaI3I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,4b64BWED/NAMpQd6qyMppnSXbNo=] */

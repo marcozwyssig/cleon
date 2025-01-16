@@ -60,11 +60,11 @@ public class AverageBandwithAndQoSConcept extends DynamicResource implements IAv
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode> selectCalculationFor() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode> selectCalculationFor() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor);
   }
 
-  public AverageBandwithAndQoSConcept setCalculationFor(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode> calculationFor) {
+  public AverageBandwithAndQoSConcept setCalculationFor(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode> calculationFor) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor, calculationFor);
     return this;
   }
@@ -157,7 +157,7 @@ public class AverageBandwithAndQoSConcept extends DynamicResource implements IAv
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_qosConfigurationConcepts, visitor);
@@ -167,7 +167,7 @@ public class AverageBandwithAndQoSConcept extends DynamicResource implements IAv
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IAverageBandwithAndQoSConcept> selectToMeCalculationFor(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IAverageBandwithAndQoSConcept> selectToMeCalculationFor(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IAverageBandwithAndQoSConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.QosPackage.AverageBandwithAndQoSConcept_calculationFor, object.getResource());
   }
   
@@ -180,4 +180,4 @@ public class AverageBandwithAndQoSConcept extends DynamicResource implements IAv
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,2yp/ObEXx7X+luro7qlSZwUbmig=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,YDxeSCcuQ8o2O2+g27QTZ/9DWV8=] */

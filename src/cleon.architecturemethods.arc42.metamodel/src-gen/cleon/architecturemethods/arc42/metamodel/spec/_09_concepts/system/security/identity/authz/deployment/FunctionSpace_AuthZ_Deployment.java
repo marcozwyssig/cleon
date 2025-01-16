@@ -309,7 +309,7 @@ public class FunctionSpace_AuthZ_Deployment {
   public static interface IAbstractRootGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("488c86a7-0172-11ea-83fa-05ea5175f4aa")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
 
   }
   
@@ -333,4 +333,4 @@ public class FunctionSpace_AuthZ_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,+/izDUw+70TmqPn4fuDOqU4fOJw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,2Js4+cjyTLxVFY59Bn/dkr7SYoI=] */

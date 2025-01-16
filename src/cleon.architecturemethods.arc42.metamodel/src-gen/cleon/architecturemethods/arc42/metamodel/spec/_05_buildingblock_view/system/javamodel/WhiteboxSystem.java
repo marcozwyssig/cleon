@@ -69,51 +69,51 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccess selectAccess() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccess.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccessAspect selectAccess() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccessAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access);
   }
 
-  public WhiteboxSystem setAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccess access) {
+  public WhiteboxSystem setAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccessAspect access) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access, access);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthentication selectAuthn() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthentication.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspect selectAuthn() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn);
   }
 
-  public WhiteboxSystem setAuthn(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthentication authn) {
+  public WhiteboxSystem setAuthn(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspect authn) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn, authn);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorization selectAuthz() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorization.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspect selectAuthz() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz);
   }
 
-  public WhiteboxSystem setAuthz(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorization authz) {
+  public WhiteboxSystem setAuthz(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspect authz) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz, authz);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailability selectAvailability() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailability.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspect selectAvailability() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability);
   }
 
-  public WhiteboxSystem setAvailability(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailability availability) {
+  public WhiteboxSystem setAvailability(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspect availability) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability, availability);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackup_and_Recovery> selectBackup() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackup_and_Recovery.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackupAndRecoveryAspect> selectBackup() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackupAndRecoveryAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup);
   }
 
-  public WhiteboxSystem setBackup(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackup_and_Recovery> backup) {
+  public WhiteboxSystem setBackup(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackupAndRecoveryAspect> backup) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup, backup);
     return this;
   }
@@ -149,21 +149,21 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentiality selectConfidentialy() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentiality.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentialityAspect selectConfidentialy() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentialityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy);
   }
 
-  public WhiteboxSystem setConfidentialy(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentiality confidentialy) {
+  public WhiteboxSystem setConfidentialy(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentialityAspect confidentialy) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy, confidentialy);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeployment selectDeployment() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeployment.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspect selectDeployment() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment);
   }
 
-  public WhiteboxSystem setDeployment(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeployment deployment) {
+  public WhiteboxSystem setDeployment(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspect deployment) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment, deployment);
     return this;
   }
@@ -189,31 +189,31 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality selectFunctionality() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect selectFunctionality() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality);
   }
 
-  public WhiteboxSystem setFunctionality(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality functionality) {
+  public WhiteboxSystem setFunctionality(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect functionality) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality, functionality);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrity selectIntegrity() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrity.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrityAspect selectIntegrity() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity);
   }
 
-  public WhiteboxSystem setIntegrity(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrity integrity) {
+  public WhiteboxSystem setIntegrity(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrityAspect integrity) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity, integrity);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoring> selectMonitoring() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoring.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoringAspect> selectMonitoring() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoringAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring);
   }
 
-  public WhiteboxSystem setMonitoring(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoring> monitoring) {
+  public WhiteboxSystem setMonitoring(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoringAspect> monitoring) {
     _setMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring, monitoring);
     return this;
   }
@@ -229,11 +229,11 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiation selectNonRepudiation() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiation.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect selectNonRepudiation() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation);
   }
 
-  public WhiteboxSystem setNonRepudiation(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiation nonRepudiation) {
+  public WhiteboxSystem setNonRepudiation(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect nonRepudiation) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation, nonRepudiation);
     return this;
   }
@@ -295,21 +295,21 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccess.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthentication.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorization.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailability.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability, visitor);
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackup_and_Recovery.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccessAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackupAndRecoveryAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_blackbox, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_blackboxes, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_chapters, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentiality.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeployment.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentialityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrity.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity, visitor);
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoring.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiation.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrityAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoringAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_usedProducts, visitor);
     _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox, visitor);
@@ -317,47 +317,47 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeFunctionality(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeFunctionality(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_functionality, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeDeployment(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeployment object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeDeployment(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_deployment, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAvailability(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailability object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAvailability(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_availability, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAuthn(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthentication object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAuthn(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authn, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAuthz(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorization object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAuthz(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_authz, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeConfidentialy(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentiality object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeConfidentialy(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IConfidentialityAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_confidentialy, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeIntegrity(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrity object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeIntegrity(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IIntegrityAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_integrity, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeNonRepudiation(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiation object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeNonRepudiation(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeMonitoring(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoring object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeMonitoring(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IMonitoringAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_monitoring, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeBackup(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackup_and_Recovery object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeBackup(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IBackupAndRecoveryAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_backup, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccess object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem selectToMeAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAccessAspect object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IWhiteboxSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_access, object.getResource());
   }
   
@@ -370,4 +370,4 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,7JDCPBfs7wq6Wb2UuZqyf+gRGJQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,fiOz1fRXkyUWpZvG0TqTiSM6fCU=] */

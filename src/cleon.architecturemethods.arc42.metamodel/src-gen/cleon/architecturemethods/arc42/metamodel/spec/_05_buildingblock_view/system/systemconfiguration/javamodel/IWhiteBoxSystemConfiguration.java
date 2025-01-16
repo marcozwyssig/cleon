@@ -8,16 +8,16 @@ public interface IWhiteBoxSystemConfiguration extends cleon.architecturemethods.
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionality selectFunctionality();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IFunctionalityAspect selectFunctionality();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentSystemArc42 selectDeployment();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IDeploymentAspectSystemArc42 selectDeployment();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilitySystemArc42 selectAvailability();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAvailabilityAspectSystemArc42 selectAvailability();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationSystemArc42 selectAuthn();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAuthenticationAspectSystemArc42 selectAuthn();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationSystemArc42 selectAuthz();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAutorizationAspectSystemArc42Aspect selectAuthz();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,ZGNPiVM/0fypNbaOUjEU8Zfjy/o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,0WUB9ldCeY8Z40D+ZYGkt50WXhI=] */

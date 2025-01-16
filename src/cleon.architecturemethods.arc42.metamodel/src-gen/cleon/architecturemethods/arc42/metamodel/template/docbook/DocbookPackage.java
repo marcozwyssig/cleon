@@ -37,15 +37,15 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractLogicalNetwork = new Resource("901d9717-6e87-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AutorizationConcept = new Resource("a74e36a7-6e93-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractSiteGroup = new Resource("445b2d81-6e95-11ea-b8e8-f1a46e0c42f7");
-  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_Monitoring = new Resource("5a4b909f-c73f-11ea-9c12-5371f8bad411");
-  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_MonitorView = new Resource("2bd149b7-cce3-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_MonitoringAspect = new Resource("5a4b909f-c73f-11ea-9c12-5371f8bad411");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_Monitoring = new Resource("2bd149b7-cce3-11ea-8b73-6b1c6b53a7a6");
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_MonitoringBuildingBlock = new Resource("5a23f5a5-cce3-11ea-8b73-6b1c6b53a7a6");
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_ComponentComposition = new Resource("8e201d7f-ccf3-11ea-8b73-6b1c6b53a7a6");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_SourceSubZone = new Resource("e14c6286-d1a5-11ea-aaa2-e3554b4f77be");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_QoSSystemConfigurationConcept = new Resource("5e93a008-d1aa-11ea-aaa2-e3554b4f77be");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_ServiceAccountEnvironment = new Resource("032fbd2e-d1b4-11ea-aaa2-e3554b4f77be");
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_BuildingBlock = new Resource("6527ef4b-d574-11ea-9bae-37ef2cb951a8");
-  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_Backup_aE_and_aE_Recovery = new Resource("0c926178-de24-11ea-9e94-c51d7f8d96d1");
+  public static final Resource FunctionSpace_aE_arc42_aE_Docbook_BackupAndRecoveryAspect = new Resource("0c926178-de24-11ea-9e94-c51d7f8d96d1");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmForSystemConfiguration = new Resource("a7661974-fd92-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractRealmHandlers = new Resource("2fd4180f-fd93-11ea-aa08-3550db97e5ec");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RealmDependent = new Resource("a84cda5a-fd93-11ea-aa08-3550db97e5ec");
@@ -55,11 +55,11 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentMethodConcept = new Resource("c172fb35-fe53-11ea-abcb-bfad67a56d79");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentMethodForSystemConfiguration = new Resource("3feee4f4-fe54-11ea-abcb-bfad67a56d79");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentMethodForDependentSystemConfiguration = new Resource("15864ede-fe55-11ea-abcb-bfad67a56d79");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentSystemArc42 = new Resource("1830f7a5-fe5c-11ea-abcb-bfad67a56d79");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AvailabilitySystemArc42 = new Resource("4961f882-fe69-11ea-abcb-bfad67a56d79");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AuthenticationSystemArc42 = new Resource("e9bd53d8-fe71-11ea-a3a8-c10b28569251");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_DeploymentAspectSystemArc42 = new Resource("1830f7a5-fe5c-11ea-abcb-bfad67a56d79");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AvailabilityAspectSystemArc42 = new Resource("4961f882-fe69-11ea-abcb-bfad67a56d79");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AuthenticationAspectSystemArc42 = new Resource("e9bd53d8-fe71-11ea-a3a8-c10b28569251");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AvailabilityBuildingBlock = new Resource("ee33ab91-00e0-11eb-89a7-8344c130228c");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AutorizationSystemArc42 = new Resource("c2503120-25ac-11eb-b9ae-4df44b18aa9b");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AutorizationAspectSystemArc42Aspect = new Resource("c2503120-25ac-11eb-b9ae-4df44b18aa9b");
   public static final Resource FunctionSpace_aE_arc42_aE_Docbook_TechnicalRisks = new Resource("2cc51691-2b4a-11eb-863c-b9f41a0a3f06");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_SystemConfigurationAccessFrom = new Resource("0058c02a-3008-11eb-b17d-af74b7cf0bc4");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Source = new Resource("9eb2ff43-30a5-11eb-9149-f1e36a7322e5");
@@ -93,4 +93,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.docbook,hbTdL3pVT19rQ8ScYiPDcfNKTrE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.docbook,psu4kx53n8SvOxF477YxiTqLfWo=] */

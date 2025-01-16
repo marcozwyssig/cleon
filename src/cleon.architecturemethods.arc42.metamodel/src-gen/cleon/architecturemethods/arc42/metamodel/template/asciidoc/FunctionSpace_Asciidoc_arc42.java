@@ -510,28 +510,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IMonitorViewFunctions extends IDynamicResourceExtension {
+  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b62-2516-11ec-beea-a9d94a6f89e0")
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> _ChapterOrder();
 
   }
   
-  public static interface IMonitorViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class MonitorViewFunctionsImpl implements IMonitorViewFunctionsImpl {
+  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
 
-    public static final IMonitorViewFunctionsImpl INSTANCE = new MonitorViewFunctionsImpl();
+    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
 
-    private MonitorViewFunctionsImpl() {}
+    private MonitoringFunctionsImpl() {}
 
   }
   
-  public static class MonitorViewFunctions {
+  public static class MonitoringFunctions {
 
-    private MonitorViewFunctions() {}
+    private MonitoringFunctions() {}
 
   }
 
@@ -585,28 +585,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IBackup_and_RecoveryFunctions extends IDynamicResourceExtension {
+  public static interface IBackupAndRecoveryAspectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a54-2516-11ec-beea-a9d94a6f89e0")
     public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IBackup_and_RecoveryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBackupAndRecoveryAspectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class Backup_and_RecoveryFunctionsImpl implements IBackup_and_RecoveryFunctionsImpl {
+  public static class BackupAndRecoveryAspectFunctionsImpl implements IBackupAndRecoveryAspectFunctionsImpl {
 
-    public static final IBackup_and_RecoveryFunctionsImpl INSTANCE = new Backup_and_RecoveryFunctionsImpl();
+    public static final IBackupAndRecoveryAspectFunctionsImpl INSTANCE = new BackupAndRecoveryAspectFunctionsImpl();
 
-    private Backup_and_RecoveryFunctionsImpl() {}
+    private BackupAndRecoveryAspectFunctionsImpl() {}
 
   }
   
-  public static class Backup_and_RecoveryFunctions {
+  public static class BackupAndRecoveryAspectFunctions {
 
-    private Backup_and_RecoveryFunctions() {}
+    private BackupAndRecoveryAspectFunctions() {}
 
   }
 
@@ -1207,4 +1207,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,MtSeBzOXdzz8O7OhJlBj0y9XNvk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Um8COn6XUK+AN2fP5cjr6HOvilE=] */

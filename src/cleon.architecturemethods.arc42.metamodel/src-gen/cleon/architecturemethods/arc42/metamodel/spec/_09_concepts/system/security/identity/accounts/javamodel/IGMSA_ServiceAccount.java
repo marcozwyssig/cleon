@@ -8,8 +8,8 @@ public interface IGMSA_ServiceAccount extends cleon.architecturemethods.arc42.me
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.environment.node.javamodel.INode> selectAllowAdditionallyUsingOn();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> selectAllowAdditionallyUsingOn();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,ZANDrElkTzHIwCJrYjT9mvaeBSM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,FMc58UCEx70VoaBKQCme6Thqdfc=] */

@@ -8,10 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
-import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.AbstractMonitoringBuildingBlock;
-import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.AbstractMonitoringBuildingBlock;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.AbstractSiteWithHosts;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSingleHost;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IClusterHost;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IManagedRN;
@@ -565,7 +564,7 @@ public class sites__T_yaml {
   public static interface ISecuritySubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1e7d71b0-e2f0-11ee-8945-4df0f2e1f411")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IInterfaceSensorMonitorBuildingBlock InterfaceSensorMonitorBuildingBlock();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IInterfaceSensorMonitorBuildingBlock InterfaceSensorMonitorBuildingBlock();
 
   }
   
@@ -589,4 +588,4 @@ public class sites__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,vZUtE5UfCvn/PJys6fh4rL3kH3Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,cdJBWAAvFlg1Y4VTpHfCudVBZ0w=] */

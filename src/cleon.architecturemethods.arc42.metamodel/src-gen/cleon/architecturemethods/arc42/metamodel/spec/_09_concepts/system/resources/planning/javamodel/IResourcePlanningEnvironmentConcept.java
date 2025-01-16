@@ -8,10 +8,10 @@ public interface IResourcePlanningEnvironmentConcept extends cleon.common.doc.me
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy_view.javamodel.IEnvironment selectResourcePlanningForEnvironment();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectResourcePlanningForEnvironment();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.planning.javamodel.IResourcePlanningNodeConcept> selectResourcePlanningNode();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb10b059-dfed-11eb-aeba-a92c9a2e1772,VXz5C3Qrj1ZrmovWpxqW36BVFpg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb10b059-dfed-11eb-aeba-a92c9a2e1772,TPVASEUPurwpQwZ4ttVYSKakNS4=] */

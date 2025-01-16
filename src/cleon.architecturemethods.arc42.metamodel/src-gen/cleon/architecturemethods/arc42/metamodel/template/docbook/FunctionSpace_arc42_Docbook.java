@@ -396,28 +396,28 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface IMonitorViewFunctions extends IDynamicResourceExtension {
+  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3048a09a-cce3-11ea-8b73-6b1c6b53a7a6")
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
-  public static interface IMonitorViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class MonitorViewFunctionsImpl implements IMonitorViewFunctionsImpl {
+  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
 
-    public static final IMonitorViewFunctionsImpl INSTANCE = new MonitorViewFunctionsImpl();
+    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
 
-    private MonitorViewFunctionsImpl() {}
+    private MonitoringFunctionsImpl() {}
 
   }
   
-  public static class MonitorViewFunctions {
+  public static class MonitoringFunctions {
 
-    private MonitorViewFunctions() {}
+    private MonitoringFunctions() {}
 
   }
 
@@ -446,28 +446,28 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
+  public static interface IMonitoringAspectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6055e404-c73f-11ea-9c12-5371f8bad411")
     public java.lang.String RenderChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMonitoringAspectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
+  public static class MonitoringAspectFunctionsImpl implements IMonitoringAspectFunctionsImpl {
 
-    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
+    public static final IMonitoringAspectFunctionsImpl INSTANCE = new MonitoringAspectFunctionsImpl();
 
-    private MonitoringFunctionsImpl() {}
+    private MonitoringAspectFunctionsImpl() {}
 
   }
   
-  public static class MonitoringFunctions {
+  public static class MonitoringAspectFunctions {
 
-    private MonitoringFunctions() {}
+    private MonitoringAspectFunctions() {}
 
   }
 
@@ -521,28 +521,28 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface IBackup_and_RecoveryFunctions extends IDynamicResourceExtension {
+  public static interface IBackupAndRecoveryAspectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1b41621d-de24-11ea-9e94-c51d7f8d96d1")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IBackup_and_RecoveryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBackupAndRecoveryAspectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class Backup_and_RecoveryFunctionsImpl implements IBackup_and_RecoveryFunctionsImpl {
+  public static class BackupAndRecoveryAspectFunctionsImpl implements IBackupAndRecoveryAspectFunctionsImpl {
 
-    public static final IBackup_and_RecoveryFunctionsImpl INSTANCE = new Backup_and_RecoveryFunctionsImpl();
+    public static final IBackupAndRecoveryAspectFunctionsImpl INSTANCE = new BackupAndRecoveryAspectFunctionsImpl();
 
-    private Backup_and_RecoveryFunctionsImpl() {}
+    private BackupAndRecoveryAspectFunctionsImpl() {}
 
   }
   
-  public static class Backup_and_RecoveryFunctions {
+  public static class BackupAndRecoveryAspectFunctions {
 
-    private Backup_and_RecoveryFunctions() {}
+    private BackupAndRecoveryAspectFunctions() {}
 
   }
 
@@ -673,4 +673,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,f+LCWw1Ap/jGU2DdCyjo/ChBges=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,BhBR0/P1geI9jvVLmxFJk9psWU8=] */

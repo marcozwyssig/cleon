@@ -21,10 +21,10 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox_aE_Dependencies = new Resource("5cdabd86-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox_aE_Requirements = new Resource("5cdae4d0-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BuildingBlockRequirementCoverage = new Resource("5cdb0b2f-2516-11ec-beea-a9d94a6f89e0");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_MonitorView = new Resource("5cdb0b4e-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Monitoring = new Resource("5cdb0b4e-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ComponentComposition = new Resource("5cdb332f-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BuildingBlock = new Resource("5cdb5a05-2516-11ec-beea-a9d94a6f89e0");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Backup_aE_and_aE_Recovery = new Resource("5cdb5a17-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BackupAndRecoveryAspect = new Resource("5cdb5a17-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Sensor = new Resource("5cdb5a55-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalRisks = new Resource("5cdb5a59-2516-11ec-beea-a9d94a6f89e0");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BuildingBlockView = new Resource("6bcd0d0a-d64d-11ee-8014-c150876d6b6e");
@@ -66,4 +66,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,58XMj5RswWU55di0HAk1FrHY/Ek=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,Mh16Q/gYQkWd10D4CYpTczRyIjU=] */

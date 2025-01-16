@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3ad16077-9538-11ec-9b36-7d300415c806">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="3e64241f-9538-11ec-9b36-7d300415c806" type="resource" guid="3e63fd0c-9538-11ec-9b36-7d300415c806" />
+    <resource statement-guid="3fc9ce47-9538-11ec-9b36-7d300415c806" type="resource" guid="3fc9ce44-9538-11ec-9b36-7d300415c806" />
+    <resource statement-guid="40e92144-9538-11ec-9b36-7d300415c806" type="resource" guid="40e8fa31-9538-11ec-9b36-7d300415c806" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ad18789-9538-11ec-9b36-7d300415c806" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ad271ea-9538-11ec-9b36-7d300415c806" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3c01ca0c-9538-11ec-9b36-7d300415c806" type="literal">YamlType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="3e64241f-9538-11ec-9b36-7d300415c806">
+      <resource guid="3e63fd0c-9538-11ec-9b36-7d300415c806">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3e63fd0e-9538-11ec-9b36-7d300415c806" type="resource" guid="3ad16077-9538-11ec-9b36-7d300415c806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3f01ea0f-9538-11ec-9b36-7d300415c806" type="literal">NMS</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3fc9ce47-9538-11ec-9b36-7d300415c806">
+      <resource guid="3fc9ce44-9538-11ec-9b36-7d300415c806">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3fc9ce46-9538-11ec-9b36-7d300415c806" type="resource" guid="3ad16077-9538-11ec-9b36-7d300415c806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="400fb0f1-9538-11ec-9b36-7d300415c806" type="literal">TN</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="40e92144-9538-11ec-9b36-7d300415c806">
+      <resource guid="40e8fa31-9538-11ec-9b36-7d300415c806">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="40e92143-9538-11ec-9b36-7d300415c806" type="resource" guid="3ad16077-9538-11ec-9b36-7d300415c806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="414b3e7d-9538-11ec-9b36-7d300415c806" type="literal">NMSandTN</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

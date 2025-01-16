@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="542758bf-1a63-11e9-b1cd-355f2e2f05a9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="3dd634fa-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="3dd5e6d6-1a68-11e9-b1cd-355f2e2f05a9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="542758c1-1a63-11e9-b1cd-355f2e2f05a9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="542758c3-1a63-11e9-b1cd-355f2e2f05a9" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+    <object statement-guid="20915356-95b7-11ea-9744-7dd962dc1878" type="resource" guid="ae9ee485-66a0-11e9-9ec9-5fbc84faaeb1" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3dd634fa-1a68-11e9-b1cd-355f2e2f05a9">
+      <resource guid="3dd5e6d6-1a68-11e9-b1cd-355f2e2f05a9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3dd60de8-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3dd60de9-1a68-11e9-b1cd-355f2e2f05a9" type="literal">activitySystemConfiguration</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="3dd65c0b-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="3dd65c0c-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="3dd6831e-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="0dac7e86-1a68-11e9-b1cd-355f2e2f05a9" />
+        </predicate>
+        <predicate guid="dd6d701d-e8a9-11e2-b67d-e515e6efcec9">
+          <object statement-guid="41ccea11-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="3dd65c0d-1a68-11e9-b1cd-355f2e2f05a9" type="resource" guid="6b3c6f05-ff96-11e8-9d0c-c96c1e9b7b46" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="542758c2-1a63-11e9-b1cd-355f2e2f05a9" type="literal">ProcessSystemConfiguration</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="542758c4-1a63-11e9-b1cd-355f2e2f05a9" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

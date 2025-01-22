@@ -24,7 +24,7 @@ public class X2docPackage {
   public static final Resource FunctionSpace_aE_X2Doc_Block = new Resource("d356f2cf-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_Fenced = new Resource("d3571a05-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_Passthrough = new Resource("d3571a20-7fdf-11ef-9c8a-d93340a49f34");
-  public static final Resource FunctionSpace_aE_X2Doc_Image = new Resource("d3571a4e-7fdf-11ef-9c8a-d93340a49f34");
+  public static final Resource FunctionSpace_aE_X2Doc_AbstractImage = new Resource("d3571a4e-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_Cell = new Resource("d3574181-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_ItemizedList = new Resource("d35741a2-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_ChapterAware = new Resource("d35741b2-7fdf-11ef-9c8a-d93340a49f34");
@@ -55,4 +55,4 @@ public class X2docPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.x2doc,E0Dh+NkOCQoUWVAv78Ug85QAoUQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.x2doc,jntANixpeUF6LqFnY+PA3gVT254=] */

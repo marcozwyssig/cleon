@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Image extends DynamicResource implements IImage {
+public class ImageUrl extends DynamicResource implements IImageUrl {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IImage> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IImage>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IImageUrl> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IImageUrl>() {
     
     @Override
-    public IImage create() {
-      return new Image();
+    public IImageUrl create() {
+      return new ImageUrl();
     }
     
     @Override
-    public IImage create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Image(resourceRepository, resource);
+    public IImageUrl create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ImageUrl(resourceRepository, resource);
     }
   
   };
 
-  public Image() {
-    super(IImage.TYPE_ID);
+  public ImageUrl() {
+    super(IImageUrl.TYPE_ID);
   }
   
-  public Image(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IImage.TYPE_ID);
+  public ImageUrl(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IImageUrl.TYPE_ID);
   }
 
   // attributes
@@ -64,8 +64,18 @@ public class Image extends DynamicResource implements IImage {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public Image setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public ImageUrl setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> selectNameTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
+  }
+
+  public ImageUrl setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+    _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
     return this;
   }
     
@@ -74,7 +84,7 @@ public class Image extends DynamicResource implements IImage {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Image setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ImageUrl setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -87,8 +97,9 @@ public class Image extends DynamicResource implements IImage {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,rvV/1T+x9KUnCokpVFXZR0QSnPY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,q4cpGi/pO+ZQtDQYArqpBObA9zg=] */

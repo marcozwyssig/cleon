@@ -611,28 +611,28 @@ public class FunctionSpace_X2Doc {
 
   }
 
-  public static interface IImageFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractImageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d3571a4d-7fdf-11ef-9c8a-d93340a49f34")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IImageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractImageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ImageFunctionsImpl implements IImageFunctionsImpl {
+  public static class AbstractImageFunctionsImpl implements IAbstractImageFunctionsImpl {
 
-    public static final IImageFunctionsImpl INSTANCE = new ImageFunctionsImpl();
+    public static final IAbstractImageFunctionsImpl INSTANCE = new AbstractImageFunctionsImpl();
 
-    private ImageFunctionsImpl() {}
+    private AbstractImageFunctionsImpl() {}
 
   }
   
-  public static class ImageFunctions {
+  public static class AbstractImageFunctions {
 
-    private ImageFunctions() {}
+    private AbstractImageFunctions() {}
 
   }
 
@@ -888,4 +888,4 @@ public class FunctionSpace_X2Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,jXMsjKPV9KjAaArjJNy3+cAbCOo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,BKzJ+lXLleT2JPAyGANk8m3cyzg=] */

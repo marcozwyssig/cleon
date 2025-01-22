@@ -56,6 +56,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
     public java.lang.String combine();
 
+    @IDynamicResourceExtension.MethodId("ffee6758-d8bc-11ef-a46f-a1c9ec5f966b")
+    public java.lang.String combine(final java.lang.String delimiter);
+
     @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
     public java.lang.String removeWhiteSpaces();
 
@@ -104,6 +107,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("f4506904-9b89-11ef-bb4f-3decea302a61")
     public java.lang.String combine(final List<java.lang.String> stringLiteralList);
+
+    @IDynamicResourceExtension.MethodId("ffee6758-d8bc-11ef-a46f-a1c9ec5f966b")
+    public java.lang.String combine(final java.lang.String delimiter, final List<java.lang.String> stringLiteralList);
 
     @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
     public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral);
@@ -249,6 +255,13 @@ public class StringFunctionSpace {
     }
 
     @Override
+    public java.lang.String combine(final java.lang.String delimiter, final List<java.lang.String> stringLiteralList) {
+      /* Begin Protected Region [[ffee6758-d8bc-11ef-a46f-a1c9ec5f966b]] */
+    	return stringLiteralList.stream().collect(Collectors.joining(delimiter));
+      /* End Protected Region   [[ffee6758-d8bc-11ef-a46f-a1c9ec5f966b]] */
+    }
+
+    @Override
     public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[28b111dd-ac0d-11ef-afba-fb66280e2230]] */
         if (stringLiteral == null || stringLiteral.isEmpty()) {
@@ -337,6 +350,10 @@ public class StringFunctionSpace {
 
     public static java.lang.String combine(final List<java.lang.String> stringLiteralList) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteralList).combine(stringLiteralList);
+    }
+
+    public static java.lang.String combine(final java.lang.String delimiter, final List<java.lang.String> stringLiteralList) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteralList).combine(delimiter, stringLiteralList);
     }
 
     public static java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral) {
@@ -480,4 +497,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,XQH/Mt4QtUm362WYSCryRFUytNU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,SGqSY7IPmZpKMK/fq4MlWvkPshU=] */

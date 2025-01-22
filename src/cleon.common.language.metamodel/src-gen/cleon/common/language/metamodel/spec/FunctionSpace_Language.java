@@ -113,7 +113,7 @@ public class FunctionSpace_Language {
       	final var description = multilingualDescription.selectDescriptionTranslation().get(language.getResource());
       	return String.join("\n", description.selectDescriptions());
       }
-      return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.combine(multilingualDescription.selectDescriptions());
+      return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.combine(System.lineSeparator(), multilingualDescription.selectDescriptions());
       /* End Protected Region   [[74641b99-9dd4-11ef-8e7d-336090501e1a]] */
     }
 

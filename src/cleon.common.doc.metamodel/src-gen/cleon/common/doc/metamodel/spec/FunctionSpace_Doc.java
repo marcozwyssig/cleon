@@ -286,6 +286,81 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface ICellFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("76414ca0-d8d1-11ef-8dec-7d07d45d9f8c")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface ICellFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CellFunctionsImpl implements ICellFunctionsImpl {
+
+    public static final ICellFunctionsImpl INSTANCE = new CellFunctionsImpl();
+
+    private CellFunctionsImpl() {}
+
+  }
+  
+  public static class CellFunctions {
+
+    private CellFunctions() {}
+
+  }
+
+  public static interface IColumnFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f3d8bf42-d8d0-11ef-8dec-7d07d45d9f8c")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ColumnFunctionsImpl implements IColumnFunctionsImpl {
+
+    public static final IColumnFunctionsImpl INSTANCE = new ColumnFunctionsImpl();
+
+    private ColumnFunctionsImpl() {}
+
+  }
+  
+  public static class ColumnFunctions {
+
+    private ColumnFunctions() {}
+
+  }
+
+  public static interface IRowFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("750bc842-d8d3-11ef-ba24-93bed6dd8c6d")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IRowFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RowFunctionsImpl implements IRowFunctionsImpl {
+
+    public static final IRowFunctionsImpl INSTANCE = new RowFunctionsImpl();
+
+    private RowFunctionsImpl() {}
+
+  }
+  
+  public static class RowFunctions {
+
+    private RowFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,4CU3B/SO/IamVey1gSxOhPLVgqc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,osw6wWOTSA9V+aVcVSn29jOGXD0=] */

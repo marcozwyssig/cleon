@@ -10,6 +10,7 @@ public class StatePackage {
   public static final Resource ImplementedButNotRequiredOnFirewallState = new Resource("2a244c8f-1770-11eb-aff5-dd5c3dd3a631");
   public static final Resource FunctionSpace_aE_State_ImplementedState = new Resource("64512ec6-1770-11eb-aff5-dd5c3dd3a631");
   public static final Resource ImplementedState_implementationStateIn = new Resource("c44934ff-1770-11eb-aff5-dd5c3dd3a631");
+  public static final Resource RequiredChangeImplementedState = new Resource("c1b74490-2983-11eb-9648-7bdf8dc8eaf2");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class StatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state,EQIBTfPXCsePddM+ZNVkwxuCEhk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state,7nkv/JfPUj231ConOtDjHzdMpeI=] */

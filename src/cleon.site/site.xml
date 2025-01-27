@@ -57,9 +57,6 @@
 	<feature url="features/cleon.common.xml_0.4.149.qualifier.jar" id="cleon.common.xml" version="0.4.149.qualifier">
 		<category name="common"/>
 	</feature>
-	<feature url="features/cleon.devops.chocolatey_0.4.149.qualifier.jar" id="cleon.devops.chocolatey" version="0.4.149.qualifier">
-		<category name="devops"/>
-	</feature>
 	<feature url="features/cleon.modelinglanguages.bpmn_0.4.149.qualifier.jar" id="cleon.modelinglanguages.bpmn" version="0.4.149.qualifier">
 		<category name="modelinglanguages"/>
 	</feature>
@@ -93,16 +90,18 @@
 	<feature url="features/cleon.operationalmethods.hermes_0.4.149.qualifier.jar" id="cleon.operationalmethods.hermes" version="0.4.149.qualifier">
 		<category name="operationalmethods"/>
 	</feature>
+	<feature url="features/cleon.operationalmethods.chocolatey_0.4.149.qualifier.jar" id="cleon.operationalmethods.chocolatey" version="0.4.149.qualifier">
+		<category name="operationalmethods"/>
+	</feature>
 	<category-def name="applications" label="Applications"/>
 	<category-def name="architecturemethods" label="Architecture Methods"/>
 	<category-def name="architecturestylesandpatterns" label="Architecture Styles and Patterns"/>
 	<category-def name="building" label="Building"/>
 	<category-def name="common" label="Common"/>
-	<category-def name="devops" label="DevOps"/>
 	<category-def name="modelinglanguages" label="Modeling Languages"/>
 	<category-def name="projectmethods" label="Project Methods"/>
 	<category-def name="publishing" label="Publishing"/>
 	<category-def name="testingmethods" label="Testing Methods"/>
 	<category-def name="operationalmethods" label="Operational Methods"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,dQjmOwvoFietFHaQ6wkp4AMXwew=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,K4rX+QHDTCO9LbzuuAEeCq93Tn8=] -->

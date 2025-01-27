@@ -486,6 +486,8 @@
         <resource statement-guid="425d87e6-d42c-11ef-8305-f341409b1dc7" type="resource" guid="425d87e3-d42c-11ef-8305-f341409b1dc7" />
         <resource statement-guid="4261587b-d42c-11ef-8305-f341409b1dc7" type="resource" guid="42615878-d42c-11ef-8305-f341409b1dc7" />
         <resource statement-guid="4265c550-d42c-11ef-8305-f341409b1dc7" type="resource" guid="4265c54d-d42c-11ef-8305-f341409b1dc7" />
+        <resource statement-guid="1a96c511-dcbe-11ef-87b5-5327cb6d0ec7" type="resource" guid="1a95daab-dcbe-11ef-87b5-5327cb6d0ec7" />
+        <resource statement-guid="1abcc3a6-dcbe-11ef-87b5-5327cb6d0ec7" type="resource" guid="1abc9c93-dcbe-11ef-87b5-5327cb6d0ec7" />
       </owns>
     </resource>
   </owns>
@@ -501,7 +503,6 @@
     <object statement-guid="18e5b9cf-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="153f9886-cb33-11e8-9e9d-8dc67753571a" />
     <object statement-guid="40eb6454-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="638c3287-bab1-11e8-87b8-7b667ffd46b4" />
     <object statement-guid="fccb0d97-2656-11ea-b4e4-5d2e23362860" type="aggregate" guid="e15012e0-3c6a-11e6-aafa-bd565efc0ead" />
-    <object statement-guid="35f17c82-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="a44a8e73-bab0-11e8-87b8-7b667ffd46b4" />
     <object statement-guid="2da17f1f-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="92098d3c-bab0-11e8-87b8-7b667ffd46b4" />
     <object statement-guid="26b83d7b-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="67798314-c822-11e8-a7aa-5b5f32fac625" />
     <object statement-guid="3ae445af-2657-11ea-b4e4-5d2e23362860" type="aggregate" guid="192716ff-bab1-11e8-87b8-7b667ffd46b4" />
@@ -5333,6 +5334,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4265ec61-d42c-11ef-8305-f341409b1dc7" type="literal">cleon.operationalmethods.hermes.metamodel.spec.operational_manual.about</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="1a96c511-dcbe-11ef-87b5-5327cb6d0ec7">
+            <resource guid="1a95daab-dcbe-11ef-87b5-5327cb6d0ec7">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1a95daad-dcbe-11ef-87b5-5327cb6d0ec7" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1a96ec22-dcbe-11ef-87b5-5327cb6d0ec7" type="literal">cleon.operationalmethods.chocolatey.metamodel.spec</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="1abcc3a6-dcbe-11ef-87b5-5327cb6d0ec7">
+            <resource guid="1abc9c93-dcbe-11ef-87b5-5327cb6d0ec7">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1abcc3a5-dcbe-11ef-87b5-5327cb6d0ec7" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1abceab7-dcbe-11ef-87b5-5327cb6d0ec7" type="literal">cleon.operationalmethods.chocolatey.metamodel.template.nuget</object>
               </predicate>
             </resource>
           </object>

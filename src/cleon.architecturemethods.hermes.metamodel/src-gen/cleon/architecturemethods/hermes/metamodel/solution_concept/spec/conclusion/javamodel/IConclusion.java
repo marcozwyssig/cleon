@@ -1,0 +1,11 @@
+package cleon.architecturemethods.hermes.metamodel.solution_concept.spec.conclusion.javamodel;
+
+import ch.actifsource.util.collection.IMultiMapOrdered;
+
+public interface IConclusion extends ch.actifsource.core.javamodel.IResource, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d773723c-d8cc-11ef-8dec-7d07d45d9f8c");
+  
+}
+
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d773723c-d8cc-11ef-8dec-7d07d45d9f8c,7/t/EZOjxxPRswTG7lbrp7Fai+I=] */

@@ -15,6 +15,9 @@
 	<feature url="features/cleon.architecturemethods.togaf_0.4.149.qualifier.jar" id="cleon.architecturemethods.togaf" version="0.4.149.qualifier">
 		<category name="architecturemethods"/>
 	</feature>
+	<feature url="features/cleon.architecturemethods.hermes_0.4.149.qualifier.jar" id="cleon.architecturemethods.hermes" version="0.4.149.qualifier">
+		<category name="architecturemethods"/>
+	</feature>
 	<feature url="features/cleon.architecturestylesandpatterns.eai_0.4.149.qualifier.jar" id="cleon.architecturestylesandpatterns.eai" version="0.4.149.qualifier">
 		<category name="architecturestylesandpatterns"/>
 	</feature>
@@ -75,6 +78,12 @@
 	<feature url="features/cleon.modelinglanguages.uml_0.4.149.qualifier.jar" id="cleon.modelinglanguages.uml" version="0.4.149.qualifier">
 		<category name="modelinglanguages"/>
 	</feature>
+	<feature url="features/cleon.operationalmethods.hermes_0.4.149.qualifier.jar" id="cleon.operationalmethods.hermes" version="0.4.149.qualifier">
+		<category name="operationalmethods"/>
+	</feature>
+	<feature url="features/cleon.operationalmethods.chocolatey_0.4.149.qualifier.jar" id="cleon.operationalmethods.chocolatey" version="0.4.149.qualifier">
+		<category name="operationalmethods"/>
+	</feature>
 	<feature url="features/cleon.projectmethods.hermes_0.4.149.qualifier.jar" id="cleon.projectmethods.hermes" version="0.4.149.qualifier">
 		<category name="projectmethods"/>
 	</feature>
@@ -87,21 +96,15 @@
 	<feature url="features/cleon.testingmethods.hermes_0.4.149.qualifier.jar" id="cleon.testingmethods.hermes" version="0.4.149.qualifier">
 		<category name="testingmethods"/>
 	</feature>
-	<feature url="features/cleon.operationalmethods.hermes_0.4.149.qualifier.jar" id="cleon.operationalmethods.hermes" version="0.4.149.qualifier">
-		<category name="operationalmethods"/>
-	</feature>
-	<feature url="features/cleon.operationalmethods.chocolatey_0.4.149.qualifier.jar" id="cleon.operationalmethods.chocolatey" version="0.4.149.qualifier">
-		<category name="operationalmethods"/>
-	</feature>
 	<category-def name="applications" label="Applications"/>
 	<category-def name="architecturemethods" label="Architecture Methods"/>
 	<category-def name="architecturestylesandpatterns" label="Architecture Styles and Patterns"/>
 	<category-def name="building" label="Building"/>
 	<category-def name="common" label="Common"/>
 	<category-def name="modelinglanguages" label="Modeling Languages"/>
+	<category-def name="operationalmethods" label="Operational Methods"/>
 	<category-def name="projectmethods" label="Project Methods"/>
 	<category-def name="publishing" label="Publishing"/>
 	<category-def name="testingmethods" label="Testing Methods"/>
-	<category-def name="operationalmethods" label="Operational Methods"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,K4rX+QHDTCO9LbzuuAEeCq93Tn8=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,fcMLlsrdoNT1cNh4j8gqBdm+Zec=] -->

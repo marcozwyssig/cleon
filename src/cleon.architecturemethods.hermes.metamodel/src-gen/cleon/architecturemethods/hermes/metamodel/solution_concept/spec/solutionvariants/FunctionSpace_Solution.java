@@ -1,0 +1,48 @@
+package cleon.architecturemethods.hermes.metamodel.solution_concept.spec.solutionvariants;
+
+import ch.actifsource.util.Assert;
+import java.util.List;
+import ch.actifsource.core.dynamic.DynamicResourceUtil;
+import ch.actifsource.core.dynamic.IDynamicResourceExtension;
+import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
+import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
+
+/* Begin Protected Region [[b7500adc-d35d-11ef-a461-2ff990df4683,imports]] */
+
+/* End Protected Region   [[b7500adc-d35d-11ef-a461-2ff990df4683,imports]] */
+
+public class FunctionSpace_Solution {
+
+  /* Begin Protected Region [[b7500adc-d35d-11ef-a461-2ff990df4683]] */
+  
+  /* End Protected Region   [[b7500adc-d35d-11ef-a461-2ff990df4683]] */
+
+
+  public static interface ISolutionVariantsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c472ed5c-d35d-11ef-a461-2ff990df4683")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ISolutionVariantsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SolutionVariantsFunctionsImpl implements ISolutionVariantsFunctionsImpl {
+
+    public static final ISolutionVariantsFunctionsImpl INSTANCE = new SolutionVariantsFunctionsImpl();
+
+    private SolutionVariantsFunctionsImpl() {}
+
+  }
+  
+  public static class SolutionVariantsFunctions {
+
+    private SolutionVariantsFunctions() {}
+
+  }
+
+}
+
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b7500adc-d35d-11ef-a461-2ff990df4683,ht9Ta3qnvEMu43k0CsbsubBYIUM=] */

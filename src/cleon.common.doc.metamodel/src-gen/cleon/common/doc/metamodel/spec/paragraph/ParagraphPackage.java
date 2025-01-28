@@ -32,6 +32,7 @@ public class ParagraphPackage {
   public static final Resource LanguageTextTranslation_text = new Resource("f788160f-9def-11ef-970e-cda72e282c65");
   public static final Resource FunctionSpace_aE_Paragraph_LanguageTextTranslation = new Resource("1a72e075-9df1-11ef-970e-cda72e282c65");
   public static final Resource FunctionSpace_aE_Paragraph_TextAware = new Resource("6f78da88-a5a6-11ef-97d6-5b0fa6c90c00");
+  public static final Resource Custom = new Resource("ab1577a0-dd69-11ef-9ced-81351e97716a");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +53,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,85AjklRiqmVWrcAVYb/2+45XiTk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,UM5bjzTmN6hlpCXr+SJaqogW//Y=] */

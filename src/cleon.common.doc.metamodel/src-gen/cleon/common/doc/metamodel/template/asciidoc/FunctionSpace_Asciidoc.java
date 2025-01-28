@@ -946,6 +946,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface ICustomFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("12952cc2-dd6b-11ef-9ced-81351e97716a")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ICustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CustomFunctionsImpl implements ICustomFunctionsImpl {
+
+    public static final ICustomFunctionsImpl INSTANCE = new CustomFunctionsImpl();
+
+    private CustomFunctionsImpl() {}
+
+  }
+  
+  public static class CustomFunctions {
+
+    private CustomFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,XntTySKsDzlLl/Ktzg7frKkYVmI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,7oQBmM2vu9FYQS0JscIK1mZcs1s=] */

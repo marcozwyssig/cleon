@@ -35,6 +35,7 @@ public class X2docPackage {
   public static final Resource FunctionSpace_aE_X2Doc_SimpleDescription = new Resource("d35803e9-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_ListItem = new Resource("d358040a-7fdf-11ef-9c8a-d93340a49f34");
   public static final Resource FunctionSpace_aE_X2Doc_BooleanLiteral = new Resource("d3580415-7fdf-11ef-9c8a-d93340a49f34");
+  public static final Resource FunctionSpace_aE_X2Doc_Custom = new Resource("2aa5e964-dd6b-11ef-9ced-81351e97716a");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class X2docPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.x2doc,jntANixpeUF6LqFnY+PA3gVT254=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.x2doc,34BMEOcClgfwLU23qz/a867J0DM=] */

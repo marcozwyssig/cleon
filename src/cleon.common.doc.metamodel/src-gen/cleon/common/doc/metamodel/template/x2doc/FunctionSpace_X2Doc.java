@@ -886,6 +886,31 @@ public class FunctionSpace_X2Doc {
 
   }
 
+  public static interface ICustomFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2aa5e96c-dd6b-11ef-9ced-81351e97716a")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ICustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CustomFunctionsImpl implements ICustomFunctionsImpl {
+
+    public static final ICustomFunctionsImpl INSTANCE = new CustomFunctionsImpl();
+
+    private CustomFunctionsImpl() {}
+
+  }
+  
+  public static class CustomFunctions {
+
+    private CustomFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,BKzJ+lXLleT2JPAyGANk8m3cyzg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,mG8Ztpq3M/YowZSck+3GOsvcpXI=] */

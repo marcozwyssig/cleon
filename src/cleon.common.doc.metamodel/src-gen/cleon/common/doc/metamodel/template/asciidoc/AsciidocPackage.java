@@ -33,7 +33,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_ItemizedList = new Resource("39b91626-e8f6-11e8-b810-cdb2b421fd42");
   public static final Resource FunctionSpace_aE_Asciidoc_ChapterAware = new Resource("4f9728ea-2174-11e9-a054-db6d80fba790");
   public static final Resource FunctionSpace_aE_Asciidoc_ParagraphAware = new Resource("5f385195-2174-11e9-a054-db6d80fba790");
-  public static final Resource FunctionSpace_aE_Asciidoc_ChapterReference = new Resource("b627b62c-dbc4-11ea-b71c-ade06d3dafe4");
+  public static final Resource FunctionSpace_aE_Asciidoc_TextChapterReference = new Resource("b627b62c-dbc4-11ea-b71c-ade06d3dafe4");
   public static final Resource FunctionSpace_aE_Asciidoc_About = new Resource("1a9fdf65-9949-11ec-8ab2-a107e9aafcc3");
   public static final Resource FunctionSpace_aE_Asciidoc_References = new Resource("2be31f81-9949-11ec-8ab2-a107e9aafcc3");
   public static final Resource FunctionSpace_aE_Asciidoc_NamedText = new Resource("1186af30-cac5-11ec-8012-87976b97438b");
@@ -41,6 +41,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_TextLiteral = new Resource("1a6cbb85-e528-11ee-a074-d7afe74e4a27");
   public static final Resource FunctionSpace_aE_Asciidoc_ListItem = new Resource("7843b9f5-24f0-11ef-83a6-fdf80672957b");
   public static final Resource FunctionSpace_aE_Asciidoc_Custom = new Resource("0b322740-dd6b-11ef-9ced-81351e97716a");
+  public static final Resource FunctionSpace_aE_Asciidoc_ChapterReference = new Resource("a5b1ac35-dd88-11ef-9ced-81351e97716a");
   
   /* Begin Protected Region [[user]] */
   
@@ -61,4 +62,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,fIcp+F4K8M0wS9u3G744Yp2JwGQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,FGZXWhNgqObmLRGkZt/Lb6sBqZI=] */

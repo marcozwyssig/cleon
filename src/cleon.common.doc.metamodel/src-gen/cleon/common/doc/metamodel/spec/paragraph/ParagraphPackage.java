@@ -12,7 +12,7 @@ public class ParagraphPackage {
   public static final Resource Admonition = new Resource("6e2a6478-308a-11e5-8cdc-d5b441c8c3df");
   public static final Resource ItemizedList = new Resource("f18903b6-e8f5-11e8-b810-cdb2b421fd42");
   public static final Resource StandardParagraph = new Resource("f5a1c130-e989-11e8-af5c-a5aa9dc47205");
-  public static final Resource ChapterReference = new Resource("56be6ccf-dbc2-11ea-b71c-ade06d3dafe4");
+  public static final Resource TextChapterReference = new Resource("56be6ccf-dbc2-11ea-b71c-ade06d3dafe4");
   public static final Resource ChapterReference_chapter = new Resource("672297e9-dbc2-11ea-b71c-ade06d3dafe4");
   public static final Resource Text_style = new Resource("6629a33a-dcb4-11ea-b5f8-77c3980a1d0a");
   public static final Resource Style = new Resource("6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a");
@@ -33,6 +33,7 @@ public class ParagraphPackage {
   public static final Resource FunctionSpace_aE_Paragraph_LanguageTextTranslation = new Resource("1a72e075-9df1-11ef-970e-cda72e282c65");
   public static final Resource FunctionSpace_aE_Paragraph_TextAware = new Resource("6f78da88-a5a6-11ef-97d6-5b0fa6c90c00");
   public static final Resource Custom = new Resource("ab1577a0-dd69-11ef-9ced-81351e97716a");
+  public static final Resource ChapterReference = new Resource("5c6eca85-dd88-11ef-9ced-81351e97716a");
   
   /* Begin Protected Region [[user]] */
   
@@ -53,4 +54,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,UM5bjzTmN6hlpCXr+SJaqogW//Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,6VV8gbcIweCAQGVNnhXsnlIr2V0=] */

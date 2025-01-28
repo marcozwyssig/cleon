@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="56be6ccf-dbc2-11ea-b71c-ade06d3dafe4">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="672297ec-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="672297e9-dbc2-11ea-b71c-ade06d3dafe4" />
-  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="56be6d0e-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="56be6cdf-dbc2-11ea-b71c-ade06d3dafe4">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -60,30 +57,10 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fb742d50-fe6c-11eb-bbec-6b945b7259b1" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="672297ec-dbc2-11ea-b71c-ade06d3dafe4">
-      <resource guid="672297e9-dbc2-11ea-b71c-ade06d3dafe4">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="672297eb-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6883877f-dbc2-11ea-b71c-ade06d3dafe4" type="literal">chapter</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="6726687d-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="67268f8e-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="713c31ba-dbc2-11ea-b71c-ade06d3dafe4" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="62012e81-dd88-11ef-9ced-81351e97716a" type="resource" guid="5c6eca85-dd88-11ef-9ced-81351e97716a" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="56be6ce8-dbc2-11ea-b71c-ade06d3dafe4" type="literal">ChapterReference</object>
+    <object statement-guid="56be6ce8-dbc2-11ea-b71c-ade06d3dafe4" type="literal">TextChapterReference</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="56be6d0e-dbc2-11ea-b71c-ade06d3dafe4">

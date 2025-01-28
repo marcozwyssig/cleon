@@ -249,9 +249,34 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+  public static interface ITextChapterReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("221b5218-dbc4-11ea-b71c-ade06d3dafe4")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ITextChapterReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TextChapterReferenceFunctionsImpl implements ITextChapterReferenceFunctionsImpl {
+
+    public static final ITextChapterReferenceFunctionsImpl INSTANCE = new TextChapterReferenceFunctionsImpl();
+
+    private TextChapterReferenceFunctionsImpl() {}
+
+  }
+  
+  public static class TextChapterReferenceFunctions {
+
+    private TextChapterReferenceFunctions() {}
+
+  }
+
+  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0cdadd8e-dd8a-11ef-9ced-81351e97716a")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
@@ -1005,4 +1030,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,JKXnUcKIDiC5dreghaPRHsavv5s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,CuFjfZU9VdNxTk+yMfHzwK7feM4=] */

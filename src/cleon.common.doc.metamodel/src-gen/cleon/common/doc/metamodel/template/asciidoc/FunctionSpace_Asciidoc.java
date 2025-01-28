@@ -167,9 +167,34 @@ public class FunctionSpace_Asciidoc {
 
   }
 
-  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+  public static interface ITextChapterReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b627b635-dbc4-11ea-b71c-ade06d3dafe4")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ITextChapterReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TextChapterReferenceFunctionsImpl implements ITextChapterReferenceFunctionsImpl {
+
+    public static final ITextChapterReferenceFunctionsImpl INSTANCE = new TextChapterReferenceFunctionsImpl();
+
+    private TextChapterReferenceFunctionsImpl() {}
+
+  }
+  
+  public static class TextChapterReferenceFunctions {
+
+    private TextChapterReferenceFunctions() {}
+
+  }
+
+  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a5b1ac40-dd88-11ef-9ced-81351e97716a")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
@@ -973,4 +998,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,7oQBmM2vu9FYQS0JscIK1mZcs1s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,xbwwL9lTgoI0+orfDLoOOV+9kdE=] */

@@ -109,11 +109,15 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String translateDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.language.metamodel.spec.translation.description.javamodel.IMultilingualDescription multilingualDescription) {
       /* Begin Protected Region [[74641b99-9dd4-11ef-8e7d-336090501e1a]] */
-      if( multilingualDescription.selectDescriptionTranslation().containsKey(language.getResource())) {
-      	final var description = multilingualDescription.selectDescriptionTranslation().get(language.getResource());
-      	return String.join("\n", description.selectDescriptions());
-      }
-      return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.combine(System.lineSeparator(), multilingualDescription.selectDescriptions());
+	  if(multilingualDescription.selectDescriptions() == null || multilingualDescription.selectDescriptions().isEmpty()) {
+		  return null;
+	  }
+		
+	  if( multilingualDescription.selectDescriptionTranslation().containsKey(language.getResource())) {
+	  	final var description = multilingualDescription.selectDescriptionTranslation().get(language.getResource());
+	  	return String.join("\n", description.selectDescriptions());
+	  }
+	  return StringFunctionSpace.StringLiteralFunctionsImpl.INSTANCE.combine(System.lineSeparator(), multilingualDescription.selectDescriptions());
       /* End Protected Region   [[74641b99-9dd4-11ef-8e7d-336090501e1a]] */
     }
 

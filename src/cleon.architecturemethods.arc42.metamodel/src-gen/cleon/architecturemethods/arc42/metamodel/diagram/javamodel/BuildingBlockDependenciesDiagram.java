@@ -49,6 +49,15 @@ public class BuildingBlockDependenciesDiagram extends DynamicResource implements
   }
 
   @Override
+  public java.lang.Boolean selectMonochrome() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome);
+  }
+    
+  public void setMonochrome(java.lang.Boolean monochrome) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome, monochrome);
+  }
+
+  @Override
   public java.lang.String selectPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_path);
   }
@@ -94,6 +103,7 @@ public class BuildingBlockDependenciesDiagram extends DynamicResource implements
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_leftToRight, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_path, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_scale, visitor);
     // relations
@@ -101,4 +111,4 @@ public class BuildingBlockDependenciesDiagram extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0091c2c7-0e17-11e9-8b4c-f9aec93d8b56,VXIuvOgi7URjNAYehyl+e2BIBuo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0091c2c7-0e17-11e9-8b4c-f9aec93d8b56,dasEdzRYh0WjpewoGE0v5BqtGFo=] */

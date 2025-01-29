@@ -4,11 +4,9 @@
 	
 	<db:chapter xml:id="ea.521d3460-bedd-11ef-b498-058ee446f8e7">
 		<db:title>Kontextabgrenzung</db:title>
-		<db:para></db:para>
 		<db:para>In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.</db:para>
 		<db:section xml:id="ea.539f18bc-bedd-11ef-b498-058ee446f8e7">
 			<db:title>Technischer Kontext</db:title>
-			<db:para></db:para>
 			<db:para>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
@@ -64,7 +62,6 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.38c4bd18-beda-11ef-b498-058ee446f8e7">
 		<db:title>Bausteinsicht</db:title>
-		<db:para></db:para>
 		<db:section xml:id="ea.3f59c38b-beda-11ef-b498-058ee446f8e7">
 			<db:title>Ebene_1: IKT (IKT) &lt;System&gt; (Whitebox)</db:title>
 			<db:section>
@@ -115,17 +112,14 @@
 			</db:section>
 			<db:section xml:id="ea.7f777d61-beda-11ef-b498-058ee446f8e7">
 				<db:title>Application &lt;SystemLayer&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.7f8cda2c-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 			<db:section xml:id="ea.71ddbd54-beda-11ef-b498-058ee446f8e7">
 				<db:title>Infrastruture &lt;SystemLayer&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastruture beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.71fa6d1f-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 			<db:section xml:id="ea.78893386-beda-11ef-b498-058ee446f8e7">
 				<db:title>Platform &lt;SystemLayer&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Platform beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.789fa1c1-beda-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -183,17 +177,14 @@
 			</db:section>
 			<db:section xml:id="ea.07d950cc-bee7-11ef-8dcb-a78def9ea3bd">
 				<db:title>Operating System &lt;SystemComponent&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Operating System beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.07fc9046-bee7-11ef-8dcb-a78def9ea3bd" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 			<db:section xml:id="ea.86892f77-beda-11ef-b498-058ee446f8e7">
 				<db:title>Servers &lt;SystemComponent&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Servers beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.42db7e7f-bedf-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 			<db:section xml:id="ea.97fe54fe-beda-11ef-b498-058ee446f8e7">
 				<db:title>Virtualization &lt;SystemComponent&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Virtualization beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.483100ca-bedf-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -237,7 +228,6 @@
 			</db:section>
 			<db:section xml:id="ea.1251fb2b-bee7-11ef-8dcb-a78def9ea3bd">
 				<db:title>WIN2022 &lt;WindowsSystemConfiguration&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins WIN2022 beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1308a142-bee7-11ef-8dcb-a78def9ea3bd" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -277,7 +267,6 @@
 			</db:section>
 			<db:section xml:id="ea.69071be3-bee0-11ef-b498-058ee446f8e7">
 				<db:title>HPE &lt;ServerSystemConfiguration&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins HPE beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b582462c-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -324,12 +313,10 @@
 			</db:section>
 			<db:section xml:id="ea.6915e917-bee0-11ef-b498-058ee446f8e7">
 				<db:title>VM &lt;VirtualMachineSystemConfiguration&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins VM beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b582462b-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 			<db:section xml:id="ea.6915c206-bee0-11ef-b498-058ee446f8e7">
 				<db:title>VMH &lt;HypervisorSystemConfiguration&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins VMH beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.b581f80a-bee0-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
@@ -352,14 +339,12 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.5a709407-beda-11ef-b498-058ee446f8e7">
 		<db:title>Verteilsicht</db:title>
-		<db:para></db:para>
 		<db:section xml:id="ea.5c9b637f-beda-11ef-b498-058ee446f8e7">
 			<db:title>Paketierung</db:title>
-			<db:para></db:para>
+			
 		</db:section>
 		<db:section xml:id="ea.579dda7f-bedc-11ef-b498-058ee446f8e7">
 			<db:title>Verteilung</db:title>
-			<db:para></db:para>
 			<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
 			<db:itemizedlist>
 				<db:listitem>
@@ -368,7 +353,6 @@
 			</db:itemizedlist>
 			<db:section xml:id="ea.58a3b203-bedc-11ef-b498-058ee446f8e7">
 				<db:title>PROD-Umgebung</db:title>
-				<db:para></db:para>
 				
 				
 			</db:section>
@@ -376,10 +360,9 @@
 	</db:chapter>
 	<db:chapter xml:id="ea.6bf8937e-bedc-11ef-b498-058ee446f8e7">
 		<db:title>Querschnittliche Konzepte</db:title>
-		<db:para></db:para>
 		<db:section xml:id="ea.6d5e1720-bedc-11ef-b498-058ee446f8e7">
 			<db:title>Topologie</db:title>
-			<db:para></db:para>
+			
 		</db:section>
 	</db:chapter>
 </db:book>

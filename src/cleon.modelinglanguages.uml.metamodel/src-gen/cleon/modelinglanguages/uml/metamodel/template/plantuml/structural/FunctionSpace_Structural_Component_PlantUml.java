@@ -1,4 +1,4 @@
-package cleon.modelinglanguages.uml.metamodel.template.plantuml.structural.components;
+package cleon.modelinglanguages.uml.metamodel.template.plantuml.structural;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[a71fceea-3f72-11e6-a833-6352f3897082,imports]] */
 
-public class FunctionSpace_Components {
+public class FunctionSpace_Structural_Component_PlantUml {
 
   /* Begin Protected Region [[a71fceea-3f72-11e6-a833-6352f3897082]] */
   
@@ -84,4 +84,4 @@ public class FunctionSpace_Components {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,wojnMIsAQHbCr9qGtU+pHLN5YFY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,fKWmdkMRwSW6Bh4ZR3hO+JGGchg=] */

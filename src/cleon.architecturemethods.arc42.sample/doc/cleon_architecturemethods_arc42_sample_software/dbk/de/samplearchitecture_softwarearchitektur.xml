@@ -4,12 +4,10 @@
 	
 	<db:chapter xml:id="ea.d60666fd-3f61-11e6-a833-6352f3897082">
 		<db:title>Kontextabgrenzung</db:title>
-		<db:para></db:para>
 		<db:para>In diesem Kapitel wird der Kontext betrachteten Systems (MySampleSoftware) aufgeführt.</db:para>
 	</db:chapter>
 	<db:chapter xml:id="ea.63136381-436d-11e6-a9d7-97cf4f7c398b">
 		<db:title>Bausteinsicht</db:title>
-		<db:para></db:para>
 		<db:section xml:id="ea.4c05785e-d579-11ee-903e-9f564e4de07e">
 			<db:title>Ebene_1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:title>
 			<db:para>ddfdf</db:para>
@@ -47,7 +45,6 @@
 			</db:section>
 			<db:section xml:id="ea.4c3402de-d579-11ee-903e-9f564e4de07e">
 				<db:title>MyComponent &lt;NamedComponent&gt; (Blackbox)</db:title>
-				<db:para></db:para>
 				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins MyComponent beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c58c842-d579-11ee-903e-9f564e4de07e" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>

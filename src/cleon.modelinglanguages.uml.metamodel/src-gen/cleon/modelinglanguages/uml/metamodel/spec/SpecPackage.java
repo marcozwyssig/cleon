@@ -9,6 +9,7 @@ public class SpecPackage {
   public static final Resource UmlDiagram_leftToRight = new Resource("3a104e30-18cd-11e9-be06-1d0a849a80c4");
   public static final Resource UmlDiagram_scale = new Resource("2160d761-197a-11e9-b3a0-d155f11f9df1");
   public static final Resource FunctionSpace_aE_Uml2_UmlDiagram = new Resource("a5176d3b-1998-11e9-8cd4-efe75fb4587a");
+  public static final Resource UmlDiagram_monochrome = new Resource("f72aa47e-de58-11ef-81c7-3391f050addb");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec,6Xin7yPj6agmZFyUIFgSyPpe7rE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec,pLYL+s5Gch41NIYRIpqehCK1uYE=] */

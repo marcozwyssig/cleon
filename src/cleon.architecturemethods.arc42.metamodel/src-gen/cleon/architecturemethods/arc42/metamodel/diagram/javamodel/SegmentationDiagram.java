@@ -49,6 +49,15 @@ public class SegmentationDiagram extends DynamicResource implements ISegmentatio
   }
 
   @Override
+  public java.lang.Boolean selectMonochrome() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome);
+  }
+    
+  public void setMonochrome(java.lang.Boolean monochrome) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome, monochrome);
+  }
+
+  @Override
   public java.lang.String selectPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_path);
   }
@@ -94,6 +103,7 @@ public class SegmentationDiagram extends DynamicResource implements ISegmentatio
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_leftToRight, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_monochrome, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_path, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_scale, visitor);
     // relations
@@ -101,4 +111,4 @@ public class SegmentationDiagram extends DynamicResource implements ISegmentatio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46777a52-0e23-11e9-8b4c-f9aec93d8b56,gbzPP9tqRUReCamK46k+ekFKJL8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46777a52-0e23-11e9-8b4c-f9aec93d8b56,Z3NkexJzF+0KzEq/1NL5aZZ/cuM=] */

@@ -6,6 +6,10 @@ public interface IProductOptions extends ch.actifsource.core.javamodel.INamedRes
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4c37c1df-2acf-11e9-b83f-8be423c00623");
   
+  // attributes
+  
+  public java.lang.String selectVersion();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,6W4PV8lSOFzK2hYWehLbXlnjZaE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,HQP1hWwEnd7EGi8+hiRgHboO9ac=] */

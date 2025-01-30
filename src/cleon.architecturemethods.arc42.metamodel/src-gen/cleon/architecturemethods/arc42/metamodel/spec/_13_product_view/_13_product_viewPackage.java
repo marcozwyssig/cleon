@@ -31,6 +31,7 @@ public class _13_product_viewPackage {
   public static final Resource ProductVariant_license = new Resource("de0b1781-29aa-11eb-8baa-95d9107006e8");
   public static final Resource License_licenseType = new Resource("e4301f1a-29aa-11eb-8baa-95d9107006e8");
   public static final Resource Product_usedInProduct = new Resource("74a35e16-2403-11ef-86fc-7d48003eb647");
+  public static final Resource ProductOptions_version = new Resource("26e81c1c-df09-11ef-b7b6-ed2cdfbf6428");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +52,4 @@ public class _13_product_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,ct8enpMNGKRAP+0+jTqNe5veBII=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,FgYcUyrCSmAelGfhaR3hdZJtGM8=] */

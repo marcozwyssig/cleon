@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="4c37c1df-2acf-11e9-b83f-8be423c00623">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="26e90681-df09-11ef-b7b6-ed2cdfbf6428" type="resource" guid="26e81c1c-df09-11ef-b7b6-ed2cdfbf6428" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4c37c1e1-2acf-11e9-b83f-8be423c00623" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4c37e8f3-2acf-11e9-b83f-8be423c00623" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
     <object statement-guid="4e222c5f-2acf-11e9-b83f-8be423c00623" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="26e90681-df09-11ef-b7b6-ed2cdfbf6428">
+      <resource guid="26e81c1c-df09-11ef-b7b6-ed2cdfbf6428">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26e81c1d-df09-11ef-b7b6-ed2cdfbf6428" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26e81c1e-df09-11ef-b7b6-ed2cdfbf6428" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26e81c1f-df09-11ef-b7b6-ed2cdfbf6428" type="literal">version</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="26e81c20-df09-11ef-b7b6-ed2cdfbf6428" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4c37e8f2-2acf-11e9-b83f-8be423c00623" type="literal">ProductOptions</object>

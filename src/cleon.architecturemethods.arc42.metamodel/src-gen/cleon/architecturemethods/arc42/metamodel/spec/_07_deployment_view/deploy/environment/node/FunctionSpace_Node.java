@@ -190,6 +190,31 @@ public class FunctionSpace_Node {
 
   }
 
+  public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0e3bf3d3-df12-11ef-b7b6-ed2cdfbf6428")
+    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
+
+  }
+  
+  public static interface IServiceBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceBuildNodeFunctionsImpl implements IServiceBuildNodeFunctionsImpl {
+
+    public static final IServiceBuildNodeFunctionsImpl INSTANCE = new ServiceBuildNodeFunctionsImpl();
+
+    private ServiceBuildNodeFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceBuildNodeFunctions {
+
+    private ServiceBuildNodeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,W2Q539g1tEt7cuR8Q33dcKABAMU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,gH+36Jam0yCQ9bKTXLO0GCuaI+E=] */

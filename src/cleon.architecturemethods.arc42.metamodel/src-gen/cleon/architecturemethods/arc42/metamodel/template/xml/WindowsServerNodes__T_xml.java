@@ -14,7 +14,7 @@ import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.sys
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IWindowsSystemConfiguration;
 /* End Protected Region   [[b12f0237-e2b4-11ea-a524-1b14d0598ecd,imports]] */
 
-public class ServerNodes__T_xml {
+public class WindowsServerNodes__T_xml {
 
   /* Begin Protected Region [[b12f0237-e2b4-11ea-a524-1b14d0598ecd]] */
 
@@ -76,4 +76,4 @@ public class ServerNodes__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,uCtVFewsBuLNHrOmw1kzZDvcK8A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,1MBCHSnW8DKzeEC1+EHQIpgo/qg=] */

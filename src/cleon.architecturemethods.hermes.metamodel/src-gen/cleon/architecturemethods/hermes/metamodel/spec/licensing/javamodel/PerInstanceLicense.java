@@ -1,42 +1,42 @@
-package cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLicense {
+public class PerInstanceLicense extends DynamicResource implements IPerInstanceLicense {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IWindowsIOTLicense> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IWindowsIOTLicense>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPerInstanceLicense> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IPerInstanceLicense>() {
     
     @Override
-    public IWindowsIOTLicense create() {
-      return new WindowsIOTLicense();
+    public IPerInstanceLicense create() {
+      return new PerInstanceLicense();
     }
     
     @Override
-    public IWindowsIOTLicense create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new WindowsIOTLicense(resourceRepository, resource);
+    public IPerInstanceLicense create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new PerInstanceLicense(resourceRepository, resource);
     }
   
   };
 
-  public WindowsIOTLicense() {
-    super(IWindowsIOTLicense.TYPE_ID);
+  public PerInstanceLicense() {
+    super(IPerInstanceLicense.TYPE_ID);
   }
   
-  public WindowsIOTLicense(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IWindowsIOTLicense.TYPE_ID);
+  public PerInstanceLicense(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IPerInstanceLicense.TYPE_ID);
   }
 
   // attributes
   
   @Override
   public java.lang.Integer selectAmount() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsIOTLicense_amount);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_amount);
   }
     
   public void setAmount(java.lang.Integer amount) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsIOTLicense_amount, amount);
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_amount, amount);
   }
 
   @Override
@@ -82,7 +82,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public WindowsIOTLicense setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public PerInstanceLicense setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -92,7 +92,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public WindowsIOTLicense setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public PerInstanceLicense setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -102,7 +102,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public WindowsIOTLicense setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public PerInstanceLicense setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -112,7 +112,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment);
   }
 
-  public WindowsIOTLicense setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment environment) {
+  public PerInstanceLicense setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment environment) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, environment);
     return this;
   }
@@ -122,7 +122,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public WindowsIOTLicense setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public PerInstanceLicense setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -132,7 +132,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public WindowsIOTLicense setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public PerInstanceLicense setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -142,7 +142,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public WindowsIOTLicense setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public PerInstanceLicense setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -152,7 +152,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public WindowsIOTLicense setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public PerInstanceLicense setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -161,7 +161,7 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsIOTLicense_amount, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_amount, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -172,4 +172,4 @@ public class WindowsIOTLicense extends DynamicResource implements IWindowsIOTLic
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,l008lXPFmlmshanHH7y504LTZxo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,Z6HzaXijVEfGSQSVZof7SjRWipA=] */

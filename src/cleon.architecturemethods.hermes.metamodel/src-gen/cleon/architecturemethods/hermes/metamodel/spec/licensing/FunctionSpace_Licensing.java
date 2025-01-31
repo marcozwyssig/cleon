@@ -43,6 +43,91 @@ public class FunctionSpace_Licensing {
 
   }
 
+  public static interface IPerInstanceLicenseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b6ea85dd-dfcc-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllInstances();
+
+    @IDynamicResourceExtension.MethodId("0e1cc1cc-dfcd-11ef-b0be-9b4cac321140")
+    public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant ProductVariant();
+
+    @IDynamicResourceExtension.MethodId("dd11ddd8-dfcd-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllProductInstances();
+
+  }
+  
+  public static interface IPerInstanceLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("dd11ddd8-dfcd-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense perInstanceLicense);
+
+  }
+  
+  public static class PerInstanceLicenseFunctionsImpl implements IPerInstanceLicenseFunctionsImpl {
+
+    public static final IPerInstanceLicenseFunctionsImpl INSTANCE = new PerInstanceLicenseFunctionsImpl();
+
+    private PerInstanceLicenseFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense perInstanceLicense) {
+      /* Begin Protected Region [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
+    	final var functions = perInstanceLicense.extension(IPerInstanceLicenseFunctions.class);
+    	return BuildNodeFunctionsImpl.INSTANCE.OnlyProductVariant(functions.ProductVariant(), functions.AllInstances());
+      /* End Protected Region   [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
+    }
+
+  }
+  
+  public static class PerInstanceLicenseFunctions {
+
+    private PerInstanceLicenseFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense perInstanceLicense) {
+      return DynamicResourceUtil.invoke(IPerInstanceLicenseFunctionsImpl.class, PerInstanceLicenseFunctionsImpl.INSTANCE, perInstanceLicense).AllProductInstances(perInstanceLicense);
+    }
+
+  }
+
+  public static interface IBuildNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("385ec7fe-dfcd-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant);
+
+  }
+  
+  public static interface IBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("385ec7fe-dfcd-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+
+  }
+  
+  public static class BuildNodeFunctionsImpl implements IBuildNodeFunctionsImpl {
+
+    public static final IBuildNodeFunctionsImpl INSTANCE = new BuildNodeFunctionsImpl();
+
+    private BuildNodeFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      /* Begin Protected Region [[385ec7fe-dfcd-11ef-b0be-9b4cac321140]] */
+    	return buildNodeList.stream().filter(x -> x.selectProductVariants().contains(product_variant)).toList();
+      /* End Protected Region   [[385ec7fe-dfcd-11ef-b0be-9b4cac321140]] */
+    }
+
+  }
+  
+  public static class BuildNodeFunctions {
+
+    private BuildNodeFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyProductVariant(product_variant, buildNodeList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,CVRM5wiJsfX+qkHjTDY3Aj2uEEk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,yMGF3II7zgL8kcd6VbhAwWG6NaA=] */

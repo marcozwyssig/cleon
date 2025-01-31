@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="953f4627-dfd3-11ef-b0be-9b4cac321140">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="9730dc98-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="9730b585-dfd3-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="98a18441-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="98a1843e-dfd3-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="a1d5517f-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="a1d5035c-dfd3-11ef-b0be-9b4cac321140" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="953f4629-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9540cccb-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="1334e892-dfd4-11ef-b0be-9b4cac321140" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9540ccca-dfd3-11ef-b0be-9b4cac321140" type="literal">UserLicenseType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="9730dc98-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="9730b585-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9730dc97-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="953f4627-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="97816d86-dfd3-11ef-b0be-9b4cac321140" type="literal">Floating (Concurrent) License</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="19e259a6-dfd4-11ef-b0be-9b4cac321140" type="literal">A limited number of licenses shared among multiple users, with only a set number allowed to use the software at the same time.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="98a18441-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="98a1843e-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="98a18440-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="953f4627-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99e3ee9b-dfd3-11ef-b0be-9b4cac321140" type="literal">Per User License</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="21743768-dfd4-11ef-b0be-9b4cac321140" type="literal">Often used interchangeably with Named User but may also allow for flexible reassignment.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a1d5517f-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="a1d5035c-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1d52a6e-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="953f4627-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2031840-dfd3-11ef-b0be-9b4cac321140" type="literal">Named User License</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1e12bce7-dfd4-11ef-b0be-9b4cac321140" type="literal">Assigned to a specific individual, meaning only that person can use the software, regardless of how many are licensed.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

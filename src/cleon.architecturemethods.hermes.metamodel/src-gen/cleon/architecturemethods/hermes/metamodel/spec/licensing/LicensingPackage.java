@@ -17,9 +17,24 @@ public class LicensingPackage {
   public static final Resource ProductLicensingForEnvironment_environmentLicensing = new Resource("576486f7-dfc2-11ef-b0be-9b4cac321140");
   public static final Resource AbstractProductEnvironmentLicensing = new Resource("74d2b4cd-dfc2-11ef-b0be-9b4cac321140");
   public static final Resource AbstractProductEnvironmentLicensing_environment = new Resource("eb9d044b-dfc2-11ef-b0be-9b4cac321140");
+  public static final Resource PerInstanceLicense = new Resource("3f9dc083-dfcc-11ef-b0be-9b4cac321140");
+  public static final Resource PerInstanceLicense_amount = new Resource("8f3fcc20-dfcc-11ef-b0be-9b4cac321140");
+  public static final Resource FunctionSpace_aE_Licensing_PerInstanceLicense = new Resource("b461907e-dfcc-11ef-b0be-9b4cac321140");
+  public static final Resource FunctionSpace_aE_Licensing_BuildNode = new Resource("3ec39788-dfcd-11ef-b0be-9b4cac321140");
   public static final Resource UserLicense = new Resource("c296db3a-dfd1-11ef-b0be-9b4cac321140");
   public static final Resource AmountAware_amount = new Resource("db37c98d-dfd1-11ef-b0be-9b4cac321140");
   public static final Resource AmountAware = new Resource("1d688582-dfd2-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseType = new Resource("953f4627-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseType_Floating__F___N_Concurrent__O___F_License = new Resource("9730b585-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseType_Per__F_User__F_License = new Resource("98a1843e-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseType_Named__F_User__F_License = new Resource("a1d5035c-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseValidity = new Resource("de4f3129-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicense_userLicenseType = new Resource("e49a1075-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicense_userLicenseValidity = new Resource("ea26325b-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseValidity_Perpetual = new Resource("f10932b1-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseValidity_Subscription__S_Based = new Resource("f7a73a96-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseValidity_Time__S_Limited__F___N_Trial__U_Demo__O_ = new Resource("f86840ab-dfd3-11ef-b0be-9b4cac321140");
+  public static final Resource UserLicenseValidity_Pay__S_Per__S_Use = new Resource("fb3e4410-dfd3-11ef-b0be-9b4cac321140");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +55,4 @@ public class LicensingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,V+dLhfKLsg9uHOCP3+osNd/0i3Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,eORhRADvcngDv18tixn68Sq8hPw=] */

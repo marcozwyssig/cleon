@@ -109,16 +109,6 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> selectHosts() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_hosts);
-  }
-
-  public WindowsServerLicense setHosts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> hosts) {
-    _setList(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_hosts, hosts);
-    return this;
-  }
-    
-  @Override
   public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
@@ -177,7 +167,6 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_hosts, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing, visitor);
@@ -185,13 +174,9 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense> selectToMeHosts(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_hosts, object.getResource());
-  }
-  
   public static cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense selectToMeWindowsServerHostLicensing(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f6bf82-dfbe-11ef-b0be-9b4cac321140,ge03nsB8nkqttLUVF9ciqp/k+Z0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f6bf82-dfbe-11ef-b0be-9b4cac321140,EI0Ux6rObOwJDC9kpi6xTLK0Sk0=] */

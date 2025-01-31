@@ -8,7 +8,11 @@ public interface ILicenseTyp extends ch.actifsource.core.javamodel.IEnumValue {
   
   public static interface IValueVoidVisitor {
     
+    public void visitApache__F_License__R___F_Version__F_2__T_0();
+    
     public void visitArtistic__F_License__F_2__T_0();
+    
+    public void visitBSD__S_Lizenz();
     
     public void visitGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2();
     
@@ -22,7 +26,11 @@ public interface ILicenseTyp extends ch.actifsource.core.javamodel.IEnumValue {
   
   public static interface IValueVisitor<R> {
     
+    public R visitApache__F_License__R___F_Version__F_2__T_0();
+    
     public R visitArtistic__F_License__F_2__T_0();
+    
+    public R visitBSD__S_Lizenz();
     
     public R visitGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2();
     
@@ -42,7 +50,11 @@ public interface ILicenseTyp extends ch.actifsource.core.javamodel.IEnumValue {
   
   // isValue-Methods
   
+  public boolean isApache__F_License__R___F_Version__F_2__T_0();
+  
   public boolean isArtistic__F_License__F_2__T_0();
+  
+  public boolean isBSD__S_Lizenz();
   
   public boolean isGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2();
   
@@ -55,4 +67,4 @@ public interface ILicenseTyp extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4d4ecf44-dfc0-11ef-b0be-9b4cac321140,IWtR8l8hv1TvzVqZeV/pfHT4PKI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4d4ecf44-dfc0-11ef-b0be-9b4cac321140,ORfOuxe0W62PYmsOsZDtBbXYDxg=] */

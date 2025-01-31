@@ -157,6 +157,26 @@ public class UserLicense extends DynamicResource implements IUserLicense {
     return this;
   }
     
+  @Override
+  public cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseType selectUserLicenseType() {
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseType.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseType);
+  }
+
+  public UserLicense setUserLicenseType(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseType userLicenseType) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseType, userLicenseType);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseValidity selectUserLicenseValidity() {
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseValidity.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseValidity);
+  }
+
+  public UserLicense setUserLicenseValidity(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseValidity userLicenseValidity) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseValidity, userLicenseValidity);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -169,7 +189,19 @@ public class UserLicense extends DynamicResource implements IUserLicense {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseType.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseType, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseValidity.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseValidity, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicense> selectToMeUserLicenseType(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseType object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseType, object.getResource());
+  }
+  
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicense> selectToMeUserLicenseValidity(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicenseValidity object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IUserLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.UserLicense_userLicenseValidity, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c296db3a-dfd1-11ef-b0be-9b4cac321140,N7DPzFmaitzkSMboWdV2UbN8LWQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c296db3a-dfd1-11ef-b0be-9b4cac321140,Evx5CmeqBNlaLpud5TBXtl/eA1E=] */

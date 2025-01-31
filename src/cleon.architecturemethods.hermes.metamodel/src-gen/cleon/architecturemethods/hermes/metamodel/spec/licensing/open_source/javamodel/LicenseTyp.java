@@ -64,7 +64,9 @@ public class LicenseTyp extends DynamicResource implements ILicenseTyp {
 
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
+    if (isApache__F_License__R___F_Version__F_2__T_0()) return visitor.visitApache__F_License__R___F_Version__F_2__T_0();
     if (isArtistic__F_License__F_2__T_0()) return visitor.visitArtistic__F_License__F_2__T_0();
+    if (isBSD__S_Lizenz()) return visitor.visitBSD__S_Lizenz();
     if (isGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2()) return visitor.visitGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2();
     if (isGNU__F_Lesser__F_General__F_Public__F_License__F___N_LGPL__O_()) return visitor.visitGNU__F_Lesser__F_General__F_Public__F_License__F___N_LGPL__O_();
     if (isMozilla__F_Public__F_License__F___N_MPL__O___F_2__T_0()) return visitor.visitMozilla__F_Public__F_License__F___N_MPL__O___F_2__T_0();
@@ -74,8 +76,16 @@ public class LicenseTyp extends DynamicResource implements ILicenseTyp {
   
   @Override
   public void accept(IValueVoidVisitor visitor) {
+    if (isApache__F_License__R___F_Version__F_2__T_0()) {
+      visitor.visitApache__F_License__R___F_Version__F_2__T_0();
+      return;
+    }
     if (isArtistic__F_License__F_2__T_0()) {
       visitor.visitArtistic__F_License__F_2__T_0();
+      return;
+    }
+    if (isBSD__S_Lizenz()) {
+      visitor.visitBSD__S_Lizenz();
       return;
     }
     if (isGNU__F_General__F_Public__F_License__F___N_GPL__O___F_Version__F_2()) {
@@ -100,8 +110,18 @@ public class LicenseTyp extends DynamicResource implements ILicenseTyp {
   // isValue-Methods
     
   @Override
+  public boolean isApache__F_License__R___F_Version__F_2__T_0() {
+    return getResource().equals(cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source.Open_sourcePackage.LicenseTyp_Apache__F_License__R___F_Version__F_2__T_0);
+  }
+  
+  @Override
   public boolean isArtistic__F_License__F_2__T_0() {
     return getResource().equals(cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source.Open_sourcePackage.LicenseTyp_Artistic__F_License__F_2__T_0);
+  }
+  
+  @Override
+  public boolean isBSD__S_Lizenz() {
+    return getResource().equals(cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source.Open_sourcePackage.LicenseTyp_BSD__S_Lizenz);
   }
   
   @Override
@@ -125,4 +145,4 @@ public class LicenseTyp extends DynamicResource implements ILicenseTyp {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4d4ecf44-dfc0-11ef-b0be-9b4cac321140,ccCALUCnPXq6QPyppipW98jShPc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4d4ecf44-dfc0-11ef-b0be-9b4cac321140,jJLsGYojBnRCgSAn6SGH2bIqILE=] */

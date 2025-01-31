@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140">
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="da72d727-dfd2-11ef-b0be-9b4cac321140" type="resource" guid="da72b014-dfd2-11ef-b0be-9b4cac321140" />
     <resource statement-guid="d715a790-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="d715596d-dfc0-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="c178569a-dfd2-11ef-b0be-9b4cac321140" type="resource" guid="c1782f87-dfd2-11ef-b0be-9b4cac321140" />
     <resource statement-guid="59e94812-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="59e920ff-dfc0-11ef-b0be-9b4cac321140" />
     <resource statement-guid="9ee7068e-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="9ee6df7b-dfc0-11ef-b0be-9b4cac321140" />
     <resource statement-guid="c1150626-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="c114b803-dfc0-11ef-b0be-9b4cac321140" />
@@ -17,6 +19,16 @@
     <object statement-guid="4d4f1d67-dfc0-11ef-b0be-9b4cac321140" type="literal">LicenseTyp</object>
   </predicate>
   <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="da72d727-dfd2-11ef-b0be-9b4cac321140">
+      <resource guid="da72b014-dfd2-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="da72d726-dfd2-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dab8e0d8-dfd2-11ef-b0be-9b4cac321140" type="literal">Apache License, Version 2.0</object>
+        </predicate>
+      </resource>
+    </object>
     <object statement-guid="d715a790-dfc0-11ef-b0be-9b4cac321140">
       <resource guid="d715596d-dfc0-11ef-b0be-9b4cac321140">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -24,6 +36,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="d76af381-dfc0-11ef-b0be-9b4cac321140" type="literal">Artistic License 2.0</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c178569a-dfd2-11ef-b0be-9b4cac321140">
+      <resource guid="c1782f87-dfd2-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c1785699-dfd2-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c1b2525b-dfd2-11ef-b0be-9b4cac321140" type="literal">BSD-Lizenz</object>
         </predicate>
       </resource>
     </object>

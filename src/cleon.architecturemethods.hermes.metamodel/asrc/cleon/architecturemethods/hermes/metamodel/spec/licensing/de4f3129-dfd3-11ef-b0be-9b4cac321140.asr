@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="de4f3129-dfd3-11ef-b0be-9b4cac321140">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="f10980d4-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="f10932b1-dfd3-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="f7a761a9-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="f7a73a96-dfd3-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="f86867be-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="f86840ab-dfd3-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="fb3e9233-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="fb3e4410-dfd3-11ef-b0be-9b4cac321140" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de4f583b-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de501b8d-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="ffe07bf5-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de501b8c-dfd3-11ef-b0be-9b4cac321140" type="literal">UserLicenseValidity</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="f10980d4-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="f10932b1-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f10959c3-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="de4f3129-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f2fe4bf5-dfd3-11ef-b0be-9b4cac321140" type="literal">Perpetual</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="04d67977-dfd4-11ef-b0be-9b4cac321140" type="literal">A one-time purchase for indefinite use.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f7a761a9-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="f7a73a96-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f7a761a8-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="de4f3129-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f7db42ea-dfd3-11ef-b0be-9b4cac321140" type="literal">Subscription-Based</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="079fd2a8-dfd4-11ef-b0be-9b4cac321140" type="literal">Requires regular renewal (monthly, yearly, etc.).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f86867be-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="f86840ab-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f86867bd-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="de4f3129-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="facc485f-dfd3-11ef-b0be-9b4cac321140" type="literal">Time-Limited (Trial/Demo)</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="0ab269d9-dfd4-11ef-b0be-9b4cac321140" type="literal">Expires after a set period, often used for evaluation.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fb3e9233-dfd3-11ef-b0be-9b4cac321140">
+      <resource guid="fb3e4410-dfd3-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fb3e6b22-dfd3-11ef-b0be-9b4cac321140" type="resource" guid="de4f3129-dfd3-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fe9c8a44-dfd3-11ef-b0be-9b4cac321140" type="literal">Pay-Per-Use</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="0fc8240a-dfd4-11ef-b0be-9b4cac321140" type="literal">Charged based on actual usage (e.g., hours used or transactions processed).</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -18,91 +18,6 @@ public class FunctionSpace_License_Microsoft {
   /* End Protected Region   [[b1e39890-dfcc-11ef-b0be-9b4cac321140]] */
 
 
-  public static interface IWindowsIOTLicenseFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b6ea85dd-dfcc-11ef-b0be-9b4cac321140")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllWindowsInstances();
-
-    @IDynamicResourceExtension.MethodId("0e1cc1cc-dfcd-11ef-b0be-9b4cac321140")
-    public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant ProductVariant();
-
-    @IDynamicResourceExtension.MethodId("dd11ddd8-dfcd-11ef-b0be-9b4cac321140")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllWindowsProductInstances();
-
-  }
-  
-  public static interface IWindowsIOTLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("dd11ddd8-dfcd-11ef-b0be-9b4cac321140")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllWindowsProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsIOTLicense windowsIOTLicense);
-
-  }
-  
-  public static class WindowsIOTLicenseFunctionsImpl implements IWindowsIOTLicenseFunctionsImpl {
-
-    public static final IWindowsIOTLicenseFunctionsImpl INSTANCE = new WindowsIOTLicenseFunctionsImpl();
-
-    private WindowsIOTLicenseFunctionsImpl() {}
-
-    @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllWindowsProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsIOTLicense windowsIOTLicense) {
-      /* Begin Protected Region [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
-    	final var functions = windowsIOTLicense.extension(IWindowsIOTLicenseFunctions.class);
-    	return BuildNodeFunctionsImpl.INSTANCE.OnlyProductVariant(functions.ProductVariant(), functions.AllWindowsInstances());
-      /* End Protected Region   [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
-    }
-
-  }
-  
-  public static class WindowsIOTLicenseFunctions {
-
-    private WindowsIOTLicenseFunctions() {}
-
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllWindowsProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsIOTLicense windowsIOTLicense) {
-      return DynamicResourceUtil.invoke(IWindowsIOTLicenseFunctionsImpl.class, WindowsIOTLicenseFunctionsImpl.INSTANCE, windowsIOTLicense).AllWindowsProductInstances(windowsIOTLicense);
-    }
-
-  }
-
-  public static interface IBuildNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("385ec7fe-dfcd-11ef-b0be-9b4cac321140")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant);
-
-  }
-  
-  public static interface IBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("385ec7fe-dfcd-11ef-b0be-9b4cac321140")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
-
-  }
-  
-  public static class BuildNodeFunctionsImpl implements IBuildNodeFunctionsImpl {
-
-    public static final IBuildNodeFunctionsImpl INSTANCE = new BuildNodeFunctionsImpl();
-
-    private BuildNodeFunctionsImpl() {}
-
-    @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
-      /* Begin Protected Region [[385ec7fe-dfcd-11ef-b0be-9b4cac321140]] */
-    	return buildNodeList.stream().filter(x -> x.selectProductVariants().contains(product_variant)).toList();
-      /* End Protected Region   [[385ec7fe-dfcd-11ef-b0be-9b4cac321140]] */
-    }
-
-  }
-  
-  public static class BuildNodeFunctions {
-
-    private BuildNodeFunctions() {}
-
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyProductVariant(final cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant, final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
-      return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyProductVariant(product_variant, buildNodeList);
-    }
-
-  }
-
   public static interface IWindowsServerHostLicensingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ce4b67f8-dfce-11ef-b0be-9b4cac321140")
@@ -170,4 +85,4 @@ public class FunctionSpace_License_Microsoft {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1e39890-dfcc-11ef-b0be-9b4cac321140,1ht2mtuobyXWC4brZR+ij7af5XQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1e39890-dfcc-11ef-b0be-9b4cac321140,apiKShRcGuXn+xOMveDiige1RbQ=] */

@@ -7,10 +7,6 @@ public class MicrosoftPackage {
   public static final Resource WindowsServerLicense = new Resource("e8f6bf82-dfbe-11ef-b0be-9b4cac321140");
   public static final Resource OpenMicrosoftLicense = new Resource("a450423d-dfc1-11ef-b0be-9b4cac321140");
   public static final Resource WindowsServerHostLicensing = new Resource("e6437b2d-dfc8-11ef-b0be-9b4cac321140");
-  public static final Resource WindowsServerLicense_windowsServerHostLicensing = new Resource("f0e1fd21-dfc8-11ef-b0be-9b4cac321140");
-  public static final Resource WindowsServerHostLicensing_host = new Resource("fefc5ec5-dfc8-11ef-b0be-9b4cac321140");
-  public static final Resource WindowsServerHostLicensing_physicalCores = new Resource("25e52766-dfc9-11ef-b0be-9b4cac321140");
-  public static final Resource WindowsServerHostLicensing_vms = new Resource("b7c789fc-dfca-11ef-b0be-9b4cac321140");
   public static final Resource MicrosoftLicenseType = new Resource("30588f8a-dfcb-11ef-b0be-9b4cac321140");
   public static final Resource OpenMicrosoftLicense_microsoftLicenseType = new Resource("35ebb70a-dfcb-11ef-b0be-9b4cac321140");
   public static final Resource MicrosoftLicenseType_Microsoft__F_SQL__F_Server__F_License__F_Terms = new Resource("38693a53-dfcb-11ef-b0be-9b4cac321140");
@@ -41,4 +37,4 @@ public class MicrosoftPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft,t9bSZejDhJ/2vkq+BqHZgp3vWB4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft,NleOHzplUnH22zLW1HsmPvjUdLI=] */

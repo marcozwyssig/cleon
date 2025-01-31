@@ -499,6 +499,7 @@
         <resource statement-guid="72e3e12c-dfbb-11ef-b0be-9b4cac321140" type="resource" guid="72e3e129-dfbb-11ef-b0be-9b4cac321140" />
         <resource statement-guid="8f4c44b5-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="8f4bf692-dfcb-11ef-b0be-9b4cac321140" />
         <resource statement-guid="8f562fca-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="8f562fc7-dfcb-11ef-b0be-9b4cac321140" />
+        <resource statement-guid="9311ddfa-dfde-11ef-8b41-bffcdee4ee9e" type="resource" guid="93111aa7-dfde-11ef-8b41-bffcdee4ee9e" />
       </owns>
     </resource>
   </owns>
@@ -5475,6 +5476,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="8f562fcb-dfcb-11ef-b0be-9b4cac321140" type="literal">cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="9311ddfa-dfde-11ef-8b41-bffcdee4ee9e">
+            <resource guid="93111aa7-dfde-11ef-8b41-bffcdee4ee9e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="931141b9-dfde-11ef-8b41-bffcdee4ee9e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9312050b-dfde-11ef-8b41-bffcdee4ee9e" type="literal">cleon.architecturemethods.hermes.metamodel.spec.licensing.redhat</object>
               </predicate>
             </resource>
           </object>

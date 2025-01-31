@@ -10,6 +10,8 @@ public interface IPerInstanceLicense extends cleon.architecturemethods.hermes.me
   
   public java.lang.Integer selectAmount();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectUseProductVariantForCalc();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,red9BZvrhdA11FsGQXEoM8W8vUA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,2hRm5VW2JkxzQzCCaVSBSBezby0=] */

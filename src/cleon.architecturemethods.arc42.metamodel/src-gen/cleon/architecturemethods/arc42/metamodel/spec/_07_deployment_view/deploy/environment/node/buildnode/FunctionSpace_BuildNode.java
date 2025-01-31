@@ -183,6 +183,9 @@ public class FunctionSpace_BuildNode {
     @IDynamicResourceExtension.MethodId("008ab45f-a433-11ec-a02c-0578282f8413")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows();
 
+    @IDynamicResourceExtension.MethodId("a043e5de-dfdf-11ef-8b41-bffcdee4ee9e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux();
+
     @IDynamicResourceExtension.MethodId("4de742de-7bb1-11e9-94aa-f1ea7ea33f46")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH();
 
@@ -231,6 +234,9 @@ public class FunctionSpace_BuildNode {
 
     @IDynamicResourceExtension.MethodId("008ab45f-a433-11ec-a02c-0578282f8413")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+
+    @IDynamicResourceExtension.MethodId("a043e5de-dfdf-11ef-8b41-bffcdee4ee9e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("4de742de-7bb1-11e9-94aa-f1ea7ea33f46")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
@@ -286,6 +292,11 @@ public class FunctionSpace_BuildNode {
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IWindowsSystemConfiguration).collect(java.util.stream.Collectors.toList());
+    }
+
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.ILinuxSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
@@ -440,6 +451,10 @@ public class FunctionSpace_BuildNode {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyWindows(buildNodeList);
     }
 
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyLinux(buildNodeList);
+    }
+
     public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyVMH(buildNodeList);
     }
@@ -540,4 +555,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,0CAk5KOPhM/CJePQgQ8rcNiGAUU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,fYe0autMH7a/zJdKaAYo7sIq/Bk=] */

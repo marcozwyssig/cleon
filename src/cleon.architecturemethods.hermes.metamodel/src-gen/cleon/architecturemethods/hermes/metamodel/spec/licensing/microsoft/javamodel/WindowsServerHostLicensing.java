@@ -41,31 +41,31 @@ public class WindowsServerHostLicensing extends DynamicResource implements IWind
 
   @Override
   public java.lang.Integer selectPhysicalCores() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_physicalCores);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_physicalCores);
   }
     
   public void setPhysicalCores(java.lang.Integer physicalCores) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_physicalCores, physicalCores);
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_physicalCores, physicalCores);
   }
 
   @Override
   public java.lang.Integer selectVms() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_vms);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_vms);
   }
     
   public void setVms(java.lang.Integer vms) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_vms, vms);
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_vms, vms);
   }
 
   // relations
   
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode selectHost() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_host);
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_host);
   }
 
   public WindowsServerHostLicensing setHost(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode host) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_host, host);
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_host, host);
     return this;
   }
     
@@ -104,23 +104,19 @@ public class WindowsServerHostLicensing extends DynamicResource implements IWind
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_amount, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_physicalCores, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_vms, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_physicalCores, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_vms, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_host, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerHostLicensing_host, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IMicrosoftServerLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_microsoftServerLicense, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing selectToMeHost(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_host, object.getResource());
-  }
-  
   public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing> selectToMeMicrosoftServerLicense(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IMicrosoftServerLicense object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerHostLicensing_microsoftServerLicense, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6437b2d-dfc8-11ef-b0be-9b4cac321140,1NNmMs2F4avvY5i8FqIsxh1WY3w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6437b2d-dfc8-11ef-b0be-9b4cac321140,EbIT1L9xVrZ0DF2VNHy38DxnF9s=] */

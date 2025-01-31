@@ -109,22 +109,22 @@ public class ProductLicensingForEnvironment extends DynamicResource implements I
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectLicenseForProductVariant() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant);
+  }
+
+  public ProductLicensingForEnvironment setLicenseForProductVariant(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant licenseForProductVariant) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant, licenseForProductVariant);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
   public ProductLicensingForEnvironment setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectProduct_variant() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant);
-  }
-
-  public ProductLicensingForEnvironment setProduct_variant(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant, product_variant);
     return this;
   }
     
@@ -157,8 +157,8 @@ public class ProductLicensingForEnvironment extends DynamicResource implements I
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractProductEnvironmentLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.ProductLicensingForEnvironment_environmentLicensing, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -169,4 +169,4 @@ public class ProductLicensingForEnvironment extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d30d48bc-dfc1-11ef-b0be-9b4cac321140,pkLYrpKEDgLaunWwnuDfu5vsm+w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d30d48bc-dfc1-11ef-b0be-9b4cac321140,XrBfzDfT19WY6oW5WrOZwwNwJHo=] */

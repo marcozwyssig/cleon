@@ -26,6 +26,9 @@ public class FunctionSpace_License_Microsoft {
     @IDynamicResourceExtension.MethodId("cedf3257-dfd0-11ef-b0be-9b4cac321140")
     public java.lang.Integer LicenseAmount();
 
+    @IDynamicResourceExtension.MethodId("83c93536-dfde-11ef-8b41-bffcdee4ee9e")
+    public java.lang.Integer GetVMCount();
+
   }
   
   public static interface IWindowsServerHostLicensingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -85,4 +88,4 @@ public class FunctionSpace_License_Microsoft {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1e39890-dfcc-11ef-b0be-9b4cac321140,apiKShRcGuXn+xOMveDiige1RbQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1e39890-dfcc-11ef-b0be-9b4cac321140,r8vu1xGzM20GeQz2NKS4WlBf124=] */

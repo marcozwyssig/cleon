@@ -129,6 +129,16 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractServerHostLicensing> selectServerHostLicensing() {
+    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerLicense_serverHostLicensing);
+  }
+
+  public WindowsServerLicense setServerHostLicensing(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractServerHostLicensing> serverHostLicensing) {
+    _setMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerLicense_serverHostLicensing, serverHostLicensing);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -148,16 +158,6 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
     return this;
   }
     
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing> selectWindowsServerHostLicensing() {
-    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing);
-  }
-
-  public WindowsServerLicense setWindowsServerHostLicensing(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing> windowsServerHostLicensing) {
-    _setMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing, windowsServerHostLicensing);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -168,15 +168,9 @@ public class WindowsServerLicense extends DynamicResource implements IWindowsSer
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractServerLicense_serverHostLicensing, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense selectToMeWindowsServerHostLicensing(cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerHostLicensing object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.javamodel.IWindowsServerLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.microsoft.MicrosoftPackage.WindowsServerLicense_windowsServerHostLicensing, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f6bf82-dfbe-11ef-b0be-9b4cac321140,EI0Ux6rObOwJDC9kpi6xTLK0Sk0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f6bf82-dfbe-11ef-b0be-9b4cac321140,oXiLuMG6ja/1UV4NjsCR9NEjB+U=] */

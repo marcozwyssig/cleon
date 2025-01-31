@@ -8,8 +8,8 @@ public interface IAbstractProductLicensing extends cleon.common.doc.metamodel.sp
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectProduct_variant();
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectLicenseForProductVariant();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,de7849ee-dfbe-11ef-b0be-9b4cac321140,s9gthmrL/pGtjq5lBFa2ce2aiYs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,de7849ee-dfbe-11ef-b0be-9b4cac321140,cZD7lWChuQcHg0DdPz7JD60QQW0=] */

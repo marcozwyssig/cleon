@@ -157,6 +157,16 @@ public class PerInstanceLicense extends DynamicResource implements IPerInstanceL
     return this;
   }
     
+  @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectUseProductVariantForCalc() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_useProductVariantForCalc);
+  }
+
+  public PerInstanceLicense setUseProductVariantForCalc(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant useProductVariantForCalc) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_useProductVariantForCalc, useProductVariantForCalc);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -169,7 +179,12 @@ public class PerInstanceLicense extends DynamicResource implements IPerInstanceL
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_useProductVariantForCalc, visitor);
   }
 
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense> selectToMeUseProductVariantForCalc(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.PerInstanceLicense_useProductVariantForCalc, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,Z6HzaXijVEfGSQSVZof7SjRWipA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f9dc083-dfcc-11ef-b0be-9b4cac321140,t5QPZCBRB8XjYC5QlRnNoKMjCgk=] */

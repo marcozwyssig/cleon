@@ -99,22 +99,22 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectLicenseForProductVariant() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant);
+  }
+
+  public OpenSourceLicense setLicenseForProductVariant(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant licenseForProductVariant) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant, licenseForProductVariant);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
   public OpenSourceLicense setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectProduct_variant() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant);
-  }
-
-  public OpenSourceLicense setProduct_variant(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant product_variant) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant, product_variant);
     return this;
   }
     
@@ -157,8 +157,8 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_licenseForProductVariant, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductLicensing_product_aE_variant, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source.javamodel.ILicenseTyp.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.open_source.Open_sourcePackage.OpenSourceLicense_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -170,4 +170,4 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3036d829-dfc0-11ef-b0be-9b4cac321140,nSZBAalufQwKaGT9VipLW7uLa9s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3036d829-dfc0-11ef-b0be-9b4cac321140,u0AfFjn0BVzlCSdxIKmymxHsHrA=] */

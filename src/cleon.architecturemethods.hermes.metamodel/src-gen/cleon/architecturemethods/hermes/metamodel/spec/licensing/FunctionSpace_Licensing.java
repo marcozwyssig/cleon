@@ -73,7 +73,11 @@ public class FunctionSpace_Licensing {
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> AllProductInstances(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IPerInstanceLicense perInstanceLicense) {
       /* Begin Protected Region [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
     	final var functions = perInstanceLicense.extension(IPerInstanceLicenseFunctions.class);
-    	return BuildNodeFunctionsImpl.INSTANCE.OnlyProductVariant(functions.ProductVariant(), functions.AllInstances());
+    	var productVariant = perInstanceLicense.selectUseProductVariantForCalc();
+    	if( productVariant == null) {
+    		productVariant = functions.ProductVariant();
+    	}
+    	return BuildNodeFunctionsImpl.INSTANCE.OnlyProductVariant(productVariant, functions.AllInstances());
       /* End Protected Region   [[dd11ddd8-dfcd-11ef-b0be-9b4cac321140]] */
     }
 
@@ -128,6 +132,31 @@ public class FunctionSpace_Licensing {
 
   }
 
+  public static interface IAbstractServerHostLicensingFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6c70f351-dfde-11ef-8b41-bffcdee4ee9e")
+    public java.lang.Integer GetVMCount();
+
+  }
+  
+  public static interface IAbstractServerHostLicensingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractServerHostLicensingFunctionsImpl implements IAbstractServerHostLicensingFunctionsImpl {
+
+    public static final IAbstractServerHostLicensingFunctionsImpl INSTANCE = new AbstractServerHostLicensingFunctionsImpl();
+
+    private AbstractServerHostLicensingFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractServerHostLicensingFunctions {
+
+    private AbstractServerHostLicensingFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,yMGF3II7zgL8kcd6VbhAwWG6NaA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,mfzN2Rl8rqYyyaoPW63BvZECLUY=] */

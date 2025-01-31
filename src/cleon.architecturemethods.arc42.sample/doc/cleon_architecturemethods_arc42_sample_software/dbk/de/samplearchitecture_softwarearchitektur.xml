@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
-	<db:title>SampleArchitecture Softwarearchitecture</db:title>
+	<db:title>SampleArchitecture Softwarearchitektur</db:title>
 	
 	<db:chapter xml:id="ea.d60666fd-3f61-11e6-a833-6352f3897082">
 		<db:title>Kontextabgrenzung</db:title>
@@ -15,10 +15,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MySampleSoftware in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_1: MySampleSoftware &lt;SoftwareSystem&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software/BuildingBlockOverviewDiagram_Level_1__MySampleSoftware__SoftwareSystem___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software/BuildingBlockOverviewDiagram_Ebene_1__MySampleSoftware__SoftwareSystem___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>

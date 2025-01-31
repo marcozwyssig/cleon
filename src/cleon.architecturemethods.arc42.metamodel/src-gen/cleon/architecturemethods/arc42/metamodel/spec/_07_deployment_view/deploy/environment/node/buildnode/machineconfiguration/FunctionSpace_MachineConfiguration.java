@@ -26,10 +26,16 @@ public class FunctionSpace_MachineConfiguration {
     @IDynamicResourceExtension.MethodId("1f73bb72-87f8-11ec-894d-7968efa38b99")
     public java.lang.Integer Core();
 
+    @IDynamicResourceExtension.MethodId("7b076fac-dfc9-11ef-b0be-9b4cac321140")
+    public java.lang.Integer TotalCores();
+
   }
   
   public static interface ICPU_ConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("7b076fac-dfc9-11ef-b0be-9b4cac321140")
+    public java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration);
+
   }
   
   public static class CPU_ConfigurationFunctionsImpl implements ICPU_ConfigurationFunctionsImpl {
@@ -38,11 +44,22 @@ public class FunctionSpace_MachineConfiguration {
 
     private CPU_ConfigurationFunctionsImpl() {}
 
+    @Override
+    public java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration) {
+      /* Begin Protected Region [[7b076fac-dfc9-11ef-b0be-9b4cac321140]] */
+    	return cPU_Configuration.extension(ICPU_ConfigurationFunctions.class).Cpu() * cPU_Configuration.extension(ICPU_ConfigurationFunctions.class).Core();    
+      /* End Protected Region   [[7b076fac-dfc9-11ef-b0be-9b4cac321140]] */
+    }
+
   }
   
   public static class CPU_ConfigurationFunctions {
 
     private CPU_ConfigurationFunctions() {}
+
+    public static java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration) {
+      return DynamicResourceUtil.invoke(ICPU_ConfigurationFunctionsImpl.class, CPU_ConfigurationFunctionsImpl.INSTANCE, cPU_Configuration).TotalCores(cPU_Configuration);
+    }
 
   }
 
@@ -101,4 +118,4 @@ public class FunctionSpace_MachineConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,Ut8xUptS4c4ntz8jrCao2DVE0vQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,cLsh/bKWET0IIrql3udB9BcQx/4=] */

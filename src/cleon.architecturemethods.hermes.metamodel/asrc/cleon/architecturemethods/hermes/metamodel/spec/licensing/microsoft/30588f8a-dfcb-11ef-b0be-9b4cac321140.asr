@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="30588f8a-dfcb-11ef-b0be-9b4cac321140">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="38696166-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="38693a53-dfcb-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="3ca9a34b-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="3ca9a348-dfcb-11ef-b0be-9b4cac321140" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3058b69c-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="305b4eae-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="305b279d-dfcb-11ef-b0be-9b4cac321140" type="literal">MicrosoftLicenseType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="38696166-dfcb-11ef-b0be-9b4cac321140">
+      <resource guid="38693a53-dfcb-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="38693a55-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="30588f8a-dfcb-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3896b2f7-dfcb-11ef-b0be-9b4cac321140" type="literal">Microsoft SQL Server License Terms</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3ca9a34b-dfcb-11ef-b0be-9b4cac321140">
+      <resource guid="3ca9a348-dfcb-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3ca9a34a-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="30588f8a-dfcb-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3cdf0b2c-dfcb-11ef-b0be-9b4cac321140" type="literal">MicrosoftSoftwareLicenseTerms</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

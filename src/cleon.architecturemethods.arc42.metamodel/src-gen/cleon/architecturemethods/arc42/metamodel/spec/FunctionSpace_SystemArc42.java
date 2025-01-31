@@ -66,6 +66,9 @@ public class FunctionSpace_SystemArc42 {
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name);
 
+    @IDynamicResourceExtension.MethodId("ce9a9045-dfc2-11ef-b0be-9b4cac321140")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment> Environments();
+
   }
   
   public static interface ISystemArc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -109,4 +112,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,58XbGWJHA00FysdMVbYsjmve7QU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,YljEWaVsj36U2J1KqY36Y7FgpKQ=] */

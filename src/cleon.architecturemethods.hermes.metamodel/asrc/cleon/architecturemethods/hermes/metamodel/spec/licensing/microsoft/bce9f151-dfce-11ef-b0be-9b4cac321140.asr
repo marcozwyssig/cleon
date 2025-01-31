@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bce9f151-dfce-11ef-b0be-9b4cac321140">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="bee39f44-dfce-11ef-b0be-9b4cac321140" type="resource" guid="bee37831-dfce-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="c3cca416-dfce-11ef-b0be-9b4cac321140" type="resource" guid="c3cc7d03-dfce-11ef-b0be-9b4cac321140" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bcea1863-dfce-11ef-b0be-9b4cac321140" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bcebc615-dfce-11ef-b0be-9b4cac321140" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bceb9f04-dfce-11ef-b0be-9b4cac321140" type="literal">MicrosoftServerLicense</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="bee39f44-dfce-11ef-b0be-9b4cac321140">
+      <resource guid="bee37831-dfce-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bee37833-dfce-11ef-b0be-9b4cac321140" type="resource" guid="bce9f151-dfce-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bf1f48a2-dfce-11ef-b0be-9b4cac321140" type="literal">Datacenter</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c3cca416-dfce-11ef-b0be-9b4cac321140">
+      <resource guid="c3cc7d03-dfce-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3cc7d05-dfce-11ef-b0be-9b4cac321140" type="resource" guid="bce9f151-dfce-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c426aaf7-dfce-11ef-b0be-9b4cac321140" type="literal">Standard</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

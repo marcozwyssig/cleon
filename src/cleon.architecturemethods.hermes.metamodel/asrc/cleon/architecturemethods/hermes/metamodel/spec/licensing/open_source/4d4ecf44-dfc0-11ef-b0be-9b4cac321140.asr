@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="d715a790-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="d715596d-dfc0-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="59e94812-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="59e920ff-dfc0-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="9ee7068e-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="9ee6df7b-dfc0-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="c1150626-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="c114b803-dfc0-11ef-b0be-9b4cac321140" />
+    <resource statement-guid="7c558928-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="7c556215-dfc0-11ef-b0be-9b4cac321140" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4d4ef656-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4d4f4478-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4d4f1d67-dfc0-11ef-b0be-9b4cac321140" type="literal">LicenseTyp</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="d715a790-dfc0-11ef-b0be-9b4cac321140">
+      <resource guid="d715596d-dfc0-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d715807f-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d76af381-dfc0-11ef-b0be-9b4cac321140" type="literal">Artistic License 2.0</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="59e94812-dfc0-11ef-b0be-9b4cac321140">
+      <resource guid="59e920ff-dfc0-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59e94811-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5a2ce0c3-dfc0-11ef-b0be-9b4cac321140" type="literal">GNU General Public License (GPL) Version 2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9ee7068e-dfc0-11ef-b0be-9b4cac321140">
+      <resource guid="9ee6df7b-dfc0-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9ee6df7d-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9f1605cf-dfc0-11ef-b0be-9b4cac321140" type="literal">GNU Lesser General Public License (LGPL)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c1150626-dfc0-11ef-b0be-9b4cac321140">
+      <resource guid="c114b803-dfc0-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c114df15-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c1573f47-dfc0-11ef-b0be-9b4cac321140" type="literal">Mozilla Public License (MPL) 2.0</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7c558928-dfc0-11ef-b0be-9b4cac321140">
+      <resource guid="7c556215-dfc0-11ef-b0be-9b4cac321140">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7c556217-dfc0-11ef-b0be-9b4cac321140" type="resource" guid="4d4ecf44-dfc0-11ef-b0be-9b4cac321140" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7cade259-dfc0-11ef-b0be-9b4cac321140" type="literal">MIT-License</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

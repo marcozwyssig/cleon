@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SolutionVariant extends DynamicResource implements ISolutionVariant {
+public class NamedSolutionVariant extends DynamicResource implements INamedSolutionVariant {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolutionVariant> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISolutionVariant>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionVariant> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionVariant>() {
     
     @Override
-    public ISolutionVariant create() {
-      return new SolutionVariant();
+    public INamedSolutionVariant create() {
+      return new NamedSolutionVariant();
     }
     
     @Override
-    public ISolutionVariant create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SolutionVariant(resourceRepository, resource);
+    public INamedSolutionVariant create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedSolutionVariant(resourceRepository, resource);
     }
   
   };
 
-  public SolutionVariant() {
-    super(ISolutionVariant.TYPE_ID);
+  public NamedSolutionVariant() {
+    super(INamedSolutionVariant.TYPE_ID);
   }
   
-  public SolutionVariant(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISolutionVariant.TYPE_ID);
+  public NamedSolutionVariant(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedSolutionVariant.TYPE_ID);
   }
 
   // attributes
@@ -66,6 +66,15 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
+  }
+    
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
+  }
+
   // relations
   
   @Override
@@ -73,7 +82,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public SolutionVariant setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public NamedSolutionVariant setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -83,7 +92,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public SolutionVariant setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public NamedSolutionVariant setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -93,7 +102,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public SolutionVariant setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NamedSolutionVariant setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -103,7 +112,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
   }
 
-  public SolutionVariant setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+  public NamedSolutionVariant setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
     return this;
   }
@@ -113,7 +122,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public SolutionVariant setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NamedSolutionVariant setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -123,7 +132,7 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SolutionVariant setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedSolutionVariant setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -132,7 +141,6 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -145,4 +153,4 @@ public class SolutionVariant extends DynamicResource implements ISolutionVariant
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,408a39e6-d8b7-11ef-a46f-a1c9ec5f966b,gHFA3JhFNdpe/Fd+W4s5uTCpy+k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,852064a3-e248-11ef-a500-cb425fc4109d,xE/aT450/jFjfqzha5qV21DWPX8=] */

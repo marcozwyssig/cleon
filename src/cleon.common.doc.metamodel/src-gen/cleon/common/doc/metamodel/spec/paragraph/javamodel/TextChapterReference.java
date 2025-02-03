@@ -51,12 +51,12 @@ public class TextChapterReference extends DynamicResource implements ITextChapte
   // relations
   
   @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapter() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapter);
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapterRef() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef);
   }
 
-  public TextChapterReference setChapter(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter chapter) {
-    _setSingle(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapter, chapter);
+  public TextChapterReference setChapterRef(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter chapterRef) {
+    _setSingle(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, chapterRef);
     return this;
   }
     
@@ -107,11 +107,11 @@ public class TextChapterReference extends DynamicResource implements ITextChapte
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapter, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptMap(cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,PdiQA0wsqxShxmtHQN1KlBlVmf0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,z4Kdi+bJj4iqUk1/z1SxU/ooWPU=] */

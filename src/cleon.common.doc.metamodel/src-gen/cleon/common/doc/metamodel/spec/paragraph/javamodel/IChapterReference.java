@@ -8,8 +8,8 @@ public interface IChapterReference extends cleon.common.doc.metamodel.spec.parag
   
   // relations
   
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapter();
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapterRef();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5c6eca85-dd88-11ef-9ced-81351e97716a,N9CBch54sl3XgWk3/HIuIEZbC/0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5c6eca85-dd88-11ef-9ced-81351e97716a,bDJcc0fDeUwGQtsYl/cCpTbN1Rc=] */

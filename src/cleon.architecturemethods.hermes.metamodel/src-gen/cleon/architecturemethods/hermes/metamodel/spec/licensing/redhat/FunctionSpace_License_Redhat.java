@@ -87,7 +87,4 @@ public class FunctionSpace_License_Redhat {
 
 }
 
-      /* Begin Protected Region [[6273c591-dfdf-11ef-8b41-bffcdee4ee9e]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[6273c591-dfdf-11ef-8b41-bffcdee4ee9e]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6273c58f-dfdf-11ef-8b41-bffcdee4ee9e,++JuBHU4WHnw7zpKtbIf6ZkRH9Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6273c58f-dfdf-11ef-8b41-bffcdee4ee9e,3ng5qINP4xT15Bxk1RtZWXBttOk=] */

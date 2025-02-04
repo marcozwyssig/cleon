@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Custom extends DynamicResource implements ICustom {
+public class CustomProtectedRegion extends DynamicResource implements ICustomProtectedRegion {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICustom> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICustom>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICustomProtectedRegion> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICustomProtectedRegion>() {
     
     @Override
-    public ICustom create() {
-      return new Custom();
+    public ICustomProtectedRegion create() {
+      return new CustomProtectedRegion();
     }
     
     @Override
-    public ICustom create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Custom(resourceRepository, resource);
+    public ICustomProtectedRegion create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new CustomProtectedRegion(resourceRepository, resource);
     }
   
   };
 
-  public Custom() {
-    super(ICustom.TYPE_ID);
+  public CustomProtectedRegion() {
+    super(ICustomProtectedRegion.TYPE_ID);
   }
   
-  public Custom(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ICustom.TYPE_ID);
+  public CustomProtectedRegion(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ICustomProtectedRegion.TYPE_ID);
   }
 
   // attributes
@@ -46,7 +46,7 @@ public class Custom extends DynamicResource implements ICustom {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Custom setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public CustomProtectedRegion setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -56,7 +56,7 @@ public class Custom extends DynamicResource implements ICustom {
     return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
   }
 
-  public Custom setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+  public CustomProtectedRegion setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
     return this;
   }
@@ -66,7 +66,7 @@ public class Custom extends DynamicResource implements ICustom {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Custom setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public CustomProtectedRegion setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -76,7 +76,7 @@ public class Custom extends DynamicResource implements ICustom {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Custom setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public CustomProtectedRegion setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -91,4 +91,4 @@ public class Custom extends DynamicResource implements ICustom {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab1577a0-dd69-11ef-9ced-81351e97716a,qrHZ5wQukbWjJfSoGcxgpm5hHjE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab1577a0-dd69-11ef-9ced-81351e97716a,tlGJ2o4aT2P6peU8ebOJ4kj6G18=] */

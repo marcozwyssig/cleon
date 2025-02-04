@@ -40,8 +40,10 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_StringLiteral = new Resource("c766c3dd-e527-11ee-a074-d7afe74e4a27");
   public static final Resource FunctionSpace_aE_Asciidoc_TextLiteral = new Resource("1a6cbb85-e528-11ee-a074-d7afe74e4a27");
   public static final Resource FunctionSpace_aE_Asciidoc_ListItem = new Resource("7843b9f5-24f0-11ef-83a6-fdf80672957b");
-  public static final Resource FunctionSpace_aE_Asciidoc_Custom = new Resource("0b322740-dd6b-11ef-9ced-81351e97716a");
+  public static final Resource FunctionSpace_aE_Asciidoc_CustomProtectedRegion = new Resource("0b322740-dd6b-11ef-9ced-81351e97716a");
   public static final Resource FunctionSpace_aE_Asciidoc_ChapterReference = new Resource("a5b1ac35-dd88-11ef-9ced-81351e97716a");
+  public static final Resource FunctionSpace_aE_Asciidoc_FormatSpecificContent = new Resource("ac3f71ea-e307-11ef-b923-77f2289118eb");
+  public static final Resource FunctionSpace_aE_Asciidoc_SimpleItemizedList = new Resource("4e40eb58-e30a-11ef-b923-77f2289118eb");
   
   /* Begin Protected Region [[user]] */
   
@@ -62,4 +64,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,FGZXWhNgqObmLRGkZt/Lb6sBqZI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,aps3lQ2o9Tzxyfoof3GAB5KsJVo=] */

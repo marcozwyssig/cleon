@@ -911,31 +911,81 @@ public class FunctionSpace_X2Doc {
 
   }
 
-  public static interface ICustomFunctions extends IDynamicResourceExtension {
+  public static interface ICustomProtectedRegionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2aa5e96c-dd6b-11ef-9ced-81351e97716a")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface ICustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ICustomProtectedRegionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CustomFunctionsImpl implements ICustomFunctionsImpl {
+  public static class CustomProtectedRegionFunctionsImpl implements ICustomProtectedRegionFunctionsImpl {
 
-    public static final ICustomFunctionsImpl INSTANCE = new CustomFunctionsImpl();
+    public static final ICustomProtectedRegionFunctionsImpl INSTANCE = new CustomProtectedRegionFunctionsImpl();
 
-    private CustomFunctionsImpl() {}
+    private CustomProtectedRegionFunctionsImpl() {}
 
   }
   
-  public static class CustomFunctions {
+  public static class CustomProtectedRegionFunctions {
 
-    private CustomFunctions() {}
+    private CustomProtectedRegionFunctions() {}
+
+  }
+
+  public static interface IFormatSpecificContentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c7625159-e307-11ef-b923-77f2289118eb")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IFormatSpecificContentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FormatSpecificContentFunctionsImpl implements IFormatSpecificContentFunctionsImpl {
+
+    public static final IFormatSpecificContentFunctionsImpl INSTANCE = new FormatSpecificContentFunctionsImpl();
+
+    private FormatSpecificContentFunctionsImpl() {}
+
+  }
+  
+  public static class FormatSpecificContentFunctions {
+
+    private FormatSpecificContentFunctions() {}
+
+  }
+
+  public static interface ISimpleItemizedListFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("29a8533c-e30a-11ef-b923-77f2289118eb")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ISimpleItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SimpleItemizedListFunctionsImpl implements ISimpleItemizedListFunctionsImpl {
+
+    public static final ISimpleItemizedListFunctionsImpl INSTANCE = new SimpleItemizedListFunctionsImpl();
+
+    private SimpleItemizedListFunctionsImpl() {}
+
+  }
+  
+  public static class SimpleItemizedListFunctions {
+
+    private SimpleItemizedListFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,UHB2Ww79FJ4RPAQJLgEG7nzF0RE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,EFikOf+MDsdmC/DwD2MrvCyK5vw=] */

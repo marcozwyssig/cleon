@@ -60,6 +60,15 @@ public class FunctionSpace_Asciidoc_Glossary {
     @IDynamicResourceExtension.MethodId("1cb80d58-d24e-11ee-b255-49ab47716ebd")
     public java.lang.String RenderContent_EN(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("2cdefd52-e3bd-11ef-bef0-df3c7733fc9f")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("bbcec919-e3bd-11ef-bef0-df3c7733fc9f")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+    @IDynamicResourceExtension.MethodId("82906fd2-e3be-11ef-bef0-df3c7733fc9f")
+    public cleon.common.doc.metamodel.spec.document.javamodel.IDocument GetDocument();
+
   }
   
   public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -82,4 +91,4 @@ public class FunctionSpace_Asciidoc_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,5Xu2GYauzGI3MoTdI14CKFxoWR8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,488wPwCsrH3O0rvAFFkoMq6Abp0=] */

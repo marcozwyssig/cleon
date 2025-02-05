@@ -48,9 +48,6 @@ public class FunctionSpace_Asciidoc {
 
   public static interface ISolutionConceptFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("4114b34c-d80b-11ef-ad20-b9fb31034392")
-    public java.lang.String GetDocumentPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
     @IDynamicResourceExtension.MethodId("c0949bd8-d8a6-11ef-a46f-a1c9ec5f966b")
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
@@ -201,4 +198,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,zXsDdnRV6VKPFugjlJJnAJwxKWc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,9yub3u4AD4r7O3Wp5TOqu6P7XQA=] */

@@ -73,6 +73,9 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("ce93a58d-27d3-11ef-9e2d-0b682fec1a77")
     public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("8ef99ca0-e3ba-11ef-bef0-df3c7733fc9f")
+    public java.lang.String RenderChapterEnd(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -82,6 +85,9 @@ public class FunctionSpace_Asciidoc {
 
     @IDynamicResourceExtension.MethodId("42642fc6-e5d9-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderMetaData(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
+    @IDynamicResourceExtension.MethodId("8ef99ca0-e3ba-11ef-bef0-df3c7733fc9f")
+    public java.lang.String RenderChapterEnd(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
@@ -101,6 +107,11 @@ public class FunctionSpace_Asciidoc {
       return null;
     }
 
+    @Override
+    public java.lang.String RenderChapterEnd(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return null;
+    }
+
   }
   
   public static class AbstractChapterFunctions {
@@ -113,6 +124,10 @@ public class FunctionSpace_Asciidoc {
 
     public static java.lang.String RenderMetaData(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderMetaData(language, abstractChapter);
+    }
+
+    public static java.lang.String RenderChapterEnd(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderChapterEnd(language, abstractChapter);
     }
 
   }
@@ -1076,4 +1091,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,39pzkJL4mH1Lwl5HRbltc+GbIqc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,FFzMz6Q0a7PRZIqF9GlXtFV45lI=] */

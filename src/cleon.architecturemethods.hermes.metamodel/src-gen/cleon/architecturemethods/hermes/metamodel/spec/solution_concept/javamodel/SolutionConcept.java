@@ -147,6 +147,16 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
     
   @Override
+  public cleon.common.glossary.metamodel.spec.javamodel.IGlossary selectGlossary() {
+    return _getSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary);
+  }
+
+  public SolutionConcept setGlossary(cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
+    _setSingle(cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, glossary);
+    return this;
+  }
+    
+  @Override
   public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings selectLanguageSettings() {
     return _getSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings);
   }
@@ -231,6 +241,7 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_backgrouund, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_conclusion, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation, visitor);
+    _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
@@ -263,4 +274,4 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,cOObz+stsLuGWEqJY+aYSv/z97o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,ZUOAFaz+yyU1HBgUOIp972Y/AKw=] */

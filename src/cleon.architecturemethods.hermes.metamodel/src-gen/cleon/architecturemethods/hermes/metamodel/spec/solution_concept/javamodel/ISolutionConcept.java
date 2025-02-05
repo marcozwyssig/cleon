@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamod
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.document.javamodel.INamedDocument, cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAboutAware {
+public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.document.javamodel.INamedDocument, cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAboutAware, cleon.common.glossary.metamodel.spec.javamodel.IGlossaryAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("9cff9835-d32d-11ef-802e-175af1a41dfa");
   
@@ -20,4 +20,4 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,qK7O7L3HGqPBG/CMQUnWEteR2Uk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,AOZclgfBJbVZZChc3oA3agWVBWo=] */

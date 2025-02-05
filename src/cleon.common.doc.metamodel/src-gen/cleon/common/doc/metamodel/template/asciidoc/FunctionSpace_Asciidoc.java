@@ -1049,6 +1049,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IPageBreakFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("239b26a6-e3b9-11ef-bef0-df3c7733fc9f")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IPageBreakFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PageBreakFunctionsImpl implements IPageBreakFunctionsImpl {
+
+    public static final IPageBreakFunctionsImpl INSTANCE = new PageBreakFunctionsImpl();
+
+    private PageBreakFunctionsImpl() {}
+
+  }
+  
+  public static class PageBreakFunctions {
+
+    private PageBreakFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,OhIm5B8lC1R8xij38ET2PVSE71I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,39pzkJL4mH1Lwl5HRbltc+GbIqc=] */

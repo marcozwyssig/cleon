@@ -986,6 +986,31 @@ public class FunctionSpace_X2Doc {
 
   }
 
+  public static interface IPageBreakFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5899bd58-e3b9-11ef-bef0-df3c7733fc9f")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IPageBreakFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PageBreakFunctionsImpl implements IPageBreakFunctionsImpl {
+
+    public static final IPageBreakFunctionsImpl INSTANCE = new PageBreakFunctionsImpl();
+
+    private PageBreakFunctionsImpl() {}
+
+  }
+  
+  public static class PageBreakFunctions {
+
+    private PageBreakFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,EFikOf+MDsdmC/DwD2MrvCyK5vw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,ja9/+RhtCHuPkgGLH+bvpSi9v6A=] */

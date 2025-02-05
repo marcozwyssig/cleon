@@ -1075,6 +1075,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IPageBreakFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("498088eb-e3b9-11ef-bef0-df3c7733fc9f")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IPageBreakFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PageBreakFunctionsImpl implements IPageBreakFunctionsImpl {
+
+    public static final IPageBreakFunctionsImpl INSTANCE = new PageBreakFunctionsImpl();
+
+    private PageBreakFunctionsImpl() {}
+
+  }
+  
+  public static class PageBreakFunctions {
+
+    private PageBreakFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,5stI7G+jv8MdCRdkDhL+9BJht5k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,NXC5ga9PZasRo/6d4dmrgZMKUQI=] */

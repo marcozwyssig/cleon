@@ -45,6 +45,10 @@ public class LicensingPackage {
   public static final Resource PerInstanceLicense_useProductVariantForCalc = new Resource("dd722e4b-dfef-11ef-8b41-bffcdee4ee9e");
   public static final Resource FunctionSpace_aE_Licensing_LicensingDocument = new Resource("69cb3e58-e462-11ef-a6bd-497168f25adc");
   public static final Resource NoLicenseRequired = new Resource("8369651f-e49f-11ef-a6bd-497168f25adc");
+  public static final Resource AbstractVirtualiuationServersLicense_hosts = new Resource("700b8fd9-e4a4-11ef-a6bd-497168f25adc");
+  public static final Resource AbstractVirtualiuationServersLicense_totalCores = new Resource("af4eef81-e4a4-11ef-a6bd-497168f25adc");
+  public static final Resource AbstractVirtualiuationServersLicense = new Resource("60bad69a-e4b7-11ef-a6bd-497168f25adc");
+  public static final Resource FunctionSpace_aE_Licensing_AbstractVirtualiuationServersLicense = new Resource("8c87264e-e4b7-11ef-a6bd-497168f25adc");
   
   /* Begin Protected Region [[user]] */
   
@@ -65,4 +69,4 @@ public class LicensingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,/0CuEncVxkEqNbJ0zaCrHX1LpL4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,5pWZC3Rwq2tTkMoeogZMpKd9zbE=] */

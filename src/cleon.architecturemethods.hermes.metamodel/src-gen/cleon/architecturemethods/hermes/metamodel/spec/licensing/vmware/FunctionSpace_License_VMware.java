@@ -8,6 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[c5e74e74-e4a2-11ef-a6bd-497168f25adc,imports]] */
+import cleon.architecturemethods.hermes.metamodel.spec.licensing.FunctionSpace_Licensing.IAbstractVirtualiuationServersLicenseFunctions;
 
 /* End Protected Region   [[c5e74e74-e4a2-11ef-a6bd-497168f25adc,imports]] */
 
@@ -42,15 +43,6 @@ public class FunctionSpace_License_VMware {
 
   public static interface IVmwareEsxiServerLicenseFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("8c890ac4-e4a6-11ef-a6bd-497168f25adc")
-    public List<java.lang.Integer> TotalCores();
-
-    @IDynamicResourceExtension.MethodId("a807c400-e4a6-11ef-a6bd-497168f25adc")
-    public java.lang.Integer SumTotalCore();
-
-    @IDynamicResourceExtension.MethodId("03cbc874-e4a8-11ef-a6bd-497168f25adc")
-    public java.lang.Integer TotalHosts();
-
     @IDynamicResourceExtension.MethodId("a0f9042b-e4a7-11ef-a6bd-497168f25adc")
     public java.lang.String RecommendedLicense();
 
@@ -78,7 +70,7 @@ public class FunctionSpace_License_VMware {
     @Override
     public java.lang.String RecommendedLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.javamodel.IVmwareEsxiServerLicense vmwareEsxiServerLicense) {
       /* Begin Protected Region [[a0f9042b-e4a7-11ef-a6bd-497168f25adc]] */
-    	final var functions = vmwareEsxiServerLicense.extension(IVmwareEsxiServerLicenseFunctions.class);
+    	final var functions = vmwareEsxiServerLicense.extension(IAbstractVirtualiuationServersLicenseFunctions.class);
     	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), functions.SumTotalCore()).getRecommendedLicense(); 
       /* End Protected Region   [[a0f9042b-e4a7-11ef-a6bd-497168f25adc]] */
     }
@@ -86,7 +78,7 @@ public class FunctionSpace_License_VMware {
     @Override
     public java.lang.Integer RequiredLicenses(final cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.javamodel.IVmwareEsxiServerLicense vmwareEsxiServerLicense) {
       /* Begin Protected Region [[a7f90260-e4a7-11ef-a6bd-497168f25adc]] */
-    	final var functions = vmwareEsxiServerLicense.extension(IVmwareEsxiServerLicenseFunctions.class);
+    	final var functions = vmwareEsxiServerLicense.extension(IAbstractVirtualiuationServersLicenseFunctions.class);
     	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), functions.SumTotalCore()).getRequiredLicenses(); 
       /* End Protected Region   [[a7f90260-e4a7-11ef-a6bd-497168f25adc]] */
     }
@@ -109,4 +101,4 @@ public class FunctionSpace_License_VMware {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c5e74e74-e4a2-11ef-a6bd-497168f25adc,NDlimHkUnlIQ8GHTugp+PputfVo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c5e74e74-e4a2-11ef-a6bd-497168f25adc,o8r5FZWVdhZ72c/ySDnmf7LQ5yQ=] */

@@ -19,8 +19,6 @@ public class VmwarePackage {
   public static final Resource VMwareEsxiHostLicensing = new Resource("53756815-e4a3-11ef-a6bd-497168f25adc");
   public static final Resource VMwareEsxiHostLicensing_amount = new Resource("5375681c-e4a3-11ef-a6bd-497168f25adc");
   public static final Resource VMwareEsxiHostLicensing_vmWareLicenseType = new Resource("53756823-e4a3-11ef-a6bd-497168f25adc");
-  public static final Resource VmwareEsxiServerLicense_hosts = new Resource("700b8fd9-e4a4-11ef-a6bd-497168f25adc");
-  public static final Resource VmwareEsxiServerLicense_totalCores = new Resource("af4eef81-e4a4-11ef-a6bd-497168f25adc");
   public static final Resource FunctionSpace_aE_License_aE_VMware_VmwareEsxiServerLicense = new Resource("95a495ac-e4a6-11ef-a6bd-497168f25adc");
   public static final Resource VmwareEsxiServerLicense_recommendedLicense = new Resource("6d69dbc9-e4a7-11ef-a6bd-497168f25adc");
   public static final Resource VmwareEsxiServerLicense_requiredLicenses = new Resource("7909c7ea-e4a7-11ef-a6bd-497168f25adc");
@@ -45,4 +43,4 @@ public class VmwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware,NpHF/QhkTewpPUh4biW/S3k+S5c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware,QndkmQChZkGiiXh/4AkXJMCMJ4o=] */

@@ -191,6 +191,37 @@ public class FunctionSpace_Licensing {
 
   }
 
+  public static interface IAbstractVirtualiuationServersLicenseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8c890ac4-e4a6-11ef-a6bd-497168f25adc")
+    public List<java.lang.Integer> TotalCores();
+
+    @IDynamicResourceExtension.MethodId("a807c400-e4a6-11ef-a6bd-497168f25adc")
+    public java.lang.Integer SumTotalCore();
+
+    @IDynamicResourceExtension.MethodId("03cbc874-e4a8-11ef-a6bd-497168f25adc")
+    public java.lang.Integer TotalHosts();
+
+  }
+  
+  public static interface IAbstractVirtualiuationServersLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractVirtualiuationServersLicenseFunctionsImpl implements IAbstractVirtualiuationServersLicenseFunctionsImpl {
+
+    public static final IAbstractVirtualiuationServersLicenseFunctionsImpl INSTANCE = new AbstractVirtualiuationServersLicenseFunctionsImpl();
+
+    private AbstractVirtualiuationServersLicenseFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractVirtualiuationServersLicenseFunctions {
+
+    private AbstractVirtualiuationServersLicenseFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,kk8o16k0tRwYQhgbudMjLqUzf0s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,oc3FhjWsjpJWwqqCrgVoUAZSjz4=] */

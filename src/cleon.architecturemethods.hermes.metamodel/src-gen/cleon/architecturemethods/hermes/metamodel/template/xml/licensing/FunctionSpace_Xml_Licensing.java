@@ -118,6 +118,31 @@ public class FunctionSpace_Xml_Licensing {
 
   }
 
+  public static interface INoLicenseRequiredFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("94aaf799-e49f-11ef-a6bd-497168f25adc")
+    public java.lang.String RenderLicense();
+
+  }
+  
+  public static interface INoLicenseRequiredFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NoLicenseRequiredFunctionsImpl implements INoLicenseRequiredFunctionsImpl {
+
+    public static final INoLicenseRequiredFunctionsImpl INSTANCE = new NoLicenseRequiredFunctionsImpl();
+
+    private NoLicenseRequiredFunctionsImpl() {}
+
+  }
+  
+  public static class NoLicenseRequiredFunctions {
+
+    private NoLicenseRequiredFunctions() {}
+
+  }
+
   public static interface IProductLicensingForEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1567ac02-e465-11ef-a6bd-497168f25adc")
@@ -271,6 +296,31 @@ public class FunctionSpace_Xml_Licensing {
 
   }
 
+  public static interface IVmwareEsxiServerLicenseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ed1e85ab-e4a2-11ef-a6bd-497168f25adc")
+    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+
+  }
+  
+  public static interface IVmwareEsxiServerLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VmwareEsxiServerLicenseFunctionsImpl implements IVmwareEsxiServerLicenseFunctionsImpl {
+
+    public static final IVmwareEsxiServerLicenseFunctionsImpl INSTANCE = new VmwareEsxiServerLicenseFunctionsImpl();
+
+    private VmwareEsxiServerLicenseFunctionsImpl() {}
+
+  }
+  
+  public static class VmwareEsxiServerLicenseFunctions {
+
+    private VmwareEsxiServerLicenseFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,+WP0t4LUZXHYSlfthuwUkeaQTAU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,bPO2ZS5L/wT5sYAlovaHgoZyo+k=] */

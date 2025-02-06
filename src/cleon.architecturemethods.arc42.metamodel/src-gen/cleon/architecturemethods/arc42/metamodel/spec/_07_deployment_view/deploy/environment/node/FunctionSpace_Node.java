@@ -61,11 +61,14 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("8808b193-cdc3-11eb-9255-4575b555e23e")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetNestedNode();
 
-    @IDynamicResourceExtension.MethodId("da40902b-02d3-11e9-9e58-33d596257b14")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetParent();
-
     @IDynamicResourceExtension.MethodId("926f258b-dfca-11ef-b0be-9b4cac321140")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode GetParentBuildNode();
+
+    @IDynamicResourceExtension.MethodId("c590e9e5-e4a5-11ef-a6bd-497168f25adc")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetParentBuildNodes();
+
+    @IDynamicResourceExtension.MethodId("da40902b-02d3-11e9-9e58-33d596257b14")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetParent();
 
     @IDynamicResourceExtension.MethodId("66093688-02d5-11e9-9e58-33d596257b14")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.ISupplyAndBuildNodeDecomposite> GetParents();
@@ -220,4 +223,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,9vNzOPhzRVBkbXoesTExhpWDsPo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,6Hz7LLAwVsERa0ODAsD8D3/Zwww=] */

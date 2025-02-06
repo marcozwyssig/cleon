@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="8a5202f6-e4a2-11ef-a6bd-497168f25adc" type="resource" guid="8a5202f3-e4a2-11ef-a6bd-497168f25adc" />
+    <resource statement-guid="f03383cd-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="96569a16-e4a1-11ef-a6bd-497168f25adc" />
+    <resource statement-guid="9a52b08e-e4a2-11ef-a6bd-497168f25adc" type="resource" guid="9a52897a-e4a2-11ef-a6bd-497168f25adc" />
+    <resource statement-guid="f03383ce-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="849e02df-e4a1-11ef-a6bd-497168f25adc" />
+    <resource statement-guid="f033aae0-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="656574df-e4a1-11ef-a6bd-497168f25adc" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4257c382-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4257c383-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="0343bbc1-e4a2-11ef-a6bd-497168f25adc" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4257c384-e4a1-11ef-a6bd-497168f25adc" type="literal">VMwarevSphereLicense</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="8a5202f6-e4a2-11ef-a6bd-497168f25adc">
+      <resource guid="8a5202f3-e4a2-11ef-a6bd-497168f25adc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8a5202f5-e4a2-11ef-a6bd-497168f25adc" type="resource" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8bf18227-e4a2-11ef-a6bd-497168f25adc" type="literal">Free</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="8da7e4b8-e4a2-11ef-a6bd-497168f25adc" type="literal">vSphere Free (ESXi Free Edition) is a limited-feature version that allows basic virtualization. It does not support vCenter management, vMotion, or High Availability, and API access is restricted. There is no official support available.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f03383cd-e4a1-11ef-a6bd-497168f25adc">
+      <resource guid="96569a16-e4a1-11ef-a6bd-497168f25adc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="96569a17-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="96569a19-e4a1-11ef-a6bd-497168f25adc" type="literal">Essentials</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="c745c26c-e4a1-11ef-a6bd-497168f25adc" type="literal">vSphere Essentials is designed for small businesses and includes vCenter for centralized management. It supports up to three hosts with a maximum of two CPUs per host but lacks advanced features like vMotion and High Availability.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9a52b08e-e4a2-11ef-a6bd-497168f25adc">
+      <resource guid="9a52897a-e4a2-11ef-a6bd-497168f25adc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9a52897b-e4a2-11ef-a6bd-497168f25adc" type="resource" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9a52897c-e4a2-11ef-a6bd-497168f25adc" type="literal">Standard</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="9a52897d-e4a2-11ef-a6bd-497168f25adc" type="literal">vSphere Standard provides basic virtualization with vMotion, High Availability, and vSphere Auto Deploy. It is suitable for medium to large environments but does not include advanced networking and storage features.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f03383ce-e4a1-11ef-a6bd-497168f25adc">
+      <resource guid="849e02df-e4a1-11ef-a6bd-497168f25adc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="849e02e0-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="849e02e1-e4a1-11ef-a6bd-497168f25adc" type="literal">Essentials Plus</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ca2fc2fd-e4a1-11ef-a6bd-497168f25adc" type="literal">vSphere Essentials Plus builds on Essentials by adding features such as vMotion, High Availability (HA), and vSphere Data Protection. It is suitable for small to medium businesses that require greater fault tolerance.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f033aae0-e4a1-11ef-a6bd-497168f25adc">
+      <resource guid="656574df-e4a1-11ef-a6bd-497168f25adc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="656574e1-e4a1-11ef-a6bd-497168f25adc" type="resource" guid="4257c37f-e4a1-11ef-a6bd-497168f25adc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6599cb53-e4a1-11ef-a6bd-497168f25adc" type="literal">Enterprise Plus</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="d25d929f-e4a1-11ef-a6bd-497168f25adc" type="literal">vSphere Enterprise Plus is the most comprehensive edition, offering advanced features like Distributed Resource Scheduler (DRS), vSphere Distributed Switch, Host Profiles, and vSAN support. It is designed for large enterprises and data centers requiring maximum automation and efficiency.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

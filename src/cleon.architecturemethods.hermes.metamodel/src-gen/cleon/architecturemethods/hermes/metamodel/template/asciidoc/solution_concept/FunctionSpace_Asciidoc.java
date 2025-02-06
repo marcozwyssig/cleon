@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.template.asciidoc;
+package cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -198,4 +198,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,9yub3u4AD4r7O3Wp5TOqu6P7XQA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,kc5TAyD7qvyu9tNpEihNYWVkCJ4=] */

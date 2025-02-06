@@ -501,6 +501,8 @@
         <resource statement-guid="8f562fca-dfcb-11ef-b0be-9b4cac321140" type="resource" guid="8f562fc7-dfcb-11ef-b0be-9b4cac321140" />
         <resource statement-guid="9311ddfa-dfde-11ef-8b41-bffcdee4ee9e" type="resource" guid="93111aa7-dfde-11ef-8b41-bffcdee4ee9e" />
         <resource statement-guid="9b8dc47a-e213-11ef-b688-35bdc5d57a78" type="resource" guid="9b8d4f47-e213-11ef-b688-35bdc5d57a78" />
+        <resource statement-guid="462dd742-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="462db02e-e45f-11ef-962f-1d8cbb5022ed" />
+        <resource statement-guid="472fb679-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="472fb676-e45f-11ef-962f-1d8cbb5022ed" />
       </owns>
     </resource>
   </owns>
@@ -5497,6 +5499,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="9b8deb8b-e213-11ef-b688-35bdc5d57a78" type="literal">cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="462dd742-e45f-11ef-962f-1d8cbb5022ed">
+            <resource guid="462db02e-e45f-11ef-962f-1d8cbb5022ed">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="462dd741-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="462dd743-e45f-11ef-962f-1d8cbb5022ed" type="literal">cleon.architecturemethods.hermes.metamodel.template.xml.licensing</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="472fb679-e45f-11ef-962f-1d8cbb5022ed">
+            <resource guid="472fb676-e45f-11ef-962f-1d8cbb5022ed">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="472fb678-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="472fb67a-e45f-11ef-962f-1d8cbb5022ed" type="literal">cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept</object>
               </predicate>
             </resource>
           </object>

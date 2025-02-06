@@ -23,6 +23,15 @@ public class FunctionSpace_Licensing {
     @IDynamicResourceExtension.MethodId("2d0ad9e8-dfc2-11ef-b0be-9b4cac321140")
     public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document SystemArc42Document();
 
+    @IDynamicResourceExtension.MethodId("ff9ed8d0-e463-11ef-a6bd-497168f25adc")
+    public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IManufactor Manufactor();
+
+    @IDynamicResourceExtension.MethodId("29299c0d-e464-11ef-a6bd-497168f25adc")
+    public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct Product();
+
+    @IDynamicResourceExtension.MethodId("3306a268-e464-11ef-a6bd-497168f25adc")
+    public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant ProductVariant();
+
   }
   
   public static interface IAbstractProductLicensingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -157,6 +166,31 @@ public class FunctionSpace_Licensing {
 
   }
 
+  public static interface ILicensingDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6fe68173-e462-11ef-a6bd-497168f25adc")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IAbstractProductLicensing> AllProductLicensing();
+
+  }
+  
+  public static interface ILicensingDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LicensingDocumentFunctionsImpl implements ILicensingDocumentFunctionsImpl {
+
+    public static final ILicensingDocumentFunctionsImpl INSTANCE = new LicensingDocumentFunctionsImpl();
+
+    private LicensingDocumentFunctionsImpl() {}
+
+  }
+  
+  public static class LicensingDocumentFunctions {
+
+    private LicensingDocumentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,mfzN2Rl8rqYyyaoPW63BvZECLUY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,279525f0-dfc2-11ef-b0be-9b4cac321140,kk8o16k0tRwYQhgbudMjLqUzf0s=] */

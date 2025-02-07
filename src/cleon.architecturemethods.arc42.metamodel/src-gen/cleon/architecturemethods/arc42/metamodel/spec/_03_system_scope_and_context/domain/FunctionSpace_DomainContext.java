@@ -99,6 +99,31 @@ public class FunctionSpace_DomainContext {
 
   }
 
+  public static interface IActorFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3758e9d5-e546-11ef-9a39-afe0dbb3ceb9")
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+
+  }
+  
+  public static interface IActorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActorFunctionsImpl implements IActorFunctionsImpl {
+
+    public static final IActorFunctionsImpl INSTANCE = new ActorFunctionsImpl();
+
+    private ActorFunctionsImpl() {}
+
+  }
+  
+  public static class ActorFunctions {
+
+    private ActorFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,uas8oodsaAUuX2mJhotpJZw41w8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,ONuz2yspavHfhk60tTyWOXmrtg4=] */

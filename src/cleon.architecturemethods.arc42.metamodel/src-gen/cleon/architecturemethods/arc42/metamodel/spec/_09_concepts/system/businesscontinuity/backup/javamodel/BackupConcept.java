@@ -69,22 +69,22 @@ public class BackupConcept extends DynamicResource implements IBackupConcept {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock> selectBackupBuildingBlock() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupBuildingBlock);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock> selectBackupAndRecovery() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecovery);
   }
 
-  public BackupConcept setBackupBuildingBlock(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock> backupBuildingBlock) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupBuildingBlock, backupBuildingBlock);
+  public BackupConcept setBackupAndRecovery(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock> backupAndRecovery) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecovery, backupAndRecovery);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> selectBackupConfiguration() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupConfiguration);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> selectBackupAndRecoveryStategies() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecoveryStategies);
   }
 
-  public BackupConcept setBackupConfiguration(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> backupConfiguration) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupConfiguration, backupConfiguration);
+  public BackupConcept setBackupAndRecoveryStategies(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> backupAndRecoveryStategies) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecoveryStategies, backupAndRecoveryStategies);
     return this;
   }
     
@@ -155,8 +155,8 @@ public class BackupConcept extends DynamicResource implements IBackupConcept {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupBuildingBlock, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupConfiguration, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecovery, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecoveryStategies, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -164,13 +164,13 @@ public class BackupConcept extends DynamicResource implements IBackupConcept {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept selectToMeBackupConfiguration(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupConfiguration, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept selectToMeBackupAndRecoveryStategies(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecoveryStategies, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept selectToMeBackupBuildingBlock(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupBuildingBlock, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept selectToMeBackupAndRecovery(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupBuildingBlock object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConcept_backupAndRecovery, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce6a4faa-0eaf-11e9-9f19-6d15636f4ecc,LjT/g4Tio+QCCZt6n7y7uj689L8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce6a4faa-0eaf-11e9-9f19-6d15636f4ecc,PDfy1SL2bhZFPh6fM2Ja+iRcaRM=] */

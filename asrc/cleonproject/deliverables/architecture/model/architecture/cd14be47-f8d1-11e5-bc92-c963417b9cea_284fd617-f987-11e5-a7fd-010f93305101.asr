@@ -503,6 +503,7 @@
         <resource statement-guid="9b8dc47a-e213-11ef-b688-35bdc5d57a78" type="resource" guid="9b8d4f47-e213-11ef-b688-35bdc5d57a78" />
         <resource statement-guid="462dd742-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="462db02e-e45f-11ef-962f-1d8cbb5022ed" />
         <resource statement-guid="472fb679-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="472fb676-e45f-11ef-962f-1d8cbb5022ed" />
+        <resource statement-guid="7960ff66-e4b8-11ef-a6bd-497168f25adc" type="resource" guid="7960b143-e4b8-11ef-a6bd-497168f25adc" />
       </owns>
     </resource>
   </owns>
@@ -5519,6 +5520,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="472fb67a-e45f-11ef-962f-1d8cbb5022ed" type="literal">cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="7960ff66-e4b8-11ef-a6bd-497168f25adc">
+            <resource guid="7960b143-e4b8-11ef-a6bd-497168f25adc">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7960b145-e4b8-11ef-a6bd-497168f25adc" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="79619ba7-e4b8-11ef-a6bd-497168f25adc" type="literal">cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam</object>
               </predicate>
             </resource>
           </object>

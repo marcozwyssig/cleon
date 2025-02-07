@@ -60,9 +60,6 @@
       </owns>
     </resource>
   </owns>
-  <owns predicate="45f698af-2e4a-11de-8579-f36aa50a3c42">
-    <resource statement-guid="64d66409-c5d2-11ee-8549-1528e55916a4" type="resource" guid="64d3a4e2-c5d2-11ee-8549-1528e55916a4" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="af820587-c04e-11ee-bc88-af1934b8c942" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -252,30 +249,6 @@
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="e7df2602-d0f5-11ee-9dff-9fcfe85e4c54" type="literal">false</object>
-  </predicate>
-  <predicate guid="45f698af-2e4a-11de-8579-f36aa50a3c42">
-    <object statement-guid="64d66409-c5d2-11ee-8549-1528e55916a4">
-      <resource guid="64d3a4e2-c5d2-11ee-8549-1528e55916a4">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="64d3a4e3-c5d2-11ee-8549-1528e55916a4" type="resource" guid="f016b6e0-b471-11e1-8107-93c930a749c9" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="64d3a4e4-c5d2-11ee-8549-1528e55916a4" type="literal">DefaultNameAspect</object>
-        </predicate>
-        <predicate guid="bdf1ed37-2e7a-11de-b129-e5e996f54b06">
-          <object statement-guid="149f82ab-dca0-11ee-8339-0594720f9d03" type="literal">true</object>
-        </predicate>
-        <predicate guid="fea6c490-94ce-11df-8a10-29fd43bc5634">
-          <object statement-guid="64d3a4e6-c5d2-11ee-8549-1528e55916a4" type="literal">cleon.common.language.metamodel.spec.language_class.javamodel.ITranslateSimpleNameAspect</object>
-        </predicate>
-        <predicate guid="f016b6e1-b471-11e1-8107-93c930a749c9">
-          <object statement-guid="64d3a4e7-c5d2-11ee-8549-1528e55916a4" type="literal">cleon.common.language.metamodel.spec.language_class.javamodel.TranslateSimpleNameAspectImpl</object>
-        </predicate>
-        <predicate guid="db96907b-75c9-11e2-bef8-ab075c1635b2">
-          <object statement-guid="159665f2-dca0-11ee-8339-0594720f9d03" type="resource" guid="bbbe4a4d-75ca-11e2-bef8-ab075c1635b2" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
 </resource>
 

@@ -2,22 +2,24 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.busin
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IBackupConfiguration extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
+public interface IBackupConfiguration extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0713be48-1e42-11e9-865e-41ef48a95f70");
   
   // attributes
   
-  public java.lang.String selectTool();
-  
-  public java.lang.Integer selectRTO_hours();
-  
-  public java.lang.Integer selectRPO_hours();
+  public java.lang.String selectName();
   
   public java.lang.Integer selectRetention_days();
   
+  public java.lang.Integer selectFullBackupEvery();
+  
+  public java.lang.Integer selectIntervalBackupEvery();
+  
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.ISchedule selectSchedule();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectUsingProductForBackup();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,5m1dEAdfaAjyx9uxWllzxFdT/jk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,d/RHm4L39D8bEo6NJkXPTfe6bs0=] */

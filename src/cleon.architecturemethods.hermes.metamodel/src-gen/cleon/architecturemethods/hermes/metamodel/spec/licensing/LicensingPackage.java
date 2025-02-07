@@ -16,7 +16,7 @@ public class LicensingPackage {
   public static final Resource FunctionSpace_aE_Licensing_AbstractProductLicensing = new Resource("2b1f5d8d-dfc2-11ef-b0be-9b4cac321140");
   public static final Resource ProductLicensingForEnvironment_environmentLicensing = new Resource("576486f7-dfc2-11ef-b0be-9b4cac321140");
   public static final Resource AbstractProductEnvironmentLicensing = new Resource("74d2b4cd-dfc2-11ef-b0be-9b4cac321140");
-  public static final Resource AbstractProductEnvironmentLicensing_environment = new Resource("eb9d044b-dfc2-11ef-b0be-9b4cac321140");
+  public static final Resource AbstractProductEnvironmentLicensing_licenseForEnvironment = new Resource("eb9d044b-dfc2-11ef-b0be-9b4cac321140");
   public static final Resource AbstractServerLicense_serverHostLicensing = new Resource("f0e1fd21-dfc8-11ef-b0be-9b4cac321140");
   public static final Resource AbstractServerHostLicensing_host = new Resource("fefc5ec5-dfc8-11ef-b0be-9b4cac321140");
   public static final Resource AbstractServerHostLicensing_physicalCores = new Resource("25e52766-dfc9-11ef-b0be-9b4cac321140");
@@ -46,7 +46,6 @@ public class LicensingPackage {
   public static final Resource FunctionSpace_aE_Licensing_LicensingDocument = new Resource("69cb3e58-e462-11ef-a6bd-497168f25adc");
   public static final Resource NoLicenseRequired = new Resource("8369651f-e49f-11ef-a6bd-497168f25adc");
   public static final Resource AbstractVirtualiuationServersLicense_hosts = new Resource("700b8fd9-e4a4-11ef-a6bd-497168f25adc");
-  public static final Resource AbstractVirtualiuationServersLicense_totalCores = new Resource("af4eef81-e4a4-11ef-a6bd-497168f25adc");
   public static final Resource AbstractVirtualiuationServersLicense = new Resource("60bad69a-e4b7-11ef-a6bd-497168f25adc");
   public static final Resource FunctionSpace_aE_Licensing_AbstractVirtualiuationServersLicense = new Resource("8c87264e-e4b7-11ef-a6bd-497168f25adc");
   
@@ -69,4 +68,4 @@ public class LicensingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,5pWZC3Rwq2tTkMoeogZMpKd9zbE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.licensing,bEfzVk8Xgt6fYdA1ysi/lqjWuII=] */

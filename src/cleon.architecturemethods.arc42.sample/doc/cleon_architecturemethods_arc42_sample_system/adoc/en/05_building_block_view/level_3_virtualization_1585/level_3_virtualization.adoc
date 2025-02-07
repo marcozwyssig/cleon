@@ -4,7 +4,7 @@
 
 :toc:
 
-[#chapter-level_3_virtualization_systemcomponent_whitebox]
+[#483100ca-bedf-11ef-b498-058ee446f8e7]
 === Level_3: Virtualization <SystemComponent> (Whitebox)
 Motivation::
 // Begin Protected Region [[motivation]]
@@ -19,12 +19,12 @@ TODO: Describe the motivation for the building block view.
 
 The Virtualization is decomposed into the following components:
 
-. <<#chapter-vm_virtualmachinesystemconfiguration_blackbox>>
-. <<#chapter-vmh_hypervisorsystemconfiguration_blackbox>>
+. <<#6915e917-bee0-11ef-b498-058ee446f8e7>>
+. <<#6915c206-bee0-11ef-b498-058ee446f8e7>>
 
-[#chapter-vm_virtualmachinesystemconfiguration_blackbox]
+[#6915e917-bee0-11ef-b498-058ee446f8e7]
 ===== VM <VirtualMachineSystemConfiguration> (Blackbox)
-This chapter describes the black-box properties of the component VM ((<<#chapter-level_4_vm_vm_virtualmachinesystemconfiguration_whitebox>>)).
+This chapter describes the black-box properties of the component VM ((<<#b582462b-bee0-11ef-b498-058ee446f8e7>>)).
 
 // Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,purpose]]
 
@@ -68,9 +68,9 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[6915e917-bee0-11ef-b498-058ee446f8e7,customText]]
 
-[#chapter-vmh_hypervisorsystemconfiguration_blackbox]
+[#6915c206-bee0-11ef-b498-058ee446f8e7]
 ===== VMH <HypervisorSystemConfiguration> (Blackbox)
-This chapter describes the black-box properties of the component VMH ((<<#chapter-level_4_vmh_vmh_hypervisorsystemconfiguration_whitebox>>)).
+This chapter describes the black-box properties of the component VMH ((<<#b581f80a-bee0-11ef-b498-058ee446f8e7>>)).
 
 // Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -114,4 +114,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[6915c206-bee0-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,itlAjhtAvR6rMX1jqVDwRVKGgqs=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,hiCbNYEdDPlPlzMKabwwJUXeQrE=]

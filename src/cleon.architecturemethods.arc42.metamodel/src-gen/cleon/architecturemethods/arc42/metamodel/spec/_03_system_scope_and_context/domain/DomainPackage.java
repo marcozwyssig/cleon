@@ -19,6 +19,7 @@ public class DomainPackage {
   public static final Resource FunctionSpace_aE_DomainContext_DomainContext = new Resource("28b7af6a-052b-11e9-95f7-3b0c47908608");
   public static final Resource FunctionSpace_aE_DomainContext_DomainFlow_aE_In = new Resource("4d727514-052b-11e9-95f7-3b0c47908608");
   public static final Resource FunctionSpace_aE_DomainContext_DomainFlow_aE_Out = new Resource("b31d3850-052b-11e9-95f7-3b0c47908608");
+  public static final Resource FunctionSpace_aE_DomainContext_Actor = new Resource("34484f02-e546-11ef-9a39-afe0dbb3ceb9");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +40,4 @@ public class DomainPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain,yveSAV6I7TB6E3JCuOM37rPxm3I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain,7SGPat4c9iopWY2q5nMxhIYEk84=] */

@@ -1155,7 +1155,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aa97ff10-acc4-11ef-a765-2382060a590e")
-    public java.lang.String Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String _Ref(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -1207,4 +1207,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Um8COn6XUK+AN2fP5cjr6HOvilE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,L4MfNjw2NAUODQgnrrmw/u5nFlA=] */

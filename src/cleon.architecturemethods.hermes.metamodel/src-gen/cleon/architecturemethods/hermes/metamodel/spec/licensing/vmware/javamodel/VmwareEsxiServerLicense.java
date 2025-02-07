@@ -86,11 +86,11 @@ public class VmwareEsxiServerLicense extends DynamicResource implements IVmwareE
 
   @Override
   public java.lang.Integer selectTotalCores() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_totalCores);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_totalCores);
   }
     
   public void setTotalCores(java.lang.Integer totalCores) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_totalCores, totalCores);
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_totalCores, totalCores);
   }
 
   // relations
@@ -126,22 +126,22 @@ public class VmwareEsxiServerLicense extends DynamicResource implements IVmwareE
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectEnvironment() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment);
-  }
-
-  public VmwareEsxiServerLicense setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment environment) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, environment);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> selectHosts() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_hosts);
   }
 
   public VmwareEsxiServerLicense setHosts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> hosts) {
     _setList(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_hosts, hosts);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectLicenseForEnvironment() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_licenseForEnvironment);
+  }
+
+  public VmwareEsxiServerLicense setLicenseForEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment licenseForEnvironment) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_licenseForEnvironment, licenseForEnvironment);
     return this;
   }
     
@@ -203,11 +203,11 @@ public class VmwareEsxiServerLicense extends DynamicResource implements IVmwareE
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_recommendedLicense, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_requiredLicenses, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_totalCores, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_totalCores, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_environment, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractVirtualiuationServersLicense_hosts, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.LicensingPackage.AbstractProductEnvironmentLicensing_licenseForEnvironment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.javamodel.IVMwarevSphereLicense.class, cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.VmwarePackage.VmwareEsxiServerLicense_vmwareEsxiLicense, visitor);
@@ -218,4 +218,4 @@ public class VmwareEsxiServerLicense extends DynamicResource implements IVmwareE
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b94498f2-e4a2-11ef-a6bd-497168f25adc,ROLL90f6PTNbccZxcv2ia5xOEKY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b94498f2-e4a2-11ef-a6bd-497168f25adc,0xa+N2pBvICB7n6pOpBezu7xZPI=] */

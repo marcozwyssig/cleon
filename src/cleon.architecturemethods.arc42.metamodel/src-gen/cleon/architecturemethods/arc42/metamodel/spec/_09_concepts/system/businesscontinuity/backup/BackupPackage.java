@@ -6,7 +6,7 @@ public class BackupPackage {
   
   public static final Resource BackupConcept = new Resource("ce6a4faa-0eaf-11e9-9f19-6d15636f4ecc");
   public static final Resource BackupBuildingBlock = new Resource("f2bd0e83-1e3f-11e9-865e-41ef48a95f70");
-  public static final Resource BackupConcept_backupBuildingBlock = new Resource("f8ee2475-1e3f-11e9-865e-41ef48a95f70");
+  public static final Resource BackupConcept_backupAndRecovery = new Resource("f8ee2475-1e3f-11e9-865e-41ef48a95f70");
   public static final Resource BackupBuildingBlock_buildingblockToBackup = new Resource("d67fd4e4-1e41-11e9-865e-41ef48a95f70");
   public static final Resource BackupConfiguration = new Resource("0713be48-1e42-11e9-865e-41ef48a95f70");
   public static final Resource BackupBuildingBlock_backupConfiguration = new Resource("18b8d82c-1e43-11e9-865e-41ef48a95f70");
@@ -15,11 +15,12 @@ public class BackupPackage {
   public static final Resource Schedule_Daily = new Resource("85dcf2e4-1e44-11e9-865e-41ef48a95f70");
   public static final Resource Schedule_Weekly = new Resource("87f0b810-1e44-11e9-865e-41ef48a95f70");
   public static final Resource Schedule_Monthly = new Resource("89761f40-1e44-11e9-865e-41ef48a95f70");
-  public static final Resource BackupConcept_backupConfiguration = new Resource("00031db4-c1ca-11ea-b956-0ffede25a02d");
-  public static final Resource BackupConfiguration_tool = new Resource("3e0fd22f-c1ca-11ea-b956-0ffede25a02d");
-  public static final Resource BackupConfiguration_RTO_aE_hours = new Resource("d5e14cb4-c1cd-11ea-b956-0ffede25a02d");
-  public static final Resource BackupConfiguration_RPO_aE_hours = new Resource("e073722f-c1cd-11ea-b956-0ffede25a02d");
+  public static final Resource BackupConcept_backupAndRecoveryStategies = new Resource("00031db4-c1ca-11ea-b956-0ffede25a02d");
+  public static final Resource BackupConfiguration_name = new Resource("3e0fd22f-c1ca-11ea-b956-0ffede25a02d");
   public static final Resource BackupConfiguration_retention_aE_days = new Resource("e76e8e37-c1cd-11ea-b956-0ffede25a02d");
+  public static final Resource BackupConfiguration_fullBackupEvery = new Resource("1cf84fce-e4ba-11ef-a6bd-497168f25adc");
+  public static final Resource BackupConfiguration_usingProductForBackup = new Resource("2a7b7aa1-e4ba-11ef-a6bd-497168f25adc");
+  public static final Resource BackupConfiguration_intervalBackupEvery = new Resource("60ce0938-e4ba-11ef-a6bd-497168f25adc");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +41,4 @@ public class BackupPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup,AYOkLFFH6KNkoysJ3UrMRiNKcDo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup,ttyHOjm9cLKKykqqD+lGFl3veX0=] */

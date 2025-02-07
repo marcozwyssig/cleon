@@ -31,30 +31,21 @@ public class BackupConfiguration extends DynamicResource implements IBackupConfi
   // attributes
   
   @Override
-  public java.lang.Integer selectRPO_hours() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RPO_aE_hours);
-  }
-    
-  public void setRPO_hours(java.lang.Integer rPO_hours) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RPO_aE_hours, rPO_hours);
-  }
-
-  @Override
-  public java.lang.Integer selectRTO_hours() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RTO_aE_hours);
-  }
-    
-  public void setRTO_hours(java.lang.Integer rTO_hours) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RTO_aE_hours, rTO_hours);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
     
   public void setDescriptions(java.util.List<java.lang.String> descriptions) {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
+  public java.lang.Integer selectFullBackupEvery() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_fullBackupEvery);
+  }
+    
+  public void setFullBackupEvery(java.lang.Integer fullBackupEvery) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_fullBackupEvery, fullBackupEvery);
   }
 
   @Override
@@ -67,21 +58,30 @@ public class BackupConfiguration extends DynamicResource implements IBackupConfi
   }
 
   @Override
+  public java.lang.Integer selectIntervalBackupEvery() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_intervalBackupEvery);
+  }
+    
+  public void setIntervalBackupEvery(java.lang.Integer intervalBackupEvery) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_intervalBackupEvery, intervalBackupEvery);
+  }
+
+  @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_name, name);
+  }
+
+  @Override
   public java.lang.Integer selectRetention_days() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_retention_aE_days);
   }
     
   public void setRetention_days(java.lang.Integer retention_days) {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_retention_aE_days, retention_days);
-  }
-
-  @Override
-  public java.lang.String selectTool() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_tool);
-  }
-    
-  public void setTool(java.lang.String tool) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_tool, tool);
   }
 
   // relations
@@ -106,24 +106,39 @@ public class BackupConfiguration extends DynamicResource implements IBackupConfi
     return this;
   }
     
+  @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectUsingProductForBackup() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_usingProductForBackup);
+  }
+
+  public BackupConfiguration setUsingProductForBackup(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant usingProductForBackup) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_usingProductForBackup, usingProductForBackup);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RPO_aE_hours, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_RTO_aE_hours, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_fullBackupEvery, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_intervalBackupEvery, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_name, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_retention_aE_days, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_tool, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_usingProductForBackup, visitor);
   }
 
   public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> selectToMeSchedule(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.ISchedule object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration> selectToMeUsingProductForBackup(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.BackupPackage.BackupConfiguration_usingProductForBackup, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,ZGb0Y94npjubmo1JdUdbFygluQc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,dkbD3iXNedUFK8af8J8u3EFwn3M=] */

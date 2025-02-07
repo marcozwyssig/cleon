@@ -8,6 +8,8 @@ public interface IVmwareEsxiServerLicense extends cleon.architecturemethods.herm
   
   // attributes
   
+  public java.lang.Integer selectTotalCores();
+  
   public java.lang.String selectRecommendedLicense();
   
   public java.lang.Integer selectRequiredLicenses();
@@ -16,4 +18,4 @@ public interface IVmwareEsxiServerLicense extends cleon.architecturemethods.herm
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b94498f2-e4a2-11ef-a6bd-497168f25adc,KOH6YgJeiyrw/rnXRSlrZVr/yxg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b94498f2-e4a2-11ef-a6bd-497168f25adc,hFhQEi45VrFY3s45dAVdrId5hD4=] */

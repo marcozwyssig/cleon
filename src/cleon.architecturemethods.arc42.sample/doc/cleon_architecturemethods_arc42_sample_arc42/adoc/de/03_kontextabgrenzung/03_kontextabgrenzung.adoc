@@ -4,7 +4,7 @@
 
 :toc:
 
-[#chapter-kontextabgrenzung]
+[#bfc8585e-2661-11e6-ae54-e50d44645ae7]
 == Kontextabgrenzung
 In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
 
@@ -12,7 +12,7 @@ In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
 
 // End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
 
-[#chapter-fachlicher_kontext]
+[#cb488719-2661-11e6-ae54-e50d44645ae7]
 === Fachlicher Kontext
 [plantuml, png]
 ....
@@ -26,7 +26,7 @@ Player__F_A -down-> Chess : interacts
 Player__F_B -down-> Chess : interacts
 ...
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
-[cols="40%,60%"]
+[cols="40%,60%", options="header"]
 |===
 |Aktor|Beschreibung
 |Player A
@@ -36,7 +36,7 @@ Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
 |===
 
 Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System:
-[cols="15%,15%,20%,50%"]
+[cols="15%,15%,20%,50%", options="header"]
 |===
 |Von|Zu|Interaktion|Beschreibung
 |Chess
@@ -47,6 +47,11 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 |Chess
 |interacts
 |
+|===
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System:
+[cols="15%,15%,20%,50%", options="header"]
+|===
+|Von|Zu|Interaktion|Beschreibung
 |Player B
 |Chess
 |interacts
@@ -57,7 +62,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 // End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
 
-[#chapter-technischer_kontext]
+[#d6de1d03-27f5-11e6-b263-9db62e053e59]
 === Technischer Kontext
 [plantuml, png]
 ....
@@ -69,7 +74,7 @@ FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ...
 Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
-[cols="40%,60%"]
+[cols="40%,60%", options="header"]
 |===
 |Nachbarsystem|Beschreibung
 |FTP
@@ -81,4 +86,4 @@ dsfasdf
 
 // End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,SKu0pI7hhUwqYk+deMoxug74aoA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,YIqsw6eHcO+uSSH9OZekTzeGD5E=]

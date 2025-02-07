@@ -96,6 +96,9 @@ public class FunctionSpace_MachineConfiguration {
     @IDynamicResourceExtension.MethodId("f55f868b-87f8-11ec-894d-7968efa38b99")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDiskType StorageFormat();
 
+    @IDynamicResourceExtension.MethodId("eaac1208-e534-11ef-b3bd-2f2a4370e45f")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IDisk_ConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -118,4 +121,4 @@ public class FunctionSpace_MachineConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,cLsh/bKWET0IIrql3udB9BcQx/4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,+Pt8iEzrzF9ZD8Y46HcA10Yk3es=] */

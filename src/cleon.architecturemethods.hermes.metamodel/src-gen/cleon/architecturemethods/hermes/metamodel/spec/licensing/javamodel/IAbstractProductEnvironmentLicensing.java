@@ -8,8 +8,8 @@ public interface IAbstractProductEnvironmentLicensing extends cleon.common.doc.m
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectEnvironment();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectLicenseForEnvironment();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,74d2b4cd-dfc2-11ef-b0be-9b4cac321140,pZSEXY1o6ReBCkY6pKdgmavl5gI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,74d2b4cd-dfc2-11ef-b0be-9b4cac321140,lroNU5Tz1iwWaP1AlM0o2zT3Rf4=] */

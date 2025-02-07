@@ -29,7 +29,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * outputs.
  * 
  */
-public interface IDomainContext extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IDomainContext extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("98021cfc-2660-11e6-ae54-e50d44645ae7");
   
@@ -39,4 +39,4 @@ public interface IDomainContext extends cleon.common.doc.metamodel.spec.chapter.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98021cfc-2660-11e6-ae54-e50d44645ae7,b5HdAraxCAY8FAGW4UoomJmY/B8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98021cfc-2660-11e6-ae54-e50d44645ae7,/yrvAyE7wA/r1ggcvUqLBnwtgq4=] */

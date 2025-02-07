@@ -321,6 +321,31 @@ public class FunctionSpace_Xml_Licensing {
 
   }
 
+  public static interface IVeeamAvailabilitySuiteLicenseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("665de6ee-e4b8-11ef-a6bd-497168f25adc")
+    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+
+  }
+  
+  public static interface IVeeamAvailabilitySuiteLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VeeamAvailabilitySuiteLicenseFunctionsImpl implements IVeeamAvailabilitySuiteLicenseFunctionsImpl {
+
+    public static final IVeeamAvailabilitySuiteLicenseFunctionsImpl INSTANCE = new VeeamAvailabilitySuiteLicenseFunctionsImpl();
+
+    private VeeamAvailabilitySuiteLicenseFunctionsImpl() {}
+
+  }
+  
+  public static class VeeamAvailabilitySuiteLicenseFunctions {
+
+    private VeeamAvailabilitySuiteLicenseFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,bPO2ZS5L/wT5sYAlovaHgoZyo+k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,duOmsNWs8s77pML0bgUCJjz858o=] */

@@ -51,6 +51,16 @@ public class Disk_Configuration extends DynamicResource implements IDisk_Configu
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID selectRaid() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_raid);
+  }
+
+  public Disk_Configuration setRaid(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID raid) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_raid, raid);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -76,6 +86,7 @@ public class Disk_Configuration extends DynamicResource implements IDisk_Configu
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDisk.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_raid, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,5 +100,9 @@ public class Disk_Configuration extends DynamicResource implements IDisk_Configu
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectToMeRaid(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_raid, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,VjWkl7oVLuxyKWvSKAZ01uE5Nl0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,xQyB4W4WNUtozadIKZpvHGa0IwU=] */

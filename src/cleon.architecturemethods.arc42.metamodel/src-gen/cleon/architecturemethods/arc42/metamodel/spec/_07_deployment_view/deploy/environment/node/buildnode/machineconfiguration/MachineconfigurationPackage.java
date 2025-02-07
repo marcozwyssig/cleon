@@ -16,6 +16,13 @@ public class MachineconfigurationPackage {
   public static final Resource FunctionSpace_aE_MachineConfiguration_CPU_aE_Configuration = new Resource("0a636d12-87f8-11ec-894d-7968efa38b99");
   public static final Resource FunctionSpace_aE_MachineConfiguration_Memory_aE_Configuration = new Resource("4e926972-87f8-11ec-894d-7968efa38b99");
   public static final Resource FunctionSpace_aE_MachineConfiguration_Disk_aE_Configuration = new Resource("e07a18d2-87f8-11ec-894d-7968efa38b99");
+  public static final Resource RAID = new Resource("02c21abc-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource Disk_aE_Configuration_raid = new Resource("0aa091e1-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource RAID_RAID__F_0 = new Resource("407983ba-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource RAID_RAID__F_1 = new Resource("59b5794e-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource RAID_RAID__F_5 = new Resource("66eea2d1-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource RAID_RAID__F_6 = new Resource("719a9246-e534-11ef-b3bd-2f2a4370e45f");
+  public static final Resource RAID_RAID__F_10 = new Resource("7c90d0c9-e534-11ef-b3bd-2f2a4370e45f");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +43,4 @@ public class MachineconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration,Fbyrmc5p4J6utu/yCIfyzaCi+p4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration,CyuIuCbnKENUgg9q8yA6rBKExcM=] */

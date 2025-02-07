@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deplo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDisk_Configuration extends ch.actifsource.core.javamodel.IResource, ch.actifsource.core.javamodel.IDecorator {
+public interface IDisk_Configuration extends ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2399830e-2b03-11e9-9692-65766bc2daa5");
   
@@ -12,6 +12,8 @@ public interface IDisk_Configuration extends ch.actifsource.core.javamodel.IReso
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDisk selectDisk();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.IRAID selectRaid();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,CfLZuq0mzyx+3KYxhfns0aHJuQw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,AUT8kEPO79Ag9vkRg32txqwR9ys=] */

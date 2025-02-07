@@ -35,6 +35,9 @@ public class FunctionSpace_Reference {
     @IDynamicResourceExtension.MethodId("cd198911-1bf9-11e9-8154-ebde4c10ca97")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration();
 
+    @IDynamicResourceExtension.MethodId("db8dcc41-e542-11ef-9a39-afe0dbb3ceb9")
+    public java.lang.String GetDescription();
+
   }
   
   public static interface IInstallationmanualReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -82,4 +85,4 @@ public class FunctionSpace_Reference {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b569c1c9-1b3e-11e9-9c51-69666a8f1cf8,SyHewhA+oPFPUbagydPVRhdrEYo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b569c1c9-1b3e-11e9-9c51-69666a8f1cf8,xyl5kYUKJoiaVCwIQOjXk8hriyA=] */

@@ -8,8 +8,8 @@ public interface IServiceBuildNode extends cleon.architecturemethods.arc42.metam
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectHost();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectServiceForHost();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,dIku9Igo9E/fP1uqLhZI2dgWbZw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,DYoQaIVAviyHpBr2iBVfQYS0OPc=] */

@@ -49,6 +49,12 @@ public class FunctionSpace_License_VMware {
     @IDynamicResourceExtension.MethodId("a7f90260-e4a7-11ef-a6bd-497168f25adc")
     public java.lang.Integer RequiredLicenses();
 
+    @IDynamicResourceExtension.MethodId("8c890ac4-e4a6-11ef-a6bd-497168f25adc")
+    public List<java.lang.Integer> TotalCores();
+
+    @IDynamicResourceExtension.MethodId("a807c400-e4a6-11ef-a6bd-497168f25adc")
+    public java.lang.Integer SumTotalCore();
+
   }
   
   public static interface IVmwareEsxiServerLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -71,7 +77,7 @@ public class FunctionSpace_License_VMware {
     public java.lang.String RecommendedLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.javamodel.IVmwareEsxiServerLicense vmwareEsxiServerLicense) {
       /* Begin Protected Region [[a0f9042b-e4a7-11ef-a6bd-497168f25adc]] */
     	final var functions = vmwareEsxiServerLicense.extension(IAbstractVirtualiuationServersLicenseFunctions.class);
-    	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), functions.SumTotalCore()).getRecommendedLicense(); 
+    	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), vmwareEsxiServerLicense.selectTotalCores()).getRecommendedLicense(); 
       /* End Protected Region   [[a0f9042b-e4a7-11ef-a6bd-497168f25adc]] */
     }
 
@@ -79,7 +85,7 @@ public class FunctionSpace_License_VMware {
     public java.lang.Integer RequiredLicenses(final cleon.architecturemethods.hermes.metamodel.spec.licensing.vmware.javamodel.IVmwareEsxiServerLicense vmwareEsxiServerLicense) {
       /* Begin Protected Region [[a7f90260-e4a7-11ef-a6bd-497168f25adc]] */
     	final var functions = vmwareEsxiServerLicense.extension(IAbstractVirtualiuationServersLicenseFunctions.class);
-    	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), functions.SumTotalCore()).getRequiredLicenses(); 
+    	return new VMWareEsxiLicenseCalculator(functions.TotalHosts(), vmwareEsxiServerLicense.selectTotalCores()).getRequiredLicenses(); 
       /* End Protected Region   [[a7f90260-e4a7-11ef-a6bd-497168f25adc]] */
     }
 
@@ -101,4 +107,4 @@ public class FunctionSpace_License_VMware {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c5e74e74-e4a2-11ef-a6bd-497168f25adc,o8r5FZWVdhZ72c/ySDnmf7LQ5yQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c5e74e74-e4a2-11ef-a6bd-497168f25adc,83piFZ6FU8QqR8xbK5q0YFgPXIk=] */

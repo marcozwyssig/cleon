@@ -16,6 +16,7 @@ public class LicensingPackage {
   public static final Resource FunctionSpace_aE_Xml_aE_Licensing_RhelServerLicense = new Resource("34a5f2fa-e467-11ef-a6bd-497168f25adc");
   public static final Resource FunctionSpace_aE_Xml_aE_Licensing_NoLicenseRequired = new Resource("94aaf753-e49f-11ef-a6bd-497168f25adc");
   public static final Resource FunctionSpace_aE_Xml_aE_Licensing_VmwareEsxiServerLicense = new Resource("ed1e8567-e4a2-11ef-a6bd-497168f25adc");
+  public static final Resource FunctionSpace_aE_Xml_aE_Licensing_VeeamAvailabilitySuiteLicense = new Resource("665de6bb-e4b8-11ef-a6bd-497168f25adc");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +37,4 @@ public class LicensingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.xml.licensing,jqptirkxg5RJydpVNCxbi800APQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.xml.licensing,HdTb/qJu0h2A8wXERbN2HXzJ04w=] */

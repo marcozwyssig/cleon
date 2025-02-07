@@ -4,7 +4,7 @@
 
 :toc:
 
-[#chapter-ebene_2_infrastruture_systemlayer_whitebox]
+[#71fa6d1f-beda-11ef-b498-058ee446f8e7]
 === Ebene_2: Infrastruture <SystemLayer> (Whitebox)
 Motivation::
 // Begin Protected Region [[motivation]]
@@ -19,13 +19,13 @@ TODO: Describe the motivation for the building block view.
 
 The Infrastruture is decomposed into the following components:
 
-. <<#chapter-operating_system_systemcomponent_blackbox>>
-. <<#chapter-servers_systemcomponent_blackbox>>
-. <<#chapter-virtualization_systemcomponent_blackbox>>
+. <<#07d950cc-bee7-11ef-8dcb-a78def9ea3bd>>
+. <<#86892f77-beda-11ef-b498-058ee446f8e7>>
+. <<#97fe54fe-beda-11ef-b498-058ee446f8e7>>
 
-[#chapter-operating_system_systemcomponent_blackbox]
+[#07d950cc-bee7-11ef-8dcb-a78def9ea3bd]
 ===== Operating System <SystemComponent> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Operating System ((<<#chapter-ebene_3_operating_system_systemcomponent_whitebox>>)) beschrieben.
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Operating System ((<<#07fc9046-bee7-11ef-8dcb-a78def9ea3bd>>)) beschrieben.
 
 // Begin Protected Region [[07b6ad97-bee7-11ef-8dcb-a78def9ea3bd,purpose]]
 
@@ -69,9 +69,9 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[07d950cc-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
-[#chapter-servers_systemcomponent_blackbox]
+[#86892f77-beda-11ef-b498-058ee446f8e7]
 ===== Servers <SystemComponent> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Servers ((<<#chapter-ebene_3_servers_systemcomponent_whitebox>>)) beschrieben.
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Servers ((<<#42db7e7f-bedf-11ef-b498-058ee446f8e7>>)) beschrieben.
 
 // Begin Protected Region [[866e0652-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -115,9 +115,9 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[86892f77-beda-11ef-b498-058ee446f8e7,customText]]
 
-[#chapter-virtualization_systemcomponent_blackbox]
+[#97fe54fe-beda-11ef-b498-058ee446f8e7]
 ===== Virtualization <SystemComponent> (Blackbox)
-In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Virtualization ((<<#chapter-ebene_3_virtualization_systemcomponent_whitebox>>)) beschrieben.
+In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Virtualization ((<<#483100ca-bedf-11ef-b498-058ee446f8e7>>)) beschrieben.
 
 // Begin Protected Region [[97e3ef29-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -161,4 +161,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[97fe54fe-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,c0rRT2xUQ1hNHhFIHLJnjaBw2Wo=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,BZlb3pBOzGQY6Mvr4+X/2S18WOw=]

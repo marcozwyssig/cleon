@@ -18,6 +18,8 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion selectConclusion();
   
+  public cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix selectAppendix();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,AOZclgfBJbVZZChc3oA3agWVBWo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,kGGSQHK6oeYXEmmyrdAfdGtotWk=] */

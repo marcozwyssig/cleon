@@ -97,6 +97,16 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix selectAppendix() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_appendix);
+  }
+
+  public SolutionConcept setAppendix(cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix appendix) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_appendix, appendix);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground selectBackgrouund() {
     return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_backgrouund);
   }
@@ -238,6 +248,7 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_appendix, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_backgrouund, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_conclusion, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation, visitor);
@@ -273,5 +284,9 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_conclusion, object.getResource());
   }
   
+  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeAppendix(cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_appendix, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,ZUOAFaz+yyU1HBgUOIp972Y/AKw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,K1/FBNRTuyxg+Lte/NyjnRG7ywk=] */

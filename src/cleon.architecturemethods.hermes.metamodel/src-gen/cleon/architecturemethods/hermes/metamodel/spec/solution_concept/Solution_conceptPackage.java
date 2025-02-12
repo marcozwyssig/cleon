@@ -10,6 +10,7 @@ public class Solution_conceptPackage {
   public static final Resource SolutionConcept_backgrouund = new Resource("8dc7dd24-d89f-11ef-a438-9118b4fe6eea");
   public static final Resource SolutionConcept_evaluation = new Resource("bd4e2de4-d8cc-11ef-8dec-7d07d45d9f8c");
   public static final Resource SolutionConcept_conclusion = new Resource("cb0f7328-d8cc-11ef-8dec-7d07d45d9f8c");
+  public static final Resource SolutionConcept_appendix = new Resource("02258f88-e7a9-11ef-9950-2d66e6ebfee3");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class Solution_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.solution_concept,x2XUXF9i85NkLpA7xtuFQwc9wZ8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.solution_concept,93QWXyHhxtVfTEHIBR0EUSDn3oQ=] */

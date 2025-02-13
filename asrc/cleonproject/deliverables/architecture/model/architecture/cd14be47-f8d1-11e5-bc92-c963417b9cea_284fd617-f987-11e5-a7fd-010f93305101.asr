@@ -503,6 +503,7 @@
         <resource statement-guid="462dd742-e45f-11ef-962f-1d8cbb5022ed" type="resource" guid="462db02e-e45f-11ef-962f-1d8cbb5022ed" />
         <resource statement-guid="7960ff66-e4b8-11ef-a6bd-497168f25adc" type="resource" guid="7960b143-e4b8-11ef-a6bd-497168f25adc" />
         <resource statement-guid="0f2af997-e85a-11ef-91c7-573f701e578c" type="resource" guid="0f2a5d53-e85a-11ef-91c7-573f701e578c" />
+        <resource statement-guid="1c5d1364-e94d-11ef-95d7-9d44902747d2" type="resource" guid="1c5c01f1-e94d-11ef-95d7-9d44902747d2" />
       </owns>
     </resource>
   </owns>
@@ -5519,6 +5520,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="0f2b20a8-e85a-11ef-91c7-573f701e578c" type="literal">cleon.common.doc.metamodel.spec.chapter.appendix</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="1c5d1364-e94d-11ef-95d7-9d44902747d2">
+            <resource guid="1c5c01f1-e94d-11ef-95d7-9d44902747d2">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1c5c2903-e94d-11ef-95d7-9d44902747d2" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1c5f3645-e94d-11ef-95d7-9d44902747d2" type="literal">cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept</object>
               </predicate>
             </resource>
           </object>

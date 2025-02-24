@@ -42,12 +42,12 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   // relations
   
   @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapterRef() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef);
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapterRef() {
+    return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef);
   }
 
-  public ChapterReference setChapterRef(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter chapterRef) {
-    _setSingle(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, chapterRef);
+  public ChapterReference setChapterRef(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapterRef) {
+    _setList(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, chapterRef);
     return this;
   }
     
@@ -77,7 +77,7 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -89,4 +89,4 @@ public class ChapterReference extends DynamicResource implements IChapterReferen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5c6eca85-dd88-11ef-9ced-81351e97716a,KQNjhmHz0bbWLRkAXUs4zpplvUU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5c6eca85-dd88-11ef-9ced-81351e97716a,XEH1Bsz+KqI7EmBj40mpzpC/RQI=] */

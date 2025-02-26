@@ -387,6 +387,18 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("9a57d270-cdc6-11ef-aceb-ed2f5b1a4839")
     public java.lang.String RenderWhiteBoxRef(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("043a4b8f-f41e-11ef-a51c-b3802a5d3f21")
+    public java.lang.String RenderInterface();
+
+    @IDynamicResourceExtension.MethodId("adc04659-f41e-11ef-a51c-b3802a5d3f21")
+    public java.lang.String RenderPerformance();
+
+    @IDynamicResourceExtension.MethodId("bdc9f4ff-f41e-11ef-a51c-b3802a5d3f21")
+    public java.lang.String RenderRequirements();
+
+    @IDynamicResourceExtension.MethodId("cd197b0e-f41e-11ef-a51c-b3802a5d3f21")
+    public java.lang.String RenderLocation();
+
   }
   
   public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1182,4 +1194,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,XxJ/AXun8SATVx1m6O1kx6SuvSM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Hb7b7yg/hYhoWLX+o56sv8oc/xY=] */

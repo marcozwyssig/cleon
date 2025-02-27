@@ -31,6 +31,16 @@ public class IntraSubZoneAccessPolicy extends DynamicResource implements IIntraS
   // relations
   
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone> selectDestination() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_destination);
+  }
+
+  public IntraSubZoneAccessPolicy setDestination(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone> destination) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_destination, destination);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> selectDestinationCommunication() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_destinationCommunication);
   }
@@ -84,6 +94,7 @@ public class IntraSubZoneAccessPolicy extends DynamicResource implements IIntraS
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_destination, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_destinationCommunication, visitor);
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_policyForDestinationSecuritySubZone, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IRestriction.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.IntraSubZoneAccessPolicy_restriction, visitor);
@@ -97,4 +108,4 @@ public class IntraSubZoneAccessPolicy extends DynamicResource implements IIntraS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdd74804-b844-11e9-8760-2d4a9d15ec14,4OQn7pTVfnAt0gmcsemw5cJ6WKw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdd74804-b844-11e9-8760-2d4a9d15ec14,V/Vv2cRG/K6McObV2OTGBMo6fHU=] */

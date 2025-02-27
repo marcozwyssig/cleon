@@ -18,6 +18,8 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.segmentation.m
   
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessToSecuritySubZone();
   
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessFromSecuritySubZone();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,zQnZZ6PWtvk+6rs/OL/IFeDHiig=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,gpAYpd78gtKif12OF8jEQK5cYhg=] */

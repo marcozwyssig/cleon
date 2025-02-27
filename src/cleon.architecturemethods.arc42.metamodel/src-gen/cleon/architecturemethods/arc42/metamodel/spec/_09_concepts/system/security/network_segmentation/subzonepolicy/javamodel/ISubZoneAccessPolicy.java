@@ -12,6 +12,8 @@ public interface ISubZoneAccessPolicy extends ch.actifsource.core.javamodel.IRes
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> selectDestinationCommunication();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone> selectDestination();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80913edf-b844-11e9-8760-2d4a9d15ec14,rHN3OpWSqbHXCJY6fJyBJUzk/5U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80913edf-b844-11e9-8760-2d4a9d15ec14,iN+4DOX1hbPv7MPZb/3Ur1IQo6E=] */

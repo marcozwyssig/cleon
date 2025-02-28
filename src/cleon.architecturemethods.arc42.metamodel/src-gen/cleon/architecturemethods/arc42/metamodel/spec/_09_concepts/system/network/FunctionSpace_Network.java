@@ -342,21 +342,34 @@ public class FunctionSpace_Network {
     @Override
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
-      for( final var networkSubZone : networkSite.selectNetworkSubZone().values() ) {
-      	final var subZoneFunctions = networkSubZone.extension(cleon.architecturemethods.arc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions.class);
-      	final var subzoneName = subZoneFunctions.Name();
-      	if( subzoneName.equalsIgnoreCase(name)) {
-      		return networkSubZone;
-      	}
-      }
-      return null;
+		final var networkSubZoneIterator = networkSite.selectNetworkSubZone().entryIterator();
+		while( networkSubZoneIterator.next()) {
+			for( final var networkSubZone : networkSubZoneIterator.getCurrentValue() ) {
+	          	final var subZoneFunctions = networkSubZone.extension(cleon.architecturemethods.arc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions.class);
+	          	final var subzoneName = subZoneFunctions.Name();
+	          	if( subzoneName.equalsIgnoreCase(name)) {
+	          		return networkSubZone;
+	          	}
+			}
+		}
+		
+		return null;
       /* End Protected Region   [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
     }
 
     @Override
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone GetNetworkSubZoneByVlan(final java.lang.String vlan, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[4255c2a9-53b4-11ef-80ff-efa8d0dbdc0e]] */
-    	return networkSite.selectNetworkSubZone().values().stream().filter(x -> x.selectVlan().equalsIgnoreCase(vlan)).findFirst().orElse(null);   
+		final var networkSubZoneIterator = networkSite.selectNetworkSubZone().entryIterator();
+		while( networkSubZoneIterator.next()) {
+			for( final var networkSubZone : networkSubZoneIterator.getCurrentValue() ) {
+	          	if( vlan.equalsIgnoreCase(networkSubZone.selectVlan())) {
+	          		return networkSubZone;
+	          	}
+			}
+		}
+		
+		return null;    	
       /* End Protected Region   [[4255c2a9-53b4-11ef-80ff-efa8d0dbdc0e]] */
     }
 
@@ -465,4 +478,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,wOiU7mVWtc5NORUuXkJ0O8LLl2U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,A+NeXdjpRyHtE94H9vXe6UOMsgw=] */

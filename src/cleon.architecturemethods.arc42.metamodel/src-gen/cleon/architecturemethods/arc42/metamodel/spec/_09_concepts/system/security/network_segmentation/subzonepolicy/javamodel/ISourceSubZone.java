@@ -12,6 +12,8 @@ public interface ISourceSubZone extends ch.actifsource.core.javamodel.IDecorator
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> selectDestinationSubZonePolicy();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> selectSourceCommunications();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,Ru0Vo1Ph2MEPxR/blSf6JoRsnGw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19162783-b844-11e9-8760-2d4a9d15ec14,iRtW0fuhZGnVCbPCbhntNV70D2g=] */

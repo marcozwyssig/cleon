@@ -24,6 +24,7 @@ public class SubzonepolicyPackage {
   public static final Resource InterSubZoneAccessPolicy_allowRestrictedAccess = new Resource("050eb2ec-0959-11ea-ab4a-e97608b5c219");
   public static final Resource SubZoneAccessPolicy_destinationCommunication = new Resource("d94c4549-ddfa-11ed-b308-ed6374548c27");
   public static final Resource SubZoneAccessPolicy_destination = new Resource("e4c2ca5a-f504-11ef-9f30-2378167abc79");
+  public static final Resource SourceSubZone_sourceCommunications = new Resource("d583ea65-f5c1-11ef-b301-37bf6b79be8f");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +45,4 @@ public class SubzonepolicyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy,rYbxN4iEEc6iHftYDtlUb0Vf0MY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy,KQZ4WW5yVEmWH9Hriu35MHq9Qhs=] */

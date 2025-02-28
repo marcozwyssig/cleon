@@ -1006,22 +1006,48 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[e3ffdf58-0a36-11ea-baed-218c3e076b56]] */
-      final var subZoneAccessPolicy = sourceInSubSecurityZone.selectSubZoneAccessPolicy();
-      final var accessPolicyFunctions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
-      if (accessPolicyFunctions != null && accessPolicyFunctions.AllowRestrictedAccess()) {
-      	return "Restricted";
-      }
+        final var subZoneAccessPolicy = sourceInSubSecurityZone.selectSubZoneAccessPolicy();
+        if (subZoneAccessPolicy == null) {
+            throw new IllegalStateException("SubZoneAccessPolicy is null");
+        }
 
-      final var destinationSubZone = subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone();
-      final var sourceFunctions = src.extension(ISourceFunctions.class);
-      final var destination = sourceFunctions.Destination();
-      final var destinationFunction = destination.extension(IDestinationFunctions.class);
-      final var destinationSubSecurityZone = destinationFunction.GetDestinationPolicy(destinationSubZone);
+        final var accessPolicyFunctions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
+        if (accessPolicyFunctions != null && Boolean.TRUE.equals(accessPolicyFunctions.AllowRestrictedAccess())) {
+            return "Restricted";
+        }
 
-      final var destinationSubSecurityZoneFunctions = destinationSubSecurityZone
-      		.extension(IDestinationSubSecurityZoneFunctions.class);
-      return destinationSubSecurityZoneFunctions.RenderDestinationHostGroups(sourceInSubSecurityZone,
-      		subZoneAccessPolicy, src, env);
+        final var destinationSubZone = subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone();
+        if (destinationSubZone == null) {
+            throw new IllegalStateException("DestinationSubZone is null");
+        }
+
+        final var sourceFunctions = src != null ? src.extension(ISourceFunctions.class) : null;
+        if (sourceFunctions == null) {
+            throw new IllegalStateException("SourceFunctions is null");
+        }
+
+        final var destination = sourceFunctions.Destination();
+        if (destination == null) {
+            throw new IllegalStateException("Destination is null");
+        }
+
+        final var destinationFunction = destination.extension(IDestinationFunctions.class);
+        if (destinationFunction == null) {
+            throw new IllegalStateException("DestinationFunction is null");
+        }
+
+        final var destinationSubSecurityZone = destinationFunction.GetDestinationPolicy(destinationSubZone);
+        if (destinationSubSecurityZone == null) {
+            throw new IllegalStateException("DestinationSubSecurityZone is null");
+        }
+
+        final var destinationSubSecurityZoneFunctions = destinationSubSecurityZone.extension(IDestinationSubSecurityZoneFunctions.class);
+        if (destinationSubSecurityZoneFunctions == null) {
+            throw new IllegalStateException("DestinationSubSecurityZoneFunctions is null");
+        }
+
+        return destinationSubSecurityZoneFunctions.RenderDestinationHostGroups(sourceInSubSecurityZone,
+                subZoneAccessPolicy, src, env);
       /* End Protected Region   [[e3ffdf58-0a36-11ea-baed-218c3e076b56]] */
     }
 

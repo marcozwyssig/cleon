@@ -157,6 +157,9 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("3c79d5d9-a961-11e9-bf83-7bacdb6991f7")
     public java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source);
 
+    @IDynamicResourceExtension.MethodId("c6f6ee19-f5b2-11ef-b301-37bf6b79be8f")
+    public java.lang.String GetTypeName();
+
   }
   
   public static interface ISecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -316,6 +319,31 @@ public class FunctionSpace_Segmentation {
 
   }
 
+  public static interface ISecurityClientZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b2ddf885-f5b2-11ef-b301-37bf6b79be8f")
+    public java.lang.String GetTypeName();
+
+  }
+  
+  public static interface ISecurityClientZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SecurityClientZoneFunctionsImpl implements ISecurityClientZoneFunctionsImpl {
+
+    public static final ISecurityClientZoneFunctionsImpl INSTANCE = new SecurityClientZoneFunctionsImpl();
+
+    private SecurityClientZoneFunctionsImpl() {}
+
+  }
+  
+  public static class SecurityClientZoneFunctions {
+
+    private SecurityClientZoneFunctions() {}
+
+  }
+
   public static interface ISecurityInternetZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("10fd1249-8e06-11ea-b01b-6bc31a0e971d")
@@ -442,4 +470,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,3BrFp8XzaIn+SbA+9jb9/QTiLLQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,KqAqnRoGkcPWYhZsu68urn59tXg=] */

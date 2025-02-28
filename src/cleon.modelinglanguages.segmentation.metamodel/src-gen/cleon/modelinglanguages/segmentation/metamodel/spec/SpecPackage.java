@@ -50,6 +50,7 @@ public class SpecPackage {
   public static final Resource SecuritySubZone_allowedAccessFromSecuritySubZone = new Resource("d14bf3f0-f502-11ef-8a6f-614caf5cfb3a");
   public static final Resource SecurityClientZone = new Resource("0b8b58ea-f5b2-11ef-b301-37bf6b79be8f");
   public static final Resource FunctionSpace_aE_Segmentation_SecurityClientZone = new Resource("b2ddf882-f5b2-11ef-b301-37bf6b79be8f");
+  public static final Resource SecuritySubZone_hostGroupPrefix = new Resource("70d5965a-f5eb-11ef-8efc-fdd1fc6fef2d");
   
   /* Begin Protected Region [[user]] */
   
@@ -70,4 +71,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,+DO4yQd83m9OoEkYirdA6WQNRFo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,qzefNlxUQDimfF/iGG6EuZ/06TA=] */

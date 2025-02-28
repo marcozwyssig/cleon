@@ -67,6 +67,15 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   }
 
   @Override
+  public java.lang.String selectHostGroupPrefix() {
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_hostGroupPrefix);
+  }
+    
+  public void setHostGroupPrefix(java.lang.String hostGroupPrefix) {
+     _setSingleAttribute(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_hostGroupPrefix, hostGroupPrefix);
+  }
+
+  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -223,6 +232,7 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_export, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_hostGroupPrefix, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_mask, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -248,4 +258,4 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,iJdpJeX0gWubfFVvC97fAr4SN1A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,YuaeRT4CUbMTDT8zMdD4oCrfyVc=] */

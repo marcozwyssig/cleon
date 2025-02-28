@@ -745,7 +745,7 @@ public class FunctionSpace_Communication {
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
       			final var siteFunctions = siteWithHosts.extension(IAbstractSiteFunctions.class);
-      			result.append("GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + siteFunctions.SiteName() + "-" + destinationSubZone.selectVLAN_No());
+      			result.append(destinationSubZoneFunctions.HostGroupPrefix() + "GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + siteFunctions.SiteName() + "-" + destinationSubZone.selectVLAN_No());
       			result.append(System.lineSeparator());
       		}
       	} else {

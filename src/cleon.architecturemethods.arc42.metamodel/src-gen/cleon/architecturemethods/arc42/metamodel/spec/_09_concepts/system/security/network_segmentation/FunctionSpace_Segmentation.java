@@ -138,6 +138,9 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("2d13fa53-75bc-11ef-9e73-d7a16eeaf5fd")
     public java.lang.String ContextualGroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
+    @IDynamicResourceExtension.MethodId("c151fcde-f5eb-11ef-8efc-fdd1fc6fef2d")
+    public java.lang.String HostGroupPrefix();
+
   }
   
   public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -248,4 +251,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,StddUIp8WWPl+m9ovtsRVJKtdiQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,JQJCKa+4AeH7v+lf+MiJcpsOFqA=] */

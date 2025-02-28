@@ -12,6 +12,8 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.segmentation.m
   
   public java.lang.Boolean selectExport();
   
+  public java.lang.String selectHostGroupPrefix();
+  
   // relations
   
   public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone selectNoZones();
@@ -22,4 +24,4 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.segmentation.m
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,gpAYpd78gtKif12OF8jEQK5cYhg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,YM2sbXiOzO63Vw/qx7Oe7cvjGEo=] */

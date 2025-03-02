@@ -11,6 +11,12 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
 
+Fullname::
+ikt.infrastruture.virtualization
+
+Parent::
+<<#71fa6d1f-beda-11ef-b498-058ee446f8e7>>
+
 // Begin Protected Region [[customText]]
 
 // End Protected Region   [[customText]]
@@ -24,7 +30,7 @@ The Virtualization is decomposed into the following components:
 
 [#6915e917-bee0-11ef-b498-058ee446f8e7]
 ===== VM <VirtualMachineSystemConfiguration> (Blackbox)
-This chapter describes the black-box properties of the component VM ((<<#b582462b-bee0-11ef-b498-058ee446f8e7>>)).
+This chapter describes the black-box properties of the component VM. The description of the whitebox is in chapter (<<#b582462b-bee0-11ef-b498-058ee446f8e7>>).
 
 // Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,purpose]]
 
@@ -70,7 +76,7 @@ TODO: Describe the open issues/problems/risks.
 
 [#6915c206-bee0-11ef-b498-058ee446f8e7]
 ===== VMH <HypervisorSystemConfiguration> (Blackbox)
-This chapter describes the black-box properties of the component VMH ((<<#b581f80a-bee0-11ef-b498-058ee446f8e7>>)).
+This chapter describes the black-box properties of the component VMH. The description of the whitebox is in chapter (<<#b581f80a-bee0-11ef-b498-058ee446f8e7>>).
 
 // Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,purpose]]
 
@@ -114,4 +120,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[6915c206-bee0-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,hiCbNYEdDPlPlzMKabwwJUXeQrE=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,We0A+y/fQLOEjS3HmH3TpIgCV28=]

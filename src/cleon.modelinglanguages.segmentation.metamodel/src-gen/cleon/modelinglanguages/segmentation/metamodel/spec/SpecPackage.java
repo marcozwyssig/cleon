@@ -51,6 +51,16 @@ public class SpecPackage {
   public static final Resource SecurityClientZone = new Resource("0b8b58ea-f5b2-11ef-b301-37bf6b79be8f");
   public static final Resource FunctionSpace_aE_Segmentation_SecurityClientZone = new Resource("b2ddf882-f5b2-11ef-b301-37bf6b79be8f");
   public static final Resource SecuritySubZone_hostGroupPrefix = new Resource("70d5965a-f5eb-11ef-8efc-fdd1fc6fef2d");
+  public static final Resource VLAN = new Resource("6d4178bf-f756-11ef-9619-857aad3ec118");
+  public static final Resource VLAN_aE_Values = new Resource("7427faeb-f756-11ef-9619-857aad3ec118");
+  public static final Resource VLAN_aE_Range = new Resource("7b5e4b55-f756-11ef-9619-857aad3ec118");
+  public static final Resource VLAN_aE_Values_vlan = new Resource("85739faa-f756-11ef-9619-857aad3ec118");
+  public static final Resource VLAN_aE_Range_from_aE_vlan = new Resource("96efa2c1-f756-11ef-9619-857aad3ec118");
+  public static final Resource VLAN_aE_Range_to_aE_vlan = new Resource("9c9986f2-f756-11ef-9619-857aad3ec118");
+  public static final Resource FunctionSpace_aE_Segmentation_VLAN_aE_Values = new Resource("c8653a3a-f756-11ef-9619-857aad3ec118");
+  public static final Resource SecuritySubZone_VLAN = new Resource("7e62e386-f757-11ef-9619-857aad3ec118");
+  public static final Resource FunctionSpace_aE_Segmentation_VLAN = new Resource("2162a43a-f758-11ef-9619-857aad3ec118");
+  public static final Resource FunctionSpace_aE_Segmentation_VLAN_aE_Range = new Resource("5c3d523c-f758-11ef-9619-857aad3ec118");
   
   /* Begin Protected Region [[user]] */
   
@@ -71,4 +81,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,qzefNlxUQDimfF/iGG6EuZ/06TA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,r5TJgvtyxQMHqeRyHBHrly/aYPc=] */

@@ -66,24 +66,6 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
      _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
-  @Override
-  public java.lang.Integer selectOverrideVLAN() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN);
-  }
-    
-  public void setOverrideVLAN(java.lang.Integer overrideVLAN) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN, overrideVLAN);
-  }
-
-  @Override
-  public java.lang.Integer selectVlan() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan);
-  }
-    
-  public void setVlan(java.lang.Integer vlan) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan, vlan);
-  }
-
   // relations
   
   @Override
@@ -157,6 +139,16 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   }
     
   @Override
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan selectOverrideVLAN() {
+    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN);
+  }
+
+  public NetworkSubZone setOverrideVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan overrideVLAN) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN, overrideVLAN);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -216,22 +208,32 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
     return this;
   }
     
+  @Override
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan selectVlan() {
+    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan);
+  }
+
+  public NetworkSubZone setVlan(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan vlan) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan, vlan);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidrs, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_nodes, visitor);
+    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN, visitor);
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_securitySubZone, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_topologySite, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_topologySiteMSS, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan, visitor);
   }
 
   // toMeRelations
@@ -248,5 +250,13 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_securitySubZone, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> selectToMeOverrideVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_overrideVLAN, object.getResource());
+  }
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> selectToMeVlan(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkSubZone_vlan, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,wc2Sfb+M6RrIc17l3Dyhs6Szfn4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,iB6o/YLhVkwVeXBhexcUGHfOYUg=] */

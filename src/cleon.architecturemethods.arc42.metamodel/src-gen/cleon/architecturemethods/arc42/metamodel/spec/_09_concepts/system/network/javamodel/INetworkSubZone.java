@@ -6,10 +6,6 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.metamod
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1f0c1a61-4b29-11e9-8338-41c203971ecb");
   
-  public java.lang.Integer selectOverrideVLAN();
-  
-  public java.lang.Integer selectVlan();
-  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite selectTopologySite();
@@ -18,6 +14,10 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.metamod
   
   public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectSecuritySubZone();
   
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan selectOverrideVLAN();
+  
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan selectVlan();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,AuyhFTuBnZyAHCTHJyvmpAeRAiw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,7nqbWK+Uv2n0TWOCzgzwSKM1D0U=] */

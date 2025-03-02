@@ -454,14 +454,14 @@ public class FunctionSpace_Network {
   public static interface INetworkSubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7")
-    public java.lang.Integer Vlan();
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan Vlan();
 
   }
   
   public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7")
-    public java.lang.Integer Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone);
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone);
 
   }
   
@@ -472,12 +472,13 @@ public class FunctionSpace_Network {
     private NetworkSubZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
       /* Begin Protected Region [[f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7]] */
     	if( networkSubZone.selectOverrideVLAN() != null ) {
     		return networkSubZone.selectOverrideVLAN();
     	}
-    	return networkSubZone.selectSecuritySubZone().selectVLAN_No();   
+    	
+    	return networkSubZone.selectSecuritySubZone().selectDefaultVlan();   
       /* End Protected Region   [[f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7]] */
     }
 
@@ -487,7 +488,7 @@ public class FunctionSpace_Network {
 
     private NetworkSubZoneFunctions() {}
 
-    public static java.lang.Integer Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
+    public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan Vlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
       return DynamicResourceUtil.invoke(INetworkSubZoneFunctionsImpl.class, NetworkSubZoneFunctionsImpl.INSTANCE, networkSubZone).Vlan(networkSubZone);
     }
 
@@ -495,4 +496,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,UOttiVPs5c0HlOvLLgqsabeMNcw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,z5/wj/3w1L5qhMSf9t7rMs7TH78=] */

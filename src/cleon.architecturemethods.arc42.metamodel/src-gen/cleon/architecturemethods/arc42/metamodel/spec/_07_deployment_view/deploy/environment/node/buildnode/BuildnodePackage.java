@@ -16,7 +16,7 @@ public class BuildnodePackage {
   public static final Resource BuildNode_cpu = new Resource("964206ca-2afe-11e9-9692-65766bc2daa5");
   public static final Resource BuildNode_memory = new Resource("3f760a27-2b02-11e9-9692-65766bc2daa5");
   public static final Resource BuildNode_disks = new Resource("1b503c7b-2b03-11e9-9692-65766bc2daa5");
-  public static final Resource ServiceBuildNode_serviceForHost = new Resource("edf18afa-5e17-11ea-b835-fbb06fdf6352");
+  public static final Resource ServiceBuildNode_hostname = new Resource("edf18afa-5e17-11ea-b835-fbb06fdf6352");
   public static final Resource ApplicationBuildNode = new Resource("7aa00b70-84d9-11ea-ade9-0f308d716192");
   public static final Resource FunctionSpace_aE_BuildNode_ApplicationBuildNode = new Resource("0706e2de-84da-11ea-ade9-0f308d716192");
   public static final Resource BuildNode_resourceBuildingBlockForSystemConfiguration = new Resource("93241ae4-966a-11ed-8477-832487bcda65");
@@ -40,4 +40,4 @@ public class BuildnodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode,FpalTD5YdUJYLfQ4OAesTzCWbRo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode,bBED+3kQgIOzqwiCA4tcbfh7ziI=] */

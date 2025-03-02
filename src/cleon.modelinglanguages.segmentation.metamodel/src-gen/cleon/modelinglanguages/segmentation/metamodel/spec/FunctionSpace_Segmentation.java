@@ -10,6 +10,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[49bf1abf-0b79-11e9-a136-69d076e48ed1,imports]] */
 import cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone;
 import java.util.stream.Collectors;
+import java.util.Comparator;
 /* End Protected Region   [[49bf1abf-0b79-11e9-a136-69d076e48ed1,imports]] */
 
 public class FunctionSpace_Segmentation {
@@ -63,7 +64,7 @@ public class FunctionSpace_Segmentation {
     @Override
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zoneList) {
       /* Begin Protected Region [[0bb8e351-c365-11e9-a43f-07b58a157d3c]] */
-      return zoneList.stream().filter(x -> x instanceof ISecuritySubZone).map(x -> (ISecuritySubZone)x).sorted(java.util.Comparator.comparing(ISecuritySubZone::selectVLAN_No)).collect(Collectors.toList());   
+      return zoneList.stream().filter(x -> x instanceof ISecuritySubZone).map(x -> (ISecuritySubZone)x).sorted(Comparator.comparingInt(x -> x.selectDefaultVlan().selectVlan_no())).collect(Collectors.toList());   
       /* End Protected Region   [[0bb8e351-c365-11e9-a43f-07b58a157d3c]] */
     }
 
@@ -92,6 +93,9 @@ public class FunctionSpace_Segmentation {
 
     @IDynamicResourceExtension.MethodId("9e849f53-c789-11ea-b0b6-e5df79e86bc2")
     public java.lang.String NameWithSecurityZoneName();
+
+    @IDynamicResourceExtension.MethodId("e26ab347-f75c-11ef-9619-857aad3ec118")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> Vlans();
 
   }
   
@@ -471,7 +475,7 @@ public class FunctionSpace_Segmentation {
   public static interface IAbstractVlanFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("24dbecaa-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -499,7 +503,7 @@ public class FunctionSpace_Segmentation {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("51b7fe3c-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -524,14 +528,14 @@ public class FunctionSpace_Segmentation {
   public static interface IVlanRangeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
   public static interface IVlanRangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange);
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange);
 
   }
   
@@ -542,8 +546,8 @@ public class FunctionSpace_Segmentation {
     private VlanRangeFunctionsImpl() {}
 
     @Override
-    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
-      return java.util.stream.IntStream.rangeClosed(vlanRange.selectFrom_vlan().selectVlan_no(), vlanRange.selectTo_vlan().selectVlan_no()).boxed().collect(Collectors.toList());
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
+      return null;
     }
 
   }
@@ -552,7 +556,7 @@ public class FunctionSpace_Segmentation {
 
     private VlanRangeFunctions() {}
 
-    public static List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
       return DynamicResourceUtil.invoke(IVlanRangeFunctionsImpl.class, VlanRangeFunctionsImpl.INSTANCE, vlanRange).VLANs(vlanRange);
     }
 
@@ -561,7 +565,7 @@ public class FunctionSpace_Segmentation {
   public static interface IVlanFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cd978089-f75a-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -585,4 +589,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,cyeMNatzn3NXwReGXwqyO2/cvus=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,dcX/NNDFVMfKGlMqNVgYK6iJswA=] */

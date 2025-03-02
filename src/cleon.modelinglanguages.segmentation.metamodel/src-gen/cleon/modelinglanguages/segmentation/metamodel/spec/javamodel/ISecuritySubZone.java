@@ -18,7 +18,7 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.segmentation.m
   
   public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone selectNoZones();
   
-  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN selectVLAN();
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan selectVLAN();
   
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessToSecuritySubZone();
   
@@ -26,4 +26,4 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.segmentation.m
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,YrUkkZEtHO3VE86z/fmnZRFhd/E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,DGZfgdUW1BeHCu9xslhLmxLWbFo=] */

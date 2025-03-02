@@ -36,22 +36,25 @@
     <object statement-guid="8573c6bd-f756-11ef-9619-857aad3ec118">
       <resource guid="85739faa-f756-11ef-9619-857aad3ec118">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="85739fac-f756-11ef-9619-857aad3ec118" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="8911125d-f756-11ef-9619-857aad3ec118" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+          <object statement-guid="4f7fb00d-f75a-11ef-9619-857aad3ec118" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="85d7433b-f756-11ef-9619-857aad3ec118" type="literal">vlan</object>
+          <object statement-guid="85d7433b-f756-11ef-9619-857aad3ec118" type="literal">vlans</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="8573edce-f756-11ef-9619-857aad3ec118" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="55fbb035-f75a-11ef-9619-857aad3ec118" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="52542bf3-f75a-11ef-9619-857aad3ec118" type="resource" guid="455796a7-f75a-11ef-9619-857aad3ec118" />
         </predicate>
       </resource>
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="7428490e-f756-11ef-9619-857aad3ec118" type="literal">VLAN_Values</object>
+    <object statement-guid="7428490e-f756-11ef-9619-857aad3ec118" type="literal">VlanValues</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c46e0f68-f756-11ef-9619-857aad3ec118">

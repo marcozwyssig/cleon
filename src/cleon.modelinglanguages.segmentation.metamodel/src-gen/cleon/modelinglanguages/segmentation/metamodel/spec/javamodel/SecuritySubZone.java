@@ -105,11 +105,11 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   // relations
   
   @Override
-  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN selectVLAN() {
-    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN);
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan selectVLAN() {
+    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN);
   }
 
-  public SecuritySubZone setVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN vLAN) {
+  public SecuritySubZone setVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan vLAN) {
     _setSingle(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN, vLAN);
     return this;
   }
@@ -246,7 +246,7 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_mask, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN, visitor);
+    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessFromSecuritySubZone, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessToSecuritySubZone, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification.class, cleon.common.resources.metamodel.spec.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
@@ -260,7 +260,7 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_noZones, object.getResource());
   }
   
-  public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectToMeVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN object) {
+  public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectToMeVLAN(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IAbstractVlan object) {
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_VLAN, object.getResource());
   }
   
@@ -273,4 +273,4 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,AQHZwsEQBdreevSao3h3FfxVtog=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,Lf/Q6VE+EX06Ejroz5zn7pTFddM=] */

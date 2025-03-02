@@ -468,7 +468,32 @@ public class FunctionSpace_Segmentation {
 
   }
 
-  public static interface IVLAN_ValuesFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractVlanFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("24dbecaa-f758-11ef-9619-857aad3ec118")
+    public List<java.lang.Integer> VLANs();
+
+  }
+  
+  public static interface IAbstractVlanFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractVlanFunctionsImpl implements IAbstractVlanFunctionsImpl {
+
+    public static final IAbstractVlanFunctionsImpl INSTANCE = new AbstractVlanFunctionsImpl();
+
+    private AbstractVlanFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractVlanFunctions {
+
+    private AbstractVlanFunctions() {}
+
+  }
+
+  public static interface IVlanValuesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cc5a9051-f756-11ef-9619-857aad3ec118")
     public java.lang.String SimpleName();
@@ -478,86 +503,86 @@ public class FunctionSpace_Segmentation {
 
   }
   
-  public static interface IVLAN_ValuesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IVlanValuesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class VLAN_ValuesFunctionsImpl implements IVLAN_ValuesFunctionsImpl {
+  public static class VlanValuesFunctionsImpl implements IVlanValuesFunctionsImpl {
 
-    public static final IVLAN_ValuesFunctionsImpl INSTANCE = new VLAN_ValuesFunctionsImpl();
+    public static final IVlanValuesFunctionsImpl INSTANCE = new VlanValuesFunctionsImpl();
 
-    private VLAN_ValuesFunctionsImpl() {}
-
-  }
-  
-  public static class VLAN_ValuesFunctions {
-
-    private VLAN_ValuesFunctions() {}
-
-  }
-
-  public static interface IVLANFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("24dbecaa-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs();
+    private VlanValuesFunctionsImpl() {}
 
   }
   
-  public static interface IVLANFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class VLANFunctionsImpl implements IVLANFunctionsImpl {
+  public static class VlanValuesFunctions {
 
-    public static final IVLANFunctionsImpl INSTANCE = new VLANFunctionsImpl();
-
-    private VLANFunctionsImpl() {}
-
-  }
-  
-  public static class VLANFunctions {
-
-    private VLANFunctions() {}
+    private VlanValuesFunctions() {}
 
   }
 
-  public static interface IVLAN_RangeFunctions extends IDynamicResourceExtension {
+  public static interface IVlanRangeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
     public List<java.lang.Integer> VLANs();
 
   }
   
-  public static interface IVLAN_RangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IVlanRangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
-    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN_Range vLAN_Range);
+    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange);
 
   }
   
-  public static class VLAN_RangeFunctionsImpl implements IVLAN_RangeFunctionsImpl {
+  public static class VlanRangeFunctionsImpl implements IVlanRangeFunctionsImpl {
 
-    public static final IVLAN_RangeFunctionsImpl INSTANCE = new VLAN_RangeFunctionsImpl();
+    public static final IVlanRangeFunctionsImpl INSTANCE = new VlanRangeFunctionsImpl();
 
-    private VLAN_RangeFunctionsImpl() {}
+    private VlanRangeFunctionsImpl() {}
 
     @Override
-    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN_Range vLAN_Range) {
-      return java.util.stream.IntStream.rangeClosed(vLAN_Range.selectFrom_vlan(), vLAN_Range.selectTo_vlan()).boxed().collect(Collectors.toList());
+    public List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
+      return java.util.stream.IntStream.rangeClosed(vlanRange.selectFrom_vlan().selectVlan_no(), vlanRange.selectTo_vlan().selectVlan_no()).boxed().collect(Collectors.toList());
     }
 
   }
   
-  public static class VLAN_RangeFunctions {
+  public static class VlanRangeFunctions {
 
-    private VLAN_RangeFunctions() {}
+    private VlanRangeFunctions() {}
 
-    public static List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVLAN_Range vLAN_Range) {
-      return DynamicResourceUtil.invoke(IVLAN_RangeFunctionsImpl.class, VLAN_RangeFunctionsImpl.INSTANCE, vLAN_Range).VLANs(vLAN_Range);
+    public static List<java.lang.Integer> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
+      return DynamicResourceUtil.invoke(IVlanRangeFunctionsImpl.class, VlanRangeFunctionsImpl.INSTANCE, vlanRange).VLANs(vlanRange);
     }
+
+  }
+
+  public static interface IVlanFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cd978089-f75a-11ef-9619-857aad3ec118")
+    public List<java.lang.Integer> VLANs();
+
+  }
+  
+  public static interface IVlanFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VlanFunctionsImpl implements IVlanFunctionsImpl {
+
+    public static final IVlanFunctionsImpl INSTANCE = new VlanFunctionsImpl();
+
+    private VlanFunctionsImpl() {}
+
+  }
+  
+  public static class VlanFunctions {
+
+    private VlanFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,OjAQidhp+Qfz+zTUev+ZhdL1VKI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,cyeMNatzn3NXwReGXwqyO2/cvus=] */

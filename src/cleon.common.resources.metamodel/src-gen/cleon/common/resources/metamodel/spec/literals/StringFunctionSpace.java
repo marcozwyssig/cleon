@@ -71,6 +71,9 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839")
     public java.lang.String convertToDirectoryPath();
 
+    @IDynamicResourceExtension.MethodId("65a2b565-f76e-11ef-9619-857aad3ec118")
+    public java.lang.String convertCommasToNewlines();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -122,6 +125,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("975a8f3b-cdaf-11ef-aceb-ed2f5b1a4839")
     public java.lang.String convertToDirectoryPath(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("65a2b565-f76e-11ef-9619-857aad3ec118")
+    public java.lang.String convertCommasToNewlines(final java.lang.String stringLiteral);
 
   }
   
@@ -302,6 +308,16 @@ public class StringFunctionSpace {
       return stringLiteral.replace(".", java.io.File.separator);
     }
 
+    @Override
+    public java.lang.String convertCommasToNewlines(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[65a2b565-f76e-11ef-9619-857aad3ec118]] */
+        if (stringLiteral == null) {
+            return "";
+        }
+        return stringLiteral.replace(",", System.lineSeparator());   
+      /* End Protected Region   [[65a2b565-f76e-11ef-9619-857aad3ec118]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -372,6 +388,10 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertToDirectoryPath(stringLiteral);
     }
 
+    public static java.lang.String convertCommasToNewlines(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertCommasToNewlines(stringLiteral);
+    }
+
   }
 
   public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
@@ -396,6 +416,9 @@ public class StringFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("443dbe7a-cdb0-11ef-aceb-ed2f5b1a4839")
     public java.lang.String convertToDirectoryPath();
+
+    @IDynamicResourceExtension.MethodId("6dc7d347-f76e-11ef-9619-857aad3ec118")
+    public java.lang.String convertCommasToNewlines();
 
   }
   
@@ -497,4 +520,7 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,SGqSY7IPmZpKMK/fq4MlWvkPshU=] */
+      /* Begin Protected Region [[6dc7d347-f76e-11ef-9619-857aad3ec118]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[6dc7d347-f76e-11ef-9619-857aad3ec118]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,yQaQFpmz7VIuvvG+jNqTKG5jr1o=] */

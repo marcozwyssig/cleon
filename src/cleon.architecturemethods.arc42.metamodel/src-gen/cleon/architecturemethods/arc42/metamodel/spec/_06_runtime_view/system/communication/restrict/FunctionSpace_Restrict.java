@@ -91,7 +91,7 @@ public class FunctionSpace_Restrict {
     @Override
     public java.lang.String GetValue(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.restrict.javamodel.IOverrideSiteOnHostGroupForDestination overrideSiteOnHostGroupForDestination) {
       /* Begin Protected Region [[71883184-7259-11ed-8c7b-bf13a6bd0e0e]] */
-      return cfg.extension(ISystemConfigurationFunctions.class).HostGroupName(overrideSiteOnHostGroupForDestination.selectValue(), sz);
+      return cfg.extension(ISystemConfigurationFunctions.class).HostGroupNameWithComma(overrideSiteOnHostGroupForDestination.selectValue(), sz);
       /* End Protected Region   [[71883184-7259-11ed-8c7b-bf13a6bd0e0e]] */
     }
 

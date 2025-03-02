@@ -745,7 +745,7 @@ public class FunctionSpace_Communication {
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
       			final var siteFunctions = siteWithHosts.extension(IAbstractSiteFunctions.class);
-      			for( final var vlan : destinationSubZone.selectVlans()) {
+      			for( final var vlan : destinationSubZone.selectAllVlans()) {
           			result.append(destinationSubZoneFunctions.HostGroupPrefix() + "GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + siteFunctions.SiteName() + "-" + vlan.selectVlan_no());
           			result.append(System.lineSeparator());      				
       			}
@@ -1167,8 +1167,8 @@ public class FunctionSpace_Communication {
       	if (zoneFunctions.IsSingleUsed()) {
       		for (final var hosts : sourceSubZoneFunctions.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       				TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
-      			result.append(configurationFunctions.HostGroupName(hosts, sourceSubZone));
-      			result.append("\n");
+      			result.append(configurationFunctions.HostGroupNameWithLineSeparator(hosts, sourceSubZone));
+      			result.append(System.lineSeparator());
       		}
       	} else {
       		final var hosts = sourceSubZoneFunctions
@@ -1178,7 +1178,7 @@ public class FunctionSpace_Communication {
       		for (final var concreteSysCfg : hosts) {
       			final var concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);
       			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone));
-      			result.append("\n");
+      			result.append(System.lineSeparator());
       		}
       	}
       }

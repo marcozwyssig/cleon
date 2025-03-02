@@ -1022,10 +1022,13 @@ public class FunctionSpace_SystemConfiguration {
     public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("c09a443e-c783-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String HostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts hosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    public java.lang.String HostGroupNameWithComma(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts hosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
-    @IDynamicResourceExtension.MethodId("861a0366-f167-11ec-ac33-079e260f3153")
-    public java.lang.String HostGroupName(final java.lang.String groupName, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    @IDynamicResourceExtension.MethodId("a8a65bfd-f76f-11ef-9619-857aad3ec118")
+    public java.lang.String HostGroupNameWithComma(final java.lang.String groupName, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
+    @IDynamicResourceExtension.MethodId("003071ae-f76f-11ef-9619-857aad3ec118")
+    public java.lang.String HostGroupNameWithLineSeparator(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts hosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
     @IDynamicResourceExtension.MethodId("2a51e529-df6d-11e9-9827-a1514ee8d06a")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
@@ -1289,4 +1292,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,6yc2cnM68gDoalNGG7LzEITHm0c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,gU8xiiwRgyAYJrs5JJgZf1ZYDkc=] */

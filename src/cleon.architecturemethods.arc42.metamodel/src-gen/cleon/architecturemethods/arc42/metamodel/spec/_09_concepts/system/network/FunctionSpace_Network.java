@@ -196,6 +196,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("45a2aa6c-63ea-11ef-ac12-136807d7f56d")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite Site();
 
+    @IDynamicResourceExtension.MethodId("5cbae880-f772-11ef-9619-857aad3ec118")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan VLAN();
+
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -496,4 +499,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,z5/wj/3w1L5qhMSf9t7rMs7TH78=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,iGRsZ3qFP95/RSikS+ECFlGleAE=] */

@@ -123,15 +123,6 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("e99aad2f-a965-11e9-bf83-7bacdb6991f7")
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
 
-    /**
-     * 
-     */
-    @IDynamicResourceExtension.MethodId("e641276b-51a3-11ea-a946-13c393300b57")
-    public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts);
-
-    @IDynamicResourceExtension.MethodId("f44b9356-0aa0-11ea-97f4-9d91b2097bad")
-    public java.lang.String GroupNameAll(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment env);
-
     @IDynamicResourceExtension.MethodId("88247d98-e2d8-11ee-bcaf-bf4e173adc8d")
     public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration);
 
@@ -249,6 +240,40 @@ public class FunctionSpace_Segmentation {
 
   }
 
+  public static interface IVlanFunctions extends IDynamicResourceExtension {
+
+    /**
+     * 
+     */
+    @IDynamicResourceExtension.MethodId("e641276b-51a3-11ea-a946-13c393300b57")
+    public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubzone);
+
+    @IDynamicResourceExtension.MethodId("f44b9356-0aa0-11ea-97f4-9d91b2097bad")
+    public java.lang.String GroupNameAll(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubzone);
+
+    @IDynamicResourceExtension.MethodId("c4c3ae13-f774-11ef-9619-857aad3ec118")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllHostNodesWhereSystemConfigurationAndSite(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubzone);
+
+  }
+  
+  public static interface IVlanFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VlanFunctionsImpl implements IVlanFunctionsImpl {
+
+    public static final IVlanFunctionsImpl INSTANCE = new VlanFunctionsImpl();
+
+    private VlanFunctionsImpl() {}
+
+  }
+  
+  public static class VlanFunctions {
+
+    private VlanFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,JQJCKa+4AeH7v+lf+MiJcpsOFqA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,i0ola6NgEjNteG+V9aG27IDtRoM=] */

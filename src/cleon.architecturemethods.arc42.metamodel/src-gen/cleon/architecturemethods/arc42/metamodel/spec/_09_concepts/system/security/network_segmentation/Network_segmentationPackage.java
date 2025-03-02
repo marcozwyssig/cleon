@@ -10,6 +10,7 @@ public class Network_segmentationPackage {
   public static final Resource FunctionSpace_aE_Segmentation_SegmentationConcept = new Resource("d5bde9d3-4607-11ea-857e-99d5aa1ed1cd");
   public static final Resource FunctionSpace_aE_Segmentation_SecuritySubZone = new Resource("44969d1b-46a9-11ea-864d-7be8ef02593e");
   public static final Resource SegmentationConcept_domains = new Resource("66820d69-d00e-11ea-b5a9-731249efa1a3");
+  public static final Resource FunctionSpace_aE_Segmentation_Vlan = new Resource("1eb347b7-f773-11ef-9619-857aad3ec118");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class Network_segmentationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation,yw86w9l7ZC+ThZJfNkkaxl5w9ak=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation,psLNRnWdXZFGZbx+k6StT4B2XWo=] */

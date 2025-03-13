@@ -168,6 +168,16 @@ public class InstallationManualDocument extends DynamicResource implements IInst
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectSystemArchitecture() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_systemArchitecture);
+  }
+
+  public InstallationManualDocument setSystemArchitecture(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document systemArchitecture) {
+    _setSingle(cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_systemArchitecture, systemArchitecture);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -204,6 +214,7 @@ public class InstallationManualDocument extends DynamicResource implements IInst
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.operationalmethods.hermes.metamodel.spec.installation_manual.reinstallation.javamodel.IReinstallation.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_reinstallation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_systemArchitecture, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -225,5 +236,9 @@ public class InstallationManualDocument extends DynamicResource implements IInst
     return _getToMeSingle(object.getRepository(), cleon.operationalmethods.hermes.metamodel.spec.installation_manual.javamodel.IInstallationManualDocument.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_reinstallation, object.getResource());
   }
   
+  public static java.util.List<cleon.operationalmethods.hermes.metamodel.spec.installation_manual.javamodel.IInstallationManualDocument> selectToMeSystemArchitecture(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document object) {
+    return _getToMeList(object.getRepository(), cleon.operationalmethods.hermes.metamodel.spec.installation_manual.javamodel.IInstallationManualDocument.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.Installation_manualPackage.InstallationManualDocument_systemArchitecture, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bfe8bdf4-23b3-11e9-9073-d1012347ccc5,OzDwt21sN9u7uqNiJ3RMm1khocY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bfe8bdf4-23b3-11e9-9073-d1012347ccc5,BToD6j4pmzg8Q/YGf/vZejKKPds=] */

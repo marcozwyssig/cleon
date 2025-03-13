@@ -211,7 +211,7 @@ public class FunctionSpace_Doc {
     @Override
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> OnlyWithChapterPath(final List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> abstractChapterList) {
       /* Begin Protected Region [[9533b8ea-d64b-11ee-8014-c150876d6b6e]] */
-      return abstractChapterList.stream().filter(x -> x.extension(IAbstractChapterFunctions.class).ChapterPathWithEN() != null).toList();
+      return abstractChapterList.stream().filter(x -> x.extension(IAbstractChapterFunctions.class).InASeparateFile()).toList();
       /* End Protected Region   [[9533b8ea-d64b-11ee-8014-c150876d6b6e]] */
     }
 

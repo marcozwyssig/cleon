@@ -1768,7 +1768,7 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IDeploymentProcedureConceptFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("4b241b58-7e9f-11ec-b55c-f5ca121c82b7")
+    @IDynamicResourceExtension.MethodId("48cbcc67-ffdf-11ef-a4b8-93f936374459")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
@@ -1793,7 +1793,7 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IDeploymentProcedureOrderGroupFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("86e5ffd3-0e86-11ed-992a-279da38c72c5")
+    @IDynamicResourceExtension.MethodId("48cbcd02-ffdf-11ef-a4b8-93f936374459")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
@@ -1818,7 +1818,7 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IDNSSystemIntegrationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("393210f8-d0f5-11ec-a32f-e7eb43a099bd")
+    @IDynamicResourceExtension.MethodId("48cbcdac-ffdf-11ef-a4b8-93f936374459")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
@@ -1911,4 +1911,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,DpHMmNSNeolza15b976xuOnKzFs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,eaR0G7nnYmZdCQydjkYDnE8+eEk=] */

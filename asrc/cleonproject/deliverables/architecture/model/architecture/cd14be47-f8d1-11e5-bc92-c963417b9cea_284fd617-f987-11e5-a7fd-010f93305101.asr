@@ -505,6 +505,25 @@
         <resource statement-guid="0f2af997-e85a-11ef-91c7-573f701e578c" type="resource" guid="0f2a5d53-e85a-11ef-91c7-573f701e578c" />
         <resource statement-guid="1c5d1364-e94d-11ef-95d7-9d44902747d2" type="resource" guid="1c5c01f1-e94d-11ef-95d7-9d44902747d2" />
         <resource statement-guid="926b87c0-f5de-11ef-8efc-fdd1fc6fef2d" type="resource" guid="926b128d-f5de-11ef-8efc-fdd1fc6fef2d" />
+        <resource statement-guid="3a30f5f5-000c-11f0-829c-45e186353eaf" type="resource" guid="3a3059b2-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a40d47a-000c-11f0-829c-45e186353eaf" type="resource" guid="3a40d477-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a512831-000c-11f0-829c-45e186353eaf" type="resource" guid="3a51282e-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a565858-000c-11f0-829c-45e186353eaf" type="resource" guid="3a565855-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a5c4bcd-000c-11f0-829c-45e186353eaf" type="resource" guid="3a5c4bca-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a61a302-000c-11f0-829c-45e186353eaf" type="resource" guid="3a617bef-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a672149-000c-11f0-829c-45e186353eaf" type="resource" guid="3a66fa36-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a6c034e-000c-11f0-829c-45e186353eaf" type="resource" guid="3a6c034b-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a710c63-000c-11f0-829c-45e186353eaf" type="resource" guid="3a70e550-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a755228-000c-11f0-829c-45e186353eaf" type="resource" guid="3a755225-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a7a824d-000c-11f0-829c-45e186353eaf" type="resource" guid="3a7a824a-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a7f1632-000c-11f0-829c-45e186353eaf" type="resource" guid="3a7f162f-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a83d127-000c-11f0-829c-45e186353eaf" type="resource" guid="3a83d124-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a888c1c-000c-11f0-829c-45e186353eaf" type="resource" guid="3a886509-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a8d6e21-000c-11f0-829c-45e186353eaf" type="resource" guid="3a8d6e1e-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a91daf6-000c-11f0-829c-45e186353eaf" type="resource" guid="3a91b3e3-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a96e40d-000c-11f0-829c-45e186353eaf" type="resource" guid="3a96e40a-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a9b02c2-000c-11f0-829c-45e186353eaf" type="resource" guid="3a9b02bf-000c-11f0-829c-45e186353eaf" />
+        <resource statement-guid="3a9fbdb7-000c-11f0-829c-45e186353eaf" type="resource" guid="3a9fbdb4-000c-11f0-829c-45e186353eaf" />
       </owns>
     </resource>
   </owns>
@@ -5541,6 +5560,196 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="926c2401-f5de-11ef-8efc-fdd1fc6fef2d" type="literal">cleon.architecturemethods.arc42.metamodel.template.checkpoint</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a30f5f5-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a3059b2-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a3059b4-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a30f5f6-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a40d47a-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a40d477-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a40d479-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a40d47b-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a512831-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a51282e-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a512830-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a512832-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.template.asciidoc.detailspecifiction</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a565858-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a565855-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a565857-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a565859-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.hostname</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a5c4bcd-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a5c4bca-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a5c4bcc-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a5c4bce-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.service</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a61a302-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a617bef-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a617bf1-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a61a303-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.pkg</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a672149-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a66fa36-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a672148-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a67214a-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a6c034e-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a6c034b-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a6c034d-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a6c034f-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a710c63-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a70e550-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a70e552-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a710c64-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a755228-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a755225-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a755227-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a755229-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.generic</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a7a824d-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a7a824a-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a7a824c-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a7a824e-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.ifc</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a7f1632-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a7f162f-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a7f1631-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a7f1633-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.machine</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a83d127-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a83d124-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a83d126-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a83d128-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a888c1c-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a886509-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a88650b-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a888c1d-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a8d6e21-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a8d6e1e-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a8d6e20-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a8d6e22-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.remotedesktop</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a91daf6-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a91b3e3-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a91daf5-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a91daf7-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.ou</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a96e40d-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a96e40a-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a96e40c-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a96e40e-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a9b02c2-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a9b02bf-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a9b02c1-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a9b02c3-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="3a9fbdb7-000c-11f0-829c-45e186353eaf">
+            <resource guid="3a9fbdb4-000c-11f0-829c-45e186353eaf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a9fbdb6-000c-11f0-829c-45e186353eaf" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3a9fe4c8-000c-11f0-829c-45e186353eaf" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfg.windowsfeature</object>
               </predicate>
             </resource>
           </object>

@@ -337,7 +337,7 @@ public class FunctionSpace_BuildNode {
     @Override
     public java.lang.Integer NettoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
       /* Begin Protected Region [[04240e23-e071-11eb-85ea-9f2d155d4de3]] */
-      final Double netto = BruttoMHz_Server(buildNode) * 0.12;
+      final Double netto = BruttoMHz_Server(buildNode) * 0.8;
       return netto.intValue();
       /* End Protected Region   [[04240e23-e071-11eb-85ea-9f2d155d4de3]] */
     }

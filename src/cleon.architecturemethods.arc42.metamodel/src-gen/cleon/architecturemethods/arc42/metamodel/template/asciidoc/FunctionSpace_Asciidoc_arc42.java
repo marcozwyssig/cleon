@@ -421,8 +421,8 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IProductViewFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5cdabd85-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    @IDynamicResourceExtension.MethodId("48cbce71-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("f503ab5e-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
@@ -1192,6 +1192,156 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IResourceBuildingBlockSystemConfigurationConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cb7e2e-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl implements IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl {
+
+    public static final IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl INSTANCE = new ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl();
+
+    private ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl() {}
+
+  }
+  
+  public static class ResourceBuildingBlockSystemConfigurationConceptFunctions {
+
+    private ResourceBuildingBlockSystemConfigurationConceptFunctions() {}
+
+  }
+
+  public static interface IResourcePlanningNodeConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cba7ff-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IResourcePlanningNodeConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResourcePlanningNodeConceptFunctionsImpl implements IResourcePlanningNodeConceptFunctionsImpl {
+
+    public static final IResourcePlanningNodeConceptFunctionsImpl INSTANCE = new ResourcePlanningNodeConceptFunctionsImpl();
+
+    private ResourcePlanningNodeConceptFunctionsImpl() {}
+
+  }
+  
+  public static class ResourcePlanningNodeConceptFunctions {
+
+    private ResourcePlanningNodeConceptFunctions() {}
+
+  }
+
+  public static interface IAverageBandwithAndQoSConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cba970-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IAverageBandwithAndQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AverageBandwithAndQoSConceptFunctionsImpl implements IAverageBandwithAndQoSConceptFunctionsImpl {
+
+    public static final IAverageBandwithAndQoSConceptFunctionsImpl INSTANCE = new AverageBandwithAndQoSConceptFunctionsImpl();
+
+    private AverageBandwithAndQoSConceptFunctionsImpl() {}
+
+  }
+  
+  public static class AverageBandwithAndQoSConceptFunctions {
+
+    private AverageBandwithAndQoSConceptFunctions() {}
+
+  }
+
+  public static interface IDeploymentProcedureConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cbcc67-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IDeploymentProcedureConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentProcedureConceptFunctionsImpl implements IDeploymentProcedureConceptFunctionsImpl {
+
+    public static final IDeploymentProcedureConceptFunctionsImpl INSTANCE = new DeploymentProcedureConceptFunctionsImpl();
+
+    private DeploymentProcedureConceptFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentProcedureConceptFunctions {
+
+    private DeploymentProcedureConceptFunctions() {}
+
+  }
+
+  public static interface IDeploymentProcedureOrderGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cbcd02-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IDeploymentProcedureOrderGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentProcedureOrderGroupFunctionsImpl implements IDeploymentProcedureOrderGroupFunctionsImpl {
+
+    public static final IDeploymentProcedureOrderGroupFunctionsImpl INSTANCE = new DeploymentProcedureOrderGroupFunctionsImpl();
+
+    private DeploymentProcedureOrderGroupFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentProcedureOrderGroupFunctions {
+
+    private DeploymentProcedureOrderGroupFunctions() {}
+
+  }
+
+  public static interface IDNSSystemIntegrationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48cbcdac-ffdf-11ef-a4b8-93f936374459")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IDNSSystemIntegrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DNSSystemIntegrationFunctionsImpl implements IDNSSystemIntegrationFunctionsImpl {
+
+    public static final IDNSSystemIntegrationFunctionsImpl INSTANCE = new DNSSystemIntegrationFunctionsImpl();
+
+    private DNSSystemIntegrationFunctionsImpl() {}
+
+  }
+  
+  public static class DNSSystemIntegrationFunctions {
+
+    private DNSSystemIntegrationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Hb7b7yg/hYhoWLX+o56sv8oc/xY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,jNmR+2GjH4rbejxGBLTaJ32H5Jg=] */

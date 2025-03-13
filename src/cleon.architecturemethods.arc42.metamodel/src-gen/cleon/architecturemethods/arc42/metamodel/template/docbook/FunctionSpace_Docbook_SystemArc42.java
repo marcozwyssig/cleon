@@ -19,31 +19,6 @@ public class FunctionSpace_Docbook_SystemArc42 {
   /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
 
 
-  public static interface IAvailabilityConceptFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("6005307c-1e3a-11e9-865e-41ef48a95f70")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
-  }
-  
-  public static interface IAvailabilityConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AvailabilityConceptFunctionsImpl implements IAvailabilityConceptFunctionsImpl {
-
-    public static final IAvailabilityConceptFunctionsImpl INSTANCE = new AvailabilityConceptFunctionsImpl();
-
-    private AvailabilityConceptFunctionsImpl() {}
-
-  }
-  
-  public static class AvailabilityConceptFunctions {
-
-    private AvailabilityConceptFunctions() {}
-
-  }
-
   public static interface IBackupConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("90698ca7-1e3f-11e9-865e-41ef48a95f70")
@@ -1256,4 +1231,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,eTSAjcQO9kYklNXWuGWdndt5FzY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,tRlOjn3xsnKQ8gqIfrgxRKtgFSI=] */

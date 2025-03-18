@@ -11,7 +11,9 @@ public class ClassesPackage {
   public static final Resource FieldClass = new Resource("866ff33c-13c7-11e3-bec7-f1e135382475");
   public static final Resource AssociationClass_relations = new Resource("b0cb7f2e-13c8-11e3-bec7-f1e135382475");
   public static final Resource AssociationClass = new Resource("deb55644-13d3-11e3-9736-a3484832b481");
+  public static final Resource ReturnType_returnTypeDescription = new Resource("6ad428eb-148d-11e3-8a81-e70e51b8639b");
   public static final Resource FunctionSpace_aE_Classes_Classifier = new Resource("bb42a43f-26cb-11e3-a71a-b71d2dda9f8e");
+  public static final Resource ReturnType_returnTypeAsCollection = new Resource("f963a9ba-2999-11e3-b126-5543aee7ce98");
   public static final Resource FunctionSpace_aE_Classes_Method = new Resource("dcb4f3a6-299c-11e3-b126-5543aee7ce98");
   public static final Resource FunctionSpace_aE_Classes_Property = new Resource("49b6c9db-29a7-11e3-b126-5543aee7ce98");
   public static final Resource IsAbstract_isAbstract = new Resource("2d1dec8d-29d7-11e3-ac34-51079bb270e3");
@@ -57,4 +59,4 @@ public class ClassesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes,W1nF+/zz9ZpHTloK1OHKcrKE+1U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes,4KVPP68QPtXrYc/S5IxcXMvdfJE=] */

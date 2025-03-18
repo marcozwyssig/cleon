@@ -17,5 +17,9 @@ public abstract class ReturnType extends DynamicResource implements IReturnType 
     return _getToMeList(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnType, object.getResource());
   }
   
+  public static java.util.List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType> selectToMeReturnTypeAsCollection(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeAsCollection, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8ffee0f-356d-11e3-974d-d19f8c167114,UP2FTQpTHGO/aX/fswExZj+vDow=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8ffee0f-356d-11e3-974d-d19f8c167114,YxIFB/e0aVeE026J8MZPVlIOIrM=] */

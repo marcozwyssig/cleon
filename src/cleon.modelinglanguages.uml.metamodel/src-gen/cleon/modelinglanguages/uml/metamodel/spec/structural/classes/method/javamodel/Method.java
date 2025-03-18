@@ -68,11 +68,11 @@ public class Method extends DynamicResource implements IMethod {
 
   @Override
   public java.lang.String selectReturnTypeDescription() {
-    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeDescription);
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeDescription);
   }
     
   public void setReturnTypeDescription(java.lang.String returnTypeDescription) {
-     _setSingleAttribute(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeDescription, returnTypeDescription);
+     _setSingleAttribute(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeDescription, returnTypeDescription);
   }
 
   // relations
@@ -99,11 +99,11 @@ public class Method extends DynamicResource implements IMethod {
     
   @Override
   public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter> selectParameters() {
-    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_parameters);
+    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.ParameterPackage.Parameters_parameters);
   }
 
   public Method setParameters(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter> parameters) {
-    _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_parameters, parameters);
+    _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.ParameterPackage.Parameters_parameters, parameters);
     return this;
   }
     
@@ -119,11 +119,11 @@ public class Method extends DynamicResource implements IMethod {
     
   @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType selectReturnTypeAsCollection() {
-    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeAsCollection);
+    return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeAsCollection);
   }
 
   public Method setReturnTypeAsCollection(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType returnTypeAsCollection) {
-    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeAsCollection, returnTypeAsCollection);
+    _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeAsCollection, returnTypeAsCollection);
     return this;
   }
     
@@ -145,27 +145,21 @@ public class Method extends DynamicResource implements IMethod {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Obsolete_isObsolete, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.Virtual_isVirtual, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeDescription, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeDescription, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_mep, visitor);
-    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_parameters, visitor);
+    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.ParameterPackage.Parameters_parameters, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnType, visitor);
-    _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeAsCollection, visitor);
+    _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.ReturnType_returnTypeAsCollection, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  public static cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod selectToMeParameters(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.parameter.javamodel.IParameter object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_parameters, object.getResource());
-  }
+  // toMeRelations
   
   public static java.util.List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod> selectToMeMep(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange object) {
     return _getToMeList(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_mep, object.getResource());
   }
   
-  public static java.util.List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod> selectToMeReturnTypeAsCollection(cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.ICollectionType object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.MethodPackage.Method_returnTypeAsCollection, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,8z6cH9y1gs/etS3teifWX0Z2P9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,z2RPZlLZkCd0UH7O6d49SeSR5po=] */

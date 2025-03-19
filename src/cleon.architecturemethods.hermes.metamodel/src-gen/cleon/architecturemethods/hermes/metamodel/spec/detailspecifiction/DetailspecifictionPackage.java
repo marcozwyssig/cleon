@@ -11,6 +11,7 @@ public class DetailspecifictionPackage {
   public static final Resource DetailSpecificationDocument_environment = new Resource("8285435f-280d-11ec-988b-e1826086c18c");
   public static final Resource DetailSpecificationDocument_componentSpecification = new Resource("a59ec663-d21b-11ee-9471-713ee8ae5987");
   public static final Resource DetailSpecificationDocument_environmentSpecification = new Resource("eb9d917e-d22c-11ee-b255-49ab47716ebd");
+  public static final Resource DetailSpecificationDocument_systemArchitecture = new Resource("f47cf0fc-00b3-11f0-945c-87b19aec41f4");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class DetailspecifictionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction,yj9NFmVSxvYMaiTZkbJ07EHsWys=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction,K4LaRPGWLIff5ZZJkPTaeHSji6o=] */

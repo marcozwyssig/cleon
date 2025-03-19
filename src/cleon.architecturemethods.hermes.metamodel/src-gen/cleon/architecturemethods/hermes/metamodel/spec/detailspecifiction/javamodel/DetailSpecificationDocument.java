@@ -197,6 +197,16 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectSystemArchitecture() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_systemArchitecture);
+  }
+
+  public DetailSpecificationDocument setSystemArchitecture(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document systemArchitecture) {
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_systemArchitecture, systemArchitecture);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -236,6 +246,7 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_systemArchitecture, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -249,13 +260,17 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environment, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, object.getResource());
-  }
-  
   public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeComponentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification, object.getResource());
   }
   
+  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, object.getResource());
+  }
+  
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument> selectToMeSystemArchitecture(cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_systemArchitecture, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,apPwKK5Dpm3+UuiEHWRZKdxPios=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,jgrpbtCnuLXD+vVp36EljFxVZGA=] */

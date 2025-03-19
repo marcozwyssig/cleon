@@ -8,6 +8,7 @@ public class OperatingsystemPackage {
   public static final Resource HypervisorSystemConfiguration = new Resource("7f075e62-0296-11e9-9e58-33d596257b14");
   public static final Resource OperatingSystemConfiguration = new Resource("75800d3e-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource LinuxSystemConfiguration = new Resource("771f415a-1d8a-11e9-b601-db75aa6f89a4");
+  public static final Resource GeneralPurposeOperatingSystem = new Resource("013a2658-00a4-11f0-945c-87b19aec41f4");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class OperatingsystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem,NnpjNDrlETYFqS0vdjgIl9SRVXk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem,laekxDXj7lCudZmZ6OKSu6asgQM=] */

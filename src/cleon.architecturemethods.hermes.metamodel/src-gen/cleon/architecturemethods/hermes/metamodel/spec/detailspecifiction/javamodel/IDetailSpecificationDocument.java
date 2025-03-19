@@ -12,10 +12,12 @@ public interface IDetailSpecificationDocument extends ch.actifsource.core.javamo
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment selectEnvironment();
   
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications selectComponentSpecification();
+  
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications selectEnvironmentSpecification();
   
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications selectComponentSpecification();
+  public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document selectSystemArchitecture();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,QRF3hhqGF/tDW4/pvvDUN8YI7cw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,8H4N/9QzDjLXCZHObOw+lAxqELc=] */

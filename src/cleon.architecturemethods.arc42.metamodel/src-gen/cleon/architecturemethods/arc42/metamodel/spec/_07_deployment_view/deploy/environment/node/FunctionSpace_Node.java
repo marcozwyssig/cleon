@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[41a52ff4-0b73-11e9-a136-69d076e48ed1,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IGeneralPurposeOperatingSystem;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IHypervisorSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration;
@@ -61,6 +62,9 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("8808b193-cdc3-11eb-9255-4575b555e23e")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetNestedNode();
 
+    @IDynamicResourceExtension.MethodId("ee45483f-001b-11f0-945c-87b19aec41f4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> GetNestedNodes();
+
     @IDynamicResourceExtension.MethodId("926f258b-dfca-11ef-b0be-9b4cac321140")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode GetParentBuildNode();
 
@@ -94,6 +98,9 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("77892a21-8803-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents();
 
+    @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents();
+
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents();
 
@@ -106,6 +113,9 @@ public class FunctionSpace_Node {
 
     @IDynamicResourceExtension.MethodId("77892a21-8803-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+
+    @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
 
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
@@ -141,6 +151,17 @@ public class FunctionSpace_Node {
     }
 
     @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+      /* Begin Protected Region [[15821b36-00a4-11f0-945c-87b19aec41f4]] */
+        return nodeList.stream()
+          		.filter(IBuildNode.class::isInstance )
+          		.map(IBuildNode.class::cast)
+          		.filter(build -> build.selectInstanceOf() instanceof IGeneralPurposeOperatingSystem)
+          		.collect(Collectors.toList());
+      /* End Protected Region   [[15821b36-00a4-11f0-945c-87b19aec41f4]] */
+    }
+
+    @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[fadb5261-87f4-11ec-894d-7968efa38b99]] */
       return nodeList.stream()
@@ -163,6 +184,10 @@ public class FunctionSpace_Node {
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyOSComponents(nodeList);
+    }
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+      return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyGeneralPurposeOSComponents(nodeList);
     }
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
@@ -223,4 +248,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,6Hz7LLAwVsERa0ODAsD8D3/Zwww=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,1jiMC7xeTCwr7ia6ZVtlYptKEWI=] */

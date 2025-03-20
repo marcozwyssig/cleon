@@ -66,6 +66,15 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.RolePackage.RoleActorGroup_roleDescription, roleDescription);
   }
 
+  @Override
+  public java.lang.Integer selectStartAt() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.StartAt_startAt);
+  }
+    
+  public void setStartAt(java.lang.Integer startAt) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.StartAt_startAt, startAt);
+  }
+
   // relations
   
   @Override
@@ -196,6 +205,7 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.RolePackage.RoleActorGroup_roleDescription, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.StartAt_startAt, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.RolePackage.RoleActorGroup_actor, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.DeploymentPackage.AbstractSecurityGroups_approval, visitor);
@@ -216,4 +226,4 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88193678-1d9f-11e9-b601-db75aa6f89a4,OUTASGGUfDUNt5WJfpe1rrGLaJM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88193678-1d9f-11e9-b601-db75aa6f89a4,E9yL7T1pX/izKslwKLhHx4ZKqdw=] */

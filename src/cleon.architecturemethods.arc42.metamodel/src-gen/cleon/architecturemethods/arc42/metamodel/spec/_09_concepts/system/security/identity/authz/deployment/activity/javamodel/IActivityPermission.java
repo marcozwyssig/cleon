@@ -12,6 +12,8 @@ public interface IActivityPermission extends cleon.architecturemethods.arc42.met
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission selectActivityTemplate();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> selectRoles();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,2YX5Ex5voza+sVtrnWXGV7LTIpA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,5DNZr01MNNXxpI0QN0Xs8/ZRTRs=] */

@@ -12,6 +12,8 @@ public interface IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration exten
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockPermission> selectAuthZBuildingBlockForPermission();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemConfiguration> selectDependsOn();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6649e37b-032a-11eb-af88-136a9a3b3817,CFrK/gNc/Yo5Doary7zZ3iGFZs0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6649e37b-032a-11eb-af88-136a9a3b3817,tkVSe8scV6HvuCZlH5tqDeYHr0U=] */

@@ -51,6 +51,9 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("08187956-0015-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileName();
 
+    @IDynamicResourceExtension.MethodId("c5177f3f-04ad-11f0-8e81-9be04e08660a")
+    public java.lang.String FullFileNameAdJoinYaml();
+
   }
   
   public static interface ISysCfgSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -279,6 +282,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IIssuingCAFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c0f5baed-04b0-11f0-8e81-9be04e08660a")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("c0f5bb00-04b0-11f0-8e81-9be04e08660a")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IIssuingCAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IssuingCAFunctionsImpl implements IIssuingCAFunctionsImpl {
+
+    public static final IIssuingCAFunctionsImpl INSTANCE = new IssuingCAFunctionsImpl();
+
+    private IssuingCAFunctionsImpl() {}
+
+  }
+  
+  public static class IssuingCAFunctions {
+
+    private IssuingCAFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,MhxBdloUN+sW6E4PJKj1jUI8iu8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,ibqHE7pMafg6avrNdswFOoWtDVg=] */

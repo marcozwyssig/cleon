@@ -47,6 +47,7 @@ public class AccountsPackage {
   public static final Resource gMSA_aE_ServiceAccount_allowAdditionallyUsingOn = new Resource("e957c9e3-a431-11ec-a02c-0578282f8413");
   public static final Resource ServiceAccount_uniqueId = new Resource("6958fb78-4f84-11ed-93f9-c3290c35c85a");
   public static final Resource ServiceAccount_description = new Resource("9f449bf1-353f-11ef-86dc-5dad23d0566b");
+  public static final Resource ServiceAccount_usedActivityPermissions = new Resource("6224c902-0591-11f0-8707-d7020bc75906");
   
   /* Begin Protected Region [[user]] */
   
@@ -67,4 +68,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,fMhm8Hivzj93RvlcQ9B+5tQjdvw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,WkZ91c0w+tc/v5OXNBuAW3GtgNg=] */

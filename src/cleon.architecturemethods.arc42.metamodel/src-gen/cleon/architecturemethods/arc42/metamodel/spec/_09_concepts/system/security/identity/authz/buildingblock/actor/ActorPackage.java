@@ -17,6 +17,7 @@ public class ActorPackage {
   public static final Resource FunctionSpace_aE_AuthZBuildingBlockForSystemComponent_aE_Actor_AuthZBuildingBlockForSystemComponent = new Resource("824834bd-d5e1-11eb-b02a-03222c04a898");
   public static final Resource AuthZBuildingBlockForSystemComponent_basedOn = new Resource("7f99b984-da7d-11eb-8816-374b4d7a848a");
   public static final Resource FunctionSpace_aE_AuthZBuildingBlockForSystemComponent_aE_Actor_AuthZBuildingBlockForResponsibility = new Resource("211c3aa7-4bc2-11ed-9983-274ab90bcd39");
+  public static final Resource AuthZBuildingBlockForSystemComponent_usedBy = new Resource("eb2535f8-058c-11f0-8707-d7020bc75906");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +38,4 @@ public class ActorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.actor,l0Evxrx13FIC0QBW4vfdLTampkY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.actor,5EjnOCfHxa9eB8ui5w5Q45tl3hc=] */

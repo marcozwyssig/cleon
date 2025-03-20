@@ -62,6 +62,12 @@ public class FunctionSpace_Accounts {
     @IDynamicResourceExtension.MethodId("45b67c3e-a432-11ec-a02c-0578282f8413")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
+    @IDynamicResourceExtension.MethodId("e321a669-0593-11f0-8707-d7020bc75906")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissions();
+
+    @IDynamicResourceExtension.MethodId("70626317-0594-11f0-a294-67d88c30f2e4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailableActivityPermissions();
+
   }
   
   public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -290,4 +296,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,rufVHJb8G4qfWKbUPcs/FmNLzfg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,87jX5u4x59uxyzQ8QHOJ6v967rA=] */

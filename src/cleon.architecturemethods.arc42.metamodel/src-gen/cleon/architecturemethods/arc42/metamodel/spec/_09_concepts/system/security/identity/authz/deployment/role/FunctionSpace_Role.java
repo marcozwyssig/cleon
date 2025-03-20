@@ -139,7 +139,14 @@ public class FunctionSpace_Role {
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       /* Begin Protected Region [[c1142c0c-d5df-11eb-b02a-03222c04a898]] */
-      return roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetRoleSiteGroupId() + roleSystemComponent.selectSystemComponentRoleTemplate().selectIdentifier();
+    	final var roleSystemComponentFunction = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
+    	var startAt = 0;
+    	if( roleSystemComponentFunction.Actor().selectStartAt() != null) {
+    		startAt = roleSystemComponentFunction.Actor().selectStartAt();
+    	}
+    	
+    	
+      return startAt + roleSystemComponentFunction.GetRoleSiteGroupId() + roleSystemComponent.selectSystemComponentRoleTemplate().selectIdentifier();
       /* End Protected Region   [[c1142c0c-d5df-11eb-b02a-03222c04a898]] */
     }
 
@@ -342,6 +349,31 @@ public class FunctionSpace_Role {
 
   }
 
+  public static interface IRoleActorGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("adbf3872-0583-11f0-b125-13746a17710c")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IRoleActorGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RoleActorGroupFunctionsImpl implements IRoleActorGroupFunctionsImpl {
+
+    public static final IRoleActorGroupFunctionsImpl INSTANCE = new RoleActorGroupFunctionsImpl();
+
+    private RoleActorGroupFunctionsImpl() {}
+
+  }
+  
+  public static class RoleActorGroupFunctions {
+
+    private RoleActorGroupFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,04FJqvrXNc+YKtJPrcBm8JFfUqQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,g9N2mxQXo19nsF/yoG8YBlzQ9BY=] */

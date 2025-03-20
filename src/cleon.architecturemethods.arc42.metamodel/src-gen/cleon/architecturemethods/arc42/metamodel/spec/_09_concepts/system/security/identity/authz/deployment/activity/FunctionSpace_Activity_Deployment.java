@@ -78,6 +78,9 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("236c6c0e-4e0e-11ed-a85e-ff0e1a36b8ae")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup ActivitySiteGroup();
 
+    @IDynamicResourceExtension.MethodId("8e3d374b-04ba-11f0-8e81-9be04e08660a")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration ActivitySystemConfiguration();
+
     @IDynamicResourceExtension.MethodId("1db46192-8dae-11ed-bb98-e70249753acb")
     public java.lang.String Description(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
@@ -171,7 +174,14 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
       final var activitySiteGroup = activityPermission.extension(IActivityPermissionFunctions.class).ActivitySiteGroup();
-      return activitySiteGroup.selectIdentifier() * 100 + activityPermission.selectActivityTemplate().selectIdentifier();
+      final var activitySiteConfiguration = activityPermission.extension(IActivityPermissionFunctions.class).ActivitySystemConfiguration();
+      
+      var startAt = 0;
+      if( activitySiteConfiguration.selectStartAt() != null ) {
+    	  startAt = activitySiteConfiguration.selectStartAt();
+      }
+      
+      return (activitySiteGroup.selectIdentifier() * 100) + startAt + activityPermission.selectActivityTemplate().selectIdentifier();
       /* End Protected Region   [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
     }
 
@@ -401,6 +411,31 @@ public class FunctionSpace_Activity_Deployment {
 
   }
 
+  public static interface IActivitySystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fcef0ccb-04bd-11f0-8e81-9be04e08660a")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActivitySystemConfigurationFunctionsImpl implements IActivitySystemConfigurationFunctionsImpl {
+
+    public static final IActivitySystemConfigurationFunctionsImpl INSTANCE = new ActivitySystemConfigurationFunctionsImpl();
+
+    private ActivitySystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class ActivitySystemConfigurationFunctions {
+
+    private ActivitySystemConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,ihF3S+p8w58rkwZ+tsouUoPebFM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,6GKUVIwh27DAnCab95xa/w/Rt+k=] */

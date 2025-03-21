@@ -132,9 +132,6 @@ public class FunctionSpace_Asciidoc {
 
   public static interface ISysCmpSpecificationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("1db6c3ea-d21f-11ee-8171-1959ddc2a1e5")
-    public java.lang.String GetComponentPath();
-
     @IDynamicResourceExtension.MethodId("4f1f91c5-d236-11ee-b255-49ab47716ebd")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
@@ -165,12 +162,6 @@ public class FunctionSpace_Asciidoc {
   }
 
   public static interface ISysCfgSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5df45a9a-42ed-11ec-905e-258a812affa7")
-    public java.lang.String GetSystemComponentName();
-
-    @IDynamicResourceExtension.MethodId("6845a5e7-42ed-11ec-905e-258a812affa7")
-    public java.lang.String GetSystemConfigurationName();
 
     @IDynamicResourceExtension.MethodId("01c09e9e-c747-11ee-8456-2b8c93b367a8")
     public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
@@ -348,4 +339,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6e104406-e64d-11e8-9ed8-5f22de89d1df,w1cbZ16LWYbpbhQsRjTK2JP5zg8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6e104406-e64d-11e8-9ed8-5f22de89d1df,ip4/8Q0vbpt7gxjwQjAeFaWEDSE=] */

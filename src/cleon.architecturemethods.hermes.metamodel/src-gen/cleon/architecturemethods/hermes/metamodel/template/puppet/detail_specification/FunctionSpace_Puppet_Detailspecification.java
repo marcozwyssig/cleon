@@ -20,9 +20,6 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   public static interface IAbstractConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("94a9e507-0024-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
     @IDynamicResourceExtension.MethodId("eb81e13a-0026-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileNameYaml();
 
@@ -48,9 +45,6 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   public static interface ISysCfgSpecificationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("08187956-0015-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
     @IDynamicResourceExtension.MethodId("c5177f3f-04ad-11f0-8e81-9be04e08660a")
     public java.lang.String FullFileNameAdJoinYaml();
 
@@ -71,130 +65,6 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class SysCfgSpecificationFunctions {
 
     private SysCfgSpecificationFunctions() {}
-
-  }
-
-  public static interface IDataCenterSpecificationsFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("47f35569-0023-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
-    @IDynamicResourceExtension.MethodId("2d615d0e-0029-11f0-945c-87b19aec41f4")
-    public java.lang.String FileName();
-
-    @IDynamicResourceExtension.MethodId("182a313c-002a-11f0-945c-87b19aec41f4")
-    public java.lang.String FolderName();
-
-  }
-  
-  public static interface IDataCenterSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DataCenterSpecificationsFunctionsImpl implements IDataCenterSpecificationsFunctionsImpl {
-
-    public static final IDataCenterSpecificationsFunctionsImpl INSTANCE = new DataCenterSpecificationsFunctionsImpl();
-
-    private DataCenterSpecificationsFunctionsImpl() {}
-
-  }
-  
-  public static class DataCenterSpecificationsFunctions {
-
-    private DataCenterSpecificationsFunctions() {}
-
-  }
-
-  public static interface IEnvironmentSpecificationsFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4fec0b49-0023-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
-    @IDynamicResourceExtension.MethodId("b9cac23e-0028-11f0-945c-87b19aec41f4")
-    public java.lang.String FileName();
-
-    @IDynamicResourceExtension.MethodId("d1f1826f-0029-11f0-945c-87b19aec41f4")
-    public java.lang.String FolderName();
-
-  }
-  
-  public static interface IEnvironmentSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class EnvironmentSpecificationsFunctionsImpl implements IEnvironmentSpecificationsFunctionsImpl {
-
-    public static final IEnvironmentSpecificationsFunctionsImpl INSTANCE = new EnvironmentSpecificationsFunctionsImpl();
-
-    private EnvironmentSpecificationsFunctionsImpl() {}
-
-  }
-  
-  public static class EnvironmentSpecificationsFunctions {
-
-    private EnvironmentSpecificationsFunctions() {}
-
-  }
-
-  public static interface ISiteSpecificationsFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("58bde294-0023-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
-    @IDynamicResourceExtension.MethodId("08ce1d22-0029-11f0-945c-87b19aec41f4")
-    public java.lang.String FileName();
-
-    @IDynamicResourceExtension.MethodId("e74fa194-0029-11f0-945c-87b19aec41f4")
-    public java.lang.String FolderName();
-
-  }
-  
-  public static interface ISiteSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SiteSpecificationsFunctionsImpl implements ISiteSpecificationsFunctionsImpl {
-
-    public static final ISiteSpecificationsFunctionsImpl INSTANCE = new SiteSpecificationsFunctionsImpl();
-
-    private SiteSpecificationsFunctionsImpl() {}
-
-  }
-  
-  public static class SiteSpecificationsFunctions {
-
-    private SiteSpecificationsFunctions() {}
-
-  }
-
-  public static interface IHostSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ef7cd1d8-0025-11f0-945c-87b19aec41f4")
-    public java.lang.String FullFileName();
-
-    @IDynamicResourceExtension.MethodId("be9900d1-00a4-11f0-945c-87b19aec41f4")
-    public java.lang.String FileName();
-
-    @IDynamicResourceExtension.MethodId("caf3b153-00a4-11f0-945c-87b19aec41f4")
-    public java.lang.String FolderName();
-
-  }
-  
-  public static interface IHostSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class HostSpecificationFunctionsImpl implements IHostSpecificationFunctionsImpl {
-
-    public static final IHostSpecificationFunctionsImpl INSTANCE = new HostSpecificationFunctionsImpl();
-
-    private HostSpecificationFunctionsImpl() {}
-
-  }
-  
-  public static class HostSpecificationFunctions {
-
-    private HostSpecificationFunctions() {}
 
   }
 
@@ -310,6 +180,124 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IDfsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("761ba773-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("761ba776-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IDfsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DfsFunctionsImpl implements IDfsFunctionsImpl {
+
+    public static final IDfsFunctionsImpl INSTANCE = new DfsFunctionsImpl();
+
+    private DfsFunctionsImpl() {}
+
+  }
+  
+  public static class DfsFunctions {
+
+    private DfsFunctions() {}
+
+  }
+
+  public static interface IEnforceOUFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c12e6786-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("c12e67ae-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IEnforceOUFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EnforceOUFunctionsImpl implements IEnforceOUFunctionsImpl {
+
+    public static final IEnforceOUFunctionsImpl INSTANCE = new EnforceOUFunctionsImpl();
+
+    private EnforceOUFunctionsImpl() {}
+
+  }
+  
+  public static class EnforceOUFunctions {
+
+    private EnforceOUFunctions() {}
+
+  }
+
+  public static interface IEnforceActivitiesAndRolesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cc6e31f8-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("cc6e31fd-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassImplementation();
+
+    @IDynamicResourceExtension.MethodId("c5647390-05a6-11f0-a7b1-53303e9b84a9")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+
+  }
+  
+  public static interface IEnforceActivitiesAndRolesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EnforceActivitiesAndRolesFunctionsImpl implements IEnforceActivitiesAndRolesFunctionsImpl {
+
+    public static final IEnforceActivitiesAndRolesFunctionsImpl INSTANCE = new EnforceActivitiesAndRolesFunctionsImpl();
+
+    private EnforceActivitiesAndRolesFunctionsImpl() {}
+
+  }
+  
+  public static class EnforceActivitiesAndRolesFunctions {
+
+    private EnforceActivitiesAndRolesFunctions() {}
+
+  }
+
+  public static interface IEnforceServiceAccountsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d6bfa564-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("d6bfcc79-05a2-11f0-a294-67d88c30f2e4")
+    public java.lang.String ClassImplementation();
+
+    @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+
+  }
+  
+  public static interface IEnforceServiceAccountsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EnforceServiceAccountsFunctionsImpl implements IEnforceServiceAccountsFunctionsImpl {
+
+    public static final IEnforceServiceAccountsFunctionsImpl INSTANCE = new EnforceServiceAccountsFunctionsImpl();
+
+    private EnforceServiceAccountsFunctionsImpl() {}
+
+  }
+  
+  public static class EnforceServiceAccountsFunctions {
+
+    private EnforceServiceAccountsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,ibqHE7pMafg6avrNdswFOoWtDVg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,KNxGz9iTsUxYGRjGVP3k2+t7gk4=] */

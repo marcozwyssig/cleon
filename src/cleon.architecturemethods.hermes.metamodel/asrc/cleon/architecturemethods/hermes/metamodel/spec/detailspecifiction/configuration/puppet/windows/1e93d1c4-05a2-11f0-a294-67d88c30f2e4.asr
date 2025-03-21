@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1e93d1c4-05a2-11f0-a294-67d88c30f2e4">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="403fd078-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="403fa965-05a2-11f0-a294-67d88c30f2e4" />
+    <resource statement-guid="490c785b-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="490c2a37-05a2-11f0-a294-67d88c30f2e4" />
+    <resource statement-guid="4f41fa72-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="4f415e2e-05a2-11f0-a294-67d88c30f2e4" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1e93d1c5-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1e93d1c6-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="403fd078-05a2-11f0-a294-67d88c30f2e4">
+      <resource guid="403fa965-05a2-11f0-a294-67d88c30f2e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="403fa967-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="55ce7624-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="482e2646-05a2-11f0-a294-67d88c30f2e4" type="literal">DFSrootName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="40401e99-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="490c785b-05a2-11f0-a294-67d88c30f2e4">
+      <resource guid="490c2a37-05a2-11f0-a294-67d88c30f2e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="490c2a38-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5849fd75-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4b93715d-05a2-11f0-a294-67d88c30f2e4" type="literal">DFSrootShareName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="490c2a39-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4f41fa72-05a2-11f0-a294-67d88c30f2e4">
+      <resource guid="4f415e2e-05a2-11f0-a294-67d88c30f2e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4f415e2f-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="58b4f446-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4f415e31-05a2-11f0-a294-67d88c30f2e4" type="literal">DFSstagingQuota</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4f415e30-05a2-11f0-a294-67d88c30f2e4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1e93d1c7-05a2-11f0-a294-67d88c30f2e4" type="literal">Dfs</object>
+  </predicate>
+</resource>
+

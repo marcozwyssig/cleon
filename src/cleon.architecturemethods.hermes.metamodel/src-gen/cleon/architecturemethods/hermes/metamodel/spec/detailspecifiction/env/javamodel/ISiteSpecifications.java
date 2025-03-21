@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.j
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISiteSpecifications extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractEnvironmentSpecification, ch.actifsource.core.javamodel.IDecorator {
+public interface ISiteSpecifications extends ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractEnvironmentSpecification {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f85316f3-001a-11f0-945c-87b19aec41f4");
   
@@ -16,4 +16,4 @@ public interface ISiteSpecifications extends cleon.architecturemethods.hermes.me
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,WL6b4ytrYLvgdoUz7q3UXywzxK4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,ZPyZ5W9R752ye5sd/3zeKAO1eHE=] */

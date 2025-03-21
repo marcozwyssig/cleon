@@ -24,6 +24,14 @@ public class WindowsPackage {
   public static final Resource IssuingCA_exportToUncPathCsr = new Resource("60bdc53e-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_templateUncPath = new Resource("646681f6-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_caExplicitIssuing = new Resource("6a156eee-04b0-11f0-8e81-9be04e08660a");
+  public static final Resource EnforceActivitiesAndRoles = new Resource("e20327d8-059c-11f0-a294-67d88c30f2e4");
+  public static final Resource EnforceServiceAccounts = new Resource("25ae4e3b-059d-11f0-a294-67d88c30f2e4");
+  public static final Resource Dfs = new Resource("1e93d1c4-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource Dfs_DFSrootName = new Resource("403fa965-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource Dfs_DFSrootShareName = new Resource("490c2a37-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource Dfs_DFSstagingQuota = new Resource("4f415e2e-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource EnforceActivitiesAndRoles_setOfOU = new Resource("e4a290ae-05af-11f0-a7b1-53303e9b84a9");
+  public static final Resource EnforceActivitiesAndRoles_enforceOU = new Resource("6ff9a4e6-05b0-11f0-a7b1-53303e9b84a9");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +52,4 @@ public class WindowsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows,74lpJwiUjqIXyHZ3dW/aIeYdPHs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows,J4HiYWn9d3TaIg/vHWfykrVA0P4=] */

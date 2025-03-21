@@ -26,6 +26,9 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("eb81e13a-0026-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileNameYaml();
 
+    @IDynamicResourceExtension.MethodId("0a676398-067a-11f0-9dcf-ff118a4f827f")
+    public java.lang.String FullFileNameEyaml();
+
     @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> Filter();
 
@@ -358,4 +361,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,/Pu+wLn3vWpZqk3PF0685KvKfU4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,qkupEsTl62UxFgT+NPbYCgUllBQ=] */

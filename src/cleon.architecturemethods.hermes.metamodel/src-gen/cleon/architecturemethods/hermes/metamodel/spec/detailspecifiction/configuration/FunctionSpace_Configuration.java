@@ -8,6 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[82e8262a-0024-11f0-945c-87b19aec41f4,imports]] */
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.security.iam.javamodel.IActiveDirectorySystemConfiguration;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration;
 
 /* End Protected Region   [[82e8262a-0024-11f0-945c-87b19aec41f4,imports]] */
 
@@ -102,10 +105,19 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("6845a5e7-42ed-11ec-905e-258a812affa7")
     public java.lang.String GetSystemConfigurationName();
 
+    @IDynamicResourceExtension.MethodId("671e20f8-0630-11f0-ad7c-c72b7a763977")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> NoDCAndOnlyWindows();
+
+    @IDynamicResourceExtension.MethodId("9ccb5cfb-0632-11f0-ad7c-c72b7a763977")
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.javamodel.ISysCmpSpecification SysCmpSpecific();
+
   }
   
   public static interface ISysCfgSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("671e20f8-0630-11f0-ad7c-c72b7a763977")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> NoDCAndOnlyWindows(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> sysCfgSpecificationList);
+
   }
   
   public static class SysCfgSpecificationFunctionsImpl implements ISysCfgSpecificationFunctionsImpl {
@@ -114,11 +126,33 @@ public class FunctionSpace_Configuration {
 
     private SysCfgSpecificationFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> NoDCAndOnlyWindows(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> sysCfgSpecificationList) {
+      /* Begin Protected Region [[671e20f8-0630-11f0-ad7c-c72b7a763977]] */
+    	return sysCfgSpecificationList.stream().filter(x -> {
+    		final var isAD = x.selectSpecificationForSystemConfiguration() instanceof IActiveDirectorySystemConfiguration;
+    		if (isAD) {
+    			return false;
+    		}
+    		if (x.extension(ISysCfgSpecificationFunctions.class).SysCmpSpecific() == null) {
+    			return false;
+    		}
+    		return x.selectSpecificationForSystemConfiguration().extension(ISystemConfigurationFunctions.class).IsDependsOnWindows() || x.selectSpecificationForSystemConfiguration() instanceof IOperatingSystemConfiguration;
+     		
+    	}).toList();
+
+      /* End Protected Region   [[671e20f8-0630-11f0-ad7c-c72b7a763977]] */
+    }
+
   }
   
   public static class SysCfgSpecificationFunctions {
 
     private SysCfgSpecificationFunctions() {}
+
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> NoDCAndOnlyWindows(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> sysCfgSpecificationList) {
+      return DynamicResourceUtil.invoke(ISysCfgSpecificationFunctionsImpl.class, SysCfgSpecificationFunctionsImpl.INSTANCE, sysCfgSpecificationList).NoDCAndOnlyWindows(sysCfgSpecificationList);
+    }
 
   }
 
@@ -313,4 +347,4 @@ public class FunctionSpace_Configuration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,0YSQ+6dNjtTd5uEg0niCJtWYu6Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,aJOaesjlojNTZBqOXDcwCu+Pzu4=] */

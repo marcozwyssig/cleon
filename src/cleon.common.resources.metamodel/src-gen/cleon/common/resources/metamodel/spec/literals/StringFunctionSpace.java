@@ -520,7 +520,4 @@ public class StringFunctionSpace {
 
 }
 
-      /* Begin Protected Region [[6dc7d347-f76e-11ef-9619-857aad3ec118]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[6dc7d347-f76e-11ef-9619-857aad3ec118]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,yQaQFpmz7VIuvvG+jNqTKG5jr1o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,1Poik2EZS7pzxHKKOpCim9DW6gY=] */

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class EnforceServiceAccounts extends DynamicResource implements IEnforceServiceAccounts {
+public class EnforcegMSAServiceAccounts extends DynamicResource implements IEnforcegMSAServiceAccounts {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforceServiceAccounts> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforceServiceAccounts>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforcegMSAServiceAccounts> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforcegMSAServiceAccounts>() {
     
     @Override
-    public IEnforceServiceAccounts create() {
-      return new EnforceServiceAccounts();
+    public IEnforcegMSAServiceAccounts create() {
+      return new EnforcegMSAServiceAccounts();
     }
     
     @Override
-    public IEnforceServiceAccounts create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new EnforceServiceAccounts(resourceRepository, resource);
+    public IEnforcegMSAServiceAccounts create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new EnforcegMSAServiceAccounts(resourceRepository, resource);
     }
   
   };
 
-  public EnforceServiceAccounts() {
-    super(IEnforceServiceAccounts.TYPE_ID);
+  public EnforcegMSAServiceAccounts() {
+    super(IEnforcegMSAServiceAccounts.TYPE_ID);
   }
   
-  public EnforceServiceAccounts(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IEnforceServiceAccounts.TYPE_ID);
+  public EnforcegMSAServiceAccounts(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IEnforcegMSAServiceAccounts.TYPE_ID);
   }
 
   // attributes
@@ -73,7 +73,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public EnforceServiceAccounts setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public EnforcegMSAServiceAccounts setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -83,7 +83,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public EnforceServiceAccounts setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public EnforcegMSAServiceAccounts setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -93,7 +93,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public EnforceServiceAccounts setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public EnforcegMSAServiceAccounts setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -103,7 +103,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public EnforceServiceAccounts setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public EnforcegMSAServiceAccounts setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -113,7 +113,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public EnforceServiceAccounts setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public EnforcegMSAServiceAccounts setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -123,7 +123,7 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public EnforceServiceAccounts setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public EnforcegMSAServiceAccounts setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -141,4 +141,4 @@ public class EnforceServiceAccounts extends DynamicResource implements IEnforceS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,03f382f0-0661-11f0-ad7c-c72b7a763977,LC1a8o3kQsR+26mZCxhfRp6QhaQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25ae4e3b-059d-11f0-a294-67d88c30f2e4,Y+bGmgGRfdXMUexyKSuYWSV8K/A=] */

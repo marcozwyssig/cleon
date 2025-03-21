@@ -57,10 +57,4 @@ public class IntegerFunctionSpace {
 
 }
 
-      /* Begin Protected Region [[04454119-0001-11f0-a4b8-93f936374459]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[04454119-0001-11f0-a4b8-93f936374459]] */
-      /* Begin Protected Region [[0445411b-0001-11f0-a4b8-93f936374459]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[0445411b-0001-11f0-a4b8-93f936374459]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,04454117-0001-11f0-a4b8-93f936374459,X6kzK7Dbhg1Zp3e134TJCD9+xU0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,04454117-0001-11f0-a4b8-93f936374459,uXndrhb2fbTkTCkUxVktDr5Ma0M=] */

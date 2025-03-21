@@ -63,9 +63,7 @@ public class FunctionSpace_License_Redhat {
     		return RhelLicenseType.FACTORY.create(rhelHostLicensing.getRepository(), RedhatPackage.RhelLicenseType_Host__S_Based);
     	} else {
         	return RhelLicenseType.FACTORY.create(rhelHostLicensing.getRepository(), RedhatPackage.RhelLicenseType_VM__S_Based);    		
-    	}    	
-    	
-      // XXX implement template function here   
+    	}  
       /* End Protected Region   [[c08cc9db-dfed-11ef-8b41-bffcdee4ee9e]] */
     }
 

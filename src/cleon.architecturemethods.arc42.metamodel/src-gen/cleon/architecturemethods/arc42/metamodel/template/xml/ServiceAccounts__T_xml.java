@@ -43,31 +43,31 @@ public class ServiceAccounts__T_xml {
 
   }
 
-  public static interface IgMSA_ServiceAccountFunctions extends IDynamicResourceExtension {
+  public static interface IServiceAccount_gMSAFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("823bd523-9ef8-11ec-8d98-a946e0e0308e")
     public java.lang.String PasswordNeverExpires();
 
   }
   
-  public static interface IgMSA_ServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServiceAccount_gMSAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class gMSA_ServiceAccountFunctionsImpl implements IgMSA_ServiceAccountFunctionsImpl {
+  public static class ServiceAccount_gMSAFunctionsImpl implements IServiceAccount_gMSAFunctionsImpl {
 
-    public static final IgMSA_ServiceAccountFunctionsImpl INSTANCE = new gMSA_ServiceAccountFunctionsImpl();
+    public static final IServiceAccount_gMSAFunctionsImpl INSTANCE = new ServiceAccount_gMSAFunctionsImpl();
 
-    private gMSA_ServiceAccountFunctionsImpl() {}
+    private ServiceAccount_gMSAFunctionsImpl() {}
 
   }
   
-  public static class gMSA_ServiceAccountFunctions {
+  public static class ServiceAccount_gMSAFunctions {
 
-    private gMSA_ServiceAccountFunctions() {}
+    private ServiceAccount_gMSAFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dc66a1d9-f74c-11ea-b8c1-41c5952fbbbb,Il0DnCO+kSEVT4pr8he5sm0hK98=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dc66a1d9-f74c-11ea-b8c1-41c5952fbbbb,f3mBtki2VcBvaR8hNX1p7uacoW4=] */

@@ -179,7 +179,7 @@ public class FunctionSpace_Accounts {
 
   }
 
-  public static interface IgMSA_ServiceAccountFunctions extends IDynamicResourceExtension {
+  public static interface IServiceAccount_gMSAFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d4e3c4df-2830-11eb-a351-0f02534982d8")
     public java.lang.String AccountName();
@@ -189,32 +189,32 @@ public class FunctionSpace_Accounts {
 
   }
   
-  public static interface IgMSA_ServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServiceAccount_gMSAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("763e9dd6-9eef-11ec-8d98-a946e0e0308e")
-    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount gMSA_ServiceAccount);
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount_gMSA serviceAccount_gMSA);
 
   }
   
-  public static class gMSA_ServiceAccountFunctionsImpl implements IgMSA_ServiceAccountFunctionsImpl {
+  public static class ServiceAccount_gMSAFunctionsImpl implements IServiceAccount_gMSAFunctionsImpl {
 
-    public static final IgMSA_ServiceAccountFunctionsImpl INSTANCE = new gMSA_ServiceAccountFunctionsImpl();
+    public static final IServiceAccount_gMSAFunctionsImpl INSTANCE = new ServiceAccount_gMSAFunctionsImpl();
 
-    private gMSA_ServiceAccountFunctionsImpl() {}
+    private ServiceAccount_gMSAFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount gMSA_ServiceAccount) {
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount_gMSA serviceAccount_gMSA) {
       return true;
     }
 
   }
   
-  public static class gMSA_ServiceAccountFunctions {
+  public static class ServiceAccount_gMSAFunctions {
 
-    private gMSA_ServiceAccountFunctions() {}
+    private ServiceAccount_gMSAFunctions() {}
 
-    public static java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount gMSA_ServiceAccount) {
-      return DynamicResourceUtil.invoke(IgMSA_ServiceAccountFunctionsImpl.class, gMSA_ServiceAccountFunctionsImpl.INSTANCE, gMSA_ServiceAccount).PasswordNeverExpires(gMSA_ServiceAccount);
+    public static java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount_gMSA serviceAccount_gMSA) {
+      return DynamicResourceUtil.invoke(IServiceAccount_gMSAFunctionsImpl.class, ServiceAccount_gMSAFunctionsImpl.INSTANCE, serviceAccount_gMSA).PasswordNeverExpires(serviceAccount_gMSA);
     }
 
   }
@@ -296,4 +296,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,87jX5u4x59uxyzQ8QHOJ6v967rA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,0scOB20HNR6vWtiLltv2FfQAvog=] */

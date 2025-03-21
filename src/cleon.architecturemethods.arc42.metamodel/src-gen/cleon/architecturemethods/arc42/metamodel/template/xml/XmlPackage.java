@@ -23,7 +23,7 @@ public class XmlPackage {
   public static final Resource Activities__T_xml_ActivityPermission = new Resource("0d846125-0022-11ec-96f4-af32234079d7");
   public static final Resource FunctionSpace_aE_Communications_ImplementedNotRequiredForEnvironmentState = new Resource("56e10b4d-0a3b-11ec-8912-0f9ef89df758");
   public static final Resource ServiceAccounts__T_xml_ServiceAccount = new Resource("52056adf-9ef7-11ec-8d98-a946e0e0308e");
-  public static final Resource ServiceAccounts__T_xml_gMSA_aE_ServiceAccount = new Resource("823badfe-9ef8-11ec-8d98-a946e0e0308e");
+  public static final Resource ServiceAccounts__T_xml_ServiceAccount_aE_gMSA = new Resource("823badfe-9ef8-11ec-8d98-a946e0e0308e");
   public static final Resource Topology__T_xml_AbstractHost = new Resource("5319ef75-a5cd-11ec-9968-b970a72504b8");
   public static final Resource FunctionSpace_aE_XML_Service = new Resource("b99913ac-ba5b-11ec-a408-4ba6a2d760ef");
   
@@ -46,4 +46,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xml,Icqu2WvrbdxYntYlNbpXVCVMX78=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xml,o8D7Vy5FtnQj/RZfCAZRjI4hg2w=] */

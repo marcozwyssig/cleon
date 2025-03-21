@@ -51,7 +51,7 @@ public class FunctionSpace_Puppet_Detailspecification {
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList) {
       /* Begin Protected Region [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
     	return abstractConfigurationList.stream().filter(x -> {
-    		if (x instanceof ISysCfgSpecification) {
+    		if (x instanceof ISysCfgSpecification) { 
     			final var sysCfg = ((ISysCfgSpecification) x).selectSpecificationForSystemConfiguration();
     			final var sysCfgFunc = sysCfg.extension(ISystemConfigurationFunctions.class);
     			return sysCfgFunc.IsDependsOnLinuxOrWindows() || sysCfg instanceof IOperatingSystemConfiguration;

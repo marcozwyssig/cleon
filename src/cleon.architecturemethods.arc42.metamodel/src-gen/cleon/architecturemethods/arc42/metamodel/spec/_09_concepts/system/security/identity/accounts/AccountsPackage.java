@@ -14,9 +14,9 @@ public class AccountsPackage {
   public static final Resource ServiceAccounts_builtinRole = new Resource("9987d9d2-a1ae-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccountTemplate_builtinRoles = new Resource("9fce9a63-a1ae-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccount_serviceAccountTemplate = new Resource("0284727a-d8c6-11ea-ae00-5518e944c256");
-  public static final Resource gMSA_aE_ServiceAccount = new Resource("06ea6eda-f333-11ea-9268-b5c52a12d7f9");
+  public static final Resource ServiceAccount_aE_gMSA = new Resource("06ea6eda-f333-11ea-9268-b5c52a12d7f9");
   public static final Resource FunctionSpace_aE_Accounts_ServiceAccount = new Resource("989a1d1e-2830-11eb-a351-0f02534982d8");
-  public static final Resource FunctionSpace_aE_Accounts_gMSA_aE_ServiceAccount = new Resource("cf47c3aa-2830-11eb-a351-0f02534982d8");
+  public static final Resource FunctionSpace_aE_Accounts_ServiceAccount_aE_gMSA = new Resource("cf47c3aa-2830-11eb-a351-0f02534982d8");
   public static final Resource ServiceAccountEnvironmentSite = new Resource("bde1151a-394a-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironment_serviceAccountSite = new Resource("c7094a10-394a-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironmentSite_site = new Resource("d1055562-394b-11eb-93f1-c3f5ad8bb73f");
@@ -44,10 +44,11 @@ public class AccountsPackage {
   public static final Resource FunctionSpace_aE_Accounts_ServiceAccountEnvironmentSite = new Resource("702930fd-7826-11eb-b1ee-19aff392296d");
   public static final Resource ServiceAccount_overrideNumber = new Resource("d8f96ab1-9876-11ec-9d28-89a40da1c4b6");
   public static final Resource ServiceAccountTemplate_passwordNeverExpires = new Resource("5df07481-9eed-11ec-8d98-a946e0e0308e");
-  public static final Resource gMSA_aE_ServiceAccount_allowAdditionallyUsingOn = new Resource("e957c9e3-a431-11ec-a02c-0578282f8413");
+  public static final Resource ServiceAccount_aE_gMSA_allowAdditionallyUsingOn = new Resource("e957c9e3-a431-11ec-a02c-0578282f8413");
   public static final Resource ServiceAccount_uniqueId = new Resource("6958fb78-4f84-11ed-93f9-c3290c35c85a");
   public static final Resource ServiceAccount_description = new Resource("9f449bf1-353f-11ef-86dc-5dad23d0566b");
   public static final Resource ServiceAccount_usedActivityPermissions = new Resource("6224c902-0591-11f0-8707-d7020bc75906");
+  public static final Resource ServiceAccount_aE_Standard = new Resource("3c5cdd29-067e-11f0-9dcf-ff118a4f827f");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +69,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,WkZ91c0w+tc/v5OXNBuAW3GtgNg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,yHAEgcO3A041QjYz/HJdJ++wVcc=] */

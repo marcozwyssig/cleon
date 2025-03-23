@@ -238,6 +238,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ISharesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d0b3911f-07fb-11f0-bc12-1bbda1d7028e")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("d0b3b858-07fb-11f0-bc12-1bbda1d7028e")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ISharesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SharesFunctionsImpl implements ISharesFunctionsImpl {
+
+    public static final ISharesFunctionsImpl INSTANCE = new SharesFunctionsImpl();
+
+    private SharesFunctionsImpl() {}
+
+  }
+  
+  public static class SharesFunctions {
+
+    private SharesFunctions() {}
+
+  }
+
   public static interface IEnforceOUFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c12e6786-05a2-11f0-a294-67d88c30f2e4")
@@ -359,6 +387,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IDiskPartFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8481f7a0-07f4-11f0-bc12-1bbda1d7028e")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("9b9c94d3-07f4-11f0-bc12-1bbda1d7028e")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IDiskPartFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DiskPartFunctionsImpl implements IDiskPartFunctionsImpl {
+
+    public static final IDiskPartFunctionsImpl INSTANCE = new DiskPartFunctionsImpl();
+
+    private DiskPartFunctionsImpl() {}
+
+  }
+  
+  public static class DiskPartFunctions {
+
+    private DiskPartFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,qkupEsTl62UxFgT+NPbYCgUllBQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,redEIVQOSZpPFTkc0YRqjl79SKc=] */

@@ -25,6 +25,7 @@ public class SystemPackage {
   public static final Resource ActivityPermission_uniqueId = new Resource("402493c1-e005-11ec-afcf-1feb072e53ef");
   public static final Resource FunctionSpace_aE_Activity_aE_Deployment_ActivitySystemConfiguration = new Resource("f8a63f49-04bd-11f0-8e81-9be04e08660a");
   public static final Resource ActivityPermission_roles = new Resource("10b6051d-058c-11f0-8707-d7020bc75906");
+  public static final Resource ActivityPermission_memberOfAdGroup = new Resource("6581534c-07d8-11f0-bc12-1bbda1d7028e");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system,Wgs2DJWTPCgswMV+vgsZ+red/Mo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system,CSq3ud//VrKJerOfzYW7GbOO31k=] */

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IDfsSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.plattform.javamodel.IPrtgProbeSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.security.iam.javamodel.IReadOnlyDomainControllerSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost;
@@ -330,41 +331,14 @@ public class FunctionSpace_Topology {
 
   public static interface IAbstractHostFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("6876a694-fb12-11e9-890e-576c93cea08c")
-    public java.lang.String ShortName();
-
-    @IDynamicResourceExtension.MethodId("9d2e0ada-0780-11ea-8638-e775d7e940cc")
-    public java.lang.String SiteName();
-
-    @IDynamicResourceExtension.MethodId("738023f9-09f0-11ea-baed-218c3e076b56")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts Site();
-
-    @IDynamicResourceExtension.MethodId("e6e98c18-b07c-11ea-b791-9b401fd02359")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite TopSite();
-
-    @IDynamicResourceExtension.MethodId("1883c8f0-2408-11eb-83b1-3d2a97975978")
-    public java.lang.String TopSiteName();
-
-    @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
-    public java.lang.String SimpleName();
-
-    @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController();
-
-    @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyPrtgProbe();
-
-    @IDynamicResourceExtension.MethodId("0f06e336-1eb7-11eb-9eef-0dadb2b460da")
-    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> Subzones();
-
     @IDynamicResourceExtension.MethodId("7782b59b-243a-11eb-83b1-3d2a97975978")
     public java.lang.String AliasOrHostname();
 
-    @IDynamicResourceExtension.MethodId("700c9e69-2a4f-11eb-903e-7d97d99d39d5")
-    public java.lang.String FQDNAliasOrHostname();
+    @IDynamicResourceExtension.MethodId("07818c92-86e8-11ef-b480-056cd62fd308")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
 
-    @IDynamicResourceExtension.MethodId("9a1c5624-c207-11eb-8c09-03c14294ecfb")
-    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortService service);
+    @IDynamicResourceExtension.MethodId("c81ef871-e187-11ec-bbb2-25acacf78f08")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID CentralOrTNSite();
 
     @IDynamicResourceExtension.MethodId("bec338eb-2a4f-11eb-903e-7d97d99d39d5")
     public java.lang.String DomainPrefix();
@@ -372,54 +346,87 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("eb3facce-a992-11eb-8f9b-01c801f6a12b")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
+    @IDynamicResourceExtension.MethodId("9a1c5624-c207-11eb-8c09-03c14294ecfb")
+    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortService service);
+
+    @IDynamicResourceExtension.MethodId("700c9e69-2a4f-11eb-903e-7d97d99d39d5")
+    public java.lang.String FQDNAliasOrHostname();
+
+    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode();
+
     @IDynamicResourceExtension.MethodId("8cf5948b-b259-11eb-84da-a358b37bb644")
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
 
-    @IDynamicResourceExtension.MethodId("e786e6c2-d515-11ec-ad12-8d6f8e00bc94")
-    public java.lang.String Owner();
+    @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyPrtgProbe();
 
-    @IDynamicResourceExtension.MethodId("c81ef871-e187-11ec-bbb2-25acacf78f08")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID CentralOrTNSite();
+    @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController();
 
-    @IDynamicResourceExtension.MethodId("5d096aa9-716f-11ed-b3a1-8773ed130054")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment TopologyEnvironment();
-
-    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
-
-    @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
-    public java.lang.String TypeName();
-
-    @IDynamicResourceExtension.MethodId("0a417e16-e2e0-11ee-bcaf-bf4e173adc8d")
-    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubzoneFromIP();
+    @IDynamicResourceExtension.MethodId("245afff5-07f9-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyDFS();
 
     @IDynamicResourceExtension.MethodId("37f786aa-2fcb-11ef-94c3-df89315c4c49")
     public java.lang.String OverrideRN();
 
-    @IDynamicResourceExtension.MethodId("07818c92-86e8-11ef-b480-056cd62fd308")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
+    @IDynamicResourceExtension.MethodId("e786e6c2-d515-11ec-ad12-8d6f8e00bc94")
+    public java.lang.String Owner();
 
-    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode();
+    @IDynamicResourceExtension.MethodId("0a417e16-e2e0-11ee-bcaf-bf4e173adc8d")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubzoneFromIP();
+
+    @IDynamicResourceExtension.MethodId("6876a694-fb12-11e9-890e-576c93cea08c")
+    public java.lang.String ShortName();
+
+    @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
+    public java.lang.String SimpleName();
+
+    @IDynamicResourceExtension.MethodId("9d2e0ada-0780-11ea-8638-e775d7e940cc")
+    public java.lang.String SiteName();
+
+    @IDynamicResourceExtension.MethodId("738023f9-09f0-11ea-baed-218c3e076b56")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts Site();
+
+    @IDynamicResourceExtension.MethodId("0f06e336-1eb7-11eb-9eef-0dadb2b460da")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> Subzones();
+
+    @IDynamicResourceExtension.MethodId("1883c8f0-2408-11eb-83b1-3d2a97975978")
+    public java.lang.String TopSiteName();
+
+    @IDynamicResourceExtension.MethodId("e6e98c18-b07c-11ea-b791-9b401fd02359")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite TopSite();
+
+    @IDynamicResourceExtension.MethodId("5d096aa9-716f-11ed-b3a1-8773ed130054")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment TopologyEnvironment();
+
+    @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
+    public java.lang.String TypeName();
+
+    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
 
     @IDynamicResourceExtension.MethodId("ba04ab33-716f-11ed-b3a1-8773ed130054")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
 
-    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+    @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+
+    @IDynamicResourceExtension.MethodId("245afff5-07f9-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyDFS(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
 
     @IDynamicResourceExtension.MethodId("e81d592b-e2a6-11ee-bcbf-b7880577b7f3")
     public java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
 
-    @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
+    @IDynamicResourceExtension.MethodId("7af4b95a-0ab9-11ee-a86d-478d6a2bb65d")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
 
   }
   
@@ -430,12 +437,13 @@ public class FunctionSpace_Topology {
     private AbstractHostFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
-      /* Begin Protected Region [[0112faa4-b073-11ea-b791-9b401fd02359]] */
-      return abstractHostList.stream()
-      		.filter(x -> x.selectInstanceOf() instanceof IReadOnlyDomainControllerSystemConfiguration)
-      		.collect(Collectors.toList());
-      /* End Protected Region   [[0112faa4-b073-11ea-b791-9b401fd02359]] */
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      /* Begin Protected Region [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
+    	if (abstractHost.selectIps().isEmpty()) {
+    		return null;
+    	}
+    	return abstractHost.selectIps().getFirst();
+      /* End Protected Region   [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
     }
 
     @Override
@@ -449,13 +457,21 @@ public class FunctionSpace_Topology {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
-      /* Begin Protected Region [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
-      final var securitySubZoneFunctions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
-      final var systemConfigurations = securitySubZoneFunctions.AllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[0112faa4-b073-11ea-b791-9b401fd02359]] */
+      return abstractHostList.stream()
+      		.filter(x -> x.selectInstanceOf() instanceof IReadOnlyDomainControllerSystemConfiguration)
+      		.collect(Collectors.toList());
+      /* End Protected Region   [[0112faa4-b073-11ea-b791-9b401fd02359]] */
+    }
 
-      return abstractHostList.stream().filter(x -> systemConfigurations.contains(x.selectInstanceOf())).collect(Collectors.toList());
-      /* End Protected Region   [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyDFS(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[245afff5-07f9-11f0-bc12-1bbda1d7028e]] */
+        return abstractHostList.stream()
+          		.filter(x -> x.selectInstanceOf() instanceof IDfsSystemConfiguration)
+          		.collect(Collectors.toList());
+      /* End Protected Region   [[245afff5-07f9-11f0-bc12-1bbda1d7028e]] */
     }
 
     @Override
@@ -472,13 +488,13 @@ public class FunctionSpace_Topology {
     }
 
     @Override
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
-      /* Begin Protected Region [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
-    	if (abstractHost.selectIps().isEmpty()) {
-    		return null;
-    	}
-    	return abstractHost.selectIps().getFirst();
-      /* End Protected Region   [[a9c28f3e-86fe-11ef-a98e-25ff78c32832]] */
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      /* Begin Protected Region [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
+      final var securitySubZoneFunctions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
+      final var systemConfigurations = securitySubZoneFunctions.AllSystemConfigurations();
+
+      return abstractHostList.stream().filter(x -> systemConfigurations.contains(x.selectInstanceOf())).collect(Collectors.toList());
+      /* End Protected Region   [[7af4b95a-0ab9-11ee-a86d-478d6a2bb65d]] */
     }
 
   }
@@ -487,24 +503,28 @@ public class FunctionSpace_Topology {
 
     private AbstractHostFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
-      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyReadonlyDomainController(abstractHostList);
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).NetworkHostNode(abstractHost);
     }
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyPrtgProbe(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyPrtgProbe(abstractHostList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
-      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).WhereSubzone(securitySubZone, abstractHostList);
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyReadonlyDomainController(abstractHostList);
+    }
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyDFS(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyDFS(abstractHostList);
     }
 
     public static java.lang.String TypeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).TypeName(abstractHost);
     }
 
-    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
-      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).NetworkHostNode(abstractHost);
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WhereSubzone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+      return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).WhereSubzone(securitySubZone, abstractHostList);
     }
 
   }
@@ -879,11 +899,11 @@ public class FunctionSpace_Topology {
 
   public static interface IAbstractFunctionalSiteFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("66d2a1b5-8e02-11ea-b01b-6bc31a0e971d")
-    public java.lang.String ShortName();
-
     @IDynamicResourceExtension.MethodId("3ede2031-d5c9-11ec-ad12-8d6f8e00bc94")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith();
+
+    @IDynamicResourceExtension.MethodId("66d2a1b5-8e02-11ea-b01b-6bc31a0e971d")
+    public java.lang.String ShortName();
 
   }
   
@@ -1208,4 +1228,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,S9Qo9Css1CKUOO6bjt7MPY5Cxto=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,QtnsgWJQumSUaRQxxHPRlCqaAUs=] */

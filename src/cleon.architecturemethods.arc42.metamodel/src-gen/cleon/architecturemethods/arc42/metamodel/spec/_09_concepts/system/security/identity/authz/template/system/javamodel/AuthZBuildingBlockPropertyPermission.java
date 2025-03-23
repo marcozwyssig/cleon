@@ -69,6 +69,16 @@ public class AuthZBuildingBlockPropertyPermission extends DynamicResource implem
   // relations
   
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup> selectBuiltinADGroup() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_builtinADGroup);
+  }
+
+  public AuthZBuildingBlockPropertyPermission setBuiltinADGroup(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup> builtinADGroup) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_builtinADGroup, builtinADGroup);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty selectProperty() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AuthZBuildingBlockPropertyPermission_property);
   }
@@ -98,6 +108,16 @@ public class AuthZBuildingBlockPropertyPermission extends DynamicResource implem
     return this;
   }
     
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IActivityTemplateAware> selectUsedBy() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IActivityTemplateAware.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_usedBy);
+  }
+
+  public AuthZBuildingBlockPropertyPermission setUsedBy(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IActivityTemplateAware> usedBy) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_usedBy, usedBy);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -106,8 +126,10 @@ public class AuthZBuildingBlockPropertyPermission extends DynamicResource implem
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     // relations
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_builtinADGroup, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AuthZBuildingBlockPropertyPermission_property, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IActivityTemplateAware.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.SystemPackage.AbstractAuthZBuildingBlockPermission_usedBy, visitor);
   }
 
   // toMeRelations
@@ -117,4 +139,4 @@ public class AuthZBuildingBlockPropertyPermission extends DynamicResource implem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec70497-d5be-11ec-ad12-8d6f8e00bc94,lesj4ETZuXFYz3e4TNFO8gGFI3o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec70497-d5be-11ec-ad12-8d6f8e00bc94,NnNVgSIJ53a9tUQ/LY90sDjkVg4=] */

@@ -53,6 +53,9 @@ public class FunctionSpace_Activity_Buildingblock {
     @IDynamicResourceExtension.MethodId("c258e93e-e44f-11ee-89a2-d75dd4a11557")
     public java.lang.String TypeName();
 
+    @IDynamicResourceExtension.MethodId("42b44a01-07d7-11f0-bc12-1bbda1d7028e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
+
   }
   
   public static interface IAbstractAuthZBuildingBlockPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -163,6 +166,9 @@ public class FunctionSpace_Activity_Buildingblock {
     @IDynamicResourceExtension.MethodId("f5ec10ef-864b-11eb-9869-4317e18e6c88")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemConfiguration AbstractSystemOrSystemConfiguration();
 
+    @IDynamicResourceExtension.MethodId("5298e41e-07d7-11f0-bc12-1bbda1d7028e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
+
     @IDynamicResourceExtension.MethodId("35ba7315-864c-11eb-9869-4317e18e6c88")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IPermissionTemplate Permission();
 
@@ -202,6 +208,9 @@ public class FunctionSpace_Activity_Buildingblock {
 
     @IDynamicResourceExtension.MethodId("4011ca1e-d5bf-11ec-ad12-8d6f8e00bc94")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemConfiguration AbstractSystemOrSystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("625a3fb2-07d7-11f0-bc12-1bbda1d7028e")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("4011ca27-d5bf-11ec-ad12-8d6f8e00bc94")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IPermissionTemplate Permission();
@@ -299,4 +308,4 @@ public class FunctionSpace_Activity_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,HJ/hyAtbwtE/dwyXdozNpSxk7Lk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,Mnzu6sULSCyPPe1WAxZs1eUJpJY=] */

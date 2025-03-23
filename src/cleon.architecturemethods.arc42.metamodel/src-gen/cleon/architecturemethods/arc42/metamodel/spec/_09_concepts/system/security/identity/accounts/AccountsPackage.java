@@ -10,9 +10,7 @@ public class AccountsPackage {
   public static final Resource ServiceAccountEnvironment = new Resource("e0be5246-a1a0-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccountEnvironments_accountEnvironment = new Resource("f6a8acea-a1a0-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccountEnvironment_systemEnvironmentForAccounts = new Resource("f456ff1a-a1a1-11ea-886d-354b9ee6fb2d");
-  public static final Resource BuiltinRole = new Resource("93efa9df-a1ae-11ea-886d-354b9ee6fb2d");
-  public static final Resource ServiceAccounts_builtinRole = new Resource("9987d9d2-a1ae-11ea-886d-354b9ee6fb2d");
-  public static final Resource ServiceAccountTemplate_builtinRoles = new Resource("9fce9a63-a1ae-11ea-886d-354b9ee6fb2d");
+  public static final Resource ServiceAccountTemplate_builtinADGroup = new Resource("9fce9a63-a1ae-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccount_serviceAccountTemplate = new Resource("0284727a-d8c6-11ea-ae00-5518e944c256");
   public static final Resource ServiceAccount_aE_gMSA = new Resource("06ea6eda-f333-11ea-9268-b5c52a12d7f9");
   public static final Resource FunctionSpace_aE_Accounts_ServiceAccount = new Resource("989a1d1e-2830-11eb-a351-0f02534982d8");
@@ -69,4 +67,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,yHAEgcO3A041QjYz/HJdJ++wVcc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts,J75IDCpYZ088tijDlP5O8zpkU6M=] */

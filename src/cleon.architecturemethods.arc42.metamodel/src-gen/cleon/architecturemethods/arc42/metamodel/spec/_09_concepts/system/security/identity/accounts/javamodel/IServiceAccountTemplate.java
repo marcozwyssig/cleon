@@ -14,8 +14,8 @@ public interface IServiceAccountTemplate extends cleon.common.resources.metamode
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectServiceConfigurationForServiceAccount();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IBuiltinRole> selectBuiltinRoles();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup> selectBuiltinADGroup();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,UKmmnSD4QzX49woXWld2Ae87Zic=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,yNKQ2g7edEvn7klzByh2FUHj8ME=] */

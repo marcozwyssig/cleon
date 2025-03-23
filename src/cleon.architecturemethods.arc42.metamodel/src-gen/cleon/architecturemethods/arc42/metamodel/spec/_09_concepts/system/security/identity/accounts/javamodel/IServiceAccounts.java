@@ -2,13 +2,11 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.secur
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IServiceAccounts extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.javamodel.IAbstractSecurityConcept {
+public interface IServiceAccounts extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.javamodel.IAbstractSecurityConcept, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroupAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f976f9b6-a19e-11ea-886d-354b9ee6fb2d");
   
   // relations
-  
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IBuiltinRole> selectBuiltinRole();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccountBuildingBlocks selectServiceAccountBuildingBlocks();
   
@@ -16,4 +14,4 @@ public interface IServiceAccounts extends cleon.architecturemethods.arc42.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f976f9b6-a19e-11ea-886d-354b9ee6fb2d,ctQ+xOvvnpi/oq9BIx15dA0Sb38=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f976f9b6-a19e-11ea-886d-354b9ee6fb2d,eo8lV9FeEatnf3sdNiW5/OV+jzw=] */

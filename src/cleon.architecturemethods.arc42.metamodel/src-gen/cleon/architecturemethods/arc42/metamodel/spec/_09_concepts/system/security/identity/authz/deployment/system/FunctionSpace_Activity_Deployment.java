@@ -394,6 +394,9 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("6024626b-9c98-11e9-9b32-35cf2fd07621")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivitySiteGroup> AllActivitySiteGroups();
 
+    @IDynamicResourceExtension.MethodId("8b3398ac-07d8-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups.javamodel.IADGroup> AllADGroups();
+
   }
   
   public static interface IActivityRootGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -441,4 +444,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,1uxUk9Jyt5Mu9Akfuwn/1yM4YWE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,+aerYqykaGQbhodfSj303hpaDe8=] */

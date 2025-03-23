@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="eff7ff6f-07f3-11f0-bc12-1bbda1d7028e">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="094692f3-07f4-11f0-bc12-1bbda1d7028e" type="resource" guid="094644d0-07f4-11f0-bc12-1bbda1d7028e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eff7ff73-07f3-11f0-bc12-1bbda1d7028e" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eff7ff74-07f3-11f0-bc12-1bbda1d7028e" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="094692f3-07f4-11f0-bc12-1bbda1d7028e">
+      <resource guid="094644d0-07f4-11f0-bc12-1bbda1d7028e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="09466be2-07f4-11f0-bc12-1bbda1d7028e" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0aa0cbc1-07f4-11f0-bc12-1bbda1d7028e" type="literal">disks</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0946e114-07f4-11f0-bc12-1bbda1d7028e" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0946e115-07f4-11f0-bc12-1bbda1d7028e" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="0e83ab4b-07f4-11f0-bc12-1bbda1d7028e" type="resource" guid="0f86ea7d-07f4-11f0-bc12-1bbda1d7028e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eff7ff84-07f3-11f0-bc12-1bbda1d7028e" type="literal">DiskPart</object>
+  </predicate>
+</resource>
+

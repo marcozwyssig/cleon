@@ -159,6 +159,16 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> selectSystemConfigurationSpecifications() {
+    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications);
+  }
+
+  public SiteSpecifications setSystemConfigurationSpecifications(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> systemConfigurationSpecifications) {
+    _setMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications, systemConfigurationSpecifications);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -191,6 +201,7 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
     _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_locationSpecification, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_site, visitor);
+    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -209,4 +220,4 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,gmsNYhd7W2jh3TgT5XPgqsYRm3Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,jdbObxnsq61XX5KMJMAXY80e29w=] */

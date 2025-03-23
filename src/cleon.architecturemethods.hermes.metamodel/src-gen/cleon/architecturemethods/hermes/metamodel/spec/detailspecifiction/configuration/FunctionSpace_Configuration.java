@@ -66,6 +66,37 @@ public class FunctionSpace_Configuration {
 
   }
 
+  public static interface ISysCmpSpecificationAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("addf2f8d-059b-11f0-a294-67d88c30f2e4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("0f4148b3-05a3-11f0-a294-67d88c30f2e4")
+    public java.lang.String CmpFolder();
+
+    @IDynamicResourceExtension.MethodId("28aebf7d-07f8-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
+
+  }
+  
+  public static interface ISysCmpSpecificationAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SysCmpSpecificationAwareFunctionsImpl implements ISysCmpSpecificationAwareFunctionsImpl {
+
+    public static final ISysCmpSpecificationAwareFunctionsImpl INSTANCE = new SysCmpSpecificationAwareFunctionsImpl();
+
+    private SysCmpSpecificationAwareFunctionsImpl() {}
+
+  }
+  
+  public static class SysCmpSpecificationAwareFunctions {
+
+    private SysCmpSpecificationAwareFunctions() {}
+
+  }
+
   public static interface IAbstractEnvironmentSpecificationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("47f35586-0023-11f0-945c-87b19aec41f4")
@@ -111,6 +142,9 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("9ccb5cfb-0632-11f0-ad7c-c72b7a763977")
     public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.javamodel.ISysCmpSpecification SysCmpSpecific();
 
+    @IDynamicResourceExtension.MethodId("757b3ddf-07f8-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
+
   }
   
   public static interface ISysCfgSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -153,6 +187,40 @@ public class FunctionSpace_Configuration {
     public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> NoDCAndOnlyWindows(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> sysCfgSpecificationList) {
       return DynamicResourceUtil.invoke(ISysCfgSpecificationFunctionsImpl.class, SysCfgSpecificationFunctionsImpl.INSTANCE, sysCfgSpecificationList).NoDCAndOnlyWindows(sysCfgSpecificationList);
     }
+
+  }
+
+  public static interface ISysCmpSpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c1e75b91-059b-11f0-a294-67d88c30f2e4")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("1db6c3ea-d21f-11ee-8171-1959ddc2a1e5")
+    public java.lang.String GetComponentPath();
+
+    @IDynamicResourceExtension.MethodId("b1e135fa-05a3-11f0-a294-67d88c30f2e4")
+    public java.lang.String CmpFolder();
+
+    @IDynamicResourceExtension.MethodId("8d8f6008-07f9-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
+
+  }
+  
+  public static interface ISysCmpSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SysCmpSpecificationFunctionsImpl implements ISysCmpSpecificationFunctionsImpl {
+
+    public static final ISysCmpSpecificationFunctionsImpl INSTANCE = new SysCmpSpecificationFunctionsImpl();
+
+    private SysCmpSpecificationFunctionsImpl() {}
+
+  }
+  
+  public static class SysCmpSpecificationFunctions {
+
+    private SysCmpSpecificationFunctions() {}
 
   }
 
@@ -204,6 +272,9 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("b3ffda9e-05a4-11f0-a294-67d88c30f2e4")
     public java.lang.String CmpFolder();
 
+    @IDynamicResourceExtension.MethodId("37a96f0c-07f8-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
+
   }
   
   public static interface IEnvironmentSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -234,6 +305,15 @@ public class FunctionSpace_Configuration {
 
     @IDynamicResourceExtension.MethodId("e74fa194-0029-11f0-945c-87b19aec41f4")
     public java.lang.String FolderName();
+
+    @IDynamicResourceExtension.MethodId("b28544b2-07f7-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("67370cc5-07f8-11f0-bc12-1bbda1d7028e")
+    public java.lang.String CmpFolder();
+
+    @IDynamicResourceExtension.MethodId("520ad284-07f8-11f0-bc12-1bbda1d7028e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
 
   }
   
@@ -286,65 +366,6 @@ public class FunctionSpace_Configuration {
 
   }
 
-  public static interface ISysCmpSpecificationAwareFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("addf2f8d-059b-11f0-a294-67d88c30f2e4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("0f4148b3-05a3-11f0-a294-67d88c30f2e4")
-    public java.lang.String CmpFolder();
-
-  }
-  
-  public static interface ISysCmpSpecificationAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SysCmpSpecificationAwareFunctionsImpl implements ISysCmpSpecificationAwareFunctionsImpl {
-
-    public static final ISysCmpSpecificationAwareFunctionsImpl INSTANCE = new SysCmpSpecificationAwareFunctionsImpl();
-
-    private SysCmpSpecificationAwareFunctionsImpl() {}
-
-  }
-  
-  public static class SysCmpSpecificationAwareFunctions {
-
-    private SysCmpSpecificationAwareFunctions() {}
-
-  }
-
-  public static interface ISysCmpSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("c1e75b91-059b-11f0-a294-67d88c30f2e4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("1db6c3ea-d21f-11ee-8171-1959ddc2a1e5")
-    public java.lang.String GetComponentPath();
-
-    @IDynamicResourceExtension.MethodId("b1e135fa-05a3-11f0-a294-67d88c30f2e4")
-    public java.lang.String CmpFolder();
-
-  }
-  
-  public static interface ISysCmpSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SysCmpSpecificationFunctionsImpl implements ISysCmpSpecificationFunctionsImpl {
-
-    public static final ISysCmpSpecificationFunctionsImpl INSTANCE = new SysCmpSpecificationFunctionsImpl();
-
-    private SysCmpSpecificationFunctionsImpl() {}
-
-  }
-  
-  public static class SysCmpSpecificationFunctions {
-
-    private SysCmpSpecificationFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,aJOaesjlojNTZBqOXDcwCu+Pzu4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,1tJxsgya/DSEUXqjIdwijJLVLVo=] */

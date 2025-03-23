@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="912699fe-864a-11eb-9869-4317e18e6c88">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="33079e48-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="26769b77-07ce-11f0-bc12-1bbda1d7028e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="91269a00-864a-11eb-9869-4317e18e6c88" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a1778a8e-864a-11eb-9869-4317e18e6c88" type="resource" guid="133424cf-be0b-11e5-ad6f-979cbb78853e" />
+    <object statement-guid="a176a02a-864a-11eb-9869-4317e18e6c88" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+    <object statement-guid="a177ffc0-864a-11eb-9869-4317e18e6c88" type="resource" guid="17bccd86-259b-11eb-b9ae-4df44b18aa9b" />
+    <object statement-guid="a1784de3-864a-11eb-9869-4317e18e6c88" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="91275d51-864a-11eb-9869-4317e18e6c88" type="literal">AbstractAuthZBuildingBlockPermission</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33079e48-07ce-11f0-bc12-1bbda1d7028e">
+      <resource guid="26769b77-07ce-11f0-bc12-1bbda1d7028e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26769b79-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2710e076-07ce-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.AbstractAuthZBuildingBlockPermissionInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2676c28a-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="91278463-864a-11eb-9869-4317e18e6c88" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

@@ -4,7 +4,6 @@ import ch.actifsource.core.Resource;
 
 public class AuthzPackage {
   
-  public static final Resource AutorizationConcept_responsibilities = new Resource("27a7ea58-809c-11e9-8e65-f3f639e40a34");
   public static final Resource AutorizationConcept = new Resource("9db33409-6e8e-11ea-b8e8-f1a46e0c42f7");
   public static final Resource AutorizationConcept_chapters = new Resource("a3a0780b-6e90-11ea-b8e8-f1a46e0c42f7");
   public static final Resource AutorizationConcept_authZForBuildingBlock = new Resource("576d3fa1-7fef-11ea-8dd1-adb42766bae3");
@@ -29,4 +28,4 @@ public class AuthzPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz,9gSM91mhr0D8Vw+bPdtFeYH/8iE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz,kFHazFXNLDbH7hzMB1xkdiR3Xjg=] */

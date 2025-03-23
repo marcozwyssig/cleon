@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="912699fe-864a-11eb-9869-4317e18e6c88">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="33079e48-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="26769b77-07ce-11f0-bc12-1bbda1d7028e" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="91269a00-864a-11eb-9869-4317e18e6c88" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -11,6 +14,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="91275d51-864a-11eb-9869-4317e18e6c88" type="literal">AbstractAuthZBuildingBlockPermission</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33079e48-07ce-11f0-bc12-1bbda1d7028e">
+      <resource guid="26769b77-07ce-11f0-bc12-1bbda1d7028e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26769b79-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2710e076-07ce-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.activity.javamodel.AbstractAuthZBuildingBlockPermissionInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2676c28a-07ce-11f0-bc12-1bbda1d7028e" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="91278463-864a-11eb-9869-4317e18e6c88" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

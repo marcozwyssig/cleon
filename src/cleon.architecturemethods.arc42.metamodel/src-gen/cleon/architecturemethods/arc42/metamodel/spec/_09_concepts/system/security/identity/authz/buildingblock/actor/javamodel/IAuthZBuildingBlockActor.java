@@ -10,6 +10,8 @@ public interface IAuthZBuildingBlockActor extends cleon.common.doc.metamodel.spe
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockForActor> selectAuthZForActor();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IResponsibilities selectResponsibilities();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,45f3c3b7-d41f-11eb-9862-7f597b9587dd,JfiWxkGeH5qrdyElG5liXas/P9Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,45f3c3b7-d41f-11eb-9862-7f597b9587dd,H8UAgIZyiWiV8g0E4Va9yo4wDYk=] */

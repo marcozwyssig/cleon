@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class ActorPackage {
   
+  public static final Resource AuthZBuildingBlockActor_responsibilities = new Resource("27a7ea58-809c-11e9-8e65-f3f639e40a34");
   public static final Resource AuthZBuildingBlockActor = new Resource("45f3c3b7-d41f-11eb-9862-7f597b9587dd");
   public static final Resource AuthZBuildingBlockActor_authZForActor = new Resource("45f3c3c1-d41f-11eb-9862-7f597b9587dd");
   public static final Resource AuthZBuildingBlockForActor = new Resource("f21c7d02-d41f-11eb-9862-7f597b9587dd");
@@ -38,4 +39,4 @@ public class ActorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.actor,5EjnOCfHxa9eB8ui5w5Q45tl3hc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.buildingblock.actor,nWqxnVLzDd8RTVHa+AEghdvgtzA=] */

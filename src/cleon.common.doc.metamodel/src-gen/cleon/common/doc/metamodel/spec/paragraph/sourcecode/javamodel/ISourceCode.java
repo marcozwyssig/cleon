@@ -10,6 +10,8 @@ public interface ISourceCode extends cleon.common.doc.metamodel.spec.paragraph.j
   
   public java.util.List<java.lang.String> selectCode();
   
+  public java.lang.String selectInclude();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,9aAR+pJfo0nV6n2Epdu3yzmF2dY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,eYse0q2K5/Sl79b/j3OLHB2+ndQ=] */

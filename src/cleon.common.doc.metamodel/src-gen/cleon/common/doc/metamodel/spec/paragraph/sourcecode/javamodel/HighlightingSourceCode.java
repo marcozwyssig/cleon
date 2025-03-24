@@ -40,6 +40,15 @@ public class HighlightingSourceCode extends DynamicResource implements IHighligh
   }
 
   @Override
+  public java.lang.String selectInclude() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include);
+  }
+    
+  public void setInclude(java.lang.String include) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include, include);
+  }
+
+  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -85,6 +94,7 @@ public class HighlightingSourceCode extends DynamicResource implements IHighligh
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_code, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.selector.language.javamodel.ILanguage.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.HighlightingSourceCode_language, visitor);
@@ -98,4 +108,4 @@ public class HighlightingSourceCode extends DynamicResource implements IHighligh
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,45ade837-466e-11e5-ba74-cb2e95044e1c,Pdes7vM0Xh64wUL7GjP8dK6sI1Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,45ade837-466e-11e5-ba74-cb2e95044e1c,S+aRie7Fg+n/kOmnSMtopN/dHhs=] */

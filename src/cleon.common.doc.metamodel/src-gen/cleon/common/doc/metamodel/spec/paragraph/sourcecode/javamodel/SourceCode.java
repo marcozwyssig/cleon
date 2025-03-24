@@ -40,6 +40,15 @@ public class SourceCode extends DynamicResource implements ISourceCode {
   }
 
   @Override
+  public java.lang.String selectInclude() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include);
+  }
+    
+  public void setInclude(java.lang.String include) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include, include);
+  }
+
+  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -75,10 +84,11 @@ public class SourceCode extends DynamicResource implements ISourceCode {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_code, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.sourcecode.SourcecodePackage.SourceCode_include, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,it0R1S0oLHtc1M7rqcHGxHBE5fY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,MEQ1laqeiBZWbCNOJJ/H31GTvQU=] */

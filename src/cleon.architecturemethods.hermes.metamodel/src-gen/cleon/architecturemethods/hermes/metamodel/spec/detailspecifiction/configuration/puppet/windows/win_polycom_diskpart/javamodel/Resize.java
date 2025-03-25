@@ -1,31 +1,31 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_diskpart.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class InstallFeatures extends DynamicResource implements IInstallFeatures {
+public class Resize extends DynamicResource implements IResize {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInstallFeatures> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInstallFeatures>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IResize> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IResize>() {
     
     @Override
-    public IInstallFeatures create() {
-      return new InstallFeatures();
+    public IResize create() {
+      return new Resize();
     }
     
     @Override
-    public IInstallFeatures create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new InstallFeatures(resourceRepository, resource);
+    public IResize create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Resize(resourceRepository, resource);
     }
   
   };
 
-  public InstallFeatures() {
-    super(IInstallFeatures.TYPE_ID);
+  public Resize() {
+    super(IResize.TYPE_ID);
   }
   
-  public InstallFeatures(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IInstallFeatures.TYPE_ID);
+  public Resize(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IResize.TYPE_ID);
   }
 
   // attributes
@@ -46,15 +46,6 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     
   public void setDescriptions(java.util.List<java.lang.String> descriptions) {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectFeaturesNames() {
-    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.InstallFeatures_featuresNames);
-  }
-    
-  public void setFeaturesNames(java.util.List<java.lang.String> featuresNames) {
-     _setListAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.InstallFeatures_featuresNames, featuresNames);
   }
 
   @Override
@@ -82,7 +73,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public InstallFeatures setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public Resize setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -92,7 +83,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public InstallFeatures setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public Resize setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -102,7 +93,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public InstallFeatures setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public Resize setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -112,7 +103,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public InstallFeatures setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public Resize setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -122,7 +113,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public InstallFeatures setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public Resize setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -132,7 +123,7 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public InstallFeatures setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Resize setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -142,7 +133,6 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.InstallFeatures_featuresNames, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
@@ -151,4 +141,4 @@ public class InstallFeatures extends DynamicResource implements IInstallFeatures
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,M7ZqMEmUiytaEUqJeZTalcDTHVI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9c1ec196-096a-11f0-bcb3-43fb1d3f2da5,g1R8GJdBusjLDcZKbDgPh++6zi8=] */

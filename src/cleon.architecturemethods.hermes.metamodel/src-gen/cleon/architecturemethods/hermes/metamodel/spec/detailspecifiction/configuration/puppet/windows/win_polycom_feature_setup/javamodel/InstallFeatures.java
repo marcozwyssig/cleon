@@ -1,31 +1,31 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class UninstallFeatures extends DynamicResource implements IUninstallFeatures {
+public class InstallFeatures extends DynamicResource implements IInstallFeatures {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IUninstallFeatures> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IUninstallFeatures>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInstallFeatures> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInstallFeatures>() {
     
     @Override
-    public IUninstallFeatures create() {
-      return new UninstallFeatures();
+    public IInstallFeatures create() {
+      return new InstallFeatures();
     }
     
     @Override
-    public IUninstallFeatures create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new UninstallFeatures(resourceRepository, resource);
+    public IInstallFeatures create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new InstallFeatures(resourceRepository, resource);
     }
   
   };
 
-  public UninstallFeatures() {
-    super(IUninstallFeatures.TYPE_ID);
+  public InstallFeatures() {
+    super(IInstallFeatures.TYPE_ID);
   }
   
-  public UninstallFeatures(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IUninstallFeatures.TYPE_ID);
+  public InstallFeatures(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IInstallFeatures.TYPE_ID);
   }
 
   // attributes
@@ -50,11 +50,11 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
 
   @Override
   public java.util.List<java.lang.String> selectFeaturesNames() {
-    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.UninstallFeatures_featuresNames);
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.Win_polycom_feature_setupPackage.InstallFeatures_featuresNames);
   }
     
   public void setFeaturesNames(java.util.List<java.lang.String> featuresNames) {
-     _setListAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.UninstallFeatures_featuresNames, featuresNames);
+     _setListAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.Win_polycom_feature_setupPackage.InstallFeatures_featuresNames, featuresNames);
   }
 
   @Override
@@ -82,7 +82,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public UninstallFeatures setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public InstallFeatures setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -92,7 +92,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public UninstallFeatures setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public InstallFeatures setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -102,7 +102,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public UninstallFeatures setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public InstallFeatures setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -112,7 +112,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public UninstallFeatures setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public InstallFeatures setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -122,7 +122,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public UninstallFeatures setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public InstallFeatures setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -132,7 +132,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public UninstallFeatures setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public InstallFeatures setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -142,7 +142,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.WindowsPackage.UninstallFeatures_featuresNames, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.Win_polycom_feature_setupPackage.InstallFeatures_featuresNames, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
@@ -151,4 +151,4 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2923e708-0014-11f0-945c-87b19aec41f4,DIDidfFJGBJh+dRQ2Wallgip73w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,WWuXh1MYzxBXsFycmLvbYRoskWg=] */

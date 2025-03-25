@@ -415,6 +415,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IResizeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b5e14d4a-096a-11f0-bcb3-43fb1d3f2da5")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("b5e14d73-096a-11f0-bcb3-43fb1d3f2da5")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IResizeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResizeFunctionsImpl implements IResizeFunctionsImpl {
+
+    public static final IResizeFunctionsImpl INSTANCE = new ResizeFunctionsImpl();
+
+    private ResizeFunctionsImpl() {}
+
+  }
+  
+  public static class ResizeFunctions {
+
+    private ResizeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,redEIVQOSZpPFTkc0YRqjl79SKc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,awc6K7RMc5sMPa3PlPId0PTHWe8=] */

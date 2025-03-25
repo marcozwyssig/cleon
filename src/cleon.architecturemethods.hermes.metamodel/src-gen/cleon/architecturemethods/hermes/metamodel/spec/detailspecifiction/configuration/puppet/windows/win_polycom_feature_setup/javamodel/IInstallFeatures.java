@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface IInstallFeatures extends cleon.architecturemethods.hermes.metam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,AXXWybUQX8S6c++NgzjF6lKbWqI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,KP9crfmiCzzf13jrAJGfSYWWQ2U=] */

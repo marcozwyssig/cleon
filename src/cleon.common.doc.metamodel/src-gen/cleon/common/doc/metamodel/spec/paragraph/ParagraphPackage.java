@@ -34,8 +34,8 @@ public class ParagraphPackage {
   public static final Resource FunctionSpace_aE_Paragraph_TextAware = new Resource("6f78da88-a5a6-11ef-97d6-5b0fa6c90c00");
   public static final Resource CustomProtectedRegion = new Resource("ab1577a0-dd69-11ef-9ced-81351e97716a");
   public static final Resource ChapterReference = new Resource("5c6eca85-dd88-11ef-9ced-81351e97716a");
-  public static final Resource FormatSpecificContent = new Resource("ed45d3e9-e306-11ef-b923-77f2289118eb");
-  public static final Resource FormatSpecificContent_docFormatSpecific = new Resource("4403a37f-e307-11ef-b923-77f2289118eb");
+  public static final Resource CustomContent = new Resource("ed45d3e9-e306-11ef-b923-77f2289118eb");
+  public static final Resource CustomContent_docFormatSpecific = new Resource("4403a37f-e307-11ef-b923-77f2289118eb");
   public static final Resource AbstractSimpleList = new Resource("59c1d2be-e309-11ef-b923-77f2289118eb");
   public static final Resource AbstractSimpleList_items = new Resource("674d88b8-e309-11ef-b923-77f2289118eb");
   public static final Resource SimpleItemizedList = new Resource("a3f81531-e309-11ef-b923-77f2289118eb");
@@ -60,4 +60,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,5+tTlT81Eik/I0SybcjX2BUtsa0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,1poDcebIDof9TBYSdT4sml1AzMk=] */

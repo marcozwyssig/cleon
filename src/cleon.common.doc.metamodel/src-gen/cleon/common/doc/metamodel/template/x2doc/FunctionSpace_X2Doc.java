@@ -936,28 +936,28 @@ public class FunctionSpace_X2Doc {
 
   }
 
-  public static interface IFormatSpecificContentFunctions extends IDynamicResourceExtension {
+  public static interface ICustomContentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c7625159-e307-11ef-b923-77f2289118eb")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IFormatSpecificContentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ICustomContentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class FormatSpecificContentFunctionsImpl implements IFormatSpecificContentFunctionsImpl {
+  public static class CustomContentFunctionsImpl implements ICustomContentFunctionsImpl {
 
-    public static final IFormatSpecificContentFunctionsImpl INSTANCE = new FormatSpecificContentFunctionsImpl();
+    public static final ICustomContentFunctionsImpl INSTANCE = new CustomContentFunctionsImpl();
 
-    private FormatSpecificContentFunctionsImpl() {}
+    private CustomContentFunctionsImpl() {}
 
   }
   
-  public static class FormatSpecificContentFunctions {
+  public static class CustomContentFunctions {
 
-    private FormatSpecificContentFunctions() {}
+    private CustomContentFunctions() {}
 
   }
 
@@ -1013,4 +1013,4 @@ public class FunctionSpace_X2Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,ja9/+RhtCHuPkgGLH+bvpSi9v6A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d3556ca6-7fdf-11ef-9c8a-d93340a49f34,XA8SBLLR8CksSI3XpVDh9nNa38k=] */

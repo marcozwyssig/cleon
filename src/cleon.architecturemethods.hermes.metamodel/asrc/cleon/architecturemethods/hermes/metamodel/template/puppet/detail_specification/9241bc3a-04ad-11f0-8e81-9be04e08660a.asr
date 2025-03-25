@@ -836,7 +836,7 @@
                                                     <object statement-guid="f66fae18-04ae-11f0-8e81-9be04e08660a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                                   </predicate>
                                                   <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                                    <object statement-guid="f66fd529-04ae-11f0-8e81-9be04e08660a" type="literal">,OU=Devices,OU=%{hiera('myEnv')},OU=PolycomCoreV,DC=polycom-core-v,DC=raspoly,DC=ch</object>
+                                                    <object statement-guid="f66fd529-04ae-11f0-8e81-9be04e08660a" type="literal">,OU=Devices,OU=%{hiera('win_polycom_host_site')},OU=PolycomCoreV,DC=polycom-core-v,DC=raspoly,DC=ch</object>
                                                   </predicate>
                                                 </resource>
                                               </object>

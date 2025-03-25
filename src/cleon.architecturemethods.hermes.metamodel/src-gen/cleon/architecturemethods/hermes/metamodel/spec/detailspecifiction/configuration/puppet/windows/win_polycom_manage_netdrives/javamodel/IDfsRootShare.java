@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDfsRootShare extends ch.actifsource.core.javamodel.INamedResource, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IAbstractShare {
+public interface IDfsRootShare extends ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IAbstractShare {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1d65c58f-07fb-11f0-bc12-1bbda1d7028e");
   
@@ -12,6 +12,8 @@ public interface IDfsRootShare extends ch.actifsource.core.javamodel.INamedResou
   
   public java.lang.String selectFullPath();
   
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IDfs selectDfs();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d65c58f-07fb-11f0-bc12-1bbda1d7028e,rRmafvGLTe0ZV27HLsKqcmKt8L0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d65c58f-07fb-11f0-bc12-1bbda1d7028e,vSecAHAo85po9XLat/EpIHyrIGY=] */

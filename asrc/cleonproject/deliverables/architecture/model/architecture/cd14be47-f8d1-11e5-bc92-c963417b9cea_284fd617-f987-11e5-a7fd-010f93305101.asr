@@ -532,7 +532,6 @@
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
         <resource statement-guid="155bca53-07d9-11f0-bc12-1bbda1d7028e" type="resource" guid="155ba33e-07d9-11f0-bc12-1bbda1d7028e" />
         <resource statement-guid="e6fdcd25-07f5-11f0-bc12-1bbda1d7028e" type="resource" guid="e6fd7f02-07f5-11f0-bc12-1bbda1d7028e" />
-        <resource statement-guid="ecc6d15e-07f5-11f0-bc12-1bbda1d7028e" type="resource" guid="ecc6aa4b-07f5-11f0-bc12-1bbda1d7028e" />
         <resource statement-guid="db73531d-07f7-11f0-bc12-1bbda1d7028e" type="resource" guid="db732c0a-07f7-11f0-bc12-1bbda1d7028e" />
         <resource statement-guid="1c82d51f-07fa-11f0-bc12-1bbda1d7028e" type="resource" guid="1c82ae0b-07fa-11f0-bc12-1bbda1d7028e" />
         <resource statement-guid="1f31a1d4-07fa-11f0-bc12-1bbda1d7028e" type="resource" guid="1f317ac1-07fa-11f0-bc12-1bbda1d7028e" />
@@ -5845,16 +5844,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="e6fdf436-07f5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.diskpart</object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="ecc6d15e-07f5-11f0-bc12-1bbda1d7028e">
-            <resource guid="ecc6aa4b-07f5-11f0-bc12-1bbda1d7028e">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="ecc6aa4d-07f5-11f0-bc12-1bbda1d7028e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="ecc6d15f-07f5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.dfs</object>
               </predicate>
             </resource>
           </object>

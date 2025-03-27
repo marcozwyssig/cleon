@@ -33,7 +33,7 @@ public class FunctionSpace_SystemArc42 {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d6f12bfe-fd72-11ea-bd30-fd04439335e1")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> AllSystems();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystems();
 
   }
   
@@ -112,4 +112,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,YljEWaVsj36U2J1KqY36Y7FgpKQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,ybzF+R6GV1XsQZ8JhtQ+v61DGr4=] */

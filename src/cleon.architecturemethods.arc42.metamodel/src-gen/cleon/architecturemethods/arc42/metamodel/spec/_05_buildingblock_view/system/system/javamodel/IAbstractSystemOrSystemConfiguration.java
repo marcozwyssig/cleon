@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IAbstractSystemOrSystemConfiguration extends cleon.common.modul
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cb1b0e28-4bcd-11ed-9983-274ab90bcd39,BvgjhVmPX8+pT5NFH4eGb4N+xLE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cb1b0e28-4bcd-11ed-9983-274ab90bcd39,7xYlF/f2HJmbqH/NajL/S/WOAh0=] */

@@ -8,10 +8,10 @@ public interface IServiceAccountBuildingBlockSystem extends cleon.common.doc.met
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem selectServiceAccountTemplatesForSystem();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem selectServiceAccountTemplatesForSystem();
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccountTemplate> selectServiceAccountTemplate();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34244042-395b-11eb-978d-47c0228773ba,vbTIeJEKDaUS7ZgOkJM/itgxjAU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34244042-395b-11eb-978d-47c0228773ba,vjyw6eulMlIAoJdgXt1RMsdnZA4=] */

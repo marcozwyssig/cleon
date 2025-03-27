@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class AbstractSystemOrSystemConfiguration extends DynamicResourc
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb1b0e28-4bcd-11ed-9983-274ab90bcd39,UWXCJjfgDSYDIKHgmVf7q9OZhAk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb1b0e28-4bcd-11ed-9983-274ab90bcd39,YLBJu8Tmi7jgHRqzYfU3g91KkdM=] */

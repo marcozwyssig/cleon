@@ -2,7 +2,7 @@
 skinparam componentStyle uml2
 
 component FTP as "FTP" <<ExternalSystem>>
-component Chess as "Chess" <<SoftwareSystem>>
+component Chess as "Chess" <<System>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ' Begin Protected Region [[layouting]]

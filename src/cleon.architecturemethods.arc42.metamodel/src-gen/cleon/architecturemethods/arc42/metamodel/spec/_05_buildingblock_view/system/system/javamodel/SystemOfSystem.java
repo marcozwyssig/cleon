@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class AbstractSystem extends DynamicResource implements IAbstractSystem {
+public class SystemOfSystem extends DynamicResource implements ISystemOfSystem {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbstractSystem> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbstractSystem>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystemOfSystem> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystemOfSystem>() {
     
     @Override
-    public IAbstractSystem create() {
-      return new AbstractSystem();
+    public ISystemOfSystem create() {
+      return new SystemOfSystem();
     }
     
     @Override
-    public IAbstractSystem create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new AbstractSystem(resourceRepository, resource);
+    public ISystemOfSystem create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new SystemOfSystem(resourceRepository, resource);
     }
   
   };
 
-  public AbstractSystem() {
-    super(IAbstractSystem.TYPE_ID);
+  public SystemOfSystem() {
+    super(ISystemOfSystem.TYPE_ID);
   }
   
-  public AbstractSystem(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IAbstractSystem.TYPE_ID);
+  public SystemOfSystem(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISystemOfSystem.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public AbstractSystem setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
+  public SystemOfSystem setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
@@ -65,7 +65,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
   }
 
-  public AbstractSystem setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
+  public SystemOfSystem setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, decomposeComponent);
     return this;
   }
@@ -75,7 +75,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IDependency.class, cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn);
   }
 
-  public AbstractSystem setDependsOn(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> dependsOn) {
+  public SystemOfSystem setDependsOn(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IDependency> dependsOn) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DependentBuildingBlock_dependsOn, dependsOn);
     return this;
   }
@@ -85,7 +85,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp);
   }
 
-  public AbstractSystem setDependsOnCmp(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency> dependsOnCmp) {
+  public SystemOfSystem setDependsOnCmp(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency> dependsOnCmp) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp, dependsOnCmp);
     return this;
   }
@@ -95,7 +95,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public AbstractSystem setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public SystemOfSystem setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -105,7 +105,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IInteraction.class, cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts);
   }
 
-  public AbstractSystem setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
+  public SystemOfSystem setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts, interacts);
     return this;
   }
@@ -115,7 +115,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In);
   }
 
-  public AbstractSystem setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
+  public SystemOfSystem setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
     _setMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, ports_In);
     return this;
   }
@@ -125,8 +125,18 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out);
   }
 
-  public AbstractSystem setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
+  public SystemOfSystem setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, ports_Out);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> selectSystems() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.SystemPackage.SystemOfSystem_systems);
+  }
+
+  public SystemOfSystem setSystems(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> systems) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.SystemPackage.SystemOfSystem_systems, systems);
     return this;
   }
     
@@ -135,7 +145,7 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public AbstractSystem setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public SystemOfSystem setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -147,13 +157,19 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_dependsOnCmp, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.SystemPackage.SystemOfSystem_systems, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.ISystemOfSystem selectToMeSystems(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.ISystemOfSystem.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.SystemPackage.SystemOfSystem_systems, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a,KwBCb+5nhECnUHYSEZeBEzN37ts=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,025f7a4c-3eac-11ea-8cb4-0b006790b142,uE3z1+PhPloMP/Jgq8RyDaLsp0g=] */

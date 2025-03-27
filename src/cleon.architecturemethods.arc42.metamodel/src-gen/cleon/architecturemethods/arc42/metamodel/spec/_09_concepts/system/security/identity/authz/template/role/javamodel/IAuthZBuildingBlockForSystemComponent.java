@@ -8,7 +8,7 @@ public interface IAuthZBuildingBlockForSystemComponent extends cleon.common.reso
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent selectSystemOrSystemComponent();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent selectSystemOrSystemComponent();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> selectBasedOn();
   
@@ -16,4 +16,4 @@ public interface IAuthZBuildingBlockForSystemComponent extends cleon.common.reso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59a32567-d423-11eb-9862-7f597b9587dd,Li9x0q4FWTu1BXWWpE8eN78ZfkY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59a32567-d423-11eb-9862-7f597b9587dd,iayB3hgPh0GsFYvSYxaEBjMks+0=] */

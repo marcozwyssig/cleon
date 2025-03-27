@@ -10,7 +10,7 @@ public interface IOperation extends cleon.common.doc.metamodel.spec.chapter.java
   
   public cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor selectActor();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> selectSystemsToOperate();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> selectSystemsToOperate();
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectCustomChapter();
   
@@ -18,4 +18,4 @@ public interface IOperation extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34e65236-1a61-11e9-b1cd-355f2e2f05a9,t6h79bKAkhjE40XtkL1LlsOKYSo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34e65236-1a61-11e9-b1cd-355f2e2f05a9,xO0QNPIqJwOIuJvaQrkWmFUufTw=] */

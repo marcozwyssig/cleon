@@ -19,7 +19,7 @@ public interface IBuildingBlockView extends cleon.architecturemethods.arc42.meta
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem selectRootSystem();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractRootSystem selectRootSystem();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox> selectLevel_1_whitebox();
   
@@ -35,4 +35,4 @@ public interface IBuildingBlockView extends cleon.architecturemethods.arc42.meta
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,aJdPfwAgVxlRtldoWjF/syrEjSA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,YbXP7M9Hqabq4eAoUJqMFepvBd4=] */

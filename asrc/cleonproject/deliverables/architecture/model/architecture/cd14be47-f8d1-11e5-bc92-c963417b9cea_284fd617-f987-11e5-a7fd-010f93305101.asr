@@ -538,6 +538,7 @@
         <resource statement-guid="bb8377c9-4918-11eb-9bd7-6114c4f17e0c" type="resource" guid="bb8377c6-4918-11eb-9bd7-6114c4f17e0c" />
         <resource statement-guid="b9f7ce9f-4918-11eb-9bd7-6114c4f17e0c" type="resource" guid="b9f7a78c-4918-11eb-9bd7-6114c4f17e0c" />
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
+        <resource statement-guid="80b7702a-0b06-11f0-95b9-95d0cc9a328a" type="resource" guid="80b74917-0b06-11f0-95b9-95d0cc9a328a" />
       </owns>
     </resource>
   </owns>
@@ -5904,6 +5905,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="40e0cef0-7a96-11eb-87e9-09aeef13879c" type="literal">cleon.testingmethods.hermes.metamodel.template.xml</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="80b7702a-0b06-11f0-95b9-95d0cc9a328a">
+            <resource guid="80b74917-0b06-11f0-95b9-95d0cc9a328a">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="80b74919-0b06-11f0-95b9-95d0cc9a328a" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="80b7e55c-0b06-11f0-95b9-95d0cc9a328a" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system</object>
               </predicate>
             </resource>
           </object>

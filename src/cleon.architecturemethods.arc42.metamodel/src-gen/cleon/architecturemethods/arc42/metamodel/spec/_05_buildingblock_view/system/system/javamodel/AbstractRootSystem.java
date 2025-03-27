@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class AbstractRootSystem extends DynamicResource implements IAbs
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,YMh/IVKyb3uf8bULCKfPISrTdgQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,GiIgRIEgkE0YKwXusTwlHxwHOho=] */

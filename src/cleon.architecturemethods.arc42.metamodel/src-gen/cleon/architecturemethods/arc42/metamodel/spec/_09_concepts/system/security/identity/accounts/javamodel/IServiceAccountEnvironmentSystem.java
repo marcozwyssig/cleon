@@ -8,10 +8,10 @@ public interface IServiceAccountEnvironmentSystem extends ch.actifsource.core.ja
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem selectServiceAccountsForSystem();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem selectServiceAccountsForSystem();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> selectAccounts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b2c26a28-394e-11eb-93f1-c3f5ad8bb73f,Reb9tJwolU+EW0EZDmHdENLZu7Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b2c26a28-394e-11eb-93f1-c3f5ad8bb73f,08pf48FkVzqp1sjyf6hG3rrAsu0=] */

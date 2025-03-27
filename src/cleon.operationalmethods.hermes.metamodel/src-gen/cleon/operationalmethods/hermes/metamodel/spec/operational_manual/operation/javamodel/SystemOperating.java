@@ -110,11 +110,11 @@ public class SystemOperating extends DynamicResource implements ISystemOperating
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem selectSystem() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem selectSystem() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system);
   }
 
-  public SystemOperating setSystem(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem system) {
+  public SystemOperating setSystem(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem system) {
     _setSingle(cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system, system);
     return this;
   }
@@ -150,13 +150,13 @@ public class SystemOperating extends DynamicResource implements ISystemOperating
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.ISystemComponentOperating.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_operatingSystemComponent, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.ISystemOperating> selectToMeSystem(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem object) {
+  public static java.util.List<cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.ISystemOperating> selectToMeSystem(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem object) {
     return _getToMeList(object.getRepository(), cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.ISystemOperating.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.SystemOperating_system, object.getResource());
   }
   
@@ -165,4 +165,4 @@ public class SystemOperating extends DynamicResource implements ISystemOperating
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46b6647d-94c1-11ec-ab3a-174a15580942,M+8P/qGkf8P9e7Ps71LRUXl4P4o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46b6647d-94c1-11ec-ab3a-174a15580942,mhB/HYsUha2Zckvw0h7JOrgbAE4=] */

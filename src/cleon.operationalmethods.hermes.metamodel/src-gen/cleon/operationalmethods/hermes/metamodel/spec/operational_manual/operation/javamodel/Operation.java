@@ -130,11 +130,11 @@ public class Operation extends DynamicResource implements IOperation {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> selectSystemsToOperate() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> selectSystemsToOperate() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate);
   }
 
-  public Operation setSystemsToOperate(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> systemsToOperate) {
+  public Operation setSystemsToOperate(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> systemsToOperate) {
     _setList(cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate, systemsToOperate);
     return this;
   }
@@ -172,7 +172,7 @@ public class Operation extends DynamicResource implements IOperation {
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.ISystemConfigurationOperation.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_operationSystemConfiguration, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -182,7 +182,7 @@ public class Operation extends DynamicResource implements IOperation {
     return _getToMeList(object.getRepository(), cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.IOperation.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_actor, object.getResource());
   }
   
-  public static java.util.List<cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.IOperation> selectToMeSystemsToOperate(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem object) {
+  public static java.util.List<cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.IOperation> selectToMeSystemsToOperate(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem object) {
     return _getToMeList(object.getRepository(), cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.javamodel.IOperation.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.operation.OperationPackage.Operation_systemsToOperate, object.getResource());
   }
   
@@ -195,4 +195,4 @@ public class Operation extends DynamicResource implements IOperation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,34e65236-1a61-11e9-b1cd-355f2e2f05a9,TJdotcpZxPazRuT83zJ/URT9nXs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,34e65236-1a61-11e9-b1cd-355f2e2f05a9,oNrpurJSV4ZAGfAz/JmEpWg6XX4=] */

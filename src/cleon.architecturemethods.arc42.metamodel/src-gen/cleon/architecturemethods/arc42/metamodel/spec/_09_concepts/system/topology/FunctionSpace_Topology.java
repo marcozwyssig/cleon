@@ -90,13 +90,13 @@ public class FunctionSpace_Topology {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationWithAllowedManaged();
 
     @IDynamicResourceExtension.MethodId("d666903b-394e-11eb-93f1-c3f5ad8bb73f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> AllSystems();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystems();
 
     @IDynamicResourceExtension.MethodId("32297793-394f-11eb-93f1-c3f5ad8bb73f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> AllSystemsDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystemsDistinct();
 
     @IDynamicResourceExtension.MethodId("55c53842-394f-11eb-93f1-c3f5ad8bb73f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem> AllSystemsWithAllowedManaged();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystemsWithAllowedManaged();
 
     @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
     public java.lang.String Owner();
@@ -1228,4 +1228,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,QtnsgWJQumSUaRQxxHPRlCqaAUs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,czbPGNnsKcUonB/CwJAqCFI00gk=] */

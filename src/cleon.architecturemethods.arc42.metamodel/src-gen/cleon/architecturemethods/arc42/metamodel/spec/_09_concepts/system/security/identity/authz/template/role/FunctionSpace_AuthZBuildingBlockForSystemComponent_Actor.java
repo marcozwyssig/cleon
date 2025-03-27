@@ -91,7 +91,7 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
   public static interface IAuthZBuildingBlockForResponsibilityFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2607621f-4bc2-11ed-9983-274ab90bcd39")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent> AllComponentsForAuthZBuildingBlock();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent> AllComponentsForAuthZBuildingBlock();
 
   }
   
@@ -115,4 +115,4 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,TLsIGTMLuf/x6BRIv7kine8wxRY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,IuBhjSP+0ugAHNJV9TSrGCk7Bv4=] */

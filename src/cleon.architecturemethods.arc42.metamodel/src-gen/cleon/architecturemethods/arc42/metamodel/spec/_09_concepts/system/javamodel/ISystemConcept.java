@@ -8,8 +8,8 @@ public interface ISystemConcept extends ch.actifsource.core.javamodel.IDecorator
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem selectSystem();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem selectSystem();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,600f5efb-c93d-11eb-adc4-d18d1353eb6e,zWyvBpjZMY8B1FLvwKtSiLU0OAU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,600f5efb-c93d-11eb-adc4-d18d1353eb6e,7AegJvYBjYe+RU6yGZ4cS1193wQ=] */

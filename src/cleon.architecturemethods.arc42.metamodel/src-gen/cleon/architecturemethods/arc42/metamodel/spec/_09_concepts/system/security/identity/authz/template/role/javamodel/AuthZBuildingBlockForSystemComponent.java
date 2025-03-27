@@ -158,11 +158,11 @@ public class AuthZBuildingBlockForSystemComponent extends DynamicResource implem
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent selectSystemOrSystemComponent() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent selectSystemOrSystemComponent() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent);
   }
 
-  public AuthZBuildingBlockForSystemComponent setSystemOrSystemComponent(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent systemOrSystemComponent) {
+  public AuthZBuildingBlockForSystemComponent setSystemOrSystemComponent(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent systemOrSystemComponent) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent, systemOrSystemComponent);
     return this;
   }
@@ -210,14 +210,14 @@ public class AuthZBuildingBlockForSystemComponent extends DynamicResource implem
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_basedOn, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_usedBy, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> selectToMeSystemOrSystemComponent(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystemOrSystemComponent object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> selectToMeSystemOrSystemComponent(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.RolePackage.AuthZBuildingBlockForSystemComponent_systemOrSystemComponent, object.getResource());
   }
   
@@ -230,4 +230,4 @@ public class AuthZBuildingBlockForSystemComponent extends DynamicResource implem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59a32567-d423-11eb-9862-7f597b9587dd,2vmAkDr8JcUL8l0JV9HeLMk+ekY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59a32567-d423-11eb-9862-7f597b9587dd,lrVKCois/S8ebaxWR+ePCqNWxAg=] */

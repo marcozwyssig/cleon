@@ -22,7 +22,7 @@ public class FunctionSpace_arc42_Buildingblock_View {
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fc6a39f7-437a-11e6-a9d7-97cf4f7c398b")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem GetSystem();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractRootSystem GetSystem();
 
     @IDynamicResourceExtension.MethodId("0726680c-83dd-11ea-bd03-8dee7901cd7f")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> Level1();
@@ -176,4 +176,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,32yxdeLeM6tgn4t0E/s6jDo4aws=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,Ow44/5oMZdikMr2ECUeDtR9bUow=] */

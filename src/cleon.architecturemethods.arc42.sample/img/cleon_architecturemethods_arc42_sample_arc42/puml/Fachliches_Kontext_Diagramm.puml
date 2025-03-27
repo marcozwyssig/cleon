@@ -3,7 +3,7 @@ skinparam componentStyle uml2
 
 actor Player__F_A as "Player A"
 actor Player__F_B as "Player B"
-component Chess as "Chess" <<SoftwareSystem>>
+component Chess as "Chess" <<System>>
 Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
 Player__F_B -down-> Chess : interacts

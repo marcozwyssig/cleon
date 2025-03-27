@@ -86,7 +86,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetAllDecomposingSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem System();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem System();
 
     @IDynamicResourceExtension.MethodId("eadcbef1-4bc1-11ed-9983-274ab90bcd39")
     public java.lang.String ShortnameOrOverride();
@@ -142,7 +142,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem abstractSystem);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem abstractSystem);
 
   }
   
@@ -153,7 +153,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     private AbstractSystemFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem abstractSystem) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem abstractSystem) {
       return null;
     }
 
@@ -163,7 +163,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     private AbstractSystemFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IAbstractSystem abstractSystem) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem abstractSystem) {
       return DynamicResourceUtil.invoke(IAbstractSystemFunctionsImpl.class, AbstractSystemFunctionsImpl.INSTANCE, abstractSystem).SystemConfigurationProperties(abstractSystem);
     }
 
@@ -327,4 +327,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,Yxu/Jt2oFw5XHRWxUR42PBSkyhI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,+uu3jsmo0OF0N48rLLTDQtTDYK4=] */

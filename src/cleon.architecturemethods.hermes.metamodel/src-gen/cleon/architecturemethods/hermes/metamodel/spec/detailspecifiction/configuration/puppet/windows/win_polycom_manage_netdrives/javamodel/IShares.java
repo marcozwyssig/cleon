@@ -6,9 +6,11 @@ public interface IShares extends cleon.architecturemethods.hermes.metamodel.spec
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("91b93da6-07fa-11f0-bc12-1bbda1d7028e");
   
-  public java.lang.String selectRootForShares();
+  // attributes
   
-  // relations
+  public java.lang.String selectDomain();
+  
+  public java.lang.String selectRootForShares();
   
   public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IAbstractGroup> selectGroups();
   
@@ -18,4 +20,4 @@ public interface IShares extends cleon.architecturemethods.hermes.metamodel.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,91b93da6-07fa-11f0-bc12-1bbda1d7028e,qjGM1dH3Nz5JfQ3IN0HDWUMIUZw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,91b93da6-07fa-11f0-bc12-1bbda1d7028e,57ktsn3/t5/SkyCK5kOmt+YfI+A=] */

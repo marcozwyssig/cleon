@@ -32,12 +32,18 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> Filter();
 
+    @IDynamicResourceExtension.MethodId("ed913d3a-0a5d-11f0-a414-9b52960625e5")
+    public java.lang.String CustomValues();
+
   }
   
   public static interface IAbstractConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList);
+
+    @IDynamicResourceExtension.MethodId("ed913d3a-0a5d-11f0-a414-9b52960625e5")
+    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration);
 
   }
   
@@ -61,6 +67,11 @@ public class FunctionSpace_Puppet_Detailspecification {
       /* End Protected Region   [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
     }
 
+    @Override
+    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration) {
+      return null;
+    }
+
   }
   
   public static class AbstractConfigurationFunctions {
@@ -69,6 +80,10 @@ public class FunctionSpace_Puppet_Detailspecification {
 
     public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList) {
       return DynamicResourceUtil.invoke(IAbstractConfigurationFunctionsImpl.class, AbstractConfigurationFunctionsImpl.INSTANCE, abstractConfigurationList).Filter(abstractConfigurationList);
+    }
+
+    public static java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration) {
+      return DynamicResourceUtil.invoke(IAbstractConfigurationFunctionsImpl.class, AbstractConfigurationFunctionsImpl.INSTANCE, abstractConfiguration).CustomValues(abstractConfiguration);
     }
 
   }
@@ -95,6 +110,31 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class SysCfgSpecificationFunctions {
 
     private SysCfgSpecificationFunctions() {}
+
+  }
+
+  public static interface ISiteSpecificationsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fe442380-0a5d-11f0-a414-9b52960625e5")
+    public java.lang.String CustomValues();
+
+  }
+  
+  public static interface ISiteSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SiteSpecificationsFunctionsImpl implements ISiteSpecificationsFunctionsImpl {
+
+    public static final ISiteSpecificationsFunctionsImpl INSTANCE = new SiteSpecificationsFunctionsImpl();
+
+    private SiteSpecificationsFunctionsImpl() {}
+
+  }
+  
+  public static class SiteSpecificationsFunctions {
+
+    private SiteSpecificationsFunctions() {}
 
   }
 
@@ -445,4 +485,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,awc6K7RMc5sMPa3PlPId0PTHWe8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,Q6NMl+9BV0jAyqleMvdeixMSiBk=] */

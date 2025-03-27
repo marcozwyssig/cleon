@@ -201,6 +201,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
+    @IDynamicResourceExtension.MethodId("b72e1434-0ad4-11f0-95dd-6bc1800a1490")
+    public java.lang.String Gateway();
+
     @IDynamicResourceExtension.MethodId("17b56361-cff2-11ea-99e7-03141914df18")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr();
 
@@ -252,4 +255,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,KyH3rkAbwuxLPWqqN3vulRRWIV0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,rVWm1SaWElBQ4akttS/7hJv/XWg=] */

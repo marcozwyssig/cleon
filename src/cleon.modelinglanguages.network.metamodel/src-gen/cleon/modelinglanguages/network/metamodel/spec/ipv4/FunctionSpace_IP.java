@@ -331,6 +331,9 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
+    @IDynamicResourceExtension.MethodId("ce932742-0ad4-11f0-95dd-6bc1800a1490")
+    public java.lang.String Gateway();
+
     @IDynamicResourceExtension.MethodId("395edf32-cff4-11ea-9eba-a3ed39c8fa1a")
     public java.lang.String DisplayName();
 
@@ -346,6 +349,9 @@ public class FunctionSpace_IP {
 
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask);
+
+    @IDynamicResourceExtension.MethodId("ce932742-0ad4-11f0-95dd-6bc1800a1490")
+    public java.lang.String Gateway(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask);
 
   }
   
@@ -379,6 +385,17 @@ public class FunctionSpace_IP {
       /* End Protected Region   [[04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46]] */
     }
 
+    @Override
+    public java.lang.String Gateway(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      /* Begin Protected Region [[ce932742-0ad4-11f0-95dd-6bc1800a1490]] */
+    	String networkAddress = NetworkAddress(iPv4_Mask);
+    	String[] octets = networkAddress.split("\\.");
+    	int lastOctet = Integer.parseInt(octets[3]) + 1;
+    	octets[3] = String.valueOf(lastOctet);
+    	return String.join(".", octets);   
+      /* End Protected Region   [[ce932742-0ad4-11f0-95dd-6bc1800a1490]] */
+    }
+
   }
   
   public static class IPv4_MaskFunctions {
@@ -395,6 +412,10 @@ public class FunctionSpace_IP {
 
     public static java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
       return DynamicResourceUtil.invoke(IIPv4_MaskFunctionsImpl.class, IPv4_MaskFunctionsImpl.INSTANCE, iPv4_Mask).NetworkAddress(iPv4_Mask);
+    }
+
+    public static java.lang.String Gateway(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      return DynamicResourceUtil.invoke(IIPv4_MaskFunctionsImpl.class, IPv4_MaskFunctionsImpl.INSTANCE, iPv4_Mask).Gateway(iPv4_Mask);
     }
 
   }
@@ -491,4 +512,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,91cgB534jUMMkKvQq88RCnERM7Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,vwROFYXcjoe0IS7cqfQKchOzqO8=] */

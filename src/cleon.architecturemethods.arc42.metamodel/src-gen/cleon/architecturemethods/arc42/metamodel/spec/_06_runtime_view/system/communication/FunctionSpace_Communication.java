@@ -757,8 +757,10 @@ public class FunctionSpace_Communication {
       		for (final var concreteSysCfg : hosts) {
       			final var concreteSysCfgFunctions = concreteSysCfg
       					.extension(ISystemConfigurationFunctions.class);
-      			result.append(concreteSysCfgFunctions.AllHostGroupName(env, destinationSubZone));
-      			result.append(System.lineSeparator());
+      			for( final var vlan : destinationSubZone.selectAllVlans()) {
+      				result.append(concreteSysCfgFunctions.AllHostGroupName(env, destinationSubZone, vlan));
+      				result.append(System.lineSeparator());
+      			}
       		}
       	}
       }
@@ -1177,8 +1179,10 @@ public class FunctionSpace_Communication {
 
       		for (final var concreteSysCfg : hosts) {
       			final var concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);
-      			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone));
-      			result.append(System.lineSeparator());
+      			for( final var vlan : sourceSubZone.selectAllVlans()) {
+          			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone, vlan));
+          			result.append(System.lineSeparator());      				
+      			}
       		}
       	}
       }

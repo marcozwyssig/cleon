@@ -932,7 +932,7 @@ public class FunctionSpace_SystemConfiguration {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllDependsOnSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("4c54396f-c784-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String AllHostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    public java.lang.String AllHostGroupName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan vlan);
 
     @IDynamicResourceExtension.MethodId("b1e03eb1-a990-11eb-8f9b-01c801f6a12b")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHostsWithEnvironment(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode systemEnvironment);
@@ -1292,4 +1292,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,gU8xiiwRgyAYJrs5JJgZf1ZYDkc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,D/cK0Wcf1bR4um65uxHXfixD3Yo=] */

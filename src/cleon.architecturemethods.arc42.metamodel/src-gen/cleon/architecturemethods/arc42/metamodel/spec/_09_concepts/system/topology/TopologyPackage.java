@@ -110,7 +110,6 @@ public class TopologyPackage {
   public static final Resource RN_logicalSites = new Resource("258d8c78-8bcb-11ef-ae6c-d1c0dc132837");
   public static final Resource RN_aE_LogicalSite = new Resource("574d7320-8bcb-11ef-ae6c-d1c0dc132837");
   public static final Resource FunctionSpace_aE_Topology_RN_aE_LogicalSite = new Resource("a0e3f338-8bcb-11ef-ae6c-d1c0dc132837");
-  public static final Resource AbstractSiteWithFunctionID_overrideSiteInHostGroups = new Resource("7bc26fa3-0b04-11f0-95dd-6bc1800a1490");
   
   /* Begin Protected Region [[user]] */
   
@@ -131,4 +130,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,riwq06fNIWIkECr2oe6tYYrWm5k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology,OQphk36ywRh1+s3bbatput3Guj0=] */

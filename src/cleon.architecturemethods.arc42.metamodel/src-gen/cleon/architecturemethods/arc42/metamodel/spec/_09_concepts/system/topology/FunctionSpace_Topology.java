@@ -32,65 +32,44 @@ public class FunctionSpace_Topology {
 
   public static interface IAbstractSiteFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("8accd30d-9370-11e9-8139-e76b19cfb4bf")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology Topology();
-
     @IDynamicResourceExtension.MethodId("6c917753-9375-11e9-8139-e76b19cfb4bf")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts> AllAbstractSiteHosts();
-
-    @IDynamicResourceExtension.MethodId("2e419e47-941f-11e9-bbdf-9b4dacbbf865")
-    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> AllZones();
-
-    @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId();
-
-    @IDynamicResourceExtension.MethodId("394205d2-b07d-11ea-b791-9b401fd02359")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite ParentSite();
-
-    @IDynamicResourceExtension.MethodId("0a9292f3-5e1a-11ea-b835-fbb06fdf6352")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
-
-    @IDynamicResourceExtension.MethodId("da63a564-4ff4-11eb-8df9-adb928521f3a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> GetAbstractHostsBySystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("d6b27956-1eb0-11eb-9eef-0dadb2b460da")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHostsWithAllowedManaged();
 
+    @IDynamicResourceExtension.MethodId("0a9292f3-5e1a-11ea-b835-fbb06fdf6352")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
+
     @IDynamicResourceExtension.MethodId("7442d538-b4a2-11ea-b938-599963fc0a84")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> AllSites();
-
-    @IDynamicResourceExtension.MethodId("69ca3de9-dd82-11ea-9383-71e9cf1c59dd")
-    public java.lang.String MonitoringSiteName();
-
-    @IDynamicResourceExtension.MethodId("29579ce0-1dac-11eb-9d1c-a7ed1ac99c53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("c47824db-1deb-11eb-9bc6-673ab35ba343")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDepends();
-
-    @IDynamicResourceExtension.MethodId("ea6c7b70-1deb-11eb-9bc6-673ab35ba343")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsDistinct();
-
-    @IDynamicResourceExtension.MethodId("4d5553d5-1dac-11eb-9d1c-a7ed1ac99c53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsDistinct();
-
-    @IDynamicResourceExtension.MethodId("0b8efbbd-19bb-11ea-bc72-af84f3c76c84")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> GetAllAllowedManage();
-
-    @IDynamicResourceExtension.MethodId("3b06b22a-1db6-11eb-9d1c-a7ed1ac99c53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("a4339819-1db6-11eb-9d1c-a7ed1ac99c53")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponentsDistinct();
 
-    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
-    public java.lang.String ShortName();
+    @IDynamicResourceExtension.MethodId("3b06b22a-1db6-11eb-9d1c-a7ed1ac99c53")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d9c29dd7-394c-11eb-93f1-c3f5ad8bb73f")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationWithAllowedManaged();
 
-    @IDynamicResourceExtension.MethodId("d666903b-394e-11eb-93f1-c3f5ad8bb73f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystems();
+    @IDynamicResourceExtension.MethodId("4d5553d5-1dac-11eb-9d1c-a7ed1ac99c53")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsDistinct();
+
+    @IDynamicResourceExtension.MethodId("971cc33b-d5c9-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponentsDistinct();
+
+    @IDynamicResourceExtension.MethodId("970d4edc-d5c8-11ec-ad12-8d6f8e00bc94")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponents();
+
+    @IDynamicResourceExtension.MethodId("ea6c7b70-1deb-11eb-9bc6-673ab35ba343")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsDistinct();
+
+    @IDynamicResourceExtension.MethodId("c47824db-1deb-11eb-9bc6-673ab35ba343")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDepends();
+
+    @IDynamicResourceExtension.MethodId("29579ce0-1dac-11eb-9d1c-a7ed1ac99c53")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("32297793-394f-11eb-93f1-c3f5ad8bb73f")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystemsDistinct();
@@ -98,30 +77,60 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("55c53842-394f-11eb-93f1-c3f5ad8bb73f")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystemsWithAllowedManaged();
 
-    @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
-    public java.lang.String Owner();
+    @IDynamicResourceExtension.MethodId("d666903b-394e-11eb-93f1-c3f5ad8bb73f")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem> AllSystems();
 
-    @IDynamicResourceExtension.MethodId("970d4edc-d5c8-11ec-ad12-8d6f8e00bc94")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponents();
+    @IDynamicResourceExtension.MethodId("2e419e47-941f-11e9-bbdf-9b4dacbbf865")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> AllZones();
 
     @IDynamicResourceExtension.MethodId("dfb6b05b-d5c8-11ec-ad12-8d6f8e00bc94")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllowAccessWith();
 
-    @IDynamicResourceExtension.MethodId("971cc33b-d5c9-11ec-ad12-8d6f8e00bc94")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsAndAllowedManagedAccessComponentsDistinct();
+    @IDynamicResourceExtension.MethodId("da63a564-4ff4-11eb-8df9-adb928521f3a")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> GetAbstractHostsBySystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sysCfg);
+
+    @IDynamicResourceExtension.MethodId("0b8efbbd-19bb-11ea-bc72-af84f3c76c84")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractFunctionalSite> GetAllAllowedManage();
+
+    @IDynamicResourceExtension.MethodId("69ca3de9-dd82-11ea-9383-71e9cf1c59dd")
+    public java.lang.String MonitoringSiteName();
+
+    @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
+    public java.lang.String Owner();
+
+    @IDynamicResourceExtension.MethodId("394205d2-b07d-11ea-b791-9b401fd02359")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite ParentSite();
+
+    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
+    public java.lang.String ShortName();
+
+    @IDynamicResourceExtension.MethodId("838e5637-0b09-11f0-95b9-95d0cc9a328a")
+    public java.lang.String SiteNameForHostgroup();
 
     @IDynamicResourceExtension.MethodId("d71cdd5a-3555-11ef-86dc-5dad23d0566b")
     public java.lang.String SiteName();
+
+    @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId();
+
+    @IDynamicResourceExtension.MethodId("8accd30d-9370-11e9-8139-e76b19cfb4bf")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology Topology();
+
+    @IDynamicResourceExtension.MethodId("0b92fe5b-0b2a-11f0-95b9-95d0cc9a328a")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UseVlanBySecurityZone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
+    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite);
+
     @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList);
 
-    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
-    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite);
+    @IDynamicResourceExtension.MethodId("0b92fe5b-0b2a-11f0-95b9-95d0cc9a328a")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UseVlanBySecurityZone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite);
 
   }
   
@@ -130,6 +139,11 @@ public class FunctionSpace_Topology {
     public static final IAbstractSiteFunctionsImpl INSTANCE = new AbstractSiteFunctionsImpl();
 
     private AbstractSiteFunctionsImpl() {}
+
+    @Override
+    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+      return null;
+    }
 
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList) {
@@ -142,8 +156,15 @@ public class FunctionSpace_Topology {
     }
 
     @Override
-    public java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
-      return null;
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UseVlanBySecurityZone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+      /* Begin Protected Region [[0b92fe5b-0b2a-11f0-95b9-95d0cc9a328a]] */
+    	final var networkZoneList = abstractSite.selectNetworkSite().selectNetworkSubZone().get(securitySubZone.getResource());
+    	final var result = new ArrayList<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan>();
+    	for( final var networkZone : networkZoneList) {
+    		result.add(networkZone.selectVlan());    		 
+    	}
+    	return result;
+      /* End Protected Region   [[0b92fe5b-0b2a-11f0-95b9-95d0cc9a328a]] */
     }
 
   }
@@ -152,12 +173,16 @@ public class FunctionSpace_Topology {
 
     private AbstractSiteFunctions() {}
 
+    public static java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).ShortName(abstractSite);
+    }
+
     public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID> SortByFunctionId(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList) {
       return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSiteList).SortByFunctionId(abstractSiteList);
     }
 
-    public static java.lang.String ShortName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
-      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).ShortName(abstractSite);
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UseVlanBySecurityZone(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).UseVlanBySecurityZone(securitySubZone, abstractSite);
     }
 
   }
@@ -1228,4 +1253,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,czbPGNnsKcUonB/CwJAqCFI00gk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,MqJ2tiEI6LYrcf2j7a4wskkGNmc=] */

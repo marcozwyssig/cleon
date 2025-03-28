@@ -12,10 +12,8 @@ public interface IAbstractSiteWithFunctionID extends cleon.architecturemethods.a
   
   public java.lang.String selectSiteShortName();
   
-  public java.lang.String selectOverrideSiteInHostGroups();
-  
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> selectSkipHostGenerationFor();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bc8dc18d-3633-11ea-b5c2-e3e297a45d39,GmhzJuH1B0QbruDe1OQPin6smDs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bc8dc18d-3633-11ea-b5c2-e3e297a45d39,WI1BfqkdwL0mqXBSYSbSo1Y3PQM=] */

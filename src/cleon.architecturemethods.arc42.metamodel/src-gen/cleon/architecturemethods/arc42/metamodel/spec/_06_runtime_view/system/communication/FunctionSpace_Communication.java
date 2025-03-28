@@ -745,7 +745,7 @@ public class FunctionSpace_Communication {
       				.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(
       						TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
       			final var siteFunctions = siteWithHosts.extension(IAbstractSiteFunctions.class);
-      			for( final var vlan : destinationSubZone.selectAllVlans()) {
+      			for( final var vlan : siteFunctions.UseVlanBySecurityZone(destinationSubZone)) {
           			result.append(destinationSubZoneFunctions.HostGroupPrefix() + "GRP-HOS-" + configurationFunctions.TypeName(destinationSubZone) + "-" + siteFunctions.SiteName() + "-" + vlan.selectVlan_no());
           			result.append(System.lineSeparator());      				
       			}

@@ -8,6 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
+import java.util.ArrayList;
+
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
@@ -132,6 +134,9 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("c151fcde-f5eb-11ef-8efc-fdd1fc6fef2d")
     public java.lang.String HostGroupPrefix();
 
+    @IDynamicResourceExtension.MethodId("341599eb-0b2d-11f0-95b9-95d0cc9a328a")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UsedVlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site);
+
   }
   
   public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -147,6 +152,9 @@ public class FunctionSpace_Segmentation {
 
     @IDynamicResourceExtension.MethodId("2d13fa53-75bc-11ef-9e73-d7a16eeaf5fd")
     public java.lang.String ContextualGroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+
+    @IDynamicResourceExtension.MethodId("341599eb-0b2d-11f0-95b9-95d0cc9a328a")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UsedVlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
@@ -216,6 +224,18 @@ public class FunctionSpace_Segmentation {
       /* End Protected Region   [[2d13fa53-75bc-11ef-9e73-d7a16eeaf5fd]] */
     }
 
+    @Override
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UsedVlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
+      /* Begin Protected Region [[341599eb-0b2d-11f0-95b9-95d0cc9a328a]] */
+    	final var networkZones = site.selectNetworkSite().selectNetworkSubZone().get(securitySubZone.getResource());
+    	final var results = new ArrayList<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan>();
+    	for (final var networkZone : networkZones) {
+    		results.add(networkZone.selectVlan());
+    	}
+    	return results;
+      /* End Protected Region   [[341599eb-0b2d-11f0-95b9-95d0cc9a328a]] */
+    }
+
   }
   
   public static class SecuritySubZoneFunctions {
@@ -236,6 +256,10 @@ public class FunctionSpace_Segmentation {
 
     public static java.lang.String ContextualGroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
       return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZone).ContextualGroupName(systemConfiguration, securitySubZone);
+    }
+
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> UsedVlan(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
+      return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZone).UsedVlan(site, securitySubZone);
     }
 
   }
@@ -276,4 +300,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,i0ola6NgEjNteG+V9aG27IDtRoM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,L3dSruHGUvrLqrisqp8QAYBJqrs=] */

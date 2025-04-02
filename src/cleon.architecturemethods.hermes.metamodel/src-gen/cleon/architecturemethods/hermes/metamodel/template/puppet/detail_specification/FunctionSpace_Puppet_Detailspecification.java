@@ -404,9 +404,6 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("1d916fb7-0661-11f0-ad7c-c72b7a763977")
     public java.lang.String ClassImplementation();
 
-    @IDynamicResourceExtension.MethodId("1d916fc4-0661-11f0-ad7c-c72b7a763977")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
-
   }
   
   public static interface IEnforceServiceAccountsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -483,6 +480,59 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ILocalFwFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2c29df4e-0bd0-11f0-95b9-95d0cc9a328a")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("2c29df4f-0bd0-11f0-95b9-95d0cc9a328a")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ILocalFwFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalFwFunctionsImpl implements ILocalFwFunctionsImpl {
+
+    public static final ILocalFwFunctionsImpl INSTANCE = new LocalFwFunctionsImpl();
+
+    private LocalFwFunctionsImpl() {}
+
+  }
+  
+  public static class LocalFwFunctions {
+
+    private LocalFwFunctions() {}
+
+  }
+
+  public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("11f9f5b0-0bb7-11f0-95b9-95d0cc9a328a")
+    public java.lang.String OU();
+
+  }
+  
+  public static interface IServiceAccountConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceAccountConfigurationFunctionsImpl implements IServiceAccountConfigurationFunctionsImpl {
+
+    public static final IServiceAccountConfigurationFunctionsImpl INSTANCE = new ServiceAccountConfigurationFunctionsImpl();
+
+    private ServiceAccountConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceAccountConfigurationFunctions {
+
+    private ServiceAccountConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,Q6NMl+9BV0jAyqleMvdeixMSiBk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,14FuQiKRHMM1XLTtT3MfAEbddcU=] */

@@ -12,6 +12,8 @@ public interface IEnforceServiceAccounts extends cleon.architecturemethods.herme
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite selectSite();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountConfiguration> selectServiceAccount();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,03f382f0-0661-11f0-ad7c-c72b7a763977,J2/LhbLEiOqSS1CUjyB2JEVK0L4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,03f382f0-0661-11f0-ad7c-c72b7a763977,p5pJTlxkorzFlGLZgQldn0/WK9k=] */

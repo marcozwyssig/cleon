@@ -196,6 +196,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IRequirementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("84d341a7-0efc-11f0-b76f-5998f6696fc7")
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
+
+    public static final IRequirementFunctionsImpl INSTANCE = new RequirementFunctionsImpl();
+
+    private RequirementFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementFunctions {
+
+    private RequirementFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,kc5TAyD7qvyu9tNpEihNYWVkCJ4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,GYS2jG7o0iT2N2NrG6d7QFQsT/4=] */

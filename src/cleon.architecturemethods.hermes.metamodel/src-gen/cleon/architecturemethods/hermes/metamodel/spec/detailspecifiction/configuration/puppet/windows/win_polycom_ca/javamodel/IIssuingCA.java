@@ -8,6 +8,8 @@ public interface IIssuingCA extends cleon.architecturemethods.hermes.metamodel.s
   
   // attributes
   
+  public java.lang.String selectCaName();
+  
   public java.lang.String selectCaCADistinguishedNameSuffix();
   
   public java.lang.String selectCaCryptoProviderName();
@@ -24,8 +26,6 @@ public interface IIssuingCA extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.Integer selectCaAuditFilter();
   
-  public java.lang.String selectGmsa();
-  
   public java.lang.String selectRepeatinterval();
   
   public java.lang.String selectExportToUncPathCer();
@@ -36,8 +36,22 @@ public interface IIssuingCA extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.String selectTemplateUncPath();
   
+  public java.lang.String selectExportToUncFileNameRootCer();
+  
+  public java.lang.String selectExportToUncFileNameRootCrl();
+  
   public java.lang.Boolean selectCaExplicitIssuing();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectGmsa();
+  
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.javamodel.ICaCrlDistributionPoint> selectCaCrlDistributionPoint();
+  
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.javamodel.ICaAuthorityInformationAccess> selectCaAuthorityInformationAccess();
+  
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.javamodel.ICaTemplateInstalled> selectCaTemplates_installed();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.javamodel.ICaTemplateEnabled> selectCaTemplates_enabled();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,mQg88u2JsODY6tS1c9KiawQaPFM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,ViKhpLqBAcHY01SgZUyiJc90Gw4=] */

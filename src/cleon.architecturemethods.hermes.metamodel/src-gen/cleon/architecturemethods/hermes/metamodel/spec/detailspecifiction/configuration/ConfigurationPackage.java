@@ -19,6 +19,7 @@ public class ConfigurationPackage {
   public static final Resource FunctionSpace_aE_Configuration_SysCmpSpecificationAware = new Resource("ab25180f-059b-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Configuration_SysCmpSpecification = new Resource("bd56140b-059b-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Configuration_EnforceServiceAccounts = new Resource("7309c9d2-0bb6-11f0-95b9-95d0cc9a328a");
+  public static final Resource FunctionSpace_aE_Configuration_IssuingCA = new Resource("30f0f88a-0fd3-11f0-999f-c7e64e984aff");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +40,4 @@ public class ConfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration,xAsl8JJ3aMG6AVDaBi96pMD1FcE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration,a2LZMrg7UtW2ATxlGVA/K+sGAtY=] */

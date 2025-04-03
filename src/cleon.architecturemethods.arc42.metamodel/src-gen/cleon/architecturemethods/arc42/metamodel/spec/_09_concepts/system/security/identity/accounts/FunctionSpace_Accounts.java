@@ -68,6 +68,9 @@ public class FunctionSpace_Accounts {
     @IDynamicResourceExtension.MethodId("70626317-0594-11f0-a294-67d88c30f2e4")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllAvailableActivityPermissions();
 
+    @IDynamicResourceExtension.MethodId("b3b1a0c0-0fe7-11f0-999f-c7e64e984aff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> GetSortedActivePermissionsForServiceAccount();
+
   }
   
   public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -249,6 +252,9 @@ public class FunctionSpace_Accounts {
     @IDynamicResourceExtension.MethodId("d42e8939-5005-11eb-8df9-adb928521f3a")
     public java.lang.Integer Id();
 
+    @IDynamicResourceExtension.MethodId("768270cd-0fe6-11f0-999f-c7e64e984aff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurationDependencies();
+
   }
   
   public static interface IServiceAccountTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -296,4 +302,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,mbMJSVp+TrgZv2qttgN9PuDzo+E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,WJt136yn0SXxPhbbiV29blpLYFw=] */

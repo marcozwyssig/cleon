@@ -306,6 +306,31 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
+  public static interface IActivityTemplateAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b7d4ff36-0fd7-11f0-999f-c7e64e984aff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurationDependencies();
+
+  }
+  
+  public static interface IActivityTemplateAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActivityTemplateAwareFunctionsImpl implements IActivityTemplateAwareFunctionsImpl {
+
+    public static final IActivityTemplateAwareFunctionsImpl INSTANCE = new ActivityTemplateAwareFunctionsImpl();
+
+    private ActivityTemplateAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ActivityTemplateAwareFunctions {
+
+    private ActivityTemplateAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,0ZbkdMa7ulTS6U9/eAr67wz2KjA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,5hP6+0B6+zgSw8N+RHpcCtEtBiY=] */

@@ -31,6 +31,7 @@ public class SystemPackage {
   public static final Resource AbstractAuthZBuildingBlockPermission_usedBy = new Resource("b6705cf2-058d-11f0-8707-d7020bc75906");
   public static final Resource PermissionTemplateAware = new Resource("29c5e613-07d1-11f0-bc12-1bbda1d7028e");
   public static final Resource AbstractAuthZBuildingBlockPermission_builtinADGroup = new Resource("8f5a2308-07d6-11f0-bc12-1bbda1d7028e");
+  public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_ActivityTemplateAware = new Resource("b5276bbd-0fd7-11f0-999f-c7e64e984aff");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +52,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system,dy06RWM+BfgxG0egzZCZEKjuD7E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system,PiZN4DfoSC+F3IyJS1T9u7n+8Wg=] */

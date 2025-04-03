@@ -391,6 +391,31 @@ public class FunctionSpace_Configuration {
 
   }
 
+  public static interface IIssuingCAFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("373c4cba-0fd3-11f0-999f-c7e64e984aff")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+
+  }
+  
+  public static interface IIssuingCAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IssuingCAFunctionsImpl implements IIssuingCAFunctionsImpl {
+
+    public static final IIssuingCAFunctionsImpl INSTANCE = new IssuingCAFunctionsImpl();
+
+    private IssuingCAFunctionsImpl() {}
+
+  }
+  
+  public static class IssuingCAFunctions {
+
+    private IssuingCAFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,ud4x6I7q+SXeRndZdUgSNAbRHzY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,IyGgXLXqg3pZmANw6uba4jg2b58=] */

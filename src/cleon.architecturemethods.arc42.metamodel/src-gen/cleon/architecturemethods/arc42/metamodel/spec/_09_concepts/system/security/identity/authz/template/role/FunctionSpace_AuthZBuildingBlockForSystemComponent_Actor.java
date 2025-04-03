@@ -36,6 +36,9 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
     @IDynamicResourceExtension.MethodId("fcf9ee4b-de5b-11eb-b028-df36f0dc7b24")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> AllBasedOnReverse();
 
+    @IDynamicResourceExtension.MethodId("dc189867-0fd7-11f0-999f-c7e64e984aff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurationDependencies();
+
   }
   
   public static interface IAuthZBuildingBlockForSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -115,4 +118,4 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,IuBhjSP+0ugAHNJV9TSrGCk7Bv4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,vYM/VAyXSpVfZhRErdumo047go0=] */

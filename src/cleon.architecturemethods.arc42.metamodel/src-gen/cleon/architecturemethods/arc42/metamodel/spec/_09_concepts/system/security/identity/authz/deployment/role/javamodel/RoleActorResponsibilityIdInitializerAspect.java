@@ -4,7 +4,7 @@ import java.util.List;
 
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.FunctionSpace_Role.IRoleActorResponsibilityFunctions;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_Activity_Deployment.IAbstractGroupFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdInitializerAspect;
 
 public class RoleActorResponsibilityIdInitializerAspect extends BusinessObjectIdInitializerAspect<IRoleActorResponsibility> 

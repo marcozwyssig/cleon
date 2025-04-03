@@ -502,6 +502,90 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IRouteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b9ae86bb-1061-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("b9aead07-1061-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IRouteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RouteFunctionsImpl implements IRouteFunctionsImpl {
+
+    public static final IRouteFunctionsImpl INSTANCE = new RouteFunctionsImpl();
+
+    private RouteFunctionsImpl() {}
+
+  }
+  
+  public static class RouteFunctions {
+
+    private RouteFunctions() {}
+
+  }
+
+  public static interface IUserrightsassignmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("06aae566-1070-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("06aae58b-1070-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IUserrightsassignmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class UserrightsassignmentFunctionsImpl implements IUserrightsassignmentFunctionsImpl {
+
+    public static final IUserrightsassignmentFunctionsImpl INSTANCE = new UserrightsassignmentFunctionsImpl();
+
+    private UserrightsassignmentFunctionsImpl() {}
+
+  }
+  
+  public static class UserrightsassignmentFunctions {
+
+    private UserrightsassignmentFunctions() {}
+
+  }
+
+  public static interface IServicesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("46eab12b-1071-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("46eab156-1071-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IServicesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServicesFunctionsImpl implements IServicesFunctionsImpl {
+
+    public static final IServicesFunctionsImpl INSTANCE = new ServicesFunctionsImpl();
+
+    private ServicesFunctionsImpl() {}
+
+  }
+  
+  public static class ServicesFunctions {
+
+    private ServicesFunctions() {}
+
+  }
+
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("11f9f5b0-0bb7-11f0-95b9-95d0cc9a328a")
@@ -529,4 +613,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,CJTGmb4fIBLg4+xUdtWv6YdcMRA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nolvGcuKlfjb+YVdVQ488ZhO9s4=] */

@@ -537,6 +537,10 @@
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
         <resource statement-guid="80b7702a-0b06-11f0-95b9-95d0cc9a328a" type="resource" guid="80b74917-0b06-11f0-95b9-95d0cc9a328a" />
         <resource statement-guid="f07d8500-0fcf-11f0-999f-c7e64e984aff" type="resource" guid="f07d5ded-0fcf-11f0-999f-c7e64e984aff" />
+        <resource statement-guid="cbe4ff2d-106c-11f0-b378-11a495632127" type="resource" guid="cbe4d81a-106c-11f0-b378-11a495632127" />
+        <resource statement-guid="eda1aab2-106d-11f0-b378-11a495632127" type="resource" guid="eda1839e-106d-11f0-b378-11a495632127" />
+        <resource statement-guid="ef1dff98-106f-11f0-b378-11a495632127" type="resource" guid="ef1db175-106f-11f0-b378-11a495632127" />
+        <resource statement-guid="d4598255-1071-11f0-b378-11a495632127" type="resource" guid="d4595b42-1071-11f0-b378-11a495632127" />
       </owns>
     </resource>
   </owns>
@@ -1942,7 +1946,7 @@
                 <object statement-guid="155ba340-07d9-11f0-bc12-1bbda1d7028e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="155c1876-07d9-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.adgroups</object>
+                <object statement-guid="155c1876-07d9-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups</object>
               </predicate>
             </resource>
           </object>
@@ -1952,7 +1956,7 @@
                 <object statement-guid="44efa5ab-07d5-11f0-bc12-1bbda1d7028e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="44efa5ad-07d5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system</object>
+                <object statement-guid="44efa5ad-07d5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity</object>
               </predicate>
             </resource>
           </object>
@@ -1982,7 +1986,7 @@
                 <object statement-guid="44f3eb8c-07d5-11f0-bc12-1bbda1d7028e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="44f4129e-07d5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system</object>
+                <object statement-guid="44f4129e-07d5-11f0-bc12-1bbda1d7028e" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity</object>
               </predicate>
             </resource>
           </object>
@@ -5893,6 +5897,46 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="f07dd321-0fcf-11f0-999f-c7e64e984aff" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="cbe4ff2d-106c-11f0-b378-11a495632127">
+            <resource guid="cbe4d81a-106c-11f0-b378-11a495632127">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cbe4d81c-106c-11f0-b378-11a495632127" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cbe4ff2e-106c-11f0-b378-11a495632127" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_networking</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="eda1aab2-106d-11f0-b378-11a495632127">
+            <resource guid="eda1839e-106d-11f0-b378-11a495632127">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="eda1aab0-106d-11f0-b378-11a495632127" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="eda1aab3-106d-11f0-b378-11a495632127" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="ef1dff98-106f-11f0-b378-11a495632127">
+            <resource guid="ef1db175-106f-11f0-b378-11a495632127">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ef1db177-106f-11f0-b378-11a495632127" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ef1dff99-106f-11f0-b378-11a495632127" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d4598255-1071-11f0-b378-11a495632127">
+            <resource guid="d4595b42-1071-11f0-b378-11a495632127">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d4595b44-1071-11f0-b378-11a495632127" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d4598256-1071-11f0-b378-11a495632127" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_change_service_config</object>
               </predicate>
             </resource>
           </object>

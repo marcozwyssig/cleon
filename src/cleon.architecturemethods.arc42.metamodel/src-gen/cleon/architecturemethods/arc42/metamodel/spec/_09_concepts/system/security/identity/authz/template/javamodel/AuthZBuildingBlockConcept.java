@@ -60,11 +60,11 @@ public class AuthZBuildingBlockConcept extends DynamicResource implements IAuthZ
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockActivity selectAuthZBuildingBlockActivity() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockActivity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity);
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateActivity selectAuthZBuildingBlockActivity() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateActivity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity);
   }
 
-  public AuthZBuildingBlockConcept setAuthZBuildingBlockActivity(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockActivity authZBuildingBlockActivity) {
+  public AuthZBuildingBlockConcept setAuthZBuildingBlockActivity(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateActivity authZBuildingBlockActivity) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, authZBuildingBlockActivity);
     return this;
   }
@@ -137,7 +137,7 @@ public class AuthZBuildingBlockConcept extends DynamicResource implements IAuthZ
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockActivity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateActivity.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockActor.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActor, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -150,9 +150,9 @@ public class AuthZBuildingBlockConcept extends DynamicResource implements IAuthZ
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActor, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.javamodel.IAuthZBuildingBlockConcept selectToMeAuthZBuildingBlockActivity(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockActivity object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.javamodel.IAuthZBuildingBlockConcept selectToMeAuthZBuildingBlockActivity(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateActivity object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.TemplatePackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,Fuo3PeH3AePfFPe7vCpLNhMZLh4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,6eBcrk2uQQgG2ufsLWZOeaBctao=] */

@@ -13,7 +13,7 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.FunctionSpace_Role.IRoleRootGroupsFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.FunctionSpace_Role.IRoleSiteGroupFunctions;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_Activity_Deployment.IAbstractGroupFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.RolePackage;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 import cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId;

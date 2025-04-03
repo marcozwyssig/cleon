@@ -29,11 +29,6 @@ public class Win_polycom_manage_netdrivesPackage {
   public static final Resource Shares_rootForShares = new Resource("0dbda279-07fc-11f0-bc12-1bbda1d7028e");
   public static final Resource Share_path = new Resource("3c5cc0d9-07fc-11f0-bc12-1bbda1d7028e");
   public static final Resource FunctionSpace_aE_win_aE_polycom_aE_manage_aE_netdrives_Share = new Resource("4439153d-07fc-11f0-bc12-1bbda1d7028e");
-  public static final Resource AbstractGroup = new Resource("e364592c-07fd-11f0-bc12-1bbda1d7028e");
-  public static final Resource NamedGroup = new Resource("e98fa26e-07fd-11f0-bc12-1bbda1d7028e");
-  public static final Resource Shares_groups = new Resource("f0ec65a9-07fd-11f0-bc12-1bbda1d7028e");
-  public static final Resource ActivityGroup = new Resource("afde3b77-07fe-11f0-bc12-1bbda1d7028e");
-  public static final Resource ActivityGroup_activityPermission = new Resource("cf9bb151-07fe-11f0-bc12-1bbda1d7028e");
   public static final Resource Acl = new Resource("ac93bd00-0804-11f0-8081-eb3f9417daa7");
   public static final Resource AbstractShare_acls = new Resource("be8601d4-0804-11f0-8081-eb3f9417daa7");
   public static final Resource Acl_group = new Resource("d5e71cf2-0804-11f0-8081-eb3f9417daa7");
@@ -48,7 +43,6 @@ public class Win_polycom_manage_netdrivesPackage {
   public static final Resource DfsRootShare_fullPath = new Resource("2a0e0e1e-0808-11f0-8081-eb3f9417daa7");
   public static final Resource DfsRootShare_dfs = new Resource("49e61d8b-09ba-11f0-a60c-fbc7f025fc6c");
   public static final Resource AbstractShare_changeAccess = new Resource("5836b506-0a7f-11f0-95dd-6bc1800a1490");
-  public static final Resource Shares_domain = new Resource("b0b3251b-0a7f-11f0-95dd-6bc1800a1490");
   
   /* Begin Protected Region [[user]] */
   
@@ -69,4 +63,4 @@ public class Win_polycom_manage_netdrivesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives,M5I1hvRGqJ8zyICOwFN1M0jAKiA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives,sroB14QCykb9IlMVlREXLybFxTg=] */

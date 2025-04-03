@@ -837,7 +837,7 @@ public class FunctionSpace_arc42_Docbook {
   public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8b15e7c2-61cd-11ea-b3a7-2dbb30740ced")
-    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivitySystemConfiguration activitySystemConfiguration);
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration);
 
   }
   
@@ -848,7 +848,7 @@ public class FunctionSpace_arc42_Docbook {
     private ActivitySystemConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
       return null;
     }
 
@@ -858,7 +858,7 @@ public class FunctionSpace_arc42_Docbook {
 
     private ActivitySystemConfigurationFunctions() {}
 
-    public static java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+    public static java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
       return DynamicResourceUtil.invoke(IActivitySystemConfigurationFunctionsImpl.class, ActivitySystemConfigurationFunctionsImpl.INSTANCE, activitySystemConfiguration).RenderChapters(language, activitySystemConfiguration);
     }
 
@@ -1911,4 +1911,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,WgRrZBfU50ubJ03K6N9zrsc0bmQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,eaR0G7nnYmZdCQydjkYDnE8+eEk=] */

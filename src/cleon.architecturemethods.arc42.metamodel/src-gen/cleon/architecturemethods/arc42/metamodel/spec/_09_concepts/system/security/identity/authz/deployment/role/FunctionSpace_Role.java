@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.FunctionSpace_Activity_Deployment.IAbstractGroupFunctions;
 import java.util.stream.Collectors;
 /* End Protected Region   [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 
@@ -28,10 +28,10 @@ public class FunctionSpace_Role {
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleActorGroup Actor();
 
     @IDynamicResourceExtension.MethodId("e79cc584-0dee-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllActivities();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivities();
 
     @IDynamicResourceExtension.MethodId("3de44671-9cd8-11e9-9b32-35cf2fd07621")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllAvailalableActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailalableActivityPermissions();
 
     @IDynamicResourceExtension.MethodId("c9c3bdeb-0ded-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllBasedOnReverse();
@@ -79,7 +79,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent rolSysCmp);
 
     @IDynamicResourceExtension.MethodId("6478ecf0-0df0-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission src);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission src);
 
     @IDynamicResourceExtension.MethodId("b7460617-9c10-11e9-9470-2178b598e9a4")
     public java.lang.Integer ResponsibilityNo();
@@ -107,7 +107,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList);
 
     @IDynamicResourceExtension.MethodId("6478ecf0-0df0-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList);
 
   }
   
@@ -144,7 +144,7 @@ public class FunctionSpace_Role {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
       /* Begin Protected Region [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
       return roleSystemComponentList.stream().filter(x -> x.extension(IRoleSystemComponentFunctions.class).AllActivities().contains(src)).collect(Collectors.toList());
       /* End Protected Region   [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
@@ -168,7 +168,7 @@ public class FunctionSpace_Role {
       return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponentList).OnlySameSystemComponent(rolSysCmp, roleSystemComponentList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
       return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponentList).OnlyWithActivityPermission(src, roleSystemComponentList);
     }
 
@@ -251,7 +251,7 @@ public class FunctionSpace_Role {
     public java.lang.Integer Max();
 
     @IDynamicResourceExtension.MethodId("c8a57032-19bd-11ea-bc72-af84f3c76c84")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllAvailalableActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailalableActivityPermissions();
 
   }
   
@@ -376,4 +376,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,zhh4bVdryeFK47i8D01S+JYaXJw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,Ti+PRsXkNy0dVWiu9nGiEufOORo=] */

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e6e396d5-106d-11f0-b378-11a495632127">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="1e44615a-106e-11f0-b378-11a495632127" type="resource" guid="1e443a46-106e-11f0-b378-11a495632127" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e6e3bde7-106d-11f0-b378-11a495632127" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f816992c-106f-11f0-b378-11a495632127" type="resource" guid="a98b05a5-106f-11f0-b378-11a495632127" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1e44615a-106e-11f0-b378-11a495632127">
+      <resource guid="1e443a46-106e-11f0-b378-11a495632127">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1e443a48-106e-11f0-b378-11a495632127" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1e443a49-106e-11f0-b378-11a495632127" type="literal">userRights</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1e44615b-106e-11f0-b378-11a495632127" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1e44615c-106e-11f0-b378-11a495632127" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="1e44886d-106e-11f0-b378-11a495632127" type="resource" guid="1a40d9e2-106e-11f0-b378-11a495632127" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e6e5e0c8-106d-11f0-b378-11a495632127" type="literal">Userrightsassignment</object>
+  </predicate>
+</resource>
+

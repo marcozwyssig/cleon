@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="97256dd6-1061-11f0-b378-11a495632127">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="a3a33714-1061-11f0-b378-11a495632127" type="resource" guid="a3a30ffb-1061-11f0-b378-11a495632127" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="97256dd8-1061-11f0-b378-11a495632127" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9727429a-1061-11f0-b378-11a495632127" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a3a33714-1061-11f0-b378-11a495632127">
+      <resource guid="a3a30ffb-1061-11f0-b378-11a495632127">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a3a30fff-1061-11f0-b378-11a495632127" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a3a33710-1061-11f0-b378-11a495632127" type="literal">routeConfiguration</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a3a33716-1061-11f0-b378-11a495632127" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a3a35e28-1061-11f0-b378-11a495632127" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a3a35e2a-1061-11f0-b378-11a495632127" type="resource" guid="9e4f3ad5-1061-11f0-b378-11a495632127" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="97271b89-1061-11f0-b378-11a495632127" type="literal">Route</object>
+  </predicate>
+</resource>
+

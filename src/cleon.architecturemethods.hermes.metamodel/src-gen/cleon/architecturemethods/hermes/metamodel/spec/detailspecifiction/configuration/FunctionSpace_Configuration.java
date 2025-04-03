@@ -371,13 +371,22 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
+    @IDynamicResourceExtension.MethodId("c63f5d1e-1073-11f0-b378-11a495632127")
+    public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document Architecture();
+
     @IDynamicResourceExtension.MethodId("b84af3f0-1060-11f0-b378-11a495632127")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccounts();
+
+    @IDynamicResourceExtension.MethodId("fd69a308-1072-11f0-b378-11a495632127")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends();
 
   }
   
   public static interface IPuppetConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("fd69a308-1072-11f0-b378-11a495632127")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> puppetConfigurationList);
+
   }
   
   public static class PuppetConfigurationFunctionsImpl implements IPuppetConfigurationFunctionsImpl {
@@ -386,14 +395,25 @@ public class FunctionSpace_Configuration {
 
     private PuppetConfigurationFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> puppetConfigurationList) {
+      /* Begin Protected Region [[fd69a308-1072-11f0-b378-11a495632127]] */
+    	return puppetConfigurationList.stream().filter(x -> x.selectExtends().isEmpty()).toList();   
+      /* End Protected Region   [[fd69a308-1072-11f0-b378-11a495632127]] */
+    }
+
   }
   
   public static class PuppetConfigurationFunctions {
 
     private PuppetConfigurationFunctions() {}
 
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> puppetConfigurationList) {
+      return DynamicResourceUtil.invoke(IPuppetConfigurationFunctionsImpl.class, PuppetConfigurationFunctionsImpl.INSTANCE, puppetConfigurationList).OnlyWhereNoExtends(puppetConfigurationList);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,1BU1LWOHQTLpb5kn9R6oiC9tEsA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,117fcYkNzHHMX3v10B5iFfo2yFc=] */

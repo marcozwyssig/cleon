@@ -11,5 +11,11 @@ public abstract class PuppetConfiguration extends DynamicResource implements IPu
     super(IPuppetConfiguration.TYPE_ID);
   }
   
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> selectToMeExtends(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_extends, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,776e4866-0013-11f0-945c-87b19aec41f4,VkamQNto43HwITtAqFjm9fRscyA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,776e4866-0013-11f0-945c-87b19aec41f4,Uqv1O+ctxBha/N2D5Nc2ewZgl1Y=] */

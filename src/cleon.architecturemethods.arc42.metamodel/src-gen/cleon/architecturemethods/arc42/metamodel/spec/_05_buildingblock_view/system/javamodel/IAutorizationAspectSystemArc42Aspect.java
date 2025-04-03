@@ -8,8 +8,8 @@ public interface IAutorizationAspectSystemArc42Aspect extends cleon.architecture
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAuthZBuildingBlockForAbstractSystemOrSystemConfiguration selectActivityBlock();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateForAbstractSystemOrSystemConfiguration selectActivityBlock();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c727191a-23f5-11eb-83b1-3d2a97975978,M9dLGLnet6LBQqmUA+kMv6zui1M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c727191a-23f5-11eb-83b1-3d2a97975978,SvLpWcqIhmXccOcFwJmFvZ2EdxM=] */

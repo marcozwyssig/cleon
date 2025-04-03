@@ -48,7 +48,7 @@ public class FunctionSpace_Accounts {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("e69cc8c3-6faa-11eb-a1e4-f1bdb2897690")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.system.javamodel.IAbstractAuthZBuildingBlockPermission> AllAuthZBuildingBlockForPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IAbstractActivityTemplatePermission> AllAuthZBuildingBlockForPermissions();
 
     @IDynamicResourceExtension.MethodId("6e5cb357-6fb3-11eb-a1e4-f1bdb2897690")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> GetAllowedSiteForServiceAccount();
@@ -63,13 +63,13 @@ public class FunctionSpace_Accounts {
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
     @IDynamicResourceExtension.MethodId("e321a669-0593-11f0-8707-d7020bc75906")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissions();
 
     @IDynamicResourceExtension.MethodId("70626317-0594-11f0-a294-67d88c30f2e4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> AllAvailableActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailableActivityPermissions();
 
     @IDynamicResourceExtension.MethodId("b3b1a0c0-0fe7-11f0-999f-c7e64e984aff")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.system.javamodel.IActivityPermission> GetSortedActivePermissionsForServiceAccount();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> GetSortedActivePermissionsForServiceAccount();
 
   }
   
@@ -302,4 +302,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,WJt136yn0SXxPhbbiV29blpLYFw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,fK4egMc9Wicjx711RMhqj3nt9zs=] */

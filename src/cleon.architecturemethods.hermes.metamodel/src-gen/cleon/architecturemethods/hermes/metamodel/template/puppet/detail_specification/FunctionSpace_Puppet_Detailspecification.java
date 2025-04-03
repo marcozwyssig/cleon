@@ -342,9 +342,6 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("cc6e31fd-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassImplementation();
 
-    @IDynamicResourceExtension.MethodId("c5647390-05a6-11f0-a7b1-53303e9b84a9")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
-
   }
   
   public static interface IEnforceActivitiesAndRolesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -372,9 +369,6 @@ public class FunctionSpace_Puppet_Detailspecification {
 
     @IDynamicResourceExtension.MethodId("d6bfcc79-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassImplementation();
-
-    @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
   }
   
@@ -535,4 +529,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,14FuQiKRHMM1XLTtT3MfAEbddcU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,CJTGmb4fIBLg4+xUdtWv6YdcMRA=] */

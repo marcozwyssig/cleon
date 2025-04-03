@@ -366,56 +366,34 @@ public class FunctionSpace_Configuration {
 
   }
 
-  public static interface IEnforceServiceAccountsFunctions extends IDynamicResourceExtension {
+  public static interface IPuppetConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("7309f138-0bb6-11f0-95b9-95d0cc9a328a")
+    @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+
+    @IDynamicResourceExtension.MethodId("b84af3f0-1060-11f0-b378-11a495632127")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccounts();
 
   }
   
-  public static interface IEnforceServiceAccountsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPuppetConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class EnforceServiceAccountsFunctionsImpl implements IEnforceServiceAccountsFunctionsImpl {
+  public static class PuppetConfigurationFunctionsImpl implements IPuppetConfigurationFunctionsImpl {
 
-    public static final IEnforceServiceAccountsFunctionsImpl INSTANCE = new EnforceServiceAccountsFunctionsImpl();
+    public static final IPuppetConfigurationFunctionsImpl INSTANCE = new PuppetConfigurationFunctionsImpl();
 
-    private EnforceServiceAccountsFunctionsImpl() {}
-
-  }
-  
-  public static class EnforceServiceAccountsFunctions {
-
-    private EnforceServiceAccountsFunctions() {}
-
-  }
-
-  public static interface IIssuingCAFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("373c4cba-0fd3-11f0-999f-c7e64e984aff")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+    private PuppetConfigurationFunctionsImpl() {}
 
   }
   
-  public static interface IIssuingCAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class IssuingCAFunctionsImpl implements IIssuingCAFunctionsImpl {
+  public static class PuppetConfigurationFunctions {
 
-    public static final IIssuingCAFunctionsImpl INSTANCE = new IssuingCAFunctionsImpl();
-
-    private IssuingCAFunctionsImpl() {}
-
-  }
-  
-  public static class IssuingCAFunctions {
-
-    private IssuingCAFunctions() {}
+    private PuppetConfigurationFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,IyGgXLXqg3pZmANw6uba4jg2b58=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,1BU1LWOHQTLpb5kn9R6oiC9tEsA=] */

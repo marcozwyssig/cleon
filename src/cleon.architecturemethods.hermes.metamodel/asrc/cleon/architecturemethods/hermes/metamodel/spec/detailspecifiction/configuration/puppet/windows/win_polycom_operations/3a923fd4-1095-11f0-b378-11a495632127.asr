@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3a923fd4-1095-11f0-b378-11a495632127">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="435375cc-1095-11f0-b378-11a495632127" type="resource" guid="43534eb9-1095-11f0-b378-11a495632127" />
+    <resource statement-guid="4a69baed-1095-11f0-b378-11a495632127" type="resource" guid="4a6993da-1095-11f0-b378-11a495632127" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3a9266e6-1095-11f0-b378-11a495632127" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3a99b9e8-1095-11f0-b378-11a495632127" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="435375cc-1095-11f0-b378-11a495632127">
+      <resource guid="43534eb9-1095-11f0-b378-11a495632127">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="435375cb-1095-11f0-b378-11a495632127" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="45ff3520-1095-11f0-b378-11a495632127" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="439d9e3e-1095-11f0-b378-11a495632127" type="literal">evLogName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="44d97987-1095-11f0-b378-11a495632127" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4a69baed-1095-11f0-b378-11a495632127">
+      <resource guid="4a6993da-1095-11f0-b378-11a495632127">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4a6993dc-1095-11f0-b378-11a495632127" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4f5a8802-1095-11f0-b378-11a495632127" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4adc04c0-1095-11f0-b378-11a495632127" type="literal">evLogSize_[bytes]</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4dd14ff1-1095-11f0-b378-11a495632127" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3a99b9e7-1095-11f0-b378-11a495632127" type="literal">Wineventlog</object>
+  </predicate>
+</resource>
+

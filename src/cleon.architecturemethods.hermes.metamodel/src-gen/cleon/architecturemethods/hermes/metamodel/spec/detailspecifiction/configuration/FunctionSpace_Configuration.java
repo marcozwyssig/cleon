@@ -368,15 +368,6 @@ public class FunctionSpace_Configuration {
 
   public static interface IPuppetConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
-
-    @IDynamicResourceExtension.MethodId("c63f5d1e-1073-11f0-b378-11a495632127")
-    public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document Architecture();
-
-    @IDynamicResourceExtension.MethodId("b84af3f0-1060-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccounts();
-
     @IDynamicResourceExtension.MethodId("fd69a308-1072-11f0-b378-11a495632127")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends();
 
@@ -414,6 +405,91 @@ public class FunctionSpace_Configuration {
 
   }
 
+  public static interface IAbstractConfigurationSpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
+
+    @IDynamicResourceExtension.MethodId("c63f5d1e-1073-11f0-b378-11a495632127")
+    public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document arc42Document();
+
+    @IDynamicResourceExtension.MethodId("b84af3f0-1060-11f0-b378-11a495632127")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccounts();
+
+    @IDynamicResourceExtension.MethodId("e7be6abb-112a-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String DomainName();
+
+    @IDynamicResourceExtension.MethodId("adbff252-1132-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String NetbiosDomainName();
+
+    @IDynamicResourceExtension.MethodId("8c3e98e5-1086-11f0-b378-11a495632127")
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration SystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("583a60ec-13b3-11f0-b664-c7b92124985d")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccountsForSystemConfiguration();
+
+  }
+  
+  public static interface IAbstractConfigurationSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("adbff252-1132-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification);
+
+  }
+  
+  public static class AbstractConfigurationSpecificationFunctionsImpl implements IAbstractConfigurationSpecificationFunctionsImpl {
+
+    public static final IAbstractConfigurationSpecificationFunctionsImpl INSTANCE = new AbstractConfigurationSpecificationFunctionsImpl();
+
+    private AbstractConfigurationSpecificationFunctionsImpl() {}
+
+    @Override
+    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification) {
+      /* Begin Protected Region [[adbff252-1132-11f0-a4f9-b5f995a9e0fe]] */
+    	var abstractConfigurationSpecificationFunctions = abstractConfigurationSpecification.extension(IAbstractConfigurationSpecificationFunctions.class);
+    	final var domainName = abstractConfigurationSpecificationFunctions.DomainName();
+    	int dotIndex = domainName.indexOf('.');
+        return (dotIndex > 0) ? domainName.substring(0, dotIndex) : domainName;    
+      /* End Protected Region   [[adbff252-1132-11f0-a4f9-b5f995a9e0fe]] */
+    }
+
+  }
+  
+  public static class AbstractConfigurationSpecificationFunctions {
+
+    private AbstractConfigurationSpecificationFunctions() {}
+
+    public static java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification) {
+      return DynamicResourceUtil.invoke(IAbstractConfigurationSpecificationFunctionsImpl.class, AbstractConfigurationSpecificationFunctionsImpl.INSTANCE, abstractConfigurationSpecification).NetbiosDomainName(abstractConfigurationSpecification);
+    }
+
+  }
+
+  public static interface IServiceAccountFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7586f36a-13b2-11f0-b664-c7b92124985d")
+    public java.lang.String LogonAs(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfiguration);
+
+  }
+  
+  public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceAccountFunctionsImpl implements IServiceAccountFunctionsImpl {
+
+    public static final IServiceAccountFunctionsImpl INSTANCE = new ServiceAccountFunctionsImpl();
+
+    private ServiceAccountFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceAccountFunctions {
+
+    private ServiceAccountFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,117fcYkNzHHMX3v10B5iFfo2yFc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,jSyrzGsrTJC3z7fjd+tIsQh4XCQ=] */

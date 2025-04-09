@@ -42,7 +42,7 @@ public class StringFunctionSpace {
     public java.lang.String parenthesesToUnderscore();
 
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
-    public java.lang.String whitespacesToDash();
+    public java.lang.String whitespaceToDash();
 
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace();
@@ -97,7 +97,7 @@ public class StringFunctionSpace {
     public java.lang.String parenthesesToUnderscore(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
-    public java.lang.String whitespacesToDash(final java.lang.String stringLiteral);
+    public java.lang.String whitespaceToDash(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral);
@@ -180,7 +180,7 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String whitespacesToDash(final java.lang.String stringLiteral) {
+    public java.lang.String whitespaceToDash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[780f8f16-98fc-11ee-aa72-593773060f63]] */
       return StringUtil.whitespacesTo(stringLiteral, "-");
       /* End Protected Region   [[780f8f16-98fc-11ee-aa72-593773060f63]] */
@@ -348,8 +348,8 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).parenthesesToUnderscore(stringLiteral);
     }
 
-    public static java.lang.String whitespacesToDash(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespacesToDash(stringLiteral);
+    public static java.lang.String whitespaceToDash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespaceToDash(stringLiteral);
     }
 
     public static java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral) {
@@ -520,4 +520,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,1Poik2EZS7pzxHKKOpCim9DW6gY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,seLaYG3qEv2mz2eW/Gzbg5hLezE=] */

@@ -10,8 +10,10 @@ public interface IProductVariant extends ch.actifsource.core.javamodel.INamedRes
   
   public java.lang.String selectItemNumber();
   
+  public java.lang.String selectProductName();
+  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariantOptions> selectProductVariantOptions();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,yy3TTMKRXy5XYObaR743GDrdzoQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,3VjppT+7mqpljbNgcdh/WkwzR/k=] */

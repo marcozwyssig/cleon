@@ -71,6 +71,31 @@ public class FunctionSpace_Windows {
 
   }
 
+  public static interface ILocalGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fa687ab2-107e-11f0-b378-11a495632127")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AvailablePermissions();
+
+  }
+  
+  public static interface ILocalGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalGroupsFunctionsImpl implements ILocalGroupsFunctionsImpl {
+
+    public static final ILocalGroupsFunctionsImpl INSTANCE = new LocalGroupsFunctionsImpl();
+
+    private LocalGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class LocalGroupsFunctions {
+
+    private LocalGroupsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,/WPZy0obFB/MPfCi9LdyPsx+Nnw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,CqIYkY5MhBtRdW+uOxX+FF4GrAk=] */

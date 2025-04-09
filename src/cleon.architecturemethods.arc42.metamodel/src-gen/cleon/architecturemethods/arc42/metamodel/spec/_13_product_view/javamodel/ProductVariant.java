@@ -67,6 +67,15 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   }
 
   @Override
+  public java.lang.String selectProductName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductVariant_productName);
+  }
+    
+  public void setProductName(java.lang.String productName) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductVariant_productName, productName);
+  }
+
+  @Override
   public java.lang.String selectVersion() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.Version_version);
   }
@@ -104,6 +113,7 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductVariant_itemNumber, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductVariant_productName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.Version_version, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariantOptions.class, cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions, visitor);
@@ -115,4 +125,4 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,ChviUwLaQ2v1LY1Tan+B4AdGLDU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,qN1mazw+Gqt47nhaP/v3to7VNqw=] */

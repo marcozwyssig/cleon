@@ -13,6 +13,8 @@ public class WindowsPackage {
   public static final Resource PuppetConfigurationPermissions = new Resource("a98b05a5-106f-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Windows_PuppetConfigurationPermissions = new Resource("87b67385-1073-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Windows_Userrightsassignment = new Resource("853999f1-1078-11f0-b378-11a495632127");
+  public static final Resource FunctionSpace_aE_Windows_LocalGroups = new Resource("fa687a97-107e-11f0-b378-11a495632127");
+  public static final Resource PuppetConfigurationPermissions_netbiosDomain = new Resource("a4f371a3-1132-11f0-a4f9-b5f995a9e0fe");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +35,4 @@ public class WindowsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows,K03J8REJtGGm9ijf68l3+JB1KJM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows,1TnEJgv9C6w2fQZl+EvodQ8i2qM=] */

@@ -558,6 +558,174 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ILocalGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("472117b1-107e-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("472117e8-107e-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ILocalGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalGroupsFunctionsImpl implements ILocalGroupsFunctionsImpl {
+
+    public static final ILocalGroupsFunctionsImpl INSTANCE = new LocalGroupsFunctionsImpl();
+
+    private LocalGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class LocalGroupsFunctions {
+
+    private LocalGroupsFunctions() {}
+
+  }
+
+  public static interface IServiceConfigFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("11c8318b-1086-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("11c858c7-1086-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IServiceConfigFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceConfigFunctionsImpl implements IServiceConfigFunctionsImpl {
+
+    public static final IServiceConfigFunctionsImpl INSTANCE = new ServiceConfigFunctionsImpl();
+
+    private ServiceConfigFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceConfigFunctions {
+
+    private ServiceConfigFunctions() {}
+
+  }
+
+  public static interface INetbiosFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f68c6ca9-1088-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("f68c6cbc-1088-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface INetbiosFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NetbiosFunctionsImpl implements INetbiosFunctionsImpl {
+
+    public static final INetbiosFunctionsImpl INSTANCE = new NetbiosFunctionsImpl();
+
+    private NetbiosFunctionsImpl() {}
+
+  }
+  
+  public static class NetbiosFunctions {
+
+    private NetbiosFunctions() {}
+
+  }
+
+  public static interface IHardeningFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d1d89aee-108a-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("d1d89af8-108a-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IHardeningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class HardeningFunctionsImpl implements IHardeningFunctionsImpl {
+
+    public static final IHardeningFunctionsImpl INSTANCE = new HardeningFunctionsImpl();
+
+    private HardeningFunctionsImpl() {}
+
+  }
+  
+  public static class HardeningFunctions {
+
+    private HardeningFunctions() {}
+
+  }
+
+  public static interface IRegistryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("494d99da-1091-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("494d9a57-1091-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IRegistryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RegistryFunctionsImpl implements IRegistryFunctionsImpl {
+
+    public static final IRegistryFunctionsImpl INSTANCE = new RegistryFunctionsImpl();
+
+    private RegistryFunctionsImpl() {}
+
+  }
+  
+  public static class RegistryFunctions {
+
+    private RegistryFunctions() {}
+
+  }
+
+  public static interface IWineventlogFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("59ca0b1a-1095-11f0-b378-11a495632127")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("59ca0b5c-1095-11f0-b378-11a495632127")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IWineventlogFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WineventlogFunctionsImpl implements IWineventlogFunctionsImpl {
+
+    public static final IWineventlogFunctionsImpl INSTANCE = new WineventlogFunctionsImpl();
+
+    private WineventlogFunctionsImpl() {}
+
+  }
+  
+  public static class WineventlogFunctions {
+
+    private WineventlogFunctions() {}
+
+  }
+
   public static interface IServicesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("46eab12b-1071-11f0-b378-11a495632127")
@@ -586,6 +754,118 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IInstallSoftwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8b6b4d48-1131-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("8b6b4d62-1131-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallSoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallSoftwareFunctionsImpl implements IInstallSoftwareFunctionsImpl {
+
+    public static final IInstallSoftwareFunctionsImpl INSTANCE = new InstallSoftwareFunctionsImpl();
+
+    private InstallSoftwareFunctionsImpl() {}
+
+  }
+  
+  public static class InstallSoftwareFunctions {
+
+    private InstallSoftwareFunctions() {}
+
+  }
+
+  public static interface IInstallSQLServerFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("24201250-1151-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("242039b9-1151-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallSQLServerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallSQLServerFunctionsImpl implements IInstallSQLServerFunctionsImpl {
+
+    public static final IInstallSQLServerFunctionsImpl INSTANCE = new InstallSQLServerFunctionsImpl();
+
+    private InstallSQLServerFunctionsImpl() {}
+
+  }
+  
+  public static class InstallSQLServerFunctions {
+
+    private InstallSQLServerFunctions() {}
+
+  }
+
+  public static interface IInstallIISFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a4b4d359-115d-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("a4b4d395-115d-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallIISFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallIISFunctionsImpl implements IInstallIISFunctionsImpl {
+
+    public static final IInstallIISFunctionsImpl INSTANCE = new InstallIISFunctionsImpl();
+
+    private InstallIISFunctionsImpl() {}
+
+  }
+  
+  public static class InstallIISFunctions {
+
+    private InstallIISFunctions() {}
+
+  }
+
+  public static interface IIISMimelistFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b3974077-115d-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("b39740b3-115d-11f0-a4f9-b5f995a9e0fe")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IIISMimelistFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IISMimelistFunctionsImpl implements IIISMimelistFunctionsImpl {
+
+    public static final IIISMimelistFunctionsImpl INSTANCE = new IISMimelistFunctionsImpl();
+
+    private IISMimelistFunctionsImpl() {}
+
+  }
+  
+  public static class IISMimelistFunctions {
+
+    private IISMimelistFunctions() {}
+
+  }
+
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("11f9f5b0-0bb7-11f0-95b9-95d0cc9a328a")
@@ -611,6 +891,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IInstallChocoSoftwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("76d55945-13bf-11f0-b664-c7b92124985d")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("76d55948-13bf-11f0-b664-c7b92124985d")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallChocoSoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallChocoSoftwareFunctionsImpl implements IInstallChocoSoftwareFunctionsImpl {
+
+    public static final IInstallChocoSoftwareFunctionsImpl INSTANCE = new InstallChocoSoftwareFunctionsImpl();
+
+    private InstallChocoSoftwareFunctionsImpl() {}
+
+  }
+  
+  public static class InstallChocoSoftwareFunctions {
+
+    private InstallChocoSoftwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nolvGcuKlfjb+YVdVQ488ZhO9s4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,+CgYGmQPJ0gQZVxJ7RLpCrCzioQ=] */

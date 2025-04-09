@@ -8,8 +8,10 @@ public interface IInstallFeatures extends cleon.architecturemethods.hermes.metam
   
   // attributes
   
+  public java.lang.Boolean selectInclMgmt();
+  
   public java.util.List<java.lang.String> selectFeaturesNames();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,KP9crfmiCzzf13jrAJGfSYWWQ2U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d5be0df-001a-11f0-945c-87b19aec41f4,iKbEWb1sPU5gLwzbmY+WKisQoVQ=] */

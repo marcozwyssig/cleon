@@ -8,7 +8,12 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[bb871dfc-02d3-11e9-9e58-33d596257b14,imports]] */
+import ch.actifsource.util.log.Logger;
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.AbstractDeploymentEnvironment;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.FunctionSpace_Topology.IAbstractSiteWithHostsFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
+import java.util.ArrayList;
 /* End Protected Region   [[bb871dfc-02d3-11e9-9e58-33d596257b14,imports]] */
 
 public class FunctionSpace_Environmnent {
@@ -38,12 +43,27 @@ public class FunctionSpace_Environmnent {
     @IDynamicResourceExtension.MethodId("3b3198ec-cf64-11ef-9cfd-2b4b2f5c36ec")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> Nodes();
 
+    @IDynamicResourceExtension.MethodId("c6f4760b-151d-11f0-8fa5-ad696b254e17")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationOfNodes();
+
+    @IDynamicResourceExtension.MethodId("a5af1e63-151c-11f0-8fa5-ad696b254e17")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllNetworkNodes();
+
+    @IDynamicResourceExtension.MethodId("d8ba71df-7ddb-11ec-be69-ab0911f63a77")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
+
+    @IDynamicResourceExtension.MethodId("b9d392b8-1521-11f0-8fa5-ad696b254e17")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllNetworkNodesDistinct();
+
   }
   
   public static interface IDeploymentEnvironmentRootNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ebae8f76-2aba-11e9-a3f8-336d9e792e17")
     public java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode deploymentEnvironmentRootNode);
+
+    @IDynamicResourceExtension.MethodId("a5af1e63-151c-11f0-8fa5-ad696b254e17")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllNetworkNodes(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode deploymentEnvironmentRootNode);
 
   }
   
@@ -58,6 +78,28 @@ public class FunctionSpace_Environmnent {
       return true;
     }
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllNetworkNodes(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode deploymentEnvironmentRootNode) {
+      /* Begin Protected Region [[a5af1e63-151c-11f0-8fa5-ad696b254e17]] */
+    	final var results = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode>();
+    	final var deploymentRootNodeFunctions = deploymentEnvironmentRootNode.extension(IDeploymentEnvironmentRootNodeFunctions.class);
+    	final var allSystemConfigurationOfNodes = deploymentRootNodeFunctions.AllSystemConfigurationOfNodes();
+    	for ( final var sysCfg : allSystemConfigurationOfNodes) {
+    		final var sysCfgFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);
+    		final var allsites = sysCfgFunctions.AllUsedTNsDistinctWithEnvironment(deploymentEnvironmentRootNode);
+    		for ( final var site : allsites) {
+    			final var siteFunctions = site.extension(IAbstractSiteWithHostsFunctions.class);
+    			final var securityZones = siteFunctions.UsedZones(sysCfg);
+    			for (final var securityZone : securityZones) {
+    				final var securityZoneFunc = securityZone.extension(ISecuritySubZoneFunctions.class);
+    				results.addAll(securityZoneFunc.AllHostNodesWhereSystemConfigurationAndSiteAndExclude(sysCfg, site));
+    			}
+    		}
+    	}
+    	return results;
+      /* End Protected Region   [[a5af1e63-151c-11f0-8fa5-ad696b254e17]] */
+    }
+
   }
   
   public static class DeploymentEnvironmentRootNodeFunctions {
@@ -66,6 +108,10 @@ public class FunctionSpace_Environmnent {
 
     public static java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode deploymentEnvironmentRootNode) {
       return DynamicResourceUtil.invoke(IDeploymentEnvironmentRootNodeFunctionsImpl.class, DeploymentEnvironmentRootNodeFunctionsImpl.INSTANCE, deploymentEnvironmentRootNode).IsSupplied(deploymentEnvironmentRootNode);
+    }
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllNetworkNodes(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode deploymentEnvironmentRootNode) {
+      return DynamicResourceUtil.invoke(IDeploymentEnvironmentRootNodeFunctionsImpl.class, DeploymentEnvironmentRootNodeFunctionsImpl.INSTANCE, deploymentEnvironmentRootNode).AllNetworkNodes(deploymentEnvironmentRootNode);
     }
 
   }
@@ -173,4 +219,4 @@ public class FunctionSpace_Environmnent {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,Od7YaBIAeLX+whr2uLZj2UmDv9c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,6O/FRBW8QvNM7yYNRIzW9X12GUg=] */

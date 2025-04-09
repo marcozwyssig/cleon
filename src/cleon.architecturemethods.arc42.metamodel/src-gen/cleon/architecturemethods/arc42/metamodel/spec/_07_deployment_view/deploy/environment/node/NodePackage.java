@@ -12,7 +12,6 @@ public class NodePackage {
   public static final Resource Node = new Resource("4a67ced9-02d4-11e9-9e58-33d596257b14");
   public static final Resource Node_nodes = new Resource("5598a470-02d4-11e9-9e58-33d596257b14");
   public static final Resource RootNode = new Resource("a632f40c-02d4-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_Node_DeploymentEnvironmentRootNode = new Resource("d30654b2-7ddb-11ec-be69-ab0911f63a77");
   public static final Resource FunctionSpace_aE_Node_ServiceBuildNode = new Resource("0630c7ab-df12-11ef-b7b6-ed2cdfbf6428");
   
   /* Begin Protected Region [[user]] */
@@ -34,4 +33,4 @@ public class NodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node,7QtYHKPZnhmG+QVMsFyavI83Gyc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node,Ov32t4O1Xal2gumHZjXvLe6BINE=] */

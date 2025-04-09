@@ -196,31 +196,6 @@ public class FunctionSpace_Node {
 
   }
 
-  public static interface IDeploymentEnvironmentRootNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("d8ba71df-7ddb-11ec-be69-ab0911f63a77")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
-
-  }
-  
-  public static interface IDeploymentEnvironmentRootNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DeploymentEnvironmentRootNodeFunctionsImpl implements IDeploymentEnvironmentRootNodeFunctionsImpl {
-
-    public static final IDeploymentEnvironmentRootNodeFunctionsImpl INSTANCE = new DeploymentEnvironmentRootNodeFunctionsImpl();
-
-    private DeploymentEnvironmentRootNodeFunctionsImpl() {}
-
-  }
-  
-  public static class DeploymentEnvironmentRootNodeFunctions {
-
-    private DeploymentEnvironmentRootNodeFunctions() {}
-
-  }
-
   public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0e3bf3d3-df12-11ef-b7b6-ed2cdfbf6428")
@@ -248,4 +223,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,1jiMC7xeTCwr7ia6ZVtlYptKEWI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,/jGPiufvZUCv039n0rd57PZ/DvE=] */

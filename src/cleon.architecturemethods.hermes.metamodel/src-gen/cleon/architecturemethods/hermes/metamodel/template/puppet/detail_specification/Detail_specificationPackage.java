@@ -35,6 +35,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallIIS = new Resource("a4b4d356-115d-11f0-a4f9-b5f995a9e0fe");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_IISMimelist = new Resource("b3974074-115d-11f0-a4f9-b5f995a9e0fe");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallChocoSoftware = new Resource("70b9795b-13bf-11f0-b664-c7b92124985d");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dns = new Resource("8feab7da-151b-11f0-8fa5-ad696b254e17");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,hZP5fH1b5moUvlfu0K/NT7Ts94A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,hTpzWAIvl6JsPPRzke9zJvArS0Y=] */

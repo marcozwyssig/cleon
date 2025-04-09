@@ -62,6 +62,9 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("c0a412fe-deac-11e9-b714-478bec98e62d")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllHostNodesWhereSystemConfigurationAndSite(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site);
 
+    @IDynamicResourceExtension.MethodId("a15384f4-151f-11f0-8fa5-ad696b254e17")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllHostNodesWhereSystemConfigurationAndSiteAndExclude(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithHosts site);
+
     @IDynamicResourceExtension.MethodId("08dbad82-df9b-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> AllHostNodesWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration syscfg);
 
@@ -300,4 +303,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,L3dSruHGUvrLqrisqp8QAYBJqrs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,VU1TRx1w/fFZJOHkYqpXChGhUt8=] */

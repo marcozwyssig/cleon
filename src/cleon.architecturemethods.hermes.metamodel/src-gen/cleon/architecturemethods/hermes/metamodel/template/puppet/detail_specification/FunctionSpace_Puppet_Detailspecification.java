@@ -866,6 +866,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IDnsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8feab7dd-151b-11f0-8fa5-ad696b254e17")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("8feab800-151b-11f0-8fa5-ad696b254e17")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IDnsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DnsFunctionsImpl implements IDnsFunctionsImpl {
+
+    public static final IDnsFunctionsImpl INSTANCE = new DnsFunctionsImpl();
+
+    private DnsFunctionsImpl() {}
+
+  }
+  
+  public static class DnsFunctions {
+
+    private DnsFunctions() {}
+
+  }
+
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("11f9f5b0-0bb7-11f0-95b9-95d0cc9a328a")
@@ -921,4 +949,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,+CgYGmQPJ0gQZVxJ7RLpCrCzioQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,gheilysC184Adnd1WMZgoXCT1c4=] */

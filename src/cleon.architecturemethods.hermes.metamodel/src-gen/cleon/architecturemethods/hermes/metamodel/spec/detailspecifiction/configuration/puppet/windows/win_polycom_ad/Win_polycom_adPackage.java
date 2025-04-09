@@ -16,6 +16,14 @@ public class Win_polycom_adPackage {
   public static final Resource ServiceAccountConfiguration_serviceAccount = new Resource("c05eb1ae-0bb6-11f0-95b9-95d0cc9a328a");
   public static final Resource ServiceAccountConfiguration_OU = new Resource("47b6ac8f-0bb7-11f0-95b9-95d0cc9a328a");
   public static final Resource ServiceAccountConfiguration_password = new Resource("5d6ab3d7-0bb7-11f0-95b9-95d0cc9a328a");
+  public static final Resource Dns = new Resource("2da3b935-151b-11f0-8fa5-ad696b254e17");
+  public static final Resource DnsZone = new Resource("39b838be-151b-11f0-8fa5-ad696b254e17");
+  public static final Resource DnsARecord = new Resource("672825f8-151b-11f0-8fa5-ad696b254e17");
+  public static final Resource Dns_A_aE_DNS_aE_Records = new Resource("7564dcac-151b-11f0-8fa5-ad696b254e17");
+  public static final Resource DnsARecord_networkHostNode = new Resource("0e86b7f0-151d-11f0-8fa5-ad696b254e17");
+  public static final Resource DnsRecord = new Resource("135760ca-1522-11f0-8fa5-ad696b254e17");
+  public static final Resource DnsARecord_hostName = new Resource("b9ac2d79-1524-11f0-b8e6-1d11cc32caa6");
+  public static final Resource DnsARecord_ip = new Resource("e02ff37f-1524-11f0-b8e6-1d11cc32caa6");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +44,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,VVsi+WoYj8+NXElKUGN6eMX15nU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,4zjg268+hP5LL7Vw2eSg29gIVYg=] */

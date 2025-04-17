@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e9a75a23-1b5e-11f0-9c3a-8502b2fb88fb">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="fa7f0760-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="fa7ee04b-1b5e-11f0-9c3a-8502b2fb88fb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e9a78135-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e9a84487-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="20460cb5-1b5f-11f0-9c3a-8502b2fb88fb" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="fa7f0760-1b5e-11f0-9c3a-8502b2fb88fb">
+      <resource guid="fa7ee04b-1b5e-11f0-9c3a-8502b2fb88fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fa7f075e-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fa7f075f-1b5e-11f0-9c3a-8502b2fb88fb" type="literal">copyFiles</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="fa7f5582-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="fa7f5583-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="fa7f7c94-1b5e-11f0-9c3a-8502b2fb88fb" type="resource" guid="f662a0ff-1b5e-11f0-9c3a-8502b2fb88fb" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e9a81d76-1b5e-11f0-9c3a-8502b2fb88fb" type="literal">InstallCopyfile</object>
+  </predicate>
+</resource>
+

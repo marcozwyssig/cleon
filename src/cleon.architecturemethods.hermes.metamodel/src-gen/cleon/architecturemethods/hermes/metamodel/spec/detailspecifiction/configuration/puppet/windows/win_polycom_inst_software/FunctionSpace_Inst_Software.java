@@ -43,6 +43,31 @@ public class FunctionSpace_Inst_Software {
 
   }
 
+  public static interface ICopyFileFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("17966d30-1b60-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String FullPath();
+
+  }
+  
+  public static interface ICopyFileFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CopyFileFunctionsImpl implements ICopyFileFunctionsImpl {
+
+    public static final ICopyFileFunctionsImpl INSTANCE = new CopyFileFunctionsImpl();
+
+    private CopyFileFunctionsImpl() {}
+
+  }
+  
+  public static class CopyFileFunctions {
+
+    private CopyFileFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,sOqapT3VLXlYiKTtLFdz5FzHZmQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,QTEg99tdsnGQ3zfX8pzZ0Eggwhg=] */

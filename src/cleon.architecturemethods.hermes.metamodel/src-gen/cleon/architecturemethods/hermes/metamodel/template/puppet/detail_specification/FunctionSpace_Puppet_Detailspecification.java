@@ -947,6 +947,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IInstallCopyfileFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ab868c68-1b5f-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("ab868c92-1b5f-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallCopyfileFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallCopyfileFunctionsImpl implements IInstallCopyfileFunctionsImpl {
+
+    public static final IInstallCopyfileFunctionsImpl INSTANCE = new InstallCopyfileFunctionsImpl();
+
+    private InstallCopyfileFunctionsImpl() {}
+
+  }
+  
+  public static class InstallCopyfileFunctions {
+
+    private InstallCopyfileFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,gheilysC184Adnd1WMZgoXCT1c4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,RgWZ9mejyM32aPCTzsVhVv9bX28=] */

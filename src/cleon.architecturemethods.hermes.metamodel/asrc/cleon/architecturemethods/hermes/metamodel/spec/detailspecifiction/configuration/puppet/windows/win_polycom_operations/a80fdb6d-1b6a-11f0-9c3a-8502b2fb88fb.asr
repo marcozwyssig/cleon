@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="a80fdb6d-1b6a-11f0-9c3a-8502b2fb88fb">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="b7fdeb7b-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="b7fdc467-1b6a-11f0-9c3a-8502b2fb88fb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a810027f-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a811d741-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b7fdeb7b-1b6a-11f0-9c3a-8502b2fb88fb">
+      <resource guid="b7fdc467-1b6a-11f0-9c3a-8502b2fb88fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b7fdc469-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b7fdc46a-1b6a-11f0-9c3a-8502b2fb88fb" type="literal">registryKeys</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="b7fdeb7c-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="b7fdeb7d-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="b7fdeb7e-1b6a-11f0-9c3a-8502b2fb88fb" type="resource" guid="b05acf64-1b6a-11f0-9c3a-8502b2fb88fb" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a811d740-1b6a-11f0-9c3a-8502b2fb88fb" type="literal">RegistryKeys</object>
+  </predicate>
+</resource>
+

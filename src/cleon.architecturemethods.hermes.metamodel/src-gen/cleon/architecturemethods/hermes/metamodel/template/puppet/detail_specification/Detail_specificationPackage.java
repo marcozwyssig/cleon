@@ -37,6 +37,10 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallChocoSoftware = new Resource("70b9795b-13bf-11f0-b664-c7b92124985d");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dns = new Resource("8feab7da-151b-11f0-8fa5-ad696b254e17");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallCopyfile = new Resource("ab868c65-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalRepo = new Resource("3412cf4a-1b65-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_FoldersAndPuppetCleanup = new Resource("98bf116c-1b69-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_RemoveUserCerts = new Resource("7654afb1-1b6a-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_RegistryKeys = new Resource("64572acb-1b6b-11f0-9c3a-8502b2fb88fb");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +61,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,VtrRWU5AuvxeJCJOJWqe8stySns=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,5AvxrUvO1xzYsAEXscxKuQ1VsCg=] */

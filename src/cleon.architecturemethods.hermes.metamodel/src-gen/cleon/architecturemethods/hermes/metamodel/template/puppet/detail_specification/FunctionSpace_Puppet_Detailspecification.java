@@ -975,6 +975,118 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ILocalRepoFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3412cf4d-1b65-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("3412cf8a-1b65-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ILocalRepoFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalRepoFunctionsImpl implements ILocalRepoFunctionsImpl {
+
+    public static final ILocalRepoFunctionsImpl INSTANCE = new LocalRepoFunctionsImpl();
+
+    private LocalRepoFunctionsImpl() {}
+
+  }
+  
+  public static class LocalRepoFunctions {
+
+    private LocalRepoFunctions() {}
+
+  }
+
+  public static interface IFoldersAndPuppetCleanupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("98bf116f-1b69-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("98bf119b-1b69-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IFoldersAndPuppetCleanupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FoldersAndPuppetCleanupFunctionsImpl implements IFoldersAndPuppetCleanupFunctionsImpl {
+
+    public static final IFoldersAndPuppetCleanupFunctionsImpl INSTANCE = new FoldersAndPuppetCleanupFunctionsImpl();
+
+    private FoldersAndPuppetCleanupFunctionsImpl() {}
+
+  }
+  
+  public static class FoldersAndPuppetCleanupFunctions {
+
+    private FoldersAndPuppetCleanupFunctions() {}
+
+  }
+
+  public static interface IRemoveUserCertsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7654afb4-1b6a-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("7654afff-1b6a-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IRemoveUserCertsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RemoveUserCertsFunctionsImpl implements IRemoveUserCertsFunctionsImpl {
+
+    public static final IRemoveUserCertsFunctionsImpl INSTANCE = new RemoveUserCertsFunctionsImpl();
+
+    private RemoveUserCertsFunctionsImpl() {}
+
+  }
+  
+  public static class RemoveUserCertsFunctions {
+
+    private RemoveUserCertsFunctions() {}
+
+  }
+
+  public static interface IRegistryKeysFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("64572ace-1b6b-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("64572ae3-1b6b-11f0-9c3a-8502b2fb88fb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IRegistryKeysFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RegistryKeysFunctionsImpl implements IRegistryKeysFunctionsImpl {
+
+    public static final IRegistryKeysFunctionsImpl INSTANCE = new RegistryKeysFunctionsImpl();
+
+    private RegistryKeysFunctionsImpl() {}
+
+  }
+  
+  public static class RegistryKeysFunctions {
+
+    private RegistryKeysFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,RgWZ9mejyM32aPCTzsVhVv9bX28=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,2jkaD3nDsMOgizYWl54LTvRkGY8=] */

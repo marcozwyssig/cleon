@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="01b33e55-1b6b-11f0-9c3a-8502b2fb88fb">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="0455fca6-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="0455fca3-1b6b-11f0-9c3a-8502b2fb88fb" />
+    <resource statement-guid="058702b0-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="058702ac-1b6b-11f0-9c3a-8502b2fb88fb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="01b33e57-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="01b3da99-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="01b3b388-1b6b-11f0-9c3a-8502b2fb88fb" type="literal">PuppetState</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="0455fca6-1b6b-11f0-9c3a-8502b2fb88fb">
+      <resource guid="0455fca3-1b6b-11f0-9c3a-8502b2fb88fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0455fca5-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="01b33e55-1b6b-11f0-9c3a-8502b2fb88fb" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="04894216-1b6b-11f0-9c3a-8502b2fb88fb" type="literal">absent</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="058702b0-1b6b-11f0-9c3a-8502b2fb88fb">
+      <resource guid="058702ac-1b6b-11f0-9c3a-8502b2fb88fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="058702af-1b6b-11f0-9c3a-8502b2fb88fb" type="resource" guid="01b33e55-1b6b-11f0-9c3a-8502b2fb88fb" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05c5e011-1b6b-11f0-9c3a-8502b2fb88fb" type="literal">present</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

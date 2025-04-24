@@ -211,6 +211,15 @@ public class IssuingCA extends DynamicResource implements IIssuingCA {
   }
 
   @Override
+  public java.lang.String selectPowerShellRepo() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_powerShellRepo);
+  }
+    
+  public void setPowerShellRepo(java.lang.String powerShellRepo) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_powerShellRepo, powerShellRepo);
+  }
+
+  @Override
   public java.lang.String selectRepeatinterval() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_repeatinterval);
   }
@@ -382,6 +391,7 @@ public class IssuingCA extends DynamicResource implements IIssuingCA {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_exportToUncPathCrl, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_exportToUncPathCsr, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_powerShellRepo, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_repeatinterval, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.Win_polycom_caPackage.IssuingCA_templateUncPath, visitor);
     // relations
@@ -418,4 +428,4 @@ public class IssuingCA extends DynamicResource implements IIssuingCA {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,ig1l8phQvZ6Oo94phMsYSIqeLTQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,c9EAEGbTpAu0n2iyB7m52b8STV0=] */

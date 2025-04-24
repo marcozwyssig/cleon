@@ -22,12 +22,12 @@ public class Win_polycom_operationsPackage {
   public static final Resource RemoveUserCerts_expiringindays = new Resource("563ff2a5-1b6a-11f0-9c3a-8502b2fb88fb");
   public static final Resource RemoveUserCerts_starttime = new Resource("5e74ee45-1b6a-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryKeys = new Resource("a80fdb6d-1b6a-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKey = new Resource("b05acf64-1b6a-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKeys_registryKeys = new Resource("b7fdc467-1b6a-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKey_path = new Resource("e6dece1d-1b6a-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKey_status = new Resource("0e8ce346-1b6b-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKey_keytype = new Resource("3ad9fb43-1b6b-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryKey_keydata = new Resource("40ce2e9a-1b6b-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue = new Resource("b05acf64-1b6a-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryKeys_registryValues = new Resource("b7fdc467-1b6a-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue_path = new Resource("e6dece1d-1b6a-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue_ensure = new Resource("0e8ce346-1b6b-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue_type = new Resource("3ad9fb43-1b6b-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue_data = new Resource("40ce2e9a-1b6b-11f0-9c3a-8502b2fb88fb");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +48,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,LjeQ+9BeA22z5EaN7dqfzf0p8Zo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,XQWOKPg+KjTdJ0MshIR53dxwhcg=] */

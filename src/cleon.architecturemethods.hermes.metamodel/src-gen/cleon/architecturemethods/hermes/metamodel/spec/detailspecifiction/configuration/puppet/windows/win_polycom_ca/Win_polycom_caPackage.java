@@ -44,6 +44,7 @@ public class Win_polycom_caPackage {
   public static final Resource CaTemplateEnabled_version = new Resource("5d2615ab-1045-11f0-8aa5-cd86450b7feb");
   public static final Resource IssuingCA_exportToUncFileNameRootCer = new Resource("9dd2a0a3-1050-11f0-b378-11a495632127");
   public static final Resource IssuingCA_exportToUncFileNameRootCrl = new Resource("a1a839bd-1050-11f0-b378-11a495632127");
+  public static final Resource IssuingCA_powerShellRepo = new Resource("899dbb0d-1b7e-11f0-9c3a-8502b2fb88fb");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +65,4 @@ public class Win_polycom_caPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca,9G6cUaaBsK5hPTQpFbtVrHOjfTk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca,4ZCtlFF2glFdmbbdEokqSxV3q+o=] */

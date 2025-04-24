@@ -87,6 +87,26 @@ public class FWICMPService extends DynamicResource implements IFWICMPService {
     return this;
   }
     
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> selectUsedInCommunication() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInCommunication);
+  }
+
+  public FWICMPService setUsedInCommunication(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> usedInCommunication) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInCommunication, usedInCommunication);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractServiceGroup> selectUsedInGroup() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractServiceGroup.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInGroup);
+  }
+
+  public FWICMPService setUsedInGroup(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractServiceGroup> usedInGroup) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInGroup, usedInGroup);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -97,7 +117,9 @@ public class FWICMPService extends DynamicResource implements IFWICMPService {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInCommunication, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractServiceGroup.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.ServicesPackage.AbstractService_usedInGroup, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4f65f13c-3bcc-11eb-b8e1-3fcf5510f7e6,79bamTxxHyHaV4xh2+2xElMYG1w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4f65f13c-3bcc-11eb-b8e1-3fcf5510f7e6,Abj+NOIptGPjHxWZJTbArN7kfc4=] */

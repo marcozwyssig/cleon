@@ -23,15 +23,19 @@ public class Win_polycom_inst_softwarePackage {
   public static final Resource ChocoPackage_productVariant = new Resource("6846d8ac-13bf-11f0-b664-c7b92124985d");
   public static final Resource InstallChocoSoftware_sourceLocation = new Resource("be0a6987-13bf-11f0-b664-c7b92124985d");
   public static final Resource InstallCopyfile = new Resource("e9a75a23-1b5e-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile = new Resource("f662a0ff-1b5e-11f0-9c3a-8502b2fb88fb");
+  public static final Resource CopyFileFromNetwork = new Resource("f662a0ff-1b5e-11f0-9c3a-8502b2fb88fb");
   public static final Resource InstallCopyfile_copyFiles = new Resource("fa7ee04b-1b5e-11f0-9c3a-8502b2fb88fb");
   public static final Resource AbstractInstallConfiguration = new Resource("20460cb5-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile_path = new Resource("4dce3d21-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile_fullPath = new Resource("54e62ff9-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile_targetEnv = new Resource("87b19331-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile_target = new Resource("8fae8ed9-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource CopyFile_ensure = new Resource("9c689d61-1b5f-11f0-9c3a-8502b2fb88fb");
-  public static final Resource FunctionSpace_aE_Inst_aE_Software_CopyFile = new Resource("17966d22-1b60-11f0-9c3a-8502b2fb88fb");
+  public static final Resource AbstractCopyFile_source = new Resource("4dce3d21-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource CopyFileFromNetwork_fullPath = new Resource("54e62ff9-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource CopyFileFromNetwork_targetEnv = new Resource("87b19331-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource AbstractCopyFile_target = new Resource("8fae8ed9-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Inst_aE_Software_CopyFileFromNetwork = new Resource("17966d22-1b60-11f0-9c3a-8502b2fb88fb");
+  public static final Resource AbstractCopyFile = new Resource("7d34b7a7-1b6c-11f0-9c3a-8502b2fb88fb");
+  public static final Resource CopyFileFromPuppet = new Resource("bced6e66-1b6c-11f0-9c3a-8502b2fb88fb");
+  public static final Resource CopyFileFromNetwork_ensure = new Resource("e6562b68-1b6c-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Inst_aE_Software_AbstractCopyFile = new Resource("d8609992-1b6d-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Inst_aE_Software_CopyFileFromPuppet = new Resource("0cbfbc42-1b6e-11f0-9c3a-8502b2fb88fb");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +56,4 @@ public class Win_polycom_inst_softwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,5l1CW/iybBkxyOzb9ahjc50LSpQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,TFKIpu5zVuXxD2svcEPCJ3U04GI=] */

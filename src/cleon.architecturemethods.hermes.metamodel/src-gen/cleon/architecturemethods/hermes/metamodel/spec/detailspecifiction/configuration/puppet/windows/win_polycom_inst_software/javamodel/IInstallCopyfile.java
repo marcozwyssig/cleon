@@ -8,8 +8,8 @@ public interface IInstallCopyfile extends cleon.architecturemethods.hermes.metam
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.javamodel.ICopyFile> selectCopyFiles();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.javamodel.IAbstractCopyFile> selectCopyFiles();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e9a75a23-1b5e-11f0-9c3a-8502b2fb88fb,3mUy0yb8rt4GXYttlH43oL+5xmk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e9a75a23-1b5e-11f0-9c3a-8502b2fb88fb,QcIrt3+VNsT8GdDv8YtZjlH3JqU=] */

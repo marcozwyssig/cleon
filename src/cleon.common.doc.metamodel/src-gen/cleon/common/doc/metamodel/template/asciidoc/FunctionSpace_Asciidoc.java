@@ -751,6 +751,12 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("39b91640-e8f6-11e8-b810-cdb2b421fd42")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("2cfa4b40-2436-11f0-94f1-e7761ce8c8b9")
+    public java.lang.String StarCount();
+
+    @IDynamicResourceExtension.MethodId("e4575d67-2436-11f0-94f1-e7761ce8c8b9")
+    public cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList ParentItemizedList();
+
   }
   
   public static interface IItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1091,4 +1097,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,wQzJEWSH99EUZKTnBzL+T1P4kO0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,4+lrVzBvs8+r1Hc0HOKmTjd+ThU=] */

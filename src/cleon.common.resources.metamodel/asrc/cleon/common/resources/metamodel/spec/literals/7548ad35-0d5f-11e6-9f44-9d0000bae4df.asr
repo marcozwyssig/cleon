@@ -75,6 +75,11 @@
             <resource statement-guid="28b111e3-ac0d-11ef-afba-fb66280e2230" type="resource" guid="28b111de-ac0d-11ef-afba-fb66280e2230" />
           </owns>
         </resource>
+        <resource statement-guid="9290a0cf-24f3-11f0-bbee-a72b6af34529" type="resource" guid="929052a7-24f3-11f0-bbee-a72b6af34529">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="929052ad-24f3-11f0-bbee-a72b6af34529" type="resource" guid="929052a8-24f3-11f0-bbee-a72b6af34529" />
+          </owns>
+        </resource>
         <resource statement-guid="333c0bd2-acc6-11ef-a765-2382060a590e" type="resource" guid="7ae3dc62-ac1b-11eb-8ce4-4df2726518e8">
           <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
             <resource statement-guid="7ae45198-ac1b-11eb-8ce4-4df2726518e8" type="resource" guid="7ae42a85-ac1b-11eb-8ce4-4df2726518e8" />
@@ -279,7 +284,7 @@
                 <object statement-guid="6d745586-8648-11eb-9869-4317e18e6c88" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="6d745587-8648-11eb-9869-4317e18e6c88" type="literal">dashToUnderscore</object>
+                <object statement-guid="6d745587-8648-11eb-9869-4317e18e6c88" type="literal">hyphensToUnderscore</object>
               </predicate>
               <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
                 <object statement-guid="6d74cabb-8648-11eb-9869-4317e18e6c88">
@@ -345,7 +350,7 @@
                 <object statement-guid="780fb628-98fc-11ee-aa72-593773060f63" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="79296380-98fc-11ee-aa72-593773060f63" type="literal">whitespaceToDash</object>
+                <object statement-guid="79296380-98fc-11ee-aa72-593773060f63" type="literal">whitespaceToHyphens</object>
               </predicate>
               <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
                 <object statement-guid="81106607-98fc-11ee-aa72-593773060f63">
@@ -532,13 +537,38 @@
               </predicate>
             </resource>
           </object>
+          <object statement-guid="9290a0cf-24f3-11f0-bbee-a72b6af34529">
+            <resource guid="929052a7-24f3-11f0-bbee-a72b6af34529">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="929052a9-24f3-11f0-bbee-a72b6af34529" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="929052aa-24f3-11f0-bbee-a72b6af34529" type="literal">removeHyphens</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="929052ad-24f3-11f0-bbee-a72b6af34529">
+                  <resource guid="929052a8-24f3-11f0-bbee-a72b6af34529">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="929052ab-24f3-11f0-bbee-a72b6af34529" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="929052ac-24f3-11f0-bbee-a72b6af34529" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="929052ae-24f3-11f0-bbee-a72b6af34529" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
           <object statement-guid="333c0bd2-acc6-11ef-a765-2382060a590e">
             <resource guid="7ae3dc62-ac1b-11eb-8ce4-4df2726518e8">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="7ae3dc63-ac1b-11eb-8ce4-4df2726518e8" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7ae40374-ac1b-11eb-8ce4-4df2726518e8" type="literal">pointToDash</object>
+                <object statement-guid="7ae40374-ac1b-11eb-8ce4-4df2726518e8" type="literal">pointToHyphens</object>
               </predicate>
               <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
                 <object statement-guid="7ae45198-ac1b-11eb-8ce4-4df2726518e8">

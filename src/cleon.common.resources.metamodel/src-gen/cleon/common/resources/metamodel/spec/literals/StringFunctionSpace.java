@@ -33,7 +33,7 @@ public class StringFunctionSpace {
     public java.lang.String pointToSlash();
 
     @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
-    public java.lang.String dashToUnderscore();
+    public java.lang.String hyphensToUnderscore();
 
     @IDynamicResourceExtension.MethodId("16eee400-4879-11ec-b3cc-9dd8204a254a")
     public java.lang.String slashToUnderscore();
@@ -42,7 +42,7 @@ public class StringFunctionSpace {
     public java.lang.String parenthesesToUnderscore();
 
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
-    public java.lang.String whitespaceToDash();
+    public java.lang.String whitespaceToHyphens();
 
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace();
@@ -62,8 +62,11 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
     public java.lang.String removeWhiteSpaces();
 
+    @IDynamicResourceExtension.MethodId("929052a7-24f3-11f0-bbee-a72b6af34529")
+    public java.lang.String removeHyphens();
+
     @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String pointToDash();
+    public java.lang.String pointToHyphens();
 
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
     public java.lang.String pointToUnderscore();
@@ -88,7 +91,7 @@ public class StringFunctionSpace {
     public java.lang.String pointToSlash(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
-    public java.lang.String dashToUnderscore(final java.lang.String stringLiteral);
+    public java.lang.String hyphensToUnderscore(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("16eee400-4879-11ec-b3cc-9dd8204a254a")
     public java.lang.String slashToUnderscore(final java.lang.String stringLiteral);
@@ -97,7 +100,7 @@ public class StringFunctionSpace {
     public java.lang.String parenthesesToUnderscore(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("780f8f16-98fc-11ee-aa72-593773060f63")
-    public java.lang.String whitespaceToDash(final java.lang.String stringLiteral);
+    public java.lang.String whitespaceToHyphens(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("2a39baae-8afd-11ef-8165-6df4058a24dd")
     public java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral);
@@ -117,8 +120,11 @@ public class StringFunctionSpace {
     @IDynamicResourceExtension.MethodId("28b111dd-ac0d-11ef-afba-fb66280e2230")
     public java.lang.String removeWhiteSpaces(final java.lang.String stringLiteral);
 
+    @IDynamicResourceExtension.MethodId("929052a7-24f3-11f0-bbee-a72b6af34529")
+    public java.lang.String removeHyphens(final java.lang.String stringLiteral);
+
     @IDynamicResourceExtension.MethodId("7ae3dc62-ac1b-11eb-8ce4-4df2726518e8")
-    public java.lang.String pointToDash(final java.lang.String stringLiteral);
+    public java.lang.String pointToHyphens(final java.lang.String stringLiteral);
 
     @IDynamicResourceExtension.MethodId("4e440fb7-acc6-11ef-a765-2382060a590e")
     public java.lang.String pointToUnderscore(final java.lang.String stringLiteral);
@@ -159,7 +165,7 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String dashToUnderscore(final java.lang.String stringLiteral) {
+    public java.lang.String hyphensToUnderscore(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
       return stringLiteral.replace('-', '_');
       /* End Protected Region   [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
@@ -180,7 +186,7 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String whitespaceToDash(final java.lang.String stringLiteral) {
+    public java.lang.String whitespaceToHyphens(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[780f8f16-98fc-11ee-aa72-593773060f63]] */
       return StringUtil.whitespacesTo(stringLiteral, "-");
       /* End Protected Region   [[780f8f16-98fc-11ee-aa72-593773060f63]] */
@@ -290,7 +296,29 @@ public class StringFunctionSpace {
     }
 
     @Override
-    public java.lang.String pointToDash(final java.lang.String stringLiteral) {
+    public java.lang.String removeHyphens(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[929052a7-24f3-11f0-bbee-a72b6af34529]] */
+        if (stringLiteral == null || stringLiteral.isEmpty()) {
+          	return stringLiteral;
+          }
+
+          final var result = new StringBuilder();
+          result.append(stringLiteral.charAt(0)); // start with the first character
+
+          for (var i = 1; i < stringLiteral.length(); ++i) {
+          	final var currentChar = stringLiteral.charAt(i);
+          	if (currentChar ==  '-') {
+          		continue;
+          	}
+          	result.append(currentChar);
+          }
+
+          return result.toString();
+      /* End Protected Region   [[929052a7-24f3-11f0-bbee-a72b6af34529]] */
+    }
+
+    @Override
+    public java.lang.String pointToHyphens(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
         return stringLiteral.replace('.', '-');
       /* End Protected Region   [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
@@ -336,8 +364,8 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToSlash(stringLiteral);
     }
 
-    public static java.lang.String dashToUnderscore(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).dashToUnderscore(stringLiteral);
+    public static java.lang.String hyphensToUnderscore(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).hyphensToUnderscore(stringLiteral);
     }
 
     public static java.lang.String slashToUnderscore(final java.lang.String stringLiteral) {
@@ -348,8 +376,8 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).parenthesesToUnderscore(stringLiteral);
     }
 
-    public static java.lang.String whitespaceToDash(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespaceToDash(stringLiteral);
+    public static java.lang.String whitespaceToHyphens(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).whitespaceToHyphens(stringLiteral);
     }
 
     public static java.lang.String pascalCaseToWhitespace(final java.lang.String stringLiteral) {
@@ -376,8 +404,12 @@ public class StringFunctionSpace {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeWhiteSpaces(stringLiteral);
     }
 
-    public static java.lang.String pointToDash(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToDash(stringLiteral);
+    public static java.lang.String removeHyphens(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).removeHyphens(stringLiteral);
+    }
+
+    public static java.lang.String pointToHyphens(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).pointToHyphens(stringLiteral);
     }
 
     public static java.lang.String pointToUnderscore(final java.lang.String stringLiteral) {
@@ -520,4 +552,4 @@ public class StringFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,seLaYG3qEv2mz2eW/Gzbg5hLezE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,tQyEqkjbpb+hTWvTwRzbC+LUahs=] */

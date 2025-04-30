@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IRequirementListFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a8f58eb3-d33f-11ef-802e-175af1a41dfa")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderParagraph(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("095cb369-d8a8-11ef-a46f-a1c9ec5f966b")
     public java.lang.String ShortName();
@@ -223,4 +223,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,GYS2jG7o0iT2N2NrG6d7QFQsT/4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,rRlkjUep/IO6dxYRjvL002vM7Pc=] */

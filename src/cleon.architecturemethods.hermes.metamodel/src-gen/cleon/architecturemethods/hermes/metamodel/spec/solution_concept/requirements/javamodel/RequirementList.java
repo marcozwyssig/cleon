@@ -160,7 +160,6 @@ public class RequirementList extends DynamicResource implements IRequirementList
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirement.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.RequirementList_requirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -172,4 +171,4 @@ public class RequirementList extends DynamicResource implements IRequirementList
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db7b0419-d33e-11ef-802e-175af1a41dfa,d3DSkXhau0IiZN0cA8Uubuaurfg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db7b0419-d33e-11ef-802e-175af1a41dfa,iGAY+W8Ve/nXOawMB+WjlGrhkxQ=] */

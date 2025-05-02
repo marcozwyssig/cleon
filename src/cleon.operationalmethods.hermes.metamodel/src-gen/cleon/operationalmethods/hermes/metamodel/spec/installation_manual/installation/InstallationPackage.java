@@ -25,7 +25,7 @@ public class InstallationPackage {
   public static final Resource Deploy_aE_VM = new Resource("72efc1ce-9545-11ec-9b36-7d300415c806");
   public static final Resource HW_aE_Installation_deploy_aE_VM = new Resource("8078dfbf-9545-11ec-9b36-7d300415c806");
   public static final Resource Post_aE_Installation_suppress = new Resource("09526ac6-9549-11ec-9b36-7d300415c806");
-  public static final Resource OS_aE_Installation_suppress = new Resource("94d41cac-954a-11ec-9b36-7d300415c806");
+  public static final Resource OS_aE_Installation_manualOsInstallation = new Resource("94d41cac-954a-11ec-9b36-7d300415c806");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +46,4 @@ public class InstallationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation,TP5sBkizFB1DovkDsUVqj2rpvgE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation,oGydplG4AoGeZ3WjU1sqwGOxeFs=] */

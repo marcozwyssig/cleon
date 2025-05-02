@@ -8,8 +8,8 @@ public interface IOS_Installation extends cleon.common.doc.metamodel.spec.chapte
   
   // attributes
   
-  public java.lang.Boolean selectSuppress();
+  public java.lang.Boolean selectManualOsInstallation();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98e207aa-9543-11ec-9b36-7d300415c806,3LvWOTgChxmZj/z9ANmk3YAqoEs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98e207aa-9543-11ec-9b36-7d300415c806,YjIYORNX92+VbraHso6Rqs0dNJ4=] */

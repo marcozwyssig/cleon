@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class EnforceActivitiesAndRoles extends DynamicResource implements IEnforceActivitiesAndRoles {
+public class ConfiguregMSAServiceAccounts extends DynamicResource implements IConfiguregMSAServiceAccounts {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforceActivitiesAndRoles> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEnforceActivitiesAndRoles>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IConfiguregMSAServiceAccounts> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IConfiguregMSAServiceAccounts>() {
     
     @Override
-    public IEnforceActivitiesAndRoles create() {
-      return new EnforceActivitiesAndRoles();
+    public IConfiguregMSAServiceAccounts create() {
+      return new ConfiguregMSAServiceAccounts();
     }
     
     @Override
-    public IEnforceActivitiesAndRoles create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new EnforceActivitiesAndRoles(resourceRepository, resource);
+    public IConfiguregMSAServiceAccounts create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ConfiguregMSAServiceAccounts(resourceRepository, resource);
     }
   
   };
 
-  public EnforceActivitiesAndRoles() {
-    super(IEnforceActivitiesAndRoles.TYPE_ID);
+  public ConfiguregMSAServiceAccounts() {
+    super(IConfiguregMSAServiceAccounts.TYPE_ID);
   }
   
-  public EnforceActivitiesAndRoles(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IEnforceActivitiesAndRoles.TYPE_ID);
+  public ConfiguregMSAServiceAccounts(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IConfiguregMSAServiceAccounts.TYPE_ID);
   }
 
   // attributes
@@ -82,7 +82,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public EnforceActivitiesAndRoles setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public ConfiguregMSAServiceAccounts setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -92,7 +92,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public EnforceActivitiesAndRoles setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public ConfiguregMSAServiceAccounts setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -102,18 +102,8 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public EnforceActivitiesAndRoles setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public ConfiguregMSAServiceAccounts setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU selectEnforceOU() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_enforceOU);
-  }
-
-  public EnforceActivitiesAndRoles setEnforceOU(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU enforceOU) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_enforceOU, enforceOU);
     return this;
   }
     
@@ -122,7 +112,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_extends);
   }
 
-  public EnforceActivitiesAndRoles setExtends(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> extends_) {
+  public ConfiguregMSAServiceAccounts setExtends(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> extends_) {
     _setList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_extends, extends_);
     return this;
   }
@@ -132,7 +122,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public EnforceActivitiesAndRoles setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public ConfiguregMSAServiceAccounts setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -142,18 +132,8 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public EnforceActivitiesAndRoles setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public ConfiguregMSAServiceAccounts setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU selectSetOfOU() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_setOfOU);
-  }
-
-  public EnforceActivitiesAndRoles setSetOfOU(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU setOfOU) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_setOfOU, setOfOU);
     return this;
   }
     
@@ -162,7 +142,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractConfigurationSpecification_specifictionForSystemConfiguration);
   }
 
-  public EnforceActivitiesAndRoles setSpecifictionForSystemConfiguration(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration specifictionForSystemConfiguration) {
+  public ConfiguregMSAServiceAccounts setSpecifictionForSystemConfiguration(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration specifictionForSystemConfiguration) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractConfigurationSpecification_specifictionForSystemConfiguration, specifictionForSystemConfiguration);
     return this;
   }
@@ -172,7 +152,7 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public EnforceActivitiesAndRoles setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ConfiguregMSAServiceAccounts setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -186,23 +166,11 @@ public class EnforceActivitiesAndRoles extends DynamicResource implements IEnfor
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_enforceOU, visitor);
     _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_extends, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_setOfOU, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractConfigurationSpecification_specifictionForSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IEnforceActivitiesAndRoles> selectToMeSetOfOU(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IEnforceActivitiesAndRoles.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_setOfOU, object.getResource());
-  }
-  
-  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IEnforceActivitiesAndRoles> selectToMeEnforceOU(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IEnforceActivitiesAndRoles.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.EnforceActivitiesAndRoles_enforceOU, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e20327d8-059c-11f0-a294-67d88c30f2e4,f1V/Hudc/Yb0LCvoKN/HAeYQu8g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25ae4e3b-059d-11f0-a294-67d88c30f2e4,qmy+XzxD75zsfHo49xGFlAYWYXY=] */

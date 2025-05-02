@@ -491,10 +491,10 @@ public class FunctionSpace_Asciidoc {
     @Override
     public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IOS_Installation oS_Installation) {
       /* Begin Protected Region [[8ef2ae2a-954a-11ec-9b36-7d300415c806]] */
-      if (oS_Installation.selectSuppress() == null) {
+      if (oS_Installation.selectManualOsInstallation() == null) {
       	return true;
       }
-      return !oS_Installation.selectSuppress().booleanValue();
+      return !oS_Installation.selectManualOsInstallation().booleanValue();
       /* End Protected Region   [[8ef2ae2a-954a-11ec-9b36-7d300415c806]] */
     }
 

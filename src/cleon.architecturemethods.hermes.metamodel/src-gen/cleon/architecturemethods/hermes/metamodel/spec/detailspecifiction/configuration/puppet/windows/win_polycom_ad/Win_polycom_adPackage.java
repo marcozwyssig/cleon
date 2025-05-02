@@ -4,18 +4,18 @@ import ch.actifsource.core.Resource;
 
 public class Win_polycom_adPackage {
   
-  public static final Resource EnforceActivitiesAndRoles = new Resource("e20327d8-059c-11f0-a294-67d88c30f2e4");
-  public static final Resource EnforcegMSAServiceAccounts = new Resource("25ae4e3b-059d-11f0-a294-67d88c30f2e4");
-  public static final Resource EnforceActivitiesAndRoles_setOfOU = new Resource("e4a290ae-05af-11f0-a7b1-53303e9b84a9");
-  public static final Resource EnforceActivitiesAndRoles_enforceOU = new Resource("6ff9a4e6-05b0-11f0-a7b1-53303e9b84a9");
-  public static final Resource EnforceServiceAccounts = new Resource("03f382f0-0661-11f0-ad7c-c72b7a763977");
-  public static final Resource EnforceServiceAccounts_setOfOU = new Resource("d6afc021-07e6-11f0-bc12-1bbda1d7028e");
-  public static final Resource EnforceServiceAccounts_site = new Resource("b97a3930-07e7-11f0-bc12-1bbda1d7028e");
-  public static final Resource EnforceServiceAccounts_serviceAccount = new Resource("85ec6281-0bb6-11f0-95b9-95d0cc9a328a");
+  public static final Resource ConfigureActivitiesAndRoles = new Resource("e20327d8-059c-11f0-a294-67d88c30f2e4");
+  public static final Resource ConfiguregMSAServiceAccounts = new Resource("25ae4e3b-059d-11f0-a294-67d88c30f2e4");
+  public static final Resource ConfigureActivitiesAndRoles_setOfOU = new Resource("e4a290ae-05af-11f0-a7b1-53303e9b84a9");
+  public static final Resource ConfigureActivitiesAndRoles_enforceOU = new Resource("6ff9a4e6-05b0-11f0-a7b1-53303e9b84a9");
+  public static final Resource ConfigureServiceAccountsAndTestUser = new Resource("03f382f0-0661-11f0-ad7c-c72b7a763977");
+  public static final Resource ConfigureServiceAccountsAndTestUser_setOfOU = new Resource("d6afc021-07e6-11f0-bc12-1bbda1d7028e");
+  public static final Resource ConfigureServiceAccountsAndTestUser_site = new Resource("b97a3930-07e7-11f0-bc12-1bbda1d7028e");
+  public static final Resource ConfigureServiceAccountsAndTestUser_serviceAccount = new Resource("85ec6281-0bb6-11f0-95b9-95d0cc9a328a");
   public static final Resource ServiceAccountConfiguration = new Resource("8e31ff07-0bb6-11f0-95b9-95d0cc9a328a");
   public static final Resource ServiceAccountConfiguration_serviceAccount = new Resource("c05eb1ae-0bb6-11f0-95b9-95d0cc9a328a");
-  public static final Resource ServiceAccountConfiguration_OU = new Resource("47b6ac8f-0bb7-11f0-95b9-95d0cc9a328a");
-  public static final Resource ServiceAccountConfiguration_password = new Resource("5d6ab3d7-0bb7-11f0-95b9-95d0cc9a328a");
+  public static final Resource AbstractAccountConfiguration_OU = new Resource("47b6ac8f-0bb7-11f0-95b9-95d0cc9a328a");
+  public static final Resource AbstractAccountConfiguration_password = new Resource("5d6ab3d7-0bb7-11f0-95b9-95d0cc9a328a");
   public static final Resource Dns = new Resource("2da3b935-151b-11f0-8fa5-ad696b254e17");
   public static final Resource DnsZone = new Resource("39b838be-151b-11f0-8fa5-ad696b254e17");
   public static final Resource DnsARecord = new Resource("672825f8-151b-11f0-8fa5-ad696b254e17");
@@ -30,6 +30,9 @@ public class Win_polycom_adPackage {
   public static final Resource Custom_aE_DnsCName_host = new Resource("ed57a53b-1526-11f0-b8e6-1d11cc32caa6");
   public static final Resource Custom_aE_DnsCName_target = new Resource("472e7461-1527-11f0-b8e6-1d11cc32caa6");
   public static final Resource FunctionSoace_aE_AD_Custom_aE_DnsCName = new Resource("609301e7-1527-11f0-b8e6-1d11cc32caa6");
+  public static final Resource TestUserConfiguration = new Resource("c94bddbb-2729-11f0-8098-59f455ea82af");
+  public static final Resource ConfigureServiceAccountsAndTestUser_testUsers = new Resource("cccc03ae-2729-11f0-8098-59f455ea82af");
+  public static final Resource AbstractAccountConfiguration = new Resource("f08a245c-272a-11f0-8098-59f455ea82af");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +53,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,7aW/tmqNFKT/zgO1H3d7YUov5YM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,LFJYk0yHjCF2IcXVf/ARxjT/k1o=] */

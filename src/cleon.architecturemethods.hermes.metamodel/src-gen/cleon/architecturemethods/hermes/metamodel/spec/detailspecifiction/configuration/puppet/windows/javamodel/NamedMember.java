@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NamedGroup extends DynamicResource implements INamedGroup {
+public class NamedMember extends DynamicResource implements INamedMember {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedGroup> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedGroup>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedMember> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedMember>() {
     
     @Override
-    public INamedGroup create() {
-      return new NamedGroup();
+    public INamedMember create() {
+      return new NamedMember();
     }
     
     @Override
-    public INamedGroup create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NamedGroup(resourceRepository, resource);
+    public INamedMember create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedMember(resourceRepository, resource);
     }
   
   };
 
-  public NamedGroup() {
-    super(INamedGroup.TYPE_ID);
+  public NamedMember() {
+    super(INamedMember.TYPE_ID);
   }
   
-  public NamedGroup(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INamedGroup.TYPE_ID);
+  public NamedMember(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedMember.TYPE_ID);
   }
 
   // attributes
@@ -46,7 +46,7 @@ public class NamedGroup extends DynamicResource implements INamedGroup {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NamedGroup setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedMember setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -61,4 +61,4 @@ public class NamedGroup extends DynamicResource implements INamedGroup {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e98fa26e-07fd-11f0-bc12-1bbda1d7028e,Ik+3JJwWMBi0t0cDyPBVwzZjS1A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e98fa26e-07fd-11f0-bc12-1bbda1d7028e,CwWVyI6cK1E3OpKb/PbOD9FR3KU=] */

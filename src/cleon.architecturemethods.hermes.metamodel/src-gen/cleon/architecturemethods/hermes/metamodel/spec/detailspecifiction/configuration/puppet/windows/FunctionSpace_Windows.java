@@ -96,6 +96,112 @@ public class FunctionSpace_Windows {
 
   }
 
+  public static interface IActivityMemberFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2f40f664-2197-11f0-83ae-df5418a109a4")
+    public java.lang.String FQDN();
+
+    @IDynamicResourceExtension.MethodId("3c346413-2197-11f0-83ae-df5418a109a4")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IActivityMemberFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActivityMemberFunctionsImpl implements IActivityMemberFunctionsImpl {
+
+    public static final IActivityMemberFunctionsImpl INSTANCE = new ActivityMemberFunctionsImpl();
+
+    private ActivityMemberFunctionsImpl() {}
+
+  }
+  
+  public static class ActivityMemberFunctions {
+
+    private ActivityMemberFunctions() {}
+
+  }
+
+  public static interface IAbstractMemberFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("66daf807-2197-11f0-83ae-df5418a109a4")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IAbstractMemberFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractMemberFunctionsImpl implements IAbstractMemberFunctionsImpl {
+
+    public static final IAbstractMemberFunctionsImpl INSTANCE = new AbstractMemberFunctionsImpl();
+
+    private AbstractMemberFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractMemberFunctions {
+
+    private AbstractMemberFunctions() {}
+
+  }
+
+  public static interface INamedMemberFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("74978240-2197-11f0-83ae-df5418a109a4")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface INamedMemberFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedMemberFunctionsImpl implements INamedMemberFunctionsImpl {
+
+    public static final INamedMemberFunctionsImpl INSTANCE = new NamedMemberFunctionsImpl();
+
+    private NamedMemberFunctionsImpl() {}
+
+  }
+  
+  public static class NamedMemberFunctions {
+
+    private NamedMemberFunctions() {}
+
+  }
+
+  public static interface IServiceAccountMemberFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("977f759d-21c2-11f0-83ae-df5418a109a4")
+    public java.lang.String Name();
+
+    @IDynamicResourceExtension.MethodId("98b03741-21c3-11f0-83ae-df5418a109a4")
+    public java.lang.String LogonAs();
+
+  }
+  
+  public static interface IServiceAccountMemberFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceAccountMemberFunctionsImpl implements IServiceAccountMemberFunctionsImpl {
+
+    public static final IServiceAccountMemberFunctionsImpl INSTANCE = new ServiceAccountMemberFunctionsImpl();
+
+    private ServiceAccountMemberFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceAccountMemberFunctions {
+
+    private ServiceAccountMemberFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,CqIYkY5MhBtRdW+uOxX+FF4GrAk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,rN713sbIsxED9Zp+tr+AKBA/luE=] */

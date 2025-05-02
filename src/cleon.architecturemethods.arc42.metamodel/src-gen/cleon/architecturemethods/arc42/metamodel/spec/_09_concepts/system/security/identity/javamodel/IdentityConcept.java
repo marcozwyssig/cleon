@@ -57,18 +57,17 @@ public class IdentityConcept extends DynamicResource implements IIdentityConcept
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
-  // relations
-  
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts selectAccounts() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_accounts);
-  }
-
-  public IdentityConcept setAccounts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts accounts) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_accounts, accounts);
-    return this;
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
   }
     
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
+  }
+
+  // relations
+  
   @Override
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authn.javamodel.IRealmConcept selectAuthn() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authn.javamodel.IRealmConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_authn);
@@ -130,6 +129,16 @@ public class IdentityConcept extends DynamicResource implements IIdentityConcept
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts selectServiceAccounts() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_serviceAccounts);
+  }
+
+  public IdentityConcept setServiceAccounts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts serviceAccounts) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_serviceAccounts, serviceAccounts);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -143,15 +152,14 @@ public class IdentityConcept extends DynamicResource implements IIdentityConcept
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_accounts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authn.javamodel.IRealmConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_authn, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.javamodel.IAutorizationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_authz, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_serviceAccounts, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -165,9 +173,9 @@ public class IdentityConcept extends DynamicResource implements IIdentityConcept
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IIdentityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_authz, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IIdentityConcept selectToMeAccounts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IIdentityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_accounts, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IIdentityConcept selectToMeServiceAccounts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IIdentityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.IdentityPackage.IdentityConcept_serviceAccounts, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9a3fbe-da5c-11eb-8ffa-d7727a940bcf,mrYvMhSQsYRXa8eQWauzWlCDznE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9a3fbe-da5c-11eb-8ffa-d7727a940bcf,Lhqa0Hqx5FD8BMQ/rnv+rKvN0yQ=] */

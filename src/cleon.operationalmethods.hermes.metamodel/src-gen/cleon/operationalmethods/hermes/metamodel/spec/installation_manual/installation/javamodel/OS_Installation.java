@@ -58,12 +58,12 @@ public class OS_Installation extends DynamicResource implements IOS_Installation
   }
 
   @Override
-  public java.lang.Boolean selectSuppress() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_suppress);
+  public java.lang.Boolean selectManualOsInstallation() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_manualOsInstallation);
   }
     
-  public void setSuppress(java.lang.Boolean suppress) {
-     _setSingleAttribute(cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_suppress, suppress);
+  public void setManualOsInstallation(java.lang.Boolean manualOsInstallation) {
+     _setSingleAttribute(cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_manualOsInstallation, manualOsInstallation);
   }
 
   // relations
@@ -125,7 +125,7 @@ public class OS_Installation extends DynamicResource implements IOS_Installation
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_suppress, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.InstallationPackage.OS_aE_Installation_manualOsInstallation, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
@@ -134,4 +134,4 @@ public class OS_Installation extends DynamicResource implements IOS_Installation
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98e207aa-9543-11ec-9b36-7d300415c806,zCPipV5o+rXvRYEO4LcuoRttboA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98e207aa-9543-11ec-9b36-7d300415c806,v1OVMu48LrIpeb37grs7uBBQn+o=] */

@@ -19,7 +19,7 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
   /* End Protected Region   [[7fae76bb-d5e1-11eb-b02a-03222c04a898]] */
 
 
-  public static interface IAuthZBuildingBlockForSystemComponentFunctions extends IDynamicResourceExtension {
+  public static interface IRoleTemplateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("92f96e6a-d5e1-11eb-b02a-03222c04a898")
     public java.lang.String CommonName();
@@ -31,43 +31,43 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent);
 
     @IDynamicResourceExtension.MethodId("fc8c4789-de4a-11eb-b028-df36f0dc7b24")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> AllBasedOn();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> AllBasedOn();
 
     @IDynamicResourceExtension.MethodId("fcf9ee4b-de5b-11eb-b028-df36f0dc7b24")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> AllBasedOnReverse();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> AllBasedOnReverse();
 
     @IDynamicResourceExtension.MethodId("dc189867-0fd7-11f0-999f-c7e64e984aff")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurationDependencies();
 
   }
   
-  public static interface IAuthZBuildingBlockForSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRoleTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a40693a7-dd92-11eb-a588-852a91faee6e")
-    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent authZBuildingBlockForSystemComponent);
+    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate roleTemplate);
 
     @IDynamicResourceExtension.MethodId("2ecc01de-de4a-11eb-b028-df36f0dc7b24")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> authZBuildingBlockForSystemComponentList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> roleTemplateList);
 
   }
   
-  public static class AuthZBuildingBlockForSystemComponentFunctionsImpl implements IAuthZBuildingBlockForSystemComponentFunctionsImpl {
+  public static class RoleTemplateFunctionsImpl implements IRoleTemplateFunctionsImpl {
 
-    public static final IAuthZBuildingBlockForSystemComponentFunctionsImpl INSTANCE = new AuthZBuildingBlockForSystemComponentFunctionsImpl();
+    public static final IRoleTemplateFunctionsImpl INSTANCE = new RoleTemplateFunctionsImpl();
 
-    private AuthZBuildingBlockForSystemComponentFunctionsImpl() {}
+    private RoleTemplateFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent authZBuildingBlockForSystemComponent) {
-      return String.format("%03d", authZBuildingBlockForSystemComponent.selectIdentifier());
+    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate roleTemplate) {
+      return String.format("%03d", roleTemplate.selectIdentifier());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> authZBuildingBlockForSystemComponentList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> roleTemplateList) {
       /* Begin Protected Region [[2ecc01de-de4a-11eb-b028-df36f0dc7b24]] */
     	var roleSystemComponentResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent>();
-    	for( var authZBuildingBlockForSystemComponent : authZBuildingBlockForSystemComponentList ) {
-    		var roleSystemComponents =  RoleSystemComponent.selectToMeSystemComponentRoleTemplate(authZBuildingBlockForSystemComponent);
+    	for( var roleTemplate : roleTemplateList ) {
+    		var roleSystemComponents =  RoleSystemComponent.selectToMeSystemComponentRoleTemplate(roleTemplate);
     		roleSystemComponentResult.addAll(roleSystemComponents);    		
     	}
     	
@@ -77,45 +77,45 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
   }
   
-  public static class AuthZBuildingBlockForSystemComponentFunctions {
+  public static class RoleTemplateFunctions {
 
-    private AuthZBuildingBlockForSystemComponentFunctions() {}
+    private RoleTemplateFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent authZBuildingBlockForSystemComponent) {
-      return DynamicResourceUtil.invoke(IAuthZBuildingBlockForSystemComponentFunctionsImpl.class, AuthZBuildingBlockForSystemComponentFunctionsImpl.INSTANCE, authZBuildingBlockForSystemComponent).GetId(authZBuildingBlockForSystemComponent);
+    public static java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate roleTemplate) {
+      return DynamicResourceUtil.invoke(IRoleTemplateFunctionsImpl.class, RoleTemplateFunctionsImpl.INSTANCE, roleTemplate).GetId(roleTemplate);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> authZBuildingBlockForSystemComponentList) {
-      return DynamicResourceUtil.invoke(IAuthZBuildingBlockForSystemComponentFunctionsImpl.class, AuthZBuildingBlockForSystemComponentFunctionsImpl.INSTANCE, authZBuildingBlockForSystemComponentList).ToRoleSystemComponent(roleSystemComponent, authZBuildingBlockForSystemComponentList);
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> roleTemplateList) {
+      return DynamicResourceUtil.invoke(IRoleTemplateFunctionsImpl.class, RoleTemplateFunctionsImpl.INSTANCE, roleTemplateList).ToRoleSystemComponent(roleSystemComponent, roleTemplateList);
     }
 
   }
 
-  public static interface IAuthZBuildingBlockForResponsibilityFunctions extends IDynamicResourceExtension {
+  public static interface IRoleSystemOrSystemTemplateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2607621f-4bc2-11ed-9983-274ab90bcd39")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemComponent> AllComponentsForAuthZBuildingBlock();
 
   }
   
-  public static interface IAuthZBuildingBlockForResponsibilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRoleSystemOrSystemTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AuthZBuildingBlockForResponsibilityFunctionsImpl implements IAuthZBuildingBlockForResponsibilityFunctionsImpl {
+  public static class RoleSystemOrSystemTemplateFunctionsImpl implements IRoleSystemOrSystemTemplateFunctionsImpl {
 
-    public static final IAuthZBuildingBlockForResponsibilityFunctionsImpl INSTANCE = new AuthZBuildingBlockForResponsibilityFunctionsImpl();
+    public static final IRoleSystemOrSystemTemplateFunctionsImpl INSTANCE = new RoleSystemOrSystemTemplateFunctionsImpl();
 
-    private AuthZBuildingBlockForResponsibilityFunctionsImpl() {}
+    private RoleSystemOrSystemTemplateFunctionsImpl() {}
 
   }
   
-  public static class AuthZBuildingBlockForResponsibilityFunctions {
+  public static class RoleSystemOrSystemTemplateFunctions {
 
-    private AuthZBuildingBlockForResponsibilityFunctions() {}
+    private RoleSystemOrSystemTemplateFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,vYM/VAyXSpVfZhRErdumo047go0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,wNKNLUQdaBnlUSNWowqmUWQmuOo=] */

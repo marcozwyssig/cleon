@@ -33,6 +33,7 @@ public class Win_polycom_adPackage {
   public static final Resource TestUserConfiguration = new Resource("c94bddbb-2729-11f0-8098-59f455ea82af");
   public static final Resource ConfigureServiceAccountsAndTestUser_testUsers = new Resource("cccc03ae-2729-11f0-8098-59f455ea82af");
   public static final Resource AbstractAccountConfiguration = new Resource("f08a245c-272a-11f0-8098-59f455ea82af");
+  public static final Resource TestUserConfiguration_testAccount = new Resource("388a7c1e-2742-11f0-bc3e-fdd30b5cbdec");
   
   /* Begin Protected Region [[user]] */
   
@@ -53,4 +54,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,LFJYk0yHjCF2IcXVf/ARxjT/k1o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,EoEitCBXgTbnX7boCe0TXK61XAo=] */

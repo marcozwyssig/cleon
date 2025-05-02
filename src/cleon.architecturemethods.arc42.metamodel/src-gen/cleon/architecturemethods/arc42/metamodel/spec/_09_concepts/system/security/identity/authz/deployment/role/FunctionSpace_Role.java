@@ -39,6 +39,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("1f3413fb-0df0-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllBasedOn();
 
+    @IDynamicResourceExtension.MethodId("458f4583-2741-11f0-bc3e-fdd30b5cbdec")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivitiesEnabled();
+
     @IDynamicResourceExtension.MethodId("fecbaa1a-0dea-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllRoleSystemComponentForBasedOn();
 
@@ -92,6 +95,9 @@ public class FunctionSpace_Role {
 
     @IDynamicResourceExtension.MethodId("d1ce51c1-9c10-11e9-9470-2178b598e9a4")
     public java.lang.Integer SystemComponentNo();
+
+    @IDynamicResourceExtension.MethodId("699cda76-2741-11f0-bc3e-fdd30b5cbdec")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IMembereable> AllMembers();
 
   }
   
@@ -302,7 +308,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> AllRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d2a1ec2d-d4b8-11eb-9bf5-6901ef778b9c")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent> AllRelatedAuthZBuildingBlockForSystemComponent();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate> AllRelatedAuthZBuildingBlockForSystemComponent();
 
   }
   
@@ -376,4 +382,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,Ti+PRsXkNy0dVWiu9nGiEufOORo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,wkkwrfbyFvtQsSEdFzJikRu7rrw=] */

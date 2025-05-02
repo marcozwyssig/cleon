@@ -12,8 +12,8 @@ public interface IServiceConfig extends cleon.architecturemethods.hermes.metamod
   
   public java.lang.String selectLogonAs();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectServiceAccount();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectServiceAccount();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,772fe474-1084-11f0-b378-11a495632127,XS/+cInOIIv5OHrPMGjjH4opxYk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,772fe474-1084-11f0-b378-11a495632127,LhZQRkDUOSgfcKyT57S2FuEGA6g=] */

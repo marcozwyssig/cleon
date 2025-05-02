@@ -44,7 +44,7 @@ public interface IIssuingCA extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.String selectPowerShellRepo();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectGmsa();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectGmsa();
   
   public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca.javamodel.ICaCrlDistributionPoint> selectCaCrlDistributionPoint();
   
@@ -56,4 +56,4 @@ public interface IIssuingCA extends cleon.architecturemethods.hermes.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,C33LFz1lC+IgWBOdv0uVV3NqkJY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b086d6cf-04af-11f0-8e81-9be04e08660a,Oec0rRaF4RHCJ0aZ6OJTqDR7sm0=] */

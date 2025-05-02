@@ -24,8 +24,8 @@ public interface IInstallSQLServer extends cleon.architecturemethods.hermes.meta
   
   public java.lang.String selectEdition();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectSetupAccount();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectSetupAccount();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b1329f2-114d-11f0-a4f9-b5f995a9e0fe,T8S17Aln/1bpu/HP2qgf72xdbfo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b1329f2-114d-11f0-a4f9-b5f995a9e0fe,N2QIC5+kIiXn5Us5CoCHjZg6qps=] */

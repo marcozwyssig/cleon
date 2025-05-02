@@ -12,8 +12,8 @@ public interface IIdentityConcept extends cleon.architecturemethods.arc42.metamo
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.javamodel.IAutorizationConcept selectAuthz();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccounts selectServiceAccounts();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IAccounts> selectAccounts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af9a3fbe-da5c-11eb-8ffa-d7727a940bcf,h23D3RxfclcmsYcc83bvbHx6p0w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af9a3fbe-da5c-11eb-8ffa-d7727a940bcf,cFRfjC0X1Fmn0yhViLIjVYi3TFo=] */

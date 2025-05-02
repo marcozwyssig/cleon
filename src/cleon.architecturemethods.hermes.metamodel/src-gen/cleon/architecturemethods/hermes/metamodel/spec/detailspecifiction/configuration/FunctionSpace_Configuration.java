@@ -414,7 +414,10 @@ public class FunctionSpace_Configuration {
     public cleon.architecturemethods.arc42.metamodel.spec.javamodel.ISystemArc42Document arc42Document();
 
     @IDynamicResourceExtension.MethodId("b84af3f0-1060-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccounts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> AllServiceAccounts();
+
+    @IDynamicResourceExtension.MethodId("107e696d-2742-11f0-bc3e-fdd30b5cbdec")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccount> AllTestAccounts();
 
     @IDynamicResourceExtension.MethodId("e7be6abb-112a-11f0-a4f9-b5f995a9e0fe")
     public java.lang.String DomainName();
@@ -426,7 +429,7 @@ public class FunctionSpace_Configuration {
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration SystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("583a60ec-13b3-11f0-b664-c7b92124985d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> AllServiceAccountsForSystemConfiguration();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> AllServiceAccountsForSystemConfiguration();
 
   }
   
@@ -492,4 +495,4 @@ public class FunctionSpace_Configuration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,jSyrzGsrTJC3z7fjd+tIsQh4XCQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,0Bv7t+TbXSHsyEeSxOCpm7JazSk=] */

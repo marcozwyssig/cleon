@@ -567,7 +567,7 @@
                 <object statement-guid="a40756fa-dd92-11eb-a588-852a91faee6e" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="aee3084a-dd92-11eb-a588-852a91faee6e" type="literal">return String.format("%03d", authZBuildingBlockForSystemComponent.selectIdentifier());</object>
+                <object statement-guid="aee3084a-dd92-11eb-a588-852a91faee6e" type="literal">return String.format("%03d", roleTemplate.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

@@ -15,12 +15,12 @@ import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnable
 import java.util.stream.Collectors;
 import java.util.ArrayList;
 
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.FunctionSpace_Accounts.IServiceAccountFunctions;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor.IAuthZBuildingBlockForSystemComponentFunctions;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccountTemplate;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.ServiceAccount;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.FunctionSpace_ServiceAccounts.IServiceAccountFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor.IRoleTemplateFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccountTemplate;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.ServiceAccount;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.ActivityTemplateAware;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IAuthZBuildingBlockForSystemComponent;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.role.javamodel.IRoleTemplate;
 
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
@@ -82,7 +82,7 @@ public class FunctionSpace_Activity_Deployment {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> ToServiceAccounts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("abf2fc43-05ab-11f0-a7b1-53303e9b84a9")
     public java.lang.String UsedIn();
@@ -107,7 +107,7 @@ public class FunctionSpace_Activity_Deployment {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
   }
   
@@ -165,10 +165,10 @@ public class FunctionSpace_Activity_Deployment {
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
       final var accountTemplatesOnAllSites = ActivityTemplateAware.selectToMeActivityTemplatesOnSites(activityPermission.selectActivityTemplate());
-      for(final var accountTemplate  : accountTemplatesOnAllSites.stream().filter(IAuthZBuildingBlockForSystemComponent.class::isInstance).map(IAuthZBuildingBlockForSystemComponent.class::cast).collect(Collectors.toList())) {
-      	if( accountTemplate instanceof IAuthZBuildingBlockForSystemComponent) {
+      for(final var accountTemplate  : accountTemplatesOnAllSites.stream().filter(IRoleTemplate.class::isInstance).map(IRoleTemplate.class::cast).collect(Collectors.toList())) {
+      	if( accountTemplate instanceof IRoleTemplate) {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
-      		for( final var all : authZBuildingBlockForSystemComponent.extension(IAuthZBuildingBlockForSystemComponentFunctions.class).AllBasedOnReverse()) {
+      		for( final var all : authZBuildingBlockForSystemComponent.extension(IRoleTemplateFunctions.class).AllBasedOnReverse()) {
       			for( final var roleSystemComponent : RoleSystemComponent.selectToMeSystemComponentRoleTemplate(all)) {
       				if( roleSystemComponent.selectExcludeActivities().contains(activityPermission)) {
       					continue;
@@ -185,10 +185,10 @@ public class FunctionSpace_Activity_Deployment {
       }
 
       final var accountTemplatesOnLocalSite = ActivityTemplateAware.selectToMeActivityTemplatesOnLocalSite(activityPermission.selectActivityTemplate());
-      for(final var accountTemplate  : accountTemplatesOnLocalSite.stream().filter(IAuthZBuildingBlockForSystemComponent.class::isInstance).map(IAuthZBuildingBlockForSystemComponent.class::cast).collect(Collectors.toList())) {
-      	if( accountTemplate instanceof IAuthZBuildingBlockForSystemComponent) {
+      for(final var accountTemplate  : accountTemplatesOnLocalSite.stream().filter(IRoleTemplate.class::isInstance).map(IRoleTemplate.class::cast).collect(Collectors.toList())) {
+      	if( accountTemplate instanceof IRoleTemplate) {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
-      		for( final var all : authZBuildingBlockForSystemComponent.extension(IAuthZBuildingBlockForSystemComponentFunctions.class).AllBasedOnReverse()) {
+      		for( final var all : authZBuildingBlockForSystemComponent.extension(IRoleTemplateFunctions.class).AllBasedOnReverse()) {
       			for( final var roleSystemComponent : RoleSystemComponent.selectToMeSystemComponentRoleTemplate(all)) {
       				if( roleSystemComponent.selectExcludeActivities().contains(activityPermission)) {
       					continue;
@@ -209,9 +209,9 @@ public class FunctionSpace_Activity_Deployment {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
-      final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount>();
+      final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount>();
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
@@ -260,7 +260,7 @@ public class FunctionSpace_Activity_Deployment {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToRoleSystemComponents(activityPermission);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToServiceAccounts(activityPermission);
     }
 
@@ -444,4 +444,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,ZGcBEJmdLPhuNUgWcivZhyJiXGU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,CGghoWNDWKeKz/qveeU0PMkAqC8=] */

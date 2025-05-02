@@ -10,8 +10,8 @@ public interface IServiceAccountMember extends cleon.architecturemethods.hermes.
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectServiceAccount();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectServiceAccount();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,707d30a3-21c2-11f0-83ae-df5418a109a4,RFsmqWvf//l+4ttCilKGgSzMgiE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,707d30a3-21c2-11f0-83ae-df5418a109a4,bGha9EddGMHLe24jtFusdIxKnb0=] */

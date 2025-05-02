@@ -551,6 +551,8 @@
         <resource statement-guid="87c416eb-21a9-11f0-83ae-df5418a109a4" type="resource" guid="87c37aa8-21a9-11f0-83ae-df5418a109a4" />
         <resource statement-guid="5ae7e1b1-21ad-11f0-83ae-df5418a109a4" type="resource" guid="5ae76c7e-21ad-11f0-83ae-df5418a109a4" />
         <resource statement-guid="5cd92a73-21ad-11f0-83ae-df5418a109a4" type="resource" guid="5cd92a70-21ad-11f0-83ae-df5418a109a4" />
+        <resource statement-guid="49f79bb0-2731-11f0-8098-59f455ea82af" type="resource" guid="49f6d85d-2731-11f0-8098-59f455ea82af" />
+        <resource statement-guid="b46fe57c-2734-11f0-8098-59f455ea82af" type="resource" guid="b46fbe69-2734-11f0-8098-59f455ea82af" />
       </owns>
     </resource>
   </owns>
@@ -6047,6 +6049,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="5cd92a74-21ad-11f0-83ae-df5418a109a4" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_dns_resolver</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="49f79bb0-2731-11f0-8098-59f455ea82af">
+            <resource guid="49f6d85d-2731-11f0-8098-59f455ea82af">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="49f6ff6f-2731-11f0-8098-59f455ea82af" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="49f79bb1-2731-11f0-8098-59f455ea82af" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="b46fe57c-2734-11f0-8098-59f455ea82af">
+            <resource guid="b46fbe69-2734-11f0-8098-59f455ea82af">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="b46fbe6b-2734-11f0-8098-59f455ea82af" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="b46fe57d-2734-11f0-8098-59f455ea82af" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts</object>
               </predicate>
             </resource>
           </object>

@@ -894,13 +894,53 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IAbstractAccountConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3d5f06aa-272b-11f0-8098-59f455ea82af")
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+
+    @IDynamicResourceExtension.MethodId("69875858-272b-11f0-8098-59f455ea82af")
+    public java.lang.String OU();
+
+    @IDynamicResourceExtension.MethodId("2e2709e7-272c-11f0-8098-59f455ea82af")
+    public java.lang.String InOU();
+
+    @IDynamicResourceExtension.MethodId("0336085c-2743-11f0-bc3e-fdd30b5cbdec")
+    public java.lang.String Password();
+
+    @IDynamicResourceExtension.MethodId("3544d1a3-2743-11f0-bc3e-fdd30b5cbdec")
+    public java.lang.String AccountType();
+
+  }
+  
+  public static interface IAbstractAccountConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractAccountConfigurationFunctionsImpl implements IAbstractAccountConfigurationFunctionsImpl {
+
+    public static final IAbstractAccountConfigurationFunctionsImpl INSTANCE = new AbstractAccountConfigurationFunctionsImpl();
+
+    private AbstractAccountConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractAccountConfigurationFunctions {
+
+    private AbstractAccountConfigurationFunctions() {}
+
+  }
+
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0c46b4b1-272c-11f0-8098-59f455ea82af")
     public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("415d19ab-272c-11f0-8098-59f455ea82af")
-    public java.lang.String Type();
+    public java.lang.String InOU();
+
+    @IDynamicResourceExtension.MethodId("3eb1d813-2743-11f0-bc3e-fdd30b5cbdec")
+    public java.lang.String AccountType();
 
   }
   
@@ -928,7 +968,10 @@ public class FunctionSpace_Puppet_Detailspecification {
     public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("4b35656c-272c-11f0-8098-59f455ea82af")
-    public java.lang.String Type();
+    public java.lang.String InOU();
+
+    @IDynamicResourceExtension.MethodId("4b15896e-2743-11f0-bc3e-fdd30b5cbdec")
+    public java.lang.String AccountType();
 
   }
   
@@ -947,37 +990,6 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class TestUserConfigurationFunctions {
 
     private TestUserConfigurationFunctions() {}
-
-  }
-
-  public static interface IAbstractAccountConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3d5f06aa-272b-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
-
-    @IDynamicResourceExtension.MethodId("69875858-272b-11f0-8098-59f455ea82af")
-    public java.lang.String OU();
-
-    @IDynamicResourceExtension.MethodId("2e2709e7-272c-11f0-8098-59f455ea82af")
-    public java.lang.String Type();
-
-  }
-  
-  public static interface IAbstractAccountConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractAccountConfigurationFunctionsImpl implements IAbstractAccountConfigurationFunctionsImpl {
-
-    public static final IAbstractAccountConfigurationFunctionsImpl INSTANCE = new AbstractAccountConfigurationFunctionsImpl();
-
-    private AbstractAccountConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractAccountConfigurationFunctions {
-
-    private AbstractAccountConfigurationFunctions() {}
 
   }
 
@@ -1291,4 +1303,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,If6ii3udj7cSzneItE0YHM/sIyY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,QEMgPJcbKbzWHOvo172Q+rwtmJA=] */

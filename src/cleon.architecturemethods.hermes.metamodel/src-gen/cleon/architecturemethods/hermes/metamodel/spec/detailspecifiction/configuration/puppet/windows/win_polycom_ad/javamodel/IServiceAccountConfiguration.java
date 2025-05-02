@@ -8,8 +8,8 @@ public interface IServiceAccountConfiguration extends ch.actifsource.core.javamo
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.javamodel.IServiceAccount selectServiceAccount();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectServiceAccount();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8e31ff07-0bb6-11f0-95b9-95d0cc9a328a,TfHsFuVuB+rSzlmIEC7BNmlMnUg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8e31ff07-0bb6-11f0-95b9-95d0cc9a328a,CQ5FI1ONakmTLdXcFGIInLbdYJs=] */

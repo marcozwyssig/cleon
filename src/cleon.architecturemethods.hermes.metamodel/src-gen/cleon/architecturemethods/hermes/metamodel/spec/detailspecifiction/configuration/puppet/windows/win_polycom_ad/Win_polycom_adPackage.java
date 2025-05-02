@@ -30,10 +30,10 @@ public class Win_polycom_adPackage {
   public static final Resource Custom_aE_DnsCName_host = new Resource("ed57a53b-1526-11f0-b8e6-1d11cc32caa6");
   public static final Resource Custom_aE_DnsCName_target = new Resource("472e7461-1527-11f0-b8e6-1d11cc32caa6");
   public static final Resource FunctionSoace_aE_AD_Custom_aE_DnsCName = new Resource("609301e7-1527-11f0-b8e6-1d11cc32caa6");
-  public static final Resource TestUserConfiguration = new Resource("c94bddbb-2729-11f0-8098-59f455ea82af");
+  public static final Resource TestAccountConfiguration = new Resource("c94bddbb-2729-11f0-8098-59f455ea82af");
   public static final Resource ConfigureServiceAccountsAndTestUser_testUsers = new Resource("cccc03ae-2729-11f0-8098-59f455ea82af");
   public static final Resource AbstractAccountConfiguration = new Resource("f08a245c-272a-11f0-8098-59f455ea82af");
-  public static final Resource TestUserConfiguration_testAccount = new Resource("388a7c1e-2742-11f0-bc3e-fdd30b5cbdec");
+  public static final Resource TestAccountConfiguration_testAccount = new Resource("388a7c1e-2742-11f0-bc3e-fdd30b5cbdec");
   
   /* Begin Protected Region [[user]] */
   
@@ -54,4 +54,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,EoEitCBXgTbnX7boCe0TXK61XAo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,X20e/ZyJulUWMwYtq2ReN4Z0Fig=] */

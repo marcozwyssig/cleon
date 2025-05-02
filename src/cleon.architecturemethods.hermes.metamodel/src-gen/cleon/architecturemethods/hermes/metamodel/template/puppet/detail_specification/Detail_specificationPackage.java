@@ -47,7 +47,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureSSH = new Resource("fb48906e-21d6-11f0-83ae-df5418a109a4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureRepo = new Resource("9b4a558b-21e6-11f0-94ff-8381b76104b1");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractAccountConfiguration = new Resource("31e95e8c-272b-11f0-8098-59f455ea82af");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_TestUserConfiguration = new Resource("14a1fd98-272c-11f0-8098-59f455ea82af");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_TestAccountConfiguration = new Resource("14a1fd98-272c-11f0-8098-59f455ea82af");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +68,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,ZMkM08STw4yBYvw2ESh3Nzv6GEk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,4ywEfiVuggXntYT/ciSZ6in7FHc=] */

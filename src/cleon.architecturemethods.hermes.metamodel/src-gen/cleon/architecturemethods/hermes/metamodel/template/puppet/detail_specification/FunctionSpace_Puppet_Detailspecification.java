@@ -962,7 +962,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface ITestUserConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface ITestAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("14a224b0-272c-11f0-8098-59f455ea82af")
     public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
@@ -975,21 +975,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface ITestUserConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITestAccountConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TestUserConfigurationFunctionsImpl implements ITestUserConfigurationFunctionsImpl {
+  public static class TestAccountConfigurationFunctionsImpl implements ITestAccountConfigurationFunctionsImpl {
 
-    public static final ITestUserConfigurationFunctionsImpl INSTANCE = new TestUserConfigurationFunctionsImpl();
+    public static final ITestAccountConfigurationFunctionsImpl INSTANCE = new TestAccountConfigurationFunctionsImpl();
 
-    private TestUserConfigurationFunctionsImpl() {}
+    private TestAccountConfigurationFunctionsImpl() {}
 
   }
   
-  public static class TestUserConfigurationFunctions {
+  public static class TestAccountConfigurationFunctions {
 
-    private TestUserConfigurationFunctions() {}
+    private TestAccountConfigurationFunctions() {}
 
   }
 
@@ -1303,4 +1303,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,QEMgPJcbKbzWHOvo172Q+rwtmJA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,SxyI12Ell3JAe/TlEFXR2Vijrik=] */

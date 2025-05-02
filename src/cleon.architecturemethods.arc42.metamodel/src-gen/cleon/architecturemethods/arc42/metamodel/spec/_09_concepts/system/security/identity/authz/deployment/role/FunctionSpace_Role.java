@@ -97,6 +97,9 @@ public class FunctionSpace_Role {
     public java.lang.Integer SystemComponentNo();
 
     @IDynamicResourceExtension.MethodId("699cda76-2741-11f0-bc3e-fdd30b5cbdec")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IMembereable> AllMemberOf();
+
+    @IDynamicResourceExtension.MethodId("70155f34-2749-11f0-bc3e-fdd30b5cbdec")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IMembereable> AllMembers();
 
   }
@@ -382,4 +385,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,wkkwrfbyFvtQsSEdFzJikRu7rrw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,CgQ7O3N4tvWGeWi3uYigoUJyY9c=] */

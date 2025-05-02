@@ -45,7 +45,7 @@ public class ServiceaccountsPackage {
   public static final Resource ServiceAccount_aE_gMSA_allowAdditionallyUsingOn = new Resource("e957c9e3-a431-11ec-a02c-0578282f8413");
   public static final Resource ServiceAccount_uniqueId = new Resource("6958fb78-4f84-11ed-93f9-c3290c35c85a");
   public static final Resource ServiceAccount_description = new Resource("9f449bf1-353f-11ef-86dc-5dad23d0566b");
-  public static final Resource ServiceAccount_usedActivityPermissions = new Resource("6224c902-0591-11f0-8707-d7020bc75906");
+  public static final Resource ServiceAccount_memberOfActivityPermissions = new Resource("6224c902-0591-11f0-8707-d7020bc75906");
   public static final Resource ServiceAccount_aE_Standard = new Resource("3c5cdd29-067e-11f0-9dcf-ff118a4f827f");
   public static final Resource ServiceAccountTemplate_usePermissionsOfSystemConfiguration = new Resource("a666faff-0fd6-11f0-999f-c7e64e984aff");
   public static final Resource ServiceAccountTemplate_availablePermissionsOfSystemConfiguration = new Resource("d0cd78dd-0fd6-11f0-999f-c7e64e984aff");
@@ -70,4 +70,4 @@ public class ServiceaccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts,cspqmCSl14+BPLHC4gSgedn310M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts,QPzQiGDPTU9fvk9xF+dIFgn0vYE=] */

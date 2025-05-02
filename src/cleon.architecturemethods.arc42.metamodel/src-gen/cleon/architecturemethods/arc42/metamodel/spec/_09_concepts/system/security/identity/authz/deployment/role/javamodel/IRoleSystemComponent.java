@@ -16,8 +16,10 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> selectExcludeActivities();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IMembereable> selectMemberOf();
+  
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IMembereable> selectMembers();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,wSC01gXkI09i3H7HDAvJvdDRBRw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,gRUeZrUm7ARl7BMSkEWDhIyj15Q=] */

@@ -44,6 +44,15 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("1514d39c-3d4b-11eb-986d-0d884ba5cf53")
     public java.lang.String ShortName();
 
+    @IDynamicResourceExtension.MethodId("13bd2831-2b10-11f0-a774-db5eb4cfeffd")
+    public java.lang.Integer Port();
+
+    @IDynamicResourceExtension.MethodId("77c8502c-2b11-11f0-a774-db5eb4cfeffd")
+    public java.lang.String Id();
+
+    @IDynamicResourceExtension.MethodId("49ea061a-2b10-11f0-a774-db5eb4cfeffd")
+    public java.lang.String Protocol();
+
   }
   
   public static interface IAbstractServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -53,6 +62,15 @@ public class FunctionSpace_Services {
 
     @IDynamicResourceExtension.MethodId("80247504-1a84-11eb-97e9-413a49c2a05f")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> abstractServiceList);
+
+    @IDynamicResourceExtension.MethodId("13bd2831-2b10-11f0-a774-db5eb4cfeffd")
+    public java.lang.Integer Port(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService);
+
+    @IDynamicResourceExtension.MethodId("77c8502c-2b11-11f0-a774-db5eb4cfeffd")
+    public java.lang.String Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService);
+
+    @IDynamicResourceExtension.MethodId("49ea061a-2b10-11f0-a774-db5eb4cfeffd")
+    public java.lang.String Protocol(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService);
 
   }
   
@@ -96,6 +114,21 @@ public class FunctionSpace_Services {
       /* End Protected Region   [[80247504-1a84-11eb-97e9-413a49c2a05f]] */
     }
 
+    @Override
+    public java.lang.Integer Port(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return null;
+    }
+
+    @Override
+    public java.lang.String Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return null;
+    }
+
+    @Override
+    public java.lang.String Protocol(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return null;
+    }
+
   }
   
   public static class AbstractServiceFunctions {
@@ -108,6 +141,18 @@ public class FunctionSpace_Services {
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> abstractServiceList) {
       return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractServiceList).OnlyMgmt(to, abstractServiceList);
+    }
+
+    public static java.lang.Integer Port(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractService).Port(abstractService);
+    }
+
+    public static java.lang.String Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractService).Id(abstractService);
+    }
+
+    public static java.lang.String Protocol(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService abstractService) {
+      return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractService).Protocol(abstractService);
     }
 
   }
@@ -433,4 +478,4 @@ public class FunctionSpace_Services {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,R3fBa7sPRmuXlp5M+YbxSHC8hJ8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,CWtGiINFBDF4DCBswlZaZzF/Hc0=] */

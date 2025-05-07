@@ -11,7 +11,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractConfiguration = new Resource("94a9e501-0024-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_IssuingCA = new Resource("c0f5baea-04b0-11f0-8e81-9be04e08660a");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dfs = new Resource("7023a38d-05a2-11f0-a294-67d88c30f2e4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_EnforceOU = new Resource("c12e6783-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureOU = new Resource("c12e6783-05a2-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureActivitiesAndRoles = new Resource("cc6e31f5-05a2-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfiguregMSAServiceAccounts = new Resource("d6bfa561-05a2-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureServiceAccountsAndTestUser = new Resource("1d916f4a-0661-11f0-ad7c-c72b7a763977");
@@ -48,6 +48,8 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureRepo = new Resource("9b4a558b-21e6-11f0-94ff-8381b76104b1");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractAccountConfiguration = new Resource("31e95e8c-272b-11f0-8098-59f455ea82af");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_TestAccountConfiguration = new Resource("14a1fd98-272c-11f0-8098-59f455ea82af");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_FoldersCleanupTask = new Resource("d2941cf0-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SetWindowsEdition = new Resource("6440cc7f-2b0e-11f0-a774-db5eb4cfeffd");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +70,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,4ywEfiVuggXntYT/ciSZ6in7FHc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,G7FfvHd/JzuYlRT4tvp254gKJJw=] */

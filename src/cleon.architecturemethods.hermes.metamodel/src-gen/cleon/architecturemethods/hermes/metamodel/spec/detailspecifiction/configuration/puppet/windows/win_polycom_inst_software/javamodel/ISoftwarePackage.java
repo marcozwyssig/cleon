@@ -6,6 +6,10 @@ public interface ISoftwarePackage extends ch.actifsource.core.javamodel.IResourc
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f2dd69fc-112e-11f0-a4f9-b5f995a9e0fe");
   
+  // attributes
+  
+  public java.lang.String selectProductKey();
+  
   public java.lang.String selectProductName();
   
   public java.lang.String selectProductVersion();
@@ -20,10 +24,8 @@ public interface ISoftwarePackage extends ch.actifsource.core.javamodel.IResourc
   
   public java.lang.String selectEnsureProcessNotRunning();
   
-  // relations
-  
   public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectUsedProduct();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2dd69fc-112e-11f0-a4f9-b5f995a9e0fe,VHJeAtTNVKE57NAOfoiwWPCdXqg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2dd69fc-112e-11f0-a4f9-b5f995a9e0fe,6FsKIFIwWR+lizt06DdZOJAiTyM=] */

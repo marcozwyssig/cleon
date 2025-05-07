@@ -49,6 +49,15 @@ public class SoftwarePackage extends DynamicResource implements ISoftwarePackage
   }
 
   @Override
+  public java.lang.String selectProductKey() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productKey);
+  }
+    
+  public void setProductKey(java.lang.String productKey) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productKey, productKey);
+  }
+
+  @Override
   public java.lang.String selectProductName() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productName);
   }
@@ -131,6 +140,7 @@ public class SoftwarePackage extends DynamicResource implements ISoftwarePackage
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_ensureProcessNotRunning, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productDisplayName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productKey, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_productVersion, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_setupFullPath, visitor);
@@ -141,11 +151,9 @@ public class SoftwarePackage extends DynamicResource implements ISoftwarePackage
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_usedProduct, visitor);
   }
 
-  // toMeRelations
-  
   public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.javamodel.ISoftwarePackage> selectToMeUsedProduct(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.javamodel.ISoftwarePackage.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.SoftwarePackage_usedProduct, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2dd69fc-112e-11f0-a4f9-b5f995a9e0fe,grfG5qKtXOQIksip/gwytvK5LPM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2dd69fc-112e-11f0-a4f9-b5f995a9e0fe,8gBe/WDu91CdZw6pLL+ZBj4Uvh8=] */

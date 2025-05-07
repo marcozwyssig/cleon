@@ -28,6 +28,17 @@ public class Win_polycom_operationsPackage {
   public static final Resource RegistryValue_ensure = new Resource("0e8ce346-1b6b-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue_type = new Resource("3ad9fb43-1b6b-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue_data = new Resource("40ce2e9a-1b6b-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FoldersCleanupTask = new Resource("3c1c37df-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask = new Resource("93803197-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource FoldersCleanupTask_cleanUpTask = new Resource("97e95874-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_cleanuptarget = new Resource("a07f8691-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_fileage = new Resource("acdd4495-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_recursive = new Resource("b3b7b8cb-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_starttime = new Resource("bd5ee224-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_exclude = new Resource("c455b86b-2759-11f0-b32f-851840d4a5f4");
+  public static final Resource CleanUpTask_excluderootfolder = new Resource("84203b6b-275a-11f0-b32f-851840d4a5f4");
+  public static final Resource SetWindowsEdition = new Resource("c0fe0fa0-2b0d-11f0-a774-db5eb4cfeffd");
+  public static final Resource SetWindowsEdition_productKey = new Resource("d3ad1485-2b0d-11f0-a774-db5eb4cfeffd");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +59,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,XQWOKPg+KjTdJ0MshIR53dxwhcg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,9lWKS+gzixvQa0gzkDuPheV9lu0=] */

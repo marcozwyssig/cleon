@@ -36,6 +36,7 @@ public class Win_polycom_inst_softwarePackage {
   public static final Resource CopyFileFromNetwork_ensure = new Resource("e6562b68-1b6c-11f0-9c3a-8502b2fb88fb");
   public static final Resource FunctionSpace_aE_Inst_aE_Software_AbstractCopyFile = new Resource("d8609992-1b6d-11f0-9c3a-8502b2fb88fb");
   public static final Resource FunctionSpace_aE_Inst_aE_Software_CopyFileFromPuppet = new Resource("0cbfbc42-1b6e-11f0-9c3a-8502b2fb88fb");
+  public static final Resource SoftwarePackage_productKey = new Resource("47ba3649-2753-11f0-b32f-851840d4a5f4");
   
   /* Begin Protected Region [[user]] */
   
@@ -56,4 +57,4 @@ public class Win_polycom_inst_softwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,TFKIpu5zVuXxD2svcEPCJ3U04GI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,3fnho9fAjH7Te0M4jSJ4IV7LAjg=] */

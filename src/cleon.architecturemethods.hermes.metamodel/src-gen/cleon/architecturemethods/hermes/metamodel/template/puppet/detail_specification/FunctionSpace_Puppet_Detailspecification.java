@@ -306,7 +306,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IEnforceOUFunctions extends IDynamicResourceExtension {
+  public static interface IConfigureOUFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c12e6786-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassDefinition();
@@ -316,21 +316,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IEnforceOUFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IConfigureOUFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class EnforceOUFunctionsImpl implements IEnforceOUFunctionsImpl {
+  public static class ConfigureOUFunctionsImpl implements IConfigureOUFunctionsImpl {
 
-    public static final IEnforceOUFunctionsImpl INSTANCE = new EnforceOUFunctionsImpl();
+    public static final IConfigureOUFunctionsImpl INSTANCE = new ConfigureOUFunctionsImpl();
 
-    private EnforceOUFunctionsImpl() {}
+    private ConfigureOUFunctionsImpl() {}
 
   }
   
-  public static class EnforceOUFunctions {
+  public static class ConfigureOUFunctions {
 
-    private EnforceOUFunctions() {}
+    private ConfigureOUFunctions() {}
 
   }
 
@@ -527,6 +527,34 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class RouteFunctions {
 
     private RouteFunctions() {}
+
+  }
+
+  public static interface ISetWindowsEditionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6440cc82-2b0e-11f0-a774-db5eb4cfeffd")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("6440cca7-2b0e-11f0-a774-db5eb4cfeffd")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ISetWindowsEditionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SetWindowsEditionFunctionsImpl implements ISetWindowsEditionFunctionsImpl {
+
+    public static final ISetWindowsEditionFunctionsImpl INSTANCE = new SetWindowsEditionFunctionsImpl();
+
+    private SetWindowsEditionFunctionsImpl() {}
+
+  }
+  
+  public static class SetWindowsEditionFunctions {
+
+    private SetWindowsEditionFunctions() {}
 
   }
 
@@ -1105,6 +1133,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IFoldersCleanupTaskFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d8fb5e06-2759-11f0-b32f-851840d4a5f4")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("d8fb5e09-2759-11f0-b32f-851840d4a5f4")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IFoldersCleanupTaskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FoldersCleanupTaskFunctionsImpl implements IFoldersCleanupTaskFunctionsImpl {
+
+    public static final IFoldersCleanupTaskFunctionsImpl INSTANCE = new FoldersCleanupTaskFunctionsImpl();
+
+    private FoldersCleanupTaskFunctionsImpl() {}
+
+  }
+  
+  public static class FoldersCleanupTaskFunctions {
+
+    private FoldersCleanupTaskFunctions() {}
+
+  }
+
   public static interface IRemoveUserCertsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7654afb4-1b6a-11f0-9c3a-8502b2fb88fb")
@@ -1303,4 +1359,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,SxyI12Ell3JAe/TlEFXR2Vijrik=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,bAgULmfnwMjmJy0Xjlw2pMAzW2w=] */

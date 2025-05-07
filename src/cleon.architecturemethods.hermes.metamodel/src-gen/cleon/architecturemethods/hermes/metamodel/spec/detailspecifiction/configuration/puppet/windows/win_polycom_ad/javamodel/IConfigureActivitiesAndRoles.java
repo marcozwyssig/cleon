@@ -10,8 +10,8 @@ public interface IConfigureActivitiesAndRoles extends cleon.architecturemethods.
   
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.ISetOfOU selectSetOfOU();
   
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IEnforceOU selectEnforceOU();
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.ou.javamodel.IConfigureOU selectEnforceOU();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e20327d8-059c-11f0-a294-67d88c30f2e4,H+++MlztjAO6rZVb1rjof3yN1xk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e20327d8-059c-11f0-a294-67d88c30f2e4,AVvno88dCGyhAVBqv8uoEBtWREY=] */

@@ -16,10 +16,10 @@ public interface IFoldersAndPuppetCleanup extends cleon.architecturemethods.herm
   
   public java.lang.Integer selectPuppetStuckAfterMinutes();
   
-  public java.lang.String selectStarttime();
-  
   public java.lang.Integer selectMaxpstasktime();
+  
+  public java.lang.String selectStarttime();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,617e5299-1b69-11f0-9c3a-8502b2fb88fb,F1+bIfvfdWcgtOQfE7i39uasF1M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,617e5299-1b69-11f0-9c3a-8502b2fb88fb,DdeabkFPeKRb+ApAAPlIBj+zXDI=] */

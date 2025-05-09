@@ -53,23 +53,23 @@ public class FunctionSpace_BuildNode {
   public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id);
+    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id);
 
     @IDynamicResourceExtension.MethodId("4eb6b4cb-84cd-11ea-aadc-ada99ddb5122")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment();
+    public ch.actifsource.core.javamodel.IDecorator GetTopologyEnvironment();
 
     @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC();
+    public List<ch.actifsource.core.javamodel.IDecorator> NoWDC();
 
   }
   
   public static interface IServiceBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode);
+    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode);
 
     @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> NoWDC(final List<ch.actifsource.core.javamodel.IDecorator> serviceBuildNodeList);
 
   }
   
@@ -80,7 +80,7 @@ public class FunctionSpace_BuildNode {
     private ServiceBuildNodeFunctionsImpl() {}
 
     @Override
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode) {
+    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
       /* Begin Protected Region [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
       final var serviceBuildNodeFunctions = serviceBuildNode.extension(IServiceBuildNodeFunctions.class);
       final var topologyEnvironment = serviceBuildNodeFunctions.GetTopologyEnvironment();
@@ -116,7 +116,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> NoWDC(final List<ch.actifsource.core.javamodel.IDecorator> serviceBuildNodeList) {
       /* Begin Protected Region [[88b738ac-5dfa-11ee-aa0e-795a14516714]] */
       return serviceBuildNodeList.stream().filter(x -> !(x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.security.iam.javamodel.IWriteableDomainControllerSystemConfiguration)).collect(java.util.stream.Collectors.toList());
       /* End Protected Region   [[88b738ac-5dfa-11ee-aa0e-795a14516714]] */
@@ -128,11 +128,11 @@ public class FunctionSpace_BuildNode {
 
     private ServiceBuildNodeFunctions() {}
 
-    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode) {
+    public static ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
       return DynamicResourceUtil.invoke(IServiceBuildNodeFunctionsImpl.class, ServiceBuildNodeFunctionsImpl.INSTANCE, serviceBuildNode).GetHost(cmp, site, owner, id, serviceBuildNode);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> NoWDC(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> serviceBuildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> NoWDC(final List<ch.actifsource.core.javamodel.IDecorator> serviceBuildNodeList) {
       return DynamicResourceUtil.invoke(IServiceBuildNodeFunctionsImpl.class, ServiceBuildNodeFunctionsImpl.INSTANCE, serviceBuildNodeList).NoWDC(serviceBuildNodeList);
     }
 
@@ -178,25 +178,25 @@ public class FunctionSpace_BuildNode {
     public java.lang.String GetMaterialTypeName();
 
     @IDynamicResourceExtension.MethodId("c2eb1394-6cef-11e9-a6d3-775c09e81e2d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOs();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOs();
 
     @IDynamicResourceExtension.MethodId("008ab45f-a433-11ec-a02c-0578282f8413")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWindows();
 
     @IDynamicResourceExtension.MethodId("a043e5de-dfdf-11ef-8b41-bffcdee4ee9e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyLinux();
 
     @IDynamicResourceExtension.MethodId("4de742de-7bb1-11e9-94aa-f1ea7ea33f46")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMH();
 
     @IDynamicResourceExtension.MethodId("e9f21de4-e4a5-11ef-a6bd-497168f25adc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServer();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServer();
 
     @IDynamicResourceExtension.MethodId("3cb6a8f3-dff4-11eb-93d3-9f230e4bb32b")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMs();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMs();
 
     @IDynamicResourceExtension.MethodId("73a99824-8555-11ea-a579-31bf00957a06")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> Dependencies();
+    public List<ch.actifsource.core.javamodel.INamedResource> Dependencies();
 
     @IDynamicResourceExtension.MethodId("e4d0cc56-e070-11eb-85ea-9f2d155d4de3")
     public java.lang.Integer BruttoMHz_Server();
@@ -230,52 +230,52 @@ public class FunctionSpace_BuildNode {
   public static interface IBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8ea2102d-2aba-11e9-a3f8-336d9e792e17")
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("c2eb1394-6cef-11e9-a6d3-775c09e81e2d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("008ab45f-a433-11ec-a02c-0578282f8413")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWindows(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("a043e5de-dfdf-11ef-8b41-bffcdee4ee9e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("4de742de-7bb1-11e9-94aa-f1ea7ea33f46")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMH(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("e9f21de4-e4a5-11ef-a6bd-497168f25adc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServer(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServer(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("3cb6a8f3-dff4-11eb-93d3-9f230e4bb32b")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList);
 
     @IDynamicResourceExtension.MethodId("e4d0cc56-e070-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer BruttoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer BruttoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("04240e23-e071-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer NettoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer NettoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("401f2e96-e076-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer TotalNettoMGHz_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer TotalNettoMGHz_VM(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("5756ac01-e077-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer ReserveNettoMGHz(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer ReserveNettoMGHz(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("068105b1-e07b-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer TotalNettoMemoryGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer TotalNettoMemoryGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("068105b3-e07b-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer ReserveNettoMemoryGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer ReserveNettoMemoryGB(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("032dcf9b-e088-11eb-9584-9144fca99be9")
-    public java.lang.Integer TotalNettoDiskGB_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer TotalNettoDiskGB_Server(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("6dd6f21d-e084-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer TotalNettoDiskGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer TotalNettoDiskGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
     @IDynamicResourceExtension.MethodId("83c4f8c6-e088-11eb-9584-9144fca99be9")
-    public java.lang.Integer ReserveNettoDiskGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode);
+    public java.lang.Integer ReserveNettoDiskGB(final ch.actifsource.core.javamodel.IDecorator buildNode);
 
   }
   
@@ -286,42 +286,42 @@ public class FunctionSpace_BuildNode {
     private BuildNodeFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return false;
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWindows(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IWindowsSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.ILinuxSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMH(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IHypervisorSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServer(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServer(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.javamodel.IServerSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
-    public java.lang.Integer BruttoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer BruttoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[e4d0cc56-e070-11eb-85ea-9f2d155d4de3]] */
       var cpuCount = 0;
       final var cpus = buildNode.selectCpu();
@@ -335,7 +335,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer NettoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer NettoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[04240e23-e071-11eb-85ea-9f2d155d4de3]] */
       final Double netto = BruttoMHz_Server(buildNode) * 0.8;
       return netto.intValue();
@@ -343,7 +343,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer TotalNettoMGHz_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer TotalNettoMGHz_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[401f2e96-e076-11eb-85ea-9f2d155d4de3]] */
       final var buildNodeFunctions = buildNode.extension(INodeFunctions.class);
       final var vmCount = OnlyVMs(buildNodeFunctions.GetAllNestedBuildNodes()).size();
@@ -352,7 +352,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer ReserveNettoMGHz(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer ReserveNettoMGHz(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[5756ac01-e077-11eb-85ea-9f2d155d4de3]] */
       ICore core = null;
       final var cpus = buildNode.selectCpu();
@@ -366,7 +366,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer TotalNettoMemoryGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer TotalNettoMemoryGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[068105b1-e07b-11eb-85ea-9f2d155d4de3]] */
       final var buildNodeFunctions = buildNode.extension(INodeFunctions.class);
       var total = 0;
@@ -387,7 +387,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer ReserveNettoMemoryGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer ReserveNettoMemoryGB(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[068105b3-e07b-11eb-85ea-9f2d155d4de3]] */
       IMemory memory = null;
       final var memories = buildNode.selectMemory();
@@ -401,7 +401,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer TotalNettoDiskGB_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer TotalNettoDiskGB_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[032dcf9b-e088-11eb-9584-9144fca99be9]] */
       var total = 0;
       final var disks = buildNode.selectDisks();
@@ -418,7 +418,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer TotalNettoDiskGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer TotalNettoDiskGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[6dd6f21d-e084-11eb-85ea-9f2d155d4de3]] */
       final var buildNodeFunctions = buildNode.extension(INodeFunctions.class);
       var total = 0;
@@ -438,7 +438,7 @@ public class FunctionSpace_BuildNode {
     }
 
     @Override
-    public java.lang.Integer ReserveNettoDiskGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public java.lang.Integer ReserveNettoDiskGB(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       /* Begin Protected Region [[83c4f8c6-e088-11eb-9584-9144fca99be9]] */
       return TotalNettoDiskGB_Server(buildNode) - TotalNettoDiskGB_VM(buildNode);
       /* End Protected Region   [[83c4f8c6-e088-11eb-9584-9144fca99be9]] */
@@ -450,67 +450,67 @@ public class FunctionSpace_BuildNode {
 
     private BuildNodeFunctions() {}
 
-    public static java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).IsSupplied(buildNode);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyOs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyOs(buildNodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyWindows(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyWindows(buildNodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyLinux(buildNodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyVMH(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyVMH(buildNodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServer(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyServer(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyServer(buildNodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMs(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyVMs(final List<ch.actifsource.core.javamodel.IDecorator> buildNodeList) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyVMs(buildNodeList);
     }
 
-    public static java.lang.Integer BruttoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer BruttoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).BruttoMHz_Server(buildNode);
     }
 
-    public static java.lang.Integer NettoMHz_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer NettoMHz_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).NettoMHz_Server(buildNode);
     }
 
-    public static java.lang.Integer TotalNettoMGHz_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer TotalNettoMGHz_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).TotalNettoMGHz_VM(buildNode);
     }
 
-    public static java.lang.Integer ReserveNettoMGHz(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer ReserveNettoMGHz(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).ReserveNettoMGHz(buildNode);
     }
 
-    public static java.lang.Integer TotalNettoMemoryGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer TotalNettoMemoryGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).TotalNettoMemoryGB_VM(buildNode);
     }
 
-    public static java.lang.Integer ReserveNettoMemoryGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer ReserveNettoMemoryGB(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).ReserveNettoMemoryGB(buildNode);
     }
 
-    public static java.lang.Integer TotalNettoDiskGB_Server(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer TotalNettoDiskGB_Server(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).TotalNettoDiskGB_Server(buildNode);
     }
 
-    public static java.lang.Integer TotalNettoDiskGB_VM(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer TotalNettoDiskGB_VM(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).TotalNettoDiskGB_VM(buildNode);
     }
 
-    public static java.lang.Integer ReserveNettoDiskGB(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode buildNode) {
+    public static java.lang.Integer ReserveNettoDiskGB(final ch.actifsource.core.javamodel.IDecorator buildNode) {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).ReserveNettoDiskGB(buildNode);
     }
 
@@ -529,10 +529,10 @@ public class FunctionSpace_BuildNode {
   public static interface IApplicationBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("104621ba-84da-11ea-ade9-0f308d716192")
-    public java.lang.String GetSimpleName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode);
+    public java.lang.String GetSimpleName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode);
 
     @IDynamicResourceExtension.MethodId("1bedfd33-84da-11ea-ade9-0f308d716192")
-    public java.lang.String OnlyName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode);
+    public java.lang.String OnlyName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode);
 
   }
   
@@ -543,12 +543,12 @@ public class FunctionSpace_BuildNode {
     private ApplicationBuildNodeFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetSimpleName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+    public java.lang.String GetSimpleName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode) {
       return null;
     }
 
     @Override
-    public java.lang.String OnlyName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+    public java.lang.String OnlyName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode) {
       return null;
     }
 
@@ -558,11 +558,11 @@ public class FunctionSpace_BuildNode {
 
     private ApplicationBuildNodeFunctions() {}
 
-    public static java.lang.String GetSimpleName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+    public static java.lang.String GetSimpleName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode) {
       return DynamicResourceUtil.invoke(IApplicationBuildNodeFunctionsImpl.class, ApplicationBuildNodeFunctionsImpl.INSTANCE, applicationBuildNode).GetSimpleName(applicationBuildNode);
     }
 
-    public static java.lang.String OnlyName(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+    public static java.lang.String OnlyName(final ch.actifsource.core.javamodel.IDecorator applicationBuildNode) {
       return DynamicResourceUtil.invoke(IApplicationBuildNodeFunctionsImpl.class, ApplicationBuildNodeFunctionsImpl.INSTANCE, applicationBuildNode).OnlyName(applicationBuildNode);
     }
 
@@ -570,4 +570,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,bXgCc/lTeTO9IV4UXnKM/+IntPE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,UbX1q3/j+3eyd88geddszLUE9Co=] */

@@ -28,7 +28,7 @@ public class ServiceGroups__T_csv {
   public static interface Iarc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6e631f5f-0b6a-11ea-bef6-75a700135135")
-    public java.lang.String MemberColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document);
+    public java.lang.String MemberColumns(final ch.actifsource.core.javamodel.IResource arc42Document);
 
   }
   
@@ -39,7 +39,7 @@ public class ServiceGroups__T_csv {
     private arc42DocumentFunctionsImpl() {}
 
     @Override
-    public java.lang.String MemberColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public java.lang.String MemberColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       /* Begin Protected Region [[6e631f5f-0b6a-11ea-bef6-75a700135135]] */
     	StringBuilder result = new StringBuilder();
     	for(int i=1;i<40;++i) {
@@ -56,7 +56,7 @@ public class ServiceGroups__T_csv {
 
     private arc42DocumentFunctions() {}
 
-    public static java.lang.String MemberColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public static java.lang.String MemberColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       return DynamicResourceUtil.invoke(Iarc42DocumentFunctionsImpl.class, arc42DocumentFunctionsImpl.INSTANCE, arc42Document).MemberColumns(arc42Document);
     }
 
@@ -64,4 +64,4 @@ public class ServiceGroups__T_csv {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1f215ea6-009c-11ea-9b43-0b5ecf12c553,SixAQRKe4ScNURXP9wVBejicR9Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1f215ea6-009c-11ea-9b43-0b5ecf12c553,KCjYko81kLJDO5nzzimoUs3hCQQ=] */

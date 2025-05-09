@@ -21,7 +21,7 @@ public class FunctionSpace_Test_Scheduling {
   public static interface ITesterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b3e1410d-9191-11e9-85e6-a377d9035ee3")
-    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest> UsedTests();
+    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware> UsedTests();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Test_Scheduling {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ae224ebc-9191-11e9-85e6-a377d9035ee3,OcnzMdhnpezZuUqxBjea/lQ9gLY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ae224ebc-9191-11e9-85e6-a377d9035ee3,UdxBclFdQQgPFPqt/xSh1OUHZNU=] */

@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface IStoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("db2a8186-c58b-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IStory story);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource story);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private StoryFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IStory story) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource story) {
       return String.format("S%03d", story.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private StoryFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IStory story) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource story) {
       return DynamicResourceUtil.invoke(IStoryFunctionsImpl.class, StoryFunctionsImpl.INSTANCE, story).GetId(story);
     }
 
@@ -65,7 +65,7 @@ public class FunctionSpace {
   public static interface IActivityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a9d10320-1e7a-11e7-ba0d-79d7a7c79635")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IActivity activity);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource activity);
 
   }
   
@@ -76,7 +76,7 @@ public class FunctionSpace {
     private ActivityFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IActivity activity) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource activity) {
       return String.format("A%03d", activity.selectIdentifier());
     }
 
@@ -86,7 +86,7 @@ public class FunctionSpace {
 
     private ActivityFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.story.javamodel.IActivity activity) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource activity) {
       return DynamicResourceUtil.invoke(IActivityFunctionsImpl.class, ActivityFunctionsImpl.INSTANCE, activity).GetId(activity);
     }
 
@@ -102,7 +102,7 @@ public class FunctionSpace {
   public static interface IDefectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b6d1def8-1e7a-11e7-ba0d-79d7a7c79635")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect);
 
   }
   
@@ -113,7 +113,7 @@ public class FunctionSpace {
     private DefectFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect) {
       return String.format("D%03d", defect.selectIdentifier());
     }
 
@@ -123,7 +123,7 @@ public class FunctionSpace {
 
     private DefectFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect) {
       return DynamicResourceUtil.invoke(IDefectFunctionsImpl.class, DefectFunctionsImpl.INSTANCE, defect).GetId(defect);
     }
 
@@ -131,4 +131,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d5f9ec72-c58b-11e5-aeea-1db9268c0ee9,zAj9nWgQiSHa/lxQByVY9LZ1rjk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d5f9ec72-c58b-11e5-aeea-1db9268c0ee9,k0LzEuB1UWbqdh4cGvtYhSFwIuE=] */

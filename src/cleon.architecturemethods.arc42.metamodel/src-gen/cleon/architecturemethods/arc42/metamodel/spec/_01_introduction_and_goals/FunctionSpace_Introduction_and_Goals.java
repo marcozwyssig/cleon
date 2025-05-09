@@ -21,7 +21,7 @@ public class FunctionSpace_Introduction_and_Goals {
   public static interface IQualityGoalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ee6813de-ae66-11ef-9f76-697f8eef04ad")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+    public ch.actifsource.core.javamodel.IResource LanguageSettings();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Introduction_and_Goals {
   public static interface IIntroductionAndGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6f06d02e-bc8e-11ef-ae21-efb936bba898")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Introduction_and_Goals {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e5f12d9f-ae66-11ef-9f76-697f8eef04ad,d38Ow8Qes264OMdsi6q9njbt26s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e5f12d9f-ae66-11ef-9f76-697f8eef04ad,fLGZBZmzA3waAVVgyS/wq7qXc8Y=] */

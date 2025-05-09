@@ -24,14 +24,14 @@ public class WindowsServerNodes__T_xml {
   public static interface INodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4697afc3-e37b-11ea-90a0-29b751c6ace9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServerWithWindows();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServerWithWindows();
 
   }
   
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4697afc3-e37b-11ea-90a0-29b751c6ace9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServerWithWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServerWithWindows(final List<ch.actifsource.core.javamodel.IResource> nodeList);
 
   }
   
@@ -42,7 +42,7 @@ public class WindowsServerNodes__T_xml {
     private NodeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServerWithWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyServerWithWindows(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       /* Begin Protected Region [[4697afc3-e37b-11ea-90a0-29b751c6ace9]] */
       return nodeList.stream()
       		.filter(s -> s instanceof IBuildNode)
@@ -68,7 +68,7 @@ public class WindowsServerNodes__T_xml {
 
     private NodeFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyServerWithWindows(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyServerWithWindows(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyServerWithWindows(nodeList);
     }
 
@@ -76,4 +76,4 @@ public class WindowsServerNodes__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,1MBCHSnW8DKzeEC1+EHQIpgo/qg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,ZRzMl030Adz6hrD9NLl7YeFYe4c=] */

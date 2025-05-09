@@ -27,61 +27,61 @@ public class FunctionSpace_Node {
   public static interface INodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9e96171b-6d92-11e9-b84d-d319514e887f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllNestedBuildNodes();
+    public List<ch.actifsource.core.javamodel.IDecorator> GetAllNestedBuildNodes();
 
     @IDynamicResourceExtension.MethodId("e5e91a24-0ab8-11e9-a8f9-abf1763bbc53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> GetAllNestedNodes();
+    public List<ch.actifsource.core.javamodel.IResource> GetAllNestedNodes();
 
     @IDynamicResourceExtension.MethodId("73b6c2b1-b25a-11eb-84da-a358b37bb644")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IServiceBuildNode> GetAllNestedServiceBuildNodes();
+    public List<ch.actifsource.core.javamodel.IDecorator> GetAllNestedServiceBuildNodes();
 
     @IDynamicResourceExtension.MethodId("29a7694e-1da4-11e9-b601-db75aa6f89a4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode> GetAllNestedSiteNodes();
+    public List<ch.actifsource.core.javamodel.IResource> GetAllNestedSiteNodes();
 
     @IDynamicResourceExtension.MethodId("b5680fde-7f14-11e9-9a52-07d4b074defc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemcomponent.javamodel.ISystemComponent> GetAllUsedSystemComponent();
+    public List<ch.actifsource.core.javamodel.IResource> GetAllUsedSystemComponent();
 
     @IDynamicResourceExtension.MethodId("f7c1ba46-7f15-11e9-9a52-07d4b074defc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetAllUsedSystemConfiguration();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetAllUsedSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("985b3d0d-c943-11eb-adc4-d18d1353eb6e")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode GetEnvironment();
+    public ch.actifsource.core.javamodel.INamedResource GetEnvironment();
 
     @IDynamicResourceExtension.MethodId("bef20cb3-0e2a-11e9-8b4c-f9aec93d8b56")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyDataCenter GetLocationNode();
+    public ch.actifsource.core.javamodel.IResource GetLocationNode();
 
     @IDynamicResourceExtension.MethodId("0491d663-2abe-11e9-a3f8-336d9e792e17")
     public java.lang.String GetMaterialTypeName();
 
     @IDynamicResourceExtension.MethodId("b12ac911-cdc3-11eb-9255-4575b555e23e")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode GetNestedBuildNode();
+    public ch.actifsource.core.javamodel.IDecorator GetNestedBuildNode();
 
     @IDynamicResourceExtension.MethodId("c674c46c-cdc3-11eb-9255-4575b555e23e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetNestedBuildNodes();
+    public List<ch.actifsource.core.javamodel.IDecorator> GetNestedBuildNodes();
 
     @IDynamicResourceExtension.MethodId("8808b193-cdc3-11eb-9255-4575b555e23e")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetNestedNode();
+    public ch.actifsource.core.javamodel.IResource GetNestedNode();
 
     @IDynamicResourceExtension.MethodId("ee45483f-001b-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> GetNestedNodes();
+    public List<ch.actifsource.core.javamodel.IResource> GetNestedNodes();
 
     @IDynamicResourceExtension.MethodId("926f258b-dfca-11ef-b0be-9b4cac321140")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode GetParentBuildNode();
+    public ch.actifsource.core.javamodel.IDecorator GetParentBuildNode();
 
     @IDynamicResourceExtension.MethodId("c590e9e5-e4a5-11ef-a6bd-497168f25adc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetParentBuildNodes();
+    public List<ch.actifsource.core.javamodel.IDecorator> GetParentBuildNodes();
 
     @IDynamicResourceExtension.MethodId("da40902b-02d3-11e9-9e58-33d596257b14")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetParent();
+    public ch.actifsource.core.javamodel.IResource GetParent();
 
     @IDynamicResourceExtension.MethodId("66093688-02d5-11e9-9e58-33d596257b14")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.ISupplyAndBuildNodeDecomposite> GetParents();
+    public List<ch.actifsource.core.javamodel.IResource> GetParents();
 
     @IDynamicResourceExtension.MethodId("983747a2-0aa2-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("8dd02a63-02d5-11e9-9e58-33d596257b14")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode GetSubnetNode();
+    public ch.actifsource.core.javamodel.IResource GetSubnetNode();
 
     @IDynamicResourceExtension.MethodId("088bcb98-0b71-11e9-a136-69d076e48ed1")
     public java.lang.String GetTypeName();
@@ -90,35 +90,35 @@ public class FunctionSpace_Node {
     public java.lang.Boolean IsSupplied();
 
     @IDynamicResourceExtension.MethodId("d9a8e4f8-7ba7-11e9-94aa-f1ea7ea33f46")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
+    public ch.actifsource.core.javamodel.IDecorator NetworkNode();
 
     @IDynamicResourceExtension.MethodId("68da6b3e-87f3-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyHyperVisorComponents();
 
     @IDynamicResourceExtension.MethodId("77892a21-8803-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOSComponents();
 
     @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyGeneralPurposeOSComponents();
 
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMComponents();
 
   }
   
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("68da6b3e-87f3-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyHyperVisorComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList);
 
     @IDynamicResourceExtension.MethodId("77892a21-8803-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList);
 
     @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyGeneralPurposeOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList);
 
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList);
 
   }
   
@@ -129,7 +129,7 @@ public class FunctionSpace_Node {
     private NodeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyHyperVisorComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       /* Begin Protected Region [[68da6b3e-87f3-11ec-894d-7968efa38b99]] */
       return nodeList.stream()
       		.filter(IBuildNode.class::isInstance )
@@ -140,7 +140,7 @@ public class FunctionSpace_Node {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       /* Begin Protected Region [[77892a21-8803-11ec-894d-7968efa38b99]] */
       return nodeList.stream()
       		.filter(IBuildNode.class::isInstance )
@@ -151,7 +151,7 @@ public class FunctionSpace_Node {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyGeneralPurposeOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       /* Begin Protected Region [[15821b36-00a4-11f0-945c-87b19aec41f4]] */
         return nodeList.stream()
           		.filter(IBuildNode.class::isInstance )
@@ -162,7 +162,7 @@ public class FunctionSpace_Node {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       /* Begin Protected Region [[fadb5261-87f4-11ec-894d-7968efa38b99]] */
       return nodeList.stream()
       		.filter(IBuildNode.class::isInstance )
@@ -178,19 +178,19 @@ public class FunctionSpace_Node {
 
     private NodeFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyHyperVisorComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyHyperVisorComponents(nodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyOSComponents(nodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyGeneralPurposeOSComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyGeneralPurposeOSComponents(nodeList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyVMComponents(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyVMComponents(nodeList);
     }
 
@@ -199,7 +199,7 @@ public class FunctionSpace_Node {
   public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0e3bf3d3-df12-11ef-b7b6-ed2cdfbf6428")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
+    public ch.actifsource.core.javamodel.IDecorator NetworkNode();
 
   }
   
@@ -223,4 +223,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,/jGPiufvZUCv039n0rd57PZ/DvE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,SRsCCLAb7QntYj3avjiA06dBSpg=] */

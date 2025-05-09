@@ -24,7 +24,7 @@ public class FunctionSpace_Feature {
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("ee48be41-2638-11ea-8c59-871562e3b5c4")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> AllProjects();
+    public List<ch.actifsource.core.javamodel.IResource> AllProjects();
 
     @IDynamicResourceExtension.MethodId("ddccc3a1-7675-11ef-bdb9-ebb368e31a33")
     public java.lang.String FullBuildingBlockName();
@@ -37,7 +37,7 @@ public class FunctionSpace_Feature {
   public static interface IFeatureFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("560f970b-7678-11ef-bdb9-ebb368e31a33")
-    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature feature);
+    public java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.INamedResource feature);
 
   }
   
@@ -48,7 +48,7 @@ public class FunctionSpace_Feature {
     private FeatureFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature feature) {
+    public java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.INamedResource feature) {
       /* Begin Protected Region [[560f970b-7678-11ef-bdb9-ebb368e31a33]] */
     	if( feature.selectUseSimpleName() == null) {
     		return false;
@@ -63,7 +63,7 @@ public class FunctionSpace_Feature {
 
     private FeatureFunctions() {}
 
-    public static java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeature feature) {
+    public static java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.INamedResource feature) {
       return DynamicResourceUtil.invoke(IFeatureFunctionsImpl.class, FeatureFunctionsImpl.INSTANCE, feature).UseSimpleName(feature);
     }
 
@@ -71,4 +71,4 @@ public class FunctionSpace_Feature {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9a3756e7-7e75-11e6-95c9-39c2ade57f78,RHJHBGm4w3dPWI7OFfbtsB6YNyg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9a3756e7-7e75-11e6-95c9-39c2ade57f78,jniDLiXPeg6AJRhPDCl0eCSnXgA=] */

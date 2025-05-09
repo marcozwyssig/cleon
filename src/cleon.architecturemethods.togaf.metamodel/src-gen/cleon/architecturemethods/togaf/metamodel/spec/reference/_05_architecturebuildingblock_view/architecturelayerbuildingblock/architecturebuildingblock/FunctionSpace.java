@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface IArchitectureBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("89455437-42b3-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel.IArchitectureBuildingBlock architectureBuildingBlock);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureBuildingBlock);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private ArchitectureBuildingBlockFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel.IArchitectureBuildingBlock architectureBuildingBlock) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureBuildingBlock) {
       return java.lang.String.format("ABB-%03d", architectureBuildingBlock.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private ArchitectureBuildingBlockFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel.IArchitectureBuildingBlock architectureBuildingBlock) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureBuildingBlock) {
       return DynamicResourceUtil.invoke(IArchitectureBuildingBlockFunctionsImpl.class, ArchitectureBuildingBlockFunctionsImpl.INSTANCE, architectureBuildingBlock).GetId(architectureBuildingBlock);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,690f0503-42b3-11e6-a9d7-97cf4f7c398b,IOSziILWBmotDI8EGO5iTx6W57o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,690f0503-42b3-11e6-a9d7-97cf4f7c398b,WsPw3/CToWaFLb9aOZeTju+U2TA=] */

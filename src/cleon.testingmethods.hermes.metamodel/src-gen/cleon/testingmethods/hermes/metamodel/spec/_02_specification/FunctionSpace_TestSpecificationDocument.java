@@ -21,7 +21,7 @@ public class FunctionSpace_TestSpecificationDocument {
   public static interface ITestSpecificationDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("80c68059-51af-11e9-9ffb-eb7c70212990")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_TestSpecificationDocument {
   public static interface ITestSpecificationDocumentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f1d60576-fa98-11eb-be75-2537968f2820")
-    public cleon.testingmethods.hermes.metamodel.spec._01_concept.javamodel.ITestConceptDocument TestConcept();
+    public ch.actifsource.core.javamodel.INamedResource TestConcept();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_TestSpecificationDocument {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,P5YnfMeEN//UgV7th1PsYYsb3fQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,rejo4DdAPIfQq8SjGdtvadH/LSI=] */

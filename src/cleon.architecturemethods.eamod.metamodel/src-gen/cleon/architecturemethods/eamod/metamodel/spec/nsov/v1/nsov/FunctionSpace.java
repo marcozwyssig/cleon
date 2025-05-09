@@ -31,7 +31,7 @@ public class FunctionSpace {
   public static interface IServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e257f5da-c118-11e6-8f58-ad3c6ee7602f")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.nsov.v1.nsov.javamodel.IService service);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource service);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace {
     private ServiceFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.nsov.v1.nsov.javamodel.IService service) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource service) {
       return String.format("SVC-%03d", service.selectIdentifier());  
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace {
 
     private ServiceFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.nsov.v1.nsov.javamodel.IService service) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource service) {
       return DynamicResourceUtil.invoke(IServiceFunctionsImpl.class, ServiceFunctionsImpl.INSTANCE, service).GetId(service);
     }
 
@@ -60,4 +60,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dd118ee3-c118-11e6-8f58-ad3c6ee7602f,vc07Xe25txTctfuYIZyLgPaVHCw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dd118ee3-c118-11e6-8f58-ad3c6ee7602f,uLzymou/UJhD9TWvl95iGAjS8go=] */

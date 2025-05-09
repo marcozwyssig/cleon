@@ -28,7 +28,7 @@ public class FunctionSpace_Stakeholder {
   public static interface IStakeholderFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("18c78e02-0de2-11e6-a33d-238391a68770")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder stakeholder);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource stakeholder);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Stakeholder {
     private StakeholderFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder stakeholder) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource stakeholder) {
       return String.format("SH-%02d", stakeholder.selectIdentifier());   
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Stakeholder {
 
     private StakeholderFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder stakeholder) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource stakeholder) {
       return DynamicResourceUtil.invoke(IStakeholderFunctionsImpl.class, StakeholderFunctionsImpl.INSTANCE, stakeholder).GetId(stakeholder);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace_Stakeholder {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0e5cc754-0de2-11e6-a33d-238391a68770,mz0mPJp5+d07tNKp4bXZJyabaNA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0e5cc754-0de2-11e6-a33d-238391a68770,W8/wGcX0yXUqAd6kHuykF+eJgs8=] */

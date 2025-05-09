@@ -23,10 +23,10 @@ public class FunctionSpace_EAMod_Weighting {
   public static interface IWeightingRequirementManagementAggregateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a9c349b3-e0f4-11e8-8499-a3b0fb3cad90")
-    public List<cleon.common.resources.metamodel.spec.priority.javamodel.IPriority> GetPriorities();
+    public List<ch.actifsource.core.javamodel.ICommentable> GetPriorities();
 
     @IDynamicResourceExtension.MethodId("dcf18da9-e0f4-11e8-8499-a3b0fb3cad90")
-    public List<cleon.common.resources.metamodel.spec.priority.javamodel.IPriority> GetPrioritiesDistinct();
+    public List<ch.actifsource.core.javamodel.ICommentable> GetPrioritiesDistinct();
 
     @IDynamicResourceExtension.MethodId("83ce7028-14f8-11e9-ac43-5132797a057a")
     public java.lang.Integer GetRequirementSum();
@@ -35,23 +35,23 @@ public class FunctionSpace_EAMod_Weighting {
     public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("c5cb0919-1582-11e9-888c-794d92ffc0c6")
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria requirementCriteria);
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator requirementCriteria);
 
     @IDynamicResourceExtension.MethodId("82998965-1583-11e9-888c-794d92ffc0c6")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria> GetAllRequirementCriterias();
+    public List<ch.actifsource.core.javamodel.IDecorator> GetAllRequirementCriterias();
 
   }
   
   public static interface IWeightingRequirementManagementAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("83ce7028-14f8-11e9-ac43-5132797a057a")
-    public java.lang.Integer GetRequirementSum(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate);
+    public java.lang.Integer GetRequirementSum(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate);
 
     @IDynamicResourceExtension.MethodId("1b3ddfa8-14fa-11e9-ac43-5132797a057a")
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate);
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate);
 
     @IDynamicResourceExtension.MethodId("c5cb0919-1582-11e9-888c-794d92ffc0c6")
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria requirementCriteria, final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate);
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator requirementCriteria, final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate);
 
   }
   
@@ -62,14 +62,14 @@ public class FunctionSpace_EAMod_Weighting {
     private WeightingRequirementManagementAggregateFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetRequirementSum(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public java.lang.Integer GetRequirementSum(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       /* Begin Protected Region [[83ce7028-14f8-11e9-ac43-5132797a057a]] */
     	return weightingRequirementManagementAggregate.selectSubjectAreaAggregate().values().stream().mapToInt(x -> x.extension(IWeightingSubjectAreaAggregateFunctions.class).GetRequirementCount()).sum();
       /* End Protected Region   [[83ce7028-14f8-11e9-ac43-5132797a057a]] */
     }
 
     @Override
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       /* Begin Protected Region [[1b3ddfa8-14fa-11e9-ac43-5132797a057a]] */
     	return weightingRequirementManagementAggregate.selectPriorityWeighting().values().stream().mapToDouble(x -> {
     		if( x != null)
@@ -81,7 +81,7 @@ public class FunctionSpace_EAMod_Weighting {
     }
 
     @Override
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria requirementCriteria, final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator requirementCriteria, final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       /* Begin Protected Region [[c5cb0919-1582-11e9-888c-794d92ffc0c6]] */
     	IPriority selectPriority = requirementCriteria.selectRequirement().extension(IAbstractRequirementFunctions.class).GetPriority();
 		IWeightingPriority priorityWeighting = weightingRequirementManagementAggregate.selectPriorityWeighting().values().stream().filter(x -> x.selectPriority().selectNumber().equals(selectPriority.selectNumber())).findFirst().get();
@@ -97,15 +97,15 @@ public class FunctionSpace_EAMod_Weighting {
 
     private WeightingRequirementManagementAggregateFunctions() {}
 
-    public static java.lang.Integer GetRequirementSum(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public static java.lang.Integer GetRequirementSum(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       return DynamicResourceUtil.invoke(IWeightingRequirementManagementAggregateFunctionsImpl.class, WeightingRequirementManagementAggregateFunctionsImpl.INSTANCE, weightingRequirementManagementAggregate).GetRequirementSum(weightingRequirementManagementAggregate);
     }
 
-    public static java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public static java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       return DynamicResourceUtil.invoke(IWeightingRequirementManagementAggregateFunctionsImpl.class, WeightingRequirementManagementAggregateFunctionsImpl.INSTANCE, weightingRequirementManagementAggregate).GetWeighting(weightingRequirementManagementAggregate);
     }
 
-    public static java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria requirementCriteria, final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate weightingRequirementManagementAggregate) {
+    public static java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator requirementCriteria, final ch.actifsource.core.javamodel.IResource weightingRequirementManagementAggregate) {
       return DynamicResourceUtil.invoke(IWeightingRequirementManagementAggregateFunctionsImpl.class, WeightingRequirementManagementAggregateFunctionsImpl.INSTANCE, weightingRequirementManagementAggregate).GetWeighting(requirementCriteria, weightingRequirementManagementAggregate);
     }
 
@@ -148,14 +148,14 @@ public class FunctionSpace_EAMod_Weighting {
     public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("ebf9d096-1582-11e9-888c-794d92ffc0c6")
-    public cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementManagementAggregate GetRequirementManagement();
+    public ch.actifsource.core.javamodel.IResource GetRequirementManagement();
 
   }
   
   public static interface IWeightingRequirementCriteriaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("eb7f44d0-a9d3-11e8-8fa3-5142962ae020")
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria weightingRequirementCriteria);
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator weightingRequirementCriteria);
 
   }
   
@@ -166,7 +166,7 @@ public class FunctionSpace_EAMod_Weighting {
     private WeightingRequirementCriteriaFunctionsImpl() {}
 
     @Override
-    public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria weightingRequirementCriteria) {
+    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator weightingRequirementCriteria) {
       /* Begin Protected Region [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
     	return weightingRequirementCriteria.extension(IWeightingRequirementCriteriaFunctions.class).GetRequirementManagement().extension(IWeightingRequirementManagementAggregateFunctions.class).GetWeighting(weightingRequirementCriteria);
       /* End Protected Region   [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
@@ -178,7 +178,7 @@ public class FunctionSpace_EAMod_Weighting {
 
     private WeightingRequirementCriteriaFunctions() {}
 
-    public static java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel.IWeightingRequirementCriteria weightingRequirementCriteria) {
+    public static java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IDecorator weightingRequirementCriteria) {
       return DynamicResourceUtil.invoke(IWeightingRequirementCriteriaFunctionsImpl.class, WeightingRequirementCriteriaFunctionsImpl.INSTANCE, weightingRequirementCriteria).GetWeighting(weightingRequirementCriteria);
     }
 
@@ -186,4 +186,4 @@ public class FunctionSpace_EAMod_Weighting {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,lpFEnLVBvRXC5MiirDSaQG+VFxU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,xhfdGMpTId4IZF2RmTWKSh3vfBo=] */

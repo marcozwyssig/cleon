@@ -24,13 +24,13 @@ public class FunctionSpace_Test_Input_Connection {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("83d78af3-7b60-11eb-9b7e-aff5566de9d0")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetComponent();
+    public ch.actifsource.core.javamodel.INamedResource GetComponent();
 
     @IDynamicResourceExtension.MethodId("75e6c9d8-7b63-11eb-b8e5-2d821e359a02")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetComponents();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetComponents();
 
     @IDynamicResourceExtension.MethodId("8e96ac86-7b63-11eb-b8e5-2d821e359a02")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetComponentDistinct();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetComponentDistinct();
 
   }
   
@@ -54,4 +54,4 @@ public class FunctionSpace_Test_Input_Connection {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,zd44Ttnf+xE7dcoivZOBcK4Brg0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,9pJlOKRmhzGRYSwsCG1LsCPqNpk=] */

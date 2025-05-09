@@ -35,13 +35,13 @@ public class sites__T_yaml {
   public static interface IAbstractHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1b0e67d4-da27-11ea-ae00-5518e944c256")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyMonitored();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyMonitored();
 
     @IDynamicResourceExtension.MethodId("26e3b499-da2a-11ea-ae00-5518e944c256")
     public java.lang.String GetPath();
 
     @IDynamicResourceExtension.MethodId("c0109767-dcb7-11ea-b5f8-77c3980a1d0a")
-    public java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site);
+    public java.lang.String RenderToText(final ch.actifsource.core.javamodel.INamedResource site);
 
     @IDynamicResourceExtension.MethodId("012a2be1-dcba-11ea-b5f8-77c3980a1d0a")
     public java.lang.String Entry();
@@ -53,7 +53,7 @@ public class sites__T_yaml {
     public java.lang.String TypeNameForSensor();
 
     @IDynamicResourceExtension.MethodId("c830228b-e2f0-11ee-8945-4df0f2e1f411")
-    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SecuritySubzoneFromIP();
+    public ch.actifsource.core.javamodel.INamedResource SecuritySubzoneFromIP();
 
     @IDynamicResourceExtension.MethodId("35d12a50-e2f1-11ee-8945-4df0f2e1f411")
     public java.lang.String TypeName();
@@ -63,13 +63,13 @@ public class sites__T_yaml {
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1b0e67d4-da27-11ea-ae00-5518e944c256")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyMonitored(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList);
 
     @IDynamicResourceExtension.MethodId("c0109767-dcb7-11ea-b5f8-77c3980a1d0a")
-    public java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList);
+    public java.lang.String RenderToText(final ch.actifsource.core.javamodel.INamedResource site, final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList);
 
     @IDynamicResourceExtension.MethodId("a7f3d593-e2ef-11ee-8945-4df0f2e1f411")
-    public java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost);
+    public java.lang.String TypeNameForSensor(final ch.actifsource.core.javamodel.IDecorator abstractHost);
 
   }
   
@@ -80,7 +80,7 @@ public class sites__T_yaml {
     private AbstractHostFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyMonitored(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
       /* Begin Protected Region [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
       return abstractHostList.stream().filter(x -> {
       	if (x.selectSkipMonitoringGeneration() != null && x.selectSkipMonitoringGeneration().booleanValue() || x.selectIsTemporary() != null && x.selectIsTemporary().booleanValue()) {
@@ -103,7 +103,7 @@ public class sites__T_yaml {
     }
 
     @Override
-    public java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+    public java.lang.String RenderToText(final ch.actifsource.core.javamodel.INamedResource site, final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
       /* Begin Protected Region [[c0109767-dcb7-11ea-b5f8-77c3980a1d0a]] */
       final var localAbstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
 
@@ -148,7 +148,7 @@ public class sites__T_yaml {
     }
 
     @Override
-    public java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+    public java.lang.String TypeNameForSensor(final ch.actifsource.core.javamodel.IDecorator abstractHost) {
       /* Begin Protected Region [[a7f3d593-e2ef-11ee-8945-4df0f2e1f411]] */
     	final var abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
     	var securitySubzone = abstractHostFunctions.SecuritySubzoneFromIP();
@@ -170,15 +170,15 @@ public class sites__T_yaml {
 
     private AbstractHostFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyMonitored(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyMonitored(abstractHostList);
     }
 
-    public static java.lang.String RenderToText(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
+    public static java.lang.String RenderToText(final ch.actifsource.core.javamodel.INamedResource site, final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).RenderToText(site, abstractHostList);
     }
 
-    public static java.lang.String TypeNameForSensor(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost abstractHost) {
+    public static java.lang.String TypeNameForSensor(final ch.actifsource.core.javamodel.IDecorator abstractHost) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHost).TypeNameForSensor(abstractHost);
     }
 
@@ -212,20 +212,20 @@ public class sites__T_yaml {
   public static interface IAbstractSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4bb9aa40-dd81-11ea-9383-71e9cf1c59dd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> OnlyToGenerate();
+    public List<ch.actifsource.core.javamodel.INamedResource> OnlyToGenerate();
 
     @IDynamicResourceExtension.MethodId("b36df94a-e0b6-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host);
 
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4bb9aa40-dd81-11ea-9383-71e9cf1c59dd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList);
+    public List<ch.actifsource.core.javamodel.INamedResource> OnlyToGenerate(final List<ch.actifsource.core.javamodel.INamedResource> abstractSiteList);
 
     @IDynamicResourceExtension.MethodId("b36df94a-e0b6-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource abstractSite);
 
   }
   
@@ -236,14 +236,14 @@ public class sites__T_yaml {
     private AbstractSiteFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList) {
+    public List<ch.actifsource.core.javamodel.INamedResource> OnlyToGenerate(final List<ch.actifsource.core.javamodel.INamedResource> abstractSiteList) {
       /* Begin Protected Region [[4bb9aa40-dd81-11ea-9383-71e9cf1c59dd]] */
       return abstractSiteList.stream().filter(x -> x.selectSkipMonitoringGeneration() == null || !x.selectSkipMonitoringGeneration().booleanValue()).collect(Collectors.toList());
       /* End Protected Region   [[4bb9aa40-dd81-11ea-9383-71e9cf1c59dd]] */
     }
 
     @Override
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource abstractSite) {
       /* Begin Protected Region [[b36df94a-e0b6-11ea-8443-8f528e21caa3]] */
         if ( host.selectMonitoringWith() != null ) {
       	  return host.selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
@@ -267,11 +267,11 @@ public class sites__T_yaml {
 
     private AbstractSiteFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> abstractSiteList) {
+    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyToGenerate(final List<ch.actifsource.core.javamodel.INamedResource> abstractSiteList) {
       return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSiteList).OnlyToGenerate(abstractSiteList);
     }
 
-    public static java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite abstractSite) {
+    public static java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource abstractSite) {
       return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).GetProbeName(host, abstractSite);
     }
 
@@ -337,7 +337,7 @@ public class sites__T_yaml {
   public static interface IAbstractClusterHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6e8b5641-e08c-11ea-bb83-59933a3fa779")
-    public java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractClusterHost abstractClusterHost);
+    public java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator abstractClusterHost);
 
   }
   
@@ -348,7 +348,7 @@ public class sites__T_yaml {
     private AbstractClusterHostFunctionsImpl() {}
 
     @Override
-    public java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractClusterHost abstractClusterHost) {
+    public java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator abstractClusterHost) {
       return null;
     }
 
@@ -358,7 +358,7 @@ public class sites__T_yaml {
 
     private AbstractClusterHostFunctions() {}
 
-    public static java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractClusterHost abstractClusterHost) {
+    public static java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator abstractClusterHost) {
       return DynamicResourceUtil.invoke(IAbstractClusterHostFunctionsImpl.class, AbstractClusterHostFunctionsImpl.INSTANCE, abstractClusterHost).Entry(abstractClusterHost);
     }
 
@@ -367,14 +367,14 @@ public class sites__T_yaml {
   public static interface ICentralSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3c5435f5-e0b7-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host);
 
   }
   
   public static interface ICentralSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("3c5435f5-e0b7-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ICentralSite centralSite);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource centralSite);
 
   }
   
@@ -385,7 +385,7 @@ public class sites__T_yaml {
     private CentralSiteFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ICentralSite centralSite) {
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource centralSite) {
       /* Begin Protected Region [[3c5435f5-e0b7-11ea-8443-8f528e21caa3]] */
       if ( host.selectMonitoringWith() != null ) {
     	  return host.selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
@@ -404,7 +404,7 @@ public class sites__T_yaml {
 
     private CentralSiteFunctions() {}
 
-    public static java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ICentralSite centralSite) {
+    public static java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource centralSite) {
       return DynamicResourceUtil.invoke(ICentralSiteFunctionsImpl.class, CentralSiteFunctionsImpl.INSTANCE, centralSite).GetProbeName(host, centralSite);
     }
 
@@ -413,14 +413,14 @@ public class sites__T_yaml {
   public static interface IMulti_TNFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("77c22d9d-e0b8-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host);
 
   }
   
   public static interface IMulti_TNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("77c22d9d-e0b8-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IMulti_TN multi_TN);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource multi_TN);
 
   }
   
@@ -431,7 +431,7 @@ public class sites__T_yaml {
     private Multi_TNFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IMulti_TN multi_TN) {
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource multi_TN) {
       /* Begin Protected Region [[77c22d9d-e0b8-11ea-8443-8f528e21caa3]] */
         if ( host.selectMonitoringWith() != null ) {
         	  return host.selectMonitoringWith().selectMonitoringWith().extension(IAbstractHostFunctions.class).SimpleName();
@@ -479,7 +479,7 @@ public class sites__T_yaml {
 
     private Multi_TNFunctions() {}
 
-    public static java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IMulti_TN multi_TN) {
+    public static java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource multi_TN) {
       return DynamicResourceUtil.invoke(IMulti_TNFunctionsImpl.class, Multi_TNFunctionsImpl.INSTANCE, multi_TN).GetProbeName(host, multi_TN);
     }
 
@@ -488,14 +488,14 @@ public class sites__T_yaml {
   public static interface ITNFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8f089542-e0b8-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host);
 
   }
   
   public static interface ITNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8f089542-e0b8-11ea-8443-8f528e21caa3")
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITN tN);
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource tN);
 
   }
   
@@ -506,7 +506,7 @@ public class sites__T_yaml {
     private TNFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITN tN) {
+    public java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource tN) {
       /* Begin Protected Region [[8f089542-e0b8-11ea-8443-8f528e21caa3]] */
       return AbstractSiteFunctionsImpl.INSTANCE.GetProbeName(host, tN);
       /* End Protected Region   [[8f089542-e0b8-11ea-8443-8f528e21caa3]] */
@@ -518,7 +518,7 @@ public class sites__T_yaml {
 
     private TNFunctions() {}
 
-    public static java.lang.String GetProbeName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost host, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITN tN) {
+    public static java.lang.String GetProbeName(final ch.actifsource.core.javamodel.IDecorator host, final ch.actifsource.core.javamodel.INamedResource tN) {
       return DynamicResourceUtil.invoke(ITNFunctionsImpl.class, TNFunctionsImpl.INSTANCE, tN).GetProbeName(host, tN);
     }
 
@@ -534,7 +534,7 @@ public class sites__T_yaml {
   public static interface IApplicationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("865cfac6-1df7-11eb-9bc6-673ab35ba343")
-    public java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IApplication application);
+    public java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator application);
 
   }
   
@@ -545,7 +545,7 @@ public class sites__T_yaml {
     private ApplicationFunctionsImpl() {}
 
     @Override
-    public java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IApplication application) {
+    public java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator application) {
       return null;
     }
 
@@ -555,7 +555,7 @@ public class sites__T_yaml {
 
     private ApplicationFunctions() {}
 
-    public static java.lang.String Entry(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IApplication application) {
+    public static java.lang.String Entry(final ch.actifsource.core.javamodel.IDecorator application) {
       return DynamicResourceUtil.invoke(IApplicationFunctionsImpl.class, ApplicationFunctionsImpl.INSTANCE, application).Entry(application);
     }
 
@@ -564,7 +564,7 @@ public class sites__T_yaml {
   public static interface ISecuritySubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1e7d71b0-e2f0-11ee-8945-4df0f2e1f411")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IInterfaceSensorMonitorBuildingBlock InterfaceSensorMonitorBuildingBlock();
+    public ch.actifsource.core.javamodel.IDecorator InterfaceSensorMonitorBuildingBlock();
 
   }
   
@@ -588,4 +588,4 @@ public class sites__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,cdJBWAAvFlg1Y4VTpHfCudVBZ0w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,mCHEMX1cCvxCHEIUEeIVCGG4W4g=] */

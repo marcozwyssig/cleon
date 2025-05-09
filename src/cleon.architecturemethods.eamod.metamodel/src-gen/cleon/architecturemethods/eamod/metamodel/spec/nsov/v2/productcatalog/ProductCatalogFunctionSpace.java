@@ -21,7 +21,7 @@ public class ProductCatalogFunctionSpace {
   public static interface IInfrastructureProductCatalogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2cf51903-67d3-11e7-afcc-6df3a81a4d17")
-    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IInfrastructureProduct AllInfrastructureProducts();
+    public ch.actifsource.core.javamodel.INamedResource AllInfrastructureProducts();
 
   }
   
@@ -46,7 +46,7 @@ public class ProductCatalogFunctionSpace {
   public static interface IInfrastructureProductFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3b33568e-67d3-11e7-afcc-6df3a81a4d17")
-    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IInfrastructureProduct AllInfrastructureProducts();
+    public ch.actifsource.core.javamodel.INamedResource AllInfrastructureProducts();
 
   }
   
@@ -70,4 +70,4 @@ public class ProductCatalogFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,27696b33-67d3-11e7-afcc-6df3a81a4d17,x/QuMsTu+NQsS2zAIqoWjBvUriE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,27696b33-67d3-11e7-afcc-6df3a81a4d17,wtuSNLKnssSletc+CnC6WKS+8HE=] */

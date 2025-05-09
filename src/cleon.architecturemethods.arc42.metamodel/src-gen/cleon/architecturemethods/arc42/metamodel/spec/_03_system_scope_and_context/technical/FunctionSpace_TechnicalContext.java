@@ -21,10 +21,10 @@ public class FunctionSpace_TechnicalContext {
   public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bc58e404-052d-11e9-95f7-3b0c47908608")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> SelectAllComponents();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllComponents();
 
     @IDynamicResourceExtension.MethodId("bc58e40c-052d-11e9-95f7-3b0c47908608")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> SelectAllComponentsDistinct();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllComponentsDistinct();
 
     @IDynamicResourceExtension.MethodId("de7cc416-d17f-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderStandardDescription();
@@ -52,7 +52,7 @@ public class FunctionSpace_TechnicalContext {
   public static interface IPort_RequiredFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fddf2eab-052d-11e9-95f7-3b0c47908608")
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent SelectAllComponents();
+    public ch.actifsource.core.javamodel.IResource SelectAllComponents();
 
   }
   
@@ -77,7 +77,7 @@ public class FunctionSpace_TechnicalContext {
   public static interface IPort_ProviderFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1c716abd-052e-11e9-95f7-3b0c47908608")
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent SelectAllComponents();
+    public ch.actifsource.core.javamodel.IResource SelectAllComponents();
 
   }
   
@@ -101,4 +101,4 @@ public class FunctionSpace_TechnicalContext {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bc58e3f2-052d-11e9-95f7-3b0c47908608,/ZQDh8N1FWiP34VGQrutEOr5nfs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bc58e3f2-052d-11e9-95f7-3b0c47908608,UBPe7KihDXuJaGh19eEz4UU0N0U=] */

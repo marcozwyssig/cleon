@@ -21,7 +21,7 @@ public class Task__T_java {
   public static interface ITaskFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ee1044b6-c0b0-11e7-9af7-bb81e9802ff6")
-    public cleon.building.gradle.metamodel.spec.javamodel.IPlugin Plugin();
+    public ch.actifsource.core.javamodel.INamedResource Plugin();
 
     @IDynamicResourceExtension.MethodId("df7af106-c0b1-11e7-9af7-bb81e9802ff6")
     public java.lang.String TaskName();
@@ -48,4 +48,4 @@ public class Task__T_java {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c8d09778-c0b0-11e7-9af7-bb81e9802ff6,Sep0D1I/80kcw6mmtnIqOwZK+DA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c8d09778-c0b0-11e7-9af7-bb81e9802ff6,5TCirSrBwuo7kIzmCRCvfWys/oc=] */

@@ -56,7 +56,7 @@ public class FunctionSpace_DocBook_Steering {
   public static interface IRiskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f778b19a-2d8e-11eb-9bd8-07f8fe211915")
-    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk);
+    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk);
 
   }
   
@@ -67,7 +67,7 @@ public class FunctionSpace_DocBook_Steering {
     private RiskFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk) {
+    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk) {
       return null;
     }
 
@@ -77,7 +77,7 @@ public class FunctionSpace_DocBook_Steering {
 
     private RiskFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk) {
+    public static java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk) {
       return DynamicResourceUtil.invoke(IRiskFunctionsImpl.class, RiskFunctionsImpl.INSTANCE, risk).RenderDescriptions(risk);
     }
 
@@ -96,7 +96,7 @@ public class FunctionSpace_DocBook_Steering {
   public static interface IAssessmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6c06f74c-2d93-11eb-9bd8-07f8fe211915")
-    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.javamodel.IAssessment assessment);
+    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IDecorator assessment);
 
   }
   
@@ -107,7 +107,7 @@ public class FunctionSpace_DocBook_Steering {
     private AssessmentFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.javamodel.IAssessment assessment) {
+    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IDecorator assessment) {
       return null;
     }
 
@@ -117,7 +117,7 @@ public class FunctionSpace_DocBook_Steering {
 
     private AssessmentFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.javamodel.IAssessment assessment) {
+    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IDecorator assessment) {
       return DynamicResourceUtil.invoke(IAssessmentFunctionsImpl.class, AssessmentFunctionsImpl.INSTANCE, assessment).RenderDescriptions(assessment);
     }
 
@@ -125,4 +125,4 @@ public class FunctionSpace_DocBook_Steering {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,64d352e5-1e05-11e7-882a-cdd93aa926f8,yNqUelrfEQDDKilVuHY+bFSOG0M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,64d352e5-1e05-11e7-882a-cdd93aa926f8,hIsPOv1bL1ruprNjYXPQHdUhmLk=] */

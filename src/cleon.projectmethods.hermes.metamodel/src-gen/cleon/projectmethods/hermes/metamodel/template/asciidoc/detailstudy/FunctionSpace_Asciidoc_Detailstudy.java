@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc_Detailstudy {
   public static interface IWeightingCriteriasFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bccc26cd-3cf8-11e5-871f-6beac6a7c24b")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Asciidoc_Detailstudy {
   public static interface ISolutionsEvaluationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("839e0d4a-3c33-11e5-9962-cf3035adb922")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -71,7 +71,7 @@ public class FunctionSpace_Asciidoc_Detailstudy {
   public static interface IBestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fe83bf61-3d16-11e5-871f-6beac6a7c24b")
-    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContent(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -124,7 +124,7 @@ public class FunctionSpace_Asciidoc_Detailstudy {
     public java.lang.String GetContext();
 
     @IDynamicResourceExtension.MethodId("c469cb47-0557-11e6-adf9-af3c4dc80bc3")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -173,4 +173,4 @@ public class FunctionSpace_Asciidoc_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,BpbFMVvEuZTsREhpjd3y60QXX/s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,F7wKw3CvPSXkrbOZd/RuO4GkKGA=] */

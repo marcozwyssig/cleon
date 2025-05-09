@@ -21,7 +21,7 @@ public class FunctionSpace_Coverage {
   public static interface ITestRequirementCoveragesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("adf3789b-5162-11e9-bb61-971a423d31e9")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea> SelectSubjectareas();
+    public List<ch.actifsource.core.javamodel.IResource> SelectSubjectareas();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Coverage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,adf37890-5162-11e9-bb61-971a423d31e9,em8viXH5jZEuACl1Tnw2QyLB8sw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,adf37890-5162-11e9-bb61-971a423d31e9,hs/CtyoggpaV+I2XVQUpaqNGQuA=] */

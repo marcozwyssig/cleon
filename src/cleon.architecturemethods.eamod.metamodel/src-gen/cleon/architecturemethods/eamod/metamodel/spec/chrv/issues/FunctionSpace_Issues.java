@@ -28,7 +28,7 @@ public class FunctionSpace_Issues {
   public static interface IIssueFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("be35e605-c58a-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssue issue);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource issue);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Issues {
     private IssueFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssue issue) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource issue) {
       return String.format("IS%03d", issue.selectIdentifier()); 
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Issues {
 
     private IssueFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssue issue) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource issue) {
       return DynamicResourceUtil.invoke(IIssueFunctionsImpl.class, IssueFunctionsImpl.INSTANCE, issue).GetId(issue);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace_Issues {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b87bae38-c58a-11e5-aeea-1db9268c0ee9,Q4s6Vd5ECF8XJ/ClWgTZDtYgsGQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b87bae38-c58a-11e5-aeea-1db9268c0ee9,bWNTTewdfk2omu8lP8KxN8ivJhM=] */

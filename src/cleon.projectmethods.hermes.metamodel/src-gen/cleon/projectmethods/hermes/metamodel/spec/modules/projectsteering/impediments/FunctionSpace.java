@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface IImpedimentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4bf6efcf-3385-11e6-b251-57783f5929b3")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment impediment);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware impediment);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private ImpedimentFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment impediment) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware impediment) {
       return java.lang.String.format("IM-%03d", impediment.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private ImpedimentFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment impediment) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware impediment) {
       return DynamicResourceUtil.invoke(IImpedimentFunctionsImpl.class, ImpedimentFunctionsImpl.INSTANCE, impediment).GetId(impediment);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46612fb6-3385-11e6-b251-57783f5929b3,PR0ZysaVckuT42QTLIq0QTYEp+4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46612fb6-3385-11e6-b251-57783f5929b3,jxlWSrQDlgHsuM8QP/mBNkU69hM=] */

@@ -24,14 +24,14 @@ public class FunctionSpace_Principle {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("f0aadd8a-c9a3-11e5-96e7-e5a5eee26591")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple> GetAllPrinciples();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetAllPrinciples();
 
   }
   
   public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4a0d89e4-c58d-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource principle);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_Principle {
     private PrincipleFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource principle) {
       return String.format("PR-%03d", principle.selectIdentifier());   
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Principle {
 
     private PrincipleFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource principle) {
       return DynamicResourceUtil.invoke(IPrincipleFunctionsImpl.class, PrincipleFunctionsImpl.INSTANCE, principle).GetId(principle);
     }
 
@@ -61,7 +61,7 @@ public class FunctionSpace_Principle {
   public static interface IPrinciplesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e4536160-c9a3-11e5-96e7-e5a5eee26591")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple> GetAllPrinciples();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetAllPrinciples();
 
   }
   
@@ -85,4 +85,4 @@ public class FunctionSpace_Principle {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,WhMl3pixQvSxfET2bZaAKiBQ0iE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,JxU1MAlxQxhAg+EtYsSWmvUey2o=] */

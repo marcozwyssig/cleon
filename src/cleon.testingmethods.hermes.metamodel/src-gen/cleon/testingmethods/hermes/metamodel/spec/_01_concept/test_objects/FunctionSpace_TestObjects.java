@@ -21,7 +21,7 @@ public class FunctionSpace_TestObjects {
   public static interface IDynamicTestObjectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1590c9fa-6747-11e9-9ec9-5fbc84faaeb1")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetArchitecture();
+    public ch.actifsource.core.javamodel.IResource GetArchitecture();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_TestObjects {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0d11ccf5-6747-11e9-9ec9-5fbc84faaeb1,7VkAhK55GDdCRk407E7wQut1ISA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0d11ccf5-6747-11e9-9ec9-5fbc84faaeb1,rdwPIl/WwAQxhwClXJmK0YFUNFQ=] */

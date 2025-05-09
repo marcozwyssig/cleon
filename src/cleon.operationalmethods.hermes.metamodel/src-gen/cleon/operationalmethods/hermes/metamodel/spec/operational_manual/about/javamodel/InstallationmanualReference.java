@@ -49,11 +49,11 @@ public class InstallationmanualReference extends DynamicResource implements IIns
   }
 
   @Override
-  public java.net.URL selectSource() {
-    return _getSingleAttribute(java.net.URL.class, cleon.common.doc.metamodel.spec.chapter.references.ReferencesPackage.Reference_source);
+  public java.lang.Object selectSource() {
+    return _getSingleAttribute(java.lang.Object.class, cleon.common.doc.metamodel.spec.chapter.references.ReferencesPackage.Reference_source);
   }
     
-  public void setSource(java.net.URL source) {
+  public void setSource(java.lang.Object source) {
      _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.references.ReferencesPackage.Reference_source, source);
   }
 
@@ -104,7 +104,7 @@ public class InstallationmanualReference extends DynamicResource implements IIns
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.about.AboutPackage.InstallationmanualReference_docId, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
-    _acceptSingleAttribute(java.net.URL.class, cleon.common.doc.metamodel.spec.chapter.references.ReferencesPackage.Reference_source, visitor);
+    _acceptSingleAttribute(java.lang.Object.class, cleon.common.doc.metamodel.spec.chapter.references.ReferencesPackage.Reference_source, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.Version_version, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.operationalmethods.hermes.metamodel.spec.operational_manual.about.AboutPackage.InstallationmanualReference_installationManualForSystemConfiguration, visitor);
@@ -118,4 +118,4 @@ public class InstallationmanualReference extends DynamicResource implements IIns
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7996b5e3-1b34-11e9-ad9a-a143a9cb74e7,kyAOt89Sqj5TYH4kPc5VjhRRPew=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7996b5e3-1b34-11e9-ad9a-a143a9cb74e7,+7LqhWIE0+IaQl770V8BEvRNKcY=] */

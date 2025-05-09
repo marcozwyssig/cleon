@@ -28,7 +28,7 @@ public class FunctionSpace_Test_Execution {
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0057e3c8-20dd-11e6-9368-9172b77c2cff")
-    public java.lang.Boolean IsPassed(final cleon.testingmethods.hermes.metamodel.spec._03_execution.test_execution.javamodel.ITestResult testResult);
+    public java.lang.Boolean IsPassed(final ch.actifsource.core.javamodel.IResource testResult);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Test_Execution {
     private TestResultFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsPassed(final cleon.testingmethods.hermes.metamodel.spec._03_execution.test_execution.javamodel.ITestResult testResult) {
+    public java.lang.Boolean IsPassed(final ch.actifsource.core.javamodel.IResource testResult) {
       /* Begin Protected Region [[0057e3c8-20dd-11e6-9368-9172b77c2cff]] */
         if( testResult instanceof cleon.testingmethods.hermes.metamodel.spec._03_execution.test_execution.javamodel.ITestSuccess)
         {
@@ -55,7 +55,7 @@ public class FunctionSpace_Test_Execution {
 
     private TestResultFunctions() {}
 
-    public static java.lang.Boolean IsPassed(final cleon.testingmethods.hermes.metamodel.spec._03_execution.test_execution.javamodel.ITestResult testResult) {
+    public static java.lang.Boolean IsPassed(final ch.actifsource.core.javamodel.IResource testResult) {
       return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).IsPassed(testResult);
     }
 
@@ -63,4 +63,4 @@ public class FunctionSpace_Test_Execution {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,103de61d-20da-11e6-9368-9172b77c2cff,dXDPC9xDUUyiA3UR79JQx5nlTjg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,103de61d-20da-11e6-9368-9172b77c2cff,X1UaKwOz2FzfSGq/dCwGzLEdRfs=] */

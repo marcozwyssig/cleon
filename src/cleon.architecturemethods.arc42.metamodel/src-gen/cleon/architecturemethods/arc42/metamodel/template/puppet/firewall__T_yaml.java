@@ -24,7 +24,7 @@ public class firewall__T_yaml {
   public static interface IServiceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f7e57217-8bdb-11eb-a832-91f5636963f2")
-    public java.lang.String PolicyName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
+    public java.lang.String PolicyName(final ch.actifsource.core.javamodel.IDecorator qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("dfdcfbdc-0b30-11ec-a87c-0f7243e6a37e")
     public java.lang.String ServiceAttributes();
@@ -52,7 +52,7 @@ public class firewall__T_yaml {
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4a15ac8e-0674-11ec-b623-f16d27d7978c")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> onlyLinux();
+    public List<ch.actifsource.core.javamodel.IDecorator> onlyLinux();
 
     @IDynamicResourceExtension.MethodId("159a95fb-0b34-11ec-a87c-0f7243e6a37e")
     public java.lang.String CmpName();
@@ -62,7 +62,7 @@ public class firewall__T_yaml {
   public static interface IDestinationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4a15ac8e-0674-11ec-b623-f16d27d7978c")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> onlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList);
+    public List<ch.actifsource.core.javamodel.IDecorator> onlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> destinationList);
 
   }
   
@@ -73,7 +73,7 @@ public class firewall__T_yaml {
     private DestinationFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> onlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> onlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
       /* Begin Protected Region [[4a15ac8e-0674-11ec-b623-f16d27d7978c]] */
       return destinationList.stream().filter(x -> {
       	final var functions = x.selectDestinationSystemConfiguration().extension(ISystemConfigurationFunctions.class);
@@ -89,7 +89,7 @@ public class firewall__T_yaml {
 
     private DestinationFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> onlyLinux(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> onlyLinux(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
       return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destinationList).onlyLinux(destinationList);
     }
 
@@ -122,4 +122,4 @@ public class firewall__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,PH2AfWDxvJpmsdLz32LmprQGec4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,mC7jXy40RaQ5PwwjddCd0/tQLSc=] */

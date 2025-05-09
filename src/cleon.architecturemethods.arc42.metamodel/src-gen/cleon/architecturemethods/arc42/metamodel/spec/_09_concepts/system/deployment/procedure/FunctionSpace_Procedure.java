@@ -24,7 +24,7 @@ public class FunctionSpace_Procedure {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("719748ac-7eab-11ec-b55c-f5ca121c82b7")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> OnlyBuildSystemConfigurationsForInstallation();
+    public List<ch.actifsource.core.javamodel.INamedResource> OnlyBuildSystemConfigurationsForInstallation();
 
   }
   
@@ -49,13 +49,13 @@ public class FunctionSpace_Procedure {
   public static interface IDeploymentProcedureConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a6ea8f7e-7eab-11ec-b55c-f5ca121c82b7")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllBuildSystemConfigurations();
+    public List<ch.actifsource.core.javamodel.INamedResource> AllBuildSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("fd2ea921-7eb0-11ec-b55c-f5ca121c82b7")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> OnlyBuildSystemConfigurationsForInstallation();
+    public List<ch.actifsource.core.javamodel.INamedResource> OnlyBuildSystemConfigurationsForInstallation();
 
     @IDynamicResourceExtension.MethodId("ebc02213-0e85-11ed-992a-279da38c72c5")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.procedure.javamodel.IDeploymentProcedureOrder> AllDeploymentProcedureOrder();
+    public List<ch.actifsource.core.javamodel.IResource> AllDeploymentProcedureOrder();
 
   }
   
@@ -79,4 +79,4 @@ public class FunctionSpace_Procedure {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,74519eba-7e8c-11ec-b55c-f5ca121c82b7,eFRSLNMjMEy/aUR8C08SAn+BPqg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,74519eba-7e8c-11ec-b55c-f5ca121c82b7,eFn4ZCFr/GN+Wf0bp8iXE5GlDs0=] */

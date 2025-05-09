@@ -21,7 +21,7 @@ public class FunctionSpace_Roles {
   public static interface IRolesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("25114272-bb61-11e8-921b-c1cf01226512")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.roles.javamodel.IRole> GetRoles();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetRoles();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Roles {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1c42edac-bb61-11e8-921b-c1cf01226512,qMEu9IlBEfxRiqbAes33qcsFZoU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1c42edac-bb61-11e8-921b-c1cf01226512,C0eUJ7i/OQn4iy5LIwIP02qvo58=] */

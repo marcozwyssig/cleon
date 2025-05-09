@@ -21,7 +21,7 @@ public class FunctionSpace_Architecture_Constraints {
   public static interface ITechnicalConstraintFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3f5166c7-ac13-11ef-afba-fb66280e2230")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+    public ch.actifsource.core.javamodel.IResource LanguageSettings();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Architecture_Constraints {
   public static interface IOrganizationalConstraintFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7d487069-ac13-11ef-afba-fb66280e2230")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+    public ch.actifsource.core.javamodel.IResource LanguageSettings();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Architecture_Constraints {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2f80f055-ac13-11ef-afba-fb66280e2230,CfCoTK32FMxIbBvmAiMkiNp3dr0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2f80f055-ac13-11ef-afba-fb66280e2230,YgSVlQGPJz2zFZFdTaI3QMtagBE=] */

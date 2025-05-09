@@ -21,10 +21,10 @@ public class InfrastructurProductVariety__T_dot {
   public static interface IInfrastractureProductVarietyFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("11a530b3-6d02-11e7-8ac5-bbe16350e1e8")
-    public java.lang.String RenderDirectedDependendies(final cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.variety.javamodel.IInfrastractureProductVariety infrastractureProductVariety2);
+    public java.lang.String RenderDirectedDependendies(final ch.actifsource.core.javamodel.INamedResource infrastractureProductVariety2);
 
     @IDynamicResourceExtension.MethodId("39f2e005-6d02-11e7-8ac5-bbe16350e1e8")
-    public java.lang.String RenderInvertedDependendies(final cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.variety.javamodel.IInfrastractureProductVariety infrastractureProductVariety2);
+    public java.lang.String RenderInvertedDependendies(final ch.actifsource.core.javamodel.INamedResource infrastractureProductVariety2);
 
   }
   
@@ -48,4 +48,4 @@ public class InfrastructurProductVariety__T_dot {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2be12c9-6c94-11e7-8bc1-2fb13127901b,acm977OvJv+bROAWNCHuB8K+w6M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2be12c9-6c94-11e7-8bc1-2fb13127901b,t5u71im+hxOTJcG68NzUSSkfZbc=] */

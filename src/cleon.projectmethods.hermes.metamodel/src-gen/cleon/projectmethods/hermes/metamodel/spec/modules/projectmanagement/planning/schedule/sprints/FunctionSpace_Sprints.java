@@ -32,14 +32,14 @@ public class FunctionSpace_Sprints {
     public java.lang.Double SumEffort();
 
     @IDynamicResourceExtension.MethodId("ea25b46f-8974-11e6-9315-e9960ca482c6")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint();
+    public ch.actifsource.core.javamodel.IResource GetSprint();
 
   }
   
   public static interface ISprintBacklogFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("bedae007-c02b-11e5-b927-b1b055d0575f")
-    public java.lang.Double SumEffort(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintBacklog sprintBacklog);
+    public java.lang.Double SumEffort(final ch.actifsource.core.javamodel.IResource sprintBacklog);
 
   }
   
@@ -50,7 +50,7 @@ public class FunctionSpace_Sprints {
     private SprintBacklogFunctionsImpl() {}
 
     @Override
-    public java.lang.Double SumEffort(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintBacklog sprintBacklog) {
+    public java.lang.Double SumEffort(final ch.actifsource.core.javamodel.IResource sprintBacklog) {
       /* Begin Protected Region [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
       return sprintBacklog.selectWorkItems().stream().filter(x -> x.selectEstimate() != null).mapToDouble(p -> Double.parseDouble(p.selectEstimate().selectName())).sum();
       /* End Protected Region   [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
@@ -62,7 +62,7 @@ public class FunctionSpace_Sprints {
 
     private SprintBacklogFunctions() {}
 
-    public static java.lang.Double SumEffort(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintBacklog sprintBacklog) {
+    public static java.lang.Double SumEffort(final ch.actifsource.core.javamodel.IResource sprintBacklog) {
       return DynamicResourceUtil.invoke(ISprintBacklogFunctionsImpl.class, SprintBacklogFunctionsImpl.INSTANCE, sprintBacklog).SumEffort(sprintBacklog);
     }
 
@@ -87,13 +87,13 @@ public class FunctionSpace_Sprints {
   public static interface ISprintCapacityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("935a66c2-c02b-11e5-b927-b1b055d0575f")
-    public java.lang.Integer SumBruttoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
+    public java.lang.Integer SumBruttoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity);
 
     @IDynamicResourceExtension.MethodId("fb93c4d2-cb91-11e5-b911-69bd21f5af67")
-    public java.lang.Integer SumNettoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
+    public java.lang.Integer SumNettoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity);
 
     @IDynamicResourceExtension.MethodId("3bb4378c-cb95-11e5-b911-69bd21f5af67")
-    public java.lang.Double CalculatePower(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
+    public java.lang.Double CalculatePower(final ch.actifsource.core.javamodel.IResource sprintCapacity);
 
   }
   
@@ -104,21 +104,21 @@ public class FunctionSpace_Sprints {
     private SprintCapacityFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer SumBruttoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public java.lang.Integer SumBruttoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       /* Begin Protected Region [[935a66c2-c02b-11e5-b927-b1b055d0575f]] */
       return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> p.extension(IPersonCapacityFunctions.class).SumBruttoCapacity()).sum();
       /* End Protected Region   [[935a66c2-c02b-11e5-b927-b1b055d0575f]] */
     }
 
     @Override
-    public java.lang.Integer SumNettoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public java.lang.Integer SumNettoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       /* Begin Protected Region [[fb93c4d2-cb91-11e5-b911-69bd21f5af67]] */
       return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> p.extension(IPersonCapacityFunctions.class).SumNettoCapacity()).sum();
       /* End Protected Region   [[fb93c4d2-cb91-11e5-b911-69bd21f5af67]] */
     }
 
     @Override
-    public java.lang.Double CalculatePower(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public java.lang.Double CalculatePower(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       /* Begin Protected Region [[3bb4378c-cb95-11e5-b911-69bd21f5af67]] */
       final var backlog = Sprint.selectToMeSprintCapacity(sprintCapacity).selectSprintBacklog();
       final double effort = backlog.extension(ISprintBacklogFunctions.class).SumEffort();
@@ -132,15 +132,15 @@ public class FunctionSpace_Sprints {
 
     private SprintCapacityFunctions() {}
 
-    public static java.lang.Integer SumBruttoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public static java.lang.Integer SumBruttoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).SumBruttoCapacity(sprintCapacity);
     }
 
-    public static java.lang.Integer SumNettoCapacity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public static java.lang.Integer SumNettoCapacity(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).SumNettoCapacity(sprintCapacity);
     }
 
-    public static java.lang.Double CalculatePower(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public static java.lang.Double CalculatePower(final ch.actifsource.core.javamodel.IResource sprintCapacity) {
       return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).CalculatePower(sprintCapacity);
     }
 
@@ -211,32 +211,32 @@ public class FunctionSpace_Sprints {
     public java.lang.Double CalculateVelocity();
 
     @IDynamicResourceExtension.MethodId("d139e02f-33bf-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.Double CalculateVelocityForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome);
+    public java.lang.Double CalculateVelocityForModule(final ch.actifsource.core.javamodel.IDecorator outcome);
 
     @IDynamicResourceExtension.MethodId("80511a71-349c-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint ActualSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome);
+    public ch.actifsource.core.javamodel.IResource ActualSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome);
 
     @IDynamicResourceExtension.MethodId("aeb46814-349c-11e6-8839-1f6631cc77ac")
-    public java.lang.Integer LastSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome);
+    public java.lang.Integer LastSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome);
 
     @IDynamicResourceExtension.MethodId("92cde438-349f-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases GetReleasePlanning();
+    public ch.actifsource.core.javamodel.IResource GetReleasePlanning();
 
   }
   
   public static interface ISprintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("079398d0-33b1-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.Double CalculateVelocity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints);
+    public java.lang.Double CalculateVelocity(final ch.actifsource.core.javamodel.IResource sprints);
 
     @IDynamicResourceExtension.MethodId("d139e02f-33bf-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.Double CalculateVelocityForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints);
+    public java.lang.Double CalculateVelocityForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints);
 
     @IDynamicResourceExtension.MethodId("80511a71-349c-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint ActualSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints);
+    public ch.actifsource.core.javamodel.IResource ActualSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints);
 
     @IDynamicResourceExtension.MethodId("aeb46814-349c-11e6-8839-1f6631cc77ac")
-    public java.lang.Integer LastSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints);
+    public java.lang.Integer LastSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints);
 
   }
   
@@ -247,7 +247,7 @@ public class FunctionSpace_Sprints {
     private SprintsFunctionsImpl() {}
 
     @Override
-    public java.lang.Double CalculateVelocity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public java.lang.Double CalculateVelocity(final ch.actifsource.core.javamodel.IResource sprints) {
       /* Begin Protected Region [[079398d0-33b1-11e6-94cd-fbf6c8ccd08d]] */
       var sprintCount = 0;
       var sprintDoneWork = 0D;
@@ -277,7 +277,7 @@ public class FunctionSpace_Sprints {
     }
 
     @Override
-    public java.lang.Double CalculateVelocityForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public java.lang.Double CalculateVelocityForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       /* Begin Protected Region [[d139e02f-33bf-11e6-94cd-fbf6c8ccd08d]] */
       var sprintCount = 0;
       var sprintDoneWork = 0D;
@@ -331,7 +331,7 @@ public class FunctionSpace_Sprints {
     }
 
     @Override
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint ActualSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public ch.actifsource.core.javamodel.IResource ActualSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       /* Begin Protected Region [[80511a71-349c-11e6-8839-1f6631cc77ac]] */
       ISprint lastSprint = null;
       for (final ISprint planedSprint : sprints.selectSprints()) {
@@ -363,7 +363,7 @@ public class FunctionSpace_Sprints {
     }
 
     @Override
-    public java.lang.Integer LastSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public java.lang.Integer LastSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       /* Begin Protected Region [[aeb46814-349c-11e6-8839-1f6631cc77ac]] */
       final double velocity = CalculateVelocityForModule(outcome, sprints);
       final var backlog = outcome.extension(IOutcomeFunctions.class).GetBacklog();
@@ -389,19 +389,19 @@ public class FunctionSpace_Sprints {
 
     private SprintsFunctions() {}
 
-    public static java.lang.Double CalculateVelocity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public static java.lang.Double CalculateVelocity(final ch.actifsource.core.javamodel.IResource sprints) {
       return DynamicResourceUtil.invoke(ISprintsFunctionsImpl.class, SprintsFunctionsImpl.INSTANCE, sprints).CalculateVelocity(sprints);
     }
 
-    public static java.lang.Double CalculateVelocityForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public static java.lang.Double CalculateVelocityForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       return DynamicResourceUtil.invoke(ISprintsFunctionsImpl.class, SprintsFunctionsImpl.INSTANCE, sprints).CalculateVelocityForModule(outcome, sprints);
     }
 
-    public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint ActualSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public static ch.actifsource.core.javamodel.IResource ActualSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       return DynamicResourceUtil.invoke(ISprintsFunctionsImpl.class, SprintsFunctionsImpl.INSTANCE, sprints).ActualSprintForModule(outcome, sprints);
     }
 
-    public static java.lang.Integer LastSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    public static java.lang.Integer LastSprintForModule(final ch.actifsource.core.javamodel.IDecorator outcome, final ch.actifsource.core.javamodel.IResource sprints) {
       return DynamicResourceUtil.invoke(ISprintsFunctionsImpl.class, SprintsFunctionsImpl.INSTANCE, sprints).LastSprintForModule(outcome, sprints);
     }
 
@@ -426,16 +426,16 @@ public class FunctionSpace_Sprints {
   public static interface ICapacityPerDayFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("67f7685c-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsAFullDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsAFullDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("a5cc92a3-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsANoDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsANoDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("aca49591-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsAHalfDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsAHalfDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("f0ba8e2d-0d63-11e6-9f44-9d0000bae4df")
-    public java.lang.Boolean IsWeekend(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsWeekend(final ch.actifsource.core.javamodel.IDecorator capacityPerDay);
 
   }
   
@@ -446,22 +446,22 @@ public class FunctionSpace_Sprints {
     private CapacityPerDayFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsAFullDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsAFullDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return capacityPerDay.selectCapacity() >= 8;
     }
 
     @Override
-    public java.lang.Boolean IsANoDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsANoDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return capacityPerDay.selectCapacity() == 0 && !DayFunctions.IsWeekend(capacityPerDay.selectDay());
     }
 
     @Override
-    public java.lang.Boolean IsAHalfDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsAHalfDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return capacityPerDay.selectCapacity() > 0 && capacityPerDay.selectCapacity() < 8;
     }
 
     @Override
-    public java.lang.Boolean IsWeekend(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsWeekend(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return capacityPerDay.selectCapacity() == 0 && DayFunctions.IsWeekend(capacityPerDay.selectDay());
     }
 
@@ -471,19 +471,19 @@ public class FunctionSpace_Sprints {
 
     private CapacityPerDayFunctions() {}
 
-    public static java.lang.Boolean IsAFullDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsAFullDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsAFullDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsANoDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsANoDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsANoDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsAHalfDay(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsAHalfDay(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsAHalfDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsWeekend(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsWeekend(final ch.actifsource.core.javamodel.IDecorator capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsWeekend(capacityPerDay);
     }
 
@@ -492,35 +492,35 @@ public class FunctionSpace_Sprints {
   public static interface ISprintFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8077838f-349b-11e6-8839-1f6631cc77ac")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.javamodel.IWorkItem> GetWorkItems();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetWorkItems();
 
     @IDynamicResourceExtension.MethodId("da3e9b8e-8a0e-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases GetReleases();
+    public ch.actifsource.core.javamodel.IResource GetReleases();
 
     @IDynamicResourceExtension.MethodId("4f0e534b-8a0f-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastSprint();
+    public ch.actifsource.core.javamodel.IResource LastSprint();
 
     @IDynamicResourceExtension.MethodId("031358b3-8a13-11e6-8085-d9bdba2de943")
-    public cleon.common.calendar.metamodel.spec.javamodel.ICalendar GetCalendar();
+    public ch.actifsource.core.javamodel.INamedResource GetCalendar();
 
     @IDynamicResourceExtension.MethodId("8c24f837-8a18-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IRelease GetRelease();
+    public ch.actifsource.core.javamodel.INamedResource GetRelease();
 
     @IDynamicResourceExtension.MethodId("455700f4-d71a-11e6-a422-8b5491da3f30")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IPhase GetPhase();
+    public ch.actifsource.core.javamodel.INamedResource GetPhase();
 
     @IDynamicResourceExtension.MethodId("0e3853a4-d71b-11e6-a422-8b5491da3f30")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IRelease> GetMilestoneList();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetMilestoneList();
 
     @IDynamicResourceExtension.MethodId("230c6690-d164-11e8-882b-c9297140cb78")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints GetSprints();
+    public ch.actifsource.core.javamodel.IResource GetSprints();
 
   }
   
   public static interface ISprintFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4f0e534b-8a0f-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint sprint);
+    public ch.actifsource.core.javamodel.IResource LastSprint(final ch.actifsource.core.javamodel.IResource sprint);
 
   }
   
@@ -531,7 +531,7 @@ public class FunctionSpace_Sprints {
     private SprintFunctionsImpl() {}
 
     @Override
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint sprint) {
+    public ch.actifsource.core.javamodel.IResource LastSprint(final ch.actifsource.core.javamodel.IResource sprint) {
       /* Begin Protected Region [[4f0e534b-8a0f-11e6-8085-d9bdba2de943]] */
       final var lastSprint = sprint.selectIdentifier() - 1;
       for (final ISprint iterSprint : Sprints.selectToMeSprints(sprint).selectSprints()) {
@@ -550,7 +550,7 @@ public class FunctionSpace_Sprints {
 
     private SprintFunctions() {}
 
-    public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint sprint) {
+    public static ch.actifsource.core.javamodel.IResource LastSprint(final ch.actifsource.core.javamodel.IResource sprint) {
       return DynamicResourceUtil.invoke(ISprintFunctionsImpl.class, SprintFunctionsImpl.INSTANCE, sprint).LastSprint(sprint);
     }
 
@@ -558,4 +558,4 @@ public class FunctionSpace_Sprints {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,qi0t3pVjNxKbM+ZAhYXH/TWeQRM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,SeLBnyZYi1NE9xwEGQLEfdIU0oo=] */

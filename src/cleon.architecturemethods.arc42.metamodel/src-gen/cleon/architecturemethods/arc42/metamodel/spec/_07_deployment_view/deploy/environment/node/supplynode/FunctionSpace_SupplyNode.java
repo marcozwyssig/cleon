@@ -24,7 +24,7 @@ public class FunctionSpace_SupplyNode {
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("1f972920-2ab8-11e9-a3f8-336d9e792e17")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyDataCenter GetLocationNode();
+    public ch.actifsource.core.javamodel.IResource GetLocationNode();
 
     @IDynamicResourceExtension.MethodId("f41ada7c-e28d-11ed-99b7-d1ac0e4a4893")
     public java.lang.String SimpleName();
@@ -55,7 +55,7 @@ public class FunctionSpace_SupplyNode {
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("cd26f851-e28e-11ed-99b7-d1ac0e4a4893")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyLocation GetLocationNode();
+    public ch.actifsource.core.javamodel.INamedResource GetLocationNode();
 
   }
   
@@ -83,7 +83,7 @@ public class FunctionSpace_SupplyNode {
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("56fd4b1c-2ab8-11e9-a3f8-336d9e792e17")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode GetSubnetNode();
+    public ch.actifsource.core.javamodel.IResource GetSubnetNode();
 
   }
   
@@ -121,7 +121,7 @@ public class FunctionSpace_SupplyNode {
   public static interface ISupplyNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("74e81056-2aba-11e9-a3f8-336d9e792e17")
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyNode supplyNode);
+    public java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IResource supplyNode);
 
   }
   
@@ -132,7 +132,7 @@ public class FunctionSpace_SupplyNode {
     private SupplyNodeFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyNode supplyNode) {
+    public java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IResource supplyNode) {
       return true;
     }
 
@@ -142,7 +142,7 @@ public class FunctionSpace_SupplyNode {
 
     private SupplyNodeFunctions() {}
 
-    public static java.lang.Boolean IsSupplied(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyNode supplyNode) {
+    public static java.lang.Boolean IsSupplied(final ch.actifsource.core.javamodel.IResource supplyNode) {
       return DynamicResourceUtil.invoke(ISupplyNodeFunctionsImpl.class, SupplyNodeFunctionsImpl.INSTANCE, supplyNode).IsSupplied(supplyNode);
     }
 
@@ -150,4 +150,4 @@ public class FunctionSpace_SupplyNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,u49UBJ7CbyJ6jDFUsYcNj8rCQlQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,Baq/SsLtDL6JOggZnTl9BFLULRs=] */

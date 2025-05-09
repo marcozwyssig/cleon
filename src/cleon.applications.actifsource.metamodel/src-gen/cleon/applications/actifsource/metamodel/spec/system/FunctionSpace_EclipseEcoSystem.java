@@ -23,14 +23,14 @@ public class FunctionSpace_EclipseEcoSystem {
   public static interface IPackagesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2471148e-491a-11eb-9bd7-6114c4f17e0c")
-    public List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> FindPackages(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin);
+    public List<ch.actifsource.core.javamodel.INamedResource> FindPackages(final ch.actifsource.core.javamodel.IResource plugin);
 
   }
   
   public static interface IPackagesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2471148e-491a-11eb-9bd7-6114c4f17e0c")
-    public List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> FindPackages(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin, final cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages packages);
+    public List<ch.actifsource.core.javamodel.INamedResource> FindPackages(final ch.actifsource.core.javamodel.IResource plugin, final ch.actifsource.core.javamodel.IResource packages);
 
   }
   
@@ -41,7 +41,7 @@ public class FunctionSpace_EclipseEcoSystem {
     private PackagesFunctionsImpl() {}
 
     @Override
-    public List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> FindPackages(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin, final cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages packages) {
+    public List<ch.actifsource.core.javamodel.INamedResource> FindPackages(final ch.actifsource.core.javamodel.IResource plugin, final ch.actifsource.core.javamodel.IResource packages) {
       /* Begin Protected Region [[2471148e-491a-11eb-9bd7-6114c4f17e0c]] */
       final var abstractProjectFunctions = AbstractProject.selectToMePlugin(plugin)
       		.extension(IBuildingBlockFunctions.class);
@@ -57,7 +57,7 @@ public class FunctionSpace_EclipseEcoSystem {
 
     private PackagesFunctions() {}
 
-    public static List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> FindPackages(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin, final cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages packages) {
+    public static List<ch.actifsource.core.javamodel.INamedResource> FindPackages(final ch.actifsource.core.javamodel.IResource plugin, final ch.actifsource.core.javamodel.IResource packages) {
       return DynamicResourceUtil.invoke(IPackagesFunctionsImpl.class, PackagesFunctionsImpl.INSTANCE, packages).FindPackages(plugin, packages);
     }
 
@@ -65,4 +65,4 @@ public class FunctionSpace_EclipseEcoSystem {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1a3e7433-491a-11eb-9bd7-6114c4f17e0c,ory7or37Y13qLTsfWnu2RbIqjUE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1a3e7433-491a-11eb-9bd7-6114c4f17e0c,YO712lUAyx7KumeTOuE2/ElRKW4=] */

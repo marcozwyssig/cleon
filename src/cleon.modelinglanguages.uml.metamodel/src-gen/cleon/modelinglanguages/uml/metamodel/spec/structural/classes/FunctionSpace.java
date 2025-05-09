@@ -21,7 +21,7 @@ public class FunctionSpace {
   public static interface IFieldClassFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5ea98107-c0c3-11e4-b2f2-bbf951b71ec4")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllFieldsWithBaseClass();
+    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields.javamodel.IField> AllFieldsWithBaseClass();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d76a5686-97d7-11e3-bb9a-e57bbf5647bb,fRnRn5NMP+L2JYaUbtVHFmcc1qU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d76a5686-97d7-11e3-bb9a-e57bbf5647bb,KMxR2geYuZZYSQH4IvtNNYiKBjg=] */

@@ -8,10 +8,10 @@ public interface ISourceDocument extends cleon.architecturemethods.eamod.metamod
   
   // attributes
   
-  public java.net.URL selectUrl();
+  public java.lang.Object selectUrl();
   
   public java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISourceChapter> selectChapters();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,+m1I87Ah/2dj2OI11EkVOY07Fr0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,UYk93WedWxmzuDR+YS3l/hp93Ms=] */

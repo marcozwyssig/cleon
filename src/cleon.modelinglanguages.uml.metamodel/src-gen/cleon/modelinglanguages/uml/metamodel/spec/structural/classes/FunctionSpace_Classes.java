@@ -100,7 +100,7 @@ public class FunctionSpace_Classes {
   public static interface IMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2bc4106e-a482-11e3-a07f-f96d34c3de8f")
-    public java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method);
+    public java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType method);
 
   }
   
@@ -111,7 +111,7 @@ public class FunctionSpace_Classes {
     private MethodFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method) {
+    public java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType method) {
       /* Begin Protected Region [[2bc4106e-a482-11e3-a07f-f96d34c3de8f]] */
         return !(method.selectMep() instanceof ISyncRequestResponse);
       /* End Protected Region   [[2bc4106e-a482-11e3-a07f-f96d34c3de8f]] */
@@ -123,7 +123,7 @@ public class FunctionSpace_Classes {
 
     private MethodFunctions() {}
 
-    public static java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method) {
+    public static java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType method) {
       return DynamicResourceUtil.invoke(IMethodFunctionsImpl.class, MethodFunctionsImpl.INSTANCE, method).IsAsync(method);
     }
 
@@ -534,4 +534,4 @@ public class FunctionSpace_Classes {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,modcATcdTPfNCWPxv2bEcC8mH3E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,OW5NKTUnJ5LuoZsz3Dj1UecGaLk=] */

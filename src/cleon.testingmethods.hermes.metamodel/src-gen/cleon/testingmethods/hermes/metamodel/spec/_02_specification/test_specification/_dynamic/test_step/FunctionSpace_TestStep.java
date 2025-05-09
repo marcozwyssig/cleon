@@ -30,7 +30,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestStepFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("985c0961-6725-11e9-9ec9-5fbc84faaeb1")
-    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep);
+    public java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testStep);
 
   }
   
@@ -41,7 +41,7 @@ public class FunctionSpace_TestStep {
     private TestStepFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
+    public java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testStep) {
       /* Begin Protected Region [[985c0961-6725-11e9-9ec9-5fbc84faaeb1]] */
       Integer position = 1;
       final var dynamicTest = DynamicTest.selectToMeTestSteps(testStep);
@@ -63,7 +63,7 @@ public class FunctionSpace_TestStep {
 
     private TestStepFunctions() {}
 
-    public static java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
+    public static java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testStep) {
       return DynamicResourceUtil.invoke(ITestStepFunctionsImpl.class, TestStepFunctionsImpl.INSTANCE, testStep).Position(testStep);
     }
 
@@ -72,7 +72,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestUserAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9dfe0c68-7182-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware SelectTestSteps();
 
   }
   
@@ -97,7 +97,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestInputUserFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bdcc234f-7182-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware SelectTestSteps();
 
     @IDynamicResourceExtension.MethodId("936782dd-7199-11e9-98e0-2719d32d2629")
     public java.lang.String SimpleName();
@@ -125,7 +125,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestInputConnectionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c4c3e442-7182-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware SelectTestSteps();
 
   }
   
@@ -150,7 +150,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestInputToolFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("55cc2dc0-7199-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware SelectTestSteps();
 
     @IDynamicResourceExtension.MethodId("f10a9c7d-7199-11e9-98e0-2719d32d2629")
     public java.lang.String SimpleName();
@@ -178,7 +178,7 @@ public class FunctionSpace_TestStep {
   public static interface ITestToolAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a3bd5cc3-0bf2-11ec-958d-1bedd06d8336")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IAuthorsAware SelectTestSteps();
 
   }
   
@@ -202,4 +202,4 @@ public class FunctionSpace_TestStep {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,EBI2K4b/NSxG6VxdOoX5P9k09gU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,Dh+4nCVY3o8j1xGxxq4to6wCFOc=] */

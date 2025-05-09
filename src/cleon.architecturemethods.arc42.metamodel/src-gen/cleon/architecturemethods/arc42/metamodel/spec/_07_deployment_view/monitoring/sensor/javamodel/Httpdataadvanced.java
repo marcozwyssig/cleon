@@ -40,11 +40,11 @@ public class Httpdataadvanced extends DynamicResource implements IHttpdataadvanc
   }
 
   @Override
-  public java.net.URL selectHttpurl() {
-    return _getSingleAttribute(java.net.URL.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.httpdataadvanced_httpurl);
+  public java.lang.Object selectHttpurl() {
+    return _getSingleAttribute(java.lang.Object.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.httpdataadvanced_httpurl);
   }
     
-  public void setHttpurl(java.net.URL httpurl) {
+  public void setHttpurl(java.lang.Object httpurl) {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.httpdataadvanced_httpurl, httpurl);
   }
 
@@ -83,7 +83,7 @@ public class Httpdataadvanced extends DynamicResource implements IHttpdataadvanc
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.net.URL.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.httpdataadvanced_httpurl, visitor);
+    _acceptSingleAttribute(java.lang.Object.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.httpdataadvanced_httpurl, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -91,4 +91,4 @@ public class Httpdataadvanced extends DynamicResource implements IHttpdataadvanc
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4578f0-c1eb-11ea-820f-9931558a898c,515Ztg9RbY/WCDggBxwhnk/iLmU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4578f0-c1eb-11ea-820f-9931558a898c,9sKzdFp9m+K5GVdXGNX6XAetwLg=] */

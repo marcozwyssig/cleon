@@ -27,14 +27,14 @@ public class ad_aE_DNS__T_yaml {
   public static interface INetworkHostNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52232d8b-14d8-11ea-a57d-f9a0d62ee07e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> Exclude();
+    public List<ch.actifsource.core.javamodel.IDecorator> Exclude();
 
   }
   
   public static interface INetworkHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("52232d8b-14d8-11ea-a57d-f9a0d62ee07e")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> Exclude(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> networkHostNodeList);
+    public List<ch.actifsource.core.javamodel.IDecorator> Exclude(final List<ch.actifsource.core.javamodel.IDecorator> networkHostNodeList);
 
   }
   
@@ -45,7 +45,7 @@ public class ad_aE_DNS__T_yaml {
     private NetworkHostNodeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> Exclude(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> networkHostNodeList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> Exclude(final List<ch.actifsource.core.javamodel.IDecorator> networkHostNodeList) {
       /* Begin Protected Region [[52232d8b-14d8-11ea-a57d-f9a0d62ee07e]] */
       final var validNodes = new ArrayList<INetworkHostNode>();
       for( final var hostNode : networkHostNodeList ) {
@@ -68,7 +68,7 @@ public class ad_aE_DNS__T_yaml {
 
     private NetworkHostNodeFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> Exclude(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> networkHostNodeList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> Exclude(final List<ch.actifsource.core.javamodel.IDecorator> networkHostNodeList) {
       return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNodeList).Exclude(networkHostNodeList);
     }
 
@@ -76,4 +76,4 @@ public class ad_aE_DNS__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,47530bae-111d-11ea-b1a8-559fc9dee05c,SaeaOyC9teVh/J92c0Oyr4OHX5o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,47530bae-111d-11ea-b1a8-559fc9dee05c,2VkvG+QM+GPSSwKkXa6/XJs8OAc=] */

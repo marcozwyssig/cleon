@@ -28,7 +28,7 @@ public class FunctionSpace_Driver {
   public static interface IDriverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("3ff7c055-c58d-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource driver);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Driver {
     private DriverFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource driver) {
       return String.format("DR-%03d", driver.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Driver {
 
     private DriverFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource driver) {
       return DynamicResourceUtil.invoke(IDriverFunctionsImpl.class, DriverFunctionsImpl.INSTANCE, driver).GetId(driver);
     }
 
@@ -79,4 +79,4 @@ public class FunctionSpace_Driver {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,/M2AtWSSQxwOWJEnHdF6Wxmdkgs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,B8wuhS1hZmQiBzrEmPW3Jc43XFw=] */

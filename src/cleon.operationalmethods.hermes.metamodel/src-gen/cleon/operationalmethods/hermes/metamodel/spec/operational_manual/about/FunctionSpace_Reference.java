@@ -33,7 +33,7 @@ public class FunctionSpace_Reference {
     public java.lang.String GetSimpleName();
 
     @IDynamicResourceExtension.MethodId("cd198911-1bf9-11e9-8154-ebde4c10ca97")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration();
+    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("db8dcc41-e542-11ef-9a39-afe0dbb3ceb9")
     public java.lang.String GetDescription();
@@ -61,7 +61,7 @@ public class FunctionSpace_Reference {
   public static interface IReferencesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("eea3df72-1b3e-11e9-9c51-69666a8f1cf8")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> ReferenceOrder();
+    public List<ch.actifsource.core.javamodel.IResource> ReferenceOrder();
 
   }
   
@@ -85,4 +85,4 @@ public class FunctionSpace_Reference {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b569c1c9-1b3e-11e9-9c51-69666a8f1cf8,xyl5kYUKJoiaVCwIQOjXk8hriyA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b569c1c9-1b3e-11e9-9c51-69666a8f1cf8,FwsK2U6dT2rJGvb1L+b01R10jfM=] */

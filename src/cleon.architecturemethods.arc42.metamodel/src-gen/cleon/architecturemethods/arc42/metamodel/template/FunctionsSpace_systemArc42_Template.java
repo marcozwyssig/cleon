@@ -34,13 +34,13 @@ public class FunctionsSpace_systemArc42_Template {
   public static interface Iarc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b0ca591b-0b0e-11ea-b483-3fffd745ba7d")
-    public java.lang.String SourceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document);
+    public java.lang.String SourceColumns(final ch.actifsource.core.javamodel.IResource arc42Document);
 
     @IDynamicResourceExtension.MethodId("428245a8-0b0f-11ea-b483-3fffd745ba7d")
-    public java.lang.String DestinationColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document);
+    public java.lang.String DestinationColumns(final ch.actifsource.core.javamodel.IResource arc42Document);
 
     @IDynamicResourceExtension.MethodId("b6da7457-0b5f-11ea-bef6-75a700135135")
-    public java.lang.String ServiceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document);
+    public java.lang.String ServiceColumns(final ch.actifsource.core.javamodel.IResource arc42Document);
 
   }
   
@@ -51,7 +51,7 @@ public class FunctionsSpace_systemArc42_Template {
     private arc42DocumentFunctionsImpl() {}
 
     @Override
-    public java.lang.String SourceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public java.lang.String SourceColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       /* Begin Protected Region [[b0ca591b-0b0e-11ea-b483-3fffd745ba7d]] */
       final var result = new StringBuilder();
       for(var i=1;i<FunctionSpace_Communication.MAX_COLUMNS;++i) {
@@ -63,7 +63,7 @@ public class FunctionsSpace_systemArc42_Template {
     }
 
     @Override
-    public java.lang.String DestinationColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public java.lang.String DestinationColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       /* Begin Protected Region [[428245a8-0b0f-11ea-b483-3fffd745ba7d]] */
       final var result = new StringBuilder();
       for(var i=1;i<FunctionSpace_Communication.MAX_COLUMNS;++i) {
@@ -75,7 +75,7 @@ public class FunctionsSpace_systemArc42_Template {
     }
 
     @Override
-    public java.lang.String ServiceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public java.lang.String ServiceColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       /* Begin Protected Region [[b6da7457-0b5f-11ea-bef6-75a700135135]] */
       final var result = new StringBuilder();
       for(var i=1;i<FunctionSpace_Communication.MAX_COLUMNS;++i) {
@@ -92,15 +92,15 @@ public class FunctionsSpace_systemArc42_Template {
 
     private arc42DocumentFunctions() {}
 
-    public static java.lang.String SourceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public static java.lang.String SourceColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       return DynamicResourceUtil.invoke(Iarc42DocumentFunctionsImpl.class, arc42DocumentFunctionsImpl.INSTANCE, arc42Document).SourceColumns(arc42Document);
     }
 
-    public static java.lang.String DestinationColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public static java.lang.String DestinationColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       return DynamicResourceUtil.invoke(Iarc42DocumentFunctionsImpl.class, arc42DocumentFunctionsImpl.INSTANCE, arc42Document).DestinationColumns(arc42Document);
     }
 
-    public static java.lang.String ServiceColumns(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document) {
+    public static java.lang.String ServiceColumns(final ch.actifsource.core.javamodel.IResource arc42Document) {
       return DynamicResourceUtil.invoke(Iarc42DocumentFunctionsImpl.class, arc42DocumentFunctionsImpl.INSTANCE, arc42Document).ServiceColumns(arc42Document);
     }
 
@@ -109,7 +109,7 @@ public class FunctionsSpace_systemArc42_Template {
   public static interface IDNSConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b80b64b4-d0f2-11ec-a32f-e7eb43a099bd")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
 
   }
   
@@ -133,4 +133,4 @@ public class FunctionsSpace_systemArc42_Template {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,Y08DWEbe/XyclrQ3mC6wnlu0GTg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,f8sKd15I5M30V+uCLTwfxbiP5yQ=] */

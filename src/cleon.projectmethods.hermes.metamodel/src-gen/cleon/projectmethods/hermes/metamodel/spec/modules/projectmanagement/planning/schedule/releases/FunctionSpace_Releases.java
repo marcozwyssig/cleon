@@ -24,19 +24,19 @@ public class FunctionSpace_Releases {
   public static interface IReleasesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint();
+    public ch.actifsource.core.javamodel.IResource CurrentSprint();
 
     @IDynamicResourceExtension.MethodId("9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint();
+    public ch.actifsource.core.javamodel.IResource BeforeCurrentSprint();
 
     @IDynamicResourceExtension.MethodId("59a78067-34a0-11e6-8839-1f6631cc77ac")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints();
+    public List<ch.actifsource.core.javamodel.IResource> GetAllSprints();
 
     @IDynamicResourceExtension.MethodId("80ddb44e-36c1-11e6-ba0a-8d94de7675ef")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId);
+    public ch.actifsource.core.javamodel.IResource GetSprint(final java.lang.Integer sprintId);
 
     @IDynamicResourceExtension.MethodId("6986f5c4-d71b-11e6-a422-8b5491da3f30")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IRelease> GetMilestoneList();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetMilestoneList();
 
     @IDynamicResourceExtension.MethodId("b2800c16-aaa2-11e8-b25a-7dd9f85a27ad")
     public java.lang.String GetVelocity();
@@ -46,13 +46,13 @@ public class FunctionSpace_Releases {
   public static interface IReleasesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public ch.actifsource.core.javamodel.IResource CurrentSprint(final ch.actifsource.core.javamodel.IResource releases);
 
     @IDynamicResourceExtension.MethodId("9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public ch.actifsource.core.javamodel.IResource BeforeCurrentSprint(final ch.actifsource.core.javamodel.IResource releases);
 
     @IDynamicResourceExtension.MethodId("80ddb44e-36c1-11e6-ba0a-8d94de7675ef")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public ch.actifsource.core.javamodel.IResource GetSprint(final java.lang.Integer sprintId, final ch.actifsource.core.javamodel.IResource releases);
 
   }
   
@@ -63,7 +63,7 @@ public class FunctionSpace_Releases {
     private ReleasesFunctionsImpl() {}
 
     @Override
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public ch.actifsource.core.javamodel.IResource CurrentSprint(final ch.actifsource.core.javamodel.IResource releases) {
       /* Begin Protected Region [[9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e]] */
       final var now = new java.util.Date();
 
@@ -81,7 +81,7 @@ public class FunctionSpace_Releases {
     }
 
     @Override
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public ch.actifsource.core.javamodel.IResource BeforeCurrentSprint(final ch.actifsource.core.javamodel.IResource releases) {
       /* Begin Protected Region [[9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e]] */
       final var currentSprint = CurrentSprint(releases);
       if(currentSprint == null)
@@ -103,7 +103,7 @@ public class FunctionSpace_Releases {
     }
 
     @Override
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public ch.actifsource.core.javamodel.IResource GetSprint(final java.lang.Integer sprintId, final ch.actifsource.core.javamodel.IResource releases) {
       /* Begin Protected Region [[80ddb44e-36c1-11e6-ba0a-8d94de7675ef]] */
       return Schedule.selectToMeReleases(releases).selectSprints().selectSprints().stream().filter(x -> x.selectIdentifier() == sprintId).findFirst().orElse(null);
       /* End Protected Region   [[80ddb44e-36c1-11e6-ba0a-8d94de7675ef]] */
@@ -115,15 +115,15 @@ public class FunctionSpace_Releases {
 
     private ReleasesFunctions() {}
 
-    public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static ch.actifsource.core.javamodel.IResource CurrentSprint(final ch.actifsource.core.javamodel.IResource releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).CurrentSprint(releases);
     }
 
-    public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static ch.actifsource.core.javamodel.IResource BeforeCurrentSprint(final ch.actifsource.core.javamodel.IResource releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).BeforeCurrentSprint(releases);
     }
 
-    public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static ch.actifsource.core.javamodel.IResource GetSprint(final java.lang.Integer sprintId, final ch.actifsource.core.javamodel.IResource releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).GetSprint(sprintId, releases);
     }
 
@@ -132,13 +132,13 @@ public class FunctionSpace_Releases {
   public static interface IReleaseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("653a6870-d66b-11e6-ad1f-c967b4caaf09")
-    public cleon.common.calendar.metamodel.spec.javamodel.IDay StartDate();
+    public ch.actifsource.core.javamodel.IResource StartDate();
 
     @IDynamicResourceExtension.MethodId("8078e4d7-d66b-11e6-ad1f-c967b4caaf09")
-    public cleon.common.calendar.metamodel.spec.javamodel.IDay EndDate();
+    public ch.actifsource.core.javamodel.IResource EndDate();
 
     @IDynamicResourceExtension.MethodId("261a4a3f-d13c-11e8-882b-c9297140cb78")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetSprints();
+    public List<ch.actifsource.core.javamodel.IResource> GetSprints();
 
   }
   
@@ -163,10 +163,10 @@ public class FunctionSpace_Releases {
   public static interface IPhaseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f3727eac-d719-11e6-a422-8b5491da3f30")
-    public cleon.common.calendar.metamodel.spec.javamodel.IDay StartDate();
+    public ch.actifsource.core.javamodel.IResource StartDate();
 
     @IDynamicResourceExtension.MethodId("f3727eb7-d719-11e6-a422-8b5491da3f30")
-    public cleon.common.calendar.metamodel.spec.javamodel.IDay EndDate();
+    public ch.actifsource.core.javamodel.IResource EndDate();
 
   }
   
@@ -191,7 +191,7 @@ public class FunctionSpace_Releases {
   public static interface ISprintPlanningAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5d180fb5-3fc3-11e7-9016-2b91d722d429")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome GetModule();
+    public ch.actifsource.core.javamodel.IDecorator GetModule();
 
   }
   
@@ -215,4 +215,4 @@ public class FunctionSpace_Releases {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,iFp6S8y4epQB1SVwu8fyfUQiuks=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,kHHsKuxrg7PIt2JAFpvkUXptycA=] */

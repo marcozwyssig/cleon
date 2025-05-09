@@ -23,7 +23,7 @@ public class FunctionSpace_Access {
   public static interface ISystemConfigurationAccessFromFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f3bc8050-19c9-11eb-8585-65084a06c07f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> Sources();
+    public List<ch.actifsource.core.javamodel.IDecorator> Sources();
 
   }
   
@@ -48,7 +48,7 @@ public class FunctionSpace_Access {
   public static interface IAccessConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f5637eb3-1e99-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortService> AllCommunicationServices();
+    public List<ch.actifsource.core.javamodel.INamedResource> AllCommunicationServices();
 
   }
   
@@ -73,10 +73,10 @@ public class FunctionSpace_Access {
   public static interface IAccessSystemConfigurationToFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1fa9ea98-1e9d-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortService> AllCommunicationServices();
+    public List<ch.actifsource.core.javamodel.INamedResource> AllCommunicationServices();
 
     @IDynamicResourceExtension.MethodId("2f177739-242c-11eb-83b1-3d2a97975978")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllCommunicationServicesFlatten();
+    public List<ch.actifsource.core.javamodel.INamedResource> AllCommunicationServicesFlatten();
 
     @IDynamicResourceExtension.MethodId("c39590a2-3009-11eb-b17d-af74b7cf0bc4")
     public java.lang.Integer DestinationVLAN();
@@ -85,7 +85,7 @@ public class FunctionSpace_Access {
     public java.lang.String SourceVLAN();
 
     @IDynamicResourceExtension.MethodId("e865b56d-c7cf-11ec-a59e-d1c88102a398")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfiguration> AllAccessConfigurations();
+    public List<ch.actifsource.core.javamodel.IDecorator> AllAccessConfigurations();
 
     @IDynamicResourceExtension.MethodId("91fe0a27-d677-11ec-925d-2b3c72f15572")
     public java.lang.Boolean UseIP();
@@ -113,7 +113,7 @@ public class FunctionSpace_Access {
   public static interface IAccessCommunicationTypeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("eb8338db-1ea3-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to);
+    public List<ch.actifsource.core.javamodel.IResource> OnlyIfHasServices(final ch.actifsource.core.javamodel.IDecorator to);
 
     @IDynamicResourceExtension.MethodId("2b832962-c1f0-11eb-8c09-03c14294ecfb")
     public java.lang.String Protocol();
@@ -123,7 +123,7 @@ public class FunctionSpace_Access {
   public static interface IAccessCommunicationTypeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("eb8338db-1ea3-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList);
+    public List<ch.actifsource.core.javamodel.IResource> OnlyIfHasServices(final ch.actifsource.core.javamodel.IDecorator to, final List<ch.actifsource.core.javamodel.IResource> accessCommunicationTypeList);
 
   }
   
@@ -134,7 +134,7 @@ public class FunctionSpace_Access {
     private AccessCommunicationTypeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
+    public List<ch.actifsource.core.javamodel.IResource> OnlyIfHasServices(final ch.actifsource.core.javamodel.IDecorator to, final List<ch.actifsource.core.javamodel.IResource> accessCommunicationTypeList) {
       /* Begin Protected Region [[eb8338db-1ea3-11eb-9eef-0dadb2b460da]] */
       final var sourceFunctions = to.selectSourceForAccess().extension(ISourceFunctions.class);
       final var portServices = sourceFunctions.AllServicesFlatten();
@@ -150,7 +150,7 @@ public class FunctionSpace_Access {
 
     private AccessCommunicationTypeFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo to, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
+    public static List<ch.actifsource.core.javamodel.IResource> OnlyIfHasServices(final ch.actifsource.core.javamodel.IDecorator to, final List<ch.actifsource.core.javamodel.IResource> accessCommunicationTypeList) {
       return DynamicResourceUtil.invoke(IAccessCommunicationTypeFunctionsImpl.class, AccessCommunicationTypeFunctionsImpl.INSTANCE, accessCommunicationTypeList).OnlyIfHasServices(to, accessCommunicationTypeList);
     }
 
@@ -159,17 +159,17 @@ public class FunctionSpace_Access {
   public static interface IAccessConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d85d517f-bfcc-11eb-af9a-7dff6e60ee1f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> SelectServices();
+    public List<ch.actifsource.core.javamodel.INamedResource> SelectServices();
 
     @IDynamicResourceExtension.MethodId("4b429d4b-c1da-11eb-8c09-03c14294ecfb")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
   }
   
   public static interface IAccessConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d85d517f-bfcc-11eb-af9a-7dff6e60ee1f")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> SelectServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfiguration accessConfiguration);
+    public List<ch.actifsource.core.javamodel.INamedResource> SelectServices(final ch.actifsource.core.javamodel.IDecorator accessConfiguration);
 
   }
   
@@ -180,7 +180,7 @@ public class FunctionSpace_Access {
     private AccessConfigurationFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> SelectServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfiguration accessConfiguration) {
+    public List<ch.actifsource.core.javamodel.INamedResource> SelectServices(final ch.actifsource.core.javamodel.IDecorator accessConfiguration) {
       /* Begin Protected Region [[d85d517f-bfcc-11eb-af9a-7dff6e60ee1f]] */
       final var accessConfigurationFunction = accessConfiguration.extension(IAccessConfigurationFunctions.class);
       final var to = accessConfigurationFunction.Parent();
@@ -197,7 +197,7 @@ public class FunctionSpace_Access {
 
     private AccessConfigurationFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> SelectServices(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfiguration accessConfiguration) {
+    public static List<ch.actifsource.core.javamodel.INamedResource> SelectServices(final ch.actifsource.core.javamodel.IDecorator accessConfiguration) {
       return DynamicResourceUtil.invoke(IAccessConfigurationFunctionsImpl.class, AccessConfigurationFunctionsImpl.INSTANCE, accessConfiguration).SelectServices(accessConfiguration);
     }
 
@@ -206,7 +206,7 @@ public class FunctionSpace_Access {
   public static interface IAccessConfigurationWebFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c1633eee-c1da-11eb-8c09-03c14294ecfb")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
   }
   
@@ -241,10 +241,10 @@ public class FunctionSpace_Access {
   public static interface IAccessConfigurationServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("31aa5c47-243f-11eb-83b1-3d2a97975978")
-    public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService);
+    public java.lang.String Decorate(final java.lang.String hostName, final ch.actifsource.core.javamodel.IDecorator accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("eed5880a-c906-11eb-afd9-772a261eb5f0")
-    public java.lang.Boolean UseFQDN(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService);
+    public java.lang.Boolean UseFQDN(final ch.actifsource.core.javamodel.IDecorator accessConfigurationService);
 
   }
   
@@ -255,12 +255,12 @@ public class FunctionSpace_Access {
     private AccessConfigurationServiceFunctionsImpl() {}
 
     @Override
-    public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+    public java.lang.String Decorate(final java.lang.String hostName, final ch.actifsource.core.javamodel.IDecorator accessConfigurationService) {
       return hostName;
     }
 
     @Override
-    public java.lang.Boolean UseFQDN(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+    public java.lang.Boolean UseFQDN(final ch.actifsource.core.javamodel.IDecorator accessConfigurationService) {
       return accessConfigurationService.selectUseFQDN() == null || accessConfigurationService.selectUseFQDN().booleanValue();
     }
 
@@ -270,11 +270,11 @@ public class FunctionSpace_Access {
 
     private AccessConfigurationServiceFunctions() {}
 
-    public static java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+    public static java.lang.String Decorate(final java.lang.String hostName, final ch.actifsource.core.javamodel.IDecorator accessConfigurationService) {
       return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).Decorate(hostName, accessConfigurationService);
     }
 
-    public static java.lang.Boolean UseFQDN(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+    public static java.lang.Boolean UseFQDN(final ch.actifsource.core.javamodel.IDecorator accessConfigurationService) {
       return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).UseFQDN(accessConfigurationService);
     }
 
@@ -432,4 +432,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,mqDtRhIZy6q622QJZhv6MuJMFFg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,Q4C8b6vlLBrrRpg0EjgE7w73QcE=] */

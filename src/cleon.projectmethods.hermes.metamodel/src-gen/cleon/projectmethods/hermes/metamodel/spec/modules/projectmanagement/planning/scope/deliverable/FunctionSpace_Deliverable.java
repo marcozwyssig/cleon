@@ -31,7 +31,7 @@ public class FunctionSpace_Deliverable {
   public static interface IDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("15832023-b46d-11e8-bb21-172cc8e5f7cd")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware deliverable);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_Deliverable {
     private DeliverableFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware deliverable) {
       return String.format("LO%02d", deliverable.selectIdentifier());
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Deliverable {
 
     private DeliverableFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware deliverable) {
       return DynamicResourceUtil.invoke(IDeliverableFunctionsImpl.class, DeliverableFunctionsImpl.INSTANCE, deliverable).GetId(deliverable);
     }
 
@@ -85,4 +85,4 @@ public class FunctionSpace_Deliverable {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,nWzOpu5rpPQ51ifhCIFaTA8nAUY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,nm32adkwS4LLmt2Yzq0XrXf6amw=] */

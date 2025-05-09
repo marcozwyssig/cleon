@@ -21,7 +21,7 @@ public class FunctionSpace_Protocols {
   public static interface IProtocolFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1918f9b4-20b7-11e6-9bb5-2b7a5dccc043")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.protocolsitems.javamodel.ITask> SelectAllTasks();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllTasks();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Protocols {
   public static interface IProtocolItemsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3932e752-20b7-11e6-9bb5-2b7a5dccc043")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.protocolsitems.javamodel.ITask> SelectAllTasks();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllTasks();
 
   }
   
@@ -78,7 +78,7 @@ public class FunctionSpace_Protocols {
   public static interface IProtocolItemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9375b6ee-2ef1-11e6-8bd9-a77b8d2a3a0e")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocolItem protocolItem);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.IResource protocolItem);
 
   }
   
@@ -89,7 +89,7 @@ public class FunctionSpace_Protocols {
     private ProtocolItemFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocolItem protocolItem) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.IResource protocolItem) {
       return java.lang.String.format("PO-%04d", protocolItem.selectIdentifier());
     }
 
@@ -99,7 +99,7 @@ public class FunctionSpace_Protocols {
 
     private ProtocolItemFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocolItem protocolItem) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.IResource protocolItem) {
       return DynamicResourceUtil.invoke(IProtocolItemFunctionsImpl.class, ProtocolItemFunctionsImpl.INSTANCE, protocolItem).GetId(protocolItem);
     }
 
@@ -107,4 +107,4 @@ public class FunctionSpace_Protocols {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e643372c-20b6-11e6-9bb5-2b7a5dccc043,hgJkHYMcDBAInX/hFlKfCGIDkdM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e643372c-20b6-11e6-9bb5-2b7a5dccc043,El0cSWFaQr4oiVfXfjp6H9w3muk=] */

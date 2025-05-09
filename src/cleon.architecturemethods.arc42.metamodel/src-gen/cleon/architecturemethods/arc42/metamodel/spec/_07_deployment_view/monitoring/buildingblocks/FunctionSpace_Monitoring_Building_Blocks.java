@@ -21,10 +21,10 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IMonitoringBuildingBlocksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4b90dd9c-c1f3-11ea-820f-9931558a898c")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectBuildingBlocksToMonitor();
+    public List<ch.actifsource.core.javamodel.IResource> SelectBuildingBlocksToMonitor();
 
     @IDynamicResourceExtension.MethodId("68a82a45-6498-11eb-bcb1-d5dcf010d136")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlocks();
+    public List<ch.actifsource.core.javamodel.IDecorator> SelectMonitoringBuildingBlocks();
 
   }
   
@@ -49,35 +49,35 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("14d5469b-c764-11ea-9c12-5371f8bad411")
-    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock SelectUsedBuildingBlockForMonitoring();
+    public ch.actifsource.core.javamodel.IResource SelectUsedBuildingBlockForMonitoring();
 
     @IDynamicResourceExtension.MethodId("be24ca31-08a5-11eb-a18e-c7dfa3f96804")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
+    public List<ch.actifsource.core.javamodel.IDecorator> SelectMonitoringBuildingBlock();
 
     @IDynamicResourceExtension.MethodId("6c3a47fa-643f-11ee-9870-a3a9b6fe8f95")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete();
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyConcrete();
 
     @IDynamicResourceExtension.MethodId("673030f3-6440-11ee-9870-a3a9b6fe8f95")
     public java.lang.Boolean IsConcrete();
 
     @IDynamicResourceExtension.MethodId("86931145-e2e4-11ee-8945-4df0f2e1f411")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.javamodel.IInterface> SelectInterfaces();
+    public List<ch.actifsource.core.javamodel.IResource> SelectInterfaces();
 
     @IDynamicResourceExtension.MethodId("bd36ecb5-e2e7-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IAbstractSensorMonitoringBuildingBlock> SelectSensorBuildingBlock();
+    public List<ch.actifsource.core.javamodel.IResource> SelectSensorBuildingBlock();
 
   }
   
   public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6c3a47fa-643f-11ee-9870-a3a9b6fe8f95")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList);
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyConcrete(final List<ch.actifsource.core.javamodel.IDecorator> monitoringBuildingBlockList);
 
     @IDynamicResourceExtension.MethodId("673030f3-6440-11ee-9870-a3a9b6fe8f95")
-    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock);
+    public java.lang.Boolean IsConcrete(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock);
 
     @IDynamicResourceExtension.MethodId("86931145-e2e4-11ee-8945-4df0f2e1f411")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.javamodel.IInterface> SelectInterfaces(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock);
+    public List<ch.actifsource.core.javamodel.IResource> SelectInterfaces(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock);
 
   }
   
@@ -88,7 +88,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     private MonitoringBuildingBlockFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> OnlyConcrete(final List<ch.actifsource.core.javamodel.IDecorator> monitoringBuildingBlockList) {
       /* Begin Protected Region [[6c3a47fa-643f-11ee-9870-a3a9b6fe8f95]] */
     	return monitoringBuildingBlockList.stream().filter(x -> {
     		return x.extension(IMonitoringBuildingBlockFunctions.class).IsConcrete();
@@ -97,12 +97,12 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     }
 
     @Override
-    public java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+    public java.lang.Boolean IsConcrete(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock) {
       return true;
     }
 
     @Override
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.javamodel.IInterface> SelectInterfaces(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+    public List<ch.actifsource.core.javamodel.IResource> SelectInterfaces(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock) {
       return null;
     }
 
@@ -112,15 +112,15 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
     private MonitoringBuildingBlockFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> OnlyConcrete(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> monitoringBuildingBlockList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyConcrete(final List<ch.actifsource.core.javamodel.IDecorator> monitoringBuildingBlockList) {
       return DynamicResourceUtil.invoke(IMonitoringBuildingBlockFunctionsImpl.class, MonitoringBuildingBlockFunctionsImpl.INSTANCE, monitoringBuildingBlockList).OnlyConcrete(monitoringBuildingBlockList);
     }
 
-    public static java.lang.Boolean IsConcrete(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+    public static java.lang.Boolean IsConcrete(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock) {
       return DynamicResourceUtil.invoke(IMonitoringBuildingBlockFunctionsImpl.class, MonitoringBuildingBlockFunctionsImpl.INSTANCE, monitoringBuildingBlock).IsConcrete(monitoringBuildingBlock);
     }
 
-    public static List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces.javamodel.IInterface> SelectInterfaces(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock monitoringBuildingBlock) {
+    public static List<ch.actifsource.core.javamodel.IResource> SelectInterfaces(final ch.actifsource.core.javamodel.IDecorator monitoringBuildingBlock) {
       return DynamicResourceUtil.invoke(IMonitoringBuildingBlockFunctionsImpl.class, MonitoringBuildingBlockFunctionsImpl.INSTANCE, monitoringBuildingBlock).SelectInterfaces(monitoringBuildingBlock);
     }
 
@@ -282,7 +282,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IAbstractMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("98533d11-08a5-11eb-a18e-c7dfa3f96804")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
+    public List<ch.actifsource.core.javamodel.IDecorator> SelectMonitoringBuildingBlock();
 
   }
   
@@ -307,22 +307,22 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IAbstractSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be0747a6-e068-11ea-bb83-59933a3fa779")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
     @IDynamicResourceExtension.MethodId("ec15906e-e06b-11ea-bb83-59933a3fa779")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.ISensor> SelectAllSensorsWithExcluded();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllSensorsWithExcluded();
 
     @IDynamicResourceExtension.MethodId("7996825a-da39-11eb-8ffa-d7727a940bcf")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock Top();
+    public ch.actifsource.core.javamodel.IDecorator Top();
 
     @IDynamicResourceExtension.MethodId("33a4eb3e-e2e8-11ee-8945-4df0f2e1f411")
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("f3a140ba-e2ea-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.ISensor> SelectSensorsFromBase();
+    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
 
     @IDynamicResourceExtension.MethodId("aebb6583-e2ec-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.ISensor> SelectAllSensors();
+    public List<ch.actifsource.core.javamodel.IResource> SelectAllSensors();
 
   }
   
@@ -347,7 +347,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IAbstractSingleSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("32c4e3da-e2eb-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.ISensor> SelectSensorsFromBase();
+    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
 
   }
   
@@ -372,7 +372,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface INodeSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("54b81738-e069-11ea-bb83-59933a3fa779")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
     @IDynamicResourceExtension.MethodId("79f4087c-e2e8-11ee-8945-4df0f2e1f411")
     public java.lang.String BuildingBlockName();
@@ -403,7 +403,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("5a2ef671-f1f6-11ee-bb2f-ad05301d8ee2")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
   }
   
@@ -428,13 +428,13 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IClusterSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cbbf0e4-e069-11ea-bb83-59933a3fa779")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    public ch.actifsource.core.javamodel.IDecorator Parent();
 
     @IDynamicResourceExtension.MethodId("98dfaebc-e2e8-11ee-8945-4df0f2e1f411")
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("53b0c6b4-e2eb-11ee-8945-4df0f2e1f411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.ISensor> SelectSensorsFromBase();
+    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
 
   }
   
@@ -459,7 +459,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IMonitoringCompositeBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d774e3c8-08a5-11eb-a18e-c7dfa3f96804")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
+    public List<ch.actifsource.core.javamodel.IDecorator> SelectMonitoringBuildingBlock();
 
   }
   
@@ -533,4 +533,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,X9x5BWc1UhOmPXE7cX3ZOoWSHf8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,0vgTDyihQ8t1lvRK8veyW51gmog=] */

@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface ISolutionBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e217852a-42b3-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel.ISolutionBuildingBlock solutionBuildingBlock);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlock);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private SolutionBuildingBlockFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel.ISolutionBuildingBlock solutionBuildingBlock) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlock) {
       return java.lang.String.format("SBB-%03d", solutionBuildingBlock.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private SolutionBuildingBlockFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel.ISolutionBuildingBlock solutionBuildingBlock) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlock) {
       return DynamicResourceUtil.invoke(ISolutionBuildingBlockFunctionsImpl.class, SolutionBuildingBlockFunctionsImpl.INSTANCE, solutionBuildingBlock).GetId(solutionBuildingBlock);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2175e18-42b3-11e6-a9d7-97cf4f7c398b,dmmtcLk2f5XQx3MqEmIkB78khzQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2175e18-42b3-11e6-a9d7-97cf4f7c398b,7T0RF1RubQc2B+lc2RJhDaYR9VY=] */

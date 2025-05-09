@@ -34,7 +34,7 @@ public class FunctionSpace_Test_Account {
   public static interface ITestAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("01dd32dc-273c-11f0-bc3e-fdd30b5cbdec")
-    public java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccount testAccount);
+    public java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator testAccount);
 
   }
   
@@ -45,7 +45,7 @@ public class FunctionSpace_Test_Account {
     private TestAccountFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccount testAccount) {
+    public java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator testAccount) {
       /* Begin Protected Region [[01dd32dc-273c-11f0-bc3e-fdd30b5cbdec]] */
 	    final var testAccountFunctions = testAccount.extension(ITestAccountFunctions.class);
 	    final var id = testAccountFunctions.RangeId();
@@ -59,7 +59,7 @@ public class FunctionSpace_Test_Account {
 
     private TestAccountFunctions() {}
 
-    public static java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccount testAccount) {
+    public static java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator testAccount) {
       return DynamicResourceUtil.invoke(ITestAccountFunctionsImpl.class, TestAccountFunctionsImpl.INSTANCE, testAccount).Id(testAccount);
     }
 
@@ -67,4 +67,4 @@ public class FunctionSpace_Test_Account {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c103e64f-273a-11f0-bc3e-fdd30b5cbdec,XFxazWnKKNHPhhIMYjNEGgznstI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c103e64f-273a-11f0-bc3e-fdd30b5cbdec,DEA6yRlmijFypCK7r+cm+6qddeg=] */

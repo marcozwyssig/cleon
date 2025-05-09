@@ -28,7 +28,7 @@ public class FunctionSpace_Supply {
   public static interface ISupplyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ce37d205-0e17-11e6-ae01-ef640c578b9b")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply.javamodel.ISupply supply);
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource supply);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Supply {
     private SupplyFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply.javamodel.ISupply supply) {
+    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource supply) {
       return String.format("SP%03d", supply.selectIdentifier());    
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Supply {
 
     private SupplyFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply.javamodel.ISupply supply) {
+    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource supply) {
       return DynamicResourceUtil.invoke(ISupplyFunctionsImpl.class, SupplyFunctionsImpl.INSTANCE, supply).GetId(supply);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace_Supply {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c733b4c8-0e17-11e6-ae01-ef640c578b9b,h51o3mPIMiArFjzWg4vmXA0+Gj8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c733b4c8-0e17-11e6-ae01-ef640c578b9b,2kVQniYQYd9aGZsfF9LE6oepOoE=] */

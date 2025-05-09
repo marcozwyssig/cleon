@@ -21,7 +21,7 @@ public class FunctionSpace_Requirements {
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9a0b681e-c90b-11e5-a64e-a5d84d8f1b45")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllRequirements();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> GetAllRequirements();
 
     @IDynamicResourceExtension.MethodId("0f54f2eb-0dd1-11e6-a33d-238391a68770")
     public java.lang.String GetRequirementType();
@@ -36,10 +36,10 @@ public class FunctionSpace_Requirements {
     public java.lang.String GetUniqueName();
 
     @IDynamicResourceExtension.MethodId("b2f750bb-0e00-11e6-ae01-ef640c578b9b")
-    public ch.actifsource.core.javamodel.INamedResource GetParent();
+    public cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware GetParent();
 
     @IDynamicResourceExtension.MethodId("418d6930-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetParents();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> GetParents();
 
     @IDynamicResourceExtension.MethodId("e0f79703-0e00-11e6-ae01-ef640c578b9b")
     public List<ch.actifsource.core.javamodel.INamedResource> GetGoals();
@@ -72,56 +72,56 @@ public class FunctionSpace_Requirements {
     public List<ch.actifsource.core.javamodel.IResource> GetNamespaces();
 
     @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyKO();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyKO();
 
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
-    public List<ch.actifsource.core.javamodel.INamedResource> NotKO();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> NotKO();
 
     @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyApprovedAndOnlySpecific();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyApprovedAndOnlySpecific();
 
     @IDynamicResourceExtension.MethodId("bb5e2826-72b1-11eb-860a-33696a010e76")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyRestricted();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyRestricted();
 
     @IDynamicResourceExtension.MethodId("deff6a54-75a0-11eb-99f7-05e0e09fe318")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyDesignedOrImplementedOrFullfilledAndSpecific();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyDesignedOrImplementedOrFullfilledAndSpecific();
 
     @IDynamicResourceExtension.MethodId("6e962f8a-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyFeature();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyFeature();
 
     @IDynamicResourceExtension.MethodId("f64d88c7-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyComponents();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyComponents();
 
     @IDynamicResourceExtension.MethodId("fba38073-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyCapability();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyCapability();
 
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
-    public List<ch.actifsource.core.javamodel.INamedResource> NotKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyApprovedAndOnlySpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("bb5e2826-72b1-11eb-860a-33696a010e76")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyRestricted(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("deff6a54-75a0-11eb-99f7-05e0e09fe318")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("6e962f8a-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyFeature(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyFeature(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("f64d88c7-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyComponents(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyComponents(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
     @IDynamicResourceExtension.MethodId("fba38073-9680-11ed-8477-832487bcda65")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyCapability(final List<ch.actifsource.core.javamodel.INamedResource> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyCapability(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList);
 
   }
   
@@ -132,7 +132,7 @@ public class FunctionSpace_Requirements {
     private RequirementFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[9ac05816-1f1d-11e9-9b49-9d767b485444]] */
       return requirementList.stream().filter(x -> {
       	final var func = x.extension(IRequirementFunctions.class);
@@ -149,7 +149,7 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> NotKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[1a77e308-1fa5-11e9-ac4e-716424f48a26]] */
       return requirementList.stream().filter(x -> {
       	final var func = x.extension(IRequirementFunctions.class);
@@ -166,7 +166,7 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyApprovedAndOnlySpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
@@ -176,7 +176,7 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyRestricted(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[bb5e2826-72b1-11eb-860a-33696a010e76]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
@@ -186,7 +186,7 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[deff6a54-75a0-11eb-99f7-05e0e09fe318]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
@@ -198,21 +198,21 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyFeature(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyFeature(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[6e962f8a-9680-11ed-8477-832487bcda65]] */
     	return requirementList.stream().filter( x -> x.selectAbstractionLevel().isFEA()).collect(Collectors.toList());
       /* End Protected Region   [[6e962f8a-9680-11ed-8477-832487bcda65]] */
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyComponents(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyComponents(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[f64d88c7-9680-11ed-8477-832487bcda65]] */
     	return requirementList.stream().filter( x -> x.selectAbstractionLevel().isCMP()).collect(Collectors.toList());
       /* End Protected Region   [[f64d88c7-9680-11ed-8477-832487bcda65]] */
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyCapability(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyCapability(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       /* Begin Protected Region [[fba38073-9680-11ed-8477-832487bcda65]] */
     	return requirementList.stream().filter( x -> x.selectAbstractionLevel().isCAP()).collect(Collectors.toList());
       /* End Protected Region   [[fba38073-9680-11ed-8477-832487bcda65]] */
@@ -224,35 +224,35 @@ public class FunctionSpace_Requirements {
 
     private RequirementFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyKO(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> NotKO(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).NotKO(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyApprovedAndOnlySpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyApprovedAndOnlySpecific(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyRestricted(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyRestricted(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyDesignedOrImplementedOrFullfilledAndSpecific(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyFeature(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyFeature(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyFeature(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyComponents(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyComponents(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyComponents(requirementList);
     }
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyCapability(final List<ch.actifsource.core.javamodel.INamedResource> requirementList) {
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> OnlyCapability(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyCapability(requirementList);
     }
 
@@ -271,7 +271,7 @@ public class FunctionSpace_Requirements {
   public static interface IFormalFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("555eef5e-e8f0-11e8-b810-cdb2b421fd42")
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource formalFunctionalRequirement);
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware formalFunctionalRequirement);
 
   }
   
@@ -282,7 +282,7 @@ public class FunctionSpace_Requirements {
     private FormalFunctionalRequirementFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource formalFunctionalRequirement) {
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware formalFunctionalRequirement) {
       return formalFunctionalRequirement.selectTemplate() != null;
     }
 
@@ -292,7 +292,7 @@ public class FunctionSpace_Requirements {
 
     private FormalFunctionalRequirementFunctions() {}
 
-    public static java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource formalFunctionalRequirement) {
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware formalFunctionalRequirement) {
       return DynamicResourceUtil.invoke(IFormalFunctionalRequirementFunctionsImpl.class, FormalFunctionalRequirementFunctionsImpl.INSTANCE, formalFunctionalRequirement).HasTemplate(formalFunctionalRequirement);
     }
 
@@ -311,7 +311,7 @@ public class FunctionSpace_Requirements {
   public static interface IUserStoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("c52744a7-e8f0-11e8-b810-cdb2b421fd42")
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource userStory);
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware userStory);
 
   }
   
@@ -322,7 +322,7 @@ public class FunctionSpace_Requirements {
     private UserStoryFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource userStory) {
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware userStory) {
       return false;
     }
 
@@ -332,7 +332,7 @@ public class FunctionSpace_Requirements {
 
     private UserStoryFunctions() {}
 
-    public static java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource userStory) {
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware userStory) {
       return DynamicResourceUtil.invoke(IUserStoryFunctionsImpl.class, UserStoryFunctionsImpl.INSTANCE, userStory).HasTemplate(userStory);
     }
 
@@ -351,7 +351,7 @@ public class FunctionSpace_Requirements {
   public static interface ISimpleFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d9d17644-e8e8-11e8-b810-cdb2b421fd42")
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource simpleFunctionalRequirement);
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware simpleFunctionalRequirement);
 
   }
   
@@ -362,7 +362,7 @@ public class FunctionSpace_Requirements {
     private SimpleFunctionalRequirementFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource simpleFunctionalRequirement) {
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware simpleFunctionalRequirement) {
       return false;
     }
 
@@ -372,7 +372,7 @@ public class FunctionSpace_Requirements {
 
     private SimpleFunctionalRequirementFunctions() {}
 
-    public static java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource simpleFunctionalRequirement) {
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware simpleFunctionalRequirement) {
       return DynamicResourceUtil.invoke(ISimpleFunctionalRequirementFunctionsImpl.class, SimpleFunctionalRequirementFunctionsImpl.INSTANCE, simpleFunctionalRequirement).HasTemplate(simpleFunctionalRequirement);
     }
 
@@ -642,7 +642,7 @@ public class FunctionSpace_Requirements {
   public static interface INonFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("97329637-e8f0-11e8-b810-cdb2b421fd42")
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource nonFunctionalRequirement);
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware nonFunctionalRequirement);
 
   }
   
@@ -653,7 +653,7 @@ public class FunctionSpace_Requirements {
     private NonFunctionalRequirementFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource nonFunctionalRequirement) {
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware nonFunctionalRequirement) {
       return nonFunctionalRequirement.selectTemplate() != null;
     }
 
@@ -663,7 +663,7 @@ public class FunctionSpace_Requirements {
 
     private NonFunctionalRequirementFunctions() {}
 
-    public static java.lang.Boolean HasTemplate(final ch.actifsource.core.javamodel.INamedResource nonFunctionalRequirement) {
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware nonFunctionalRequirement) {
       return DynamicResourceUtil.invoke(INonFunctionalRequirementFunctionsImpl.class, NonFunctionalRequirementFunctionsImpl.INSTANCE, nonFunctionalRequirement).HasTemplate(nonFunctionalRequirement);
     }
 
@@ -671,4 +671,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,BD3FHrNwk9ClqR2S3udZHTmHpVk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,Ql7pNE5aGc7LJQ91UoXkDqocnys=] */

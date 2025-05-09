@@ -34,7 +34,7 @@ public class FunctionSpace_MachineConfiguration {
   public static interface ICPU_ConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7b076fac-dfc9-11ef-b0be-9b4cac321140")
-    public java.lang.Integer TotalCores(final ch.actifsource.core.javamodel.IDecorator cPU_Configuration);
+    public java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration);
 
   }
   
@@ -45,7 +45,7 @@ public class FunctionSpace_MachineConfiguration {
     private CPU_ConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer TotalCores(final ch.actifsource.core.javamodel.IDecorator cPU_Configuration) {
+    public java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration) {
       /* Begin Protected Region [[7b076fac-dfc9-11ef-b0be-9b4cac321140]] */
     	return cPU_Configuration.extension(ICPU_ConfigurationFunctions.class).Cpu() * cPU_Configuration.extension(ICPU_ConfigurationFunctions.class).Core();    
       /* End Protected Region   [[7b076fac-dfc9-11ef-b0be-9b4cac321140]] */
@@ -57,7 +57,7 @@ public class FunctionSpace_MachineConfiguration {
 
     private CPU_ConfigurationFunctions() {}
 
-    public static java.lang.Integer TotalCores(final ch.actifsource.core.javamodel.IDecorator cPU_Configuration) {
+    public static java.lang.Integer TotalCores(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration cPU_Configuration) {
       return DynamicResourceUtil.invoke(ICPU_ConfigurationFunctionsImpl.class, CPU_ConfigurationFunctionsImpl.INSTANCE, cPU_Configuration).TotalCores(cPU_Configuration);
     }
 
@@ -94,7 +94,7 @@ public class FunctionSpace_MachineConfiguration {
     public java.lang.Integer CapacityGB();
 
     @IDynamicResourceExtension.MethodId("f55f868b-87f8-11ec-894d-7968efa38b99")
-    public ch.actifsource.core.javamodel.IEnumValue StorageFormat();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDiskType StorageFormat();
 
     @IDynamicResourceExtension.MethodId("eaac1208-e534-11ef-b3bd-2f2a4370e45f")
     public java.lang.String SimpleName();
@@ -121,4 +121,4 @@ public class FunctionSpace_MachineConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,PnIZJHyZLGl+iPa5KSY1IkyuEts=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fc6c724e-87f7-11ec-894d-7968efa38b99,+Pt8iEzrzF9ZD8Y46HcA10Yk3es=] */

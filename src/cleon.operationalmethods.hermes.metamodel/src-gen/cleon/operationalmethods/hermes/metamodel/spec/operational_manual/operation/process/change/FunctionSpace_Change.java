@@ -21,7 +21,7 @@ public class FunctionSpace_Change {
   public static interface IChangesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6274b357-343f-11e9-bf4b-0d828c9b1ad6")
-    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Change {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dfa0159-343f-11e9-bf4b-0d828c9b1ad6,vGJ4Lgm95Q7EgL9db+vHTCW2dFM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dfa0159-343f-11e9-bf4b-0d828c9b1ad6,pVJV4dSaSNubPujjkMe3TZaJDV8=] */

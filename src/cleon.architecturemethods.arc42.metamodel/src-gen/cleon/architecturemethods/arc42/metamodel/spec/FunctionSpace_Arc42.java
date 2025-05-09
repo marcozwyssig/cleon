@@ -64,7 +64,7 @@ public class FunctionSpace_Arc42 {
   public static interface IDocumentElementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9eb0520b-8017-11ea-b039-9728191a5cdc")
-    public ch.actifsource.core.javamodel.IResource arc42Document();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document();
 
   }
   
@@ -88,4 +88,4 @@ public class FunctionSpace_Arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,Yzq4x/f8XA0YS6VKsk5vUuf3v/8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,MwSCqpfLIjkoZ2K4RzfgFOVYWlI=] */

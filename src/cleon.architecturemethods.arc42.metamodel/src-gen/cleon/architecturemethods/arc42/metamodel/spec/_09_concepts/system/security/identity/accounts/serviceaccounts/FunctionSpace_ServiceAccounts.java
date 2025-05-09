@@ -36,22 +36,22 @@ public class FunctionSpace_ServiceAccounts {
     public java.lang.Integer RangeId();
 
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAbstractHostsBySite(final ch.actifsource.core.javamodel.IDecorator serviceAccountEnvironmentSite);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> GetAbstractHostsBySite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccountEnvironmentSite);
 
     @IDynamicResourceExtension.MethodId("0e5d40d5-54b8-11eb-8ec7-9b1f37a1ee7d")
-    public ch.actifsource.core.javamodel.INamedResource GetAbstractSite();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware GetAbstractSite();
 
     @IDynamicResourceExtension.MethodId("0574c273-54af-11eb-8ec7-9b1f37a1ee7d")
     public java.lang.Boolean Value();
 
     @IDynamicResourceExtension.MethodId("2dd63939-54e5-11eb-a33f-e91880debedc")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyEnabledServiceAccounts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> OnlyEnabledServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("e69cc8c3-6faa-11eb-a1e4-f1bdb2897690")
     public List<ch.actifsource.core.javamodel.IDecorator> AllAuthZBuildingBlockForPermissions();
 
     @IDynamicResourceExtension.MethodId("6e5cb357-6fb3-11eb-a1e4-f1bdb2897690")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllowedSiteForServiceAccount();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware> GetAllowedSiteForServiceAccount();
 
     @IDynamicResourceExtension.MethodId("8c44f6c8-1a23-11ec-b0ee-97e8d0c296b8")
     public java.lang.String SimpleName();
@@ -76,19 +76,19 @@ public class FunctionSpace_ServiceAccounts {
   public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b4b25887-3a00-11eb-9823-adf6a3e0c300")
-    public java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator serviceAccount);
+    public java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount);
 
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAbstractHostsBySite(final ch.actifsource.core.javamodel.IDecorator serviceAccountEnvironmentSite, final ch.actifsource.core.javamodel.IDecorator serviceAccount);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> GetAbstractHostsBySite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccountEnvironmentSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount);
 
     @IDynamicResourceExtension.MethodId("0574c273-54af-11eb-8ec7-9b1f37a1ee7d")
-    public java.lang.Boolean Value(final ch.actifsource.core.javamodel.IDecorator serviceAccount);
+    public java.lang.Boolean Value(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount);
 
     @IDynamicResourceExtension.MethodId("2dd63939-54e5-11eb-a33f-e91880debedc")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyEnabledServiceAccounts(final List<ch.actifsource.core.javamodel.IDecorator> serviceAccountList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> serviceAccountList);
 
     @IDynamicResourceExtension.MethodId("98aef332-9eee-11ec-8d98-a946e0e0308e")
-    public java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount);
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount);
 
   }
   
@@ -99,7 +99,7 @@ public class FunctionSpace_ServiceAccounts {
     private ServiceAccountFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       /* Begin Protected Region [[b4b25887-3a00-11eb-9823-adf6a3e0c300]] */
       if (serviceAccount.selectServiceAccountTemplate().selectOverrideId() != null) {
       	return serviceAccount.selectServiceAccountTemplate().selectOverrideId();
@@ -112,7 +112,7 @@ public class FunctionSpace_ServiceAccounts {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAbstractHostsBySite(final ch.actifsource.core.javamodel.IDecorator serviceAccountEnvironmentSite, final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> GetAbstractHostsBySite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccountEnvironmentSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       /* Begin Protected Region [[edd9abe4-4ff1-11eb-8df9-adb928521f3a]] */
       final var site = serviceAccountEnvironmentSite.selectSite();
       final var abstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
@@ -122,7 +122,7 @@ public class FunctionSpace_ServiceAccounts {
     }
 
     @Override
-    public java.lang.Boolean Value(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public java.lang.Boolean Value(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       /* Begin Protected Region [[0574c273-54af-11eb-8ec7-9b1f37a1ee7d]] */
       final var accountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
       final var defaultTrueAwareFunctions = accountFunctions.GetAbstractSite()
@@ -136,14 +136,14 @@ public class FunctionSpace_ServiceAccounts {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyEnabledServiceAccounts(final List<ch.actifsource.core.javamodel.IDecorator> serviceAccountList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> serviceAccountList) {
       /* Begin Protected Region [[2dd63939-54e5-11eb-a33f-e91880debedc]] */
       return serviceAccountList.stream().filter(this::Value).collect(Collectors.toList());
       /* End Protected Region   [[2dd63939-54e5-11eb-a33f-e91880debedc]] */
     }
 
     @Override
-    public java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       /* Begin Protected Region [[98aef332-9eee-11ec-8d98-a946e0e0308e]] */
       final var serviceTemplate = serviceAccount.selectServiceAccountTemplate(); 
       if( serviceTemplate.selectPasswordNeverExpires() == null ) {
@@ -160,23 +160,23 @@ public class FunctionSpace_ServiceAccounts {
 
     private ServiceAccountFunctions() {}
 
-    public static java.lang.Integer Id(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public static java.lang.Integer Id(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).Id(serviceAccount);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> GetAbstractHostsBySite(final ch.actifsource.core.javamodel.IDecorator serviceAccountEnvironmentSite, final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> GetAbstractHostsBySite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccountEnvironmentSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).GetAbstractHostsBySite(serviceAccountEnvironmentSite, serviceAccount);
     }
 
-    public static java.lang.Boolean Value(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public static java.lang.Boolean Value(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).Value(serviceAccount);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyEnabledServiceAccounts(final List<ch.actifsource.core.javamodel.IDecorator> serviceAccountList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> serviceAccountList) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccountList).OnlyEnabledServiceAccounts(serviceAccountList);
     }
 
-    public static java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount) {
+    public static java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).PasswordNeverExpires(serviceAccount);
     }
 
@@ -195,7 +195,7 @@ public class FunctionSpace_ServiceAccounts {
   public static interface IServiceAccount_gMSAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("763e9dd6-9eef-11ec-8d98-a946e0e0308e")
-    public java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount_gMSA);
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount_gMSA);
 
   }
   
@@ -206,7 +206,7 @@ public class FunctionSpace_ServiceAccounts {
     private ServiceAccount_gMSAFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount_gMSA) {
+    public java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount_gMSA) {
       return true;
     }
 
@@ -216,7 +216,7 @@ public class FunctionSpace_ServiceAccounts {
 
     private ServiceAccount_gMSAFunctions() {}
 
-    public static java.lang.Boolean PasswordNeverExpires(final ch.actifsource.core.javamodel.IDecorator serviceAccount_gMSA) {
+    public static java.lang.Boolean PasswordNeverExpires(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount_gMSA) {
       return DynamicResourceUtil.invoke(IServiceAccount_gMSAFunctionsImpl.class, ServiceAccount_gMSAFunctionsImpl.INSTANCE, serviceAccount_gMSA).PasswordNeverExpires(serviceAccount_gMSA);
     }
 
@@ -225,7 +225,7 @@ public class FunctionSpace_ServiceAccounts {
   public static interface IServiceAccountEnvironmentSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("061362f5-3951-11eb-93f1-c3f5ad8bb73f")
-    public List<ch.actifsource.core.javamodel.INamedResource> SystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> SystemConfigurations();
 
   }
   
@@ -253,7 +253,7 @@ public class FunctionSpace_ServiceAccounts {
     public java.lang.Integer Id();
 
     @IDynamicResourceExtension.MethodId("768270cd-0fe6-11f0-999f-c7e64e984aff")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetSystemConfigurationDependencies();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetSystemConfigurationDependencies();
 
   }
   
@@ -278,7 +278,7 @@ public class FunctionSpace_ServiceAccounts {
   public static interface IServiceAccountEnvironmentSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("768c04a2-7826-11eb-b1ee-19aff392296d")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSites();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware> AllSites();
 
   }
   
@@ -302,4 +302,4 @@ public class FunctionSpace_ServiceAccounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,1Bg0LkTDZmMcGNNISTuOiufJeWY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,NbPxWXiPwYS/ScO4cQ/+oAThOxo=] */

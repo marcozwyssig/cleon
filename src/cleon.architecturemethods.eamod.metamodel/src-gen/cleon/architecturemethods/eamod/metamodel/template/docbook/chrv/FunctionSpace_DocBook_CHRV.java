@@ -59,7 +59,7 @@ public class FunctionSpace_DocBook_CHRV {
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8a8cb15a-3808-11e8-a088-c32925c50d0b")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource requirement);
+    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware requirement);
 
   }
   
@@ -70,7 +70,7 @@ public class FunctionSpace_DocBook_CHRV {
     private RequirementFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource requirement) {
+    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware requirement) {
       return null;
     }
 
@@ -80,7 +80,7 @@ public class FunctionSpace_DocBook_CHRV {
 
     private RequirementFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource requirement) {
+    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware requirement) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirement).RenderDescriptions(language, requirement);
     }
 
@@ -476,4 +476,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,tu54+ylz2AicIDQA1sSRQDDWBKw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,0xqIAc7V9rz9m1KJlWodNoJGk0o=] */

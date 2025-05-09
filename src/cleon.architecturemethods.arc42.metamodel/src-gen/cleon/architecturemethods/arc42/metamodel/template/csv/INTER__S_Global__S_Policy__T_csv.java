@@ -24,7 +24,7 @@ public class INTER__S_Global__S_Policy__T_csv {
     public java.lang.String Tag(final ch.actifsource.core.javamodel.IDecorator destination);
 
     @IDynamicResourceExtension.MethodId("95f34c82-0b5f-11ea-bef6-75a700135135")
-    public java.lang.String RuleName(final ch.actifsource.core.javamodel.IDecorator dst, final ch.actifsource.core.javamodel.IDecorator dstSz);
+    public java.lang.String RuleName(final ch.actifsource.core.javamodel.IDecorator dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dstSz);
 
     @IDynamicResourceExtension.MethodId("5516bcc2-0b64-11ea-bef6-75a700135135")
     public java.lang.String ServiceName();
@@ -51,4 +51,4 @@ public class INTER__S_Global__S_Policy__T_csv {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b0f9ed3-04be-11ea-b1ce-b1de8a8d414c,XjLZ6juWjsOojnvNTqQ5QzNPQy4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b0f9ed3-04be-11ea-b1ce-b1de8a8d414c,juMIypYttJYhs5mDQm7sXdDh5Wk=] */

@@ -24,7 +24,7 @@ public class firewall__T_yaml {
   public static interface IServiceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f7e57217-8bdb-11eb-a832-91f5636963f2")
-    public java.lang.String PolicyName(final ch.actifsource.core.javamodel.IDecorator qoSSystemConfigurationSource);
+    public java.lang.String PolicyName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("dfdcfbdc-0b30-11ec-a87c-0f7243e6a37e")
     public java.lang.String ServiceAttributes();
@@ -122,4 +122,4 @@ public class firewall__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,mC7jXy40RaQ5PwwjddCd0/tQLSc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,tbls1vqISKl6S035N5/h8DqvQ/U=] */

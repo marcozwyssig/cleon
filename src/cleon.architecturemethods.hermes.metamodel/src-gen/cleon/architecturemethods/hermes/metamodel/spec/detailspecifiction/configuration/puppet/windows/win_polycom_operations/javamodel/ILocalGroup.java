@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localgrp.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface ILocalGroup extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f065926e-107d-11f0-b378-11a495632127,5m2xWHAEOcmgVC3Op5/1nwnW0EU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f065926e-107d-11f0-b378-11a495632127,wVc5ht11f3+2cy+WdtYDRTepUoU=] */

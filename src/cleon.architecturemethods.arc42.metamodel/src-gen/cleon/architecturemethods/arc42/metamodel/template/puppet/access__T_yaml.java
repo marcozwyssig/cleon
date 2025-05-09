@@ -150,16 +150,16 @@ public class access__T_yaml {
   public static interface IAbstractHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7687af9c-1e76-11eb-b08c-d72de2e3f55f")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyTerminals();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyTerminals();
 
     @IDynamicResourceExtension.MethodId("d1d28aad-2d4a-11ee-a93f-27f66cbd8b98")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyNotSkipped();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyNotSkipped();
 
     @IDynamicResourceExtension.MethodId("0a7ac816-c221-11eb-abce-359bcb502761")
-    public java.lang.String FQDNAliasOrHostname(final ch.actifsource.core.javamodel.IDecorator accessConfigurationService);
+    public java.lang.String FQDNAliasOrHostname(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("0a7ac820-c221-11eb-abce-359bcb502761")
-    public java.lang.String FQDNAliasOrHostnameWithService(final ch.actifsource.core.javamodel.IDecorator accessConfigurationService, final ch.actifsource.core.javamodel.INamedResource service);
+    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final ch.actifsource.core.javamodel.INamedResource service);
 
     @IDynamicResourceExtension.MethodId("7f2d3372-c221-11eb-abce-359bcb502761")
     public java.lang.String TopSiteName();
@@ -169,10 +169,10 @@ public class access__T_yaml {
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7687af9c-1e76-11eb-b08c-d72de2e3f55f")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyTerminals(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyTerminals(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList);
 
     @IDynamicResourceExtension.MethodId("d1d28aad-2d4a-11ee-a93f-27f66cbd8b98")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyNotSkipped(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyNotSkipped(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList);
 
   }
   
@@ -183,7 +183,7 @@ public class access__T_yaml {
     private AbstractHostFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyTerminals(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyTerminals(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       /* Begin Protected Region [[7687af9c-1e76-11eb-b08c-d72de2e3f55f]] */
       return abstractHostList.stream()
       		.filter(x -> x.selectInstanceOf() instanceof ITerminalServerSystemConfiguration)
@@ -192,7 +192,7 @@ public class access__T_yaml {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyNotSkipped(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyNotSkipped(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       /* Begin Protected Region [[d1d28aad-2d4a-11ee-a93f-27f66cbd8b98]] */
         return abstractHostList.stream()
           		.filter(x -> x.selectSkipBookmarkGeneration() == null || !x.selectSkipBookmarkGeneration())
@@ -206,11 +206,11 @@ public class access__T_yaml {
 
     private AbstractHostFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyTerminals(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyTerminals(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyTerminals(abstractHostList);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyNotSkipped(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> OnlyNotSkipped(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).OnlyNotSkipped(abstractHostList);
     }
 
@@ -219,10 +219,10 @@ public class access__T_yaml {
   public static interface ISystemConfigurationAccessFromFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("34c8bca2-2401-11eb-83b1-3d2a97975978")
-    public java.lang.String RenderTextMobaxterm(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src);
+    public java.lang.String RenderTextMobaxterm(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src);
 
     @IDynamicResourceExtension.MethodId("fba8bb9b-2443-11eb-989b-5523e93a6c25")
-    public java.lang.String RenderTextFirefox(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src);
+    public java.lang.String RenderTextFirefox(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src);
 
     @IDynamicResourceExtension.MethodId("26973923-2445-11eb-989b-5523e93a6c25")
     public java.lang.String RenderFirefoxEntry(final java.lang.String entryName);
@@ -232,10 +232,10 @@ public class access__T_yaml {
   public static interface ISystemConfigurationAccessFromFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("34c8bca2-2401-11eb-83b1-3d2a97975978")
-    public java.lang.String RenderTextMobaxterm(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom);
+    public java.lang.String RenderTextMobaxterm(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom);
 
     @IDynamicResourceExtension.MethodId("fba8bb9b-2443-11eb-989b-5523e93a6c25")
-    public java.lang.String RenderTextFirefox(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom);
+    public java.lang.String RenderTextFirefox(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom);
 
   }
   
@@ -246,7 +246,7 @@ public class access__T_yaml {
     private SystemConfigurationAccessFromFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderTextMobaxterm(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
+    public java.lang.String RenderTextMobaxterm(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
       /* Begin Protected Region [[34c8bca2-2401-11eb-83b1-3d2a97975978]] */
       final var abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       final var siteTable = new HashMap<String, HashMap<String, List<String>>>();
@@ -277,7 +277,7 @@ public class access__T_yaml {
     }
 
     @Override
-    public java.lang.String RenderTextFirefox(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
+    public java.lang.String RenderTextFirefox(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
       /* Begin Protected Region [[fba8bb9b-2443-11eb-989b-5523e93a6c25]] */
       final var abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       final var siteTable = new HashMap<String, HashMap<String, List<String>>>();
@@ -308,11 +308,11 @@ public class access__T_yaml {
 
     private SystemConfigurationAccessFromFunctions() {}
 
-    public static java.lang.String RenderTextMobaxterm(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
+    public static java.lang.String RenderTextMobaxterm(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
       return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).RenderTextMobaxterm(abstractSite, src, systemConfigurationAccessFrom);
     }
 
-    public static java.lang.String RenderTextFirefox(final ch.actifsource.core.javamodel.INamedResource abstractSite, final ch.actifsource.core.javamodel.IDecorator src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
+    public static java.lang.String RenderTextFirefox(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final ch.actifsource.core.javamodel.IDecorator systemConfigurationAccessFrom) {
       return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).RenderTextFirefox(abstractSite, src, systemConfigurationAccessFrom);
     }
 
@@ -320,4 +320,4 @@ public class access__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,SITiwL1GTYMEOR/P8+/EnKGWWFI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,G3nBV89DScn2Lyt8Sk8fBuRtgq8=] */

@@ -22,7 +22,7 @@ public class Topology__T_xml {
   public static interface IAbstractHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("531a3d99-a5cd-11ec-9968-b970a72504b8")
-    public List<ch.actifsource.core.javamodel.IDecorator> NoApplications();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> NoApplications();
 
     @IDynamicResourceExtension.MethodId("104650c1-b298-11ed-82e1-97f8ff4d3f62")
     public java.lang.String Hosts();
@@ -32,7 +32,7 @@ public class Topology__T_xml {
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("531a3d99-a5cd-11ec-9968-b970a72504b8")
-    public List<ch.actifsource.core.javamodel.IDecorator> NoApplications(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> NoApplications(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList);
 
   }
   
@@ -43,7 +43,7 @@ public class Topology__T_xml {
     private AbstractHostFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> NoApplications(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> NoApplications(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       /* Begin Protected Region [[531a3d99-a5cd-11ec-9968-b970a72504b8]] */
       return abstractHostList.stream().filter( x -> !(x instanceof IApplication)).collect(Collectors.toList());
       /* End Protected Region   [[531a3d99-a5cd-11ec-9968-b970a72504b8]] */
@@ -55,7 +55,7 @@ public class Topology__T_xml {
 
     private AbstractHostFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> NoApplications(final List<ch.actifsource.core.javamodel.IDecorator> abstractHostList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> NoApplications(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> abstractHostList) {
       return DynamicResourceUtil.invoke(IAbstractHostFunctionsImpl.class, AbstractHostFunctionsImpl.INSTANCE, abstractHostList).NoApplications(abstractHostList);
     }
 
@@ -63,4 +63,4 @@ public class Topology__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f140501e-ca57-11e9-83b0-559396620907,kWHXcDguipJ+72OxHV1MiUuBpcY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f140501e-ca57-11e9-83b0-559396620907,dTIX0SBsvKz6ZsdbN0A8z5sy+UE=] */

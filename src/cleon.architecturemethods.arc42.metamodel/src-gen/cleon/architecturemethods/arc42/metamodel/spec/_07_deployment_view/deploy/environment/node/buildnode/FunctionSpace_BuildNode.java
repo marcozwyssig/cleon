@@ -53,10 +53,10 @@ public class FunctionSpace_BuildNode {
   public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
-    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id);
 
     @IDynamicResourceExtension.MethodId("4eb6b4cb-84cd-11ea-aadc-ada99ddb5122")
-    public ch.actifsource.core.javamodel.IDecorator GetTopologyEnvironment();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment GetTopologyEnvironment();
 
     @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
     public List<ch.actifsource.core.javamodel.IDecorator> NoWDC();
@@ -66,7 +66,7 @@ public class FunctionSpace_BuildNode {
   public static interface IServiceBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
-    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode);
 
     @IDynamicResourceExtension.MethodId("88b738ac-5dfa-11ee-aa0e-795a14516714")
     public List<ch.actifsource.core.javamodel.IDecorator> NoWDC(final List<ch.actifsource.core.javamodel.IDecorator> serviceBuildNodeList);
@@ -80,7 +80,7 @@ public class FunctionSpace_BuildNode {
     private ServiceBuildNodeFunctionsImpl() {}
 
     @Override
-    public ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
       /* Begin Protected Region [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
       final var serviceBuildNodeFunctions = serviceBuildNode.extension(IServiceBuildNodeFunctions.class);
       final var topologyEnvironment = serviceBuildNodeFunctions.GetTopologyEnvironment();
@@ -128,7 +128,7 @@ public class FunctionSpace_BuildNode {
 
     private ServiceBuildNodeFunctions() {}
 
-    public static ch.actifsource.core.javamodel.IDecorator GetHost(final ch.actifsource.core.javamodel.INamedResource cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware GetHost(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final ch.actifsource.core.javamodel.IDecorator serviceBuildNode) {
       return DynamicResourceUtil.invoke(IServiceBuildNodeFunctionsImpl.class, ServiceBuildNodeFunctionsImpl.INSTANCE, serviceBuildNode).GetHost(cmp, site, owner, id, serviceBuildNode);
     }
 
@@ -196,7 +196,7 @@ public class FunctionSpace_BuildNode {
     public List<ch.actifsource.core.javamodel.IDecorator> OnlyVMs();
 
     @IDynamicResourceExtension.MethodId("73a99824-8555-11ea-a579-31bf00957a06")
-    public List<ch.actifsource.core.javamodel.INamedResource> Dependencies();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> Dependencies();
 
     @IDynamicResourceExtension.MethodId("e4d0cc56-e070-11eb-85ea-9f2d155d4de3")
     public java.lang.Integer BruttoMHz_Server();
@@ -570,4 +570,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,UbX1q3/j+3eyd88geddszLUE9Co=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,mO7p3niBOUkU1ADXDIe3qhjcfpM=] */

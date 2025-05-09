@@ -59,10 +59,10 @@ public class FunctionSpace_Network {
     public List<ch.actifsource.core.javamodel.IDecorator> AllHostNodes();
 
     @IDynamicResourceExtension.MethodId("fd85db1d-5176-11ea-b9cb-85bbdfd861be")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllAbstractHosts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> AllAbstractHosts();
 
     @IDynamicResourceExtension.MethodId("2e929d64-5177-11ea-b9cb-85bbdfd861be")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurations();
 
   }
   
@@ -90,7 +90,7 @@ public class FunctionSpace_Network {
     public List<ch.actifsource.core.javamodel.IDecorator> GetNodes();
 
     @IDynamicResourceExtension.MethodId("d2cb1217-b074-11ea-b791-9b401fd02359")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAbstractHosts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> GetAbstractHosts();
 
   }
   
@@ -143,13 +143,13 @@ public class FunctionSpace_Network {
     public java.lang.String Name();
 
     @IDynamicResourceExtension.MethodId("18d59f34-dec4-11e9-b714-478bec98e62d")
-    public java.lang.String GroupName(final ch.actifsource.core.javamodel.INamedResource systemConfiguration, final ch.actifsource.core.javamodel.INamedResource securitySubZone);
+    public java.lang.String GroupName(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware systemConfiguration, final ch.actifsource.core.javamodel.INamedResource securitySubZone);
 
     @IDynamicResourceExtension.MethodId("d38cc226-df6c-11e9-9827-a1514ee8d06a")
     public java.lang.String InterfaceTypeName(final ch.actifsource.core.javamodel.INamedResource subZone);
 
     @IDynamicResourceExtension.MethodId("813b3e9d-df72-11e9-9827-a1514ee8d06a")
-    public java.lang.String Guid(final ch.actifsource.core.javamodel.INamedResource systemConfiguration, final ch.actifsource.core.javamodel.INamedResource abstractNetdomainHosts, final ch.actifsource.core.javamodel.INamedResource securitySubZone);
+    public java.lang.String Guid(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware systemConfiguration, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractNetdomainHosts, final ch.actifsource.core.javamodel.INamedResource securitySubZone);
 
     @IDynamicResourceExtension.MethodId("fd907b14-a0f4-11ea-9ce3-334b0943657e")
     public List<ch.actifsource.core.javamodel.IDecorator> AllNetworkHostNodes();
@@ -170,31 +170,31 @@ public class FunctionSpace_Network {
     public List<ch.actifsource.core.javamodel.IDecorator> OnlyToGenerate();
 
     @IDynamicResourceExtension.MethodId("7f82ff07-ea83-11ed-8ef9-93417a35a5ab")
-    public List<ch.actifsource.core.javamodel.IDecorator> SelectHosts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHosts();
 
     @IDynamicResourceExtension.MethodId("71b29b11-0ab6-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.IDecorator> SelectHostsSorted();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHostsSorted();
 
     @IDynamicResourceExtension.MethodId("521dd1a0-0ab8-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.IDecorator> SelectHosts_2();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHosts_2();
 
     @IDynamicResourceExtension.MethodId("db40846a-0ab9-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllAbstractHosts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> AllAbstractHosts();
 
     @IDynamicResourceExtension.MethodId("29fee71c-0aba-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSystemConfigurationsInNetwork();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurationsInNetwork();
 
     @IDynamicResourceExtension.MethodId("7a2454c6-0aba-11ee-a86d-478d6a2bb65d")
     public ch.actifsource.core.javamodel.INamedResource SecuritySubZone();
 
     @IDynamicResourceExtension.MethodId("aa3a661e-0abb-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllAbstractHostsWhereSecuritySubzone(final ch.actifsource.core.javamodel.INamedResource securitySubZone);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> AllAbstractHostsWhereSecuritySubzone(final ch.actifsource.core.javamodel.INamedResource securitySubZone);
 
     @IDynamicResourceExtension.MethodId("df857591-63e9-11ef-ac12-136807d7f56d")
     public ch.actifsource.core.javamodel.IDecorator NetworkSite();
 
     @IDynamicResourceExtension.MethodId("45a2aa6c-63ea-11ef-ac12-136807d7f56d")
-    public ch.actifsource.core.javamodel.INamedResource Site();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware Site();
 
     @IDynamicResourceExtension.MethodId("5cbae880-f772-11ef-9619-857aad3ec118")
     public ch.actifsource.core.javamodel.IResource VLAN();
@@ -213,7 +213,7 @@ public class FunctionSpace_Network {
     public List<ch.actifsource.core.javamodel.IDecorator> OnlyToGenerate(final List<ch.actifsource.core.javamodel.IDecorator> networkHostNodeList);
 
     @IDynamicResourceExtension.MethodId("521dd1a0-0ab8-11ee-a86d-478d6a2bb65d")
-    public List<ch.actifsource.core.javamodel.IDecorator> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode);
 
   }
   
@@ -272,7 +272,7 @@ public class FunctionSpace_Network {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode) {
       /* Begin Protected Region [[521dd1a0-0ab8-11ee-a86d-478d6a2bb65d]] */
       final var networkHostNodeFunctions = networkHostNode.extension(INetworkHostNodeFunctions.class);
       final var securitySubZone = networkHostNodeFunctions.SecuritySubZone();
@@ -298,7 +298,7 @@ public class FunctionSpace_Network {
       return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNodeList).OnlyToGenerate(networkHostNodeList);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware> SelectHosts_2(final ch.actifsource.core.javamodel.IDecorator networkHostNode) {
       return DynamicResourceUtil.invoke(INetworkHostNodeFunctionsImpl.class, NetworkHostNodeFunctionsImpl.INSTANCE, networkHostNode).SelectHosts_2(networkHostNode);
     }
 
@@ -499,4 +499,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,/lOgO3w7FUUy2LODqYCwzkFyJ5U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,sEynvL9UPsIcE3HSJtI05QrCfKY=] */

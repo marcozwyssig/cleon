@@ -21,10 +21,10 @@ public class FunctionSpace_Windows {
   public static interface IPuppetConfigurationPermissionsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8b514db2-1073-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AvailablePermissions();
+    public List<ch.actifsource.core.javamodel.IDecorator> AvailablePermissions();
 
     @IDynamicResourceExtension.MethodId("8fc9009e-1078-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllPermissions();
+    public List<ch.actifsource.core.javamodel.IDecorator> AllPermissions();
 
   }
   
@@ -49,7 +49,7 @@ public class FunctionSpace_Windows {
   public static interface IUserrightsassignmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("895bcc67-1078-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AvailablePermissions();
+    public List<ch.actifsource.core.javamodel.IDecorator> AvailablePermissions();
 
   }
   
@@ -74,7 +74,7 @@ public class FunctionSpace_Windows {
   public static interface ILocalGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fa687ab2-107e-11f0-b378-11a495632127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AvailablePermissions();
+    public List<ch.actifsource.core.javamodel.IDecorator> AvailablePermissions();
 
   }
   
@@ -207,4 +207,4 @@ public class FunctionSpace_Windows {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,qTWjyajT+GvRqqAn72Yd6chMW/8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,inrofwHMcV6CjmMNDr3EYnThKSo=] */

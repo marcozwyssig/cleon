@@ -39,10 +39,10 @@ public class FunctionSpace_Node {
     public List<ch.actifsource.core.javamodel.IResource> GetAllNestedSiteNodes();
 
     @IDynamicResourceExtension.MethodId("b5680fde-7f14-11e9-9a52-07d4b074defc")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllUsedSystemComponent();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware> GetAllUsedSystemComponent();
 
     @IDynamicResourceExtension.MethodId("f7c1ba46-7f15-11e9-9a52-07d4b074defc")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllUsedSystemConfiguration();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetAllUsedSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("985b3d0d-c943-11eb-adc4-d18d1353eb6e")
     public ch.actifsource.core.javamodel.INamedResource GetEnvironment();
@@ -223,4 +223,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,SRsCCLAb7QntYj3avjiA06dBSpg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,1vl+7OJxiSopkr1x6/Rw/iGAdgs=] */

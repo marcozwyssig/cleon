@@ -21,7 +21,7 @@ public class FunctionSpace_TestConceptDocument {
   public static interface ITestConceptDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("070cdb9a-6748-11e9-9ec9-5fbc84faaeb1")
-    public ch.actifsource.core.javamodel.IResource GetArchitecture();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetArchitecture();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_TestConceptDocument {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ff813ec3-6747-11e9-9ec9-5fbc84faaeb1,1LoJ4pYa7Yr/XUgqavbM4Ne6aKc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ff813ec3-6747-11e9-9ec9-5fbc84faaeb1,fiBZTlmnRq3yqOrn4Uxrnb5S4uc=] */

@@ -28,26 +28,26 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("2ecc01de-de4a-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToRoleSystemComponent(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent);
 
     @IDynamicResourceExtension.MethodId("fc8c4789-de4a-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllBasedOn();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware> AllBasedOn();
 
     @IDynamicResourceExtension.MethodId("fcf9ee4b-de5b-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllBasedOnReverse();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware> AllBasedOnReverse();
 
     @IDynamicResourceExtension.MethodId("dc189867-0fd7-11f0-999f-c7e64e984aff")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetSystemConfigurationDependencies();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetSystemConfigurationDependencies();
 
   }
   
   public static interface IRoleTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a40693a7-dd92-11eb-a588-852a91faee6e")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator roleTemplate);
+    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware roleTemplate);
 
     @IDynamicResourceExtension.MethodId("2ecc01de-de4a-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToRoleSystemComponent(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> roleTemplateList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware> roleTemplateList);
 
   }
   
@@ -58,12 +58,12 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
     private RoleTemplateFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator roleTemplate) {
+    public java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware roleTemplate) {
       return String.format("%03d", roleTemplate.selectIdentifier());
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> ToRoleSystemComponent(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> roleTemplateList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware> roleTemplateList) {
       /* Begin Protected Region [[2ecc01de-de4a-11eb-b028-df36f0dc7b24]] */
     	var roleSystemComponentResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent>();
     	for( var roleTemplate : roleTemplateList ) {
@@ -81,11 +81,11 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
     private RoleTemplateFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator roleTemplate) {
+    public static java.lang.String GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware roleTemplate) {
       return DynamicResourceUtil.invoke(IRoleTemplateFunctionsImpl.class, RoleTemplateFunctionsImpl.INSTANCE, roleTemplate).GetId(roleTemplate);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> ToRoleSystemComponent(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> roleTemplateList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IActivityTemplateAware> roleTemplateList) {
       return DynamicResourceUtil.invoke(IRoleTemplateFunctionsImpl.class, RoleTemplateFunctionsImpl.INSTANCE, roleTemplateList).ToRoleSystemComponent(roleSystemComponent, roleTemplateList);
     }
 
@@ -118,4 +118,4 @@ public class FunctionSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,kMbVkMgGP7W+MsgewUJYlFQl/Fw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,2nebM0QPfGM1tfx1IwuepW5XaYg=] */

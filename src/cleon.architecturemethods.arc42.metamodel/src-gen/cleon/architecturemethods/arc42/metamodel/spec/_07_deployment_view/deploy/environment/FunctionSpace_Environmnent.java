@@ -44,7 +44,7 @@ public class FunctionSpace_Environmnent {
     public List<ch.actifsource.core.javamodel.IResource> Nodes();
 
     @IDynamicResourceExtension.MethodId("c6f4760b-151d-11f0-8fa5-ad696b254e17")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSystemConfigurationOfNodes();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurationOfNodes();
 
     @IDynamicResourceExtension.MethodId("a5af1e63-151c-11f0-8fa5-ad696b254e17")
     public List<ch.actifsource.core.javamodel.IDecorator> AllNetworkNodes();
@@ -219,4 +219,4 @@ public class FunctionSpace_Environmnent {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,V0YM+MVDDc4toUgDEXF+IwpDsts=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,zp2SHzLb6GD0vFGXchFFT9ZEpw4=] */

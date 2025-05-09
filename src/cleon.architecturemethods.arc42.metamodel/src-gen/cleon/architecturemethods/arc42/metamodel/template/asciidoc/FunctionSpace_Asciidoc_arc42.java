@@ -817,7 +817,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("507f2375-d004-11ee-8ad8-7318f4718a69")
-    public java.lang.Boolean IsHistoryNullFalseOrTrue(final ch.actifsource.core.javamodel.INamedResource table);
+    public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware table);
 
   }
   
@@ -828,7 +828,7 @@ public class FunctionSpace_Asciidoc_arc42 {
     private TableFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsHistoryNullFalseOrTrue(final ch.actifsource.core.javamodel.INamedResource table) {
+    public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware table) {
       /* Begin Protected Region [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
 		if( table.selectHistory() == null) {
 			return false;
@@ -843,7 +843,7 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     private TableFunctions() {}
 
-    public static java.lang.Boolean IsHistoryNullFalseOrTrue(final ch.actifsource.core.javamodel.INamedResource table) {
+    public static java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware table) {
       return DynamicResourceUtil.invoke(ITableFunctionsImpl.class, TableFunctionsImpl.INSTANCE, table).IsHistoryNullFalseOrTrue(table);
     }
 
@@ -1344,4 +1344,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,zRzZKUygCeoLc8Y53wDEvXFPx3I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,NPrDnEzU30zn14eipNM/3d1/a74=] */

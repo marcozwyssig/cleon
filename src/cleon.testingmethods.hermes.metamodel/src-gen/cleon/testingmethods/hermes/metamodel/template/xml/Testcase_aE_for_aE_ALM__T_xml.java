@@ -127,7 +127,7 @@ public class Testcase_aE_for_aE_ALM__T_xml {
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b6efcc03-9dd7-11eb-ac11-8525f5400242")
-    public java.lang.String Description(final ch.actifsource.core.javamodel.INamedResource testResult);
+    public java.lang.String Description(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult);
 
   }
   
@@ -138,7 +138,7 @@ public class Testcase_aE_for_aE_ALM__T_xml {
     private TestResultFunctionsImpl() {}
 
     @Override
-    public java.lang.String Description(final ch.actifsource.core.javamodel.INamedResource testResult) {
+    public java.lang.String Description(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
       return null;
     }
 
@@ -148,7 +148,7 @@ public class Testcase_aE_for_aE_ALM__T_xml {
 
     private TestResultFunctions() {}
 
-    public static java.lang.String Description(final ch.actifsource.core.javamodel.INamedResource testResult) {
+    public static java.lang.String Description(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
       return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).Description(testResult);
     }
 
@@ -383,4 +383,4 @@ public class Testcase_aE_for_aE_ALM__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,63a490f7-9db6-11eb-ac11-8525f5400242,GTxOldUQx8sjtYr4Zw+e71/U2ic=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,63a490f7-9db6-11eb-ac11-8525f5400242,roR0qssTRyHMD/XvjK70VuPGn5k=] */

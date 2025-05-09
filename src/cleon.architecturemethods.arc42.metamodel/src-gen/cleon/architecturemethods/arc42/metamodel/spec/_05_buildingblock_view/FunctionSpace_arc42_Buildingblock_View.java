@@ -56,10 +56,10 @@ public class FunctionSpace_arc42_Buildingblock_View {
     public ch.actifsource.core.javamodel.IResource RootSystem();
 
     @IDynamicResourceExtension.MethodId("d366c3ba-3ec8-11ea-9af7-ad5bf30c585a")
-    public ch.actifsource.core.javamodel.IResource arc42Document();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document();
 
     @IDynamicResourceExtension.MethodId("b1271087-3ec8-11ea-9af7-ad5bf30c585a")
-    public ch.actifsource.core.javamodel.IResource arc42DocumentFromRootOrExternal();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42DocumentFromRootOrExternal();
 
   }
   
@@ -176,4 +176,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,lBrCejRviEdlFjiV0uGr42dQmOg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,e2buAm2dfwOvhCVF0kCGhunDwvc=] */

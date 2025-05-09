@@ -21,7 +21,7 @@ public class FunctionSpace_Requirements {
   public static interface IRequirementsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("46beb88f-d33b-11ef-802e-175af1a41dfa")
-    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String ChapterPath(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Requirements {
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("adaf9b3d-d33c-11ef-802e-175af1a41dfa")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+    public ch.actifsource.core.javamodel.IResource LanguageSettings();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3fed1da8-d33b-11ef-802e-175af1a41dfa,8edlI59oPgqEZIGK5EAftJOObNc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3fed1da8-d33b-11ef-802e-175af1a41dfa,cHq+nLJu8lXHhXsfQDoTzEl+Y50=] */

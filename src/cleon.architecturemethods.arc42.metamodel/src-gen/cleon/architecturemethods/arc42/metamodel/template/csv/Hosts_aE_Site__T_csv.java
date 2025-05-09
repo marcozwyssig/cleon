@@ -21,7 +21,7 @@ public class Hosts_aE_Site__T_csv {
   public static interface IAbstractSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4a42b462-f832-11ea-8aa5-7b39f57c0cbc")
-    public ch.actifsource.core.javamodel.INamedResource HasData(final ch.actifsource.core.javamodel.INamedResource domain);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware HasData(final ch.actifsource.core.javamodel.INamedResource domain);
 
     @IDynamicResourceExtension.MethodId("b9388bca-f834-11ea-8aa5-7b39f57c0cbc")
     public List<ch.actifsource.core.javamodel.IDecorator> HasDataInSite(final ch.actifsource.core.javamodel.INamedResource domain);
@@ -31,7 +31,7 @@ public class Hosts_aE_Site__T_csv {
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4a42b462-f832-11ea-8aa5-7b39f57c0cbc")
-    public ch.actifsource.core.javamodel.INamedResource HasData(final ch.actifsource.core.javamodel.INamedResource domain, final ch.actifsource.core.javamodel.INamedResource abstractSite);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware HasData(final ch.actifsource.core.javamodel.INamedResource domain, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite);
 
   }
   
@@ -42,7 +42,7 @@ public class Hosts_aE_Site__T_csv {
     private AbstractSiteFunctionsImpl() {}
 
     @Override
-    public ch.actifsource.core.javamodel.INamedResource HasData(final ch.actifsource.core.javamodel.INamedResource domain, final ch.actifsource.core.javamodel.INamedResource abstractSite) {
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware HasData(final ch.actifsource.core.javamodel.INamedResource domain, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite) {
       /* Begin Protected Region [[4a42b462-f832-11ea-8aa5-7b39f57c0cbc]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       if( abstractSiteFunctions.HasDataInSite(domain).isEmpty() == false) {
@@ -58,7 +58,7 @@ public class Hosts_aE_Site__T_csv {
 
     private AbstractSiteFunctions() {}
 
-    public static ch.actifsource.core.javamodel.INamedResource HasData(final ch.actifsource.core.javamodel.INamedResource domain, final ch.actifsource.core.javamodel.INamedResource abstractSite) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware HasData(final ch.actifsource.core.javamodel.INamedResource domain, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware abstractSite) {
       return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).HasData(domain, abstractSite);
     }
 
@@ -66,4 +66,4 @@ public class Hosts_aE_Site__T_csv {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,980e7efe-517d-11ea-a946-13c393300b57,DeOR1AxgD9LnlyRMD/EnuaFtcYs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,980e7efe-517d-11ea-a946-13c393300b57,OnBNzbX+FEGXpceQlwjnhDMresM=] */

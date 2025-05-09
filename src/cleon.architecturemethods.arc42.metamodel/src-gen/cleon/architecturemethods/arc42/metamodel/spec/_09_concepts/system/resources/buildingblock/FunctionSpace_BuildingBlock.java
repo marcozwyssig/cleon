@@ -31,10 +31,10 @@ public class FunctionSpace_BuildingBlock {
   public static interface ICoreFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0e05b36b-dff8-11eb-93d3-9f230e4bb32b")
-    public java.lang.Integer BruttoTotalMHz(final ch.actifsource.core.javamodel.IResource core);
+    public java.lang.Integer BruttoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core);
 
     @IDynamicResourceExtension.MethodId("a16aa1c9-dffa-11eb-93d3-9f230e4bb32b")
-    public java.lang.Integer NettoTotalMHz(final ch.actifsource.core.javamodel.IResource core);
+    public java.lang.Integer NettoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core);
 
   }
   
@@ -45,7 +45,7 @@ public class FunctionSpace_BuildingBlock {
     private CoreFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer BruttoTotalMHz(final ch.actifsource.core.javamodel.IResource core) {
+    public java.lang.Integer BruttoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core) {
       /* Begin Protected Region [[0e05b36b-dff8-11eb-93d3-9f230e4bb32b]] */
       final var cpuCount = CPU.selectToMeCores(core).selectAmount();
       final var coreCount = core.selectAmount();
@@ -54,7 +54,7 @@ public class FunctionSpace_BuildingBlock {
     }
 
     @Override
-    public java.lang.Integer NettoTotalMHz(final ch.actifsource.core.javamodel.IResource core) {
+    public java.lang.Integer NettoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core) {
       /* Begin Protected Region [[a16aa1c9-dffa-11eb-93d3-9f230e4bb32b]] */
       final Double value = BruttoTotalMHz(core) * 0.8;
       return value.intValue();
@@ -67,11 +67,11 @@ public class FunctionSpace_BuildingBlock {
 
     private CoreFunctions() {}
 
-    public static java.lang.Integer BruttoTotalMHz(final ch.actifsource.core.javamodel.IResource core) {
+    public static java.lang.Integer BruttoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core) {
       return DynamicResourceUtil.invoke(ICoreFunctionsImpl.class, CoreFunctionsImpl.INSTANCE, core).BruttoTotalMHz(core);
     }
 
-    public static java.lang.Integer NettoTotalMHz(final ch.actifsource.core.javamodel.IResource core) {
+    public static java.lang.Integer NettoTotalMHz(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.ICore core) {
       return DynamicResourceUtil.invoke(ICoreFunctionsImpl.class, CoreFunctionsImpl.INSTANCE, core).NettoTotalMHz(core);
     }
 
@@ -87,7 +87,7 @@ public class FunctionSpace_BuildingBlock {
   public static interface IMemoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("3b73f8a6-e07a-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer NettoTotalGB(final ch.actifsource.core.javamodel.IResource memory);
+    public java.lang.Integer NettoTotalGB(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IMemory memory);
 
   }
   
@@ -98,7 +98,7 @@ public class FunctionSpace_BuildingBlock {
     private MemoryFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer NettoTotalGB(final ch.actifsource.core.javamodel.IResource memory) {
+    public java.lang.Integer NettoTotalGB(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IMemory memory) {
       /* Begin Protected Region [[3b73f8a6-e07a-11eb-85ea-9f2d155d4de3]] */
       final Double memorSize = memory.selectSizeGB() * 0.7;
       return memorSize.intValue();
@@ -111,7 +111,7 @@ public class FunctionSpace_BuildingBlock {
 
     private MemoryFunctions() {}
 
-    public static java.lang.Integer NettoTotalGB(final ch.actifsource.core.javamodel.IResource memory) {
+    public static java.lang.Integer NettoTotalGB(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IMemory memory) {
       return DynamicResourceUtil.invoke(IMemoryFunctionsImpl.class, MemoryFunctionsImpl.INSTANCE, memory).NettoTotalGB(memory);
     }
 
@@ -127,7 +127,7 @@ public class FunctionSpace_BuildingBlock {
   public static interface IDiskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2d3a91d9-e084-11eb-85ea-9f2d155d4de3")
-    public java.lang.Integer NettoTotalGB_60(final ch.actifsource.core.javamodel.IResource disk);
+    public java.lang.Integer NettoTotalGB_60(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDisk disk);
 
   }
   
@@ -138,7 +138,7 @@ public class FunctionSpace_BuildingBlock {
     private DiskFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer NettoTotalGB_60(final ch.actifsource.core.javamodel.IResource disk) {
+    public java.lang.Integer NettoTotalGB_60(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDisk disk) {
       /* Begin Protected Region [[2d3a91d9-e084-11eb-85ea-9f2d155d4de3]] */
       final Double diskSize = disk.selectCapacityGB() * 0.6;
       return diskSize.intValue();
@@ -151,7 +151,7 @@ public class FunctionSpace_BuildingBlock {
 
     private DiskFunctions() {}
 
-    public static java.lang.Integer NettoTotalGB_60(final ch.actifsource.core.javamodel.IResource disk) {
+    public static java.lang.Integer NettoTotalGB_60(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.buildingblock.javamodel.IDisk disk) {
       return DynamicResourceUtil.invoke(IDiskFunctionsImpl.class, DiskFunctionsImpl.INSTANCE, disk).NettoTotalGB_60(disk);
     }
 
@@ -159,4 +159,4 @@ public class FunctionSpace_BuildingBlock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0881f535-dff8-11eb-93d3-9f230e4bb32b,O7FAaV40MgTEo9KBHMtO/xfAb5U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0881f535-dff8-11eb-93d3-9f230e4bb32b,UCpxmjXJI246dwx9XEPnby3APf4=] */

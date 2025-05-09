@@ -21,17 +21,17 @@ public class FunctionSpace_Eclipse_Resources {
   public static interface IAbstractEclipseResourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2b7b6fa6-9ce8-11ef-924c-a99a7c25fee1")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllResources();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> SelectAllResources();
 
     @IDynamicResourceExtension.MethodId("1a40cf42-9cea-11ef-924c-a99a7c25fee1")
-    public List<ch.actifsource.core.javamodel.IResource> Parents();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> Parents();
 
   }
   
   public static interface IAbstractEclipseResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1a40cf42-9cea-11ef-924c-a99a7c25fee1")
-    public List<ch.actifsource.core.javamodel.IResource> Parents(final ch.actifsource.core.javamodel.IResource abstractEclipseResource);
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> Parents(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource abstractEclipseResource);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_Eclipse_Resources {
     private AbstractEclipseResourceFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IResource> Parents(final ch.actifsource.core.javamodel.IResource abstractEclipseResource) {
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> Parents(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource abstractEclipseResource) {
       return null;
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Eclipse_Resources {
 
     private AbstractEclipseResourceFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IResource> Parents(final ch.actifsource.core.javamodel.IResource abstractEclipseResource) {
+    public static List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> Parents(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource abstractEclipseResource) {
       return DynamicResourceUtil.invoke(IAbstractEclipseResourceFunctionsImpl.class, AbstractEclipseResourceFunctionsImpl.INSTANCE, abstractEclipseResource).Parents(abstractEclipseResource);
     }
 
@@ -61,10 +61,10 @@ public class FunctionSpace_Eclipse_Resources {
   public static interface IEclipseDirectoryFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("47e0dfec-9ce8-11ef-924c-a99a7c25fee1")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllResources();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> SelectAllResources();
 
     @IDynamicResourceExtension.MethodId("36e1749b-9cea-11ef-924c-a99a7c25fee1")
-    public List<ch.actifsource.core.javamodel.IResource> Parents();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IAbstractEclipseResource> Parents();
 
   }
   
@@ -88,4 +88,4 @@ public class FunctionSpace_Eclipse_Resources {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1f67b346-9ce8-11ef-924c-a99a7c25fee1,vKPSbpwDfcmCKjNGPENY8yqz1No=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1f67b346-9ce8-11ef-924c-a99a7c25fee1,JqHC/gzW0dF4y6W48utexN20b74=] */

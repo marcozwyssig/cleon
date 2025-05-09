@@ -55,7 +55,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String ShortnameOrOverride();
 
     @IDynamicResourceExtension.MethodId("4ed56cdc-4e0b-11ed-a85e-ff0e1a36b8ae")
-    public List<ch.actifsource.core.javamodel.IResource> SystemConfigurationProperties();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
 
   }
   
@@ -83,7 +83,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("e8adea82-b5f8-11ea-a2c5-5b1c7f861dd4")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllDecomposingSystemConfiguration();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetAllDecomposingSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
     public ch.actifsource.core.javamodel.INamedResource System();
@@ -117,10 +117,10 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("8364e39b-c78b-11ea-b0b6-e5df79e86bc2")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("5302a03f-94c2-11ec-ab3a-174a15580942")
-    public List<ch.actifsource.core.javamodel.IResource> AllSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("da82f449-4bc1-11ed-9983-274ab90bcd39")
     public java.lang.String OverrideOrName();
@@ -135,14 +135,14 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String GetShortname();
 
     @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
-    public List<ch.actifsource.core.javamodel.IResource> SystemConfigurationProperties();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
 
   }
   
   public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
-    public List<ch.actifsource.core.javamodel.IResource> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem);
 
   }
   
@@ -153,7 +153,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     private AbstractSystemFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IResource> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem) {
       return null;
     }
 
@@ -163,7 +163,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     private AbstractSystemFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IResource> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties(final ch.actifsource.core.javamodel.INamedResource abstractSystem) {
       return DynamicResourceUtil.invoke(IAbstractSystemFunctionsImpl.class, AbstractSystemFunctionsImpl.INSTANCE, abstractSystem).SystemConfigurationProperties(abstractSystem);
     }
 
@@ -172,7 +172,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   public static interface ISystemWithLayerFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
-    public List<ch.actifsource.core.javamodel.IResource> AllSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("6dc2087f-615d-11ef-bbc5-a94c7bfbdf81")
     public java.lang.String GetTypeName();
@@ -200,10 +200,10 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   public static interface INamedSystemWithSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fcec324a-8797-11e9-bb4b-c57da735262b")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetAllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("0c70d2c9-8798-11e9-bb4b-c57da735262b")
-    public List<ch.actifsource.core.javamodel.INamedResource> SortedAllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> SortedAllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("61eaf769-009f-11ea-9b43-0b5ecf12c553")
     public java.lang.String GroupName();
@@ -231,7 +231,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   public static interface ISystemOfSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("faa19cf3-deab-11e9-b714-478bec98e62d")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetAllSystemConfigurations();
 
   }
   
@@ -327,4 +327,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,1LbS1SWxFrbFdz/msGcnGXcY7oE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,LU3AMx4lLtQqDdwlyyl1MO4Zg6M=] */

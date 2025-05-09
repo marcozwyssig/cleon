@@ -30,13 +30,13 @@ public class FunctionSpace_Activity_Template {
     public java.lang.String CommonName();
 
     @IDynamicResourceExtension.MethodId("4a3a0826-6fab-11eb-a1e4-f1bdb2897690")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final ch.actifsource.core.javamodel.IDecorator serviceAccount);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount);
 
     @IDynamicResourceExtension.MethodId("b3a49380-de4c-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent);
 
     @IDynamicResourceExtension.MethodId("16c9702d-53a6-11ed-9288-01a0bbf601b0")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent);
 
     @IDynamicResourceExtension.MethodId("dc5d1980-864b-11eb-9869-4317e18e6c88")
     public ch.actifsource.core.javamodel.IResource AbstractSystemOrSystemConfiguration();
@@ -54,20 +54,20 @@ public class FunctionSpace_Activity_Template {
     public java.lang.String TypeName();
 
     @IDynamicResourceExtension.MethodId("42b44a01-07d7-11f0-bc12-1bbda1d7028e")
-    public ch.actifsource.core.javamodel.IDecorator AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups.javamodel.IADGroupAware AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
 
   }
   
   public static interface IAbstractActivityTemplatePermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4a3a0826-6fab-11eb-a1e4-f1bdb2897690")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final ch.actifsource.core.javamodel.IDecorator serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
 
     @IDynamicResourceExtension.MethodId("b3a49380-de4c-11eb-b028-df36f0dc7b24")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
 
     @IDynamicResourceExtension.MethodId("16c9702d-53a6-11ed-9288-01a0bbf601b0")
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList);
 
   }
   
@@ -78,7 +78,7 @@ public class FunctionSpace_Activity_Template {
     private AbstractActivityTemplatePermissionFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final ch.actifsource.core.javamodel.IDecorator serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       /* Begin Protected Region [[4a3a0826-6fab-11eb-a1e4-f1bdb2897690]] */
       final var serviceAccountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
       final var abstractSites = serviceAccountFunctions.GetAllowedSiteForServiceAccount();
@@ -99,7 +99,7 @@ public class FunctionSpace_Activity_Template {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       /* Begin Protected Region [[b3a49380-de4c-11eb-b028-df36f0dc7b24]] */
       final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
       final var abstractSites = roleSystemComponentFunctions.GetAllowedSiteForRoleSystemComponent();
@@ -121,7 +121,7 @@ public class FunctionSpace_Activity_Template {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       /* Begin Protected Region [[16c9702d-53a6-11ed-9288-01a0bbf601b0]] */
       final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);
       final var abstractSite = roleSystemComponentFunctions.GetAllowedLocalSiteForRoleSystemComponent();
@@ -147,15 +147,15 @@ public class FunctionSpace_Activity_Template {
 
     private AbstractActivityTemplatePermissionFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final ch.actifsource.core.javamodel.IDecorator serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissions(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware serviceAccount, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       return DynamicResourceUtil.invoke(IAbstractActivityTemplatePermissionFunctionsImpl.class, AbstractActivityTemplatePermissionFunctionsImpl.INSTANCE, abstractActivityTemplatePermissionList).ToActivePermissions(serviceAccount, abstractActivityTemplatePermissionList);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForSites(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       return DynamicResourceUtil.invoke(IAbstractActivityTemplatePermissionFunctionsImpl.class, AbstractActivityTemplatePermissionFunctionsImpl.INSTANCE, abstractActivityTemplatePermissionList).ToActivePermissionsForSites(roleSystemComponent, abstractActivityTemplatePermissionList);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final ch.actifsource.core.javamodel.IDecorator roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
+    public static List<ch.actifsource.core.javamodel.IDecorator> ToActivePermissionsForLocalSite(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware roleSystemComponent, final List<ch.actifsource.core.javamodel.IDecorator> abstractActivityTemplatePermissionList) {
       return DynamicResourceUtil.invoke(IAbstractActivityTemplatePermissionFunctionsImpl.class, AbstractActivityTemplatePermissionFunctionsImpl.INSTANCE, abstractActivityTemplatePermissionList).ToActivePermissionsForLocalSite(roleSystemComponent, abstractActivityTemplatePermissionList);
     }
 
@@ -167,7 +167,7 @@ public class FunctionSpace_Activity_Template {
     public ch.actifsource.core.javamodel.IResource AbstractSystemOrSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("5298e41e-07d7-11f0-bc12-1bbda1d7028e")
-    public ch.actifsource.core.javamodel.IDecorator AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups.javamodel.IADGroupAware AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("35ba7315-864c-11eb-9869-4317e18e6c88")
     public ch.actifsource.core.javamodel.INamedResource Permission();
@@ -210,7 +210,7 @@ public class FunctionSpace_Activity_Template {
     public ch.actifsource.core.javamodel.IResource AbstractSystemOrSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("625a3fb2-07d7-11f0-bc12-1bbda1d7028e")
-    public ch.actifsource.core.javamodel.IDecorator AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups.javamodel.IADGroupAware AuthZBuildingBlockForAbstractSystemOrSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("4011ca27-d5bf-11ec-ad12-8d6f8e00bc94")
     public ch.actifsource.core.javamodel.INamedResource Permission();
@@ -278,7 +278,7 @@ public class FunctionSpace_Activity_Template {
     public List<ch.actifsource.core.javamodel.IDecorator> AlllPermissionsFromDependsOn();
 
     @IDynamicResourceExtension.MethodId("8e7888ce-04b9-11f0-8e81-9be04e08660a")
-    public ch.actifsource.core.javamodel.INamedResource SystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware SystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("0d8d6bf9-04bc-11f0-8e81-9be04e08660a")
     public List<ch.actifsource.core.javamodel.IResource> AllDependsTo();
@@ -309,7 +309,7 @@ public class FunctionSpace_Activity_Template {
   public static interface IActivityTemplateAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b7d4ff36-0fd7-11f0-999f-c7e64e984aff")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetSystemConfigurationDependencies();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> GetSystemConfigurationDependencies();
 
   }
   
@@ -333,4 +333,4 @@ public class FunctionSpace_Activity_Template {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,H8P4iGNCFh7+6HG3srSKf+2nyx4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,/gg/geiLj+akLClbiTR/9DvL0DQ=] */

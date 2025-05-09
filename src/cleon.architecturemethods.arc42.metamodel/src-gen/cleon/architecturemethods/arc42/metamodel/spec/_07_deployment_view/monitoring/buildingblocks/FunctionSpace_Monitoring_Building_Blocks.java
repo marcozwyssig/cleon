@@ -64,7 +64,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     public List<ch.actifsource.core.javamodel.IResource> SelectInterfaces();
 
     @IDynamicResourceExtension.MethodId("bd36ecb5-e2e7-11ee-8945-4df0f2e1f411")
-    public List<ch.actifsource.core.javamodel.IResource> SelectSensorBuildingBlock();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.buildingblocks.javamodel.IAbstractSensorMonitoringBuildingBlock> SelectSensorBuildingBlock();
 
   }
   
@@ -310,7 +310,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     public ch.actifsource.core.javamodel.IDecorator Parent();
 
     @IDynamicResourceExtension.MethodId("ec15906e-e06b-11ea-bb83-59933a3fa779")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllSensorsWithExcluded();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware> SelectAllSensorsWithExcluded();
 
     @IDynamicResourceExtension.MethodId("7996825a-da39-11eb-8ffa-d7727a940bcf")
     public ch.actifsource.core.javamodel.IDecorator Top();
@@ -319,10 +319,10 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("f3a140ba-e2ea-11ee-8945-4df0f2e1f411")
-    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware> SelectSensorsFromBase();
 
     @IDynamicResourceExtension.MethodId("aebb6583-e2ec-11ee-8945-4df0f2e1f411")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllSensors();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware> SelectAllSensors();
 
   }
   
@@ -347,7 +347,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IAbstractSingleSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("32c4e3da-e2eb-11ee-8945-4df0f2e1f411")
-    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware> SelectSensorsFromBase();
 
   }
   
@@ -434,7 +434,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("53b0c6b4-e2eb-11ee-8945-4df0f2e1f411")
-    public List<ch.actifsource.core.javamodel.IResource> SelectSensorsFromBase();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IIntervalAware> SelectSensorsFromBase();
 
   }
   
@@ -533,4 +533,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,0vgTDyihQ8t1lvRK8veyW51gmog=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,+/vlbBN4o0Nx6gxOIQSh56diA5U=] */

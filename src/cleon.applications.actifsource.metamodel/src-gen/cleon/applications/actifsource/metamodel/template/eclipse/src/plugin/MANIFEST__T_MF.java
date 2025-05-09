@@ -23,7 +23,7 @@ public class MANIFEST__T_MF {
   public static interface IExportPackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9715e34c-49ee-11eb-a257-57f1ec3994e6")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyExports();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> OnlyExports();
 
     @IDynamicResourceExtension.MethodId("a62e5e49-49ef-11eb-a257-57f1ec3994e6")
     public java.lang.String PackageNames();
@@ -36,7 +36,7 @@ public class MANIFEST__T_MF {
   public static interface IExportPackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9715e34c-49ee-11eb-a257-57f1ec3994e6")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyExports(final List<ch.actifsource.core.javamodel.IDecorator> exportPackageList);
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> OnlyExports(final List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> exportPackageList);
 
   }
   
@@ -47,7 +47,7 @@ public class MANIFEST__T_MF {
     private ExportPackageFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyExports(final List<ch.actifsource.core.javamodel.IDecorator> exportPackageList) {
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> OnlyExports(final List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> exportPackageList) {
       /* Begin Protected Region [[9715e34c-49ee-11eb-a257-57f1ec3994e6]] */
       return exportPackageList.stream().filter(IExportPackage::selectIsExport).collect(Collectors.toList());
       /* End Protected Region   [[9715e34c-49ee-11eb-a257-57f1ec3994e6]] */
@@ -59,7 +59,7 @@ public class MANIFEST__T_MF {
 
     private ExportPackageFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyExports(final List<ch.actifsource.core.javamodel.IDecorator> exportPackageList) {
+    public static List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> OnlyExports(final List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> exportPackageList) {
       return DynamicResourceUtil.invoke(IExportPackageFunctionsImpl.class, ExportPackageFunctionsImpl.INSTANCE, exportPackageList).OnlyExports(exportPackageList);
     }
 
@@ -67,4 +67,4 @@ public class MANIFEST__T_MF {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,80a3b9c4-2d5d-11e5-a80e-a94c0ceb2081,OTwyDV4puLBr0Chf6/UNSFSe4Nc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,80a3b9c4-2d5d-11e5-a80e-a94c0ceb2081,a80EJ+a2QRcXgrmbFsuDAL9f6ek=] */

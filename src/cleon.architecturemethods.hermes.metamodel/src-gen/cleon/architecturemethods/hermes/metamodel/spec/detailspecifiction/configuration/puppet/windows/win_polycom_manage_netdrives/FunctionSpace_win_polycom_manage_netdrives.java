@@ -21,7 +21,7 @@ public class FunctionSpace_win_polycom_manage_netdrives {
   public static interface IAbstractShareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f752694f-0804-11f0-8081-eb3f9417daa7")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IShares Parent();
+    public ch.actifsource.core.javamodel.IResource Parent();
 
   }
   
@@ -74,7 +74,7 @@ public class FunctionSpace_win_polycom_manage_netdrives {
     public java.lang.String Path();
 
     @IDynamicResourceExtension.MethodId("fd70e0fd-0804-11f0-8081-eb3f9417daa7")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IShares Parent();
+    public ch.actifsource.core.javamodel.IResource Parent();
 
   }
   
@@ -99,7 +99,7 @@ public class FunctionSpace_win_polycom_manage_netdrives {
   public static interface IDfsRootShareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("10509379-0805-11f0-8081-eb3f9417daa7")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IShares Parent();
+    public ch.actifsource.core.javamodel.IResource Parent();
 
     @IDynamicResourceExtension.MethodId("38d4dceb-0808-11f0-8081-eb3f9417daa7")
     public java.lang.String Path();
@@ -126,4 +126,4 @@ public class FunctionSpace_win_polycom_manage_netdrives {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39a2b94c-07f6-11f0-bc12-1bbda1d7028e,XoumU07ehCcJbID9bZxTgG+/Sjg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39a2b94c-07f6-11f0-bc12-1bbda1d7028e,VDFIxGI1asCbImbMTRqPOacqYxA=] */

@@ -149,10 +149,10 @@ public class FunctionSpace_Docbook {
     public java.lang.String RenderSystemConfigurationName(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("f8b23885-1a86-11e9-ad9a-a143a9cb74e7")
-    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration(final ch.actifsource.core.javamodel.IResource language);
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("d36be71e-1b48-11e9-8bf4-8d8e8ba8db8b")
-    public cleon.operationalmethods.hermes.metamodel.spec.operational_manual.about.javamodel.IInstallationmanualReference GetReference(final ch.actifsource.core.javamodel.IResource language);
+    public ch.actifsource.core.javamodel.IDecorator GetReference(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -476,4 +476,4 @@ public class FunctionSpace_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a00a452b-1a64-11e9-b1cd-355f2e2f05a9,RvRoYpX5JqOSLSb3lfvIKc5v3fs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a00a452b-1a64-11e9-b1cd-355f2e2f05a9,B6KwfzdP7E5K9CEpbl2mxBU2aJ0=] */

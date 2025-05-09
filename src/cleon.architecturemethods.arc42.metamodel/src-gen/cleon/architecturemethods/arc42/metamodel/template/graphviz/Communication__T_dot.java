@@ -21,10 +21,10 @@ public class Communication__T_dot {
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f22de40c-7ea5-11ec-b55c-f5ca121c82b7")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllSourceAndDestinctSourceAndService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllSourceAndDestinctSourceAndService();
 
     @IDynamicResourceExtension.MethodId("ae5a7fa8-7ea6-11ec-b55c-f5ca121c82b7")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllDestinationAndDestinctDestinationAndService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllDestinationAndDestinctDestinationAndService();
 
   }
   
@@ -73,4 +73,4 @@ public class Communication__T_dot {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,52a8009b-80b1-11ea-939b-457d27a57c8c,rDvXiExkdfY3QYtnSMMCz92kuYg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,52a8009b-80b1-11ea-939b-457d27a57c8c,f78uLgGCphKL5wK9DabiEHcV/hM=] */

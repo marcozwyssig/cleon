@@ -220,7 +220,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResult);
+    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult);
 
   }
   
@@ -231,7 +231,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     private TestResultFunctionsImpl() {}
 
     @Override
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResult) {
+    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
       return null;
     }
 
@@ -241,7 +241,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestResultFunctions() {}
 
-    public static java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResult) {
+    public static java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
       return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).Render(language, testResult);
     }
 
@@ -648,4 +648,4 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,7Ji+hlikWB6QIzvZWKubBQC4Z5A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,LvEilMFBSY3bMTHjqPpe84oG6YA=] */

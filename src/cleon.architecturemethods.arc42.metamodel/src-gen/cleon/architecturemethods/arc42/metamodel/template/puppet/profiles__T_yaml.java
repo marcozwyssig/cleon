@@ -183,7 +183,7 @@ public class profiles__T_yaml {
   public static interface IRequestMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0ee7c813-dc8a-11ea-a169-cb4c6ff66798")
-    public java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestMethod);
+    public java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestMethod requestMethod);
 
   }
   
@@ -194,7 +194,7 @@ public class profiles__T_yaml {
     private RequestMethodFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestMethod) {
+    public java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestMethod requestMethod) {
       /* Begin Protected Region [[0ee7c813-dc8a-11ea-a169-cb4c6ff66798]] */
       if( requestMethod.isGET()) {
       	return 0;
@@ -209,7 +209,7 @@ public class profiles__T_yaml {
 
     private RequestMethodFunctions() {}
 
-    public static java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestMethod) {
+    public static java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestMethod requestMethod) {
       return DynamicResourceUtil.invoke(IRequestMethodFunctionsImpl.class, RequestMethodFunctionsImpl.INSTANCE, requestMethod).value(requestMethod);
     }
 
@@ -225,7 +225,7 @@ public class profiles__T_yaml {
   public static interface IRequestProtocolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("712cf256-dc8a-11ea-a169-cb4c6ff66798")
-    public java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestProtocol);
+    public java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestProtocol requestProtocol);
 
   }
   
@@ -236,7 +236,7 @@ public class profiles__T_yaml {
     private RequestProtocolFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestProtocol) {
+    public java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestProtocol requestProtocol) {
       /* Begin Protected Region [[712cf256-dc8a-11ea-a169-cb4c6ff66798]] */
       if (requestProtocol.isHttp() ) {
       	return 0;
@@ -251,7 +251,7 @@ public class profiles__T_yaml {
 
     private RequestProtocolFunctions() {}
 
-    public static java.lang.Integer value(final ch.actifsource.core.javamodel.IEnumValue requestProtocol) {
+    public static java.lang.Integer value(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.javamodel.IRequestProtocol requestProtocol) {
       return DynamicResourceUtil.invoke(IRequestProtocolFunctionsImpl.class, RequestProtocolFunctionsImpl.INSTANCE, requestProtocol).value(requestProtocol);
     }
 
@@ -395,7 +395,7 @@ public class profiles__T_yaml {
   public static interface ISnmpCustomAdvancedChannelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("44bd1e5b-8af4-11eb-82c2-f3f196623a8b")
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomAdvancedChannel);
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel);
 
   }
   
@@ -406,7 +406,7 @@ public class profiles__T_yaml {
     private SnmpCustomAdvancedChannelFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomAdvancedChannel) {
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel) {
       /* Begin Protected Region [[44bd1e5b-8af4-11eb-82c2-f3f196623a8b]] */
       final var functions = snmpCustomAdvancedChannel.extension(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomadvanced.FunctionSpace_SnmpCustomAdvanced.ISnmpCustomAdvancedChannelFunctions.class);
       var i = 0;
@@ -426,7 +426,7 @@ public class profiles__T_yaml {
 
     private SnmpCustomAdvancedChannelFunctions() {}
 
-    public static java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomAdvancedChannel) {
+    public static java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel) {
       return DynamicResourceUtil.invoke(ISnmpCustomAdvancedChannelFunctionsImpl.class, SnmpCustomAdvancedChannelFunctionsImpl.INSTANCE, snmpCustomAdvancedChannel).Position(snmpCustomAdvancedChannel);
     }
 
@@ -517,7 +517,7 @@ public class profiles__T_yaml {
   public static interface ISnmpCustomTableChannelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042")
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomTableChannel);
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel);
 
   }
   
@@ -528,7 +528,7 @@ public class profiles__T_yaml {
     private SnmpCustomTableChannelFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomTableChannel) {
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel) {
       /* Begin Protected Region [[14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042]] */
       final var parent = Snmpcustomtable.selectToMeSnmpCustomTableChannels(snmpCustomTableChannel);
       var i = 1;
@@ -548,7 +548,7 @@ public class profiles__T_yaml {
 
     private SnmpCustomTableChannelFunctions() {}
 
-    public static java.lang.Integer Position(final ch.actifsource.core.javamodel.INamedResource snmpCustomTableChannel) {
+    public static java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel) {
       return DynamicResourceUtil.invoke(ISnmpCustomTableChannelFunctionsImpl.class, SnmpCustomTableChannelFunctionsImpl.INSTANCE, snmpCustomTableChannel).Position(snmpCustomTableChannel);
     }
 
@@ -556,4 +556,4 @@ public class profiles__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,+ejoHBzVhYGpSfSBPaVuYeCWBLI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,kv2mxLr1IIh2mx0OXBfJFi8IP+g=] */

@@ -45,7 +45,7 @@ public class FunctionSpace_Project {
     public java.lang.Boolean UseSimpleName();
 
     @IDynamicResourceExtension.MethodId("18ec0402-41a5-11e8-81d0-774e4d9334dd")
-    public List<ch.actifsource.core.javamodel.IResource> ListNatures();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.INature> ListNatures();
 
     @IDynamicResourceExtension.MethodId("6062fd26-d093-11e8-b005-f7630e4c29c0")
     public List<ch.actifsource.core.javamodel.IResource> DirectDependingBuildingBlocks();
@@ -289,4 +289,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,UN7rf+PDPtOf+LO2AlRr/9WLpyg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,HuMN2WhdCwa0C4PIIOSCWRYjXeE=] */

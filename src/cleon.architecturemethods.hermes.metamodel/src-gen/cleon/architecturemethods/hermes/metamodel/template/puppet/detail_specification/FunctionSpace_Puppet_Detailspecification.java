@@ -925,7 +925,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IAbstractAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3d5f06aa-272b-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("69875858-272b-11f0-8098-59f455ea82af")
     public java.lang.String OU();
@@ -962,7 +962,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0c46b4b1-272c-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("415d19ab-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -993,7 +993,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface ITestAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("14a224b0-272c-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("4b35656c-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -1074,6 +1074,84 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class WorkplaceLinksFunctions {
 
     private WorkplaceLinksFunctions() {}
+
+  }
+
+  public static interface IAbstractComputerGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("004d3e73-2ccf-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("004d3f30-2ccf-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IAbstractComputerGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractComputerGroupsFunctionsImpl implements IAbstractComputerGroupsFunctionsImpl {
+
+    public static final IAbstractComputerGroupsFunctionsImpl INSTANCE = new AbstractComputerGroupsFunctionsImpl();
+
+    private AbstractComputerGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractComputerGroupsFunctions {
+
+    private AbstractComputerGroupsFunctions() {}
+
+  }
+
+  public static interface IEpoComputerGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("17482894-2cd0-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassDefinition();
+
+  }
+  
+  public static interface IEpoComputerGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EpoComputerGroupsFunctionsImpl implements IEpoComputerGroupsFunctionsImpl {
+
+    public static final IEpoComputerGroupsFunctionsImpl INSTANCE = new EpoComputerGroupsFunctionsImpl();
+
+    private EpoComputerGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class EpoComputerGroupsFunctions {
+
+    private EpoComputerGroupsFunctions() {}
+
+  }
+
+  public static interface IWusComputerGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1807cf7b-2cd0-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassDefinition();
+
+  }
+  
+  public static interface IWusComputerGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WusComputerGroupsFunctionsImpl implements IWusComputerGroupsFunctionsImpl {
+
+    public static final IWusComputerGroupsFunctionsImpl INSTANCE = new WusComputerGroupsFunctionsImpl();
+
+    private WusComputerGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class WusComputerGroupsFunctions {
+
+    private WusComputerGroupsFunctions() {}
 
   }
 
@@ -1443,4 +1521,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,vVfS0kkr0eTo1WvoNnWG64ZP/14=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,dmUw2CfrDJMt2jMvsL47kcz4ynk=] */

@@ -21,7 +21,7 @@ public class FunctionSpace_Nature {
   public static interface IPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e0bf1aa6-491a-11eb-9bd7-6114c4f17e0c")
-    public List<ch.actifsource.core.javamodel.INamedResource> FindPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage> FindPackages();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Nature {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce1ac3ff-491a-11eb-9bd7-6114c4f17e0c,k9VscJvDOZXK+k9OcsCD7itNDbw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce1ac3ff-491a-11eb-9bd7-6114c4f17e0c,fJz9PZSIEqGUVbHH4RY2LwVETE0=] */

@@ -46,7 +46,7 @@ public class FunctionSpace_TestSpecificationDocument {
   public static interface ITestSpecificationDocumentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f1d60576-fa98-11eb-be75-2537968f2820")
-    public ch.actifsource.core.javamodel.INamedResource TestConcept();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware TestConcept();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_TestSpecificationDocument {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,rejo4DdAPIfQq8SjGdtvadH/LSI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,ziBPnYyMFx+c5V1Qql9irMpvorA=] */

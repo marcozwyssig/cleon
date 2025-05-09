@@ -174,7 +174,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IAbstractProductEnvironmentLicensingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b1465104-e465-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -199,7 +199,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IUserLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1840ed3c-e466-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -224,7 +224,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IPerInstanceLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8b41d85b-e466-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -249,7 +249,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IWindowsServerLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2fff27bc-e467-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -274,7 +274,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IRhelServerLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("10a5fd47-e468-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -299,7 +299,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IVmwareEsxiServerLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ed1e85ab-e4a2-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -324,7 +324,7 @@ public class FunctionSpace_Xml_Licensing {
   public static interface IVeeamAvailabilitySuiteLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("665de6ee-e4b8-11ef-a6bd-497168f25adc")
-    public java.lang.String RenderLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.javamodel.IProductLicensingForEnvironment productLicensingForEnvironment);
+    public java.lang.String RenderLicense(final ch.actifsource.core.javamodel.IDecorator productLicensingForEnvironment);
 
   }
   
@@ -348,4 +348,4 @@ public class FunctionSpace_Xml_Licensing {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,duOmsNWs8s77pML0bgUCJjz858o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e2cb080d-e45e-11ef-962f-1d8cbb5022ed,jVTB4s63u0zyIRA5g1fjql4+qus=] */

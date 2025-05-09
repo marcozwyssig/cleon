@@ -21,16 +21,16 @@ public class FunctionSpace_SystemArc42 {
   public static interface Iarc42DocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("45c60299-5d76-11ea-a17e-876aff2eba30")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("74fb7141-2f40-11eb-a94a-69eb35614fc8")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllBuildSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllBuildSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("032975f9-d21c-11ee-9471-713ee8ae5987")
-    public List<ch.actifsource.core.javamodel.IResource> AllBuildSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware> AllBuildSystemComponents();
 
     @IDynamicResourceExtension.MethodId("da0e8af9-95ca-11ea-9744-7dd962dc1878")
-    public List<ch.actifsource.core.javamodel.IResource> AllSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware> AllSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d6f12bfe-fd72-11ea-bd30-fd04439335e1")
     public List<ch.actifsource.core.javamodel.INamedResource> AllSystems();
@@ -64,7 +64,7 @@ public class FunctionSpace_SystemArc42 {
     public ch.actifsource.core.javamodel.IResource Network();
 
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
-    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration(final java.lang.String name);
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration(final java.lang.String name);
 
     @IDynamicResourceExtension.MethodId("ce9a9045-dfc2-11ef-b0be-9b4cac321140")
     public List<ch.actifsource.core.javamodel.INamedResource> Environments();
@@ -74,7 +74,7 @@ public class FunctionSpace_SystemArc42 {
   public static interface ISystemArc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
-    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration(final java.lang.String name, final ch.actifsource.core.javamodel.IResource systemArc42Document);
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration(final java.lang.String name, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware systemArc42Document);
 
   }
   
@@ -85,7 +85,7 @@ public class FunctionSpace_SystemArc42 {
     private SystemArc42DocumentFunctionsImpl() {}
 
     @Override
-    public ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration(final java.lang.String name, final ch.actifsource.core.javamodel.IResource systemArc42Document) {
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration(final java.lang.String name, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware systemArc42Document) {
       /* Begin Protected Region [[5d3590b9-b20a-11ea-a3a2-e9d3344bee73]] */
     	final Iarc42DocumentFunctions iarc42DocumentFunctions = systemArc42Document.extension(Iarc42DocumentFunctions.class);
     	final List<ISystemConfiguration> systemConfigurations = iarc42DocumentFunctions.AllSystemConfigurations();
@@ -104,7 +104,7 @@ public class FunctionSpace_SystemArc42 {
 
     private SystemArc42DocumentFunctions() {}
 
-    public static ch.actifsource.core.javamodel.INamedResource GetSystemConfiguration(final java.lang.String name, final ch.actifsource.core.javamodel.IResource systemArc42Document) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration(final java.lang.String name, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware systemArc42Document) {
       return DynamicResourceUtil.invoke(ISystemArc42DocumentFunctionsImpl.class, SystemArc42DocumentFunctionsImpl.INSTANCE, systemArc42Document).GetSystemConfiguration(name, systemArc42Document);
     }
 
@@ -112,4 +112,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,r2xj37/uPMWZhvCzqduUfOf0QwY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,h7S2TD0h1nGocOJn4Kp59YaH5qQ=] */

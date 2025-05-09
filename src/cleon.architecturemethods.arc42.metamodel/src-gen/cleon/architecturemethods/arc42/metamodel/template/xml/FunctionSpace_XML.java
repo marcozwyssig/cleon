@@ -209,7 +209,7 @@ public class FunctionSpace_XML {
   public static interface IServiceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be4907b4-ba5b-11ec-a408-4ba6a2d760ef")
-    public List<ch.actifsource.core.javamodel.IDecorator> UsedSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> UsedSources();
 
   }
   
@@ -233,4 +233,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,cG3xILTk4/kI4mYfkmDmgwKyupY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,nU4Z38nXsFWd5BmXXkNzco7gr88=] */

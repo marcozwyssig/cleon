@@ -21,7 +21,7 @@ public class FunctionSpace_SnmpCustomAdvanced {
   public static interface ISnmpCustomAdvancedChannelFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8dfd9895-8b00-11eb-82c2-f3f196623a8b")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllChannels();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel> AllChannels();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_SnmpCustomAdvanced {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,86892e72-8b00-11eb-82c2-f3f196623a8b,ixXH1d7/Ncavr1DVIcKA7anPD6U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,86892e72-8b00-11eb-82c2-f3f196623a8b,Hvyz60nWk/sa07WGhs5Z9XtS8wA=] */

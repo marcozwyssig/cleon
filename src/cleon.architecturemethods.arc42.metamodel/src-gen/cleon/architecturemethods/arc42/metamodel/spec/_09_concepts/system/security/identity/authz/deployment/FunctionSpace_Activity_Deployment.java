@@ -26,17 +26,17 @@ public class FunctionSpace_Activity_Deployment {
   public static interface IEnvironmentRBACFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2f538e63-1e07-11e9-834d-77c41fccc6bf")
-    public ch.actifsource.core.javamodel.IResource GetArc42_Document();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetArc42_Document();
 
     @IDynamicResourceExtension.MethodId("f29d2896-78de-11ea-a009-ab381ce86597")
-    public ch.actifsource.core.javamodel.IDecorator GetRoleSystemComponent(final ch.actifsource.core.javamodel.INamedResource site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final ch.actifsource.core.javamodel.IResource systemComponent);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware GetRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware systemComponent);
 
   }
   
   public static interface IEnvironmentRBACFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f29d2896-78de-11ea-a009-ab381ce86597")
-    public ch.actifsource.core.javamodel.IDecorator GetRoleSystemComponent(final ch.actifsource.core.javamodel.INamedResource site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final ch.actifsource.core.javamodel.IResource systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC);
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware GetRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC);
 
   }
   
@@ -47,7 +47,7 @@ public class FunctionSpace_Activity_Deployment {
     private EnvironmentRBACFunctionsImpl() {}
 
     @Override
-    public ch.actifsource.core.javamodel.IDecorator GetRoleSystemComponent(final ch.actifsource.core.javamodel.INamedResource site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final ch.actifsource.core.javamodel.IResource systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC) {
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware GetRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
       final IRoleSiteGroup roleNetDomainGroup = environmentRBAC.selectRoleRootGroups().selectRoleForSite().values()
       		.stream().filter(x -> x.selectSite().selectName().equals(site.selectName())).findFirst()
@@ -76,7 +76,7 @@ public class FunctionSpace_Activity_Deployment {
 
     private EnvironmentRBACFunctions() {}
 
-    public static ch.actifsource.core.javamodel.IDecorator GetRoleSystemComponent(final ch.actifsource.core.javamodel.INamedResource site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final ch.actifsource.core.javamodel.IResource systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware GetRoleSystemComponent(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware site, final ch.actifsource.core.javamodel.INamedResource actor, final ch.actifsource.core.javamodel.INamedResource responsibilty, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware systemComponent, final ch.actifsource.core.javamodel.IDecorator environmentRBAC) {
       return DynamicResourceUtil.invoke(IEnvironmentRBACFunctionsImpl.class, EnvironmentRBACFunctionsImpl.INSTANCE, environmentRBAC).GetRoleSystemComponent(site, actor, responsibilty, systemComponent, environmentRBAC);
     }
 
@@ -166,7 +166,7 @@ public class FunctionSpace_Activity_Deployment {
   public static interface IAbstractGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f50d9215-b079-11ea-b791-9b401fd02359")
-    public ch.actifsource.core.javamodel.INamedResource GetSite();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware GetSite();
 
     @IDynamicResourceExtension.MethodId("ac99f866-7f25-11e9-9a52-07d4b074defc")
     public ch.actifsource.core.javamodel.IDecorator GetSiteGroup();
@@ -190,10 +190,10 @@ public class FunctionSpace_Activity_Deployment {
     public List<ch.actifsource.core.javamodel.IResource> AllGroupChildren();
 
     @IDynamicResourceExtension.MethodId("b4566d55-0deb-11ea-91d3-b3e983305cb0")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllRoleSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> GetAllRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d55df488-19b9-11ea-bc72-af84f3c76c84")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetSiteWithAllowedToManage();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware> GetSiteWithAllowedToManage();
 
     @IDynamicResourceExtension.MethodId("9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d")
     public <T extends ch.actifsource.core.javamodel.IResource> List<T> OnlyActiveOrDefaultTrueRecursive();
@@ -333,4 +333,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,i8sVf/G1B35IjPip1te/Y2ereOQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,Jnx9TE6wjftnvjtrzuHOLKmjjBs=] */

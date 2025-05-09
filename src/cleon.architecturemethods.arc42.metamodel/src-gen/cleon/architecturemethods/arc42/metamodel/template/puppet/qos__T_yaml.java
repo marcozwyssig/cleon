@@ -23,7 +23,7 @@ public class qos__T_yaml {
   public static interface IServiceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a5d67638-a0e2-11ea-8daa-afb4679c3497")
-    public java.lang.String PolicyName(final ch.actifsource.core.javamodel.IDecorator qoSSystemConfigurationSource);
+    public java.lang.String PolicyName(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
   }
   
@@ -48,14 +48,14 @@ public class qos__T_yaml {
   public static interface IQoSSystemConfigurationSourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da9e57ef-5289-11ec-9fcc-f3bdcf3059b2")
-    public List<ch.actifsource.core.javamodel.IDecorator> WithoutDF();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> WithoutDF();
 
   }
   
   public static interface IQoSSystemConfigurationSourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("da9e57ef-5289-11ec-9fcc-f3bdcf3059b2")
-    public List<ch.actifsource.core.javamodel.IDecorator> WithoutDF(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationSourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> WithoutDF(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> qoSSystemConfigurationSourceList);
 
   }
   
@@ -66,7 +66,7 @@ public class qos__T_yaml {
     private QoSSystemConfigurationSourceFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> WithoutDF(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationSourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> WithoutDF(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> qoSSystemConfigurationSourceList) {
       /* Begin Protected Region [[da9e57ef-5289-11ec-9fcc-f3bdcf3059b2]] */
       return qoSSystemConfigurationSourceList.stream().filter(x -> !x.selectServiceClass().getResource().equals(QosPackage.DSCP_DF__F___S___F_Standard)).collect(Collectors.toList());
       /* End Protected Region   [[da9e57ef-5289-11ec-9fcc-f3bdcf3059b2]] */
@@ -78,7 +78,7 @@ public class qos__T_yaml {
 
     private QoSSystemConfigurationSourceFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> WithoutDF(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationSourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> WithoutDF(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationSource> qoSSystemConfigurationSourceList) {
       return DynamicResourceUtil.invoke(IQoSSystemConfigurationSourceFunctionsImpl.class, QoSSystemConfigurationSourceFunctionsImpl.INSTANCE, qoSSystemConfigurationSourceList).WithoutDF(qoSSystemConfigurationSourceList);
     }
 
@@ -125,4 +125,4 @@ public class qos__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7efd3326-a0e1-11ea-8daa-afb4679c3497,xoMp6vRyIEzou2MuzMQdSiuSWB0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7efd3326-a0e1-11ea-8daa-afb4679c3497,EWJrd0eh2lF3tb8ZmQXuOyb4vAI=] */

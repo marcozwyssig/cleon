@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="1737a7ec-13bf-11f0-b664-c7b92124985d">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="d789f8cb-13bf-11f0-b664-c7b92124985d" type="resource" guid="be0a6987-13bf-11f0-b664-c7b92124985d" />
+    <resource statement-guid="5e5c2841-2ca1-11f0-851f-3f768d79c0eb" type="resource" guid="5e5b8bfb-2ca1-11f0-851f-3f768d79c0eb" />
     <resource statement-guid="5064cdca-13bf-11f0-b664-c7b92124985d" type="resource" guid="5064a6b6-13bf-11f0-b664-c7b92124985d">
       <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
         <resource statement-guid="552cb5d3-13bf-11f0-b664-c7b92124985d" type="resource" guid="2462525e-13bf-11f0-b664-c7b92124985d">
@@ -87,6 +88,25 @@
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="be0b2cdb-13bf-11f0-b664-c7b92124985d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="9c65b11d-52ac-11e4-bb97-2f08c10a4f27">
+          <object statement-guid="c4be5491-2ca1-11f0-851f-3f768d79c0eb" type="resource" guid="a06ac79b-1130-11f0-a4f9-b5f995a9e0fe" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5e5c2841-2ca1-11f0-851f-3f768d79c0eb">
+      <resource guid="5e5b8bfb-2ca1-11f0-851f-3f768d79c0eb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5e5b8bfc-2ca1-11f0-851f-3f768d79c0eb" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5e5b8bfd-2ca1-11f0-851f-3f768d79c0eb" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5f6a8b1f-2ca1-11f0-851f-3f768d79c0eb" type="literal">chocoInstallerPath</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5e5b8bff-2ca1-11f0-851f-3f768d79c0eb" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
       </resource>
     </object>
@@ -315,7 +335,7 @@
           </object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="5064f4db-13bf-11f0-b664-c7b92124985d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+          <object statement-guid="5064f4db-13bf-11f0-b664-c7b92124985d" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="5064f4dc-13bf-11f0-b664-c7b92124985d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
@@ -327,7 +347,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="1739f1df-13bf-11f0-b664-c7b92124985d" type="literal">InstallChocoSoftware</object>
+    <object statement-guid="1739f1df-13bf-11f0-b664-c7b92124985d" type="literal">ChocoSoftware</object>
   </predicate>
 </resource>
 

@@ -8,7 +8,7 @@ public interface IRegistrySetting extends ch.actifsource.core.javamodel.INamedRe
   
   // attributes
   
-  public java.lang.String selectKey();
+  public java.lang.String selectRegistryKey();
   
   public java.lang.String selectValueType();
   
@@ -16,4 +16,4 @@ public interface IRegistrySetting extends ch.actifsource.core.javamodel.INamedRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,niCXK4qUBLEE7B1LXCly4qZ08Xw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,XgfpefqB1VUW+JrHogo7oX4enQ4=] */

@@ -58,12 +58,12 @@ public class RegistryValue extends DynamicResource implements IRegistryValue {
   }
 
   @Override
-  public java.lang.String selectPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_path);
+  public java.lang.String selectRegistryKey() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_registryKey);
   }
     
-  public void setPath(java.lang.String path) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_path, path);
+  public void setRegistryKey(java.lang.String registryKey) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_registryKey, registryKey);
   }
 
   @Override
@@ -104,7 +104,7 @@ public class RegistryValue extends DynamicResource implements IRegistryValue {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_data, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_path, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_registryKey, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_type, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetState.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.RegistryValue_ensure, visitor);
@@ -116,4 +116,4 @@ public class RegistryValue extends DynamicResource implements IRegistryValue {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b05acf64-1b6a-11f0-9c3a-8502b2fb88fb,lYq8wtll3NMce1b2YqHT9s8RAHc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b05acf64-1b6a-11f0-9c3a-8502b2fb88fb,RegGLKcet2eL8M1Mf7dTSsOB0YQ=] */

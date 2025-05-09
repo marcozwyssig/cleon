@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.applications.actifsource.sample.category_a.builtin_a.model.test1</name>
-	<comment/>
+	<comment></comment>
 	<projects>
 		<project>cleon.applications.actifsource.sample.category_a.builtin_a.metamodel</project>
-		<!-- Begin Protected Region [[customProjects]] -->
-		
-		<!-- End Protected Region   [[customProjects]] -->
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -24,10 +21,15 @@
 		<nature>ch.actifsource.environment.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
+	<filteredResources>
+		<filter>
+			<id>1747216950218</id>
+			<name></name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,003fb2e1-2638-11ea-8c59-871562e3b5c4,Hash] -->

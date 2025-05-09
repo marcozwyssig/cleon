@@ -31,10 +31,10 @@ public class FunctionSpace_Language_Instance {
   public static interface ILanguageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f8b23eaa-a0f4-11ef-9443-0b421a1b8616")
-    public java.lang.Boolean isEn(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.Boolean isEn(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("5373951c-a0f5-11ef-9443-0b421a1b8616")
-    public java.lang.Boolean isDe(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.Boolean isDe(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -45,14 +45,14 @@ public class FunctionSpace_Language_Instance {
     private LanguageFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean isEn(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
+    public java.lang.Boolean isEn(final ch.actifsource.core.javamodel.IResource language) {
       /* Begin Protected Region [[f8b23eaa-a0f4-11ef-9443-0b421a1b8616]] */
     	return language.getResource().equals(InstancesModel.en__F___S___F_English);  
       /* End Protected Region   [[f8b23eaa-a0f4-11ef-9443-0b421a1b8616]] */
     }
 
     @Override
-    public java.lang.Boolean isDe(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
+    public java.lang.Boolean isDe(final ch.actifsource.core.javamodel.IResource language) {
       /* Begin Protected Region [[5373951c-a0f5-11ef-9443-0b421a1b8616]] */
     	return language.getResource().equals(InstancesModel.de__F___S___F_German);  
       /* End Protected Region   [[5373951c-a0f5-11ef-9443-0b421a1b8616]] */
@@ -64,11 +64,11 @@ public class FunctionSpace_Language_Instance {
 
     private LanguageFunctions() {}
 
-    public static java.lang.Boolean isEn(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
+    public static java.lang.Boolean isEn(final ch.actifsource.core.javamodel.IResource language) {
       return DynamicResourceUtil.invoke(ILanguageFunctionsImpl.class, LanguageFunctionsImpl.INSTANCE, language).isEn(language);
     }
 
-    public static java.lang.Boolean isDe(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language) {
+    public static java.lang.Boolean isDe(final ch.actifsource.core.javamodel.IResource language) {
       return DynamicResourceUtil.invoke(ILanguageFunctionsImpl.class, LanguageFunctionsImpl.INSTANCE, language).isDe(language);
     }
 
@@ -76,4 +76,4 @@ public class FunctionSpace_Language_Instance {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ef3c5f23-a0f4-11ef-9443-0b421a1b8616,JspVVBW56tGf2t7B97la5jati70=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ef3c5f23-a0f4-11ef-9443-0b421a1b8616,tgRB8e/mW/qR6mh+Ij9lT7Gm+jI=] */

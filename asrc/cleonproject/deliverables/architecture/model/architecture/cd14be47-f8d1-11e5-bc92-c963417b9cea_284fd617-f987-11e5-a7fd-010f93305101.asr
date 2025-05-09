@@ -553,8 +553,12 @@
         <resource statement-guid="5cd92a73-21ad-11f0-83ae-df5418a109a4" type="resource" guid="5cd92a70-21ad-11f0-83ae-df5418a109a4" />
         <resource statement-guid="49f79bb0-2731-11f0-8098-59f455ea82af" type="resource" guid="49f6d85d-2731-11f0-8098-59f455ea82af" />
         <resource statement-guid="b46fe57c-2734-11f0-8098-59f455ea82af" type="resource" guid="b46fbe69-2734-11f0-8098-59f455ea82af" />
+<<<<<<< HEAD
         <resource statement-guid="089c404a-3006-11f0-a908-cd18bb743067" type="resource" guid="089c4047-3006-11f0-a908-cd18bb743067" />
         <resource statement-guid="08abf7c1-3006-11f0-a908-cd18bb743067" type="resource" guid="08abf7be-3006-11f0-a908-cd18bb743067" />
+=======
+        <resource statement-guid="58ead734-2c1b-11f0-8b7a-6dfeafb0166d" type="resource" guid="58ea6201-2c1b-11f0-8b7a-6dfeafb0166d" />
+>>>>>>> e7de8c69d (updated)
       </owns>
     </resource>
   </owns>
@@ -6074,6 +6078,7 @@
               </predicate>
             </resource>
           </object>
+<<<<<<< HEAD
           <object statement-guid="089c404a-3006-11f0-a908-cd18bb743067">
             <resource guid="089c4047-3006-11f0-a908-cd18bb743067">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -6091,6 +6096,15 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="08abf7c2-3006-11f0-a908-cd18bb743067" type="literal">cleon.architecturemethods.arc42.metamodel.template.xmi.data_view</object>
+=======
+          <object statement-guid="58ead734-2c1b-11f0-8b7a-6dfeafb0166d">
+            <resource guid="58ea6201-2c1b-11f0-8b7a-6dfeafb0166d">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="58ea8913-2c1b-11f0-8b7a-6dfeafb0166d" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="58eb4c65-2c1b-11f0-8b7a-6dfeafb0166d" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_dotnet</object>
+>>>>>>> e7de8c69d (updated)
               </predicate>
             </resource>
           </object>

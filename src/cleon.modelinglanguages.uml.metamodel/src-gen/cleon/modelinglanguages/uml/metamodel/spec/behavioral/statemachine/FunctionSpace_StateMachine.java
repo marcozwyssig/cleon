@@ -21,7 +21,7 @@ public class FunctionSpace_StateMachine {
   public static interface IStateMachineDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9215e73b-345d-11e5-909a-4bcced25d7ee")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.IState> GetStates();
+    public List<ch.actifsource.core.javamodel.INamedResource> GetStates();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_StateMachine {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a042bd0-345d-11e5-909a-4bcced25d7ee,P3U9MtQsxgrYQ7QQFQ3EQQ9NldE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a042bd0-345d-11e5-909a-4bcced25d7ee,qmeTFGniGFLzuiFENk4d/FraqBY=] */

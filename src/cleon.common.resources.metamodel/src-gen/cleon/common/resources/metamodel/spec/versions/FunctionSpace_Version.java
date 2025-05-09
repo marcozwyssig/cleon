@@ -57,7 +57,7 @@ public class FunctionSpace_Version {
   public static interface ISemanticVersionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("727a5d2b-7d8a-11e7-a9ca-85a6566b931d")
-    public java.lang.String GetTimeStamp(final cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion semanticVersion);
+    public java.lang.String GetTimeStamp(final ch.actifsource.core.javamodel.IResource semanticVersion);
 
   }
   
@@ -68,7 +68,7 @@ public class FunctionSpace_Version {
     private SemanticVersionFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetTimeStamp(final cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion semanticVersion) {
+    public java.lang.String GetTimeStamp(final ch.actifsource.core.javamodel.IResource semanticVersion) {
       /* Begin Protected Region [[727a5d2b-7d8a-11e7-a9ca-85a6566b931d]] */
     	Date now = new Date();
     	return new SimpleDateFormat("yyyyMMddHHmm", java.util.Locale.ENGLISH).format(now);
@@ -81,7 +81,7 @@ public class FunctionSpace_Version {
 
     private SemanticVersionFunctions() {}
 
-    public static java.lang.String GetTimeStamp(final cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion semanticVersion) {
+    public static java.lang.String GetTimeStamp(final ch.actifsource.core.javamodel.IResource semanticVersion) {
       return DynamicResourceUtil.invoke(ISemanticVersionFunctionsImpl.class, SemanticVersionFunctionsImpl.INSTANCE, semanticVersion).GetTimeStamp(semanticVersion);
     }
 
@@ -89,4 +89,4 @@ public class FunctionSpace_Version {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0f662315-7d8a-11e7-a9ca-85a6566b931d,L4/OUH5FtkwUHOmTImaG0qzjJhA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0f662315-7d8a-11e7-a9ca-85a6566b931d,HjUHagyGG5t3kycpL7DJrNn+5cw=] */

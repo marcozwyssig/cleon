@@ -24,7 +24,7 @@ public class Win_polycom_operationsPackage {
   public static final Resource RegistryKeys = new Resource("a80fdb6d-1b6a-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue = new Resource("b05acf64-1b6a-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryKeys_registryValues = new Resource("b7fdc467-1b6a-11f0-9c3a-8502b2fb88fb");
-  public static final Resource RegistryValue_path = new Resource("e6dece1d-1b6a-11f0-9c3a-8502b2fb88fb");
+  public static final Resource RegistryValue_registryKey = new Resource("e6dece1d-1b6a-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue_ensure = new Resource("0e8ce346-1b6b-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue_type = new Resource("3ad9fb43-1b6b-11f0-9c3a-8502b2fb88fb");
   public static final Resource RegistryValue_data = new Resource("40ce2e9a-1b6b-11f0-9c3a-8502b2fb88fb");
@@ -39,6 +39,12 @@ public class Win_polycom_operationsPackage {
   public static final Resource CleanUpTask_excluderootfolder = new Resource("84203b6b-275a-11f0-b32f-851840d4a5f4");
   public static final Resource SetWindowsEdition = new Resource("c0fe0fa0-2b0d-11f0-a774-db5eb4cfeffd");
   public static final Resource SetWindowsEdition_productKey = new Resource("d3ad1485-2b0d-11f0-a774-db5eb4cfeffd");
+  public static final Resource LocalUsers = new Resource("00ac9e1c-2bdb-11f0-8d6d-718895c90832");
+  public static final Resource LocalUser = new Resource("9c30fcad-2be0-11f0-9ce1-09b647a63c7b");
+  public static final Resource LocalUsers_localUsers = new Resource("a4d694b5-2be0-11f0-9ce1-09b647a63c7b");
+  public static final Resource LocalUser_serviceAccount_aE_Local = new Resource("b4e5729b-2be0-11f0-9ce1-09b647a63c7b");
+  public static final Resource LocalUser_password = new Resource("1aa719b6-2be1-11f0-9ce1-09b647a63c7b");
+  public static final Resource FunctionSpace_aE_win_aE_polycom_aE_operations_LocalUser = new Resource("457002f3-2be1-11f0-9ce1-09b647a63c7b");
   
   /* Begin Protected Region [[user]] */
   
@@ -59,4 +65,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,3zCffx5cUu2PMIzL1YUvmOApnVg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,/WTfEWztuduMZMpgYPXeOUoM/M8=] */

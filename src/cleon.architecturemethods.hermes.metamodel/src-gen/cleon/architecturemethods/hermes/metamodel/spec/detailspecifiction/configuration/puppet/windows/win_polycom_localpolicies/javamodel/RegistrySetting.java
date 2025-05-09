@@ -31,21 +31,21 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   // attributes
   
   @Override
-  public java.lang.String selectKey() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_key);
-  }
-    
-  public void setKey(java.lang.String key) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_key, key);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
+  public java.lang.String selectRegistryKey() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_registryKey);
+  }
+    
+  public void setRegistryKey(java.lang.String registryKey) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_registryKey, registryKey);
   }
 
   @Override
@@ -82,8 +82,8 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_key, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_registryKey, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_valueData, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_valueType, visitor);
     // relations
@@ -91,4 +91,4 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,OQcVURs9fdx9uzcXH+KwE6QfRm0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,RNV473Sz5xaJ+XLWZz4DTDcVWZE=] */

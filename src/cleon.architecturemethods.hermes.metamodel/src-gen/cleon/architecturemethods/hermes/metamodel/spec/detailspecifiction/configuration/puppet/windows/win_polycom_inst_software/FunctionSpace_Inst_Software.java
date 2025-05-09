@@ -71,7 +71,7 @@ public class FunctionSpace_Inst_Software {
 
   }
 
-  public static interface ICopyFileFromNetworkFunctions extends IDynamicResourceExtension {
+  public static interface ILocalFileFromNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("17966d30-1b60-11f0-9c3a-8502b2fb88fb")
     public java.lang.String FullPath();
@@ -84,25 +84,25 @@ public class FunctionSpace_Inst_Software {
 
   }
   
-  public static interface ICopyFileFromNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ILocalFileFromNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CopyFileFromNetworkFunctionsImpl implements ICopyFileFromNetworkFunctionsImpl {
+  public static class LocalFileFromNetworkFunctionsImpl implements ILocalFileFromNetworkFunctionsImpl {
 
-    public static final ICopyFileFromNetworkFunctionsImpl INSTANCE = new CopyFileFromNetworkFunctionsImpl();
+    public static final ILocalFileFromNetworkFunctionsImpl INSTANCE = new LocalFileFromNetworkFunctionsImpl();
 
-    private CopyFileFromNetworkFunctionsImpl() {}
+    private LocalFileFromNetworkFunctionsImpl() {}
 
   }
   
-  public static class CopyFileFromNetworkFunctions {
+  public static class LocalFileFromNetworkFunctions {
 
-    private CopyFileFromNetworkFunctions() {}
+    private LocalFileFromNetworkFunctions() {}
 
   }
 
-  public static interface ICopyFileFromPuppetFunctions extends IDynamicResourceExtension {
+  public static interface ILocalFileFromPuppetFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0cbfbc57-1b6e-11f0-9c3a-8502b2fb88fb")
     public java.lang.String Source();
@@ -112,24 +112,24 @@ public class FunctionSpace_Inst_Software {
 
   }
   
-  public static interface ICopyFileFromPuppetFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ILocalFileFromPuppetFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CopyFileFromPuppetFunctionsImpl implements ICopyFileFromPuppetFunctionsImpl {
+  public static class LocalFileFromPuppetFunctionsImpl implements ILocalFileFromPuppetFunctionsImpl {
 
-    public static final ICopyFileFromPuppetFunctionsImpl INSTANCE = new CopyFileFromPuppetFunctionsImpl();
+    public static final ILocalFileFromPuppetFunctionsImpl INSTANCE = new LocalFileFromPuppetFunctionsImpl();
 
-    private CopyFileFromPuppetFunctionsImpl() {}
+    private LocalFileFromPuppetFunctionsImpl() {}
 
   }
   
-  public static class CopyFileFromPuppetFunctions {
+  public static class LocalFileFromPuppetFunctions {
 
-    private CopyFileFromPuppetFunctions() {}
+    private LocalFileFromPuppetFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,SAT1xz1wFkgtOMmFROG+6scPoNA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,s4vB0f0LtvB2+npRhJJqVNHJ/1k=] */

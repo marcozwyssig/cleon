@@ -21,10 +21,10 @@ public class FunctionSpace_About {
   public static interface IChapterDescriptionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("15ceeece-08fa-11e9-9ee8-c54fda7ab431")
-    public java.lang.String GetDescripton(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String GetDescripton(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("aeec8d23-a27b-11ef-9449-75f365af5f44")
-    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
+    public ch.actifsource.core.javamodel.IResource LanguageSettings();
 
   }
   
@@ -48,4 +48,4 @@ public class FunctionSpace_About {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb021fad-08f9-11e9-9ee8-c54fda7ab431,1jCdCw8wSGPUPqlAW26depFAx+I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb021fad-08f9-11e9-9ee8-c54fda7ab431,6k1Nh+eG0PkCpGSqNiHEl6jF1B8=] */

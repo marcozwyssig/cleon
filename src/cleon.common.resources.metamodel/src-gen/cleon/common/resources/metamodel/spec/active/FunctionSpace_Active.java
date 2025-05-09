@@ -24,7 +24,7 @@ public class FunctionSpace_Active {
     public java.lang.Boolean IsActiveOrDefaultTrue();
 
     @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
-    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue();
+    public <T extends ch.actifsource.core.javamodel.IResource> List<T> OnlyActiveOrDefaultTrue();
 
     @IDynamicResourceExtension.MethodId("3e55001e-54af-11eb-8ec7-9b1f37a1ee7d")
     public java.lang.Boolean Value();
@@ -34,13 +34,13 @@ public class FunctionSpace_Active {
   public static interface IEnabledWithDefaultTrueAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8922ce02-259b-11eb-b9ae-4df44b18aa9b")
-    public java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware);
+    public java.lang.Boolean IsActiveOrDefaultTrue(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware);
 
     @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
-    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList);
+    public <T extends ch.actifsource.core.javamodel.IResource> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList);
 
     @IDynamicResourceExtension.MethodId("3e55001e-54af-11eb-8ec7-9b1f37a1ee7d")
-    public java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware);
+    public java.lang.Boolean Value(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware);
 
   }
   
@@ -51,7 +51,7 @@ public class FunctionSpace_Active {
     private EnabledWithDefaultTrueAwareFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+    public java.lang.Boolean IsActiveOrDefaultTrue(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware) {
       /* Begin Protected Region [[8922ce02-259b-11eb-b9ae-4df44b18aa9b]] */
       if (Value(enabledWithDefaultTrueAware) == null) {
       	return true;
@@ -61,7 +61,7 @@ public class FunctionSpace_Active {
     }
 
     @Override
-    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList) {
+    public <T extends ch.actifsource.core.javamodel.IResource> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList) {
       /* Begin Protected Region [[7cc60bb8-27e5-11eb-b239-011c2d3c4f88]] */
       return enabledWithDefaultTrueAwareList.stream().filter(this::IsActiveOrDefaultTrue)
       		.collect(Collectors.toList());
@@ -69,7 +69,7 @@ public class FunctionSpace_Active {
     }
 
     @Override
-    public java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+    public java.lang.Boolean Value(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware) {
       /* Begin Protected Region [[3e55001e-54af-11eb-8ec7-9b1f37a1ee7d]] */
       return enabledWithDefaultTrueAware.selectIsEnabled();
       /* End Protected Region   [[3e55001e-54af-11eb-8ec7-9b1f37a1ee7d]] */
@@ -81,15 +81,15 @@ public class FunctionSpace_Active {
 
     private EnabledWithDefaultTrueAwareFunctions() {}
 
-    public static java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+    public static java.lang.Boolean IsActiveOrDefaultTrue(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware) {
       return DynamicResourceUtil.invoke(IEnabledWithDefaultTrueAwareFunctionsImpl.class, EnabledWithDefaultTrueAwareFunctionsImpl.INSTANCE, enabledWithDefaultTrueAware).IsActiveOrDefaultTrue(enabledWithDefaultTrueAware);
     }
 
-    public static <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList) {
+    public static <T extends ch.actifsource.core.javamodel.IResource> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList) {
       return DynamicResourceUtil.invoke(IEnabledWithDefaultTrueAwareFunctionsImpl.class, EnabledWithDefaultTrueAwareFunctionsImpl.INSTANCE, enabledWithDefaultTrueAwareList).OnlyActiveOrDefaultTrue(enabledWithDefaultTrueAwareList);
     }
 
-    public static java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+    public static java.lang.Boolean Value(final ch.actifsource.core.javamodel.IResource enabledWithDefaultTrueAware) {
       return DynamicResourceUtil.invoke(IEnabledWithDefaultTrueAwareFunctionsImpl.class, EnabledWithDefaultTrueAwareFunctionsImpl.INSTANCE, enabledWithDefaultTrueAware).Value(enabledWithDefaultTrueAware);
     }
 
@@ -105,7 +105,7 @@ public class FunctionSpace_Active {
   public static interface IEnabledWithDefaultFalseAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("dd3a23bc-259d-11eb-b9ae-4df44b18aa9b")
-    public java.lang.Boolean IsActiveOrDefaultFalse(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultFalseAware enabledWithDefaultFalseAware);
+    public java.lang.Boolean IsActiveOrDefaultFalse(final ch.actifsource.core.javamodel.IResource enabledWithDefaultFalseAware);
 
   }
   
@@ -116,7 +116,7 @@ public class FunctionSpace_Active {
     private EnabledWithDefaultFalseAwareFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsActiveOrDefaultFalse(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultFalseAware enabledWithDefaultFalseAware) {
+    public java.lang.Boolean IsActiveOrDefaultFalse(final ch.actifsource.core.javamodel.IResource enabledWithDefaultFalseAware) {
       /* Begin Protected Region [[dd3a23bc-259d-11eb-b9ae-4df44b18aa9b]] */
       if (enabledWithDefaultFalseAware.selectIsEnabled() == null) {
       	return false;
@@ -131,7 +131,7 @@ public class FunctionSpace_Active {
 
     private EnabledWithDefaultFalseAwareFunctions() {}
 
-    public static java.lang.Boolean IsActiveOrDefaultFalse(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultFalseAware enabledWithDefaultFalseAware) {
+    public static java.lang.Boolean IsActiveOrDefaultFalse(final ch.actifsource.core.javamodel.IResource enabledWithDefaultFalseAware) {
       return DynamicResourceUtil.invoke(IEnabledWithDefaultFalseAwareFunctionsImpl.class, EnabledWithDefaultFalseAwareFunctionsImpl.INSTANCE, enabledWithDefaultFalseAware).IsActiveOrDefaultFalse(enabledWithDefaultFalseAware);
     }
 
@@ -139,4 +139,4 @@ public class FunctionSpace_Active {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,0QK+lt72m2xsarS+uTzutAocF2U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,QKMu6w9sElNdOdfLpfylyQLhe90=] */

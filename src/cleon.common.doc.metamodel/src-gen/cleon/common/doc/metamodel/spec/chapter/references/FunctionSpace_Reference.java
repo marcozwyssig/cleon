@@ -80,7 +80,7 @@ public class FunctionSpace_Reference {
   public static interface IReferencesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("08c0ee97-1b3c-11e9-8cd4-efe75fb4587a")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> ReferenceOrder();
+    public List<ch.actifsource.core.javamodel.IResource> ReferenceOrder();
 
   }
   
@@ -104,4 +104,4 @@ public class FunctionSpace_Reference {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,Omczrp5NYZ9/mUyWCIKF3wqizoY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,ko0l8/uO3HVkwXNQ8AdMoFFZda8=] */

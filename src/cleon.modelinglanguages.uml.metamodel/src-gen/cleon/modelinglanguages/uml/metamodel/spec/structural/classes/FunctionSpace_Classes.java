@@ -26,7 +26,7 @@ public class FunctionSpace_Classes {
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("afbad413-97dd-11e3-bb9a-e57bbf5647bb")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> GetPackagesReverse();
+    public List<ch.actifsource.core.javamodel.IResource> GetPackagesReverse();
 
     @IDynamicResourceExtension.MethodId("afbad41c-97dd-11e3-bb9a-e57bbf5647bb")
     public java.lang.String GetPackageName();
@@ -100,7 +100,7 @@ public class FunctionSpace_Classes {
   public static interface IMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2bc4106e-a482-11e3-a07f-f96d34c3de8f")
-    public java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod method);
+    public java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method);
 
   }
   
@@ -111,7 +111,7 @@ public class FunctionSpace_Classes {
     private MethodFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod method) {
+    public java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method) {
       /* Begin Protected Region [[2bc4106e-a482-11e3-a07f-f96d34c3de8f]] */
         return !(method.selectMep() instanceof ISyncRequestResponse);
       /* End Protected Region   [[2bc4106e-a482-11e3-a07f-f96d34c3de8f]] */
@@ -123,7 +123,7 @@ public class FunctionSpace_Classes {
 
     private MethodFunctions() {}
 
-    public static java.lang.Boolean IsAsync(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.javamodel.IMethod method) {
+    public static java.lang.Boolean IsAsync(final ch.actifsource.core.javamodel.INamedResource method) {
       return DynamicResourceUtil.invoke(IMethodFunctionsImpl.class, MethodFunctionsImpl.INSTANCE, method).IsAsync(method);
     }
 
@@ -191,7 +191,7 @@ public class FunctionSpace_Classes {
   public static interface IClassFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9e151a85-5c32-11e3-b5c2-4929c5d760c5")
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass GetBase();
+    public ch.actifsource.core.javamodel.INamedResource GetBase();
 
     @IDynamicResourceExtension.MethodId("b186134b-5c36-11e3-b5c2-4929c5d760c5")
     public java.lang.Boolean IsBase();
@@ -207,16 +207,16 @@ public class FunctionSpace_Classes {
   public static interface IClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9e151a85-5c32-11e3-b5c2-4929c5d760c5")
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass GetBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_);
+    public ch.actifsource.core.javamodel.INamedResource GetBase(final ch.actifsource.core.javamodel.INamedResource class_);
 
     @IDynamicResourceExtension.MethodId("b186134b-5c36-11e3-b5c2-4929c5d760c5")
-    public java.lang.Boolean IsBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_);
+    public java.lang.Boolean IsBase(final ch.actifsource.core.javamodel.INamedResource class_);
 
     @IDynamicResourceExtension.MethodId("6270d67f-5c39-11e3-b5c2-4929c5d760c5")
-    public java.lang.Boolean IsNotAbstract(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_);
+    public java.lang.Boolean IsNotAbstract(final ch.actifsource.core.javamodel.INamedResource class_);
 
     @IDynamicResourceExtension.MethodId("cb3aca5f-5ccf-11e3-b5c2-4929c5d760c5")
-    public java.lang.Boolean isSubClass(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_);
+    public java.lang.Boolean isSubClass(final ch.actifsource.core.javamodel.INamedResource class_);
 
   }
   
@@ -227,7 +227,7 @@ public class FunctionSpace_Classes {
     private ClassFunctionsImpl() {}
 
     @Override
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass GetBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public ch.actifsource.core.javamodel.INamedResource GetBase(final ch.actifsource.core.javamodel.INamedResource class_) {
       /* Begin Protected Region [[9e151a85-5c32-11e3-b5c2-4929c5d760c5]] */
 		if( class_.selectExtends() == null)
 		{
@@ -241,7 +241,7 @@ public class FunctionSpace_Classes {
     }
 
     @Override
-    public java.lang.Boolean IsBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public java.lang.Boolean IsBase(final ch.actifsource.core.javamodel.INamedResource class_) {
       /* Begin Protected Region [[b186134b-5c36-11e3-b5c2-4929c5d760c5]] */
         if( class_.selectExtends() == null)
     	  {    	    
@@ -253,7 +253,7 @@ public class FunctionSpace_Classes {
     }
 
     @Override
-    public java.lang.Boolean IsNotAbstract(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public java.lang.Boolean IsNotAbstract(final ch.actifsource.core.javamodel.INamedResource class_) {
       /* Begin Protected Region [[6270d67f-5c39-11e3-b5c2-4929c5d760c5]] */
     	if (class_.selectIsAbstract() != null)
     	{
@@ -264,7 +264,7 @@ public class FunctionSpace_Classes {
     }
 
     @Override
-    public java.lang.Boolean isSubClass(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public java.lang.Boolean isSubClass(final ch.actifsource.core.javamodel.INamedResource class_) {
       /* Begin Protected Region [[cb3aca5f-5ccf-11e3-b5c2-4929c5d760c5]] */
     	return class_.selectExtends() != null; 
       /* End Protected Region   [[cb3aca5f-5ccf-11e3-b5c2-4929c5d760c5]] */
@@ -276,19 +276,19 @@ public class FunctionSpace_Classes {
 
     private ClassFunctions() {}
 
-    public static cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass GetBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public static ch.actifsource.core.javamodel.INamedResource GetBase(final ch.actifsource.core.javamodel.INamedResource class_) {
       return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).GetBase(class_);
     }
 
-    public static java.lang.Boolean IsBase(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public static java.lang.Boolean IsBase(final ch.actifsource.core.javamodel.INamedResource class_) {
       return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).IsBase(class_);
     }
 
-    public static java.lang.Boolean IsNotAbstract(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public static java.lang.Boolean IsNotAbstract(final ch.actifsource.core.javamodel.INamedResource class_) {
       return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).IsNotAbstract(class_);
     }
 
-    public static java.lang.Boolean isSubClass(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClass class_) {
+    public static java.lang.Boolean isSubClass(final ch.actifsource.core.javamodel.INamedResource class_) {
       return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).isSubClass(class_);
     }
 
@@ -310,13 +310,13 @@ public class FunctionSpace_Classes {
   public static interface IAssociationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("cac65a1a-6ecb-11e3-b3c1-7d834d89b418")
-    public java.lang.Boolean IsSuppressSubjectAutoProperty(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association);
+    public java.lang.Boolean IsSuppressSubjectAutoProperty(final ch.actifsource.core.javamodel.IResource association);
 
     @IDynamicResourceExtension.MethodId("52158130-6ed4-11e3-b3c1-7d834d89b418")
-    public java.lang.Boolean IsObjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association);
+    public java.lang.Boolean IsObjectReadOnly(final ch.actifsource.core.javamodel.IResource association);
 
     @IDynamicResourceExtension.MethodId("d09589e8-6ed4-11e3-b3c1-7d834d89b418")
-    public java.lang.Boolean IsSubjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association);
+    public java.lang.Boolean IsSubjectReadOnly(final ch.actifsource.core.javamodel.IResource association);
 
   }
   
@@ -327,7 +327,7 @@ public class FunctionSpace_Classes {
     private AssociationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSuppressSubjectAutoProperty(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public java.lang.Boolean IsSuppressSubjectAutoProperty(final ch.actifsource.core.javamodel.IResource association) {
       /* Begin Protected Region [[cac65a1a-6ecb-11e3-b3c1-7d834d89b418]] */
     	if (association.selectSuppressAutoProperty() == null)
     	{
@@ -339,7 +339,7 @@ public class FunctionSpace_Classes {
     }
 
     @Override
-    public java.lang.Boolean IsObjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public java.lang.Boolean IsObjectReadOnly(final ch.actifsource.core.javamodel.IResource association) {
       /* Begin Protected Region [[52158130-6ed4-11e3-b3c1-7d834d89b418]] */
         if( association.selectObjectReadOnly() == null)
         {
@@ -350,7 +350,7 @@ public class FunctionSpace_Classes {
     }
 
     @Override
-    public java.lang.Boolean IsSubjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public java.lang.Boolean IsSubjectReadOnly(final ch.actifsource.core.javamodel.IResource association) {
       /* Begin Protected Region [[d09589e8-6ed4-11e3-b3c1-7d834d89b418]] */
         if( association.selectSubjectReadOnly() == null)
         {
@@ -366,15 +366,15 @@ public class FunctionSpace_Classes {
 
     private AssociationFunctions() {}
 
-    public static java.lang.Boolean IsSuppressSubjectAutoProperty(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public static java.lang.Boolean IsSuppressSubjectAutoProperty(final ch.actifsource.core.javamodel.IResource association) {
       return DynamicResourceUtil.invoke(IAssociationFunctionsImpl.class, AssociationFunctionsImpl.INSTANCE, association).IsSuppressSubjectAutoProperty(association);
     }
 
-    public static java.lang.Boolean IsObjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public static java.lang.Boolean IsObjectReadOnly(final ch.actifsource.core.javamodel.IResource association) {
       return DynamicResourceUtil.invoke(IAssociationFunctionsImpl.class, AssociationFunctionsImpl.INSTANCE, association).IsObjectReadOnly(association);
     }
 
-    public static java.lang.Boolean IsSubjectReadOnly(final cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.javamodel.IAssociation association) {
+    public static java.lang.Boolean IsSubjectReadOnly(final ch.actifsource.core.javamodel.IResource association) {
       return DynamicResourceUtil.invoke(IAssociationFunctionsImpl.class, AssociationFunctionsImpl.INSTANCE, association).IsSubjectReadOnly(association);
     }
 
@@ -408,16 +408,16 @@ public class FunctionSpace_Classes {
   public static interface IPackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f9dcf222-97dd-11e3-bb9a-e57bbf5647bb")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> GetPackagesReverse();
+    public List<ch.actifsource.core.javamodel.IResource> GetPackagesReverse();
 
     @IDynamicResourceExtension.MethodId("23652716-01d9-11e4-ab1e-81fd30785d6d")
-    public cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage GetPackage();
+    public ch.actifsource.core.javamodel.IResource GetPackage();
 
     @IDynamicResourceExtension.MethodId("48e0af88-01f4-11e4-8e4d-5f45fa20862b")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IClassifier> GetClassifier();
+    public List<ch.actifsource.core.javamodel.IResource> GetClassifier();
 
     @IDynamicResourceExtension.MethodId("fa6cf58c-01f4-11e4-8e4d-5f45fa20862b")
-    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> GetPackages();
+    public List<ch.actifsource.core.javamodel.IResource> GetPackages();
 
   }
   
@@ -534,4 +534,4 @@ public class FunctionSpace_Classes {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,hvSCZMOQADJdIfRvfpwE1VG5Jh4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,modcATcdTPfNCWPxv2bEcC8mH3E=] */

@@ -21,10 +21,10 @@ public class FunctionSpace_DocBook_Glossary {
   public static interface IGlossaryAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d5dc4ac1-4f0a-11e6-9af7-359fc86da633")
-    public java.lang.String RenderGlossary(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderGlossary(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("79326986-13eb-11e9-a836-9d144e5bc2a5")
-    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderChapters(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
@@ -49,17 +49,17 @@ public class FunctionSpace_DocBook_Glossary {
   public static interface IGlossaryFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0f687b00-3e06-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
 
     @IDynamicResourceExtension.MethodId("162af23c-13f1-11e9-a836-9d144e5bc2a5")
-    public java.lang.String RenderElementName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderElementName(final ch.actifsource.core.javamodel.IResource language);
 
   }
   
   public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("162af23c-13f1-11e9-a836-9d144e5bc2a5")
-    public java.lang.String RenderElementName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary);
+    public java.lang.String RenderElementName(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource glossary);
 
   }
   
@@ -70,7 +70,7 @@ public class FunctionSpace_DocBook_Glossary {
     private GlossaryFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderElementName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
+    public java.lang.String RenderElementName(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource glossary) {
       return "chapter";
     }
 
@@ -80,7 +80,7 @@ public class FunctionSpace_DocBook_Glossary {
 
     private GlossaryFunctions() {}
 
-    public static java.lang.String RenderElementName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
+    public static java.lang.String RenderElementName(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource glossary) {
       return DynamicResourceUtil.invoke(IGlossaryFunctionsImpl.class, GlossaryFunctionsImpl.INSTANCE, glossary).RenderElementName(language, glossary);
     }
 
@@ -88,4 +88,4 @@ public class FunctionSpace_DocBook_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,dyocUdTdxROtXg7vVGaN/u1YFWU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,09Hf8F8AdXnh71wbLlAWhd0GvzM=] */

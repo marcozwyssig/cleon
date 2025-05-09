@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.secur
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IServiceAccount_gMSA extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount {
+public interface IServiceAccount_gMSA extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount_AD {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("06ea6eda-f333-11ea-9268-b5c52a12d7f9");
   
@@ -12,4 +12,4 @@ public interface IServiceAccount_gMSA extends cleon.architecturemethods.arc42.me
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,dhceKAqIGRUSff2ZJ+Gde3Evqu0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,SB30T5YIkNMyEq6elUXGJeKvJXE=] */

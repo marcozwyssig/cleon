@@ -28,6 +28,17 @@ public class ChocoPackage extends DynamicResource implements IChocoPackage {
     super(resourceRepository, resource, IChocoPackage.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectPackageName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.ChocoPackage_packageName);
+  }
+    
+  public void setPackageName(java.lang.String packageName) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.ChocoPackage_packageName, packageName);
+  }
+
   // relations
   
   @Override
@@ -63,6 +74,8 @@ public class ChocoPackage extends DynamicResource implements IChocoPackage {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.ChocoPackage_packageName, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.ChocoPackage_productVariant, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -75,4 +88,4 @@ public class ChocoPackage extends DynamicResource implements IChocoPackage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1ce02c4f-13bf-11f0-b664-c7b92124985d,NF2lm1TvEt7tv3+jGk5KKjixzN8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1ce02c4f-13bf-11f0-b664-c7b92124985d,odvP5N6ycs+EbOZOPMH+yuruv4c=] */

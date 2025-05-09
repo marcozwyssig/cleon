@@ -8,7 +8,7 @@ public interface IRegistryValue extends ch.actifsource.core.javamodel.INamedReso
   
   // attributes
   
-  public java.lang.String selectPath();
+  public java.lang.String selectRegistryKey();
   
   public java.lang.String selectType();
   
@@ -18,4 +18,4 @@ public interface IRegistryValue extends ch.actifsource.core.javamodel.INamedReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b05acf64-1b6a-11f0-9c3a-8502b2fb88fb,EwkJeTcrAPvcL12gPJfgkZWU02Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b05acf64-1b6a-11f0-9c3a-8502b2fb88fb,yRktQwa5KowSrsg/Q68arKLtrO0=] */

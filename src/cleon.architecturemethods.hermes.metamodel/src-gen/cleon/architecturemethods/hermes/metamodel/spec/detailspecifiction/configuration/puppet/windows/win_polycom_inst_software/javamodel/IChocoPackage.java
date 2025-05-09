@@ -6,10 +6,12 @@ public interface IChocoPackage extends ch.actifsource.core.javamodel.IDecorator 
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1ce02c4f-13bf-11f0-b664-c7b92124985d");
   
+  public java.lang.String selectPackageName();
+  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant selectProductVariant();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ce02c4f-13bf-11f0-b664-c7b92124985d,vAG3qSHhNJ0F4vz3ms0U4m2/VNQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ce02c4f-13bf-11f0-b664-c7b92124985d,1P7JUjItYT9ZzaPgppzki1OaJEw=] */

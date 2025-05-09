@@ -194,7 +194,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IInstallFeaturesFunctions extends IDynamicResourceExtension {
+  public static interface IFeaturesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("37706e48-001a-11f0-945c-87b19aec41f4")
     public java.lang.String ClassDefinition();
@@ -204,21 +204,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IInstallFeaturesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IFeaturesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class InstallFeaturesFunctionsImpl implements IInstallFeaturesFunctionsImpl {
+  public static class FeaturesFunctionsImpl implements IFeaturesFunctionsImpl {
 
-    public static final IInstallFeaturesFunctionsImpl INSTANCE = new InstallFeaturesFunctionsImpl();
+    public static final IFeaturesFunctionsImpl INSTANCE = new FeaturesFunctionsImpl();
 
-    private InstallFeaturesFunctionsImpl() {}
+    private FeaturesFunctionsImpl() {}
 
   }
   
-  public static class InstallFeaturesFunctions {
+  public static class FeaturesFunctions {
 
-    private InstallFeaturesFunctions() {}
+    private FeaturesFunctions() {}
 
   }
 
@@ -306,7 +306,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IConfigureOUFunctions extends IDynamicResourceExtension {
+  public static interface IOUFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c12e6786-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassDefinition();
@@ -316,25 +316,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureOUFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IOUFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureOUFunctionsImpl implements IConfigureOUFunctionsImpl {
+  public static class OUFunctionsImpl implements IOUFunctionsImpl {
 
-    public static final IConfigureOUFunctionsImpl INSTANCE = new ConfigureOUFunctionsImpl();
+    public static final IOUFunctionsImpl INSTANCE = new OUFunctionsImpl();
 
-    private ConfigureOUFunctionsImpl() {}
+    private OUFunctionsImpl() {}
 
   }
   
-  public static class ConfigureOUFunctions {
+  public static class OUFunctions {
 
-    private ConfigureOUFunctions() {}
+    private OUFunctions() {}
 
   }
 
-  public static interface IConfigureActivitiesAndRolesFunctions extends IDynamicResourceExtension {
+  public static interface IActivitiesAndRolesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cc6e31f8-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassDefinition();
@@ -344,25 +344,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureActivitiesAndRolesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IActivitiesAndRolesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureActivitiesAndRolesFunctionsImpl implements IConfigureActivitiesAndRolesFunctionsImpl {
+  public static class ActivitiesAndRolesFunctionsImpl implements IActivitiesAndRolesFunctionsImpl {
 
-    public static final IConfigureActivitiesAndRolesFunctionsImpl INSTANCE = new ConfigureActivitiesAndRolesFunctionsImpl();
+    public static final IActivitiesAndRolesFunctionsImpl INSTANCE = new ActivitiesAndRolesFunctionsImpl();
 
-    private ConfigureActivitiesAndRolesFunctionsImpl() {}
+    private ActivitiesAndRolesFunctionsImpl() {}
 
   }
   
-  public static class ConfigureActivitiesAndRolesFunctions {
+  public static class ActivitiesAndRolesFunctions {
 
-    private ConfigureActivitiesAndRolesFunctions() {}
+    private ActivitiesAndRolesFunctions() {}
 
   }
 
-  public static interface IConfiguregMSAServiceAccountsFunctions extends IDynamicResourceExtension {
+  public static interface IGMSAServiceAccountsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d6bfa564-05a2-11f0-a294-67d88c30f2e4")
     public java.lang.String ClassDefinition();
@@ -372,25 +372,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfiguregMSAServiceAccountsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IGMSAServiceAccountsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfiguregMSAServiceAccountsFunctionsImpl implements IConfiguregMSAServiceAccountsFunctionsImpl {
+  public static class GMSAServiceAccountsFunctionsImpl implements IGMSAServiceAccountsFunctionsImpl {
 
-    public static final IConfiguregMSAServiceAccountsFunctionsImpl INSTANCE = new ConfiguregMSAServiceAccountsFunctionsImpl();
+    public static final IGMSAServiceAccountsFunctionsImpl INSTANCE = new GMSAServiceAccountsFunctionsImpl();
 
-    private ConfiguregMSAServiceAccountsFunctionsImpl() {}
+    private GMSAServiceAccountsFunctionsImpl() {}
 
   }
   
-  public static class ConfiguregMSAServiceAccountsFunctions {
+  public static class GMSAServiceAccountsFunctions {
 
-    private ConfiguregMSAServiceAccountsFunctions() {}
+    private GMSAServiceAccountsFunctions() {}
 
   }
 
-  public static interface IConfigureServiceAccountsAndTestUserFunctions extends IDynamicResourceExtension {
+  public static interface IServiceAccountsAndTestUserFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1d916f4d-0661-11f0-ad7c-c72b7a763977")
     public java.lang.String ClassDefinition();
@@ -400,21 +400,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureServiceAccountsAndTestUserFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServiceAccountsAndTestUserFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureServiceAccountsAndTestUserFunctionsImpl implements IConfigureServiceAccountsAndTestUserFunctionsImpl {
+  public static class ServiceAccountsAndTestUserFunctionsImpl implements IServiceAccountsAndTestUserFunctionsImpl {
 
-    public static final IConfigureServiceAccountsAndTestUserFunctionsImpl INSTANCE = new ConfigureServiceAccountsAndTestUserFunctionsImpl();
+    public static final IServiceAccountsAndTestUserFunctionsImpl INSTANCE = new ServiceAccountsAndTestUserFunctionsImpl();
 
-    private ConfigureServiceAccountsAndTestUserFunctionsImpl() {}
+    private ServiceAccountsAndTestUserFunctionsImpl() {}
 
   }
   
-  public static class ConfigureServiceAccountsAndTestUserFunctions {
+  public static class ServiceAccountsAndTestUserFunctions {
 
-    private ConfigureServiceAccountsAndTestUserFunctions() {}
+    private ServiceAccountsAndTestUserFunctions() {}
 
   }
 
@@ -782,7 +782,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IInstallSoftwareFunctions extends IDynamicResourceExtension {
+  public static interface ISoftwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8b6b4d48-1131-11f0-a4f9-b5f995a9e0fe")
     public java.lang.String ClassDefinition();
@@ -792,25 +792,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IInstallSoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class InstallSoftwareFunctionsImpl implements IInstallSoftwareFunctionsImpl {
+  public static class SoftwareFunctionsImpl implements ISoftwareFunctionsImpl {
 
-    public static final IInstallSoftwareFunctionsImpl INSTANCE = new InstallSoftwareFunctionsImpl();
+    public static final ISoftwareFunctionsImpl INSTANCE = new SoftwareFunctionsImpl();
 
-    private InstallSoftwareFunctionsImpl() {}
+    private SoftwareFunctionsImpl() {}
 
   }
   
-  public static class InstallSoftwareFunctions {
+  public static class SoftwareFunctions {
 
-    private InstallSoftwareFunctions() {}
+    private SoftwareFunctions() {}
 
   }
 
-  public static interface IInstallSQLServerFunctions extends IDynamicResourceExtension {
+  public static interface ISQLServerFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("24201250-1151-11f0-a4f9-b5f995a9e0fe")
     public java.lang.String ClassDefinition();
@@ -820,21 +820,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IInstallSQLServerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISQLServerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class InstallSQLServerFunctionsImpl implements IInstallSQLServerFunctionsImpl {
+  public static class SQLServerFunctionsImpl implements ISQLServerFunctionsImpl {
 
-    public static final IInstallSQLServerFunctionsImpl INSTANCE = new InstallSQLServerFunctionsImpl();
+    public static final ISQLServerFunctionsImpl INSTANCE = new SQLServerFunctionsImpl();
 
-    private InstallSQLServerFunctionsImpl() {}
+    private SQLServerFunctionsImpl() {}
 
   }
   
-  public static class InstallSQLServerFunctions {
+  public static class SQLServerFunctions {
 
-    private InstallSQLServerFunctions() {}
+    private SQLServerFunctions() {}
 
   }
 
@@ -925,7 +925,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IAbstractAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3d5f06aa-272b-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("69875858-272b-11f0-8098-59f455ea82af")
     public java.lang.String OU();
@@ -962,7 +962,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0c46b4b1-272c-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("415d19ab-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -993,7 +993,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface ITestAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("14a224b0-272c-11f0-8098-59f455ea82af")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IConfigureServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("4b35656c-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -1021,7 +1021,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IInstallChocoSoftwareFunctions extends IDynamicResourceExtension {
+  public static interface IChocoSoftwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("76d55945-13bf-11f0-b664-c7b92124985d")
     public java.lang.String ClassDefinition();
@@ -1031,25 +1031,53 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IInstallChocoSoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IChocoSoftwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class InstallChocoSoftwareFunctionsImpl implements IInstallChocoSoftwareFunctionsImpl {
+  public static class ChocoSoftwareFunctionsImpl implements IChocoSoftwareFunctionsImpl {
 
-    public static final IInstallChocoSoftwareFunctionsImpl INSTANCE = new InstallChocoSoftwareFunctionsImpl();
+    public static final IChocoSoftwareFunctionsImpl INSTANCE = new ChocoSoftwareFunctionsImpl();
 
-    private InstallChocoSoftwareFunctionsImpl() {}
+    private ChocoSoftwareFunctionsImpl() {}
 
   }
   
-  public static class InstallChocoSoftwareFunctions {
+  public static class ChocoSoftwareFunctions {
 
-    private InstallChocoSoftwareFunctions() {}
+    private ChocoSoftwareFunctions() {}
 
   }
 
-  public static interface IInstallCopyfileFunctions extends IDynamicResourceExtension {
+  public static interface IWorkplaceLinksFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7ba4f327-2cac-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("7ba4f364-2cac-11f0-851f-3f768d79c0eb")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IWorkplaceLinksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WorkplaceLinksFunctionsImpl implements IWorkplaceLinksFunctionsImpl {
+
+    public static final IWorkplaceLinksFunctionsImpl INSTANCE = new WorkplaceLinksFunctionsImpl();
+
+    private WorkplaceLinksFunctionsImpl() {}
+
+  }
+  
+  public static class WorkplaceLinksFunctions {
+
+    private WorkplaceLinksFunctions() {}
+
+  }
+
+  public static interface ILocalFileFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ab868c68-1b5f-11f0-9c3a-8502b2fb88fb")
     public java.lang.String ClassDefinition();
@@ -1059,21 +1087,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IInstallCopyfileFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ILocalFileFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class InstallCopyfileFunctionsImpl implements IInstallCopyfileFunctionsImpl {
+  public static class LocalFileFunctionsImpl implements ILocalFileFunctionsImpl {
 
-    public static final IInstallCopyfileFunctionsImpl INSTANCE = new InstallCopyfileFunctionsImpl();
+    public static final ILocalFileFunctionsImpl INSTANCE = new LocalFileFunctionsImpl();
 
-    private InstallCopyfileFunctionsImpl() {}
+    private LocalFileFunctionsImpl() {}
 
   }
   
-  public static class InstallCopyfileFunctions {
+  public static class LocalFileFunctions {
 
-    private InstallCopyfileFunctions() {}
+    private LocalFileFunctions() {}
 
   }
 
@@ -1357,6 +1385,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ILocalUsersFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("82d4ca08-2bdf-11f0-9ce1-09b647a63c7b")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("82d4f18c-2bdf-11f0-9ce1-09b647a63c7b")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ILocalUsersFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalUsersFunctionsImpl implements ILocalUsersFunctionsImpl {
+
+    public static final ILocalUsersFunctionsImpl INSTANCE = new LocalUsersFunctionsImpl();
+
+    private LocalUsersFunctionsImpl() {}
+
+  }
+  
+  public static class LocalUsersFunctions {
+
+    private LocalUsersFunctions() {}
+
+  }
+
+  public static interface IDotNetFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e2d345d5-2c14-11f0-8b7a-6dfeafb0166d")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("e2d36c12-2c14-11f0-8b7a-6dfeafb0166d")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IDotNetFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DotNetFunctionsImpl implements IDotNetFunctionsImpl {
+
+    public static final IDotNetFunctionsImpl INSTANCE = new DotNetFunctionsImpl();
+
+    private DotNetFunctionsImpl() {}
+
+  }
+  
+  public static class DotNetFunctions {
+
+    private DotNetFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,bAgULmfnwMjmJy0Xjlw2pMAzW2w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,vVfS0kkr0eTo1WvoNnWG64ZP/14=] */

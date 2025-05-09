@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6389fd00-2cac-11f0-851f-3f768d79c0eb">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="33d89292-2cb1-11f0-851f-3f768d79c0eb" type="resource" guid="33d86b7f-2cb1-11f0-851f-3f768d79c0eb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="638a2412-2cac-11f0-851f-3f768d79c0eb" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6685ff28-2cac-11f0-851f-3f768d79c0eb" type="resource" guid="776e4866-0013-11f0-945c-87b19aec41f4" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33d89292-2cb1-11f0-851f-3f768d79c0eb">
+      <resource guid="33d86b7f-2cb1-11f0-851f-3f768d79c0eb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="33d86b81-2cb1-11f0-851f-3f768d79c0eb" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="37cb2996-2cb1-11f0-851f-3f768d79c0eb" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="348cc76d-2cb1-11f0-851f-3f768d79c0eb" type="literal">topLevelName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="33d955e3-2cb1-11f0-851f-3f768d79c0eb" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6390dad3-2cac-11f0-851f-3f768d79c0eb" type="literal">WorkplaceLinks</object>
+  </predicate>
+</resource>
+

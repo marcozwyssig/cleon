@@ -389,7 +389,7 @@ public class FunctionSpace_Configuration {
     @Override
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> OnlyWhereNoExtends(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> puppetConfigurationList) {
       /* Begin Protected Region [[fd69a308-1072-11f0-b378-11a495632127]] */
-    	return puppetConfigurationList.stream().filter(x -> x.selectExtends().isEmpty()).toList();   
+    	return puppetConfigurationList.stream().filter(x -> x.selectExtends().isEmpty()).toList();
       /* End Protected Region   [[fd69a308-1072-11f0-b378-11a495632127]] */
     }
 

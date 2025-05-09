@@ -12,7 +12,7 @@ public class Win_polycom_localpoliciesPackage {
   public static final Resource Registry = new Resource("c9a5d9b5-1090-11f0-b378-11a495632127");
   public static final Resource RegistrySetting = new Resource("d0af758c-1090-11f0-b378-11a495632127");
   public static final Resource Registry_registrySettings = new Resource("d5c9ea07-1090-11f0-b378-11a495632127");
-  public static final Resource RegistrySetting_key = new Resource("dbda30b5-1090-11f0-b378-11a495632127");
+  public static final Resource RegistrySetting_registryKey = new Resource("dbda30b5-1090-11f0-b378-11a495632127");
   public static final Resource RegistrySetting_valueType = new Resource("e8da96ef-1090-11f0-b378-11a495632127");
   public static final Resource RegistrySetting_valueData = new Resource("f03c3d45-1090-11f0-b378-11a495632127");
   
@@ -35,4 +35,4 @@ public class Win_polycom_localpoliciesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies,SlDQqxLS+KFJW2E1yvBP84EU6Yw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies,Zt5MqSkuDgsqz+cv43cWQWNIg48=] */

@@ -182,6 +182,9 @@ public class FunctionSpace_Windows {
     @IDynamicResourceExtension.MethodId("98b03741-21c3-11f0-83ae-df5418a109a4")
     public java.lang.String LogonAs();
 
+    @IDynamicResourceExtension.MethodId("a77d5c6b-2bde-11f0-9ce1-09b647a63c7b")
+    public java.lang.String NetbiosName();
+
   }
   
   public static interface IServiceAccountMemberFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -204,4 +207,4 @@ public class FunctionSpace_Windows {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,rN713sbIsxED9Zp+tr+AKBA/luE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,qTWjyajT+GvRqqAn72Yd6chMW/8=] */

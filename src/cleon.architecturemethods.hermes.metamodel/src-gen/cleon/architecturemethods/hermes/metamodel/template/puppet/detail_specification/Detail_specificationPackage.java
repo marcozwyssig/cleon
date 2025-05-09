@@ -7,14 +7,14 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SysCfgSpecification = new Resource("fc54b0f0-0014-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_PuppetConfiguration = new Resource("f0e7036a-0015-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_UninstallFeatures = new Resource("08d67bcb-0016-11f0-945c-87b19aec41f4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallFeatures = new Resource("37706e45-001a-11f0-945c-87b19aec41f4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Features = new Resource("37706e45-001a-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractConfiguration = new Resource("94a9e501-0024-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_IssuingCA = new Resource("c0f5baea-04b0-11f0-8e81-9be04e08660a");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dfs = new Resource("7023a38d-05a2-11f0-a294-67d88c30f2e4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureOU = new Resource("c12e6783-05a2-11f0-a294-67d88c30f2e4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureActivitiesAndRoles = new Resource("cc6e31f5-05a2-11f0-a294-67d88c30f2e4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfiguregMSAServiceAccounts = new Resource("d6bfa561-05a2-11f0-a294-67d88c30f2e4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ConfigureServiceAccountsAndTestUser = new Resource("1d916f4a-0661-11f0-ad7c-c72b7a763977");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_OU = new Resource("c12e6783-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ActivitiesAndRoles = new Resource("cc6e31f5-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_GMSAServiceAccounts = new Resource("d6bfa561-05a2-11f0-a294-67d88c30f2e4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ServiceAccountsAndTestUser = new Resource("1d916f4a-0661-11f0-ad7c-c72b7a763977");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_DiskPart = new Resource("7fe4efd1-07f4-11f0-bc12-1bbda1d7028e");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Shares = new Resource("d0b3911c-07fb-11f0-bc12-1bbda1d7028e");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Resize = new Resource("b5e14d47-096a-11f0-bcb3-43fb1d3f2da5");
@@ -30,13 +30,13 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Hardening = new Resource("d1d89aeb-108a-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Registry = new Resource("494d99d7-1091-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Wineventlog = new Resource("59ca0b17-1095-11f0-b378-11a495632127");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallSoftware = new Resource("8b6b4d45-1131-11f0-a4f9-b5f995a9e0fe");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallSQLServer = new Resource("2420124d-1151-11f0-a4f9-b5f995a9e0fe");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Software = new Resource("8b6b4d45-1131-11f0-a4f9-b5f995a9e0fe");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SQLServer = new Resource("2420124d-1151-11f0-a4f9-b5f995a9e0fe");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallIIS = new Resource("a4b4d356-115d-11f0-a4f9-b5f995a9e0fe");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_IISMimelist = new Resource("b3974074-115d-11f0-a4f9-b5f995a9e0fe");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallChocoSoftware = new Resource("70b9795b-13bf-11f0-b664-c7b92124985d");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ChocoSoftware = new Resource("70b9795b-13bf-11f0-b664-c7b92124985d");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dns = new Resource("8feab7da-151b-11f0-8fa5-ad696b254e17");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallCopyfile = new Resource("ab868c65-1b5f-11f0-9c3a-8502b2fb88fb");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalFile = new Resource("ab868c65-1b5f-11f0-9c3a-8502b2fb88fb");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalRepo = new Resource("3412cf4a-1b65-11f0-9c3a-8502b2fb88fb");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_FoldersAndPuppetCleanup = new Resource("98bf116c-1b69-11f0-9c3a-8502b2fb88fb");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_RemoveUserCerts = new Resource("7654afb1-1b6a-11f0-9c3a-8502b2fb88fb");
@@ -50,6 +50,9 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_TestAccountConfiguration = new Resource("14a1fd98-272c-11f0-8098-59f455ea82af");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_FoldersCleanupTask = new Resource("d2941cf0-2759-11f0-b32f-851840d4a5f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SetWindowsEdition = new Resource("6440cc7f-2b0e-11f0-a774-db5eb4cfeffd");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalUsers = new Resource("82d4ca05-2bdf-11f0-9ce1-09b647a63c7b");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_DotNet = new Resource("e2d345d2-2c14-11f0-8b7a-6dfeafb0166d");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WorkplaceLinks = new Resource("7ba4f324-2cac-11f0-851f-3f768d79c0eb");
   
   /* Begin Protected Region [[user]] */
   
@@ -70,4 +73,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,G7FfvHd/JzuYlRT4tvp254gKJJw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,PslVFJoKgmOzJ2tQMLAYJHSlZ94=] */

@@ -164,7 +164,7 @@ public class FunctionSpace_Activity_Deployment {
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
-      final var accountTemplatesOnAllSites = ActivityTemplateAware.selectToMeActivityTemplatesOnSites(activityPermission.selectActivityTemplate());
+      final var accountTemplatesOnAllSites = ActivityTemplateAware.selectToMeActivityTemplatePermissionOnSites(activityPermission.selectActivityTemplate());
       for(final var accountTemplate  : accountTemplatesOnAllSites.stream().filter(IRoleTemplate.class::isInstance).map(IRoleTemplate.class::cast).collect(Collectors.toList())) {
       	if( accountTemplate instanceof IRoleTemplate) {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
@@ -184,7 +184,7 @@ public class FunctionSpace_Activity_Deployment {
       	}
       }
 
-      final var accountTemplatesOnLocalSite = ActivityTemplateAware.selectToMeActivityTemplatesOnLocalSite(activityPermission.selectActivityTemplate());
+      final var accountTemplatesOnLocalSite = ActivityTemplateAware.selectToMeActivityTemplatePermissionsOnLocalSite(activityPermission.selectActivityTemplate());
       for(final var accountTemplate  : accountTemplatesOnLocalSite.stream().filter(IRoleTemplate.class::isInstance).map(IRoleTemplate.class::cast).collect(Collectors.toList())) {
       	if( accountTemplate instanceof IRoleTemplate) {
       		final var authZBuildingBlockForSystemComponent = accountTemplate;
@@ -215,7 +215,7 @@ public class FunctionSpace_Activity_Deployment {
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
 
-      final var serviceAccountTemplates = ActivityTemplateAware.selectToMeActivityTemplatesOnSites(activityPermission.selectActivityTemplate());
+      final var serviceAccountTemplates = ActivityTemplateAware.selectToMeActivityTemplatePermissionOnSites(activityPermission.selectActivityTemplate());
       for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
       	if( !(serviceAccountTemplate instanceof IServiceAccountTemplate) ) {
       		continue;

@@ -553,6 +553,8 @@
         <resource statement-guid="5cd92a73-21ad-11f0-83ae-df5418a109a4" type="resource" guid="5cd92a70-21ad-11f0-83ae-df5418a109a4" />
         <resource statement-guid="49f79bb0-2731-11f0-8098-59f455ea82af" type="resource" guid="49f6d85d-2731-11f0-8098-59f455ea82af" />
         <resource statement-guid="b46fe57c-2734-11f0-8098-59f455ea82af" type="resource" guid="b46fbe69-2734-11f0-8098-59f455ea82af" />
+        <resource statement-guid="089c404a-3006-11f0-a908-cd18bb743067" type="resource" guid="089c4047-3006-11f0-a908-cd18bb743067" />
+        <resource statement-guid="08abf7c1-3006-11f0-a908-cd18bb743067" type="resource" guid="08abf7be-3006-11f0-a908-cd18bb743067" />
       </owns>
     </resource>
   </owns>
@@ -6069,6 +6071,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="b46fe57d-2734-11f0-8098-59f455ea82af" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="089c404a-3006-11f0-a908-cd18bb743067">
+            <resource guid="089c4047-3006-11f0-a908-cd18bb743067">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="089c4049-3006-11f0-a908-cd18bb743067" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="089c675b-3006-11f0-a908-cd18bb743067" type="literal">cleon.architecturemethods.arc42.metamodel.template.xmi</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="08abf7c1-3006-11f0-a908-cd18bb743067">
+            <resource guid="08abf7be-3006-11f0-a908-cd18bb743067">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="08abf7c0-3006-11f0-a908-cd18bb743067" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="08abf7c2-3006-11f0-a908-cd18bb743067" type="literal">cleon.architecturemethods.arc42.metamodel.template.xmi.data_view</object>
               </predicate>
             </resource>
           </object>

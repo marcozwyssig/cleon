@@ -34,6 +34,13 @@ public class Win_polycom_adPackage {
   public static final Resource ServiceAccountsAndTestUser_testUsers = new Resource("cccc03ae-2729-11f0-8098-59f455ea82af");
   public static final Resource AbstractAccountConfiguration = new Resource("f08a245c-272a-11f0-8098-59f455ea82af");
   public static final Resource TestAccountConfiguration_testAccount = new Resource("388a7c1e-2742-11f0-bc3e-fdd30b5cbdec");
+  public static final Resource Krbtgtrenew = new Resource("35f719a3-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource ScheduleType = new Resource("5699e5ea-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource Daysofweek = new Resource("d67efca7-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource Krbtgtrenew_scheduleType = new Resource("de05b71f-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource Krbtgtrenew_daysofweek = new Resource("e1e2f16e-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource ScheduleType_Weekly = new Resource("fba813c0-2ce3-11f0-851f-3f768d79c0eb");
+  public static final Resource Daysofweek_Monday = new Resource("0af83724-2ce4-11f0-851f-3f768d79c0eb");
   
   /* Begin Protected Region [[user]] */
   
@@ -54,4 +61,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,r1oZwTRcEFmv4vC/9OdxlWo6Hy0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,rn3qVkOSrxIRhGDtCwfAHVXNILk=] */

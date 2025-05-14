@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="5699e5ea-2ce3-11f0-851f-3f768d79c0eb">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="fba83ad3-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="fba813c0-2ce3-11f0-851f-3f768d79c0eb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="569a0cfc-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="569d685e-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="569d685d-2ce3-11f0-851f-3f768d79c0eb" type="literal">ScheduleType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="fba83ad3-2ce3-11f0-851f-3f768d79c0eb">
+      <resource guid="fba813c0-2ce3-11f0-851f-3f768d79c0eb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fba813c2-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="5699e5ea-2ce3-11f0-851f-3f768d79c0eb" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="03b2f2d0-2ce4-11f0-851f-3f768d79c0eb" type="literal">Weekly</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

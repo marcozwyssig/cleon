@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d67efca7-2ce3-11f0-851f-3f768d79c0eb">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="0af85e37-2ce4-11f0-851f-3f768d79c0eb" type="resource" guid="0af83724-2ce4-11f0-851f-3f768d79c0eb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d67f23b9-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d681bbcb-2ce3-11f0-851f-3f768d79c0eb" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d681bbca-2ce3-11f0-851f-3f768d79c0eb" type="literal">Daysofweek</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="0af85e37-2ce4-11f0-851f-3f768d79c0eb">
+      <resource guid="0af83724-2ce4-11f0-851f-3f768d79c0eb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0af85e36-2ce4-11f0-851f-3f768d79c0eb" type="resource" guid="d67efca7-2ce3-11f0-851f-3f768d79c0eb" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0b1b0170-2ce4-11f0-851f-3f768d79c0eb" type="literal">Monday</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1519,6 +1519,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IKrbtgtrenewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("af460ae9-2fe3-11f0-bba4-ebbcb3a9ada7")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("af460aec-2fe3-11f0-bba4-ebbcb3a9ada7")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IKrbtgtrenewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class KrbtgtrenewFunctionsImpl implements IKrbtgtrenewFunctionsImpl {
+
+    public static final IKrbtgtrenewFunctionsImpl INSTANCE = new KrbtgtrenewFunctionsImpl();
+
+    private KrbtgtrenewFunctionsImpl() {}
+
+  }
+  
+  public static class KrbtgtrenewFunctions {
+
+    private KrbtgtrenewFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,dmUw2CfrDJMt2jMvsL47kcz4ynk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,vGcTjJjOw3whK2W9qhWsW+dSmik=] */

@@ -21,7 +21,7 @@ public class FunctionSpace_CHRV {
   public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("18dae6df-52ec-11ea-939d-7ff813a040ec")
-    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cee52fb0-52eb-11ea-939d-7ff813a040ec,fTr70wx/EITSNX/m9KtWel+0/Zs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cee52fb0-52eb-11ea-939d-7ff813a040ec,Gt6BPxw4VI2JrIkks2bORxm6RL8=] */

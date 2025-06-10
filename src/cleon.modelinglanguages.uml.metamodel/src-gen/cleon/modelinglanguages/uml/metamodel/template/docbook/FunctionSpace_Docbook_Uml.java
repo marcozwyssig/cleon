@@ -21,7 +21,7 @@ public class FunctionSpace_Docbook_Uml {
   public static interface IUmlDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("02f97b23-fa42-11e8-af47-e5bdd8100025")
-    public java.lang.String RenderContent(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("49992d11-0df3-11e9-a28e-8b950dcca323")
     public java.lang.Boolean CanGenerate();
@@ -31,7 +31,7 @@ public class FunctionSpace_Docbook_Uml {
   public static interface IUmlDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("49992d11-0df3-11e9-a28e-8b950dcca323")
-    public java.lang.Boolean CanGenerate(final ch.actifsource.core.javamodel.IResource umlDiagram);
+    public java.lang.Boolean CanGenerate(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_Docbook_Uml {
     private UmlDiagramFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean CanGenerate(final ch.actifsource.core.javamodel.IResource umlDiagram) {
+    public java.lang.Boolean CanGenerate(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram) {
       return true;
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Docbook_Uml {
 
     private UmlDiagramFunctions() {}
 
-    public static java.lang.Boolean CanGenerate(final ch.actifsource.core.javamodel.IResource umlDiagram) {
+    public static java.lang.Boolean CanGenerate(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram) {
       return DynamicResourceUtil.invoke(IUmlDiagramFunctionsImpl.class, UmlDiagramFunctionsImpl.INSTANCE, umlDiagram).CanGenerate(umlDiagram);
     }
 
@@ -60,4 +60,4 @@ public class FunctionSpace_Docbook_Uml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f406e1ac-fa41-11e8-af47-e5bdd8100025,VdmWliyC0S+KRkY/dlN5hadcIkE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f406e1ac-fa41-11e8-af47-e5bdd8100025,Vq3hZ3EEiiMVhosQ67dX/aFoFOc=] */

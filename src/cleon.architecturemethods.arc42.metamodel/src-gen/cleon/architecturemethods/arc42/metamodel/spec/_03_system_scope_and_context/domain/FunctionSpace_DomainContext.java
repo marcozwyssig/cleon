@@ -21,10 +21,10 @@ public class FunctionSpace_DomainContext {
   public static interface IDomainContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2d5923e2-052b-11e9-95f7-3b0c47908608")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllComponents();
+    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> SelectAllComponents();
 
     @IDynamicResourceExtension.MethodId("d148c2de-052b-11e9-95f7-3b0c47908608")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllComponentsDistinct();
+    public List<cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> SelectAllComponentsDistinct();
 
     @IDynamicResourceExtension.MethodId("0b0d2cb2-01e2-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderStandardDescription();
@@ -52,7 +52,7 @@ public class FunctionSpace_DomainContext {
   public static interface IDomainFlow_InFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("599e9b79-052b-11e9-95f7-3b0c47908608")
-    public ch.actifsource.core.javamodel.IResource GetComponent();
+    public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent GetComponent();
 
   }
   
@@ -77,7 +77,7 @@ public class FunctionSpace_DomainContext {
   public static interface IDomainFlow_OutFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b31d3859-052b-11e9-95f7-3b0c47908608")
-    public ch.actifsource.core.javamodel.IResource GetComponent();
+    public cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent GetComponent();
 
   }
   
@@ -102,7 +102,7 @@ public class FunctionSpace_DomainContext {
   public static interface IActorFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3758e9d5-e546-11ef-9a39-afe0dbb3ceb9")
-    public ch.actifsource.core.javamodel.IResource LanguageSettings();
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -126,4 +126,4 @@ public class FunctionSpace_DomainContext {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,QKzKC5ZQ8LzYLSUJkPKdUhBErQQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,ONuz2yspavHfhk60tTyWOXmrtg4=] */

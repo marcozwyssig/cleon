@@ -21,7 +21,7 @@ public class FunctionSpace_DNS {
   public static interface IDNSSystemConfigurationIntegrationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("daff088a-c7ce-11ec-a59e-d1c88102a398")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllAccessConfigurationTo();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo> AllAccessConfigurationTo();
 
     @IDynamicResourceExtension.MethodId("97fc3aec-c7cf-11ec-a59e-d1c88102a398")
     public java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo();
@@ -31,7 +31,7 @@ public class FunctionSpace_DNS {
   public static interface IDNSSystemConfigurationIntegrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("97fc3aec-c7cf-11ec-a59e-d1c88102a398")
-    public java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final ch.actifsource.core.javamodel.IDecorator dNSSystemConfigurationIntegration);
+    public java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_DNS {
     private DNSSystemConfigurationIntegrationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final ch.actifsource.core.javamodel.IDecorator dNSSystemConfigurationIntegration) {
+    public java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration) {
       /* Begin Protected Region [[97fc3aec-c7cf-11ec-a59e-d1c88102a398]] */
       final var dNSSystemConfigurationIntegrationFunctions = dNSSystemConfigurationIntegration.extension(IDNSSystemConfigurationIntegrationFunctions.class);
       final var list = dNSSystemConfigurationIntegrationFunctions.AllAccessConfigurationTo();
@@ -68,7 +68,7 @@ public class FunctionSpace_DNS {
 
     private DNSSystemConfigurationIntegrationFunctions() {}
 
-    public static java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final ch.actifsource.core.javamodel.IDecorator dNSSystemConfigurationIntegration) {
+    public static java.lang.Boolean HasAccessConfigurationWithUseIPFalseTo(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSSystemConfigurationIntegration dNSSystemConfigurationIntegration) {
       return DynamicResourceUtil.invoke(IDNSSystemConfigurationIntegrationFunctionsImpl.class, DNSSystemConfigurationIntegrationFunctionsImpl.INSTANCE, dNSSystemConfigurationIntegration).HasAccessConfigurationWithUseIPFalseTo(dNSSystemConfigurationIntegration);
     }
 
@@ -76,4 +76,4 @@ public class FunctionSpace_DNS {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,Ph63S1PagYC6JLUrsfLNf6AIvNo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c770edb4-c7ce-11ec-a59e-d1c88102a398,fwo+p9M5ayUCd6SI+el2/28y7HY=] */

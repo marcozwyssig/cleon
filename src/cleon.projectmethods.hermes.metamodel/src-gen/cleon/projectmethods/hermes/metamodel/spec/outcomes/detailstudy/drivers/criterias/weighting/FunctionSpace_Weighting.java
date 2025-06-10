@@ -56,10 +56,10 @@ public class FunctionSpace_Weighting {
   public static interface IWeightingEvaluationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("52c3bb3b-3d08-11e5-871f-6beac6a7c24b")
-    public java.lang.Double CalculateScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation);
+    public java.lang.Double CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation);
 
     @IDynamicResourceExtension.MethodId("da1f4d11-0547-11e6-adf9-af3c4dc80bc3")
-    public java.lang.Double CalculateMaxScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation);
+    public java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation);
 
   }
   
@@ -70,7 +70,7 @@ public class FunctionSpace_Weighting {
     private WeightingEvaluationFunctionsImpl() {}
 
     @Override
-    public java.lang.Double CalculateScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation) {
+    public java.lang.Double CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation) {
       /* Begin Protected Region [[52c3bb3b-3d08-11e5-871f-6beac6a7c24b]] */
 		double weighting = weightingEvaluation.selectCriteria().extension(IWeightingCriteriaFunctions.class).GetWeighting();
 		double score = Double.parseDouble(weightingEvaluation.selectScore().selectName());
@@ -79,7 +79,7 @@ public class FunctionSpace_Weighting {
     }
 
     @Override
-    public java.lang.Double CalculateMaxScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation) {
+    public java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation) {
       /* Begin Protected Region [[da1f4d11-0547-11e6-adf9-af3c4dc80bc3]] */
 		double weighting = weightingEvaluation.selectCriteria().extension(IWeightingCriteriaFunctions.class).GetWeighting();
 		return (weighting / 100) * 5;   
@@ -92,11 +92,11 @@ public class FunctionSpace_Weighting {
 
     private WeightingEvaluationFunctions() {}
 
-    public static java.lang.Double CalculateScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation) {
+    public static java.lang.Double CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation) {
       return DynamicResourceUtil.invoke(IWeightingEvaluationFunctionsImpl.class, WeightingEvaluationFunctionsImpl.INSTANCE, weightingEvaluation).CalculateScore(weightingEvaluation);
     }
 
-    public static java.lang.Double CalculateMaxScore(final ch.actifsource.core.javamodel.IDecorator weightingEvaluation) {
+    public static java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.evaluation.javamodel.IWeightingEvaluation weightingEvaluation) {
       return DynamicResourceUtil.invoke(IWeightingEvaluationFunctionsImpl.class, WeightingEvaluationFunctionsImpl.INSTANCE, weightingEvaluation).CalculateMaxScore(weightingEvaluation);
     }
 
@@ -108,14 +108,14 @@ public class FunctionSpace_Weighting {
     public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("d5587f0b-202b-11e9-83b3-a16e26b4cc59")
-    public List<ch.actifsource.core.javamodel.IResource> AllCriterials();
+    public List<cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
   public static interface IWeightingCriteriaAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("417d9e46-a6f5-11e8-9c81-8bd68c62e435")
-    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingCriteriaAggregate);
+    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteriaAggregate weightingCriteriaAggregate);
 
   }
   
@@ -126,7 +126,7 @@ public class FunctionSpace_Weighting {
     private WeightingCriteriaAggregateFunctionsImpl() {}
 
     @Override
-    public java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingCriteriaAggregate) {
+    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteriaAggregate weightingCriteriaAggregate) {
       /* Begin Protected Region [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
         return weightingCriteriaAggregate.selectWeightingCriterias().stream().mapToDouble(x -> x.extension(IWeightingCriteriaFunctions.class).GetWeighting()).sum();
       /* End Protected Region   [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
@@ -138,7 +138,7 @@ public class FunctionSpace_Weighting {
 
     private WeightingCriteriaAggregateFunctions() {}
 
-    public static java.lang.Double GetWeighting(final ch.actifsource.core.javamodel.IResource weightingCriteriaAggregate) {
+    public static java.lang.Double GetWeighting(final cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteriaAggregate weightingCriteriaAggregate) {
       return DynamicResourceUtil.invoke(IWeightingCriteriaAggregateFunctionsImpl.class, WeightingCriteriaAggregateFunctionsImpl.INSTANCE, weightingCriteriaAggregate).GetWeighting(weightingCriteriaAggregate);
     }
 
@@ -150,7 +150,7 @@ public class FunctionSpace_Weighting {
     public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("a5a526be-202a-11e9-83b3-a16e26b4cc59")
-    public List<ch.actifsource.core.javamodel.IResource> AllCriterials();
+    public List<cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
@@ -174,4 +174,4 @@ public class FunctionSpace_Weighting {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,345560d5-2025-11e9-83b3-a16e26b4cc59,nGII3Fw1r7PViF1GewpWXRgeQHI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,345560d5-2025-11e9-83b3-a16e26b4cc59,LOECqNtfSeIiMJTmB1VqKfgeO3c=] */

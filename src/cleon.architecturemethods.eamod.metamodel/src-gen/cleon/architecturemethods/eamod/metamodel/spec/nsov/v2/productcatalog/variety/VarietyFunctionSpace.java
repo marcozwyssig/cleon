@@ -21,7 +21,7 @@ public class VarietyFunctionSpace {
   public static interface IInfrastractureProductVarietyFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0719eacc-6ca2-11e7-8bc1-2fb13127901b")
-    public ch.actifsource.core.javamodel.INamedResource GetAllDirectedDependendies();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.variety.javamodel.IInfrastractureProductVariety GetAllDirectedDependendies();
 
     @IDynamicResourceExtension.MethodId("606bd350-778e-11e7-9604-cb27385e129c")
     public java.lang.String GetName();
@@ -48,4 +48,4 @@ public class VarietyFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fd3bd282-6ca1-11e7-8bc1-2fb13127901b,fNyYXYb58sBrsGT/40aIX6+bqzo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fd3bd282-6ca1-11e7-8bc1-2fb13127901b,wIx6PfxQqerWKbmASbCBtkD0FRo=] */

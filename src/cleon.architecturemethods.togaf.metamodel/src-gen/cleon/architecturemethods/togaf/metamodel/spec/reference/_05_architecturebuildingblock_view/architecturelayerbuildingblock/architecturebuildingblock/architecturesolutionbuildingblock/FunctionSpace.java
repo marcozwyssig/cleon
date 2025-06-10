@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface IArchitectureSolutionBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b6704900-42b3-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureSolutionBuildingBlock);
+    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock architectureSolutionBuildingBlock);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private ArchitectureSolutionBuildingBlockFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureSolutionBuildingBlock) {
+    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock architectureSolutionBuildingBlock) {
       return java.lang.String.format("ASBB-%03d", architectureSolutionBuildingBlock.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private ArchitectureSolutionBuildingBlockFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource architectureSolutionBuildingBlock) {
+    public static java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock architectureSolutionBuildingBlock) {
       return DynamicResourceUtil.invoke(IArchitectureSolutionBuildingBlockFunctionsImpl.class, ArchitectureSolutionBuildingBlockFunctionsImpl.INSTANCE, architectureSolutionBuildingBlock).GetId(architectureSolutionBuildingBlock);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b67048fe-42b3-11e6-a9d7-97cf4f7c398b,qAxNcawqkucpTgeIYnYUQQP4+Sk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b67048fe-42b3-11e6-a9d7-97cf4f7c398b,iGtgH19lXIhelcELdGOn72Zg7mA=] */

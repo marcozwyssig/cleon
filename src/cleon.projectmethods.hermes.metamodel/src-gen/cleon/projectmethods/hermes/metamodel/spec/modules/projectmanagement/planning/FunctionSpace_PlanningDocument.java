@@ -21,7 +21,7 @@ public class FunctionSpace_PlanningDocument {
   public static interface IPlanningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7a837db6-6746-11e9-9ec9-5fbc84faaeb1")
-    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware GetDeliverables();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable GetDeliverables();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_PlanningDocument {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,747b9b47-6746-11e9-9ec9-5fbc84faaeb1,T4j0xOYRuOILQYQPmHp0DFq2ckA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,747b9b47-6746-11e9-9ec9-5fbc84faaeb1,OCoPt/tagbmyA5Jige/VUUcg1Zs=] */

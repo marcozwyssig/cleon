@@ -21,7 +21,7 @@ public class FunctionSpace_SystemArc42_Concepts {
   public static interface IBackupConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b0386477-c1d2-11ea-b956-0ffede25a02d")
-    public List<ch.actifsource.core.javamodel.IResource> SelectBackupBuildingBlocks();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectBackupBuildingBlocks();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_SystemArc42_Concepts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a132df1d-c1d2-11ea-b956-0ffede25a02d,3b2rlOGenK3oeqIzEGSdZsYwToY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a132df1d-c1d2-11ea-b956-0ffede25a02d,7oGy0QeLGcCkQDsNr+JBsq1i1UI=] */

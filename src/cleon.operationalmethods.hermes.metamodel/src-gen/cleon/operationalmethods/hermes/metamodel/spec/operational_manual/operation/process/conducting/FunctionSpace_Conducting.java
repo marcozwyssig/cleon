@@ -21,7 +21,7 @@ public class FunctionSpace_Conducting {
   public static interface IConductingAndSupervisingSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cded376b-95c6-11ea-9744-7dd962dc1878")
-    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Conducting {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c6f7726e-95c6-11ea-9744-7dd962dc1878,RrCQqnIYpVzzgsJnBYPScmNTqh0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c6f7726e-95c6-11ea-9744-7dd962dc1878,th5xkajlHfs0IYmw2gQKSeNdWyk=] */

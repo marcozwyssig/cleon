@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IInstallationManualDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("60fce8ff-94c8-11ec-9b36-7d300415c806")
-    public java.lang.String GetDocumentPath(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String GetDocumentPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("bc5aa631-94c8-11ec-9b36-7d300415c806")
     public java.lang.String SystemName();
@@ -30,13 +30,13 @@ public class FunctionSpace_Asciidoc {
     public java.lang.String SystemConfigurationName();
 
     @IDynamicResourceExtension.MethodId("6ebecfef-94db-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContent(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("dc125e90-94dc-11ec-9b36-7d300415c806")
     public java.lang.String SystemConfigurationFullName();
 
     @IDynamicResourceExtension.MethodId("3f8f558c-9546-11ec-9b36-7d300415c806")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware SystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration SystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("de7ab9d7-f60f-11ec-bdd9-81f6a5b24344")
     public java.lang.String GetDocId();
@@ -45,10 +45,10 @@ public class FunctionSpace_Asciidoc {
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("20d919f4-1f53-11ef-9692-a96c1fbdfab3")
-    public java.lang.String GetAdocFileName(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String GetAdocFileName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("69c26587-1f5a-11ef-9692-a96c1fbdfab3")
-    public java.lang.String GetAdocFileNameWithoutAdoc(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String GetAdocFileNameWithoutAdoc(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -73,7 +73,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IPurposeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("63ec76f3-94dc-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -98,13 +98,13 @@ public class FunctionSpace_Asciidoc {
   public static interface IPrepare_YamlFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("574db3e3-9538-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("e6eea770-9538-11ec-9b36-7d300415c806")
     public java.lang.String SystemConfigurationName();
 
     @IDynamicResourceExtension.MethodId("78a1c817-9865-11ec-9d28-89a40da1c4b6")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware SystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration SystemConfiguration();
 
   }
   
@@ -202,7 +202,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IInstallationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("50a2bee6-9539-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -227,7 +227,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IAudienceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be1e3d1a-9539-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -252,7 +252,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IPrerequisitesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("67cdceae-953c-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -277,7 +277,7 @@ public class FunctionSpace_Asciidoc {
   public static interface ISkillsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("228b49c7-953d-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -302,7 +302,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IHW_InstallationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("94b1d668-9544-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -327,7 +327,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IDeploy_VMFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8f8a24a9-9545-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -352,7 +352,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IVertical_DependenciesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("def8f69f-9546-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -377,7 +377,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IPost_InstallationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f2be8a0b-9548-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("f8a1b106-9549-11ec-9b36-7d300415c806")
     public java.lang.Boolean DoGenerate();
@@ -387,7 +387,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IPost_InstallationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f8a1b106-9549-11ec-9b36-7d300415c806")
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource post_Installation);
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IPost_Installation post_Installation);
 
   }
   
@@ -398,7 +398,7 @@ public class FunctionSpace_Asciidoc {
     private Post_InstallationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource post_Installation) {
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IPost_Installation post_Installation) {
       /* Begin Protected Region [[f8a1b106-9549-11ec-9b36-7d300415c806]] */
       if (post_Installation.selectSuppress() == null) {
       	return true;
@@ -413,7 +413,7 @@ public class FunctionSpace_Asciidoc {
 
     private Post_InstallationFunctions() {}
 
-    public static java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource post_Installation) {
+    public static java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IPost_Installation post_Installation) {
       return DynamicResourceUtil.invoke(IPost_InstallationFunctionsImpl.class, Post_InstallationFunctionsImpl.INSTANCE, post_Installation).DoGenerate(post_Installation);
     }
 
@@ -422,7 +422,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IReinstallationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("48155ec9-131e-11ed-9688-130be89c46a5")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("48155ecb-131e-11ed-9688-130be89c46a5")
     public java.lang.Boolean DoGenerate();
@@ -432,7 +432,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IReinstallationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("48155ecb-131e-11ed-9688-130be89c46a5")
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource reinstallation);
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.reinstallation.javamodel.IReinstallation reinstallation);
 
   }
   
@@ -443,7 +443,7 @@ public class FunctionSpace_Asciidoc {
     private ReinstallationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource reinstallation) {
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.reinstallation.javamodel.IReinstallation reinstallation) {
       /* Begin Protected Region [[48155ecb-131e-11ed-9688-130be89c46a5]] */
       final var postinstallation = InstallationManualDocument.selectToMeReinstallation(reinstallation).selectInstallation().selectPost_installation();
       if (postinstallation.selectSuppress() == null) {
@@ -459,7 +459,7 @@ public class FunctionSpace_Asciidoc {
 
     private ReinstallationFunctions() {}
 
-    public static java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource reinstallation) {
+    public static java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.reinstallation.javamodel.IReinstallation reinstallation) {
       return DynamicResourceUtil.invoke(IReinstallationFunctionsImpl.class, ReinstallationFunctionsImpl.INSTANCE, reinstallation).DoGenerate(reinstallation);
     }
 
@@ -468,7 +468,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IOS_InstallationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8ef2ae28-954a-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("8ef2ae2a-954a-11ec-9b36-7d300415c806")
     public java.lang.Boolean DoGenerate();
@@ -478,7 +478,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IOS_InstallationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8ef2ae2a-954a-11ec-9b36-7d300415c806")
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource oS_Installation);
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IOS_Installation oS_Installation);
 
   }
   
@@ -489,7 +489,7 @@ public class FunctionSpace_Asciidoc {
     private OS_InstallationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource oS_Installation) {
+    public java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IOS_Installation oS_Installation) {
       /* Begin Protected Region [[8ef2ae2a-954a-11ec-9b36-7d300415c806]] */
       if (oS_Installation.selectManualOsInstallation() == null) {
       	return true;
@@ -504,7 +504,7 @@ public class FunctionSpace_Asciidoc {
 
     private OS_InstallationFunctions() {}
 
-    public static java.lang.Boolean DoGenerate(final ch.actifsource.core.javamodel.IResource oS_Installation) {
+    public static java.lang.Boolean DoGenerate(final cleon.operationalmethods.hermes.metamodel.spec.installation_manual.installation.javamodel.IOS_Installation oS_Installation) {
       return DynamicResourceUtil.invoke(IOS_InstallationFunctionsImpl.class, OS_InstallationFunctionsImpl.INSTANCE, oS_Installation).DoGenerate(oS_Installation);
     }
 
@@ -513,7 +513,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IHorizontal_DependenciesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ffa6744c-954a-11ec-9b36-7d300415c806")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -562,4 +562,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,60fce88b-94c8-11ec-9b36-7d300415c806,X6zbm1alPIOWL8ozJSkauMzGnlk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,60fce88b-94c8-11ec-9b36-7d300415c806,sSfy0LkhlkAqwjzKz3QKzKZzJNw=] */

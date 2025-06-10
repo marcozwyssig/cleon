@@ -37,25 +37,25 @@ public class FunctionSpace_SubzonePolicy {
     public java.lang.String TypeName();
 
     @IDynamicResourceExtension.MethodId("f9c1ff2d-b9cf-11e9-828c-091526d036b6")
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source);
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
 
     @IDynamicResourceExtension.MethodId("672a5ec2-b9e5-11e9-828c-091526d036b6")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("ba6db6f6-094f-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllSources();
 
     @IDynamicResourceExtension.MethodId("df365e20-094f-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllSourcesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllSourcesDistinct();
 
     @IDynamicResourceExtension.MethodId("adfed001-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources();
 
     @IDynamicResourceExtension.MethodId("e5fdbace-0df9-11ea-adc0-d5efa00b40ac")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src);
 
     @IDynamicResourceExtension.MethodId("299d0f3b-0dfc-11ea-adc0-d5efa00b40ac")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
     public java.lang.Boolean AllowRestrictedAccess();
@@ -65,10 +65,10 @@ public class FunctionSpace_SubzonePolicy {
   public static interface ISubZoneAccessPolicyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("672a5ec2-b9e5-11e9-828c-091526d036b6")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
 
     @IDynamicResourceExtension.MethodId("e5fdbace-0df9-11ea-adc0-d5efa00b40ac")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
 
     @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
     public java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy);
@@ -82,7 +82,7 @@ public class FunctionSpace_SubzonePolicy {
     private SubZoneAccessPolicyFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       /* Begin Protected Region [[672a5ec2-b9e5-11e9-828c-091526d036b6]] */
       final var sourceCfg = source.selectSourceSystemConfiguration();
       final var configurationFunctions = sourceCfg.extension(ISystemConfigurationFunctions.class);
@@ -100,7 +100,7 @@ public class FunctionSpace_SubzonePolicy {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       /* Begin Protected Region [[e5fdbace-0df9-11ea-adc0-d5efa00b40ac]] */
       return subZoneAccessPolicyList.stream().filter(x -> x.extension(ISubZoneAccessPolicyFunctions.class).AllSystemConfigurations().contains(src.selectSourceSystemConfiguration())).collect(Collectors.toList());
       /* End Protected Region   [[e5fdbace-0df9-11ea-adc0-d5efa00b40ac]] */
@@ -117,11 +117,11 @@ public class FunctionSpace_SubzonePolicy {
 
     private SubZoneAccessPolicyFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicyList).OnlyFromSource(source, subZoneAccessPolicyList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicyList).OnlyWhereSystemConfiguration(src, subZoneAccessPolicyList);
     }
 
@@ -137,7 +137,7 @@ public class FunctionSpace_SubzonePolicy {
     public java.lang.String TypeName();
 
     @IDynamicResourceExtension.MethodId("074d6763-b9d0-11e9-828c-091526d036b6")
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source);
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
 
     @IDynamicResourceExtension.MethodId("db422f6e-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources();
@@ -147,7 +147,7 @@ public class FunctionSpace_SubzonePolicy {
   public static interface IIntraSubZoneAccessPolicyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("074d6763-b9d0-11e9-828c-091526d036b6")
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy);
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy);
 
     @IDynamicResourceExtension.MethodId("db422f6e-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy);
@@ -161,7 +161,7 @@ public class FunctionSpace_SubzonePolicy {
     private IntraSubZoneAccessPolicyFunctionsImpl() {}
 
     @Override
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
       /* Begin Protected Region [[074d6763-b9d0-11e9-828c-091526d036b6]] */
       final var zoneFunctions = intraSubZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone().extension(IZoneFunctions.class);
       if( zoneFunctions.IsSingleUsed()) {
@@ -194,7 +194,7 @@ public class FunctionSpace_SubzonePolicy {
 
     private IntraSubZoneAccessPolicyFunctions() {}
 
-    public static java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
+    public static java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
       return DynamicResourceUtil.invoke(IIntraSubZoneAccessPolicyFunctionsImpl.class, IntraSubZoneAccessPolicyFunctionsImpl.INSTANCE, intraSubZoneAccessPolicy).EvaluatePolicy(source, intraSubZoneAccessPolicy);
     }
 
@@ -210,7 +210,7 @@ public class FunctionSpace_SubzonePolicy {
     public java.lang.String TypeName();
 
     @IDynamicResourceExtension.MethodId("16a32f0e-b9d0-11e9-828c-091526d036b6")
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source);
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
 
     @IDynamicResourceExtension.MethodId("bfada2ac-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources();
@@ -223,7 +223,7 @@ public class FunctionSpace_SubzonePolicy {
   public static interface IInterSubZoneAccessPolicyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("16a32f0e-b9d0-11e9-828c-091526d036b6")
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
 
     @IDynamicResourceExtension.MethodId("bfada2ac-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
@@ -240,7 +240,7 @@ public class FunctionSpace_SubzonePolicy {
     private InterSubZoneAccessPolicyFunctionsImpl() {}
 
     @Override
-    public java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+    public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[16a32f0e-b9d0-11e9-828c-091526d036b6]] */
       final var zoneFunctions = interSubZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone().extension(IZoneFunctions.class);
       if( zoneFunctions.IsSingleUsed()) {
@@ -278,7 +278,7 @@ public class FunctionSpace_SubzonePolicy {
 
     private InterSubZoneAccessPolicyFunctions() {}
 
-    public static java.lang.String EvaluatePolicy(final ch.actifsource.core.javamodel.INamedResource source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+    public static java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).EvaluatePolicy(source, interSubZoneAccessPolicy);
     }
 
@@ -295,10 +295,10 @@ public class FunctionSpace_SubzonePolicy {
   public static interface ISourceSubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b0d1f44b-094e-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSources();
 
     @IDynamicResourceExtension.MethodId("d4cd614b-094e-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSourcesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSourcesDistinct();
 
   }
   
@@ -322,4 +322,4 @@ public class FunctionSpace_SubzonePolicy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,RD6RmuBlkTgFqH8nYtAJ+YPI3nM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,BedzTGZzC/WRPKmlAd4dFYuKApE=] */

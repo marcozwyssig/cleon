@@ -21,7 +21,7 @@ public class FunctionSpace_StaticTests {
   public static interface IStaticTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("69569aa2-1cf4-11e6-aaba-9db7fdc64d7e")
-    public ch.actifsource.core.javamodel.IDecorator GetTestSubjectArea();
+    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.ITestSubjectArea GetTestSubjectArea();
 
     @IDynamicResourceExtension.MethodId("5d21ba45-1dbb-11e6-974b-630b7f5d3b95")
     public java.lang.String GetName();
@@ -30,14 +30,14 @@ public class FunctionSpace_StaticTests {
     public java.lang.Boolean AllTestArePassed();
 
     @IDynamicResourceExtension.MethodId("6e176fb8-2270-11e6-bcc1-f96f0d74dcad")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllRequirements();
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTest> AllRequirements();
 
   }
   
   public static interface IStaticTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5dbb0bce-20d9-11e6-9368-9172b77c2cff")
-    public java.lang.Boolean AllTestArePassed(final ch.actifsource.core.javamodel.IDecorator staticTest);
+    public java.lang.Boolean AllTestArePassed(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTest staticTest);
 
   }
   
@@ -48,7 +48,7 @@ public class FunctionSpace_StaticTests {
     private StaticTestFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean AllTestArePassed(final ch.actifsource.core.javamodel.IDecorator staticTest) {
+    public java.lang.Boolean AllTestArePassed(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTest staticTest) {
       /* Begin Protected Region [[5dbb0bce-20d9-11e6-9368-9172b77c2cff]] */
     	return null;   
       /* End Protected Region   [[5dbb0bce-20d9-11e6-9368-9172b77c2cff]] */
@@ -60,7 +60,7 @@ public class FunctionSpace_StaticTests {
 
     private StaticTestFunctions() {}
 
-    public static java.lang.Boolean AllTestArePassed(final ch.actifsource.core.javamodel.IDecorator staticTest) {
+    public static java.lang.Boolean AllTestArePassed(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTest staticTest) {
       return DynamicResourceUtil.invoke(IStaticTestFunctionsImpl.class, StaticTestFunctionsImpl.INSTANCE, staticTest).AllTestArePassed(staticTest);
     }
 
@@ -69,7 +69,7 @@ public class FunctionSpace_StaticTests {
   public static interface ITestSubjectAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("596743ff-2270-11e6-bcc1-f96f0d74dcad")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllRequirements();
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTest> AllRequirements();
 
   }
   
@@ -93,4 +93,4 @@ public class FunctionSpace_StaticTests {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,61add92d-1cf4-11e6-aaba-9db7fdc64d7e,nhq3Ax5pn2srJMGB0jiauzZtrNs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,61add92d-1cf4-11e6-aaba-9db7fdc64d7e,h5uWyYsDo3U7xVX/nFCaSIe3LOA=] */

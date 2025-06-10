@@ -23,35 +23,35 @@ public class FunctionSpace_Segmentation {
   public static interface IZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("518b1b93-0b79-11e9-a136-69d076e48ed1")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllParents();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> GetAllParents();
 
     @IDynamicResourceExtension.MethodId("72a38c28-0b79-11e9-a136-69d076e48ed1")
-    public ch.actifsource.core.javamodel.INamedResource GetNetDomainZone();
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.INetdomainZone GetNetDomainZone();
 
     @IDynamicResourceExtension.MethodId("93024aa3-0b79-11e9-a136-69d076e48ed1")
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("a38fa265-0d1e-11e9-be4f-03130cc057ef")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllChildrenZone();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> GetAllChildrenZone();
 
     @IDynamicResourceExtension.MethodId("b186e30d-6918-11ea-bc2c-91c30a68f7c3")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllChildrenSubzone();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> GetAllChildrenSubzone();
 
     @IDynamicResourceExtension.MethodId("efab4698-0d1e-11e9-be4f-03130cc057ef")
-    public List<ch.actifsource.core.javamodel.IEnumValue> GetAllClassifications();
+    public List<cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification> GetAllClassifications();
 
     @IDynamicResourceExtension.MethodId("63d03ca5-b9d3-11e9-828c-091526d036b6")
     public java.lang.Boolean IsSingleUsed();
 
     @IDynamicResourceExtension.MethodId("0bb8e351-c365-11e9-a43f-07b58a157d3c")
-    public List<ch.actifsource.core.javamodel.INamedResource> sortByVLAN();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN();
 
   }
   
   public static interface IZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0bb8e351-c365-11e9-a43f-07b58a157d3c")
-    public List<ch.actifsource.core.javamodel.INamedResource> sortByVLAN(final List<ch.actifsource.core.javamodel.IResource> zoneList);
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zoneList);
 
   }
   
@@ -62,7 +62,7 @@ public class FunctionSpace_Segmentation {
     private ZoneFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> sortByVLAN(final List<ch.actifsource.core.javamodel.IResource> zoneList) {
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zoneList) {
       /* Begin Protected Region [[0bb8e351-c365-11e9-a43f-07b58a157d3c]] */
       return zoneList.stream().filter(x -> x instanceof ISecuritySubZone).map(x -> (ISecuritySubZone)x).sorted(Comparator.comparingInt(x -> x.selectDefaultVlan().selectVlan_no())).collect(Collectors.toList());   
       /* End Protected Region   [[0bb8e351-c365-11e9-a43f-07b58a157d3c]] */
@@ -74,7 +74,7 @@ public class FunctionSpace_Segmentation {
 
     private ZoneFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> sortByVLAN(final List<ch.actifsource.core.javamodel.IResource> zoneList) {
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> sortByVLAN(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zoneList) {
       return DynamicResourceUtil.invoke(IZoneFunctionsImpl.class, ZoneFunctionsImpl.INSTANCE, zoneList).sortByVLAN(zoneList);
     }
 
@@ -86,23 +86,23 @@ public class FunctionSpace_Segmentation {
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("0badd696-0d1f-11e9-be4f-03130cc057ef")
-    public List<ch.actifsource.core.javamodel.IEnumValue> GetAllClassifications();
+    public List<cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification> GetAllClassifications();
 
     @IDynamicResourceExtension.MethodId("d79ec6ec-6918-11ea-bc2c-91c30a68f7c3")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyExport();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport();
 
     @IDynamicResourceExtension.MethodId("9e849f53-c789-11ea-b0b6-e5df79e86bc2")
     public java.lang.String NameWithSecurityZoneName();
 
     @IDynamicResourceExtension.MethodId("e26ab347-f75c-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> Vlans();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> Vlans();
 
   }
   
   public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d79ec6ec-6918-11ea-bc2c-91c30a68f7c3")
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyExport(final List<ch.actifsource.core.javamodel.INamedResource> securitySubZoneList);
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList);
 
   }
   
@@ -113,7 +113,7 @@ public class FunctionSpace_Segmentation {
     private SecuritySubZoneFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.INamedResource> OnlyExport(final List<ch.actifsource.core.javamodel.INamedResource> securitySubZoneList) {
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList) {
       /* Begin Protected Region [[d79ec6ec-6918-11ea-bc2c-91c30a68f7c3]] */
       return securitySubZoneList.stream().filter(x -> x.selectExport() == null || x.selectExport().booleanValue() ).collect(Collectors.toList());
       /* End Protected Region   [[d79ec6ec-6918-11ea-bc2c-91c30a68f7c3]] */
@@ -125,7 +125,7 @@ public class FunctionSpace_Segmentation {
 
     private SecuritySubZoneFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.INamedResource> OnlyExport(final List<ch.actifsource.core.javamodel.INamedResource> securitySubZoneList) {
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList) {
       return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZoneList).OnlyExport(securitySubZoneList);
     }
 
@@ -159,7 +159,7 @@ public class FunctionSpace_Segmentation {
   public static interface ISecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3c79d5d9-a961-11e9-bf83-7bacdb6991f7")
-    public java.lang.Boolean IsAllowed(final ch.actifsource.core.javamodel.INamedResource source);
+    public java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source);
 
     @IDynamicResourceExtension.MethodId("c6f6ee19-f5b2-11ef-b301-37bf6b79be8f")
     public java.lang.String GetTypeName();
@@ -169,7 +169,7 @@ public class FunctionSpace_Segmentation {
   public static interface ISecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("3c79d5d9-a961-11e9-bf83-7bacdb6991f7")
-    public java.lang.Boolean IsAllowed(final ch.actifsource.core.javamodel.INamedResource source, final ch.actifsource.core.javamodel.INamedResource securityZone);
+    public java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone securityZone);
 
   }
   
@@ -180,7 +180,7 @@ public class FunctionSpace_Segmentation {
     private SecurityZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsAllowed(final ch.actifsource.core.javamodel.INamedResource source, final ch.actifsource.core.javamodel.INamedResource securityZone) {
+    public java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone securityZone) {
       /* Begin Protected Region [[3c79d5d9-a961-11e9-bf83-7bacdb6991f7]] */
       return source.selectAllowedAccessTo().contains(securityZone);   
       /* End Protected Region   [[3c79d5d9-a961-11e9-bf83-7bacdb6991f7]] */
@@ -192,7 +192,7 @@ public class FunctionSpace_Segmentation {
 
     private SecurityZoneFunctions() {}
 
-    public static java.lang.Boolean IsAllowed(final ch.actifsource.core.javamodel.INamedResource source, final ch.actifsource.core.javamodel.INamedResource securityZone) {
+    public static java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone securityZone) {
       return DynamicResourceUtil.invoke(ISecurityZoneFunctionsImpl.class, SecurityZoneFunctionsImpl.INSTANCE, securityZone).IsAllowed(source, securityZone);
     }
 
@@ -383,7 +383,7 @@ public class FunctionSpace_Segmentation {
   public static interface IMulitpleUsedNetdomainZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("252e0f1a-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource mulitpleUsedNetdomainZone);
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone);
 
   }
   
@@ -394,7 +394,7 @@ public class FunctionSpace_Segmentation {
     private MulitpleUsedNetdomainZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource mulitpleUsedNetdomainZone) {
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
       return false;
     }
 
@@ -404,7 +404,7 @@ public class FunctionSpace_Segmentation {
 
     private MulitpleUsedNetdomainZoneFunctions() {}
 
-    public static java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource mulitpleUsedNetdomainZone) {
+    public static java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IMulitpleUsedNetdomainZone mulitpleUsedNetdomainZone) {
       return DynamicResourceUtil.invoke(IMulitpleUsedNetdomainZoneFunctionsImpl.class, MulitpleUsedNetdomainZoneFunctionsImpl.INSTANCE, mulitpleUsedNetdomainZone).IsSingleUsed(mulitpleUsedNetdomainZone);
     }
 
@@ -420,7 +420,7 @@ public class FunctionSpace_Segmentation {
   public static interface ISingleUsedNetdomainZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2f0e9808-a543-11ec-9f8a-6b362fcb922a")
-    public java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource singleUsedNetdomainZone);
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone);
 
   }
   
@@ -431,7 +431,7 @@ public class FunctionSpace_Segmentation {
     private SingleUsedNetdomainZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource singleUsedNetdomainZone) {
+    public java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
       return true;
     }
 
@@ -441,7 +441,7 @@ public class FunctionSpace_Segmentation {
 
     private SingleUsedNetdomainZoneFunctions() {}
 
-    public static java.lang.Boolean IsSingleUsed(final ch.actifsource.core.javamodel.INamedResource singleUsedNetdomainZone) {
+    public static java.lang.Boolean IsSingleUsed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISingleUsedNetdomainZone singleUsedNetdomainZone) {
       return DynamicResourceUtil.invoke(ISingleUsedNetdomainZoneFunctionsImpl.class, SingleUsedNetdomainZoneFunctionsImpl.INSTANCE, singleUsedNetdomainZone).IsSingleUsed(singleUsedNetdomainZone);
     }
 
@@ -475,7 +475,7 @@ public class FunctionSpace_Segmentation {
   public static interface IAbstractVlanFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("24dbecaa-f758-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -503,7 +503,7 @@ public class FunctionSpace_Segmentation {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("51b7fe3c-f758-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -528,14 +528,14 @@ public class FunctionSpace_Segmentation {
   public static interface IVlanRangeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
   public static interface IVlanRangeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("60895471-f758-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> VLANs(final ch.actifsource.core.javamodel.IResource vlanRange);
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange);
 
   }
   
@@ -546,7 +546,7 @@ public class FunctionSpace_Segmentation {
     private VlanRangeFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IResource> VLANs(final ch.actifsource.core.javamodel.IResource vlanRange) {
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
       return null;
     }
 
@@ -556,7 +556,7 @@ public class FunctionSpace_Segmentation {
 
     private VlanRangeFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IResource> VLANs(final ch.actifsource.core.javamodel.IResource vlanRange) {
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlanRange vlanRange) {
       return DynamicResourceUtil.invoke(IVlanRangeFunctionsImpl.class, VlanRangeFunctionsImpl.INSTANCE, vlanRange).VLANs(vlanRange);
     }
 
@@ -565,7 +565,7 @@ public class FunctionSpace_Segmentation {
   public static interface IVlanFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cd978089-f75a-11ef-9619-857aad3ec118")
-    public List<ch.actifsource.core.javamodel.IResource> VLANs();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan> VLANs();
 
   }
   
@@ -589,4 +589,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,yN3O0Rx0og6A/g3XwS1ufWJkTxw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,dcX/NNDFVMfKGlMqNVgYK6iJswA=] */

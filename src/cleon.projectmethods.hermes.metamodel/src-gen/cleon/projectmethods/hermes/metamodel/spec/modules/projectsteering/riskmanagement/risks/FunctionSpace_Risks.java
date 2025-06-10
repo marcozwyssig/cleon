@@ -28,7 +28,7 @@ public class FunctionSpace_Risks {
   public static interface IRiskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f99fc537-2f08-11e6-8bd9-a77b8d2a3a0e")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Risks {
     private RiskFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk) {
       return java.lang.String.format("RK-%03d", risk.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Risks {
 
     private RiskFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware risk) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRisk risk) {
       return DynamicResourceUtil.invoke(IRiskFunctionsImpl.class, RiskFunctionsImpl.INSTANCE, risk).GetId(risk);
     }
 
@@ -68,10 +68,10 @@ public class FunctionSpace_Risks {
   public static interface IRiskStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4fb05fd1-3250-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsOpen(final ch.actifsource.core.javamodel.IEnumValue riskState);
+    public java.lang.Boolean IsOpen(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState);
 
     @IDynamicResourceExtension.MethodId("7a8e30af-3250-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsClosed(final ch.actifsource.core.javamodel.IEnumValue riskState);
+    public java.lang.Boolean IsClosed(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState);
 
   }
   
@@ -82,12 +82,12 @@ public class FunctionSpace_Risks {
     private RiskStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsOpen(final ch.actifsource.core.javamodel.IEnumValue riskState) {
+    public java.lang.Boolean IsOpen(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState) {
       return !riskState.isClosed();
     }
 
     @Override
-    public java.lang.Boolean IsClosed(final ch.actifsource.core.javamodel.IEnumValue riskState) {
+    public java.lang.Boolean IsClosed(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState) {
       return riskState.isClosed();
     }
 
@@ -97,11 +97,11 @@ public class FunctionSpace_Risks {
 
     private RiskStateFunctions() {}
 
-    public static java.lang.Boolean IsOpen(final ch.actifsource.core.javamodel.IEnumValue riskState) {
+    public static java.lang.Boolean IsOpen(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState) {
       return DynamicResourceUtil.invoke(IRiskStateFunctionsImpl.class, RiskStateFunctionsImpl.INSTANCE, riskState).IsOpen(riskState);
     }
 
-    public static java.lang.Boolean IsClosed(final ch.actifsource.core.javamodel.IEnumValue riskState) {
+    public static java.lang.Boolean IsClosed(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.risks.javamodel.IRiskState riskState) {
       return DynamicResourceUtil.invoke(IRiskStateFunctionsImpl.class, RiskStateFunctionsImpl.INSTANCE, riskState).IsClosed(riskState);
     }
 
@@ -109,4 +109,4 @@ public class FunctionSpace_Risks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f25d187d-2f08-11e6-8bd9-a77b8d2a3a0e,dH0Z7hHOo22SRUrdcfilTcermHk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f25d187d-2f08-11e6-8bd9-a77b8d2a3a0e,NhurpyUMY7hXbhutpGzuXGAV4KI=] */

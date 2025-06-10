@@ -87,14 +87,14 @@ public class qos__T_yaml {
   public static interface IQoSSystemConfigurationConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d111661f-528c-11ec-9fcc-f3bdcf3059b2")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWithOperationSystem();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> OnlyWithOperationSystem();
 
   }
   
   public static interface IQoSSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d111661f-528c-11ec-9fcc-f3bdcf3059b2")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWithOperationSystem(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationConceptList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> OnlyWithOperationSystem(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> qoSSystemConfigurationConceptList);
 
   }
   
@@ -105,7 +105,7 @@ public class qos__T_yaml {
     private QoSSystemConfigurationConceptFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyWithOperationSystem(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationConceptList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> OnlyWithOperationSystem(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> qoSSystemConfigurationConceptList) {
       /* Begin Protected Region [[d111661f-528c-11ec-9fcc-f3bdcf3059b2]] */
       return qoSSystemConfigurationConceptList.stream().filter(x -> x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).IsDependsOnLinux() || x.selectConceptForSystemConfiguration().extension(ISystemConfigurationFunctions.class).IsDependsOnWindows() ).collect(Collectors.toList());
       /* End Protected Region   [[d111661f-528c-11ec-9fcc-f3bdcf3059b2]] */
@@ -117,7 +117,7 @@ public class qos__T_yaml {
 
     private QoSSystemConfigurationConceptFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyWithOperationSystem(final List<ch.actifsource.core.javamodel.IDecorator> qoSSystemConfigurationConceptList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> OnlyWithOperationSystem(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IQoSSystemConfigurationConcept> qoSSystemConfigurationConceptList) {
       return DynamicResourceUtil.invoke(IQoSSystemConfigurationConceptFunctionsImpl.class, QoSSystemConfigurationConceptFunctionsImpl.INSTANCE, qoSSystemConfigurationConceptList).OnlyWithOperationSystem(qoSSystemConfigurationConceptList);
     }
 
@@ -125,4 +125,4 @@ public class qos__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7efd3326-a0e1-11ea-8daa-afb4679c3497,EWJrd0eh2lF3tb8ZmQXuOyb4vAI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7efd3326-a0e1-11ea-8daa-afb4679c3497,ON1PaOli3dTDJwlf7l6HHu0GTUo=] */

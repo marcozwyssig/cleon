@@ -21,7 +21,7 @@ public class FunctionSpace_CHRV {
   public static interface IIssuesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7e23640e-ce67-11e5-8041-092cb74c72f2")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_CHRV {
   public static interface IProjectSubjectAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5e1a67ab-c90b-11e5-a64e-a5d84d8f1b45")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -71,7 +71,7 @@ public class FunctionSpace_CHRV {
   public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("57c59381-1d89-11e6-b329-f50056ef90a6")
-    public java.lang.String RenderChapters(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -96,13 +96,13 @@ public class FunctionSpace_CHRV {
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f70a0f00-c90c-11e5-a64e-a5d84d8f1b45")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("d770ab93-ffca-11e5-bd7b-8b0acf27d441")
     public java.lang.String GetFileName();
 
     @IDynamicResourceExtension.MethodId("6ae2843d-1230-11e8-b381-115accdaedda")
-    public java.lang.String RenderChapter(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -127,7 +127,7 @@ public class FunctionSpace_CHRV {
   public static interface ISourcesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8d704f22-c912-11e5-a64e-a5d84d8f1b45")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -152,7 +152,7 @@ public class FunctionSpace_CHRV {
   public static interface IGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b511455d-c912-11e5-a64e-a5d84d8f1b45")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -177,17 +177,17 @@ public class FunctionSpace_CHRV {
   public static interface IGoalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5a40bdab-15f2-11e6-be5f-0b820f273d17")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("f3911f89-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f3911f89-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource goal);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal);
 
   }
   
@@ -198,7 +198,7 @@ public class FunctionSpace_CHRV {
     private GoalFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource goal) {
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal) {
       return null;
     }
 
@@ -208,7 +208,7 @@ public class FunctionSpace_CHRV {
 
     private GoalFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource goal) {
+    public static java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal) {
       return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).RenderDescriptions(language, goal);
     }
 
@@ -217,7 +217,7 @@ public class FunctionSpace_CHRV {
   public static interface IPrinciplesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bdefce04-c9a3-11e5-96e7-e5a5eee26591")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -242,17 +242,17 @@ public class FunctionSpace_CHRV {
   public static interface IPrincipleFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ab295548-15f2-11e6-be5f-0b820f273d17")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("e90c40b8-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e90c40b8-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource principle);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle);
 
   }
   
@@ -263,7 +263,7 @@ public class FunctionSpace_CHRV {
     private PrincipleFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource principle) {
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle) {
       return null;
     }
 
@@ -273,7 +273,7 @@ public class FunctionSpace_CHRV {
 
     private PrincipleFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource principle) {
+    public static java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle) {
       return DynamicResourceUtil.invoke(IPrincipleFunctionsImpl.class, PrincipleFunctionsImpl.INSTANCE, principle).RenderDescriptions(language, principle);
     }
 
@@ -282,7 +282,7 @@ public class FunctionSpace_CHRV {
   public static interface IDriversFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("011d6ab8-c9a5-11e5-96e7-e5a5eee26591")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -307,17 +307,17 @@ public class FunctionSpace_CHRV {
   public static interface IDriverFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a42bf84f-a528-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("a2c0c721-a536-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface IDriverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a2c0c721-a536-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource driver);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver);
 
   }
   
@@ -328,7 +328,7 @@ public class FunctionSpace_CHRV {
     private DriverFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource driver) {
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver) {
       return null;
     }
 
@@ -338,7 +338,7 @@ public class FunctionSpace_CHRV {
 
     private DriverFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource driver) {
+    public static java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver) {
       return DynamicResourceUtil.invoke(IDriverFunctionsImpl.class, DriverFunctionsImpl.INSTANCE, driver).RenderDescriptions(language, driver);
     }
 
@@ -347,7 +347,7 @@ public class FunctionSpace_CHRV {
   public static interface IIssueGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5b24f52d-c5d6-11e5-9a6b-0bd3546aceff")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -372,7 +372,7 @@ public class FunctionSpace_CHRV {
   public static interface IStakeholdersFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a8de9213-0de1-11e6-a33d-238391a68770")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -397,7 +397,7 @@ public class FunctionSpace_CHRV {
   public static interface IDestinctionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4185cb07-0e18-11e6-ae01-ef640c578b9b")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -421,4 +421,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,x/q449Fmzb+cOuTDD/1bQqPT5xE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,ii4gR9SfZGW2HLilrCZxucqGj+w=] */

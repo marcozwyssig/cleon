@@ -49,7 +49,7 @@ public class FunctionSpace_Paragraph {
     public java.lang.String OriginText();
 
     @IDynamicResourceExtension.MethodId("1a72e089-9df1-11ef-970e-cda72e282c65")
-    public ch.actifsource.core.javamodel.IResource SourceLanguage();
+    public cleon.common.language.metamodel.spec.languages.javamodel.ILanguage SourceLanguage();
 
   }
   
@@ -74,14 +74,14 @@ public class FunctionSpace_Paragraph {
   public static interface ITextAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("75aed152-a5a6-11ef-97d6-5b0fa6c90c00")
-    public java.lang.String translateText(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String translateText(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface ITextAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("75aed152-a5a6-11ef-97d6-5b0fa6c90c00")
-    public java.lang.String translateText(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource textAware);
+    public java.lang.String translateText(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware);
 
   }
   
@@ -92,7 +92,7 @@ public class FunctionSpace_Paragraph {
     private TextAwareFunctionsImpl() {}
 
     @Override
-    public java.lang.String translateText(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource textAware) {
+    public java.lang.String translateText(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware) {
       /* Begin Protected Region [[75aed152-a5a6-11ef-97d6-5b0fa6c90c00]] */
         if( textAware.selectTextTranslation().containsKey(language.getResource())) {
           	final var name = textAware.selectTextTranslation().get(language.getResource());
@@ -108,7 +108,7 @@ public class FunctionSpace_Paragraph {
 
     private TextAwareFunctions() {}
 
-    public static java.lang.String translateText(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.IResource textAware) {
+    public static java.lang.String translateText(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.common.doc.metamodel.spec.paragraph.javamodel.ITextAware textAware) {
       return DynamicResourceUtil.invoke(ITextAwareFunctionsImpl.class, TextAwareFunctionsImpl.INSTANCE, textAware).translateText(language, textAware);
     }
 
@@ -116,4 +116,4 @@ public class FunctionSpace_Paragraph {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,4ACmedDID9JL0ctXVbrFkfyn/Ng=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fcc117b-ed42-11ec-97a2-3feebb03f72b,avABFm25xmT5Kkh7c0rBgYvrytc=] */

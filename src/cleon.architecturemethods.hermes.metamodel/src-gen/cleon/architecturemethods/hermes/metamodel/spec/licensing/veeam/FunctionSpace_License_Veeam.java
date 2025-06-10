@@ -21,19 +21,19 @@ public class FunctionSpace_License_Veeam {
   public static interface IVeeamAvailabilitySuiteLicenseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8c966b29-e4bb-11ef-a6bd-497168f25adc")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurationWhereMustBeBackuped();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationWhereMustBeBackuped();
 
     @IDynamicResourceExtension.MethodId("e05d41b5-e4bb-11ef-a6bd-497168f25adc")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllVMsWhereMustBeBackups();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllVMsWhereMustBeBackups();
 
     @IDynamicResourceExtension.MethodId("155a03c9-e4bc-11ef-a6bd-497168f25adc")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllHosts(final ch.actifsource.core.javamodel.INamedResource systemEnvironment);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllHosts(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode systemEnvironment);
 
     @IDynamicResourceExtension.MethodId("5f326fd5-e4bc-11ef-a6bd-497168f25adc")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllVMs(final ch.actifsource.core.javamodel.INamedResource systemEnvironment);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllVMs(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode systemEnvironment);
 
     @IDynamicResourceExtension.MethodId("a60a1da8-e4bc-11ef-a6bd-497168f25adc")
-    public ch.actifsource.core.javamodel.INamedResource Environment();
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
 
     @IDynamicResourceExtension.MethodId("23b135ac-e4be-11ef-a6bd-497168f25adc")
     public java.lang.String RecommendedLicense();
@@ -52,13 +52,13 @@ public class FunctionSpace_License_Veeam {
   public static interface IVeeamAvailabilitySuiteLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e05d41b5-e4bb-11ef-a6bd-497168f25adc")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllVMsWhereMustBeBackups(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllVMsWhereMustBeBackups(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense);
 
     @IDynamicResourceExtension.MethodId("23b135ac-e4be-11ef-a6bd-497168f25adc")
-    public java.lang.String RecommendedLicense(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense);
+    public java.lang.String RecommendedLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense);
 
     @IDynamicResourceExtension.MethodId("23b135ae-e4be-11ef-a6bd-497168f25adc")
-    public java.lang.Integer RequiredLicenses(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense);
+    public java.lang.Integer RequiredLicenses(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense);
 
   }
   
@@ -69,7 +69,7 @@ public class FunctionSpace_License_Veeam {
     private VeeamAvailabilitySuiteLicenseFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> GetAllVMsWhereMustBeBackups(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllVMsWhereMustBeBackups(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       /* Begin Protected Region [[e05d41b5-e4bb-11ef-a6bd-497168f25adc]] */
     	final var functions = veeamAvailabilitySuiteLicense.extension(IVeeamAvailabilitySuiteLicenseFunctions.class);
     	return veeamAvailabilitySuiteLicense.extension(IVeeamAvailabilitySuiteLicenseFunctions.class).GetAllVMs(functions.Environment());
@@ -77,14 +77,14 @@ public class FunctionSpace_License_Veeam {
     }
 
     @Override
-    public java.lang.String RecommendedLicense(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public java.lang.String RecommendedLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       /* Begin Protected Region [[23b135ac-e4be-11ef-a6bd-497168f25adc]] */
     	return new VeeamLicenseCalculator( veeamAvailabilitySuiteLicense.selectTotalSockets(), veeamAvailabilitySuiteLicense.selectVmsToBackup().size()).getRecommendedLicense();   
       /* End Protected Region   [[23b135ac-e4be-11ef-a6bd-497168f25adc]] */
     }
 
     @Override
-    public java.lang.Integer RequiredLicenses(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public java.lang.Integer RequiredLicenses(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       /* Begin Protected Region [[23b135ae-e4be-11ef-a6bd-497168f25adc]] */
     	return new VeeamLicenseCalculator( veeamAvailabilitySuiteLicense.selectTotalSockets(), veeamAvailabilitySuiteLicense.selectVmsToBackup().size()).getRequiredLicenses();
   
@@ -97,15 +97,15 @@ public class FunctionSpace_License_Veeam {
 
     private VeeamAvailabilitySuiteLicenseFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> GetAllVMsWhereMustBeBackups(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetAllVMsWhereMustBeBackups(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       return DynamicResourceUtil.invoke(IVeeamAvailabilitySuiteLicenseFunctionsImpl.class, VeeamAvailabilitySuiteLicenseFunctionsImpl.INSTANCE, veeamAvailabilitySuiteLicense).GetAllVMsWhereMustBeBackups(veeamAvailabilitySuiteLicense);
     }
 
-    public static java.lang.String RecommendedLicense(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public static java.lang.String RecommendedLicense(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       return DynamicResourceUtil.invoke(IVeeamAvailabilitySuiteLicenseFunctionsImpl.class, VeeamAvailabilitySuiteLicenseFunctionsImpl.INSTANCE, veeamAvailabilitySuiteLicense).RecommendedLicense(veeamAvailabilitySuiteLicense);
     }
 
-    public static java.lang.Integer RequiredLicenses(final ch.actifsource.core.javamodel.IDecorator veeamAvailabilitySuiteLicense) {
+    public static java.lang.Integer RequiredLicenses(final cleon.architecturemethods.hermes.metamodel.spec.licensing.veeam.javamodel.IVeeamAvailabilitySuiteLicense veeamAvailabilitySuiteLicense) {
       return DynamicResourceUtil.invoke(IVeeamAvailabilitySuiteLicenseFunctionsImpl.class, VeeamAvailabilitySuiteLicenseFunctionsImpl.INSTANCE, veeamAvailabilitySuiteLicense).RequiredLicenses(veeamAvailabilitySuiteLicense);
     }
 
@@ -113,4 +113,4 @@ public class FunctionSpace_License_Veeam {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fb6fac6-e4bb-11ef-a6bd-497168f25adc,KIXgTMpjV/iWQuL1Uz5xl1xDcUs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fb6fac6-e4bb-11ef-a6bd-497168f25adc,CBl23btxFKp+FJbQcz+7OvWDklk=] */

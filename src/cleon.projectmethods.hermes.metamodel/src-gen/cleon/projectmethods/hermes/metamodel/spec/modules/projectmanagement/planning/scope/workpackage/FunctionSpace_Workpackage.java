@@ -24,7 +24,7 @@ public class FunctionSpace_Workpackage {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("74637dd8-d66f-11e6-ad1f-c967b4caaf09")
-    public List<ch.actifsource.core.javamodel.IResource> GetRequiredSprints();
+    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetRequiredSprints();
 
     @IDynamicResourceExtension.MethodId("87d08efa-d6ac-11e6-a1b8-05a222dbc1bd")
     public java.lang.String GetSimpleId();
@@ -33,20 +33,20 @@ public class FunctionSpace_Workpackage {
     public java.lang.String GetPhaseOfEndphaseName();
 
     @IDynamicResourceExtension.MethodId("aa8f9a90-3eb5-11e7-a89c-83d57940f0e3")
-    public List<ch.actifsource.core.javamodel.IDecorator> GetModules();
+    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome> GetModules();
 
     @IDynamicResourceExtension.MethodId("ff97575a-bfee-11e8-a3d0-5394fd9291a1")
-    public ch.actifsource.core.javamodel.IResource GetScope();
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.javamodel.IScope GetScope();
 
   }
   
   public static interface IWorkpackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f1ec1852-bc86-11e6-b169-a12bde5a1c7c")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator workpackage);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage);
 
     @IDynamicResourceExtension.MethodId("87d08efa-d6ac-11e6-a1b8-05a222dbc1bd")
-    public java.lang.String GetSimpleId(final ch.actifsource.core.javamodel.IDecorator workpackage);
+    public java.lang.String GetSimpleId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage);
 
   }
   
@@ -57,12 +57,12 @@ public class FunctionSpace_Workpackage {
     private WorkpackageFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator workpackage) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return String.format("AP%02d", workpackage.selectIdentifier());
     }
 
     @Override
-    public java.lang.String GetSimpleId(final ch.actifsource.core.javamodel.IDecorator workpackage) {
+    public java.lang.String GetSimpleId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return String.format("wp%03d", workpackage.selectIdentifier());
     }
 
@@ -72,11 +72,11 @@ public class FunctionSpace_Workpackage {
 
     private WorkpackageFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.IDecorator workpackage) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return DynamicResourceUtil.invoke(IWorkpackageFunctionsImpl.class, WorkpackageFunctionsImpl.INSTANCE, workpackage).GetId(workpackage);
     }
 
-    public static java.lang.String GetSimpleId(final ch.actifsource.core.javamodel.IDecorator workpackage) {
+    public static java.lang.String GetSimpleId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return DynamicResourceUtil.invoke(IWorkpackageFunctionsImpl.class, WorkpackageFunctionsImpl.INSTANCE, workpackage).GetSimpleId(workpackage);
     }
 
@@ -84,4 +84,4 @@ public class FunctionSpace_Workpackage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,hpb4lnB6mETtavTULTM0KxwN+ng=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,PFm3RjwHyvWyFL6zM7NPkhWZeTI=] */

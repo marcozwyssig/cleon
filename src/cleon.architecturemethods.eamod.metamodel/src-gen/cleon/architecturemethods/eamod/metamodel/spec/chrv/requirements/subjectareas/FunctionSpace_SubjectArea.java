@@ -24,7 +24,7 @@ public class FunctionSpace_SubjectArea {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("fac13edd-a779-11e8-8660-2f457072b676")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> GetAllRequirements();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetAllRequirements();
 
     @IDynamicResourceExtension.MethodId("edbc6484-a77c-11e8-8660-2f457072b676")
     public java.lang.String GetName();
@@ -34,7 +34,7 @@ public class FunctionSpace_SubjectArea {
   public static interface ISubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4c9ff491-c58d-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IResource subjectArea);
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea);
 
   }
   
@@ -45,7 +45,7 @@ public class FunctionSpace_SubjectArea {
     private SubjectAreaFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.IResource subjectArea) {
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
       return String.format("SU-%02d", subjectArea.selectIdentifier());
     }
 
@@ -55,7 +55,7 @@ public class FunctionSpace_SubjectArea {
 
     private SubjectAreaFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.IResource subjectArea) {
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
       return DynamicResourceUtil.invoke(ISubjectAreaFunctionsImpl.class, SubjectAreaFunctionsImpl.INSTANCE, subjectArea).GetId(subjectArea);
     }
 
@@ -64,7 +64,7 @@ public class FunctionSpace_SubjectArea {
   public static interface IProjectSubjectAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("775831cb-c90b-11e5-a64e-a5d84d8f1b45")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> GetAllRequirements();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetAllRequirements();
 
     @IDynamicResourceExtension.MethodId("f3a266bb-a77c-11e8-8660-2f457072b676")
     public java.lang.String GetName();
@@ -92,7 +92,7 @@ public class FunctionSpace_SubjectArea {
   public static interface ISubSubjectAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0b0de9e3-a77a-11e8-8660-2f457072b676")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware> GetAllRequirements();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetAllRequirements();
 
   }
   
@@ -566,4 +566,4 @@ public class FunctionSpace_SubjectArea {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4c9ff48f-c58d-11e5-aeea-1db9268c0ee9,Hbnmy0uVk+aZ7JaCDRXxxQXfViU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4c9ff48f-c58d-11e5-aeea-1db9268c0ee9,NnR2n5rDsG3l49ZVFi5QTLaqDco=] */

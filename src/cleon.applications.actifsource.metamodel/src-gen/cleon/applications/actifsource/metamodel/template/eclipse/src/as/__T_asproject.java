@@ -29,7 +29,7 @@ public class __T_asproject {
   public static interface IAbstractProjectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("88e4db85-41a1-11e8-81d0-774e4d9334dd")
-    public java.lang.Boolean GenerateJavaModel(final ch.actifsource.core.javamodel.IResource abstractProject);
+    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject);
 
   }
   
@@ -40,7 +40,7 @@ public class __T_asproject {
     private AbstractProjectFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean GenerateJavaModel(final ch.actifsource.core.javamodel.IResource abstractProject) {
+    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject) {
       /* Begin Protected Region [[88e4db85-41a1-11e8-81d0-774e4d9334dd]] */
     	IActifsource actifsource = abstractProject.selectActifsource();
     	if( actifsource == null)
@@ -63,7 +63,7 @@ public class __T_asproject {
 
     private AbstractProjectFunctions() {}
 
-    public static java.lang.Boolean GenerateJavaModel(final ch.actifsource.core.javamodel.IResource abstractProject) {
+    public static java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject) {
       return DynamicResourceUtil.invoke(IAbstractProjectFunctionsImpl.class, AbstractProjectFunctionsImpl.INSTANCE, abstractProject).GenerateJavaModel(abstractProject);
     }
 
@@ -71,4 +71,4 @@ public class __T_asproject {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,RaCeT3U7LWqFwIY9GdZIa5jVKUg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,71GMRSaEo4Zx48x9+FW2zU2zwzA=] */

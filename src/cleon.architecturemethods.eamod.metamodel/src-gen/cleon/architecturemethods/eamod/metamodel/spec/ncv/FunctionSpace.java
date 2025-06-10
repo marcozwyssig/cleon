@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface ICapabilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("aba3fb68-bc8d-11e6-904c-8bf6f8927ff0")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource capability);
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability capability);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private CapabilityFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource capability) {
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability capability) {
       /* Begin Protected Region [[aba3fb68-bc8d-11e6-904c-8bf6f8927ff0]] */
     	return String.format("CAP-%03d", capability.selectIdentifier());  
       /* End Protected Region   [[aba3fb68-bc8d-11e6-904c-8bf6f8927ff0]] */
@@ -51,7 +51,7 @@ public class FunctionSpace {
 
     private CapabilityFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource capability) {
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.ncv.javamodel.ICapability capability) {
       return DynamicResourceUtil.invoke(ICapabilityFunctionsImpl.class, CapabilityFunctionsImpl.INSTANCE, capability).GetId(capability);
     }
 
@@ -59,4 +59,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,aba3fb66-bc8d-11e6-904c-8bf6f8927ff0,co5dgTuS8CY9YtpmQbfY0legBBY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,aba3fb66-bc8d-11e6-904c-8bf6f8927ff0,fYW5HVyN8EonchY5aDjfv0NVkek=] */

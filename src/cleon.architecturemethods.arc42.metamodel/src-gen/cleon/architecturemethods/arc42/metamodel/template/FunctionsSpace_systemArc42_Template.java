@@ -109,7 +109,7 @@ public class FunctionsSpace_systemArc42_Template {
   public static interface IDNSConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b80b64b4-d0f2-11ec-a32f-e7eb43a099bd")
-    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -133,4 +133,4 @@ public class FunctionsSpace_systemArc42_Template {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,e9Tmy2rOqPiEwTw1hSlRCOBoOBM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bd04ffbc-0b72-11ea-891d-81e208cfce61,Y08DWEbe/XyclrQ3mC6wnlu0GTg=] */

@@ -21,22 +21,22 @@ public class FunctionSpace_Project {
   public static interface IAbstractProjectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5fac0a17-8983-11e6-9315-e9960ca482c6")
-    public List<ch.actifsource.core.javamodel.IResource> DirectDependingProjectBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingProjectBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("40333452-c10a-11e6-8f58-ad3c6ee7602f")
-    public List<ch.actifsource.core.javamodel.IResource> DirectDependingBuiltinBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingBuiltinBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("bd765b2f-c10b-11e6-8f58-ad3c6ee7602f")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllDuplicatedBuiltinDependencies();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllDuplicatedBuiltinDependencies();
 
     @IDynamicResourceExtension.MethodId("3e804d3f-95a8-11e8-8990-bba75387a1ab")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllDuplicatedProjectDependencies();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllDuplicatedProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("1e20244f-c10c-11e6-8f58-ad3c6ee7602f")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllBuiltinDependencies();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllBuiltinDependencies();
 
     @IDynamicResourceExtension.MethodId("32cb0426-95a8-11e8-8990-bba75387a1ab")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllProjectDependencies();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("3e2a64a5-5b56-11e7-9702-abdab196c2a1")
     public java.lang.String FullBuildingBlockName();
@@ -48,7 +48,7 @@ public class FunctionSpace_Project {
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.INature> ListNatures();
 
     @IDynamicResourceExtension.MethodId("6062fd26-d093-11e8-b005-f7630e4c29c0")
-    public List<ch.actifsource.core.javamodel.IResource> DirectDependingBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("1f04e30a-6f63-11e9-ad7a-a97bad6ad10a")
     public java.lang.String BuildingBlockName();
@@ -73,7 +73,7 @@ public class FunctionSpace_Project {
   public static interface IAbstractProjectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("22956d62-5b57-11e7-9702-abdab196c2a1")
-    public java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.IResource abstractProject);
+    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject);
 
   }
   
@@ -84,7 +84,7 @@ public class FunctionSpace_Project {
     private AbstractProjectFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.IResource abstractProject) {
+    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject) {
       /* Begin Protected Region [[22956d62-5b57-11e7-9702-abdab196c2a1]] */
     	IActifsource actifsource = abstractProject.selectActifsource();
     	if( actifsource == null)
@@ -106,7 +106,7 @@ public class FunctionSpace_Project {
 
     private AbstractProjectFunctions() {}
 
-    public static java.lang.Boolean UseSimpleName(final ch.actifsource.core.javamodel.IResource abstractProject) {
+    public static java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject abstractProject) {
       return DynamicResourceUtil.invoke(IAbstractProjectFunctionsImpl.class, AbstractProjectFunctionsImpl.INSTANCE, abstractProject).UseSimpleName(abstractProject);
     }
 
@@ -289,4 +289,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,HuMN2WhdCwa0C4PIIOSCWRYjXeE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,MldnSYnvjIAHS2QLo6HNlNIh2rg=] */

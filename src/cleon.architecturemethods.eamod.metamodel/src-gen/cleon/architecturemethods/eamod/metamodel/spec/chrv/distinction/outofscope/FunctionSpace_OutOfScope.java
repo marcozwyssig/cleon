@@ -28,7 +28,7 @@ public class FunctionSpace_OutOfScope {
   public static interface IOutOfScopeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("bf7d10a6-0e17-11e6-ae01-ef640c578b9b")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource outOfScope);
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.outofscope.javamodel.IOutOfScope outOfScope);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_OutOfScope {
     private OutOfScopeFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource outOfScope) {
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.outofscope.javamodel.IOutOfScope outOfScope) {
       return String.format("OS%03d", outOfScope.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_OutOfScope {
 
     private OutOfScopeFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource outOfScope) {
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.outofscope.javamodel.IOutOfScope outOfScope) {
       return DynamicResourceUtil.invoke(IOutOfScopeFunctionsImpl.class, OutOfScopeFunctionsImpl.INSTANCE, outOfScope).GetId(outOfScope);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace_OutOfScope {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1bd0458-0e17-11e6-ae01-ef640c578b9b,47Wa3Xg0PlZn6KSUPBMLiVp8Oek=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1bd0458-0e17-11e6-ae01-ef640c578b9b,xNjlhLf7j+6Bjzm51PDnlviLFLA=] */

@@ -86,10 +86,10 @@ public class FunctionSpace_Eclipse {
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("ffa885b5-be77-11e8-a165-65b4bbad9291")
-    public ch.actifsource.core.javamodel.IResource GetVersion();
+    public cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion GetVersion();
 
     @IDynamicResourceExtension.MethodId("b1d8ac24-be78-11e8-a165-65b4bbad9291")
-    public ch.actifsource.core.javamodel.INamedResource GetZoo();
+    public cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem GetZoo();
 
     @IDynamicResourceExtension.MethodId("5cc7d343-be79-11e8-a165-65b4bbad9291")
     public java.lang.String RenderFeatureDependencies();
@@ -433,4 +433,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,CntUwHSOSnEnfL9QCgpO+ZZAwMs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,GI/K5Hbj9szlRYhM+ImFm0pY1io=] */

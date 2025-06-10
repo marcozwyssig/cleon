@@ -62,74 +62,74 @@ public class FunctionSpace_Communication {
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("58d69bff-8833-11e9-80ce-fbaba21c141b")
-    public ch.actifsource.core.javamodel.INamedResource System();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystem System();
 
     @IDynamicResourceExtension.MethodId("c788343a-883f-11e9-80ce-fbaba21c141b")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware SystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration SystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("795a998b-88f0-11e9-9b22-1b5fbbd90cc8")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllSources();
 
     @IDynamicResourceExtension.MethodId("ed28063b-b203-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllAllowedSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllAllowedSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("044ab964-b204-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurationsFromDependsFrom();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsFromDependsFrom();
 
     @IDynamicResourceExtension.MethodId("24774474-b204-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> AllSystemConfigurationsDependsOn();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> AllSystemConfigurationsDependsOn();
 
     @IDynamicResourceExtension.MethodId("d19f4a17-e07a-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInterSourcesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInterSourcesDistinct();
 
     @IDynamicResourceExtension.MethodId("18fdb44b-0b15-11ea-b483-3fffd745ba7d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInterSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInterSources();
 
     @IDynamicResourceExtension.MethodId("00b7e96c-e07c-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntraSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntraSources();
 
     @IDynamicResourceExtension.MethodId("00b7e976-e07c-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntraSourcesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntraSourcesDistinct();
 
     @IDynamicResourceExtension.MethodId("834d67d8-0b18-11ea-b483-3fffd745ba7d")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInterSourcesDistinctByService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInterSourcesDistinctByService();
 
     @IDynamicResourceExtension.MethodId("7c66a18d-0b19-11ea-b483-3fffd745ba7d")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyInter();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyInter();
 
     @IDynamicResourceExtension.MethodId("66ad1d73-0b72-11ea-891d-81e208cfce61")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyIntra();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyIntra();
 
     @IDynamicResourceExtension.MethodId("32c46ff9-80bd-11ea-b18a-9db09f26536a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AccessAsSource();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AccessAsSource();
 
     @IDynamicResourceExtension.MethodId("3b4a84ba-f738-11ea-b8c1-41c5952fbbbb")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllAbstractServices();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllAbstractServices();
 
     @IDynamicResourceExtension.MethodId("93726bb6-f738-11ea-b8c1-41c5952fbbbb")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllAbstractServicesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllAbstractServicesDistinct();
 
     @IDynamicResourceExtension.MethodId("5d6a255f-8bde-11eb-a832-91f5636963f2")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServices();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IService> AllServices();
 
     @IDynamicResourceExtension.MethodId("72386078-8bde-11eb-a832-91f5636963f2")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServicesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IService> AllServicesDistinct();
 
     @IDynamicResourceExtension.MethodId("5532725a-a5f6-11ec-9968-b970a72504b8")
-    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final ch.actifsource.core.javamodel.INamedResource subzone);
+    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
 
   }
   
   public static interface IDestinationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7c66a18d-0b19-11ea-b483-3fffd745ba7d")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyInter(final List<ch.actifsource.core.javamodel.IDecorator> destinationList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList);
 
     @IDynamicResourceExtension.MethodId("66ad1d73-0b72-11ea-891d-81e208cfce61")
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyIntra(final List<ch.actifsource.core.javamodel.IDecorator> destinationList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList);
 
     @IDynamicResourceExtension.MethodId("5532725a-a5f6-11ec-9968-b970a72504b8")
-    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final ch.actifsource.core.javamodel.INamedResource subzone, final ch.actifsource.core.javamodel.IDecorator destination);
+    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination destination);
 
   }
   
@@ -140,7 +140,7 @@ public class FunctionSpace_Communication {
     private DestinationFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyInter(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
       /* Begin Protected Region [[7c66a18d-0b19-11ea-b483-3fffd745ba7d]] */
       return destinationList.stream()
       		.filter(x -> !x.extension(IDestinationFunctions.class).OnlyInterSourcesDistinct().isEmpty())
@@ -149,7 +149,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> OnlyIntra(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
       /* Begin Protected Region [[66ad1d73-0b72-11ea-891d-81e208cfce61]] */
       return destinationList.stream()
       		.filter(x -> !x.extension(IDestinationFunctions.class).OnlyIntraSourcesDistinct().isEmpty())
@@ -158,7 +158,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final ch.actifsource.core.javamodel.INamedResource subzone, final ch.actifsource.core.javamodel.IDecorator destination) {
+    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination destination) {
       /* Begin Protected Region [[5532725a-a5f6-11ec-9968-b970a72504b8]] */
       final var interface_ = destination.selectDestinationSystemConfiguration().selectInterface()
       		.get(subzone.getResource());
@@ -172,15 +172,15 @@ public class FunctionSpace_Communication {
 
     private DestinationFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyInter(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
       return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destinationList).OnlyInter(destinationList);
     }
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> OnlyIntra(final List<ch.actifsource.core.javamodel.IDecorator> destinationList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination> destinationList) {
       return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destinationList).OnlyIntra(destinationList);
     }
 
-    public static cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final ch.actifsource.core.javamodel.INamedResource subzone, final ch.actifsource.core.javamodel.IDecorator destination) {
+    public static cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone GetDestinationPolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination destination) {
       return DynamicResourceUtil.invoke(IDestinationFunctionsImpl.class, DestinationFunctionsImpl.INSTANCE, destination).GetDestinationPolicy(subzone, destination);
     }
 
@@ -189,16 +189,16 @@ public class FunctionSpace_Communication {
   public static interface ISourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("645ee604-b886-11e9-8760-2d4a9d15ec14")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllSecuritySubzones();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> GetAllSecuritySubzones();
 
     @IDynamicResourceExtension.MethodId("71ac43f8-a998-11eb-8f9b-01c801f6a12b")
-    public List<ch.actifsource.core.javamodel.INamedResource> SourceSecuritySubzones();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> SourceSecuritySubzones();
 
     @IDynamicResourceExtension.MethodId("85bc9b26-df87-11e9-9827-a1514ee8d06a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInter();
 
     @IDynamicResourceExtension.MethodId("820fd60a-e042-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntra();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntra();
 
     @IDynamicResourceExtension.MethodId("ff2ddc87-df89-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy> GetInterConnection();
@@ -207,13 +207,13 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection();
 
     @IDynamicResourceExtension.MethodId("28012e2a-dfa3-11e9-9827-a1514ee8d06a")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServices();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllServices();
 
     @IDynamicResourceExtension.MethodId("9593f53a-bfcb-11eb-af9a-7dff6e60ee1f")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServicesFlatten();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllServicesFlatten();
 
     @IDynamicResourceExtension.MethodId("c71161b1-e03e-11e9-aa67-4505845acdbd")
-    public ch.actifsource.core.javamodel.IDecorator Destination();
+    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination Destination();
 
     @IDynamicResourceExtension.MethodId("db988228-e03e-11e9-aa67-4505845acdbd")
     public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost DestinationSubSecurityZone();
@@ -225,49 +225,49 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetAllIntraConnection();
 
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctBySourceAndService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctBySourceAndService();
 
     @IDynamicResourceExtension.MethodId("130d994a-f346-11ea-9268-b5c52a12d7f9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestinationAndService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestinationAndService();
 
     @IDynamicResourceExtension.MethodId("9d900304-3d2f-11eb-986d-0d884ba5cf53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestination();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestination();
 
     @IDynamicResourceExtension.MethodId("bcff4b1e-1a08-11eb-818d-6dbd3a659d3c")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyMgmt(final ch.actifsource.core.javamodel.IDecorator src);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom src);
 
     @IDynamicResourceExtension.MethodId("a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByService();
 
     @IDynamicResourceExtension.MethodId("3489ae51-0ae8-11ea-bf24-ff0f7ff0bb53")
-    public java.lang.String RenderInterSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
+    public java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
 
     @IDynamicResourceExtension.MethodId("81c86001-0b16-11ea-b483-3fffd745ba7d")
-    public java.lang.String RenderInterDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
+    public java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
 
     @IDynamicResourceExtension.MethodId("5e8db34c-0b82-11ea-ab86-a9f1f5c47ebb")
-    public java.lang.String RenderIntraSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
+    public java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
 
     @IDynamicResourceExtension.MethodId("66f3d07d-0b82-11ea-ab86-a9f1f5c47ebb")
-    public java.lang.String RenderIntraDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
+    public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst);
 
     @IDynamicResourceExtension.MethodId("cfcd27c4-0b71-11ea-891d-81e208cfce61")
-    public java.lang.String Tag(final ch.actifsource.core.javamodel.IDecorator destination);
+    public java.lang.String Tag(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination destination);
 
     @IDynamicResourceExtension.MethodId("cfcd4eec-0b71-11ea-891d-81e208cfce61")
-    public java.lang.String InterRuleName(final ch.actifsource.core.javamodel.IDecorator dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost dstSz);
+    public java.lang.String InterRuleName(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost dstSz);
 
     @IDynamicResourceExtension.MethodId("28d5e66c-0b74-11ea-afff-b52fab62d0fd")
-    public java.lang.String IntraRuleName(final ch.actifsource.core.javamodel.IDecorator dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dstSz);
+    public java.lang.String IntraRuleName(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dstSz);
 
     @IDynamicResourceExtension.MethodId("cfcd4efd-0b71-11ea-891d-81e208cfce61")
     public java.lang.String ServiceName();
 
     @IDynamicResourceExtension.MethodId("bab45d01-c78d-11ea-b0b6-e5df79e86bc2")
-    public List<ch.actifsource.core.javamodel.INamedResource> SelectAllowedServices();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> SelectAllowedServices();
 
     @IDynamicResourceExtension.MethodId("21fa0b77-1eb9-11eb-9eef-0dadb2b460da")
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService);
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("a67840f7-308e-11eb-9149-f1e36a7322e5")
     public java.lang.String SourceVLAN();
@@ -277,43 +277,43 @@ public class FunctionSpace_Communication {
   public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("85bc9b26-df87-11e9-9827-a1514ee8d06a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("820fd60a-e042-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("983f4fe1-e042-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("130d994a-f346-11ea-9268-b5c52a12d7f9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("9d900304-3d2f-11eb-986d-0d884ba5cf53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("bcff4b1e-1a08-11eb-818d-6dbd3a659d3c")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyMgmt(final ch.actifsource.core.javamodel.IDecorator src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("3489ae51-0ae8-11ea-bf24-ff0f7ff0bb53")
-    public java.lang.String RenderInterSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("81c86001-0b16-11ea-b483-3fffd745ba7d")
-    public java.lang.String RenderInterDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("5e8db34c-0b82-11ea-ab86-a9f1f5c47ebb")
-    public java.lang.String RenderIntraSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("66f3d07d-0b82-11ea-ab86-a9f1f5c47ebb")
-    public java.lang.String RenderIntraDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("21fa0b77-1eb9-11eb-9eef-0dadb2b460da")
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
   }
   
@@ -324,7 +324,7 @@ public class FunctionSpace_Communication {
     private SourceFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[85bc9b26-df87-11e9-9827-a1514ee8d06a]] */
       final List<ISource> result = new ArrayList<>();
       for (final var source : sourceList) {
@@ -339,7 +339,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[820fd60a-e042-11e9-aa67-4505845acdbd]] */
       final List<ISource> result = new ArrayList<>();
       for (final var source : sourceList) {
@@ -354,7 +354,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[983f4fe1-e042-11e9-aa67-4505845acdbd]] */
       final var sourceFunctions = source.extension(ISourceFunctions.class);
       if (!sourceFunctions.GetInterConnection().isEmpty()) {
@@ -366,7 +366,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[11651668-04c4-11ea-8fff-bb311a3ad127]] */
       final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(ISource::selectSourceSystemConfiguration,
       		ISource::selectCommunicatesWith);
@@ -375,7 +375,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[130d994a-f346-11ea-9268-b5c52a12d7f9]] */
       final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
       	final var functions = x.extension(ISourceFunctions.class);
@@ -386,7 +386,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[9d900304-3d2f-11eb-986d-0d884ba5cf53]] */
       final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
       	final var functions = x.extension(ISourceFunctions.class);
@@ -397,7 +397,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyMgmt(final ch.actifsource.core.javamodel.IDecorator src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[bcff4b1e-1a08-11eb-818d-6dbd3a659d3c]] */
       final var accessConceptFunctions = AccessConcept.selectToMeAccessFrom(src)
       		.extension(IAccessConceptFunctions.class);
@@ -412,7 +412,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53]] */
       final var distinctByKeys = ListUtil.distinctByKeys(ISource::selectCommunicatesWith);
       return sourceList.stream().filter(distinctByKeys).collect(Collectors.toList());
@@ -420,7 +420,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderInterSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[3489ae51-0ae8-11ea-bf24-ff0f7ff0bb53]] */
       final var results = new HashSet<String>();
       final var destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
@@ -447,7 +447,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderInterDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[81c86001-0b16-11ea-b483-3fffd745ba7d]] */
       final var results = new HashSet<String>();
       final var destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
@@ -473,7 +473,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderIntraSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[5e8db34c-0b82-11ea-ab86-a9f1f5c47ebb]] */
       final var results = new HashSet<String>();
       final var destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
@@ -500,7 +500,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderIntraDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[66f3d07d-0b82-11ea-ab86-a9f1f5c47ebb]] */
       final var results = new HashSet<String>();
       final var destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
@@ -526,7 +526,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       /* Begin Protected Region [[21fa0b77-1eb9-11eb-9eef-0dadb2b460da]] */
       final var srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
       final var dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();
@@ -559,55 +559,55 @@ public class FunctionSpace_Communication {
 
     private SourceFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).OnlyInter(sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyIntra(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).OnlyIntra(sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).GetIntraConnection(source);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctBySourceAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctBySourceAndService(sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctByDestinationAndService(sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByDestination(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctByDestination(sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyMgmt(final ch.actifsource.core.javamodel.IDecorator src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> OnlyMgmt(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom src, final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).OnlyMgmt(src, sourceList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctByService(sourceList);
     }
 
-    public static java.lang.String RenderInterSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).RenderInterSourceHostGroups(env, dst, source);
     }
 
-    public static java.lang.String RenderInterDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).RenderInterDestinationHostGroups(env, dst, source);
     }
 
-    public static java.lang.String RenderIntraSourceHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).RenderIntraSourceHostGroups(env, dst, source);
     }
 
-    public static java.lang.String RenderIntraDestinationHostGroups(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).RenderIntraDestinationHostGroups(env, dst, source);
     }
 
-    public static java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipBookmarkAware dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source) {
+    public static java.lang.Boolean CanCommunicate(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).CanCommunicate(src, dst, accessConfigurationService, source);
     }
 
@@ -616,44 +616,44 @@ public class FunctionSpace_Communication {
   public static interface IDestinationSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3e382b18-c862-11ea-b1f9-8da009c98a7a")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> SelectAllowedSystemConfigurationsOnlyConcrete();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> SelectAllowedSystemConfigurationsOnlyConcrete();
 
     @IDynamicResourceExtension.MethodId("46eb2383-9f4b-11ea-bb18-b13480f8c543")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> SelectAllowedSystemConfigurations();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> SelectAllowedSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("36af6bc0-dfa3-11e9-9827-a1514ee8d06a")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServices();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllServices();
 
     @IDynamicResourceExtension.MethodId("41d7b661-dfa3-11e9-9827-a1514ee8d06a")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllServicesDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> AllServicesDistinct();
 
     @IDynamicResourceExtension.MethodId("10be3e5b-e041-11e9-aa67-4505845acdbd")
-    public ch.actifsource.core.javamodel.IDecorator Destination();
+    public cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestination Destination();
 
     @IDynamicResourceExtension.MethodId("7af335a7-e077-11e9-aa67-4505845acdbd")
-    public java.lang.String SubLayerName(final ch.actifsource.core.javamodel.IDecorator communication);
+    public java.lang.String SubLayerName(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ICommunicationSystem communication);
 
     @IDynamicResourceExtension.MethodId("fb35f7dd-0b62-11ea-bef6-75a700135135")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllInterSourceDistinctByService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllInterSourceDistinctByService();
 
     @IDynamicResourceExtension.MethodId("03f7288e-0b75-11ea-afff-b52fab62d0fd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> AllIntraSourceDistinctByService();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllIntraSourceDistinctByService();
 
     @IDynamicResourceExtension.MethodId("eb25d5c2-747e-11ed-a11a-d36133a6637e")
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("3956e748-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("110bca20-747e-11ed-a11a-d36133a6637e")
-    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz);
+    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz);
 
   }
   
   public static interface IDestinationSubSecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("110bca20-747e-11ed-a11a-d36133a6637e")
-    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone);
+    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone);
 
   }
   
@@ -664,7 +664,7 @@ public class FunctionSpace_Communication {
     private DestinationSubSecurityZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone) {
+    public java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone) {
       /* Begin Protected Region [[110bca20-747e-11ed-a11a-d36133a6637e]] */
       final var sourceGroupName = sourceInSubSecurityZone.extension(ISourceInSubSecurityZoneFunctions.class).RenderOverrideDestinationHostGroup(cfg, sz);
       if( sourceGroupName != null ) {
@@ -684,7 +684,7 @@ public class FunctionSpace_Communication {
 
     private DestinationSubSecurityZoneFunctions() {}
 
-    public static java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone) {
+    public static java.lang.String GetOverrideDestinationHostGroupOrNull(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZone destinationSubSecurityZone) {
       return DynamicResourceUtil.invoke(IDestinationSubSecurityZoneFunctionsImpl.class, DestinationSubSecurityZoneFunctionsImpl.INSTANCE, destinationSubSecurityZone).GetOverrideDestinationHostGroupOrNull(sourceInSubSecurityZone, cfg, sz, destinationSubSecurityZone);
     }
 
@@ -693,20 +693,20 @@ public class FunctionSpace_Communication {
   public static interface IDestinationSubSecurityZoneByHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1d37e39a-552b-11ed-a5a9-572b13f613fe")
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("a27cc7e5-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
   public static interface IDestinationSubSecurityZoneByHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1d37e39a-552b-11ed-a5a9-572b13f613fe")
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost);
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost);
 
     @IDynamicResourceExtension.MethodId("a27cc7e5-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost);
 
   }
   
@@ -717,7 +717,7 @@ public class FunctionSpace_Communication {
     private DestinationSubSecurityZoneByHostFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
       /* Begin Protected Region [[1d37e39a-552b-11ed-a5a9-572b13f613fe]] */
       final var result = new StringBuilder();
 
@@ -769,7 +769,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
       /* Begin Protected Region [[a27cc7e5-63e2-11ef-ac12-136807d7f56d]] */
       final var result = new StringBuilder();
 
@@ -805,11 +805,11 @@ public class FunctionSpace_Communication {
 
     private DestinationSubSecurityZoneByHostFunctions() {}
 
-    public static java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
+    public static java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
       return DynamicResourceUtil.invoke(IDestinationSubSecurityZoneByHostFunctionsImpl.class, DestinationSubSecurityZoneByHostFunctionsImpl.INSTANCE, destinationSubSecurityZoneByHost).RenderDestinationHostGroups(sourceInSubSecurityZone, subZoneAccessPolicy, src, env, destinationSubSecurityZoneByHost);
     }
 
-    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
+    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByHost destinationSubSecurityZoneByHost) {
       return DynamicResourceUtil.invoke(IDestinationSubSecurityZoneByHostFunctionsImpl.class, DestinationSubSecurityZoneByHostFunctionsImpl.INSTANCE, destinationSubSecurityZoneByHost).RenderDestination(sourceInSubSecurityZone, subZoneAccessPolicy, src, env, destinationSubSecurityZoneByHost);
     }
 
@@ -818,23 +818,23 @@ public class FunctionSpace_Communication {
   public static interface IDestinationSubSecurityZoneByNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("88752ca7-748b-11ed-a11a-d36133a6637e")
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("c0881815-5537-11ed-a5a9-572b13f613fe")
     public java.lang.String RenderNetGroupName();
 
     @IDynamicResourceExtension.MethodId("ad286944-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
   public static interface IDestinationSubSecurityZoneByNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("88752ca7-748b-11ed-a11a-d36133a6637e")
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork);
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork);
 
     @IDynamicResourceExtension.MethodId("ad286944-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork);
 
   }
   
@@ -845,7 +845,7 @@ public class FunctionSpace_Communication {
     private DestinationSubSecurityZoneByNetworkFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
+    public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
       /* Begin Protected Region [[88752ca7-748b-11ed-a11a-d36133a6637e]] */
       final var functions = destinationSubSecurityZoneByNetwork.extension(IDestinationSubSecurityZoneFunctions.class);
       final var overrideGroup = functions.GetOverrideDestinationHostGroupOrNull(sourceInSubSecurityZone, functions.Destination().selectDestinationSystemConfiguration(), destinationSubSecurityZoneByNetwork.selectDestinationSecuritySubZone());
@@ -857,7 +857,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
       /* Begin Protected Region [[ad286944-63e2-11ef-ac12-136807d7f56d]] */
       return "network";
       /* End Protected Region   [[ad286944-63e2-11ef-ac12-136807d7f56d]] */
@@ -869,11 +869,11 @@ public class FunctionSpace_Communication {
 
     private DestinationSubSecurityZoneByNetworkFunctions() {}
 
-    public static java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
+    public static java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
       return DynamicResourceUtil.invoke(IDestinationSubSecurityZoneByNetworkFunctionsImpl.class, DestinationSubSecurityZoneByNetworkFunctionsImpl.INSTANCE, destinationSubSecurityZoneByNetwork).RenderDestinationHostGroups(sourceInSubSecurityZone, subZoneAccessPolicy, src, env, destinationSubSecurityZoneByNetwork);
     }
 
-    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
+    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IDestinationSubSecurityZoneByNetwork destinationSubSecurityZoneByNetwork) {
       return DynamicResourceUtil.invoke(IDestinationSubSecurityZoneByNetworkFunctionsImpl.class, DestinationSubSecurityZoneByNetworkFunctionsImpl.INSTANCE, destinationSubSecurityZoneByNetwork).RenderDestination(sourceInSubSecurityZone, subZoneAccessPolicy, src, env, destinationSubSecurityZoneByNetwork);
     }
 
@@ -930,65 +930,65 @@ public class FunctionSpace_Communication {
   public static interface ISourceInSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("73e2a655-e05b-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> OnlyInter();
 
     @IDynamicResourceExtension.MethodId("3b514034-e065-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> UsedSystemConfigurationDistinct(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> UsedSystemConfigurationDistinct(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("2ed88ad2-e066-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware> UsedSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware source);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> UsedSystemConfiguration(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("16752bad-09f0-11ea-baed-218c3e076b56")
-    public ch.actifsource.core.javamodel.INamedResource SourceSubZone();
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SourceSubZone();
 
     @IDynamicResourceExtension.MethodId("f69afda7-ff49-11eb-982b-5da7cd501019")
-    public ch.actifsource.core.javamodel.INamedResource DestinationSubZone();
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone DestinationSubZone();
 
     @IDynamicResourceExtension.MethodId("b3fe9d43-0a0a-11ea-baed-218c3e076b56")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("91e29615-63de-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("e3ffdf58-0a36-11ea-baed-218c3e076b56")
-    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("1cb3354a-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("b1f1ebfa-69cf-11ea-a748-452677f0eb7c")
-    public List<ch.actifsource.core.javamodel.INamedResource> CommunicatesWith();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> CommunicatesWith();
 
     @IDynamicResourceExtension.MethodId("2ce0f2c5-242d-11eb-83b1-3d2a97975978")
-    public List<ch.actifsource.core.javamodel.INamedResource> CommunicatesWithFlatten();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService> CommunicatesWithFlatten();
 
     @IDynamicResourceExtension.MethodId("29249a94-b9e7-11ea-b29c-1fc1209c2c7a")
     public java.lang.Boolean IsAny();
 
     @IDynamicResourceExtension.MethodId("e2b85ad2-a5e1-11ec-9968-b970a72504b8")
-    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("b6e3ddf4-f1ee-11ec-9189-dd1b3a325f2e")
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz);
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz);
 
   }
   
   public static interface ISourceInSubSecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("73e2a655-e05b-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceInSubSecurityZoneList);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList);
 
     @IDynamicResourceExtension.MethodId("e3ffdf58-0a36-11ea-baed-218c3e076b56")
-    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone);
+    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
     @IDynamicResourceExtension.MethodId("1cb3354a-63e2-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone);
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
     @IDynamicResourceExtension.MethodId("e2b85ad2-a5e1-11ec-9968-b970a72504b8")
-    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone);
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
     @IDynamicResourceExtension.MethodId("b6e3ddf4-f1ee-11ec-9189-dd1b3a325f2e")
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone);
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
   }
   
@@ -999,7 +999,7 @@ public class FunctionSpace_Communication {
     private SourceInSubSecurityZoneFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceInSubSecurityZoneList) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList) {
       /* Begin Protected Region [[73e2a655-e05b-11e9-aa67-4505845acdbd]] */
       return sourceInSubSecurityZoneList.stream()
       		.filter(x -> x.selectSubZoneAccessPolicy() instanceof IInterSubZoneAccessPolicy)
@@ -1008,7 +1008,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[e3ffdf58-0a36-11ea-baed-218c3e076b56]] */
         final var subZoneAccessPolicy = sourceInSubSecurityZone.selectSubZoneAccessPolicy();
         if (subZoneAccessPolicy == null) {
@@ -1056,7 +1056,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[1cb3354a-63e2-11ef-ac12-136807d7f56d]] */
       final var subZoneAccessPolicy = sourceInSubSecurityZone.selectSubZoneAccessPolicy();
       final var destSubZone = subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone();
@@ -1075,7 +1075,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[e2b85ad2-a5e1-11ec-9968-b970a72504b8]] */
       return !sourceInSubSecurityZone.extension(ISourceInSubSecurityZoneFunctions.class)
       		.RenderDestinationGroups(src, env).isEmpty()
@@ -1085,7 +1085,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return null;
     }
 
@@ -1095,23 +1095,23 @@ public class FunctionSpace_Communication {
 
     private SourceInSubSecurityZoneFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> sourceInSubSecurityZoneList) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZoneList).OnlyInter(sourceInSubSecurityZoneList);
     }
 
-    public static java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public static java.lang.String RenderDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).RenderDestinationGroups(src, env, sourceInSubSecurityZone);
     }
 
-    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public static java.lang.String RenderDestination(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).RenderDestination(src, env, sourceInSubSecurityZone);
     }
 
-    public static java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public static java.lang.Boolean HasDestinationGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).HasDestinationGroups(src, env, sourceInSubSecurityZone);
     }
 
-    public static java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public static java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).RenderOverrideDestinationHostGroup(cfg, sz, sourceInSubSecurityZone);
     }
 
@@ -1120,26 +1120,26 @@ public class FunctionSpace_Communication {
   public static interface ISourceInSubSecurityZoneByHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e0f3afa5-c77c-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("8a21ea69-63df-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("cba23bb6-f1ee-11ec-9189-dd1b3a325f2e")
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz);
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz);
 
   }
   
   public static interface ISourceInSubSecurityZoneByHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e0f3afa5-c77c-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost);
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost);
 
     @IDynamicResourceExtension.MethodId("8a21ea69-63df-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost);
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost);
 
     @IDynamicResourceExtension.MethodId("cba23bb6-f1ee-11ec-9189-dd1b3a325f2e")
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost);
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost);
 
   }
   
@@ -1150,7 +1150,7 @@ public class FunctionSpace_Communication {
     private SourceInSubSecurityZoneByHostFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       /* Begin Protected Region [[e0f3afa5-c77c-11ea-b0b6-e5df79e86bc2]] */
       final var sysCfgFunction = src.selectSourceSystemConfiguration().extension(
       		ISystemConfigurationFunctions.class);
@@ -1192,7 +1192,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       /* Begin Protected Region [[8a21ea69-63df-11ef-ac12-136807d7f56d]] */
       final var sysCfgFunction = src.selectSourceSystemConfiguration().extension(
       		ISystemConfigurationFunctions.class);
@@ -1215,7 +1215,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       /* Begin Protected Region [[cba23bb6-f1ee-11ec-9189-dd1b3a325f2e]] */
       if (sourceInSubSecurityZoneByHost.selectOverrideDestinationGroupName() != null) {
       	return sourceInSubSecurityZoneByHost.selectOverrideDestinationGroupName()
@@ -1231,15 +1231,15 @@ public class FunctionSpace_Communication {
 
     private SourceInSubSecurityZoneByHostFunctions() {}
 
-    public static java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public static java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneByHostFunctionsImpl.class, SourceInSubSecurityZoneByHostFunctionsImpl.INSTANCE, sourceInSubSecurityZoneByHost).RenderSourceGroups(src, env, sourceInSubSecurityZoneByHost);
     }
 
-    public static java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public static java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneByHostFunctionsImpl.class, SourceInSubSecurityZoneByHostFunctionsImpl.INSTANCE, sourceInSubSecurityZoneByHost).RenderSource(src, env, sourceInSubSecurityZoneByHost);
     }
 
-    public static java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware cfg, final ch.actifsource.core.javamodel.INamedResource sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZoneByHost) {
+    public static java.lang.String RenderOverrideDestinationHostGroup(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration cfg, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone sz, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZoneByHost sourceInSubSecurityZoneByHost) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneByHostFunctionsImpl.class, SourceInSubSecurityZoneByHostFunctionsImpl.INSTANCE, sourceInSubSecurityZoneByHost).RenderOverrideDestinationHostGroup(cfg, sz, sourceInSubSecurityZoneByHost);
     }
 
@@ -1248,10 +1248,10 @@ public class FunctionSpace_Communication {
   public static interface ISourceInSubSecurityZoneByNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("166205cf-c782-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("67706286-63df-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
@@ -1276,10 +1276,10 @@ public class FunctionSpace_Communication {
   public static interface ISourceInSubSecurityZoneCustomFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("245514fa-ad95-11eb-a3eb-5dbdee6f3a54")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
     @IDynamicResourceExtension.MethodId("600ff4e1-63df-11ef-ac12-136807d7f56d")
-    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware src, final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.String RenderSource(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource src, final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
@@ -1303,4 +1303,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,YkCb6jYji+aJjOEWYKvNcTnrhiM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,XC1TENbd36dFekz5RrmYeYPf63E=] */

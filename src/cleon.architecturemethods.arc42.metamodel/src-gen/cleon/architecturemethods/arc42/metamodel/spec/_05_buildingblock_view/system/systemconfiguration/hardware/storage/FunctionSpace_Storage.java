@@ -73,13 +73,13 @@ public class FunctionSpace_Storage {
   public static interface IStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("efb8c058-8c8a-11eb-a9c0-c3b95abf3470")
-    public java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration);
+    public java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration);
 
     @IDynamicResourceExtension.MethodId("fb9edce6-8c8a-11eb-a9c0-c3b95abf3470")
-    public java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration);
+    public java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration);
 
     @IDynamicResourceExtension.MethodId("41bcad03-098f-11ec-b426-8bacb7070b3e")
-    public java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration);
+    public java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration);
 
   }
   
@@ -90,14 +90,14 @@ public class FunctionSpace_Storage {
     private StorageSystemConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       /* Begin Protected Region [[efb8c058-8c8a-11eb-a9c0-c3b95abf3470]] */
     	return storageSystemConfiguration.selectShares().stream().mapToDouble( x -> x.selectCapacity().selectBrutto_aE__aA_GB_aC_()).sum();  
       /* End Protected Region   [[efb8c058-8c8a-11eb-a9c0-c3b95abf3470]] */
     }
 
     @Override
-    public java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       /* Begin Protected Region [[fb9edce6-8c8a-11eb-a9c0-c3b95abf3470]] */
     	return storageSystemConfiguration.selectShares().stream().mapToDouble( x -> {
     			final var capacity = x.selectCapacity().extension(ICapacityFunctions.class);
@@ -107,7 +107,7 @@ public class FunctionSpace_Storage {
     }
 
     @Override
-    public java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       /* Begin Protected Region [[41bcad03-098f-11ec-b426-8bacb7070b3e]] */
 		return storageSystemConfiguration.selectNetto_aE_capacity_aE__aA_GB_aC_()
 				- Netto_GB(storageSystemConfiguration);
@@ -120,15 +120,15 @@ public class FunctionSpace_Storage {
 
     private StorageSystemConfigurationFunctions() {}
 
-    public static java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public static java.lang.Double Brutto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       return DynamicResourceUtil.invoke(IStorageSystemConfigurationFunctionsImpl.class, StorageSystemConfigurationFunctionsImpl.INSTANCE, storageSystemConfiguration).Brutto_GB(storageSystemConfiguration);
     }
 
-    public static java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public static java.lang.Double Netto_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       return DynamicResourceUtil.invoke(IStorageSystemConfigurationFunctionsImpl.class, StorageSystemConfigurationFunctionsImpl.INSTANCE, storageSystemConfiguration).Netto_GB(storageSystemConfiguration);
     }
 
-    public static java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware storageSystemConfiguration) {
+    public static java.lang.Double Reserve_GB(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
       return DynamicResourceUtil.invoke(IStorageSystemConfigurationFunctionsImpl.class, StorageSystemConfigurationFunctionsImpl.INSTANCE, storageSystemConfiguration).Reserve_GB(storageSystemConfiguration);
     }
 
@@ -161,4 +161,4 @@ public class FunctionSpace_Storage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,h/X5lVN7DOvbzXnA1uVnKvd7cO8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,6YnqecgXP/8mSybAXZJRgiBDj6c=] */

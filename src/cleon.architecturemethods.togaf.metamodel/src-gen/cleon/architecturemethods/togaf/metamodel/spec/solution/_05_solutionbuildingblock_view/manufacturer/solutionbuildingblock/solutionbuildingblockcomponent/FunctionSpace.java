@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface ISolutionBuildingBlockComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("05e048cd-42b4-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlockComponent);
+    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel.ISolutionBuildingBlockComponent solutionBuildingBlockComponent);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private SolutionBuildingBlockComponentFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlockComponent) {
+    public java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel.ISolutionBuildingBlockComponent solutionBuildingBlockComponent) {
       return java.lang.String.format("SBBC-%03d", solutionBuildingBlockComponent.selectIdentifier());
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace {
 
     private SolutionBuildingBlockComponentFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource solutionBuildingBlockComponent) {
+    public static java.lang.String GetId(final cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel.ISolutionBuildingBlockComponent solutionBuildingBlockComponent) {
       return DynamicResourceUtil.invoke(ISolutionBuildingBlockComponentFunctionsImpl.class, SolutionBuildingBlockComponentFunctionsImpl.INSTANCE, solutionBuildingBlockComponent).GetId(solutionBuildingBlockComponent);
     }
 
@@ -57,4 +57,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,05e048cb-42b4-11e6-a9d7-97cf4f7c398b,JzhTZT3b5rr9dWUQrfJW38UgFms=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,05e048cb-42b4-11e6-a9d7-97cf4f7c398b,zSitVgWIkiTDJSLLZDZPcBTbs18=] */

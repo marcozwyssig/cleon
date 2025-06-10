@@ -28,7 +28,7 @@ public class FunctionSpace {
   public static interface IDefectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("b9550168-c58b-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace {
     private DefectFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect) {
       /* Begin Protected Region [[b9550168-c58b-11e5-aeea-1db9268c0ee9]] */
     	return String.format("DF-%03d", defect.selectIdentifier());    
       /* End Protected Region   [[b9550168-c58b-11e5-aeea-1db9268c0ee9]] */
@@ -51,7 +51,7 @@ public class FunctionSpace {
 
     private DefectFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource defect) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect defect) {
       return DynamicResourceUtil.invoke(IDefectFunctionsImpl.class, DefectFunctionsImpl.INSTANCE, defect).GetId(defect);
     }
 
@@ -59,4 +59,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b425093b-c58b-11e5-aeea-1db9268c0ee9,kzO1Waqw+EujbHRKtJAy0gq/L1k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b425093b-c58b-11e5-aeea-1db9268c0ee9,LjcF5B9yk4WyUWyQ9694VZoKJtY=] */

@@ -24,16 +24,16 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface IAbstractDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b844b9d6-51ab-11e9-9c3b-b122f30ac9b9")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("3987412a-51b0-11e9-9c3b-b122f30ac9b9")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("29f96ed5-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestDescription(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("36afaccc-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestSteps(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestSteps(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -58,10 +58,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52bdfcfb-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestDescription(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5e0b82c6-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestSteps(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestSteps(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -86,10 +86,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface IDynamicTestReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c77e5542-758b-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestDescription(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestDescription(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("c77e5547-758b-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestSteps(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderTestSteps(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -114,10 +114,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestStepFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("39717caf-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("30515472-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -142,17 +142,17 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1e4de3d1-7a9c-11eb-87e9-09aeef13879c")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("6e98bd39-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface ITestInputFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1e4de3d1-7a9c-11eb-87e9-09aeef13879c")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testInput);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput);
 
   }
   
@@ -163,7 +163,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     private TestInputFunctionsImpl() {}
 
     @Override
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testInput) {
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput) {
       return null;
     }
 
@@ -173,7 +173,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestInputFunctions() {}
 
-    public static java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testInput) {
+    public static java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput) {
       return DynamicResourceUtil.invoke(ITestInputFunctionsImpl.class, TestInputFunctionsImpl.INSTANCE, testInput).Render(language, testInput);
     }
 
@@ -182,10 +182,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputStringFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c6ef09a3-8e9b-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("a95a167c-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -210,17 +210,17 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestResultFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("4136bc86-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult);
 
   }
   
@@ -231,7 +231,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     private TestResultFunctionsImpl() {}
 
     @Override
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult) {
       return null;
     }
 
@@ -241,7 +241,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestResultFunctions() {}
 
-    public static java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.IExpectedResultAware testResult) {
+    public static java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult) {
       return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).Render(language, testResult);
     }
 
@@ -250,17 +250,17 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestResultEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("154f4420-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5c618a86-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
   public static interface ITestResultEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("154f4420-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResultEnvironment);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment);
 
   }
   
@@ -271,7 +271,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     private TestResultEnvironmentFunctionsImpl() {}
 
     @Override
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResultEnvironment) {
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment) {
       return null;
     }
 
@@ -281,7 +281,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestResultEnvironmentFunctions() {}
 
-    public static java.lang.String Render(final ch.actifsource.core.javamodel.IResource language, final ch.actifsource.core.javamodel.INamedResource testResultEnvironment) {
+    public static java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language, final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment) {
       return DynamicResourceUtil.invoke(ITestResultEnvironmentFunctionsImpl.class, TestResultEnvironmentFunctionsImpl.INSTANCE, testResultEnvironment).Render(language, testResultEnvironment);
     }
 
@@ -290,10 +290,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputDataFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3b8413f9-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("c8f6bd58-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -318,10 +318,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputToolFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5ff9925c-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("d614494f-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -346,10 +346,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputUserFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a0b6e835-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("e4e4daf8-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -374,10 +374,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputConnectionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b707a64a-8eb4-11e9-9c53-5f1b39fe78bd")
-    public java.lang.String Render(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String Render(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("f52f6362-9165-11eb-bd45-ed9cc25142e8")
-    public java.lang.String RenderResult(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderResult(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -402,10 +402,10 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestGlobalPreconditionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4792698d-7a97-11eb-87e9-09aeef13879c")
-    public java.lang.String RenderContentElement(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("6a0026df-7b35-11eb-ae9b-d7162fb23e98")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -430,7 +430,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("04b36f0d-7aa6-11eb-87e9-09aeef13879c")
-    public java.lang.String RenderCoverageName(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderCoverageName(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -462,7 +462,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestPreconditionStepFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("1559bb44-7b34-11eb-ae9b-d7162fb23e98")
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testPreconditionStep);
+    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep);
 
   }
   
@@ -473,7 +473,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     private TestPreconditionStepFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testPreconditionStep) {
+    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep) {
       /* Begin Protected Region [[1559bb44-7b34-11eb-ae9b-d7162fb23e98]] */
       Integer position = 1;
       final var testGlobalPreconditions = TestPreconditionAwareList.selectToMeTestLocalPreconditions(testPreconditionStep);
@@ -495,7 +495,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestPreconditionStepFunctions() {}
 
-    public static java.lang.Integer Position(final ch.actifsource.core.javamodel.IResource testPreconditionStep) {
+    public static java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep) {
       return DynamicResourceUtil.invoke(ITestPreconditionStepFunctionsImpl.class, TestPreconditionStepFunctionsImpl.INSTANCE, testPreconditionStep).Position(testPreconditionStep);
     }
 
@@ -504,13 +504,13 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestCaseSpecificationsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
-    public java.lang.String RenderDescriptions(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("4c2f807c-7630-11e9-84bc-453c5bb8bcda")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllReferences();
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferences();
 
     @IDynamicResourceExtension.MethodId("4d4b0d2e-7631-11e9-84bc-453c5bb8bcda")
-    public List<ch.actifsource.core.javamodel.IResource> SelectAllReferencesDistinct();
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferencesDistinct();
 
   }
   
@@ -574,7 +574,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputConnectionEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("22d8d234-0c04-11ec-958d-1bedd06d8336")
-    public java.lang.String RenderLine(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderLine(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -599,7 +599,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestInputConnectionEnvironmentNotPossibleFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9cbaf2b4-0c05-11ec-958d-1bedd06d8336")
-    public java.lang.String RenderLine(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderLine(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -624,7 +624,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface ITestAbstractInputConnectionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("878e6b21-0c05-11ec-958d-1bedd06d8336")
-    public java.lang.String RenderLine(final ch.actifsource.core.javamodel.IResource language);
+    public java.lang.String RenderLine(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -648,4 +648,4 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,LvEilMFBSY3bMTHjqPpe84oG6YA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,2Zo9+20VEFQWPt3D0EypBc3iXZ4=] */

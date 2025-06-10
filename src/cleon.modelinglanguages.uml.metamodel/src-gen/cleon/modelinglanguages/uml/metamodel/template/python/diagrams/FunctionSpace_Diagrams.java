@@ -49,7 +49,7 @@ public class FunctionSpace_Diagrams {
   public static interface IUmlDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e4eef884-a065-11ec-b8bd-93035f893c15")
-    public java.lang.String RenderImports(final ch.actifsource.core.javamodel.IResource umlDiagram);
+    public java.lang.String RenderImports(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram);
 
   }
   
@@ -60,7 +60,7 @@ public class FunctionSpace_Diagrams {
     private UmlDiagramFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderImports(final ch.actifsource.core.javamodel.IResource umlDiagram) {
+    public java.lang.String RenderImports(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram) {
       return null;
     }
 
@@ -70,7 +70,7 @@ public class FunctionSpace_Diagrams {
 
     private UmlDiagramFunctions() {}
 
-    public static java.lang.String RenderImports(final ch.actifsource.core.javamodel.IResource umlDiagram) {
+    public static java.lang.String RenderImports(final cleon.modelinglanguages.uml.metamodel.spec.javamodel.IUmlDiagram umlDiagram) {
       return DynamicResourceUtil.invoke(IUmlDiagramFunctionsImpl.class, UmlDiagramFunctionsImpl.INSTANCE, umlDiagram).RenderImports(umlDiagram);
     }
 
@@ -78,4 +78,4 @@ public class FunctionSpace_Diagrams {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fdab4fd0-9fc1-11ec-a0ca-03d8d5268a60,cZpmtc/HjKIYqtn0LBbF2GUadbQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fdab4fd0-9fc1-11ec-a0ca-03d8d5268a60,7YSkg7FGSDMQYGE+RAVF887J51g=] */

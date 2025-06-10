@@ -34,55 +34,55 @@ public class FunctionSpace_Activity_Deployment {
   public static interface IActivityPermissionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("236c6c0e-4e0e-11ed-a85e-ff0e1a36b8ae")
-    public ch.actifsource.core.javamodel.IDecorator ActivitySiteGroup();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup ActivitySiteGroup();
 
     @IDynamicResourceExtension.MethodId("8e3d374b-04ba-11f0-8e81-9be04e08660a")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.javamodel.IStartAt ActivitySystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration ActivitySystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("51adcb01-dfed-11ec-8f56-b9160f87f47a")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllActivityPermissionInEnvironment();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInEnvironment();
 
     @IDynamicResourceExtension.MethodId("f259b386-c56e-11e9-9daa-cf9f9f7341e8")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllActivityPermissionInSite();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInSite();
 
     @IDynamicResourceExtension.MethodId("947f9071-ae40-11eb-9680-77b158711103")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> AllUsedRoleSystemComponentOnlyEnabledDistinct();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponentOnlyEnabledDistinct();
 
     @IDynamicResourceExtension.MethodId("7b900ced-ae40-11eb-9680-77b158711103")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> AllUsedRoleSystemComponentOnlyEnabled();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponentOnlyEnabled();
 
     @IDynamicResourceExtension.MethodId("1db46192-8dae-11ed-bb98-e70249753acb")
-    public java.lang.String Description(final ch.actifsource.core.javamodel.IDecorator activitySiteGroup);
+    public java.lang.String Description(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
     public java.lang.String FormatId();
 
     @IDynamicResourceExtension.MethodId("4982d3d9-6fb0-11eb-a1e4-f1bdb2897690")
-    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ISkipMonitoringAware GetAbstractSite();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite GetAbstractSite();
 
     @IDynamicResourceExtension.MethodId("601de2c0-0a1e-11eb-a857-d17d567fc174")
     public java.lang.Integer GetId();
 
     @IDynamicResourceExtension.MethodId("8b08df13-7f26-11e9-9a52-07d4b074defc")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware GetSystemConfiguration();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
-    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware role);
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent role);
 
     @IDynamicResourceExtension.MethodId("d7ca023b-27eb-11eb-b239-011c2d3c4f88")
-    public <T extends ch.actifsource.core.javamodel.IDecorator> List<T> OnlyActiveOrDefaultTrue();
+    public <T extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue();
 
     @IDynamicResourceExtension.MethodId("cd8a84f5-7f27-11e9-9a52-07d4b074defc")
     public java.lang.Integer PermissionCount();
 
     @IDynamicResourceExtension.MethodId("05d1f501-bff1-11e9-80a1-d5ff22ac3c31")
-    public java.lang.String StandardDescription(final ch.actifsource.core.javamodel.IDecorator activitySiteGroup);
+    public java.lang.String StandardDescription(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
     @IDynamicResourceExtension.MethodId("a4552697-0def-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponents();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToServiceAccounts();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("abf2fc43-05ab-11f0-a7b1-53303e9b84a9")
     public java.lang.String UsedIn();
@@ -92,22 +92,22 @@ public class FunctionSpace_Activity_Deployment {
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
-    public java.lang.String FormatId(final ch.actifsource.core.javamodel.IDecorator activityPermission);
+    public java.lang.String FormatId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("601de2c0-0a1e-11eb-a857-d17d567fc174")
-    public java.lang.Integer GetId(final ch.actifsource.core.javamodel.IDecorator activityPermission);
+    public java.lang.Integer GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
-    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware role, final ch.actifsource.core.javamodel.IDecorator activityPermission);
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("d7ca023b-27eb-11eb-b239-011c2d3c4f88")
-    public <T extends ch.actifsource.core.javamodel.IDecorator> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList);
+    public <T extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList);
 
     @IDynamicResourceExtension.MethodId("a4552697-0def-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponents(final ch.actifsource.core.javamodel.IDecorator activityPermission);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToServiceAccounts(final ch.actifsource.core.javamodel.IDecorator activityPermission);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
   }
   
@@ -118,12 +118,12 @@ public class FunctionSpace_Activity_Deployment {
     private ActivityPermissionFunctionsImpl() {}
 
     @Override
-    public java.lang.String FormatId(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public java.lang.String FormatId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return String.format("%04d", activityPermission.extension(IActivityPermissionFunctions.class).GetId());
     }
 
     @Override
-    public java.lang.Integer GetId(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public java.lang.Integer GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
       final var activitySiteGroup = activityPermission.extension(IActivityPermissionFunctions.class).ActivitySiteGroup();
       final var activitySiteConfiguration = activityPermission.extension(IActivityPermissionFunctions.class).ActivitySystemConfiguration();
@@ -138,14 +138,14 @@ public class FunctionSpace_Activity_Deployment {
     }
 
     @Override
-    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware role, final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
       return role.extension(IRoleSystemComponentFunctions.class).AllActivities().contains(activityPermission);
       /* End Protected Region   [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
     }
 
     @Override
-    public <T extends ch.actifsource.core.javamodel.IDecorator> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList) {
+    public <T extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList) {
       /* Begin Protected Region [[d7ca023b-27eb-11eb-b239-011c2d3c4f88]] */
       return activityPermissionList.stream().filter(x -> {
       	if (!x.selectActivityTemplate().extension(IEnabledWithDefaultTrueAwareFunctions.class)
@@ -158,7 +158,7 @@ public class FunctionSpace_Activity_Deployment {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponents(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[a4552697-0def-11ea-91d3-b3e983305cb0]] */
       final var roleSystemComponentResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent>();
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
@@ -209,7 +209,7 @@ public class FunctionSpace_Activity_Deployment {
     }
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToServiceAccounts(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
       final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount>();
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
@@ -240,27 +240,27 @@ public class FunctionSpace_Activity_Deployment {
 
     private ActivityPermissionFunctions() {}
 
-    public static java.lang.String FormatId(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public static java.lang.String FormatId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).FormatId(activityPermission);
     }
 
-    public static java.lang.Integer GetId(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public static java.lang.Integer GetId(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).GetId(activityPermission);
     }
 
-    public static java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware role, final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public static java.lang.Boolean HasAccess(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).HasAccess(role, activityPermission);
     }
 
-    public static <T extends ch.actifsource.core.javamodel.IDecorator> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList) {
+    public static <T extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermissionList).OnlyActiveOrDefaultTrue(activityPermissionList);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToRoleSystemComponents(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ToRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToRoleSystemComponents(activityPermission);
     }
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware> ToServiceAccounts(final ch.actifsource.core.javamodel.IDecorator activityPermission) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToServiceAccounts(activityPermission);
     }
 
@@ -300,7 +300,7 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer CountAllPermissionTemplates();
 
     @IDynamicResourceExtension.MethodId("a9b5bf5c-809a-11e9-8e65-f3f639e40a34")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllPermissionTemplates();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IPermissionTemplate> AllPermissionTemplates();
 
   }
   
@@ -328,20 +328,20 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer Max();
 
     @IDynamicResourceExtension.MethodId("a5682b11-9c98-11e9-9b32-35cf2fd07621")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissions();
 
     @IDynamicResourceExtension.MethodId("40656397-0d2c-11ea-b914-3dd9896c252a")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllAvailableActivityPermissions();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission> AllAvailableActivityPermissions();
 
     @IDynamicResourceExtension.MethodId("0bafdc45-4e09-11ed-a85e-ff0e1a36b8ae")
-    public ch.actifsource.core.javamodel.IDecorator EnvironmentRBAC();
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IEnvironmentRBAC EnvironmentRBAC();
 
   }
   
   public static interface IActivitySiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("aaa0cf46-9c90-11e9-9b32-35cf2fd07621")
-    public java.lang.Integer Max(final ch.actifsource.core.javamodel.IDecorator activitySiteGroup);
+    public java.lang.Integer Max(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
   }
   
@@ -352,7 +352,7 @@ public class FunctionSpace_Activity_Deployment {
     private ActivitySiteGroupFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Max(final ch.actifsource.core.javamodel.IDecorator activitySiteGroup) {
+    public java.lang.Integer Max(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup) {
       /* Begin Protected Region [[aaa0cf46-9c90-11e9-9b32-35cf2fd07621]] */
       final var groupFunctions = activitySiteGroup.extension(IAbstractGroupFunctions.class);
       final var activityRootGroups = groupFunctions.GetRootActivityGroup();
@@ -377,7 +377,7 @@ public class FunctionSpace_Activity_Deployment {
 
     private ActivitySiteGroupFunctions() {}
 
-    public static java.lang.Integer Max(final ch.actifsource.core.javamodel.IDecorator activitySiteGroup) {
+    public static java.lang.Integer Max(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup) {
       return DynamicResourceUtil.invoke(IActivitySiteGroupFunctionsImpl.class, ActivitySiteGroupFunctionsImpl.INSTANCE, activitySiteGroup).Max(activitySiteGroup);
     }
 
@@ -392,7 +392,7 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer PermissionCount();
 
     @IDynamicResourceExtension.MethodId("6024626b-9c98-11e9-9b32-35cf2fd07621")
-    public List<ch.actifsource.core.javamodel.IDecorator> AllActivitySiteGroups();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivitySiteGroup> AllActivitySiteGroups();
 
     @IDynamicResourceExtension.MethodId("8b3398ac-07d8-11f0-bc12-1bbda1d7028e")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups.javamodel.IADGroup> AllADGroups();
@@ -444,4 +444,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,UA1hA5j71eTk4PCR9d41wrBKTCg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,CGghoWNDWKeKz/qveeU0PMkAqC8=] */

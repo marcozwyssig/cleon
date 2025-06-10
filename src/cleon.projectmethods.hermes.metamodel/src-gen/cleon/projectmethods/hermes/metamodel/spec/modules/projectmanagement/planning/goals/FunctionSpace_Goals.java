@@ -28,7 +28,7 @@ public class FunctionSpace_Goals {
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("98d74401-bc87-11e6-b169-a12bde5a1c7c")
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware goal);
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.goals.javamodel.IGoal goal);
 
   }
   
@@ -39,7 +39,7 @@ public class FunctionSpace_Goals {
     private GoalFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware goal) {
+    public java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.goals.javamodel.IGoal goal) {
       return String.format("Z%02d", goal.selectIdentifier());  
     }
 
@@ -49,7 +49,7 @@ public class FunctionSpace_Goals {
 
     private GoalFunctions() {}
 
-    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware goal) {
+    public static java.lang.String GetId(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.goals.javamodel.IGoal goal) {
       return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).GetId(goal);
     }
 
@@ -58,7 +58,7 @@ public class FunctionSpace_Goals {
   public static interface IGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("35ce6d9b-bfef-11e8-a3d0-5394fd9291a1")
-    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.javamodel.IOwnerAware> GetAllGoals();
+    public List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.goals.javamodel.IGoal> GetAllGoals();
 
   }
   
@@ -82,4 +82,4 @@ public class FunctionSpace_Goals {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,98d71cef-bc87-11e6-b169-a12bde5a1c7c,iKweERW8kreS+48k7DBGBSGAarw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,98d71cef-bc87-11e6-b169-a12bde5a1c7c,nBk22d0/ig3s5tomI75+rHHJK0w=] */

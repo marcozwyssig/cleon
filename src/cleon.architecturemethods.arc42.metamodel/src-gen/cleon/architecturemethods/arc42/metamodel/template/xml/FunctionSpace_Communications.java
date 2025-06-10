@@ -22,7 +22,7 @@ public class FunctionSpace_Communications {
   public static interface IImplementationStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b0f35d6f-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
@@ -47,14 +47,14 @@ public class FunctionSpace_Communications {
   public static interface IImplementedStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("98d07593-2046-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
   public static interface IImplementedStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("98d07593-2046-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState);
 
   }
   
@@ -65,7 +65,7 @@ public class FunctionSpace_Communications {
     private ImplementedStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState) {
       /* Begin Protected Region [[98d07593-2046-11eb-88ac-6db033a610cb]] */
       if (implementedState.selectImplementationStateIn() == null || !implementedState.selectImplementationStateIn().containsKey(env.getResource())) {
       	return false;
@@ -80,7 +80,7 @@ public class FunctionSpace_Communications {
 
     private ImplementedStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedState implementedState) {
       return DynamicResourceUtil.invoke(IImplementedStateFunctionsImpl.class, ImplementedStateFunctionsImpl.INSTANCE, implementedState).IsImplemented(env, implementedState);
     }
 
@@ -225,14 +225,14 @@ public class FunctionSpace_Communications {
   public static interface IImplementedButNotRequiredOnFirewallStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cfd89ba6-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env);
 
   }
   
   public static interface IImplementedButNotRequiredOnFirewallStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("cfd89ba6-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState);
 
   }
   
@@ -243,7 +243,7 @@ public class FunctionSpace_Communications {
     private ImplementedButNotRequiredOnFirewallStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
       return true;
     }
 
@@ -253,7 +253,7 @@ public class FunctionSpace_Communications {
 
     private ImplementedButNotRequiredOnFirewallStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final ch.actifsource.core.javamodel.INamedResource env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode env, final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
       return DynamicResourceUtil.invoke(IImplementedButNotRequiredOnFirewallStateFunctionsImpl.class, ImplementedButNotRequiredOnFirewallStateFunctionsImpl.INSTANCE, implementedButNotRequiredOnFirewallState).IsImplemented(env, implementedButNotRequiredOnFirewallState);
     }
 
@@ -269,7 +269,7 @@ public class FunctionSpace_Communications {
   public static interface ISourceInSubSecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
-    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone);
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
   }
   
@@ -280,7 +280,7 @@ public class FunctionSpace_Communications {
     private SourceInSubSecurityZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
       if( sourceInSubSecurityZone.selectIsTemporary() != null) {
       	return sourceInSubSecurityZone.selectIsTemporary();
@@ -300,7 +300,7 @@ public class FunctionSpace_Communications {
 
     private SourceInSubSecurityZoneFunctions() {}
 
-    public static java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware sourceInSubSecurityZone) {
+    public static java.lang.Boolean IsTemporary(final cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).IsTemporary(sourceInSubSecurityZone);
     }
 
@@ -308,4 +308,4 @@ public class FunctionSpace_Communications {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,092ae3c2-63de-11ef-ac12-136807d7f56d,z2sZ9eLN4SjlrRsY9SKOZWd6Kas=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,092ae3c2-63de-11ef-ac12-136807d7f56d,6FolqbnpKhS16W5lVhrZhAp5soE=] */

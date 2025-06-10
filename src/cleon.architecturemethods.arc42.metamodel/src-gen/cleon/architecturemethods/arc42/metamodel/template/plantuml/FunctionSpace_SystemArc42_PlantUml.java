@@ -49,7 +49,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
     public java.lang.String RenderUmlElement();
 
     @IDynamicResourceExtension.MethodId("25082caa-0e17-11e9-8b4c-f9aec93d8b56")
-    public ch.actifsource.core.javamodel.IResource SelectBlackbox();
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock SelectBlackbox();
 
   }
   
@@ -74,7 +74,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8c01ac28-61c6-11ea-b250-8d3b1d076722")
-    public List<ch.actifsource.core.javamodel.IResource> SelectDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectDependencies();
 
   }
   
@@ -112,7 +112,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5254da7b-18e9-11e9-84df-097eeec74d2d")
-    public java.lang.String RenderHidden(final List<ch.actifsource.core.javamodel.IResource> nodeList);
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
 
   }
   
@@ -123,7 +123,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
     private NodeFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderHidden(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[5254da7b-18e9-11e9-84df-097eeec74d2d]] */
       final StringBuilder builder = new StringBuilder();
       INode last = null;
@@ -148,7 +148,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
     private NodeFunctions() {}
 
-    public static java.lang.String RenderHidden(final List<ch.actifsource.core.javamodel.IResource> nodeList) {
+    public static java.lang.String RenderHidden(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).RenderHidden(nodeList);
     }
 
@@ -182,7 +182,7 @@ public class FunctionSpace_SystemArc42_PlantUml {
   public static interface ISegmentationDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("690e74d7-0e23-11e9-8b4c-f9aec93d8b56")
-    public List<ch.actifsource.core.javamodel.IResource> SelectZone();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> SelectZone();
 
     @IDynamicResourceExtension.MethodId("a15643d8-0e23-11e9-8b4c-f9aec93d8b56")
     public java.lang.String RenderUmlElement();
@@ -259,4 +259,4 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,0/C+J2zH7x/OfzviZtDBm0r2zGU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,arUAIp9ERsw/lpZJDGkh/3m5nKo=] */

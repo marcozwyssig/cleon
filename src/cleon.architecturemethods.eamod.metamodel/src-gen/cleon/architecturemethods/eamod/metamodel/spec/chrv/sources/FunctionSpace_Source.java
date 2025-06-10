@@ -24,7 +24,7 @@ public class FunctionSpace_Source {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("43b904fe-c97a-11e5-a64e-a5d84d8f1b45")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllSources();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource> GetAllSources();
 
     @IDynamicResourceExtension.MethodId("88b17f27-c992-11e5-b35b-8fb753dd0798")
     public java.lang.String GetTypeName();
@@ -33,7 +33,7 @@ public class FunctionSpace_Source {
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("769bc163-38e7-11e8-8c35-85f8e4a22f42")
-    public List<ch.actifsource.core.javamodel.IResource> GetAllUsedSourceAware();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISourceAware> GetAllUsedSourceAware();
 
     @IDynamicResourceExtension.MethodId("0e17d013-ea68-11e8-8092-1f65b9544bbd")
     public java.lang.String GetCascadingName();
@@ -43,7 +43,7 @@ public class FunctionSpace_Source {
   public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4b8d7404-c58d-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource source);
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource source);
 
   }
   
@@ -54,7 +54,7 @@ public class FunctionSpace_Source {
     private SourceFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource source) {
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource source) {
       return String.format("QE-%03d", source.selectIdentifier());   
     }
 
@@ -64,7 +64,7 @@ public class FunctionSpace_Source {
 
     private SourceFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource source) {
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).GetId(source);
     }
 
@@ -73,13 +73,13 @@ public class FunctionSpace_Source {
   public static interface ISourcesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2f861eef-c97a-11e5-a64e-a5d84d8f1b45")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllSources();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource> GetAllSources();
 
     @IDynamicResourceExtension.MethodId("95b3c364-ea66-11e8-8092-1f65b9544bbd")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllUsedSources();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource> GetAllUsedSources();
 
     @IDynamicResourceExtension.MethodId("c8154113-ea66-11e8-8092-1f65b9544bbd")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllUsedSourcesDistinct();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISource> GetAllUsedSourcesDistinct();
 
   }
   
@@ -253,4 +253,4 @@ public class FunctionSpace_Source {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,K5QQRd8aUuiZ9puvlxZ/ntN8BLY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,3glGqZ6/EPaXxZUNkUsDG2AuQOg=] */

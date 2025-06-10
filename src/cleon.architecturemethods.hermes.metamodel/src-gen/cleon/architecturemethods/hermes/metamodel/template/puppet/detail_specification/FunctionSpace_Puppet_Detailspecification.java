@@ -925,7 +925,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IAbstractAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3d5f06aa-272b-11f0-8098-59f455ea82af")
-    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("69875858-272b-11f0-8098-59f455ea82af")
     public java.lang.String OU();
@@ -962,7 +962,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface IServiceAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0c46b4b1-272c-11f0-8098-59f455ea82af")
-    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("415d19ab-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -993,7 +993,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static interface ITestAccountConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("14a224b0-272c-11f0-8098-59f455ea82af")
-    public ch.actifsource.core.javamodel.IResource ConfigureServiceAccountAndTestUsers();
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.javamodel.IServiceAccountsAndTestUser ConfigureServiceAccountAndTestUsers();
 
     @IDynamicResourceExtension.MethodId("4b35656c-272c-11f0-8098-59f455ea82af")
     public java.lang.String InOU();
@@ -1549,4 +1549,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,vGcTjJjOw3whK2W9qhWsW+dSmik=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,zvoSJ+6bWPJSG6wgrYuAT24m19o=] */

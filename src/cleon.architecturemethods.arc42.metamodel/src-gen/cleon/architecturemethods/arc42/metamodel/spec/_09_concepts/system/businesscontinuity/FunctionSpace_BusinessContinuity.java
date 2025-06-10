@@ -21,7 +21,7 @@ public class FunctionSpace_BusinessContinuity {
   public static interface IBackupConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("591d8144-c1d2-11ea-b956-0ffede25a02d")
-    public List<ch.actifsource.core.javamodel.IResource> SelectBackupBuildingBlocks();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectBackupBuildingBlocks();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_BusinessContinuity {
   public static interface IAvailabilityConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c1858b61-c93b-11eb-adc4-d18d1353eb6e")
-    public List<ch.actifsource.core.javamodel.IResource> AllComponents();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllComponents();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_BusinessContinuity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4d1f95f6-c1d2-11ea-b956-0ffede25a02d,L+qVECbyg+yYerg70NCTp28Wxg4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4d1f95f6-c1d2-11ea-b956-0ffede25a02d,aV8dmo3ptoFBevAGMpXjP7QVSXM=] */

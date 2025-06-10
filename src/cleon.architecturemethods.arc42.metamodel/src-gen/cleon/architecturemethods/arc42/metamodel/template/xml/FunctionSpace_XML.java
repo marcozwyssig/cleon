@@ -21,7 +21,7 @@ public class FunctionSpace_XML {
   public static interface IAbstractNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2cdd8a41-90d9-11e9-b29b-f1077960b1fa")
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_XML {
   public static interface IAbstractLogicalNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6bded80b-90d9-11e9-b29b-f1077960b1fa")
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
@@ -71,14 +71,14 @@ public class FunctionSpace_XML {
   public static interface INamedPhysicalNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7f94024f-90d9-11e9-b29b-f1077960b1fa")
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
   }
   
   public static interface INamedPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7f94024f-90d9-11e9-b29b-f1077960b1fa")
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone(final ch.actifsource.core.javamodel.INamedResource namedPhysicalNetwork);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork);
 
   }
   
@@ -89,7 +89,7 @@ public class FunctionSpace_XML {
     private NamedPhysicalNetworkFunctionsImpl() {}
 
     @Override
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone(final ch.actifsource.core.javamodel.INamedResource namedPhysicalNetwork) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
       return null;
     }
 
@@ -99,7 +99,7 @@ public class FunctionSpace_XML {
 
     private NamedPhysicalNetworkFunctions() {}
 
-    public static List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone(final ch.actifsource.core.javamodel.INamedResource namedPhysicalNetwork) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone(final cleon.modelinglanguages.network.metamodel.spec.javamodel.INamedPhysicalNetwork namedPhysicalNetwork) {
       return DynamicResourceUtil.invoke(INamedPhysicalNetworkFunctionsImpl.class, NamedPhysicalNetworkFunctionsImpl.INSTANCE, namedPhysicalNetwork).allNetworkSubZone(namedPhysicalNetwork);
     }
 
@@ -108,10 +108,10 @@ public class FunctionSpace_XML {
   public static interface INetworkSubZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8bcea7c8-90d9-11e9-b29b-f1077960b1fa")
-    public List<ch.actifsource.core.javamodel.IDecorator> allNetworkSubZone();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone> allNetworkSubZone();
 
     @IDynamicResourceExtension.MethodId("388e8b74-b213-11ea-a3a2-e9d3344bee73")
-    public ch.actifsource.core.javamodel.IResource GetCidr(final java.lang.String cidr);
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr);
 
     @IDynamicResourceExtension.MethodId("ab85a4c0-b233-11ea-8bbe-3b4c7e1fd549")
     public java.lang.String Name();
@@ -121,7 +121,7 @@ public class FunctionSpace_XML {
   public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("388e8b74-b213-11ea-a3a2-e9d3344bee73")
-    public ch.actifsource.core.javamodel.IResource GetCidr(final java.lang.String cidr, final ch.actifsource.core.javamodel.IDecorator networkSubZone);
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone);
 
   }
   
@@ -132,7 +132,7 @@ public class FunctionSpace_XML {
     private NetworkSubZoneFunctionsImpl() {}
 
     @Override
-    public ch.actifsource.core.javamodel.IResource GetCidr(final java.lang.String cidr, final ch.actifsource.core.javamodel.IDecorator networkSubZone) {
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
       /* Begin Protected Region [[388e8b74-b213-11ea-a3a2-e9d3344bee73]] */
     	for( final IIPv4_Mask mask : networkSubZone.selectCidrs() ) {
     		final String ip = mask.selectIPv4();
@@ -150,7 +150,7 @@ public class FunctionSpace_XML {
 
     private NetworkSubZoneFunctions() {}
 
-    public static ch.actifsource.core.javamodel.IResource GetCidr(final java.lang.String cidr, final ch.actifsource.core.javamodel.IDecorator networkSubZone) {
+    public static cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkSubZone networkSubZone) {
       return DynamicResourceUtil.invoke(INetworkSubZoneFunctionsImpl.class, NetworkSubZoneFunctionsImpl.INSTANCE, networkSubZone).GetCidr(cidr, networkSubZone);
     }
 
@@ -209,7 +209,7 @@ public class FunctionSpace_XML {
   public static interface IServiceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be4907b4-ba5b-11ec-a408-4ba6a2d760ef")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.IIsTemporaryAware> UsedSources();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> UsedSources();
 
   }
   
@@ -233,4 +233,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,nU4Z38nXsFWd5BmXXkNzco7gr88=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,wuivzZXn8F3pcdV3OmO04Agm1X4=] */

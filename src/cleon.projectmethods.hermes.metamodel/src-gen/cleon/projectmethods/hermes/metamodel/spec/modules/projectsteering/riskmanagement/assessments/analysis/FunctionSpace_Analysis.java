@@ -24,35 +24,35 @@ public class FunctionSpace_Analysis {
     public java.lang.Integer CalculateScore();
 
     @IDynamicResourceExtension.MethodId("90cf4aa5-3252-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsVeryHigh(final ch.actifsource.core.javamodel.IResource riskClassification);
+    public java.lang.Boolean IsVeryHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification);
 
     @IDynamicResourceExtension.MethodId("b99590b0-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsHigh(final ch.actifsource.core.javamodel.IResource riskClassification);
+    public java.lang.Boolean IsHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification);
 
     @IDynamicResourceExtension.MethodId("bd790c81-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsMedium(final ch.actifsource.core.javamodel.IResource riskClassification);
+    public java.lang.Boolean IsMedium(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification);
 
     @IDynamicResourceExtension.MethodId("c19c9e92-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsLow(final ch.actifsource.core.javamodel.IResource riskClassification);
+    public java.lang.Boolean IsLow(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification);
 
   }
   
   public static interface IRiskAnalysisFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4ca64235-3252-11e6-ab4d-73a9260c8088")
-    public java.lang.Integer CalculateScore(final ch.actifsource.core.javamodel.IResource riskAnalysis);
+    public java.lang.Integer CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis);
 
     @IDynamicResourceExtension.MethodId("90cf4aa5-3252-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsVeryHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis);
+    public java.lang.Boolean IsVeryHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis);
 
     @IDynamicResourceExtension.MethodId("b99590b0-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis);
+    public java.lang.Boolean IsHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis);
 
     @IDynamicResourceExtension.MethodId("bd790c81-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsMedium(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis);
+    public java.lang.Boolean IsMedium(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis);
 
     @IDynamicResourceExtension.MethodId("c19c9e92-3253-11e6-ab4d-73a9260c8088")
-    public java.lang.Boolean IsLow(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis);
+    public java.lang.Boolean IsLow(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis);
 
   }
   
@@ -63,7 +63,7 @@ public class FunctionSpace_Analysis {
     private RiskAnalysisFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer CalculateScore(final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public java.lang.Integer CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       /* Begin Protected Region [[4ca64235-3252-11e6-ab4d-73a9260c8088]] */
 		int impactRate = Integer.parseInt(riskAnalysis.selectImpactRate().selectName());    
 		int probability = Integer.parseInt(riskAnalysis.selectProbability().selectName());
@@ -72,7 +72,7 @@ public class FunctionSpace_Analysis {
     }
 
     @Override
-    public java.lang.Boolean IsVeryHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public java.lang.Boolean IsVeryHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       /* Begin Protected Region [[90cf4aa5-3252-11e6-ab4d-73a9260c8088]] */
     	int score = CalculateScore(riskAnalysis);
     	return score > riskClassification.selectVeryHigh();    	
@@ -80,7 +80,7 @@ public class FunctionSpace_Analysis {
     }
 
     @Override
-    public java.lang.Boolean IsHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public java.lang.Boolean IsHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       /* Begin Protected Region [[b99590b0-3253-11e6-ab4d-73a9260c8088]] */
     	int score = CalculateScore(riskAnalysis);
     	return score < riskClassification.selectVeryHigh() && score >= riskClassification.selectHigh();   
@@ -88,7 +88,7 @@ public class FunctionSpace_Analysis {
     }
 
     @Override
-    public java.lang.Boolean IsMedium(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public java.lang.Boolean IsMedium(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       /* Begin Protected Region [[bd790c81-3253-11e6-ab4d-73a9260c8088]] */
     	int score = CalculateScore(riskAnalysis);
     	return score < riskClassification.selectHigh() && score >= riskClassification.selectMedium();
@@ -96,7 +96,7 @@ public class FunctionSpace_Analysis {
     }
 
     @Override
-    public java.lang.Boolean IsLow(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public java.lang.Boolean IsLow(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       /* Begin Protected Region [[c19c9e92-3253-11e6-ab4d-73a9260c8088]] */
     	int score = CalculateScore(riskAnalysis);
     	return score < riskClassification.selectMedium();     
@@ -109,23 +109,23 @@ public class FunctionSpace_Analysis {
 
     private RiskAnalysisFunctions() {}
 
-    public static java.lang.Integer CalculateScore(final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public static java.lang.Integer CalculateScore(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       return DynamicResourceUtil.invoke(IRiskAnalysisFunctionsImpl.class, RiskAnalysisFunctionsImpl.INSTANCE, riskAnalysis).CalculateScore(riskAnalysis);
     }
 
-    public static java.lang.Boolean IsVeryHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public static java.lang.Boolean IsVeryHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       return DynamicResourceUtil.invoke(IRiskAnalysisFunctionsImpl.class, RiskAnalysisFunctionsImpl.INSTANCE, riskAnalysis).IsVeryHigh(riskClassification, riskAnalysis);
     }
 
-    public static java.lang.Boolean IsHigh(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public static java.lang.Boolean IsHigh(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       return DynamicResourceUtil.invoke(IRiskAnalysisFunctionsImpl.class, RiskAnalysisFunctionsImpl.INSTANCE, riskAnalysis).IsHigh(riskClassification, riskAnalysis);
     }
 
-    public static java.lang.Boolean IsMedium(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public static java.lang.Boolean IsMedium(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       return DynamicResourceUtil.invoke(IRiskAnalysisFunctionsImpl.class, RiskAnalysisFunctionsImpl.INSTANCE, riskAnalysis).IsMedium(riskClassification, riskAnalysis);
     }
 
-    public static java.lang.Boolean IsLow(final ch.actifsource.core.javamodel.IResource riskClassification, final ch.actifsource.core.javamodel.IResource riskAnalysis) {
+    public static java.lang.Boolean IsLow(final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskClassification riskClassification, final cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis riskAnalysis) {
       return DynamicResourceUtil.invoke(IRiskAnalysisFunctionsImpl.class, RiskAnalysisFunctionsImpl.INSTANCE, riskAnalysis).IsLow(riskClassification, riskAnalysis);
     }
 
@@ -283,4 +283,4 @@ public class FunctionSpace_Analysis {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,416d5506-3252-11e6-ab4d-73a9260c8088,U6VfCDjX+90ik6Q30h/DnTjyMXw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,416d5506-3252-11e6-ab4d-73a9260c8088,+SfXcxjEaWxz8sRKUh/ASwWOXQw=] */

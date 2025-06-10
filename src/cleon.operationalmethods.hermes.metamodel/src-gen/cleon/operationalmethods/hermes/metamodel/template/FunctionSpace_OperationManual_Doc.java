@@ -21,7 +21,7 @@ public class FunctionSpace_OperationManual_Doc {
   public static interface IOperatingManualFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c9cb382e-994e-11ec-ac2c-1f8a98b38b26")
-    public List<ch.actifsource.core.javamodel.IResource> ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_OperationManual_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ae974293-994e-11ec-ac2c-1f8a98b38b26,jd1McVe//eAtikSB710DO+6LFfs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ae974293-994e-11ec-ac2c-1f8a98b38b26,38wgDVaGHCc403WFv7WSV7Pj/yc=] */

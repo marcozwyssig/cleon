@@ -71,22 +71,22 @@ public class FunctionSpace_Data_View {
   public static interface ITableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de1b7980-cf36-11ee-8c06-a5102392725a")
-    public List<ch.actifsource.core.javamodel.INamedResource> AllEnumerationValues();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> AllEnumerationValues();
 
     @IDynamicResourceExtension.MethodId("00a6db1b-cf37-11ee-8c06-a5102392725a")
-    public List<ch.actifsource.core.javamodel.INamedResource> UsedEnumerationValues();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> UsedEnumerationValues();
 
     @IDynamicResourceExtension.MethodId("16cc69f4-cf37-11ee-8c06-a5102392725a")
-    public List<ch.actifsource.core.javamodel.INamedResource> AvailableEnumerationValues();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue> AvailableEnumerationValues();
 
     @IDynamicResourceExtension.MethodId("3186a2cd-e134-11ee-995f-5faf5f77d478")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> Columns();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> Columns();
 
     @IDynamicResourceExtension.MethodId("ae2b8d22-e135-11ee-995f-5faf5f77d478")
     public java.lang.String Name();
 
     @IDynamicResourceExtension.MethodId("1b3b6de1-e140-11ee-9375-43bf1495bfd9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> CriteriaFields();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> CriteriaFields();
 
   }
   
@@ -139,20 +139,20 @@ public class FunctionSpace_Data_View {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("810deeb5-e149-11ee-9375-43bf1495bfd9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> FieldsDependingSelectAll();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> FieldsDependingSelectAll();
 
     @IDynamicResourceExtension.MethodId("13182fab-e11c-11ee-995f-5faf5f77d478")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> Fields();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> Fields();
 
     @IDynamicResourceExtension.MethodId("2aa08299-e11c-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IWhereAware View();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView View();
 
   }
   
   public static interface ISelectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("810deeb5-e149-11ee-9375-43bf1495bfd9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select);
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select);
 
   }
   
@@ -163,7 +163,7 @@ public class FunctionSpace_Data_View {
     private SelectFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select) {
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select) {
       /* Begin Protected Region [[810deeb5-e149-11ee-9375-43bf1495bfd9]] */
     	if( select.selectSelectAllFields()) {
     		 return Arrays.asList();
@@ -180,7 +180,7 @@ public class FunctionSpace_Data_View {
 
     private SelectFunctions() {}
 
-    public static List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select) {
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> FieldsDependingSelectAll(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.ISelect select) {
       return DynamicResourceUtil.invoke(ISelectFunctionsImpl.class, SelectFunctionsImpl.INSTANCE, select).FieldsDependingSelectAll(select);
     }
 
@@ -217,7 +217,7 @@ public class FunctionSpace_Data_View {
     public java.lang.String SimpleName();
 
     @IDynamicResourceExtension.MethodId("df924bc2-e11a-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable From();
 
   }
   
@@ -354,7 +354,7 @@ public class FunctionSpace_Data_View {
   public static interface IConditionalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c371368a-e11a-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -379,7 +379,7 @@ public class FunctionSpace_Data_View {
   public static interface IWhereFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("09d674b8-e11b-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -429,7 +429,7 @@ public class FunctionSpace_Data_View {
   public static interface IWhereAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7100449a-e120-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
   }
   
@@ -454,7 +454,7 @@ public class FunctionSpace_Data_View {
   public static interface IViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("82d5b266-e120-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
     @IDynamicResourceExtension.MethodId("b0f451a0-e132-11ee-995f-5faf5f77d478")
     public java.lang.String SimpleName();
@@ -463,10 +463,10 @@ public class FunctionSpace_Data_View {
     public java.lang.String Name();
 
     @IDynamicResourceExtension.MethodId("e333e7d7-e135-11ee-995f-5faf5f77d478")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> Columns();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> Columns();
 
     @IDynamicResourceExtension.MethodId("8c4b05a2-e13f-11ee-9375-43bf1495bfd9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> CriteriaFields();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> CriteriaFields();
 
   }
   
@@ -491,10 +491,10 @@ public class FunctionSpace_Data_View {
   public static interface IJoinFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8d6344b2-e120-11ee-995f-5faf5f77d478")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable From();
 
     @IDynamicResourceExtension.MethodId("04094cda-e122-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource FromView();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement FromView();
 
     @IDynamicResourceExtension.MethodId("fb8095db-e12d-11ee-995f-5faf5f77d478")
     public java.lang.String SimpleName();
@@ -522,7 +522,7 @@ public class FunctionSpace_Data_View {
   public static interface IJoinBaseFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c579861e-e121-11ee-995f-5faf5f77d478")
-    public ch.actifsource.core.javamodel.IResource FromView();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement FromView();
 
   }
   
@@ -547,13 +547,13 @@ public class FunctionSpace_Data_View {
   public static interface IDatabaseElementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("12f74d6d-e134-11ee-995f-5faf5f77d478")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> Columns();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> Columns();
 
     @IDynamicResourceExtension.MethodId("5e2ef9f3-e134-11ee-995f-5faf5f77d478")
     public java.lang.String Name();
 
     @IDynamicResourceExtension.MethodId("53de3789-e141-11ee-9375-43bf1495bfd9")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> CriteriaFields();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> CriteriaFields();
 
   }
   
@@ -578,7 +578,7 @@ public class FunctionSpace_Data_View {
   public static interface ITableAreaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de076a79-e138-11ee-b0cd-2573623ee439")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ICommentAware> Tables();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> Tables();
 
   }
   
@@ -603,7 +603,7 @@ public class FunctionSpace_Data_View {
   public static interface IOrderByFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("dc3ad1be-e141-11ee-9375-43bf1495bfd9")
-    public ch.actifsource.core.javamodel.IResource From();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseElement From();
 
     @IDynamicResourceExtension.MethodId("cdda9c4d-e529-11ee-a074-d7afe74e4a27")
     public java.lang.String SimpleName();
@@ -708,4 +708,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,XDvULwOa0ttSIoYqMk7xkD9Nqmw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,D8WMCk3EQvfsZ5gqxBSVFwS2P64=] */

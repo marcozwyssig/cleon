@@ -21,7 +21,7 @@ public class FunctionSpace_SystemArc42_Monitoring {
   public static interface IMonitoringBuildingBlocksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aa9b45c1-08b4-11eb-a18e-c7dfa3f96804")
-    public List<ch.actifsource.core.javamodel.IResource> SelectMonitorBuildingBlocks();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectMonitorBuildingBlocks();
 
   }
   
@@ -73,4 +73,4 @@ public class FunctionSpace_SystemArc42_Monitoring {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,sY2eTTBbdG/BSI8jstuWl/r6/M0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,+3twNgWO9FqdcF2JF/k4Tb464EU=] */

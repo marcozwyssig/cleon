@@ -21,7 +21,7 @@ public class docToolchainConfig__T_groovy {
   public static interface ILanguageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a59204be-a5ad-11ef-9b8e-f9190cfb496d")
-    public java.lang.String GetFileName(final ch.actifsource.core.javamodel.IResource document__F_);
+    public java.lang.String GetFileName(final cleon.common.doc.metamodel.spec.document.javamodel.IDocument document__F_);
 
   }
   
@@ -45,4 +45,4 @@ public class docToolchainConfig__T_groovy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,092bb4d8-a5a9-11ef-99b4-af3541bfa2c3,BxQFYIHJ3BVA8KIt/UdIxNHlO7g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,092bb4d8-a5a9-11ef-99b4-af3541bfa2c3,vxjM9WdEdYFJ7fGLE0vnqQLkj6I=] */

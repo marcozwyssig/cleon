@@ -49,11 +49,11 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
   }
 
   @Override
-  public java.lang.Object selectUrl() {
-    return _getSingleAttribute(java.lang.Object.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_url);
+  public java.net.URL selectUrl() {
+    return _getSingleAttribute(java.net.URL.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_url);
   }
     
-  public void setUrl(java.lang.Object url) {
+  public void setUrl(java.net.URL url) {
      _setSingleAttribute(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_url, url);
   }
 
@@ -115,7 +115,7 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.Object.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_url, visitor);
+    _acceptSingleAttribute(java.net.URL.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_url, visitor);
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISourceChapter.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage.SourceDocument_chapters, visitor);
@@ -128,4 +128,4 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,a1VYl+WxqqrCiwuIO81bSnm2qYE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,DtUTCw0neZeJanQ3Fe7hBIOZFwo=] */

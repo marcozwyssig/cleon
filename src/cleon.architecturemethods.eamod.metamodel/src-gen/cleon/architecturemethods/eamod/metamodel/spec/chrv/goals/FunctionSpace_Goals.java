@@ -24,14 +24,14 @@ public class FunctionSpace_Goals {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("432b6c6b-c994-11e5-b35b-8fb753dd0798")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllGoals();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> GetAllGoals();
 
   }
   
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4877cebe-c58d-11e5-aeea-1db9268c0ee9")
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource goal);
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal);
 
   }
   
@@ -42,7 +42,7 @@ public class FunctionSpace_Goals {
     private GoalFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource goal) {
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal) {
       return String.format("ZI-%03d", goal.selectIdentifier());   
     }
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Goals {
 
     private GoalFunctions() {}
 
-    public static java.lang.String GetId(final ch.actifsource.core.javamodel.INamedResource goal) {
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal) {
       return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).GetId(goal);
     }
 
@@ -61,7 +61,7 @@ public class FunctionSpace_Goals {
   public static interface IGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("39b4c91e-c994-11e5-b35b-8fb753dd0798")
-    public List<ch.actifsource.core.javamodel.INamedResource> GetAllGoals();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> GetAllGoals();
 
   }
   
@@ -85,4 +85,4 @@ public class FunctionSpace_Goals {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,qbfdZ4fJG0gT02OgRMtgE8rTpo8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,K8JY2V8e4notDu/JFflGmxW3kTE=] */

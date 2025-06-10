@@ -155,7 +155,7 @@ public class FunctionSpace_Sensor {
   public static interface ISensorClassFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("70061dc5-cd41-11ec-85c9-011c467ea292")
-    public ch.actifsource.core.javamodel.IResource LanguageSettings();
+    public cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings LanguageSettings();
 
   }
   
@@ -179,4 +179,4 @@ public class FunctionSpace_Sensor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,v6yu077vsXsPRRoo7zLfQ9Ksgxw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,XbfhZyv+jaNV0BOFrdKBz5H3a/8=] */

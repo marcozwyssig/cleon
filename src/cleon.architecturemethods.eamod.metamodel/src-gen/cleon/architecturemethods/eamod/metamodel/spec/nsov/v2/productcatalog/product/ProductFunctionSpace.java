@@ -21,7 +21,7 @@ public class ProductFunctionSpace {
   public static interface IBaseProductFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("35685a5f-67cc-11e7-afcc-6df3a81a4d17")
-    public ch.actifsource.core.javamodel.INamedResource NotAllowedProduct();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.product.javamodel.IProduct NotAllowedProduct();
 
   }
   
@@ -46,7 +46,7 @@ public class ProductFunctionSpace {
   public static interface IInfrastructureProductFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5d09d95a-778d-11e7-9604-cb27385e129c")
-    public ch.actifsource.core.javamodel.INamedResource SelectOffering();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.javamodel.IOffering SelectOffering();
 
   }
   
@@ -71,7 +71,7 @@ public class ProductFunctionSpace {
   public static interface IProductGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8720d825-778d-11e7-9604-cb27385e129c")
-    public ch.actifsource.core.javamodel.IResource SelectCatalog();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.javamodel.ICatalog SelectCatalog();
 
   }
   
@@ -96,7 +96,7 @@ public class ProductFunctionSpace {
   public static interface ICatalogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a929001b-778d-11e7-9604-cb27385e129c")
-    public ch.actifsource.core.javamodel.INamedResource SelectOffering();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.javamodel.IOffering SelectOffering();
 
   }
   
@@ -121,7 +121,7 @@ public class ProductFunctionSpace {
   public static interface IInfrastructureProductCatalogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ba2c2aad-778d-11e7-9604-cb27385e129c")
-    public ch.actifsource.core.javamodel.INamedResource SelectOffering();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.javamodel.IOffering SelectOffering();
 
   }
   
@@ -146,7 +146,7 @@ public class ProductFunctionSpace {
   public static interface IBaseProductCatalogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c4cea300-778d-11e7-9604-cb27385e129c")
-    public ch.actifsource.core.javamodel.INamedResource SelectOffering();
+    public cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.javamodel.IOffering SelectOffering();
 
   }
   
@@ -170,4 +170,4 @@ public class ProductFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2c5ea9ef-67cc-11e7-afcc-6df3a81a4d17,4n4CdM2x5zkhLu3K1LTzJQUTrKA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2c5ea9ef-67cc-11e7-afcc-6df3a81a4d17,t2yGH+9btBCPEwMhL4b1bgy6x0U=] */

@@ -21,7 +21,7 @@ public class FunctionSpace_Knockout {
   public static interface IKnockoutCriteriaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1f1eb794-202b-11e9-83b3-a16e26b4cc59")
-    public List<ch.actifsource.core.javamodel.IResource> AllCriterials();
+    public List<cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Knockout {
   public static interface IKnockoutCriteriaAggregateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("09f83867-202d-11e9-83b3-a16e26b4cc59")
-    public List<ch.actifsource.core.javamodel.IResource> AllCriterials();
+    public List<cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Knockout {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7610535f-2029-11e9-83b3-a16e26b4cc59,OL3f9ZwlwvOLoC5tOaPYox2aazw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7610535f-2029-11e9-83b3-a16e26b4cc59,hgME7NRMmxfTIhuBiwSmv7D/v8s=] */

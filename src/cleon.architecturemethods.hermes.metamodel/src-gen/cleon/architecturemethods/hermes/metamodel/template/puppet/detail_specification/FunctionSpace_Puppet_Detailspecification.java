@@ -1547,6 +1547,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ICopyCertFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("57283c2c-4791-11f0-bcdd-31d38803078d")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("57283c2f-4791-11f0-bcdd-31d38803078d")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ICopyCertFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CopyCertFunctionsImpl implements ICopyCertFunctionsImpl {
+
+    public static final ICopyCertFunctionsImpl INSTANCE = new CopyCertFunctionsImpl();
+
+    private CopyCertFunctionsImpl() {}
+
+  }
+  
+  public static class CopyCertFunctions {
+
+    private CopyCertFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,zvoSJ+6bWPJSG6wgrYuAT24m19o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,zWEowik9o59lhptp2uYF8Gnq9tw=] */

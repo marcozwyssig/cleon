@@ -5,9 +5,8 @@ import ch.actifsource.core.Resource;
 public class Win_polycom_operationsPackage {
   
   public static final Resource LocalFw = new Resource("0a34f096-0bd0-11f0-95b9-95d0cc9a328a");
-  public static final Resource LocalFwRule = new Resource("184bf73b-0bd0-11f0-95b9-95d0cc9a328a");
+  public static final Resource CustomLocalFwRule = new Resource("184bf73b-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource LocalFw_rules = new Resource("24edc305-0bd0-11f0-95b9-95d0cc9a328a");
-  public static final Resource LocalFwRule_abstractService = new Resource("aaa7c4c2-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource LocalGroups = new Resource("eaf0a0b7-107d-11f0-b378-11a495632127");
   public static final Resource LocalGroup = new Resource("f065926e-107d-11f0-b378-11a495632127");
   public static final Resource LocalGroups_localGroup = new Resource("f4f9235d-107d-11f0-b378-11a495632127");
@@ -49,6 +48,13 @@ public class Win_polycom_operationsPackage {
   public static final Resource LocalUser_serviceAccount_aE_Local = new Resource("b4e5729b-2be0-11f0-9ce1-09b647a63c7b");
   public static final Resource LocalUser_password = new Resource("1aa719b6-2be1-11f0-9ce1-09b647a63c7b");
   public static final Resource FunctionSpace_aE_win_aE_polycom_aE_operations_LocalUser = new Resource("457002f3-2be1-11f0-9ce1-09b647a63c7b");
+  public static final Resource CopyCert = new Resource("402260dd-4791-11f0-bcdd-31d38803078d");
+  public static final Resource Cert = new Resource("8e07530b-4791-11f0-bcdd-31d38803078d");
+  public static final Resource CopyCert_certs = new Resource("947264ab-4791-11f0-bcdd-31d38803078d");
+  public static final Resource Cert_cer_aE_location = new Resource("aadbd9c0-4791-11f0-bcdd-31d38803078d");
+  public static final Resource Cert_store_aE_dir = new Resource("b1c5b7a5-4791-11f0-bcdd-31d38803078d");
+  public static final Resource Cert_install_aE_store = new Resource("baa2b22f-4791-11f0-bcdd-31d38803078d");
+  public static final Resource Cert_thumbprint = new Resource("c48f96fe-4791-11f0-bcdd-31d38803078d");
   
   /* Begin Protected Region [[user]] */
   
@@ -69,4 +75,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,QyVVyiGwUBZoIt6LOTysZ0wTNec=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,HwQk36FjJ1czWvz1y2R2rB1Mfew=] */

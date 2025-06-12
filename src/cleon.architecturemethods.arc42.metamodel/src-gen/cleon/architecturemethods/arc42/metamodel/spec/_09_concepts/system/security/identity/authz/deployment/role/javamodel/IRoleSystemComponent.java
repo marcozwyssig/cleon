@@ -22,6 +22,8 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemConfiguration> selectAllowAccessTo();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> selectAvailablePermissionTemplateOfSystemConfigurations();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,xjTgcOGJ3K9drkv2ech2ULPpNoM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,9Jd2gUby53XIohq932a0ksBoxms=] */

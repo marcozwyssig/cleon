@@ -107,11 +107,14 @@ public class FunctionSpace_Activity_Template {
       final var activityPermissions = new ArrayList<IActivityPermission>();
       abstractActivityTemplatePermissionList.stream().forEach( x -> {
       	for( final var activityPermission : ActivityPermission.selectToMeActivityTemplate(x) ) {
+      		
       		if (!activityPermissions.contains(activityPermission)) {
       			final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
-      			if( abstractSites.contains(activityPermissionFunctions.GetAbstractSite())) {
-      				activityPermissions.add(activityPermission);
-      			}
+      			if (roleSystemComponent.selectAvailablePermissionTemplateOfSystemConfigurations().contains(activityPermissionFunctions.ActivitySystemConfiguration().selectActivitiesForSystemConfiguration() )) {
+  	      			if( abstractSites.contains(activityPermissionFunctions.GetAbstractSite())) {
+  	      				activityPermissions.add(activityPermission);
+  	      			}  				
+  				}
       		}
       	}
       });
@@ -131,8 +134,10 @@ public class FunctionSpace_Activity_Template {
       	for( final var activityPermission : ActivityPermission.selectToMeActivityTemplate(x) ) {
       		if (!activityPermissions.contains(activityPermission)) {
       			final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
-      			if( abstractSite.equals(activityPermissionFunctions.GetAbstractSite())) {
-      				activityPermissions.add(activityPermission);
+      			if (roleSystemComponent.selectAvailablePermissionTemplateOfSystemConfigurations().contains(activityPermissionFunctions.ActivitySystemConfiguration().selectActivitiesForSystemConfiguration() )) {
+          			if( abstractSite.equals(activityPermissionFunctions.GetAbstractSite())) {
+          				activityPermissions.add(activityPermission);
+          			}      				
       			}
       		}
       	}

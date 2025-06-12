@@ -57,6 +57,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_EpoComputerGroups = new Resource("17480181-2cd0-11f0-851f-3f768d79c0eb");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WusComputerGroups = new Resource("1807cf78-2cd0-11f0-851f-3f768d79c0eb");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Krbtgtrenew = new Resource("a93e2879-2fe3-11f0-bba4-ebbcb3a9ada7");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_CopyCert = new Resource("52bb6c1d-4791-11f0-bcdd-31d38803078d");
   
   /* Begin Protected Region [[user]] */
   
@@ -77,4 +78,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,l2OZQkuChvNQyMDTbSiw8RtYcpA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,95SRqLt+lJaHYOuvNQb2fc60zbk=] */

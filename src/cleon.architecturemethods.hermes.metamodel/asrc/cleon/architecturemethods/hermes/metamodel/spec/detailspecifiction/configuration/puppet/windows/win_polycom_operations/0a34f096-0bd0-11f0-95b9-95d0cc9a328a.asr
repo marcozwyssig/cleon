@@ -72,6 +72,7 @@
         <resource statement-guid="b0890c62-0bd0-11f0-95b9-95d0cc9a328a" type="resource" guid="b088e54e-0bd0-11f0-95b9-95d0cc9a328a" />
       </owns>
     </resource>
+    <resource statement-guid="91556b52-4816-11f0-bcdd-31d38803078d" type="resource" guid="9154f61f-4816-11f0-bcdd-31d38803078d" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="0a3517a8-0bd0-11f0-95b9-95d0cc9a328a" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -329,6 +330,25 @@
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="24ee112c-0bd0-11f0-95b9-95d0cc9a328a" type="resource" guid="184bf73b-0bd0-11f0-95b9-95d0cc9a328a" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="91556b52-4816-11f0-bcdd-31d38803078d">
+      <resource guid="9154f61f-4816-11f0-bcdd-31d38803078d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="91554441-4816-11f0-bcdd-31d38803078d" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="920cfbbe-4816-11f0-bcdd-31d38803078d" type="literal">programLocalFirewallRules</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="9155b973-4816-11f0-bcdd-31d38803078d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="9155b974-4816-11f0-bcdd-31d38803078d" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="b1d08af7-4816-11f0-bcdd-31d38803078d" type="resource" guid="9cfafccf-4816-11f0-bcdd-31d38803078d" />
         </predicate>
       </resource>
     </object>

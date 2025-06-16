@@ -431,6 +431,12 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("583a60ec-13b3-11f0-b664-c7b92124985d")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> AllServiceAccountsForSystemConfiguration();
 
+    @IDynamicResourceExtension.MethodId("e3a54a8e-481c-11f0-98fa-27341f0ccbf7")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment Topology();
+
+    @IDynamicResourceExtension.MethodId("f58084df-481c-11f0-98fa-27341f0ccbf7")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
+
   }
   
   public static interface IAbstractConfigurationSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -495,4 +501,4 @@ public class FunctionSpace_Configuration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,0Bv7t+TbXSHsyEeSxOCpm7JazSk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,nggxFWD8uCoCm7vabDQwDGaJnMI=] */

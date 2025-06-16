@@ -18,6 +18,14 @@ public class SpecPackage {
   public static final Resource Calendar_startYear = new Resource("ebfd9181-c37d-11e5-9455-d97b1b986284");
   public static final Resource FunctionSpace_aE_Calendar_Day = new Resource("5de178ca-c391-11e5-a9c9-53d676410f3e");
   public static final Resource FunctionSpace_aE_Calendar_Calendar = new Resource("07f7bf7b-8a12-11e6-8085-d9bdba2de943");
+  public static final Resource Weekday = new Resource("337972be-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Monday = new Resource("35d0cfdb-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Tuesday = new Resource("37d4b5f1-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Wednesday = new Resource("39e34a9c-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Thursday = new Resource("3d601565-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Friday = new Resource("3f09cda4-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Saturday = new Resource("4063df96-4861-11f0-ab73-2116b4504ace");
+  public static final Resource Weekday_Sunday = new Resource("41fca8a5-4861-11f0-ab73-2116b4504ace");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +46,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.calendar.metamodel.spec,qUEYffG8Z99YD9dnwYryNbgd/1A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.calendar.metamodel.spec,NbIWOMeKKuWi2EeIGsYj657mmYc=] */

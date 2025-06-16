@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="53453086-4867-11f0-ab73-2116b4504ace">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="a5611696-4867-11f0-ab73-2116b4504ace" type="resource" guid="a5611694-4867-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="005ebced-4869-11f0-ab73-2116b4504ace" type="resource" guid="005e95da-4869-11f0-ab73-2116b4504ace" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="53453088-4867-11f0-ab73-2116b4504ace" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5346690a-4867-11f0-ab73-2116b4504ace" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a5611696-4867-11f0-ab73-2116b4504ace">
+      <resource guid="a5611694-4867-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a5611695-4867-11f0-ab73-2116b4504ace" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a562eb59-4867-11f0-ab73-2116b4504ace" type="literal">vmhHost</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a562eb5a-4867-11f0-ab73-2116b4504ace" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a562eb5b-4867-11f0-ab73-2116b4504ace" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a562eb58-4867-11f0-ab73-2116b4504ace" type="resource" guid="c6ffaf13-6da4-11e9-8af5-2346ca56c2e2" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="a5611697-4867-11f0-ab73-2116b4504ace" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="005ebced-4869-11f0-ab73-2116b4504ace">
+      <resource guid="005e95da-4869-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="005e95dc-4869-11f0-ab73-2116b4504ace" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="016ea601-4869-11f0-ab73-2116b4504ace" type="literal">veeamMasterUser</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="005ebcee-4869-11f0-ab73-2116b4504ace" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="005ebcef-4869-11f0-ab73-2116b4504ace" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="05e33e97-4869-11f0-ab73-2116b4504ace" type="resource" guid="559b0bbf-4860-11f0-ab73-2116b4504ace" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="53466909-4867-11f0-ab73-2116b4504ace" type="literal">VeeamESXiHost</object>
+  </predicate>
+</resource>
+

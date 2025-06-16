@@ -9,6 +9,11 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5c700e8e-c391-11e5-a9c9-53d676410f3e,imports]] */
 import cleon.common.calendar.metamodel.spec.javamodel.*;
+import ch.actifsource.core.dynamic.DynamicResourceUtil;
+import ch.actifsource.core.dynamic.IDynamicResourceExtension;
+import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
+import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
+import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 /* End Protected Region   [[5c700e8e-c391-11e5-a9c9-53d676410f3e,imports]] */
 
 public class FunctionSpace_Calendar {
@@ -35,6 +40,9 @@ public class FunctionSpace_Calendar {
     @IDynamicResourceExtension.MethodId("21fe9ba8-d6a9-11e6-a1b8-05a222dbc1bd")
     public java.lang.String FormattedDay();
 
+    @IDynamicResourceExtension.MethodId("663c4a45-4861-11f0-ab73-2116b4504ace")
+    public cleon.common.calendar.metamodel.spec.javamodel.IWeekday Weekday();
+
   }
   
   public static interface IDayFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -53,6 +61,9 @@ public class FunctionSpace_Calendar {
 
     @IDynamicResourceExtension.MethodId("21fe9ba8-d6a9-11e6-a1b8-05a222dbc1bd")
     public java.lang.String FormattedDay(final cleon.common.calendar.metamodel.spec.javamodel.IDay day);
+
+    @IDynamicResourceExtension.MethodId("663c4a45-4861-11f0-ab73-2116b4504ace")
+    public cleon.common.calendar.metamodel.spec.javamodel.IWeekday Weekday(final cleon.common.calendar.metamodel.spec.javamodel.IDay day);
 
   }
   
@@ -121,6 +132,46 @@ public class FunctionSpace_Calendar {
       /* End Protected Region   [[21fe9ba8-d6a9-11e6-a1b8-05a222dbc1bd]] */
     }
 
+    @Override
+    public cleon.common.calendar.metamodel.spec.javamodel.IWeekday Weekday(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
+      /* Begin Protected Region [[663c4a45-4861-11f0-ab73-2116b4504ace]] */
+        final var date = GetDate(day);
+        final var dayOfWeek = date.toInstant().atZone(java.time.ZoneId.systemDefault()).getDayOfWeek();
+        final var typeSystem = TypeSystem.create(day.getReadJobExecutor());
+        final var resourceRepository = typeSystem.getResourceRepository();
+                
+        if( dayOfWeek == java.time.DayOfWeek.MONDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Monday);
+        }
+        
+        if( dayOfWeek == java.time.DayOfWeek.TUESDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Tuesday);
+        }
+
+        if( dayOfWeek == java.time.DayOfWeek.WEDNESDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Wednesday);
+        }
+
+        if( dayOfWeek == java.time.DayOfWeek.THURSDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Thursday);
+        }
+        
+        if( dayOfWeek == java.time.DayOfWeek.FRIDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Friday);
+        }
+        
+        if( dayOfWeek == java.time.DayOfWeek.SATURDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Saturday);
+        }
+                
+        if( dayOfWeek == java.time.DayOfWeek.SUNDAY ) {
+        	return resourceRepository.getResource(IWeekday.class, SpecPackage.Weekday_Sunday);
+        }
+
+        return null;
+      /* End Protected Region   [[663c4a45-4861-11f0-ab73-2116b4504ace]] */
+    }
+
   }
   
   public static class DayFunctions {
@@ -145,6 +196,10 @@ public class FunctionSpace_Calendar {
 
     public static java.lang.String FormattedDay(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
       return DynamicResourceUtil.invoke(IDayFunctionsImpl.class, DayFunctionsImpl.INSTANCE, day).FormattedDay(day);
+    }
+
+    public static cleon.common.calendar.metamodel.spec.javamodel.IWeekday Weekday(final cleon.common.calendar.metamodel.spec.javamodel.IDay day) {
+      return DynamicResourceUtil.invoke(IDayFunctionsImpl.class, DayFunctionsImpl.INSTANCE, day).Weekday(day);
     }
 
   }
@@ -215,4 +270,4 @@ public class FunctionSpace_Calendar {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5c700e8e-c391-11e5-a9c9-53d676410f3e,lsA096N4Iv7yqoQSjhBCKPeMBZA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5c700e8e-c391-11e5-a9c9-53d676410f3e,4dp2CFg5O4ekjlQAz8Zx8s1ia1g=] */

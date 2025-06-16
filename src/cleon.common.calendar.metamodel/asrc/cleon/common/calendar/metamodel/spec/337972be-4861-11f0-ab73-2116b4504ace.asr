@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="337972be-4861-11f0-ab73-2116b4504ace">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="35d0cfe0-4861-11f0-ab73-2116b4504ace" type="resource" guid="35d0cfdb-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="37d4b5f4-4861-11f0-ab73-2116b4504ace" type="resource" guid="37d4b5f1-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="39e34a9f-4861-11f0-ab73-2116b4504ace" type="resource" guid="39e34a9c-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="3d601569-4861-11f0-ab73-2116b4504ace" type="resource" guid="3d601565-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="3f09f4b8-4861-11f0-ab73-2116b4504ace" type="resource" guid="3f09cda4-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="406406a9-4861-11f0-ab73-2116b4504ace" type="resource" guid="4063df96-4861-11f0-ab73-2116b4504ace" />
+    <resource statement-guid="41fca8a8-4861-11f0-ab73-2116b4504ace" type="resource" guid="41fca8a5-4861-11f0-ab73-2116b4504ace" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="337999d0-4861-11f0-ab73-2116b4504ace" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="337a5d22-4861-11f0-ab73-2116b4504ace" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="337a3611-4861-11f0-ab73-2116b4504ace" type="literal">Weekday</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="35d0cfe0-4861-11f0-ab73-2116b4504ace">
+      <resource guid="35d0cfdb-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="35d0cfdd-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="369c36bb-4861-11f0-ab73-2116b4504ace" type="literal">Monday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="37d4b5f4-4861-11f0-ab73-2116b4504ace">
+      <resource guid="37d4b5f1-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="37d4b5f3-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="386a66fe-4861-11f0-ab73-2116b4504ace" type="literal">Tuesday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="39e34a9f-4861-11f0-ab73-2116b4504ace">
+      <resource guid="39e34a9c-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="39e34a9e-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a3fe96a-4861-11f0-ab73-2116b4504ace" type="literal">Wednesday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3d601569-4861-11f0-ab73-2116b4504ace">
+      <resource guid="3d601565-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3d601568-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3dd19bd2-4861-11f0-ab73-2116b4504ace" type="literal">Thursday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3f09f4b8-4861-11f0-ab73-2116b4504ace">
+      <resource guid="3f09cda4-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3f09f4b6-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3fbd8d71-4861-11f0-ab73-2116b4504ace" type="literal">Friday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="406406a9-4861-11f0-ab73-2116b4504ace">
+      <resource guid="4063df96-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4063df98-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="40d713ef-4861-11f0-ab73-2116b4504ace" type="literal">Saturday</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="41fca8a8-4861-11f0-ab73-2116b4504ace">
+      <resource guid="41fca8a5-4861-11f0-ab73-2116b4504ace">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="41fca8a7-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="43304630-4861-11f0-ab73-2116b4504ace" type="literal">Sunday</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

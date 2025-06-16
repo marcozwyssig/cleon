@@ -52,6 +52,7 @@ public class ServiceaccountsPackage {
   public static final Resource ServiceAccount_serviceAccountForSystemConfiguration = new Resource("dad01f6a-1086-11f0-b378-11a495632127");
   public static final Resource ServiceAccount_aE_Local = new Resource("5662084a-2bdc-11f0-8d6d-718895c90832");
   public static final Resource ServiceAccount_aE_AD = new Resource("98b910b3-2bdc-11f0-8d6d-718895c90832");
+  public static final Resource ServiceAccount_excludeActivities = new Resource("f52c3338-4855-11f0-ab73-2116b4504ace");
   
   /* Begin Protected Region [[user]] */
   
@@ -72,4 +73,4 @@ public class ServiceaccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts,8GCSRysQU4raPE7Z3z5DIo8FsUg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts,KqgO06xQVjhRjrve5DH3CGFggWQ=] */

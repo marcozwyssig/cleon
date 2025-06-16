@@ -1575,6 +1575,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IVeeamMasterFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f9469fa7-481a-11f0-98fa-27341f0ccbf7")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("f9469faa-481a-11f0-98fa-27341f0ccbf7")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IVeeamMasterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VeeamMasterFunctionsImpl implements IVeeamMasterFunctionsImpl {
+
+    public static final IVeeamMasterFunctionsImpl INSTANCE = new VeeamMasterFunctionsImpl();
+
+    private VeeamMasterFunctionsImpl() {}
+
+  }
+  
+  public static class VeeamMasterFunctions {
+
+    private VeeamMasterFunctions() {}
+
+  }
+
+  public static interface IVeeamProxyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fa6b22dd-481a-11f0-98fa-27341f0ccbf7")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("fa6b22e0-481a-11f0-98fa-27341f0ccbf7")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IVeeamProxyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class VeeamProxyFunctionsImpl implements IVeeamProxyFunctionsImpl {
+
+    public static final IVeeamProxyFunctionsImpl INSTANCE = new VeeamProxyFunctionsImpl();
+
+    private VeeamProxyFunctionsImpl() {}
+
+  }
+  
+  public static class VeeamProxyFunctions {
+
+    private VeeamProxyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,zWEowik9o59lhptp2uYF8Gnq9tw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,rHP9yNPi85PdY4NItdJzHAsCCGM=] */

@@ -28,6 +28,11 @@
             <resource statement-guid="21fe9baf-d6a9-11e6-a1b8-05a222dbc1bd" type="resource" guid="21fe9ba9-d6a9-11e6-a1b8-05a222dbc1bd" />
           </owns>
         </resource>
+        <resource statement-guid="663c7159-4861-11f0-ab73-2116b4504ace" type="resource" guid="663c4a45-4861-11f0-ab73-2116b4504ace">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="6a86ec98-4861-11f0-ab73-2116b4504ace" type="resource" guid="6a86c585-4861-11f0-ab73-2116b4504ace" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="07f80d9e-8a12-11e6-8085-d9bdba2de943" type="resource" guid="07f7bf7b-8a12-11e6-8085-d9bdba2de943">
@@ -193,6 +198,31 @@ return dateFormat.format(date);</object>
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="21fe9baa-d6a9-11e6-a1b8-05a222dbc1bd" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="663c7159-4861-11f0-ab73-2116b4504ace">
+            <resource guid="663c4a45-4861-11f0-ab73-2116b4504ace">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="663c4a47-4861-11f0-ab73-2116b4504ace" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="668f9a74-4861-11f0-ab73-2116b4504ace" type="literal">Weekday</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="6a86ec98-4861-11f0-ab73-2116b4504ace">
+                  <resource guid="6a86c585-4861-11f0-ab73-2116b4504ace">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="6a86c587-4861-11f0-ab73-2116b4504ace" type="resource" guid="6788089a-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="923a35b0-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="6b3861a5-4861-11f0-ab73-2116b4504ace" type="resource" guid="337972be-4861-11f0-ab73-2116b4504ace" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="663c7158-4861-11f0-ab73-2116b4504ace" type="literal">true</object>
               </predicate>
             </resource>
           </object>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3bd87a93-4a74-11f0-8aad-e18ef03c09ec">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="7e28308f-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="7e28097d-4a74-11f0-8aad-e18ef03c09ec" />
+    <resource statement-guid="9fcc66b0-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="9fcc66ad-4a74-11f0-8aad-e18ef03c09ec" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3bd87a95-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3bda2847-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+    <object statement-guid="7e2682dc-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7e28308f-4a74-11f0-8aad-e18ef03c09ec">
+      <resource guid="7e28097d-4a74-11f0-8aad-e18ef03c09ec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7e28097e-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7e294202-4a74-11f0-8aad-e18ef03c09ec" type="literal">buildNode</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7e294203-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7e294204-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="7e294201-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="853a8e37-ef41-11e8-be8a-b748ff8f0a75" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="7e283090-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9fcc66b0-4a74-11f0-8aad-e18ef03c09ec">
+      <resource guid="9fcc66ad-4a74-11f0-8aad-e18ef03c09ec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9fcc66af-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa0066c6-4a74-11f0-8aad-e18ef03c09ec" type="literal">bkpJobHostProfile</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="9fcc8dc1-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="9fcc8dc2-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a61d3924-4a74-11f0-8aad-e18ef03c09ec" type="resource" guid="7a5a8f18-4864-11f0-ab73-2116b4504ace" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3bda2846-4a74-11f0-8aad-e18ef03c09ec" type="literal">VeeamBackupVM</object>
+  </predicate>
+</resource>
+

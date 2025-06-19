@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[8392bad9-1073-11f0-b378-11a495632127,imports]] */
 
-public class FunctionSpace_Windows {
+public class FunctionSpace_Puppet {
 
   /* Begin Protected Region [[8392bad9-1073-11f0-b378-11a495632127]] */
   
@@ -207,4 +207,4 @@ public class FunctionSpace_Windows {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,qTWjyajT+GvRqqAn72Yd6chMW/8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,WYeRehiCXZTekMoNOnhpLENhBuQ=] */

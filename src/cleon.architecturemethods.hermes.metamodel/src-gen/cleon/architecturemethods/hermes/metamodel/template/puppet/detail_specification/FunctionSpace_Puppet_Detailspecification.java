@@ -1323,7 +1323,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IConfigureAdJoinFunctions extends IDynamicResourceExtension {
+  public static interface IAdJoinFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("539f2e94-2140-11f0-83ae-df5418a109a4")
     public java.lang.String ClassDefinition();
@@ -1333,21 +1333,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureAdJoinFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAdJoinFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureAdJoinFunctionsImpl implements IConfigureAdJoinFunctionsImpl {
+  public static class AdJoinFunctionsImpl implements IAdJoinFunctionsImpl {
 
-    public static final IConfigureAdJoinFunctionsImpl INSTANCE = new ConfigureAdJoinFunctionsImpl();
+    public static final IAdJoinFunctionsImpl INSTANCE = new AdJoinFunctionsImpl();
 
-    private ConfigureAdJoinFunctionsImpl() {}
+    private AdJoinFunctionsImpl() {}
 
   }
   
-  public static class ConfigureAdJoinFunctions {
+  public static class AdJoinFunctions {
 
-    private ConfigureAdJoinFunctions() {}
+    private AdJoinFunctions() {}
 
   }
 
@@ -1687,6 +1687,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ISudoFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("eccf852e-4ce5-11f0-954b-b579526ae084")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("eccf8533-4ce5-11f0-954b-b579526ae084")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ISudoFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SudoFunctionsImpl implements ISudoFunctionsImpl {
+
+    public static final ISudoFunctionsImpl INSTANCE = new SudoFunctionsImpl();
+
+    private SudoFunctionsImpl() {}
+
+  }
+  
+  public static class SudoFunctions {
+
+    private SudoFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,cXzNt0Q9Bk31Jc+w1wyT7j/DA4g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,pGx6eUui7+ev+RVxWiB3jrj2akk=] */

@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IConfigureAdJoin extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IPuppetConfigurationPermissions {
+public interface IAdJoin extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfigurationPermissions {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1293bc7b-211f-11f0-b52a-cbda5a5cd45e");
   
@@ -14,4 +14,4 @@ public interface IConfigureAdJoin extends cleon.architecturemethods.hermes.metam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1293bc7b-211f-11f0-b52a-cbda5a5cd45e,btHXPfBzNdHKfk0RBXUjfn+Xwd4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1293bc7b-211f-11f0-b52a-cbda5a5cd45e,JKgMZFfwDPKWYMr2/ecj/8k4cY4=] */

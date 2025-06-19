@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class Lin_polycom_adjoinPackage {
   
-  public static final Resource ConfigureAdJoin = new Resource("1293bc7b-211f-11f0-b52a-cbda5a5cd45e");
-  public static final Resource ConfigureAdJoin_dc = new Resource("46497462-2198-11f0-83ae-df5418a109a4");
-  public static final Resource ConfigureAdJoin_adServers = new Resource("e1017594-2198-11f0-83ae-df5418a109a4");
+  public static final Resource AdJoin = new Resource("1293bc7b-211f-11f0-b52a-cbda5a5cd45e");
+  public static final Resource AdJoin_dc = new Resource("46497462-2198-11f0-83ae-df5418a109a4");
+  public static final Resource AdJoin_adServers = new Resource("e1017594-2198-11f0-83ae-df5418a109a4");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +27,4 @@ public class Lin_polycom_adjoinPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_adjoin,Vp4pyz4cm1xaae8f5isj01Q4Yt0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_adjoin,h4LqpHuRTHQimrKHXtn57tCuiPU=] */

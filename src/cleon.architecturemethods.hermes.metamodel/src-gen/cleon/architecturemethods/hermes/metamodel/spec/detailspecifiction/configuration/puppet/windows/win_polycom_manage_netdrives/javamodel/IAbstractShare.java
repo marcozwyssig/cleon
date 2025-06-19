@@ -8,14 +8,14 @@ public interface IAbstractShare extends ch.actifsource.core.javamodel.IResource 
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IAbstractMember> selectFullAccess();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IAbstractMember> selectFullAccess();
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IAbstractMember> selectReadAccess();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IAbstractMember> selectReadAccess();
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IAbstractMember> selectChangeAccess();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IAbstractMember> selectChangeAccess();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.IAcl> selectAcls();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dae674db-07fa-11f0-bc12-1bbda1d7028e,C9YxfA60BFUUzwUl77/9pZJe3eI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dae674db-07fa-11f0-bc12-1bbda1d7028e,hx8HGJu3VWsfpIkJG8fmJ7kE+Us=] */

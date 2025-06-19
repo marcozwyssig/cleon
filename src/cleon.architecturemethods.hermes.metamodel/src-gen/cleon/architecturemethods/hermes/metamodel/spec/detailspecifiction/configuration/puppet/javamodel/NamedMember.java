@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -61,4 +61,4 @@ public class NamedMember extends DynamicResource implements INamedMember {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e98fa26e-07fd-11f0-bc12-1bbda1d7028e,CwWVyI6cK1E3OpKb/PbOD9FR3KU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e98fa26e-07fd-11f0-bc12-1bbda1d7028e,/fW/7clZasX4/PUbiU6gpDpAbQI=] */

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,8 +12,8 @@ public interface IPuppetConfigurationPermissions extends cleon.architecturemetho
   
   public java.lang.String selectNetbiosDomain();
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IAbstractMember> selectMembers();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IAbstractMember> selectMembers();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a98b05a5-106f-11f0-b378-11a495632127,ySZDdugOYqgmQ2otsjUiS1NDRVc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a98b05a5-106f-11f0-b378-11a495632127,hCPDmTafBVg2l+5DOFS+nVxc3Aw=] */

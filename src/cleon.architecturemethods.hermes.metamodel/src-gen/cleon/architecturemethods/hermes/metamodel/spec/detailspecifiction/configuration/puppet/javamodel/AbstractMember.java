@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class AbstractMember extends DynamicResource implements IAbstrac
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e364592c-07fd-11f0-bc12-1bbda1d7028e,IgliI9jd4Sdnz/+AlWe4hlraL98=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e364592c-07fd-11f0-bc12-1bbda1d7028e,Q38HL3/0wVYhRcIxH6asybgHdvQ=] */

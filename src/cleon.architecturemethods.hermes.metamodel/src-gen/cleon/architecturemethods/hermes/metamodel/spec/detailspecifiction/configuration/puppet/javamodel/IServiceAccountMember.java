@@ -1,8 +1,8 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IServiceAccountMember extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IAbstractMember {
+public interface IServiceAccountMember extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IAbstractMember {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("707d30a3-21c2-11f0-83ae-df5418a109a4");
   
@@ -14,4 +14,4 @@ public interface IServiceAccountMember extends cleon.architecturemethods.hermes.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,707d30a3-21c2-11f0-83ae-df5418a109a4,bGha9EddGMHLe24jtFusdIxKnb0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,707d30a3-21c2-11f0-83ae-df5418a109a4,KDZibAaZHah1XW+WT2HNZ0+jUxw=] */

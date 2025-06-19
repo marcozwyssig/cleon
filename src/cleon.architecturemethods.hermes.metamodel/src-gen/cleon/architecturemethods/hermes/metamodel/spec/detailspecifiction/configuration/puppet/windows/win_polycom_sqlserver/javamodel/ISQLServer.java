@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISQLServer extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.javamodel.IPuppetConfigurationPermissions {
+public interface ISQLServer extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfigurationPermissions {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1b1329f2-114d-11f0-a4f9-b5f995a9e0fe");
   
@@ -28,4 +28,4 @@ public interface ISQLServer extends cleon.architecturemethods.hermes.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b1329f2-114d-11f0-a4f9-b5f995a9e0fe,HWpaLpWD8bI1Fuz7UYse0t2AZZA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b1329f2-114d-11f0-a4f9-b5f995a9e0fe,fo3nHnguHEwRMQ4IXiXZ67pLfU4=] */

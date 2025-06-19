@@ -437,6 +437,9 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("f58084df-481c-11f0-98fa-27341f0ccbf7")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
 
+    @IDynamicResourceExtension.MethodId("bc29051b-4ce2-11f0-954b-b579526ae084")
+    public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite Site();
+
   }
   
   public static interface IAbstractConfigurationSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -501,4 +504,4 @@ public class FunctionSpace_Configuration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,nggxFWD8uCoCm7vabDQwDGaJnMI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,nWd3fR/riOPRI3fvTVNSoPKLVWc=] */

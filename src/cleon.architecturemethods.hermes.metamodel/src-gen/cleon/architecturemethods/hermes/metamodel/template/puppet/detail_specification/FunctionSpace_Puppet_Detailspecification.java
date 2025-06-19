@@ -1631,6 +1631,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IInstallWSUSFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c3596d31-4c14-11f0-ab62-57f8f0b40f9d")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("c3596d4d-4c14-11f0-ab62-57f8f0b40f9d")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallWSUSFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallWSUSFunctionsImpl implements IInstallWSUSFunctionsImpl {
+
+    public static final IInstallWSUSFunctionsImpl INSTANCE = new InstallWSUSFunctionsImpl();
+
+    private InstallWSUSFunctionsImpl() {}
+
+  }
+  
+  public static class InstallWSUSFunctions {
+
+    private InstallWSUSFunctions() {}
+
+  }
+
+  public static interface IWinRMFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7ff76b19-4c49-11f0-afd1-3133a97c4a61")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("7ff792ae-4c49-11f0-afd1-3133a97c4a61")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IWinRMFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WinRMFunctionsImpl implements IWinRMFunctionsImpl {
+
+    public static final IWinRMFunctionsImpl INSTANCE = new WinRMFunctionsImpl();
+
+    private WinRMFunctionsImpl() {}
+
+  }
+  
+  public static class WinRMFunctions {
+
+    private WinRMFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,rHP9yNPi85PdY4NItdJzHAsCCGM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,cXzNt0Q9Bk31Jc+w1wyT7j/DA4g=] */

@@ -60,6 +60,8 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_CopyCert = new Resource("52bb6c1d-4791-11f0-bcdd-31d38803078d");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_VeeamMaster = new Resource("ea5dca3d-481a-11f0-98fa-27341f0ccbf7");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_VeeamProxy = new Resource("f35be1e7-481a-11f0-98fa-27341f0ccbf7");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallWSUS = new Resource("c3596d2e-4c14-11f0-ab62-57f8f0b40f9d");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WinRM = new Resource("7ff76b16-4c49-11f0-afd1-3133a97c4a61");
   
   /* Begin Protected Region [[user]] */
   
@@ -80,4 +82,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,8kOjVcQ/JHoAJ+TZP4oSEVv4C7Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,bSwPnO6N0vlWYGmnMn5eXvP/RvE=] */

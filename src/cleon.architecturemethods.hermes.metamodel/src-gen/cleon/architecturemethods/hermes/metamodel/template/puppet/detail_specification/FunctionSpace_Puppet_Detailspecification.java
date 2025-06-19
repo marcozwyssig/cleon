@@ -1715,6 +1715,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IMailRelayFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fc6ba7ca-4ce9-11f0-954b-b579526ae084")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("fc6ba7e7-4ce9-11f0-954b-b579526ae084")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IMailRelayFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MailRelayFunctionsImpl implements IMailRelayFunctionsImpl {
+
+    public static final IMailRelayFunctionsImpl INSTANCE = new MailRelayFunctionsImpl();
+
+    private MailRelayFunctionsImpl() {}
+
+  }
+  
+  public static class MailRelayFunctions {
+
+    private MailRelayFunctions() {}
+
+  }
+
+  public static interface ICertificatesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ffe3292f-4d13-11f0-954b-b579526ae084")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("01a8a70f-4d14-11f0-954b-b579526ae084")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ICertificatesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CertificatesFunctionsImpl implements ICertificatesFunctionsImpl {
+
+    public static final ICertificatesFunctionsImpl INSTANCE = new CertificatesFunctionsImpl();
+
+    private CertificatesFunctionsImpl() {}
+
+  }
+  
+  public static class CertificatesFunctions {
+
+    private CertificatesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,pGx6eUui7+ev+RVxWiB3jrj2akk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,cV1SADncT3Ro7ICXED1i+gQtuoU=] */

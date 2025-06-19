@@ -205,6 +205,31 @@ public class FunctionSpace_Puppet {
 
   }
 
+  public static interface IPuppetConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("76be6956-4d09-11f0-954b-b579526ae084")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IPuppetConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PuppetConfigurationFunctionsImpl implements IPuppetConfigurationFunctionsImpl {
+
+    public static final IPuppetConfigurationFunctionsImpl INSTANCE = new PuppetConfigurationFunctionsImpl();
+
+    private PuppetConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class PuppetConfigurationFunctions {
+
+    private PuppetConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,WYeRehiCXZTekMoNOnhpLENhBuQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8392bad9-1073-11f0-b378-11a495632127,39bSFxQuzUZCMRWVqEbK9dpqfRw=] */

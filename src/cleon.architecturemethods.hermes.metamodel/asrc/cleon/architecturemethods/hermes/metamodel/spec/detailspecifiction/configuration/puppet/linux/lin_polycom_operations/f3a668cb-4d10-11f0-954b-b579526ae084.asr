@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f3a668cb-4d10-11f0-954b-b579526ae084">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="f556d7cd-4d10-11f0-954b-b579526ae084" type="resource" guid="f556b0b7-4d10-11f0-954b-b579526ae084" />
+    <resource statement-guid="057f58bf-4d11-11f0-954b-b579526ae084" type="resource" guid="057f31ab-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="05c95abd-4d11-11f0-954b-b579526ae084" type="resource" guid="05c933a9-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="05e3e7c4-4d11-11f0-954b-b579526ae084" type="resource" guid="05e3c0b0-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="05f76f0d-4d11-11f0-954b-b579526ae084" type="resource" guid="05f747f9-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="1fad028a-4d11-11f0-954b-b579526ae084" type="resource" guid="1facb466-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="25882f5e-4d11-11f0-954b-b579526ae084" type="resource" guid="2588084a-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="2b6d4770-4d11-11f0-954b-b579526ae084" type="resource" guid="2b6d205c-4d11-11f0-954b-b579526ae084" />
+    <resource statement-guid="32d1faad-4d11-11f0-954b-b579526ae084" type="resource" guid="32d1d399-4d11-11f0-954b-b579526ae084" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f3a668cd-4d10-11f0-954b-b579526ae084" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f3a900df-4d10-11f0-954b-b579526ae084" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="fbeaa63b-4d10-11f0-954b-b579526ae084" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f3a900de-4d10-11f0-954b-b579526ae084" type="literal">KeyUsage</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="f556d7cd-4d10-11f0-954b-b579526ae084">
+      <resource guid="f556b0b7-4d10-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f556d7cc-4d10-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fa1830a1-4d10-11f0-954b-b579526ae084" type="literal">digitalSignature</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="04134613-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to create digital signatures, such as for authentication or signing data (e.g., in TLS client authentication).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="057f58bf-4d11-11f0-954b-b579526ae084">
+      <resource guid="057f31ab-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="057f31ac-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="057f31ad-4d11-11f0-954b-b579526ae084" type="literal">nonRepudiation</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="0cc5fd72-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to provide non-repudiation, ensuring that a signature cannot be denied by the signer (often used in legal or contractual contexts).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="05c95abd-4d11-11f0-954b-b579526ae084">
+      <resource guid="05c933a9-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05c933aa-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05c933ab-4d11-11f0-954b-b579526ae084" type="literal">keyEncipherment</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1272a073-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to encrypt keys, such as in key transport mechanisms (e.g., RSA key exchange in TLS).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="05e3e7c4-4d11-11f0-954b-b579526ae084">
+      <resource guid="05e3c0b0-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05e3c0b1-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05e3c0b2-4d11-11f0-954b-b579526ae084" type="literal">dataEncipherment</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="05e3c0b3-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to encrypt data directly (e.g., for protecting data in transit or storage).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="05f76f0d-4d11-11f0-954b-b579526ae084">
+      <resource guid="05f747f9-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05f747fa-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1c36c784-4d11-11f0-954b-b579526ae084" type="literal">keyAgreement</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1f0ec6b5-4d11-11f0-954b-b579526ae084" type="literal">The key can be used for key agreement protocols, such as Diffie-Hellman or ECDH key exchange.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1fad028a-4d11-11f0-954b-b579526ae084">
+      <resource guid="1facb466-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1facb467-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1facb468-4d11-11f0-954b-b579526ae084" type="literal">keyCertSign</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1facb469-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to sign certificates (typically used by Certificate Authorities).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="25882f5e-4d11-11f0-954b-b579526ae084">
+      <resource guid="2588084a-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2588084b-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2588084c-4d11-11f0-954b-b579526ae084" type="literal">cRLSign</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="2ac9185e-4d11-11f0-954b-b579526ae084" type="literal">The key can be used to sign Certificate Revocation Lists (CRLs).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="2b6d4770-4d11-11f0-954b-b579526ae084">
+      <resource guid="2b6d205c-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2b6d205d-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2b6d205e-4d11-11f0-954b-b579526ae084" type="literal">encipherOnly</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="30a1faf8-4d11-11f0-954b-b579526ae084" type="literal">The key can be used only for enciphering data (used with keyAgreement keys, e.g., in specific cryptographic protocols).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="32d1faad-4d11-11f0-954b-b579526ae084">
+      <resource guid="32d1d399-4d11-11f0-954b-b579526ae084">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="32d1d39a-4d11-11f0-954b-b579526ae084" type="resource" guid="f3a668cb-4d10-11f0-954b-b579526ae084" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="32d1d39b-4d11-11f0-954b-b579526ae084" type="literal">decipherOnly</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="38469de7-4d11-11f0-954b-b579526ae084" type="literal">The key can be used only for deciphering data (used with keyAgreement keys, complementing encipherOnly).</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

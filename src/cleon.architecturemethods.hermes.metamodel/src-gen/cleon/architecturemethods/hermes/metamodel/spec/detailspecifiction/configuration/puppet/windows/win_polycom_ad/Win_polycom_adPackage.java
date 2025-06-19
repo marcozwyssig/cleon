@@ -19,14 +19,14 @@ public class Win_polycom_adPackage {
   public static final Resource Dns = new Resource("2da3b935-151b-11f0-8fa5-ad696b254e17");
   public static final Resource DnsZone = new Resource("39b838be-151b-11f0-8fa5-ad696b254e17");
   public static final Resource DnsARecord = new Resource("672825f8-151b-11f0-8fa5-ad696b254e17");
-  public static final Resource Dns_A_aE_DNS_aE_Records = new Resource("7564dcac-151b-11f0-8fa5-ad696b254e17");
+  public static final Resource DefaultDnsZone_A_aE_DNS_aE_Records = new Resource("7564dcac-151b-11f0-8fa5-ad696b254e17");
   public static final Resource DnsARecord_networkHostNode = new Resource("0e86b7f0-151d-11f0-8fa5-ad696b254e17");
   public static final Resource DnsRecord = new Resource("135760ca-1522-11f0-8fa5-ad696b254e17");
   public static final Resource DnsARecord_hostName = new Resource("b9ac2d79-1524-11f0-b8e6-1d11cc32caa6");
   public static final Resource DnsARecord_ip = new Resource("e02ff37f-1524-11f0-b8e6-1d11cc32caa6");
   public static final Resource Custom_aE_DnsCName = new Resource("7d0279ba-1526-11f0-b8e6-1d11cc32caa6");
   public static final Resource Dns_dnsZone = new Resource("a2cf4b76-1526-11f0-b8e6-1d11cc32caa6");
-  public static final Resource DnsZone_custom_aE_DnsCName = new Resource("c38a0ca2-1526-11f0-b8e6-1d11cc32caa6");
+  public static final Resource AbstractDnsZone_custom_aE_DnsCName = new Resource("c38a0ca2-1526-11f0-b8e6-1d11cc32caa6");
   public static final Resource Custom_aE_DnsCName_host = new Resource("ed57a53b-1526-11f0-b8e6-1d11cc32caa6");
   public static final Resource Custom_aE_DnsCName_target = new Resource("472e7461-1527-11f0-b8e6-1d11cc32caa6");
   public static final Resource FunctionSoace_aE_AD_Custom_aE_DnsCName = new Resource("609301e7-1527-11f0-b8e6-1d11cc32caa6");
@@ -41,6 +41,12 @@ public class Win_polycom_adPackage {
   public static final Resource Krbtgtrenew_daysofweek = new Resource("e1e2f16e-2ce3-11f0-851f-3f768d79c0eb");
   public static final Resource ScheduleType_Weekly = new Resource("fba813c0-2ce3-11f0-851f-3f768d79c0eb");
   public static final Resource Daysofweek_Monday = new Resource("0af83724-2ce4-11f0-851f-3f768d79c0eb");
+  public static final Resource Dns_defaultDnsZone = new Resource("15fcfe2d-4d1c-11f0-954b-b579526ae084");
+  public static final Resource DefaultDnsZone = new Resource("48581344-4d1c-11f0-954b-b579526ae084");
+  public static final Resource AbstractDnsZone = new Resource("93378e0a-4d1c-11f0-954b-b579526ae084");
+  public static final Resource FunctionSoace_aE_AD_AbstractDnsZone = new Resource("02db9275-4d1d-11f0-954b-b579526ae084");
+  public static final Resource FunctionSoace_aE_AD_DefaultDnsZone = new Resource("0d02c131-4d1d-11f0-954b-b579526ae084");
+  public static final Resource FunctionSoace_aE_AD_DnsZone = new Resource("1dbdbf05-4d1d-11f0-954b-b579526ae084");
   
   /* Begin Protected Region [[user]] */
   
@@ -61,4 +67,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,rn3qVkOSrxIRhGDtCwfAHVXNILk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,oYuaqDZbrHczDdh5So4Ft1Nc8i4=] */

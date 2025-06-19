@@ -63,6 +63,8 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallWSUS = new Resource("c3596d2e-4c14-11f0-ab62-57f8f0b40f9d");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WinRM = new Resource("7ff76b16-4c49-11f0-afd1-3133a97c4a61");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Sudo = new Resource("eccf852b-4ce5-11f0-954b-b579526ae084");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_MailRelay = new Resource("fc6ba7c7-4ce9-11f0-954b-b579526ae084");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Certificates = new Resource("fc177b1b-4d13-11f0-954b-b579526ae084");
   
   /* Begin Protected Region [[user]] */
   
@@ -83,4 +85,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,pi0zgz42A/Xar8zE4JFhlkxDVrg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,X6X6jinZpmd0x856U2B2YzvgY+4=] */

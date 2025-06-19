@@ -28,6 +28,7 @@ public class PuppetPackage {
   public static final Resource ServiceAccountMember_serviceAccount = new Resource("756b6596-21c2-11f0-83ae-df5418a109a4");
   public static final Resource FunctionSpace_aE_Puppet_ServiceAccountMember = new Resource("977f7596-21c2-11f0-83ae-df5418a109a4");
   public static final Resource ServiceAccountMember_logonAs = new Resource("81b160ee-21c3-11f0-83ae-df5418a109a4");
+  public static final Resource FunctionSpace_aE_Puppet_PuppetConfiguration = new Resource("7233b112-4d09-11f0-954b-b579526ae084");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +49,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet,np8y1sBnJCdet6zZso1cgOVdmzc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet,gWVvoNFyrSfZ42CqeHsOG4pLfEc=] */

@@ -10,8 +10,8 @@ public interface IEvaluationRequirements extends cleon.common.doc.metamodel.spec
   
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirementList selectRequirementList();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> selectEvaluationRequirement();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> selectEvaluationRequirements();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0af35fc0-e244-11ef-a500-cb425fc4109d,Iy4xYj0aRLuWJPoD4d29C2r3aw0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0af35fc0-e244-11ef-a500-cb425fc4109d,6txwgDawtL83eZqZppL1L7Vi5pM=] */

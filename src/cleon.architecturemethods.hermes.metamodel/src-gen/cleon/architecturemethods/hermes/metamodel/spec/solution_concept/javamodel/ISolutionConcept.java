@@ -8,7 +8,7 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
   // relations
   
-  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground selectBackgrouund();
+  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground selectBackground();
   
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements selectRequirements();
   
@@ -22,4 +22,4 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,kGGSQHK6oeYXEmmyrdAfdGtotWk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,c2kDm6SCOQG+EHsFkPlR0E4Dp5w=] */

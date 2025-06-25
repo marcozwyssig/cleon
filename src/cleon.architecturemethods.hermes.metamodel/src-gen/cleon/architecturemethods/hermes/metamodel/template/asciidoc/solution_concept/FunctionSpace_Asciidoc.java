@@ -151,6 +151,9 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("1336fa64-d8cd-11ef-8dec-7d07d45d9f8c")
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("20ce71a7-51bb-11f0-a768-21f9f0df3439")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IEvaluationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -221,6 +224,56 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IEvaluationRequirementsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("81114ee9-51b9-11f0-a768-21f9f0df3439")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IEvaluationRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EvaluationRequirementsFunctionsImpl implements IEvaluationRequirementsFunctionsImpl {
+
+    public static final IEvaluationRequirementsFunctionsImpl INSTANCE = new EvaluationRequirementsFunctionsImpl();
+
+    private EvaluationRequirementsFunctionsImpl() {}
+
+  }
+  
+  public static class EvaluationRequirementsFunctions {
+
+    private EvaluationRequirementsFunctions() {}
+
+  }
+
+  public static interface IAppendixFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1319fe83-51bb-11f0-a768-21f9f0df3439")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IAppendixFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AppendixFunctionsImpl implements IAppendixFunctionsImpl {
+
+    public static final IAppendixFunctionsImpl INSTANCE = new AppendixFunctionsImpl();
+
+    private AppendixFunctionsImpl() {}
+
+  }
+  
+  public static class AppendixFunctions {
+
+    private AppendixFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,rRlkjUep/IO6dxYRjvL002vM7Pc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,K4M+T/iyOc9yH5Pz/4ZDhRe42uA=] */

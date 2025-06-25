@@ -99,12 +99,12 @@ public class EvaluationRequirements extends DynamicResource implements IEvaluati
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> selectEvaluationRequirement() {
-    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirement);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> selectEvaluationRequirements() {
+    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirements);
   }
 
-  public EvaluationRequirements setEvaluationRequirement(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> evaluationRequirement) {
-    _setMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirement, evaluationRequirement);
+  public EvaluationRequirements setEvaluationRequirements(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement> evaluationRequirements) {
+    _setMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirements, evaluationRequirements);
     return this;
   }
     
@@ -166,7 +166,7 @@ public class EvaluationRequirements extends DynamicResource implements IEvaluati
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirement, visitor);
+    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirements, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirementList.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_requirementList, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -178,9 +178,9 @@ public class EvaluationRequirements extends DynamicResource implements IEvaluati
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirements.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_requirementList, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirements selectToMeEvaluationRequirement(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirements.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirement, object.getResource());
+  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirements selectToMeEvaluationRequirements(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirement object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluationRequirements.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.EvaluationPackage.EvaluationRequirements_evaluationRequirements, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0af35fc0-e244-11ef-a500-cb425fc4109d,Gx/TwnudIOq+hb8FqJ0haqmuMww=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0af35fc0-e244-11ef-a500-cb425fc4109d,BrHD9osVZo3D5qvYtW0KyxXHJks=] */

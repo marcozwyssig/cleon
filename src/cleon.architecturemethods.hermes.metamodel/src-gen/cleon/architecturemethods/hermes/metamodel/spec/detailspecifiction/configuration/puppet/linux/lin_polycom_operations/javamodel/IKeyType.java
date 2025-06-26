@@ -10,7 +10,7 @@ public interface IKeyType extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitRSA();
     
-    public void visitECDSA();
+    public void visitEC();
     
   }
   
@@ -18,7 +18,7 @@ public interface IKeyType extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visitRSA();
     
-    public R visitECDSA();
+    public R visitEC();
     
   }
   
@@ -32,9 +32,9 @@ public interface IKeyType extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isRSA();
   
-  public boolean isECDSA();
+  public boolean isEC();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31a1ccf7-4d13-11f0-954b-b579526ae084,IF/GWhXmgWLBJfXAvA6LrSlBcLo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31a1ccf7-4d13-11f0-954b-b579526ae084,sz61ZaDMfP05fMDJW6yeC3VLIpM=] */

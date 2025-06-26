@@ -7,13 +7,12 @@ public class Lin_polycom_operationsPackage {
   public static final Resource Sudo = new Resource("cb7f890e-4ce5-11f0-954b-b579526ae084");
   public static final Resource Sudo_sudo = new Resource("8511554b-4ce6-11f0-954b-b579526ae084");
   public static final Resource Certificates = new Resource("bc2d9fd2-4d0f-11f0-954b-b579526ae084");
-  public static final Resource Certificates_internal_aE_name = new Resource("d274bf02-4d0f-11f0-954b-b579526ae084");
-  public static final Resource Certificates_key_aE_name = new Resource("d8c9b02b-4d0f-11f0-954b-b579526ae084");
-  public static final Resource Certificates_country_aE_name = new Resource("e0a911b2-4d0f-11f0-954b-b579526ae084");
-  public static final Resource Certificates_state_aE_or_aE_province_aE_name = new Resource("19f77aba-4d10-11f0-954b-b579526ae084");
-  public static final Resource Certificates_locality_aE_name = new Resource("20ccbf5a-4d10-11f0-954b-b579526ae084");
-  public static final Resource Certificates_organization_aE_name = new Resource("264d707a-4d10-11f0-954b-b579526ae084");
-  public static final Resource Certificates_organizational_aE_unit_aE_name = new Resource("2beccd21-4d10-11f0-954b-b579526ae084");
+  public static final Resource Certificate_common_aE_name = new Resource("d274bf02-4d0f-11f0-954b-b579526ae084");
+  public static final Resource Certificate_country_aE_name = new Resource("e0a911b2-4d0f-11f0-954b-b579526ae084");
+  public static final Resource Certificate_state_aE_or_aE_province_aE_name = new Resource("19f77aba-4d10-11f0-954b-b579526ae084");
+  public static final Resource Certificate_locality_aE_name = new Resource("20ccbf5a-4d10-11f0-954b-b579526ae084");
+  public static final Resource Certificate_organization_aE_name = new Resource("264d707a-4d10-11f0-954b-b579526ae084");
+  public static final Resource Certificate_organizational_aE_unit_aE_name = new Resource("2beccd21-4d10-11f0-954b-b579526ae084");
   public static final Resource KeyUsage = new Resource("f3a668cb-4d10-11f0-954b-b579526ae084");
   public static final Resource KeyUsage_digitalSignature = new Resource("f556b0b7-4d10-11f0-954b-b579526ae084");
   public static final Resource KeyUsage_nonRepudiation = new Resource("057f31ab-4d11-11f0-954b-b579526ae084");
@@ -24,15 +23,23 @@ public class Lin_polycom_operationsPackage {
   public static final Resource KeyUsage_cRLSign = new Resource("2588084a-4d11-11f0-954b-b579526ae084");
   public static final Resource KeyUsage_encipherOnly = new Resource("2b6d205c-4d11-11f0-954b-b579526ae084");
   public static final Resource KeyUsage_decipherOnly = new Resource("32d1d399-4d11-11f0-954b-b579526ae084");
-  public static final Resource Certificates_key_aE_usage = new Resource("3ef34b73-4d11-11f0-954b-b579526ae084");
-  public static final Resource Certificates_key_aE_size = new Resource("a708f4c4-4d11-11f0-954b-b579526ae084");
-  public static final Resource Certificates_generate_aE_key = new Resource("24261c17-4d13-11f0-954b-b579526ae084");
+  public static final Resource Certificate_key_aE_usage = new Resource("3ef34b73-4d11-11f0-954b-b579526ae084");
+  public static final Resource Certificate_key_aE_size = new Resource("a708f4c4-4d11-11f0-954b-b579526ae084");
+  public static final Resource Certificate_generate_aE_key = new Resource("24261c17-4d13-11f0-954b-b579526ae084");
   public static final Resource KeyType = new Resource("31a1ccf7-4d13-11f0-954b-b579526ae084");
   public static final Resource KeyType_RSA = new Resource("3515be3f-4d13-11f0-954b-b579526ae084");
-  public static final Resource KeyType_ECDSA = new Resource("36d39b31-4d13-11f0-954b-b579526ae084");
-  public static final Resource Certificates_key_aE_type = new Resource("4b5a1ecc-4d13-11f0-954b-b579526ae084");
+  public static final Resource KeyType_EC = new Resource("36d39b31-4d13-11f0-954b-b579526ae084");
+  public static final Resource Certificate_key_aE_type = new Resource("4b5a1ecc-4d13-11f0-954b-b579526ae084");
   public static final Resource Certificates_smb_aE_share_aE_path = new Resource("6ddd918a-4d13-11f0-954b-b579526ae084");
-  public static final Resource Certificates_smb_aE_username = new Resource("72fdd322-4d13-11f0-954b-b579526ae084");
+  public static final Resource Certificate = new Resource("8ba9bd3c-4d1e-11f0-954b-b579526ae084");
+  public static final Resource Certificates_certificates = new Resource("91dbe40c-4d1e-11f0-954b-b579526ae084");
+  public static final Resource Certificate_extended_aE_key_aE_usage = new Resource("30eba5f6-4d1f-11f0-954b-b579526ae084");
+  public static final Resource Certificate_subject_aE_alt_aE_names = new Resource("7cd8c043-4d1f-11f0-954b-b579526ae084");
+  public static final Resource Certificates_smb_aE_csr_aE_destination = new Resource("1c6308f4-4d20-11f0-954b-b579526ae084");
+  public static final Resource Certificates_smb_aE_cert_aE_source = new Resource("1c95ffef-4d20-11f0-954b-b579526ae084");
+  public static final Resource Certificates_smb_aE_username = new Resource("3ab70e37-4d21-11f0-954b-b579526ae084");
+  public static final Resource Certificates_logonAs = new Resource("791f0c62-4d22-11f0-954b-b579526ae084");
+  public static final Resource FunctionSpace_aE_lin_aE_polycom_aE_operations_Certificates = new Resource("918059af-4d22-11f0-954b-b579526ae084");
   
   /* Begin Protected Region [[user]] */
   
@@ -53,4 +60,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,gdBaoFdlI3CwPsY0Ih/S2688enA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,u6nmSQKS5SHRayv1f2MZ+7lhsPA=] */

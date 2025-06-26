@@ -65,7 +65,7 @@ public class KeyType extends DynamicResource implements IKeyType {
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isRSA()) return visitor.visitRSA();
-    if (isECDSA()) return visitor.visitECDSA();
+    if (isEC()) return visitor.visitEC();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -75,8 +75,8 @@ public class KeyType extends DynamicResource implements IKeyType {
       visitor.visitRSA();
       return;
     }
-    if (isECDSA()) {
-      visitor.visitECDSA();
+    if (isEC()) {
+      visitor.visitEC();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -90,9 +90,9 @@ public class KeyType extends DynamicResource implements IKeyType {
   }
   
   @Override
-  public boolean isECDSA() {
-    return getResource().equals(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.KeyType_ECDSA);
+  public boolean isEC() {
+    return getResource().equals(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.KeyType_EC);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,31a1ccf7-4d13-11f0-954b-b579526ae084,mSCen/Vjk3AeuZvtxVVl8k8UaQk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,31a1ccf7-4d13-11f0-954b-b579526ae084,dt4z16fHKnHFRMnmZSmvNgyQEZ0=] */

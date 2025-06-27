@@ -77,7 +77,7 @@ public class FunctionSpace_Asciidoc {
 
   }
 
-  public static interface IComponentSpecificationsFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractListOfSysCmpSpecificationsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d9b44979-d6e5-11ee-8fe2-9fdd0afb9b0b")
     public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -87,21 +87,21 @@ public class FunctionSpace_Asciidoc {
 
   }
   
-  public static interface IComponentSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractListOfSysCmpSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ComponentSpecificationsFunctionsImpl implements IComponentSpecificationsFunctionsImpl {
+  public static class AbstractListOfSysCmpSpecificationsFunctionsImpl implements IAbstractListOfSysCmpSpecificationsFunctionsImpl {
 
-    public static final IComponentSpecificationsFunctionsImpl INSTANCE = new ComponentSpecificationsFunctionsImpl();
+    public static final IAbstractListOfSysCmpSpecificationsFunctionsImpl INSTANCE = new AbstractListOfSysCmpSpecificationsFunctionsImpl();
 
-    private ComponentSpecificationsFunctionsImpl() {}
+    private AbstractListOfSysCmpSpecificationsFunctionsImpl() {}
 
   }
   
-  public static class ComponentSpecificationsFunctions {
+  public static class AbstractListOfSysCmpSpecificationsFunctions {
 
-    private ComponentSpecificationsFunctions() {}
+    private AbstractListOfSysCmpSpecificationsFunctions() {}
 
   }
 
@@ -177,7 +177,7 @@ public class FunctionSpace_Asciidoc {
   public static interface ISysCfgSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("127fbb00-0011-11f0-945c-87b19aec41f4")
-    public java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification sysCfgSpecification);
+    public java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.ISysCfgSpecification sysCfgSpecification);
 
   }
   
@@ -188,7 +188,7 @@ public class FunctionSpace_Asciidoc {
     private SysCfgSpecificationFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification sysCfgSpecification) {
+    public java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.ISysCfgSpecification sysCfgSpecification) {
       return true;
     }
 
@@ -198,7 +198,7 @@ public class FunctionSpace_Asciidoc {
 
     private SysCfgSpecificationFunctions() {}
 
-    public static java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification sysCfgSpecification) {
+    public static java.lang.Boolean InASeparateFile(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.ISysCfgSpecification sysCfgSpecification) {
       return DynamicResourceUtil.invoke(ISysCfgSpecificationFunctionsImpl.class, SysCfgSpecificationFunctionsImpl.INSTANCE, sysCfgSpecification).InASeparateFile(sysCfgSpecification);
     }
 
@@ -312,10 +312,10 @@ public class FunctionSpace_Asciidoc {
   public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("041d7879-d190-11ee-b624-ff4effe3da71")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification GetChapterRefForOs(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification filterSystemConfiguration);
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.ISysCfgSpecification GetChapterRefForOs(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.os.javamodel.ISysCfgOsCategorySpecification filterSystemConfiguration);
 
     @IDynamicResourceExtension.MethodId("4c1ca530-d192-11ee-b624-ff4effe3da71")
-    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification GetChapterRefForHW(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification filterSystemConfiguration);
+    public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.ISysCfgSpecification GetChapterRefForHW(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.hardware.javamodel.ISysCfgHwCategorySpecification filterSystemConfiguration);
 
   }
   
@@ -339,4 +339,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6e104406-e64d-11e8-9ed8-5f22de89d1df,ip4/8Q0vbpt7gxjwQjAeFaWEDSE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6e104406-e64d-11e8-9ed8-5f22de89d1df,75Yh+mW0IQkX2UJgxXL63fhx9JA=] */

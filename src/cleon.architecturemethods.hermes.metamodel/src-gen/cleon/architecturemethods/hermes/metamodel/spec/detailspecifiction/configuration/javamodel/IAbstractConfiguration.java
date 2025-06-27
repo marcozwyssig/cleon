@@ -8,8 +8,8 @@ public interface IAbstractConfiguration extends cleon.common.doc.metamodel.spec.
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectSpecifictionForSystemConfiguration();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectSpecificationForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,637a66b7-0013-11f0-945c-87b19aec41f4,EuhkKMdICLCqtZl7d+L08Z4xyRk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,637a66b7-0013-11f0-945c-87b19aec41f4,akrbwkwZhzk8AbSZiptnH9l8EiM=] */

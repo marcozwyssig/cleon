@@ -107,11 +107,11 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
   }
     
   @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications selectComponentSpecification() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification);
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCmpSpecifications selectComponentSpecification() {
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCmpSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification);
   }
 
-  public DetailSpecificationDocument setComponentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications componentSpecification) {
+  public DetailSpecificationDocument setComponentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCmpSpecifications componentSpecification) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification, componentSpecification);
     return this;
   }
@@ -137,11 +137,11 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
   }
     
   @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications selectEnvironmentSpecification() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification);
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications selectEnvironmentSpecification() {
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification);
   }
 
-  public DetailSpecificationDocument setEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications environmentSpecification) {
+  public DetailSpecificationDocument setEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications environmentSpecification) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, environmentSpecification);
     return this;
   }
@@ -238,9 +238,9 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_about, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCmpSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environment, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, visitor);
     _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
@@ -260,11 +260,11 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environment, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeComponentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.javamodel.IComponentSpecifications object) {
+  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeComponentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCmpSpecifications object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_componentSpecification, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IEnvironmentSpecifications object) {
+  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument selectToMeEnvironmentSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel.IDetailSpecificationDocument.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.DetailspecifictionPackage.DetailSpecificationDocument_environmentSpecification, object.getResource());
   }
   
@@ -273,4 +273,4 @@ public class DetailSpecificationDocument extends DynamicResource implements IDet
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,jgrpbtCnuLXD+vVp36EljFxVZGA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4663eec9-e64b-11e8-9ed8-5f22de89d1df,OQSk+JSzyjQEmPo0LVrwDcVqH6I=] */

@@ -29,7 +29,7 @@ public class SystemPackage {
   public static final Resource SystemConcept_system = new Resource("600f5efc-c93d-11eb-adc4-d18d1353eb6e");
   public static final Resource SystemConcepts_resourceConcept = new Resource("ee89dfe1-dfe5-11eb-9a61-ab419054c47d");
   public static final Resource SystemConcepts_chapters = new Resource("521eda8d-00bf-11ec-adfa-e1caed9b1433");
-  public static final Resource SystemConcepts_scheduleConcept = new Resource("95dd9bf8-1f61-11ec-a206-f571806bf8d3");
+  public static final Resource SystemConcepts_orchestrationConcept = new Resource("95dd9bf8-1f61-11ec-a206-f571806bf8d3");
   public static final Resource SystemConcepts_dnsConcept = new Resource("e4cfdb77-c7b8-11ec-a6a4-0b12dcfbdf90");
   public static final Resource SystemConcepts_timeSynchronizationConcept = new Resource("4b8213d6-ebb0-11ec-952f-b51fd3cf2827");
   
@@ -52,4 +52,4 @@ public class SystemPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system,2GzuB1RHEZWV6JG0uP+T2CsVWY0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system,fnE0VGCtA2sG/77mFPn4aoxg9Po=] */

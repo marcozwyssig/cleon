@@ -71,6 +71,9 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("c590e9e5-e4a5-11ef-a6bd-497168f25adc")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> GetParentBuildNodes();
 
+    @IDynamicResourceExtension.MethodId("1833f012-529f-11f0-9b60-9f3150c7f92b")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> GetParentNodes();
+
     @IDynamicResourceExtension.MethodId("da40902b-02d3-11e9-9e58-33d596257b14")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode GetParent();
 
@@ -101,6 +104,9 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents();
 
+    @IDynamicResourceExtension.MethodId("46975aa6-529e-11f0-9b60-9f3150c7f92b")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> OperateOnGeneralPurposeOSComponents();
+
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents();
 
@@ -116,6 +122,9 @@ public class FunctionSpace_Node {
 
     @IDynamicResourceExtension.MethodId("15821b36-00a4-11f0-945c-87b19aec41f4")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
+
+    @IDynamicResourceExtension.MethodId("46975aa6-529e-11f0-9b60-9f3150c7f92b")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> OperateOnGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
 
     @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList);
@@ -162,6 +171,21 @@ public class FunctionSpace_Node {
     }
 
     @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> OperateOnGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+      /* Begin Protected Region [[46975aa6-529e-11f0-9b60-9f3150c7f92b]] */
+    	
+    	  return nodeList.stream()
+    			    .filter(node -> {
+    			      var parentNodes = node.extension(INodeFunctions.class).GetParentNodes();
+    			      var osNodes = OnlyGeneralPurposeOSComponents(parentNodes);
+    			      return !osNodes.isEmpty();
+    			    })
+    			    .collect(Collectors.toList());
+    	   
+      /* End Protected Region   [[46975aa6-529e-11f0-9b60-9f3150c7f92b]] */
+    }
+
+    @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[fadb5261-87f4-11ec-894d-7968efa38b99]] */
       return nodeList.stream()
@@ -188,6 +212,10 @@ public class FunctionSpace_Node {
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyGeneralPurposeOSComponents(nodeList);
+    }
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> OperateOnGeneralPurposeOSComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
+      return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OperateOnGeneralPurposeOSComponents(nodeList);
     }
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.javamodel.INode> nodeList) {
@@ -223,4 +251,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,/jGPiufvZUCv039n0rd57PZ/DvE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,mVywCNUPDbLkZ+QT9L/RRZ4hYQg=] */

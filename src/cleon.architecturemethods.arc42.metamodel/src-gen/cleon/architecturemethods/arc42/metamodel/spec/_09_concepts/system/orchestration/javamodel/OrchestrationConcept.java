@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel;
+package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class ScheduleConcept extends DynamicResource implements IScheduleConcept {
+public class OrchestrationConcept extends DynamicResource implements IOrchestrationConcept {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IScheduleConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IScheduleConcept>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOrchestrationConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOrchestrationConcept>() {
     
     @Override
-    public IScheduleConcept create() {
-      return new ScheduleConcept();
+    public IOrchestrationConcept create() {
+      return new OrchestrationConcept();
     }
     
     @Override
-    public IScheduleConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new ScheduleConcept(resourceRepository, resource);
+    public IOrchestrationConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new OrchestrationConcept(resourceRepository, resource);
     }
   
   };
 
-  public ScheduleConcept() {
-    super(IScheduleConcept.TYPE_ID);
+  public OrchestrationConcept() {
+    super(IOrchestrationConcept.TYPE_ID);
   }
   
-  public ScheduleConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IScheduleConcept.TYPE_ID);
+  public OrchestrationConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IOrchestrationConcept.TYPE_ID);
   }
 
   // attributes
@@ -64,7 +64,7 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public ScheduleConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public OrchestrationConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -74,7 +74,7 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public ScheduleConcept setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public OrchestrationConcept setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -84,7 +84,7 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public ScheduleConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public OrchestrationConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -94,7 +94,7 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public ScheduleConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public OrchestrationConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -104,7 +104,7 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public ScheduleConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public OrchestrationConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -124,4 +124,4 @@ public class ScheduleConcept extends DynamicResource implements IScheduleConcept
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69b4ad5e-1f61-11ec-a206-f571806bf8d3,NylVMEtr12iKeaWdekImoGXvXTo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69b4ad5e-1f61-11ec-a206-f571806bf8d3,hrzoZ1Vv54M3V84RNh4WXR2of44=] */

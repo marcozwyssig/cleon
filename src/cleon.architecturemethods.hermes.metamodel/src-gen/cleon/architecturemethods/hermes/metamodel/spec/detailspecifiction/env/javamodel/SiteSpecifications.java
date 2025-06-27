@@ -79,12 +79,12 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> selectConfiguration() {
-    return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications> selectDataCenterSpecification() {
+    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_dataCenterSpecification);
   }
 
-  public SiteSpecifications setConfiguration(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> configuration) {
-    _setList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, configuration);
+  public SiteSpecifications setDataCenterSpecification(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications> dataCenterSpecification) {
+    _setMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_dataCenterSpecification, dataCenterSpecification);
     return this;
   }
     
@@ -115,26 +115,6 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
 
   public SiteSpecifications setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_environment, environment);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications> selectLocationSpecification() {
-    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_locationSpecification);
-  }
-
-  public SiteSpecifications setLocationSpecification(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications> locationSpecification) {
-    _setMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_locationSpecification, locationSpecification);
-    return this;
-  }
-    
-  @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
-  }
-
-  public SiteSpecifications setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
-    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -195,10 +175,9 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, visitor);
+    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_dataCenterSpecification, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_environment, visitor);
-    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_locationSpecification, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_site, visitor);
     _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications, visitor);
@@ -215,9 +194,9 @@ public class SiteSpecifications extends DynamicResource implements ISiteSpecific
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.ISiteSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_environment, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.ISiteSpecifications selectToMeLocationSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.ISiteSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_locationSpecification, object.getResource());
+  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.ISiteSpecifications selectToMeDataCenterSpecification(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IDataCenterSpecifications object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.ISiteSpecifications.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.SiteSpecifications_dataCenterSpecification, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,jdbObxnsq61XX5KMJMAXY80e29w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f85316f3-001a-11f0-945c-87b19aec41f4,1bzTrJ/f8BnC37uiG8QV59SxYz4=] */

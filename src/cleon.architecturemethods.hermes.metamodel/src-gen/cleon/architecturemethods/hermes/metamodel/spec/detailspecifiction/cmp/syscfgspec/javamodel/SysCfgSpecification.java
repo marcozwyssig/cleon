@@ -61,11 +61,11 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
   
   @Override
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification selectApp() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_app);
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_app);
   }
 
   public SysCfgSpecification setApp(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification app) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_app, app);
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_app, app);
     return this;
   }
     
@@ -101,21 +101,21 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
     
   @Override
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification selectHw() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_hw);
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_hw);
   }
 
   public SysCfgSpecification setHw(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification hw) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_hw, hw);
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_hw, hw);
     return this;
   }
     
   @Override
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification selectOs() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_os);
+    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_os);
   }
 
   public SysCfgSpecification setOs(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification os) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_os, os);
+    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_os, os);
     return this;
   }
     
@@ -167,10 +167,10 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_app, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_app, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_hw, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_os, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_hw, visitor);
+    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractSpecification_os, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_specificationForSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -182,17 +182,5 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
     return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_specificationForSystemConfiguration, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification selectToMeHw(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.hardware.javamodel.ISysCfgHwCategorySpecification object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_hw, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification selectToMeOs(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.os.javamodel.ISysCfgOsCategorySpecification object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_os, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification selectToMeApp(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.application.javamodel.ISysCfgAppCategorySpecification object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.SyscfgspecPackage.SysCfgSpecification_app, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f1f77e0-e64c-11e8-9ed8-5f22de89d1df,pQH2Jhuyg72Eh9SgWL0mB3tdolA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f1f77e0-e64c-11e8-9ed8-5f22de89d1df,8FJo1YO3X0xBCjp/5ap8DR8iaA0=] */

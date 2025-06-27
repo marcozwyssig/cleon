@@ -9,7 +9,7 @@ public class EnvPackage {
   public static final Resource EnvironmentSpecifications_siteSpecification = new Resource("4c6acd09-001b-11f0-945c-87b19aec41f4");
   public static final Resource SiteSpecifications_site = new Resource("7313cde3-001b-11f0-945c-87b19aec41f4");
   public static final Resource DataCenterSpecifications = new Resource("214db42e-001c-11f0-945c-87b19aec41f4");
-  public static final Resource SiteSpecifications_locationSpecification = new Resource("3213d487-001c-11f0-945c-87b19aec41f4");
+  public static final Resource SiteSpecifications_dataCenterSpecification = new Resource("3213d487-001c-11f0-945c-87b19aec41f4");
   public static final Resource HostSpecification = new Resource("4440ff4a-001c-11f0-945c-87b19aec41f4");
   public static final Resource DataCenterSpecifications_hostSpecification = new Resource("48e8b623-001c-11f0-945c-87b19aec41f4");
   public static final Resource DataCenterSpecifications_datacenter = new Resource("684c721d-001c-11f0-945c-87b19aec41f4");
@@ -39,4 +39,4 @@ public class EnvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env,voPYzptDwY6S5WtIHJCY2msRlvg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env,Ew6A2Fsy4nzD/bYRfPPK81aRuWg=] */

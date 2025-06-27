@@ -79,11 +79,11 @@ public class SysCfgAppCategorySpecification extends DynamicResource implements I
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> selectConfiguration() {
-    return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration);
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> selectConfiguration() {
+    return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration);
   }
 
-  public SysCfgAppCategorySpecification setConfiguration(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> configuration) {
+  public SysCfgAppCategorySpecification setConfiguration(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> configuration) {
     _setList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, configuration);
     return this;
   }
@@ -145,11 +145,11 @@ public class SysCfgAppCategorySpecification extends DynamicResource implements I
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, visitor);
+    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aaf0421-7161-11ed-b3a1-8773ed130054,TjgPIeJaV/U4RrgElmNLzr7IFts=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aaf0421-7161-11ed-b3a1-8773ed130054,v0yoMtNYmHajBS1af5on4nkAYDo=] */

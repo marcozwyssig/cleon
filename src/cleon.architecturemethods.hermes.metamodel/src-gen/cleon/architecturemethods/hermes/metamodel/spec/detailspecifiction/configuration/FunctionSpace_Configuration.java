@@ -21,47 +21,47 @@ public class FunctionSpace_Configuration {
   /* End Protected Region   [[82e8262a-0024-11f0-945c-87b19aec41f4]] */
 
 
-  public static interface IAbstractConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSpecificationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9411f961-001e-11f0-945c-87b19aec41f4")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
 
     @IDynamicResourceExtension.MethodId("22b362ac-0015-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> OnlyWithPuppetConfiguration();
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration();
 
     @IDynamicResourceExtension.MethodId("94a9e507-0024-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileName();
 
   }
   
-  public static interface IAbstractConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("22b362ac-0015-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList);
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> abstractSpecificationList);
 
   }
   
-  public static class AbstractConfigurationFunctionsImpl implements IAbstractConfigurationFunctionsImpl {
+  public static class AbstractSpecificationFunctionsImpl implements IAbstractSpecificationFunctionsImpl {
 
-    public static final IAbstractConfigurationFunctionsImpl INSTANCE = new AbstractConfigurationFunctionsImpl();
+    public static final IAbstractSpecificationFunctionsImpl INSTANCE = new AbstractSpecificationFunctionsImpl();
 
-    private AbstractConfigurationFunctionsImpl() {}
+    private AbstractSpecificationFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList) {
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> abstractSpecificationList) {
       /* Begin Protected Region [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
-    	return abstractConfigurationList.stream().filter(x -> x.extension(IAbstractConfigurationFunctions.class).AllPuppetConfigurations().isEmpty() == false).toList();
+    	return abstractSpecificationList.stream().filter(x -> x.extension(IAbstractSpecificationFunctions.class).AllPuppetConfigurations().isEmpty() == false).toList();
       /* End Protected Region   [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
     }
 
   }
   
-  public static class AbstractConfigurationFunctions {
+  public static class AbstractSpecificationFunctions {
 
-    private AbstractConfigurationFunctions() {}
+    private AbstractSpecificationFunctions() {}
 
-    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> abstractConfigurationList) {
-      return DynamicResourceUtil.invoke(IAbstractConfigurationFunctionsImpl.class, AbstractConfigurationFunctionsImpl.INSTANCE, abstractConfigurationList).OnlyWithPuppetConfiguration(abstractConfigurationList);
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecificationList).OnlyWithPuppetConfiguration(abstractSpecificationList);
     }
 
   }
@@ -97,35 +97,7 @@ public class FunctionSpace_Configuration {
 
   }
 
-  public static interface IAbstractEnvironmentSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("47f35586-0023-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
-
-  }
-  
-  public static interface IAbstractEnvironmentSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractEnvironmentSpecificationFunctionsImpl implements IAbstractEnvironmentSpecificationFunctionsImpl {
-
-    public static final IAbstractEnvironmentSpecificationFunctionsImpl INSTANCE = new AbstractEnvironmentSpecificationFunctionsImpl();
-
-    private AbstractEnvironmentSpecificationFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractEnvironmentSpecificationFunctions {
-
-    private AbstractEnvironmentSpecificationFunctions() {}
-
-  }
-
   public static interface ISysCfgSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("d4bc5ec2-0025-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
 
     @IDynamicResourceExtension.MethodId("08187956-0015-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileName();
@@ -234,6 +206,15 @@ public class FunctionSpace_Configuration {
 
     @IDynamicResourceExtension.MethodId("182a313c-002a-11f0-945c-87b19aec41f4")
     public java.lang.String FolderName();
+
+    @IDynamicResourceExtension.MethodId("4509f460-5265-11f0-9c5a-35f303bb18a5")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("7da25358-5265-11f0-9c5a-35f303bb18a5")
+    public java.lang.String CmpFolder();
+
+    @IDynamicResourceExtension.MethodId("2b92acea-5266-11f0-9c5a-35f303bb18a5")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
 
   }
   
@@ -346,6 +327,9 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("caf3b153-00a4-11f0-945c-87b19aec41f4")
     public java.lang.String FolderName();
 
+    @IDynamicResourceExtension.MethodId("d8a76461-529c-11f0-9b60-9f3150c7f92b")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
+
   }
   
   public static interface IHostSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -405,7 +389,7 @@ public class FunctionSpace_Configuration {
 
   }
 
-  public static interface IAbstractConfigurationSpecificationFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("df54999c-0627-11f0-ad7c-c72b7a763977")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode Environment();
@@ -437,28 +421,31 @@ public class FunctionSpace_Configuration {
     @IDynamicResourceExtension.MethodId("f58084df-481c-11f0-98fa-27341f0ccbf7")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHosts();
 
+    @IDynamicResourceExtension.MethodId("983d1039-5321-11f0-8fbb-ff2ccb392c9c")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> AllHostsWhereSystemConfiguration();
+
     @IDynamicResourceExtension.MethodId("bc29051b-4ce2-11f0-954b-b579526ae084")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite Site();
 
   }
   
-  public static interface IAbstractConfigurationSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("adbff252-1132-11f0-a4f9-b5f995a9e0fe")
-    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification);
+    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration);
 
   }
   
-  public static class AbstractConfigurationSpecificationFunctionsImpl implements IAbstractConfigurationSpecificationFunctionsImpl {
+  public static class AbstractConfigurationFunctionsImpl implements IAbstractConfigurationFunctionsImpl {
 
-    public static final IAbstractConfigurationSpecificationFunctionsImpl INSTANCE = new AbstractConfigurationSpecificationFunctionsImpl();
+    public static final IAbstractConfigurationFunctionsImpl INSTANCE = new AbstractConfigurationFunctionsImpl();
 
-    private AbstractConfigurationSpecificationFunctionsImpl() {}
+    private AbstractConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification) {
+    public java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration) {
       /* Begin Protected Region [[adbff252-1132-11f0-a4f9-b5f995a9e0fe]] */
-    	var abstractConfigurationSpecificationFunctions = abstractConfigurationSpecification.extension(IAbstractConfigurationSpecificationFunctions.class);
+    	var abstractConfigurationSpecificationFunctions = abstractConfiguration.extension(IAbstractConfigurationFunctions.class);
     	final var domainName = abstractConfigurationSpecificationFunctions.DomainName();
     	int dotIndex = domainName.indexOf('.');
         return (dotIndex > 0) ? domainName.substring(0, dotIndex) : domainName;    
@@ -467,12 +454,12 @@ public class FunctionSpace_Configuration {
 
   }
   
-  public static class AbstractConfigurationSpecificationFunctions {
+  public static class AbstractConfigurationFunctions {
 
-    private AbstractConfigurationSpecificationFunctions() {}
+    private AbstractConfigurationFunctions() {}
 
-    public static java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfigurationSpecification) {
-      return DynamicResourceUtil.invoke(IAbstractConfigurationSpecificationFunctionsImpl.class, AbstractConfigurationSpecificationFunctionsImpl.INSTANCE, abstractConfigurationSpecification).NetbiosDomainName(abstractConfigurationSpecification);
+    public static java.lang.String NetbiosDomainName(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration) {
+      return DynamicResourceUtil.invoke(IAbstractConfigurationFunctionsImpl.class, AbstractConfigurationFunctionsImpl.INSTANCE, abstractConfiguration).NetbiosDomainName(abstractConfiguration);
     }
 
   }
@@ -480,7 +467,7 @@ public class FunctionSpace_Configuration {
   public static interface IServiceAccountFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7586f36a-13b2-11f0-b664-c7b92124985d")
-    public java.lang.String LogonAs(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification abstractConfiguration);
+    public java.lang.String LogonAs(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration abstractConfiguration);
 
   }
   
@@ -504,4 +491,4 @@ public class FunctionSpace_Configuration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,nWd3fR/riOPRI3fvTVNSoPKLVWc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,n/tzt6x/Sn8QGzLpyaEgPGdyEdc=] */

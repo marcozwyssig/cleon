@@ -8,7 +8,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_PuppetConfiguration = new Resource("f0e7036a-0015-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_UninstallFeatures = new Resource("08d67bcb-0016-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Features = new Resource("37706e45-001a-11f0-945c-87b19aec41f4");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractConfiguration = new Resource("94a9e501-0024-11f0-945c-87b19aec41f4");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_AbstractSpecification = new Resource("94a9e501-0024-11f0-945c-87b19aec41f4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_IssuingCA = new Resource("c0f5baea-04b0-11f0-8e81-9be04e08660a");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Dfs = new Resource("7023a38d-05a2-11f0-a294-67d88c30f2e4");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_OU = new Resource("c12e6783-05a2-11f0-a294-67d88c30f2e4");
@@ -65,6 +65,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Sudo = new Resource("eccf852b-4ce5-11f0-954b-b579526ae084");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_MailRelay = new Resource("fc6ba7c7-4ce9-11f0-954b-b579526ae084");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Certificates = new Resource("fc177b1b-4d13-11f0-954b-b579526ae084");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WsusJoin = new Resource("68674982-5261-11f0-9c5a-35f303bb18a5");
   
   /* Begin Protected Region [[user]] */
   
@@ -85,4 +86,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,X6X6jinZpmd0x856U2B2YzvgY+4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,g8BKO1h5o5W+8fozAjyl8TCNOUQ=] */

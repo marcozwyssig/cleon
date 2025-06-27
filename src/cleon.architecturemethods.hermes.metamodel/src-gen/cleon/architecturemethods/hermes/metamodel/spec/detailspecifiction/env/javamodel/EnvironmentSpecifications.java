@@ -79,16 +79,6 @@ public class EnvironmentSpecifications extends DynamicResource implements IEnvir
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> selectConfiguration() {
-    return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration);
-  }
-
-  public EnvironmentSpecifications setConfiguration(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> configuration) {
-    _setList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, configuration);
-    return this;
-  }
-    
-  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
@@ -115,16 +105,6 @@ public class EnvironmentSpecifications extends DynamicResource implements IEnvir
 
   public EnvironmentSpecifications setEnvironment(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode environment) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.EnvironmentSpecifications_environment, environment);
-    return this;
-  }
-    
-  @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
-  }
-
-  public EnvironmentSpecifications setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
-    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -175,7 +155,6 @@ public class EnvironmentSpecifications extends DynamicResource implements IEnvir
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.EnvironmentSpecifications_environment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -195,4 +174,4 @@ public class EnvironmentSpecifications extends DynamicResource implements IEnvir
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cf29054f-d22c-11ee-b255-49ab47716ebd,i9UYWEdYleJ0vuevrcCxwaJuvJg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cf29054f-d22c-11ee-b255-49ab47716ebd,bxJiz3aNzXspTHejks+oIasArX0=] */

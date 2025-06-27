@@ -10,8 +10,6 @@ public interface ICertificate extends ch.actifsource.core.javamodel.INamedResour
   
   public java.lang.String selectCommon_name();
   
-  public java.lang.Boolean selectGenerate_key();
-  
   public java.lang.Integer selectKey_size();
   
   public java.lang.String selectCountry_name();
@@ -28,10 +26,10 @@ public interface ICertificate extends ch.actifsource.core.javamodel.INamedResour
   
   public java.util.List<java.lang.String> selectSubject_alt_names();
   
-  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.javamodel.IKeyType selectKey_type();
-  
   public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.javamodel.IKeyUsage> selectKey_usage();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectSubject_alt_names_from_host();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ba9bd3c-4d1e-11f0-954b-b579526ae084,8qoTytJZnhpD8CZb8HLVFQjdDt8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ba9bd3c-4d1e-11f0-954b-b579526ae084,0g0iGPcyrvNrgre3xt+1//jOy1M=] */

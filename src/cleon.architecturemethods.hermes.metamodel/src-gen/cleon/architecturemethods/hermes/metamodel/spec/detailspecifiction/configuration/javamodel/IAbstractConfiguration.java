@@ -2,10 +2,14 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractConfiguration extends ch.actifsource.core.javamodel.IResource {
+public interface IAbstractConfiguration extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f3285f19-0023-11f0-945c-87b19aec41f4");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("637a66b7-0013-11f0-945c-87b19aec41f4");
+  
+  // relations
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectSpecifictionForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f3285f19-0023-11f0-945c-87b19aec41f4,FEvEzyrn59dS56vfrxscHJhNtSA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,637a66b7-0013-11f0-945c-87b19aec41f4,EuhkKMdICLCqtZl7d+L08Z4xyRk=] */

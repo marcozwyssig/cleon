@@ -8,8 +8,8 @@ public interface IConfigurationSpecificationAware extends cleon.common.doc.metam
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> selectConfiguration();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> selectConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecabd13c-001d-11f0-945c-87b19aec41f4,DISzS8i3q/aCbJFZCh1rBpJBJHE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecabd13c-001d-11f0-945c-87b19aec41f4,iMcQH7fFO0Tgqi3DNcOwDcVkzGw=] */

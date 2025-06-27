@@ -79,16 +79,6 @@ public class DataCenterSpecifications extends DynamicResource implements IDataCe
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> selectConfiguration() {
-    return _getList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration);
-  }
-
-  public DataCenterSpecifications setConfiguration(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification> configuration) {
-    _setList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, configuration);
-    return this;
-  }
-    
-  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyDataCenter selectDatacenter() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyDataCenter.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_datacenter);
   }
@@ -139,16 +129,6 @@ public class DataCenterSpecifications extends DynamicResource implements IDataCe
   }
     
   @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
-  }
-
-  public DataCenterSpecifications setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
-    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -165,6 +145,16 @@ public class DataCenterSpecifications extends DynamicResource implements IDataCe
 
   public DataCenterSpecifications setSite(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode site) {
     _setSingle(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_site, site);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> selectSystemConfigurationSpecifications() {
+    return _getMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications);
+  }
+
+  public DataCenterSpecifications setSystemConfigurationSpecifications(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification> systemConfigurationSpecifications) {
+    _setMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications, systemConfigurationSpecifications);
     return this;
   }
     
@@ -195,13 +185,13 @@ public class DataCenterSpecifications extends DynamicResource implements IDataCe
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplyDataCenter.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_datacenter, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.javamodel.IDeploymentEnvironmentRootNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_environment, visitor);
     _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.javamodel.IHostSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_hostSpecification, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.deploy.environment.node.supplynode.javamodel.ISupplySiteNode.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.env.EnvPackage.DataCenterSpecifications_site, visitor);
+    _acceptMap(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscfgspec.javamodel.ISysCfgSpecification.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.cmp.syscmp.SyscmpPackage.SysCmpSpecificationAware_systemConfigurationSpecifications, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -224,4 +214,4 @@ public class DataCenterSpecifications extends DynamicResource implements IDataCe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,214db42e-001c-11f0-945c-87b19aec41f4,SjfThapfhb0h1K5o99C9Nw66IV8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,214db42e-001c-11f0-945c-87b19aec41f4,4hamsBiuhNYm1vJoELADuSiY7IM=] */

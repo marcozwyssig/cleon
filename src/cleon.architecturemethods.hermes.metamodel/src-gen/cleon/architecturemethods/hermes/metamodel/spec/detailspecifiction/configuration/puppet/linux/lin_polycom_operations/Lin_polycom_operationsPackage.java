@@ -25,12 +25,9 @@ public class Lin_polycom_operationsPackage {
   public static final Resource KeyUsage_decipherOnly = new Resource("32d1d399-4d11-11f0-954b-b579526ae084");
   public static final Resource Certificate_key_aE_usage = new Resource("3ef34b73-4d11-11f0-954b-b579526ae084");
   public static final Resource Certificate_key_aE_size = new Resource("a708f4c4-4d11-11f0-954b-b579526ae084");
-  public static final Resource Certificate_generate_aE_key = new Resource("24261c17-4d13-11f0-954b-b579526ae084");
   public static final Resource KeyType = new Resource("31a1ccf7-4d13-11f0-954b-b579526ae084");
   public static final Resource KeyType_RSA = new Resource("3515be3f-4d13-11f0-954b-b579526ae084");
   public static final Resource KeyType_EC = new Resource("36d39b31-4d13-11f0-954b-b579526ae084");
-  public static final Resource Certificate_key_aE_type = new Resource("4b5a1ecc-4d13-11f0-954b-b579526ae084");
-  public static final Resource Certificates_smb_aE_share_aE_path = new Resource("6ddd918a-4d13-11f0-954b-b579526ae084");
   public static final Resource Certificate = new Resource("8ba9bd3c-4d1e-11f0-954b-b579526ae084");
   public static final Resource Certificates_certificates = new Resource("91dbe40c-4d1e-11f0-954b-b579526ae084");
   public static final Resource Certificate_extended_aE_key_aE_usage = new Resource("30eba5f6-4d1f-11f0-954b-b579526ae084");
@@ -40,6 +37,9 @@ public class Lin_polycom_operationsPackage {
   public static final Resource Certificates_smb_aE_username = new Resource("3ab70e37-4d21-11f0-954b-b579526ae084");
   public static final Resource Certificates_logonAs = new Resource("791f0c62-4d22-11f0-954b-b579526ae084");
   public static final Resource FunctionSpace_aE_lin_aE_polycom_aE_operations_Certificates = new Resource("918059af-4d22-11f0-954b-b579526ae084");
+  public static final Resource Certificates_smb_aE_share_aE_name = new Resource("c31c9955-525e-11f0-9c5a-35f303bb18a5");
+  public static final Resource Certificates_smb_aE_server_aE_host = new Resource("d04c7367-525e-11f0-9c5a-35f303bb18a5");
+  public static final Resource Certificate_subject_aE_alt_aE_names_aE_from_aE_host = new Resource("638b876f-5321-11f0-8fbb-ff2ccb392c9c");
   
   /* Begin Protected Region [[user]] */
   
@@ -60,4 +60,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,u6nmSQKS5SHRayv1f2MZ+7lhsPA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,w1lSWkTGh4FFou9NA2gN9n/gt7w=] */

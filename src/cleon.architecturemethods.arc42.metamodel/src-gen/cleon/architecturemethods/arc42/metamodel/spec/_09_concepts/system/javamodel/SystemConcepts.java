@@ -169,6 +169,16 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept selectOrchestrationConcept() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_orchestrationConcept);
+  }
+
+  public SystemConcepts setOrchestrationConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept orchestrationConcept) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_orchestrationConcept, orchestrationConcept);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -205,16 +215,6 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
 
   public SystemConcepts setResourceConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.javamodel.IResourceConcept resourceConcept) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_resourceConcept, resourceConcept);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept selectScheduleConcept() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_scheduleConcept);
-  }
-
-  public SystemConcepts setScheduleConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept scheduleConcept) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_scheduleConcept, scheduleConcept);
     return this;
   }
     
@@ -272,10 +272,10 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.dns.javamodel.IDNSConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_dnsConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.IIPNetworkConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_networkConcept, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_orchestrationConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IPortServices.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_portServiceConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IBandwithAndQoSConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_qosConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.javamodel.IResourceConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_resourceConcept, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_scheduleConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_securityConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.time_synchronization.javamodel.ITimeSynchronizationConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_timeSynchronizationConcept, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_topologyConcept, visitor);
@@ -286,10 +286,6 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeTopologyConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_topologyConcept, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeScheduleConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_scheduleConcept, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeQosConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IBandwithAndQoSConcept object) {
@@ -310,6 +306,10 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeDeploymentConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.javamodel.IDeploymentConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_deploymentConcept, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeOrchestrationConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.SystemPackage.SystemConcepts_orchestrationConcept, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts selectToMeAccessConcept(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConcept object) {
@@ -337,4 +337,4 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,IiLPYNfqaD5nhsWCbJxDMXwfnq0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,U8uMwyMPGkjLY0U1iS1s9AWFg3k=] */

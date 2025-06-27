@@ -11,5 +11,11 @@ public abstract class AbstractConfiguration extends DynamicResource implements I
     super(IAbstractConfiguration.TYPE_ID);
   }
   
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration> selectToMeSpecifictionForSystemConfiguration(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.AbstractConfiguration_specifictionForSystemConfiguration, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f3285f19-0023-11f0-945c-87b19aec41f4,RB2V1llvWTSsGKg1+1PyNTqMYbQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,637a66b7-0013-11f0-945c-87b19aec41f4,qMGolam2vJcc9b5V/ZjVmWL3/pk=] */

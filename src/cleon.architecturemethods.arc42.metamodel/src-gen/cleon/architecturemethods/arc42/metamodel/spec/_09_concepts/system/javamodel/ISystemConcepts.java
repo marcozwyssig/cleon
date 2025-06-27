@@ -10,8 +10,6 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopology selectTopologyConcept();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.schedule.javamodel.IScheduleConcept selectScheduleConcept();
-  
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.qos.javamodel.IBandwithAndQoSConcept selectQosConcept();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.javamodel.ISecurityConcept selectSecurityConcept();
@@ -21,6 +19,8 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.resources.javamodel.IResourceConcept selectResourceConcept();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.deployment.javamodel.IDeploymentConcept selectDeploymentConcept();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.orchestration.javamodel.IOrchestrationConcept selectOrchestrationConcept();
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessConcept selectAccessConcept();
   
@@ -36,4 +36,4 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,FWFBhlIQ8jAAaFP3bSoce4XBX3U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,Hv78vyDR7UY9MSGVIMzTO1r0M4A=] */

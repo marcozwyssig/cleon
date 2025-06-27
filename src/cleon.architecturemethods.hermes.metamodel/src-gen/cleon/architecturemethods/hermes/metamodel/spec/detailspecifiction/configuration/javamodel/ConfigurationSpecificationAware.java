@@ -13,9 +13,9 @@ public abstract class ConfigurationSpecificationAware extends DynamicResource im
   
   // toMeRelations
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IConfigurationSpecificationAware selectToMeConfiguration(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfigurationSpecification object) {
+  public static cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IConfigurationSpecificationAware selectToMeConfiguration(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IAbstractConfiguration object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.javamodel.IConfigurationSpecificationAware.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.ConfigurationPackage.ConfigurationSpecificationAware_configuration, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ecabd13c-001d-11f0-945c-87b19aec41f4,OQO5QhdYYLj83yKzzoSvBTmAAn8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ecabd13c-001d-11f0-945c-87b19aec41f4,dxi4NXPwWU1lsUsWIDovG23Zhx0=] */

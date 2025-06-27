@@ -12,6 +12,11 @@ public class Win_polycom_wsusPackage {
   public static final Resource InstallWSUS_synchronize_aE_time_aE_of_aE_day = new Resource("0ce3433c-4c15-11f0-ab62-57f8f0b40f9d");
   public static final Resource InstallWSUS_number_aE_of_aE_synchronizations_aE_per_aE_day = new Resource("11f81313-4c15-11f0-ab62-57f8f0b40f9d");
   public static final Resource InstallWSUS_wsusserver_aE_computer_aE_target_aE_group = new Resource("19c12d7a-4c15-11f0-ab62-57f8f0b40f9d");
+  public static final Resource WsusJoin = new Resource("6fdcbaac-5260-11f0-9c5a-35f303bb18a5");
+  public static final Resource WsusJoin_wsus_aE_host = new Resource("8035c243-5260-11f0-9c5a-35f303bb18a5");
+  public static final Resource WsusJoin_wsus_aE_port = new Resource("f94a59a6-5261-11f0-9c5a-35f303bb18a5");
+  public static final Resource WsusJoin_scheduled_aE_install_aE_hour = new Resource("ed749695-5269-11f0-9c5a-35f303bb18a5");
+  public static final Resource WsusJoin_scheduled_aE_install_aE_day = new Resource("fbc87f28-5269-11f0-9c5a-35f303bb18a5");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +37,4 @@ public class Win_polycom_wsusPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,bBmJWF/Nh+Ul2X3D7djvl7C4j9M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,fIwSTV5xMdJpTeTHZLDSqDiCq34=] */

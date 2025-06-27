@@ -13,7 +13,7 @@ public class Win_polycom_caPackage {
   public static final Resource IssuingCA_caCRLDeltaPeriodUnits_aE__aA_Days_aC_ = new Resource("ee175605-04af-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_caCRLPeriodUnits = new Resource("02faee74-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_caAuditFilter = new Resource("0def582b-04b0-11f0-8e81-9be04e08660a");
-  public static final Resource IssuingCA_gmsa = new Resource("1b309812-04b0-11f0-8e81-9be04e08660a");
+  public static final Resource IssuingCA_csrRequestServiceAccount = new Resource("1b309812-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_repeatinterval = new Resource("3dc6a8c6-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_exportToUncPathCer = new Resource("5ac39e6e-04b0-11f0-8e81-9be04e08660a");
   public static final Resource IssuingCA_exportToUncPathCrl = new Resource("5df185d6-04b0-11f0-8e81-9be04e08660a");
@@ -65,4 +65,4 @@ public class Win_polycom_caPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca,4ZCtlFF2glFdmbbdEokqSxV3q+o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ca,jrsU1VXVZgIhH8TFoqCrtMCxCEg=] */

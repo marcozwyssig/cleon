@@ -6,13 +6,9 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("5f117b05-4ce8-11f0-954b-b579526ae084");
   
-  // attributes
-  
-  public java.lang.String selectVirthost();
-  
-  public java.lang.String selectFrom_domain();
-  
   public java.lang.String selectSender_domain();
+  
+  public java.lang.String selectSmtp_ehlo();
   
   public java.lang.String selectAllowed_domains_content();
   
@@ -20,8 +16,20 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.Integer selectVrrp_prio();
   
-  public java.util.List<java.lang.String> selectFwd_dns_addresses();
+  // relations
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectVirthost();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectVirtip_int_prx();
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IService> selectAllowed_source_service();
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> selectAllowed_sources_components();
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> selectAllowed_sources_content();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectMail_relay_host();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,K/WkU9vNaaqq2nVOGXOh29XCENE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,WoN42wAd3DT4fVOplFgfW8zzayM=] */

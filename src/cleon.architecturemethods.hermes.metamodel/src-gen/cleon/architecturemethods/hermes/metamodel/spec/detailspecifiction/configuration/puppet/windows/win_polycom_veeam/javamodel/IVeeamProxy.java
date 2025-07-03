@@ -12,6 +12,8 @@ public interface IVeeamProxy extends cleon.architecturemethods.hermes.metamodel.
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectVeeamMaster();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectVeeamUsername();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e3972c2a-481a-11f0-98fa-27341f0ccbf7,ZCtVRb2aT/CwGcqYkOY+bMitMpc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e3972c2a-481a-11f0-98fa-27341f0ccbf7,nquUPrvxYuCyk/s6Doo4yXvmkss=] */

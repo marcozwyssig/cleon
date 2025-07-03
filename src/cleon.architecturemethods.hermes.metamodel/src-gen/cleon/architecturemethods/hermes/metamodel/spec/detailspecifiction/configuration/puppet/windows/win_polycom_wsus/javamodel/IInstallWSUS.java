@@ -12,8 +12,6 @@ public interface IInstallWSUS extends cleon.architecturemethods.hermes.metamodel
   
   public java.util.List<java.lang.String> selectProducts();
   
-  public java.util.List<java.lang.String> selectUpdate_classifications();
-  
   public java.util.List<java.lang.String> selectUpdate_languages();
   
   public java.lang.String selectSynchronize_time_of_day();
@@ -22,6 +20,12 @@ public interface IInstallWSUS extends cleon.architecturemethods.hermes.metamodel
   
   public java.lang.String selectWsusserver_computer_target_group();
   
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus.javamodel.IUpdateClassification> selectUpdate_classifications();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectProxy_server();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IService selectProxy_port();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b7f35629-4c14-11f0-ab62-57f8f0b40f9d,vyy1qtMOIShmhtewGsDOBXHjJpI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b7f35629-4c14-11f0-ab62-57f8f0b40f9d,E2U83y2OD+r1CJbAJr23snainx0=] */

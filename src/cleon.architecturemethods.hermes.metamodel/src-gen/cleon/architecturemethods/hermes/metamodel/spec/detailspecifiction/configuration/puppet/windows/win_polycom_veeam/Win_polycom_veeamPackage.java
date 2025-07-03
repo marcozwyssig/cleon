@@ -41,6 +41,7 @@ public class Win_polycom_veeamPackage {
   public static final Resource VeeamBkpJobs_veeamBackupVMs = new Resource("451dd507-4a74-11f0-8aad-e18ef03c09ec");
   public static final Resource VeeamBackupVM_buildNode = new Resource("7e28097d-4a74-11f0-8aad-e18ef03c09ec");
   public static final Resource VeeamBackupVM_bkpJobHostProfile = new Resource("9fcc66ad-4a74-11f0-8aad-e18ef03c09ec");
+  public static final Resource VeeamProxy_veeamUsername = new Resource("8f3a8d14-5330-11f0-9301-032f11813eba");
   
   /* Begin Protected Region [[user]] */
   
@@ -61,4 +62,4 @@ public class Win_polycom_veeamPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_veeam,IBes/TCSNvfoXplBSs+wfaizJY0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_veeam,0Ezl+vyoFnN+fV2N/K4NMjLPWio=] */

@@ -1794,6 +1794,31 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ICertificateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1d5bd073-532f-11f0-9301-032f11813eba")
+    public java.lang.String GetSubjectAltNamesFromHost();
+
+  }
+  
+  public static interface ICertificateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CertificateFunctionsImpl implements ICertificateFunctionsImpl {
+
+    public static final ICertificateFunctionsImpl INSTANCE = new CertificateFunctionsImpl();
+
+    private CertificateFunctionsImpl() {}
+
+  }
+  
+  public static class CertificateFunctions {
+
+    private CertificateFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,/O1Wjb2izORTiltBvoPO1qlg/jo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,mim9GUmeY3u1y2BIrT02/YUPsX8=] */

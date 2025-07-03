@@ -12,8 +12,6 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.String selectAllowed_domains_content();
   
-  public java.lang.String selectVrrp_inst_state();
-  
   public java.lang.Integer selectVrrp_prio();
   
   // relations
@@ -28,8 +26,14 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> selectAllowed_sources_content();
   
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.javamodel.ICertificate selectInternal_certificate();
+  
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.javamodel.ICertificate selectExternal_certificate();
+  
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.javamodel.IVrrpInstState selectVrrp_inst_state();
+  
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost selectMail_relay_host();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,WoN42wAd3DT4fVOplFgfW8zzayM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,gCKEmpef9HjYXLykNAcJ+kz52z0=] */

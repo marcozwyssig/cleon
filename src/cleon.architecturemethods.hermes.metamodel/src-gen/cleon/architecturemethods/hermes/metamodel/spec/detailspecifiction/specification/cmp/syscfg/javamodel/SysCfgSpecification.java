@@ -57,6 +57,15 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
+  }
+    
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
+  }
+
   // relations
   
   @Override
@@ -163,7 +172,6 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -183,4 +191,4 @@ public class SysCfgSpecification extends DynamicResource implements ISysCfgSpeci
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f1f77e0-e64c-11e8-9ed8-5f22de89d1df,aVsO4jz824x6THfw9dU+4VKuzuU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3f1f77e0-e64c-11e8-9ed8-5f22de89d1df,pBKhmrYDtN2gWoAdDkbkFcPtIa4=] */

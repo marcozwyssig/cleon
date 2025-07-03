@@ -21,24 +21,60 @@ public class FunctionSpace_Specification {
   /* End Protected Region   [[82e8262a-0024-11f0-945c-87b19aec41f4]] */
 
 
-  public static interface IAbstractListOfSysCfgCategorySpecificationFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSpecificationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9411f961-001e-11f0-945c-87b19aec41f4")
     public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
 
     @IDynamicResourceExtension.MethodId("22b362ac-0015-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> OnlyWithPuppetConfiguration();
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration();
 
     @IDynamicResourceExtension.MethodId("94a9e507-0024-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileName();
 
   }
   
-  public static interface IAbstractListOfSysCfgCategorySpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("22b362ac-0015-11f0-945c-87b19aec41f4")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList);
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList);
 
+  }
+  
+  public static class AbstractSpecificationFunctionsImpl implements IAbstractSpecificationFunctionsImpl {
+
+    public static final IAbstractSpecificationFunctionsImpl INSTANCE = new AbstractSpecificationFunctionsImpl();
+
+    private AbstractSpecificationFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      /* Begin Protected Region [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
+    	return abstractSpecificationList.stream().filter(x -> x.extension(IAbstractSpecificationFunctions.class).AllPuppetConfigurations().isEmpty() == false).toList();
+      /* End Protected Region   [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
+    }
+
+  }
+  
+  public static class AbstractSpecificationFunctions {
+
+    private AbstractSpecificationFunctions() {}
+
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecificationList).OnlyWithPuppetConfiguration(abstractSpecificationList);
+    }
+
+  }
+
+  public static interface IAbstractListOfSysCfgCategorySpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("411fba80-580e-11f0-b941-05f03c57551d")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
+
+  }
+  
+  public static interface IAbstractListOfSysCfgCategorySpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
   }
   
   public static class AbstractListOfSysCfgCategorySpecificationFunctionsImpl implements IAbstractListOfSysCfgCategorySpecificationFunctionsImpl {
@@ -47,22 +83,11 @@ public class FunctionSpace_Specification {
 
     private AbstractListOfSysCfgCategorySpecificationFunctionsImpl() {}
 
-    @Override
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList) {
-      /* Begin Protected Region [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
-    	return abstractListOfSysCfgCategorySpecificationList.stream().filter(x -> x.extension(IAbstractListOfSysCfgCategorySpecificationFunctions.class).AllPuppetConfigurations().isEmpty() == false).toList();
-      /* End Protected Region   [[22b362ac-0015-11f0-945c-87b19aec41f4]] */
-    }
-
   }
   
   public static class AbstractListOfSysCfgCategorySpecificationFunctions {
 
     private AbstractListOfSysCfgCategorySpecificationFunctions() {}
-
-    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> OnlyWithPuppetConfiguration(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList) {
-      return DynamicResourceUtil.invoke(IAbstractListOfSysCfgCategorySpecificationFunctionsImpl.class, AbstractListOfSysCfgCategorySpecificationFunctionsImpl.INSTANCE, abstractListOfSysCfgCategorySpecificationList).OnlyWithPuppetConfiguration(abstractListOfSysCfgCategorySpecificationList);
-    }
 
   }
 
@@ -77,10 +102,16 @@ public class FunctionSpace_Specification {
     @IDynamicResourceExtension.MethodId("28aebf7d-07f8-11f0-bc12-1bbda1d7028e")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite> Sites();
 
+    @IDynamicResourceExtension.MethodId("a8afae4b-580d-11f0-b941-05f03c57551d")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations();
+
   }
   
   public static interface IAbstractListOfSysCfgSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("a8afae4b-580d-11f0-b941-05f03c57551d")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCfgSpecifications abstractListOfSysCfgSpecifications);
+
   }
   
   public static class AbstractListOfSysCfgSpecificationsFunctionsImpl implements IAbstractListOfSysCfgSpecificationsFunctionsImpl {
@@ -89,11 +120,20 @@ public class FunctionSpace_Specification {
 
     private AbstractListOfSysCfgSpecificationsFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCfgSpecifications abstractListOfSysCfgSpecifications) {
+      return null;
+    }
+
   }
   
   public static class AbstractListOfSysCfgSpecificationsFunctions {
 
     private AbstractListOfSysCfgSpecificationsFunctions() {}
+
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration> AllPuppetConfigurations(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.IAbstractListOfSysCfgSpecifications abstractListOfSysCfgSpecifications) {
+      return DynamicResourceUtil.invoke(IAbstractListOfSysCfgSpecificationsFunctionsImpl.class, AbstractListOfSysCfgSpecificationsFunctionsImpl.INSTANCE, abstractListOfSysCfgSpecifications).AllPuppetConfigurations(abstractListOfSysCfgSpecifications);
+    }
 
   }
 
@@ -163,6 +203,9 @@ public class FunctionSpace_Specification {
   }
 
   public static interface ISysCmpSpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("420aa4e3-5810-11f0-b941-05f03c57551d")
+    public java.lang.String FullFileName();
 
     @IDynamicResourceExtension.MethodId("c1e75b91-059b-11f0-a294-67d88c30f2e4")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
@@ -352,4 +395,4 @@ public class FunctionSpace_Specification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,mH917/cUqOReuPDccrAwSx0C768=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,h+08TOBAme4y6vRb0wgPTliZRVs=] */

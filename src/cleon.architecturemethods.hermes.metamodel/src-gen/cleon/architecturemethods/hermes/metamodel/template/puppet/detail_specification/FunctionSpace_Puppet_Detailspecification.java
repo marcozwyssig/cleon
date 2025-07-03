@@ -19,7 +19,7 @@ public class FunctionSpace_Puppet_Detailspecification {
   /* End Protected Region   [[fab6dfde-0014-11f0-945c-87b19aec41f4]] */
 
 
-  public static interface IAbstractListOfSysCfgCategorySpecificationFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSpecificationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("eb81e13a-0026-11f0-945c-87b19aec41f4")
     public java.lang.String FullFileNameYaml();
@@ -28,20 +28,152 @@ public class FunctionSpace_Puppet_Detailspecification {
     public java.lang.String FullFileNameEyaml();
 
     @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> Filter();
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListYaml();
+
+    @IDynamicResourceExtension.MethodId("0dfa21b8-5811-11f0-b941-05f03c57551d")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListEyaml();
 
     @IDynamicResourceExtension.MethodId("ed913d3a-0a5d-11f0-a414-9b52960625e5")
     public java.lang.String CustomValues();
+
+    @IDynamicResourceExtension.MethodId("039f4aad-580f-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml();
+
+    @IDynamicResourceExtension.MethodId("1168460a-5811-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterEyaml();
+
+  }
+  
+  public static interface IAbstractSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListYaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList);
+
+    @IDynamicResourceExtension.MethodId("0dfa21b8-5811-11f0-b941-05f03c57551d")
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListEyaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList);
+
+    @IDynamicResourceExtension.MethodId("ed913d3a-0a5d-11f0-a414-9b52960625e5")
+    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification);
+
+    @IDynamicResourceExtension.MethodId("039f4aad-580f-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification);
+
+    @IDynamicResourceExtension.MethodId("1168460a-5811-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification);
+
+  }
+  
+  public static class AbstractSpecificationFunctionsImpl implements IAbstractSpecificationFunctionsImpl {
+
+    public static final IAbstractSpecificationFunctionsImpl INSTANCE = new AbstractSpecificationFunctionsImpl();
+
+    private AbstractSpecificationFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListYaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      /* Begin Protected Region [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
+    	return abstractSpecificationList.stream().filter(x -> x.extension(IAbstractSpecificationFunctions.class).FilterYaml()).toList();
+      /* End Protected Region   [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListEyaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      /* Begin Protected Region [[0dfa21b8-5811-11f0-b941-05f03c57551d]] */
+    	return abstractSpecificationList.stream().filter(x -> x.extension(IAbstractSpecificationFunctions.class).FilterEyaml()).toList();   
+      /* End Protected Region   [[0dfa21b8-5811-11f0-b941-05f03c57551d]] */
+    }
+
+    @Override
+    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return null;
+    }
+
+    @Override
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return true;
+    }
+
+    @Override
+    public java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return false;
+    }
+
+  }
+  
+  public static class AbstractSpecificationFunctions {
+
+    private AbstractSpecificationFunctions() {}
+
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListYaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecificationList).FilterListYaml(abstractSpecificationList);
+    }
+
+    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> FilterListEyaml(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification> abstractSpecificationList) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecificationList).FilterListEyaml(abstractSpecificationList);
+    }
+
+    public static java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecification).CustomValues(abstractSpecification);
+    }
+
+    public static java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecification).FilterYaml(abstractSpecification);
+    }
+
+    public static java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.javamodel.IAbstractSpecification abstractSpecification) {
+      return DynamicResourceUtil.invoke(IAbstractSpecificationFunctionsImpl.class, AbstractSpecificationFunctionsImpl.INSTANCE, abstractSpecification).FilterEyaml(abstractSpecification);
+    }
+
+  }
+
+  public static interface IEnvironmentSpecificationsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6df44aea-5811-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterEyaml();
+
+  }
+  
+  public static interface IEnvironmentSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("6df44aea-5811-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications environmentSpecifications);
+
+  }
+  
+  public static class EnvironmentSpecificationsFunctionsImpl implements IEnvironmentSpecificationsFunctionsImpl {
+
+    public static final IEnvironmentSpecificationsFunctionsImpl INSTANCE = new EnvironmentSpecificationsFunctionsImpl();
+
+    private EnvironmentSpecificationsFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications environmentSpecifications) {
+      return true;
+    }
+
+  }
+  
+  public static class EnvironmentSpecificationsFunctions {
+
+    private EnvironmentSpecificationsFunctions() {}
+
+    public static java.lang.Boolean FilterEyaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.env.javamodel.IEnvironmentSpecifications environmentSpecifications) {
+      return DynamicResourceUtil.invoke(IEnvironmentSpecificationsFunctionsImpl.class, EnvironmentSpecificationsFunctionsImpl.INSTANCE, environmentSpecifications).FilterEyaml(environmentSpecifications);
+    }
+
+  }
+
+  public static interface IAbstractListOfSysCfgCategorySpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("32325ba5-580f-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml();
 
   }
   
   public static interface IAbstractListOfSysCfgCategorySpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("66b61ba4-0631-11f0-ad7c-c72b7a763977")
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList);
-
-    @IDynamicResourceExtension.MethodId("ed913d3a-0a5d-11f0-a414-9b52960625e5")
-    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification);
+    @IDynamicResourceExtension.MethodId("32325ba5-580f-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification);
 
   }
   
@@ -52,19 +184,12 @@ public class FunctionSpace_Puppet_Detailspecification {
     private AbstractListOfSysCfgCategorySpecificationFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList) {
-      /* Begin Protected Region [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
-    	return abstractListOfSysCfgCategorySpecificationList.stream().filter(x -> {
-    		final var sysCfg = x.extension(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.FunctionSpace_SysCfgSpec.IAbstractListOfSysCfgCategorySpecificationFunctions.class).SysCfg();
-			final var sysCfgFunc = sysCfg.extension(ISystemConfigurationFunctions.class);
-			return sysCfgFunc.IsDependsOnLinuxOrWindows() || sysCfg instanceof IOperatingSystemConfiguration;
-    	}).toList();
-      /* End Protected Region   [[66b61ba4-0631-11f0-ad7c-c72b7a763977]] */
-    }
-
-    @Override
-    public java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification) {
-      return null;
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification) {
+      /* Begin Protected Region [[32325ba5-580f-11f0-b941-05f03c57551d]] */
+		final var sysCfg = abstractListOfSysCfgCategorySpecification.extension(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.FunctionSpace_SysCfgSpec.IAbstractListOfSysCfgCategorySpecificationFunctions.class).SysCfg();
+		final var sysCfgFunc = sysCfg.extension(ISystemConfigurationFunctions.class);
+		return sysCfgFunc.IsDependsOnLinuxOrWindows() || sysCfg instanceof IOperatingSystemConfiguration;
+      /* End Protected Region   [[32325ba5-580f-11f0-b941-05f03c57551d]] */
     }
 
   }
@@ -73,12 +198,8 @@ public class FunctionSpace_Puppet_Detailspecification {
 
     private AbstractListOfSysCfgCategorySpecificationFunctions() {}
 
-    public static List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> Filter(final List<cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification> abstractListOfSysCfgCategorySpecificationList) {
-      return DynamicResourceUtil.invoke(IAbstractListOfSysCfgCategorySpecificationFunctionsImpl.class, AbstractListOfSysCfgCategorySpecificationFunctionsImpl.INSTANCE, abstractListOfSysCfgCategorySpecificationList).Filter(abstractListOfSysCfgCategorySpecificationList);
-    }
-
-    public static java.lang.String CustomValues(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification) {
-      return DynamicResourceUtil.invoke(IAbstractListOfSysCfgCategorySpecificationFunctionsImpl.class, AbstractListOfSysCfgCategorySpecificationFunctionsImpl.INSTANCE, abstractListOfSysCfgCategorySpecification).CustomValues(abstractListOfSysCfgCategorySpecification);
+    public static java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.javamodel.IAbstractListOfSysCfgCategorySpecification abstractListOfSysCfgCategorySpecification) {
+      return DynamicResourceUtil.invoke(IAbstractListOfSysCfgCategorySpecificationFunctionsImpl.class, AbstractListOfSysCfgCategorySpecificationFunctionsImpl.INSTANCE, abstractListOfSysCfgCategorySpecification).FilterYaml(abstractListOfSysCfgCategorySpecification);
     }
 
   }
@@ -130,6 +251,43 @@ public class FunctionSpace_Puppet_Detailspecification {
   public static class SiteSpecificationsFunctions {
 
     private SiteSpecificationsFunctions() {}
+
+  }
+
+  public static interface ISysCmpSpecificationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1fb18abc-5812-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml();
+
+  }
+  
+  public static interface ISysCmpSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("1fb18abc-5812-11f0-b941-05f03c57551d")
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.ISysCmpSpecification sysCmpSpecification);
+
+  }
+  
+  public static class SysCmpSpecificationFunctionsImpl implements ISysCmpSpecificationFunctionsImpl {
+
+    public static final ISysCmpSpecificationFunctionsImpl INSTANCE = new SysCmpSpecificationFunctionsImpl();
+
+    private SysCmpSpecificationFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.ISysCmpSpecification sysCmpSpecification) {
+      return false;
+    }
+
+  }
+  
+  public static class SysCmpSpecificationFunctions {
+
+    private SysCmpSpecificationFunctions() {}
+
+    public static java.lang.Boolean FilterYaml(final cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscmp.javamodel.ISysCmpSpecification sysCmpSpecification) {
+      return DynamicResourceUtil.invoke(ISysCmpSpecificationFunctionsImpl.class, SysCmpSpecificationFunctionsImpl.INSTANCE, sysCmpSpecification).FilterYaml(sysCmpSpecification);
+    }
 
   }
 
@@ -1821,4 +1979,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,mim9GUmeY3u1y2BIrT02/YUPsX8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,xGzg8goTMNARCO7MisXeuLjw5CI=] */

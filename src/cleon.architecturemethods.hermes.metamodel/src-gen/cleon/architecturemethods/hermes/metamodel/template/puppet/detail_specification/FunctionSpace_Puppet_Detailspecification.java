@@ -1954,8 +1954,14 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   public static interface ICertificateFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("1d5bd073-532f-11f0-9301-032f11813eba")
-    public java.lang.String GetSubjectAltNamesFromHost();
+    @IDynamicResourceExtension.MethodId("4f21144a-58dd-11f0-b941-05f03c57551d")
+    public java.lang.String CommonName();
+
+    @IDynamicResourceExtension.MethodId("70100504-58dd-11f0-b941-05f03c57551d")
+    public java.lang.String SubjectAltNames();
+
+    @IDynamicResourceExtension.MethodId("ed67e14c-58dd-11f0-b941-05f03c57551d")
+    public java.lang.String SubjectAltNamesFromHost();
 
   }
   
@@ -1979,4 +1985,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,xGzg8goTMNARCO7MisXeuLjw5CI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nXGQk9f5qonxuJiy7UVmeBi+Fa0=] */

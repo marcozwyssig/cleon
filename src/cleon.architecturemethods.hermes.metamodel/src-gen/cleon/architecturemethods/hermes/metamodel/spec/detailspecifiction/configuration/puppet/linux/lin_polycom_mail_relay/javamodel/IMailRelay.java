@@ -10,7 +10,7 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
   public java.lang.String selectSmtp_ehlo();
   
-  public java.lang.String selectAllowed_domains_content();
+  public java.util.List<java.lang.String> selectAllowed_domains_content();
   
   public java.lang.Integer selectVrrp_prio();
   
@@ -36,4 +36,4 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,gCKEmpef9HjYXLykNAcJ+kz52z0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,pV5v/EnAV7WbYjYA2+fkuAcdU8I=] */

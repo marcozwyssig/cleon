@@ -31,12 +31,12 @@ public class MailRelay extends DynamicResource implements IMailRelay {
   // attributes
   
   @Override
-  public java.lang.String selectAllowed_domains_content() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content);
+  public java.util.List<java.lang.String> selectAllowed_domains_content() {
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content);
   }
     
-  public void setAllowed_domains_content(java.lang.String allowed_domains_content) {
-     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content, allowed_domains_content);
+  public void setAllowed_domains_content(java.util.List<java.lang.String> allowed_domains_content) {
+     _setListAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content, allowed_domains_content);
   }
 
   @Override
@@ -287,7 +287,7 @@ public class MailRelay extends DynamicResource implements IMailRelay {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay.Lin_polycom_mail_relayPackage.MailRelay_allowed_aE_domains_aE_content, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_className, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -350,4 +350,4 @@ public class MailRelay extends DynamicResource implements IMailRelay {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,oI1a7/JW/rbgn55VClypSRmPphk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,gGgvFD+xsb1bJB7gYL3ZlUXnFt4=] */

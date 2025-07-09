@@ -9,6 +9,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
 import java.util.Arrays;
+import java.util.stream.Collectors;
+
 /* End Protected Region   [[f837c1a7-b936-11ee-a0d0-e953bcbfaeef,imports]] */
 
 public class FunctionSpace_Data_View {
@@ -88,10 +90,16 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("1b3b6de1-e140-11ee-9375-43bf1495bfd9")
     public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> CriteriaFields();
 
+    @IDynamicResourceExtension.MethodId("cda158a9-5cb3-11f0-941a-2501c6dfb162")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> AllPersistentTables();
+
   }
   
   public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("cda158a9-5cb3-11f0-941a-2501c6dfb162")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> AllPersistentTables(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> tableList);
+
   }
   
   public static class TableFunctionsImpl implements ITableFunctionsImpl {
@@ -100,11 +108,22 @@ public class FunctionSpace_Data_View {
 
     private TableFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> AllPersistentTables(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> tableList) {
+      /* Begin Protected Region [[cda158a9-5cb3-11f0-941a-2501c6dfb162]] */
+    	return tableList.stream().filter(x -> x.selectPersistent()).collect(Collectors.toList());
+      /* End Protected Region   [[cda158a9-5cb3-11f0-941a-2501c6dfb162]] */
+    }
+
   }
   
   public static class TableFunctions {
 
     private TableFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> AllPersistentTables(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> tableList) {
+      return DynamicResourceUtil.invoke(ITableFunctionsImpl.class, TableFunctionsImpl.INSTANCE, tableList).AllPersistentTables(tableList);
+    }
 
   }
 
@@ -708,4 +727,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,D8WMCk3EQvfsZ5gqxBSVFwS2P64=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,I7S2o3ggoBaxF6PxDQCUC9tOptE=] */

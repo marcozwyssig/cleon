@@ -2,13 +2,11 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration {
+public interface IMailRelay extends ch.actifsource.core.javamodel.INamedResource, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("5f117b05-4ce8-11f0-954b-b579526ae084");
   
   public java.lang.String selectSender_domain();
-  
-  public java.lang.String selectSmtp_ehlo();
   
   public java.util.List<java.lang.String> selectAllowed_domains_content();
   
@@ -36,4 +34,4 @@ public interface IMailRelay extends cleon.architecturemethods.hermes.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,pV5v/EnAV7WbYjYA2+fkuAcdU8I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f117b05-4ce8-11f0-954b-b579526ae084,t5rTjJGJcUuHcYuASQBxxBbfUkk=] */

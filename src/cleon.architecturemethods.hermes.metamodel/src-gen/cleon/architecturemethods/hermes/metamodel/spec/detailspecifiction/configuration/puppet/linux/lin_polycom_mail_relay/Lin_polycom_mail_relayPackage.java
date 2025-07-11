@@ -14,7 +14,6 @@ public class Lin_polycom_mail_relayPackage {
   public static final Resource MailRelay_allowed_aE_sources_aE_content = new Resource("2f42ead4-5357-11f0-9301-032f11813eba");
   public static final Resource MailRelay_allowed_aE_sources_aE_components = new Resource("c74a9887-5357-11f0-9301-032f11813eba");
   public static final Resource MailRelay_allowed_aE_source_aE_service = new Resource("49ee47a0-535a-11f0-9301-032f11813eba");
-  public static final Resource MailRelay_smtp_aE_ehlo = new Resource("4db963a2-535b-11f0-9301-032f11813eba");
   public static final Resource MailRelay_mail_aE_relay_aE_host = new Resource("ea158c8f-535d-11f0-9301-032f11813eba");
   public static final Resource MailRelay_internal_aE_certificate = new Resource("89505643-57eb-11f0-b941-05f03c57551d");
   public static final Resource MailRelay_external_aE_certificate = new Resource("ca210d79-57eb-11f0-b941-05f03c57551d");
@@ -42,4 +41,4 @@ public class Lin_polycom_mail_relayPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay,jqgT8AyoBGpr3oMYQo/XPKhTv4M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_mail_relay,9CBCa1GU9XFBXwD5iZLBJuSsjwk=] */

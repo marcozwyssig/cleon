@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="49daa1b0-5e43-11f0-a5db-972145eef50c">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="4bc5339f-5e43-11f0-a5db-972145eef50c" type="resource" guid="4bc50c8c-5e43-11f0-a5db-972145eef50c" />
+    <resource statement-guid="4ce01948-5e43-11f0-a5db-972145eef50c" type="resource" guid="4cdfa415-5e43-11f0-a5db-972145eef50c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="49dac8c2-5e43-11f0-a5db-972145eef50c" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="49dfaac4-5e43-11f0-a5db-972145eef50c" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="49dfaac3-5e43-11f0-a5db-972145eef50c" type="literal">WindowsCISProfileType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="4bc5339f-5e43-11f0-a5db-972145eef50c">
+      <resource guid="4bc50c8c-5e43-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4bc5339e-5e43-11f0-a5db-972145eef50c" type="resource" guid="49daa1b0-5e43-11f0-a5db-972145eef50c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4c294cbb-5e43-11f0-a5db-972145eef50c" type="literal">domain</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4ce01948-5e43-11f0-a5db-972145eef50c">
+      <resource guid="4cdfa415-5e43-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4cdfa417-5e43-11f0-a5db-972145eef50c" type="resource" guid="49daa1b0-5e43-11f0-a5db-972145eef50c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4d68350a-5e43-11f0-a5db-972145eef50c" type="literal">standalone</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f8fdf221-5e42-11f0-a5db-972145eef50c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="f16ff04d-5e43-11f0-a5db-972145eef50c" type="resource" guid="f16fc93a-5e43-11f0-a5db-972145eef50c" />
+    <resource statement-guid="faba0480-5e43-11f0-a5db-972145eef50c" type="resource" guid="fab9904a-5e43-11f0-a5db-972145eef50c" />
+    <resource statement-guid="0537698f-5e44-11f0-a5db-972145eef50c" type="resource" guid="0536f459-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="16fa882e-5e44-11f0-a5db-972145eef50c" type="resource" guid="16fa12f8-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="f8c4cf03-5e44-11f0-a5db-972145eef50c" type="resource" guid="f8c480dc-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="2776a7e8-5e44-11f0-a5db-972145eef50c" type="resource" guid="277659c1-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="3a08fd72-5e44-11f0-a5db-972145eef50c" type="resource" guid="3a08d65b-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="527e4834-5e44-11f0-a5db-972145eef50c" type="resource" guid="527dd2fd-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="5e0ef20e-5e44-11f0-a5db-972145eef50c" type="resource" guid="5e0ecaf7-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="6a08e408-5e44-11f0-a5db-972145eef50c" type="resource" guid="6a08bcf1-5e44-11f0-a5db-972145eef50c" />
+    <resource statement-guid="75212993-5e44-11f0-a5db-972145eef50c" type="resource" guid="7520b45c-5e44-11f0-a5db-972145eef50c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f8fe1933-5e42-11f0-a5db-972145eef50c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="05f0760c-5e43-11f0-a5db-972145eef50c" type="resource" guid="030fc40c-5e43-11f0-a5db-972145eef50c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f16ff04d-5e43-11f0-a5db-972145eef50c">
+      <resource guid="f16fc93a-5e43-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f16fc93c-5e43-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f3d3a9f8-5e43-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f1bbc66f-5e43-11f0-a5db-972145eef50c" type="literal">include_bitlocker</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="f4c228a9-5e43-11f0-a5db-972145eef50c" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f170657e-5e43-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="faba0480-5e43-11f0-a5db-972145eef50c">
+      <resource guid="fab9904a-5e43-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fab9904b-5e43-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fab9904e-5e43-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fab9904d-5e43-11f0-a5db-972145eef50c" type="literal">include_nextgen</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="fab9904f-5e43-11f0-a5db-972145eef50c" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="fab9904c-5e43-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0537698f-5e44-11f0-a5db-972145eef50c">
+      <resource guid="0536f459-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0536f45a-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0536f45d-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0536f45c-5e44-11f0-a5db-972145eef50c" type="literal">include_hkcu</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="0536f45e-5e44-11f0-a5db-972145eef50c" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0536f45b-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="16fa882e-5e44-11f0-a5db-972145eef50c">
+      <resource guid="16fa12f8-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="16fa12f9-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="16fa12fc-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="18fa4fe7-5e44-11f0-a5db-972145eef50c" type="literal">purge_unmanaged_users</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="2b56533a-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="16fa12fa-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="fe18a3c9-5e44-11f0-a5db-972145eef50c" type="literal">If unmanaged users should be purged. Requires users hash to be defined</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f8c4cf03-5e44-11f0-a5db-972145eef50c">
+      <resource guid="f8c480dc-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f8c480dd-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f8c480df-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f8c480e0-5e44-11f0-a5db-972145eef50c" type="literal">enable_administrator</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="f8c480e2-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f8c480de-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="f8c480e1-5e44-11f0-a5db-972145eef50c" type="literal">If the local adminsitrator account is enabled. Note that account must be renamed if enabled or not</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="2776a7e8-5e44-11f0-a5db-972145eef50c">
+      <resource guid="277659c1-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="277659c2-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="277659c4-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="29214ac1-5e44-11f0-a5db-972145eef50c" type="literal">enable_remote_desktop</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="277659c5-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="277659c3-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="4abf3fec-5e44-11f0-a5db-972145eef50c" type="literal">If true the RDP service will be enabled and firewall rule created (false)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3a08fd72-5e44-11f0-a5db-972145eef50c">
+      <resource guid="3a08d65b-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a08d65c-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a08d65e-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a08d661-5e44-11f0-a5db-972145eef50c" type="literal">remote_local_accounts</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="3a08d65f-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="3a08d65d-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="453d566b-5e44-11f0-a5db-972145eef50c" type="literal">If true and RDP is enabled, this allows local user accounts to connect remotely. Required if not domain joined (true)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="527e4834-5e44-11f0-a5db-972145eef50c">
+      <resource guid="527dd2fd-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="527dd2fe-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="527dd300-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="543f0b1d-5e44-11f0-a5db-972145eef50c" type="literal">performance_powerscheme</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="527dd301-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="527dd2ff-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="56d6cd06-5e44-11f0-a5db-972145eef50c" type="literal">If true, set the powerscheme to high performance to prevent sleep.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5e0ef20e-5e44-11f0-a5db-972145eef50c">
+      <resource guid="5e0ecaf7-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5e0ecaf8-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5e0ecafa-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5ffb7fe6-5e44-11f0-a5db-972145eef50c" type="literal">clear_temp_files</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="5e0ecafb-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5e0ecaf9-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="630d2bc0-5e44-11f0-a5db-972145eef50c" type="literal">If true clears user temp and system temp directories</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6a08e408-5e44-11f0-a5db-972145eef50c">
+      <resource guid="6a08bcf1-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a08bcf2-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a08bcf4-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6bf6f881-5e44-11f0-a5db-972145eef50c" type="literal">auto_restart</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="70c4380b-5e44-11f0-a5db-972145eef50c" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6a08bcf3-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="6ec2267a-5e44-11f0-a5db-972145eef50c" type="literal">If true, restarts the host at the end of the puppet run when registry local_security_policy changes occur (recommended)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="75212993-5e44-11f0-a5db-972145eef50c">
+      <resource guid="7520b45c-5e44-11f0-a5db-972145eef50c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7520b45d-5e44-11f0-a5db-972145eef50c" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7520b45f-5e44-11f0-a5db-972145eef50c" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7520b460-5e44-11f0-a5db-972145eef50c" type="literal">catalog_no_cache</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="7caf5ded-5e44-11f0-a5db-972145eef50c" type="literal">false</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7520b45e-5e44-11f0-a5db-972145eef50c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="79119dbc-5e44-11f0-a5db-972145eef50c" type="literal">Do not cache the puppet catalog on disk, as passwords and other values are in plain text</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f9028604-5e42-11f0-a5db-972145eef50c" type="literal">WindowsClientHardening</object>
+  </predicate>
+</resource>
+

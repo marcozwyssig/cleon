@@ -1983,6 +1983,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IWindowsClientHardeningFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("187ed413-5e43-11f0-a5db-972145eef50c")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("187efaf7-5e43-11f0-a5db-972145eef50c")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IWindowsClientHardeningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WindowsClientHardeningFunctionsImpl implements IWindowsClientHardeningFunctionsImpl {
+
+    public static final IWindowsClientHardeningFunctionsImpl INSTANCE = new WindowsClientHardeningFunctionsImpl();
+
+    private WindowsClientHardeningFunctionsImpl() {}
+
+  }
+  
+  public static class WindowsClientHardeningFunctions {
+
+    private WindowsClientHardeningFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nXGQk9f5qonxuJiy7UVmeBi+Fa0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,6WLlvtFspas2RccSaZ3zdfZa8ik=] */

@@ -41,11 +41,11 @@ public class TableMappingView extends DynamicResource implements ITableMappingVi
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> selectTables() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> selectTables() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables);
   }
 
-  public TableMappingView setTables(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> tables) {
+  public TableMappingView setTables(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> tables) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables, tables);
     return this;
   }
@@ -75,7 +75,7 @@ public class TableMappingView extends DynamicResource implements ITableMappingVi
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_enumerationValue, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -85,9 +85,9 @@ public class TableMappingView extends DynamicResource implements ITableMappingVi
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_enumerationValue, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView> selectToMeTables(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView> selectToMeTables(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableMappingView_tables, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fe7d7631-cffb-11ee-9bb8-5f4f5b483c01,Z1neJPiYg7JPbBcwzlOo0FfYtB0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fe7d7631-cffb-11ee-9bb8-5f4f5b483c01,6LiNuAyojMWysytzl/WCNkhi1Xg=] */

@@ -129,11 +129,11 @@ public class TableArea extends DynamicResource implements ITableArea {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> selectTables() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> selectTables() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables);
   }
 
-  public TableArea setTables(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable> tables) {
+  public TableArea setTables(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> tables) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables, tables);
     return this;
   }
@@ -171,14 +171,14 @@ public class TableArea extends DynamicResource implements ITableArea {
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_subviews, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view.javamodel.IView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_views, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea selectToMeTables(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITable object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea selectToMeTables(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.TableArea_tables, object.getResource());
   }
   
@@ -191,4 +191,4 @@ public class TableArea extends DynamicResource implements ITableArea {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,vY7QjyABvwlEIB2D3evlzqwB57Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,UdhHg/UKZkdgrgvRlf+ZDio0+s0=] */

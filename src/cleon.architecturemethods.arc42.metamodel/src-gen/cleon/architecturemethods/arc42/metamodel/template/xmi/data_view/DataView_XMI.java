@@ -74,7 +74,7 @@ public class DataView_XMI {
 
   }
 
-  public static interface ITableFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractTableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("50bfa312-2f0a-11f0-9f77-e70293d1379e")
     public java.lang.String RenderXMI();
@@ -84,21 +84,21 @@ public class DataView_XMI {
 
   }
   
-  public static interface ITableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TableFunctionsImpl implements ITableFunctionsImpl {
+  public static class AbstractTableFunctionsImpl implements IAbstractTableFunctionsImpl {
 
-    public static final ITableFunctionsImpl INSTANCE = new TableFunctionsImpl();
+    public static final IAbstractTableFunctionsImpl INSTANCE = new AbstractTableFunctionsImpl();
 
-    private TableFunctionsImpl() {}
+    private AbstractTableFunctionsImpl() {}
 
   }
   
-  public static class TableFunctions {
+  public static class AbstractTableFunctions {
 
-    private TableFunctions() {}
+    private AbstractTableFunctions() {}
 
   }
 
@@ -154,4 +154,4 @@ public class DataView_XMI {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,PSmstMCvmtzsL9IE1YQJB1S39AY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,HifOJOj4hD2Ewhu536AqP/yxiG0=] */

@@ -8,7 +8,7 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_PrimaryKey = new Resource("f98c2d64-b936-11ee-a0d0-e953bcbfaeef");
   public static final Resource FunctionSpace_aE_Data_aE_View_Literal = new Resource("3932bec0-b93b-11ee-a0d0-e953bcbfaeef");
   public static final Resource DatabaseView_scope = new Resource("b5670448-cf29-11ee-8c06-a5102392725a");
-  public static final Resource FunctionSpace_aE_Data_aE_View_Table = new Resource("d5b9ef6b-cf36-11ee-8c06-a5102392725a");
+  public static final Resource FunctionSpace_aE_Data_aE_View_AbstractTable = new Resource("d5b9ef6b-cf36-11ee-8c06-a5102392725a");
   public static final Resource EnumerationMappingView_tableMappingView = new Resource("07f50443-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource EnumerationMappingView = new Resource("8fa61b6b-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource DatabaseView_enumerationMappingView = new Resource("9d296d8a-cffc-11ee-9bb8-5f4f5b483c01");
@@ -36,6 +36,7 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_ColumnExpression = new Resource("0250f586-e14f-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_BooleanExpressionBase = new Resource("959efff1-e151-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_DataExpressionBase = new Resource("c9ff3eef-e152-11ee-9375-43bf1495bfd9");
+  public static final Resource FunctionSpace_aE_Data_aE_View_TableDatabase = new Resource("c6536dd5-5cce-11f0-97fc-b537e659b5f2");
   
   /* Begin Protected Region [[user]] */
   
@@ -56,4 +57,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,R4PsehAc//l2r9lLdioJl7GNrMw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,QFvdEAmsTTcqgLOYm2BjUqzROSA=] */

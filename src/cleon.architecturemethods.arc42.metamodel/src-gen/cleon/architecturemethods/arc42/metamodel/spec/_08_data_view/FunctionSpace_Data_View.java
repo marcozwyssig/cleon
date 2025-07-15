@@ -114,7 +114,7 @@ public class FunctionSpace_Data_View {
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> AllPersistentTables(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> abstractTableList) {
       /* Begin Protected Region [[cda158a9-5cb3-11f0-941a-2501c6dfb162]] */
-    	return tableList.stream().filter(x -> x.selectPersistent()).collect(Collectors.toList());
+    	return abstractTableList.stream().filter(x -> x.extension(IAbstractTableFunctions.class).IsPersistent()).collect(Collectors.toList());
       /* End Protected Region   [[cda158a9-5cb3-11f0-941a-2501c6dfb162]] */
     }
 

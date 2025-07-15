@@ -815,12 +815,18 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("a33db0f5-e51f-11ee-a074-d7afe74e4a27")
     public java.lang.String ElementName();
 
+    @IDynamicResourceExtension.MethodId("668a3cae-6187-11f0-a5b1-3724417002a5")
+    public java.lang.String RenderSpecificData();
+
   }
   
   public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("507f2375-d004-11ee-8ad8-7318f4718a69")
     public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable);
+
+    @IDynamicResourceExtension.MethodId("668a3cae-6187-11f0-a5b1-3724417002a5")
+    public java.lang.String RenderSpecificData(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable);
 
   }
   
@@ -833,11 +839,16 @@ public class FunctionSpace_Asciidoc_arc42 {
     @Override
     public java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable) {
       /* Begin Protected Region [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
-		if( table.selectHistory() == null) {
+		if( abstractTable.selectHistory() == null) {
 			return false;
 		}
-		return table.selectHistory(); 
+		return abstractTable.selectHistory(); 
       /* End Protected Region   [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
+    }
+
+    @Override
+    public java.lang.String RenderSpecificData(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable) {
+      return null;
     }
 
   }
@@ -848,6 +859,10 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     public static java.lang.Boolean IsHistoryNullFalseOrTrue(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable) {
       return DynamicResourceUtil.invoke(IAbstractTableFunctionsImpl.class, AbstractTableFunctionsImpl.INSTANCE, abstractTable).IsHistoryNullFalseOrTrue(abstractTable);
+    }
+
+    public static java.lang.String RenderSpecificData(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable abstractTable) {
+      return DynamicResourceUtil.invoke(IAbstractTableFunctionsImpl.class, AbstractTableFunctionsImpl.INSTANCE, abstractTable).RenderSpecificData(abstractTable);
     }
 
   }
@@ -1347,4 +1362,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,2A37BxdgexU15EMEh+SU3cu3i6U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Nmasm4+0x+QKWFNPUxxUe/03VQc=] */

@@ -1,0 +1,57 @@
+// Begin Protected Region [[meta-data]]
+
+// End Protected Region   [[meta-data]]
+
+:toc:
+
+[#cb488719-2661-11e6-ae54-e50d44645ae7]
+=== Domain Context
+[plantuml, png]
+....
+skinparam componentStyle uml2
+
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
+component Chess as "Chess" <<System>>
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_B -down-> Chess : interacts
+...
+The following table describes the actuators of the considered system.
+[cols="40%,60%", options="header"]
+|===
+|Actor | Description
+|Player A
+|
+|Player B
+|
+|===
+
+The following table describes the communication flows (Flows) between all participants and the system.
+[cols="15%,15%,20%,50%", options="header"]
+|===
+|From | To | Interaction | Description
+|Chess
+|Player A
+|gets
+|
+|Player A
+|Chess
+|interacts
+|
+|===
+The following table describes the communication flows (Flows) between all participants and the system.
+[cols="15%,15%,20%,50%", options="header"]
+|===
+|From | To | Interaction | Description
+|Player B
+|Chess
+|interacts
+|
+|===
+
+// Begin Protected Region [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,cb488719-2661-11e6-ae54-e50d44645ae7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,cb488719-2661-11e6-ae54-e50d44645ae7,656c9ixop7WKQ+6M6lAGke8cTME=]

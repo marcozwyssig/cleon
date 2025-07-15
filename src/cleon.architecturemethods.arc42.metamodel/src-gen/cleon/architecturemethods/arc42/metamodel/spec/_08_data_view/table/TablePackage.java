@@ -54,6 +54,7 @@ public class TablePackage {
   public static final Resource TableMappingView = new Resource("fe7d7631-cffb-11ee-9bb8-5f4f5b483c01");
   public static final Resource TableMappingView_enumerationValue = new Resource("1704c1ff-cffc-11ee-9bb8-5f4f5b483c01");
   public static final Resource TableMappingView_tables = new Resource("2be9b9d6-cffc-11ee-9bb8-5f4f5b483c01");
+  public static final Resource AbstractTable_history = new Resource("ae635a5d-d003-11ee-8ad8-7318f4718a69");
   public static final Resource TableArea_views = new Resource("eeb4c752-d0ca-11ee-a38e-0b82bafb3097");
   public static final Resource TableArea_subviews = new Resource("cdcc7d5d-e139-11ee-9375-43bf1495bfd9");
   public static final Resource TableDatabase = new Resource("09c7c28c-5cce-11f0-97fc-b537e659b5f2");
@@ -77,4 +78,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,gbtYIBPJbbwMqLo+Q5I3YNlLpMQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,dSD7NduY90CrAufNF0zzl/g3qXc=] */

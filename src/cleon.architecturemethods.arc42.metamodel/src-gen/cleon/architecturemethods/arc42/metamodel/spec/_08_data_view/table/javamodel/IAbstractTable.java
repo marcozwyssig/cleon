@@ -6,6 +6,8 @@ public interface IAbstractTable extends cleon.common.doc.metamodel.spec.chapter.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("09a46257-b934-11ee-a0d0-e953bcbfaeef");
   
+  public java.lang.Boolean selectHistory();
+  
   // relations
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectColumns();
@@ -16,4 +18,4 @@ public interface IAbstractTable extends cleon.common.doc.metamodel.spec.chapter.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,6Np1TAzVIUoNQ1txknTqohWlGG4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,jI+XzGeN2eW0uhFQbOWPM3BwVDM=] */

@@ -49,6 +49,15 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
   }
 
   @Override
+  public java.lang.Boolean selectHistory() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_history);
+  }
+    
+  public void setHistory(java.lang.Boolean history) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_history, history);
+  }
+
+  @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
@@ -174,6 +183,7 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_history, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -189,4 +199,4 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,09c7c28c-5cce-11f0-97fc-b537e659b5f2,tWcgjyrDz4kM0nAqF9j8udWycCg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,09c7c28c-5cce-11f0-97fc-b537e659b5f2,YTiI0xBvoyg+e4/qNJmytKQ5Yqs=] */

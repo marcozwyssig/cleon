@@ -1,0 +1,31 @@
+// Begin Protected Region [[meta-data]]
+
+// End Protected Region   [[meta-data]]
+
+:toc:
+
+[#d6de1d03-27f5-11e6-b263-9db62e053e59]
+=== Technical Context
+[plantuml, png]
+....
+skinparam componentStyle uml2
+
+component FTP as "FTP" <<ExternalSystem>>
+component Chess as "Chess" <<System>>
+FTP --> Chess : "verwendet"
+Chess --> FTP : "verwendet"
+...
+The following table describes the neighboring systems of the considered system.
+[cols="40%,60%", options="header"]
+|===
+|Neighboring System | Description
+|FTP
+a|
+dsfasdf
+|===
+
+// Begin Protected Region [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+// End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,d6de1d03-27f5-11e6-b263-9db62e053e59,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,d6de1d03-27f5-11e6-b263-9db62e053e59,4VZoYZURZKM0QoMkz0uLwgRrMVU=]

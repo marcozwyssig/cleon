@@ -96,6 +96,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("bcfe34ea-5cce-11f0-97fc-b537e659b5f2")
     public java.lang.Boolean IsPersistent();
 
+    @IDynamicResourceExtension.MethodId("d300e238-620e-11f0-8ed9-1d79caf8da43")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -767,4 +770,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,hUs2u1BEkzyAd5BwoQhPDUbTgiU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,8uF+qwwIhlS5OgC9t4zk9m+gkCU=] */

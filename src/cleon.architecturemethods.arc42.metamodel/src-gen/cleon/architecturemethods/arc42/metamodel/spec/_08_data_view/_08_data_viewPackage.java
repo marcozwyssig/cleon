@@ -37,6 +37,7 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_BooleanExpressionBase = new Resource("959efff1-e151-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_DataExpressionBase = new Resource("c9ff3eef-e152-11ee-9375-43bf1495bfd9");
   public static final Resource FunctionSpace_aE_Data_aE_View_TableDatabase = new Resource("c6536dd5-5cce-11f0-97fc-b537e659b5f2");
+  public static final Resource FunctionSpace_aE_Data_aE_View_AbstractTableRelation = new Resource("cd4d015c-6235-11f0-bad7-45c7bffc2eff");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +58,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,QFvdEAmsTTcqgLOYm2BjUqzROSA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,J6NnvvCV6JGpRLUyLZfdVn8GJ5U=] */

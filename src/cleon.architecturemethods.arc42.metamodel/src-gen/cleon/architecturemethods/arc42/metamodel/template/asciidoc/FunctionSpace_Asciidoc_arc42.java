@@ -1372,6 +1372,90 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IAbstractTableRelationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8e2a8f68-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Sign();
+
+    @IDynamicResourceExtension.MethodId("a1b9bb3a-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Cardinality();
+
+  }
+  
+  public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractTableRelationFunctionsImpl implements IAbstractTableRelationFunctionsImpl {
+
+    public static final IAbstractTableRelationFunctionsImpl INSTANCE = new AbstractTableRelationFunctionsImpl();
+
+    private AbstractTableRelationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractTableRelationFunctions {
+
+    private AbstractTableRelationFunctions() {}
+
+  }
+
+  public static interface ITableRelationOneToOneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b52532ab-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Sign();
+
+    @IDynamicResourceExtension.MethodId("b52532ad-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Cardinality();
+
+  }
+  
+  public static interface ITableRelationOneToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableRelationOneToOneFunctionsImpl implements ITableRelationOneToOneFunctionsImpl {
+
+    public static final ITableRelationOneToOneFunctionsImpl INSTANCE = new TableRelationOneToOneFunctionsImpl();
+
+    private TableRelationOneToOneFunctionsImpl() {}
+
+  }
+  
+  public static class TableRelationOneToOneFunctions {
+
+    private TableRelationOneToOneFunctions() {}
+
+  }
+
+  public static interface ITableRelationOneToManyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c1958e42-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Sign();
+
+    @IDynamicResourceExtension.MethodId("c1958e43-6243-11f0-bad7-45c7bffc2eff")
+    public java.lang.String Cardinality();
+
+  }
+  
+  public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableRelationOneToManyFunctionsImpl implements ITableRelationOneToManyFunctionsImpl {
+
+    public static final ITableRelationOneToManyFunctionsImpl INSTANCE = new TableRelationOneToManyFunctionsImpl();
+
+    private TableRelationOneToManyFunctionsImpl() {}
+
+  }
+  
+  public static class TableRelationOneToManyFunctions {
+
+    private TableRelationOneToManyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,w0N31xXIsppPH5hw2cBG2X69ujk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,2GgbBQVFd1ZV6f0d6+Zx8q+G3HA=] */

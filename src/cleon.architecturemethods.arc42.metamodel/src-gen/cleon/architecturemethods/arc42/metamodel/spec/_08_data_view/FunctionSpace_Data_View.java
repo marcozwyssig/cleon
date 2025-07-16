@@ -99,6 +99,15 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("d300e238-620e-11f0-8ed9-1d79caf8da43")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("3dd7954b-6236-11f0-bad7-45c7bffc2eff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> ToRelations();
+
+    @IDynamicResourceExtension.MethodId("d5ec1ec3-6237-11f0-bad7-45c7bffc2eff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> FromRelations();
+
+    @IDynamicResourceExtension.MethodId("a7abe9ac-6237-11f0-bad7-45c7bffc2eff")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> AllRelations();
+
   }
   
   public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -605,6 +614,9 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("de076a79-e138-11ee-b0cd-2573623ee439")
     public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> Tables();
 
+    @IDynamicResourceExtension.MethodId("0bf63a76-624f-11f0-884c-55717352a45e")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> AllRelations();
+
   }
   
   public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -768,6 +780,34 @@ public class FunctionSpace_Data_View {
 
   }
 
+  public static interface IAbstractTableRelationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cfbdb344-6235-11f0-bad7-45c7bffc2eff")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable FromTable();
+
+    @IDynamicResourceExtension.MethodId("e199ff57-6235-11f0-bad7-45c7bffc2eff")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable ToTable();
+
+  }
+  
+  public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractTableRelationFunctionsImpl implements IAbstractTableRelationFunctionsImpl {
+
+    public static final IAbstractTableRelationFunctionsImpl INSTANCE = new AbstractTableRelationFunctionsImpl();
+
+    private AbstractTableRelationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractTableRelationFunctions {
+
+    private AbstractTableRelationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,8uF+qwwIhlS5OgC9t4zk9m+gkCU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,xRPtjO0p64WByVljWu3+x0QRPCY=] */

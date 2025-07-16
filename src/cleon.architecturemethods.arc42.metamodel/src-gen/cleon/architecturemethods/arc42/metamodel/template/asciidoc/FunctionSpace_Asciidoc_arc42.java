@@ -818,6 +818,18 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("668a3cae-6187-11f0-a5b1-3724417002a5")
     public java.lang.String RenderSpecificData();
 
+    @IDynamicResourceExtension.MethodId("1b8f3346-6215-11f0-8ed9-1d79caf8da43")
+    public java.lang.String TableKey();
+
+    @IDynamicResourceExtension.MethodId("e8a64ab5-6216-11f0-8ed9-1d79caf8da43")
+    public java.lang.String BgColor();
+
+    @IDynamicResourceExtension.MethodId("9684ca0f-6217-11f0-8ed9-1d79caf8da43")
+    public java.lang.String IconColor();
+
+    @IDynamicResourceExtension.MethodId("179250f7-6217-11f0-8ed9-1d79caf8da43")
+    public java.lang.String IconType();
+
   }
   
   public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1362,4 +1374,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Nmasm4+0x+QKWFNPUxxUe/03VQc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,w0N31xXIsppPH5hw2cBG2X69ujk=] */

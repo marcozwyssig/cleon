@@ -70,6 +70,26 @@ public class Column extends DynamicResource implements IColumn {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectFromTableRelation() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation);
+  }
+
+  public Column setFromTableRelation(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> fromTableRelation) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, fromTableRelation);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectToTableRelation() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation);
+  }
+
+  public Column setToTableRelation(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> toTableRelation) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, toTableRelation);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.solution.datatype.generic.datatype.javamodel.IType selectType() {
     return _getSingle(ch.actifsource.solution.datatype.generic.datatype.javamodel.IType.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_type);
   }
@@ -108,6 +128,8 @@ public class Column extends DynamicResource implements IColumn {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_nullable, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.CommentAware_comment, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, visitor);
     _acceptSingle(ch.actifsource.solution.datatype.generic.datatype.javamodel.IType.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_valueRange, visitor);
@@ -123,5 +145,13 @@ public class Column extends DynamicResource implements IColumn {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_valueRange, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn selectToMeToTableRelation(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, object.getResource());
+  }
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectToMeFromTableRelation(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,at3xIjnS2uvbITwATdUZAe1DIZE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,bkoJEUPVahbUqOpl8e3LJahpxOk=] */

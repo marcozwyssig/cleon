@@ -58,6 +58,13 @@ public class TablePackage {
   public static final Resource TableArea_views = new Resource("eeb4c752-d0ca-11ee-a38e-0b82bafb3097");
   public static final Resource TableArea_subviews = new Resource("cdcc7d5d-e139-11ee-9375-43bf1495bfd9");
   public static final Resource TableDatabase = new Resource("09c7c28c-5cce-11f0-97fc-b537e659b5f2");
+  public static final Resource AbstractTableRelation = new Resource("6fc728b3-621a-11f0-8ed9-1d79caf8da43");
+  public static final Resource Column_toTableRelation = new Resource("7c44f14d-621a-11f0-8ed9-1d79caf8da43");
+  public static final Resource AbstractTableRelation_toTable = new Resource("8c937142-621a-11f0-8ed9-1d79caf8da43");
+  public static final Resource AbstractTableRelation_foreignKey = new Resource("b3e47cc2-621b-11f0-8ed9-1d79caf8da43");
+  public static final Resource TableRelationOneToMany = new Resource("4d1683b4-621d-11f0-8ed9-1d79caf8da43");
+  public static final Resource TableRelationOneToOne = new Resource("8bed3e48-621d-11f0-8ed9-1d79caf8da43");
+  public static final Resource Column_fromTableRelation = new Resource("719f0982-6227-11f0-bad7-45c7bffc2eff");
   
   /* Begin Protected Region [[user]] */
   
@@ -78,4 +85,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,dSD7NduY90CrAufNF0zzl/g3qXc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,0pJZiyGbQ8jxO6HidAAp1r0JcBo=] */

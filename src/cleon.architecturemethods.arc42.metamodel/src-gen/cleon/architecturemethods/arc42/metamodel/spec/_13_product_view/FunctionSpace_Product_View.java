@@ -23,6 +23,9 @@ public class FunctionSpace_Product_View {
     @IDynamicResourceExtension.MethodId("cb8d85f7-112f-11f0-a4f9-b5f995a9e0fe")
     public java.lang.String ProductName();
 
+    @IDynamicResourceExtension.MethodId("fb38168a-6283-11f0-a79f-f7e43eed110b")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IProductVariantFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -45,4 +48,4 @@ public class FunctionSpace_Product_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c7ff55e1-112f-11f0-a4f9-b5f995a9e0fe,/3jV6uLOtwLAGYt9lrKVoly9RCY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c7ff55e1-112f-11f0-a4f9-b5f995a9e0fe,N1sEGqW3wwXHVRh5Ls48JQJS72E=] */

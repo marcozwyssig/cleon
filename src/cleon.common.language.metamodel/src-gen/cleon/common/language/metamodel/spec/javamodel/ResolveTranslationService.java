@@ -139,7 +139,6 @@ public class ResolveTranslationService {
 		if( languageClass == null) {
 			Logger.instance().logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()));
 			if( whenNotLanguageClass == null) {
-				Logger.instance().logInfo("Execute simpleName.");
 				return Select.simpleName(resource.getReadJobExecutor(), resource.getResource());				
 			} else {
 				Logger.instance().logInfo("Execute whenNotLanguageClass lambda.");				

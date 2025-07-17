@@ -459,6 +459,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7")
     public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan Vlan();
 
+    @IDynamicResourceExtension.MethodId("22dd1fa3-6283-11f0-a79f-f7e43eed110b")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -499,4 +502,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,iGRsZ3qFP95/RSikS+ECFlGleAE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,3m0/kkiAtJePq4VUSFJ5jg+usWs=] */

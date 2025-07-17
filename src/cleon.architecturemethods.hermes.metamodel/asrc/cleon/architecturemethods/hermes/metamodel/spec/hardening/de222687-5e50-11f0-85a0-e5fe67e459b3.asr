@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="de222687-5e50-11f0-85a0-e5fe67e459b3">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e6c4630b-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="e6c414e5-5e50-11f0-85a0-e5fe67e459b3" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de222689-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de2274ab-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e6c4630b-5e50-11f0-85a0-e5fe67e459b3">
+      <resource guid="e6c414e5-5e50-11f0-85a0-e5fe67e459b3">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6c43bf8-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6c43bf9-5e50-11f0-85a0-e5fe67e459b3" type="literal">rule</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e6c48a1e-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e6c4b12f-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="e6c4b130-5e50-11f0-85a0-e5fe67e459b3" type="resource" guid="e25ee679-5e50-11f0-85a0-e5fe67e459b3" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de2274aa-5e50-11f0-85a0-e5fe67e459b3" type="literal">Rules</object>
+  </predicate>
+</resource>
+

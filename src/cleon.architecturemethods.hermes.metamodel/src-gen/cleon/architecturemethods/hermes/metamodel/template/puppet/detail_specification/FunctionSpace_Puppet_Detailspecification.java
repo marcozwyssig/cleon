@@ -823,7 +823,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IHardeningFunctions extends IDynamicResourceExtension {
+  public static interface IRemoteDesktopHardeningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d1d89aee-108a-11f0-b378-11a495632127")
     public java.lang.String ClassDefinition();
@@ -833,21 +833,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IHardeningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRemoteDesktopHardeningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class HardeningFunctionsImpl implements IHardeningFunctionsImpl {
+  public static class RemoteDesktopHardeningFunctionsImpl implements IRemoteDesktopHardeningFunctionsImpl {
 
-    public static final IHardeningFunctionsImpl INSTANCE = new HardeningFunctionsImpl();
+    public static final IRemoteDesktopHardeningFunctionsImpl INSTANCE = new RemoteDesktopHardeningFunctionsImpl();
 
-    private HardeningFunctionsImpl() {}
+    private RemoteDesktopHardeningFunctionsImpl() {}
 
   }
   
-  public static class HardeningFunctions {
+  public static class RemoteDesktopHardeningFunctions {
 
-    private HardeningFunctions() {}
+    private RemoteDesktopHardeningFunctions() {}
 
   }
 
@@ -1991,6 +1991,9 @@ public class FunctionSpace_Puppet_Detailspecification {
     @IDynamicResourceExtension.MethodId("187efaf7-5e43-11f0-a5db-972145eef50c")
     public java.lang.String ClassImplementation();
 
+    @IDynamicResourceExtension.MethodId("0bbbc8e1-5e61-11f0-85a0-e5fe67e459b3")
+    public java.lang.String CisHardeningModule();
+
   }
   
   public static interface IWindowsClientHardeningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -2013,4 +2016,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,6WLlvtFspas2RccSaZ3zdfZa8ik=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,gi7Jiv9rpAh4hYji2TCT5uM8z+A=] */

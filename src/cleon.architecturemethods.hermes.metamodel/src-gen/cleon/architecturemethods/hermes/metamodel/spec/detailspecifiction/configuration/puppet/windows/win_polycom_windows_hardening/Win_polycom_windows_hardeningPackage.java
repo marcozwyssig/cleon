@@ -25,6 +25,8 @@ public class Win_polycom_windows_hardeningPackage {
   public static final Resource WindowsClientHardening_auto_aE_restart = new Resource("6a08bcf1-5e44-11f0-a5db-972145eef50c");
   public static final Resource WindowsClientHardening_catalog_aE_no_aE_cache = new Resource("7520b45c-5e44-11f0-a5db-972145eef50c");
   public static final Resource WindowsClientHardening_enable_aE_administrator = new Resource("f8c480dc-5e44-11f0-a5db-972145eef50c");
+  public static final Resource Rule = new Resource("8efaac94-5e51-11f0-85a0-e5fe67e459b3");
+  public static final Resource AbstractWindowsHardening_except_aE_rules = new Resource("95157a7d-5e51-11f0-85a0-e5fe67e459b3");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +47,4 @@ public class Win_polycom_windows_hardeningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_windows_hardening,bYGu8hxw830H55QW3g9ux90W0yo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_windows_hardening,D2GQMWTWos4p6sYLUdEkbC/pzuI=] */

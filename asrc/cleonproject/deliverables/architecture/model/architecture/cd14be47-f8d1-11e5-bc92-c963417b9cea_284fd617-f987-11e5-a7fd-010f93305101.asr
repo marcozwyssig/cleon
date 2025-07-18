@@ -552,6 +552,7 @@
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
         <resource statement-guid="1be5a485-5e4e-11f0-a5db-972145eef50c" type="resource" guid="1be3cfc2-5e4e-11f0-a5db-972145eef50c" />
         <resource statement-guid="1bf3602a-5e4e-11f0-a5db-972145eef50c" type="resource" guid="1bf36027-5e4e-11f0-a5db-972145eef50c" />
+        <resource statement-guid="5ee12c60-631a-11f0-8f89-fba3b99d3616" type="resource" guid="5ee0b72d-631a-11f0-8f89-fba3b99d3616" />
       </owns>
     </resource>
   </owns>
@@ -6058,6 +6059,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="1bf3602b-5e4e-11f0-a5db-972145eef50c" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_windows_hardening</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="5ee12c60-631a-11f0-8f89-fba3b99d3616">
+            <resource guid="5ee0b72d-631a-11f0-8f89-fba3b99d3616">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="5ee0b72f-631a-11f0-8f89-fba3b99d3616" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="5ee1a191-631a-11f0-8f89-fba3b99d3616" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup</object>
               </predicate>
             </resource>
           </object>

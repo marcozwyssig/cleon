@@ -48,6 +48,9 @@ public class FunctionSpace_win_polycom_manage_netdrives {
     @IDynamicResourceExtension.MethodId("404ca810-07f6-11f0-bc12-1bbda1d7028e")
     public java.lang.String ShareName();
 
+    @IDynamicResourceExtension.MethodId("b8f11789-631b-11f0-8f89-fba3b99d3616")
+    public java.lang.String FullShareName();
+
   }
   
   public static interface INSShareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -126,4 +129,4 @@ public class FunctionSpace_win_polycom_manage_netdrives {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39a2b94c-07f6-11f0-bc12-1bbda1d7028e,XoumU07ehCcJbID9bZxTgG+/Sjg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39a2b94c-07f6-11f0-bc12-1bbda1d7028e,8+K+RubzCXteF+8NCzojgIsn7Mc=] */

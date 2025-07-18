@@ -43,6 +43,7 @@ public class Win_polycom_manage_netdrivesPackage {
   public static final Resource DfsRootShare_fullPath = new Resource("2a0e0e1e-0808-11f0-8081-eb3f9417daa7");
   public static final Resource DfsRootShare_dfs = new Resource("49e61d8b-09ba-11f0-a60c-fbc7f025fc6c");
   public static final Resource AbstractShare_changeAccess = new Resource("5836b506-0a7f-11f0-95dd-6bc1800a1490");
+  public static final Resource NSShare_fullShareName = new Resource("8a182460-631b-11f0-8f89-fba3b99d3616");
   
   /* Begin Protected Region [[user]] */
   
@@ -63,4 +64,4 @@ public class Win_polycom_manage_netdrivesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives,sroB14QCykb9IlMVlREXLybFxTg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives,+QXjCRNTeXmwMQe/+5HwqN4uoNc=] */

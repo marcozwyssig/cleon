@@ -2014,6 +2014,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IScheduledBackupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a7997e6a-6316-11f0-a7ee-fba3b99d3616")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("a7997e6d-6316-11f0-a7ee-fba3b99d3616")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IScheduledBackupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ScheduledBackupFunctionsImpl implements IScheduledBackupFunctionsImpl {
+
+    public static final IScheduledBackupFunctionsImpl INSTANCE = new ScheduledBackupFunctionsImpl();
+
+    private ScheduledBackupFunctionsImpl() {}
+
+  }
+  
+  public static class ScheduledBackupFunctions {
+
+    private ScheduledBackupFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,gi7Jiv9rpAh4hYji2TCT5uM8z+A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,5Zxi0ZcndDlrf7Q9LxgwrtumVlw=] */

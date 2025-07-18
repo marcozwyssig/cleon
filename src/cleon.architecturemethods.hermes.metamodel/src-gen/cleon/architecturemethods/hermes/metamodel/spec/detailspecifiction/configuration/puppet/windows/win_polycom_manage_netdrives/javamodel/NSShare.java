@@ -31,6 +31,15 @@ public class NSShare extends DynamicResource implements INSShare {
   // attributes
   
   @Override
+  public java.lang.String selectFullShareName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_fullShareName);
+  }
+    
+  public void setFullShareName(java.lang.String fullShareName) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_fullShareName, fullShareName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_name);
   }
@@ -84,6 +93,7 @@ public class NSShare extends DynamicResource implements INSShare {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_fullShareName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.Win_polycom_manage_netdrivesPackage.NSShare_shareName, visitor);
     // relations
@@ -98,4 +108,4 @@ public class NSShare extends DynamicResource implements INSShare {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5fcf2c59-07f5-11f0-bc12-1bbda1d7028e,yZ+ztoF9F/uCcWLAI7qkIkdGgSE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5fcf2c59-07f5-11f0-bc12-1bbda1d7028e,AfW78e5T3hXPGzMP5UohPNZxW7s=] */

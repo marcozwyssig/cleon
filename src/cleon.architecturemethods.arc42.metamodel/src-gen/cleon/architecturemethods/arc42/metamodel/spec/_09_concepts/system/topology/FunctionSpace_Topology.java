@@ -377,6 +377,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("700c9e69-2a4f-11eb-903e-7d97d99d39d5")
     public java.lang.String FQDNAliasOrHostname();
 
+    @IDynamicResourceExtension.MethodId("dd98a3a9-6310-11f0-a7ee-fba3b99d3616")
+    public java.lang.String FQDNHostname();
+
     @IDynamicResourceExtension.MethodId("a9c28f3e-86fe-11ef-a98e-25ff78c32832")
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode NetworkHostNode();
 
@@ -1253,4 +1256,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,MqJ2tiEI6LYrcf2j7a4wskkGNmc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,lrQYtJoIm7uv+NdMSpP6XgxdpRw=] */

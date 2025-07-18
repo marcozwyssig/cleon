@@ -10,10 +10,12 @@ public interface INSShare extends ch.actifsource.core.javamodel.IResource, ch.ac
   
   public java.lang.String selectShareName();
   
+  public java.lang.String selectFullShareName();
+  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IShare selectShare();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5fcf2c59-07f5-11f0-bc12-1bbda1d7028e,/UXYkUdMZhvY++sRC+VZERTKghs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5fcf2c59-07f5-11f0-bc12-1bbda1d7028e,yM5tj2qnMvRSxCD0KyBmrL/aW6k=] */

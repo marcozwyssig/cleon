@@ -57,6 +57,15 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.String selectNoChapterPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath);
+  }
+    
+  public void setNoChapterPath(java.lang.String noChapterPath) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
+  }
+
   // relations
   
   @Override
@@ -133,7 +142,6 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -155,4 +163,4 @@ public class DNSConcept extends DynamicResource implements IDNSConcept {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,jUFsKrLCm0gRm9POxC5Eu9x2L3w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1475e2c0-c7b9-11ec-a6a4-0b12dcfbdf90,iD68RiRrB7MwPwxstCpmtVQDyLQ=] */

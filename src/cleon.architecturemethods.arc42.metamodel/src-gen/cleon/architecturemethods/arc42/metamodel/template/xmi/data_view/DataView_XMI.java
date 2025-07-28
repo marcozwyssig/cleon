@@ -152,6 +152,34 @@ public class DataView_XMI {
 
   }
 
+  public static interface IAbstractTableRelationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("46f907c7-6708-11f0-8771-c3f8175f9d05")
+    public java.lang.String Id();
+
+    @IDynamicResourceExtension.MethodId("65d2abdd-6708-11f0-8771-c3f8175f9d05")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractTableRelationFunctionsImpl implements IAbstractTableRelationFunctionsImpl {
+
+    public static final IAbstractTableRelationFunctionsImpl INSTANCE = new AbstractTableRelationFunctionsImpl();
+
+    private AbstractTableRelationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractTableRelationFunctions {
+
+    private AbstractTableRelationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,HifOJOj4hD2Ewhu536AqP/yxiG0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,DUXpTZB/HNNPz4eLpy8iOesy4fo=] */

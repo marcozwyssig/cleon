@@ -785,6 +785,12 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("cfbdb344-6235-11f0-bad7-45c7bffc2eff")
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable FromTable();
 
+    @IDynamicResourceExtension.MethodId("715a9135-670a-11f0-8771-c3f8175f9d05")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn SourceColumn();
+
+    @IDynamicResourceExtension.MethodId("90566461-670a-11f0-8771-c3f8175f9d05")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn DestinationColumn();
+
     @IDynamicResourceExtension.MethodId("e199ff57-6235-11f0-bad7-45c7bffc2eff")
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable ToTable();
 
@@ -810,4 +816,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,xRPtjO0p64WByVljWu3+x0QRPCY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,31KwI1IT62SFz+7dVNBOB7tVcxI=] */

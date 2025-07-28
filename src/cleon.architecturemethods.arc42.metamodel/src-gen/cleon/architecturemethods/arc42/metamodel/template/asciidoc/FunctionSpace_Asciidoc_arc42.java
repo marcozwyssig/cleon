@@ -1377,9 +1377,6 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("8e2a8f68-6243-11f0-bad7-45c7bffc2eff")
     public java.lang.String Sign();
 
-    @IDynamicResourceExtension.MethodId("a1b9bb3a-6243-11f0-bad7-45c7bffc2eff")
-    public java.lang.String Cardinality();
-
   }
   
   public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1404,9 +1401,6 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     @IDynamicResourceExtension.MethodId("b52532ab-6243-11f0-bad7-45c7bffc2eff")
     public java.lang.String Sign();
-
-    @IDynamicResourceExtension.MethodId("b52532ad-6243-11f0-bad7-45c7bffc2eff")
-    public java.lang.String Cardinality();
 
   }
   
@@ -1433,9 +1427,6 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("c1958e42-6243-11f0-bad7-45c7bffc2eff")
     public java.lang.String Sign();
 
-    @IDynamicResourceExtension.MethodId("c1958e43-6243-11f0-bad7-45c7bffc2eff")
-    public java.lang.String Cardinality();
-
   }
   
   public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1458,4 +1449,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,2GgbBQVFd1ZV6f0d6+Zx8q+G3HA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,ZH/deZTqTQDAlryJ7fwIBTB7UI0=] */

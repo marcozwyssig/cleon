@@ -2,6 +2,7 @@ package cleon.common.resources.metamodel.spec.literals;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
+
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
@@ -11,6 +12,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.UUID;
+
 /* End Protected Region   [[687a9337-070f-11ec-a1d2-b10f798ffb28,imports]] */
 
 public class GuidFunctionSpace {
@@ -34,6 +37,9 @@ public class GuidFunctionSpace {
     @IDynamicResourceExtension.MethodId("b0b664fa-2f14-11f0-9f77-e70293d1379e")
     public java.lang.String hyphensToUnderscore();
 
+    @IDynamicResourceExtension.MethodId("2460f500-6b8d-11f0-8c6a-09245c78ab92")
+    public java.util.UUID combine(final java.util.UUID guid2);
+
   }
   
   public static interface IGuidFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -49,6 +55,9 @@ public class GuidFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("b0b664fa-2f14-11f0-9f77-e70293d1379e")
     public java.lang.String hyphensToUnderscore(final java.util.UUID guid);
+
+    @IDynamicResourceExtension.MethodId("2460f500-6b8d-11f0-8c6a-09245c78ab92")
+    public java.util.UUID combine(final java.util.UUID guid2, final java.util.UUID guid);
 
   }
   
@@ -96,6 +105,16 @@ public class GuidFunctionSpace {
       /* End Protected Region   [[b0b664fa-2f14-11f0-9f77-e70293d1379e]] */
     }
 
+    @Override
+    public java.util.UUID combine(final java.util.UUID guid2, final java.util.UUID guid) {
+      /* Begin Protected Region [[2460f500-6b8d-11f0-8c6a-09245c78ab92]] */
+    	// Concatenate the string representations of the two UUIDs
+        String combined = guid2.toString() + guid.toString();
+        // Generate a version 5 UUID using SHA-1 hash of the combined string
+        return UUID.nameUUIDFromBytes(combined.getBytes(StandardCharsets.UTF_8));   
+      /* End Protected Region   [[2460f500-6b8d-11f0-8c6a-09245c78ab92]] */
+    }
+
   }
   
   public static class GuidFunctions {
@@ -115,6 +134,10 @@ public class GuidFunctionSpace {
 
     public static java.lang.String hyphensToUnderscore(final java.util.UUID guid) {
       return DynamicResourceUtil.invoke(IGuidFunctionsImpl.class, GuidFunctionsImpl.INSTANCE, guid).hyphensToUnderscore(guid);
+    }
+
+    public static java.util.UUID combine(final java.util.UUID guid2, final java.util.UUID guid) {
+      return DynamicResourceUtil.invoke(IGuidFunctionsImpl.class, GuidFunctionsImpl.INSTANCE, guid).combine(guid2, guid);
     }
 
   }
@@ -160,4 +183,4 @@ public class GuidFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,687a9337-070f-11ec-a1d2-b10f798ffb28,5WMd8kvPtDnSY7zi2Gzd6N6ywyo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,687a9337-070f-11ec-a1d2-b10f798ffb28,wACFIP9KXHgSPYMBumIzKV5QMWQ=] */

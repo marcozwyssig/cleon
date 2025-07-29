@@ -54,6 +54,9 @@ public class DataView_XMI {
     @IDynamicResourceExtension.MethodId("24710340-2f15-11f0-9f77-e70293d1379e")
     public java.lang.String Id();
 
+    @IDynamicResourceExtension.MethodId("686f8343-6c4f-11f0-9a54-8beabbd05ae8")
+    public java.lang.String DiagramId();
+
   }
   
   public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -160,6 +163,9 @@ public class DataView_XMI {
     @IDynamicResourceExtension.MethodId("65d2abdd-6708-11f0-8771-c3f8175f9d05")
     public java.lang.String Name();
 
+    @IDynamicResourceExtension.MethodId("b6693709-6c4f-11f0-9a54-8beabbd05ae8")
+    public java.lang.String RenderXmi();
+
   }
   
   public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -180,6 +186,56 @@ public class DataView_XMI {
 
   }
 
+  public static interface ITableRelationOneToOneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e3c6110d-6c4f-11f0-9a54-8beabbd05ae8")
+    public java.lang.String RenderXmi();
+
+  }
+  
+  public static interface ITableRelationOneToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableRelationOneToOneFunctionsImpl implements ITableRelationOneToOneFunctionsImpl {
+
+    public static final ITableRelationOneToOneFunctionsImpl INSTANCE = new TableRelationOneToOneFunctionsImpl();
+
+    private TableRelationOneToOneFunctionsImpl() {}
+
+  }
+  
+  public static class TableRelationOneToOneFunctions {
+
+    private TableRelationOneToOneFunctions() {}
+
+  }
+
+  public static interface ITableRelationOneToManyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ef6f9a8d-6c4f-11f0-9a54-8beabbd05ae8")
+    public java.lang.String RenderXmi();
+
+  }
+  
+  public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TableRelationOneToManyFunctionsImpl implements ITableRelationOneToManyFunctionsImpl {
+
+    public static final ITableRelationOneToManyFunctionsImpl INSTANCE = new TableRelationOneToManyFunctionsImpl();
+
+    private TableRelationOneToManyFunctionsImpl() {}
+
+  }
+  
+  public static class TableRelationOneToManyFunctions {
+
+    private TableRelationOneToManyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,DUXpTZB/HNNPz4eLpy8iOesy4fo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,tOcVszsLkpBATzamlb9Oa9QLeT8=] */

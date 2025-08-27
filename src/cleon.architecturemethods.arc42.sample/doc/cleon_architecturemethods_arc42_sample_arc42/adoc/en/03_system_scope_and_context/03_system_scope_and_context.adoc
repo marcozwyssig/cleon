@@ -7,7 +7,6 @@
 [#bfc8585e-2661-11e6-ae54-e50d44645ae7]
 == System Scope and Context
 In this chapter, the context of the considered system (Chess) is outlined.
-
 // Begin Protected Region [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
 
 // End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
@@ -25,6 +24,7 @@ Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
 Player__F_B -down-> Chess : interacts
 ...
+
 The following table describes the actuators of the considered system.
 [cols="40%,60%", options="header"]
 |===
@@ -57,7 +57,6 @@ The following table describes the communication flows (Flows) between all partic
 |interacts
 |
 |===
-
 // Begin Protected Region [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
 
 // End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
@@ -73,6 +72,7 @@ component Chess as "Chess" <<System>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ...
+
 The following table describes the neighboring systems of the considered system.
 [cols="40%,60%", options="header"]
 |===
@@ -81,9 +81,8 @@ The following table describes the neighboring systems of the considered system.
 a|
 dsfasdf
 |===
-
 // Begin Protected Region [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
 // End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,yPnAG9uNOyS7x7MYOxyv/ESUfCo=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,n5Pf5OBxNPOkDgpDTEOV8ZQFSnI=]

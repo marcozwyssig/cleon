@@ -237,6 +237,12 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("889d84ac-d882-11e4-a5d6-b92b0ce88839")
     public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("69286203-834d-11f0-9395-9500999697a1")
+    public java.lang.String DotCount();
+
+    @IDynamicResourceExtension.MethodId("6bef7132-834d-11f0-9395-9500999697a1")
+    public cleon.common.doc.metamodel.spec.paragraph.javamodel.INumberedList ParentNumberedList();
+
   }
   
   public static interface INumberedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1097,4 +1103,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,4+lrVzBvs8+r1Hc0HOKmTjd+ThU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,aUJ0VZRyKLVpprg8+OZqYVW5Y1k=] */

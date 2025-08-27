@@ -7,7 +7,6 @@
 [#bfc8585e-2661-11e6-ae54-e50d44645ae7]
 == Kontextabgrenzung
 In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
-
 // Begin Protected Region [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
 
 // End Protected Region   [[bfc8585e-2661-11e6-ae54-e50d44645ae7,customText]]
@@ -25,6 +24,7 @@ Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
 Player__F_B -down-> Chess : interacts
 ...
+
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
 [cols="40%,60%", options="header"]
 |===
@@ -57,7 +57,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 |interacts
 |
 |===
-
 // Begin Protected Region [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
 
 // End Protected Region   [[cb488719-2661-11e6-ae54-e50d44645ae7,customText]]
@@ -73,6 +72,7 @@ component Chess as "Chess" <<System>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ...
+
 Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
 [cols="40%,60%", options="header"]
 |===
@@ -81,9 +81,8 @@ Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System
 a|
 dsfasdf
 |===
-
 // Begin Protected Region [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
 // End Protected Region   [[d6de1d03-27f5-11e6-b263-9db62e053e59,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,TKVcehKeul9NE4ViKMh7e08mfak=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,bfc8585e-2661-11e6-ae54-e50d44645ae7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,bfc8585e-2661-11e6-ae54-e50d44645ae7,YPHpsXgqi2qUEJSUzRm53ZPWWPA=]

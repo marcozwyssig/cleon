@@ -24,6 +24,8 @@ public class _13_product_viewPackage {
   public static final Resource ProductOptions_version = new Resource("26e81c1c-df09-11ef-b7b6-ed2cdfbf6428");
   public static final Resource ProductVariant_productName = new Resource("b8b23ffa-112f-11f0-a4f9-b5f995a9e0fe");
   public static final Resource FunctionSpace_aE_Product_aE_View_ProductVariant = new Resource("c9acb7bb-112f-11f0-a4f9-b5f995a9e0fe");
+  public static final Resource Manufactor_iana = new Resource("5aa110c6-8351-11f0-9395-9500999697a1");
+  public static final Resource FunctionSpace_aE_Product_aE_View_Manufactor = new Resource("9a9326fa-8351-11f0-9395-9500999697a1");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +46,4 @@ public class _13_product_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,5Zt7MfVocMdozBnGPKkiZ5X99yM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,NEjkcZ+CwB0jF68zGV0DKeX2X2Y=] */

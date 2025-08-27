@@ -46,6 +46,31 @@ public class FunctionSpace_Product_View {
 
   }
 
+  public static interface IManufactorFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a16ab59b-8351-11f0-9395-9500999697a1")
+    public java.lang.String ShortNameOrName();
+
+  }
+  
+  public static interface IManufactorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ManufactorFunctionsImpl implements IManufactorFunctionsImpl {
+
+    public static final IManufactorFunctionsImpl INSTANCE = new ManufactorFunctionsImpl();
+
+    private ManufactorFunctionsImpl() {}
+
+  }
+  
+  public static class ManufactorFunctions {
+
+    private ManufactorFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c7ff55e1-112f-11f0-a4f9-b5f995a9e0fe,N1sEGqW3wwXHVRh5Ls48JQJS72E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c7ff55e1-112f-11f0-a4f9-b5f995a9e0fe,KlXdvdyly7Wfp+lE+wY/9j/xBfE=] */

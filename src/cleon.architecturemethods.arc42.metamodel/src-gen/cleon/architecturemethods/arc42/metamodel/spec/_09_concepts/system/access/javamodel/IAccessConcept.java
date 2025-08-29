@@ -8,10 +8,12 @@ public interface IAccessConcept extends cleon.architecturemethods.arc42.metamode
   
   // relations
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> selectSystemConfigurationForRemoting();
+  
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessCommunicationType> selectAccessCommunicationType();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom> selectAccessFrom();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d821c95b-19c0-11eb-8585-65084a06c07f,Sh3jdIxuxqmi7/1+h8Dpmtu3Z8A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d821c95b-19c0-11eb-8585-65084a06c07f,7U17fILE0ApzkeMYtsor9ubeXkU=] */

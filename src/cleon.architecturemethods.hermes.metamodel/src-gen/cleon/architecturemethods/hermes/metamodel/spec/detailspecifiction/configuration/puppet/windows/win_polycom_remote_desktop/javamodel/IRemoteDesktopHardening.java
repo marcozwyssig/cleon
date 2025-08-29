@@ -1,4 +1,4 @@
-package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_rds_setup.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_remote_desktop.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -20,4 +20,4 @@ public interface IRemoteDesktopHardening extends cleon.architecturemethods.herme
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6fa1c7da-108a-11f0-b378-11a495632127,gzCk8i/Oq5o5Ppx6m7pmjU+Kq3s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6fa1c7da-108a-11f0-b378-11a495632127,3ZwDblVvHE4NHzTbjaAN7LW4OPg=] */

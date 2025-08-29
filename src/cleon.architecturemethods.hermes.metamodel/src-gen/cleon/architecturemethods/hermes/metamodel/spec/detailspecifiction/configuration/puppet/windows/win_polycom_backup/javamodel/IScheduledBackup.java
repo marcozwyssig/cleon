@@ -26,6 +26,8 @@ public interface IScheduledBackup extends cleon.architecturemethods.hermes.metam
   
   public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_manage_netdrives.javamodel.INSShare selectShare();
   
+  public cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup.javamodel.IShareAccess selectShareAccess();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8bd0ea43-6316-11f0-a7ee-fba3b99d3616,fE3fpB8u7vy48kHl36vqGwLAuJ8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8bd0ea43-6316-11f0-a7ee-fba3b99d3616,D5nEUSiwtKQ0n9V/Vnk31Xjc6Uw=] */

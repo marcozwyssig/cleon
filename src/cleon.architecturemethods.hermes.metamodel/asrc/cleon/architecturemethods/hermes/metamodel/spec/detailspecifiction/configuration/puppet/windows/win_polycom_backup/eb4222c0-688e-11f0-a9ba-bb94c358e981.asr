@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="eb4222c0-688e-11f0-a9ba-bb94c358e981">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="f666c3c2-688e-11f0-a9ba-bb94c358e981" type="resource" guid="f6669caf-688e-11f0-a9ba-bb94c358e981" />
+    <resource statement-guid="f88425be-688e-11f0-a9ba-bb94c358e981" type="resource" guid="f88425bb-688e-11f0-a9ba-bb94c358e981" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eb4222c2-688e-11f0-a9ba-bb94c358e981" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eb43d074-688e-11f0-a9ba-bb94c358e981" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eb43a963-688e-11f0-a9ba-bb94c358e981" type="literal">ShareAccess</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="f666c3c2-688e-11f0-a9ba-bb94c358e981">
+      <resource guid="f6669caf-688e-11f0-a9ba-bb94c358e981">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f6669cb1-688e-11f0-a9ba-bb94c358e981" type="resource" guid="eb4222c0-688e-11f0-a9ba-bb94c358e981" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f6f3e8b7-688e-11f0-a9ba-bb94c358e981" type="literal">Cluster</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f88425be-688e-11f0-a9ba-bb94c358e981">
+      <resource guid="f88425bb-688e-11f0-a9ba-bb94c358e981">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f88425bd-688e-11f0-a9ba-bb94c358e981" type="resource" guid="eb4222c0-688e-11f0-a9ba-bb94c358e981" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f946d92f-688e-11f0-a9ba-bb94c358e981" type="literal">Member</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -129,11 +129,11 @@ public class SystemConfigurationAccessFrom extends DynamicResource implements IS
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguration selectSourceAccess() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration selectSourceAccess() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess);
   }
 
-  public SystemConfigurationAccessFrom setSourceAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguration sourceAccess) {
+  public SystemConfigurationAccessFrom setSourceAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration sourceAccess) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, sourceAccess);
     return this;
   }
@@ -168,13 +168,13 @@ public class SystemConfigurationAccessFrom extends DynamicResource implements IS
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.IAccessSystemConfigurationTo.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_accessTo, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom selectToMeSourceAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguration object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom selectToMeSourceAccess(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.javamodel.ISystemConfigurationAccessFrom.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, object.getResource());
   }
   
@@ -183,4 +183,4 @@ public class SystemConfigurationAccessFrom extends DynamicResource implements IS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,2suYujm1F8YjAfiFhHP+Xy+5jh0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,Yh21mMojs3s/CUXBYZwZmdp0i6E=] */

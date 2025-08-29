@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="84666fc9-63c8-11f0-87c2-0f8d66c50b66">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="45197d18-63c9-11f0-87c2-0f8d66c50b66" type="resource" guid="45195604-63c9-11f0-87c2-0f8d66c50b66" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="846696db-63c8-11f0-87c2-0f8d66c50b66" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0b910c7d-63de-11f0-87c2-0f8d66c50b66" type="resource" guid="a98b05a5-106f-11f0-b378-11a495632127" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="45197d18-63c9-11f0-87c2-0f8d66c50b66">
+      <resource guid="45195604-63c9-11f0-87c2-0f8d66c50b66">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="45195606-63c9-11f0-87c2-0f8d66c50b66" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="45195607-63c9-11f0-87c2-0f8d66c50b66" type="literal">gpos</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4519cb39-63c9-11f0-87c2-0f8d66c50b66" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4519cb3a-63c9-11f0-87c2-0f8d66c50b66" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="4519cb3b-63c9-11f0-87c2-0f8d66c50b66" type="resource" guid="4189c76e-63c9-11f0-87c2-0f8d66c50b66" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8468448c-63c8-11f0-87c2-0f8d66c50b66" type="literal">Gpos</object>
+  </predicate>
+</resource>
+

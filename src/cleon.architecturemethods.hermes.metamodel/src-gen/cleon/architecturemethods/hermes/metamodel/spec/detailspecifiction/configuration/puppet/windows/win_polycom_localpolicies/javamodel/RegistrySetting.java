@@ -31,6 +31,15 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   // attributes
   
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -82,6 +91,7 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_registryKey, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_localpolicies.Win_polycom_localpoliciesPackage.RegistrySetting_valueData, visitor);
@@ -91,4 +101,4 @@ public class RegistrySetting extends DynamicResource implements IRegistrySetting
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,RNV473Sz5xaJ+XLWZz4DTDcVWZE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0af758c-1090-11f0-b378-11a495632127,E5uTB1kg1n0u+vBolZbzzMWtINM=] */

@@ -851,6 +851,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IRemoteDesktopLicenseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("78986586-79da-11f0-be97-ebecaa61a3a3")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("78988c25-79da-11f0-be97-ebecaa61a3a3")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IRemoteDesktopLicenseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RemoteDesktopLicenseFunctionsImpl implements IRemoteDesktopLicenseFunctionsImpl {
+
+    public static final IRemoteDesktopLicenseFunctionsImpl INSTANCE = new RemoteDesktopLicenseFunctionsImpl();
+
+    private RemoteDesktopLicenseFunctionsImpl() {}
+
+  }
+  
+  public static class RemoteDesktopLicenseFunctions {
+
+    private RemoteDesktopLicenseFunctions() {}
+
+  }
+
   public static interface IRegistryFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("494d99da-1091-11f0-b378-11a495632127")
@@ -2042,6 +2070,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IGposFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9a4aaeba-63c8-11f0-87c2-0f8d66c50b66")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("9a4aaf45-63c8-11f0-87c2-0f8d66c50b66")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IGposFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GposFunctionsImpl implements IGposFunctionsImpl {
+
+    public static final IGposFunctionsImpl INSTANCE = new GposFunctionsImpl();
+
+    private GposFunctionsImpl() {}
+
+  }
+  
+  public static class GposFunctions {
+
+    private GposFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,5Zxi0ZcndDlrf7Q9LxgwrtumVlw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nyqI+0jyQL+xqMdREyNeK9O7iSQ=] */

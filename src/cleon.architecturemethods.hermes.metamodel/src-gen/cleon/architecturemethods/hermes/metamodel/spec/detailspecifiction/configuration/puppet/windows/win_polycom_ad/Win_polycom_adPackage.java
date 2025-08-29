@@ -47,6 +47,11 @@ public class Win_polycom_adPackage {
   public static final Resource FunctionSoace_aE_AD_AbstractDnsZone = new Resource("02db9275-4d1d-11f0-954b-b579526ae084");
   public static final Resource FunctionSoace_aE_AD_DefaultDnsZone = new Resource("0d02c131-4d1d-11f0-954b-b579526ae084");
   public static final Resource FunctionSoace_aE_AD_DnsZone = new Resource("1dbdbf05-4d1d-11f0-954b-b579526ae084");
+  public static final Resource Gpos = new Resource("84666fc9-63c8-11f0-87c2-0f8d66c50b66");
+  public static final Resource Gpo = new Resource("4189c76e-63c9-11f0-87c2-0f8d66c50b66");
+  public static final Resource Gpos_gpos = new Resource("45195604-63c9-11f0-87c2-0f8d66c50b66");
+  public static final Resource Gpo_linked_aE_ou = new Resource("e0f64e7d-63c9-11f0-87c2-0f8d66c50b66");
+  public static final Resource Gpo_linked_aE_permissions = new Resource("8e7997de-63e1-11f0-87c2-0f8d66c50b66");
   
   /* Begin Protected Region [[user]] */
   
@@ -67,4 +72,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,oYuaqDZbrHczDdh5So4Ft1Nc8i4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,lqeIJS5Lmqoc9gioumXDTaXB6Lc=] */

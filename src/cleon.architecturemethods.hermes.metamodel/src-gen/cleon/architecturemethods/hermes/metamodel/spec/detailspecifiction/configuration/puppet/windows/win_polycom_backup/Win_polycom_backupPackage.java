@@ -15,6 +15,11 @@ public class Win_polycom_backupPackage {
   public static final Resource ScheduledBackup_logonAs = new Resource("23ff5c2f-631b-11f0-8f89-fba3b99d3616");
   public static final Resource ScheduledBackup_share = new Resource("6671b52c-631b-11f0-8f89-fba3b99d3616");
   public static final Resource ScheduledBackup_fullShareName = new Resource("26c05c5f-631c-11f0-8f89-fba3b99d3616");
+  public static final Resource ShareAccess = new Resource("eb4222c0-688e-11f0-a9ba-bb94c358e981");
+  public static final Resource ScheduledBackup_shareAccess = new Resource("f1e337ed-688e-11f0-a9ba-bb94c358e981");
+  public static final Resource ShareAccess_Cluster = new Resource("f6669caf-688e-11f0-a9ba-bb94c358e981");
+  public static final Resource ShareAccess_Member = new Resource("f88425bb-688e-11f0-a9ba-bb94c358e981");
+  public static final Resource FunctionSpace_aE_win_aE_polycom_aE_backup_ShareAccess = new Resource("968313b6-688f-11f0-a9ba-bb94c358e981");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +40,4 @@ public class Win_polycom_backupPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup,f0LDBE1CQNk35U/TG2C7ExlHrW0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup,uwbK/48ZeoF+zK3JKcuPZGe3drU=] */

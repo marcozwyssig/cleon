@@ -119,7 +119,7 @@ public class FunctionSpace_Configuration {
     	var abstractConfigurationSpecificationFunctions = abstractConfiguration.extension(IAbstractConfigurationFunctions.class);
     	final var domainName = abstractConfigurationSpecificationFunctions.DomainName();
     	int dotIndex = domainName.indexOf('.');
-        return (dotIndex > 0) ? domainName.substring(0, dotIndex) : domainName;    
+        return (dotIndex > 0) ? domainName.substring(0, dotIndex) : domainName;
       /* End Protected Region   [[adbff252-1132-11f0-a4f9-b5f995a9e0fe]] */
     }
 

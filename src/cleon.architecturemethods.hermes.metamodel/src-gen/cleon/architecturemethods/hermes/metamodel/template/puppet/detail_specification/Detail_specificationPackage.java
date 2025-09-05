@@ -74,6 +74,8 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ScheduledBackup = new Resource("a1629c6e-6316-11f0-a7ee-fba3b99d3616");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Gpos = new Resource("9a4aaeb7-63c8-11f0-87c2-0f8d66c50b66");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_RemoteDesktopLicense = new Resource("78986583-79da-11f0-be97-ebecaa61a3a3");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Nps = new Resource("de0d8375-8a66-11f0-af5e-cd5d044ab02b");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WsusApprovalUpdates = new Resource("ad87ff0d-8a6b-11f0-af5e-cd5d044ab02b");
   
   /* Begin Protected Region [[user]] */
   
@@ -94,4 +96,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,p0agxNWBM2iXpJS2TwAkLKRz8SI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,9GoVI9G7q53TNG/dVV5tuaFy9nM=] */

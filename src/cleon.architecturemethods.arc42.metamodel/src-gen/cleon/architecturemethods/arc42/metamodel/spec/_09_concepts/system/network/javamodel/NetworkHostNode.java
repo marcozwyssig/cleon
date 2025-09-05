@@ -110,6 +110,16 @@ public class NetworkHostNode extends DynamicResource implements INetworkHostNode
     return this;
   }
     
+  @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> selectUnusedHosts() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_unusedHosts);
+  }
+
+  public NetworkHostNode setUnusedHosts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> unusedHosts) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_unusedHosts, unusedHosts);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -122,6 +132,7 @@ public class NetworkHostNode extends DynamicResource implements INetworkHostNode
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_ip, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.domain.javamodel.IDomain.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_restrictToDomains, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_unusedHosts, visitor);
   }
 
   // toMeRelations
@@ -138,5 +149,9 @@ public class NetworkHostNode extends DynamicResource implements INetworkHostNode
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_cname, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode> selectToMeUnusedHosts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.javamodel.INetworkHostNode.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network.NetworkPackage.NetworkHostNode_unusedHosts, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,8hW34dCrvePvCPr03tKGcFbxKkg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,p21jT9mJFeqegvoUUp1dY/pB6pY=] */

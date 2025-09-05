@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c861f839-8a6c-11f0-af5e-cd5d044ab02b">
+  <owns predicate="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <resource statement-guid="f926b610-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="f92667ed-8a6c-11f0-af5e-cd5d044ab02b">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="fbbf8968-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="fbbf6254-8a6c-11f0-af5e-cd5d044ab02b">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="ffd4756e-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="ffd4274b-8a6c-11f0-af5e-cd5d044ab02b" />
+          </owns>
+        </resource>
+        <resource statement-guid="27409eae-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="27405085-8a6d-11f0-af5e-cd5d044ab02b">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="2740508c-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="27405086-8a6d-11f0-af5e-cd5d044ab02b" />
+          </owns>
+        </resource>
+        <resource statement-guid="2e2e9bd8-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="2e2dd87f-8a6d-11f0-af5e-cd5d044ab02b">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="2e2dd886-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="2e2dd880-8a6d-11f0-af5e-cd5d044ab02b" />
+          </owns>
+        </resource>
+        <resource statement-guid="34ae1f43-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="34ad5bea-8a6d-11f0-af5e-cd5d044ab02b">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="34ad5bf1-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="34ad5beb-8a6d-11f0-af5e-cd5d044ab02b" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c861f83b-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8626d6c-8a6c-11f0-af5e-cd5d044ab02b" type="literal">FunctionSpace_win_polycom_wsus</object>
+  </predicate>
+  <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <object statement-guid="f926b610-8a6c-11f0-af5e-cd5d044ab02b">
+      <resource guid="f92667ed-8a6c-11f0-af5e-cd5d044ab02b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f9268eff-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="fbbf8968-8a6c-11f0-af5e-cd5d044ab02b">
+            <resource guid="fbbf6254-8a6c-11f0-af5e-cd5d044ab02b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fbbf6256-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fd79204a-8a6c-11f0-af5e-cd5d044ab02b" type="literal">Uninstall</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="ffd4756e-8a6c-11f0-af5e-cd5d044ab02b">
+                  <resource guid="ffd4274b-8a6c-11f0-af5e-cd5d044ab02b">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="ffd4274d-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="008faf20-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="9f78729c-8a6b-11f0-af5e-cd5d044ab02b" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="fbbf8967-8a6c-11f0-af5e-cd5d044ab02b" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="22ce9ec4-8a6d-11f0-af5e-cd5d044ab02b" type="literal">return kBList.stream().filter(x -&gt; x.selectCommand().isUninstall()).toList();</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="27409eae-8a6d-11f0-af5e-cd5d044ab02b">
+            <resource guid="27405085-8a6d-11f0-af5e-cd5d044ab02b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="27405087-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="27405089-8a6d-11f0-af5e-cd5d044ab02b" type="literal">NotApproved</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="2740508c-8a6d-11f0-af5e-cd5d044ab02b">
+                  <resource guid="27405086-8a6d-11f0-af5e-cd5d044ab02b">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="2740508a-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="2740508b-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="9f78729c-8a6b-11f0-af5e-cd5d044ab02b" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="27405088-8a6d-11f0-af5e-cd5d044ab02b" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="2740508d-8a6d-11f0-af5e-cd5d044ab02b" type="literal">return kBList.stream().filter(x -&gt; x.selectCommand().isNotApproved()).toList();</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="2e2e9bd8-8a6d-11f0-af5e-cd5d044ab02b">
+            <resource guid="2e2dd87f-8a6d-11f0-af5e-cd5d044ab02b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="2e2dd881-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="2e2dd883-8a6d-11f0-af5e-cd5d044ab02b" type="literal">Denied</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="2e2dd886-8a6d-11f0-af5e-cd5d044ab02b">
+                  <resource guid="2e2dd880-8a6d-11f0-af5e-cd5d044ab02b">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="2e2dd884-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="2e2dd885-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="9f78729c-8a6b-11f0-af5e-cd5d044ab02b" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="2e2dd882-8a6d-11f0-af5e-cd5d044ab02b" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="2e2dd887-8a6d-11f0-af5e-cd5d044ab02b" type="literal">return kBList.stream().filter(x -&gt; x.selectCommand().isDenied()).toList();</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="34ae1f43-8a6d-11f0-af5e-cd5d044ab02b">
+            <resource guid="34ad5bea-8a6d-11f0-af5e-cd5d044ab02b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="34ad5bec-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="34ad5bee-8a6d-11f0-af5e-cd5d044ab02b" type="literal">Install</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="34ad5bf1-8a6d-11f0-af5e-cd5d044ab02b">
+                  <resource guid="34ad5beb-8a6d-11f0-af5e-cd5d044ab02b">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="34ad5bef-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="34ad5bf0-8a6d-11f0-af5e-cd5d044ab02b" type="resource" guid="9f78729c-8a6b-11f0-af5e-cd5d044ab02b" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="34ad5bed-8a6d-11f0-af5e-cd5d044ab02b" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="34ad5bf2-8a6d-11f0-af5e-cd5d044ab02b" type="literal">return kBList.stream().filter(x -&gt; x.selectCommand().isInstall()).toList();</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="f9c69f92-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="9f78729c-8a6b-11f0-af5e-cd5d044ab02b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

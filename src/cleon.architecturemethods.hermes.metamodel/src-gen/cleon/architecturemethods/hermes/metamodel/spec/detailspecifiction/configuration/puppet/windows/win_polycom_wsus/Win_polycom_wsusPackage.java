@@ -32,6 +32,20 @@ public class Win_polycom_wsusPackage {
   public static final Resource UpdateClassification_Wichtige__F_Updates__F___U___F_Critical__F_Updates = new Resource("1c158d1d-5332-11f0-9301-032f11813eba");
   public static final Resource InstallWSUS_proxy_aE_server = new Resource("afa8a278-5332-11f0-9301-032f11813eba");
   public static final Resource InstallWSUS_proxy_aE_port = new Resource("cfdd9255-5332-11f0-9301-032f11813eba");
+  public static final Resource WsusApprovalUpdates = new Resource("3ac66734-8a6b-11f0-af5e-cd5d044ab02b");
+  public static final Resource KB = new Resource("9f78729c-8a6b-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusApprovalUpdates_kBs = new Resource("a6f39404-8a6b-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusCommand = new Resource("65ed808f-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusCommand_Uninstall = new Resource("6abb3543-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusCommand_NotApproved = new Resource("6ceb0d43-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusCommand_Denied = new Resource("6effe3c5-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusCommand_Install = new Resource("7111108f-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource KB_command = new Resource("7b83ee06-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusApprovalUpdates_Uninstall = new Resource("985cb9a2-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource FunctionSpace_aE_win_aE_polycom_aE_wsus_KB = new Resource("f92667ed-8a6c-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusApprovalUpdates_NotApproved = new Resource("5428225e-8a6d-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusApprovalUpdates_Denied = new Resource("5cd645ab-8a6d-11f0-af5e-cd5d044ab02b");
+  public static final Resource WsusApprovalUpdates_Install = new Resource("64564940-8a6d-11f0-af5e-cd5d044ab02b");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +66,4 @@ public class Win_polycom_wsusPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,12FcQZl6/hKj2HSQNMyXJt8/XmY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,MQaMg3uzLrVhOIlOSb7oYGdqm/Y=] */

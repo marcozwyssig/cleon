@@ -35,6 +35,7 @@ public class NetworkPackage {
   public static final Resource NetworkSubZone_topologySite = new Resource("c0179aeb-6414-11ee-8110-b92476c997e7");
   public static final Resource NetworkSubZone_topologySiteMSS = new Resource("c686ffac-6419-11ee-8110-b92476c997e7");
   public static final Resource NetworkSubZone_vlan = new Resource("95173f9f-2a25-11ef-a7c1-c5ef2797619d");
+  public static final Resource NetworkHostNode_unusedHosts = new Resource("6989027f-8a62-11f0-af5e-cd5d044ab02b");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network,xWB8hVEWBVgOw4A8BYMnGD47PAU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.network,D3CCMwMCcWBmIZAfTAcFTVB5Y18=] */

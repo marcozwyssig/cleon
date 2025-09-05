@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="65ed808f-8a6c-11f0-af5e-cd5d044ab02b">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="6abb3546-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="6abb3543-8a6c-11f0-af5e-cd5d044ab02b" />
+    <resource statement-guid="6ceb3456-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="6ceb0d43-8a6c-11f0-af5e-cd5d044ab02b" />
+    <resource statement-guid="6f000ad8-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="6effe3c5-8a6c-11f0-af5e-cd5d044ab02b" />
+    <resource statement-guid="711137a2-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="7111108f-8a6c-11f0-af5e-cd5d044ab02b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="65ed8091-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="65f17833-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="65f15122-8a6c-11f0-af5e-cd5d044ab02b" type="literal">WsusCommand</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="6abb3546-8a6c-11f0-af5e-cd5d044ab02b">
+      <resource guid="6abb3543-8a6c-11f0-af5e-cd5d044ab02b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6abb3545-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="65ed808f-8a6c-11f0-af5e-cd5d044ab02b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6af61b47-8a6c-11f0-af5e-cd5d044ab02b" type="literal">Uninstall</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6ceb3456-8a6c-11f0-af5e-cd5d044ab02b">
+      <resource guid="6ceb0d43-8a6c-11f0-af5e-cd5d044ab02b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6ceb3455-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="65ed808f-8a6c-11f0-af5e-cd5d044ab02b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6d18fb6b-8a6c-11f0-af5e-cd5d044ab02b" type="literal">NotApproved</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6f000ad8-8a6c-11f0-af5e-cd5d044ab02b">
+      <resource guid="6effe3c5-8a6c-11f0-af5e-cd5d044ab02b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6effe3c7-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="65ed808f-8a6c-11f0-af5e-cd5d044ab02b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6f276904-8a6c-11f0-af5e-cd5d044ab02b" type="literal">Denied</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="711137a2-8a6c-11f0-af5e-cd5d044ab02b">
+      <resource guid="7111108f-8a6c-11f0-af5e-cd5d044ab02b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71111091-8a6c-11f0-af5e-cd5d044ab02b" type="resource" guid="65ed808f-8a6c-11f0-af5e-cd5d044ab02b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7130cd47-8a6c-11f0-af5e-cd5d044ab02b" type="literal">Install</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -14,6 +14,8 @@ public interface INetworkHostNode extends cleon.modelinglanguages.network.metamo
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IClusterHost selectCname();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> selectUnusedHosts();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,hKVU9VLqWKsx8vIvPfdDNPXeKy8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,xHlWfvQOlybCmrwxf9ZqJbgxVWc=] */

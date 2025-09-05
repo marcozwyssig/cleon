@@ -2098,6 +2098,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface INpsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("de0d8378-8a66-11f0-af5e-cd5d044ab02b")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("de0d83b8-8a66-11f0-af5e-cd5d044ab02b")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface INpsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NpsFunctionsImpl implements INpsFunctionsImpl {
+
+    public static final INpsFunctionsImpl INSTANCE = new NpsFunctionsImpl();
+
+    private NpsFunctionsImpl() {}
+
+  }
+  
+  public static class NpsFunctions {
+
+    private NpsFunctions() {}
+
+  }
+
+  public static interface IWsusApprovalUpdatesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ad87ff10-8a6b-11f0-af5e-cd5d044ab02b")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("ad88264e-8a6b-11f0-af5e-cd5d044ab02b")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IWsusApprovalUpdatesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WsusApprovalUpdatesFunctionsImpl implements IWsusApprovalUpdatesFunctionsImpl {
+
+    public static final IWsusApprovalUpdatesFunctionsImpl INSTANCE = new WsusApprovalUpdatesFunctionsImpl();
+
+    private WsusApprovalUpdatesFunctionsImpl() {}
+
+  }
+  
+  public static class WsusApprovalUpdatesFunctions {
+
+    private WsusApprovalUpdatesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,nyqI+0jyQL+xqMdREyNeK9O7iSQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,sDScRExbo6jiRgpDfkNVNJ3/Hi4=] */

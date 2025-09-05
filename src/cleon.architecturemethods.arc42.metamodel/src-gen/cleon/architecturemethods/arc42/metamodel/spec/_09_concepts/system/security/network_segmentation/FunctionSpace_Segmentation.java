@@ -223,7 +223,7 @@ public class FunctionSpace_Segmentation {
     	if( ifc == null) {
     		return null;
     	}
-		return ifc.selectContextualGroupName();
+		return ifc.selectContextQualifier();
       /* End Protected Region   [[2d13fa53-75bc-11ef-9e73-d7a16eeaf5fd]] */
     }
 

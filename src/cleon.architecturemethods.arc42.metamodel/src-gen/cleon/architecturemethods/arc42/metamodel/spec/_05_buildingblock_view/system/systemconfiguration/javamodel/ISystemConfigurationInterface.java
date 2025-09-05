@@ -8,8 +8,6 @@ public interface ISystemConfigurationInterface extends ch.actifsource.core.javam
   
   public java.lang.Integer selectVlan();
   
-  public java.lang.String selectContextualGroupName();
-  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.IInterfaceType selectInterfaceType();
@@ -20,4 +18,4 @@ public interface ISystemConfigurationInterface extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,2vDGY5AIXhH0Wjso4CATmvIYhRc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,xOd78Esd5Ij/uEFUUsga83c1Gxg=] */

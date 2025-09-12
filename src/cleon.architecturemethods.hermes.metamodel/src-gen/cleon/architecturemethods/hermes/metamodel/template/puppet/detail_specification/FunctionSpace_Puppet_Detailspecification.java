@@ -627,7 +627,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface ILocalFwFunctions extends IDynamicResourceExtension {
+  public static interface ILocalWinFwFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2c29df4e-0bd0-11f0-95b9-95d0cc9a328a")
     public java.lang.String ClassDefinition();
@@ -637,21 +637,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface ILocalFwFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ILocalWinFwFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class LocalFwFunctionsImpl implements ILocalFwFunctionsImpl {
+  public static class LocalWinFwFunctionsImpl implements ILocalWinFwFunctionsImpl {
 
-    public static final ILocalFwFunctionsImpl INSTANCE = new LocalFwFunctionsImpl();
+    public static final ILocalWinFwFunctionsImpl INSTANCE = new LocalWinFwFunctionsImpl();
 
-    private LocalFwFunctionsImpl() {}
+    private LocalWinFwFunctionsImpl() {}
 
   }
   
-  public static class LocalFwFunctions {
+  public static class LocalWinFwFunctions {
 
-    private LocalFwFunctions() {}
+    private LocalWinFwFunctions() {}
 
   }
 
@@ -2156,4 +2156,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,sDScRExbo6jiRgpDfkNVNJ3/Hi4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,QmdZcIxv9Wv/3w4YdS4w/mzkPCs=] */

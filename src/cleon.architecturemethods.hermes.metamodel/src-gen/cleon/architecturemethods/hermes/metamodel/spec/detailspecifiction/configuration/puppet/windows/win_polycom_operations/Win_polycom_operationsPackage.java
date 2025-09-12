@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class Win_polycom_operationsPackage {
   
-  public static final Resource LocalFw = new Resource("0a34f096-0bd0-11f0-95b9-95d0cc9a328a");
+  public static final Resource LocalWinFw = new Resource("0a34f096-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource LocalFwRule = new Resource("184bf73b-0bd0-11f0-95b9-95d0cc9a328a");
-  public static final Resource LocalFw_rules = new Resource("24edc305-0bd0-11f0-95b9-95d0cc9a328a");
+  public static final Resource LocalWinFw_rules = new Resource("24edc305-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource LocalFwRule_abstractService = new Resource("aaa7c4c2-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource LocalGroups = new Resource("eaf0a0b7-107d-11f0-b378-11a495632127");
   public static final Resource LocalGroup = new Resource("f065926e-107d-11f0-b378-11a495632127");
@@ -56,7 +56,7 @@ public class Win_polycom_operationsPackage {
   public static final Resource Cert_store_aE_dir = new Resource("b1c5b7a5-4791-11f0-bcdd-31d38803078d");
   public static final Resource Cert_install_aE_store = new Resource("baa2b22f-4791-11f0-bcdd-31d38803078d");
   public static final Resource Cert_thumbprint = new Resource("c48f96fe-4791-11f0-bcdd-31d38803078d");
-  public static final Resource LocalFw_programLocalFirewallRules = new Resource("9154f61f-4816-11f0-bcdd-31d38803078d");
+  public static final Resource LocalWinFw_programLocalFirewallRules = new Resource("9154f61f-4816-11f0-bcdd-31d38803078d");
   public static final Resource ProgramLocalFirewallRule = new Resource("9cfafccf-4816-11f0-bcdd-31d38803078d");
   public static final Resource ProgramLocalFirewallRule_displayName = new Resource("de15b443-4816-11f0-bcdd-31d38803078d");
   public static final Resource ProgramLocalFirewallRule_direction = new Resource("e7e218bb-4816-11f0-bcdd-31d38803078d");
@@ -82,4 +82,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,g54N0iOrM32QYvIsfx9X8dVNU84=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,zeFjpJncI5DRqyTzrWDSQEPpMCo=] */

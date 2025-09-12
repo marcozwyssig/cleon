@@ -19,7 +19,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Resize = new Resource("b5e14d47-096a-11f0-bcb3-43fb1d3f2da5");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SiteSpecifications = new Resource("5b3b1e5d-0a5e-11f0-a414-9b52960625e5");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_ServiceAccountConfiguration = new Resource("0bced39a-0bb7-11f0-95b9-95d0cc9a328a");
-  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalFw = new Resource("2c29df4b-0bd0-11f0-95b9-95d0cc9a328a");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalWinFw = new Resource("2c29df4b-0bd0-11f0-95b9-95d0cc9a328a");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Route = new Resource("b9ae86b8-1061-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Userrightsassignment = new Resource("06aae563-1070-11f0-b378-11a495632127");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Services = new Resource("46eab128-1071-11f0-b378-11a495632127");
@@ -96,4 +96,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,9GoVI9G7q53TNG/dVV5tuaFy9nM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,lyI/32y2rslXnMFlkQ59fPAHeU8=] */

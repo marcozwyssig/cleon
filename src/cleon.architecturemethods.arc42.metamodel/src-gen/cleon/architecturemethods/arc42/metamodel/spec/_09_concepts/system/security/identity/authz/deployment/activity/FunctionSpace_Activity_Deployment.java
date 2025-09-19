@@ -87,6 +87,12 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("abf2fc43-05ab-11f0-a7b1-53303e9b84a9")
     public java.lang.String UsedIn();
 
+    @IDynamicResourceExtension.MethodId("d91b0c16-9561-11f0-b879-dbe8cc612bea")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> IfMemberOfComputers();
+
+    @IDynamicResourceExtension.MethodId("ef932761-9561-11f0-b879-dbe8cc612bea")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> MemberOfComputers();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -108,6 +114,9 @@ public class FunctionSpace_Activity_Deployment {
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
+
+    @IDynamicResourceExtension.MethodId("d91b0c16-9561-11f0-b879-dbe8cc612bea")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> IfMemberOfComputers(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
   }
   
@@ -234,6 +243,17 @@ public class FunctionSpace_Activity_Deployment {
       /* End Protected Region   [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> IfMemberOfComputers(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      /* Begin Protected Region [[d91b0c16-9561-11f0-b879-dbe8cc612bea]] */
+    	if( activityPermission.selectAssignComputer() == null || activityPermission.selectAssignComputer().booleanValue() == false) {
+    		return null;
+    	}
+    	
+    	return activityPermission.extension(IActivityPermissionFunctions.class).MemberOfComputers();
+      /* End Protected Region   [[d91b0c16-9561-11f0-b879-dbe8cc612bea]] */
+    }
+
   }
   
   public static class ActivityPermissionFunctions {
@@ -262,6 +282,10 @@ public class FunctionSpace_Activity_Deployment {
 
     public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToServiceAccounts(activityPermission);
+    }
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> IfMemberOfComputers(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).IfMemberOfComputers(activityPermission);
     }
 
   }
@@ -444,4 +468,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,CGghoWNDWKeKz/qveeU0PMkAqC8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,Gr9jYPtl+448AH/RFwbmoBSlC3U=] */

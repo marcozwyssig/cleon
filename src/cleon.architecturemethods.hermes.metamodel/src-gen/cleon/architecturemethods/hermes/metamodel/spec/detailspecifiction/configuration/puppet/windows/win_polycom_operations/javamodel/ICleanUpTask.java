@@ -20,6 +20,10 @@ public interface ICleanUpTask extends ch.actifsource.core.javamodel.INamedResour
   
   public java.util.List<java.lang.String> selectExcluderootfolder();
   
+  public java.lang.String selectLogonAs();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IServiceAccount selectServiceAccount();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93803197-2759-11f0-b32f-851840d4a5f4,0QiTYEwKZBTkNcOtL4ns3uF8ZWY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93803197-2759-11f0-b32f-851840d4a5f4,mFzUoOARwbD2iWz4F7FOHdnln/Y=] */

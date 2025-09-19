@@ -8,6 +8,8 @@ public interface IActivityPermission extends cleon.architecturemethods.arc42.met
   
   public java.lang.Integer selectUniqueId();
   
+  public java.lang.Boolean selectAssignComputer();
+  
   // relations
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.template.activity.javamodel.IAbstractActivityTemplatePermission selectActivityTemplate();
@@ -16,6 +18,8 @@ public interface IActivityPermission extends cleon.architecturemethods.arc42.met
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.activity.adgroups.javamodel.IADGroup> selectMemberOfAdGroup();
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> selectMemberOfComputers();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,X2ivbWBll0Euc2+tpKkOdUKtCZI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,EjF9w+Vhsx8jUZqjT4dgt2yXesk=] */

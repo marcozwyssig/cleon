@@ -62,6 +62,10 @@ public class Win_polycom_operationsPackage {
   public static final Resource ProgramLocalFirewallRule_direction = new Resource("e7e218bb-4816-11f0-bcdd-31d38803078d");
   public static final Resource ProgramLocalFirewallRule_program = new Resource("f145d053-4816-11f0-bcdd-31d38803078d");
   public static final Resource WinRM = new Resource("79fbe4fd-4c49-11f0-afd1-3133a97c4a61");
+  public static final Resource AbstractLocalFw = new Resource("95a2a359-8fe2-11f0-a229-2ff8dd7d3f09");
+  public static final Resource CleanUpTask_serviceAccount = new Resource("05f0da98-9553-11f0-b879-dbe8cc612bea");
+  public static final Resource CleanUpTask_logonAs = new Resource("05f0da9f-9553-11f0-b879-dbe8cc612bea");
+  public static final Resource FunctionSpace_aE_win_aE_polycom_aE_operations_CleanUpTask = new Resource("2715cede-9553-11f0-b879-dbe8cc612bea");
   
   /* Begin Protected Region [[user]] */
   
@@ -82,4 +86,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,zeFjpJncI5DRqyTzrWDSQEPpMCo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,kv4z+4KPFxhMUbbWvDeVWmQN9l8=] */

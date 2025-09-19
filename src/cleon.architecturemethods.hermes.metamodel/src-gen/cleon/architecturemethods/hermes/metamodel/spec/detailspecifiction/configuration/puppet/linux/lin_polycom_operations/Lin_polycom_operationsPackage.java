@@ -25,9 +25,6 @@ public class Lin_polycom_operationsPackage {
   public static final Resource KeyUsage_decipherOnly = new Resource("32d1d399-4d11-11f0-954b-b579526ae084");
   public static final Resource Certificate_key_aE_usage = new Resource("3ef34b73-4d11-11f0-954b-b579526ae084");
   public static final Resource Certificate_key_aE_size = new Resource("a708f4c4-4d11-11f0-954b-b579526ae084");
-  public static final Resource KeyType = new Resource("31a1ccf7-4d13-11f0-954b-b579526ae084");
-  public static final Resource KeyType_RSA = new Resource("3515be3f-4d13-11f0-954b-b579526ae084");
-  public static final Resource KeyType_EC = new Resource("36d39b31-4d13-11f0-954b-b579526ae084");
   public static final Resource Certificate = new Resource("8ba9bd3c-4d1e-11f0-954b-b579526ae084");
   public static final Resource Certificates_certificates = new Resource("91dbe40c-4d1e-11f0-954b-b579526ae084");
   public static final Resource Certificate_extended_aE_key_aE_usage = new Resource("30eba5f6-4d1f-11f0-954b-b579526ae084");
@@ -60,4 +57,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,w1lSWkTGh4FFou9NA2gN9n/gt7w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,OVWTwfuXZjdC9yKkGGug6AYoGyg=] */

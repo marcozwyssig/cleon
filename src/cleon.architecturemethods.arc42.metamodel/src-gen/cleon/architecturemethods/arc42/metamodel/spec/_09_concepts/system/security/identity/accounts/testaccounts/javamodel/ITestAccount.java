@@ -10,10 +10,10 @@ public interface ITestAccount extends cleon.architecturemethods.arc42.metamodel.
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplate selectTestAccountTemplate();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.IAbstractTestAccountTemplate selectTestAccountTemplate();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> selectMemberOf();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7c016d76-273a-11f0-bc3e-fdd30b5cbdec,GQKsysRFllBXuzih4VqbSfduLSM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7c016d76-273a-11f0-bc3e-fdd30b5cbdec,Hl6/9Tq7V3m+/yyQD6rnzLXeuMk=] */

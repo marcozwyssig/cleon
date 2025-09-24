@@ -12,6 +12,8 @@ public interface ITestAccountSystemTemplate extends cleon.common.doc.metamodel.s
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplate> selectTestAccountTemplate();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplateNoRole selectTestAccountTemplateWithoutAccess();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4afdd669-2733-11f0-8098-59f455ea82af,mOcOAVqgDO0RFXqJCtf2yaVWi0Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4afdd669-2733-11f0-8098-59f455ea82af,kW6PwYef1GVpgPUaBg14H5C98rw=] */

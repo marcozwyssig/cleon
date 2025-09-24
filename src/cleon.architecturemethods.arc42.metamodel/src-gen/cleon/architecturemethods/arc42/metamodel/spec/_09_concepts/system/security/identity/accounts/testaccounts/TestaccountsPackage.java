@@ -30,6 +30,12 @@ public class TestaccountsPackage {
   public static final Resource TestAccount_uniqueId = new Resource("7c016d8a-273a-11f0-bc3e-fdd30b5cbdec");
   public static final Resource TestAccount_memberOf = new Resource("7c016d9a-273a-11f0-bc3e-fdd30b5cbdec");
   public static final Resource FunctionSpace_aE_Test_aE_Account_TestAccount = new Resource("fd90e308-273b-11f0-bc3e-fdd30b5cbdec");
+  public static final Resource TestAccountSystemTemplate_testAccountTemplateWithoutAccess = new Resource("23a0dd4b-9925-11f0-b89e-65f425c2dee1");
+  public static final Resource TestAccountTemplateNoRole = new Resource("214b42e2-9927-11f0-b89e-65f425c2dee1");
+  public static final Resource AbstractTestAccountTemplate = new Resource("88bbdd2c-9928-11f0-b89e-65f425c2dee1");
+  public static final Resource FunctionSpace_aE_Test_aE_Account_AbstractTestAccountTemplate = new Resource("f793c25f-9929-11f0-b89e-65f425c2dee1");
+  public static final Resource FunctionSpace_aE_Test_aE_Account_TestAccountTemplate = new Resource("11128ddb-992a-11f0-b89e-65f425c2dee1");
+  public static final Resource FunctionSpace_aE_Test_aE_Account_TestAccountTemplateNoRole = new Resource("6af4f5bb-992a-11f0-b89e-65f425c2dee1");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +56,4 @@ public class TestaccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts,aqwAWevAT7BWmQiq7+i4uTSRcpU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts,y+cEfbdw0DNT/UiUG4OA/ahRMUE=] */

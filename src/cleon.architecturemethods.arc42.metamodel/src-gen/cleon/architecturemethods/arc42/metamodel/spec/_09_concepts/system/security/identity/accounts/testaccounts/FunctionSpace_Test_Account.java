@@ -65,6 +65,93 @@ public class FunctionSpace_Test_Account {
 
   }
 
+  public static interface IAbstractTestAccountTemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fdf0c9a7-9929-11f0-b89e-65f425c2dee1")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents();
+
+  }
+  
+  public static interface IAbstractTestAccountTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractTestAccountTemplateFunctionsImpl implements IAbstractTestAccountTemplateFunctionsImpl {
+
+    public static final IAbstractTestAccountTemplateFunctionsImpl INSTANCE = new AbstractTestAccountTemplateFunctionsImpl();
+
+    private AbstractTestAccountTemplateFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractTestAccountTemplateFunctions {
+
+    private AbstractTestAccountTemplateFunctions() {}
+
+  }
+
+  public static interface ITestAccountTemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("556f77b7-992a-11f0-b89e-65f425c2dee1")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents();
+
+  }
+  
+  public static interface ITestAccountTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestAccountTemplateFunctionsImpl implements ITestAccountTemplateFunctionsImpl {
+
+    public static final ITestAccountTemplateFunctionsImpl INSTANCE = new TestAccountTemplateFunctionsImpl();
+
+    private TestAccountTemplateFunctionsImpl() {}
+
+  }
+  
+  public static class TestAccountTemplateFunctions {
+
+    private TestAccountTemplateFunctions() {}
+
+  }
+
+  public static interface ITestAccountTemplateNoRoleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("721b670f-992a-11f0-b89e-65f425c2dee1")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents();
+
+  }
+  
+  public static interface ITestAccountTemplateNoRoleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("721b670f-992a-11f0-b89e-65f425c2dee1")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplateNoRole testAccountTemplateNoRole);
+
+  }
+  
+  public static class TestAccountTemplateNoRoleFunctionsImpl implements ITestAccountTemplateNoRoleFunctionsImpl {
+
+    public static final ITestAccountTemplateNoRoleFunctionsImpl INSTANCE = new TestAccountTemplateNoRoleFunctionsImpl();
+
+    private TestAccountTemplateNoRoleFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplateNoRole testAccountTemplateNoRole) {
+      return null;
+    }
+
+  }
+  
+  public static class TestAccountTemplateNoRoleFunctions {
+
+    private TestAccountTemplateNoRoleFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> ListRoleSystemComponents(final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.testaccounts.javamodel.ITestAccountTemplateNoRole testAccountTemplateNoRole) {
+      return DynamicResourceUtil.invoke(ITestAccountTemplateNoRoleFunctionsImpl.class, TestAccountTemplateNoRoleFunctionsImpl.INSTANCE, testAccountTemplateNoRole).ListRoleSystemComponents(testAccountTemplateNoRole);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c103e64f-273a-11f0-bc3e-fdd30b5cbdec,XFxazWnKKNHPhhIMYjNEGgznstI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c103e64f-273a-11f0-bc3e-fdd30b5cbdec,mnVUcC0VybVbvHKUQL4ctDZQahQ=] */

@@ -28,7 +28,7 @@ public class DeploymentPackage {
   public static final Resource FunctionSpace_aE_Activity_aE_Deployment_AbstractRootGroups = new Resource("d730cab5-0172-11ea-83fa-05ea5175f4aa");
   public static final Resource EnvironmentRBAC_master = new Resource("22e8782a-78dc-11ea-a009-ab381ce86597");
   public static final Resource AuthZEnvironmentConcept = new Resource("3984f0ce-032c-11eb-af88-136a9a3b3817");
-  public static final Resource Membereable = new Resource("73d125be-273d-11f0-bc3e-fdd30b5cbdec");
+  public static final Resource AbstractMember = new Resource("73d125be-273d-11f0-bc3e-fdd30b5cbdec");
   
   /* Begin Protected Region [[user]] */
   
@@ -49,4 +49,4 @@ public class DeploymentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment,Vz8Cx0lx6hflpCfKtO263+7y4XY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment,XfoWtsfmEewqjesoPNxyoaCqu/s=] */

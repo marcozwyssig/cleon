@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.template.xml;
+package cleon.architecturemethods.arc42.metamodel.template.xml.rbac;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -70,4 +70,4 @@ public class ServiceAccounts__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dc66a1d9-f74c-11ea-b8c1-41c5952fbbbb,f3mBtki2VcBvaR8hNX1p7uacoW4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,dc66a1d9-f74c-11ea-b8c1-41c5952fbbbb,4pGvdnS/vDhjdc1mhaNPQqDmNz4=] */

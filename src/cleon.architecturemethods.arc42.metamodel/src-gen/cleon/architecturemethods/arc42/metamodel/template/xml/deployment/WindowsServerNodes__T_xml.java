@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.metamodel.template.xml;
+package cleon.architecturemethods.arc42.metamodel.template.xml.deployment;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -76,4 +76,4 @@ public class WindowsServerNodes__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,1MBCHSnW8DKzeEC1+EHQIpgo/qg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b12f0237-e2b4-11ea-a524-1b14d0598ecd,GuGugaJeEBY6A1q70CjXnJ0Qvtc=] */

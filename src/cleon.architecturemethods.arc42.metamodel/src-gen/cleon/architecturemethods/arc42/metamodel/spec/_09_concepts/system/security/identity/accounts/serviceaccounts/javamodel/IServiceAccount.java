@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.secur
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IServiceAccount extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware, ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware {
+public interface IServiceAccount extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.authz.deployment.javamodel.IAbstractMember, cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware, ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.identity.accounts.serviceaccounts.javamodel.IActivityAllocationFromSiteAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("6f9d993b-a1a0-11ea-886d-354b9ee6fb2d");
   
@@ -28,4 +28,4 @@ public interface IServiceAccount extends cleon.common.resources.metamodel.spec.a
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,TBwxD1L7t427/76BZtxmQaDZYBg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,MCF9/RnGDTg1iy6lsRNPeGgwLtM=] */

@@ -35,11 +35,11 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 	@Override
 	public void initialize(final IModifiable modifiable, final INode clazz, final Package pkg,
 			final INode newInstance) {
-		final ITypeSystem typeSystem = TypeSystem.create(modifiable);
-		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final var typeSystem = TypeSystem.create(modifiable);
+		final var resourceRepository = typeSystem.getResourceRepository();
 
 		try {
-			final Integer nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
+			final var nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
 			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier,
 					LiteralUtil.create(nextId));
 		} catch (final Exception e) {
@@ -59,6 +59,7 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 	protected Integer getNextId(final IDynamicResourceRepository resourceRepository, final T newInstance) {
 		final List<T> resources = selectRessources(resourceRepository, newInstance);
 		if (resources.isEmpty()) {
+			Logger.instance().logInfo("Resources is empty. Will start with StartId");
 			return getStartId(newInstance);
 		}
 
@@ -85,7 +86,7 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 			}
 		}
 		// we did not leave the loop (and method), because all id's are assigned.
-		final int nextId = sortedList.size() + 1;
+		final var nextId = sortedList.size() + 1;
 		Logger.instance().logInfo("next id: " + nextId);
 		return nextId;
 	}

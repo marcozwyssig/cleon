@@ -19,6 +19,8 @@ import cleon.common.language.metamodel.spec.languages.javamodel.ILanguage;
 
 public class ResolveTranslationService {
 
+	private static boolean LOGGING = false;
+	
 	private final ILanguageClass languageClass;
 	private final IDynamicResourceRepository repository;
 	private final ch.actifsource.core.javamodel.IResource resource;
@@ -29,13 +31,29 @@ public class ResolveTranslationService {
 		this.languageClass = findLanguageClass();
 	}
 
+	private static void logVerbose(String message) {
+		if( LOGGING) {
+			Logger.instance().logVerbose(message);			
+		}
+	}
+	
+	private static void logInfo(String message) {
+		if( LOGGING) {
+			Logger.instance().logInfo(message);			
+		}
+	}
+
+	private static void logError(String message) {
+		Logger.instance().logError(message);
+	}
+	
 	private ILanguageClass findLanguageClass() {
 		final var shallowType = Select.shallowType(resource.getReadJobExecutor(), resource.getResource());
-		Logger.instance().logVerbose("Shallow type identified: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
+		logVerbose("Shallow type identified: " + Select.simpleName(resource.getReadJobExecutor(), shallowType));
 
 		final var languageClassNode = searchForLanguageClass(shallowType);
 		if (languageClassNode == null) {
-			Logger.instance().logVerbose("No language class found for resource.");
+			logVerbose("No language class found for resource.");
 			return null;
 		}
 		return repository.getResource(ILanguageClass.class, languageClassNode);
@@ -54,7 +72,7 @@ public class ResolveTranslationService {
 
 	private String getTranslationValue(final ILanguageNameAspectTranslation languageTranslation) {
 		if (languageTranslation == null) {
-			Logger.instance().logError("LanguageNameAspectTranslation is null; cannot retrieve translation value.");
+			logError("LanguageNameAspectTranslation is null; cannot retrieve translation value.");
 			return null;
 		}
 
@@ -69,7 +87,7 @@ public class ResolveTranslationService {
 				resource.getResource());
 
 		if (translationValue == null) {
-			Logger.instance().logInfo("Translation value not found for selector.");
+			logInfo("Translation value not found for selector.");
 		}
 		return translationValue;
 	}
@@ -93,15 +111,15 @@ public class ResolveTranslationService {
 		final Function<INode, INode> searchRecursive = new Function<>() {
 			@Override
 			public INode apply(final INode typeNode) {
-				Logger.instance().logVerbose("Examining type: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
+				logVerbose("Examining type: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
 
 				if (typeNode.equals(CorePackage.Resource)) {
-					Logger.instance().logVerbose("Reached root resource type. Ending search.");
+					logVerbose("Reached root resource type. Ending search.");
 					return null;
 				}
 
 				if (isLanguageClass(typeNode)) {
-					Logger.instance().logVerbose("Language class found: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
+					logVerbose("Language class found: " + Select.simpleName(resource.getReadJobExecutor(), typeNode));
 					return typeNode;
 				}
 
@@ -137,21 +155,21 @@ public class ResolveTranslationService {
 
 	private String translate(final String languageCode, Function<String, String> whenNotLanguageClass) {
 		if( languageClass == null) {
-			Logger.instance().logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()));
+			logInfo("No Language class found for : " + Select.simpleName(resource.getReadJobExecutor(), resource.getResource()));
 			if( whenNotLanguageClass == null) {
 				return Select.simpleName(resource.getReadJobExecutor(), resource.getResource());				
 			} else {
-				Logger.instance().logInfo("Execute whenNotLanguageClass lambda.");				
+				logInfo("Execute whenNotLanguageClass lambda.");				
 				return whenNotLanguageClass.apply(languageCode);
 			}
 		}
 
 		final var languageKey = findTranslationKeyForLanguage(languageCode);
 		if (languageKey == null) {
-			Logger.instance().logError("No translation found for language code: " + languageCode);
+			logError("No translation found for language code: " + languageCode);
 			return null;
 		}
-		Logger.instance().logVerbose("Translation found for language code: " + languageCode);
+		logVerbose("Translation found for language code: " + languageCode);
 
 		final var languageTranslation = languageClass.selectTranslations().get(languageKey);
 		return getTranslationValue(languageTranslation);

@@ -373,6 +373,9 @@ public class FunctionSpace_Specification {
     @IDynamicResourceExtension.MethodId("d8a76461-529c-11f0-9b60-9f3150c7f92b")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration> GetSystemConfigurations();
 
+    @IDynamicResourceExtension.MethodId("6231be91-a502-11f0-8c14-396d039a7a3f")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IHostSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -395,4 +398,4 @@ public class FunctionSpace_Specification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,h+08TOBAme4y6vRb0wgPTliZRVs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,82e8262a-0024-11f0-945c-87b19aec41f4,zXlhCEB1j/3eTa5axPvAdruOj/I=] */

@@ -158,7 +158,7 @@ public class FunctionSpace {
     public java.lang.String convertWhitespaceToUnderscoreAndFilterInvalidChars(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
       return stringLiteral.chars().mapToObj(i -> (char) i).map(c -> Character.isWhitespace(c) ? '_' : c)
-      		.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_').map(String::valueOf)
+      		.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_' || c == '/').map(String::valueOf)
       		.collect(java.util.stream.Collectors.joining());
       /* End Protected Region   [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
     }

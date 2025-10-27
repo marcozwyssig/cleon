@@ -14,6 +14,10 @@ public class DetailspecifictionPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_SysCmpSpecification = new Resource("1db6c3eb-d21f-11ee-8171-1959ddc2a1e5");
   public static final Resource FunctionSpace_aE_Asciidoc_AbstractListOfSysCmpSpecifications = new Resource("d4f4027f-d6e5-11ee-8fe2-9fdd0afb9b0b");
   public static final Resource FunctionSpace_aE_Asciidoc_About = new Resource("e9096eec-d7a1-11ee-890b-0db639851a38");
+  public static final Resource FunctionSpace_aE_Asciidoc_EnvironmentSpecifications = new Resource("4f53c0f0-b336-11f0-8b15-d12a8adc0014");
+  public static final Resource FunctionSpace_aE_Asciidoc_SiteSpecifications = new Resource("9c1987ef-b336-11f0-8b15-d12a8adc0014");
+  public static final Resource FunctionSpace_aE_Asciidoc_DataCenterSpecifications = new Resource("f5953f4f-b336-11f0-8b15-d12a8adc0014");
+  public static final Resource FunctionSpace_aE_Asciidoc_HostSpecification = new Resource("1b43da59-b337-11f0-8b15-d12a8adc0014");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +38,4 @@ public class DetailspecifictionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.asciidoc.detailspecifiction,LHDWV+SoCr8LQ+kFcq8tUo3WuHg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.asciidoc.detailspecifiction,f7fwWaoZx0qO2AVn60ZqeflTUQY=] */

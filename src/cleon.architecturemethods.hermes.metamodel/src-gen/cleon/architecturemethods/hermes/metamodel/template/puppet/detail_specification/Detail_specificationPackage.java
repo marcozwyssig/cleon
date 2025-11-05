@@ -81,6 +81,7 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SatelliteRegistration = new Resource("81ac80a6-ba3e-11f0-9349-73cfbb54b949");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallRootCA = new Resource("d753b36e-ba42-11f0-9349-73cfbb54b949");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_GitLab = new Resource("44776e24-ba46-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_Ethernet_aE_8021x = new Resource("98a5d791-ba54-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -101,4 +102,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,S+FZb9SYYqxHKJUMexnznAl8yg8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,3DyWVh9s+4/2n71JjTzfTY0LmKc=] */

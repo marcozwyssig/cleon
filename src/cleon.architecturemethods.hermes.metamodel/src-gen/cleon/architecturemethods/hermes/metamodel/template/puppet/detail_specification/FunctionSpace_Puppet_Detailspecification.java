@@ -2295,6 +2295,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IEthernet_8021xFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9bfb6ba4-ba54-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("9bfb6ba7-ba54-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IEthernet_8021xFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Ethernet_8021xFunctionsImpl implements IEthernet_8021xFunctionsImpl {
+
+    public static final IEthernet_8021xFunctionsImpl INSTANCE = new Ethernet_8021xFunctionsImpl();
+
+    private Ethernet_8021xFunctionsImpl() {}
+
+  }
+  
+  public static class Ethernet_8021xFunctions {
+
+    private Ethernet_8021xFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,muShh6U5tfw/4ENFedm3HCx0jdg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,dFQNxbO3kZWF7CPQ4uhZeKzb/1s=] */

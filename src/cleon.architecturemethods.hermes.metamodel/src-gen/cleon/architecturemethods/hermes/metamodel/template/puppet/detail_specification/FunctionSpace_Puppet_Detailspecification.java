@@ -1560,7 +1560,7 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
-  public static interface IConfigureRepoFunctions extends IDynamicResourceExtension {
+  public static interface IRepoFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9b4a558e-21e6-11f0-94ff-8381b76104b1")
     public java.lang.String ClassDefinition();
@@ -1570,25 +1570,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureRepoFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRepoFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureRepoFunctionsImpl implements IConfigureRepoFunctionsImpl {
+  public static class RepoFunctionsImpl implements IRepoFunctionsImpl {
 
-    public static final IConfigureRepoFunctionsImpl INSTANCE = new ConfigureRepoFunctionsImpl();
+    public static final IRepoFunctionsImpl INSTANCE = new RepoFunctionsImpl();
 
-    private ConfigureRepoFunctionsImpl() {}
+    private RepoFunctionsImpl() {}
 
   }
   
-  public static class ConfigureRepoFunctions {
+  public static class RepoFunctions {
 
-    private ConfigureRepoFunctions() {}
+    private RepoFunctions() {}
 
   }
 
-  public static interface IConfigureSSHFunctions extends IDynamicResourceExtension {
+  public static interface ISSHFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0507ae56-21d7-11f0-83ae-df5418a109a4")
     public java.lang.String ClassDefinition();
@@ -1598,25 +1598,25 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureSSHFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISSHFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureSSHFunctionsImpl implements IConfigureSSHFunctionsImpl {
+  public static class SSHFunctionsImpl implements ISSHFunctionsImpl {
 
-    public static final IConfigureSSHFunctionsImpl INSTANCE = new ConfigureSSHFunctionsImpl();
+    public static final ISSHFunctionsImpl INSTANCE = new SSHFunctionsImpl();
 
-    private ConfigureSSHFunctionsImpl() {}
+    private SSHFunctionsImpl() {}
 
   }
   
-  public static class ConfigureSSHFunctions {
+  public static class SSHFunctions {
 
-    private ConfigureSSHFunctions() {}
+    private SSHFunctions() {}
 
   }
 
-  public static interface IConfigureDNSResolverFunctions extends IDynamicResourceExtension {
+  public static interface IDNSResolverFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("18d7f476-21ad-11f0-83ae-df5418a109a4")
     public java.lang.String ClassDefinition();
@@ -1626,21 +1626,21 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
   
-  public static interface IConfigureDNSResolverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDNSResolverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ConfigureDNSResolverFunctionsImpl implements IConfigureDNSResolverFunctionsImpl {
+  public static class DNSResolverFunctionsImpl implements IDNSResolverFunctionsImpl {
 
-    public static final IConfigureDNSResolverFunctionsImpl INSTANCE = new ConfigureDNSResolverFunctionsImpl();
+    public static final IDNSResolverFunctionsImpl INSTANCE = new DNSResolverFunctionsImpl();
 
-    private ConfigureDNSResolverFunctionsImpl() {}
+    private DNSResolverFunctionsImpl() {}
 
   }
   
-  public static class ConfigureDNSResolverFunctions {
+  public static class DNSResolverFunctions {
 
-    private ConfigureDNSResolverFunctions() {}
+    private DNSResolverFunctions() {}
 
   }
 
@@ -2154,6 +2154,62 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ICreateShortcutFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c4f9b18f-ba30-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("c4f9b192-ba30-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ICreateShortcutFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CreateShortcutFunctionsImpl implements ICreateShortcutFunctionsImpl {
+
+    public static final ICreateShortcutFunctionsImpl INSTANCE = new CreateShortcutFunctionsImpl();
+
+    private CreateShortcutFunctionsImpl() {}
+
+  }
+  
+  public static class CreateShortcutFunctions {
+
+    private CreateShortcutFunctions() {}
+
+  }
+
+  public static interface ILocalLinFwFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("59d6522a-ba3b-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("59d6525c-ba3b-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ILocalLinFwFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LocalLinFwFunctionsImpl implements ILocalLinFwFunctionsImpl {
+
+    public static final ILocalLinFwFunctionsImpl INSTANCE = new LocalLinFwFunctionsImpl();
+
+    private LocalLinFwFunctionsImpl() {}
+
+  }
+  
+  public static class LocalLinFwFunctions {
+
+    private LocalLinFwFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,QmdZcIxv9Wv/3w4YdS4w/mzkPCs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,hBbPGOu7m3PDEAXmb9aUc1j/cVU=] */

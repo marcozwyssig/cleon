@@ -130,6 +130,31 @@ public class FunctionSpace_Inst_Software {
 
   }
 
+  public static interface IShortcutFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d7606d3e-ba31-11f0-9349-73cfbb54b949")
+    public java.lang.String TargetFullPath();
+
+  }
+  
+  public static interface IShortcutFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ShortcutFunctionsImpl implements IShortcutFunctionsImpl {
+
+    public static final IShortcutFunctionsImpl INSTANCE = new ShortcutFunctionsImpl();
+
+    private ShortcutFunctionsImpl() {}
+
+  }
+  
+  public static class ShortcutFunctions {
+
+    private ShortcutFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,s4vB0f0LtvB2+npRhJJqVNHJ/1k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0fd7675e-1131-11f0-a4f9-b5f995a9e0fe,x7Rk0jBfmgoi3Xsu0KfgCqYZHnA=] */

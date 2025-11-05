@@ -41,6 +41,13 @@ public class Win_polycom_inst_softwarePackage {
   public static final Resource ChocoSoftware_chocoInstallerPath = new Resource("5e5b8bfb-2ca1-11f0-851f-3f768d79c0eb");
   public static final Resource WorkplaceLinks = new Resource("6389fd00-2cac-11f0-851f-3f768d79c0eb");
   public static final Resource WorkplaceLinks_topLevelName = new Resource("33d86b7f-2cb1-11f0-851f-3f768d79c0eb");
+  public static final Resource CreateShortcut = new Resource("82c9d5db-ba2f-11f0-9349-73cfbb54b949");
+  public static final Resource Shortcut = new Resource("81e8cea6-ba30-11f0-9349-73cfbb54b949");
+  public static final Resource CreateShortcut_shortcuts = new Resource("87bcf707-ba30-11f0-9349-73cfbb54b949");
+  public static final Resource Shortcut_shortcutFullPath = new Resource("61d1ac0a-ba31-11f0-9349-73cfbb54b949");
+  public static final Resource Shortcut_targetFullPath = new Resource("bd01c9c4-ba31-11f0-9349-73cfbb54b949");
+  public static final Resource Shortcut_targetPath = new Resource("c0f80a45-ba31-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_Inst_aE_Software_Shortcut = new Resource("d1e895d7-ba31-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -61,4 +68,4 @@ public class Win_polycom_inst_softwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,kWN6fqcBO/loXYdI/13n188cCuo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software,ESVF037Nj1sCmBdv2vwPe0BG4Ds=] */

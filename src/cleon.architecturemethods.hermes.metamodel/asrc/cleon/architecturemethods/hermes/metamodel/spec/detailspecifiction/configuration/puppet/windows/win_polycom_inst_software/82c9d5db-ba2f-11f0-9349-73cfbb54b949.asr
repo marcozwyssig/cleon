@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="82c9d5db-ba2f-11f0-9349-73cfbb54b949">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="87bd1e1b-ba30-11f0-9349-73cfbb54b949" type="resource" guid="87bcf707-ba30-11f0-9349-73cfbb54b949" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="82c9d5dd-ba2f-11f0-9349-73cfbb54b949" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="62b76dab-ba30-11f0-9349-73cfbb54b949" type="resource" guid="20460cb5-1b5f-11f0-9c3a-8502b2fb88fb" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="87bd1e1b-ba30-11f0-9349-73cfbb54b949">
+      <resource guid="87bcf707-ba30-11f0-9349-73cfbb54b949">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="87bcf709-ba30-11f0-9349-73cfbb54b949" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="87bcf70a-ba30-11f0-9349-73cfbb54b949" type="literal">shortcuts</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="87bdba5c-ba30-11f0-9349-73cfbb54b949" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="87bdba5d-ba30-11f0-9349-73cfbb54b949" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="87bdba5e-ba30-11f0-9349-73cfbb54b949" type="resource" guid="81e8cea6-ba30-11f0-9349-73cfbb54b949" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="82cc6dee-ba2f-11f0-9349-73cfbb54b949" type="literal">CreateShortcut</object>
+  </predicate>
+</resource>
+

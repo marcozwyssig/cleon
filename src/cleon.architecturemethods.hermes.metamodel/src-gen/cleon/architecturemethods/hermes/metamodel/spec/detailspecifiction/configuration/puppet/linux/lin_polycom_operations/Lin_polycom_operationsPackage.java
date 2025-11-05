@@ -37,6 +37,7 @@ public class Lin_polycom_operationsPackage {
   public static final Resource Certificates_smb_aE_share_aE_name = new Resource("c31c9955-525e-11f0-9c5a-35f303bb18a5");
   public static final Resource Certificates_smb_aE_server_aE_host = new Resource("d04c7367-525e-11f0-9c5a-35f303bb18a5");
   public static final Resource Certificate_subject_aE_alt_aE_names_aE_from_aE_host = new Resource("638b876f-5321-11f0-8fbb-ff2ccb392c9c");
+  public static final Resource LocalLinFw = new Resource("b67537b6-ba3a-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +58,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,OVWTwfuXZjdC9yKkGGug6AYoGyg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,IKN0wA2SwaDQfRPQ8R1ygInuAWE=] */

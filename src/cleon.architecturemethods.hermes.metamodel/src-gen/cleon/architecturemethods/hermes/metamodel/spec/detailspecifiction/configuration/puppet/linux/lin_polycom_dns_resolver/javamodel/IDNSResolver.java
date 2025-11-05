@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IConfigureDNSResolver extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration {
+public interface IDNSResolver extends cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.javamodel.IPuppetConfiguration {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f88d0c56-21ac-11f0-83ae-df5418a109a4");
   
@@ -22,4 +22,4 @@ public interface IConfigureDNSResolver extends cleon.architecturemethods.hermes.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f88d0c56-21ac-11f0-83ae-df5418a109a4,sEw6WvUyrGlFJzhzHCPuhZ2Loao=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f88d0c56-21ac-11f0-83ae-df5418a109a4,ZG2Qmh7PMwtd+5QdqvUQC4pDU44=] */

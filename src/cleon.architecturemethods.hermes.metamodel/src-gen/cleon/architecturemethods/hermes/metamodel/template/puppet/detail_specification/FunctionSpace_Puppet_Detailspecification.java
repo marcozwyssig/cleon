@@ -2323,6 +2323,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface IAdDialinFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7f9fda6e-ba5e-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("7f9fda71-ba5e-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IAdDialinFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AdDialinFunctionsImpl implements IAdDialinFunctionsImpl {
+
+    public static final IAdDialinFunctionsImpl INSTANCE = new AdDialinFunctionsImpl();
+
+    private AdDialinFunctionsImpl() {}
+
+  }
+  
+  public static class AdDialinFunctions {
+
+    private AdDialinFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,dFQNxbO3kZWF7CPQ4uhZeKzb/1s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,sIorMwZFk7yMN668MW2gHYnCQd0=] */

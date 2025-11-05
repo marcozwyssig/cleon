@@ -52,6 +52,10 @@ public class Win_polycom_adPackage {
   public static final Resource Gpos_gpos = new Resource("45195604-63c9-11f0-87c2-0f8d66c50b66");
   public static final Resource Gpo_linked_aE_ou = new Resource("e0f64e7d-63c9-11f0-87c2-0f8d66c50b66");
   public static final Resource Gpo_linked_aE_permissions = new Resource("8e7997de-63e1-11f0-87c2-0f8d66c50b66");
+  public static final Resource AdDialin = new Resource("d32ea680-ba5d-11f0-9349-73cfbb54b949");
+  public static final Resource AdDialin_templateForEvaluatingHostToApplyDialinSettings = new Resource("e5693f68-ba5d-11f0-9349-73cfbb54b949");
+  public static final Resource AdDialin_usedActivityPermission = new Resource("13bb75ce-ba5e-11f0-9349-73cfbb54b949");
+  public static final Resource AdDialin_dialInHosts = new Resource("4dc391e5-ba5e-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -72,4 +76,4 @@ public class Win_polycom_adPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,lqeIJS5Lmqoc9gioumXDTaXB6Lc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad,i4vgUBMPJzMvdaYQDsMvFKZzF5Y=] */

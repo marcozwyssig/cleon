@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[fab6dfde-0014-11f0-945c-87b19aec41f4,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IGeneralPurposeOperatingSystem;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration;
 /* End Protected Region   [[fab6dfde-0014-11f0-945c-87b19aec41f4,imports]] */
 
@@ -188,7 +189,7 @@ public class FunctionSpace_Puppet_Detailspecification {
       /* Begin Protected Region [[32325ba5-580f-11f0-b941-05f03c57551d]] */
 		final var sysCfg = abstractListOfSysCfgCategorySpecification.extension(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification.cmp.syscfg.FunctionSpace_SysCfgSpec.IAbstractListOfSysCfgCategorySpecificationFunctions.class).SysCfg();
 		final var sysCfgFunc = sysCfg.extension(ISystemConfigurationFunctions.class);
-		return sysCfgFunc.IsDependsOnLinuxOrWindows() || sysCfg instanceof IOperatingSystemConfiguration;
+		return sysCfgFunc.IsDependsOnLinuxOrWindows() || sysCfg instanceof IGeneralPurposeOperatingSystem;
       /* End Protected Region   [[32325ba5-580f-11f0-b941-05f03c57551d]] */
     }
 
@@ -2210,6 +2211,90 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface ISatelliteRegistrationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("85b92f50-ba3e-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("85b92f53-ba3e-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface ISatelliteRegistrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SatelliteRegistrationFunctionsImpl implements ISatelliteRegistrationFunctionsImpl {
+
+    public static final ISatelliteRegistrationFunctionsImpl INSTANCE = new SatelliteRegistrationFunctionsImpl();
+
+    private SatelliteRegistrationFunctionsImpl() {}
+
+  }
+  
+  public static class SatelliteRegistrationFunctions {
+
+    private SatelliteRegistrationFunctions() {}
+
+  }
+
+  public static interface IInstallRootCAFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("dd74ea22-ba42-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("dd74ea25-ba42-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IInstallRootCAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallRootCAFunctionsImpl implements IInstallRootCAFunctionsImpl {
+
+    public static final IInstallRootCAFunctionsImpl INSTANCE = new InstallRootCAFunctionsImpl();
+
+    private InstallRootCAFunctionsImpl() {}
+
+  }
+  
+  public static class InstallRootCAFunctions {
+
+    private InstallRootCAFunctions() {}
+
+  }
+
+  public static interface IGitLabFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("48830bd4-ba46-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("48830bd7-ba46-11f0-9349-73cfbb54b949")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface IGitLabFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GitLabFunctionsImpl implements IGitLabFunctionsImpl {
+
+    public static final IGitLabFunctionsImpl INSTANCE = new GitLabFunctionsImpl();
+
+    private GitLabFunctionsImpl() {}
+
+  }
+  
+  public static class GitLabFunctions {
+
+    private GitLabFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,hBbPGOu7m3PDEAXmb9aUc1j/cVU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,muShh6U5tfw/4ENFedm3HCx0jdg=] */

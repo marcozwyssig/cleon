@@ -43,6 +43,56 @@ public class FunctionSpace_lin_polycom_operations {
 
   }
 
+  public static interface ISatelliteRegistrationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7c31ce03-ba3f-11f0-9349-73cfbb54b949")
+    public java.lang.String ca_rpm_url();
+
+  }
+  
+  public static interface ISatelliteRegistrationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SatelliteRegistrationFunctionsImpl implements ISatelliteRegistrationFunctionsImpl {
+
+    public static final ISatelliteRegistrationFunctionsImpl INSTANCE = new SatelliteRegistrationFunctionsImpl();
+
+    private SatelliteRegistrationFunctionsImpl() {}
+
+  }
+  
+  public static class SatelliteRegistrationFunctions {
+
+    private SatelliteRegistrationFunctions() {}
+
+  }
+
+  public static interface IInstallRootCAFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("250ff300-ba44-11f0-9349-73cfbb54b949")
+    public java.lang.String smb_share();
+
+  }
+  
+  public static interface IInstallRootCAFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class InstallRootCAFunctionsImpl implements IInstallRootCAFunctionsImpl {
+
+    public static final IInstallRootCAFunctionsImpl INSTANCE = new InstallRootCAFunctionsImpl();
+
+    private InstallRootCAFunctionsImpl() {}
+
+  }
+  
+  public static class InstallRootCAFunctions {
+
+    private InstallRootCAFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9060dfe3-4d22-11f0-954b-b579526ae084,yhpfp3A0ssdqqyttW0j+OHfi7qs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9060dfe3-4d22-11f0-954b-b579526ae084,RNIOamhU1Lx0HHxmMv6ujF4x5G8=] */

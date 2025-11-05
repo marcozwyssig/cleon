@@ -558,6 +558,7 @@
         <resource statement-guid="40e297ff-993a-11f0-b89e-65f425c2dee1" type="resource" guid="40e1fbbc-993a-11f0-b89e-65f425c2dee1" />
         <resource statement-guid="40e704d4-993a-11f0-b89e-65f425c2dee1" type="resource" guid="40e704d1-993a-11f0-b89e-65f425c2dee1" />
         <resource statement-guid="40ec8319-993a-11f0-b89e-65f425c2dee1" type="resource" guid="40ec8316-993a-11f0-b89e-65f425c2dee1" />
+        <resource statement-guid="a4550e04-ba46-11f0-9349-73cfbb54b949" type="resource" guid="a454bfe1-ba46-11f0-9349-73cfbb54b949" />
       </owns>
     </resource>
   </owns>
@@ -6124,6 +6125,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="40ec831a-993a-11f0-b89e-65f425c2dee1" type="literal">cleon.architecturemethods.arc42.metamodel.template.xml.rbac</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="a4550e04-ba46-11f0-9349-73cfbb54b949">
+            <resource guid="a454bfe1-ba46-11f0-9349-73cfbb54b949">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a454e6f3-ba46-11f0-9349-73cfbb54b949" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a4553515-ba46-11f0-9349-73cfbb54b949" type="literal">cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_git</object>
               </predicate>
             </resource>
           </object>

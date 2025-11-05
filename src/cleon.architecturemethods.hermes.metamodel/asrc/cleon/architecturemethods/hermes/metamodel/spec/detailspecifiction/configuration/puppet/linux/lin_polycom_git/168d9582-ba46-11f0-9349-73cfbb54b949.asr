@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="168d9582-ba46-11f0-9349-73cfbb54b949">
+  <owns predicate="fc5b8f62-c33a-11db-919a-e5dd1d4836b8">
+    <resource statement-guid="1cd3b9d9-ba46-11f0-9349-73cfbb54b949" type="resource" guid="1cd3b9d6-ba46-11f0-9349-73cfbb54b949">
+      <owns predicate="02d4146e-ddf9-11db-870e-7f4642f6066c">
+        <resource statement-guid="1cd4561f-ba46-11f0-9349-73cfbb54b949" type="resource" guid="1cd42f0b-ba46-11f0-9349-73cfbb54b949" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="168dbc94-ba46-11f0-9349-73cfbb54b949" type="resource" guid="81c34efc-cc97-11db-9bf0-1bcf67c8b5b0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="168e31c5-ba46-11f0-9349-73cfbb54b949" type="literal">Design_lin_polycom_git</object>
+  </predicate>
+  <predicate guid="fc5b8f62-c33a-11db-919a-e5dd1d4836b8">
+    <object statement-guid="1cd3b9d9-ba46-11f0-9349-73cfbb54b949">
+      <resource guid="1cd3b9d6-ba46-11f0-9349-73cfbb54b949">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1cd3b9d8-ba46-11f0-9349-73cfbb54b949" type="resource" guid="a5dea018-cc97-11db-9bf0-1bcf67c8b5b0" />
+        </predicate>
+        <predicate guid="02d4146e-ddf9-11db-870e-7f4642f6066c">
+          <object statement-guid="1cd4561f-ba46-11f0-9349-73cfbb54b949">
+            <resource guid="1cd42f0b-ba46-11f0-9349-73cfbb54b949">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1cd42f0c-ba46-11f0-9349-73cfbb54b949" type="resource" guid="30b8600d-d6f6-11db-bf54-a3ecc4b57825" />
+              </predicate>
+              <predicate guid="63f27657-c33c-11db-919a-e5dd1d4836b8">
+                <object statement-guid="1cd4561d-ba46-11f0-9349-73cfbb54b949" type="literal">616</object>
+              </predicate>
+              <predicate guid="6a794cbd-c33c-11db-919a-e5dd1d4836b8">
+                <object statement-guid="1cd4561e-ba46-11f0-9349-73cfbb54b949" type="literal">384</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="118e9dc5-1b6c-11dd-af33-07ccc9113053">
+          <object statement-guid="1cd407fa-ba46-11f0-9349-73cfbb54b949" type="resource" guid="1ccfe941-ba46-11f0-9349-73cfbb54b949" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="997316b3-cb20-11db-9b7d-fbc9e205e386">
+    <object statement-guid="168ea6fb-ba46-11f0-9349-73cfbb54b949" type="resource" guid="08b5a95d-cca3-11db-9bf0-1bcf67c8b5b0" />
+  </predicate>
+  <predicate guid="67de5bb1-19a3-11e9-888f-6bde80119cdf">
+    <object statement-guid="168e31c6-ba46-11f0-9349-73cfbb54b949" type="literal">true</object>
+  </predicate>
+  <predicate guid="7b97a4a8-19a3-11e9-888f-6bde80119cdf">
+    <object statement-guid="168e58d7-ba46-11f0-9349-73cfbb54b949" type="literal">true</object>
+  </predicate>
+  <predicate guid="924acc93-19a3-11e9-888f-6bde80119cdf">
+    <object statement-guid="168e58d8-ba46-11f0-9349-73cfbb54b949" type="literal">true</object>
+  </predicate>
+  <predicate guid="a9218359-19a3-11e9-888f-6bde80119cdf">
+    <object statement-guid="168e7fea-ba46-11f0-9349-73cfbb54b949" type="literal">false</object>
+  </predicate>
+  <predicate guid="11a82e16-19aa-11e9-888f-6bde80119cdf">
+    <object statement-guid="168e7fe9-ba46-11f0-9349-73cfbb54b949" type="literal">true</object>
+  </predicate>
+</resource>
+

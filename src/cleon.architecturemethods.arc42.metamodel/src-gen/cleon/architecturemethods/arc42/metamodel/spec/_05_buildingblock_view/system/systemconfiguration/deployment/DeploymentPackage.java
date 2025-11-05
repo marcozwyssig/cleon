@@ -8,6 +8,7 @@ public class DeploymentPackage {
   public static final Resource RepositorySystemConfiguration = new Resource("233a9919-0c3a-11e9-83ba-4d57b06560a2");
   public static final Resource RedhatSatelliteSystemConfiguration = new Resource("dd53d2f6-0c3c-11e9-83ba-4d57b06560a2");
   public static final Resource WsusSystemConfiguration = new Resource("b239a026-0c3d-11e9-83ba-4d57b06560a2");
+  public static final Resource GitLabSystemConfiguration = new Resource("53518087-ba52-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class DeploymentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.deployment,lxSRpsp60k8ojh72rDXep4FJSlQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.deployment,X6YVqnclRgITI1zfL7dQUS2Wo0w=] */

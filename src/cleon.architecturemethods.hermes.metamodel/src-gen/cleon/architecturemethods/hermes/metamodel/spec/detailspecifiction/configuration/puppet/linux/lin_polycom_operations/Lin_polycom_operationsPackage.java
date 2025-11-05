@@ -38,6 +38,21 @@ public class Lin_polycom_operationsPackage {
   public static final Resource Certificates_smb_aE_server_aE_host = new Resource("d04c7367-525e-11f0-9c5a-35f303bb18a5");
   public static final Resource Certificate_subject_aE_alt_aE_names_aE_from_aE_host = new Resource("638b876f-5321-11f0-8fbb-ff2ccb392c9c");
   public static final Resource LocalLinFw = new Resource("b67537b6-ba3a-11f0-9349-73cfbb54b949");
+  public static final Resource SatelliteRegistration = new Resource("f6aefe38-ba3d-11f0-9349-73cfbb54b949");
+  public static final Resource SatelliteRegistration_satellite_aE_host = new Resource("01e41973-ba3e-11f0-9349-73cfbb54b949");
+  public static final Resource SatelliteRegistration_url = new Resource("535105e6-ba3f-11f0-9349-73cfbb54b949");
+  public static final Resource SatelliteRegistration_ca_aE_rpm_aE_url = new Resource("5a029539-ba3f-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_lin_aE_polycom_aE_operations_SatelliteRegistration = new Resource("776e5247-ba3f-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA = new Resource("6c067b1f-ba41-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_smb_aE_share = new Resource("76000aeb-ba41-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_cert_aE_filename = new Resource("808648fe-ba41-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_anchors_aE_dir = new Resource("73994eb8-ba42-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_pki_aE_mountpoint = new Resource("7b80eca1-ba42-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_smb_aE_username = new Resource("6a9c03b6-ba43-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_smb_aE_server_aE_host = new Resource("b0c4fbcb-ba43-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_smb_aE_path = new Resource("cde5a638-ba43-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_domain_aE_name = new Resource("e1b7ce28-ba43-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_lin_aE_polycom_aE_operations_InstallRootCA = new Resource("1db18133-ba44-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -58,4 +73,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,IKN0wA2SwaDQfRPQ8R1ygInuAWE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,5UeElAryhFb+zQBR1Q6FrIkj1w0=] */

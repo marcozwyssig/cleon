@@ -78,6 +78,9 @@ public class Detail_specificationPackage {
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_WsusApprovalUpdates = new Resource("ad87ff0d-8a6b-11f0-af5e-cd5d044ab02b");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_CreateShortcut = new Resource("c13110c9-ba30-11f0-9349-73cfbb54b949");
   public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_LocalLinFw = new Resource("59d65227-ba3b-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_SatelliteRegistration = new Resource("81ac80a6-ba3e-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_InstallRootCA = new Resource("d753b36e-ba42-11f0-9349-73cfbb54b949");
+  public static final Resource FunctionSpace_aE_Puppet_aE_Detailspecification_GitLab = new Resource("44776e24-ba46-11f0-9349-73cfbb54b949");
   
   /* Begin Protected Region [[user]] */
   
@@ -98,4 +101,4 @@ public class Detail_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,0SssaISvVrXRu1nOKctJ6QuY2Ag=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.puppet.detail_specification,S+FZb9SYYqxHKJUMexnznAl8yg8=] */

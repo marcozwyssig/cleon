@@ -3,14 +3,11 @@ package cleon.common.resources.metamodel.spec.id.javamodel;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
-import java.util.Map.Entry;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
-import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
@@ -38,7 +35,7 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 		return resourceRepository.getResource(_classInstance, context.getResource());
 	}
 
-	protected Integer GetIdentifier( T businessObjectId ) {
+	protected Object GetIdentifier( T businessObjectId ) {
 		if( businessObjectId != null ) {
 			return businessObjectId.selectIdentifier();
 		}

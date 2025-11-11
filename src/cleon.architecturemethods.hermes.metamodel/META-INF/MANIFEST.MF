@@ -32,6 +32,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="11.0.0",
  ch.actifsource.solution.datatype;bundle-version="10.10.0",
  ch.actifsource.generator;bundle-version="11.0.0"
 Export-Package: 
+ cleon.architecturemethods.hermes.metamodel.importer.solution_concept.xml,
+ cleon.architecturemethods.hermes.metamodel.importer.solution_concept.xml.javamodel,
  cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction,
  cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.javamodel,
  cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration,

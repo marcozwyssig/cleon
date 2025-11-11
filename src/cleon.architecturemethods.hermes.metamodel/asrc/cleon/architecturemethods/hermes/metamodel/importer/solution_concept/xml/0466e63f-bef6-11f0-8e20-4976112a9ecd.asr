@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="0466e63f-bef6-11f0-8e20-4976112a9ecd">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0466e647-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="0466e640-bef6-11f0-8e20-4976112a9ecd" />
+  </owns>
+  <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <resource statement-guid="0466e64d-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="0466e641-bef6-11f0-8e20-4976112a9ecd" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0466e642-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0466e643-bef6-11f0-8e20-4976112a9ecd" type="literal">RequirementImportWizard</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0466e647-bef6-11f0-8e20-4976112a9ecd">
+      <resource guid="0466e640-bef6-11f0-8e20-4976112a9ecd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0466e644-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0466e645-bef6-11f0-8e20-4976112a9ecd" type="literal">cleon.architecturemethods.hermes.metamodel.importer.solution_concept.xml.RequirementImportWizardAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0466e646-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="521f1dd5-0e46-11e7-bc08-e928dcbbca14" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e648-bef6-11f0-8e20-4976112a9ecd" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="461126a0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e649-bef6-11f0-8e20-4976112a9ecd" type="literal">Marco Zwyssig</object>
+  </predicate>
+  <predicate guid="57635ae9-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e64a-bef6-11f0-8e20-4976112a9ecd" type="literal">Imports the requirements into the requirements</object>
+  </predicate>
+  <predicate guid="60f8f7f0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e64b-bef6-11f0-8e20-4976112a9ecd" type="literal"> </object>
+  </predicate>
+  <predicate guid="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e64d-bef6-11f0-8e20-4976112a9ecd">
+      <resource guid="0466e641-bef6-11f0-8e20-4976112a9ecd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0466e64c-bef6-11f0-8e20-4976112a9ecd" type="resource" guid="06e1bd57-0f10-11e7-9a20-dfec81ac21a9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ff5671f2-0f13-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="0466e64e-bef6-11f0-8e20-4976112a9ecd" type="literal">xml</object>
+  </predicate>
+</resource>
+

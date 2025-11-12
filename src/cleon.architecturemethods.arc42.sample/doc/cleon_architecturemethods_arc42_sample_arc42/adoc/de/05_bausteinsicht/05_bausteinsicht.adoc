@@ -7,6 +7,66 @@
 [#95b4d64f-1dc8-11e6-98be-b1fca84f9ccf]
 == Bausteinsicht
 The building block view shows the system from a black box perspective. It shows the system as a set of components (building blocks) and their interfaces. The building blocks are the elements that are used to implement the system. The building block view is the basis for the runtime and deployment views.
+
+The following diagrams shows an overview of all building blocks:
+
+[plantuml, Building Block View_schema, svg]
+----
+@startuml
+left to right direction
+
+skinparam nodesep 5
+skinparam componentStyle rectangle
+
+title Chess Building Block Overview 
+
+' Level 1 Container
+rectangle "Level 1" #E1F5FF;line:0288D1;line.bold {
+	rectangle "Chess" as AD4BE5F2_285A_11E8_9AF4_B7D7A3BBDDC1 #E1F5FF;line:0288D1;line.bold
+}
+
+
+' Level 2 Container
+rectangle "Level 2" #FFF9C4;line:F9A825;line.bold {
+	rectangle "Test1" as 48213901_D579_11EE_903E_9F564E4DE07E #FFF9C4;line:F9A825;line.bold
+	AD4BE5F2_285A_11E8_9AF4_B7D7A3BBDDC1 -[thickness=1]-> 48213901_D579_11EE_903E_9F564E4DE07E
+	rectangle "Test2" as 48213902_D579_11EE_903E_9F564E4DE07E #FFF9C4;line:F9A825;line.bold
+	AD4BE5F2_285A_11E8_9AF4_B7D7A3BBDDC1 -[thickness=1]-> 48213902_D579_11EE_903E_9F564E4DE07E
+	rectangle "Test3" as 48213903_D579_11EE_903E_9F564E4DE07E #FFF9C4;line:F9A825;line.bold
+	AD4BE5F2_285A_11E8_9AF4_B7D7A3BBDDC1 -[thickness=1]-> 48213903_D579_11EE_903E_9F564E4DE07E
+}
+
+' Level 3 Container
+rectangle "Level 3" #F3E5F5;line:8E24AA;line.bold {
+	rectangle "Test1_2" as 489CD282_D579_11EE_903E_9F564E4DE07E #F3E5F5;line:8E24AA;line.bold
+	48213901_D579_11EE_903E_9F564E4DE07E -[thickness=1]-> 489CD282_D579_11EE_903E_9F564E4DE07E
+	rectangle "Test2_2" as 489CD283_D579_11EE_903E_9F564E4DE07E #F3E5F5;line:8E24AA;line.bold
+	48213902_D579_11EE_903E_9F564E4DE07E -[thickness=1]-> 489CD283_D579_11EE_903E_9F564E4DE07E
+	rectangle "Test3_1" as 489CD281_D579_11EE_903E_9F564E4DE07E #F3E5F5;line:8E24AA;line.bold
+	48213903_D579_11EE_903E_9F564E4DE07E -[thickness=1]-> 489CD281_D579_11EE_903E_9F564E4DE07E
+}
+
+' Level 4 Container
+rectangle "Level 4" #E8F5E9;line:43A047;line.bold {
+	rectangle "Test1_2_1" as 4965EE24_D579_11EE_903E_9F564E4DE07E #E8F5E9;line:43A047;line.bold
+	489CD282_D579_11EE_903E_9F564E4DE07E -[thickness=1]-> 4965EE24_D579_11EE_903E_9F564E4DE07E	
+}
+
+' Level 5 Container
+rectangle "Level 5" #FFE0B2;line:E65100;line.bold {
+	rectangle "Test1_2_1_1" as 7F52B647_D579_11EE_903E_9F564E4DE07E #FFE0B2;line:E65100;line.bold
+	4965EE24_D579_11EE_903E_9F564E4DE07E -[thickness=1]-> 7F52B647_D579_11EE_903E_9F564E4DE07E	
+}
+
+
+
+
+
+
+
+@enduml
+
+----
 // Begin Protected Region [[95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,customText]]
 
 // End Protected Region   [[95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,customText]]
@@ -38,4 +98,4 @@ include::ebene_4_test1_2_1_8319/ebene_4_test1_2_1.adoc[]
 <<<
 include::ebene_5_test1_2_1_1_9637/ebene_5_test1_2_1_1.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,Pc6AlyD0CA9BSvw7YSZtIzvdRXI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,OrHR5hosddYl9S7WtDAI+VeVGA0=]

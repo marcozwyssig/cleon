@@ -686,6 +686,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("641947c8-ac0f-11ef-afba-fb66280e2230")
     public java.lang.String No();
 
+    @IDynamicResourceExtension.MethodId("98b14438-bfc2-11f0-98b9-251c9d34c5e8")
+    public java.lang.String BuildingBlockOverview();
+
   }
   
   public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -720,8 +723,8 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("4e006861-cdbc-11ef-aceb-ed2f5b1a4839")
     public java.lang.String RendererCustomElement();
 
-    @IDynamicResourceExtension.MethodId("c2afb89b-cdc2-11ef-aceb-ed2f5b1a4839")
-    public java.lang.String RenderChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    @IDynamicResourceExtension.MethodId("1ede3a88-bfc8-11f0-98b9-251c9d34c5e8")
+    public java.lang.String RenderBuildingBlockOverviewChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -1449,4 +1452,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,ZH/deZTqTQDAlryJ7fwIBTB7UI0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,q7bjPiD4ylFEkCFNxPOH+hjNOD8=] */

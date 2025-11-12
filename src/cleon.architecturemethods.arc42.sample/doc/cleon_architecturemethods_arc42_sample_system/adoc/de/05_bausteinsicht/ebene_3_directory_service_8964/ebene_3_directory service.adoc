@@ -7,9 +7,9 @@
 [#88301d91-219a-11f0-83ae-df5418a109a4]
 === Ebene_3: Directory Service <SystemComponent> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]
+// Begin Protected Region [[motivation]]  
 TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]
+// End Protected Region   [[motivation]]  
 
 Fullname::
 ikt.application.directory service
@@ -17,15 +17,16 @@ ikt.application.directory service
 Parent::
 <<#7f8cda2c-beda-11ef-b498-058ee446f8e7>>
 
-// Begin Protected Region [[customText]]
-
-// End Protected Region   [[customText]]
-
-==== Contained Building Blocks (Blackbox)
+==== Building Block Overview
 
 The Directory Service is decomposed into the following components:
 
 . <<#8c502cda-219a-11f0-83ae-df5418a109a4>>
+
+
+// Begin Protected Region [[88301d91-219a-11f0-83ae-df5418a109a4,customText]]
+
+// End Protected Region   [[88301d91-219a-11f0-83ae-df5418a109a4,customText]]
 
 [#8c502cda-219a-11f0-83ae-df5418a109a4]
 ===== DC <MasterDomainControllerSystemConfiguration> (Blackbox)
@@ -72,4 +73,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[8c502cda-219a-11f0-83ae-df5418a109a4,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,88301d91-219a-11f0-83ae-df5418a109a4,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,88301d91-219a-11f0-83ae-df5418a109a4,n+U/nYZa1oIEedYFhFHSCy3t7J4=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,88301d91-219a-11f0-83ae-df5418a109a4,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,88301d91-219a-11f0-83ae-df5418a109a4,9sjYI0Z6DI8+I4CpS3W6nlWSGsA=]

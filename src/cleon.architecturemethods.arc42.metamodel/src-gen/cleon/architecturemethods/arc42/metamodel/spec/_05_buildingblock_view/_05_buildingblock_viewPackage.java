@@ -31,6 +31,11 @@ public class _05_buildingblock_viewPackage {
   public static final Resource GenericShortNameAware = new Resource("c051f0ba-e486-11ee-8a89-3f870c06659f");
   public static final Resource GenericShortNameAware_genericShortName = new Resource("c051f0bb-e486-11ee-8a89-3f870c06659f");
   public static final Resource Blackbox_whiteBox = new Resource("ffe47165-65d7-11ef-a7d1-0f66f239ffd9");
+  public static final Resource BuildingBlockView_level_aE_7_aE_whitebox = new Resource("bee43e7c-bfcf-11f0-98b9-251c9d34c5e8");
+  public static final Resource BuildingBlockView_level_aE_8_aE_whitebox = new Resource("dd94b095-bfcf-11f0-98b9-251c9d34c5e8");
+  public static final Resource BuildingBlockView_level_aE_9_aE_whitebox = new Resource("f6368929-bfcf-11f0-98b9-251c9d34c5e8");
+  public static final Resource BuildingBlockView_level_aE_10_aE_whitebox = new Resource("1163a0ad-bfd0-11f0-98b9-251c9d34c5e8");
+  public static final Resource BuildingBlockView_level_aE_11_aE_whitebox = new Resource("25b13b05-bfd0-11f0-98b9-251c9d34c5e8");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +56,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,e/J8iYn986Xz/814quydCFvybds=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,JUtxGRQovago9hA89lkSys2FGIU=] */

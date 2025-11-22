@@ -66,6 +66,7 @@ public class Win_polycom_operationsPackage {
   public static final Resource CleanUpTask_serviceAccount = new Resource("05f0da98-9553-11f0-b879-dbe8cc612bea");
   public static final Resource CleanUpTask_logonAs = new Resource("05f0da9f-9553-11f0-b879-dbe8cc612bea");
   public static final Resource FunctionSpace_aE_win_aE_polycom_aE_operations_CleanUpTask = new Resource("2715cede-9553-11f0-b879-dbe8cc612bea");
+  public static final Resource LocalFwRule_profile = new Resource("8d1a1b62-c7bd-11f0-b286-65ef926a257f");
   
   /* Begin Protected Region [[user]] */
   
@@ -86,4 +87,4 @@ public class Win_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,kv4z+4KPFxhMUbbWvDeVWmQN9l8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations,3D0F5OIDsS5afKE9sRqbtZsPHXs=] */

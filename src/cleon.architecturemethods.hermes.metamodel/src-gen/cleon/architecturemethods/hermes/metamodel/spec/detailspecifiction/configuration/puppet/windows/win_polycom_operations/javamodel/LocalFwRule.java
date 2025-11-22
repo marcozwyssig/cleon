@@ -28,6 +28,17 @@ public class LocalFwRule extends DynamicResource implements ILocalFwRule {
     super(resourceRepository, resource, ILocalFwRule.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectProfile() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.LocalFwRule_profile);
+  }
+    
+  public void setProfile(java.lang.String profile) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.LocalFwRule_profile, profile);
+  }
+
   // relations
   
   @Override
@@ -63,6 +74,8 @@ public class LocalFwRule extends DynamicResource implements ILocalFwRule {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.LocalFwRule_profile, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_operations.Win_polycom_operationsPackage.LocalFwRule_abstractService, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -75,4 +88,4 @@ public class LocalFwRule extends DynamicResource implements ILocalFwRule {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,184bf73b-0bd0-11f0-95b9-95d0cc9a328a,Z/nETh0GjPzL7gdEaO2aaaVy+vQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,184bf73b-0bd0-11f0-95b9-95d0cc9a328a,M4ckisl0Lk93oqb52RXefXKJncw=] */

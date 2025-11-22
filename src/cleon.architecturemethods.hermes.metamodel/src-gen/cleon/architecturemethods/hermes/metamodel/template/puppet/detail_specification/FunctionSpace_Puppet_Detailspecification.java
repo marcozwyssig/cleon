@@ -2323,6 +2323,34 @@ public class FunctionSpace_Puppet_Detailspecification {
 
   }
 
+  public static interface INetworkProfileFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f15f147a-c7ba-11f0-b286-65ef926a257f")
+    public java.lang.String ClassDefinition();
+
+    @IDynamicResourceExtension.MethodId("f15f147f-c7ba-11f0-b286-65ef926a257f")
+    public java.lang.String ClassImplementation();
+
+  }
+  
+  public static interface INetworkProfileFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NetworkProfileFunctionsImpl implements INetworkProfileFunctionsImpl {
+
+    public static final INetworkProfileFunctionsImpl INSTANCE = new NetworkProfileFunctionsImpl();
+
+    private NetworkProfileFunctionsImpl() {}
+
+  }
+  
+  public static class NetworkProfileFunctions {
+
+    private NetworkProfileFunctions() {}
+
+  }
+
   public static interface IAdDialinFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7f9fda6e-ba5e-11f0-9349-73cfbb54b949")
@@ -2353,4 +2381,4 @@ public class FunctionSpace_Puppet_Detailspecification {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,sIorMwZFk7yMN668MW2gHYnCQd0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fab6dfde-0014-11f0-945c-87b19aec41f4,QfvYjIFy7Bt0Qf9IQ0Jd4vJI1rE=] */

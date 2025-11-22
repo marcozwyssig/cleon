@@ -53,6 +53,7 @@ public class Lin_polycom_operationsPackage {
   public static final Resource InstallRootCA_smb_aE_path = new Resource("cde5a638-ba43-11f0-9349-73cfbb54b949");
   public static final Resource InstallRootCA_domain_aE_name = new Resource("e1b7ce28-ba43-11f0-9349-73cfbb54b949");
   public static final Resource FunctionSpace_aE_lin_aE_polycom_aE_operations_InstallRootCA = new Resource("1db18133-ba44-11f0-9349-73cfbb54b949");
+  public static final Resource InstallRootCA_smb_aE_full_aE_share = new Resource("7ed962b8-c7bc-11f0-b286-65ef926a257f");
   
   /* Begin Protected Region [[user]] */
   
@@ -73,4 +74,4 @@ public class Lin_polycom_operationsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,5UeElAryhFb+zQBR1Q6FrIkj1w0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations,CiV0q21+dHbPVtFAZu3a07THt+k=] */

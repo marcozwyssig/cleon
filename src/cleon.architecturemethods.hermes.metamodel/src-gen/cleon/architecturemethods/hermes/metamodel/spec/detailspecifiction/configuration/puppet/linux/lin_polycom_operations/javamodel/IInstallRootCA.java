@@ -10,6 +10,8 @@ public interface IInstallRootCA extends cleon.architecturemethods.hermes.metamod
   
   public java.lang.String selectSmb_share();
   
+  public java.lang.String selectSmb_full_share();
+  
   public java.lang.String selectDomain_name();
   
   public java.lang.String selectCert_filename();
@@ -26,4 +28,4 @@ public interface IInstallRootCA extends cleon.architecturemethods.hermes.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c067b1f-ba41-11f0-9349-73cfbb54b949,mVWn2EUmM/pe2NQ0PjXZm9xBf6Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c067b1f-ba41-11f0-9349-73cfbb54b949,E9Zb4kI3s++VPkH8P6MaUPtHbeg=] */

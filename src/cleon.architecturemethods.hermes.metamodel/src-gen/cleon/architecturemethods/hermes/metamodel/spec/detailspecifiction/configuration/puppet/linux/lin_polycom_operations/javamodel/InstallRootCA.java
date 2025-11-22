@@ -112,6 +112,15 @@ public class InstallRootCA extends DynamicResource implements IInstallRootCA {
   }
 
   @Override
+  public java.lang.String selectSmb_full_share() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_full_aE_share);
+  }
+    
+  public void setSmb_full_share(java.lang.String smb_full_share) {
+     _setSingleAttribute(cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_full_aE_share, smb_full_share);
+  }
+
+  @Override
   public java.lang.String selectSmb_path() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_path);
   }
@@ -242,6 +251,7 @@ public class InstallRootCA extends DynamicResource implements IInstallRootCA {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_domain_aE_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_pki_aE_mountpoint, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_full_aE_share, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_path, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.linux.lin_polycom_operations.Lin_polycom_operationsPackage.InstallRootCA_smb_aE_share, visitor);
     // relations
@@ -265,4 +275,4 @@ public class InstallRootCA extends DynamicResource implements IInstallRootCA {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c067b1f-ba41-11f0-9349-73cfbb54b949,2BA/66XkkMS4iSAVh3wHhgLBmW8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c067b1f-ba41-11f0-9349-73cfbb54b949,8z1aYvE6ZM3WX2o/4kH4PVm27QU=] */

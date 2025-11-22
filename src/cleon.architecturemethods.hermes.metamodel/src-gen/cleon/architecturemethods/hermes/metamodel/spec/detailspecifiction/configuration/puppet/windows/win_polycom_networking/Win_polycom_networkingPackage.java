@@ -12,6 +12,7 @@ public class Win_polycom_networkingPackage {
   public static final Resource Netbios = new Resource("b5967b7c-1088-11f0-b378-11a495632127");
   public static final Resource Netbios_setting = new Resource("bf526534-1088-11f0-b378-11a495632127");
   public static final Resource Ethernet_aE_8021x = new Resource("8e48f3a9-ba54-11f0-9349-73cfbb54b949");
+  public static final Resource NetworkProfile = new Resource("ea158abc-c7ba-11f0-b286-65ef926a257f");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class Win_polycom_networkingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_networking,/fwH6puAbmtF93oxNms27aQ8rEc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_networking,6Ok0Uksb0Wjz29uRanOwk3Hbfos=] */

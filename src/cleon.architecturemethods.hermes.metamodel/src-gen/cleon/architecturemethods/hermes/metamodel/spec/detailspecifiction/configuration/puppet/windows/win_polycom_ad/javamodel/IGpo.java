@@ -2,7 +2,7 @@ package cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.confi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IGpo extends ch.actifsource.core.javamodel.INamedResource {
+public interface IGpo extends ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4189c76e-63c9-11f0-87c2-0f8d66c50b66");
   
@@ -14,4 +14,4 @@ public interface IGpo extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4189c76e-63c9-11f0-87c2-0f8d66c50b66,YLq1WMZ8dUAWrI0tmyASLcOAPds=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4189c76e-63c9-11f0-87c2-0f8d66c50b66,RtCP8aMFhqqRy+CC6scJGczUcgs=] */

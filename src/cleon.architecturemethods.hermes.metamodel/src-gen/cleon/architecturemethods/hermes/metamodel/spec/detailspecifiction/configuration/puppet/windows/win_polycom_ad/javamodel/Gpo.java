@@ -31,6 +31,15 @@ public class Gpo extends DynamicResource implements IGpo {
   // attributes
   
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectLinked_ou() {
     return _getListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.Gpo_linked_aE_ou);
   }
@@ -74,6 +83,7 @@ public class Gpo extends DynamicResource implements IGpo {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_ad.Win_polycom_adPackage.Gpo_linked_aE_ou, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -86,4 +96,4 @@ public class Gpo extends DynamicResource implements IGpo {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4189c76e-63c9-11f0-87c2-0f8d66c50b66,P4hF+7EEoMNHnWLVgLzFyXcHANs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4189c76e-63c9-11f0-87c2-0f8d66c50b66,5q2zCaDmOKVEiy0a3oZiLWUpplI=] */

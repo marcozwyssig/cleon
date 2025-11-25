@@ -10,7 +10,7 @@ The building block view shows the system from a black box perspective. It shows 
 
 The following diagrams shows an overview of all building blocks:
 
-[plantuml, Bausteinsicht_schema, svg]
+[plantuml, Building Block View_schema, svg]
 ----
 @startuml
 left to right direction
@@ -77,42 +77,42 @@ rectangle "Level 4" #E8F5E9;line:43A047;line.bold {
 // End Protected Region   [[38c4bd18-beda-11ef-b498-058ee446f8e7,customText]]
 
 <<<
-include::ebene_1_ikt_9867/ebene_1_ikt.adoc[]
+include::ikt/ebene_1_ikt.adoc[]
  
 <<<
-include::ebene_2_application_6931/ebene_2_application.adoc[]
+include::ikt/application/ebene_2_application.adoc[]
  
 <<<
-include::ebene_2_infrastruture_1312/ebene_2_infrastruture.adoc[]
+include::ikt/infrastruture/ebene_2_infrastruture.adoc[]
  
 <<<
-include::ebene_2_platform_0427/ebene_2_platform.adoc[]
+include::ikt/platform/ebene_2_platform.adoc[]
  
 <<<
-include::ebene_3_directory_service_8964/ebene_3_directory service.adoc[]
+include::ikt/application/directory_service/ebene_3_directory service.adoc[]
  
 <<<
-include::ebene_3_operating_system_9936/ebene_3_operating system.adoc[]
+include::ikt/infrastruture/operating_system/ebene_3_operating system.adoc[]
  
 <<<
-include::ebene_3_servers_2470/ebene_3_servers.adoc[]
+include::ikt/infrastruture/servers/ebene_3_servers.adoc[]
  
 <<<
-include::ebene_3_virtualization_1585/ebene_3_virtualization.adoc[]
+include::ikt/infrastruture/virtualization/ebene_3_virtualization.adoc[]
  
 <<<
-include::ebene_4_dc_3534/ebene_4_dc.adoc[]
+include::ikt/application/directory_service/dc/ebene_4_dc.adoc[]
  
 <<<
-include::ebene_4_hpe_9192/ebene_4_hpe.adoc[]
+include::ikt/infrastruture/servers/hpe/ebene_4_hpe.adoc[]
  
 <<<
-include::ebene_4_vm_7990/ebene_4_vm.adoc[]
+include::ikt/infrastruture/virtualization/vm/ebene_4_vm.adoc[]
  
 <<<
-include::ebene_4_vmh_1238/ebene_4_vmh.adoc[]
+include::ikt/infrastruture/virtualization/vmh/ebene_4_vmh.adoc[]
  
 <<<
-include::ebene_4_win2022_5263/ebene_4_win2022.adoc[]
+include::ikt/infrastruture/operating_system/win2022/ebene_4_win2022.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,LBUmUVpc8p9omTTOxvKRfepfrZc=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,k1gP1e7Tbr0fitCEUDFlIGjY3js=]

@@ -10,7 +10,7 @@ The building block view shows the system from a black box perspective. It shows 
 
 The following diagrams shows an overview of all building blocks:
 
-[plantuml, Bausteinsicht_schema, svg]
+[plantuml, Building Block View_schema, svg]
 ----
 @startuml
 left to right direction
@@ -72,30 +72,30 @@ rectangle "Level 5" #FFE0B2;line:E65100;line.bold {
 // End Protected Region   [[95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,customText]]
 
 <<<
-include::level_1_chess_9860/level_1_chess.adoc[]
+include::chess/level_1_chess.adoc[]
  
 <<<
-include::level_2_test1_1153/level_2_test1.adoc[]
+include::chess/test1/level_2_test1.adoc[]
  
 <<<
-include::level_2_test2_2151/level_2_test2.adoc[]
+include::chess/test2/level_2_test2.adoc[]
  
 <<<
-include::level_2_test3_9337/level_2_test3.adoc[]
+include::chess/test3/level_2_test3.adoc[]
  
 <<<
-include::level_3_test1_2_1370/level_3_test1_2.adoc[]
+include::chess/test1/test1_2/level_3_test1_2.adoc[]
  
 <<<
-include::level_3_test2_2_3216/level_3_test2_2.adoc[]
+include::chess/test2/test2_2/level_3_test2_2.adoc[]
  
 <<<
-include::level_3_test3_1_2512/level_3_test3_1.adoc[]
+include::chess/test3/test3_1/level_3_test3_1.adoc[]
  
 <<<
-include::level_4_test1_2_1_8319/level_4_test1_2_1.adoc[]
+include::chess/test1/test1_2/test1_2_1/level_4_test1_2_1.adoc[]
  
 <<<
-include::level_5_test1_2_1_1_9637/level_5_test1_2_1_1.adoc[]
+include::chess/test1/test1_2/test1_2_1/test1_2_1_1/level_5_test1_2_1_1.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,sZBBKOGww8sp9eV7/Px/x3RukN0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,5cKU2uDoVi5rBFOlyTVqdfXCJpE=]

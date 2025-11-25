@@ -45,6 +45,9 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("65d029d5-5b58-11e7-9702-abdab196c2a1")
     public java.lang.String CreateFullBuildingBlockName();
 
+    @IDynamicResourceExtension.MethodId("bd79d8e9-c949-11f0-8381-cd22d30a7f61")
+    public java.lang.String FullBuildingBlockNamePath();
+
     @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DecomposeBuildingBlockOfAllDependenciesFromParent();
 
@@ -357,4 +360,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,QfmSW7mpWVbXK4PUZ+svi7WmtMg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,hUwHce0use3WmDBmR7r4xJGuvOY=] */

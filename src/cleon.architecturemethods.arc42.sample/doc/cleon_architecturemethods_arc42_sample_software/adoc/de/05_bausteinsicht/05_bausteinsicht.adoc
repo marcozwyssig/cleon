@@ -10,7 +10,7 @@ The building block view shows the system from a black box perspective. It shows 
 
 The following diagrams shows an overview of all building blocks:
 
-[plantuml, Bausteinsicht_schema, svg]
+[plantuml, Building Block View_schema, svg]
 ----
 @startuml
 left to right direction
@@ -49,9 +49,9 @@ rectangle "Level 2" #FFF9C4;line:F9A825;line.bold {
 // End Protected Region   [[63136381-436d-11e6-a9d7-97cf4f7c398b,customText]]
 
 <<<
-include::ebene_1_mysamplesoftware_9642/ebene_1_mysamplesoftware.adoc[]
+include::mysamplesoftware/ebene_1_mysamplesoftware.adoc[]
  
 <<<
-include::ebene_2_mycomponent_2942/ebene_2_mycomponent.adoc[]
+include::mysamplesoftware/mycomponent/ebene_2_mycomponent.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,63136381-436d-11e6-a9d7-97cf4f7c398b,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,63136381-436d-11e6-a9d7-97cf4f7c398b,qapgp+bDaRUucWLowOxEhDmoltQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,63136381-436d-11e6-a9d7-97cf4f7c398b,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,63136381-436d-11e6-a9d7-97cf4f7c398b,s4lHzgTqEf2a3nlx/0otK8b3Qag=]

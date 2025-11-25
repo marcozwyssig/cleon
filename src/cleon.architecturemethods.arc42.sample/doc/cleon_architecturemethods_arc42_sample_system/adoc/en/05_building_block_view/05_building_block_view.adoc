@@ -10,7 +10,7 @@ The building block view shows the system from a black box perspective. It shows 
 
 The following diagrams shows an overview of all building blocks:
 
-[plantuml, Bausteinsicht_schema, svg]
+[plantuml, Building Block View_schema, svg]
 ----
 @startuml
 left to right direction
@@ -77,42 +77,42 @@ rectangle "Level 4" #E8F5E9;line:43A047;line.bold {
 // End Protected Region   [[38c4bd18-beda-11ef-b498-058ee446f8e7,customText]]
 
 <<<
-include::level_1_ikt_9867/level_1_ikt.adoc[]
+include::ikt/level_1_ikt.adoc[]
  
 <<<
-include::level_2_application_6931/level_2_application.adoc[]
+include::ikt/application/level_2_application.adoc[]
  
 <<<
-include::level_2_infrastruture_1312/level_2_infrastruture.adoc[]
+include::ikt/infrastruture/level_2_infrastruture.adoc[]
  
 <<<
-include::level_2_platform_0427/level_2_platform.adoc[]
+include::ikt/platform/level_2_platform.adoc[]
  
 <<<
-include::level_3_directory_service_8964/level_3_directory service.adoc[]
+include::ikt/application/directory_service/level_3_directory service.adoc[]
  
 <<<
-include::level_3_operating_system_9936/level_3_operating system.adoc[]
+include::ikt/infrastruture/operating_system/level_3_operating system.adoc[]
  
 <<<
-include::level_3_servers_2470/level_3_servers.adoc[]
+include::ikt/infrastruture/servers/level_3_servers.adoc[]
  
 <<<
-include::level_3_virtualization_1585/level_3_virtualization.adoc[]
+include::ikt/infrastruture/virtualization/level_3_virtualization.adoc[]
  
 <<<
-include::level_4_dc_3534/level_4_dc.adoc[]
+include::ikt/application/directory_service/dc/level_4_dc.adoc[]
  
 <<<
-include::level_4_hpe_9192/level_4_hpe.adoc[]
+include::ikt/infrastruture/servers/hpe/level_4_hpe.adoc[]
  
 <<<
-include::level_4_vm_7990/level_4_vm.adoc[]
+include::ikt/infrastruture/virtualization/vm/level_4_vm.adoc[]
  
 <<<
-include::level_4_vmh_1238/level_4_vmh.adoc[]
+include::ikt/infrastruture/virtualization/vmh/level_4_vmh.adoc[]
  
 <<<
-include::level_4_win2022_5263/level_4_win2022.adoc[]
+include::ikt/infrastruture/operating_system/win2022/level_4_win2022.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,aqj1tGckQfzQrx50e1TsBSmHzo4=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,QaVCMvpo/fHZv2fISpztVx4sgqY=]

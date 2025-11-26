@@ -9,8 +9,13 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[25454e48-020d-11e9-b327-17da2da63a8f,imports]] */
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import ch.actifsource.core.dynamic.DynamicResourceUtil;
+import ch.actifsource.core.dynamic.IDynamicResourceExtension;
+import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.SystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.machine.javamodel.IMachineSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.operatingsystem.javamodel.ILinuxSystemConfiguration;
@@ -18,6 +23,7 @@ import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.sys
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.FunctionSpace_Services.IAbstractServiceFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.services.javamodel.IAbstractService;
+import cleon.common.modularity.metamodel.spec.FunctionSpace_Buildingblock.IBuildingBlockFunctions;
 /* End Protected Region   [[25454e48-020d-11e9-b327-17da2da63a8f,imports]] */
 
 public class FunctionSpace_SystemConfiguration {
@@ -1003,9 +1009,6 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("74b26bdc-09fc-11ea-baed-218c3e076b56")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfiguration GetOnlyDependsFrom();
 
-    @IDynamicResourceExtension.MethodId("0ea917ac-0e91-11e9-9f19-6d15636f4ecc")
-    public java.lang.String GetShortname();
-
     @IDynamicResourceExtension.MethodId("d5b4087a-bb98-11ea-aec8-5d01276af4ef")
     public java.lang.String GetStereotypeName();
 
@@ -1225,8 +1228,8 @@ public class FunctionSpace_SystemConfiguration {
     			return shortName;
     		}
     	}
-    	final var sysCfg = systemConfiguration.extension(ISystemConfigurationFunctions.class);
-    	return sysCfg.GetShortname();  
+    	final var sysCfg = systemConfiguration.extension(IBuildingBlockFunctions.class);
+    	return sysCfg.GetShortname();
       /* End Protected Region   [[9227704f-e2da-11ee-bcaf-bf4e173adc8d]] */
     }
 
@@ -1292,4 +1295,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,juDe4l99tv41Tv13Q65JfscOiV8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,Y38wgvzt6+jCH/rrC08kYwChL5g=] */

@@ -48,6 +48,9 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("bd79d8e9-c949-11f0-8381-cd22d30a7f61")
     public java.lang.String FullBuildingBlockNamePath();
 
+    @IDynamicResourceExtension.MethodId("2f3795b2-ca0e-11f0-8ddf-17e5282749a1")
+    public java.lang.String FullBuildingBlockShortNameOrName();
+
     @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DecomposeBuildingBlockOfAllDependenciesFromParent();
 
@@ -358,6 +361,31 @@ public class FunctionSpace_Buildingblock {
 
   }
 
+  public static interface IBuildingBlockWithShortNameFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ca5467a0-ca0d-11f0-8ddf-17e5282749a1")
+    public java.lang.String GetShortname();
+
+  }
+  
+  public static interface IBuildingBlockWithShortNameFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockWithShortNameFunctionsImpl implements IBuildingBlockWithShortNameFunctionsImpl {
+
+    public static final IBuildingBlockWithShortNameFunctionsImpl INSTANCE = new BuildingBlockWithShortNameFunctionsImpl();
+
+    private BuildingBlockWithShortNameFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockWithShortNameFunctions {
+
+    private BuildingBlockWithShortNameFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,hUwHce0use3WmDBmR7r4xJGuvOY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,r0X0ApAvz2D5pRTsC4Hid+TVFWY=] */

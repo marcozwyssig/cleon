@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.sy
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISystemConfiguration extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.INamedComponent, cleon.common.resources.metamodel.spec.naming.javamodel.IMandatoryShortName, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware, cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IBuildingBlockRequirementCoverage, cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.INotes, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemConfiguration {
+public interface ISystemConfiguration extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.INamedComponent, cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlockWithShortName, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IGenericShortNameAware, cleon.architecturemethods.arc42.metamodel.spec._14_requirements_coverage.javamodel.IBuildingBlockRequirementCoverage, cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.ISkipHostGenerationAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.INotes, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.system.javamodel.IAbstractSystemOrSystemConfiguration {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
   
@@ -28,4 +28,4 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,LXvIX//IbClF0VQyoY0ES4tqhuA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,RYLMM5/dgnwM+4livGA/8YLSR8M=] */

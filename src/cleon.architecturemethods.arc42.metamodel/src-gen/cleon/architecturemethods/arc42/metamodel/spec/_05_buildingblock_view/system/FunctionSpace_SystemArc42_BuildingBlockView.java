@@ -45,9 +45,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   public static interface IAbstractSystemOrSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("c8a093a3-4bd4-11ed-bcee-57344264bda3")
-    public java.lang.String GetShortname();
-
     @IDynamicResourceExtension.MethodId("59dcc048-4bd5-11ed-bcee-57344264bda3")
     public java.lang.String GetName();
 
@@ -130,9 +127,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     @IDynamicResourceExtension.MethodId("0c78c830-4bd6-11ed-bcee-57344264bda3")
     public java.lang.String ShortnameOrOverride();
-
-    @IDynamicResourceExtension.MethodId("fa4dc007-4bd5-11ed-bcee-57344264bda3")
-    public java.lang.String GetShortname();
 
     @IDynamicResourceExtension.MethodId("795abda7-4e0b-11ed-a85e-ff0e1a36b8ae")
     public List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.javamodel.ISystemConfigurationProperty> SystemConfigurationProperties();
@@ -327,4 +321,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,+uu3jsmo0OF0N48rLLTDQtTDYK4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,dPfn2A+EigJ79OkGgYFWi5XNxAY=] */

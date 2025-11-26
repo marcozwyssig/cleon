@@ -9,18 +9,22 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf,imports]] */
 import java.util.ArrayList;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID;
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN;
-import ch.actifsource.util.log.Logger;
+import java.util.List;
 import java.util.stream.Collectors;
 
-import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
+import ch.actifsource.core.dynamic.DynamicResourceUtil;
+import ch.actifsource.core.dynamic.IDynamicResourceExtension;
+import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
+import ch.actifsource.util.log.Logger;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.FunctionSpace_SystemConfiguration.ISystemConfigurationFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.hardware.storage.javamodel.IDfsSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.plattform.javamodel.IPrtgProbeSystemConfiguration;
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.security.iam.javamodel.IReadOnlyDomainControllerSystemConfiguration;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSite;
+import cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractSiteWithFunctionID;
+import cleon.common.modularity.metamodel.spec.FunctionSpace_Buildingblock.IBuildingBlockFunctions;
 /* End Protected Region   [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf,imports]] */
 
 public class FunctionSpace_Topology {
@@ -161,7 +165,7 @@ public class FunctionSpace_Topology {
     	final var networkZoneList = abstractSite.selectNetworkSite().selectNetworkSubZone().get(securitySubZone.getResource());
     	final var result = new ArrayList<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IVlan>();
     	for( final var networkZone : networkZoneList) {
-    		result.add(networkZone.selectVlan());    		 
+    		result.add(networkZone.selectVlan());
     	}
     	return result;
       /* End Protected Region   [[0b92fe5b-0b2a-11f0-95b9-95d0cc9a328a]] */
@@ -517,7 +521,7 @@ public class FunctionSpace_Topology {
       if( securitySubZone != null ) {
       	return sysCfgFunctions.TypeName(securitySubZone);
       }
-      return sysCfgFunctions.GetShortname();
+      return abstractHost.selectInstanceOf().extension(IBuildingBlockFunctions.class).GetShortname();
       /* End Protected Region   [[e81d592b-e2a6-11ee-bcbf-b7880577b7f3]] */
     }
 
@@ -534,7 +538,7 @@ public class FunctionSpace_Topology {
     @Override
     public List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> WithoutIP(final List<cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[476b12bc-8a63-11f0-af5e-cd5d044ab02b]] */
-      return abstractHostList.stream().filter(x -> x.selectIps().isEmpty() ).collect(Collectors.toList());   
+      return abstractHostList.stream().filter(x -> x.selectIps().isEmpty() ).collect(Collectors.toList());
       /* End Protected Region   [[476b12bc-8a63-11f0-af5e-cd5d044ab02b]] */
     }
 
@@ -737,7 +741,7 @@ public class FunctionSpace_Topology {
     public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.IRN GetRN(final java.lang.String rnName, final cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.topology.javamodel.ITopologyEnvironment topologyEnvironment) {
       /* Begin Protected Region [[c108dd55-b1fc-11ea-a3a2-e9d3344bee73]] */
       final var allRNs = topologyEnvironment.extension(ITopologyEnvironmentFunctions.class).AllRNs();
-      for (final IRN rn : allRNs) {
+      for (final var rn : allRNs) {
       	Logger.instance().logInfo("Verify " + rnName + " with " + rn.selectName());
       	if (rn.selectName().equalsIgnoreCase(rnName)) {
       		return rn;

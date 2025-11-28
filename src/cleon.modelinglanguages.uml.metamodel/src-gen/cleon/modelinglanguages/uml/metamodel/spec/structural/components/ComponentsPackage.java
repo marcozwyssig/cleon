@@ -7,7 +7,7 @@ public class ComponentsPackage {
   public static final Resource AbstractComponent = new Resource("1090955f-85c1-11e3-be33-79789cf5eae3");
   public static final Resource ComponentComposition = new Resource("18a510ec-85c1-11e3-be33-79789cf5eae3");
   public static final Resource ComponentWithPackage = new Resource("2adc4d98-85c1-11e3-be33-79789cf5eae3");
-  public static final Resource ComponentComposition_decompose = new Resource("25752303-85c2-11e3-926c-e10829e9e6c2");
+  public static final Resource ComponentComposition_decomposeCmp = new Resource("25752303-85c2-11e3-926c-e10829e9e6c2");
   public static final Resource AbstractComponentDependency = new Resource("6cacbca2-ffc4-11e4-ac0a-959b440f987f");
   public static final Resource AbstractComponentDependency_cmp = new Resource("3858a114-ffc5-11e4-ac0a-959b440f987f");
   public static final Resource ComponentWithPackage_decomposePackages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
@@ -39,4 +39,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.components,dgPRsrFI180Ljwien/pjYB7lkKc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.components,olYUHHhCzEQUfzCaDAaeQ3XD7ro=] */

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>Monolith Softwarearchitecture</db:title>
+	
+	<db:chapter xml:id="ea.1862b96a-cb0a-11f0-ad08-33c52acb975f">
+		<db:title>Building Block View</db:title>
+		<db:section xml:id="ea.1862b969-cb0a-11f0-ad08-33c52acb975f">
+			<db:title>Level_1: MonolithSample (MonolithSample) &lt;SoftwareMonolithSystem&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MonolithSample in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Ebene_1: MonolithSample (MonolithSample) &lt;SoftwareMonolithSystem&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_monolith/BuildingBlockOverviewDiagram_Ebene_1__MonolithSample__MonolithSample___SoftwareMonolithSystem___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MonolithSample tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Application []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>ddd Library []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>dddd []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.4dcf7b5d-cb0a-11f0-ad08-33c52acb975f">
+				<db:title>Application &lt;SoftwareMonolithApplication&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4ded63e2-cb0a-11f0-ad08-33c52acb975f" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.807d4549-cb0a-11f0-ad08-33c52acb975f">
+				<db:title>ddd Library &lt;SoftwareMonolithLibrary&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins ddd Library beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.809a6945-cb0a-11f0-ad08-33c52acb975f" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.8a059b72-cb0a-11f0-ad08-33c52acb975f">
+				<db:title>dddd &lt;SoftwareMonolithComponentComposition&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins dddd beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.8a0aa48d-cb0a-11f0-ad08-33c52acb975f" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.4ded63e2-cb0a-11f0-ad08-33c52acb975f">
+			<db:title>Level_2: Application &lt;SoftwareMonolithApplication&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.809a6945-cb0a-11f0-ad08-33c52acb975f">
+			<db:title>Level_2: ddd Library &lt;SoftwareMonolithLibrary&gt; (Whitebox)</db:title>
+			
+		</db:section>
+		<db:section xml:id="ea.8a0aa48d-cb0a-11f0-ad08-33c52acb975f">
+			<db:title>Level_2: dddd &lt;SoftwareMonolithComponentComposition&gt; (Whitebox)</db:title>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins dddd in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Ebene_2: dddd &lt;SoftwareMonolithComponentComposition&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_monolith/BuildingBlockOverviewDiagram_Ebene_2__dddd__SoftwareMonolithComponentComposition___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins dddd tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Database []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section xml:id="ea.957a0aa6-cb0a-11f0-ad08-33c52acb975f">
+				<db:title>Database &lt;SoftwareMonolithDatabase&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Database beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.958e2ef1-cb0a-11f0-ad08-33c52acb975f" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.958e2ef1-cb0a-11f0-ad08-33c52acb975f">
+			<db:title>Level_3: Database &lt;SoftwareMonolithDatabase&gt; (Whitebox)</db:title>
+			
+		</db:section>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[5e478da3-985e-11ef-9d7c-b5806d5ad1be,1862b967-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1862b967-cb0a-11f0-ad08-33c52acb975f,Hash] -->

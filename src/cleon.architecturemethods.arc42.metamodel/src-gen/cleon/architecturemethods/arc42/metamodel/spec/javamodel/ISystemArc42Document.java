@@ -24,7 +24,7 @@ public interface ISystemArc42Document extends cleon.architecturemethods.arc42.me
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView select__V_8_aE_deploymentview();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemConcepts select__V_9_aE_system_aE_concepts();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.javamodel.ISystemCrosscuttingConcepts select__V_9_aE_system_aE_concepts();
   
   public cleon.architecturemethods.arc42.metamodel.spec._10_design_decisions.javamodel.IArchitecturalDecisions select__W_0_aE_architectural_aE_decisions();
   
@@ -38,4 +38,4 @@ public interface ISystemArc42Document extends cleon.architecturemethods.arc42.me
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,NXiHV9HQO+vt5aDIl27IAcaREQo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,Fe9+M2nGBaJg2k+Ow8fPe2muTG8=] */

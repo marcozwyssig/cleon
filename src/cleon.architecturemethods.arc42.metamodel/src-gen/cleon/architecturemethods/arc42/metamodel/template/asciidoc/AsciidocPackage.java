@@ -38,7 +38,6 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ArchitectureConstraints = new Resource("a0d9897f-abeb-11ef-ad6e-61718268e815");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SolutionStrategy = new Resource("19cbe8cd-abec-11ef-ad6e-61718268e815");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_arc42TopLevelChapter = new Resource("c3d795c4-ac0e-11ef-afba-fb66280e2230");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_CrosscuttingConcepts = new Resource("97bfa22c-ac0f-11ef-afba-fb66280e2230");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DataView = new Resource("a11a0b39-ac0f-11ef-afba-fb66280e2230");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ArchitecturalDecisions = new Resource("b3faf4f0-ac0f-11ef-afba-fb66280e2230");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RuntimeView = new Resource("cfbb7379-ac0f-11ef-afba-fb66280e2230");
@@ -54,6 +53,9 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractTableRelation = new Resource("7ff85fc9-6243-11f0-bad7-45c7bffc2eff");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableRelationOneToOne = new Resource("a8205f36-6243-11f0-bad7-45c7bffc2eff");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableRelationOneToMany = new Resource("c1958e41-6243-11f0-bad7-45c7bffc2eff");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractPhysicalNetwork = new Resource("98a6b3f4-cc7f-11f0-ae36-9583d8e4de71");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_CrosscuttingConcepts = new Resource("62389116-cd2a-11f0-ae36-9583d8e4de71");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SystemCrosscuttingConcepts = new Resource("818bab8a-cd2a-11f0-ae36-9583d8e4de71");
   
   /* Begin Protected Region [[user]] */
   
@@ -74,4 +76,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,qF0hsC8RsDDbhUZZBo43y6HXZUI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,0nkSyzSPRmnu2k4qExinhjrg2xs=] */

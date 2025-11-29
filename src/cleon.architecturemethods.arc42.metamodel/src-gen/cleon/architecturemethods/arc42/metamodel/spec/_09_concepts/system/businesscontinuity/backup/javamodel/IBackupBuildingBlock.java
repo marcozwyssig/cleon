@@ -10,8 +10,8 @@ public interface IBackupBuildingBlock extends ch.actifsource.core.javamodel.IDec
   
   public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuildingblockToBackup();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupConfiguration selectBackupConfiguration();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.system.businesscontinuity.backup.javamodel.IBackupMethod selectBackupConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,74cnLvfcBSisJupDKmjjuW3lqVU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,bu3vtzJ4anoUHILRAHtZUzvX2/U=] */

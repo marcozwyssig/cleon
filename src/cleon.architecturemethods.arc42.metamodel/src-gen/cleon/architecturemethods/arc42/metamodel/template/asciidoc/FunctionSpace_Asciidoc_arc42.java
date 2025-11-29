@@ -338,23 +338,20 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IWhiteboxSystemFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5cda704d-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
-
     @IDynamicResourceExtension.MethodId("5cda709e-2516-11ec-beea-a9d94a6f89e0")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> _ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
     @IDynamicResourceExtension.MethodId("5cda95d2-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda95ed-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda95f5-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderAdditionalChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderAdditionalChapters(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("5cda96a4-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderProduct(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderProduct(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -528,7 +525,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IMonitoringFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b62-2516-11ec-beea-a9d94a6f89e0")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> _ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -603,7 +600,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBackupAndRecoveryAspectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb5a54-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String _RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
@@ -1047,31 +1044,6 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface ICrosscuttingConceptsFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("99acf364-ac0f-11ef-afba-fb66280e2230")
-    public java.lang.String No();
-
-  }
-  
-  public static interface ICrosscuttingConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class CrosscuttingConceptsFunctionsImpl implements ICrosscuttingConceptsFunctionsImpl {
-
-    public static final ICrosscuttingConceptsFunctionsImpl INSTANCE = new CrosscuttingConceptsFunctionsImpl();
-
-    private CrosscuttingConceptsFunctionsImpl() {}
-
-  }
-  
-  public static class CrosscuttingConceptsFunctions {
-
-    private CrosscuttingConceptsFunctions() {}
-
-  }
-
   public static interface IDataViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a11a0b3c-ac0f-11ef-afba-fb66280e2230")
@@ -1450,6 +1422,81 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IAbstractPhysicalNetworkFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ba3f785a-cc7f-11f0-ae36-9583d8e4de71")
+    public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractPhysicalNetworkFunctionsImpl implements IAbstractPhysicalNetworkFunctionsImpl {
+
+    public static final IAbstractPhysicalNetworkFunctionsImpl INSTANCE = new AbstractPhysicalNetworkFunctionsImpl();
+
+    private AbstractPhysicalNetworkFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractPhysicalNetworkFunctions {
+
+    private AbstractPhysicalNetworkFunctions() {}
+
+  }
+
+  public static interface ICrosscuttingConceptsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("673ff31a-cd2a-11f0-ae36-9583d8e4de71")
+    public java.lang.String No();
+
+  }
+  
+  public static interface ICrosscuttingConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CrosscuttingConceptsFunctionsImpl implements ICrosscuttingConceptsFunctionsImpl {
+
+    public static final ICrosscuttingConceptsFunctionsImpl INSTANCE = new CrosscuttingConceptsFunctionsImpl();
+
+    private CrosscuttingConceptsFunctionsImpl() {}
+
+  }
+  
+  public static class CrosscuttingConceptsFunctions {
+
+    private CrosscuttingConceptsFunctions() {}
+
+  }
+
+  public static interface ISystemCrosscuttingConceptsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("965fda69-cd2a-11f0-ae36-9583d8e4de71")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface ISystemCrosscuttingConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemCrosscuttingConceptsFunctionsImpl implements ISystemCrosscuttingConceptsFunctionsImpl {
+
+    public static final ISystemCrosscuttingConceptsFunctionsImpl INSTANCE = new SystemCrosscuttingConceptsFunctionsImpl();
+
+    private SystemCrosscuttingConceptsFunctionsImpl() {}
+
+  }
+  
+  public static class SystemCrosscuttingConceptsFunctions {
+
+    private SystemCrosscuttingConceptsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,q7bjPiD4ylFEkCFNxPOH+hjNOD8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,bkL7x4ozphaevWnywYeh7z33Ymc=] */

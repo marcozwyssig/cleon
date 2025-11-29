@@ -44,16 +44,15 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ce6a4faf-0eaf-11e9-9f19-6d15636f4ecc" type="resource" guid="40e8c0a9-1d52-11e9-8222-13cd25917917" />
-    <object statement-guid="17a1db3c-c1c6-11ea-b956-0ffede25a02d" type="resource" guid="18625181-5154-11e9-bb61-971a423d31e9" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="00031db8-c1ca-11ea-b956-0ffede25a02d">
       <resource guid="00031db4-c1ca-11ea-b956-0ffede25a02d">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="00031db6-c1ca-11ea-b956-0ffede25a02d" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+          <object statement-guid="00031db6-c1ca-11ea-b956-0ffede25a02d" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="00031db7-c1ca-11ea-b956-0ffede25a02d" type="literal">backupAndRecoveryStategies</object>
+          <object statement-guid="00031db7-c1ca-11ea-b956-0ffede25a02d" type="literal">backupMethods</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="00031db9-c1ca-11ea-b956-0ffede25a02d" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
@@ -63,6 +62,9 @@
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="00031dbb-c1ca-11ea-b956-0ffede25a02d" type="resource" guid="0713be48-1e42-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="8f70da5d-cd2f-11f0-ae36-9583d8e4de71" type="resource" guid="6b3c6f05-ff96-11e8-9d0c-c96c1e9b7b46" />
         </predicate>
       </resource>
     </object>

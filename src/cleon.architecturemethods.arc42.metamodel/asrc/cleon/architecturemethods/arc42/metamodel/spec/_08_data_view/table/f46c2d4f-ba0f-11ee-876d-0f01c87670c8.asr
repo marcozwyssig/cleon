@@ -29,6 +29,9 @@
     <resource statement-guid="4d639c0b-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="4d6374f8-c034-11ee-a353-4bf80e47b5e4" />
     <resource statement-guid="92a4f2f2-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="92a4cbdf-c034-11ee-a353-4bf80e47b5e4" />
     <resource statement-guid="a2a1f801-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="a2a1d0ee-c034-11ee-a353-4bf80e47b5e4" />
+    <resource statement-guid="8bc770e9-cf8c-11f0-84cd-4bb399ea471f" type="resource" guid="8bc722c6-cf8c-11f0-84cd-4bb399ea471f" />
+    <resource statement-guid="67bad07f-cf8d-11f0-84cd-4bb399ea471f" type="resource" guid="67ba825c-cf8d-11f0-84cd-4bb399ea471f" />
+    <resource statement-guid="2d95ec19-cf92-11f0-84cd-4bb399ea471f" type="resource" guid="2d95c506-cf92-11f0-84cd-4bb399ea471f" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -317,6 +320,36 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="a2e394e2-c034-11ee-a353-4bf80e47b5e4" type="literal">TRUE: condition is active; FALSE: condition is inactive</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8bc770e9-cf8c-11f0-84cd-4bb399ea471f">
+      <resource guid="8bc722c6-cf8c-11f0-84cd-4bb399ea471f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8bc749d8-cf8c-11f0-84cd-4bb399ea471f" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="90a0be60-cf8c-11f0-84cd-4bb399ea471f" type="literal">L2 = Switching/Bridging; L3 =  Routing</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="67bad07f-cf8d-11f0-84cd-4bb399ea471f">
+      <resource guid="67ba825c-cf8d-11f0-84cd-4bb399ea471f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="67ba825d-cf8d-11f0-84cd-4bb399ea471f" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="67ba825e-cf8d-11f0-84cd-4bb399ea471f" type="literal">MESH = voll vermascht; TREE = "Root-and-Leaf" oder "Hub-and-Spoke"; LOCAL = nur lokal (einzelne MCU)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="2d95ec19-cf92-11f0-84cd-4bb399ea471f">
+      <resource guid="2d95c506-cf92-11f0-84cd-4bb399ea471f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2d95c508-cf92-11f0-84cd-4bb399ea471f" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2e0e024f-cf92-11f0-84cd-4bb399ea471f" type="literal">SCALABLE = Abbildung auf Underlay-Multicast; SECURE = Abbildung auf Underlay-Unicast (Ingress-Replikation); DISABLED = Keine L3-Multicast-Unterstützung</object>
         </predicate>
       </resource>
     </object>

@@ -64,6 +64,12 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
     
+    public void visitL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing();
+    
+    public void visitMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    
+    public void visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -123,6 +129,12 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitUTC__Q_0();
     
     public R visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
+    
+    public R visitL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing();
+    
+    public R visitMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    
+    public R visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
     
   }
   
@@ -190,7 +202,13 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
   
+  public boolean isL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing();
+  
+  public boolean isMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+  
+  public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,PIL4YxjAdLmJKMDQnHU+xvDZHvo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,nwrN8KBgeYm1T7pXgkUVlSNUbEU=] */

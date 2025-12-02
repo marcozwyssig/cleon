@@ -21,16 +21,50 @@ Parent::
 
 The Common is decomposed into the following components:
 
-. <<#4863e83f-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f57-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f50-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f53-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f51-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f54-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f58-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f52-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f56-d579-11ee-903e-9f564e4de07e>>
-. <<#48640f55-d579-11ee-903e-9f564e4de07e>>
+[plantuml, Level_2: Common <Category> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_2: Common <Category> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
+    component "Level_2: Common <Category> (Whitebox)" #lightblue {
+        [**Level_3: actifsource <Feature> <Feature> (Whitebox)**] as 49057F3B_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: building <Feature> <Feature> (Whitebox)**] as 49057F32_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: calendar <Feature> <Feature> (Whitebox)**] as 49057F3C_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: doc <Feature> <Feature> (Whitebox)**] as 4905581D_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: glossary <Feature> <Feature> (Whitebox)**] as 4905581A_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: knowledge <Feature> <Feature> (Whitebox)**] as 4905581E_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: language <Feature> <Feature> (Whitebox)**] as 49055819_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: modularity <Feature> <Feature> (Whitebox)**] as 4905A64F_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: resources <Feature> <Feature> (Whitebox)**] as 49055820_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: xml <Feature> <Feature> (Whitebox)**] as 4905581F_D579_11EE_903E_9F564E4DE07E
+    }
+}
+
+@enduml
+----
+
+. actifsource <Feature> (<<#49057f3b-d579-11ee-903e-9f564e4de07e>>)
+. building <Feature> (<<#49057f32-d579-11ee-903e-9f564e4de07e>>)
+. calendar <Feature> (<<#49057f3c-d579-11ee-903e-9f564e4de07e>>)
+. doc <Feature> (<<#4905581d-d579-11ee-903e-9f564e4de07e>>)
+. glossary <Feature> (<<#4905581a-d579-11ee-903e-9f564e4de07e>>)
+. knowledge <Feature> (<<#4905581e-d579-11ee-903e-9f564e4de07e>>)
+. language <Feature> (<<#49055819-d579-11ee-903e-9f564e4de07e>>)
+. modularity <Feature> (<<#4905a64f-d579-11ee-903e-9f564e4de07e>>)
+. resources <Feature> (<<#49055820-d579-11ee-903e-9f564e4de07e>>)
+. xml <Feature> (<<#4905581f-d579-11ee-903e-9f564e4de07e>>)
 
 
 // Begin Protected Region [[4843dc9f-d579-11ee-903e-9f564e4de07e,customText]]
@@ -487,4 +521,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[48640f55-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,zaG5g1v6IYFLAUxnuRUOWq77O7c=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,huLh0drA0jpPgMD5ecqNLteMlmE=]

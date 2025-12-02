@@ -21,12 +21,38 @@ Parent::
 
 The resources <Feature> is decomposed into the following components:
 
-. <<#498c3b4d-d579-11ee-903e-9f564e4de07e>>
-. <<#498c3b4c-d579-11ee-903e-9f564e4de07e>>
+[plantuml, Level_3: resources <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_3: resources <Feature> <Feature> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_2: Common <Category> (Whitebox) (Parent)" {
+    component "Level_3: resources <Feature> <Feature> (Whitebox)" #lightblue {
+        [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE3B_D579_11EE_903E_9F564E4DE07E
+        [**Level_4: Sample <Sample> <Sample> (Whitebox)**] as 4A570573_D579_11EE_903E_9F564E4DE07E
+    }
+}
+
+@enduml
+----
+
+. MetaModel <MetaModel> (<<#4a56de3b-d579-11ee-903e-9f564e4de07e>>)
+. Sample <Sample> (<<#4a570573-d579-11ee-903e-9f564e4de07e>>)
 
 
 // Begin Protected Region [[49055820-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[49055820-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49055820-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49055820-d579-11ee-903e-9f564e4de07e,ctt31ZZQbVYmYxjWi6tBYmqS6xA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49055820-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49055820-d579-11ee-903e-9f564e4de07e,eCOfyiuagtzchHNDHM2/0ksFBNE=]

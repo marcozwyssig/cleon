@@ -21,12 +21,38 @@ Parent::
 
 The Operational Methods is decomposed into the following components:
 
-. <<#90b5a0b1-dcb8-11ef-b5ef-c9ee1a265050>>
-. <<#3b9c8f56-d421-11ef-bdef-4d33dbce89cb>>
+[plantuml, Level_2: Operational Methods <Category> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_2: Operational Methods <Category> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
+    component "Level_2: Operational Methods <Category> (Whitebox)" #lightblue {
+        [**Level_3: chocolatey <Feature> <Feature> (Whitebox)**] as 49055817_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: hermes <Feature> <Feature> (Whitebox)**] as 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
+    }
+}
+
+@enduml
+----
+
+. chocolatey <Feature> (<<#49055817-d579-11ee-903e-9f564e4de07e>>)
+. hermes <Feature> (<<#3bb60ad5-d421-11ef-bdef-4d33dbce89cb>>)
 
 
 // Begin Protected Region [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
 // End Protected Region   [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,QVLOzxQnTm+PglU5jPzwLB7xMC0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,wUfPlrZAzhDaYZcUiPkP269DViE=]

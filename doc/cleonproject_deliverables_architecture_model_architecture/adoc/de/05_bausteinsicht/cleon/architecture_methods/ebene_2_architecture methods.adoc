@@ -21,11 +21,40 @@ Parent::
 
 The Architecture Methods is decomposed into the following components:
 
-. <<#48754cd3-d579-11ee-903e-9f564e4de07e>>
-. <<#48754cd1-d579-11ee-903e-9f564e4de07e>>
-. <<#5f3e4d6f-dcbe-11ef-87b5-5327cb6d0ec7>>
-. <<#48754cd0-d579-11ee-903e-9f564e4de07e>>
-. <<#48754cd2-d579-11ee-903e-9f564e4de07e>>
+[plantuml, Level_2: Architecture Methods <Category> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_2: Architecture Methods <Category> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
+    component "Level_2: Architecture Methods <Category> (Whitebox)" #lightblue {
+        [**Level_3: arc42 <Feature> <Feature> (Whitebox)**] as 4905A654_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: eamod <Feature> <Feature> (Whitebox)**] as 49057F36_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: hermes <Feature> <Feature> (Whitebox)**] as 5F655CDC_DCBE_11EF_87B5_5327CB6D0EC7
+        [**Level_3: orgarc42 <Feature> <Feature> (Whitebox)**] as 49057F33_D579_11EE_903E_9F564E4DE07E
+        [**Level_3: togaf <Feature> <Feature> (Whitebox)**] as 4905581C_D579_11EE_903E_9F564E4DE07E
+    }
+}
+
+@enduml
+----
+
+. arc42 <Feature> (<<#4905a654-d579-11ee-903e-9f564e4de07e>>)
+. eamod <Feature> (<<#49057f36-d579-11ee-903e-9f564e4de07e>>)
+. hermes <Feature> (<<#5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7>>)
+. orgarc42 <Feature> (<<#49057f33-d579-11ee-903e-9f564e4de07e>>)
+. togaf <Feature> (<<#4905581c-d579-11ee-903e-9f564e4de07e>>)
 
 
 // Begin Protected Region [[4843dca6-d579-11ee-903e-9f564e4de07e,customText]]
@@ -257,4 +286,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[48754cd2-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca6-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca6-d579-11ee-903e-9f564e4de07e,D/oLd9eu1EOL5FXden5M+VQQqgQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca6-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca6-d579-11ee-903e-9f564e4de07e,Y7/geEHg6KzOSEta//zybOxhkks=]

@@ -723,6 +723,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("1ede3a88-bfc8-11f0-98b9-251c9d34c5e8")
     public java.lang.String RenderBuildingBlockOverviewChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("987ab5c6-cf99-11f0-84cd-4bb399ea471f")
+    public java.lang.String RenderMotivation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -1499,4 +1502,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,bkL7x4ozphaevWnywYeh7z33Ymc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,2IZNEs4XvZx8k89xotupCVSC/Bc=] */

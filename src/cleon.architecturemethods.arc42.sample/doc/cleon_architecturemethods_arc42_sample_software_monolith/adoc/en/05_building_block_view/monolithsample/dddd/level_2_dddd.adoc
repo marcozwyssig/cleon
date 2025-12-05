@@ -21,26 +21,36 @@ Parent::
 
 The dddd is decomposed into the following components:
 
-. <<#957a0aa6-cb0a-11f0-ad08-33c52acb975f>>
+[plantuml, Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Whitebox) (Parent)" {
+    component "Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)" #lightblue {
+        [**Ebene_3: Database <SoftwareMonolithDatabase> (Whitebox)**] as 958E2EF1_CB0A_11F0_AD08_33C52ACB975F
+    }
+}
+
+@enduml
+----
+
+. Database (<<#958e2ef1-cb0a-11f0-ad08-33c52acb975f>>)
 
 
 // Begin Protected Region [[8a0aa48d-cb0a-11f0-ad08-33c52acb975f,customText]]
 
 // End Protected Region   [[8a0aa48d-cb0a-11f0-ad08-33c52acb975f,customText]]
 
-// Begin Protected Region [[956d6072-cb0a-11f0-ad08-33c52acb975f,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[956d6072-cb0a-11f0-ad08-33c52acb975f,interface]]
-// Begin Protected Region [[956d6072-cb0a-11f0-ad08-33c52acb975f,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[956d6072-cb0a-11f0-ad08-33c52acb975f,quality]]
-// Begin Protected Region [[956d6072-cb0a-11f0-ad08-33c52acb975f,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[956d6072-cb0a-11f0-ad08-33c52acb975f,reqs]]
-// Begin Protected Region [[956d6072-cb0a-11f0-ad08-33c52acb975f,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[956d6072-cb0a-11f0-ad08-33c52acb975f,location]]
-// Begin Protected Region [[956d6072-cb0a-11f0-ad08-33c52acb975f,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[956d6072-cb0a-11f0-ad08-33c52acb975f,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,/Q6f9CqibxkEX10DvhlwruOHKsQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,v/hQKRSRTDDBeHr9H2ui7RAZIr8=]

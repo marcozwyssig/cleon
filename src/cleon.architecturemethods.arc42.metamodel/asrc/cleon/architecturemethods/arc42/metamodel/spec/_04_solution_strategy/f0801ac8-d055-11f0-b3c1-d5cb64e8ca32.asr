@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f0801ac8-d055-11f0-b3c1-d5cb64e8ca32">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5c85090d-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="5c84e1fb-d057-11f0-b3c1-d5cb64e8ca32" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f08041da-d055-11f0-b3c1-d5cb64e8ca32" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f083762c-d055-11f0-b3c1-d5cb64e8ca32" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+    <object statement-guid="5c809c3a-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5c85090d-d057-11f0-b3c1-d5cb64e8ca32">
+      <resource guid="5c84e1fb-d057-11f0-b3c1-d5cb64e8ca32">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5c84e1fc-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5c8a3930-d057-11f0-b3c1-d5cb64e8ca32" type="literal">qualityGoal</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5c8a3931-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5c8a6042-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5c8a121f-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="1689d4f9-481a-11e6-82f6-0f210765495b" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="5c861a7e-d057-11f0-b3c1-d5cb64e8ca32" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f0834f1b-d055-11f0-b3c1-d5cb64e8ca32" type="literal">SolutionStrategyForQualityGoal</object>
+  </predicate>
+</resource>
+

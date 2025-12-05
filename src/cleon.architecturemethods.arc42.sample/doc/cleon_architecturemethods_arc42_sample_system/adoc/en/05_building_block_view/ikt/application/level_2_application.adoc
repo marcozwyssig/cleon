@@ -21,26 +21,36 @@ Parent::
 
 The Application is decomposed into the following components:
 
-. <<#881b8416-219a-11f0-83ae-df5418a109a4>>
+[plantuml, Ebene_2: Application <SystemLayer> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_2: Application <SystemLayer> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_1: IKT (IKT) <System> (Whitebox) (Parent)" {
+    component "Ebene_2: Application <SystemLayer> (Whitebox)" #lightblue {
+        [**Ebene_3: Directory Service <SystemComponent> (Whitebox)**] as 88301D91_219A_11F0_83AE_DF5418A109A4
+    }
+}
+
+@enduml
+----
+
+. Directory Service (<<#88301d91-219a-11f0-83ae-df5418a109a4>>)
 
 
 // Begin Protected Region [[7f8cda2c-beda-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[7f8cda2c-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Begin Protected Region [[87ffe5bf-219a-11f0-83ae-df5418a109a4,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[87ffe5bf-219a-11f0-83ae-df5418a109a4,interface]]
-// Begin Protected Region [[87ffe5bf-219a-11f0-83ae-df5418a109a4,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[87ffe5bf-219a-11f0-83ae-df5418a109a4,quality]]
-// Begin Protected Region [[87ffe5bf-219a-11f0-83ae-df5418a109a4,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[87ffe5bf-219a-11f0-83ae-df5418a109a4,reqs]]
-// Begin Protected Region [[87ffe5bf-219a-11f0-83ae-df5418a109a4,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[87ffe5bf-219a-11f0-83ae-df5418a109a4,location]]
-// Begin Protected Region [[87ffe5bf-219a-11f0-83ae-df5418a109a4,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[87ffe5bf-219a-11f0-83ae-df5418a109a4,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f8cda2c-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f8cda2c-beda-11ef-b498-058ee446f8e7,rZuKrNlb1zTuYelEurXtFnLtPqI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f8cda2c-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f8cda2c-beda-11ef-b498-058ee446f8e7,MH0wSPHmHwVUSs3/4kFn6sQd5tI=]

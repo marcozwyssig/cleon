@@ -69,12 +69,12 @@ public class SolutionStrategy extends DynamicResource implements ISolutionStrate
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters);
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public SolutionStrategy setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters, chapters);
+  public SolutionStrategy setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
     
@@ -109,12 +109,12 @@ public class SolutionStrategy extends DynamicResource implements ISolutionStrate
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> selectStandardParagraphs() {
-    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategyForQualityGoal> selectSolutionStrategyForQualityGoal() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategyForQualityGoal.class, cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy._04_solution_strategyPackage.SolutionStrategy_solutionStrategyForQualityGoal);
   }
 
-  public SolutionStrategy setStandardParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> standardParagraphs) {
-    _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs, standardParagraphs);
+  public SolutionStrategy setSolutionStrategyForQualityGoal(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategyForQualityGoal> solutionStrategyForQualityGoal) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy._04_solution_strategyPackage.SolutionStrategy_solutionStrategyForQualityGoal, solutionStrategyForQualityGoal);
     return this;
   }
     
@@ -135,11 +135,17 @@ public class SolutionStrategy extends DynamicResource implements ISolutionStrate
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategyForQualityGoal.class, cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy._04_solution_strategyPackage.SolutionStrategy_solutionStrategyForQualityGoal, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy selectToMeSolutionStrategyForQualityGoal(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategyForQualityGoal object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolutionStrategy.class, cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy._04_solution_strategyPackage.SolutionStrategy_solutionStrategyForQualityGoal, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,EneUrt5znp2yybhDt8RV97hdE2s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,217h3ZfLjEUXIdg7igzAhJZmC7M=] */

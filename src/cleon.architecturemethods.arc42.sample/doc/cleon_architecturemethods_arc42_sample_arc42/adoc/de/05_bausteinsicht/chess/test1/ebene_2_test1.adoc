@@ -24,26 +24,36 @@ Parent::
 
 The Test1 is decomposed into the following components:
 
-. <<#4833138a-d579-11ee-903e-9f564e4de07e>>
+[plantuml, Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
+    component "Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)" #lightblue {
+        [**Ebene_3: Test1_2 <SampleBuildingBlock> (Whitebox)**] as 489CD282_D579_11EE_903E_9F564E4DE07E
+    }
+}
+
+@enduml
+----
+
+. Test1_2 (<<#489cd282-d579-11ee-903e-9f564e4de07e>>)
 
 
 // Begin Protected Region [[48213901-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[48213901-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Begin Protected Region [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,interface]]
-// Begin Protected Region [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,quality]]
-// Begin Protected Region [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,reqs]]
-// Begin Protected Region [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,location]]
-// Begin Protected Region [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[76ffb8c1-4394-11e6-a883-1f8f2b17c061,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213901-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213901-d579-11ee-903e-9f564e4de07e,udlsH5e914nDUkTEexWuYGnGEUA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213901-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213901-d579-11ee-903e-9f564e4de07e,gN+VEpLUwOJ6z4x5LcfJ93CH3pc=]

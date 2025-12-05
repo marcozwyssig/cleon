@@ -21,42 +21,38 @@ Parent::
 
 The Virtualization is decomposed into the following components:
 
-. <<#6915e917-bee0-11ef-b498-058ee446f8e7>>
-. <<#6915c206-bee0-11ef-b498-058ee446f8e7>>
+[plantuml, Ebene_3: Virtualization <SystemComponent> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_3: Virtualization <SystemComponent> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+    component "Ebene_3: Virtualization <SystemComponent> (Whitebox)" #lightblue {
+        [**Ebene_4: VM (VM) <VirtualMachineSystemConfiguration> (Whitebox)**] as B582462B_BEE0_11EF_B498_058EE446F8E7
+        [**Ebene_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)**] as B581F80A_BEE0_11EF_B498_058EE446F8E7
+    }
+}
+
+@enduml
+----
+
+. VM (<<#b582462b-bee0-11ef-b498-058ee446f8e7>>)
+. VMH (<<#b581f80a-bee0-11ef-b498-058ee446f8e7>>)
 
 
 // Begin Protected Region [[483100ca-bedf-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[483100ca-bedf-11ef-b498-058ee446f8e7,customText]]
 
-// Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[33e72201-bedd-11ef-b498-058ee446f8e7,interface]]
-// Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[33e72201-bedd-11ef-b498-058ee446f8e7,quality]]
-// Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[33e72201-bedd-11ef-b498-058ee446f8e7,reqs]]
-// Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[33e72201-bedd-11ef-b498-058ee446f8e7,location]]
-// Begin Protected Region [[33e72201-bedd-11ef-b498-058ee446f8e7,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[33e72201-bedd-11ef-b498-058ee446f8e7,issues]]
-// Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[a397fed4-beda-11ef-b498-058ee446f8e7,interface]]
-// Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[a397fed4-beda-11ef-b498-058ee446f8e7,quality]]
-// Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[a397fed4-beda-11ef-b498-058ee446f8e7,reqs]]
-// Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[a397fed4-beda-11ef-b498-058ee446f8e7,location]]
-// Begin Protected Region [[a397fed4-beda-11ef-b498-058ee446f8e7,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[a397fed4-beda-11ef-b498-058ee446f8e7,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,nbI2U1Kf2OkWFII1zL6el6rdlEw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,pLaLhsP14mUYX7MwhJkFv14GA20=]

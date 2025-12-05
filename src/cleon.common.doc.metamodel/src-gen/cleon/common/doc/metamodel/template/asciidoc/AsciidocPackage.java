@@ -45,6 +45,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_CustomContent = new Resource("ac3f71ea-e307-11ef-b923-77f2289118eb");
   public static final Resource FunctionSpace_aE_Asciidoc_SimpleItemizedList = new Resource("4e40eb58-e30a-11ef-b923-77f2289118eb");
   public static final Resource FunctionSpace_aE_Asciidoc_PageBreak = new Resource("239b268c-e3b9-11ef-bef0-df3c7733fc9f");
+  public static final Resource FunctionSpace_aE_Asciidoc_Layout = new Resource("04e67aff-d050-11f0-b3c1-d5cb64e8ca32");
   
   /* Begin Protected Region [[user]] */
   
@@ -65,4 +66,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,PuHKd0f1QHiCPpv3wCtkxnpoeEM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.asciidoc,PqaUG3dnWdjRro39eL9e8XPTIlE=] */

@@ -21,26 +21,36 @@ Parent::
 
 The Operating System is decomposed into the following components:
 
-. <<#1251fb2b-bee7-11ef-8dcb-a78def9ea3bd>>
+[plantuml, Ebene_3: Operating System <SystemComponent> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_3: Operating System <SystemComponent> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+    component "Ebene_3: Operating System <SystemComponent> (Whitebox)" #lightblue {
+        [**Ebene_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)**] as 1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD
+    }
+}
+
+@enduml
+----
+
+. WIN2022 (<<#1308a142-bee7-11ef-8dcb-a78def9ea3bd>>)
 
 
 // Begin Protected Region [[07fc9046-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
 // End Protected Region   [[07fc9046-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
-// Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,interface]]
-TODO: Describe the interface(s).
-// End Protected Region   [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,interface]]
-// Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,quality]]
-TODO: Describe the quality/performance characteristics.
-// End Protected Region   [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,quality]]
-// Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,reqs]]
-TODO: Describe the fulfilled requirements.
-// End Protected Region   [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,reqs]]
-// Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,location]]
-TODO: Describe the directory/file location.
-// End Protected Region   [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,location]]
-// Begin Protected Region [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,issues]]
-TODO: Describe the open issues/problems/risks.
-// End Protected Region   [[10d03d59-bee7-11ef-8dcb-a78def9ea3bd,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,JHmKd9CxL46tCjMyBx1IY6kHLYw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,8s4NmE3wqegiB3deDfF+JraMEvM=]

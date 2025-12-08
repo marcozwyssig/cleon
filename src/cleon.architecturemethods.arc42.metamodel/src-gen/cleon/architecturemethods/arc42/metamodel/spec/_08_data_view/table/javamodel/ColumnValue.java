@@ -71,6 +71,8 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (is__V___F_b_s___F_1000__F_()) return visitor.visit__V___F_b_s___F_1000__F_();
     if (is__V___F_b_s___F_10000()) return visitor.visit__V___F_b_s___F_10000();
     if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) return visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+    if (is__V___F___8___F_FALSE()) return visitor.visit__V___F___8___F_FALSE();
+    if (is__W___F___8___F_TRUE()) return visitor.visit__W___F___8___F_TRUE();
     if (is__W___F_b_s___F_2_aD_12()) return visitor.visit__W___F_b_s___F_2_aD_12();
     if (is__W___F_b_s___F_2_aD_32()) return visitor.visit__W___F_b_s___F_2_aD_32();
     if (is__W___F_b_s___F_2_aD_64()) return visitor.visit__W___F_b_s___F_2_aD_64();
@@ -92,9 +94,14 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (is__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_()) return visitor.visit__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_();
     if (isUTC__Q_0()) return visitor.visitUTC__Q_0();
     if (isTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive()) return visitor.visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
-    if (isL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing()) return visitor.visitL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing();
-    if (isMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_()) return visitor.visitMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
-    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) return visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    if (isL2__F___8___F_Switching__U_Bridging()) return visitor.visitL2__F___8___F_Switching__U_Bridging();
+    if (isL3__F___8___F_Routing()) return visitor.visitL3__F___8___F_Routing();
+    if (isMESH__F___8___F_voll__F_vermascht()) return visitor.visitMESH__F___8___F_voll__F_vermascht();
+    if (isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_()) return visitor.visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_();
+    if (isLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_()) return visitor.visitLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast()) return visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+    if (isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_()) return visitor.visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+    if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) return visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -126,6 +133,14 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE()) {
       visitor.visit__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE();
+      return;
+    }
+    if (is__V___F___8___F_FALSE()) {
+      visitor.visit__V___F___8___F_FALSE();
+      return;
+    }
+    if (is__W___F___8___F_TRUE()) {
+      visitor.visit__W___F___8___F_TRUE();
       return;
     }
     if (is__W___F_b_s___F_2_aD_12()) {
@@ -212,16 +227,36 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
       return;
     }
-    if (isL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing()) {
-      visitor.visitL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing();
+    if (isL2__F___8___F_Switching__U_Bridging()) {
+      visitor.visitL2__F___8___F_Switching__U_Bridging();
       return;
     }
-    if (isMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_()) {
-      visitor.visitMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    if (isL3__F___8___F_Routing()) {
+      visitor.visitL3__F___8___F_Routing();
       return;
     }
-    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) {
-      visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    if (isMESH__F___8___F_voll__F_vermascht()) {
+      visitor.visitMESH__F___8___F_voll__F_vermascht();
+      return;
+    }
+    if (isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_()) {
+      visitor.visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_();
+      return;
+    }
+    if (isLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_()) {
+      visitor.visitLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+      return;
+    }
+    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast()) {
+      visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+      return;
+    }
+    if (isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_()) {
+      visitor.visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+      return;
+    }
+    if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) {
+      visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -262,6 +297,16 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   @Override
   public boolean is__V___F___8___F_FALSE__6___F_1__F___8___F_TRUE() {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___V___F___8___F_FALSE__6___F_1__F___8___F_TRUE);
+  }
+  
+  @Override
+  public boolean is__V___F___8___F_FALSE() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___V___F___8___F_FALSE);
+  }
+  
+  @Override
+  public boolean is__W___F___8___F_TRUE() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___W___F___8___F_TRUE);
   }
   
   @Override
@@ -370,19 +415,44 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean isL2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_L2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing);
+  public boolean isL2__F___8___F_Switching__U_Bridging() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_L2__F___8___F_Switching__U_Bridging);
   }
   
   @Override
-  public boolean isMESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_);
+  public boolean isL3__F___8___F_Routing() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_L3__F___8___F_Routing);
   }
   
   @Override
-  public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung);
+  public boolean isMESH__F___8___F_voll__F_vermascht() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MESH__F___8___F_voll__F_vermascht);
+  }
+  
+  @Override
+  public boolean isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_);
+  }
+  
+  @Override
+  public boolean isLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_);
+  }
+  
+  @Override
+  public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast);
+  }
+  
+  @Override
+  public boolean isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_);
+  }
+  
+  @Override
+  public boolean isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,M/0iVlKmC/wO7i0Sx8aAnw3gP2A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,bwsV6M6i3qYWjhPuygP705w46lQ=] */

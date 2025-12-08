@@ -12,7 +12,9 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
   public ch.actifsource.solution.datatype.generic.datatype.javamodel.IType selectType();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue selectValueRange();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue> selectAllowedValues();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue selectStandardValue();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectToTableRelation();
   
@@ -20,4 +22,4 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,cAqwGST2IlZDMVPM6HYVXmtaGFQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,RYLN82aUFhRTXCCHS3EQ49vPQ0Q=] */

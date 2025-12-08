@@ -14,7 +14,7 @@ public class TablePackage {
   public static final Resource AbstractTable_primary_aE_key = new Resource("e1db6107-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey = new Resource("fc12f568-b935-11ee-a0d0-e953bcbfaeef");
   public static final Resource PrimaryKey_columns = new Resource("786dfb0c-b936-11ee-a0d0-e953bcbfaeef");
-  public static final Resource Column_valueRange = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
+  public static final Resource Column_allowedValues = new Resource("351895d9-b9ca-11ee-a257-01d178f494ca");
   public static final Resource ColumnValue = new Resource("f46c2d4f-ba0f-11ee-876d-0f01c87670c8");
   public static final Resource ColumnValue___W___F_b_s___F_2_aD_12 = new Resource("5708c702-ba10-11ee-876d-0f01c87670c8");
   public static final Resource ColumnValue___W___F_b_s___F_2_aD_32 = new Resource("59b34d97-ba10-11ee-876d-0f01c87670c8");
@@ -65,9 +65,17 @@ public class TablePackage {
   public static final Resource TableRelationOneToMany = new Resource("4d1683b4-621d-11f0-8ed9-1d79caf8da43");
   public static final Resource TableRelationOneToOne = new Resource("8bed3e48-621d-11f0-8ed9-1d79caf8da43");
   public static final Resource Column_fromTableRelation = new Resource("719f0982-6227-11f0-bad7-45c7bffc2eff");
-  public static final Resource ColumnValue_L2__F___8___F_Switching__U_Bridging__6___F_L3__F___8___F___F_Routing = new Resource("8bc722c6-cf8c-11f0-84cd-4bb399ea471f");
-  public static final Resource ColumnValue_MESH__F___8___F_voll__F_vermascht__6___F_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H___6___F_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_ = new Resource("67ba825c-cf8d-11f0-84cd-4bb399ea471f");
-  public static final Resource ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast__6___F_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O___6___F_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung = new Resource("2d95c506-cf92-11f0-84cd-4bb399ea471f");
+  public static final Resource ColumnValue_L2__F___8___F_Switching__U_Bridging = new Resource("8bc722c6-cf8c-11f0-84cd-4bb399ea471f");
+  public static final Resource ColumnValue_MESH__F___8___F_voll__F_vermascht = new Resource("67ba825c-cf8d-11f0-84cd-4bb399ea471f");
+  public static final Resource ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast = new Resource("2d95c506-cf92-11f0-84cd-4bb399ea471f");
+  public static final Resource Column_standardValue = new Resource("2eea5199-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_L3__F___8___F_Routing = new Resource("6a396c57-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_ = new Resource("930d62fd-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_LOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_ = new Resource("946db6aa-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_ = new Resource("a4d8e640-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung = new Resource("a857faa4-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue___V___F___8___F_FALSE = new Resource("0a846d7c-d423-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue___W___F___8___F_TRUE = new Resource("0af530b5-d423-11f0-b3aa-65c9c1969da9");
   
   /* Begin Protected Region [[user]] */
   
@@ -88,4 +96,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,HGpJveKEWiNH1Aff2LmJ/BNJp64=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,9rLjsoOMptvVX5eCJnJZo/i1qlU=] */

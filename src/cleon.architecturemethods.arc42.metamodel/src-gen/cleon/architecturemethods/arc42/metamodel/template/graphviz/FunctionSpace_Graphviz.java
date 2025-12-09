@@ -7,18 +7,27 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
-/* Begin Protected Region [[52a8009b-80b1-11ea-939b-457d27a57c8c,imports]] */
+/* Begin Protected Region [[524ff8ae-d204-11f0-8b7f-13e33648cd53,imports]] */
 
-/* End Protected Region   [[52a8009b-80b1-11ea-939b-457d27a57c8c,imports]] */
+/* End Protected Region   [[524ff8ae-d204-11f0-8b7f-13e33648cd53,imports]] */
 
-public class Communication__T_dot {
+public class FunctionSpace_Graphviz {
 
-  /* Begin Protected Region [[52a8009b-80b1-11ea-939b-457d27a57c8c]] */
+  /* Begin Protected Region [[524ff8ae-d204-11f0-8b7f-13e33648cd53]] */
   
-  /* End Protected Region   [[52a8009b-80b1-11ea-939b-457d27a57c8c]] */
+  /* End Protected Region   [[524ff8ae-d204-11f0-8b7f-13e33648cd53]] */
 
 
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6f8589cb-d204-11f0-8b7f-13e33648cd53")
+    public java.lang.String RenderGraphviz();
+
+    @IDynamicResourceExtension.MethodId("f22de40c-7ea5-11ec-b55c-f5ca121c82b7")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllSourceAndDestinctSourceAndService();
+
+    @IDynamicResourceExtension.MethodId("ae5a7fa8-7ea6-11ec-b55c-f5ca121c82b7")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.javamodel.ISource> AllDestinationAndDestinctDestinationAndService();
 
   }
   
@@ -67,4 +76,4 @@ public class Communication__T_dot {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,52a8009b-80b1-11ea-939b-457d27a57c8c,i4bO6bRUhzfmwSm36smleYKZbwM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,524ff8ae-d204-11f0-8b7f-13e33648cd53,ne/nejSVtc0VOi3nURgWWC7pgA8=] */

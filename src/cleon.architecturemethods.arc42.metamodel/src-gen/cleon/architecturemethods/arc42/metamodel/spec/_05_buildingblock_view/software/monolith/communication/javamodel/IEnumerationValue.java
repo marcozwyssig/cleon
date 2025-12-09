@@ -6,6 +6,10 @@ public interface IEnumerationValue extends ch.actifsource.core.javamodel.INamedR
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("5bc28fbc-cf1e-11ee-8c06-a5102392725a");
   
+  // relations
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> selectUsed();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5bc28fbc-cf1e-11ee-8c06-a5102392725a,RvLxT3ljWCjiQT0tXnCzCm2KVlY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5bc28fbc-cf1e-11ee-8c06-a5102392725a,4ghL0bXfGhnxDOGvuzs2TffprFg=] */

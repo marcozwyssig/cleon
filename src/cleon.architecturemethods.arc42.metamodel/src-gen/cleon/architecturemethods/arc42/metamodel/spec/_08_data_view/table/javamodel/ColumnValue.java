@@ -110,6 +110,12 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (isTXT__F___8___F_Beliebiger__F_Text()) return visitor.visitTXT__F___8___F_Beliebiger__F_Text();
     if (isMD5()) return visitor.visitMD5();
     if (isAES_aE_CMAC__F___N_128bit__O_()) return visitor.visitAES_aE_CMAC__F___N_128bit__O_();
+    if (isROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_()) return visitor.visitROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
+    if (isLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_()) return visitor.visitLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_();
+    if (is_aA_STRING_aC_()) return visitor.visit_aA_STRING_aC_();
+    if (isSTP()) return visitor.visitSTP();
+    if (isRSTP()) return visitor.visitRSTP();
+    if (isMSTP()) return visitor.visitMSTP();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -297,6 +303,30 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (isAES_aE_CMAC__F___N_128bit__O_()) {
       visitor.visitAES_aE_CMAC__F___N_128bit__O_();
+      return;
+    }
+    if (isROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_()) {
+      visitor.visitROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
+      return;
+    }
+    if (isLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_()) {
+      visitor.visitLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_();
+      return;
+    }
+    if (is_aA_STRING_aC_()) {
+      visitor.visit_aA_STRING_aC_();
+      return;
+    }
+    if (isSTP()) {
+      visitor.visitSTP();
+      return;
+    }
+    if (isRSTP()) {
+      visitor.visitRSTP();
+      return;
+    }
+    if (isMSTP()) {
+      visitor.visitMSTP();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -534,5 +564,35 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_AES_aE_CMAC__F___N_128bit__O_);
   }
   
+  @Override
+  public boolean isROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_ROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_);
+  }
+  
+  @Override
+  public boolean isLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_LEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_);
+  }
+  
+  @Override
+  public boolean is_aA_STRING_aC_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue__aA_STRING_aC_);
+  }
+  
+  @Override
+  public boolean isSTP() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_STP);
+  }
+  
+  @Override
+  public boolean isRSTP() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_RSTP);
+  }
+  
+  @Override
+  public boolean isMSTP() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MSTP);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,QKm//mnj17Y3HRZ7XKKupLcuqhw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,bcYTZIrHkhwIB9TFKHhovIxTkJs=] */

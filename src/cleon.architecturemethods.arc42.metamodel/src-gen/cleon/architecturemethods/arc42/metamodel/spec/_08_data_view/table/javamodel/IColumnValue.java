@@ -100,6 +100,18 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitAES_aE_CMAC__F___N_128bit__O_();
     
+    public void visitROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
+    
+    public void visitLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_();
+    
+    public void visit_aA_STRING_aC_();
+    
+    public void visitSTP();
+    
+    public void visitRSTP();
+    
+    public void visitMSTP();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -195,6 +207,18 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitMD5();
     
     public R visitAES_aE_CMAC__F___N_128bit__O_();
+    
+    public R visitROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
+    
+    public R visitLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_();
+    
+    public R visit_aA_STRING_aC_();
+    
+    public R visitSTP();
+    
+    public R visitRSTP();
+    
+    public R visitMSTP();
     
   }
   
@@ -298,7 +322,19 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isAES_aE_CMAC__F___N_128bit__O_();
   
+  public boolean isROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
+  
+  public boolean isLEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_();
+  
+  public boolean is_aA_STRING_aC_();
+  
+  public boolean isSTP();
+  
+  public boolean isRSTP();
+  
+  public boolean isMSTP();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,kt6Edf9t1MeX2SXlH6m2auvdAXg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,FCjNaH5BJF0TtWXf4aB6gY5bSmE=] */

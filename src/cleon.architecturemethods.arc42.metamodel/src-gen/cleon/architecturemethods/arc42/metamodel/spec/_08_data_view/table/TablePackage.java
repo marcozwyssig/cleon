@@ -89,6 +89,12 @@ public class TablePackage {
   public static final Resource ColumnStandardValue_value = new Resource("2d0cc024-d4d8-11f0-8cde-c9d57c2466c1");
   public static final Resource ColumnValue_MD5 = new Resource("d7c39e42-d4f6-11f0-b716-75a89d38ec65");
   public static final Resource ColumnValue_AES_aE_CMAC__F___N_128bit__O_ = new Resource("df360d2c-d4f6-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue_ROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_ = new Resource("fa5a518f-d4fe-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue_LEAF__5___F___H_Leaf__H___F_oder__F___H_Spoke__H_ = new Resource("fe27d459-d4fe-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue__aA_STRING_aC_ = new Resource("c8a52554-d50e-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue_STP = new Resource("e25e6fa8-d513-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue_RSTP = new Resource("e5469b82-d513-11f0-b716-75a89d38ec65");
+  public static final Resource ColumnValue_MSTP = new Resource("e8cb7c8c-d513-11f0-b716-75a89d38ec65");
   
   /* Begin Protected Region [[user]] */
   
@@ -109,4 +115,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,5cR2jBHhC4+7weRj3+PvXD/k/Ks=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,6JQydzM0f1heyTIRLyEHVOXD0dw=] */

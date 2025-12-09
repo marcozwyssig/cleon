@@ -84,6 +84,22 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
     
+    public void visitA__F___8___F_IPv4__S_Adresse();
+    
+    public void visitAAAA__F___8___F_IPv6__S_Adresse();
+    
+    public void visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    
+    public void visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    
+    public void visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    
+    public void visitTXT__F___8___F_Beliebiger__F_Text();
+    
+    public void visitMD5();
+    
+    public void visitAES_aE_CMAC__F___N_128bit__O_();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -163,6 +179,22 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
     
     public R visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    
+    public R visitA__F___8___F_IPv4__S_Adresse();
+    
+    public R visitAAAA__F___8___F_IPv6__S_Adresse();
+    
+    public R visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    
+    public R visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    
+    public R visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    
+    public R visitTXT__F___8___F_Beliebiger__F_Text();
+    
+    public R visitMD5();
+    
+    public R visitAES_aE_CMAC__F___N_128bit__O_();
     
   }
   
@@ -250,7 +282,23 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
   
+  public boolean isA__F___8___F_IPv4__S_Adresse();
+  
+  public boolean isAAAA__F___8___F_IPv6__S_Adresse();
+  
+  public boolean isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+  
+  public boolean isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+  
+  public boolean isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+  
+  public boolean isTXT__F___8___F_Beliebiger__F_Text();
+  
+  public boolean isMD5();
+  
+  public boolean isAES_aE_CMAC__F___N_128bit__O_();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,iwSsryxbZCOYEIXPvNWRvJfNWNc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,kt6Edf9t1MeX2SXlH6m2auvdAXg=] */

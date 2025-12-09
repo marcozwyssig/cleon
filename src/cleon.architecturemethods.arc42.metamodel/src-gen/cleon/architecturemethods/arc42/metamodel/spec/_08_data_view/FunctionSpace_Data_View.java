@@ -789,10 +789,10 @@ public class FunctionSpace_Data_View {
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable FromTable();
 
     @IDynamicResourceExtension.MethodId("715a9135-670a-11f0-8771-c3f8175f9d05")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn SourceColumn();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn ForeignKeyColumn();
 
     @IDynamicResourceExtension.MethodId("90566461-670a-11f0-8771-c3f8175f9d05")
-    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn DestinationColumn();
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn PrimaryKeyColumn();
 
     @IDynamicResourceExtension.MethodId("e199ff57-6235-11f0-bad7-45c7bffc2eff")
     public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable ToTable();
@@ -854,31 +854,31 @@ public class FunctionSpace_Data_View {
 
   }
 
-  public static interface ITableRelationOneToManyFunctions extends IDynamicResourceExtension {
+  public static interface ITableRelationManyToOneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b157bbd7-6ba8-11f0-8c6a-09245c78ab92")
     public java.lang.String Cardinality();
 
   }
   
-  public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITableRelationManyToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TableRelationOneToManyFunctionsImpl implements ITableRelationOneToManyFunctionsImpl {
+  public static class TableRelationManyToOneFunctionsImpl implements ITableRelationManyToOneFunctionsImpl {
 
-    public static final ITableRelationOneToManyFunctionsImpl INSTANCE = new TableRelationOneToManyFunctionsImpl();
+    public static final ITableRelationManyToOneFunctionsImpl INSTANCE = new TableRelationManyToOneFunctionsImpl();
 
-    private TableRelationOneToManyFunctionsImpl() {}
+    private TableRelationManyToOneFunctionsImpl() {}
 
   }
   
-  public static class TableRelationOneToManyFunctions {
+  public static class TableRelationManyToOneFunctions {
 
-    private TableRelationOneToManyFunctions() {}
+    private TableRelationManyToOneFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,jThh7g+Pr15O3ZaKDI9MXp9jqLc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,iEHDJvkrUhVR77eu5zEOHmO2JXc=] */

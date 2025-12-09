@@ -70,6 +70,16 @@ public class Column extends DynamicResource implements IColumn {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectAssignedForeignKeys() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_assignedForeignKeys);
+  }
+
+  public Column setAssignedForeignKeys(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> assignedForeignKeys) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_assignedForeignKeys, assignedForeignKeys);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment selectComment() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.CommentAware_comment);
   }
@@ -80,32 +90,22 @@ public class Column extends DynamicResource implements IColumn {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectFromTableRelation() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation selectForeignKey() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_foreignKey);
   }
 
-  public Column setFromTableRelation(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> fromTableRelation) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, fromTableRelation);
+  public Column setForeignKey(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation foreignKey) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_foreignKey, foreignKey);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue selectStandardValue() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue selectStandardValue() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue);
   }
 
-  public Column setStandardValue(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue standardValue) {
+  public Column setStandardValue(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue standardValue) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue, standardValue);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectToTableRelation() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation);
-  }
-
-  public Column setToTableRelation(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> toTableRelation) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, toTableRelation);
     return this;
   }
     
@@ -138,10 +138,10 @@ public class Column extends DynamicResource implements IColumn {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_nullable, visitor);
     // relations
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValues, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_assignedForeignKeys, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.CommentAware_comment, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_foreignKey, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue, visitor);
     _acceptSingle(ch.actifsource.solution.datatype.generic.datatype.javamodel.IType.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -156,17 +156,17 @@ public class Column extends DynamicResource implements IColumn {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValues, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectToMeStandardValue(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn selectToMeStandardValue(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_standardValue, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn selectToMeToTableRelation(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_toTableRelation, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn selectToMeForeignKey(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_foreignKey, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectToMeFromTableRelation(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_fromTableRelation, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectToMeAssignedForeignKeys(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_assignedForeignKeys, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,eud1g8h7KNU6ZoCPSQFgXMeVI80=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,fhJmBarVqcKJc6g64mRSWbd8dm4=] */

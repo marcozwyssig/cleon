@@ -39,7 +39,7 @@ public class _08_data_viewPackage {
   public static final Resource FunctionSpace_aE_Data_aE_View_TableDatabase = new Resource("c6536dd5-5cce-11f0-97fc-b537e659b5f2");
   public static final Resource FunctionSpace_aE_Data_aE_View_AbstractTableRelation = new Resource("cd4d015c-6235-11f0-bad7-45c7bffc2eff");
   public static final Resource FunctionSpace_aE_Data_aE_View_TableRelationOneToOne = new Resource("b15794ba-6ba8-11f0-8c6a-09245c78ab92");
-  public static final Resource FunctionSpace_aE_Data_aE_View_TableRelationOneToMany = new Resource("b157bbd1-6ba8-11f0-8c6a-09245c78ab92");
+  public static final Resource FunctionSpace_aE_Data_aE_View_TableRelationManyToOne = new Resource("b157bbd1-6ba8-11f0-8c6a-09245c78ab92");
   
   /* Begin Protected Region [[user]] */
   
@@ -60,4 +60,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,/cdJZs5Sz8CEiF0ozMyHrSuucQA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,aq8pxzMvGAefOL3AFDnAuIU/Rp0=] */

@@ -39,6 +39,14 @@
     <resource statement-guid="2d95ec19-cf92-11f0-84cd-4bb399ea471f" type="resource" guid="2d95c506-cf92-11f0-84cd-4bb399ea471f" />
     <resource statement-guid="a4d90d53-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="a4d8e640-d422-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="a85821b7-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="a857faa4-d422-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="f0f98cd4-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f0f965c1-d425-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="f66d93ae-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f66d6c9b-d425-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="0473d0bc-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="0473a9a9-d426-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="0d34df95-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="0d34b87d-d426-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="1a6c5c1f-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="1a6c0dfc-d426-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="26544d0b-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="2653fee8-d426-11f0-b3aa-65c9c1969da9" />
+    <resource statement-guid="d7c39e45-d4f6-11f0-b716-75a89d38ec65" type="resource" guid="d7c39e42-d4f6-11f0-b716-75a89d38ec65" />
+    <resource statement-guid="df36343f-d4f6-11f0-b716-75a89d38ec65" type="resource" guid="df360d2c-d4f6-11f0-b716-75a89d38ec65" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -427,6 +435,86 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="a857faa6-d422-11f0-b3aa-65c9c1969da9" type="literal">DISABLED = Keine L3-Multicast-Unterstützung</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f0f98cd4-d425-11f0-b3aa-65c9c1969da9">
+      <resource guid="f0f965c1-d425-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f0f965c3-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f18af76a-d425-11f0-b3aa-65c9c1969da9" type="literal">A = IPv4-Adresse</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f66d93ae-d425-11f0-b3aa-65c9c1969da9">
+      <resource guid="f66d6c9b-d425-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f66d6c9c-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f66d6c9d-d425-11f0-b3aa-65c9c1969da9" type="literal">AAAA = IPv6-Adresse</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0473d0bc-d426-11f0-b3aa-65c9c1969da9">
+      <resource guid="0473a9a9-d426-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0473a9ab-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0760dee3-d426-11f0-b3aa-65c9c1969da9" type="literal">MX = Mail-Server (Priorität und DNS-Name)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0d34df95-d426-11f0-b3aa-65c9c1969da9">
+      <resource guid="0d34b87d-d426-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0d34df94-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="12b78c4a-d426-11f0-b3aa-65c9c1969da9" type="literal">SRV = Service-Eintrag (Priorität, Gewicht, Port und DNS-Name)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1a6c5c1f-d426-11f0-b3aa-65c9c1969da9">
+      <resource guid="1a6c0dfc-d426-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1a6c350e-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1df3fb76-d426-11f0-b3aa-65c9c1969da9" type="literal">CNAME = Kanonischer Name (DNS-Alias)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="26544d0b-d426-11f0-b3aa-65c9c1969da9">
+      <resource guid="2653fee8-d426-11f0-b3aa-65c9c1969da9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="265425fa-d426-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="29c271c1-d426-11f0-b3aa-65c9c1969da9" type="literal">TXT = Beliebiger Text</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d7c39e45-d4f6-11f0-b716-75a89d38ec65">
+      <resource guid="d7c39e42-d4f6-11f0-b716-75a89d38ec65">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d7c39e44-d4f6-11f0-b716-75a89d38ec65" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dbd6405b-d4f6-11f0-b716-75a89d38ec65" type="literal">MD5</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="df36343f-d4f6-11f0-b716-75a89d38ec65">
+      <resource guid="df360d2c-d4f6-11f0-b716-75a89d38ec65">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df36343e-d4f6-11f0-b716-75a89d38ec65" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e56acbf5-d4f6-11f0-b716-75a89d38ec65" type="literal">AES_CMAC (128bit)</object>
         </predicate>
       </resource>
     </object>

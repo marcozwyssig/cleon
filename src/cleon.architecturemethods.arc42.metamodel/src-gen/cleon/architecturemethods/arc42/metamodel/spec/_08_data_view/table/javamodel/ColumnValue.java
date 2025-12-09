@@ -102,6 +102,14 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast()) return visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
     if (isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_()) return visitor.visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
     if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) return visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    if (isA__F___8___F_IPv4__S_Adresse()) return visitor.visitA__F___8___F_IPv4__S_Adresse();
+    if (isAAAA__F___8___F_IPv6__S_Adresse()) return visitor.visitAAAA__F___8___F_IPv6__S_Adresse();
+    if (isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_()) return visitor.visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    if (isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_()) return visitor.visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    if (isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_()) return visitor.visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    if (isTXT__F___8___F_Beliebiger__F_Text()) return visitor.visitTXT__F___8___F_Beliebiger__F_Text();
+    if (isMD5()) return visitor.visitMD5();
+    if (isAES_aE_CMAC__F___N_128bit__O_()) return visitor.visitAES_aE_CMAC__F___N_128bit__O_();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -257,6 +265,38 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) {
       visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+      return;
+    }
+    if (isA__F___8___F_IPv4__S_Adresse()) {
+      visitor.visitA__F___8___F_IPv4__S_Adresse();
+      return;
+    }
+    if (isAAAA__F___8___F_IPv6__S_Adresse()) {
+      visitor.visitAAAA__F___8___F_IPv6__S_Adresse();
+      return;
+    }
+    if (isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_()) {
+      visitor.visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+      return;
+    }
+    if (isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_()) {
+      visitor.visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+      return;
+    }
+    if (isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_()) {
+      visitor.visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+      return;
+    }
+    if (isTXT__F___8___F_Beliebiger__F_Text()) {
+      visitor.visitTXT__F___8___F_Beliebiger__F_Text();
+      return;
+    }
+    if (isMD5()) {
+      visitor.visitMD5();
+      return;
+    }
+    if (isAES_aE_CMAC__F___N_128bit__O_()) {
+      visitor.visitAES_aE_CMAC__F___N_128bit__O_();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -454,5 +494,45 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung);
   }
   
+  @Override
+  public boolean isA__F___8___F_IPv4__S_Adresse() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_A__F___8___F_IPv4__S_Adresse);
+  }
+  
+  @Override
+  public boolean isAAAA__F___8___F_IPv6__S_Adresse() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_AAAA__F___8___F_IPv6__S_Adresse);
+  }
+  
+  @Override
+  public boolean isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_);
+  }
+  
+  @Override
+  public boolean isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_);
+  }
+  
+  @Override
+  public boolean isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_CNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_);
+  }
+  
+  @Override
+  public boolean isTXT__F___8___F_Beliebiger__F_Text() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_TXT__F___8___F_Beliebiger__F_Text);
+  }
+  
+  @Override
+  public boolean isMD5() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MD5);
+  }
+  
+  @Override
+  public boolean isAES_aE_CMAC__F___N_128bit__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_AES_aE_CMAC__F___N_128bit__O_);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,bwsV6M6i3qYWjhPuygP705w46lQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,QKm//mnj17Y3HRZ7XKKupLcuqhw=] */

@@ -10,12 +10,12 @@ public interface IAbstractTable extends cleon.common.doc.metamodel.spec.chapter.
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectColumns();
-  
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IPrimaryKey selectPrimary_key();
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectColumns();
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerationValue selectScope();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,jI+XzGeN2eW0uhFQbOWPM3BwVDM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09a46257-b934-11ee-a0d0-e953bcbfaeef,AwO8dUU3KAmVsWhPY55efPy/EvU=] */

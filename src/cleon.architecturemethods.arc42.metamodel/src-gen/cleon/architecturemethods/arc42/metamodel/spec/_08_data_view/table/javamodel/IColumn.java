@@ -14,12 +14,12 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue> selectAllowedValues();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue selectStandardValue();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractColumnStandardValue selectStandardValue();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectToTableRelation();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation selectForeignKey();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectFromTableRelation();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> selectAssignedForeignKeys();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,RYLN82aUFhRTXCCHS3EQ49vPQ0Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,BzokHKPVuUP2h4eyLiBf6lUksZ4=] */

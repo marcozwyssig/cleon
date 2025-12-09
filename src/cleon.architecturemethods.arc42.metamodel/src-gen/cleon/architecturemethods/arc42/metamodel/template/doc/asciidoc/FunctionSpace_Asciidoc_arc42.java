@@ -1375,28 +1375,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface ITableRelationOneToManyFunctions extends IDynamicResourceExtension {
+  public static interface ITableRelationManyToOneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c1958e42-6243-11f0-bad7-45c7bffc2eff")
     public java.lang.String Sign();
 
   }
   
-  public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITableRelationManyToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TableRelationOneToManyFunctionsImpl implements ITableRelationOneToManyFunctionsImpl {
+  public static class TableRelationManyToOneFunctionsImpl implements ITableRelationManyToOneFunctionsImpl {
 
-    public static final ITableRelationOneToManyFunctionsImpl INSTANCE = new TableRelationOneToManyFunctionsImpl();
+    public static final ITableRelationManyToOneFunctionsImpl INSTANCE = new TableRelationManyToOneFunctionsImpl();
 
-    private TableRelationOneToManyFunctionsImpl() {}
+    private TableRelationManyToOneFunctionsImpl() {}
 
   }
   
-  public static class TableRelationOneToManyFunctions {
+  public static class TableRelationManyToOneFunctions {
 
-    private TableRelationOneToManyFunctions() {}
+    private TableRelationManyToOneFunctions() {}
 
   }
 

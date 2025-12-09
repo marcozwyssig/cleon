@@ -11,7 +11,7 @@ public class Data_viewPackage {
   public static final Resource DataView_aE_XMI_DataView = new Resource("55e7dbde-2f21-11f0-a641-656c88d7f94a");
   public static final Resource DataView_aE_XMI_AbstractTableRelation = new Resource("2ad4be7a-6708-11f0-8771-c3f8175f9d05");
   public static final Resource DataView_aE_XMI_TableRelationOneToOne = new Resource("d3f266b8-6c4f-11f0-9a54-8beabbd05ae8");
-  public static final Resource DataView_aE_XMI_TableRelationOneToMany = new Resource("ef6f9a7f-6c4f-11f0-9a54-8beabbd05ae8");
+  public static final Resource DataView_aE_XMI_TableRelationManyToOne = new Resource("ef6f9a7f-6c4f-11f0-9a54-8beabbd05ae8");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +32,4 @@ public class Data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xmi.data_view,1zaEdClKCvATe4CkUk2c7Ujvsug=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xmi.data_view,DNEmzv6UKs+uI2wBDPaMMrRkFyk=] */

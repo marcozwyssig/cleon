@@ -211,31 +211,31 @@ public class DataView_XMI {
 
   }
 
-  public static interface ITableRelationOneToManyFunctions extends IDynamicResourceExtension {
+  public static interface ITableRelationManyToOneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ef6f9a8d-6c4f-11f0-9a54-8beabbd05ae8")
     public java.lang.String RenderXmi();
 
   }
   
-  public static interface ITableRelationOneToManyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITableRelationManyToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TableRelationOneToManyFunctionsImpl implements ITableRelationOneToManyFunctionsImpl {
+  public static class TableRelationManyToOneFunctionsImpl implements ITableRelationManyToOneFunctionsImpl {
 
-    public static final ITableRelationOneToManyFunctionsImpl INSTANCE = new TableRelationOneToManyFunctionsImpl();
+    public static final ITableRelationManyToOneFunctionsImpl INSTANCE = new TableRelationManyToOneFunctionsImpl();
 
-    private TableRelationOneToManyFunctionsImpl() {}
+    private TableRelationManyToOneFunctionsImpl() {}
 
   }
   
-  public static class TableRelationOneToManyFunctions {
+  public static class TableRelationManyToOneFunctions {
 
-    private TableRelationOneToManyFunctions() {}
+    private TableRelationManyToOneFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,tOcVszsLkpBATzamlb9Oa9QLeT8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,24306e3b-2f09-11f0-9cc2-230006819e4a,tWgY7B1jHnLV9bSqhfNCyrsvFCk=] */

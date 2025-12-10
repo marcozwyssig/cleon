@@ -51,7 +51,7 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DNSSystemIntegration = new Resource("48cbcd03-ffdf-11ef-a4b8-93f936374459");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractTableRelation = new Resource("7ff85fc9-6243-11f0-bad7-45c7bffc2eff");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableRelationOneToOne = new Resource("a8205f36-6243-11f0-bad7-45c7bffc2eff");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableRelationOneToMany = new Resource("c1958e41-6243-11f0-bad7-45c7bffc2eff");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TableRelationManyToOne = new Resource("c1958e41-6243-11f0-bad7-45c7bffc2eff");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractPhysicalNetwork = new Resource("98a6b3f4-cc7f-11f0-ae36-9583d8e4de71");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_CrosscuttingConcepts = new Resource("62389116-cd2a-11f0-ae36-9583d8e4de71");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SystemCrosscuttingConcepts = new Resource("818bab8a-cd2a-11f0-ae36-9583d8e4de71");
@@ -79,4 +79,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,j82c5KJnAubhVEb80UP5QPf5xkc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,pBpwTvUuTI6hXHmLIdMwQBPgCdc=] */

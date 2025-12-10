@@ -21,9 +21,9 @@ Parent::
 
 The dddd is decomposed into the following components:
 
-[plantuml, Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BuildingBlockOverview
+@startuml Level_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,9 +37,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Whitebox) (Parent)" {
-    component "Ebene_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)" #lightblue {
-        [**Ebene_3: Database <SoftwareMonolithDatabase> (Whitebox)**] as 958E2EF1_CB0A_11F0_AD08_33C52ACB975F
+component "Level_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Whitebox) (Parent)" {
+    component "Level_2: dddd <SoftwareMonolithComponentComposition> (Whitebox)" #lightblue {
+        [**Level_3: Database <SoftwareMonolithDatabase> (Whitebox)**] as 958E2EF1_CB0A_11F0_AD08_33C52ACB975F
     }
 }
 
@@ -53,4 +53,4 @@ component "Ebene_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Wh
 
 // End Protected Region   [[8a0aa48d-cb0a-11f0-ad08-33c52acb975f,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,v/hQKRSRTDDBeHr9H2ui7RAZIr8=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8a0aa48d-cb0a-11f0-ad08-33c52acb975f,etZTGmr7zo9IkPJFS3Funa29XIc=]

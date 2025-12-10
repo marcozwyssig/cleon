@@ -1,4 +1,4 @@
-package cleon.common.doc.metamodel.template.asciidoc;
+package cleon.common.doc.metamodel.template.doc.asciidoc;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.generator.IBuildTask;

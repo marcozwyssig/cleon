@@ -21,9 +21,9 @@ Parent::
 
 The uml <Feature> is decomposed into the following components:
 
-[plantuml, Ebene_3: uml <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: uml <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: uml <Feature> <Feature> (Whitebox)BuildingBlockOverview
+@startuml Level_3: uml <Feature> <Feature> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,10 +37,10 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: Modeling Languages <Category> (Whitebox) (Parent)" {
-    component "Ebene_3: uml <Feature> <Feature> (Whitebox)" #lightblue {
-        [**Ebene_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE3E_D579_11EE_903E_9F564E4DE07E
-        [**Ebene_4: Sample <Sample> <Sample> (Whitebox)**] as 5CCD92AB_DE54_11EF_81C7_3391F050ADDB
+component "Level_2: Modeling Languages <Category> (Whitebox) (Parent)" {
+    component "Level_3: uml <Feature> <Feature> (Whitebox)" #lightblue {
+        [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE3E_D579_11EE_903E_9F564E4DE07E
+        [**Level_4: Sample <Sample> <Sample> (Whitebox)**] as 5CCD92AB_DE54_11EF_81C7_3391F050ADDB
     }
 }
 
@@ -55,4 +55,4 @@ component "Ebene_2: Modeling Languages <Category> (Whitebox) (Parent)" {
 
 // End Protected Region   [[49057f3a-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f3a-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f3a-d579-11ee-903e-9f564e4de07e,Yzd9LjwqDxYNUNLqnwq5+DJI2n0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f3a-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f3a-d579-11ee-903e-9f564e4de07e,FcWMD/XD8Es9G9Qkr2xZN3QDe9U=]

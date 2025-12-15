@@ -112,6 +112,16 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitMSTP();
     
+    public void visit__X___F___8___F_OspfVersion__F_v2();
+    
+    public void visit__Y___F___8___F_OspfVersion__F_v3();
+    
+    public void visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+    
+    public void visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+    
+    public void visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -219,6 +229,16 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitRSTP();
     
     public R visitMSTP();
+    
+    public R visit__X___F___8___F_OspfVersion__F_v2();
+    
+    public R visit__Y___F___8___F_OspfVersion__F_v3();
+    
+    public R visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+    
+    public R visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+    
+    public R visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
     
   }
   
@@ -334,7 +354,17 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isMSTP();
   
+  public boolean is__X___F___8___F_OspfVersion__F_v2();
+  
+  public boolean is__Y___F___8___F_OspfVersion__F_v3();
+  
+  public boolean is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+  
+  public boolean is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+  
+  public boolean isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,FCjNaH5BJF0TtWXf4aB6gY5bSmE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,d7lQLkCSlctOL2KaDjBMZayQicA=] */

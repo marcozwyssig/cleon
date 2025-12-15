@@ -6099,6 +6099,9 @@
                   </resource>
                 </object>
               </predicate>
+              <predicate guid="c144d2bf-6879-11e1-9ee5-63ac6c762890">
+                <object statement-guid="9a60bf28-d9cd-11f0-aac7-3f3562c11cf4" type="resource" guid="f392c0aa-7abe-11df-8d10-15471893e19d" />
+              </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="e3c63820-6c4f-11f0-9a54-8beabbd05ae8" type="literal">true</object>
               </predicate>
@@ -6143,7 +6146,7 @@
                                   <object statement-guid="01566ce9-6c50-11f0-9a54-8beabbd05ae8" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="015693fa-6c50-11f0-9a54-8beabbd05ae8" type="literal">&lt;lowerValue xmi:type="uml:LiteralInteger" value="1"/&gt;</object>
+                                  <object statement-guid="015693fa-6c50-11f0-9a54-8beabbd05ae8" type="literal">&lt;lowerValue xmi:type="uml:LiteralInteger" value="*"/&gt;</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -6180,7 +6183,7 @@
                                   <object statement-guid="01547109-6c50-11f0-9a54-8beabbd05ae8" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="0154981a-6c50-11f0-9a54-8beabbd05ae8" type="literal">&lt;upperValue xmi:type="uml:LiteralInteger" value="*"/&gt;</object>
+                                  <object statement-guid="0154981a-6c50-11f0-9a54-8beabbd05ae8" type="literal">&lt;upperValue xmi:type="uml:LiteralInteger" value="1"/&gt;</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -6199,6 +6202,9 @@
                     </predicate>
                   </resource>
                 </object>
+              </predicate>
+              <predicate guid="c144d2bf-6879-11e1-9ee5-63ac6c762890">
+                <object statement-guid="a3afdd55-d9cd-11f0-aac7-3f3562c11cf4" type="resource" guid="f392c0aa-7abe-11df-8d10-15471893e19d" />
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="ef6f9a91-6c4f-11f0-9a54-8beabbd05ae8" type="literal">true</object>

@@ -53,6 +53,11 @@
     <resource statement-guid="e25e96bb-d513-11f0-b716-75a89d38ec65" type="resource" guid="e25e6fa8-d513-11f0-b716-75a89d38ec65" />
     <resource statement-guid="e5469b85-d513-11f0-b716-75a89d38ec65" type="resource" guid="e5469b82-d513-11f0-b716-75a89d38ec65" />
     <resource statement-guid="e8cba39f-d513-11f0-b716-75a89d38ec65" type="resource" guid="e8cb7c8c-d513-11f0-b716-75a89d38ec65" />
+    <resource statement-guid="503ca28c-d999-11f0-b671-418e1065d080" type="resource" guid="503c7b79-d999-11f0-b671-418e1065d080" />
+    <resource statement-guid="57f67ac0-d999-11f0-b671-418e1065d080" type="resource" guid="57f653ad-d999-11f0-b671-418e1065d080" />
+    <resource statement-guid="e68e3bad-d999-11f0-b671-418e1065d080" type="resource" guid="e68e3baa-d999-11f0-b671-418e1065d080" />
+    <resource statement-guid="eddcf5f6-d999-11f0-b671-418e1065d080" type="resource" guid="eddca7d3-d999-11f0-b671-418e1065d080" />
+    <resource statement-guid="d89d78b5-d9b2-11f0-aac7-3f3562c11cf4" type="resource" guid="d89d2a92-d9b2-11f0-aac7-3f3562c11cf4" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -581,6 +586,56 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="ea23e0a5-d513-11f0-b716-75a89d38ec65" type="literal">MSTP</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="503ca28c-d999-11f0-b671-418e1065d080">
+      <resource guid="503c7b79-d999-11f0-b671-418e1065d080">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="503ca28b-d999-11f0-b671-418e1065d080" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="517bd952-d999-11f0-b671-418e1065d080" type="literal">2 = OspfVersion v2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="57f67ac0-d999-11f0-b671-418e1065d080">
+      <resource guid="57f653ad-d999-11f0-b671-418e1065d080">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="57f653ae-d999-11f0-b671-418e1065d080" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="57f653af-d999-11f0-b671-418e1065d080" type="literal">3 = OspfVersion v3</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e68e3bad-d999-11f0-b671-418e1065d080">
+      <resource guid="e68e3baa-d999-11f0-b671-418e1065d080">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e68e3bac-d999-11f0-b671-418e1065d080" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e75f9572-d999-11f0-b671-418e1065d080" type="literal">4 = PimVersion v4 (IPv4)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="eddcf5f6-d999-11f0-b671-418e1065d080">
+      <resource guid="eddca7d3-d999-11f0-b671-418e1065d080">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eddca7d4-d999-11f0-b671-418e1065d080" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eddca7d5-d999-11f0-b671-418e1065d080" type="literal">6 = PimVersion v6 (IPv6)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d89d78b5-d9b2-11f0-aac7-3f3562c11cf4">
+      <resource guid="d89d2a92-d9b2-11f0-aac7-3f3562c11cf4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d89d51a4-d9b2-11f0-aac7-3f3562c11cf4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d964994b-d9b2-11f0-aac7-3f3562c11cf4" type="literal">MAC-Address (IEEE 802 MAC-Adresse (EUI-48))</object>
         </predicate>
       </resource>
     </object>

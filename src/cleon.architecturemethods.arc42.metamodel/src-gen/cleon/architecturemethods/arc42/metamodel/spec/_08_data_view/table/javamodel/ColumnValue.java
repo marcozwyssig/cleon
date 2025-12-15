@@ -116,6 +116,11 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (isSTP()) return visitor.visitSTP();
     if (isRSTP()) return visitor.visitRSTP();
     if (isMSTP()) return visitor.visitMSTP();
+    if (is__X___F___8___F_OspfVersion__F_v2()) return visitor.visit__X___F___8___F_OspfVersion__F_v2();
+    if (is__Y___F___8___F_OspfVersion__F_v3()) return visitor.visit__Y___F___8___F_OspfVersion__F_v3();
+    if (is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_()) return visitor.visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+    if (is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_()) return visitor.visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+    if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) return visitor.visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -327,6 +332,26 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (isMSTP()) {
       visitor.visitMSTP();
+      return;
+    }
+    if (is__X___F___8___F_OspfVersion__F_v2()) {
+      visitor.visit__X___F___8___F_OspfVersion__F_v2();
+      return;
+    }
+    if (is__Y___F___8___F_OspfVersion__F_v3()) {
+      visitor.visit__Y___F___8___F_OspfVersion__F_v3();
+      return;
+    }
+    if (is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_()) {
+      visitor.visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+      return;
+    }
+    if (is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_()) {
+      visitor.visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+      return;
+    }
+    if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) {
+      visitor.visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -594,5 +619,30 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MSTP);
   }
   
+  @Override
+  public boolean is__X___F___8___F_OspfVersion__F_v2() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___X___F___8___F_OspfVersion__F_v2);
+  }
+  
+  @Override
+  public boolean is__Y___F___8___F_OspfVersion__F_v3() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___Y___F___8___F_OspfVersion__F_v3);
+  }
+  
+  @Override
+  public boolean is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_);
+  }
+  
+  @Override
+  public boolean is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_);
+  }
+  
+  @Override
+  public boolean isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,bcYTZIrHkhwIB9TFKHhovIxTkJs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,S4jWyyyXGx3CJtFZvHYQGKuy4Dg=] */

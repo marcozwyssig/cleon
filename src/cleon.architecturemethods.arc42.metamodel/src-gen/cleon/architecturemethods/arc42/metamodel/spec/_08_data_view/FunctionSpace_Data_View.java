@@ -206,8 +206,7 @@ public class FunctionSpace_Data_View {
     		 return Arrays.asList();
     	}
     	final var selectFunctions = select.extension(ISelectFunctions.class);
-    	return selectFunctions.Fields();
-      // XXX implement template function here   
+    	return selectFunctions.Fields();   
       /* End Protected Region   [[810deeb5-e149-11ee-9375-43bf1495bfd9]] */
     }
 

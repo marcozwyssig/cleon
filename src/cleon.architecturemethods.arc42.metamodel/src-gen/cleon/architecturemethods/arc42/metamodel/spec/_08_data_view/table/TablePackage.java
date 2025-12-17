@@ -100,6 +100,8 @@ public class TablePackage {
   public static final Resource ColumnValue___Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_ = new Resource("e68e3baa-d999-11f0-b671-418e1065d080");
   public static final Resource ColumnValue___1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_ = new Resource("eddca7d3-d999-11f0-b671-418e1065d080");
   public static final Resource ColumnValue_MAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_ = new Resource("d89d2a92-d9b2-11f0-aac7-3f3562c11cf4");
+  public static final Resource ColumnValue___X___T_4__F_GHz = new Resource("d08fb9b5-da89-11f0-a21b-0b322c4bc5c4");
+  public static final Resource ColumnValue___0___F_GHz = new Resource("d60aec89-da89-11f0-a21b-0b322c4bc5c4");
   
   /* Begin Protected Region [[user]] */
   
@@ -120,4 +122,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,WYN8FHnObdC5V28R2WQ+F0d/ESs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,OyQITvxJt7c0nUIjobMUkpAdOCs=] */

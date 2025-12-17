@@ -58,6 +58,8 @@
     <resource statement-guid="e68e3bad-d999-11f0-b671-418e1065d080" type="resource" guid="e68e3baa-d999-11f0-b671-418e1065d080" />
     <resource statement-guid="eddcf5f6-d999-11f0-b671-418e1065d080" type="resource" guid="eddca7d3-d999-11f0-b671-418e1065d080" />
     <resource statement-guid="d89d78b5-d9b2-11f0-aac7-3f3562c11cf4" type="resource" guid="d89d2a92-d9b2-11f0-aac7-3f3562c11cf4" />
+    <resource statement-guid="d09007d8-da89-11f0-a21b-0b322c4bc5c4" type="resource" guid="d08fb9b5-da89-11f0-a21b-0b322c4bc5c4" />
+    <resource statement-guid="d60b139c-da89-11f0-a21b-0b322c4bc5c4" type="resource" guid="d60aec89-da89-11f0-a21b-0b322c4bc5c4" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f46c5461-ba0f-11ee-876d-0f01c87670c8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -636,6 +638,26 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="d964994b-d9b2-11f0-aac7-3f3562c11cf4" type="literal">MAC-Address (IEEE 802 MAC-Adresse (EUI-48))</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d09007d8-da89-11f0-a21b-0b322c4bc5c4">
+      <resource guid="d08fb9b5-da89-11f0-a21b-0b322c4bc5c4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d08fe0c7-da89-11f0-a21b-0b322c4bc5c4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d1563e0e-da89-11f0-a21b-0b322c4bc5c4" type="literal">2.4 GHz</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d60b139c-da89-11f0-a21b-0b322c4bc5c4">
+      <resource guid="d60aec89-da89-11f0-a21b-0b322c4bc5c4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d60aec8b-da89-11f0-a21b-0b322c4bc5c4" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d78334b2-da89-11f0-a21b-0b322c4bc5c4" type="literal">5 GHz</object>
         </predicate>
       </resource>
     </object>

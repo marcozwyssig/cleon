@@ -122,6 +122,10 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
     
+    public void visit__X___T_4__F_GHz();
+    
+    public void visit__0___F_GHz();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -239,6 +243,10 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     public R visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
     
     public R visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
+    
+    public R visit__X___T_4__F_GHz();
+    
+    public R visit__0___F_GHz();
     
   }
   
@@ -364,7 +372,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
   
+  public boolean is__X___T_4__F_GHz();
+  
+  public boolean is__0___F_GHz();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,d7lQLkCSlctOL2KaDjBMZayQicA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,Yo/+L8P+ZI8lJ3+pYGW4oXzCOZ4=] */

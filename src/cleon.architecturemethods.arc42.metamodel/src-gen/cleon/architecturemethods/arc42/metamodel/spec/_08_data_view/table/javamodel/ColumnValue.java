@@ -121,6 +121,8 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_()) return visitor.visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
     if (is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_()) return visitor.visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
     if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) return visitor.visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
+    if (is__X___T_4__F_GHz()) return visitor.visit__X___T_4__F_GHz();
+    if (is__0___F_GHz()) return visitor.visit__0___F_GHz();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -352,6 +354,14 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     }
     if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) {
       visitor.visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
+      return;
+    }
+    if (is__X___T_4__F_GHz()) {
+      visitor.visit__X___T_4__F_GHz();
+      return;
+    }
+    if (is__0___F_GHz()) {
+      visitor.visit__0___F_GHz();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -644,5 +654,15 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_);
   }
   
+  @Override
+  public boolean is__X___T_4__F_GHz() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___X___T_4__F_GHz);
+  }
+  
+  @Override
+  public boolean is__0___F_GHz() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___0___F_GHz);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,S4jWyyyXGx3CJtFZvHYQGKuy4Dg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,rOx89hYEZUFlk4tBF5kGqfUaGec=] */

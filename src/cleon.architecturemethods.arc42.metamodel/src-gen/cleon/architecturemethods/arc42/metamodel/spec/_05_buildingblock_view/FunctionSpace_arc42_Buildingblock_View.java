@@ -30,6 +30,9 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("1316cf7f-e5d9-11ee-a627-83563cb3bdc6")
     public java.lang.String Description_EN();
 
+    @IDynamicResourceExtension.MethodId("9ac58581-db5e-11f0-864a-2b914ff293cd")
+    public java.lang.String Description_DE();
+
   }
   
   public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -176,4 +179,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,Ow44/5oMZdikMr2ECUeDtR9bUow=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,8lN9Cj1UQ1p45Olq1toGHernv8E=] */

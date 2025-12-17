@@ -655,6 +655,9 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
+    @IDynamicResourceExtension.MethodId("e944e2e4-db5e-11f0-864a-2b914ff293cd")
+    public java.lang.String RenderDescriptions(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
     @IDynamicResourceExtension.MethodId("24208986-e5d9-11ee-a627-83563cb3bdc6")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
@@ -663,6 +666,9 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     @IDynamicResourceExtension.MethodId("98b14438-bfc2-11f0-98b9-251c9d34c5e8")
     public java.lang.String BuildingBlockOverview();
+
+    @IDynamicResourceExtension.MethodId("c70cac9f-db92-11f0-864a-2b914ff293cd")
+    public java.lang.String DiagramType();
 
   }
   
@@ -1595,4 +1601,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,M+/C5rtEHahOQ5wM9ZrU4JKu+5I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Wg8C58/Nl+WGR3ZGLPfJIHaa0bs=] */

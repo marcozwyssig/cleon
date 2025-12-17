@@ -8,69 +8,83 @@
 == Building Block View
 The building block view shows the system from a black box perspective. It shows the system as a set of components (building blocks) and their interfaces. The building blocks are the elements that are used to implement the system. The building block view is the basis for the runtime and deployment views.
 
+
 The following diagrams shows an overview of the main building blocks:
 
 [plantuml, Building Block View_schema, svg]
 ----
-@startuml
-left to right direction
-
-skinparam nodesep 5
-skinparam componentStyle rectangle
-
-title IKT Building Block Overview 
-
-' Level 1 Container
-rectangle "Level 1" #E1F5FF;line:0288D1;line.bold {
-	rectangle "IKT" as 3F59C38B_BEDA_11EF_B498_058EE446F8E7 #E1F5FF;line:0288D1;line.bold
+vars: {
+  d2-config: {
+    theme-id: 7
+  }
 }
 
+direction: down
 
-' Level 2 Container
-rectangle "Level 2" #FFF9C4;line:F9A825;line.bold {
-	rectangle "Application" as 7F8CDA2C_BEDA_11EF_B498_058EE446F8E7 #FFF9C4;line:F9A825;line.bold
-	3F59C38B_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 7F8CDA2C_BEDA_11EF_B498_058EE446F8E7
-	rectangle "Infrastruture" as 71FA6D1F_BEDA_11EF_B498_058EE446F8E7 #FFF9C4;line:F9A825;line.bold
-	3F59C38B_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 71FA6D1F_BEDA_11EF_B498_058EE446F8E7
-	rectangle "Platform" as 789FA1C1_BEDA_11EF_B498_058EE446F8E7 #FFF9C4;line:F9A825;line.bold
-	3F59C38B_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 789FA1C1_BEDA_11EF_B498_058EE446F8E7
+title: IKT {
+  near: top-center
+  shape: text
+  style: {
+    font-size: 20	
+    bold: true
+  }
 }
 
-' Level 3 Container
-rectangle "Level 3" #F3E5F5;line:8E24AA;line.bold {
-	rectangle "Directory Service" as 88301D91_219A_11F0_83AE_DF5418A109A4 #F3E5F5;line:8E24AA;line.bold
-	7F8CDA2C_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 88301D91_219A_11F0_83AE_DF5418A109A4
-	rectangle "Operating System" as 07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD #F3E5F5;line:8E24AA;line.bold
-	71FA6D1F_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD
-	rectangle "Servers" as 42DB7E7F_BEDF_11EF_B498_058EE446F8E7 #F3E5F5;line:8E24AA;line.bold
-	71FA6D1F_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 42DB7E7F_BEDF_11EF_B498_058EE446F8E7
-	rectangle "Virtualization" as 483100CA_BEDF_11EF_B498_058EE446F8E7 #F3E5F5;line:8E24AA;line.bold
-	71FA6D1F_BEDA_11EF_B498_058EE446F8E7 -[thickness=1]-> 483100CA_BEDF_11EF_B498_058EE446F8E7
+3F59C38B_BEDA_11EF_B498_058EE446F8E7: {
+  label: "L1: IKT"
+  grid-columns: 1
+  grid-gap: 20
+  7F8CDA2C_BEDA_11EF_B498_058EE446F8E7: {
+  	label: "L2: Application"
+    grid-columns: 1
+    grid-gap: 10
+	88301D91_219A_11F0_83AE_DF5418A109A4: {
+		label: "L3: Directory Service"
+      	label.near: top-center
+      	grid-gap: 5
+	  	8C664CF7_219A_11F0_83AE_DF5418A109A4: {
+			label: "L4: DC"
+			}	
+		}
+	}
+  71FA6D1F_BEDA_11EF_B498_058EE446F8E7: {
+  	label: "L2: Infrastruture"
+    grid-columns: 3
+    grid-gap: 10
+	07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD: {
+		label: "L3: Operating System"
+      	label.near: top-center
+      	grid-gap: 5
+	  	1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD: {
+			label: "L4: WIN2022"
+			}	
+		}
+	42DB7E7F_BEDF_11EF_B498_058EE446F8E7: {
+		label: "L3: Servers"
+      	label.near: top-center
+      	grid-gap: 5
+	  	B582462C_BEE0_11EF_B498_058EE446F8E7: {
+			label: "L4: HPE"
+			}	
+		}
+	483100CA_BEDF_11EF_B498_058EE446F8E7: {
+		label: "L3: Virtualization"
+      	label.near: top-center
+      	grid-gap: 5
+	  	B582462B_BEE0_11EF_B498_058EE446F8E7: {
+			label: "L4: VM"
+			}	
+	  	B581F80A_BEE0_11EF_B498_058EE446F8E7: {
+			label: "L4: VMH"
+			}	
+		}
+	}
+  789FA1C1_BEDA_11EF_B498_058EE446F8E7: {
+  	label: "L2: Platform"
+    grid-columns: 0
+    grid-gap: 10
+	}
 }
-
-' Level 4 Container
-rectangle "Level 4" #E8F5E9;line:43A047;line.bold {
-	rectangle "DC" as 8C664CF7_219A_11F0_83AE_DF5418A109A4 #E8F5E9;line:43A047;line.bold
-	88301D91_219A_11F0_83AE_DF5418A109A4 -[thickness=1]-> 8C664CF7_219A_11F0_83AE_DF5418A109A4	
-	rectangle "HPE" as B582462C_BEE0_11EF_B498_058EE446F8E7 #E8F5E9;line:43A047;line.bold
-	42DB7E7F_BEDF_11EF_B498_058EE446F8E7 -[thickness=1]-> B582462C_BEE0_11EF_B498_058EE446F8E7	
-	rectangle "VM" as B582462B_BEE0_11EF_B498_058EE446F8E7 #E8F5E9;line:43A047;line.bold
-	483100CA_BEDF_11EF_B498_058EE446F8E7 -[thickness=1]-> B582462B_BEE0_11EF_B498_058EE446F8E7	
-	rectangle "VMH" as B581F80A_BEE0_11EF_B498_058EE446F8E7 #E8F5E9;line:43A047;line.bold
-	483100CA_BEDF_11EF_B498_058EE446F8E7 -[thickness=1]-> B581F80A_BEE0_11EF_B498_058EE446F8E7	
-	rectangle "WIN2022" as 1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD #E8F5E9;line:43A047;line.bold
-	07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD -[thickness=1]-> 1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD	
-}
-
-
-
-
-
-
-
-
-@enduml
-
 ----
 // Begin Protected Region [[38c4bd18-beda-11ef-b498-058ee446f8e7,customText]]
 

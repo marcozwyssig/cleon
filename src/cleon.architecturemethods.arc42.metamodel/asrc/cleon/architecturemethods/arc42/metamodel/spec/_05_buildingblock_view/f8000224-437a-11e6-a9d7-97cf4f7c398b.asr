@@ -75,6 +75,22 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="9ac5fac2-db5e-11f0-864a-2b914ff293cd" type="resource" guid="9ac58581-db5e-11f0-864a-2b914ff293cd">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="9ac58590-db5e-11f0-864a-2b914ff293cd" type="resource" guid="9ac58585-db5e-11f0-864a-2b914ff293cd">
+              <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+                <resource statement-guid="a045c0bf-db5e-11f0-864a-2b914ff293cd" type="resource" guid="a044af39-db5e-11f0-864a-2b914ff293cd">
+                  <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+                    <resource statement-guid="a045c0be-db5e-11f0-864a-2b914ff293cd" type="resource" guid="a0446113-db5e-11f0-864a-2b914ff293cd" />
+                  </owns>
+                </resource>
+              </owns>
+              <owns predicate="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
+                <resource statement-guid="9ac5858f-db5e-11f0-864a-2b914ff293cd" type="resource" guid="9ac58584-db5e-11f0-864a-2b914ff293cd" />
+              </owns>
+            </resource>
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="5c98f5cf-2b56-11e8-859c-c3075307fbcf" type="resource" guid="5c98f5cc-2b56-11e8-859c-c3075307fbcf">
@@ -834,6 +850,58 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="13171da2-e5d9-11ee-a627-83563cb3bdc6" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="9ac5fac2-db5e-11f0-864a-2b914ff293cd">
+            <resource guid="9ac58581-db5e-11f0-864a-2b914ff293cd">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9ac58586-db5e-11f0-864a-2b914ff293cd" type="resource" guid="b97c7b77-6879-11e1-9ee5-63ac6c762890" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9ac58587-db5e-11f0-864a-2b914ff293cd" type="literal">Description_DE</object>
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="9ac58590-db5e-11f0-864a-2b914ff293cd">
+                  <resource guid="9ac58585-db5e-11f0-864a-2b914ff293cd">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="9ac58588-db5e-11f0-864a-2b914ff293cd" type="resource" guid="cfc4cfd3-c91d-11de-a722-07fb435e032d" />
+                    </predicate>
+                    <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                      <object statement-guid="a045c0bf-db5e-11f0-864a-2b914ff293cd">
+                        <resource guid="a044af39-db5e-11f0-864a-2b914ff293cd">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="a04599aa-db5e-11f0-864a-2b914ff293cd" type="resource" guid="807c58c6-c946-11de-95d0-4912b8dc029a" />
+                          </predicate>
+                          <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                            <object statement-guid="a045c0be-db5e-11f0-864a-2b914ff293cd">
+                              <resource guid="a0446113-db5e-11f0-864a-2b914ff293cd">
+                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="a04599ac-db5e-11f0-864a-2b914ff293cd" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                                </predicate>
+                                <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                                  <object statement-guid="a045c0bd-db5e-11f0-864a-2b914ff293cd" type="literal">Die Bausteinsicht zeigt das System aus einer Black-Box-Perspektive. Sie zeigt das System als eine Menge von Komponenten (Bausteinen) und deren Schnittstellen. Die Bausteine sind die Elemente, die zur Implementierung des Systems verwendet werden. Die Bausteinsicht bildet die Grundlage für die Laufzeit- und Verteilungssichten.</object>
+                                </predicate>
+                              </resource>
+                            </object>
+                          </predicate>
+                        </resource>
+                      </object>
+                    </predicate>
+                    <predicate guid="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="9ac5858f-db5e-11f0-864a-2b914ff293cd">
+                        <resource guid="9ac58584-db5e-11f0-864a-2b914ff293cd">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="9ac5858e-db5e-11f0-864a-2b914ff293cd" type="resource" guid="4f50d6ca-d347-11de-87dc-a9aeefa4174b" />
+                          </predicate>
+                        </resource>
+                      </object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="9ac58591-db5e-11f0-864a-2b914ff293cd" type="literal">true</object>
               </predicate>
             </resource>
           </object>

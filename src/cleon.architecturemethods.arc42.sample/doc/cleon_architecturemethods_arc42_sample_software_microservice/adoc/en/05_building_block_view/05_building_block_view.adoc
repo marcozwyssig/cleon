@@ -8,41 +8,38 @@
 == Building Block View
 The building block view shows the system from a black box perspective. It shows the system as a set of components (building blocks) and their interfaces. The building blocks are the elements that are used to implement the system. The building block view is the basis for the runtime and deployment views.
 
+
 The following diagrams shows an overview of the main building blocks:
 
 [plantuml, Building Block View_schema, svg]
 ----
-@startuml
-left to right direction
-
-skinparam nodesep 5
-skinparam componentStyle rectangle
-
-title MicroserviceSample Building Block Overview 
-
-' Level 1 Container
-rectangle "Level 1" #E1F5FF;line:0288D1;line.bold {
-	rectangle "MicroserviceSample" as F194C1A0_CB08_11F0_AD08_33C52ACB975F #E1F5FF;line:0288D1;line.bold
+vars: {
+  d2-config: {
+    theme-id: 7
+  }
 }
 
+direction: down
 
-' Level 2 Container
-rectangle "Level 2" #FFF9C4;line:F9A825;line.bold {
-	rectangle "common-desktop" as D66E9C25_CB0A_11F0_AD08_33C52ACB975F #FFF9C4;line:F9A825;line.bold
-	F194C1A0_CB08_11F0_AD08_33C52ACB975F -[thickness=1]-> D66E9C25_CB0A_11F0_AD08_33C52ACB975F
+title: MicroserviceSample {
+  near: top-center
+  shape: text
+  style: {
+    font-size: 20	
+    bold: true
+  }
 }
 
-
-
-
-
-
-
-
-
-
-@enduml
-
+F194C1A0_CB08_11F0_AD08_33C52ACB975F: {
+  label: "L1: MicroserviceSample"
+  grid-columns: 1
+  grid-gap: 20
+  D66E9C25_CB0A_11F0_AD08_33C52ACB975F: {
+  	label: "L2: common-desktop"
+    grid-columns: 0
+    grid-gap: 10
+	}
+}
 ----
 // Begin Protected Region [[ee5a2fd0-cb08-11f0-ad08-33c52acb975f,customText]]
 

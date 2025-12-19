@@ -12,6 +12,7 @@ public class LiteralsPackage {
   public static final Resource LongFunctionSpace_LongLiteral = new Resource("349cbded-ff3c-11eb-bfe7-29eb44ce217c");
   public static final Resource IntegerFunctionSpace_IntegerLiteral = new Resource("0445411c-0001-11f0-a4b8-93f936374459");
   public static final Resource GuidFunctionSpace_Any = new Resource("6cb51f2f-2f25-11f0-a641-656c88d7f94a");
+  public static final Resource ScopeFileFunctionSpace_ScopeFileLiteral = new Resource("9b3bd82d-dcbf-11f0-9b2d-7723ecc1ddbd");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class LiteralsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.literals,lZhAKn5RI+099N1flPN6mwullJI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.literals,uHVCXA1yv/vNDthloaVkZ6jeEEw=] */

@@ -7,19 +7,15 @@
 [#49057f3a-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: uml <Feature> <Feature> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 cleon.modeling languages.uml <feature>
 
 Parent::
 <<#4843dca4-d579-11ee-903e-9f564e4de07e>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The uml <Feature> is decomposed into the following components:
+Der Baustein uml <Feature> ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_3: uml <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----

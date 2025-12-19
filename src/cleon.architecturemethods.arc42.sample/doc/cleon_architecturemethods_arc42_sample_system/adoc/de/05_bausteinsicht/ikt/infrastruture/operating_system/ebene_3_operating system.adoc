@@ -7,19 +7,15 @@
 [#07fc9046-bee7-11ef-8dcb-a78def9ea3bd]
 === Ebene_3: Operating System <SystemComponent> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 ikt.infrastruture.operating system
 
 Parent::
 <<#71fa6d1f-beda-11ef-b498-058ee446f8e7>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Operating System is decomposed into the following components:
+Der Baustein Operating System ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_3: Operating System <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----

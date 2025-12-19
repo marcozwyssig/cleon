@@ -7,19 +7,16 @@
 [#48213902-d579-11ee-903e-9f564e4de07e]
 === Ebene_2: Test2 <SampleBuildingBlock> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
+purpose...
 Fullname::
 chess.test2
 
 Parent::
 <<#ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Test2 is decomposed into the following components:
+Der Baustein Test2 ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_2: Test2 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----

@@ -7,19 +7,15 @@
 [#483100ca-bedf-11ef-b498-058ee446f8e7]
 === Ebene_3: Virtualization <SystemComponent> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 ikt.infrastruture.virtualization
 
 Parent::
 <<#71fa6d1f-beda-11ef-b498-058ee446f8e7>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Virtualization is decomposed into the following components:
+Der Baustein Virtualization ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_3: Virtualization <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----

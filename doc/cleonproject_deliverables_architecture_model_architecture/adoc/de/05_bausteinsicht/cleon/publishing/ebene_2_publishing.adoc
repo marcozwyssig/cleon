@@ -7,19 +7,16 @@
 [#4843dca5-d579-11ee-903e-9f564e4de07e]
 === Ebene_2: Publishing <Category> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
+Die Publishung Systemkonfiguration ist für das Exportieren auf konsolidierten Ablagen verantwortlich.
 Fullname::
 cleon.publishing
 
 Parent::
 <<#9affc401-285e-11e8-9af4-b7d7a3bbddc1>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Publishing is decomposed into the following components:
+Der Baustein Publishing ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_2: Publishing <Category> (Whitebox)BlockOverview, format="svg"]
 ----

@@ -7,19 +7,16 @@
 [#4843dca3-d579-11ee-903e-9f564e4de07e]
 === Ebene_2: Testing Methods <Category> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
+Die Project Methods Komponente ist für die Testmethoden verantwortlich.
 Fullname::
 cleon.testing methods
 
 Parent::
 <<#9affc401-285e-11e8-9af4-b7d7a3bbddc1>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Testing Methods is decomposed into the following components:
+Der Baustein Testing Methods ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_2: Testing Methods <Category> (Whitebox)BlockOverview, format="svg"]
 ----

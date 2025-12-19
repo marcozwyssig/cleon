@@ -7,19 +7,15 @@
 [#7f8cda2c-beda-11ef-b498-058ee446f8e7]
 === Ebene_2: Application <SystemLayer> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 ikt.application
 
 Parent::
 <<#3f59c38b-beda-11ef-b498-058ee446f8e7>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Application is decomposed into the following components:
+Der Baustein Application ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_2: Application <SystemLayer> (Whitebox)BlockOverview, format="svg"]
 ----

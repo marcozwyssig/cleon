@@ -7,19 +7,15 @@
 [#71fa6d1f-beda-11ef-b498-058ee446f8e7]
 === Ebene_2: Infrastruture <SystemLayer> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 ikt.infrastruture
 
 Parent::
 <<#3f59c38b-beda-11ef-b498-058ee446f8e7>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The Infrastruture is decomposed into the following components:
+Der Baustein Infrastruture ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_2: Infrastruture <SystemLayer> (Whitebox)BlockOverview, format="svg"]
 ----

@@ -59,6 +59,23 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_CommunicationView = new Resource("b1416b92-d201-11f0-8b7f-13e33648cd53");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_CommunicationSystem = new Resource("eee80a91-d201-11f0-8b7f-13e33648cd53");
   public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Destination = new Resource("d0297ce1-d203-11f0-8b7f-13e33648cd53");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentMethodConcept = new Resource("6fe160e5-dce8-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentAspectSystemArc42 = new Resource("c0b44bc9-dce8-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentMethodForSystemConfiguration = new Resource("dd2b52e0-dce9-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AvailabilityAspectSystemArc42 = new Resource("dd2b79d5-dce9-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AuthenticationAspectSystemArc42 = new Resource("dd2b79f7-dce9-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AutorizationAspectSystemArc42Aspect = new Resource("607c647f-dced-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AvailabilityConcept = new Resource("a7e2e4dd-dced-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SystemConfigurationAccessFrom = new Resource("3615d412-dcef-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ResourcePlanningEnvironmentConcept = new Resource("92a84bf2-dcf0-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_SegmentationConcept = new Resource("70d360b9-dcf3-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_IdentityConcept = new Resource("84d02670-dcf4-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RealmForSystemConfiguration = new Resource("c9cfe0d0-dcf4-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AbstractRealmHandlers = new Resource("0396ada1-dcf5-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RealmDependent = new Resource("0396d4b6-dcf5-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RealmConnection = new Resource("0396d50d-dcf5-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_RealmConcept = new Resource("0396d572-dcf5-11f0-9b2d-7723ecc1ddbd");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_AccessAspect = new Resource("53b0c18b-dcfb-11f0-9b2d-7723ecc1ddbd");
   
   /* Begin Protected Region [[user]] */
   
@@ -79,4 +96,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,pBpwTvUuTI6hXHmLIdMwQBPgCdc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,+1i0Pvsp21TfdhMQaf622IyBp00=] */

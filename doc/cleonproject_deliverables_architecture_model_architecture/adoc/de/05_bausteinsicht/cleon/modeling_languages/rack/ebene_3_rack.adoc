@@ -7,19 +7,15 @@
 [#4905a653-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: rack <Feature> <Feature> (Whitebox)
 Motivation::
-// Begin Protected Region [[motivation]]  
-TODO: Describe the motivation for the building block view.
-// End Protected Region   [[motivation]]  
-
 Fullname::
 cleon.modeling languages.rack <feature>
 
 Parent::
 <<#4843dca4-d579-11ee-903e-9f564e4de07e>>
 
-==== Building Block Overview
+==== Baustein-Übersicht
 
-The rack <Feature> is decomposed into the following components:
+Der Baustein rack <Feature> ist in folgende Bausteine zerlegt:
 
 [plantuml, Level_3: rack <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----

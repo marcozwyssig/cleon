@@ -9,7 +9,9 @@
 Die Bausteinsicht zeigt das System aus einer Black-Box-Perspektive. Sie zeigt das System als eine Menge von Komponenten (Bausteinen) und deren Schnittstellen. Die Bausteine sind die Elemente, die zur Implementierung des Systems verwendet werden. Die Bausteinsicht bildet die Grundlage für die Laufzeit- und Verteilungssichten.
 
 
-[plantuml, Building Block View_schema, svg]
+Die folgenden Diagramme zeigen einen Überblick über die wichtigsten Bausteine:
+
+[d2, Bausteinsicht_schema, svg]
 ----
 vars: {
   d2-config: {
@@ -707,4 +709,4 @@ include::cleon/project_methods/hermes/modelhermes5/ebene_4_model.hermes5.adoc[]
 <<<
 include::cleon/applications/actifsource/modelplugins/ebene_4_model.plugins.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,cf980df8-f8d1-11e5-bc92-c963417b9cea,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,cf980df8-f8d1-11e5-bc92-c963417b9cea,qNM2RFKOFiY5+gq0nqxisr33idY=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,cf980df8-f8d1-11e5-bc92-c963417b9cea,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,cf980df8-f8d1-11e5-bc92-c963417b9cea,UQIgxNQpQ9GGVDrlFEPGFMSar8Q=]

@@ -21,9 +21,9 @@ Parent::
 
 Der Baustein Applications ist in folgende Bausteine zerlegt:
 
-[plantuml, Level_2: Applications <Category> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_2: Applications <Category> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_2: Applications <Category> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: Applications <Category> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,9 +37,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
-    component "Level_2: Applications <Category> (Whitebox)" #lightblue {
-        [**Level_3: actifsource <Feature> <Feature> (Whitebox)**] as 49057F39_D579_11EE_903E_9F564E4DE07E
+component "Ebene_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
+    component "Ebene_2: Applications <Category> (Whitebox)" #lightblue {
+        [**Ebene_3: actifsource <Feature> <Feature> (Whitebox)**] as 49057F39_D579_11EE_903E_9F564E4DE07E
     }
 }
 
@@ -98,4 +98,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[485bd1d9-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca2-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca2-d579-11ee-903e-9f564e4de07e,pftEhUoutt/+vedNIcdgO0mBOMM=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca2-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca2-d579-11ee-903e-9f564e4de07e,3lGysm+f7uBPS4sP2ff4LeNe9uo=]

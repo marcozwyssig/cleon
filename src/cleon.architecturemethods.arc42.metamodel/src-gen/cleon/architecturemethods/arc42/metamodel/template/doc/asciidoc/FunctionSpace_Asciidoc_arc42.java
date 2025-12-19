@@ -2059,7 +2059,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-      /* Begin Protected Region [[dd2b79d4-dce9-11f0-9b2d-7723ecc1ddbd]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[dd2b79d4-dce9-11f0-9b2d-7723ecc1ddbd]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,HfD9c4dXn99J7Ujm/KSdxoOI8Fs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,fns9Qsyr8JOmiIvKJ4bwuui5NEA=] */

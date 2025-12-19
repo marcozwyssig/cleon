@@ -9,7 +9,9 @@
 Die Bausteinsicht zeigt das System aus einer Black-Box-Perspektive. Sie zeigt das System als eine Menge von Komponenten (Bausteinen) und deren Schnittstellen. Die Bausteine sind die Elemente, die zur Implementierung des Systems verwendet werden. Die Bausteinsicht bildet die Grundlage für die Laufzeit- und Verteilungssichten.
 
 
-[plantuml, Building Block View_schema, svg]
+Die folgenden Diagramme zeigen einen Überblick über die wichtigsten Bausteine:
+
+[d2, Bausteinsicht_schema, svg]
 ----
 vars: {
   d2-config: {
@@ -101,4 +103,4 @@ include::chess/test1/test1_2/test1_2_1/ebene_4_test1_2_1.adoc[]
 <<<
 include::chess/test1/test1_2/test1_2_1/test1_2_1_1/ebene_5_test1_2_1_1.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,5oCdAO5efM4otwkNqjzwdplQxq0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,95b4d64f-1dc8-11e6-98be-b1fca84f9ccf,pXuufDG7IRjFVJCOOzrhkRyl1K8=]

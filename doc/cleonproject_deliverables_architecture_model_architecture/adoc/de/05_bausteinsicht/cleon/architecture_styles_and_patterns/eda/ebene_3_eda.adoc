@@ -17,9 +17,9 @@ Parent::
 
 Der Baustein EDA <Feature> ist in folgende Bausteine zerlegt:
 
-[plantuml, Level_3: EDA <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_3: EDA <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_3: EDA <Feature> <Feature> (Whitebox)BuildingBlockOverview
+@startuml Ebene_3: EDA <Feature> <Feature> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Architecture Styles and Patterns <Category> (Whitebox) (Parent)" {
-    component "Level_3: EDA <Feature> <Feature> (Whitebox)" #lightblue {
-        [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE46_D579_11EE_903E_9F564E4DE07E
+component "Ebene_2: Architecture Styles and Patterns <Category> (Whitebox) (Parent)" {
+    component "Ebene_3: EDA <Feature> <Feature> (Whitebox)" #lightblue {
+        [**Ebene_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE46_D579_11EE_903E_9F564E4DE07E
     }
 }
 
@@ -49,4 +49,4 @@ component "Level_2: Architecture Styles and Patterns <Category> (Whitebox) (Pare
 
 // End Protected Region   [[49057f3d-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f3d-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f3d-d579-11ee-903e-9f564e4de07e,/D8BJAB53s1XiP7by8VyKE8r4eg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f3d-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f3d-d579-11ee-903e-9f564e4de07e,QyBYi16sO5KKaErsjE6MflRl8Kg=]

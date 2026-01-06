@@ -24,389 +24,658 @@ direction: down
 title: Cleon {
   near: top-center
   shape: text
-  style: {
-    font-size: 20	
-    bold: true
-  }
+  style.font-size: 48
+  style.bold: true
 }
 
 9AFFC401_285E_11E8_9AF4_B7D7A3BBDDC1: {
-  label: "L1: Cleon"
-  grid-columns: 1
-  grid-gap: 20
-  4843DCA2_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Applications"
-    grid-columns: 1
-    grid-gap: 10
-	49057F39_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: actifsource <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE43_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A570568_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-	  	4A56DE4E_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: plugins"
-			}	
+	label: "L1: Cleon"
+	direction: down
+	grid-columns: 1
+	grid-gap: 20
+	style.font-size: 32
+	style.bold: false
+	4843DCA2_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Applications"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49057F39_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: actifsource <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE43_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A570568_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE4E_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: plugins"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DCA6_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Architecture Methods"
-    grid-columns: 5
-    grid-gap: 10
-	4905A654_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: arc42 <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A57056E_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE47_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+	4843DCA6_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Architecture Methods"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		4905A654_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: arc42 <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A57056E_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE47_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	49057F36_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: eamod <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE52_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE4F_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+		49057F36_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: eamod <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE52_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE4F_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	5F655CDC_DCBE_11EF_87B5_5327CB6D0EC7: {
-		label: "L3: hermes <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	6BD431AC_DCBE_11EF_87B5_5327CB6D0EC7: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
+		5F655CDC_DCBE_11EF_87B5_5327CB6D0EC7: {
+			label: "L3: hermes <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			6BD431AC_DCBE_11EF_87B5_5327CB6D0EC7: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	49057F33_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: orgarc42 <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE4B_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A570578_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+		49057F33_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: orgarc42 <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE4B_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A570578_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	4905581C_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: togaf <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE40_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A57056B_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	}
-  4843DCA0_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Architecture Styles and Patterns"
-    grid-columns: 3
-    grid-gap: 10
-	49055818_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: EAI <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-		}
-	49057F3D_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: EDA <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE46_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	4905A650_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: SOA <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE44_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	1DD2DAA6_0414_11F0_B041_CF872C9C3703: {
-			label: "L4: Sample <Sample>"
-			}	
-	  	3C7BAB04_0414_11F0_B041_CF872C9C3703: {
-			label: "L4: grpc <Template>"
-			}	
-		}
-	}
-  4843DCA1_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Building"
-    grid-columns: 1
-    grid-gap: 10
-	4905A64E_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: gradle <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A57056F_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A57056C_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+		4905581C_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: togaf <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE40_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A57056B_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DC9F_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Common"
-    grid-columns: 10
-    grid-gap: 10
-	49057F3B_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: actifsource <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A57056A_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
+	4843DCA0_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Architecture Styles and Patterns"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49055818_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: EAI <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
-	49057F32_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: building <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE55_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
+		49057F3D_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: EDA <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE46_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	49057F3C_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: calendar <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE53_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	4905581D_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: doc <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570570_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE4D_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	4905581A_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: glossary <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570579_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A57057A_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	4905581E_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: knowledge <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A57056D_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE4C_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	49055819_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: language <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56B729_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE4A_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	4905A64F_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: modularity <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570571_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	49055820_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: resources <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE3B_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A570573_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	4905581F_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: xml <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570574_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE3A_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+		4905A650_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: SOA <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE44_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			1DD2DAA6_0414_11F0_B041_CF872C9C3703: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+			3C7BAB04_0414_11F0_B041_CF872C9C3703: {
+				label: "L4: grpc <Template>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DCA4_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Modeling Languages"
-    grid-columns: 6
-    grid-gap: 10
-	49057F38_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: bpmn <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE51_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	4905A651_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: graph <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570567_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE50_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	49055821_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: network <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570572_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE48_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-		}
-	4905A653_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: rack <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE56_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	49057F37_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: segmentation <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56B728_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-		}
-	49057F3A_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: uml <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE3E_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	5CCD92AB_DE54_11EF_81C7_3391F050ADDB: {
-			label: "L4: Sample <Sample>"
-			}	
+	4843DCA1_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Building"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		4905A64E_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: gradle <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A57056F_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A57056C_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  3B8D9B20_D421_11EF_BDEF_4D33DBCE89CB: {
-  	label: "L2: Operational Methods"
-    grid-columns: 2
-    grid-gap: 10
-	49055817_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: chocolatey <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570576_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE3C_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+	4843DC9F_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Common"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49057F3B_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: actifsource <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A57056A_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB: {
-		label: "L3: hermes <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	3BDFB317_D421_11EF_BDEF_4D33DBCE89CB: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	3BDFB318_D421_11EF_BDEF_4D33DBCE89CB: {
-			label: "L4: Sample <Sample>"
-			}	
+		49057F32_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: building <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE55_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49057F3C_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: calendar <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE53_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905581D_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: doc <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570570_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE4D_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905581A_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: glossary <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570579_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A57057A_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905581E_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: knowledge <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A57056D_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE4C_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49055819_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: language <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56B729_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE4A_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905A64F_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: modularity <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570571_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49055820_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: resources <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE3B_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A570573_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905581F_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: xml <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570574_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE3A_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DCA7_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Project Methods"
-    grid-columns: 1
-    grid-gap: 10
-	4905A652_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: hermes <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570569_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE3D_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
-	  	4A56DE54_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: hermes5"
-			}	
+	4843DCA4_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Modeling Languages"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49057F38_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: bpmn <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE51_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905A651_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: graph <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570567_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE50_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49055821_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: network <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570572_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE48_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		4905A653_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: rack <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE56_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49057F37_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: segmentation <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56B728_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49057F3A_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: uml <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE3E_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			5CCD92AB_DE54_11EF_81C7_3391F050ADDB: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DCA5_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Publishing"
-    grid-columns: 2
-    grid-gap: 10
-	4905581B_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: Collaboration <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE41_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE45_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+	3B8D9B20_D421_11EF_BDEF_4D33DBCE89CB: {
+		label: "L2: Operational Methods"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49055817_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: chocolatey <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570576_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE3C_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	49057F34_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: StaticWebsite <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A570577_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
+		3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB: {
+			label: "L3: hermes <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			3BDFB317_D421_11EF_BDEF_4D33DBCE89CB: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			3BDFB318_D421_11EF_BDEF_4D33DBCE89CB: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  4843DCA3_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: Testing Methods"
-    grid-columns: 1
-    grid-gap: 10
-	49057F35_D579_11EE_903E_9F564E4DE07E: {
-		label: "L3: hermes <Feature>"
-      	label.near: top-center
-      	grid-gap: 5
-	  	4A56DE3F_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: MetaModel <MetaModel>"
-			}	
-	  	4A56DE42_D579_11EE_903E_9F564E4DE07E: {
-			label: "L4: Sample <Sample>"
-			}	
+	4843DCA7_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Project Methods"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		4905A652_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: hermes <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570569_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE3D_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE54_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: hermes5"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+	}
+	4843DCA5_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Publishing"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		4905581B_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: Collaboration <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE41_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE45_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+		49057F34_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: StaticWebsite <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A570577_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+		}
+	}
+	4843DCA3_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: Testing Methods"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		49057F35_D579_11EE_903E_9F564E4DE07E: {
+			label: "L3: hermes <Feature>"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			4A56DE3F_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: MetaModel <MetaModel>"
+				style.bold: false
+				style.font-size: 24
+			}
+			4A56DE42_D579_11EE_903E_9F564E4DE07E: {
+				label: "L4: Sample <Sample>"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
 }
@@ -709,4 +978,4 @@ include::cleon/project_methods/hermes/modelhermes5/ebene_4_model.hermes5.adoc[]
 <<<
 include::cleon/applications/actifsource/modelplugins/ebene_4_model.plugins.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,cf980df8-f8d1-11e5-bc92-c963417b9cea,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,cf980df8-f8d1-11e5-bc92-c963417b9cea,UQIgxNQpQ9GGVDrlFEPGFMSar8Q=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,cf980df8-f8d1-11e5-bc92-c963417b9cea,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,cf980df8-f8d1-11e5-bc92-c963417b9cea,QkB9+6cE3wJbmI52+vDQ7xkvKcU=]

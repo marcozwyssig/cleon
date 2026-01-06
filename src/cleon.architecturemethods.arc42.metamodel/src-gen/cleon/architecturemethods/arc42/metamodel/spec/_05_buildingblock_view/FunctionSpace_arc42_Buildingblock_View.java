@@ -101,6 +101,12 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("2a5dae64-c03b-11ee-a353-4bf80e47b5e4")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("01e23e7a-eae5-11f0-bc24-0795f932e957")
+    public java.lang.String NameDe();
+
+    @IDynamicResourceExtension.MethodId("07e0aaa5-eae5-11f0-bc24-0795f932e957")
+    public java.lang.String NameEn();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -179,4 +185,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,8lN9Cj1UQ1p45Olq1toGHernv8E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,mxC3rqFTK6R1uiu8e8wSExcY8nI=] */

@@ -24,65 +24,101 @@ direction: down
 title: IKT {
   near: top-center
   shape: text
-  style: {
-    font-size: 20	
-    bold: true
-  }
+  style.font-size: 48
+  style.bold: true
 }
 
 3F59C38B_BEDA_11EF_B498_058EE446F8E7: {
-  label: "L1: IKT"
-  grid-columns: 1
-  grid-gap: 20
-  7F8CDA2C_BEDA_11EF_B498_058EE446F8E7: {
-  	label: "L2: Application"
-    grid-columns: 1
-    grid-gap: 10
-	88301D91_219A_11F0_83AE_DF5418A109A4: {
-		label: "L3: Directory Service"
-      	label.near: top-center
-      	grid-gap: 5
-	  	8C664CF7_219A_11F0_83AE_DF5418A109A4: {
-			label: "L4: DC"
-			}	
+	label: "L1: IKT"
+	direction: down
+	grid-columns: 1
+	grid-gap: 20
+	style.font-size: 32
+	style.bold: false
+	7F8CDA2C_BEDA_11EF_B498_058EE446F8E7: {
+		label: "L2: Application"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		88301D91_219A_11F0_83AE_DF5418A109A4: {
+			label: "L3: Directory Service"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			8C664CF7_219A_11F0_83AE_DF5418A109A4: {
+				label: "L4: DC"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  71FA6D1F_BEDA_11EF_B498_058EE446F8E7: {
-  	label: "L2: Infrastruture"
-    grid-columns: 3
-    grid-gap: 10
-	07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD: {
-		label: "L3: Operating System"
-      	label.near: top-center
-      	grid-gap: 5
-	  	1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD: {
-			label: "L4: WIN2022"
-			}	
+	71FA6D1F_BEDA_11EF_B498_058EE446F8E7: {
+		label: "L2: Infrastruture"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD: {
+			label: "L3: Operating System"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD: {
+				label: "L4: WIN2022"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	42DB7E7F_BEDF_11EF_B498_058EE446F8E7: {
-		label: "L3: Servers"
-      	label.near: top-center
-      	grid-gap: 5
-	  	B582462C_BEE0_11EF_B498_058EE446F8E7: {
-			label: "L4: HPE"
-			}	
+		42DB7E7F_BEDF_11EF_B498_058EE446F8E7: {
+			label: "L3: Servers"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			B582462C_BEE0_11EF_B498_058EE446F8E7: {
+				label: "L4: HPE"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
-	483100CA_BEDF_11EF_B498_058EE446F8E7: {
-		label: "L3: Virtualization"
-      	label.near: top-center
-      	grid-gap: 5
-	  	B582462B_BEE0_11EF_B498_058EE446F8E7: {
-			label: "L4: VM"
-			}	
-	  	B581F80A_BEE0_11EF_B498_058EE446F8E7: {
-			label: "L4: VMH"
-			}	
+		483100CA_BEDF_11EF_B498_058EE446F8E7: {
+			label: "L3: Virtualization"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			B582462B_BEE0_11EF_B498_058EE446F8E7: {
+				label: "L4: VM"
+				style.bold: false
+				style.font-size: 24
+			}
+			B581F80A_BEE0_11EF_B498_058EE446F8E7: {
+				label: "L4: VMH"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  789FA1C1_BEDA_11EF_B498_058EE446F8E7: {
-  	label: "L2: Platform"
-    grid-columns: 0
-    grid-gap: 10
+	789FA1C1_BEDA_11EF_B498_058EE446F8E7: {
+		label: "L2: Platform"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
 	}
 }
 ----
@@ -129,4 +165,4 @@ include::ikt/infrastruture/virtualization/vmh/level_4_vmh.adoc[]
 <<<
 include::ikt/infrastruture/operating_system/win2022/level_4_win2022.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,wyWsxtXSefkbN+ySY3VdaK5AtN4=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,1BeA2PhDpWRiROEdG7bCopP4DdE=]

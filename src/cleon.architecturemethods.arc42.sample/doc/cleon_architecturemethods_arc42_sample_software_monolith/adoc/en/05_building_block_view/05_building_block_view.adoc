@@ -24,34 +24,48 @@ direction: down
 title: MonolithSample {
   near: top-center
   shape: text
-  style: {
-    font-size: 20	
-    bold: true
-  }
+  style.font-size: 48
+  style.bold: true
 }
 
 1862B969_CB0A_11F0_AD08_33C52ACB975F: {
-  label: "L1: MonolithSample"
-  grid-columns: 1
-  grid-gap: 20
-  4DED63E2_CB0A_11F0_AD08_33C52ACB975F: {
-  	label: "L2: Application"
-    grid-columns: 0
-    grid-gap: 10
+	label: "L1: MonolithSample"
+	direction: down
+	grid-columns: 1
+	grid-gap: 20
+	style.font-size: 32
+	style.bold: false
+	4DED63E2_CB0A_11F0_AD08_33C52ACB975F: {
+		label: "L2: Application"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
 	}
-  809A6945_CB0A_11F0_AD08_33C52ACB975F: {
-  	label: "L2: ddd Library"
-    grid-columns: 0
-    grid-gap: 10
+	809A6945_CB0A_11F0_AD08_33C52ACB975F: {
+		label: "L2: ddd Library"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
 	}
-  8A0AA48D_CB0A_11F0_AD08_33C52ACB975F: {
-  	label: "L2: dddd"
-    grid-columns: 1
-    grid-gap: 10
-	958E2EF1_CB0A_11F0_AD08_33C52ACB975F: {
-		label: "L3: Database"
-      	label.near: top-center
-      	grid-gap: 5
+	8A0AA48D_CB0A_11F0_AD08_33C52ACB975F: {
+		label: "L2: dddd"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		958E2EF1_CB0A_11F0_AD08_33C52ACB975F: {
+			label: "L3: Database"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
 	}
 }
@@ -75,4 +89,4 @@ include::monolithsample/dddd/level_2_dddd.adoc[]
 <<<
 include::monolithsample/dddd/database/level_3_database.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1862b96a-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1862b96a-cb0a-11f0-ad08-33c52acb975f,TyiD2R93uxPlxWDQDPI4remxBa0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1862b96a-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1862b96a-cb0a-11f0-ad08-33c52acb975f,zU9BC5Yz0S6+rMVqN8aEhctbGb8=]

@@ -24,20 +24,24 @@ direction: down
 title: MySampleSoftware {
   near: top-center
   shape: text
-  style: {
-    font-size: 20	
-    bold: true
-  }
+  style.font-size: 48
+  style.bold: true
 }
 
 4C05785E_D579_11EE_903E_9F564E4DE07E: {
-  label: "L1: MySampleSoftware"
-  grid-columns: 1
-  grid-gap: 20
-  4C58C842_D579_11EE_903E_9F564E4DE07E: {
-  	label: "L2: MyComponent"
-    grid-columns: 0
-    grid-gap: 10
+	label: "L1: MySampleSoftware"
+	direction: down
+	grid-columns: 1
+	grid-gap: 20
+	style.font-size: 32
+	style.bold: false
+	4C58C842_D579_11EE_903E_9F564E4DE07E: {
+		label: "L2: MyComponent"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
 	}
 }
 ----
@@ -51,4 +55,4 @@ include::mysamplesoftware/ebene_1_mysamplesoftware.adoc[]
 <<<
 include::mysamplesoftware/mycomponent/ebene_2_mycomponent.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,63136381-436d-11e6-a9d7-97cf4f7c398b,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,63136381-436d-11e6-a9d7-97cf4f7c398b,nBS1jfs5Q+be6LiKotggFYhynS4=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,63136381-436d-11e6-a9d7-97cf4f7c398b,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,63136381-436d-11e6-a9d7-97cf4f7c398b,UHLAN8XopKGW8XE+AjnCgUaX+XI=]

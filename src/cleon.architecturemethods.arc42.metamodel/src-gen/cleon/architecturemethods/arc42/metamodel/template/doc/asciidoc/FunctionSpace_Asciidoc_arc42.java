@@ -14,7 +14,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 public class FunctionSpace_Asciidoc_arc42 {
 
   /* Begin Protected Region [[65a357a1-2663-11e6-ae54-e50d44645ae7]] */
-  
+
   /* End Protected Region   [[65a357a1-2663-11e6-ae54-e50d44645ae7]] */
 
 
@@ -856,7 +856,7 @@ public class FunctionSpace_Asciidoc_arc42 {
 		if( abstractTable.selectHistory() == null) {
 			return false;
 		}
-		return abstractTable.selectHistory(); 
+		return abstractTable.selectHistory();
       /* End Protected Region   [[507f2375-d004-11ee-8ad8-7318f4718a69]] */
     }
 
@@ -2057,6 +2057,48 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
+  public static interface IIntegerLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("357261ef-eaee-11f0-bc24-0795f932e957")
+    public java.lang.Integer WhenZeroReturn1();
+
+  }
+  
+  public static interface IIntegerLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("357261ef-eaee-11f0-bc24-0795f932e957")
+    public java.lang.Integer WhenZeroReturn1(final java.lang.Integer integerLiteral);
+
+  }
+  
+  public static class IntegerLiteralFunctionsImpl implements IIntegerLiteralFunctionsImpl {
+
+    public static final IIntegerLiteralFunctionsImpl INSTANCE = new IntegerLiteralFunctionsImpl();
+
+    private IntegerLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer WhenZeroReturn1(final java.lang.Integer integerLiteral) {
+      /* Begin Protected Region [[357261ef-eaee-11f0-bc24-0795f932e957]] */
+      if( integerLiteral == 0) {
+    	   return 1;
+      }
+      return integerLiteral;
+      /* End Protected Region   [[357261ef-eaee-11f0-bc24-0795f932e957]] */
+    }
+
+  }
+  
+  public static class IntegerLiteralFunctions {
+
+    private IntegerLiteralFunctions() {}
+
+    public static java.lang.Integer WhenZeroReturn1(final java.lang.Integer integerLiteral) {
+      return DynamicResourceUtil.invoke(IIntegerLiteralFunctionsImpl.class, IntegerLiteralFunctionsImpl.INSTANCE, integerLiteral).WhenZeroReturn1(integerLiteral);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Pl9vNr1y4kgvMnUkUKtZq4xWfj8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,HyIzmYoMLwXkKpimoUtGGXaaZrY=] */

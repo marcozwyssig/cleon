@@ -24,69 +24,110 @@ direction: down
 title: MicroserviceSample {
   near: top-center
   shape: text
-  style: {
-    font-size: 20	
-    bold: true
-  }
+  style.font-size: 48
+  style.bold: true
 }
 
 F194C1A0_CB08_11F0_AD08_33C52ACB975F: {
-  label: "L1: MicroserviceSample"
-  grid-columns: 1
-  grid-gap: 20
-  15F3CC95_EA44_11F0_ABD2_39998C8C9596: {
-  	label: "L2: ServiceLayer"
-    grid-columns: 1
-    grid-gap: 10
-	1A37904D_EA44_11F0_ABD2_39998C8C9596: {
-		label: "L3: Test Sample 1Service"
-      	label.near: top-center
-      	grid-gap: 5
-	  	1A9C93DC_EA44_11F0_ABD2_39998C8C9596: {
-			label: "L4: API"
-			}	
-	  	1A9C93D8_EA44_11F0_ABD2_39998C8C9596: {
-			label: "L4: Application"
-			}	
-	  	1A9C93D9_EA44_11F0_ABD2_39998C8C9596: {
-			label: "L4: Contracts"
-			}	
-	  	1A9C93DA_EA44_11F0_ABD2_39998C8C9596: {
-			label: "L4: Domain"
-			}	
-	  	1A9C93DB_EA44_11F0_ABD2_39998C8C9596: {
-			label: "L4: Infrastructure"
-			}	
+	label: "L1: MicroserviceSample"
+	direction: down
+	grid-columns: 1
+	grid-gap: 20
+	style.font-size: 32
+	style.bold: false
+	15F3CC95_EA44_11F0_ABD2_39998C8C9596: {
+		label: "L2: ServiceLayer"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		1A37904D_EA44_11F0_ABD2_39998C8C9596: {
+			label: "L3: Test Sample 1Service"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
+			1A9C93DC_EA44_11F0_ABD2_39998C8C9596: {
+				label: "L4: API"
+				style.bold: false
+				style.font-size: 24
+			}
+			1A9C93D8_EA44_11F0_ABD2_39998C8C9596: {
+				label: "L4: Application"
+				style.bold: false
+				style.font-size: 24
+			}
+			1A9C93D9_EA44_11F0_ABD2_39998C8C9596: {
+				label: "L4: Contracts"
+				style.bold: false
+				style.font-size: 24
+			}
+			1A9C93DA_EA44_11F0_ABD2_39998C8C9596: {
+				label: "L4: Domain"
+				style.bold: false
+				style.font-size: 24
+			}
+			1A9C93DB_EA44_11F0_ABD2_39998C8C9596: {
+				label: "L4: Infrastructure"
+				style.bold: false
+				style.font-size: 24
+			}
 		}
 	}
-  125A7D50_E669_11F0_800C_DD3EB2BB2FEF: {
-  	label: "L2: SharedLayer"
-    grid-columns: 5
-    grid-gap: 10
-	12847300_E669_11F0_800C_DD3EB2BB2FEF: {
-		label: "L3: API"
-      	label.near: top-center
-      	grid-gap: 5
+	125A7D50_E669_11F0_800C_DD3EB2BB2FEF: {
+		label: "L2: SharedLayer"
+		direction: down
+		grid-columns: 1
+		grid-gap: 10
+		style.font-size: 28
+		style.bold: false
+		12847300_E669_11F0_800C_DD3EB2BB2FEF: {
+			label: "L3: API"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
-	12847303_E669_11F0_800C_DD3EB2BB2FEF: {
-		label: "L3: Application"
-      	label.near: top-center
-      	grid-gap: 5
+		12847303_E669_11F0_800C_DD3EB2BB2FEF: {
+			label: "L3: Application"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
-	12847302_E669_11F0_800C_DD3EB2BB2FEF: {
-		label: "L3: Contracts"
-      	label.near: top-center
-      	grid-gap: 5
+		12847302_E669_11F0_800C_DD3EB2BB2FEF: {
+			label: "L3: Contracts"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
-	12847301_E669_11F0_800C_DD3EB2BB2FEF: {
-		label: "L3: Domain"
-      	label.near: top-center
-      	grid-gap: 5
+		12847301_E669_11F0_800C_DD3EB2BB2FEF: {
+			label: "L3: Domain"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
-	12847304_E669_11F0_800C_DD3EB2BB2FEF: {
-		label: "L3: Infrastructure"
-      	label.near: top-center
-      	grid-gap: 5
+		12847304_E669_11F0_800C_DD3EB2BB2FEF: {
+			label: "L3: Infrastructure"
+			label.near: top-center
+			direction: down
+			grid-columns: 1
+			grid-gap: 5
+			style.bold: false
+			style.font-size: 26
 		}
 	}
 }
@@ -137,4 +178,4 @@ include::microservicesample/servicelayer/test_sample_1service/domain/level_4_dom
 <<<
 include::microservicesample/servicelayer/test_sample_1service/infrastructure/level_4_infrastructure.adoc[]
  
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,vWV+rl+7c+T9kuTFkxlZw62mB9I=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,uq+E0P8bs+TtW5FH1wjdnZa+3Zw=]

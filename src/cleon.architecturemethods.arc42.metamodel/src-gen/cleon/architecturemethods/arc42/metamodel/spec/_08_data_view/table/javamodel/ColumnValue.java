@@ -118,8 +118,8 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (isMSTP()) return visitor.visitMSTP();
     if (is__X___F___8___F_OspfVersion__F_v2()) return visitor.visit__X___F___8___F_OspfVersion__F_v2();
     if (is__Y___F___8___F_OspfVersion__F_v3()) return visitor.visit__Y___F___8___F_OspfVersion__F_v3();
-    if (is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_()) return visitor.visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
-    if (is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_()) return visitor.visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+    if (is__Z___F___8___F_IPv4()) return visitor.visit__Z___F___8___F_IPv4();
+    if (is__1___F___8___F_IPv6()) return visitor.visit__1___F___8___F_IPv6();
     if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) return visitor.visitMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_();
     if (is__X___T_4__F_GHz()) return visitor.visit__X___T_4__F_GHz();
     if (is__0___F_GHz()) return visitor.visit__0___F_GHz();
@@ -344,12 +344,12 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visit__Y___F___8___F_OspfVersion__F_v3();
       return;
     }
-    if (is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_()) {
-      visitor.visit__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_();
+    if (is__Z___F___8___F_IPv4()) {
+      visitor.visit__Z___F___8___F_IPv4();
       return;
     }
-    if (is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_()) {
-      visitor.visit__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_();
+    if (is__1___F___8___F_IPv6()) {
+      visitor.visit__1___F___8___F_IPv6();
       return;
     }
     if (isMAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_()) {
@@ -640,13 +640,13 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean is__Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___Z___F___8___F_PimVersion__F_v4__F___N_IPv4__O_);
+  public boolean is__Z___F___8___F_IPv4() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___Z___F___8___F_IPv4);
   }
   
   @Override
-  public boolean is__1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___1___F___8___F_PimVersion__F_v6__F___N_IPv6__O_);
+  public boolean is__1___F___8___F_IPv6() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue___1___F___8___F_IPv6);
   }
   
   @Override
@@ -665,4 +665,4 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,oMfpvpgEN0QIdYSHRj240prjG+A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,A4lljLBmxC23nQd1MM4qsVVxsZA=] */

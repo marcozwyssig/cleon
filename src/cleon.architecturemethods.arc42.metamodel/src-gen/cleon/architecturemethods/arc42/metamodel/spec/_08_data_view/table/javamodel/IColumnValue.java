@@ -72,11 +72,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitL3__F___8___F_Routing();
     
-    public void visitMESH__F___8___F_voll__F_vermascht();
+    public void visitMESH__F___8___F_full__F_mesh();
     
-    public void visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_();
+    public void visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
     
-    public void visitLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    public void visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
     
     public void visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
     
@@ -194,11 +194,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visitL3__F___8___F_Routing();
     
-    public R visitMESH__F___8___F_voll__F_vermascht();
+    public R visitMESH__F___8___F_full__F_mesh();
     
-    public R visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_();
+    public R visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
     
-    public R visitLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+    public R visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
     
     public R visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
     
@@ -322,11 +322,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isL3__F___8___F_Routing();
   
-  public boolean isMESH__F___8___F_voll__F_vermascht();
+  public boolean isMESH__F___8___F_full__F_mesh();
   
-  public boolean isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_oder__F___H_Hub__S_and__S_Spoke__H_();
+  public boolean isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
   
-  public boolean isLOCAL__F___8___F_nur__F_lokal__F___N_einzelne__F_MCU__O_();
+  public boolean isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
   
   public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
   
@@ -379,4 +379,4 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,Yo/+L8P+ZI8lJ3+pYGW4oXzCOZ4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,FxjPZGvtnkL8uzmN64HEnXH6KvA=] */

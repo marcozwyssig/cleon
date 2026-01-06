@@ -21,9 +21,9 @@ Parent::
 
 The SharedLayer is decomposed into the following components:
 
-[plantuml, Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: SharedLayer <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)BuildingBlockOverview
+@startuml Level_2: SharedLayer <ComponentByTemplate> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,13 +37,13 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
-    component "Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)" #lightblue {
-        [**Ebene_3: API <ComponentByTemplate> (Whitebox)**] as 12847300_E669_11F0_800C_DD3EB2BB2FEF
-        [**Ebene_3: Application <ComponentByTemplate> (Whitebox)**] as 12847303_E669_11F0_800C_DD3EB2BB2FEF
-        [**Ebene_3: Contracts <ComponentByTemplate> (Whitebox)**] as 12847302_E669_11F0_800C_DD3EB2BB2FEF
-        [**Ebene_3: Domain <ComponentByTemplate> (Whitebox)**] as 12847301_E669_11F0_800C_DD3EB2BB2FEF
-        [**Ebene_3: Infrastructure <ComponentByTemplate> (Whitebox)**] as 12847304_E669_11F0_800C_DD3EB2BB2FEF
+component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
+    component "Level_2: SharedLayer <ComponentByTemplate> (Whitebox)" #lightblue {
+        [**Level_3: API <ComponentByTemplate> (Whitebox)**] as 12847300_E669_11F0_800C_DD3EB2BB2FEF
+        [**Level_3: Application <ComponentByTemplate> (Whitebox)**] as 12847303_E669_11F0_800C_DD3EB2BB2FEF
+        [**Level_3: Contracts <ComponentByTemplate> (Whitebox)**] as 12847302_E669_11F0_800C_DD3EB2BB2FEF
+        [**Level_3: Domain <ComponentByTemplate> (Whitebox)**] as 12847301_E669_11F0_800C_DD3EB2BB2FEF
+        [**Level_3: Infrastructure <ComponentByTemplate> (Whitebox)**] as 12847304_E669_11F0_800C_DD3EB2BB2FEF
     }
 }
 
@@ -361,4 +361,4 @@ TODO: Describe the directory/file location.
 // Begin Protected Region [[cf82ca1f-e598-11f0-a60c-db015d172622,issues]]
 TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[cf82ca1f-e598-11f0-a60c-db015d172622,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,125a7d50-e669-11f0-800c-dd3eb2bb2fef,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,125a7d50-e669-11f0-800c-dd3eb2bb2fef,aIFJkQsOk2HDilwggYaP3i422rA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,125a7d50-e669-11f0-800c-dd3eb2bb2fef,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,125a7d50-e669-11f0-800c-dd3eb2bb2fef,HQtPSN36y01NY14IBHjhLyZo+iw=]

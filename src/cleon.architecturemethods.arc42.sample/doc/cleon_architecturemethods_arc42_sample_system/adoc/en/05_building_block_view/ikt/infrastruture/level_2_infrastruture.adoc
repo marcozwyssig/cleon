@@ -17,9 +17,9 @@ Parent::
 
 The Infrastruture is decomposed into the following components:
 
-[plantuml, Ebene_2: Infrastruture <SystemLayer> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: Infrastruture <SystemLayer> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: Infrastruture <SystemLayer> (Whitebox)BuildingBlockOverview
+@startuml Level_2: Infrastruture <SystemLayer> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,11 +33,11 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: IKT (IKT) <System> (Whitebox) (Parent)" {
-    component "Ebene_2: Infrastruture <SystemLayer> (Whitebox)" #lightblue {
-        [**Ebene_3: Operating System <SystemComponent> (Whitebox)**] as 07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD
-        [**Ebene_3: Servers <SystemComponent> (Whitebox)**] as 42DB7E7F_BEDF_11EF_B498_058EE446F8E7
-        [**Ebene_3: Virtualization <SystemComponent> (Whitebox)**] as 483100CA_BEDF_11EF_B498_058EE446F8E7
+component "Level_1: IKT (IKT) <System> (Whitebox) (Parent)" {
+    component "Level_2: Infrastruture <SystemLayer> (Whitebox)" #lightblue {
+        [**Level_3: Operating System <SystemComponent> (Whitebox)**] as 07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD
+        [**Level_3: Servers <SystemComponent> (Whitebox)**] as 42DB7E7F_BEDF_11EF_B498_058EE446F8E7
+        [**Level_3: Virtualization <SystemComponent> (Whitebox)**] as 483100CA_BEDF_11EF_B498_058EE446F8E7
     }
 }
 
@@ -53,4 +53,4 @@ component "Ebene_1: IKT (IKT) <System> (Whitebox) (Parent)" {
 
 // End Protected Region   [[71fa6d1f-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,G9Cuvjj/1WPBKq3h2oqqUO9Ugjc=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,Ak1EpUYjJkfQ/qFBulIzEe+pYKA=]

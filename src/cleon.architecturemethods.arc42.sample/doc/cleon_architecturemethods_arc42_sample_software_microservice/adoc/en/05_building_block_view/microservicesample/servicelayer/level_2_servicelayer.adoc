@@ -17,9 +17,9 @@ Parent::
 
 The ServiceLayer is decomposed into the following components:
 
-[plantuml, Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: ServiceLayer <ServicesLayer> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)BuildingBlockOverview
+@startuml Level_2: ServiceLayer <ServicesLayer> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
-    component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)" #lightblue {
-        [**Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)**] as 1A37904D_EA44_11F0_ABD2_39998C8C9596
+component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
+    component "Level_2: ServiceLayer <ServicesLayer> (Whitebox)" #lightblue {
+        [**Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)**] as 1A37904D_EA44_11F0_ABD2_39998C8C9596
     }
 }
 
@@ -67,4 +67,4 @@ TODO: Describe the directory/file location.
 // Begin Protected Region [[4147fc8e-e5a0-11f0-a60c-db015d172622,issues]]
 TODO: Describe the open issues/problems/risks.
 // End Protected Region   [[4147fc8e-e5a0-11f0-a60c-db015d172622,issues]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,15f3cc95-ea44-11f0-abd2-39998c8c9596,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,15f3cc95-ea44-11f0-abd2-39998c8c9596,0GNymaJy+Zcy5lkyzlIU67CQgfA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,15f3cc95-ea44-11f0-abd2-39998c8c9596,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,15f3cc95-ea44-11f0-abd2-39998c8c9596,QAZ9c7/eo1vpKPmk9NV0A8ebfmw=]

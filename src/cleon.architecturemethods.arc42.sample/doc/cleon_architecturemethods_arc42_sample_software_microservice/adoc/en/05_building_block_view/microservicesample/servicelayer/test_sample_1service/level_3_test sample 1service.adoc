@@ -17,9 +17,9 @@ Parent::
 
 The Test Sample 1Service is decomposed into the following components:
 
-[plantuml, Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)BuildingBlockOverview
+@startuml Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,13 +33,13 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
-    component "Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)" #lightblue {
-        [**Ebene_4: API <ComponentByTemplate> (Whitebox)**] as 1A9C93DC_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Application <ComponentByTemplate> (Whitebox)**] as 1A9C93D8_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Contracts <ComponentByTemplate> (Whitebox)**] as 1A9C93D9_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Domain <ComponentByTemplate> (Whitebox)**] as 1A9C93DA_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 1A9C93DB_EA44_11F0_ABD2_39998C8C9596
+component "Level_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
+    component "Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)" #lightblue {
+        [**Level_4: API <ComponentByTemplate> (Whitebox)**] as 1A9C93DC_EA44_11F0_ABD2_39998C8C9596
+        [**Level_4: Application <ComponentByTemplate> (Whitebox)**] as 1A9C93D8_EA44_11F0_ABD2_39998C8C9596
+        [**Level_4: Contracts <ComponentByTemplate> (Whitebox)**] as 1A9C93D9_EA44_11F0_ABD2_39998C8C9596
+        [**Level_4: Domain <ComponentByTemplate> (Whitebox)**] as 1A9C93DA_EA44_11F0_ABD2_39998C8C9596
+        [**Level_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 1A9C93DB_EA44_11F0_ABD2_39998C8C9596
     }
 }
 
@@ -60,4 +60,4 @@ component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
 // Begin Protected Region [[motivation]]
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1a37904d-ea44-11f0-abd2-39998c8c9596,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1a37904d-ea44-11f0-abd2-39998c8c9596,6t6Aoi6SZ1aouFMTGadJ+j9kOLA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1a37904d-ea44-11f0-abd2-39998c8c9596,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1a37904d-ea44-11f0-abd2-39998c8c9596,7kDl6a3JAvSj41o9+jrg5XwC3w0=]

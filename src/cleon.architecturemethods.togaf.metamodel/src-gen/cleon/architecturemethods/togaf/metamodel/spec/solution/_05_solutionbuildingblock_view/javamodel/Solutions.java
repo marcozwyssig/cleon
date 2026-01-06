@@ -40,6 +40,15 @@ public class Solutions extends DynamicResource implements ISolutions {
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -155,6 +164,7 @@ public class Solutions extends DynamicResource implements ISolutions {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.javamodel.IManufacturer.class, cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view._05_solutionbuildingblock_viewPackage.Solutions_decompose, visitor);
@@ -174,4 +184,4 @@ public class Solutions extends DynamicResource implements ISolutions {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6f6d790-4a7c-11e6-b2ea-f94c9b140b76,OCFugpz1CIJbeuPxHtG2kCsePFs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6f6d790-4a7c-11e6-b2ea-f94c9b140b76,iXJVM3zX5Ox4yZfmwU1hYjcagZA=] */

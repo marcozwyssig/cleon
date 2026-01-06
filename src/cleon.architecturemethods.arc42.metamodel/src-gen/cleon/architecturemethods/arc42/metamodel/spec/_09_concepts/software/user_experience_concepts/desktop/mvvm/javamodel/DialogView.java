@@ -40,6 +40,15 @@ public class DialogView extends DynamicResource implements IDialogView {
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.Boolean selectIsAbstract() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
@@ -184,6 +193,7 @@ public class DialogView extends DynamicResource implements IDialogView {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -200,4 +210,4 @@ public class DialogView extends DynamicResource implements IDialogView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,iCTbSz2ew1oXLGL/jWMwx3BawqE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,YXxSUIYk10po4gnN9o3/R2PG5XM=] */

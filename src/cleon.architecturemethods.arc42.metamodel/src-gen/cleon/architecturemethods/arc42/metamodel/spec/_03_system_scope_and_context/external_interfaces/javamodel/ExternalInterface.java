@@ -40,6 +40,15 @@ public class ExternalInterface extends DynamicResource implements IExternalInter
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectMandatoryDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions);
   }
@@ -83,6 +92,7 @@ public class ExternalInterface extends DynamicResource implements IExternalInter
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -91,4 +101,4 @@ public class ExternalInterface extends DynamicResource implements IExternalInter
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,48ea3d92-2662-11e6-ae54-e50d44645ae7,KUkRIOnur8+pkPE6doMNgxRpjcs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,48ea3d92-2662-11e6-ae54-e50d44645ae7,ndltRtZXbCSAA/wW5FaJV0CrHDk=] */

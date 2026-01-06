@@ -40,6 +40,15 @@ public class TemplateControlView extends DynamicResource implements ITemplateCon
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.Boolean selectIsAbstract() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
@@ -184,6 +193,7 @@ public class TemplateControlView extends DynamicResource implements ITemplateCon
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -200,4 +210,4 @@ public class TemplateControlView extends DynamicResource implements ITemplateCon
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,594575f1-634e-11e3-9288-bdf1907ca1e3,gvK/hTcJ8sbCpTPMfyfctyPviGU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,594575f1-634e-11e3-9288-bdf1907ca1e3,TFRvbPvI7sznlr0WZKzVcHXqhHc=] */

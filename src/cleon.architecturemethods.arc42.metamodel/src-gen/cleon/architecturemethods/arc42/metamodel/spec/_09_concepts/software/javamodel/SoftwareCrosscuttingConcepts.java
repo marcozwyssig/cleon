@@ -69,6 +69,16 @@ public class SoftwareCrosscuttingConcepts extends DynamicResource implements ISo
   // relations
   
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept selectArchitecture_and_design_patterns_concepts() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_architecture_aE_and_aE_design_aE_patterns_aE_concepts);
+  }
+
+  public SoftwareCrosscuttingConcepts setArchitecture_and_design_patterns_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept architecture_and_design_patterns_concepts) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_architecture_aE_and_aE_design_aE_patterns_aE_concepts, architecture_and_design_patterns_concepts);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
@@ -139,11 +149,11 @@ public class SoftwareCrosscuttingConcepts extends DynamicResource implements ISo
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts selectUnder_the_hood_concepts() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts);
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts selectUnder_the_hood_concepts() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts);
   }
 
-  public SoftwareCrosscuttingConcepts setUnder_the_hood_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts under_the_hood_concepts) {
+  public SoftwareCrosscuttingConcepts setUnder_the_hood_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts under_the_hood_concepts) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts, under_the_hood_concepts);
     return this;
   }
@@ -155,11 +165,12 @@ public class SoftwareCrosscuttingConcepts extends DynamicResource implements ISo
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_architecture_aE_and_aE_design_aE_patterns_aE_concepts, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_domain_aE_concepts, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts, visitor);
   }
 
   // toMeRelations
@@ -168,9 +179,13 @@ public class SoftwareCrosscuttingConcepts extends DynamicResource implements ISo
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_domain_aE_concepts, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts selectToMeUnder_the_hood_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts selectToMeUnder_the_hood_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_under_aE_the_aE_hood_aE_concepts, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts selectToMeArchitecture_and_design_patterns_concepts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.javamodel.ISoftwareCrosscuttingConcepts.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.SoftwarePackage.SoftwareCrosscuttingConcepts_architecture_aE_and_aE_design_aE_patterns_aE_concepts, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,z4TL2qaC/owRLpK2HPvsKJAA2kQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,tdacHVJZFhmjwAGFG9pcwFNUdX8=] */

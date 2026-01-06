@@ -40,6 +40,15 @@ public class NamedSoftwareMonolithApplication extends DynamicResource implements
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -164,6 +173,7 @@ public class NamedSoftwareMonolithApplication extends DynamicResource implements
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
@@ -177,4 +187,4 @@ public class NamedSoftwareMonolithApplication extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,040253be-b643-11ef-ad51-ed17ff4e4b8e,82KbTw5H7SuWywAUXr6lY7Q5hy0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,040253be-b643-11ef-ad51-ed17ff4e4b8e,caI6uwjKJaLShFmNLBEUUl7EO7U=] */

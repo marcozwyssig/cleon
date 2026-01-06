@@ -10,8 +10,10 @@ public interface ISoftwareCrosscuttingConcepts extends cleon.architecturemethods
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept selectDomain_concepts();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHood_Concepts selectUnder_the_hood_concepts();
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.under_the_hood.javamodel.IUnderTheHoodConcepts selectUnder_the_hood_concepts();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.javamodel.IArchitectureAndDesignPatternConcept selectArchitecture_and_design_patterns_concepts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,ObN+JQmOhzShzDpkwQ3pdV8ywjQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bf3ff71-98fd-11ee-aa72-593773060f63,OhhObx9Iy9z4PDvWFU8EKCKm7D8=] */

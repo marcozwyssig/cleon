@@ -40,6 +40,15 @@ public class SystemWithSystemComponent extends DynamicResource implements ISyste
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -165,6 +174,7 @@ public class SystemWithSystemComponent extends DynamicResource implements ISyste
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponentDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_depends, visitor);
@@ -177,4 +187,4 @@ public class SystemWithSystemComponent extends DynamicResource implements ISyste
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb55af14-5ca9-11ea-9014-eb1fa518f623,9WPAzCc6lhf0c1Z/C4Azzz1VG8o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb55af14-5ca9-11ea-9014-eb1fa518f623,yp1zOn+PJwMfMxQ+85TSNRCgyhs=] */

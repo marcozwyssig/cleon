@@ -40,6 +40,15 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectValue() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums.EnumsPackage.EnumValue_value);
   }
@@ -75,6 +84,7 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums.EnumsPackage.EnumValue_value, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
@@ -82,4 +92,4 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,SR6LF3Sne7ZDyt3cOL5fPVDa+hI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,Is0W13y5cDLgzYB5UCOqH5R1TAs=] */

@@ -37,7 +37,7 @@
         <resource statement-guid="5e738003-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e738000-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e72474c-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e724749-46d8-11eb-a37f-cf0277d52819" />
         <resource statement-guid="5e755509-46d8-11eb-a37f-cf0277d52819" type="resource" guid="5e752df6-46d8-11eb-a37f-cf0277d52819" />
-        <resource statement-guid="77b50e8e-cc36-11f0-ae36-9583d8e4de71" type="resource" guid="77b4995b-cc36-11f0-ae36-9583d8e4de71" />
+        <resource statement-guid="1d36bc86-e5ab-11f0-a60c-db015d172622" type="resource" guid="1d369573-e5ab-11f0-a60c-db015d172622" />
         <resource statement-guid="538b353e-cf1c-11ee-8c06-a5102392725a" type="resource" guid="538ae71b-cf1c-11ee-8c06-a5102392725a" />
         <resource statement-guid="6752e10a-cf1d-11ee-8c06-a5102392725a" type="resource" guid="6752b9f7-cf1d-11ee-8c06-a5102392725a" />
         <resource statement-guid="c2965da7-bf7f-11ee-b188-131fa688415c" type="resource" guid="c2960f84-bf7f-11ee-b188-131fa688415c" />
@@ -99,9 +99,10 @@
         <resource statement-guid="c75f58a4-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="c75ebc61-e14d-11ee-9375-43bf1495bfd9" />
         <resource statement-guid="c773a3f9-e14d-11ee-9375-43bf1495bfd9" type="resource" guid="c77355d6-e14d-11ee-9375-43bf1495bfd9" />
         <resource statement-guid="edef2427-db90-11ee-bf0f-4753d26fac10" type="resource" guid="edeeaef4-db90-11ee-bf0f-4753d26fac10" />
-        <resource statement-guid="7b7396ec-db0b-11ee-8b28-393a78550a86" type="resource" guid="7b7348c9-db0b-11ee-8b28-393a78550a86" />
+        <resource statement-guid="d283d875-e59c-11f0-a60c-db015d172622" type="resource" guid="d283d872-e59c-11f0-a60c-db015d172622" />
+        <resource statement-guid="9ae409d5-e59c-11f0-a60c-db015d172622" type="resource" guid="9ae409d2-e59c-11f0-a60c-db015d172622" />
+        <resource statement-guid="799072fc-e596-11f0-a60c-db015d172622" type="resource" guid="79904be9-e596-11f0-a60c-db015d172622" />
         <resource statement-guid="9b597c06-db0b-11ee-8b28-393a78550a86" type="resource" guid="9b5906d3-db0b-11ee-8b28-393a78550a86" />
-        <resource statement-guid="930d75d2-db0b-11ee-8b28-393a78550a86" type="resource" guid="930c645a-db0b-11ee-8b28-393a78550a86" />
         <resource statement-guid="8a8e033b-db0b-11ee-8b28-393a78550a86" type="resource" guid="8a8d8e08-db0b-11ee-8b28-393a78550a86" />
         <resource statement-guid="ad586b1e-db0b-11ee-8b28-393a78550a86" type="resource" guid="ad58440b-db0b-11ee-8b28-393a78550a86" />
         <resource statement-guid="06842291-db0b-11ee-8b28-393a78550a86" type="resource" guid="0682c2fe-db0b-11ee-8b28-393a78550a86" />
@@ -918,13 +919,13 @@
               </predicate>
             </resource>
           </object>
-          <object statement-guid="77b50e8e-cc36-11f0-ae36-9583d8e4de71">
-            <resource guid="77b4995b-cc36-11f0-ae36-9583d8e4de71">
+          <object statement-guid="1d36bc86-e5ab-11f0-a60c-db015d172622">
+            <resource guid="1d369573-e5ab-11f0-a60c-db015d172622">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="77b4c06d-cc36-11f0-ae36-9583d8e4de71" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+                <object statement-guid="1d369575-e5ab-11f0-a60c-db015d172622" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="77b50e8f-cc36-11f0-ae36-9583d8e4de71" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.microservice</object>
+                <object statement-guid="1d370aa7-e5ab-11f0-a60c-db015d172622" type="literal">cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.architecture_pattern</object>
               </predicate>
             </resource>
           </object>
@@ -1538,13 +1539,33 @@
               </predicate>
             </resource>
           </object>
-          <object statement-guid="7b7396ec-db0b-11ee-8b28-393a78550a86">
-            <resource guid="7b7348c9-db0b-11ee-8b28-393a78550a86">
+          <object statement-guid="d283d875-e59c-11f0-a60c-db015d172622">
+            <resource guid="d283d872-e59c-11f0-a60c-db015d172622">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7b736fdb-db0b-11ee-8b28-393a78550a86" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+                <object statement-guid="d283d874-e59c-11f0-a60c-db015d172622" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7b74cf6d-db0b-11ee-8b28-393a78550a86" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.cqrs</object>
+                <object statement-guid="d283d876-e59c-11f0-a60c-db015d172622" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.microservice.servicelayer</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="9ae409d5-e59c-11f0-a60c-db015d172622">
+            <resource guid="9ae409d2-e59c-11f0-a60c-db015d172622">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9ae409d4-e59c-11f0-a60c-db015d172622" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9ae409d6-e59c-11f0-a60c-db015d172622" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.microservice</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="799072fc-e596-11f0-a60c-db015d172622">
+            <resource guid="79904be9-e596-11f0-a60c-db015d172622">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="799072fb-e596-11f0-a60c-db015d172622" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="79909a0d-e596-11f0-a60c-db015d172622" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern</object>
               </predicate>
             </resource>
           </object>
@@ -1555,16 +1576,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="9b616b4c-db0b-11ee-8b28-393a78550a86" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.factorymethod</object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="930d75d2-db0b-11ee-8b28-393a78550a86">
-            <resource guid="930c645a-db0b-11ee-8b28-393a78550a86">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="930cd98d-db0b-11ee-8b28-393a78550a86" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="9310d138-db0b-11ee-8b28-393a78550a86" type="literal">cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.microservices</object>
               </predicate>
             </resource>
           </object>

@@ -49,6 +49,15 @@ public class RouterSystemConfiguration extends DynamicResource implements IRoute
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectGenericShortName() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.GenericShortNameAware_genericShortName);
   }
@@ -289,6 +298,7 @@ public class RouterSystemConfiguration extends DynamicResource implements IRoute
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.systemconfiguration.SystemconfigurationPackage.SystemConfiguration_allowDNSRecord, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.GenericShortNameAware_genericShortName, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
@@ -314,4 +324,4 @@ public class RouterSystemConfiguration extends DynamicResource implements IRoute
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,984c525c-cb0e-11e9-9767-b30840f4f194,YhvNRYxxSo818z9AgwQiw70PdnQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,984c525c-cb0e-11e9-9767-b30840f4f194,WoYRFTN7i5Gau4WXP3Img3Id8N8=] */

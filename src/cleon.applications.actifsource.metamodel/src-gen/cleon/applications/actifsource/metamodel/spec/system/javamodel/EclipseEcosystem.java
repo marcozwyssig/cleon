@@ -40,6 +40,15 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -195,6 +204,7 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.javamodel.ICategory.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_categories, visitor);
@@ -220,4 +230,4 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,yUk5WQBTBLzDXcFYM/suewkIdiM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,KQjnrSr1GMGxXjdseQnzMMaSkqg=] */

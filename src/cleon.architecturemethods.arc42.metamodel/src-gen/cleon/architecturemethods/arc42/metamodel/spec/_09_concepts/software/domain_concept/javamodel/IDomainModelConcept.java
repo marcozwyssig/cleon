@@ -8,8 +8,8 @@ public interface IDomainModelConcept extends cleon.architecturemethods.arc42.met
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate> selectAggregates();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext> selectBoundedContexts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,8uiH1YEK1PgOUuc5BrNMCBPy0qY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,Q9YRNebJ5zuUW5FOhPvL+6P4LPY=] */

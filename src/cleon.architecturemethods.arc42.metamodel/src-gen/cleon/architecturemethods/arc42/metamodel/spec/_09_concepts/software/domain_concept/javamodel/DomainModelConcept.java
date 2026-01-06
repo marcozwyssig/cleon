@@ -69,12 +69,12 @@ public class DomainModelConcept extends DynamicResource implements IDomainModelC
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate> selectAggregates() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_aggregates);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext> selectBoundedContexts() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_boundedContexts);
   }
 
-  public DomainModelConcept setAggregates(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate> aggregates) {
-    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_aggregates, aggregates);
+  public DomainModelConcept setBoundedContexts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext> boundedContexts) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_boundedContexts, boundedContexts);
     return this;
   }
     
@@ -145,7 +145,7 @@ public class DomainModelConcept extends DynamicResource implements IDomainModelC
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_aggregates, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_boundedContexts, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -153,9 +153,9 @@ public class DomainModelConcept extends DynamicResource implements IDomainModelC
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept selectToMeAggregates(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IAggregate object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_aggregates, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept selectToMeBoundedContexts(cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IBoundedContext object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.javamodel.IDomainModelConcept.class, cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept.Domain_conceptPackage.DomainModelConcept_boundedContexts, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,58j1y2G2tXTfvUF8JFhOc8pPPY8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d33672d4-98fe-11ee-aa72-593773060f63,3YxRo33kFZCrQ6R4BbSS9jrHfCE=] */

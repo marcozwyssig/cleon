@@ -40,6 +40,15 @@ public class SoftwareMonolithApplication extends DynamicResource implements ISof
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectShortName() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.ShortName_shortName);
   }
@@ -155,6 +164,7 @@ public class SoftwareMonolithApplication extends DynamicResource implements ISof
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
@@ -167,4 +177,4 @@ public class SoftwareMonolithApplication extends DynamicResource implements ISof
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37263a05-cf1c-11ee-8c06-a5102392725a,MPTSm+pJmYHS0xDfjkWEkayOXKo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37263a05-cf1c-11ee-8c06-a5102392725a,NKDnVOkCfii/oa39m1dtsW9wMEY=] */

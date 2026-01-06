@@ -5,7 +5,7 @@
 :toc:
 
 [#f194c1a0-cb08-11f0-ad08-33c52acb975f]
-=== Level_1: MicroserviceSample (MicroserviceSample) <SoftwareMicroserviceSystem> (Whitebox)
+=== Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox)
 Motivation::
 Fullname::
 microservicesample
@@ -16,11 +16,12 @@ microservicesample
 The MicroserviceSample is decomposed into the following components:
 
 
-. common-desktop (<<#d66e9c25-cb0a-11f0-ad08-33c52acb975f>>)
+. ServiceLayer (<<#15f3cc95-ea44-11f0-abd2-39998c8c9596>>)
+. SharedLayer (<<#125a7d50-e669-11f0-800c-dd3eb2bb2fef>>)
 
 
 // Begin Protected Region [[f194c1a0-cb08-11f0-ad08-33c52acb975f,customText]]
 
 // End Protected Region   [[f194c1a0-cb08-11f0-ad08-33c52acb975f,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,f194c1a0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,f194c1a0-cb08-11f0-ad08-33c52acb975f,ibnxFWbujJwg1gTo8U+XbhaCwCQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,f194c1a0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,f194c1a0-cb08-11f0-ad08-33c52acb975f,s6LEIWmxouAUguAZeNrTvsIod2w=]

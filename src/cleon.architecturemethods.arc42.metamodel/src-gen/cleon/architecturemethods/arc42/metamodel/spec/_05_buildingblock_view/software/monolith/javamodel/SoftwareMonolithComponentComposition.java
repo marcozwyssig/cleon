@@ -40,6 +40,15 @@ public class SoftwareMonolithComponentComposition extends DynamicResource implem
   }
 
   @Override
+  public java.lang.String selectFullName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName);
+  }
+    
+  public void setFullName(java.lang.String fullName) {
+     _setSingleAttribute(cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, fullName);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -165,6 +174,7 @@ public class SoftwareMonolithComponentComposition extends DynamicResource implem
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.modularity.metamodel.spec.SpecPackage.BuildingBlock_fullName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.javamodel.IAbstractSoftwareMonolithComponent.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.SoftwareMonolithComponentComposition_components, visitor);
@@ -183,4 +193,4 @@ public class SoftwareMonolithComponentComposition extends DynamicResource implem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f3fd43df-bf7e-11ee-b188-131fa688415c,tBz410nSivkRiBXN3z5kw7L1JBA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f3fd43df-bf7e-11ee-b188-131fa688415c,HcttKHuEpdsRzy4MmKa3yS/fNRs=] */

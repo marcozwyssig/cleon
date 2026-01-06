@@ -1171,7 +1171,7 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IUnderTheHood_ConceptsFunctions extends IDynamicResourceExtension {
+  public static interface IUnderTheHoodConceptsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cb9e4cc3-cd0e-11ef-947c-3b647dbecb9f")
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
@@ -1181,21 +1181,21 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
   
-  public static interface IUnderTheHood_ConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IUnderTheHoodConceptsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class UnderTheHood_ConceptsFunctionsImpl implements IUnderTheHood_ConceptsFunctionsImpl {
+  public static class UnderTheHoodConceptsFunctionsImpl implements IUnderTheHoodConceptsFunctionsImpl {
 
-    public static final IUnderTheHood_ConceptsFunctionsImpl INSTANCE = new UnderTheHood_ConceptsFunctionsImpl();
+    public static final IUnderTheHoodConceptsFunctionsImpl INSTANCE = new UnderTheHoodConceptsFunctionsImpl();
 
-    private UnderTheHood_ConceptsFunctionsImpl() {}
+    private UnderTheHoodConceptsFunctionsImpl() {}
 
   }
   
-  public static class UnderTheHood_ConceptsFunctions {
+  public static class UnderTheHoodConceptsFunctions {
 
-    private UnderTheHood_ConceptsFunctions() {}
+    private UnderTheHoodConceptsFunctions() {}
 
   }
 
@@ -2059,4 +2059,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,fns9Qsyr8JOmiIvKJ4bwuui5NEA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,Pl9vNr1y4kgvMnUkUKtZq4xWfj8=] */

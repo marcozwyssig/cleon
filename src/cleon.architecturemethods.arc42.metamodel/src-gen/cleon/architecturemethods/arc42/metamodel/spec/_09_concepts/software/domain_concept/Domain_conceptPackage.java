@@ -13,7 +13,9 @@ public class Domain_conceptPackage {
   public static final Resource Aggregate_enums = new Resource("aeb489a4-b1bd-11e4-a1b5-85bab1cb6ada");
   public static final Resource Aggregate_eventAggregator = new Resource("4772e9f6-d22a-11e4-8b90-c7d981a5f2fd");
   public static final Resource DomainModelConcept = new Resource("d33672d4-98fe-11ee-aa72-593773060f63");
-  public static final Resource DomainModelConcept_aggregates = new Resource("6825e36e-98ff-11ee-aa72-593773060f63");
+  public static final Resource BoundedContext_aggregates = new Resource("6825e36e-98ff-11ee-aa72-593773060f63");
+  public static final Resource BoundedContext = new Resource("c2f1fc72-e28d-11f0-a927-5b9cb523e701");
+  public static final Resource DomainModelConcept_boundedContexts = new Resource("e1bb9b8e-e28d-11f0-a927-5b9cb523e701");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +36,4 @@ public class Domain_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept,JE1sIbvwxyedbwzIJmuIxvOcAd4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.domain_concept,51FEgqBLo6coILKr79QCTxQ28C8=] */

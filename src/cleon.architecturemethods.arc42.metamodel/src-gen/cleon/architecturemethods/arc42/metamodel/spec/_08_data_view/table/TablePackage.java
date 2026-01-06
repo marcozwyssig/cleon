@@ -102,6 +102,7 @@ public class TablePackage {
   public static final Resource ColumnValue_MAC__S_Address__F___N_IEEE__F_802__F_MAC__S_Adresse__F___N_EUI__S_48__O___O_ = new Resource("d89d2a92-d9b2-11f0-aac7-3f3562c11cf4");
   public static final Resource ColumnValue___X___T_4__F_GHz = new Resource("d08fb9b5-da89-11f0-a21b-0b322c4bc5c4");
   public static final Resource ColumnValue___0___F_GHz = new Resource("d60aec89-da89-11f0-a21b-0b322c4bc5c4");
+  public static final Resource AbstractTable_columnsForHistory = new Resource("799e522d-eb13-11f0-bc24-0795f932e957");
   
   /* Begin Protected Region [[user]] */
   
@@ -122,4 +123,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,JZsv4Fpq2LKsO3mcW/7M/iyeJs0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,KeQZXho55osrrLndDpx5hMQ7uns=] */

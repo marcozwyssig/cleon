@@ -107,6 +107,16 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> selectColumnsForHistory() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_columnsForHistory);
+  }
+
+  public TableDatabase setColumnsForHistory(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> columnsForHistory) {
+    _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_columnsForHistory, columnsForHistory);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment selectComment() {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.CommentAware_comment);
   }
@@ -216,6 +226,7 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_columns, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.AbstractTable_columnsForHistory, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IComment.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.CommentAware_comment, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
@@ -225,4 +236,4 @@ public class TableDatabase extends DynamicResource implements ITableDatabase {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,09c7c28c-5cce-11f0-97fc-b537e659b5f2,CylKwOZYNvZ7kSTHO7zPJyXgv4Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,09c7c28c-5cce-11f0-97fc-b537e659b5f2,j0qV78H9e+vj4EVFP9ujj463i88=] */

@@ -389,15 +389,15 @@ public class FunctionSpace_Buildingblock {
 
   public static interface IDependentBuildingBlockFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("768ac63b-d77f-11f0-93ea-bb20417aaf76")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock> DependsFromFilterOutInvalid();
+    @IDynamicResourceExtension.MethodId("6eee61b2-ebcb-11f0-8469-8329ddc31212")
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock ScopeFilter(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock root);
 
   }
   
   public static interface IDependentBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("768ac63b-d77f-11f0-93ea-bb20417aaf76")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock> DependsFromFilterOutInvalid(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock);
+    @IDynamicResourceExtension.MethodId("6eee61b2-ebcb-11f0-8469-8329ddc31212")
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock ScopeFilter(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock root, final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock);
 
   }
   
@@ -408,12 +408,17 @@ public class FunctionSpace_Buildingblock {
     private DependentBuildingBlockFunctionsImpl() {}
 
     @Override
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock> DependsFromFilterOutInvalid(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock) {
-      /* Begin Protected Region [[768ac63b-d77f-11f0-93ea-bb20417aaf76]] */
-    	return null;
-//    	var dependsFrom = dependentBuildingBlock.extension(IBuildingBlockFunctions.class).DependsFrom();
-//    	return dependsFrom.stream().filter(x -> Select.exists(dependentBuildingBlock.getReadJobExecutor(), x.getResource()) == false).toList();
-      /* End Protected Region   [[768ac63b-d77f-11f0-93ea-bb20417aaf76]] */
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock ScopeFilter(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock root, final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock) {
+      /* Begin Protected Region [[6eee61b2-ebcb-11f0-8469-8329ddc31212]] */
+    	var resourceScope = root.getPackage().getScope();
+    	var scope = dependentBuildingBlock.getPackage().getScope();
+    	
+    	if (resourceScope.equals(scope) || resourceScope.getRequiredScopes().contains(scope)) {
+    		return dependentBuildingBlock;
+    	}
+    	
+    	return null;   
+      /* End Protected Region   [[6eee61b2-ebcb-11f0-8469-8329ddc31212]] */
     }
 
   }
@@ -422,12 +427,12 @@ public class FunctionSpace_Buildingblock {
 
     private DependentBuildingBlockFunctions() {}
 
-    public static List<cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock> DependsFromFilterOutInvalid(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock) {
-      return DynamicResourceUtil.invoke(IDependentBuildingBlockFunctionsImpl.class, DependentBuildingBlockFunctionsImpl.INSTANCE, dependentBuildingBlock).DependsFromFilterOutInvalid(dependentBuildingBlock);
+    public static cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock ScopeFilter(final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock root, final cleon.common.modularity.metamodel.spec.javamodel.IDependentBuildingBlock dependentBuildingBlock) {
+      return DynamicResourceUtil.invoke(IDependentBuildingBlockFunctionsImpl.class, DependentBuildingBlockFunctionsImpl.INSTANCE, dependentBuildingBlock).ScopeFilter(root, dependentBuildingBlock);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,wAyjd13Aj9FWZEZf/E3blSlOzdo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Gz9VKHutFNreQutGBASazaLX4go=] */

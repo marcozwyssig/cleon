@@ -17,9 +17,9 @@ Parent::
 
 Der Baustein hermes <Feature> ist in folgende Bausteine zerlegt:
 
-[plantuml, Ebene_3: hermes <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: hermes <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: hermes <Feature> <Feature> (Whitebox)BuildingBlockOverview
+@startuml Level_3: hermes <Feature> <Feature> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: Architecture Methods <Category> (Whitebox) (Parent)" {
-    component "Ebene_3: hermes <Feature> <Feature> (Whitebox)" #lightblue {
-        [**Ebene_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 6BD431AC_DCBE_11EF_87B5_5327CB6D0EC7
+component "Level_2: Architecture Methods <Category> (Whitebox) (Parent)" {
+    component "Level_3: hermes <Feature> <Feature> (Whitebox)" #lightblue {
+        [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 6BD431AC_DCBE_11EF_87B5_5327CB6D0EC7
     }
 }
 
@@ -49,4 +49,4 @@ component "Ebene_2: Architecture Methods <Category> (Whitebox) (Parent)" {
 
 // End Protected Region   [[5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7,8j9trr8hs9v8yArY8VuWDIbmOYg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,5f655cdc-dcbe-11ef-87b5-5327cb6d0ec7,feUdl4Hs42nFQJ2K+vmIX3m28gw=]

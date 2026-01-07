@@ -42,12 +42,12 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
   // relations
   
   @Override
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectAbstractChapter() {
-    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_abstractChapter);
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapter() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_chapter);
   }
 
-  public ChapterDescription setAbstractChapter(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
-    _setSingle(cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_abstractChapter, abstractChapter);
+  public ChapterDescription setChapter(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter chapter) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_chapter, chapter);
     return this;
   }
     
@@ -87,16 +87,16 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_abstractChapter, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_chapter, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.common.doc.metamodel.spec.chapter.about.javamodel.IChapterDescription> selectToMeAbstractChapter(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter object) {
-    return _getToMeList(object.getRepository(), cleon.common.doc.metamodel.spec.chapter.about.javamodel.IChapterDescription.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_abstractChapter, object.getResource());
+  public static java.util.List<cleon.common.doc.metamodel.spec.chapter.about.javamodel.IChapterDescription> selectToMeChapter(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter object) {
+    return _getToMeList(object.getRepository(), cleon.common.doc.metamodel.spec.chapter.about.javamodel.IChapterDescription.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.ChapterDescription_chapter, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,a0minYPs0SlbHAcaBo4+JO8zvbk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,EyHnM2q+G7vkcd8oSfI0jdoUEOY=] */

@@ -21,7 +21,7 @@ public class AboutPackage {
   public static final Resource ChapterDescription = new Resource("f8fde99d-0787-11e9-96ce-190a492a5193");
   public static final Resource About_layout = new Resource("41bd1f83-078c-11e9-b2b0-0753551b495e");
   public static final Resource Layout_chapterDescription = new Resource("af1bc503-084c-11e9-9ee8-c54fda7ab431");
-  public static final Resource ChapterDescription_abstractChapter = new Resource("d6ff4c11-084d-11e9-9ee8-c54fda7ab431");
+  public static final Resource ChapterDescription_chapter = new Resource("d6ff4c11-084d-11e9-9ee8-c54fda7ab431");
   public static final Resource FunctionSpace_aE_About_ChapterDescription = new Resource("0ec4910b-08fa-11e9-9ee8-c54fda7ab431");
   public static final Resource Method = new Resource("ce23e1d1-09b1-11e9-8c40-11db3668c0c9");
   public static final Resource About_method = new Resource("eeab84ab-09b1-11e9-8c40-11db3668c0c9");
@@ -46,4 +46,4 @@ public class AboutPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.chapter.about,jEj0jk40AO6L46oWrmzldScYabQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.chapter.about,ol0n4CeP5xXdEQHipkmo4RMvmvY=] */

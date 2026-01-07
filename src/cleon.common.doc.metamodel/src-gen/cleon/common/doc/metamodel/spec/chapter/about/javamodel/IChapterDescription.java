@@ -8,8 +8,8 @@ public interface IChapterDescription extends ch.actifsource.core.javamodel.IDeco
   
   // relations
   
-  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectAbstractChapter();
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectChapter();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,9ema9TJ1gBstKPZJHZhK7j6SOnk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,NcftAEgaxch8EzwHjQt32nf9HL0=] */

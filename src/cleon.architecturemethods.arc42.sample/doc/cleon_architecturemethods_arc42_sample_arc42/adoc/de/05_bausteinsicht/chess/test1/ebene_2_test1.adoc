@@ -19,9 +19,9 @@ Parent::
 
 Der Baustein Test1 ist in folgende Bausteine zerlegt:
 
-[plantuml, Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: Test1 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
+@startuml Level_2: Test1 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -35,9 +35,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
-    component "Ebene_2: Test1 <SampleBuildingBlock> (Whitebox)" #lightblue {
-        [**Ebene_3: Test1_2 <SampleBuildingBlock> (Whitebox)**] as 489CD282_D579_11EE_903E_9F564E4DE07E
+component "Level_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
+    component "Level_2: Test1 <SampleBuildingBlock> (Whitebox)" #lightblue {
+        [**Level_3: Test1_2 <SampleBuildingBlock> (Whitebox)**] as 489CD282_D579_11EE_903E_9F564E4DE07E
     }
 }
 
@@ -51,4 +51,4 @@ component "Ebene_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
 
 // End Protected Region   [[48213901-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213901-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213901-d579-11ee-903e-9f564e4de07e,TVNeP1/GeVKXmOHG+xr4RWnwXLM=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213901-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213901-d579-11ee-903e-9f564e4de07e,jBgb5QJaFqB9cwwPLTER7UE1Pks=]

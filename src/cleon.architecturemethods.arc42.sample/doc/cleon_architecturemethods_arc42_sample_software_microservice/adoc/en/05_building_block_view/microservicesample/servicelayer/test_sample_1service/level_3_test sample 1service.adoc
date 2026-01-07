@@ -4,22 +4,22 @@
 
 :toc:
 
-[#1a37904d-ea44-11f0-abd2-39998c8c9596]
+[#313a22c6-ebca-11f0-94f3-55208a19cd68]
 === Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)
 Motivation::
 Fullname::
 microservicesample.servicelayer.test sample 1service
 
 Parent::
-<<#15f3cc95-ea44-11f0-abd2-39998c8c9596>>
+<<#c7e488b8-eb1c-11f0-94f3-55208a19cd68>>
 
 ==== Building Block Overview
 
 The Test Sample 1Service is decomposed into the following components:
 
-[plantuml, Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)BuildingBlockOverview
+@startuml Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,28 +33,28 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
-    component "Ebene_3: Test Sample 1Service <ServiceComponent> (Whitebox)" #lightblue {
-        [**Ebene_4: API [1] <ComponentByTemplate> (Whitebox)**] as 1A9C93DC_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Application [1] <ComponentByTemplate> (Whitebox)**] as 1A9C93D8_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Contracts [1] <ComponentByTemplate> (Whitebox)**] as 1A9C93D9_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Domain [1] <ComponentByTemplate> (Whitebox)**] as 1A9C93DA_EA44_11F0_ABD2_39998C8C9596
-        [**Ebene_4: Infrastructure [1] <ComponentByTemplate> (Whitebox)**] as 1A9C93DB_EA44_11F0_ABD2_39998C8C9596
+component "Level_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
+    component "Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)" #lightblue {
+        [**Level_4: API <ComponentByTemplate> (Whitebox)**] as 316503AA_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Application <ComponentByTemplate> (Whitebox)**] as 316503AE_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Contracts <ComponentByTemplate> (Whitebox)**] as 316503AC_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Domain <DomainComponent> (Whitebox)**] as 316503AD_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 316503AB_EBCA_11F0_94F3_55208A19CD68
     }
 }
 
 @enduml
 ----
 
-. API [1] (<<#1a9c93dc-ea44-11f0-abd2-39998c8c9596>>)
-. Application [1] (<<#1a9c93d8-ea44-11f0-abd2-39998c8c9596>>)
-. Contracts [1] (<<#1a9c93d9-ea44-11f0-abd2-39998c8c9596>>)
-. Domain [1] (<<#1a9c93da-ea44-11f0-abd2-39998c8c9596>>)
-. Infrastructure [1] (<<#1a9c93db-ea44-11f0-abd2-39998c8c9596>>)
+. API (<<#316503aa-ebca-11f0-94f3-55208a19cd68>>)
+. Application (<<#316503ae-ebca-11f0-94f3-55208a19cd68>>)
+. Contracts (<<#316503ac-ebca-11f0-94f3-55208a19cd68>>)
+. Domain (<<#316503ad-ebca-11f0-94f3-55208a19cd68>>)
+. Infrastructure (<<#316503ab-ebca-11f0-94f3-55208a19cd68>>)
 
 
-// Begin Protected Region [[1a37904d-ea44-11f0-abd2-39998c8c9596,customText]]
+// Begin Protected Region [[313a22c6-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// End Protected Region   [[1a37904d-ea44-11f0-abd2-39998c8c9596,customText]]
+// End Protected Region   [[313a22c6-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1a37904d-ea44-11f0-abd2-39998c8c9596,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1a37904d-ea44-11f0-abd2-39998c8c9596,S9qH+pt4XCxN/Yc7WPnX61W66So=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,313a22c6-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,313a22c6-ebca-11f0-94f3-55208a19cd68,3dsGXON4sKmv0bw617xuavX7oBQ=]

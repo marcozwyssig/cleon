@@ -10,8 +10,8 @@ public interface IComponentByTemplate extends cleon.modelinglanguages.uml.metamo
   
   public cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.javamodel.IComponentTemplate selectComponentTemplate();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.javamodel.IComponentByTemplate> selectComponents();
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.javamodel.IComponentByTemplate> selectComponents();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,26c798cd-e598-11f0-a60c-db015d172622,DlbX/eMZ0Bpj1tsZS8ITR0ZJ2w4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,26c798cd-e598-11f0-a60c-db015d172622,nMY05gV5SKBXd3oc/Cd38gkXxWo=] */

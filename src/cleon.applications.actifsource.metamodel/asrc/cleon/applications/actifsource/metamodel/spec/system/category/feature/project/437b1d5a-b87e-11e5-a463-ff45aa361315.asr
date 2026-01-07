@@ -5,9 +5,6 @@
     <resource statement-guid="ef0ae5b7-491d-11eb-9bd7-6114c4f17e0c" type="resource" guid="ef0abea4-491d-11eb-9bd7-6114c4f17e0c" />
     <resource statement-guid="1c3f77f0-491e-11eb-9bd7-6114c4f17e0c" type="resource" guid="1c3f29cd-491e-11eb-9bd7-6114c4f17e0c" />
   </owns>
-  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="84d96642-e5b0-11f0-a60c-db015d172622" type="resource" guid="84d93f2e-e5b0-11f0-a60c-db015d172622" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="437b1d5c-b87e-11e5-a463-ff45aa361315" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -78,21 +75,6 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="437b1d5d-b87e-11e5-a463-ff45aa361315" type="literal">ExportPackage</object>
-  </predicate>
-  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="84d96642-e5b0-11f0-a60c-db015d172622">
-      <resource guid="84d93f2e-e5b0-11f0-a60c-db015d172622">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="84d96640-e5b0-11f0-a60c-db015d172622" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="857dbc4f-e5b0-11f0-a60c-db015d172622" type="literal">cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.ExportPackageValidationAspect</object>
-        </predicate>
-        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="84d96641-e5b0-11f0-a60c-db015d172622" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="a0d5cafc-2a74-11ea-8727-89a169c94892" type="literal">false</object>

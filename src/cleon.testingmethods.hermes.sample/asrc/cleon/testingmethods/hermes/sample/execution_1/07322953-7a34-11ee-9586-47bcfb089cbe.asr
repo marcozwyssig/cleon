@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="07322953-7a34-11ee-9586-47bcfb089cbe">
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="07322955-7a34-11ee-9586-47bcfb089cbe" type="resource" guid="e85c9091-4f02-11e9-ba59-f1daaff821cc" />
+    <object statement-guid="07322955-7a34-11ee-9586-47bcfb089cbe" type="resource" guid="c050d74c-d400-11e5-9dfc-cf0f3e030023" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="07327776-7a34-11ee-9586-47bcfb089cbe" type="literal">Test</object>
+    <object statement-guid="07327776-7a34-11ee-9586-47bcfb089cbe" type="literal">Sample</object>
   </predicate>
   <predicate guid="da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d">
     <object statement-guid="07327778-7a34-11ee-9586-47bcfb089cbe" type="literal">true</object>
   </predicate>
-  <predicate guid="4c66ac89-2264-11e6-bcc1-f96f0d74dcad">
-    <object statement-guid="089f9c8d-7a34-11ee-9586-47bcfb089cbe" type="aggregate" guid="089f7579-7a34-11ee-9586-47bcfb089cbe" />
+  <predicate guid="3e03b842-1cdd-11e6-8e4f-e37ebca0f18f">
+    <object statement-guid="17454098-eba9-11f0-94f3-55208a19cd68" type="aggregate" guid="17451984-eba9-11f0-94f3-55208a19cd68" />
+  </predicate>
+  <predicate guid="551d9670-1db4-11e6-974b-630b7f5d3b95">
+    <object statement-guid="1cf739de-eba9-11f0-94f3-55208a19cd68" type="aggregate" guid="1cf6ebba-eba9-11f0-94f3-55208a19cd68" />
   </predicate>
   <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
     <object statement-guid="14d6626d-9859-11ef-9d7c-b5806d5ad1be" type="resource" guid="7233b250-9854-11ef-9d7c-b5806d5ad1be" />
+  </predicate>
+  <predicate guid="01c2aee3-673e-11e9-9ec9-5fbc84faaeb1">
+    <object statement-guid="125fbdfb-eba9-11f0-94f3-55208a19cd68" type="resource" guid="1fcfd79b-5f5b-11ec-8bf8-75e284c95ea7" />
   </predicate>
   <predicate guid="24d24283-259b-11eb-b9ae-4df44b18aa9b">
     <object statement-guid="07327777-7a34-11ee-9586-47bcfb089cbe" type="literal">true</object>

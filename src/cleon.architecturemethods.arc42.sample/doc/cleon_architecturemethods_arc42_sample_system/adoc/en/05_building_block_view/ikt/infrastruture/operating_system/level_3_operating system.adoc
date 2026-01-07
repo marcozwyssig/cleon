@@ -17,9 +17,9 @@ Parent::
 
 The Operating System is decomposed into the following components:
 
-[plantuml, Level_3: Operating System <SystemComponent> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_3: Operating System <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_3: Operating System <SystemComponent> (Whitebox)BuildingBlockOverview
+@startuml Ebene_3: Operating System <SystemComponent> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
-    component "Level_3: Operating System <SystemComponent> (Whitebox)" #lightblue {
-        [**Level_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)**] as 1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD
+component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+    component "Ebene_3: Operating System <SystemComponent> (Whitebox)" #lightblue {
+        [**Ebene_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)**] as 1308A142_BEE7_11EF_8DCB_A78DEF9EA3BD
     }
 }
 
@@ -49,4 +49,4 @@ component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
 
 // End Protected Region   [[07fc9046-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,inuAltLUwBdc4k6Cp3dAeRJ96lU=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,07fc9046-bee7-11ef-8dcb-a78def9ea3bd,zvUZCstpHOPvsBxX+E6Q5HvuDOI=]

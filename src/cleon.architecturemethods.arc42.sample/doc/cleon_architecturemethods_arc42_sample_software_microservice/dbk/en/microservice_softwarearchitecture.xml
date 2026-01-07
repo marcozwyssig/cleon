@@ -10,10 +10,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins MicroserviceSample in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_1: MicroserviceSample (MicroserviceSample) &lt;SoftwareArchitecturePattern&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_1: MicroserviceSample (MicroserviceSample) &lt;SoftwareArchitecturePattern&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Level_1__MicroserviceSample__MicroserviceSample___SoftwareArchitecturePattern___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Ebene_1__MicroserviceSample__MicroserviceSample___SoftwareArchitecturePattern___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -45,25 +45,25 @@
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
-			<db:section xml:id="ea.4079d73a-e5a0-11f0-a60c-db015d172622">
+			<db:section xml:id="ea.c7e01bdd-eb1c-11f0-94f3-55208a19cd68">
 				<db:title>ServiceLayer &lt;ServicesLayer&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins ServiceLayer beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.15f3cc95-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins ServiceLayer beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.c7e488b8-eb1c-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.1247435a-e669-11f0-800c-dd3eb2bb2fef">
+			<db:section xml:id="ea.4c4d234b-ebca-11f0-94f3-55208a19cd68">
 				<db:title>SharedLayer &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins SharedLayer beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.125a7d50-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins SharedLayer beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c52eeb7-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.15f3cc95-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.c7e488b8-eb1c-11f0-94f3-55208a19cd68">
 			<db:title>Level_2: ServiceLayer &lt;ServicesLayer&gt; (Whitebox)</db:title>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins ServiceLayer in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: ServiceLayer &lt;ServicesLayer&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_2: ServiceLayer &lt;ServicesLayer&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Level_2__ServiceLayer__ServicesLayer___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Ebene_2__ServiceLayer__ServicesLayer___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -88,64 +88,124 @@
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
-			<db:section xml:id="ea.18e54706-ea44-11f0-abd2-39998c8c9596">
+			<db:section xml:id="ea.3134cb88-ebca-11f0-94f3-55208a19cd68">
 				<db:title>Test Sample 1Service &lt;ServiceComponent&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test Sample 1Service beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a37904d-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Test Sample 1Service beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.313a22c6-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.125a7d50-e669-11f0-800c-dd3eb2bb2fef">
+		<db:section xml:id="ea.4c52eeb7-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_2: SharedLayer &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
-			<db:section xml:id="ea.12724b28-e669-11f0-800c-dd3eb2bb2fef">
-				<db:title>API &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins API beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.12847300-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins SharedLayer in einer Abbildung dargestellt:</db:para>
+				<db:figure>
+				  <db:title>Ebene_2: SharedLayer &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+				  <db:mediaobject>
+				    <db:imageobject>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Ebene_2__SharedLayer__ComponentByTemplate___Whitebox_.png" format="PNG"/>
+				    </db:imageobject>
+				  </db:mediaobject>
+				</db:figure>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins SharedLayer tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>API [1] []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Application [1] []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Contracts [1] []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Domain [1] []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Infrastructure [1] []</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 			</db:section>
-			<db:section xml:id="ea.12724b2b-e669-11f0-800c-dd3eb2bb2fef">
-				<db:title>Application &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.12847303-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section xml:id="ea.4c70b005-ebca-11f0-94f3-55208a19cd68">
+				<db:title>API [1] &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins API [1] beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c90e271-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.12724b2a-e669-11f0-800c-dd3eb2bb2fef">
-				<db:title>Contracts &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Contracts beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.12847302-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section xml:id="ea.4c70b006-ebca-11f0-94f3-55208a19cd68">
+				<db:title>Application [1] &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application [1] beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c90e272-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.12724b29-e669-11f0-800c-dd3eb2bb2fef">
-				<db:title>Domain &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Domain beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.12847301-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section xml:id="ea.4c70b003-ebca-11f0-94f3-55208a19cd68">
+				<db:title>Contracts [1] &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Contracts [1] beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c90e26f-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.12724b2c-e669-11f0-800c-dd3eb2bb2fef">
-				<db:title>Infrastructure &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastructure beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.12847304-e669-11f0-800c-dd3eb2bb2fef" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section xml:id="ea.4c70b004-ebca-11f0-94f3-55208a19cd68">
+				<db:title>Domain [1] &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Domain [1] beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c90e270-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
+			</db:section>
+			<db:section xml:id="ea.4c70b002-ebca-11f0-94f3-55208a19cd68">
+				<db:title>Infrastructure [1] &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastructure [1] beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.4c90e26e-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.12847300-e669-11f0-800c-dd3eb2bb2fef">
-			<db:title>Level_3: API &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.4c90e271-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_3: API [1] &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.12847303-e669-11f0-800c-dd3eb2bb2fef">
-			<db:title>Level_3: Application &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.4c90e272-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_3: Application [1] &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.12847302-e669-11f0-800c-dd3eb2bb2fef">
-			<db:title>Level_3: Contracts &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.4c90e26f-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_3: Contracts [1] &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.12847301-e669-11f0-800c-dd3eb2bb2fef">
-			<db:title>Level_3: Domain &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.4c90e270-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_3: Domain [1] &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.12847304-e669-11f0-800c-dd3eb2bb2fef">
-			<db:title>Level_3: Infrastructure &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.4c90e26e-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_3: Infrastructure [1] &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.1a37904d-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.313a22c6-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_3: Test Sample 1Service &lt;ServiceComponent&gt; (Whitebox)</db:title>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test Sample 1Service in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_3: Test Sample 1Service &lt;ServiceComponent&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_3: Test Sample 1Service &lt;ServiceComponent&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Level_3__Test_Sample_1Service__ServiceComponent___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_software_microservice/BuildingBlockOverviewDiagram_Ebene_3__Test_Sample_1Service__ServiceComponent___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -198,44 +258,44 @@
 					</db:tbody>
 				</db:informaltable>
 			</db:section>
-			<db:section xml:id="ea.1a7de7de-ea44-11f0-abd2-39998c8c9596">
+			<db:section xml:id="ea.3154fddf-ebca-11f0-94f3-55208a19cd68">
 				<db:title>API &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins API beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a9c93dc-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins API beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.316503aa-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.1a7de7da-ea44-11f0-abd2-39998c8c9596">
+			<db:section xml:id="ea.3154fde3-ebca-11f0-94f3-55208a19cd68">
 				<db:title>Application &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a9c93d8-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Application beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.316503ae-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.1a7de7db-ea44-11f0-abd2-39998c8c9596">
+			<db:section xml:id="ea.3154fde1-ebca-11f0-94f3-55208a19cd68">
 				<db:title>Contracts &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Contracts beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a9c93d9-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Contracts beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.316503ac-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.1a7de7dc-ea44-11f0-abd2-39998c8c9596">
-				<db:title>Domain &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Domain beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a9c93da-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+			<db:section xml:id="ea.3154fde2-ebca-11f0-94f3-55208a19cd68">
+				<db:title>Domain &lt;DomainComponent&gt; (Blackbox)</db:title>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Domain beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.316503ad-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
-			<db:section xml:id="ea.1a7de7dd-ea44-11f0-abd2-39998c8c9596">
+			<db:section xml:id="ea.3154fde0-ebca-11f0-94f3-55208a19cd68">
 				<db:title>Infrastructure &lt;ComponentByTemplate&gt; (Blackbox)</db:title>
-				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastructure beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.1a9c93db-ea44-11f0-abd2-39998c8c9596" xrefstyle="template:%n"/> zu finden.</db:para>
+				<db:para>In diesem Kapitel werden die Blackbox-Eigenschaften des Bausteins Infrastructure beschrieben. Die Beschreibung der Whitebox-Eigenschaften dieses Bausteins ist im Kapitel <db:xref linkend="ea.316503ab-ebca-11f0-94f3-55208a19cd68" xrefstyle="template:%n"/> zu finden.</db:para>
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.1a9c93dc-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.316503aa-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_4: API &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.1a9c93d8-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.316503ae-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_4: Application &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.1a9c93d9-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.316503ac-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_4: Contracts &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.1a9c93da-ea44-11f0-abd2-39998c8c9596">
-			<db:title>Level_4: Domain &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
+		<db:section xml:id="ea.316503ad-ebca-11f0-94f3-55208a19cd68">
+			<db:title>Level_4: Domain &lt;DomainComponent&gt; (Whitebox)</db:title>
 			
 		</db:section>
-		<db:section xml:id="ea.1a9c93db-ea44-11f0-abd2-39998c8c9596">
+		<db:section xml:id="ea.316503ab-ebca-11f0-94f3-55208a19cd68">
 			<db:title>Level_4: Infrastructure &lt;ComponentByTemplate&gt; (Whitebox)</db:title>
 			
 		</db:section>

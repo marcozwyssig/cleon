@@ -99,15 +99,15 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (isMESH__F___8___F_full__F_mesh()) return visitor.visitMESH__F___8___F_full__F_mesh();
     if (isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_()) return visitor.visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
     if (isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_()) return visitor.visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
-    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast()) return visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
-    if (isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_()) return visitor.visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
-    if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) return visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
-    if (isA__F___8___F_IPv4__S_Adresse()) return visitor.visitA__F___8___F_IPv4__S_Adresse();
-    if (isAAAA__F___8___F_IPv6__S_Adresse()) return visitor.visitAAAA__F___8___F_IPv6__S_Adresse();
-    if (isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_()) return visitor.visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
-    if (isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_()) return visitor.visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
-    if (isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_()) return visitor.visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
-    if (isTXT__F___8___F_Beliebiger__F_Text()) return visitor.visitTXT__F___8___F_Beliebiger__F_Text();
+    if (isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast()) return visitor.visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
+    if (isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_()) return visitor.visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
+    if (isDISABLED__F___8___F_No__F_L3__F_multicast__F_support()) return visitor.visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
+    if (isA__F___8___F_IPv4__S_Address()) return visitor.visitA__F___8___F_IPv4__S_Address();
+    if (isAAAA__F___8___F_IPv6__S_Address()) return visitor.visitAAAA__F___8___F_IPv6__S_Address();
+    if (isMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_()) return visitor.visitMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_();
+    if (isSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_()) return visitor.visitSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_();
+    if (isCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_()) return visitor.visitCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_();
+    if (isTXT__F___8___F_Arbitrary__F_text()) return visitor.visitTXT__F___8___F_Arbitrary__F_text();
     if (isMD5()) return visitor.visitMD5();
     if (isAES_aE_CMAC__F___N_128bit__O_()) return visitor.visitAES_aE_CMAC__F___N_128bit__O_();
     if (isROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_()) return visitor.visitROOT__5___F___H_Root__H___F_oder__F___H_Hub__H_();
@@ -268,40 +268,40 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
       return;
     }
-    if (isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast()) {
-      visitor.visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+    if (isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast()) {
+      visitor.visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
       return;
     }
-    if (isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_()) {
-      visitor.visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+    if (isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_()) {
+      visitor.visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
       return;
     }
-    if (isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung()) {
-      visitor.visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    if (isDISABLED__F___8___F_No__F_L3__F_multicast__F_support()) {
+      visitor.visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
       return;
     }
-    if (isA__F___8___F_IPv4__S_Adresse()) {
-      visitor.visitA__F___8___F_IPv4__S_Adresse();
+    if (isA__F___8___F_IPv4__S_Address()) {
+      visitor.visitA__F___8___F_IPv4__S_Address();
       return;
     }
-    if (isAAAA__F___8___F_IPv6__S_Adresse()) {
-      visitor.visitAAAA__F___8___F_IPv6__S_Adresse();
+    if (isAAAA__F___8___F_IPv6__S_Address()) {
+      visitor.visitAAAA__F___8___F_IPv6__S_Address();
       return;
     }
-    if (isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_()) {
-      visitor.visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    if (isMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_()) {
+      visitor.visitMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_();
       return;
     }
-    if (isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_()) {
-      visitor.visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    if (isSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_()) {
+      visitor.visitSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_();
       return;
     }
-    if (isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_()) {
-      visitor.visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    if (isCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_()) {
+      visitor.visitCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_();
       return;
     }
-    if (isTXT__F___8___F_Beliebiger__F_Text()) {
-      visitor.visitTXT__F___8___F_Beliebiger__F_Text();
+    if (isTXT__F___8___F_Arbitrary__F_text()) {
+      visitor.visitTXT__F___8___F_Arbitrary__F_text();
       return;
     }
     if (isMD5()) {
@@ -545,48 +545,48 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast);
+  public boolean isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast);
   }
   
   @Override
-  public boolean isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_);
+  public boolean isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_);
   }
   
   @Override
-  public boolean isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung);
+  public boolean isDISABLED__F___8___F_No__F_L3__F_multicast__F_support() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_DISABLED__F___8___F_No__F_L3__F_multicast__F_support);
   }
   
   @Override
-  public boolean isA__F___8___F_IPv4__S_Adresse() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_A__F___8___F_IPv4__S_Adresse);
+  public boolean isA__F___8___F_IPv4__S_Address() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_A__F___8___F_IPv4__S_Address);
   }
   
   @Override
-  public boolean isAAAA__F___8___F_IPv6__S_Adresse() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_AAAA__F___8___F_IPv6__S_Adresse);
+  public boolean isAAAA__F___8___F_IPv6__S_Address() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_AAAA__F___8___F_IPv6__S_Address);
   }
   
   @Override
-  public boolean isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_);
+  public boolean isMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_);
   }
   
   @Override
-  public boolean isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_);
+  public boolean isSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_);
   }
   
   @Override
-  public boolean isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_CNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_);
+  public boolean isCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_CNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_);
   }
   
   @Override
-  public boolean isTXT__F___8___F_Beliebiger__F_Text() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_TXT__F___8___F_Beliebiger__F_Text);
+  public boolean isTXT__F___8___F_Arbitrary__F_text() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_TXT__F___8___F_Arbitrary__F_text);
   }
   
   @Override
@@ -665,4 +665,4 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,A4lljLBmxC23nQd1MM4qsVVxsZA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,79AxvF1JVkXN/Sa4qvLGnaXN3r0=] */

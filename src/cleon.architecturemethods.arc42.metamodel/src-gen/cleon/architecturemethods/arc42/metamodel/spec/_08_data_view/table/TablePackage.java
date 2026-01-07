@@ -67,21 +67,21 @@ public class TablePackage {
   public static final Resource Column_assignedForeignKeys = new Resource("719f0982-6227-11f0-bad7-45c7bffc2eff");
   public static final Resource ColumnValue_L2__F___8___F_Switching__U_Bridging = new Resource("8bc722c6-cf8c-11f0-84cd-4bb399ea471f");
   public static final Resource ColumnValue_MESH__F___8___F_full__F_mesh = new Resource("67ba825c-cf8d-11f0-84cd-4bb399ea471f");
-  public static final Resource ColumnValue_SCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast = new Resource("2d95c506-cf92-11f0-84cd-4bb399ea471f");
+  public static final Resource ColumnValue_SCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast = new Resource("2d95c506-cf92-11f0-84cd-4bb399ea471f");
   public static final Resource Column_standardValue = new Resource("2eea5199-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue_L3__F___8___F_Routing = new Resource("6a396c57-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_ = new Resource("930d62fd-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue_LOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_ = new Resource("946db6aa-d422-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_SECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_ = new Resource("a4d8e640-d422-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_DISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung = new Resource("a857faa4-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_SECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_ = new Resource("a4d8e640-d422-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_DISABLED__F___8___F_No__F_L3__F_multicast__F_support = new Resource("a857faa4-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue___V___F___8___F_FALSE = new Resource("0a846d7c-d423-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue___W___F___8___F_TRUE = new Resource("0af530b5-d423-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_A__F___8___F_IPv4__S_Adresse = new Resource("f0f965c1-d425-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_AAAA__F___8___F_IPv6__S_Adresse = new Resource("f66d6c9b-d425-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_MX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_ = new Resource("0473a9a9-d426-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_SRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_ = new Resource("0d34b87d-d426-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_CNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_ = new Resource("1a6c0dfc-d426-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_TXT__F___8___F_Beliebiger__F_Text = new Resource("2653fee8-d426-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_A__F___8___F_IPv4__S_Address = new Resource("f0f965c1-d425-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_AAAA__F___8___F_IPv6__S_Address = new Resource("f66d6c9b-d425-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_MX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_ = new Resource("0473a9a9-d426-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_SRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_ = new Resource("0d34b87d-d426-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_CNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_ = new Resource("1a6c0dfc-d426-11f0-b3aa-65c9c1969da9");
+  public static final Resource ColumnValue_TXT__F___8___F_Arbitrary__F_text = new Resource("2653fee8-d426-11f0-b3aa-65c9c1969da9");
   public static final Resource AbstractColumnStandardValue = new Resource("43fa5762-d42a-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnStandardAllowedValue = new Resource("5b5557d0-d42a-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnStandardValue = new Resource("6b458b53-d42a-11f0-b3aa-65c9c1969da9");
@@ -123,4 +123,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,KeQZXho55osrrLndDpx5hMQ7uns=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,4FEDngYRCseiSXO51AlYsJtefDM=] */

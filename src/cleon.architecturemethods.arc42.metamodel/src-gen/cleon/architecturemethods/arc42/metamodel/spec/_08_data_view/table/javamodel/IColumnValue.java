@@ -78,23 +78,23 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
     
-    public void visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+    public void visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
     
-    public void visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+    public void visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
     
-    public void visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    public void visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
     
-    public void visitA__F___8___F_IPv4__S_Adresse();
+    public void visitA__F___8___F_IPv4__S_Address();
     
-    public void visitAAAA__F___8___F_IPv6__S_Adresse();
+    public void visitAAAA__F___8___F_IPv6__S_Address();
     
-    public void visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    public void visitMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_();
     
-    public void visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    public void visitSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_();
     
-    public void visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    public void visitCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_();
     
-    public void visitTXT__F___8___F_Beliebiger__F_Text();
+    public void visitTXT__F___8___F_Arbitrary__F_text();
     
     public void visitMD5();
     
@@ -200,23 +200,23 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
     
-    public R visitSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+    public R visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
     
-    public R visitSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+    public R visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
     
-    public R visitDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+    public R visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
     
-    public R visitA__F___8___F_IPv4__S_Adresse();
+    public R visitA__F___8___F_IPv4__S_Address();
     
-    public R visitAAAA__F___8___F_IPv6__S_Adresse();
+    public R visitAAAA__F___8___F_IPv6__S_Address();
     
-    public R visitMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+    public R visitMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_();
     
-    public R visitSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+    public R visitSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_();
     
-    public R visitCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+    public R visitCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_();
     
-    public R visitTXT__F___8___F_Beliebiger__F_Text();
+    public R visitTXT__F___8___F_Arbitrary__F_text();
     
     public R visitMD5();
     
@@ -328,23 +328,23 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
   
-  public boolean isSCALABLE__F___8___F_Abbildung__F_auf__F_Underlay__S_Multicast();
+  public boolean isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
   
-  public boolean isSECURE__F___8___F_Abbildung__F_auf__F_Underlay__S_Unicast__F___N_Ingress__S_Replikation__O_();
+  public boolean isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
   
-  public boolean isDISABLED__F___8___F_Keine__F_L3__S_Multicast__S_Unterstützung();
+  public boolean isDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
   
-  public boolean isA__F___8___F_IPv4__S_Adresse();
+  public boolean isA__F___8___F_IPv4__S_Address();
   
-  public boolean isAAAA__F___8___F_IPv6__S_Adresse();
+  public boolean isAAAA__F___8___F_IPv6__S_Address();
   
-  public boolean isMX__F___8___F_Mail__S_Server__F___N_Priorität__F_und__F_DNS__S_Name__O_();
+  public boolean isMX__F___8___F_Mail__F_server__F___N_priority__F_and__F_DNS__F_name__O_();
   
-  public boolean isSRV__F___8___F_Service__S_Eintrag__F___N_Priorität__R___F_Gewicht__R___F_Port__F_und__F_DNS__S_Name__O_();
+  public boolean isSRV__F___8___F_Service__F_record__F___N_priority__R___F_weight__R___F_port__R___F_and__F_DNS__F_name__O_();
   
-  public boolean isCNAME__F___8___F_Kanonischer__F_Name__F___N_DNS__S_Alias__O_();
+  public boolean isCNAME__F___8___F_Canonical__F_name__F___N_DNS__F_alias__O_();
   
-  public boolean isTXT__F___8___F_Beliebiger__F_Text();
+  public boolean isTXT__F___8___F_Arbitrary__F_text();
   
   public boolean isMD5();
   
@@ -379,4 +379,4 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,JkZgRPmpOIekwzDTFR7W4VzqgJk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,chhntWC1h2sh1z4SoSFOq5fglbI=] */

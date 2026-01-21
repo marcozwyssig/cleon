@@ -94,13 +94,9 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
     if (is__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_()) return visitor.visit__W___F_b_s___F_MAX__N_2_aD_32__S_1__O_();
     if (isUTC__Q_0()) return visitor.visitUTC__Q_0();
     if (isTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive()) return visitor.visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
-    if (isL2__F___8___F_Switching__U_Bridging()) return visitor.visitL2__F___8___F_Switching__U_Bridging();
-    if (isL3__F___8___F_Routing()) return visitor.visitL3__F___8___F_Routing();
     if (isMESH__F___8___F_full__F_mesh()) return visitor.visitMESH__F___8___F_full__F_mesh();
     if (isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_()) return visitor.visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
-    if (isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_()) return visitor.visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
     if (isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast()) return visitor.visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
-    if (isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_()) return visitor.visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
     if (isDISABLED__F___8___F_No__F_L3__F_multicast__F_support()) return visitor.visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
     if (isA__F___8___F_IPv4__S_Address()) return visitor.visitA__F___8___F_IPv4__S_Address();
     if (isAAAA__F___8___F_IPv6__S_Address()) return visitor.visitAAAA__F___8___F_IPv6__S_Address();
@@ -248,14 +244,6 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
       return;
     }
-    if (isL2__F___8___F_Switching__U_Bridging()) {
-      visitor.visitL2__F___8___F_Switching__U_Bridging();
-      return;
-    }
-    if (isL3__F___8___F_Routing()) {
-      visitor.visitL3__F___8___F_Routing();
-      return;
-    }
     if (isMESH__F___8___F_full__F_mesh()) {
       visitor.visitMESH__F___8___F_full__F_mesh();
       return;
@@ -264,16 +252,8 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
       visitor.visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
       return;
     }
-    if (isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_()) {
-      visitor.visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
-      return;
-    }
     if (isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast()) {
       visitor.visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
-      return;
-    }
-    if (isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_()) {
-      visitor.visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
       return;
     }
     if (isDISABLED__F___8___F_No__F_L3__F_multicast__F_support()) {
@@ -520,16 +500,6 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean isL2__F___8___F_Switching__U_Bridging() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_L2__F___8___F_Switching__U_Bridging);
-  }
-  
-  @Override
-  public boolean isL3__F___8___F_Routing() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_L3__F___8___F_Routing);
-  }
-  
-  @Override
   public boolean isMESH__F___8___F_full__F_mesh() {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_MESH__F___8___F_full__F_mesh);
   }
@@ -540,18 +510,8 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
   @Override
-  public boolean isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_LOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_);
-  }
-  
-  @Override
   public boolean isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast() {
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast);
-  }
-  
-  @Override
-  public boolean isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.ColumnValue_SECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_);
   }
   
   @Override
@@ -665,4 +625,4 @@ public class ColumnValue extends DynamicResource implements IColumnValue {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,79AxvF1JVkXN/Sa4qvLGnaXN3r0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,htqtxwYtr3aTeeT1gH6Rb0aM5XA=] */

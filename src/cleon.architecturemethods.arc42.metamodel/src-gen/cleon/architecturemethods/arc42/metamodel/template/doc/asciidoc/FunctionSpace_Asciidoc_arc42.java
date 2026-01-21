@@ -951,6 +951,9 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("62e9ea30-27dc-11ef-9e2d-0b682fec1a77")
     public java.lang.String RenderContentElement(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("46c7ce26-f619-11f0-b5cb-2bfccb38336b")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> OnlyTablesOutsideOfTableArea();
+
   }
   
   public static interface ITableAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -2101,4 +2104,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,HyIzmYoMLwXkKpimoUtGGXaaZrY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,H8FZwku1JU3rGNlgM50XFlR+uOI=] */

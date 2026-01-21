@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITableArea extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter {
+public interface ITableArea extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapterPath {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("01f5d505-b934-11ee-a0d0-e953bcbfaeef");
   
@@ -16,4 +16,4 @@ public interface ITableArea extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,vnhs/RYjsVgrvjbNXWnaCAvT8X0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01f5d505-b934-11ee-a0d0-e953bcbfaeef,XBrMnbdjPO78K67m8von6lcyQTE=] */

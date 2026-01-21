@@ -65,14 +65,10 @@ public class TablePackage {
   public static final Resource TableRelationManyToOne = new Resource("4d1683b4-621d-11f0-8ed9-1d79caf8da43");
   public static final Resource TableRelationOneToOne = new Resource("8bed3e48-621d-11f0-8ed9-1d79caf8da43");
   public static final Resource Column_assignedForeignKeys = new Resource("719f0982-6227-11f0-bad7-45c7bffc2eff");
-  public static final Resource ColumnValue_L2__F___8___F_Switching__U_Bridging = new Resource("8bc722c6-cf8c-11f0-84cd-4bb399ea471f");
   public static final Resource ColumnValue_MESH__F___8___F_full__F_mesh = new Resource("67ba825c-cf8d-11f0-84cd-4bb399ea471f");
   public static final Resource ColumnValue_SCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast = new Resource("2d95c506-cf92-11f0-84cd-4bb399ea471f");
   public static final Resource Column_standardValue = new Resource("2eea5199-d422-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_L3__F___8___F_Routing = new Resource("6a396c57-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue_TREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_ = new Resource("930d62fd-d422-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_LOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_ = new Resource("946db6aa-d422-11f0-b3aa-65c9c1969da9");
-  public static final Resource ColumnValue_SECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_ = new Resource("a4d8e640-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue_DISABLED__F___8___F_No__F_L3__F_multicast__F_support = new Resource("a857faa4-d422-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue___V___F___8___F_FALSE = new Resource("0a846d7c-d423-11f0-b3aa-65c9c1969da9");
   public static final Resource ColumnValue___W___F___8___F_TRUE = new Resource("0af530b5-d423-11f0-b3aa-65c9c1969da9");
@@ -103,6 +99,16 @@ public class TablePackage {
   public static final Resource ColumnValue___X___T_4__F_GHz = new Resource("d08fb9b5-da89-11f0-a21b-0b322c4bc5c4");
   public static final Resource ColumnValue___0___F_GHz = new Resource("d60aec89-da89-11f0-a21b-0b322c4bc5c4");
   public static final Resource AbstractTable_columnsForHistory = new Resource("799e522d-eb13-11f0-bc24-0795f932e957");
+  public static final Resource FunctionSpace_aE_Table_Type = new Resource("3043f1a4-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_ArrayType = new Resource("3e0a8deb-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_StandardType = new Resource("a70fc71a-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_RecordType = new Resource("bb9f4ccd-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_UnionType = new Resource("c86e4209-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_UserType = new Resource("d1e4703a-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_EnumType = new Resource("e2469f9f-f5ff-11f0-b5cb-2bfccb38336b");
+  public static final Resource Column_allowedValuesByType = new Resource("645b2771-f605-11f0-b5cb-2bfccb38336b");
+  public static final Resource FunctionSpace_aE_Table_Column = new Resource("bd6896c1-f606-11f0-b5cb-2bfccb38336b");
+  public static final Resource Column_dbType = new Resource("e893b5b1-f60c-11f0-b5cb-2bfccb38336b");
   
   /* Begin Protected Region [[user]] */
   
@@ -123,4 +129,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,4FEDngYRCseiSXO51AlYsJtefDM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,Na90iiVAR6zHe+4X4s6p3lJe6L0=] */

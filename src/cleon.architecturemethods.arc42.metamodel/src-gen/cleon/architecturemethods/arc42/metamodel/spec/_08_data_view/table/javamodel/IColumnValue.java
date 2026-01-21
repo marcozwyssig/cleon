@@ -68,19 +68,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
     
-    public void visitL2__F___8___F_Switching__U_Bridging();
-    
-    public void visitL3__F___8___F_Routing();
-    
     public void visitMESH__F___8___F_full__F_mesh();
     
     public void visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
     
-    public void visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
-    
     public void visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
-    
-    public void visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
     
     public void visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
     
@@ -190,19 +182,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
     
     public R visitTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
     
-    public R visitL2__F___8___F_Switching__U_Bridging();
-    
-    public R visitL3__F___8___F_Routing();
-    
     public R visitMESH__F___8___F_full__F_mesh();
     
     public R visitTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
     
-    public R visitLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
-    
     public R visitSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
-    
-    public R visitSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
     
     public R visitDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
     
@@ -318,19 +302,11 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isTRUE__5___F_condition__F_is__F_active__6___F_FALSE__5___F_condition__F_is__F_inactive();
   
-  public boolean isL2__F___8___F_Switching__U_Bridging();
-  
-  public boolean isL3__F___8___F_Routing();
-  
   public boolean isMESH__F___8___F_full__F_mesh();
   
   public boolean isTREE__F___8___F___H_Root__S_and__S_Leaf__H___F_or__F___H_Hub__S_and__S_Spoke__H_();
   
-  public boolean isLOCAL__F___8___F_only__F_local__F___N_single__F_MCU__O_();
-  
   public boolean isSCALABLE__F___8___F_Map__F_to__F_underlay__F_multicast();
-  
-  public boolean isSECURE__F___8___F_Map__F_to__F_underlay__F_unicast__F___N_ingress__F_replication__O_();
   
   public boolean isDISABLED__F___8___F_No__F_L3__F_multicast__F_support();
   
@@ -379,4 +355,4 @@ public interface IColumnValue extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,chhntWC1h2sh1z4SoSFOq5fglbI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f46c2d4f-ba0f-11ee-876d-0f01c87670c8,K+gLoYPNI/pdi5UPeqHfwiIjvas=] */

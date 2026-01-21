@@ -6,7 +6,11 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a757c855-b934-11ee-a0d0-e953bcbfaeef");
   
+  public java.lang.String selectDbType();
+  
   public java.lang.Boolean selectNullable();
+  
+  public java.util.List<java.lang.String> selectAllowedValuesByType();
   
   // relations
   
@@ -22,4 +26,4 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,BzokHKPVuUP2h4eyLiBf6lUksZ4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,XNfqhxi1VEHcYzXQw6gbw8q/KxY=] */

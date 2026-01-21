@@ -31,6 +31,24 @@ public class Column extends DynamicResource implements IColumn {
   // attributes
   
   @Override
+  public java.util.List<java.lang.String> selectAllowedValuesByType() {
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValuesByType);
+  }
+    
+  public void setAllowedValuesByType(java.util.List<java.lang.String> allowedValuesByType) {
+     _setListAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValuesByType, allowedValuesByType);
+  }
+
+  @Override
+  public java.lang.String selectDbType() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_dbType);
+  }
+    
+  public void setDbType(java.lang.String dbType) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_dbType, dbType);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -133,6 +151,8 @@ public class Column extends DynamicResource implements IColumn {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValuesByType, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_dbType, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_nullable, visitor);
@@ -169,4 +189,4 @@ public class Column extends DynamicResource implements IColumn {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,fhJmBarVqcKJc6g64mRSWbd8dm4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,EOnV3UMltlsDtOCL0Je5B/MUq5g=] */

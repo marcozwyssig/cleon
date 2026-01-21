@@ -31,13 +31,9 @@
     <resource statement-guid="4d639c0b-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="4d6374f8-c034-11ee-a353-4bf80e47b5e4" />
     <resource statement-guid="92a4f2f2-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="92a4cbdf-c034-11ee-a353-4bf80e47b5e4" />
     <resource statement-guid="a2a1f801-c034-11ee-a353-4bf80e47b5e4" type="resource" guid="a2a1d0ee-c034-11ee-a353-4bf80e47b5e4" />
-    <resource statement-guid="8bc770e9-cf8c-11f0-84cd-4bb399ea471f" type="resource" guid="8bc722c6-cf8c-11f0-84cd-4bb399ea471f" />
-    <resource statement-guid="6a39936a-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="6a396c57-d422-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="67bad07f-cf8d-11f0-84cd-4bb399ea471f" type="resource" guid="67ba825c-cf8d-11f0-84cd-4bb399ea471f" />
     <resource statement-guid="930d8a10-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="930d62fd-d422-11f0-b3aa-65c9c1969da9" />
-    <resource statement-guid="946dddbd-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="946db6aa-d422-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="2d95ec19-cf92-11f0-84cd-4bb399ea471f" type="resource" guid="2d95c506-cf92-11f0-84cd-4bb399ea471f" />
-    <resource statement-guid="a4d90d53-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="a4d8e640-d422-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="a85821b7-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="a857faa4-d422-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="f0f98cd4-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f0f965c1-d425-11f0-b3aa-65c9c1969da9" />
     <resource statement-guid="f66d93ae-d425-11f0-b3aa-65c9c1969da9" type="resource" guid="f66d6c9b-d425-11f0-b3aa-65c9c1969da9" />
@@ -371,26 +367,6 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="8bc770e9-cf8c-11f0-84cd-4bb399ea471f">
-      <resource guid="8bc722c6-cf8c-11f0-84cd-4bb399ea471f">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="8bc749d8-cf8c-11f0-84cd-4bb399ea471f" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="90a0be60-cf8c-11f0-84cd-4bb399ea471f" type="literal">L2 = Switching/Bridging</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="6a39936a-d422-11f0-b3aa-65c9c1969da9">
-      <resource guid="6a396c57-d422-11f0-b3aa-65c9c1969da9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6a396c58-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6a396c59-d422-11f0-b3aa-65c9c1969da9" type="literal">L3 = Routing</object>
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="67bad07f-cf8d-11f0-84cd-4bb399ea471f">
       <resource guid="67ba825c-cf8d-11f0-84cd-4bb399ea471f">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -411,16 +387,6 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="946dddbd-d422-11f0-b3aa-65c9c1969da9">
-      <resource guid="946db6aa-d422-11f0-b3aa-65c9c1969da9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="946db6ab-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="946db6ac-d422-11f0-b3aa-65c9c1969da9" type="literal">LOCAL = only local (single MCU)</object>
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="2d95ec19-cf92-11f0-84cd-4bb399ea471f">
       <resource guid="2d95c506-cf92-11f0-84cd-4bb399ea471f">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -428,16 +394,6 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="2e0e024f-cf92-11f0-84cd-4bb399ea471f" type="literal">SCALABLE = Map to underlay multicast</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="a4d90d53-d422-11f0-b3aa-65c9c1969da9">
-      <resource guid="a4d8e640-d422-11f0-b3aa-65c9c1969da9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a4d8e641-d422-11f0-b3aa-65c9c1969da9" type="resource" guid="f46c2d4f-ba0f-11ee-876d-0f01c87670c8" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a4d8e642-d422-11f0-b3aa-65c9c1969da9" type="literal">SECURE = Map to underlay unicast (ingress replication)</object>
         </predicate>
       </resource>
     </object>

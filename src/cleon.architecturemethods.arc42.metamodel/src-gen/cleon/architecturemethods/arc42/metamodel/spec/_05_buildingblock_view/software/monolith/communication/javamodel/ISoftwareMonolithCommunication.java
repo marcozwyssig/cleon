@@ -10,6 +10,8 @@ public interface ISoftwareMonolithCommunication extends cleon.modelinglanguages.
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumerations selectEnumerations();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IMessages selectMessages();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6e41a31-cf1a-11ee-8c06-a5102392725a,IXwXUGGaf+GXo3lWYqbHD28IkDI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6e41a31-cf1a-11ee-8c06-a5102392725a,Di8smgefx5ctY7sCJJs1mkZzPSU=] */

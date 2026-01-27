@@ -878,6 +878,31 @@ public class FunctionSpace_Data_View {
 
   }
 
+  public static interface IDatabaseViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2997863d-fac6-11f0-81b8-83fdbb37c0b0")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTable> Tables();
+
+  }
+  
+  public static interface IDatabaseViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DatabaseViewFunctionsImpl implements IDatabaseViewFunctionsImpl {
+
+    public static final IDatabaseViewFunctionsImpl INSTANCE = new DatabaseViewFunctionsImpl();
+
+    private DatabaseViewFunctionsImpl() {}
+
+  }
+  
+  public static class DatabaseViewFunctions {
+
+    private DatabaseViewFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,iEHDJvkrUhVR77eu5zEOHmO2JXc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,OAhtIu2l7pbcu4+1D0EBF2QDzkk=] */

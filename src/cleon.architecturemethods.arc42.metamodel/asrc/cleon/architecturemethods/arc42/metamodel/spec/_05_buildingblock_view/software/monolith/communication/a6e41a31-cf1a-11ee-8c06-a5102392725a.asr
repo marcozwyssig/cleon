@@ -3,6 +3,7 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="2c9673b4-cf1e-11ee-8c06-a5102392725a" type="resource" guid="2c962590-cf1e-11ee-8c06-a5102392725a" />
     <resource statement-guid="fe536ee6-fac4-11f0-81b8-83fdbb37c0b0" type="resource" guid="fe5347d3-fac4-11f0-81b8-83fdbb37c0b0" />
+    <resource statement-guid="acf1b856-fb85-11f0-919e-07363e802872" type="resource" guid="acf0a6e2-fb85-11f0-919e-07363e802872" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="a6e41a33-cf1a-11ee-8c06-a5102392725a" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -47,6 +48,25 @@
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="11a89eb5-fac5-11f0-81b8-83fdbb37c0b0" type="resource" guid="0befee3a-fac5-11f0-81b8-83fdbb37c0b0" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="acf1b856-fb85-11f0-919e-07363e802872">
+      <resource guid="acf0a6e2-fb85-11f0-919e-07363e802872">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="acf0cdf4-fb85-11f0-919e-07363e802872" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="acf11c15-fb85-11f0-919e-07363e802872" type="literal">validators</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="acf22d88-fb85-11f0-919e-07363e802872" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="acf27ba9-fb85-11f0-919e-07363e802872" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="acf317ea-fb85-11f0-919e-07363e802872" type="resource" guid="a60f06b0-fb85-11f0-919e-07363e802872" />
         </predicate>
       </resource>
     </object>

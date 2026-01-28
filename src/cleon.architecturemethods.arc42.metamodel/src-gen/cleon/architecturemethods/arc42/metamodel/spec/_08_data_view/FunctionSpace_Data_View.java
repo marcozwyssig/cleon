@@ -111,6 +111,12 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("b1b72e6c-6b90-11f0-8c6a-09245c78ab92")
     public java.lang.String Stereotype();
 
+    @IDynamicResourceExtension.MethodId("8a66c4f6-fb7d-11f0-919e-07363e802872")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IAbstractTableRelation> AllRelationsWithinTableArea();
+
+    @IDynamicResourceExtension.MethodId("f1a17806-fb7d-11f0-919e-07363e802872")
+    public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea TableArea();
+
   }
   
   public static interface IAbstractTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -905,4 +911,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,OAhtIu2l7pbcu4+1D0EBF2QDzkk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,6HJI82OIYUMBybiXxe2ivu7COeU=] */

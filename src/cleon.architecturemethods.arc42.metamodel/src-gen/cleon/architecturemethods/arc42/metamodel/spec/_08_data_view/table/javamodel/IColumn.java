@@ -12,6 +12,8 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
   public java.util.List<java.lang.String> selectAllowedValuesByType();
   
+  public java.lang.Boolean selectNotInDb();
+  
   // relations
   
   public ch.actifsource.solution.datatype.generic.datatype.javamodel.IType selectType();
@@ -26,4 +28,4 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,XNfqhxi1VEHcYzXQw6gbw8q/KxY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,xNlBxIzs+q7FxE3uQt3P7kxTR0I=] */

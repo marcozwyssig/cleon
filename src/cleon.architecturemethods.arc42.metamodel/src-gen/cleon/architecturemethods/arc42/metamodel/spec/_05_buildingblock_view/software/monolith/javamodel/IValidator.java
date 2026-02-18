@@ -10,7 +10,7 @@ public interface IValidator extends ch.actifsource.core.javamodel.INamedResource
   
   public java.lang.Integer selectMin();
   
-  public java.lang.Integer selectMax();
+  public java.lang.String selectMax();
   
   // relations
   
@@ -18,4 +18,4 @@ public interface IValidator extends ch.actifsource.core.javamodel.INamedResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a60f06b0-fb85-11f0-919e-07363e802872,KJhtFvCdlHEvnNpN/TWETPRZjgI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a60f06b0-fb85-11f0-919e-07363e802872,zltB0mndNaFkMT3Aih+C+4aOCzg=] */

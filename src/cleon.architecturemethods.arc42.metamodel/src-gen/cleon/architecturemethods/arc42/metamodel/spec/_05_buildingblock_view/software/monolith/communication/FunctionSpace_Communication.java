@@ -341,9 +341,14 @@ public class FunctionSpace_Communication {
     		return "int32";
     	}
     	
-    	if (standardType.selectName().equals("BIGINT")) {
+    	if (standardType.selectName().equals("LONG")) {
     		return "int64";
     	}
+    	
+    	if (standardType.selectName().equals("DOUBLE")) {
+    		return "double";
+    	}
+    	
     	
     	return null;
       /* End Protected Region   [[9763360d-fb8c-11f0-919e-07363e802872]] */
@@ -361,6 +366,31 @@ public class FunctionSpace_Communication {
 
   }
 
+  public static interface IUserTypeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b831149e-004a-11f1-b761-63ce2ddef168")
+    public java.lang.String gRPC_Type_Name();
+
+  }
+  
+  public static interface IUserTypeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class UserTypeFunctionsImpl implements IUserTypeFunctionsImpl {
+
+    public static final IUserTypeFunctionsImpl INSTANCE = new UserTypeFunctionsImpl();
+
+    private UserTypeFunctionsImpl() {}
+
+  }
+  
+  public static class UserTypeFunctions {
+
+    private UserTypeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b938d789-cf1f-11ee-8c06-a5102392725a,KvvFH1YCdYQEyFk00AXKgQYQR10=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b938d789-cf1f-11ee-8c06-a5102392725a,RG3oT8rtP0w7NqD5zPacHhNW3jA=] */

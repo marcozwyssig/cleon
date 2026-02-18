@@ -448,10 +448,16 @@ public class FunctionSpace_Data_View {
     @IDynamicResourceExtension.MethodId("b59ccd48-e11c-11ee-995f-5faf5f77d478")
     public java.lang.String FullName();
 
+    @IDynamicResourceExtension.MethodId("6446fd91-0119-11f1-b7e0-c744d2d92640")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> OnlyInDb();
+
   }
   
   public static interface IColumnFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("6446fd91-0119-11f1-b7e0-c744d2d92640")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> OnlyInDb(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> columnList);
+
   }
   
   public static class ColumnFunctionsImpl implements IColumnFunctionsImpl {
@@ -460,11 +466,22 @@ public class FunctionSpace_Data_View {
 
     private ColumnFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> OnlyInDb(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> columnList) {
+      /* Begin Protected Region [[6446fd91-0119-11f1-b7e0-c744d2d92640]] */
+    	return columnList.stream().filter( x -> x.selectNotInDb() == null || x.selectNotInDb().booleanValue() == false).toList();   
+      /* End Protected Region   [[6446fd91-0119-11f1-b7e0-c744d2d92640]] */
+    }
+
   }
   
   public static class ColumnFunctions {
 
     private ColumnFunctions() {}
+
+    public static List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> OnlyInDb(final List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumn> columnList) {
+      return DynamicResourceUtil.invoke(IColumnFunctionsImpl.class, ColumnFunctionsImpl.INSTANCE, columnList).OnlyInDb(columnList);
+    }
 
   }
 
@@ -911,4 +928,4 @@ public class FunctionSpace_Data_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,6HJI82OIYUMBybiXxe2ivu7COeU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f837c1a7-b936-11ee-a0d0-e953bcbfaeef,+mADU6kfazvHQ3J9kPHCtKnSsho=] */

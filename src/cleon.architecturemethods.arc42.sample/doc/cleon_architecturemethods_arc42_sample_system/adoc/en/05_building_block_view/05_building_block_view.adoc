@@ -6,7 +6,10 @@
 
 [#38c4bd18-beda-11ef-b498-058ee446f8e7]
 == Building Block View
-The building block view shows the system from a black box perspective. It shows the system as a set of components (building blocks) and their interfaces. The building blocks are the elements that are used to implement the system. The building block view is the basis for the runtime and deployment views.
+The building block view shows the system from a black box perspective.
+It shows the system as a set of components (building blocks) and their interfaces.
+The building blocks are the elements that are used to implement the system.
+The building block view is the basis for the runtime and deployment views.
 
 
 The following diagrams shows an overview of the main building blocks:
@@ -128,41 +131,41 @@ title: IKT {
 
 <<<
 include::ikt/level_1_ikt.adoc[]
- 
+
 <<<
 include::ikt/application/level_2_application.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/level_2_infrastruture.adoc[]
- 
+
 <<<
 include::ikt/platform/level_2_platform.adoc[]
- 
+
 <<<
 include::ikt/application/directory_service/level_3_directory service.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/operating_system/level_3_operating system.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/servers/level_3_servers.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/virtualization/level_3_virtualization.adoc[]
- 
+
 <<<
 include::ikt/application/directory_service/dc/level_4_dc.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/servers/hpe/level_4_hpe.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/virtualization/vm/level_4_vm.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/virtualization/vmh/level_4_vmh.adoc[]
- 
+
 <<<
 include::ikt/infrastruture/operating_system/win2022/level_4_win2022.adoc[]
- 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,1BeA2PhDpWRiROEdG7bCopP4DdE=]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,38c4bd18-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,38c4bd18-beda-11ef-b498-058ee446f8e7,tZ16pLytLXd4S4DMMs9Rr2KxI8g=]

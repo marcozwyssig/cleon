@@ -67,6 +67,15 @@ public class Column extends DynamicResource implements IColumn {
   }
 
   @Override
+  public java.lang.Boolean selectNotInDb() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_notInDb);
+  }
+    
+  public void setNotInDb(java.lang.Boolean notInDb) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_notInDb, notInDb);
+  }
+
+  @Override
   public java.lang.Boolean selectNullable() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_nullable);
   }
@@ -155,6 +164,7 @@ public class Column extends DynamicResource implements IColumn {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_dbType, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_notInDb, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_nullable, visitor);
     // relations
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.IColumnValue.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.TablePackage.Column_allowedValues, visitor);
@@ -189,4 +199,4 @@ public class Column extends DynamicResource implements IColumn {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,EOnV3UMltlsDtOCL0Je5B/MUq5g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a757c855-b934-11ee-a0d0-e953bcbfaeef,rxI6RzpLjHHCw4E1/gXHXaww0zI=] */

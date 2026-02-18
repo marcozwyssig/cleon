@@ -48,6 +48,7 @@ public class CommunicationPackage {
   public static final Resource EnumerationConfig = new Resource("27d841df-fb98-11f0-919e-07363e802872");
   public static final Resource EnumerationConfig_enumType = new Resource("6fbccbd7-fb98-11f0-919e-07363e802872");
   public static final Resource EnumerationConfig_enumIndex = new Resource("8d514686-fb98-11f0-919e-07363e802872");
+  public static final Resource FunctionSpace_aE_Communication_UserType = new Resource("b8311495-004a-11f1-b761-63ce2ddef168");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +69,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication,RB1EJE44vDik9Gsbrx4ecj8+SBI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication,SF9SZ9Q2Gd4C4g8viGyKHBW7g5A=] */

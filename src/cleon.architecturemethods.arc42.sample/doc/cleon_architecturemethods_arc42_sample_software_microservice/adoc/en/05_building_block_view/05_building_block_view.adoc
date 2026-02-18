@@ -6,7 +6,10 @@
 
 [#ee5a2fd0-cb08-11f0-ad08-33c52acb975f]
 == Building Block View
-The building block view shows the system from a black box perspective. It shows the system as a set of components (building blocks) and their interfaces. The building blocks are the elements that are used to implement the system. The building block view is the basis for the runtime and deployment views.
+The building block view shows the system from a black box perspective.
+It shows the system as a set of components (building blocks) and their interfaces.
+The building blocks are the elements that are used to implement the system.
+The building block view is the basis for the runtime and deployment views.
 
 
 The following diagrams shows an overview of the main building blocks:
@@ -138,44 +141,44 @@ F194C1A0_CB08_11F0_AD08_33C52ACB975F: {
 
 <<<
 include::microservicesample/level_1_microservicesample.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/level_2_servicelayer.adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/level_2_sharedlayer.adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/api_1/level_3_api [1].adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/application_1/level_3_application [1].adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/contracts_1/level_3_contracts [1].adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/domain_1/level_3_domain [1].adoc[]
- 
+
 <<<
 include::microservicesample/sharedlayer/infrastructure_1/level_3_infrastructure [1].adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/level_3_test sample 1service.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/api/level_4_api.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/application/level_4_application.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/contracts/level_4_contracts.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/domain/level_4_domain.adoc[]
- 
+
 <<<
 include::microservicesample/servicelayer/test_sample_1service/infrastructure/level_4_infrastructure.adoc[]
- 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,ddvFTH9lZG9CdYfIg97E9uGz7sU=]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,ee5a2fd0-cb08-11f0-ad08-33c52acb975f,m3YMe9y6FgYTaQbuZUbJtAN8mWI=]

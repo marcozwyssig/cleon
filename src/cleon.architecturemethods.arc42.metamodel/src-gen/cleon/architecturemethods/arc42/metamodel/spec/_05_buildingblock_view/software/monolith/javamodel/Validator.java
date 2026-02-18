@@ -40,11 +40,11 @@ public class Validator extends DynamicResource implements IValidator {
   }
 
   @Override
-  public java.lang.Integer selectMax() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_max);
+  public java.lang.String selectMax() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_max);
   }
     
-  public void setMax(java.lang.Integer max) {
+  public void setMax(java.lang.String max) {
      _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_max, max);
   }
 
@@ -93,7 +93,7 @@ public class Validator extends DynamicResource implements IValidator {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_command, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_max, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_max, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.MonolithPackage.Validator_min, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -108,4 +108,4 @@ public class Validator extends DynamicResource implements IValidator {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a60f06b0-fb85-11f0-919e-07363e802872,1kGpxnWGUmHWxklra2cbf4YcOYw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a60f06b0-fb85-11f0-919e-07363e802872,Q7tEhLbpso6X/8j8lFoi52rGddg=] */

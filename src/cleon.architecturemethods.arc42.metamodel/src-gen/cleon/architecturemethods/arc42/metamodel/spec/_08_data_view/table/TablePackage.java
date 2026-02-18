@@ -109,6 +109,7 @@ public class TablePackage {
   public static final Resource Column_allowedValuesByType = new Resource("645b2771-f605-11f0-b5cb-2bfccb38336b");
   public static final Resource FunctionSpace_aE_Table_Column = new Resource("bd6896c1-f606-11f0-b5cb-2bfccb38336b");
   public static final Resource Column_dbType = new Resource("e893b5b1-f60c-11f0-b5cb-2bfccb38336b");
+  public static final Resource Column_notInDb = new Resource("b03a7d21-0115-11f1-b7e0-c744d2d92640");
   
   /* Begin Protected Region [[user]] */
   
@@ -129,4 +130,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,Na90iiVAR6zHe+4X4s6p3lJe6L0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table,s4TKcVOFs4Qywb67dQ9jQslsrDY=] */

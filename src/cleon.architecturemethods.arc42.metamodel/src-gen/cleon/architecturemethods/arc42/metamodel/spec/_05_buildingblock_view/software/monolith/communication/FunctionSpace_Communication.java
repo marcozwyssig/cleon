@@ -154,6 +154,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("62f8ca3e-fb81-11f0-919e-07363e802872")
     public java.lang.String CardinalityType();
 
+    @IDynamicResourceExtension.MethodId("825f5f35-171b-11f1-9431-b340c08c03b1")
+    public java.lang.String Plural();
+
   }
   
   public static interface IAbstractTableRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -179,12 +182,18 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("7f42c2d8-fb81-11f0-919e-07363e802872")
     public java.lang.String CardinalityType();
 
+    @IDynamicResourceExtension.MethodId("8b88cc0a-171b-11f1-9431-b340c08c03b1")
+    public java.lang.String Plural();
+
   }
   
   public static interface ITableRelationOneToOneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7f42c2d8-fb81-11f0-919e-07363e802872")
     public java.lang.String CardinalityType(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableRelationOneToOne tableRelationOneToOne);
+
+    @IDynamicResourceExtension.MethodId("8b88cc0a-171b-11f1-9431-b340c08c03b1")
+    public java.lang.String Plural(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableRelationOneToOne tableRelationOneToOne);
 
   }
   
@@ -199,6 +208,11 @@ public class FunctionSpace_Communication {
       return null;
     }
 
+    @Override
+    public java.lang.String Plural(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableRelationOneToOne tableRelationOneToOne) {
+      return null;
+    }
+
   }
   
   public static class TableRelationOneToOneFunctions {
@@ -209,12 +223,19 @@ public class FunctionSpace_Communication {
       return DynamicResourceUtil.invoke(ITableRelationOneToOneFunctionsImpl.class, TableRelationOneToOneFunctionsImpl.INSTANCE, tableRelationOneToOne).CardinalityType(tableRelationOneToOne);
     }
 
+    public static java.lang.String Plural(final cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableRelationOneToOne tableRelationOneToOne) {
+      return DynamicResourceUtil.invoke(ITableRelationOneToOneFunctionsImpl.class, TableRelationOneToOneFunctionsImpl.INSTANCE, tableRelationOneToOne).Plural(tableRelationOneToOne);
+    }
+
   }
 
   public static interface ITableRelationManyToOneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("899e96d3-fb81-11f0-919e-07363e802872")
     public java.lang.String CardinalityType();
+
+    @IDynamicResourceExtension.MethodId("970b937a-171b-11f1-9431-b340c08c03b1")
+    public java.lang.String Plural();
 
   }
   
@@ -393,4 +414,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b938d789-cf1f-11ee-8c06-a5102392725a,RG3oT8rtP0w7NqD5zPacHhNW3jA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b938d789-cf1f-11ee-8c06-a5102392725a,TW68uvnCImsp++Bliur9UY7C2k4=] */

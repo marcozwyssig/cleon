@@ -14,6 +14,7 @@ public class Solution_conceptPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_Requirement = new Resource("694a4d90-0efc-11f0-b76f-5998f6696fc7");
   public static final Resource FunctionSpace_aE_Asciidoc_EvaluationRequirements = new Resource("7e1dd804-51b9-11f0-a768-21f9f0df3439");
   public static final Resource FunctionSpace_aE_Asciidoc_Appendix = new Resource("107a73ff-51bb-11f0-a768-21f9f0df3439");
+  public static final Resource FunctionSpace_aE_Asciidoc_SolutionLevel = new Resource("a45e56fc-17c8-11f1-8320-993712c2541b");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +35,4 @@ public class Solution_conceptPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept,Vpc+mh3lZcHne4RmmtfwkaeQUcY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.template.asciidoc.solution_concept,8ZklohKCDumDTiIXDGIN7PkdWI8=] */

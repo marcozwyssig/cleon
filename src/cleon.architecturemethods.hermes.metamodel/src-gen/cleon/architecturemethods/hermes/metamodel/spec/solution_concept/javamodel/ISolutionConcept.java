@@ -10,11 +10,7 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground selectBackground();
   
-  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements selectRequirements();
-  
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants> selectSolution();
-  
-  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation selectEvaluation();
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel> selectSolutionLevels();
   
   public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion selectConclusion();
   
@@ -22,4 +18,4 @@ public interface ISolutionConcept extends cleon.common.doc.metamodel.spec.docume
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,c2kDm6SCOQG+EHsFkPlR0E4Dp5w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,Yy+wSQhx982o8v3D5JkjmB9T8Ok=] */

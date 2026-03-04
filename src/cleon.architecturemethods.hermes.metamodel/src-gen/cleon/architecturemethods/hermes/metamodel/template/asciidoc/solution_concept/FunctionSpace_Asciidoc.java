@@ -274,6 +274,34 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface ISolutionLevelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("aa1cfbad-17c8-11f1-8320-993712c2541b")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+    @IDynamicResourceExtension.MethodId("fd2dae99-17cd-11f1-8320-993712c2541b")
+    public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+  }
+  
+  public static interface ISolutionLevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SolutionLevelFunctionsImpl implements ISolutionLevelFunctionsImpl {
+
+    public static final ISolutionLevelFunctionsImpl INSTANCE = new SolutionLevelFunctionsImpl();
+
+    private SolutionLevelFunctionsImpl() {}
+
+  }
+  
+  public static class SolutionLevelFunctions {
+
+    private SolutionLevelFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,K4M+T/iyOc9yH5Pz/4ZDhRe42uA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,ZER6F8u58858qh24o+3OaiNa6Y0=] */

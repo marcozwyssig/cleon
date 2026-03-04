@@ -147,16 +147,6 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
     
   @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation selectEvaluation() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation);
-  }
-
-  public SolutionConcept setEvaluation(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation evaluation) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation, evaluation);
-    return this;
-  }
-    
-  @Override
   public cleon.common.glossary.metamodel.spec.javamodel.IGlossary selectGlossary() {
     return _getSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary);
   }
@@ -197,22 +187,12 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
     
   @Override
-  public cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements selectRequirements() {
-    return _getSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_requirements);
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel> selectSolutionLevels() {
+    return _getList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solutionLevels);
   }
 
-  public SolutionConcept setRequirements(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements requirements) {
-    _setSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_requirements, requirements);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants> selectSolution() {
-    return _getList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solution);
-  }
-
-  public SolutionConcept setSolution(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants> solution) {
-    _setList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solution, solution);
+  public SolutionConcept setSolutionLevels(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel> solutionLevels) {
+    _setList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solutionLevels, solutionLevels);
     return this;
   }
     
@@ -251,13 +231,11 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
     _acceptSingle(cleon.common.doc.metamodel.spec.chapter.appendix.javamodel.IAppendix.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_appendix, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.background.javamodel.IBackground.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_background, visitor);
     _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_conclusion, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation, visitor);
     _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.language.metamodel.spec.language_settings.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractLanguageSettingsAware_languageSettings, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_requirements, visitor);
-    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solution, visitor);
+    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solutionLevels, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -268,16 +246,8 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_background, object.getResource());
   }
   
-  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeRequirements(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirements object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_requirements, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeSolution(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.solutionvariants.javamodel.IAbstractSolutionVariants object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solution, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeEvaluation(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.evaluation.javamodel.IEvaluation object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_evaluation, object.getResource());
+  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeSolutionLevels(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionLevel object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.Solution_conceptPackage.SolutionConcept_solutionLevels, object.getResource());
   }
   
   public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.javamodel.ISolutionConcept selectToMeConclusion(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.conclusion.javamodel.IConclusion object) {
@@ -289,4 +259,4 @@ public class SolutionConcept extends DynamicResource implements ISolutionConcept
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,0JpErXG+uMZj/4cGBVjsSWUmtIM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9cff9835-d32d-11ef-802e-175af1a41dfa,jf3XOgcV/4bOAjK4i7tZPCQ3G4U=] */

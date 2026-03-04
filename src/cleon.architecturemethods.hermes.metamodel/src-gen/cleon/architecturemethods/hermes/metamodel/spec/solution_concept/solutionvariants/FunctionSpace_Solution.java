@@ -18,31 +18,31 @@ public class FunctionSpace_Solution {
   /* End Protected Region   [[b7500adc-d35d-11ef-a461-2ff990df4683]] */
 
 
-  public static interface IAbstractSolutionVariantsFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSolutionOptionsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c472ed5c-d35d-11ef-a461-2ff990df4683")
     public java.lang.String ChapterPath(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
   }
   
-  public static interface IAbstractSolutionVariantsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSolutionOptionsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractSolutionVariantsFunctionsImpl implements IAbstractSolutionVariantsFunctionsImpl {
+  public static class AbstractSolutionOptionsFunctionsImpl implements IAbstractSolutionOptionsFunctionsImpl {
 
-    public static final IAbstractSolutionVariantsFunctionsImpl INSTANCE = new AbstractSolutionVariantsFunctionsImpl();
+    public static final IAbstractSolutionOptionsFunctionsImpl INSTANCE = new AbstractSolutionOptionsFunctionsImpl();
 
-    private AbstractSolutionVariantsFunctionsImpl() {}
+    private AbstractSolutionOptionsFunctionsImpl() {}
 
   }
   
-  public static class AbstractSolutionVariantsFunctions {
+  public static class AbstractSolutionOptionsFunctions {
 
-    private AbstractSolutionVariantsFunctions() {}
+    private AbstractSolutionOptionsFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b7500adc-d35d-11ef-a461-2ff990df4683,/wskoZD63V76sftHcVGekfSJRZ8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b7500adc-d35d-11ef-a461-2ff990df4683,8yg7piIy2uTPZdsi+JefruFsPxY=] */

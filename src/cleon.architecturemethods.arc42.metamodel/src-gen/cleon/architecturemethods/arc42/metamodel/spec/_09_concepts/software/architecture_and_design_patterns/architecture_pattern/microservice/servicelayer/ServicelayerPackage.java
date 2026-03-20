@@ -8,9 +8,11 @@ public class ServicelayerPackage {
   public static final Resource ServiceComponent = new Resource("cb109bbd-e28b-11f0-a927-5b9cb523e701");
   public static final Resource ServicesLayer_services = new Resource("dd5baea4-e28b-11f0-a927-5b9cb523e701");
   public static final Resource DomainComponent = new Resource("48bb7a22-e28c-11f0-a927-5b9cb523e701");
-  public static final Resource ServiceComponent_boundedContext = new Resource("53fe3f55-e28e-11f0-a927-5b9cb523e701");
+  public static final Resource DomainServiceComponent_boundedContext = new Resource("53fe3f55-e28e-11f0-a927-5b9cb523e701");
   public static final Resource ServicesLayer_domainConcept = new Resource("c10ac549-e59d-11f0-a60c-db015d172622");
   public static final Resource ServiceComponent_components = new Resource("689cd160-eb1a-11f0-94f3-55208a19cd68");
+  public static final Resource FunctionSpace_aE_Service_aE_Layer_ServiceComponent = new Resource("d42ff27b-247d-11f1-8a5a-5da401746046");
+  public static final Resource DomainServiceComponent = new Resource("a916aa13-247e-11f1-8a5a-5da401746046");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +33,4 @@ public class ServicelayerPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.microservice.servicelayer,y3QDiiJXm2ZT190rhYCOVhSdMuY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern.microservice.servicelayer,rAsdev5TgJIk3Hagju3S/f3H2sc=] */

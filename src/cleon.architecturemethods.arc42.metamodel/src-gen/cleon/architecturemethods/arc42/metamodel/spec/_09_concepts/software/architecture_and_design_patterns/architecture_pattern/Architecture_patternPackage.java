@@ -13,6 +13,7 @@ public class Architecture_patternPackage {
   public static final Resource ComponentByTemplate_components = new Resource("26c798ce-e598-11f0-a60c-db015d172622");
   public static final Resource ComponentByTemplate_componentTemplate = new Resource("47ccf804-e598-11f0-a60c-db015d172622");
   public static final Resource ComponentTemplate_componentType = new Resource("2435116f-e599-11f0-a60c-db015d172622");
+  public static final Resource FunctionSpace_aE_Architecture_aE_Patterns_ComponentByTemplate = new Resource("606e4ced-2479-11f1-8a5a-5da401746046");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class Architecture_patternPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern,9oq5KP0oGJDy43IOzdwlBa6wBj0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns.architecture_pattern,HuuwxRPfzCSjYArgBkc8gv4t4rw=] */

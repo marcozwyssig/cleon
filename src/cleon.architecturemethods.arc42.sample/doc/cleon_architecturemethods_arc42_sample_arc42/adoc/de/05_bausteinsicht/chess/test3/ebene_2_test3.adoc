@@ -8,19 +8,19 @@
 === Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)
 Motivation::
 purpose...
-
 Fullname::
 chess.test3
 
 Parent::
 <<#ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1>>
 
-
 ==== Baustein-Übersicht
 
-[plantuml, Level_2: Test3 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
+Der Baustein Test3 ist in folgende Bausteine zerlegt:
+
+[plantuml, Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_2: Test3 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -34,22 +34,20 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
-    component "Level_2: Test3 <SampleBuildingBlock> (Whitebox)" #lightblue {
-        [**Level_3: Test3_1 <SampleBuildingBlock> (Whitebox)**] as 489CD281_D579_11EE_903E_9F564E4DE07E
+component "Ebene_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
+    component "Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)" #lightblue {
+        [**Ebene_3: Test3_1 <SampleBuildingBlock> (Whitebox)**] as 489CD281_D579_11EE_903E_9F564E4DE07E
     }
-
-    
 }
 
 @enduml
 ----
 
-. <<489cd281-d579-11ee-903e-9f564e4de07e,Test3_1>>
+. Test3_1 (<<#489cd281-d579-11ee-903e-9f564e4de07e>>)
 
 
 // Begin Protected Region [[48213903-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[48213903-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,onH2YPBNPDN4m2/1iiQAOtSeI9U=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,aBkkCKPlw8fW+r4zqB/j6LuPMCw=]

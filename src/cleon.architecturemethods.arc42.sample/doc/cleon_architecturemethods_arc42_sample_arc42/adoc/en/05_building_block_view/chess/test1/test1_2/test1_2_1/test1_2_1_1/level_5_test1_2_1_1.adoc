@@ -7,6 +7,7 @@
 [#7f52b647-d579-11ee-903e-9f564e4de07e]
 === Level_5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)
 Motivation::
+
 Fullname::
 chess.test1.test1_2.test1_2_1.test1_2_1_1
 
@@ -14,9 +15,37 @@ Parent::
 <<#4965ee24-d579-11ee-903e-9f564e4de07e>>
 
 
+==== Building Block Overview
+
+[plantuml, Level_5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_4: Test1_2_1 <SampleBuildingBlock> (Whitebox) (Parent)" {
+    component "Level_5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[7f52b647-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[7f52b647-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f52b647-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f52b647-d579-11ee-903e-9f564e4de07e,9ZlY15BQ8t4kixVYqMEXw0lGC2E=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f52b647-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f52b647-d579-11ee-903e-9f564e4de07e,v+ZVkPFOF2XNyGreqKbWx67lf2w=]

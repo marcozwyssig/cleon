@@ -8,15 +8,15 @@
 === Level_2: Test2 <SampleBuildingBlock> (Whitebox)
 Motivation::
 purpose...
+
 Fullname::
 chess.test2
 
 Parent::
 <<#ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1>>
 
-==== Building Block Overview
 
-The Test2 is decomposed into the following components:
+==== Building Block Overview
 
 [plantuml, Level_2: Test2 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -38,16 +38,18 @@ component "Level_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
     component "Level_2: Test2 <SampleBuildingBlock> (Whitebox)" #lightblue {
         [**Level_3: Test2_2 <SampleBuildingBlock> (Whitebox)**] as 489CD283_D579_11EE_903E_9F564E4DE07E
     }
+
+    
 }
 
 @enduml
 ----
 
-. Test2_2 (<<#489cd283-d579-11ee-903e-9f564e4de07e>>)
+. <<489cd283-d579-11ee-903e-9f564e4de07e,Test2_2>>
 
 
 // Begin Protected Region [[48213902-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[48213902-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213902-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,48213902-d579-11ee-903e-9f564e4de07e,YyM2LXOjdQuM66VBY1lC2aLFGGA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213902-d579-11ee-903e-9f564e4de07e,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,48213902-d579-11ee-903e-9f564e4de07e,BEvRoSB+gz5BHirvtzlhAFJx0G8=]

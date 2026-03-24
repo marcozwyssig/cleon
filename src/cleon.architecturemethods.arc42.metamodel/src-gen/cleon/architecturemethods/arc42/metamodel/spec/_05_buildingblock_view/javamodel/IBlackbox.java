@@ -6,7 +6,9 @@ public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cle
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d58842b6-2858-11e8-9af4-b7d7a3bbddc1");
   
-  // relations
+  // attributes
+  
+  public java.lang.String selectResponsibility();
   
   public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBlackBoxbuildingBlock();
   
@@ -18,4 +20,4 @@ public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,+C3t4Fk0ZCcRby2LQ/e6tQO1jpw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,HG3E7xImH6M2KxEg+SM+NG11pwU=] */

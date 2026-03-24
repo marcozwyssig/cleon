@@ -7,15 +7,15 @@
 [#4c52eeb7-ebca-11f0-94f3-55208a19cd68]
 === Level_2: SharedLayer <ComponentByTemplate> (Whitebox)
 Motivation::
+
 Fullname::
 microservicesample.sharedlayer
 
 Parent::
 <<#f194c1a0-cb08-11f0-ad08-33c52acb975f>>
 
-==== Building Block Overview
 
-The SharedLayer is decomposed into the following components:
+==== Building Block Overview
 
 [plantuml, Level_2: SharedLayer <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -41,20 +41,26 @@ component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitectur
         [**Level_3: Domain [1] <ComponentByTemplate> (Whitebox)**] as 4C90E270_EBCA_11F0_94F3_55208A19CD68
         [**Level_3: Infrastructure [1] <ComponentByTemplate> (Whitebox)**] as 4C90E26E_EBCA_11F0_94F3_55208A19CD68
     }
+
+    4C90E271_EBCA_11F0_94F3_55208A19CD68 -down-> 4C90E272_EBCA_11F0_94F3_55208A19CD68
+    4C90E272_EBCA_11F0_94F3_55208A19CD68 -down-> 4C90E26F_EBCA_11F0_94F3_55208A19CD68
+    4C90E26F_EBCA_11F0_94F3_55208A19CD68 -down-> 4C90E270_EBCA_11F0_94F3_55208A19CD68
+    4C90E270_EBCA_11F0_94F3_55208A19CD68 -down-> 4C90E26E_EBCA_11F0_94F3_55208A19CD68
+    
 }
 
 @enduml
 ----
 
-. API [1] (<<#4c90e271-ebca-11f0-94f3-55208a19cd68>>)
-. Application [1] (<<#4c90e272-ebca-11f0-94f3-55208a19cd68>>)
-. Contracts [1] (<<#4c90e26f-ebca-11f0-94f3-55208a19cd68>>)
-. Domain [1] (<<#4c90e270-ebca-11f0-94f3-55208a19cd68>>)
-. Infrastructure [1] (<<#4c90e26e-ebca-11f0-94f3-55208a19cd68>>)
+. <<4c90e271-ebca-11f0-94f3-55208a19cd68,API [1]>>
+. <<4c90e272-ebca-11f0-94f3-55208a19cd68,Application [1]>>
+. <<4c90e26f-ebca-11f0-94f3-55208a19cd68,Contracts [1]>>
+. <<4c90e270-ebca-11f0-94f3-55208a19cd68,Domain [1]>>
+. <<4c90e26e-ebca-11f0-94f3-55208a19cd68,Infrastructure [1]>>
 
 
 // Begin Protected Region [[4c52eeb7-ebca-11f0-94f3-55208a19cd68,customText]]
 
 // End Protected Region   [[4c52eeb7-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c52eeb7-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c52eeb7-ebca-11f0-94f3-55208a19cd68,NpWvUedr9OP7VsVOvKe3lBjPiSg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c52eeb7-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c52eeb7-ebca-11f0-94f3-55208a19cd68,6IrS2QiVqpFxmdC6m9eX6JDaEQY=]

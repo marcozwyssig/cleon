@@ -11,6 +11,7 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]  
 
+
 Fullname::
 cleon.project methods.hermes <feature>.metamodel <metamodel>
 
@@ -18,9 +19,37 @@ Parent::
 <<#4905a652-d579-11ee-903e-9f564e4de07e>>
 
 
+==== Baustein-Übersicht
+
+[plantuml, Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_3: hermes <Feature> <Feature> (Whitebox) (Parent)" {
+    component "Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[4a570569-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4a570569-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4a570569-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4a570569-d579-11ee-903e-9f564e4de07e,T7jGFFDSDTZxjErxbX3G7+24RfM=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4a570569-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4a570569-d579-11ee-903e-9f564e4de07e,95CAH7+Q1I6D+1kQxRCID0Nwi3I=]

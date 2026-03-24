@@ -7,15 +7,15 @@
 [#4905a652-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: hermes <Feature> <Feature> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.project methods.hermes <feature>
 
 Parent::
 <<#4843dca7-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein hermes <Feature> ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: hermes <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -39,18 +39,22 @@ component "Level_2: Project Methods <Category> (Whitebox) (Parent)" {
         [**Level_4: Sample <Sample> <Sample> (Whitebox)**] as 4A56DE3D_D579_11EE_903E_9F564E4DE07E
         [**Level_4: hermes5 <NamedModel> (Whitebox)**] as 4A56DE54_D579_11EE_903E_9F564E4DE07E
     }
+
+    4A570569_D579_11EE_903E_9F564E4DE07E -down-> 4A56DE3D_D579_11EE_903E_9F564E4DE07E
+    4A56DE3D_D579_11EE_903E_9F564E4DE07E -down-> 4A56DE54_D579_11EE_903E_9F564E4DE07E
+    
 }
 
 @enduml
 ----
 
-. MetaModel <MetaModel> (<<#4a570569-d579-11ee-903e-9f564e4de07e>>)
-. Sample <Sample> (<<#4a56de3d-d579-11ee-903e-9f564e4de07e>>)
-. hermes5 (<<#4a56de54-d579-11ee-903e-9f564e4de07e>>)
+. <<4a570569-d579-11ee-903e-9f564e4de07e,MetaModel <MetaModel>>>
+. <<4a56de3d-d579-11ee-903e-9f564e4de07e,Sample <Sample>>>
+. <<4a56de54-d579-11ee-903e-9f564e4de07e,hermes5>>
 
 
 // Begin Protected Region [[4905a652-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4905a652-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a652-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a652-d579-11ee-903e-9f564e4de07e,fE+U7TDCtDh+xqFSRrZ7BviFcVs=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a652-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a652-d579-11ee-903e-9f564e4de07e,0yBs8P0fbbpOv7ZI5RS3vbS0+48=]

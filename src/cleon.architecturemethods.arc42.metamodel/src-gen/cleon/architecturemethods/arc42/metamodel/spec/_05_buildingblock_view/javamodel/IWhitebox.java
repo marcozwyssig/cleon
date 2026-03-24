@@ -8,7 +8,7 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
   // relations
   
-  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhitebox();
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhiteboxBuildingBlock();
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
   
@@ -16,4 +16,4 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bbfe5fd-e085-11ee-a506-c5335c4d5040,p+nycl95k7XCJJfHAwk4BwgoeSs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7bbfe5fd-e085-11ee-a506-c5335c4d5040,sqKHGV1usCtzTybBuZ5cMRBp0eI=] */

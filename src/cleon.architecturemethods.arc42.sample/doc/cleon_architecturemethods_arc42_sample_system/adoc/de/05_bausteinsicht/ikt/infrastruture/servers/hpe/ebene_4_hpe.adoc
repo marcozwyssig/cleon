@@ -7,6 +7,7 @@
 [#b582462c-bee0-11ef-b498-058ee446f8e7]
 === Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)
 Motivation::
+
 Fullname::
 ikt.infrastruture.servers.hpe
 
@@ -14,9 +15,37 @@ Parent::
 <<#42db7e7f-bedf-11ef-b498-058ee446f8e7>>
 
 
+==== Baustein-Übersicht
+
+[plantuml, Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_3: Servers <SystemComponent> (Whitebox) (Parent)" {
+    component "Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[b582462c-bee0-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[b582462c-bee0-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b582462c-bee0-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,b582462c-bee0-11ef-b498-058ee446f8e7,3xMlGbEkb4j0w6R7q5Q5iRHDAe8=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b582462c-bee0-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,b582462c-bee0-11ef-b498-058ee446f8e7,3h6b3kw6EzLz5lLg6dtBNVFuvjE=]

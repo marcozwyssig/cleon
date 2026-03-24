@@ -11,15 +11,15 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]  
 
+
 Fullname::
 ikt.application.directory service
 
 Parent::
 <<#7f8cda2c-beda-11ef-b498-058ee446f8e7>>
 
-==== Baustein-Übersicht
 
-Der Baustein Directory Service ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: Directory Service <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -41,12 +41,14 @@ component "Level_2: Application <SystemLayer> (Whitebox) (Parent)" {
     component "Level_3: Directory Service <SystemComponent> (Whitebox)" #lightblue {
         [**Level_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)**] as 8C664CF7_219A_11F0_83AE_DF5418A109A4
     }
+
+    
 }
 
 @enduml
 ----
 
-. DC (<<#8c664cf7-219a-11f0-83ae-df5418a109a4>>)
+. <<8c664cf7-219a-11f0-83ae-df5418a109a4,DC>>
 
 
 // Begin Protected Region [[88301d91-219a-11f0-83ae-df5418a109a4,customText]]
@@ -98,4 +100,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[8c502cda-219a-11f0-83ae-df5418a109a4,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,88301d91-219a-11f0-83ae-df5418a109a4,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,88301d91-219a-11f0-83ae-df5418a109a4,ib5Dq4cIoyrr6gibA0kY34qNu28=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,88301d91-219a-11f0-83ae-df5418a109a4,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,88301d91-219a-11f0-83ae-df5418a109a4,8m1rl742pTvCgq/ONSJfwOYtGFY=]

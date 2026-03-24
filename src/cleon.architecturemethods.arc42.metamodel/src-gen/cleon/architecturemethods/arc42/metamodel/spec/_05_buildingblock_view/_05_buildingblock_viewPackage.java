@@ -9,7 +9,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_rootSystem = new Resource("57fece11-498a-11e6-8d4d-09f3feb92353");
   public static final Resource BuildingBlockView_level_aE_1_aE_whitebox = new Resource("bb714aca-2857-11e8-9af4-b7d7a3bbddc1");
   public static final Resource Blackbox = new Resource("d58842b6-2858-11e8-9af4-b7d7a3bbddc1");
-  public static final Resource Whitebox_whitebox = new Resource("e0fb2a82-2858-11e8-9af4-b7d7a3bbddc1");
+  public static final Resource Whitebox_whiteboxBuildingBlock = new Resource("e0fb2a82-2858-11e8-9af4-b7d7a3bbddc1");
   public static final Resource Whitebox_blackboxes = new Resource("f254ffee-2858-11e8-9af4-b7d7a3bbddc1");
   public static final Resource Blackbox_blackBoxbuildingBlock = new Resource("9cfdf773-2859-11e8-9af4-b7d7a3bbddc1");
   public static final Resource FunctionSpace_aE_arc42_aE_Buildingblock_aE_View_BuildingBlock = new Resource("5c98f5cc-2b56-11e8-859c-c3075307fbcf");
@@ -35,6 +35,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_level_aE_9_aE_whitebox = new Resource("f6368929-bfcf-11f0-98b9-251c9d34c5e8");
   public static final Resource BuildingBlockView_level_aE_10_aE_whitebox = new Resource("1163a0ad-bfd0-11f0-98b9-251c9d34c5e8");
   public static final Resource BuildingBlockView_level_aE_11_aE_whitebox = new Resource("25b13b05-bfd0-11f0-98b9-251c9d34c5e8");
+  public static final Resource Blackbox_responsibility = new Resource("0dde8fdc-1c8a-11f1-a3ff-7172f24ba67f");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,Kz3Q/5Vsdr7e9+v3TDsXxAHg+3E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,EzHMQV4PgLEMAlNzprLOSw2MyN8=] */

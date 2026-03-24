@@ -7,15 +7,15 @@
 [#42db7e7f-bedf-11ef-b498-058ee446f8e7]
 === Ebene_3: Servers <SystemComponent> (Whitebox)
 Motivation::
+
 Fullname::
 ikt.infrastruture.servers
 
 Parent::
 <<#71fa6d1f-beda-11ef-b498-058ee446f8e7>>
 
-==== Baustein-Übersicht
 
-Der Baustein Servers ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: Servers <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -37,16 +37,18 @@ component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
     component "Level_3: Servers <SystemComponent> (Whitebox)" #lightblue {
         [**Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)**] as B582462C_BEE0_11EF_B498_058EE446F8E7
     }
+
+    
 }
 
 @enduml
 ----
 
-. HPE (<<#b582462c-bee0-11ef-b498-058ee446f8e7>>)
+. <<b582462c-bee0-11ef-b498-058ee446f8e7,HPE>>
 
 
 // Begin Protected Region [[42db7e7f-bedf-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[42db7e7f-bedf-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,hOkc9Yi2wO5DbNI2kyU6B6kIFF0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,xF/jmeueffSUJIYg1yDXsD+VZZA=]

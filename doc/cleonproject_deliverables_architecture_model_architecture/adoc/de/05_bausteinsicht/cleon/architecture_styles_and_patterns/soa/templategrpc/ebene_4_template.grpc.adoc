@@ -7,6 +7,7 @@
 [#3c7bab04-0414-11f0-b041-cf872c9c3703]
 === Ebene_4: grpc <Template> <Template> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.architecture styles and patterns.soa <feature>.grpc <template>
 
@@ -14,9 +15,37 @@ Parent::
 <<#4905a650-d579-11ee-903e-9f564e4de07e>>
 
 
+==== Baustein-Übersicht
+
+[plantuml, Level_4: grpc <Template> <Template> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_4: grpc <Template> <Template> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_3: SOA <Feature> <Feature> (Whitebox) (Parent)" {
+    component "Level_4: grpc <Template> <Template> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[3c7bab04-0414-11f0-b041-cf872c9c3703,customText]]
 
 // End Protected Region   [[3c7bab04-0414-11f0-b041-cf872c9c3703,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3c7bab04-0414-11f0-b041-cf872c9c3703,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3c7bab04-0414-11f0-b041-cf872c9c3703,JVfud2MlSbHxRvTSW7PJqeTEuDg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3c7bab04-0414-11f0-b041-cf872c9c3703,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3c7bab04-0414-11f0-b041-cf872c9c3703,Lq0HOt4MHdDn8YLqBjz4UieGA8I=]

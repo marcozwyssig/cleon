@@ -75,6 +75,15 @@ public class Blackbox extends DynamicResource implements IBlackbox {
      _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapterPath_noChapterPath, noChapterPath);
   }
 
+  @Override
+  public java.lang.String selectResponsibility() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_responsibility);
+  }
+    
+  public void setResponsibility(java.lang.String responsibility) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_responsibility, responsibility);
+  }
+
   // relations
   
   @Override
@@ -192,6 +201,7 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_responsibility, visitor);
     // relations
     _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackBoxbuildingBlock, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox_Dependencies.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_dependencies, visitor);
@@ -201,8 +211,6 @@ public class Blackbox extends DynamicResource implements IBlackbox {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_whiteBox, visitor);
   }
 
-  // toMeRelations
-  
   public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox selectToMeBlackBoxbuildingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackBoxbuildingBlock, object.getResource());
   }
@@ -220,4 +228,4 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,2DD6K4APgIGtZkxQmFQkpI06/JA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,Hj2GuT2hVo6bYqGhxdvxDr4xvM4=] */

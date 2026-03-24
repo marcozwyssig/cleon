@@ -7,15 +7,15 @@
 [#49057f39-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: actifsource <Feature> <Feature> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.applications.actifsource <feature>
 
 Parent::
 <<#4843dca2-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein actifsource <Feature> ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: actifsource <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -39,18 +39,22 @@ component "Level_2: Applications <Category> (Whitebox) (Parent)" {
         [**Level_4: Sample <Sample> <Sample> (Whitebox)**] as 4A570568_D579_11EE_903E_9F564E4DE07E
         [**Level_4: plugins <NamedModel> (Whitebox)**] as 4A56DE4E_D579_11EE_903E_9F564E4DE07E
     }
+
+    4A56DE43_D579_11EE_903E_9F564E4DE07E -down-> 4A570568_D579_11EE_903E_9F564E4DE07E
+    4A570568_D579_11EE_903E_9F564E4DE07E -down-> 4A56DE4E_D579_11EE_903E_9F564E4DE07E
+    
 }
 
 @enduml
 ----
 
-. MetaModel <MetaModel> (<<#4a56de43-d579-11ee-903e-9f564e4de07e>>)
-. Sample <Sample> (<<#4a570568-d579-11ee-903e-9f564e4de07e>>)
-. plugins (<<#4a56de4e-d579-11ee-903e-9f564e4de07e>>)
+. <<4a56de43-d579-11ee-903e-9f564e4de07e,MetaModel <MetaModel>>>
+. <<4a570568-d579-11ee-903e-9f564e4de07e,Sample <Sample>>>
+. <<4a56de4e-d579-11ee-903e-9f564e4de07e,plugins>>
 
 
 // Begin Protected Region [[49057f39-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[49057f39-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f39-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f39-d579-11ee-903e-9f564e4de07e,xCwj0gFRJIlCWC5MTLCFOqSBtpI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49057f39-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49057f39-d579-11ee-903e-9f564e4de07e,Xj+woQetqZPjp22bq+Udf1Sq5b4=]

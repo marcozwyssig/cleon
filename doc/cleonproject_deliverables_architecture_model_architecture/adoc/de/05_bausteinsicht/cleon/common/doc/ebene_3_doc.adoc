@@ -7,15 +7,15 @@
 [#4905581d-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: doc <Feature> <Feature> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.common.doc <feature>
 
 Parent::
 <<#4843dc9f-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein doc <Feature> ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: doc <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -38,17 +38,20 @@ component "Level_2: Common <Category> (Whitebox) (Parent)" {
         [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A570570_D579_11EE_903E_9F564E4DE07E
         [**Level_4: Sample <Sample> <Sample> (Whitebox)**] as 4A56DE4D_D579_11EE_903E_9F564E4DE07E
     }
+
+    4A570570_D579_11EE_903E_9F564E4DE07E -down-> 4A56DE4D_D579_11EE_903E_9F564E4DE07E
+    
 }
 
 @enduml
 ----
 
-. MetaModel <MetaModel> (<<#4a570570-d579-11ee-903e-9f564e4de07e>>)
-. Sample <Sample> (<<#4a56de4d-d579-11ee-903e-9f564e4de07e>>)
+. <<4a570570-d579-11ee-903e-9f564e4de07e,MetaModel <MetaModel>>>
+. <<4a56de4d-d579-11ee-903e-9f564e4de07e,Sample <Sample>>>
 
 
 // Begin Protected Region [[4905581d-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4905581d-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905581d-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905581d-d579-11ee-903e-9f564e4de07e,W/C1alwTpcLPq+e/1M/BhMfq+0k=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905581d-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905581d-d579-11ee-903e-9f564e4de07e,GmHfpX0ReScgqb4jMJi0/rzbat4=]

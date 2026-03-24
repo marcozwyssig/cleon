@@ -673,12 +673,18 @@ public class FunctionSpace_Asciidoc_arc42 {
     @IDynamicResourceExtension.MethodId("987ab5c6-cf99-11f0-84cd-4bb399ea471f")
     public java.lang.String RenderMotivation(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
+    @IDynamicResourceExtension.MethodId("ff11c02d-1c84-11f1-a3ff-7172f24ba67f")
+    public java.lang.String RenderIntroductionAndGoals();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4e006861-cdbc-11ef-aceb-ed2f5b1a4839")
     public java.lang.String RendererCustomElement(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
+
+    @IDynamicResourceExtension.MethodId("ff11c02d-1c84-11f1-a3ff-7172f24ba67f")
+    public java.lang.String RenderIntroductionAndGoals(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
 
   }
   
@@ -693,6 +699,11 @@ public class FunctionSpace_Asciidoc_arc42 {
       return null;
     }
 
+    @Override
+    public java.lang.String RenderIntroductionAndGoals(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+      return null;
+    }
+
   }
   
   public static class WhiteboxFunctions {
@@ -701,6 +712,10 @@ public class FunctionSpace_Asciidoc_arc42 {
 
     public static java.lang.String RendererCustomElement(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
       return DynamicResourceUtil.invoke(IWhiteboxFunctionsImpl.class, WhiteboxFunctionsImpl.INSTANCE, whitebox).RendererCustomElement(whitebox);
+    }
+
+    public static java.lang.String RenderIntroductionAndGoals(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+      return DynamicResourceUtil.invoke(IWhiteboxFunctionsImpl.class, WhiteboxFunctionsImpl.INSTANCE, whitebox).RenderIntroductionAndGoals(whitebox);
     }
 
   }
@@ -2104,4 +2119,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,H8FZwku1JU3rGNlgM50XFlR+uOI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,b7exEQRtJtwFUy0TEZjaqYdekyo=] */

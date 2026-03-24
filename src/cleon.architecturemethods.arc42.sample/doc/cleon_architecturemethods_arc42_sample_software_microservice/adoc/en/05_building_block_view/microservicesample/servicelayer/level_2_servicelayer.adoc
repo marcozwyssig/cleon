@@ -7,15 +7,15 @@
 [#c7e488b8-eb1c-11f0-94f3-55208a19cd68]
 === Level_2: ServiceLayer <ServicesLayer> (Whitebox)
 Motivation::
+
 Fullname::
 microservicesample.servicelayer
 
 Parent::
 <<#f194c1a0-cb08-11f0-ad08-33c52acb975f>>
 
-==== Building Block Overview
 
-The ServiceLayer is decomposed into the following components:
+==== Building Block Overview
 
 [plantuml, Level_2: ServiceLayer <ServicesLayer> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -37,16 +37,18 @@ component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitectur
     component "Level_2: ServiceLayer <ServicesLayer> (Whitebox)" #lightblue {
         [**Level_3: Test Sample 1Service <ServiceComponent> (Whitebox)**] as 313A22C6_EBCA_11F0_94F3_55208A19CD68
     }
+
+    
 }
 
 @enduml
 ----
 
-. Test Sample 1Service (<<#313a22c6-ebca-11f0-94f3-55208a19cd68>>)
+. <<313a22c6-ebca-11f0-94f3-55208a19cd68,Test Sample 1Service>>
 
 
 // Begin Protected Region [[c7e488b8-eb1c-11f0-94f3-55208a19cd68,customText]]
 
 // End Protected Region   [[c7e488b8-eb1c-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,c7e488b8-eb1c-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,c7e488b8-eb1c-11f0-94f3-55208a19cd68,RsWT2ZigptOigovovntUUsLgHEI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,c7e488b8-eb1c-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,c7e488b8-eb1c-11f0-94f3-55208a19cd68,HOLOHp8f3YapjQGQrIvc8R7FFVs=]

@@ -7,6 +7,7 @@
 [#4ded63e2-cb0a-11f0-ad08-33c52acb975f]
 === Level_2: Application <SoftwareMonolithApplication> (Whitebox)
 Motivation::
+
 Fullname::
 monolithsample.
 
@@ -14,9 +15,37 @@ Parent::
 <<#1862b969-cb0a-11f0-ad08-33c52acb975f>>
 
 
+==== Building Block Overview
+
+[plantuml, Level_2: Application <SoftwareMonolithApplication> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_2: Application <SoftwareMonolithApplication> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Whitebox) (Parent)" {
+    component "Level_2: Application <SoftwareMonolithApplication> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[4ded63e2-cb0a-11f0-ad08-33c52acb975f,customText]]
 
 // End Protected Region   [[4ded63e2-cb0a-11f0-ad08-33c52acb975f,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4ded63e2-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4ded63e2-cb0a-11f0-ad08-33c52acb975f,n4StYIVreKBUm51ZgfbLaqxVse0=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4ded63e2-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4ded63e2-cb0a-11f0-ad08-33c52acb975f,F6qUA6N6UT1OE30lrdUnZ17eCdY=]

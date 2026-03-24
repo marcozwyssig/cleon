@@ -158,12 +158,12 @@ public class WhiteboxSoftware extends DynamicResource implements IWhiteboxSoftwa
   }
     
   @Override
-  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhitebox() {
-    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhiteboxBuildingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock);
   }
 
-  public WhiteboxSoftware setWhitebox(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock whitebox) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox, whitebox);
+  public WhiteboxSoftware setWhiteboxBuildingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock whiteboxBuildingBlock) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock, whiteboxBuildingBlock);
     return this;
   }
     
@@ -177,8 +177,8 @@ public class WhiteboxSoftware extends DynamicResource implements IWhiteboxSoftwa
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_chapters, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox, visitor);
+    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,084f8759-e5f2-11ee-8c4d-db3d1d62259b,jPPXZb+zbxWSVSD7v/zE/gSqUN8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,084f8759-e5f2-11ee-8c4d-db3d1d62259b,d3vel0tflGr6J5/Rt0/n8jC6uJU=] */

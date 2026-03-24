@@ -288,12 +288,12 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
     
   @Override
-  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhitebox() {
-    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectWhiteboxBuildingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock);
   }
 
-  public WhiteboxSystem setWhitebox(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock whitebox) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox, whitebox);
+  public WhiteboxSystem setWhiteboxBuildingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock whiteboxBuildingBlock) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock, whiteboxBuildingBlock);
     return this;
   }
     
@@ -320,7 +320,7 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.INonRepudiationAspect.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_nonRepudiation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.javamodel.IUsedProduct.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.system.SystemPackage.WhiteboxSystem_usedProducts, visitor);
-    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whitebox, visitor);
+    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_whiteboxBuildingBlock, visitor);
   }
 
   // toMeRelations
@@ -378,4 +378,4 @@ public class WhiteboxSystem extends DynamicResource implements IWhiteboxSystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,1OPxixD3hF44KPNQocElsAN8WgE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,Z0aaRPZy/6oYuVbpxuHMFfB27TE=] */

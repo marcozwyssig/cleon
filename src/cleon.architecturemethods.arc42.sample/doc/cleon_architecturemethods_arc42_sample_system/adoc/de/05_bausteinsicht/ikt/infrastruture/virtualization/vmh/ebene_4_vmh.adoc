@@ -7,6 +7,7 @@
 [#b581f80a-bee0-11ef-b498-058ee446f8e7]
 === Ebene_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)
 Motivation::
+
 Fullname::
 ikt.infrastruture.virtualization.vmh
 
@@ -14,9 +15,37 @@ Parent::
 <<#483100ca-bedf-11ef-b498-058ee446f8e7>>
 
 
+==== Baustein-Übersicht
+
+[plantuml, Level_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Level_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Level_3: Virtualization <SystemComponent> (Whitebox) (Parent)" {
+    component "Level_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)" #lightblue {
+    }
+
+}
+
+@enduml
+----
+
+
 
 // Begin Protected Region [[b581f80a-bee0-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[b581f80a-bee0-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b581f80a-bee0-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,b581f80a-bee0-11ef-b498-058ee446f8e7,Ti4OFZxl/jbLy3RKOYlH7vreapw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b581f80a-bee0-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,b581f80a-bee0-11ef-b498-058ee446f8e7,BNmRilFC9WQW6CdQeGKZkqEeiok=]

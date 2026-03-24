@@ -7,15 +7,15 @@
 [#71fa6d1f-beda-11ef-b498-058ee446f8e7]
 === Ebene_2: Infrastruture <SystemLayer> (Whitebox)
 Motivation::
+
 Fullname::
 ikt.infrastruture
 
 Parent::
 <<#3f59c38b-beda-11ef-b498-058ee446f8e7>>
 
-==== Baustein-Übersicht
 
-Der Baustein Infrastruture ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_2: Infrastruture <SystemLayer> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -39,18 +39,22 @@ component "Level_1: IKT (IKT) <System> (Whitebox) (Parent)" {
         [**Level_3: Servers <SystemComponent> (Whitebox)**] as 42DB7E7F_BEDF_11EF_B498_058EE446F8E7
         [**Level_3: Virtualization <SystemComponent> (Whitebox)**] as 483100CA_BEDF_11EF_B498_058EE446F8E7
     }
+
+    07FC9046_BEE7_11EF_8DCB_A78DEF9EA3BD -down-> 42DB7E7F_BEDF_11EF_B498_058EE446F8E7
+    42DB7E7F_BEDF_11EF_B498_058EE446F8E7 -down-> 483100CA_BEDF_11EF_B498_058EE446F8E7
+    
 }
 
 @enduml
 ----
 
-. Operating System (<<#07fc9046-bee7-11ef-8dcb-a78def9ea3bd>>)
-. Servers (<<#42db7e7f-bedf-11ef-b498-058ee446f8e7>>)
-. Virtualization (<<#483100ca-bedf-11ef-b498-058ee446f8e7>>)
+. <<07fc9046-bee7-11ef-8dcb-a78def9ea3bd,Operating System>>
+. <<42db7e7f-bedf-11ef-b498-058ee446f8e7,Servers>>
+. <<483100ca-bedf-11ef-b498-058ee446f8e7,Virtualization>>
 
 
 // Begin Protected Region [[71fa6d1f-beda-11ef-b498-058ee446f8e7,customText]]
 
 // End Protected Region   [[71fa6d1f-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,2wr8ppYoF9a1p+6m6j+2LjwlezE=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,71fa6d1f-beda-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,71fa6d1f-beda-11ef-b498-058ee446f8e7,kIOmQbH5pfXUN5eBZEQMdwMNuMM=]

@@ -7,15 +7,15 @@
 [#4905a653-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: rack <Feature> <Feature> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.modeling languages.rack <feature>
 
 Parent::
 <<#4843dca4-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein rack <Feature> ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Level_3: rack <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -37,16 +37,18 @@ component "Level_2: Modeling Languages <Category> (Whitebox) (Parent)" {
     component "Level_3: rack <Feature> <Feature> (Whitebox)" #lightblue {
         [**Level_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 4A56DE56_D579_11EE_903E_9F564E4DE07E
     }
+
+    
 }
 
 @enduml
 ----
 
-. MetaModel <MetaModel> (<<#4a56de56-d579-11ee-903e-9f564e4de07e>>)
+. <<4a56de56-d579-11ee-903e-9f564e4de07e,MetaModel <MetaModel>>>
 
 
 // Begin Protected Region [[4905a653-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4905a653-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a653-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a653-d579-11ee-903e-9f564e4de07e,uRmACnhEvVvZV48xP+vvvc+1sfc=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a653-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a653-d579-11ee-903e-9f564e4de07e,ZhhJUK1IiXx6gHZErJK/URFuaWM=]

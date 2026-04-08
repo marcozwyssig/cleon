@@ -228,7 +228,16 @@ public class FunctionSpace_Language {
     @Override
     public java.lang.String translateNameWithCurrentLanguage(final cleon.common.language.metamodel.spec.translation.name.javamodel.IMultilingualName multilingualName) {
       /* Begin Protected Region [[98d4283f-8323-11f0-9a84-89dbde45d60f]] */
-      return null;
+        final var resolveTranslationService = new ResolveTranslationService(multilingualName);
+        return resolveTranslationService.translate(x -> {       	
+        	for (var translation : multilingualName.selectNameTranslation().values()) {
+        		if( translation.selectLanguage().selectCode().equals(x)) {
+        			return translation.selectName(); 
+        		}
+        	}
+        	
+            return multilingualName.selectName();
+        });
       /* End Protected Region   [[98d4283f-8323-11f0-9a84-89dbde45d60f]] */
     }
 

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NamedSolutionVariant extends DynamicResource implements INamedSolutionVariant {
+public class NamedSolutionOption extends DynamicResource implements INamedSolutionOption {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionVariant> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionVariant>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionOption> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSolutionOption>() {
     
     @Override
-    public INamedSolutionVariant create() {
-      return new NamedSolutionVariant();
+    public INamedSolutionOption create() {
+      return new NamedSolutionOption();
     }
     
     @Override
-    public INamedSolutionVariant create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NamedSolutionVariant(resourceRepository, resource);
+    public INamedSolutionOption create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedSolutionOption(resourceRepository, resource);
     }
   
   };
 
-  public NamedSolutionVariant() {
-    super(INamedSolutionVariant.TYPE_ID);
+  public NamedSolutionOption() {
+    super(INamedSolutionOption.TYPE_ID);
   }
   
-  public NamedSolutionVariant(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INamedSolutionVariant.TYPE_ID);
+  public NamedSolutionOption(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedSolutionOption.TYPE_ID);
   }
 
   // attributes
@@ -82,7 +82,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters);
   }
 
-  public NamedSolutionVariant setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> chapters) {
+  public NamedSolutionOption setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_chapters, chapters);
     return this;
   }
@@ -92,7 +92,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
   }
 
-  public NamedSolutionVariant setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
+  public NamedSolutionOption setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
     return this;
   }
@@ -102,7 +102,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public NamedSolutionVariant setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NamedSolutionOption setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -112,7 +112,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
   }
 
-  public NamedSolutionVariant setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+  public NamedSolutionOption setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
     return this;
   }
@@ -122,7 +122,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public NamedSolutionVariant setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NamedSolutionOption setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -132,7 +132,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs);
   }
 
-  public NamedSolutionVariant setStandardParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> standardParagraphs) {
+  public NamedSolutionOption setStandardParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IStandardParagraph> standardParagraphs) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.OnlyStandardElementsChapter_standardParagraphs, standardParagraphs);
     return this;
   }
@@ -142,7 +142,7 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NamedSolutionVariant setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedSolutionOption setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -163,4 +163,4 @@ public class NamedSolutionVariant extends DynamicResource implements INamedSolut
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,852064a3-e248-11ef-a500-cb425fc4109d,fFdYh7+ohtBJQGhnLwRN9lq9mg8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,852064a3-e248-11ef-a500-cb425fc4109d,OikDUEjUtR1xKTpHMhBno/7MTp8=] */

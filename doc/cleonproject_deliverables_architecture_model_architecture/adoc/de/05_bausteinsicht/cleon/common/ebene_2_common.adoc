@@ -11,15 +11,15 @@ Motivation::
 TODO: Describe the motivation for the building block view.
 // End Protected Region   [[motivation]]  
 
+
 Fullname::
 cleon.common
 
 Parent::
 <<#9affc401-285e-11e8-9af4-b7d7a3bbddc1>>
 
-==== Baustein-Übersicht
 
-Der Baustein Common ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Ebene_2: Common <Category> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -50,21 +50,32 @@ component "Ebene_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
         [**Ebene_3: resources <Feature> <Feature> (Whitebox)**] as 49055820_D579_11EE_903E_9F564E4DE07E
         [**Ebene_3: xml <Feature> <Feature> (Whitebox)**] as 4905581F_D579_11EE_903E_9F564E4DE07E
     }
+
+    49057F3B_D579_11EE_903E_9F564E4DE07E -down-> 49057F32_D579_11EE_903E_9F564E4DE07E
+    49057F32_D579_11EE_903E_9F564E4DE07E -down-> 49057F3C_D579_11EE_903E_9F564E4DE07E
+    49057F3C_D579_11EE_903E_9F564E4DE07E -down-> 4905581D_D579_11EE_903E_9F564E4DE07E
+    4905581D_D579_11EE_903E_9F564E4DE07E -down-> 4905581A_D579_11EE_903E_9F564E4DE07E
+    4905581A_D579_11EE_903E_9F564E4DE07E -down-> 4905581E_D579_11EE_903E_9F564E4DE07E
+    4905581E_D579_11EE_903E_9F564E4DE07E -down-> 49055819_D579_11EE_903E_9F564E4DE07E
+    49055819_D579_11EE_903E_9F564E4DE07E -down-> 4905A64F_D579_11EE_903E_9F564E4DE07E
+    4905A64F_D579_11EE_903E_9F564E4DE07E -down-> 49055820_D579_11EE_903E_9F564E4DE07E
+    49055820_D579_11EE_903E_9F564E4DE07E -down-> 4905581F_D579_11EE_903E_9F564E4DE07E
+    
 }
 
 @enduml
 ----
 
-. actifsource <Feature> (<<#49057f3b-d579-11ee-903e-9f564e4de07e>>)
-. building <Feature> (<<#49057f32-d579-11ee-903e-9f564e4de07e>>)
-. calendar <Feature> (<<#49057f3c-d579-11ee-903e-9f564e4de07e>>)
-. doc <Feature> (<<#4905581d-d579-11ee-903e-9f564e4de07e>>)
-. glossary <Feature> (<<#4905581a-d579-11ee-903e-9f564e4de07e>>)
-. knowledge <Feature> (<<#4905581e-d579-11ee-903e-9f564e4de07e>>)
-. language <Feature> (<<#49055819-d579-11ee-903e-9f564e4de07e>>)
-. modularity <Feature> (<<#4905a64f-d579-11ee-903e-9f564e4de07e>>)
-. resources <Feature> (<<#49055820-d579-11ee-903e-9f564e4de07e>>)
-. xml <Feature> (<<#4905581f-d579-11ee-903e-9f564e4de07e>>)
+. <<49057f3b-d579-11ee-903e-9f564e4de07e,actifsource <Feature>>>
+. <<49057f32-d579-11ee-903e-9f564e4de07e,building <Feature>>>
+. <<49057f3c-d579-11ee-903e-9f564e4de07e,calendar <Feature>>>
+. <<4905581d-d579-11ee-903e-9f564e4de07e,doc <Feature>>>
+. <<4905581a-d579-11ee-903e-9f564e4de07e,glossary <Feature>>>
+. <<4905581e-d579-11ee-903e-9f564e4de07e,knowledge <Feature>>>
+. <<49055819-d579-11ee-903e-9f564e4de07e,language <Feature>>>
+. <<4905a64f-d579-11ee-903e-9f564e4de07e,modularity <Feature>>>
+. <<49055820-d579-11ee-903e-9f564e4de07e,resources <Feature>>>
+. <<4905581f-d579-11ee-903e-9f564e4de07e,xml <Feature>>>
 
 
 // Begin Protected Region [[4843dc9f-d579-11ee-903e-9f564e4de07e,customText]]
@@ -521,4 +532,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[48640f55-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,/HM1y7gJa6Ke8DiTLjakhVCqfYg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dc9f-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dc9f-d579-11ee-903e-9f564e4de07e,tlO/iHMDVtUZrDfOJGTsy+/5H6w=]

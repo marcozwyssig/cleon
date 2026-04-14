@@ -17,9 +17,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Level_3: EAI <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_3: EAI <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_3: EAI <Feature> <Feature> (Whitebox)BuildingBlockOverview
+@startuml Ebene_3: EAI <Feature> <Feature> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Architecture Styles and Patterns <Category> (Whitebox) (Parent)" {
-    component "Level_3: EAI <Feature> <Feature> (Whitebox)" #lightblue {
+component "Ebene_2: Architecture Styles and Patterns <Category> (Whitebox) (Parent)" {
+    component "Ebene_3: EAI <Feature> <Feature> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Level_2: Architecture Styles and Patterns <Category> (Whitebox) (Pare
 
 // End Protected Region   [[49055818-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49055818-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49055818-d579-11ee-903e-9f564e4de07e,eN8FrIRy2O/vHr22sMLQjLRuetI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,49055818-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,49055818-d579-11ee-903e-9f564e4de07e,Z1bMulKhaoTLcYc2DpW8J9B31HM=]

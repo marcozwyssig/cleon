@@ -1,0 +1,66 @@
+// Begin Protected Region [[meta-data]]
+
+// End Protected Region   [[meta-data]]
+
+:toc:
+
+[#313a22c6-ebca-11f0-94f3-55208a19cd68]
+=== Level_3: Service [1] <ServiceComponent> (Whitebox)
+Motivation::
+
+Fullname::
+microservicesample.servicelayer.service [1]
+
+Parent::
+<<#c7e488b8-eb1c-11f0-94f3-55208a19cd68>>
+
+
+==== Building Block Overview
+
+[plantuml, Ebene_3: Service [1] <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
+----
+@startuml Ebene_3: Service [1] <ServiceComponent> (Whitebox)BuildingBlockOverview
+
+skinparam ranksep 10
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam arrowColor lightblue
+skinparam arrowThickness 1.2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor #333
+  RoundCorner 10
+}
+top to bottom direction
+
+component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
+    component "Ebene_3: Service [1] <ServiceComponent> (Whitebox)" #lightblue {
+        [**Ebene_4: API <ComponentByTemplate> (Whitebox)**] as 57F7F337_247F_11F1_8A5A_5DA401746046
+        [**Ebene_4: Application <ComponentByTemplate> (Whitebox)**] as 316503AE_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_4: Contracts <ComponentByTemplate> (Whitebox)**] as 316503AC_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_4: Domain <DomainComponent> (Whitebox)**] as 316503AD_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 316503AB_EBCA_11F0_94F3_55208A19CD68
+    }
+
+    57F7F337_247F_11F1_8A5A_5DA401746046 -down-> 316503AE_EBCA_11F0_94F3_55208A19CD68
+    316503AE_EBCA_11F0_94F3_55208A19CD68 -down-> 316503AC_EBCA_11F0_94F3_55208A19CD68
+    316503AC_EBCA_11F0_94F3_55208A19CD68 -down-> 316503AD_EBCA_11F0_94F3_55208A19CD68
+    316503AD_EBCA_11F0_94F3_55208A19CD68 -down-> 316503AB_EBCA_11F0_94F3_55208A19CD68
+    
+}
+
+@enduml
+----
+
+. <<57f7f337-247f-11f1-8a5a-5da401746046,API>>
+. <<316503ae-ebca-11f0-94f3-55208a19cd68,Application>>
+. <<316503ac-ebca-11f0-94f3-55208a19cd68,Contracts>>
+. <<316503ad-ebca-11f0-94f3-55208a19cd68,Domain>>
+. <<316503ab-ebca-11f0-94f3-55208a19cd68,Infrastructure>>
+
+
+// Begin Protected Region [[313a22c6-ebca-11f0-94f3-55208a19cd68,customText]]
+
+// End Protected Region   [[313a22c6-ebca-11f0-94f3-55208a19cd68,customText]]
+
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,313a22c6-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,313a22c6-ebca-11f0-94f3-55208a19cd68,dF2QFabhhID462X7thbi9x10eRE=]

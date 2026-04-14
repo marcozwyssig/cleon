@@ -17,9 +17,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Level_3: Servers <SystemComponent> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_3: Servers <SystemComponent> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_3: Servers <SystemComponent> (Whitebox)BuildingBlockOverview
+@startuml Ebene_3: Servers <SystemComponent> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
-    component "Level_3: Servers <SystemComponent> (Whitebox)" #lightblue {
-        [**Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)**] as B582462C_BEE0_11EF_B498_058EE446F8E7
+component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+    component "Ebene_3: Servers <SystemComponent> (Whitebox)" #lightblue {
+        [**Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)**] as B582462C_BEE0_11EF_B498_058EE446F8E7
     }
 
     
@@ -51,4 +51,4 @@ component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
 
 // End Protected Region   [[42db7e7f-bedf-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,xF/jmeueffSUJIYg1yDXsD+VZZA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,i6PhVZy4L7CyeAmoGgBm27d5EyE=]

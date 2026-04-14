@@ -7,15 +7,15 @@
 [#3b8d9b20-d421-11ef-bdef-4d33dbce89cb]
 === Ebene_2: Operational Methods <Category> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.operational methods
 
 Parent::
 <<#9affc401-285e-11e8-9af4-b7d7a3bbddc1>>
 
-==== Baustein-Übersicht
 
-Der Baustein Operational Methods ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Ebene_2: Operational Methods <Category> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -38,17 +38,20 @@ component "Ebene_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
         [**Ebene_3: chocolatey <Feature> <Feature> (Whitebox)**] as 49055817_D579_11EE_903E_9F564E4DE07E
         [**Ebene_3: hermes <Feature> <Feature> (Whitebox)**] as 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
     }
+
+    49055817_D579_11EE_903E_9F564E4DE07E -down-> 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
+    
 }
 
 @enduml
 ----
 
-. chocolatey <Feature> (<<#49055817-d579-11ee-903e-9f564e4de07e>>)
-. hermes <Feature> (<<#3bb60ad5-d421-11ef-bdef-4d33dbce89cb>>)
+. <<49055817-d579-11ee-903e-9f564e4de07e,chocolatey <Feature>>>
+. <<3bb60ad5-d421-11ef-bdef-4d33dbce89cb,hermes <Feature>>>
 
 
 // Begin Protected Region [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
 // End Protected Region   [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,OouJbg2HUJBw+bg8qhd4xgb8Ylk=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,oJpbEzSoL9p90j9qcG1mUpi/Fdk=]

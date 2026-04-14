@@ -21,9 +21,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Level_4: Sample <Sample> <Sample> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_4: Sample <Sample> <Sample> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_4: Sample <Sample> <Sample> (Whitebox)BuildingBlockOverview
+@startuml Ebene_4: Sample <Sample> <Sample> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,8 +37,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_3: uml <Feature> <Feature> (Whitebox) (Parent)" {
-    component "Level_4: Sample <Sample> <Sample> (Whitebox)" #lightblue {
+component "Ebene_3: uml <Feature> <Feature> (Whitebox) (Parent)" {
+    component "Ebene_4: Sample <Sample> <Sample> (Whitebox)" #lightblue {
     }
 
 }
@@ -52,4 +52,4 @@ component "Level_3: uml <Feature> <Feature> (Whitebox) (Parent)" {
 
 // End Protected Region   [[5ccd92ab-de54-11ef-81c7-3391f050addb,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,5ccd92ab-de54-11ef-81c7-3391f050addb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,5ccd92ab-de54-11ef-81c7-3391f050addb,+Zyc8w+3EQjooxWYwS0D13spTBY=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,5ccd92ab-de54-11ef-81c7-3391f050addb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,5ccd92ab-de54-11ef-81c7-3391f050addb,6E+INR1Ec1IvHI1f3It3AEaEFIQ=]

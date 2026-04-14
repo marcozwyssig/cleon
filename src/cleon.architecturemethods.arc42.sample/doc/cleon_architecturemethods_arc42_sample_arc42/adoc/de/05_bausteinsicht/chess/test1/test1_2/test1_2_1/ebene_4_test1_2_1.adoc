@@ -7,15 +7,15 @@
 [#4965ee24-d579-11ee-903e-9f564e4de07e]
 === Ebene_4: Test1_2_1 <SampleBuildingBlock> (Whitebox)
 Motivation::
+
 Fullname::
 chess.test1.test1_2.test1_2_1
 
 Parent::
 <<#489cd282-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein Test1_2_1 ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Ebene_4: Test1_2_1 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -37,16 +37,18 @@ component "Ebene_3: Test1_2 <SampleBuildingBlock> (Whitebox) (Parent)" {
     component "Ebene_4: Test1_2_1 <SampleBuildingBlock> (Whitebox)" #lightblue {
         [**Ebene_5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)**] as 7F52B647_D579_11EE_903E_9F564E4DE07E
     }
+
+    
 }
 
 @enduml
 ----
 
-. Test1_2_1_1 (<<#7f52b647-d579-11ee-903e-9f564e4de07e>>)
+. <<7f52b647-d579-11ee-903e-9f564e4de07e,Test1_2_1_1>>
 
 
 // Begin Protected Region [[4965ee24-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4965ee24-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4965ee24-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4965ee24-d579-11ee-903e-9f564e4de07e,Wk2gDZeG5HQPNnPh4CEtcrQV1lQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4965ee24-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4965ee24-d579-11ee-903e-9f564e4de07e,oubewReLvWQGxQgG9xvDGBxeMWw=]

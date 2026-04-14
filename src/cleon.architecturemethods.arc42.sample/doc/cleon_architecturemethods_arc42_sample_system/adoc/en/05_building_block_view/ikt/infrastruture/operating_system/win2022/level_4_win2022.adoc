@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Level_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)BuildingBlockOverview
+@startuml Ebene_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_3: Operating System <SystemComponent> (Whitebox) (Parent)" {
-    component "Level_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)" #lightblue {
+component "Ebene_3: Operating System <SystemComponent> (Whitebox) (Parent)" {
+    component "Ebene_4: WIN2022 (WIN 2022) <WindowsSystemConfiguration> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Level_3: Operating System <SystemComponent> (Whitebox) (Parent)" {
 
 // End Protected Region   [[1308a142-bee7-11ef-8dcb-a78def9ea3bd,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1308a142-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1308a142-bee7-11ef-8dcb-a78def9ea3bd,gWXQMkSgOHWTh4FVbDMJ3QyCbnE=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,1308a142-bee7-11ef-8dcb-a78def9ea3bd,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,1308a142-bee7-11ef-8dcb-a78def9ea3bd,Oz7PaaWiXSI81VTEDIVSmOSzrAc=]

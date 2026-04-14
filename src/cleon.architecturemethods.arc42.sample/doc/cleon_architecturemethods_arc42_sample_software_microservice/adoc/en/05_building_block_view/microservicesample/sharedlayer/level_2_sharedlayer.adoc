@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Level_2: SharedLayer <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_2: SharedLayer <ComponentByTemplate> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,13 +33,13 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
-    component "Level_2: SharedLayer <ComponentByTemplate> (Whitebox)" #lightblue {
-        [**Level_3: API [1] <ComponentByTemplate> (Whitebox)**] as 4C90E271_EBCA_11F0_94F3_55208A19CD68
-        [**Level_3: Application [1] <ComponentByTemplate> (Whitebox)**] as 4C90E272_EBCA_11F0_94F3_55208A19CD68
-        [**Level_3: Contracts [1] <ComponentByTemplate> (Whitebox)**] as 4C90E26F_EBCA_11F0_94F3_55208A19CD68
-        [**Level_3: Domain [1] <ComponentByTemplate> (Whitebox)**] as 4C90E270_EBCA_11F0_94F3_55208A19CD68
-        [**Level_3: Infrastructure [1] <ComponentByTemplate> (Whitebox)**] as 4C90E26E_EBCA_11F0_94F3_55208A19CD68
+component "Ebene_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
+    component "Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox)" #lightblue {
+        [**Ebene_3: API [1] <ComponentByTemplate> (Whitebox)**] as 4C90E271_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_3: Application [1] <ComponentByTemplate> (Whitebox)**] as 4C90E272_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_3: Contracts [1] <ComponentByTemplate> (Whitebox)**] as 4C90E26F_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_3: Domain [1] <ComponentByTemplate> (Whitebox)**] as 4C90E270_EBCA_11F0_94F3_55208A19CD68
+        [**Ebene_3: Infrastructure [1] <ComponentByTemplate> (Whitebox)**] as 4C90E26E_EBCA_11F0_94F3_55208A19CD68
     }
 
     4C90E271_EBCA_11F0_94F3_55208A19CD68 -down-> 4C90E272_EBCA_11F0_94F3_55208A19CD68
@@ -63,4 +63,4 @@ component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitectur
 
 // End Protected Region   [[4c52eeb7-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c52eeb7-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c52eeb7-ebca-11f0-94f3-55208a19cd68,6IrS2QiVqpFxmdC6m9eX6JDaEQY=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c52eeb7-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c52eeb7-ebca-11f0-94f3-55208a19cd68,GEPRhNVemQo+GBQE8++533PzwKM=]

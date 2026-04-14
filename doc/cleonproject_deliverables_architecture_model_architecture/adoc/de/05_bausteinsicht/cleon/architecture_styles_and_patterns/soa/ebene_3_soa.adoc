@@ -7,15 +7,15 @@
 [#4905a650-d579-11ee-903e-9f564e4de07e]
 === Ebene_3: SOA <Feature> <Feature> (Whitebox)
 Motivation::
+
 Fullname::
 cleon.architecture styles and patterns.soa <feature>
 
 Parent::
 <<#4843dca0-d579-11ee-903e-9f564e4de07e>>
 
-==== Baustein-Übersicht
 
-Der Baustein SOA <Feature> ist in folgende Bausteine zerlegt:
+==== Baustein-Übersicht
 
 [plantuml, Ebene_3: SOA <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
@@ -39,18 +39,22 @@ component "Ebene_2: Architecture Styles and Patterns <Category> (Whitebox) (Pare
         [**Ebene_4: Sample <Sample> <Sample> (Whitebox)**] as 1DD2DAA6_0414_11F0_B041_CF872C9C3703
         [**Ebene_4: grpc <Template> <Template> (Whitebox)**] as 3C7BAB04_0414_11F0_B041_CF872C9C3703
     }
+
+    4A56DE44_D579_11EE_903E_9F564E4DE07E -down-> 1DD2DAA6_0414_11F0_B041_CF872C9C3703
+    1DD2DAA6_0414_11F0_B041_CF872C9C3703 -down-> 3C7BAB04_0414_11F0_B041_CF872C9C3703
+    
 }
 
 @enduml
 ----
 
-. MetaModel <MetaModel> (<<#4a56de44-d579-11ee-903e-9f564e4de07e>>)
-. Sample <Sample> (<<#1dd2daa6-0414-11f0-b041-cf872c9c3703>>)
-. grpc <Template> (<<#3c7bab04-0414-11f0-b041-cf872c9c3703>>)
+. <<4a56de44-d579-11ee-903e-9f564e4de07e,MetaModel <MetaModel>>>
+. <<1dd2daa6-0414-11f0-b041-cf872c9c3703,Sample <Sample>>>
+. <<3c7bab04-0414-11f0-b041-cf872c9c3703,grpc <Template>>>
 
 
 // Begin Protected Region [[4905a650-d579-11ee-903e-9f564e4de07e,customText]]
 
 // End Protected Region   [[4905a650-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a650-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a650-d579-11ee-903e-9f564e4de07e,H0DpmqLcoi6GB1jOSa3wFkr/Nt8=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4905a650-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4905a650-d579-11ee-903e-9f564e4de07e,GafhqCCUa515z2xG9L4BgSkpqI4=]

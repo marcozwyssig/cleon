@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BuildingBlockOverview
+@startuml Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_3: Servers <SystemComponent> (Whitebox) (Parent)" {
-    component "Level_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)" #lightblue {
+component "Ebene_3: Servers <SystemComponent> (Whitebox) (Parent)" {
+    component "Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Level_3: Servers <SystemComponent> (Whitebox) (Parent)" {
 
 // End Protected Region   [[b582462c-bee0-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b582462c-bee0-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,b582462c-bee0-11ef-b498-058ee446f8e7,Jd14MYisI7J7lNMIrHbeXqv45dU=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,b582462c-bee0-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,b582462c-bee0-11ef-b498-058ee446f8e7,hM7/hKAMRhApUQ54hj7EQpuuAb0=]

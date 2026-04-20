@@ -1,44 +1,35 @@
-package cleon.common.doc.metamodel.spec.paragraph.blocks.javamodel;
+package cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Sidebar extends DynamicResource implements ISidebar {
+public class UserStory extends DynamicResource implements IUserStory {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISidebar> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISidebar>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IUserStory> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IUserStory>() {
     
     @Override
-    public ISidebar create() {
-      return new Sidebar();
+    public IUserStory create() {
+      return new UserStory();
     }
     
     @Override
-    public ISidebar create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Sidebar(resourceRepository, resource);
+    public IUserStory create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new UserStory(resourceRepository, resource);
     }
   
   };
 
-  public Sidebar() {
-    super(ISidebar.TYPE_ID);
+  public UserStory() {
+    super(IUserStory.TYPE_ID);
   }
   
-  public Sidebar(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISidebar.TYPE_ID);
+  public UserStory(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IUserStory.TYPE_ID);
   }
 
   // attributes
   
-  @Override
-  public java.util.List<java.lang.String> selectDescriptions() {
-    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
-  }
-    
-  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
-     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
-  }
-
   @Override
   public java.lang.Boolean selectIsEnabled() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
@@ -60,12 +51,12 @@ public class Sidebar extends DynamicResource implements ISidebar {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> selectDescriptionTranslation() {
-    return _getMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation);
+  public java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria> selectAcceptanceCriterias() {
+    return _getList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.UserStory_acceptanceCriterias);
   }
 
-  public Sidebar setDescriptionTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation> descriptionTranslation) {
-    _setMap(cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, descriptionTranslation);
+  public UserStory setAcceptanceCriterias(java.util.List<? extends cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria> acceptanceCriterias) {
+    _setList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.UserStory_acceptanceCriterias, acceptanceCriterias);
     return this;
   }
     
@@ -74,7 +65,7 @@ public class Sidebar extends DynamicResource implements ISidebar {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Sidebar setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public UserStory setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -84,7 +75,7 @@ public class Sidebar extends DynamicResource implements ISidebar {
     return _getMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation);
   }
 
-  public Sidebar setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
+  public UserStory setNameTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation> nameTranslation) {
     _setMap(cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, nameTranslation);
     return this;
   }
@@ -94,7 +85,7 @@ public class Sidebar extends DynamicResource implements ISidebar {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Sidebar setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public UserStory setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -104,7 +95,7 @@ public class Sidebar extends DynamicResource implements ISidebar {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Sidebar setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public UserStory setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -113,15 +104,20 @@ public class Sidebar extends DynamicResource implements ISidebar {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
+    _acceptList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.UserStory_acceptanceCriterias, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IUserStory selectToMeAcceptanceCriterias(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IUserStory.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.UserStory_acceptanceCriterias, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d20cec-3089-11e5-8cdc-d5b441c8c3df,XWIIjKGZ43DyVC7asy3fyYPw3y4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88ee0704-3caf-11f1-9432-65d6b2716831,e9GgOe74oELr2W0bY8FgaM4RoUc=] */

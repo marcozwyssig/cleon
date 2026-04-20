@@ -107,6 +107,16 @@ public class SequenceDiagram extends DynamicResource implements ISequenceDiagram
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
+  }
+
+  public SequenceDiagram setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.javamodel.IParticipant> selectParticipants() {
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.javamodel.IParticipant.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.SequencePackage.SequenceDiagram_participants);
   }
@@ -148,6 +158,7 @@ public class SequenceDiagram extends DynamicResource implements ISequenceDiagram
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.SpecPackage.UmlDiagram_scale, visitor);
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.javamodel.IParticipant.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.SequencePackage.SequenceDiagram_participants, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.javamodel.IAbstractSequence.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence.SequencePackage.SequenceDiagram_sequences, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -164,4 +175,4 @@ public class SequenceDiagram extends DynamicResource implements ISequenceDiagram
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,66daed74-de53-11ef-81c7-3391f050addb,N2Up91wtKGtMh02joLC5thlj/4I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,66daed74-de53-11ef-81c7-3391f050addb,TMMio5VqUYEAPRCIHXxYnzwWOuk=] */

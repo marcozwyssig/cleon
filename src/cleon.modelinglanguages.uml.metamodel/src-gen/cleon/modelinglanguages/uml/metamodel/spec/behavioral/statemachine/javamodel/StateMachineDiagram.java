@@ -135,6 +135,16 @@ public class StateMachineDiagram extends DynamicResource implements IStateMachin
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
+  }
+
+  public StateMachineDiagram setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.ISingleState selectStart() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.StatemachinePackage.StateMachineDiagram_start);
   }
@@ -189,6 +199,7 @@ public class StateMachineDiagram extends DynamicResource implements IStateMachin
     // relations
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.IEvent.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.StatemachinePackage.StateMachineDiagram_events, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.StatemachinePackage.StateMachineDiagram_start, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.StatemachinePackage.StateMachineDiagram_states, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel.IStateMachineDiagram.class, cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.StatemachinePackage.StateMachineDiagram_subStateMachine, visitor);
@@ -214,4 +225,4 @@ public class StateMachineDiagram extends DynamicResource implements IStateMachin
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,1hqk/kw6k2HC2hYwI+uc0Jzas9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,3e3BaGKANgBumVJy0IHu79ovPAU=] */

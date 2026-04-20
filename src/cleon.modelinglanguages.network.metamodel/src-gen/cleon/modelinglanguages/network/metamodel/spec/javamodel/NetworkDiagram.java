@@ -80,6 +80,16 @@ public class NetworkDiagram extends DynamicResource implements INetworkDiagram {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
+  }
+
+  public NetworkDiagram setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -98,6 +108,7 @@ public class NetworkDiagram extends DynamicResource implements INetworkDiagram {
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkDiagram_path, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworks.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkDiagram_network, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -108,4 +119,4 @@ public class NetworkDiagram extends DynamicResource implements INetworkDiagram {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a6f94ec5-092f-11e9-8c40-11db3668c0c9,DhZFfSnxYfBaQbq6nefjuhxxjzg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a6f94ec5-092f-11e9-8c40-11db3668c0c9,XmxVOtaLjcWswiv0MIzXTR8491U=] */

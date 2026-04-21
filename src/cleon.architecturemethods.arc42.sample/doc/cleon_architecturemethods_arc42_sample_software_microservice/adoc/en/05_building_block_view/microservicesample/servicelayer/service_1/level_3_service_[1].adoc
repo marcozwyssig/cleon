@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Ebene_3: Service [1] <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: Service [1] <ServiceComponent> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: Service [1] <ServiceComponent> (Whitebox)BuildingBlockOverview
+@startuml Level_3: Service [1] <ServiceComponent> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,13 +33,13 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
-    component "Ebene_3: Service [1] <ServiceComponent> (Whitebox)" #lightblue {
-        [**Ebene_4: API <ComponentByTemplate> (Whitebox)**] as 57F7F337_247F_11F1_8A5A_5DA401746046
-        [**Ebene_4: Application <ComponentByTemplate> (Whitebox)**] as 316503AE_EBCA_11F0_94F3_55208A19CD68
-        [**Ebene_4: Contracts <ComponentByTemplate> (Whitebox)**] as 316503AC_EBCA_11F0_94F3_55208A19CD68
-        [**Ebene_4: Domain <DomainComponent> (Whitebox)**] as 316503AD_EBCA_11F0_94F3_55208A19CD68
-        [**Ebene_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 316503AB_EBCA_11F0_94F3_55208A19CD68
+component "Level_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
+    component "Level_3: Service [1] <ServiceComponent> (Whitebox)" #lightblue {
+        [**Level_4: API <ComponentByTemplate> (Whitebox)**] as 57F7F337_247F_11F1_8A5A_5DA401746046
+        [**Level_4: Application <ComponentByTemplate> (Whitebox)**] as 316503AE_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Contracts <ComponentByTemplate> (Whitebox)**] as 316503AC_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Domain <DomainComponent> (Whitebox)**] as 316503AD_EBCA_11F0_94F3_55208A19CD68
+        [**Level_4: Infrastructure <ComponentByTemplate> (Whitebox)**] as 316503AB_EBCA_11F0_94F3_55208A19CD68
     }
 
     57F7F337_247F_11F1_8A5A_5DA401746046 -down-> 316503AE_EBCA_11F0_94F3_55208A19CD68
@@ -63,4 +63,4 @@ component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox) (Parent)" {
 
 // End Protected Region   [[313a22c6-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,313a22c6-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,313a22c6-ebca-11f0-94f3-55208a19cd68,dF2QFabhhID462X7thbi9x10eRE=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,313a22c6-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,313a22c6-ebca-11f0-94f3-55208a19cd68,tvVUTaf058RqnREffNhBPYtIC20=]

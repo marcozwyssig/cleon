@@ -21,9 +21,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Ebene_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)BuildingBlockOverview
+@startuml Level_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -37,8 +37,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_3: Directory Service <SystemComponent> (Whitebox) (Parent)" {
-    component "Ebene_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)" #lightblue {
+component "Level_3: Directory Service <SystemComponent> (Whitebox) (Parent)" {
+    component "Level_4: DC (DC) <MasterDomainControllerSystemConfiguration> (Whitebox)" #lightblue {
     }
 
 }
@@ -52,4 +52,4 @@ component "Ebene_3: Directory Service <SystemComponent> (Whitebox) (Parent)" {
 
 // End Protected Region   [[8c664cf7-219a-11f0-83ae-df5418a109a4,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8c664cf7-219a-11f0-83ae-df5418a109a4,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8c664cf7-219a-11f0-83ae-df5418a109a4,OlCM3T0MOokRO5/QQuzIusvHa38=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,8c664cf7-219a-11f0-83ae-df5418a109a4,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,8c664cf7-219a-11f0-83ae-df5418a109a4,jr2lw5rSQ5whL1F1broZhh60jpM=]

@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Ebene_3: API [1] <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_3: API [1] <ComponentByTemplate> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: API [1] <ComponentByTemplate> (Whitebox)BuildingBlockOverview
+@startuml Level_3: API [1] <ComponentByTemplate> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox) (Parent)" {
-    component "Ebene_3: API [1] <ComponentByTemplate> (Whitebox)" #lightblue {
+component "Level_2: SharedLayer <ComponentByTemplate> (Whitebox) (Parent)" {
+    component "Level_3: API [1] <ComponentByTemplate> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Ebene_2: SharedLayer <ComponentByTemplate> (Whitebox) (Parent)" {
 
 // End Protected Region   [[4c90e271-ebca-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c90e271-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c90e271-ebca-11f0-94f3-55208a19cd68,hzD4D96S4OCeXsE6GVcKIq9IEFc=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4c90e271-ebca-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,4c90e271-ebca-11f0-94f3-55208a19cd68,fHR6EHtmkDw0DGVBMf+s7ZLb8Bk=]

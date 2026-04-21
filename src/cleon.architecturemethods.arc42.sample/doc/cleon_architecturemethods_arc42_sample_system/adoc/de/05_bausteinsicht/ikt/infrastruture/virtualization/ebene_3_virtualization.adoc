@@ -33,7 +33,7 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
     component "Ebene_3: Virtualization <SystemComponent> (Whitebox)" #lightblue {
         [**Ebene_4: VM (VM) <VirtualMachineSystemConfiguration> (Whitebox)**] as B582462B_BEE0_11EF_B498_058EE446F8E7
         [**Ebene_4: VMH (VMH) <HypervisorSystemConfiguration> (Whitebox)**] as B581F80A_BEE0_11EF_B498_058EE446F8E7
@@ -54,4 +54,4 @@ component "Ebene_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
 
 // End Protected Region   [[483100ca-bedf-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,hTlKzacBx0GEk4MgZYDLmG6l9wI=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,483100ca-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,483100ca-bedf-11ef-b498-058ee446f8e7,Thj6iKtPSy4p/TMfchH4CCpqwD0=]

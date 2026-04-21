@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: ServiceLayer <ServicesLayer> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)BuildingBlockOverview
+@startuml Level_2: ServiceLayer <ServicesLayer> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,9 +33,9 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Ebene_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
-    component "Ebene_2: ServiceLayer <ServicesLayer> (Whitebox)" #lightblue {
-        [**Ebene_3: Service [1] <ServiceComponent> (Whitebox)**] as 313A22C6_EBCA_11F0_94F3_55208A19CD68
+component "Level_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitecturePattern> (Whitebox) (Parent)" {
+    component "Level_2: ServiceLayer <ServicesLayer> (Whitebox)" #lightblue {
+        [**Level_3: Service [1] <ServiceComponent> (Whitebox)**] as 313A22C6_EBCA_11F0_94F3_55208A19CD68
     }
 
     
@@ -51,4 +51,4 @@ component "Ebene_1: MicroserviceSample (MicroserviceSample) <SoftwareArchitectur
 
 // End Protected Region   [[c7e488b8-eb1c-11f0-94f3-55208a19cd68,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,c7e488b8-eb1c-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,c7e488b8-eb1c-11f0-94f3-55208a19cd68,zxTLq6nI3IG90SMQmaTTVsuFguw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,c7e488b8-eb1c-11f0-94f3-55208a19cd68,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,c7e488b8-eb1c-11f0-94f3-55208a19cd68,IsyWSjCiOfv2htUGK1SJlDscEhQ=]

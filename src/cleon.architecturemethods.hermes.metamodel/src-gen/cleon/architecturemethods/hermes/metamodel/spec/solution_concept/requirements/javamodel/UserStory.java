@@ -109,7 +109,6 @@ public class UserStory extends DynamicResource implements IUserStory {
     // relations
     _acceptList(cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IAcceptanceCriteria.class, cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.RequirementsPackage.UserStory_acceptanceCriterias, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.name.javamodel.ILanguageNameTranslation.class, cleon.common.language.metamodel.spec.translation.name.NamePackage.MultilingualName_nameTranslation, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -120,4 +119,4 @@ public class UserStory extends DynamicResource implements IUserStory {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88ee0704-3caf-11f1-9432-65d6b2716831,e9GgOe74oELr2W0bY8FgaM4RoUc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88ee0704-3caf-11f1-9432-65d6b2716831,oD5LFhkla/9lc79EnsQTzD2U9uw=] */

@@ -21,7 +21,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IRequirementListFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a8f58eb3-d33f-11ef-802e-175af1a41dfa")
-    public java.lang.String RenderParagraph(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String _RenderParagraph(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("095cb369-d8a8-11ef-a46f-a1c9ec5f966b")
     public java.lang.String ShortName();
@@ -202,12 +202,18 @@ public class FunctionSpace_Asciidoc {
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("84d341a7-0efc-11f0-b76f-5998f6696fc7")
-    public java.lang.String RenderContent(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderParagraph(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+
+    @IDynamicResourceExtension.MethodId("42a6c92e-3cc0-11f1-929c-672b94f43512")
+    public java.lang.Boolean HasContent();
 
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("42a6c92e-3cc0-11f1-929c-672b94f43512")
+    public java.lang.Boolean HasContent(final cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirement requirement);
+
   }
   
   public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
@@ -216,11 +222,22 @@ public class FunctionSpace_Asciidoc {
 
     private RequirementFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean HasContent(final cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirement requirement) {
+      /* Begin Protected Region [[42a6c92e-3cc0-11f1-929c-672b94f43512]] */
+    	return !requirement.selectParagraphs().isEmpty() || !requirement.selectDescriptions().isEmpty();      
+      /* End Protected Region   [[42a6c92e-3cc0-11f1-929c-672b94f43512]] */
+    }
+
   }
   
   public static class RequirementFunctions {
 
     private RequirementFunctions() {}
+
+    public static java.lang.Boolean HasContent(final cleon.architecturemethods.hermes.metamodel.spec.solution_concept.requirements.javamodel.IRequirement requirement) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirement).HasContent(requirement);
+    }
 
   }
 
@@ -304,4 +321,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,ZER6F8u58858qh24o+3OaiNa6Y0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,7C913TNkg+3UqW0KT+DcEmifmCw=] */

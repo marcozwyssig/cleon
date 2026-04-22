@@ -36,7 +36,7 @@ public abstract class AbstractBaseLanguageInitializationAspect extends AbstractI
 			
 			try {
 				final var targetText = TranslationService.INSTANCE.translate(sourceLanguage, targetLanguage, sourceText);
-				ch.actifsource.util.log.Logger.instance().logInfo(String.format("Source Language: %s; Target Language: %s; Source Text: %s; Target Text: %s;", sourceLanguage, targetLanguage, sourceText, targetText));
+				ch.actifsource.util.log.Logger.instance().logInfo(String.format("Source Language: %s; Target Language: %s; Source Text: %s; Target Text: %s;", sourceLanguage, targetLanguage, sourceText, targetText));				
 				setTargetText(modifiable, pkg, newInstance, LiteralUtil.create(targetText));
 			} catch (final IOException e) {
 				throw new RuntimeException(e);

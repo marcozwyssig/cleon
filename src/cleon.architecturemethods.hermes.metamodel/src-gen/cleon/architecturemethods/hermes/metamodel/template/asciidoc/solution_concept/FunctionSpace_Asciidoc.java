@@ -202,7 +202,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("84d341a7-0efc-11f0-b76f-5998f6696fc7")
-    public java.lang.String RenderParagraph(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
+    public java.lang.String RenderChapter(final cleon.common.language.metamodel.spec.languages.javamodel.ILanguage language);
 
     @IDynamicResourceExtension.MethodId("42a6c92e-3cc0-11f1-929c-672b94f43512")
     public java.lang.Boolean HasContent();
@@ -321,4 +321,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,7C913TNkg+3UqW0KT+DcEmifmCw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,011d55a8-d33d-11ef-802e-175af1a41dfa,hA/fHuk8TN6fXy+UfrsbqiYBSFI=] */

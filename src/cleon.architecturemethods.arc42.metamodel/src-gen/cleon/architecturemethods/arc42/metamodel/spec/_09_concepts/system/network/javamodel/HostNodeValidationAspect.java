@@ -70,7 +70,7 @@ public class HostNodeValidationAspect implements IResourceValidationAspect {
 		
 		if (hostNodeFunctions.DNSRecordSet() && !systemConfigurationFunction.AllowDNSRecordExport()) {
 			final var errorMessage = "The system configuration does not permit exporting DNS records. Please disable DNS record export for this host node.";
-			final var quickfix = createDNSRecordExportQuickFix(context);			
+			final var quickfix = createDNSRecordExportQuickFix(context);	
 			inconsistencyList.add(new SingleResourceInconsistency(context.getPackage(), context.getResource(), IResourceInconsistency.NodeRole.Object, errorMessage, InconsistencyType.Error, quickfix));
 		}
     }

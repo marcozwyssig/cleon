@@ -71,6 +71,16 @@ public class TextChapterReference extends DynamicResource implements ITextChapte
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
+  }
+
+  public TextChapterReference setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -118,11 +128,10 @@ public class TextChapterReference extends DynamicResource implements ITextChapte
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_text, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.ChapterReference_chapterRef, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptMap(cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,fnmSmNfkS7u2sODig+pcime6N3A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56be6ccf-dbc2-11ea-b71c-ade06d3dafe4,cmkfvTMuM/orfkles0oV0xrhASM=] */

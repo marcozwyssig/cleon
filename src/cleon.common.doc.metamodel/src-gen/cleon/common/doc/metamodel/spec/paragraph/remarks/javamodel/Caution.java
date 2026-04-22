@@ -70,6 +70,16 @@ public class Caution extends DynamicResource implements ICaution {
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
+  }
+
+  public Caution setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -116,11 +126,10 @@ public class Caution extends DynamicResource implements ICaution {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.remarks.RemarksPackage.Remark_remark, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptMap(cleon.common.doc.metamodel.spec.paragraph.javamodel.ILanguageTextTranslation.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.TextAware_textTranslation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,hvAJeyGHCFCzOOzXQ0R3q9UwxbQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,6SARhJ7qpjVrOv+vr4VTz/Chs2I=] */

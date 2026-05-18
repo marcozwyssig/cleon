@@ -21,7 +21,6 @@ public class _08_data_viewPackage {
   public static final Resource DataView = new Resource("0738a3fd-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DatabaseView = new Resource("846aa8f6-db90-11ee-bf0f-4753d26fac10");
   public static final Resource DataView_databaseView = new Resource("8d89dd07-db90-11ee-bf0f-4753d26fac10");
-  public static final Resource DatabaseView_softwareMonolithDatabase = new Resource("d4d004c3-db90-11ee-bf0f-4753d26fac10");
   public static final Resource FunctionSpace_aE_Data_aE_View_Conditional = new Resource("bd359a30-e11a-11ee-995f-5faf5f77d478");
   public static final Resource FunctionSpace_aE_Data_aE_View_Where = new Resource("07bae7b2-e11b-11ee-995f-5faf5f77d478");
   public static final Resource FunctionSpace_aE_Data_aE_View_Column = new Resource("afaa6e87-e11c-11ee-995f-5faf5f77d478");
@@ -61,4 +60,4 @@ public class _08_data_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,XaM1dYlECg0XWsMho5WN00Getl8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view,0dt5HwLJayIfy6rJu2j9A0qw4XM=] */

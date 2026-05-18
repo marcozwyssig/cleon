@@ -378,7 +378,7 @@
 									<db:para>Von Test2 [<db:xref linkend="ea.6a82cd52-0df0-11e9-a28e-8b950dcca323" xrefstyle="template:%n"/>] zu Test1</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
+									<db:para>Der Test2 (Test2) Baustein ist abhängig vom Test1 (Test1) Baustein.</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -416,7 +416,7 @@
 									<db:para>Von Test2 zu Test1_2_1 [] </db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein ist abhängig vom Test1_2_1 Baustein.</db:para>
+									<db:para>Der Test2 (Test2) Baustein ist abhängig vom Test1_2_1 (Test1_2_1) Baustein.</db:para>
 								</db:td>
 							</db:tr>
 							<db:tr>
@@ -424,7 +424,7 @@
 									<db:para>Von Test2 zu Test1 [<db:xref linkend="ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323" xrefstyle="template:%n"/>] </db:para>
 								</db:td>
 								<db:td>
-									<db:para>Der Test2 Baustein ist abhängig vom Test1 Baustein.</db:para>
+									<db:para>Der Test2 (Test2) Baustein ist abhängig vom Test1 (Test1) Baustein.</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -451,17 +451,17 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.48213901-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_2: Test1 (Test1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			<db:para>dfasdfasdfasdf</db:para>
 			<db:para>sdfgsdfgsdfg</db:para>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1 in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				  <db:title>Level_2: Test1 (Test1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test1__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test1__Test1___SampleBuildingBlock___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -492,16 +492,16 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.48213902-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_2: Test2 (Test2) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			<db:para>purpose...</db:para>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test2 in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				  <db:title>Level_2: Test2 (Test2) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test2__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test2__Test2___SampleBuildingBlock___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -532,16 +532,16 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.48213903-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_2: Test3 (Test3) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			<db:para>purpose...</db:para>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test3 in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				  <db:title>Level_2: Test3 (Test3) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test3__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_2__Test3__Test3___SampleBuildingBlock___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -572,15 +572,15 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.489cd282-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_3: Test1_2 (Test1_2) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2 in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				  <db:title>Level_3: Test1_2 (Test1_2) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_3__Test1_2__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_3__Test1_2__Test1_2___SampleBuildingBlock___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -611,23 +611,23 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.489cd283-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_3: Test2_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_3: Test2_2 (Test2_2) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			
 		</db:section>
 		<db:section xml:id="ea.489cd281-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_3: Test3_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_3: Test3_1 (Test3_1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			
 		</db:section>
 		<db:section xml:id="ea.4965ee24-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_4: Test1_2_1 (Test1_2_1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			<db:section>
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Test1_2_1 in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				  <db:title>Level_4: Test1_2_1 (Test1_2_1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_4__Test1_2_1__SampleBuildingBlock___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Level_4__Test1_2_1__Test1_2_1___SampleBuildingBlock___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -658,7 +658,7 @@
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.7f52b647-d579-11ee-903e-9f564e4de07e">
-			<db:title>Ebene_5: Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+			<db:title>Ebene_5: Test1_2_1_1 (Test1_2_1_1) &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 			
 		</db:section>
 	</db:chapter>

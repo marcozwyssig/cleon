@@ -5,7 +5,7 @@
 :toc:
 
 [#4843dca2-d579-11ee-903e-9f564e4de07e]
-=== Ebene_2: Applications <Category> (Whitebox)
+=== Ebene_2: Applications (Applications) <Category> (Whitebox)
 Motivation::
 // Begin Protected Region [[motivation]]  
 TODO: Describe the motivation for the building block view.
@@ -21,9 +21,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Ebene_2: Applications <Category> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_2: Applications (Applications) <Category> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: Applications <Category> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: Applications (Applications) <Category> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -38,8 +38,8 @@ skinparam rectangle {
 top to bottom direction
 
 component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
-    component "Ebene_2: Applications <Category> (Whitebox)" #lightblue {
-        [**Ebene_3: actifsource <Feature> <Feature> (Whitebox)**] as 49057F39_D579_11EE_903E_9F564E4DE07E
+    component "Ebene_2: Applications (Applications) <Category> (Whitebox)" #lightblue {
+        [**Ebene_3: Actifsource <Feature> (actifsource) <Feature> (Whitebox)**] as 49057F39_D579_11EE_903E_9F564E4DE07E
     }
 
     
@@ -48,7 +48,7 @@ component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
 @enduml
 ----
 
-. <<49057f39-d579-11ee-903e-9f564e4de07e,actifsource <Feature>>>
+. <<49057f39-d579-11ee-903e-9f564e4de07e,Actifsource <Feature>>>
 
 
 // Begin Protected Region [[4843dca2-d579-11ee-903e-9f564e4de07e,customText]]
@@ -100,4 +100,4 @@ TODO: Describe the open issues/problems/risks.
 
 // End Protected Region   [[485bd1d9-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca2-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca2-d579-11ee-903e-9f564e4de07e,aKh90DoPTgBOc542KEfZ0vphtnU=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,4843dca2-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,4843dca2-d579-11ee-903e-9f564e4de07e,Di3SJLZ+uq/RGODQsLot4SiPU8U=]

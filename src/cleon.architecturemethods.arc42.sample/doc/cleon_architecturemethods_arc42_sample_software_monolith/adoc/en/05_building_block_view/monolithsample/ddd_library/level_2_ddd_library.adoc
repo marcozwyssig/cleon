@@ -5,7 +5,7 @@
 :toc:
 
 [#809a6945-cb0a-11f0-ad08-33c52acb975f]
-=== Level_2: ddd Library <SoftwareMonolithLibrary> (Whitebox)
+=== Level_2: Ddd Library (ddd) <SoftwareMonolithLibrary> (Whitebox)
 Motivation::
 
 Fullname::
@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Level_2: ddd Library <SoftwareMonolithLibrary> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: Ddd Library (ddd) <SoftwareMonolithLibrary> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_2: ddd Library <SoftwareMonolithLibrary> (Whitebox)BuildingBlockOverview
+@startuml Level_2: Ddd Library (ddd) <SoftwareMonolithLibrary> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -34,7 +34,7 @@ skinparam rectangle {
 top to bottom direction
 
 component "Level_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Whitebox) (Parent)" {
-    component "Level_2: ddd Library <SoftwareMonolithLibrary> (Whitebox)" #lightblue {
+    component "Level_2: Ddd Library (ddd) <SoftwareMonolithLibrary> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Level_1: MonolithSample (MonolithSample) <SoftwareMonolithSystem> (Wh
 
 // End Protected Region   [[809a6945-cb0a-11f0-ad08-33c52acb975f,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,809a6945-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,809a6945-cb0a-11f0-ad08-33c52acb975f,3uJXNa+QrOMGvYxnKXxfbchn2yg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,809a6945-cb0a-11f0-ad08-33c52acb975f,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,809a6945-cb0a-11f0-ad08-33c52acb975f,BpZqFJvpuU9rzIHuOcQJX4pvK7U=]

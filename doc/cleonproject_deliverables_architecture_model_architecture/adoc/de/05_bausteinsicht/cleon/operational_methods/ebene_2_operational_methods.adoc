@@ -5,7 +5,7 @@
 :toc:
 
 [#3b8d9b20-d421-11ef-bdef-4d33dbce89cb]
-=== Ebene_2: Operational Methods <Category> (Whitebox)
+=== Ebene_2: Operational Methods (Operational Methods) <Category> (Whitebox)
 Motivation::
 
 Fullname::
@@ -17,9 +17,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Ebene_2: Operational Methods <Category> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_2: Operational Methods (Operational Methods) <Category> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: Operational Methods <Category> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: Operational Methods (Operational Methods) <Category> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -34,9 +34,9 @@ skinparam rectangle {
 top to bottom direction
 
 component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
-    component "Ebene_2: Operational Methods <Category> (Whitebox)" #lightblue {
-        [**Ebene_3: chocolatey <Feature> <Feature> (Whitebox)**] as 49055817_D579_11EE_903E_9F564E4DE07E
-        [**Ebene_3: hermes <Feature> <Feature> (Whitebox)**] as 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
+    component "Ebene_2: Operational Methods (Operational Methods) <Category> (Whitebox)" #lightblue {
+        [**Ebene_3: Chocolatey <Feature> (chocolatey) <Feature> (Whitebox)**] as 49055817_D579_11EE_903E_9F564E4DE07E
+        [**Ebene_3: Hermes <Feature> (hermes) <Feature> (Whitebox)**] as 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
     }
 
     49055817_D579_11EE_903E_9F564E4DE07E -down-> 3BB60AD5_D421_11EF_BDEF_4D33DBCE89CB
@@ -46,12 +46,12 @@ component "Level_1: Cleon (Cleon) <EclipseEcosystem> (Whitebox) (Parent)" {
 @enduml
 ----
 
-. <<49055817-d579-11ee-903e-9f564e4de07e,chocolatey <Feature>>>
-. <<3bb60ad5-d421-11ef-bdef-4d33dbce89cb,hermes <Feature>>>
+. <<49055817-d579-11ee-903e-9f564e4de07e,Chocolatey <Feature>>>
+. <<3bb60ad5-d421-11ef-bdef-4d33dbce89cb,Hermes <Feature>>>
 
 
 // Begin Protected Region [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
 // End Protected Region   [[3b8d9b20-d421-11ef-bdef-4d33dbce89cb,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,S+FrDQeTtbAHDky6IBWw09YFvJQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3b8d9b20-d421-11ef-bdef-4d33dbce89cb,yih4aTGDSvwaJg4bpR2uT4EKnXo=]

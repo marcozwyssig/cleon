@@ -45,9 +45,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   public static interface IAbstractSystemOrSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("59dcc048-4bd5-11ed-bcee-57344264bda3")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("d71c7699-4bd4-11ed-bcee-57344264bda3")
     public java.lang.String ShortnameOrOverride();
 
@@ -121,9 +118,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     @IDynamicResourceExtension.MethodId("da82f449-4bc1-11ed-9983-274ab90bcd39")
     public java.lang.String OverrideOrName();
-
-    @IDynamicResourceExtension.MethodId("efaea1fb-4bd5-11ed-bcee-57344264bda3")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("0c78c830-4bd6-11ed-bcee-57344264bda3")
     public java.lang.String ShortnameOrOverride();
@@ -201,6 +195,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
     @IDynamicResourceExtension.MethodId("61eaf769-009f-11ea-9b43-0b5ecf12c553")
     public java.lang.String GroupName();
+
+    @IDynamicResourceExtension.MethodId("2250b165-52c3-11f1-b29c-1766e5efe1b4")
+    public java.lang.String GetName();
 
   }
   
@@ -321,4 +318,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,dPfn2A+EigJ79OkGgYFWi5XNxAY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,mMmO78bSO/+fRpcmHmYdPBgdYG4=] */

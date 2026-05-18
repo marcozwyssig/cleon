@@ -14,8 +14,8 @@ public interface IDataView extends cleon.architecturemethods.arc42.metamodel.spe
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView> selectDatabaseView();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView selectDatabaseView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,q5eCcIF3YtJrRXb3QFyADTFhc1A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,jLeF+BjWzq3hcrf+k6iWnlB/N7w=] */

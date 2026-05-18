@@ -5,7 +5,7 @@
 :toc:
 
 [#48213903-d579-11ee-903e-9f564e4de07e]
-=== Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)
+=== Ebene_2: Test3 (Test3) <SampleBuildingBlock> (Whitebox)
 Motivation::
 purpose...
 
@@ -18,9 +18,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_2: Test3 (Test3) <SampleBuildingBlock> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
+@startuml Ebene_2: Test3 (Test3) <SampleBuildingBlock> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -35,8 +35,8 @@ skinparam rectangle {
 top to bottom direction
 
 component "Level_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
-    component "Ebene_2: Test3 <SampleBuildingBlock> (Whitebox)" #lightblue {
-        [**Ebene_3: Test3_1 <SampleBuildingBlock> (Whitebox)**] as 489CD281_D579_11EE_903E_9F564E4DE07E
+    component "Ebene_2: Test3 (Test3) <SampleBuildingBlock> (Whitebox)" #lightblue {
+        [**Ebene_3: Test3_1 (Test3_1) <SampleBuildingBlock> (Whitebox)**] as 489CD281_D579_11EE_903E_9F564E4DE07E
     }
 
     
@@ -52,4 +52,4 @@ component "Level_1: Chess (Chess) <SoftwareSystem> (Whitebox) (Parent)" {
 
 // End Protected Region   [[48213903-d579-11ee-903e-9f564e4de07e,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,5myVe6NvJ1SBRNkn/Aaov8VYbaQ=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,48213903-d579-11ee-903e-9f564e4de07e,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,48213903-d579-11ee-903e-9f564e4de07e,V2lyH3GBiNJ9kOgnU3gBfaXulMM=]

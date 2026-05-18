@@ -5,7 +5,7 @@
 :toc:
 
 [#3bb60ad5-d421-11ef-bdef-4d33dbce89cb]
-=== Ebene_3: hermes <Feature> <Feature> (Whitebox)
+=== Ebene_3: Hermes <Feature> (hermes) <Feature> (Whitebox)
 Motivation::
 
 Fullname::
@@ -17,9 +17,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Ebene_3: hermes <Feature> <Feature> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_3: Hermes <Feature> (hermes) <Feature> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_3: hermes <Feature> <Feature> (Whitebox)BuildingBlockOverview
+@startuml Ebene_3: Hermes <Feature> (hermes) <Feature> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Operational Methods <Category> (Whitebox) (Parent)" {
-    component "Ebene_3: hermes <Feature> <Feature> (Whitebox)" #lightblue {
+component "Level_2: Operational Methods (Operational Methods) <Category> (Whitebox) (Parent)" {
+    component "Ebene_3: Hermes <Feature> (hermes) <Feature> (Whitebox)" #lightblue {
         [**Ebene_4: MetaModel <MetaModel> <MetaModel> (Whitebox)**] as 3BDFB317_D421_11EF_BDEF_4D33DBCE89CB
         [**Ebene_4: Sample <Sample> <Sample> (Whitebox)**] as 3BDFB318_D421_11EF_BDEF_4D33DBCE89CB
     }
@@ -54,4 +54,4 @@ component "Level_2: Operational Methods <Category> (Whitebox) (Parent)" {
 
 // End Protected Region   [[3bb60ad5-d421-11ef-bdef-4d33dbce89cb,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3bb60ad5-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3bb60ad5-d421-11ef-bdef-4d33dbce89cb,ijcATc0nZ9KfR0o8T2rQetDOmDA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3bb60ad5-d421-11ef-bdef-4d33dbce89cb,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3bb60ad5-d421-11ef-bdef-4d33dbce89cb,RTegX1pa9S6s6Oxc6hm8iI7FugU=]

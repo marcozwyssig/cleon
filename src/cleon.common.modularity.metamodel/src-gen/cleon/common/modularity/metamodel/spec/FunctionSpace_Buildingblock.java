@@ -387,6 +387,31 @@ public class FunctionSpace_Buildingblock {
 
   }
 
+  public static interface IBuildingBlockWithNameFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f9e315ed-52c5-11f1-b29c-1766e5efe1b4")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface IBuildingBlockWithNameFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockWithNameFunctionsImpl implements IBuildingBlockWithNameFunctionsImpl {
+
+    public static final IBuildingBlockWithNameFunctionsImpl INSTANCE = new BuildingBlockWithNameFunctionsImpl();
+
+    private BuildingBlockWithNameFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockWithNameFunctions {
+
+    private BuildingBlockWithNameFunctions() {}
+
+  }
+
   public static interface IDependentBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6eee61b2-ebcb-11f0-8469-8329ddc31212")
@@ -435,4 +460,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Gz9VKHutFNreQutGBASazaLX4go=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,AP4DELq+lqPJznE1VHpc7zz8Aow=] */

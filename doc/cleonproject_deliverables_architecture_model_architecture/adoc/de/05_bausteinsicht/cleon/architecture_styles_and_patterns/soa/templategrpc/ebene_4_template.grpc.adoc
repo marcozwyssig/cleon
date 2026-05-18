@@ -5,7 +5,7 @@
 :toc:
 
 [#3c7bab04-0414-11f0-b041-cf872c9c3703]
-=== Ebene_4: grpc <Template> <Template> (Whitebox)
+=== Ebene_4: Grpc <Template> <Template> (Whitebox)
 Motivation::
 
 Fullname::
@@ -17,9 +17,9 @@ Parent::
 
 ==== Baustein-Übersicht
 
-[plantuml, Ebene_4: grpc <Template> <Template> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Ebene_4: Grpc <Template> <Template> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Ebene_4: grpc <Template> <Template> (Whitebox)BuildingBlockOverview
+@startuml Ebene_4: Grpc <Template> <Template> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -33,8 +33,8 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_3: SOA <Feature> <Feature> (Whitebox) (Parent)" {
-    component "Ebene_4: grpc <Template> <Template> (Whitebox)" #lightblue {
+component "Level_3: SOA <Feature> (SOA) <Feature> (Whitebox) (Parent)" {
+    component "Ebene_4: Grpc <Template> <Template> (Whitebox)" #lightblue {
     }
 
 }
@@ -48,4 +48,4 @@ component "Level_3: SOA <Feature> <Feature> (Whitebox) (Parent)" {
 
 // End Protected Region   [[3c7bab04-0414-11f0-b041-cf872c9c3703,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3c7bab04-0414-11f0-b041-cf872c9c3703,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3c7bab04-0414-11f0-b041-cf872c9c3703,1JW8hSTUJverMh+LH1od3RmtyVA=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,3c7bab04-0414-11f0-b041-cf872c9c3703,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,3c7bab04-0414-11f0-b041-cf872c9c3703,34xbTSR88WWkdXl+rQsmi01GDys=]

@@ -79,12 +79,12 @@ public class DataView extends DynamicResource implements IDataView {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView> selectDatabaseView() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView);
+  public cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView selectDatabaseView() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView);
   }
 
-  public DataView setDatabaseView(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView> databaseView) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView, databaseView);
+  public DataView setDatabaseView(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView databaseView) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView, databaseView);
     return this;
   }
     
@@ -135,7 +135,7 @@ public class DataView extends DynamicResource implements IDataView {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DataView_databaseView, visitor);
     _acceptMap(cleon.common.language.metamodel.spec.translation.description.javamodel.ILanguageDescriptionTranslation.class, cleon.common.language.metamodel.spec.translation.description.DescriptionPackage.MultilingualDescription_descriptionTranslation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -148,4 +148,4 @@ public class DataView extends DynamicResource implements IDataView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,b3727Ahjs64tM/MsVkXkHyW+FfY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0738a3fd-db90-11ee-bf0f-4753d26fac10,fH4akR3nDUM0ktKlScb5YpTa5Mw=] */

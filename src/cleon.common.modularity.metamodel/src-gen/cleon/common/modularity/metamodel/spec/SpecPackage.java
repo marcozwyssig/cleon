@@ -29,6 +29,8 @@ public class SpecPackage {
   public static final Resource DependentBuildingBlock_dependsFrom = new Resource("2777345f-d77e-11f0-93ea-bb20417aaf76");
   public static final Resource FunctionSpace_aE_Buildingblock_DependentBuildingBlock = new Resource("71890a2b-d77f-11f0-93ea-bb20417aaf76");
   public static final Resource BuildingBlock_fullName = new Resource("e4aabdde-e598-11f0-a60c-db015d172622");
+  public static final Resource BuildingBlockWithName = new Resource("cae890e4-52c5-11f1-b29c-1766e5efe1b4");
+  public static final Resource FunctionSpace_aE_Buildingblock_BuildingBlockWithName = new Resource("f9e315e0-52c5-11f1-b29c-1766e5efe1b4");
   
   /* Begin Protected Region [[user]] */
   
@@ -49,4 +51,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,vxpXlESkJvSv1vHjF/cHmzCBACA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,PYvIsdRrDjPB7jiw4ngzN/PVlmE=] */

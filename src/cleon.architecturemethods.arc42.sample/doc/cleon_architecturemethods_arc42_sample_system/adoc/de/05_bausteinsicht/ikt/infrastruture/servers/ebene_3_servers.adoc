@@ -33,7 +33,7 @@ skinparam rectangle {
 }
 top to bottom direction
 
-component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
+component "Level_2: Infrastruture (Infrastruture) <SystemLayer> (Whitebox) (Parent)" {
     component "Ebene_3: Servers <SystemComponent> (Whitebox)" #lightblue {
         [**Ebene_4: HPE (HPE) <ServerSystemConfiguration> (Whitebox)**] as B582462C_BEE0_11EF_B498_058EE446F8E7
     }
@@ -51,4 +51,4 @@ component "Level_2: Infrastruture <SystemLayer> (Whitebox) (Parent)" {
 
 // End Protected Region   [[42db7e7f-bedf-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,gzcy2GsB+EiDP1pN1ptn+LQ/mwg=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,42db7e7f-bedf-11ef-b498-058ee446f8e7,dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4,42db7e7f-bedf-11ef-b498-058ee446f8e7,/K02a6S+jxAz8m24u2rYAXwWp18=]

@@ -5,7 +5,7 @@
 :toc:
 
 [#7f8cda2c-beda-11ef-b498-058ee446f8e7]
-=== Level_2: Application <SystemLayer> (Whitebox)
+=== Level_2: Application (Application) <SystemLayer> (Whitebox)
 Motivation::
 
 Fullname::
@@ -17,9 +17,9 @@ Parent::
 
 ==== Building Block Overview
 
-[plantuml, Level_2: Application <SystemLayer> (Whitebox)BlockOverview, format="svg"]
+[plantuml, Level_2: Application (Application) <SystemLayer> (Whitebox)BlockOverview, format="svg"]
 ----
-@startuml Level_2: Application <SystemLayer> (Whitebox)BuildingBlockOverview
+@startuml Level_2: Application (Application) <SystemLayer> (Whitebox)BuildingBlockOverview
 
 skinparam ranksep 10
 skinparam componentStyle rectangle
@@ -34,7 +34,7 @@ skinparam rectangle {
 top to bottom direction
 
 component "Level_1: IKT (IKT) <System> (Whitebox) (Parent)" {
-    component "Level_2: Application <SystemLayer> (Whitebox)" #lightblue {
+    component "Level_2: Application (Application) <SystemLayer> (Whitebox)" #lightblue {
         [**Level_3: Directory Service <SystemComponent> (Whitebox)**] as 88301D91_219A_11F0_83AE_DF5418A109A4
     }
 
@@ -51,4 +51,4 @@ component "Level_1: IKT (IKT) <System> (Whitebox) (Parent)" {
 
 // End Protected Region   [[7f8cda2c-beda-11ef-b498-058ee446f8e7,customText]]
 
-// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f8cda2c-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f8cda2c-beda-11ef-b498-058ee446f8e7,cQC0B+8jZDPkXqrhHC0jdtXZdQw=]
+// Actifsource ID=[803ac313-d64b-11ee-8014-c150876d6b6e,7f8cda2c-beda-11ef-b498-058ee446f8e7,dd79cee8-3339-11e8-a9fe-87ba35d8f5c4,7f8cda2c-beda-11ef-b498-058ee446f8e7,cW+6l9OW8jDahm7eIDFYPtUgB50=]

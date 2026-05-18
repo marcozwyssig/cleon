@@ -120,32 +120,12 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase selectSoftwareMonolithDatabase() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase);
-  }
-
-  public DatabaseView setSoftwareMonolithDatabase(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase softwareMonolithDatabase) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase, softwareMonolithDatabase);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea> selectTableAreas() {
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas);
   }
 
   public DatabaseView setTableAreas(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea> tableAreas) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, tableAreas);
-    return this;
-  }
-    
-  @Override
-  public ch.actifsource.core.javamodel.IResource selectTarget() {
-    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
-  }
-
-  public DatabaseView setTarget(ch.actifsource.core.javamodel.IResource target) {
-    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
     
@@ -171,16 +151,11 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IEnumerationMappingView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_enumerationMappingView, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.communication.javamodel.IEnumeration.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_scope, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
-  
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView> selectToMeSoftwareMonolithDatabase(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.software.monolith.database.javamodel.ISoftwareMonolithDatabase object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_softwareMonolithDatabase, object.getResource());
-  }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView selectToMeTableAreas(cleon.architecturemethods.arc42.metamodel.spec._08_data_view.table.javamodel.ITableArea object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_data_view.javamodel.IDatabaseView.class, cleon.architecturemethods.arc42.metamodel.spec._08_data_view._08_data_viewPackage.DatabaseView_tableAreas, object.getResource());
@@ -195,4 +170,4 @@ public class DatabaseView extends DynamicResource implements IDatabaseView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,t8vfAEe/i36frt7I0vzQ9lQzvv8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,846aa8f6-db90-11ee-bf0f-4753d26fac10,b8aqAfeahuPvpOCLU5gxAbKje58=] */

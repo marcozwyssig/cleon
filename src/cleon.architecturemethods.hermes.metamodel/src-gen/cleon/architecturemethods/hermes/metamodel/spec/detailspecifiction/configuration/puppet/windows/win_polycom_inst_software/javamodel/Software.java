@@ -31,6 +31,15 @@ public class Software extends DynamicResource implements ISoftware {
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -180,6 +189,7 @@ public class Software extends DynamicResource implements ISoftware {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_className, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_inst_software.Win_polycom_inst_softwarePackage.AbstractInstallConfiguration_installationPath, visitor);
@@ -200,4 +210,4 @@ public class Software extends DynamicResource implements ISoftware {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cac8a422-112e-11f0-a4f9-b5f995a9e0fe,9ClFNtHyFRY6ikFTizf1EHEWW4Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cac8a422-112e-11f0-a4f9-b5f995a9e0fe,ZXxye/5pUlgIGn7op7fMveznQmM=] */

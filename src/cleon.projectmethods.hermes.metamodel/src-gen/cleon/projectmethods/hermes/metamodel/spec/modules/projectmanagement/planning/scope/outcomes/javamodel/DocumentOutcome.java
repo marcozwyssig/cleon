@@ -31,6 +31,15 @@ public class DocumentOutcome extends DynamicResource implements IDocumentOutcome
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -211,6 +220,7 @@ public class DocumentOutcome extends DynamicResource implements IDocumentOutcome
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
@@ -241,4 +251,4 @@ public class DocumentOutcome extends DynamicResource implements IDocumentOutcome
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bab231a7-bfeb-11e8-a3d0-5394fd9291a1,5dx5+INzbsL6pFEf00VakeRKx38=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bab231a7-bfeb-11e8-a3d0-5394fd9291a1,RC7dFBy7r7Jch85ioGmqcTKe44k=] */

@@ -40,6 +40,15 @@ public class WhiteboxSoftware extends DynamicResource implements IWhiteboxSoftwa
   }
 
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -171,6 +180,7 @@ public class WhiteboxSoftware extends DynamicResource implements IWhiteboxSoftwa
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Whitebox_blackboxes, visitor);
@@ -181,4 +191,4 @@ public class WhiteboxSoftware extends DynamicResource implements IWhiteboxSoftwa
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,084f8759-e5f2-11ee-8c4d-db3d1d62259b,d3vel0tflGr6J5/Rt0/n8jC6uJU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,084f8759-e5f2-11ee-8c4d-db3d1d62259b,tcIVUgKlbMPc/wXwLSbRRDXfz+4=] */

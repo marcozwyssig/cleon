@@ -274,12 +274,18 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("036306bd-cdc4-11ef-aceb-ed2f5b1a4839")
     public java.lang.String GetIndentChar();
 
+    @IDynamicResourceExtension.MethodId("8c1b3a8c-8ff5-11f1-a85f-950adb221415")
+    public java.lang.Integer GetMaxIndent();
+
   }
   
   public static interface IDocumentElementCompositeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4f21c7c9-307c-11e5-8cdc-d5b441c8c3df")
     public java.lang.String GetIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite);
+
+    @IDynamicResourceExtension.MethodId("8c1b3a8c-8ff5-11f1-a85f-950adb221415")
+    public java.lang.Integer GetMaxIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite);
 
   }
   
@@ -307,6 +313,13 @@ public class FunctionSpace_Asciidoc {
       /* End Protected Region   [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     }
 
+    @Override
+    public java.lang.Integer GetMaxIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite) {
+      /* Begin Protected Region [[8c1b3a8c-8ff5-11f1-a85f-950adb221415]] */
+      return 7;
+      /* End Protected Region   [[8c1b3a8c-8ff5-11f1-a85f-950adb221415]] */
+    }
+
   }
   
   public static class DocumentElementCompositeFunctions {
@@ -315,6 +328,10 @@ public class FunctionSpace_Asciidoc {
 
     public static java.lang.String GetIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       return DynamicResourceUtil.invoke(IDocumentElementCompositeFunctionsImpl.class, DocumentElementCompositeFunctionsImpl.INSTANCE, documentElementComposite).GetIndent(documentElementComposite);
+    }
+
+    public static java.lang.Integer GetMaxIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite) {
+      return DynamicResourceUtil.invoke(IDocumentElementCompositeFunctionsImpl.class, DocumentElementCompositeFunctionsImpl.INSTANCE, documentElementComposite).GetMaxIndent(documentElementComposite);
     }
 
   }
@@ -1131,4 +1148,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,mvzyvhaN2RkCQj3bWjKZwg0370o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,U3OeJvVMNJQT5+KYBgBDih3Uqp8=] */

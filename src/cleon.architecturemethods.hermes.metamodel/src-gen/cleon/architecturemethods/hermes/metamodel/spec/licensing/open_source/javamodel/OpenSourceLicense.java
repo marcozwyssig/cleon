@@ -31,6 +31,15 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -152,6 +161,7 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -170,4 +180,4 @@ public class OpenSourceLicense extends DynamicResource implements IOpenSourceLic
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3036d829-dfc0-11ef-b0be-9b4cac321140,u0AfFjn0BVzlCSdxIKmymxHsHrA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3036d829-dfc0-11ef-b0be-9b4cac321140,ONO+HBWWC6QGMD0kFgXCWvtX5+k=] */

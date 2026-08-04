@@ -31,6 +31,15 @@ public class UnderTheHoodConcepts extends DynamicResource implements IUnderTheHo
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -132,6 +141,7 @@ public class UnderTheHoodConcepts extends DynamicResource implements IUnderTheHo
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -148,4 +158,4 @@ public class UnderTheHoodConcepts extends DynamicResource implements IUnderTheHo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,CWIomDCI3/k2WLtgnfLLPIwAlo4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f80c7a78-b930-11ee-a0d0-e953bcbfaeef,BDtMmRk0Cef2MyZwq7O9xpyWqNs=] */

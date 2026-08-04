@@ -31,6 +31,15 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -170,6 +179,7 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_className, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_feature_setup.Win_polycom_feature_setupPackage.UninstallFeatures_featuresNames, visitor);
@@ -183,4 +193,4 @@ public class UninstallFeatures extends DynamicResource implements IUninstallFeat
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2923e708-0014-11f0-945c-87b19aec41f4,wFa7uuoSSgKl2cweiiaV2s912lw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2923e708-0014-11f0-945c-87b19aec41f4,Klrws0PF1cAF/RwdgwVn7wYexWs=] */

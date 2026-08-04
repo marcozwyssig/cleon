@@ -31,6 +31,15 @@ public class RemoteDesktopHardening extends DynamicResource implements IRemoteDe
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -206,6 +215,7 @@ public class RemoteDesktopHardening extends DynamicResource implements IRemoteDe
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_className, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_remote_desktop.Win_polycom_remote_desktopPackage.RemoteDesktopHardening_denyTSConnections, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
@@ -223,4 +233,4 @@ public class RemoteDesktopHardening extends DynamicResource implements IRemoteDe
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6fa1c7da-108a-11f0-b378-11a495632127,D7PG+wGUzfcsmEgN/qQm3OT3Ts0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6fa1c7da-108a-11f0-b378-11a495632127,/xsitQADsrqk22Mcni80QvqN/tA=] */

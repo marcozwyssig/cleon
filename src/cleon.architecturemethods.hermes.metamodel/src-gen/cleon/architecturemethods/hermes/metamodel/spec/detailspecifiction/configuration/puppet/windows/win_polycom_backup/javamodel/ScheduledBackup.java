@@ -49,6 +49,15 @@ public class ScheduledBackup extends DynamicResource implements IScheduledBackup
   }
 
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -256,6 +265,7 @@ public class ScheduledBackup extends DynamicResource implements IScheduledBackup
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup.Win_polycom_backupPackage.ScheduledBackup_certificateStore, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup.Win_polycom_backupPackage.ScheduledBackup_certificateThumbprint, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.PuppetPackage.PuppetConfiguration_className, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup.Win_polycom_backupPackage.ScheduledBackup_dataChunkSize, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_backup.Win_polycom_backupPackage.ScheduledBackup_dataSources, visitor);
@@ -288,4 +298,4 @@ public class ScheduledBackup extends DynamicResource implements IScheduledBackup
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bd0ea43-6316-11f0-a7ee-fba3b99d3616,zUdEA7/kQLQiaj/agoxJprCH8vk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bd0ea43-6316-11f0-a7ee-fba3b99d3616,06O2VSVFPpbSTKIWYt6XFSyH8fg=] */

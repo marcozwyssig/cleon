@@ -31,6 +31,15 @@ public class MonitoringBuildingBlocksForSystem extends DynamicResource implement
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -142,6 +151,7 @@ public class MonitoringBuildingBlocksForSystem extends DynamicResource implement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitoring.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
@@ -160,4 +170,4 @@ public class MonitoringBuildingBlocksForSystem extends DynamicResource implement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6037c44c-08a7-11eb-a18e-c7dfa3f96804,TEIsOu7RsQo5OvHBMC6+qg+Bs1o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6037c44c-08a7-11eb-a18e-c7dfa3f96804,m6kmWuu66I6Nd2gGviRQiWga3gY=] */

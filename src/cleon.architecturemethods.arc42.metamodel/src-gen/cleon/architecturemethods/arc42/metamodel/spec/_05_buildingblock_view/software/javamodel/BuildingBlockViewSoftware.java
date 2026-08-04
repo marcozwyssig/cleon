@@ -31,6 +31,15 @@ public class BuildingBlockViewSoftware extends DynamicResource implements IBuild
   // attributes
   
   @Override
+  public java.lang.Integer selectChapterLevel() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel);
+  }
+    
+  public void setChapterLevel(java.lang.Integer chapterLevel) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, chapterLevel);
+  }
+
+  @Override
   public java.lang.String selectChapterPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapterPath);
   }
@@ -242,6 +251,7 @@ public class BuildingBlockViewSoftware extends DynamicResource implements IBuild
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.AbstractChapter_chapterLevel, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
@@ -263,4 +273,4 @@ public class BuildingBlockViewSoftware extends DynamicResource implements IBuild
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a263f97e-ab32-11ef-82e4-fbabda5366bc,YlKpGDNcuR//uFxZp6SduuJ+7Zw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a263f97e-ab32-11ef-82e4-fbabda5366bc,BKtSpoJFxGN0aZ8Xva17axwBzXA=] */

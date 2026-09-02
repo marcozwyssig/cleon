@@ -15,5 +15,5 @@ Gemfile.lock
 /build/.doit.db.db
 .pytask
 # Host venv of the delivery orchestrator, created by cleon.sh / launch.py.
-orchestrator/.venv/
+deploy/provision/orchestrator/.venv/
 __pycache__/

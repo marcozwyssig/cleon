@@ -4,7 +4,7 @@
 #
 # Its ONLY job is to declare cleon's product parameters (ROOT, the orchestrator dir, the module, the
 # name), export the PYTHONPATH it wants, and delegate the whole host-venv bootstrap + exec to lib/platform's
-# launch.sh. Every command lives in Python under orchestrator/src/python/orchestrator. Run
+# launch.sh. Every command lives in Python under deploy/provision/orchestrator/src/python/orchestrator. Run
 # `./cleon.sh help` for the command list; edit cleon.yaml to grow the CLI.
 #
 set -euo pipefail
@@ -26,10 +26,10 @@ fi
 
 # The kernel source + this product's orchestrator package, prepended to PYTHONPATH; the launcher execs the
 # venv python with it inherited.
-export PYTHONPATH="$PLATFORM_SRC:$ROOT/orchestrator/src/python${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="$PLATFORM_SRC:$ROOT/deploy/provision/orchestrator/src/python${PYTHONPATH:+:$PYTHONPATH}"
 
 LAUNCH_PRODUCT=cleon \
 LAUNCH_ROOT="$ROOT" \
-LAUNCH_ORCH_DIR="$ROOT/orchestrator" \
+LAUNCH_ORCH_DIR="$ROOT/deploy/provision/orchestrator" \
 LAUNCH_MODULE=orchestrator \
     exec "$LAUNCH" "$@"

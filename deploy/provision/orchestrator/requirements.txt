@@ -7,7 +7,7 @@
 # resolves the -r path relative to THIS file: the kernel is vendored at <root>/lib/platform and this file is
 # <root>/orchestrator/requirements.txt, so a single `../` reaches the root. (Relocate the orchestrator dir
 # deeper and this is the one path to re-tune - one `../` per extra level - the Python side self-locates.)
--r ../lib/platform/src/delivery/requirements.txt
+-r ../../../lib/platform/src/delivery/requirements.txt
 
 # --- cleon-product-only deps ---
 # Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's

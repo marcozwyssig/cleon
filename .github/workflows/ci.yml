@@ -1,0 +1,113 @@
+# cleon CI. Structurally the same as asbundle's, and deliberately NOT a copy of it: cleon has no build
+# yet (#22), no tests and no generated CLI module, so three of asbundle's steps would either fail or
+# assert nothing here. Each is noted below with what has to exist before it is switched on.
+#
+# What the matrix DOES verify today is worth having on its own: that the host-venv harness bootstraps
+# on all five platforms. Getting that right in asbundle took five CI runs and three distinct bugs, none
+# of which was findable locally.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # --- fast lane, every push and PR -----------------------------------------------------------------
+  check:
+    runs-on: ubuntu-24.04
+    # Minutes, not hours. Without this a job runs against GitHub's six-hour default; a stalled step on a
+    # billed runner is otherwise stopped only by someone noticing.
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true          # lib/platform is public, so no credential is needed
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # Assembling the CLI resolves every command's `impl` reference, so a broken manifest or a renamed
+      # function fails here rather than at first invocation.
+      - name: CLI assembles and every impl resolves
+        run: ./cleon.sh help
+
+      # NOT YET, and each needs something that does not exist:
+      #
+      #   pytest deploy/provision/orchestrator/test/unit/python
+      #       - there are no tests. Add this with the first one.
+      #   ./cleon.sh support tasks generate --check
+      #       - cleon.yaml declares no `generate:` block and there is no committed CLI module, so the
+      #         drift gate has nothing to compare. Add both together (see asbundle for the shape).
+
+  # --- the harness on every platform ----------------------------------------------------------------
+  # Runs on tags and manual dispatch only. Five native runners per invocation is not something to spend
+  # on every merge, and until #22 lands the build step is a placeholder.
+  build:
+    needs: check
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    strategy:
+      fail-fast: false          # one platform's failure must not hide the other four
+      matrix:
+        include:
+          # Runner labels are PINNED, never `-latest`. `macos-latest` silently moved from Intel to
+          # Apple Silicon, which is how three of asbundle's six cells came to be missing unnoticed.
+          #
+          # A pinned label still ROTS: macos-13 was retired, and a job asking for a retired label does
+          # not fail - it QUEUES, with no runner ever assigned, until someone cancels it.
+          # `timeout-minutes` does not help there; that clock starts when a job RUNS.
+          #
+          # windows/arm64 is absent on purpose: IBM Semeru publishes no aarch64 JDK for Windows, so the
+          # bundle cleon builds against cannot exist for that platform.
+          - { os: ubuntu-24.04,     arch: x86_64,  shell: bash }
+          - { os: ubuntu-24.04-arm, arch: aarch64, shell: bash }
+          - { os: macos-15-intel,   arch: x86_64,  shell: bash }
+          - { os: macos-15,         arch: arm64,   shell: bash }
+          - { os: windows-2025,     arch: amd64,   shell: cmd }
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+    steps:
+      - name: Enable git long paths
+        run: git config --global core.longpaths true
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # A matrix that quietly runs x86_64 twice is WORSE than one missing a cell: the result looks
+      # complete while one platform was never exercised. Assert rather than trust the label.
+      - name: Assert this runner is ${{ matrix.arch }}
+        shell: bash
+        run: |
+          actual="$(python -c 'import platform; print(platform.machine().lower())')"
+          echo "runner reports: $actual (expected ${{ matrix.arch }})"
+          [ "$actual" = "${{ matrix.arch }}" ] || {
+            echo "::error::architecture mismatch: expected ${{ matrix.arch }}, got $actual" >&2
+            exit 1
+          }
+
+      # `./cleon.sh build` is a PLACEHOLDER until #22. What this proves today is the harness: that the
+      # host venv bootstraps, the kernel installs, and the CLI assembles - on this platform. That is
+      # exactly what asbundle needed five runs and three bugs to establish.
+      - name: Build (POSIX)
+        if: matrix.shell == 'bash'
+        run: ./cleon.sh build
+
+      # The Windows entry point. The delivery kernel's launcher is POSIX-only - it wants python3 on PATH
+      # and hardcodes $VENV/bin/pip, while a Windows venv uses Scripts\ - so these cells go through
+      # cleon.cmd -> launch.py, which also forces UTF-8 output. Without that the FIRST failure here dies
+      # inside the error reporting (the kernel prints U+2717; the console encoding is cp1252) and buries
+      # the message that said what actually broke.
+      - name: Build (Windows)
+        if: matrix.shell == 'cmd'
+        shell: cmd
+        run: cleon.cmd build

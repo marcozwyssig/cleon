@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!--
+  Actifsource generation for cleon, headless (cleon#22).
+
+  Modelled on Actifsource's own example, https://github.com/actifsource/ch.actifsource.example.ant -
+  specifically asbuild.dynamic.loading.compile_validate_generate.xml. Actifsource ships an Ant task
+  library (`ch.actifsource.ant_*`, providing `actifsource.tasks.detect.xml`) whose tasks boot the
+  Actifsource platform themselves. NO RUNNING ECLIPSE IS REQUIRED - which is what makes generation in
+  CI possible at all, since this repository wires the generator only as an Eclipse builder
+  (`ch.actifsource.environment.builder` in .project) and exposes no headless application.
+
+  Every property below arrives from the caller (the orchestrator), so this file contains no machine
+  paths. The example it is based on hardcodes `D:\Eclipse\...`; that is exactly what must not survive
+  into CI.
+
+  The bundle folder is an Eclipse `plugins` directory - in CI, the one inside the unpacked asbundle
+  bundle, which carries Actifsource. That is the whole reason cleon consumes those bundles.
+-->
+<project name="cleon-generate" default="generate" basedir="../..">
+
+  <!-- ============================================================================================
+       Required properties. Deliberately unset here: -Dname=value from the caller, so nothing in this
+       file depends on where anyone's Eclipse lives.
+
+         cleon.bundle.folders   an Eclipse plugins directory carrying ch.actifsource.* (the bundle)
+         cleon.workspace.root   the workspace root; no projects are taken FROM it, see below
+         cleon.project.folders  where the projects live - this checkout
+       ============================================================================================ -->
+  <fail unless="cleon.bundle.folders"
+        message="cleon.bundle.folders is required: the eclipse/plugins directory of an unpacked asbundle bundle, which supplies ch.actifsource.*"/>
+  <fail unless="cleon.project.folders"
+        message="cleon.project.folders is required: the directory holding the projects to load (this checkout)"/>
+  <property name="cleon.workspace.root" value="${cleon.project.folders}"/>
+
+  <!-- Relative to each project. Matches .classpath's output folder. -->
+  <property name="cleon.project.classes.output" value="bin"/>
+
+  <!-- The root project, whose model generates src/ and doc/. `resourcescope` names it. -->
+  <property name="cleon.root.project" value="cleonproject.deliverables.architecture.model.architecture"/>
+
+  <!-- ============================================================================================
+       Locate the newest ch.actifsource.ant bundle and import its task definitions. Taken verbatim
+       from the vendor example: the bundle name carries a version, so the directory is discovered by
+       date rather than pinned - a pinned version would break on every Actifsource update.
+       ============================================================================================ -->
+  <last id="ch.actifsource.ant.latest.id">
+    <sort>
+      <date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+      <dirset id="ch.actifsource.ant.set" dir="${cleon.bundle.folders}" includes="ch.actifsource.ant_*"/>
+    </sort>
+  </last>
+  <property name="ch.actifsource.ant.latest" refId="ch.actifsource.ant.latest.id"/>
+  <fail message="no ch.actifsource.ant_* bundle under ${cleon.bundle.folders} - is Actifsource installed in that Eclipse? A bundle built without ACTIFSOURCE_USER/ACTIFSOURCE_PASSWORD does not contain it.">
+    <condition><not><available file="${ch.actifsource.ant.latest}" type="dir"/></not></condition>
+  </fail>
+  <echo message="Actifsource ant tasks: ${ch.actifsource.ant.latest}"/>
+  <import file="${ch.actifsource.ant.latest}/actifsource.tasks.detect.xml"/>
+
+  <!-- The six system properties below are repeated on every task. Ant cannot factor nested elements
+       into a macrodef without wrapping the task itself, and wrapping a vendor task to save six lines
+       trades a visible repetition for an invisible indirection. They are repeated, and identical. -->
+
+  <!-- ============================================================================================
+       Generation.
+
+       THREE BUILD CONFIGURATIONS, resolved from .asproject's GUIDs against the model:
+
+         0e7b1402-333a-11ed-bfa6-7df4b819c530 -> ...template.eclipse.src.BuildConfig_Source_Full
+         9ca6e204-3361-11ed-a5c8-59c3bd31a6ea -> ...template.eclipse.feature.BuildConfig_Feature_Full
+         45418f54-42bf-11e6-a9d7-97cf4f7c398b -> ...template.eclipse.site.BuildConfig_Site
+
+       Which also answers what the root model produces: the plugin sources, the features, and the
+       update site - the 22,524 files under src/ are generated, not hand-written.
+
+       ORDER MATTERS. Sources before features before the site: a feature lists plugins, and the site
+       lists features.
+       ============================================================================================ -->
+  <target name="generate-source">
+    <generate2 threadcapacity="1" verbose="false"
+               resourcescope="project:${cleon.root.project}"
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.src.BuildConfig_Source_Full">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
+    </generate2>
+  </target>
+
+  <target name="generate-features" depends="generate-source">
+    <generate2 threadcapacity="1" verbose="false"
+               resourcescope="project:${cleon.root.project}"
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.feature.BuildConfig_Feature_Full">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
+    </generate2>
+  </target>
+
+  <target name="generate-site" depends="generate-features">
+    <generate2 threadcapacity="1" verbose="false"
+               resourcescope="project:${cleon.root.project}"
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.site.BuildConfig_Site">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
+    </generate2>
+  </target>
+
+  <!-- ============================================================================================
+       Validation. `exceptiontype="error"` makes a model error fail the build, which is a gate this
+       project does not have today and gets for free here.
+       ============================================================================================ -->
+  <target name="validate">
+    <validate2 verbose="false" threadcapacity="1"
+               resourcescope="project:${cleon.root.project}" exceptiontype="error">
+      <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
+      <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
+    </validate2>
+  </target>
+
+  <target name="generate" depends="generate-site,validate"
+          description="Generate the plugin sources, the features and the update site, then validate the model."/>
+</project>

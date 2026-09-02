@@ -11,13 +11,48 @@
 #   environments  the deployment env matrix (a backend per env) + the default env.
 product: cleon
 
-# --- product build data (read RAW by your paths adapter, IGNORED by the CLI engine) ---
-# The CLI engine reads only groups/env_groups and ignores any other top-level section, so your product's
-# own build data lives here. Uncomment + extend as the pipeline grows.
-# images:
-#   app: cleon:local
-# volumes:
-#   build_cache: cleon-build-cache
+# --- product build data (read RAW via CONTEXT.manifest_data(), IGNORED by the CLI engine) ---
+# The CLI engine reads only groups/env_groups, so cleon's own build parameters live here rather than in
+# Python. Everything below is a knob someone may need to turn on a machine I cannot see - a differently
+# unpacked bundle, a bigger heap, an Actifsource release that renames a build configuration - and none
+# of it should require editing code to turn.
+build:
+  # WHERE THE BUNDLE IS. `cleon build` does not download it: CI unpacks the asbundle artefact here, and
+  # a developer points this at their own unpacked bundle. Relative paths resolve from the repo root.
+  bundle:
+    directory: build/bundle
+    # Ordered candidates for the Eclipse `plugins` directory inside it, tried in this order. Ordered
+    # rather than searched, because the archive root DIFFERS BY HOST: asbundle zips the Eclipse install
+    # itself on Linux and Windows, and the folder containing Eclipse.app on macOS. A candidate only
+    # counts if it actually holds org.eclipse.equinox.launcher_*.jar.
+    plugin_candidates:
+      - plugins
+      - Eclipse.app/Contents/Eclipse/plugins
+      - "*/plugins"
+      - "*/Eclipse.app/Contents/Eclipse/plugins"
+
+  # THE ANT RUNS. Both files live in deploy/provision/ per the platform block layout.
+  ant:
+    generate_file: deploy/provision/asbuild.generate.xml
+    package_file: deploy/provision/asbuild.package.xml
+    generate_targets: [generate]
+    package_targets: [package]
+    # JVM flags for the Ant process, passed via ANT_OPTS. Generation walks 22,000+ generated files;
+    # the default heap is where that runs out, halfway through a CI run.
+    opts: ["-Xmx4g"]
+    # Extra -D properties handed to BOTH build files. The build files declare defaults for these, so an
+    # empty map here is a working build - this is the override seam, not a requirement.
+    properties:
+      cleon.java.target: "21"
+
+  # WHAT IS BUILT. The site project is the root of the derivation: it names the features, they name the
+  # plugins, and nothing else is compiled (orchestrator/deliverables.py).
+  site:
+    project: cleon.site
+    # Directories under src/ to exclude entirely. The samples are not shipped AND are the only nested
+    # projects; they are currently excluded by not being referenced rather than by name, so this is
+    # empty on purpose - fill it if a sample ever ends up on the site by accident.
+    skip_directories: []
 
 # The ONE command tree, along the CI/CD loop: group -> command -> { impl: "module:function", help }. The
 # key order within a group is its membership order. `build` is a single-member group whose member shares its
@@ -25,13 +60,22 @@ product: cleon
 # env-first group (see env_groups). The starter impls point at the generated `orchestrator.cli` callbacks;
 # replace them with your own as you add commands.
 #
-# `all` is an impl-less AGGREGATE (#895/#896): it declares no impl, only `depends_on`, and the kernel
-# binds it at assembly time (assemble(step_context=...) in orchestrator/cli.py) to run its dependency
-# plan build->up as live-streamed `./cleon.sh <cmd>` steps - a live example, not a dead
-# placeholder. `stop_on_failure: false` (the default) runs every planned step and takes the worst rc.
+# `build` and `all` are impl-less AGGREGATES (#895/#896): they declare no impl, only `depends_on`, and
+# the kernel binds them at assembly time (assemble(step_context=...) in orchestrator/cli.py) to run their
+# dependency plan as live-streamed `./cleon.sh <cmd>` steps.
+#
+# `build` sets `stop_on_failure: true` and `all` leaves it false, and the difference is not cosmetic:
+# packaging a failed generation compiles a stale tree and publishes an update site that looks fine, so
+# that chain must stop at the first red. Deploy's `all` reports every step instead, which is what you
+# want from a status sweep.
 groups:
   build:
-    build: { impl: "orchestrator.cli:build", help: "Build the product artefacts (placeholder)." }
+    generate: { impl: "orchestrator.cli:generate",
+                help: "Run Actifsource headless: generate the plugin sources, features and update site, then validate." }
+    package:  { impl: "orchestrator.cli:package",
+                help: "Compile, jar the plugins and features, and publish the P2 update site." }
+    build:    { help: "Generate then package - the whole build.",
+                depends_on: [generate, package], stop_on_failure: true }
   deploy:
     up:   { impl: "orchestrator.cli:up",     help: "Deploy the product to the target environment (placeholder)." }
     down: { impl: "orchestrator.cli:down",   help: "Tear the deployment down (placeholder)." }

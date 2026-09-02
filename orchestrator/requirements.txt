@@ -1,0 +1,14 @@
+# Host-Python deps for the cleon delivery orchestrator, scaffolded on the delivery kernel
+# (netctl#651 strand 4). Installed into a host venv by cleon.sh via the shared launcher.
+#
+# The delivery KERNEL owns its own dependency declaration (typer/click/PyYAML/rich/textual/pydantic drive
+# manifest assembly + the split-pane step TUI); reference it here with -r rather than re-pinning it, so a
+# kernel dep bump lands in ONE place and this file carries ONLY cleon-product deps (netctl#730). pip
+# resolves the -r path relative to THIS file: the kernel is vendored at <root>/lib/platform and this file is
+# <root>/orchestrator/requirements.txt, so a single `../` reaches the root. (Relocate the orchestrator dir
+# deeper and this is the one path to re-tune - one `../` per extra level - the Python side self-locates.)
+-r ../lib/platform/src/delivery/requirements.txt
+
+# --- cleon-product-only deps ---
+# Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's
+# CLI/TUI stack is already covered by the -r reference above; do not re-pin it here.

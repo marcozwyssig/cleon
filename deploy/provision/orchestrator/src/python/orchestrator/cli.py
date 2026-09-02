@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import contextlib
 import os
+import shutil
+import zipfile
 from pathlib import Path
 
 import typer
@@ -28,6 +30,7 @@ from delivery import run
 from delivery.orchestrator.product import StepFactoryContext
 
 from . import antbuild
+from . import bundles
 from . import deliverables
 from . import environments
 from . import paths
@@ -107,6 +110,192 @@ def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
         rc = run.run(argv, capture=False, cwd=str(paths.ROOT)).rc
     if rc != 0:
         raise typer.Exit(rc)
+
+
+def _oras_login(registry: str) -> None:
+    """Log in to the registry, with the token on STDIN.
+
+    Never as an argv element: argv is world-readable in /proc, which is the same reason the P2
+    repository URL no longer carries credentials either.
+    """
+    token = os.environ.get("GITHUB_TOKEN", "")
+    user = os.environ.get("GITHUB_ACTOR") or os.environ.get("GITHUB_USERNAME") or "x"
+    if not token:
+        raise typer.BadParameter("GITHUB_TOKEN is not set; it is needed to reach the registry")
+    host = registry.split("/")[0]
+    result = run.run(["oras", "login", host, "-u", user, "--password-stdin"],
+                     capture=True, input_text=token)
+    if result.rc != 0:
+        raise typer.BadParameter(f"oras login to {host} failed: {result.err or result.out}")
+
+
+def _require_oras() -> None:
+    if not shutil.which("oras"):
+        raise typer.BadParameter(
+            "oras is not on PATH. It is what moves a plain zip in and out of a registry as an OCI "
+            "artifact; a container image cannot carry a macOS or Windows bundle.")
+
+
+def fetch_bundle() -> None:
+    """Pull the asbundle bundle for this host from the registry and unpack it.
+
+    The bundle is not built here and not vendored: it is asbundle's published artefact, carrying
+    Eclipse, a JDK, Ant and Actifsource Enterprise. cleon installs itself into a copy of it.
+    """
+    settings = _settings()
+    bundle = settings.get("bundle") or {}
+    registry, repository = bundle.get("registry", ""), bundle.get("repository", "")
+    directory = _resolve(bundle.get("directory", "build/bundle"))
+
+    _require_oras()
+    _oras_login(registry)
+
+    key = bundles.host_key()
+    tag = bundle.get("tag") or ""
+    if not tag:
+        listed = run.run(["oras", "repo", "tags", f"{registry.rstrip('/')}/{repository}"],
+                         capture=True)
+        if listed.rc != 0:
+            raise typer.BadParameter(f"could not list tags: {listed.err or listed.out}")
+        tag = bundles.select_tag(listed.out.split(), key)
+        log.info(f"cleon: newest bundle for {key[0]}/{key[1]} is {tag}")
+
+    reference = bundles.reference(registry, repository, tag)
+
+    # Pulled into a scratch directory and unpacked from there: the artefact is a zip, and unpacking it
+    # over a previous run's tree would leave that run's files behind - including plugins cleon
+    # installed, which is exactly what must NOT accumulate between builds.
+    scratch = _resolve("build/bundle-download")
+    for path in (scratch, directory):
+        shutil.rmtree(path, ignore_errors=True)
+    scratch.mkdir(parents=True)
+
+    log.info(f"cleon: pulling {reference}")
+    if run.run(["oras", "pull", reference, "-o", str(scratch)], capture=False).rc != 0:
+        raise typer.Exit(1)
+
+    archives = sorted(scratch.glob("*.zip"))
+    if len(archives) != 1:
+        raise typer.BadParameter(
+            f"expected exactly one zip in {scratch}, found {[a.name for a in archives]}")
+
+    directory.mkdir(parents=True)
+    with zipfile.ZipFile(archives[0]) as archive:
+        archive.extractall(directory)
+
+    # The zip carries no permission bits that tar would; the launcher and java must be executable or
+    # every later step fails with "Permission denied" from a program nobody named.
+    for executable in list(directory.rglob("java")) + list(directory.rglob("eclipse")):
+        if executable.is_file():
+            executable.chmod(0o755)
+
+    # Record which tag this tree came from. `bundle` names the artefact after it, and recomputing
+    # "the newest tag" at publish time could name it after a bundle it does not contain.
+    _resolve("build/bundle-source-tag").write_text(tag, encoding="utf-8")
+
+    eclipse = antbuild.eclipse_home(directory, bundle.get("plugin_candidates") or ["plugins"])
+    log.ok(f"cleon: unpacked {tag} into {eclipse}")
+
+
+def install() -> None:
+    """Install the freshly built cleon features into the bundle's Eclipse.
+
+    This is what makes the published artefact worth publishing: a user starts with cleon already in
+    place and picks up later releases through the ordinary update mechanism, rather than having to add
+    an update site by hand.
+
+    The features are installed from the LOCAL site this build just produced (`file:`), never from a
+    remote one - the point is to ship what was built here.
+    """
+    settings = _settings()
+    site = settings.get("site") or {}
+    eclipse = _eclipse_home()
+    site_dir = _resolve(f"{settings.get('output', 'build-out')}/site")
+    if not (site_dir / "site.xml").is_file():
+        raise typer.BadParameter(f"no update site at {site_dir}; run `cleon build package` first")
+
+    resolved = deliverables.resolve(paths.ROOT, site_project=site.get("project", "cleon.site"),
+                                    skip_directories=tuple(site.get("skip_directories") or ()))
+    units = bundles.feature_group_ids(resolved.feature_ids)
+    log.info(f"cleon: installing {len(units)} feature(s) into {eclipse}")
+
+    launcher = sorted(antbuild.plugins_directory(eclipse).glob("org.eclipse.equinox.launcher_*.jar"))
+    if not launcher:
+        raise typer.BadParameter(f"no equinox launcher under {antbuild.plugins_directory(eclipse)}")
+
+    java = antbuild.java_home(eclipse) / "bin" / ("java.exe" if os.name == "nt" else "java")
+    argv = [str(java), "-jar", str(launcher[-1]),
+            "-nosplash", "-consoleLog",
+            "-application", "org.eclipse.equinox.p2.director",
+            "-repository", site_dir.as_uri(),
+            "-installIU", ",".join(units),
+            "-destination", str(eclipse),
+            "-profile", site.get("profile", "SDKProfile")]
+
+    if run.run(argv, capture=False, cwd=str(paths.ROOT)).rc != 0:
+        raise typer.Exit(1)
+    log.ok(f"cleon: {len(units)} feature(s) installed into the bundle")
+
+
+def bundle() -> None:
+    """Zip the bundle, now carrying cleon, into a publishable archive."""
+    settings = _settings()
+    directory = _resolve((settings.get("bundle") or {}).get("directory", "build/bundle"))
+    output = _resolve(settings.get("output", "build-out"))
+    output.mkdir(parents=True, exist_ok=True)
+
+    resolved = deliverables.resolve(paths.ROOT)
+    version = bundles.version_from_jar(resolved.feature_jars[0])
+    tag = _source_tag()
+    archive = output / bundles.combined_bundle_name(version, bundles.host_key(), tag)
+
+    log.info(f"cleon: packing {directory} into {archive.name}")
+    shutil.make_archive(str(archive)[: -len(".zip")], "zip", directory)
+    log.ok(f"cleon: {archive} ({archive.stat().st_size} bytes)")
+
+
+def _source_tag() -> str:
+    """The asbundle tag this bundle came from, recorded by fetch-bundle.
+
+    Read from a file rather than recomputed, because "the newest tag" changes between the pull and the
+    publish, and an artefact named after a bundle it does not contain is worse than no name at all.
+    """
+    marker = _resolve("build/bundle-source-tag")
+    if not marker.is_file():
+        raise typer.BadParameter(
+            f"{marker} is missing; run `cleon build fetch-bundle` so the source tag is recorded")
+    return marker.read_text(encoding="utf-8").strip()
+
+
+def publish() -> None:
+    """Push the combined cleon+Actifsource bundle to the registry."""
+    settings = _settings()
+    release = paths.CONTEXT.manifest_data().get("release") or {}
+    registry, repository = release.get("registry", ""), release.get("repository", "")
+    output = _resolve(settings.get("output", "build-out"))
+
+    archives = sorted(output.glob("cleon_*_on_*.zip"))
+    if not archives:
+        raise typer.BadParameter(f"no combined bundle in {output}; run `cleon build bundle` first")
+    archive = archives[-1]
+
+    _require_oras()
+    _oras_login(registry)
+
+    version = bundles.version_from_jar(deliverables.resolve(paths.ROOT).feature_jars[0])
+    key = bundles.host_key()
+    tag = f"{version}-{key[0]}-{key[1]}".replace("+", "-").lower()
+    reference = bundles.reference(registry, repository, tag)
+
+    log.info(f"cleon: pushing {archive.name} to {reference}")
+    # Pushed from the archive's own directory: oras records the path it is GIVEN as the artifact name,
+    # so an absolute path would bake this runner's directory into the manifest.
+    rc = run.stream(["oras", "push", reference,
+                     f"{archive.name}:application/vnd.actifsource.cleon.bundle.v1+zip"],
+                    cwd=str(output))
+    if rc != 0:
+        raise typer.Exit(rc)
+    log.ok(f"cleon: published {reference}")
 
 
 def generate() -> None:

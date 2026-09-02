@@ -1,0 +1,60 @@
+# cleon RELEASE - the only workflow that publishes. Separate from ci.yml so publishing is a decision
+# about which workflow you run, not a flag someone remembers to set.
+#
+# What it publishes is the COMBINED artefact: an asbundle bundle (Eclipse, JDK, Ant, Actifsource
+# Enterprise) with cleon already installed, so a user starts with everything in place and picks up later
+# cleon releases through the ordinary update mechanism.
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Runner labels to build, comma-separated. Defaults to one Linux cell. Pass 'all' for every cell."
+        type: string
+        default: "ubuntu-24.04"
+
+permissions:
+  contents: read
+  packages: write         # pulls the asbundle bundle, pushes the combined one
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-24.04,     arch: x86_64,  shell: bash, entry: "./cleon.sh", timeout: 45 }
+          - { os: ubuntu-24.04-arm, arch: aarch64, shell: bash, entry: "./cleon.sh", timeout: 45 }
+          - { os: macos-15-intel,   arch: x86_64,  shell: bash, entry: "./cleon.sh", timeout: 60 }
+          - { os: macos-15,         arch: arm64,   shell: bash, entry: "./cleon.sh", timeout: 60 }
+          - { os: windows-2025,     arch: amd64,   shell: cmd,  entry: "cleon.cmd",  timeout: 75 }
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: ${{ matrix.timeout }}
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
+    steps:
+      - name: Enable git long paths
+        shell: bash
+        run: git config --global core.longpaths true
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: oras-project/setup-oras@v1
+
+      - name: Build the bundle with cleon installed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: ${{ matrix.entry }} build
+
+      - name: Publish it
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: ${{ matrix.entry }} release publish

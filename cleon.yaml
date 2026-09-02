@@ -17,10 +17,16 @@ product: cleon
 # unpacked bundle, a bigger heap, an Actifsource release that renames a build configuration - and none
 # of it should require editing code to turn.
 build:
-  # WHERE THE BUNDLE IS. `cleon build` does not download it: CI unpacks the asbundle artefact here, and
-  # a developer points this at their own unpacked bundle. Relative paths resolve from the repo root.
+  # WHERE THE BUNDLE COMES FROM. `build fetch-bundle` pulls it from the registry asbundle publishes to
+  # and unpacks it here. A developer with a bundle already unpacked can skip that step and point
+  # `directory` at their own. Relative paths resolve from the repo root.
   bundle:
     directory: build/bundle
+    registry: ghcr.io/marcozwyssig
+    repository: asbundle-bundle
+    # Empty means "the newest published for this host". Pin it to reproduce an old build - the tag
+    # carries the Eclipse and JDK versions, so pinning it pins those too.
+    tag: ""
     # Ordered candidates for the Eclipse `plugins` directory inside it, tried in this order. Ordered
     # rather than searched, because the archive root DIFFERS BY HOST: asbundle zips the Eclipse install
     # itself on Linux and Windows, and the folder containing Eclipse.app on macOS. A candidate only
@@ -49,6 +55,9 @@ build:
   # plugins, and nothing else is compiled (orchestrator/deliverables.py).
   site:
     project: cleon.site
+    # The profile the asbundle bundle was assembled with. p2 installs INTO a profile, and naming one
+    # that does not exist fails with a message about the profile rather than about cleon.
+    profile: SDKProfile
     # Directories under src/ to exclude entirely. The samples are not shipped AND are the only nested
     # projects; they are currently excluded by not being referenced rather than by name, so this is
     # empty on purpose - fill it if a sample ever ends up on the site by accident.
@@ -68,14 +77,31 @@ build:
 # packaging a failed generation compiles a stale tree and publishes an update site that looks fine, so
 # that chain must stop at the first red. Deploy's `all` reports every step instead, which is what you
 # want from a status sweep.
+# --- what cleon publishes ---------------------------------------------------------------------------
+# The combined artefact: an asbundle bundle with cleon already installed, so a user starts with Eclipse,
+# Actifsource AND cleon in place and picks up later cleon releases through the normal update mechanism.
+release:
+  registry: ghcr.io/marcozwyssig
+  repository: cleon-bundle
+
 groups:
   build:
+    fetch-bundle: { impl: "orchestrator.cli:fetch_bundle",
+                   help: "Pull the asbundle bundle for this host from the registry and unpack it." }
     generate: { impl: "orchestrator.cli:generate",
                 help: "Run Actifsource headless: generate the plugin sources, features and update site, then validate." }
     package:  { impl: "orchestrator.cli:package",
                 help: "Compile, jar the plugins and features, and publish the P2 update site." }
-    build:    { help: "Generate then package - the whole build.",
-                depends_on: [generate, package], stop_on_failure: true }
+    install:  { impl: "orchestrator.cli:install",
+                help: "Install the freshly built cleon features into the bundle's Eclipse." }
+    bundle:   { impl: "orchestrator.cli:bundle",
+                help: "Zip the bundle, now carrying cleon, into a publishable archive." }
+    build:    { help: "The whole build: fetch the bundle, generate, package, install, zip.",
+                depends_on: [fetch-bundle, generate, package, install, bundle],
+                stop_on_failure: true }
+  release:
+    publish:  { impl: "orchestrator.cli:publish",
+                help: "Push the combined cleon+Actifsource bundle to the registry." }
   deploy:
     up:   { impl: "orchestrator.cli:up",     help: "Deploy the product to the target environment (placeholder)." }
     down: { impl: "orchestrator.cli:down",   help: "Tear the deployment down (placeholder)." }

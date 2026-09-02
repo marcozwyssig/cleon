@@ -1,0 +1,114 @@
+"""Which asbundle bundle this host needs, and what the combined artefact is called. PURE.
+
+cleon does not build Eclipse. It consumes an asbundle bundle - Eclipse, a JDK, Ant and Actifsource
+Enterprise, already assembled - installs itself into it, and republishes the result. So it has to name
+two things it does not own: the bundle to pull, and the bundle to push.
+
+Both namings are asbundle's, mirrored here rather than shared, because the two products are separate
+repositories with separate release cadences. That is a real duplication and it is deliberate: the
+alternative is a build-time dependency on asbundle's Python, which would tie cleon's build to
+asbundle's internals rather than to its published artefacts. What IS shared is the artefact contract -
+the tag shape - and `select_tag` fails loudly when a tag it cannot parse turns up, which is what makes
+the duplication detectable instead of silent.
+"""
+from __future__ import annotations
+
+import platform
+import re
+from typing import Dict, List, Sequence, Tuple
+
+HostKey = Tuple[str, str]
+
+# asbundle publishes for these; windows/arm64 is absent because IBM Semeru ships no aarch64 Windows JDK.
+SUPPORTED_HOSTS: Tuple[HostKey, ...] = (
+    ("linux", "x86_64"), ("linux", "aarch64"),
+    ("darwin", "x86_64"), ("darwin", "arm64"),
+    ("windows", "amd64"),
+)
+
+# `4.40-25.0.4-0-linux-x86_64`: an asbundle version segment, then the host. The version's own separator
+# is `-` too, so the host is matched from the END and everything before it is the version.
+_NUMBERS = re.compile(r"\d+")
+
+
+def host_key() -> HostKey:
+    """This machine, as asbundle names it in a tag.
+
+    `platform.machine()` differs per platform for the same silicon - `AMD64` on Windows, `x86_64` on
+    Linux - and asbundle's tags use the raw lowercased value, so this must not normalise beyond case.
+    """
+    key = (platform.system().lower(), platform.machine().lower())
+    if key not in SUPPORTED_HOSTS:
+        raise ValueError(
+            f"no asbundle bundle is published for {key[0]}/{key[1]}. Published hosts: "
+            + ", ".join(f"{s}/{m}" for s, m in SUPPORTED_HOSTS))
+    return key
+
+
+def tags_for_host(tags: Sequence[str], key: HostKey) -> List[str]:
+    """The tags that belong to one host, in the order given."""
+    suffix = f"-{key[0]}-{key[1]}"
+    return [tag for tag in tags if tag.endswith(suffix)]
+
+
+def _version_sort_key(tag: str, key: HostKey) -> tuple:
+    """The numbers in a tag's version segment, as integers.
+
+    String ordering is wrong here and quietly so: `4.9` sorts after `4.40`, which would pin a build to
+    an old Eclipse for as long as nobody looked.
+    """
+    version = tag[: -len(f"-{key[0]}-{key[1]}")]
+    return tuple(int(number) for number in _NUMBERS.findall(version))
+
+
+def select_tag(tags: Sequence[str], key: HostKey) -> str:
+    """The newest published tag for this host.
+
+    Fails loudly and names what it saw. An empty selection means either that asbundle has not published
+    for this platform yet or that the repository name is wrong, and those need different fixes.
+    """
+    candidates = tags_for_host(tags, key)
+    if not candidates:
+        raise LookupError(
+            f"no bundle tag for {key[0]}/{key[1]} among {len(tags)} tag(s). "
+            f"Has asbundle published for this host, and is the repository name right?")
+    return max(candidates, key=lambda tag: _version_sort_key(tag, key))
+
+
+def reference(registry: str, repository: str, tag: str) -> str:
+    """A registry reference: `ghcr.io/owner/repo:tag`, with no doubled or missing slash."""
+    return f"{registry.rstrip('/')}/{repository.strip('/')}:{tag}"
+
+
+def feature_group_ids(feature_ids: Sequence[str]) -> List[str]:
+    """The installable-unit ids for a set of features.
+
+    p2 installs a feature as `<id>.feature.group`, never as the bare id - the bare id names the feature
+    JAR, which resolves to nothing. Getting this wrong produces "installable unit not found", which is
+    the least informative message p2 has.
+    """
+    return [f"{feature_id}.feature.group" for feature_id in feature_ids]
+
+
+def version_from_jar(jar_name: str) -> str:
+    """`cleon.x_0.4.149.qualifier.jar` -> `0.4.149.qualifier`.
+
+    cleon's version is not written anywhere a build can read directly: it is generated into every
+    feature and plugin by the model. Taking it from a produced jar means the published artefact is named
+    after what is actually inside it, rather than after a number someone remembered to update.
+    """
+    stem = jar_name[:-4] if jar_name.endswith(".jar") else jar_name
+    _, separator, version = stem.rpartition("_")
+    if not separator:
+        raise ValueError(f"cannot read a version from {jar_name!r}: expected <id>_<version>.jar")
+    return version
+
+
+def combined_bundle_name(cleon_version: str, key: HostKey, source_tag: str) -> str:
+    """The filename of what cleon publishes: the asbundle bundle with cleon already installed.
+
+    The SOURCE tag is in the name because this artefact is not reproducible from cleon's version alone -
+    it carries a particular Eclipse, JDK and Actifsource. Someone holding two of these files needs to be
+    able to tell which is which without unzipping either.
+    """
+    return f"cleon_{cleon_version}_on_{source_tag}.zip"

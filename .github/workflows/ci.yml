@@ -1,10 +1,6 @@
-# cleon CI. Structurally the same as asbundle's, and deliberately NOT a copy of it: cleon has no build
-# yet (#22), no tests and no generated CLI module, so three of asbundle's steps would either fail or
-# assert nothing here. Each is noted below with what has to exist before it is switched on.
-#
-# What the matrix DOES verify today is worth having on its own: that the host-venv harness bootstraps
-# on all five platforms. Getting that right in asbundle took five CI runs and three distinct bugs, none
-# of which was findable locally.
+# cleon CI. Structurally the same as asbundle's, for the same reasons - and now with a build that
+# really builds: it pulls an asbundle bundle (Eclipse + JDK + Ant + Actifsource Enterprise), generates,
+# compiles, installs cleon into that bundle and zips the result.
 name: ci
 
 on:
@@ -13,16 +9,22 @@ on:
     branches: [master]
     tags: ["v*"]
   workflow_dispatch:
+    inputs:
+      only:
+        description: "Runner labels to build, comma-separated. Defaults to one Linux cell. Pass 'all' for every cell."
+        type: string
+        # Linux-only BY DEFAULT so a dispatch made without thinking is cheap. macOS is roughly eight
+        # times a Linux minute, and asbundle's spending limit was reached paying for it to ride along.
+        default: "ubuntu-24.04"
 
 permissions:
   contents: read
+  packages: read          # the build PULLS the asbundle bundle from the registry
 
 jobs:
   # --- fast lane, every push and PR -----------------------------------------------------------------
   check:
     runs-on: ubuntu-24.04
-    # Minutes, not hours. Without this a job runs against GitHub's six-hour default; a stalled step on a
-    # billed runner is otherwise stopped only by someone noticing.
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -32,47 +34,82 @@ jobs:
         with:
           python-version: "3.13"
 
-      # Assembling the CLI resolves every command's `impl` reference, so a broken manifest or a renamed
-      # function fails here rather than at first invocation.
+      # pytest is a TEST dependency and deliberately absent from the orchestrator's requirements.txt;
+      # installed alongside the declaration rather than by hand-copying the runtime pins.
+      - name: Install dependencies
+        run: pip install pytest -r deploy/provision/orchestrator/requirements.txt
+
+      - name: Unit tests
+        run: python -m pytest deploy/provision/orchestrator/test/unit/python -v
+
+      # Assembling the CLI resolves every command's `impl`, so a broken manifest or a renamed function
+      # fails here rather than at first invocation.
       - name: CLI assembles and every impl resolves
         run: ./cleon.sh help
 
-      # NOT YET, and each needs something that does not exist:
-      #
-      #   pytest deploy/provision/orchestrator/test/unit/python
-      #       - there are no tests. Add this with the first one.
-      #   ./cleon.sh support tasks generate --check
-      #       - cleon.yaml declares no `generate:` block and there is no committed CLI module, so the
-      #         drift gate has nothing to compare. Add both together (see asbundle for the shape).
+      # NOT YET: `./cleon.sh support tasks generate --check`. cleon.yaml declares no `generate:` block
+      # and there is no committed CLI module, so the drift gate has nothing to compare. Add both
+      # together (see asbundle for the shape).
 
-  # --- the harness on every platform ----------------------------------------------------------------
-  # Runs on tags and manual dispatch only. Five native runners per invocation is not something to spend
-  # on every merge, and until #22 lands the build step is a placeholder.
-  build:
+  # --- which cells to build -------------------------------------------------------------------------
+  # The cell table lives here as JSON because it has to be filterable, and the `matrix` context is NOT
+  # available in a job-level `if` (`runs-on` gets it, `if` does not - a documented asymmetry).
+  plan:
     needs: check
     if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      cells: ${{ steps.select.outputs.cells }}
+    steps:
+      - id: select
+        env:
+          ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.only != 'all' && inputs.only || '' }}
+        run: |
+          # Runner labels are PINNED, never `-latest`: `macos-latest` silently moved from Intel to
+          # Apple Silicon, which is how three of asbundle's cells came to be missing unnoticed.
+          #
+          # windows/arm64 is absent on purpose - IBM Semeru publishes no aarch64 JDK for Windows, so
+          # the bundle cleon builds against cannot exist there.
+          #
+          # `timeout` is per cell because a timeout is a COST CAP and the cells do not cost the same.
+          cells='[
+            {"os":"ubuntu-24.04",    "arch":"x86_64", "shell":"bash","entry":"./cleon.sh","timeout":45},
+            {"os":"ubuntu-24.04-arm","arch":"aarch64","shell":"bash","entry":"./cleon.sh","timeout":45},
+            {"os":"macos-15-intel",  "arch":"x86_64", "shell":"bash","entry":"./cleon.sh","timeout":60},
+            {"os":"macos-15",        "arch":"arm64",  "shell":"bash","entry":"./cleon.sh","timeout":60},
+            {"os":"windows-2025",    "arch":"amd64",  "shell":"cmd", "entry":"cleon.cmd","timeout":75}
+          ]'
+          if [ -n "$ONLY" ]; then
+            # An EXACT match against the list, never a substring: "ubuntu-24.04" is a prefix of
+            # "ubuntu-24.04-arm", so a substring test would quietly drag the arm cell into every
+            # x86-only run - and it would be paid for before anyone noticed.
+            cells=$(printf '%s' "$cells" | jq -c --arg only "$ONLY" \
+              '($only | split(",") | map(gsub("^ +| +$";""))) as $want
+               | [ .[] | select(.os as $o | $want | index($o)) ]')
+            [ "$(printf '%s' "$cells" | jq 'length')" -gt 0 ] || {
+              echo "::error::the 'only' input matched no cell: $ONLY" >&2; exit 1; }
+          else
+            cells=$(printf '%s' "$cells" | jq -c .)
+          fi
+          echo "cells=$cells" >> "$GITHUB_OUTPUT"
+          printf '%s' "$cells" | jq -r '.[] | "  will build \(.os) (\(.arch)), cap \(.timeout) min"'
+
+  # --- the real build -------------------------------------------------------------------------------
+  build:
+    needs: plan
     strategy:
-      fail-fast: false          # one platform's failure must not hide the other four
+      fail-fast: false          # one platform's failure must not hide the others
       matrix:
-        include:
-          # Runner labels are PINNED, never `-latest`. `macos-latest` silently moved from Intel to
-          # Apple Silicon, which is how three of asbundle's six cells came to be missing unnoticed.
-          #
-          # A pinned label still ROTS: macos-13 was retired, and a job asking for a retired label does
-          # not fail - it QUEUES, with no runner ever assigned, until someone cancels it.
-          # `timeout-minutes` does not help there; that clock starts when a job RUNS.
-          #
-          # windows/arm64 is absent on purpose: IBM Semeru publishes no aarch64 JDK for Windows, so the
-          # bundle cleon builds against cannot exist for that platform.
-          - { os: ubuntu-24.04,     arch: x86_64,  shell: bash }
-          - { os: ubuntu-24.04-arm, arch: aarch64, shell: bash }
-          - { os: macos-15-intel,   arch: x86_64,  shell: bash }
-          - { os: macos-15,         arch: arm64,   shell: bash }
-          - { os: windows-2025,     arch: amd64,   shell: cmd }
+        include: ${{ fromJSON(needs.plan.outputs.cells) }}
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 60
+    timeout-minutes: ${{ matrix.timeout }}
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
     steps:
       - name: Enable git long paths
+        shell: bash
         run: git config --global core.longpaths true
 
       - uses: actions/checkout@v4
@@ -95,19 +132,23 @@ jobs:
             exit 1
           }
 
-      # `./cleon.sh build` is a PLACEHOLDER until #22. What this proves today is the harness: that the
-      # host venv bootstraps, the kernel installs, and the CLI assembles - on this platform. That is
-      # exactly what asbundle needed five runs and three bugs to establish.
-      - name: Build (POSIX)
-        if: matrix.shell == 'bash'
-        run: ./cleon.sh build
+      # oras moves the bundle in and out of the registry as an OCI artifact. A container image cannot
+      # carry a macOS or Windows bundle, which is why asbundle publishes them this way.
+      - uses: oras-project/setup-oras@v1
 
-      # The Windows entry point. The delivery kernel's launcher is POSIX-only - it wants python3 on PATH
-      # and hardcodes $VENV/bin/pip, while a Windows venv uses Scripts\ - so these cells go through
-      # cleon.cmd -> launch.py, which also forces UTF-8 output. Without that the FIRST failure here dies
-      # inside the error reporting (the kernel prints U+2717; the console encoding is cp1252) and buries
-      # the message that said what actually broke.
-      - name: Build (Windows)
-        if: matrix.shell == 'cmd'
-        shell: cmd
-        run: cleon.cmd build
+      # GITHUB_TOKEN needs `packages: read` on the asbundle-bundle package. That package belongs to
+      # ANOTHER repository in this account, and GHCR does not grant that automatically: the package's
+      # own settings must list this repository. Absent, the pull fails with a 403 naming the package.
+      - name: Build the bundle with cleon installed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: ${{ matrix.entry }} build
+
+      - name: Upload the combined bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: cleon-bundle-${{ matrix.os }}-${{ matrix.arch }}
+          path: build-out/cleon_*_on_*.zip
+          if-no-files-found: error
+          retention-days: 7

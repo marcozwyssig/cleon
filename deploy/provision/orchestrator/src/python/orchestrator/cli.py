@@ -16,12 +16,19 @@ placeholder - grow it by adding dependencies to that command in the manifest.
 """
 from __future__ import annotations
 
+import contextlib
+import os
+from pathlib import Path
+
 import typer
 
 from delivery import cli as delivery_cli
 from delivery import log
+from delivery import run
 from delivery.orchestrator.product import StepFactoryContext
 
+from . import antbuild
+from . import deliverables
 from . import environments
 from . import paths
 
@@ -36,9 +43,105 @@ app = typer.Typer(add_completion=False, no_args_is_help=True,
 _ALIASES: dict[str, str] = {}
 
 
-def build() -> None:
-    """Build the product artefacts (placeholder). Replace with your real build pipeline."""
-    log.info("cleon: build (placeholder) - wire me up in orchestrator/src/python/orchestrator/cli.py")
+def _settings() -> dict:
+    """cleon.yaml's `build:` section. Read here and nowhere else, so there is one place to look."""
+    return paths.CONTEXT.manifest_data().get("build") or {}
+
+
+def _resolve(relative: str) -> Path:
+    """A manifest path, resolved from the repo ROOT rather than the caller's cwd.
+
+    `cleon.sh` can be invoked from anywhere, and a relative path that quietly means something different
+    per working directory works for everyone until it does not for one person.
+    """
+    return paths.ROOT / relative
+
+
+def _eclipse_home() -> Path:
+    """The Eclipse install inside the unpacked bundle, per cleon.yaml's candidate list."""
+    bundle = _settings().get("bundle") or {}
+    return antbuild.eclipse_home(_resolve(bundle.get("directory", "build/bundle")),
+                                 bundle.get("plugin_candidates") or ["plugins"])
+
+
+@contextlib.contextmanager
+def _environment(overrides: dict):
+    """Apply env overrides for the duration of one call, then put the environment back.
+
+    The kernel's `run()` is the single subprocess seam and takes no `env`, and going around it with a
+    raw subprocess call to pass one would be trading a documented seam for a convenience. Restoring in a
+    `finally` matters because this process goes on to run the next step of an aggregate: a JAVA_HOME
+    left behind by `generate` would silently become `package`'s default.
+    """
+    previous = {key: os.environ.get(key) for key in overrides}
+    os.environ.update(overrides)
+    try:
+        yield
+    finally:
+        for key, value in previous.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+
+
+def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
+    """One Ant run against the bundled Eclipse, using the bundle's own JDK.
+
+    What the run IS gets logged before it starts. Ant's own failure output is long, and the part that
+    identifies which run failed - build file, targets, properties - is at the top and scrolled away by
+    the time anyone reads a CI log.
+    """
+    ant_settings = _settings().get("ant") or {}
+
+    merged = dict(ant_settings.get("properties") or {})
+    merged.update(properties)
+    resolved_file = _resolve(build_file)
+    argv = antbuild.ant_argv(antbuild.ant_executable(eclipse, windows=os.name == "nt"),
+                             resolved_file, targets, merged)
+
+    for line in antbuild.describe(resolved_file, targets, merged):
+        log.info(f"cleon: {line}")
+    overrides = antbuild.ant_overrides(antbuild.java_home(eclipse), ant_settings.get("opts") or [])
+    with _environment(overrides):
+        rc = run.run(argv, capture=False, cwd=str(paths.ROOT)).rc
+    if rc != 0:
+        raise typer.Exit(rc)
+
+
+def generate() -> None:
+    """Run Actifsource headless: sources, features, update site, then validate the model."""
+    ant_settings = _settings().get("ant") or {}
+    eclipse = _eclipse_home()
+    _ant(eclipse,
+         ant_settings.get("generate_file", "deploy/provision/asbuild.generate.xml"),
+         ant_settings.get("generate_targets") or ["generate"],
+         {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
+          "cleon.project.folders": str(paths.ROOT / "src")})
+
+
+def package() -> None:
+    """Compile, jar the plugins and features, and publish the P2 update site."""
+    settings = _settings()
+    ant_settings = settings.get("ant") or {}
+    site = settings.get("site") or {}
+    eclipse = _eclipse_home()
+
+    # WHAT is built, in WHICH order, under WHICH jar name - all three derived here, from site.xml
+    # outwards, and handed to Ant as data. Ant gets each of them wrong on its own: a glob builds the
+    # samples too, alphabetical order compiles half the plugins against empty bin/ directories, and
+    # <basename> names every jar after its folder - wrong for all 34 of them, without an error.
+    resolved = deliverables.resolve(paths.ROOT,
+                                    site_project=site.get("project", "cleon.site"),
+                                    skip_directories=tuple(site.get("skip_directories") or ()))
+    log.info(f"cleon: building {len(resolved.feature_ids)} features and {len(resolved.plugin_ids)} plugins")
+
+    _ant(eclipse,
+         ant_settings.get("package_file", "deploy/provision/asbuild.package.xml"),
+         ant_settings.get("package_targets") or ["package"],
+         {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
+          "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
+          "cleon.feature.entries": ";".join(resolved.feature_entries())})
 
 
 def up() -> None:

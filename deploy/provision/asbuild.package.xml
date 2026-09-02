@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!--
+  Compile the generated sources, jar the plugins and features, and publish the P2 site (cleon#22).
+
+  Runs AFTER asbuild.generate.xml. This half has no vendor example behind it - Actifsource's
+  ch.actifsource.example.ant covers generate/validate/compile of ONE project and stops there - so it is
+  built from what this repository states about itself:
+
+    - each plugin's build.properties says `source.. = src-gen/` and
+      `bin.includes = META-INF/, plugin.xml, asrc/, ico/`, which is exactly what a plugin jar contains;
+    - src/cleon.site/build.cmd shows the intended last step, `UpdateSitePublisher` over a populated
+      site directory. That script is otherwise unusable - a hardcoded `c:\tools\as\plugins\` and a
+      launcher jar from 2016 - but its INTENT transfers.
+
+  WHAT IS BUILT, IN WHICH ORDER, AND UNDER WHICH JAR NAME IS NOT DECIDED HERE. All three come from the
+  orchestrator (orchestrator/deliverables.py), which derives them from site.xml outwards, and each is a
+  thing Ant would get wrong if it tried:
+
+    - WHICH: globbing `src/*` builds 106 projects instead of 66, including the samples - whose nested
+      projects Eclipse cannot import;
+    - ORDER: these plugins hold 284 dependencies on each other and `exportdependency` resolves those to
+      the other project's `bin/`, so alphabetical order compiles half of them against nothing;
+    - NAME: an OSGi jar is `<symbolic-name>_<version>.jar`, and in this repository the symbolic name is
+      NEVER the directory name - all 34 plugins add `.builtin`. `<basename>` is the obvious way to name
+      the jar and it is wrong for every one of them, silently.
+
+  Hence `cleon.plugin.entries` / `cleon.feature.entries`: `<dir>|<jar>` pairs, semicolon separated. One
+  paired list rather than two parallel ones, because Ant cannot notice a misalignment - it would write
+  each project's content under the next project's name.
+-->
+<project name="cleon-package" default="package" basedir="../..">
+
+  <fail unless="cleon.bundle.folders"
+        message="cleon.bundle.folders is required: the eclipse/plugins directory of an unpacked asbundle bundle"/>
+  <fail unless="cleon.plugin.entries"
+        message="cleon.plugin.entries is required: semicolon-separated &lt;dir&gt;|&lt;jar&gt; pairs in COMPILE order, from the orchestrator"/>
+  <fail unless="cleon.feature.entries"
+        message="cleon.feature.entries is required: semicolon-separated &lt;dir&gt;|&lt;jar&gt; pairs, from the orchestrator"/>
+
+  <property name="cleon.out" value="${basedir}/build-out"/>
+  <property name="cleon.site.dir" value="${cleon.out}/site"/>
+
+  <!-- Java 21, from build.properties (`jre.compilation.profile = JavaSE-21`, `javacTarget = 21`) and
+       every MANIFEST's Bundle-RequiredExecutionEnvironment. Not a choice made here. -->
+  <property name="cleon.java.target" value="21"/>
+
+  <target name="clean">
+    <delete dir="${cleon.out}"/>
+  </target>
+
+  <target name="init" depends="clean">
+    <mkdir dir="${cleon.site.dir}/plugins"/>
+    <mkdir dir="${cleon.site.dir}/features"/>
+  </target>
+
+  <!-- ============================================================================================
+       Tooling, discovered inside the bundle rather than pinned or downloaded.
+       ============================================================================================ -->
+  <last id="ch.actifsource.ant.latest.id">
+    <sort>
+      <date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+      <dirset dir="${cleon.bundle.folders}" includes="ch.actifsource.ant_*"/>
+    </sort>
+  </last>
+  <property name="ch.actifsource.ant.latest" refId="ch.actifsource.ant.latest.id"/>
+  <fail message="no ch.actifsource.ant_* bundle under ${cleon.bundle.folders} - a bundle built without ACTIFSOURCE_USER/ACTIFSOURCE_PASSWORD does not contain Actifsource.">
+    <condition><not><available file="${ch.actifsource.ant.latest}" type="dir"/></not></condition>
+  </fail>
+  <import file="${ch.actifsource.ant.latest}/actifsource.tasks.detect.xml"/>
+
+  <!-- ant-contrib, for `<for>`, `<var>` and `<propertyregex>`. NOT core Ant - without this taskdef the
+       loops below fail with "failed to create task or type for". It is taken from the Actifsource
+       bundle rather than downloaded: the vendor's own asbuild.config.xml puts
+       `ch.actifsource.libs_external_<version>/libs/ant-contrib-1.0b3.jar` on its classpath, so a bundle
+       carrying Actifsource carries this too - and a build needing no network for its own tooling is one
+       less thing to be rate-limited by. -->
+  <first id="ant.contrib.jar.id">
+    <sort>
+      <date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+      <fileset dir="${cleon.bundle.folders}" includes="ch.actifsource.libs_external_*/libs/ant-contrib-*.jar"/>
+    </sort>
+  </first>
+  <property name="ant.contrib.jar" refId="ant.contrib.jar.id"/>
+  <fail message="no ant-contrib jar under ${cleon.bundle.folders}/ch.actifsource.libs_external_*/libs/ - the loops in this file need it">
+    <condition><not><available file="${ant.contrib.jar}"/></not></condition>
+  </fail>
+  <taskdef resource="net/sf/antcontrib/antlib.xml" classpath="${ant.contrib.jar}"/>
+
+  <!-- Split one `<dir>|<jar>` entry into `entry.dir` / `entry.jar`.
+       `<var unset>` first because Ant properties are immutable: without it the first iteration's values
+       would be reused for all 34, and the build would jar the same project 34 times under 34 names. -->
+  <macrodef name="split-entry">
+    <attribute name="entry"/>
+    <sequential>
+      <var name="entry.dir" unset="true"/>
+      <var name="entry.jar" unset="true"/>
+      <propertyregex property="entry.dir" input="@{entry}" regexp="^(.*)\|(.*)$" select="\1"/>
+      <propertyregex property="entry.jar" input="@{entry}" regexp="^(.*)\|(.*)$" select="\2"/>
+      <fail unless="entry.jar" message="malformed entry (expected &lt;dir&gt;|&lt;jar&gt;): @{entry}"/>
+    </sequential>
+  </macrodef>
+
+  <!-- ============================================================================================
+       Compile. One javac per plugin, over src-gen only - `source.. = src-gen/` in every
+       build.properties, and `src/` in those projects holds generated PROJECTS, not java.
+
+       The classpath comes from Actifsource's own `exportdependency`, the same task the vendor example
+       uses: it resolves a project's dependencies against the bundles and projects it was told about,
+       which is how `ch.actifsource.*` is found inside the bundle without anyone listing jars by hand.
+       `resourcescope` wants the ECLIPSE project name - which here IS the directory name, checked: all
+       106 `.project` files agree with their folder.
+       ============================================================================================ -->
+  <macrodef name="compile-plugin">
+    <attribute name="dir"/>
+    <sequential>
+      <var name="project.name" unset="true"/>
+      <var name="project.classpath" unset="true"/>
+      <basename property="project.name" file="@{dir}"/>
+      <echo message="compiling ${project.name}"/>
+      <exportdependency verbose="false"
+                        resourcescope="project:${project.name}"
+                        classpathproperty="project.classpath">
+        <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${basedir}"/>
+        <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
+        <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
+        <sysproperty key="ch.actifsource.platform.projectFolders" value="${basedir}/src"/>
+        <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+        <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="bin"/>
+      </exportdependency>
+      <mkdir dir="@{dir}/bin"/>
+      <javac srcdir="@{dir}/src-gen" destdir="@{dir}/bin" includeantruntime="false"
+             debug="true" source="${cleon.java.target}" target="${cleon.java.target}"
+             classpath="${project.classpath}"/>
+    </sequential>
+  </macrodef>
+
+  <!-- Order is the caller's, NOT sorted here: `<for>` preserves the list, and the list arrives
+       topologically ordered. Sorting it would undo the only reason it was computed. -->
+  <target name="compile" depends="init">
+    <for list="${cleon.plugin.entries}" delimiter=";" param="entry">
+      <sequential>
+        <split-entry entry="@{entry}"/>
+        <compile-plugin dir="${entry.dir}"/>
+      </sequential>
+    </for>
+  </target>
+
+  <!-- ============================================================================================
+       Jar. A plugin jar is its compiled classes plus exactly what build.properties lists in
+       `bin.includes`: META-INF/, plugin.xml, asrc/, ico/. `asrc/` is IN the jar on purpose - the
+       models ship as data, which is how a consumer's Actifsource reads them.
+
+       `bin/` is excluded from the resource fileset: javac has just written a full copy of META-INF
+       there, and packing both puts the same entry in the jar twice.
+       ============================================================================================ -->
+  <target name="jar" depends="compile">
+    <for list="${cleon.plugin.entries}" delimiter=";" param="entry">
+      <sequential>
+        <split-entry entry="@{entry}"/>
+        <jar destfile="${cleon.site.dir}/plugins/${entry.jar}">
+          <fileset dir="${entry.dir}/bin"/>
+          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml,asrc/**,ico/**" excludes="bin/**"/>
+        </jar>
+      </sequential>
+    </for>
+    <for list="${cleon.feature.entries}" delimiter=";" param="entry">
+      <sequential>
+        <split-entry entry="@{entry}"/>
+        <jar destfile="${cleon.site.dir}/features/${entry.jar}">
+          <fileset dir="${entry.dir}" includes="feature.xml,feature.properties,license.html,epl-v10.html"/>
+        </jar>
+      </sequential>
+    </for>
+    <copy file="${basedir}/src/cleon.site/site.xml" todir="${cleon.site.dir}"/>
+  </target>
+
+  <!-- ============================================================================================
+       Publish P2 metadata over the assembled directory - the step src/cleon.site/build.cmd performs,
+       with the machine-specific parts removed. The launcher jar is DISCOVERED in the bundle rather
+       than pinned: build.cmd names a 2016 build that no current Eclipse contains.
+       ============================================================================================ -->
+  <target name="site" depends="jar">
+    <first id="equinox.launcher.id">
+      <sort>
+        <date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+        <fileset dir="${cleon.bundle.folders}" includes="org.eclipse.equinox.launcher_*.jar"/>
+      </sort>
+    </first>
+    <property name="equinox.launcher" refId="equinox.launcher.id"/>
+    <fail message="no org.eclipse.equinox.launcher_*.jar under ${cleon.bundle.folders}">
+      <condition><not><available file="${equinox.launcher}"/></not></condition>
+    </fail>
+
+    <!-- A file: URL built by Ant rather than by string concatenation. build.cmd did
+         `SET var=file:/%cd%`, which breaks on a path with a space or a drive letter. -->
+    <makeurl property="cleon.site.url" file="${cleon.site.dir}"/>
+
+    <java jar="${equinox.launcher}" fork="true" failonerror="true">
+      <arg value="-application"/>
+      <arg value="org.eclipse.equinox.p2.publisher.UpdateSitePublisher"/>
+      <arg value="-metadataRepository"/><arg value="${cleon.site.url}"/>
+      <arg value="-artifactRepository"/><arg value="${cleon.site.url}"/>
+      <arg value="-source"/><arg value="${cleon.site.dir}"/>
+      <arg value="-compress"/>
+      <arg value="-publishArtifacts"/>
+    </java>
+    <echo message="P2 site published at ${cleon.site.dir}"/>
+  </target>
+
+  <target name="package" depends="site"
+          description="Compile, jar and publish the update site into build-out/site."/>
+</project>

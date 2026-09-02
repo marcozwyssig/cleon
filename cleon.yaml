@@ -1,0 +1,51 @@
+# cleon delivery manifest - the single declarative source the delivery kernel
+# (delivery.orchestrator.manifest) assembles cleon's CLI from. Scaffolded by
+# `python -m delivery.bootstrap` (netctl#651 strand 4). Fill it in: add your real groups + commands and
+# wire each `impl` to a "module:function" your orchestrator package exports.
+#
+# Sections:
+#   product       the product label (shim/manifest name + diagnostics).
+#   groups        the ONE command tree: group -> command -> { impl: "module:function", help: "one-line
+#                 summary" }. The key order within a group is its membership order; the env-gate is derived.
+#   env_groups    the subset of groups that are env-first (`cleon <env> <group> <cmd>`, default below).
+#   environments  the deployment env matrix (a backend per env) + the default env.
+product: cleon
+
+# --- product build data (read RAW by your paths adapter, IGNORED by the CLI engine) ---
+# The CLI engine reads only groups/env_groups and ignores any other top-level section, so your product's
+# own build data lives here. Uncomment + extend as the pipeline grows.
+# images:
+#   app: cleon:local
+# volumes:
+#   build_cache: cleon-build-cache
+
+# The ONE command tree, along the CI/CD loop: group -> command -> { impl: "module:function", help }. The
+# key order within a group is its membership order. `build` is a single-member group whose member shares its
+# name, so it collapses to ONE flat top-level command (`cleon build`); `deploy` is a multi-member
+# env-first group (see env_groups). The starter impls point at the generated `orchestrator.cli` callbacks;
+# replace them with your own as you add commands.
+#
+# `all` is an impl-less AGGREGATE (#895/#896): it declares no impl, only `depends_on`, and the kernel
+# binds it at assembly time (assemble(step_context=...) in orchestrator/cli.py) to run its dependency
+# plan build->up as live-streamed `./cleon.sh <cmd>` steps - a live example, not a dead
+# placeholder. `stop_on_failure: false` (the default) runs every planned step and takes the worst rc.
+groups:
+  build:
+    build: { impl: "orchestrator.cli:build", help: "Build the product artefacts (placeholder)." }
+  deploy:
+    up:   { impl: "orchestrator.cli:up",     help: "Deploy the product to the target environment (placeholder)." }
+    down: { impl: "orchestrator.cli:down",   help: "Tear the deployment down (placeholder)." }
+    all:  { help: "Run build then deploy up end to end (the build->up dependency plan).",
+            depends_on: [build, up], stop_on_failure: false }
+
+# The env-first CD groups: `cleon <env> deploy up` (default env below). Every other group is
+# environment-agnostic and rejects an env prefix.
+env_groups: [deploy]
+
+# The deployment environment matrix (#15, folded into the one manifest per #651 strand 1): one env per row,
+# `backend` decides HOW it is realised (`local` today; add a cloud backend and widen _VALID_BACKENDS in
+# environments.py later). A deploy command runs against ONE env, selected env-first; `default` is the
+# implicit one.
+default: dev
+environments:
+  dev: { backend: local, description: "Local development environment (the default)." }

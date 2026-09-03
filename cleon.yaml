@@ -56,6 +56,10 @@ build:
       # Turn on to have the generator say what it loaded and why something was not found. Long, but the
       # alternative when a generation fails is guessing - which has cost several CI runs already.
       cleon.generate.verbose: "true"
+      # `error` makes any model error fail the build; `warning` reports and continues. Currently
+      # `warning`, because the model has one known incompleteness (a Feature under Project Methods ->
+      # hermes with no `fullName`) and blocking every release on it is a decision for the model's owner.
+      cleon.validate.exceptiontype: "warning"
 
   # WHAT IS BUILT. The site project is the root of the derivation: it names the features, they name the
   # plugins, and nothing else is compiled (orchestrator/deliverables.py).

@@ -42,6 +42,9 @@ build:
     generate_file: deploy/provision/asbuild.generate.xml
     package_file: deploy/provision/asbuild.package.xml
     generate_targets: [generate]
+    # Compiling uses the SAME build file as packaging - it is the same javac over the same projects,
+    # just run earlier and stopping before the jars.
+    compile_targets: [compile]
     package_targets: [package]
     # JVM flags for the Ant process, passed via ANT_OPTS. Generation walks 22,000+ generated files;
     # the default heap is where that runs out, halfway through a CI run.
@@ -88,6 +91,8 @@ groups:
   build:
     fetch-bundle: { impl: "orchestrator.cli:fetch_bundle",
                    help: "Pull the asbundle bundle for this host from the registry and unpack it." }
+    compile:  { impl: "orchestrator.cli:compile",
+                help: "Compile the model plugins, so the generator can load their Java functions." }
     generate: { impl: "orchestrator.cli:generate",
                 help: "Run Actifsource headless: generate the plugin sources, features and update site, then validate." }
     package:  { impl: "orchestrator.cli:package",
@@ -96,8 +101,8 @@ groups:
                 help: "Install the freshly built cleon features into the bundle's Eclipse." }
     bundle:   { impl: "orchestrator.cli:bundle",
                 help: "Zip the bundle, now carrying cleon, into a publishable archive." }
-    build:    { help: "The whole build: fetch the bundle, generate, package, install, zip.",
-                depends_on: [fetch-bundle, generate, package, install, bundle],
+    build:    { help: "The whole build: fetch, compile, generate, package, install, zip.",
+                depends_on: [fetch-bundle, compile, generate, package, install, bundle],
                 stop_on_failure: true }
   release:
     publish:  { impl: "orchestrator.cli:publish",

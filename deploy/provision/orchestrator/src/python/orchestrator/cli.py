@@ -399,6 +399,40 @@ def publish() -> None:
     log.ok(f"cleon: published {reference}")
 
 
+def compile() -> None:  # noqa: A001 - the CLI command is `compile`; shadowing the builtin is local
+    """Compile the model plugins, so the generator can load their Java functions.
+
+    BEFORE generation, and that order is not arbitrary. Cleon's templates call selector functions that
+    are implemented in Java - `FunctionSpace_Project.AbstractProject.UseSimpleName` is the one that
+    failed - and those live in `src-gen`, checked in, but their `.class` files do not: `bin/` is
+    ignored by git. A developer never notices, because their Eclipse compiles continuously; a fresh CI
+    checkout has no compiled classes at all, and the generator reports `Invalid selector!`
+    (run 33727465458).
+
+    Actifsource's own example has the same order and says so in one line:
+    `depends="export-classpath,compile-project,project-validation,code-gen"`. I built it backwards.
+
+    This runs the packaging build file's `compile` target - the same javac over the same projects,
+    stopping before the jars.
+    """
+    settings = _settings()
+    ant_settings = settings.get("ant") or {}
+    site = settings.get("site") or {}
+    eclipse = _eclipse_home()
+
+    resolved = deliverables.resolve(paths.ROOT, site_project=site.get("project", "cleon.site"),
+                                    skip_directories=tuple(site.get("skip_directories") or ()))
+    log.info(f"cleon: compiling {len(resolved.plugin_ids)} plugin(s) before generation")
+
+    _ant(eclipse,
+         ant_settings.get("package_file", "deploy/provision/asbuild.package.xml"),
+         ant_settings.get("compile_targets") or ["compile"],
+         {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
+          "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
+          "cleon.feature.entries": ";".join(resolved.feature_entries()),
+          **_antdetect_properties(eclipse, _workspace())})
+
+
 def generate() -> None:
     """Run Actifsource headless: sources, features, update site, then validate the model."""
     ant_settings = _settings().get("ant") or {}

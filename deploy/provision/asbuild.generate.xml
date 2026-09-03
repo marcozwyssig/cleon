@@ -45,6 +45,10 @@
   <!-- The root project's own location. See the projectFiles note below. -->
   <property name="cleon.project.files" value="${basedir}/.project"/>
 
+  <!-- Generator chatter. Off by default because it is long; the orchestrator can turn it on from
+       cleon.yaml when a generation failure needs explaining rather than just reporting. -->
+  <property name="cleon.generate.verbose" value="false"/>
+
   <!-- Relative to each project. Matches .classpath's output folder. -->
   <property name="cleon.project.classes.output" value="bin"/>
 
@@ -118,7 +122,7 @@
        lists features.
        ============================================================================================ -->
   <target name="generate-source">
-    <generate2 threadcapacity="1" verbose="false"
+    <generate2 threadcapacity="1" verbose="${cleon.generate.verbose}"
                resourcescope="project:${cleon.root.project}"
                buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.src.BuildConfig_Source_Full"
                outputroot="${cleon.output.root}">
@@ -132,7 +136,7 @@
   </target>
 
   <target name="generate-features" depends="generate-source">
-    <generate2 threadcapacity="1" verbose="false"
+    <generate2 threadcapacity="1" verbose="${cleon.generate.verbose}"
                resourcescope="project:${cleon.root.project}"
                buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.feature.BuildConfig_Feature_Full"
                outputroot="${cleon.output.root}">
@@ -146,7 +150,7 @@
   </target>
 
   <target name="generate-site" depends="generate-features">
-    <generate2 threadcapacity="1" verbose="false"
+    <generate2 threadcapacity="1" verbose="${cleon.generate.verbose}"
                resourcescope="project:${cleon.root.project}"
                buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.site.BuildConfig_Site"
                outputroot="${cleon.output.root}">
@@ -164,7 +168,7 @@
        project does not have today and gets for free here.
        ============================================================================================ -->
   <target name="validate">
-    <validate2 verbose="false" threadcapacity="1"
+    <validate2 verbose="${cleon.generate.verbose}" threadcapacity="1"
                resourcescope="project:${cleon.root.project}" exceptiontype="error">
       <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>

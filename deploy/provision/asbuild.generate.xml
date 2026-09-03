@@ -43,7 +43,7 @@
   <property name="cleon.output.root" value="${basedir}/src"/>
 
   <!-- The root project's own location. See the projectFiles note below. -->
-  <property name="cleon.project.files" value="${basedir}"/>
+  <property name="cleon.project.files" value="${basedir}/.project"/>
 
   <!-- Relative to each project. Matches .classpath's output folder. -->
   <property name="cleon.project.classes.output" value="bin"/>

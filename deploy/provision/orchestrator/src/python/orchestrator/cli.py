@@ -109,7 +109,12 @@ def _antdetect_properties(eclipse: Path, project_folders: Path, project_files: P
     one before the fix. Keeping the same value in two places where one quietly wins is worse than
     keeping it in one; this function is the one.
 
-    `project_files` is the ROOT project's own directory. The workspace root contributes no projects -
+    `project_files` is the ROOT project's `.project` FILE, not its directory. The property is named
+    "Files" against "Folders", and folders are what get scanned - so a file is what names one project.
+    A directory was tried first and the project stayed unfound (run 33726434796), with the value
+    demonstrably arriving.
+
+    The workspace root contributes no projects -
     Actifsource's example config says so in a comment - so the project `resourcescope` addresses has to
     be named individually, and `project_folders` covers only the generated ones under src/.
     """
@@ -354,8 +359,8 @@ def generate() -> None:
          ant_settings.get("generate_targets") or ["generate"],
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.project.folders": str(paths.ROOT / "src"),
-          "cleon.project.files": str(paths.ROOT),
-          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT)})
+          "cleon.project.files": str(paths.ROOT / ".project"),
+          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT / ".project")})
 
 
 def package() -> None:
@@ -380,8 +385,8 @@ def package() -> None:
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
           "cleon.feature.entries": ";".join(resolved.feature_entries()),
-          "cleon.project.files": str(paths.ROOT),
-          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT)})
+          "cleon.project.files": str(paths.ROOT / ".project"),
+          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT / ".project")})
 
 
 def up() -> None:

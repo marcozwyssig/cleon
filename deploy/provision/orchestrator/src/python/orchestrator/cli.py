@@ -25,6 +25,7 @@ from pathlib import Path
 import typer
 
 from delivery import cli as delivery_cli
+from delivery import githubpackages
 from delivery import log
 from delivery import run
 from delivery.orchestrator.product import StepFactoryContext
@@ -34,6 +35,11 @@ from . import bundles
 from . import deliverables
 from . import environments
 from . import paths
+
+# What cleon publishes. The MEDIA TYPE is a product's own statement about its artefact; the mechanics
+# of moving it are the kernel's (delivery.githubpackages).
+_MEDIA_TYPE = "application/vnd.actifsource.cleon.bundle.v1+zip"
+
 
 app = typer.Typer(add_completion=False, no_args_is_help=True,
                   help=("cleon orchestrator (scaffolded on the delivery kernel). AGNOSTIC groups take "
@@ -237,54 +243,6 @@ def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
         raise typer.Exit(rc)
 
 
-# The scopes `gh auth login` does NOT request. Named here because the failure they cause -
-# `denied: permission_denied: read_package` - points at the package, not at the token.
-_PACKAGE_SCOPES = ("read:packages", "write:packages")
-
-
-def _github_token() -> str:
-    """The token: from the environment, or from `gh` when it is not there.
-
-    Someone already logged in with `gh` should not have to mint and export a second credential to build
-    on their own machine. Actions sets GITHUB_TOKEN and wins; locally, `gh auth token` answers.
-    """
-    token = os.environ.get("GITHUB_TOKEN", "").strip()
-    if token:
-        return token
-    result = run.run(["gh", "auth", "token"], capture=True)
-    if result.rc == 0 and result.out.strip():
-        log.info("cleon: using the token from `gh auth token` (GITHUB_TOKEN is not set)")
-        return result.out.strip()
-    raise typer.BadParameter(
-        "no GitHub token: GITHUB_TOKEN is not set and `gh auth token` did not provide one. "
-        "Either export a token or run `gh auth login`.")
-
-
-def _oras_login(registry: str) -> None:
-    """Log in to the registry, with the token on STDIN.
-
-    Never as an argv element: argv is world-readable in /proc, which is the same reason the P2
-    repository URL no longer carries credentials either.
-    """
-    token = _github_token()
-    user = os.environ.get("GITHUB_ACTOR") or os.environ.get("GITHUB_USERNAME") or "x"
-    host = registry.split("/")[0]
-    result = run.run(["oras", "login", host, "-u", user, "--password-stdin"],
-                     capture=True, input_text=token)
-    if result.rc != 0:
-        raise typer.BadParameter(
-            f"oras login to {host} failed: {result.err or result.out}\n"
-            f"If the token came from `gh`, it has no package permission - `gh auth login` does not "
-            f"request it. Run:\n    gh auth refresh -h github.com -s {','.join(_PACKAGE_SCOPES)}")
-
-
-def _require_oras() -> None:
-    if not shutil.which("oras"):
-        raise typer.BadParameter(
-            "oras is not on PATH. It is what moves a plain zip in and out of a registry as an OCI "
-            "artifact; a container image cannot carry a macOS or Windows bundle.")
-
-
 def fetch_bundle() -> None:
     """Pull the asbundle bundle for this host from the registry and unpack it.
 
@@ -296,23 +254,12 @@ def fetch_bundle() -> None:
     registry, repository = bundle.get("registry", ""), bundle.get("repository", "")
     directory = _resolve(bundle.get("directory", "build/bundle"))
 
-    _require_oras()
-    _oras_login(registry)
+    githubpackages.login(registry)
 
     key = bundles.host_key()
     tag = bundle.get("tag") or ""
     if not tag:
-        listed = run.run(["oras", "repo", "tags", f"{registry.rstrip('/')}/{repository}"],
-                         capture=True)
-        if listed.rc != 0:
-            raise typer.BadParameter(
-                f"could not list tags: {listed.err or listed.out}\n"
-                f"`permission_denied: read_package` here usually means the token lacks the package "
-                f"scopes - `gh auth login` does not request them. Run:\n"
-                f"    gh auth refresh -h github.com -s {','.join(_PACKAGE_SCOPES)}\n"
-                f"If the scopes are right, the asbundle-bundle package has to grant this repository "
-                f"read access; GHCR does not do that across repositories automatically.")
-        tag = bundles.select_tag(listed.out.split(), key)
+        tag = bundles.select_tag(githubpackages.tags(registry, repository), key)
         log.info(f"cleon: newest bundle for {key[0]}/{key[1]} is {tag}")
 
     reference = bundles.reference(registry, repository, tag)
@@ -325,9 +272,7 @@ def fetch_bundle() -> None:
         shutil.rmtree(path, ignore_errors=True)
     scratch.mkdir(parents=True)
 
-    log.info(f"cleon: pulling {reference}")
-    if run.run(["oras", "pull", reference, "-o", str(scratch)], capture=False).rc != 0:
-        raise typer.Exit(1)
+    githubpackages.pull(reference, str(scratch))
 
     archives = sorted(scratch.glob("*.zip"))
     if len(archives) != 1:
@@ -447,8 +392,7 @@ def publish() -> None:
         raise typer.BadParameter(f"no combined bundle in {output}; run `cleon build bundle` first")
     archive = archives[-1]
 
-    _require_oras()
-    _oras_login(registry)
+    githubpackages.login(registry)
 
     version = bundles.version_from_jar(
         deliverables.resolve(paths.ROOT, qualifier=_qualifier()).feature_jars[0])
@@ -457,14 +401,7 @@ def publish() -> None:
     tag = bundles.combined_tag(version, _source_tag())
     reference = bundles.reference(registry, repository, tag)
 
-    log.info(f"cleon: pushing {archive.name} to {reference}")
-    # Pushed from the archive's own directory: oras records the path it is GIVEN as the artifact name,
-    # so an absolute path would bake this runner's directory into the manifest.
-    rc = run.stream(["oras", "push", reference,
-                     f"{archive.name}:application/vnd.actifsource.cleon.bundle.v1+zip"],
-                    cwd=str(output))
-    if rc != 0:
-        raise typer.Exit(rc)
+    githubpackages.push(reference, str(archive), _MEDIA_TYPE)
     log.ok(f"cleon: published {reference}")
 
 

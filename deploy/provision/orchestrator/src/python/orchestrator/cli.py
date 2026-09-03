@@ -46,6 +46,25 @@ app = typer.Typer(add_completion=False, no_args_is_help=True,
 _ALIASES: dict[str, str] = {}
 
 
+def _qualifier() -> str:
+    """The build number for this build, from the git commit this checkout is on.
+
+    From the COMMIT, not the clock: the same commit yields the same version, so a rebuild is comparable
+    and a version identifies a source state rather than the moment someone ran a build.
+
+    A checkout with no git - an unpacked tarball, say - has no build number to derive, and inventing one
+    from the clock would quietly produce versions that are not reproducible. It fails instead.
+    """
+    result = run.run(["git", "log", "-1", "--format=v%cd-%h", "--date=format:%Y%m%d-%H%M"],
+                     capture=True, cwd=str(paths.ROOT))
+    if result.rc != 0 or not result.out.strip():
+        raise typer.BadParameter(
+            "cannot derive a build number: `git log` failed here. The version placeholder "
+            "`0.4.149.qualifier` is replaced from the commit, so this needs a git checkout.")
+    timestamp, _, sha = result.out.strip().rpartition("-")
+    return bundles.build_qualifier(timestamp, sha)
+
+
 def _settings() -> dict:
     """cleon.yaml's `build:` section. Read here and nowhere else, so there is one place to look."""
     return paths.CONTEXT.manifest_data().get("build") or {}
@@ -363,7 +382,7 @@ def bundle() -> None:
     output = _resolve(settings.get("output", "build-out"))
     output.mkdir(parents=True, exist_ok=True)
 
-    resolved = deliverables.resolve(paths.ROOT)
+    resolved = deliverables.resolve(paths.ROOT, qualifier=_qualifier())
     version = bundles.version_from_jar(resolved.feature_jars[0])
     tag = _source_tag()
     archive = output / bundles.combined_bundle_name(version, bundles.host_key(), tag)
@@ -401,7 +420,8 @@ def publish() -> None:
     _require_oras()
     _oras_login(registry)
 
-    version = bundles.version_from_jar(deliverables.resolve(paths.ROOT).feature_jars[0])
+    version = bundles.version_from_jar(
+        deliverables.resolve(paths.ROOT, qualifier=_qualifier()).feature_jars[0])
     # The SOURCE tag - recorded when the bundle was pulled - already ends in the host, so the combined
     # tag needs no separate host segment.
     tag = bundles.combined_tag(version, _source_tag())
@@ -477,10 +497,13 @@ def package() -> None:
     # outwards, and handed to Ant as data. Ant gets each of them wrong on its own: a glob builds the
     # samples too, alphabetical order compiles half the plugins against empty bin/ directories, and
     # <basename> names every jar after its folder - wrong for all 34 of them, without an error.
+    qualifier = _qualifier()
     resolved = deliverables.resolve(paths.ROOT,
                                     site_project=site.get("project", "cleon.site"),
-                                    skip_directories=tuple(site.get("skip_directories") or ()))
-    log.info(f"cleon: building {len(resolved.feature_ids)} features and {len(resolved.plugin_ids)} plugins")
+                                    skip_directories=tuple(site.get("skip_directories") or ()),
+                                    qualifier=qualifier)
+    log.info(f"cleon: building {len(resolved.feature_ids)} features and {len(resolved.plugin_ids)} "
+             f"plugins as {qualifier}")
 
     _ant(eclipse,
          ant_settings.get("package_file", "deploy/provision/asbuild.package.xml"),
@@ -488,6 +511,7 @@ def package() -> None:
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
           "cleon.feature.entries": ";".join(resolved.feature_entries()),
+          "cleon.qualifier": qualifier,
           **_antdetect_properties(eclipse, _workspace())})
 
 

@@ -66,6 +66,27 @@
   <fail message="no ch.actifsource.ant_* bundle under ${cleon.bundle.folders} - a bundle built without ACTIFSOURCE_USER/ACTIFSOURCE_PASSWORD does not contain Actifsource.">
     <condition><not><available file="${ch.actifsource.ant.latest}" type="dir"/></not></condition>
   </fail>
+  <!-- ============================================================================================
+       TWO property namespaces, and both are required. This cost a CI run (cleon 33722669190).
+
+         ch.actifsource.antdetect.*   read by actifsource.tasks.detect.xml when it builds the CLASSPATH
+                                      for the Ant tasks themselves, at import time
+         ch.actifsource.platform.*    passed to each task as a sysproperty, at run time
+
+       Only the second was set. The first defaults to `${eclipse.home}/plugins`, and `eclipse.home` does
+       not exist outside a running Eclipse - so antdetect searched a folder called literally
+       "${eclipse.home}/plugins" and reported every Actifsource library as missing.
+
+       These are set from the caller's `-D` too, which wins over anything here; the defaults below just
+       keep the file runnable on its own.
+       ============================================================================================ -->
+  <property name="ch.actifsource.antdetect.bundleFolders" value="${cleon.bundle.folders}"/>
+  <property name="ch.actifsource.antdetect.bundleFiles" value=""/>
+  <property name="ch.actifsource.antdetect.projectFiles" value=""/>
+
+  <property name="ch.actifsource.antdetect.projectFolders" value="${basedir}/src"/>
+  <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin"/>
+
   <import file="${ch.actifsource.ant.latest}/actifsource.tasks.detect.xml"/>
 
   <!-- ant-contrib, for `<for>`, `<var>` and `<propertyregex>`. NOT core Ant - without this taskdef the

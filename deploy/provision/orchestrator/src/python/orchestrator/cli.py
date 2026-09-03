@@ -88,6 +88,31 @@ def _environment(overrides: dict):
                 os.environ[key] = value
 
 
+def _antdetect_properties(eclipse: Path, project_folders: Path) -> dict:
+    """The `ch.actifsource.antdetect.*` half of Actifsource's configuration.
+
+    There are TWO namespaces and both are required. `ch.actifsource.platform.*` is passed to each task
+    as a sysproperty at run time; `ch.actifsource.antdetect.*` is read by `actifsource.tasks.detect.xml`
+    when it builds the CLASSPATH for the tasks themselves, at import time.
+
+    Setting only the second is what run 33722669190 did. The first defaults to `${eclipse.home}/plugins`
+    and `eclipse.home` does not exist outside a running Eclipse, so antdetect searched a folder named
+    literally `${eclipse.home}/plugins` and reported every Actifsource library as missing.
+
+    Passed as `-D` rather than left to the `<property>` defaults in the build files: a command-line
+    property is set before anything else runs and cannot be overridden, whereas a top-level `<property>`
+    depends on Ant executing it before the imported file's own top-level tasks. That ordering is
+    documented, but it is not worth another CI run to rely on.
+    """
+    return {
+        "ch.actifsource.antdetect.bundleFolders": str(antbuild.plugins_directory(eclipse)),
+        "ch.actifsource.antdetect.bundleFiles": "",
+        "ch.actifsource.antdetect.projectFolders": str(project_folders),
+        "ch.actifsource.antdetect.projectFiles": "",
+        "ch.actifsource.antdetect.projectClassesOutput": "bin",
+    }
+
+
 def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
     """One Ant run against the bundled Eclipse, using the bundle's own JDK.
 
@@ -319,7 +344,8 @@ def generate() -> None:
          ant_settings.get("generate_file", "deploy/provision/asbuild.generate.xml"),
          ant_settings.get("generate_targets") or ["generate"],
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
-          "cleon.project.folders": str(paths.ROOT / "src")})
+          "cleon.project.folders": str(paths.ROOT / "src"),
+          **_antdetect_properties(eclipse, paths.ROOT / "src")})
 
 
 def package() -> None:
@@ -343,7 +369,8 @@ def package() -> None:
          ant_settings.get("package_targets") or ["package"],
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
-          "cleon.feature.entries": ";".join(resolved.feature_entries())})
+          "cleon.feature.entries": ";".join(resolved.feature_entries()),
+          **_antdetect_properties(eclipse, paths.ROOT / "src")})
 
 
 def up() -> None:

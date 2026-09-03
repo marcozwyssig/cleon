@@ -54,6 +54,27 @@
     <condition><not><available file="${ch.actifsource.ant.latest}" type="dir"/></not></condition>
   </fail>
   <echo message="Actifsource ant tasks: ${ch.actifsource.ant.latest}"/>
+  <!-- ============================================================================================
+       TWO property namespaces, and both are required. This cost a CI run (cleon 33722669190).
+
+         ch.actifsource.antdetect.*   read by actifsource.tasks.detect.xml when it builds the CLASSPATH
+                                      for the Ant tasks themselves, at import time
+         ch.actifsource.platform.*    passed to each task as a sysproperty, at run time
+
+       Only the second was set. The first defaults to `${eclipse.home}/plugins`, and `eclipse.home` does
+       not exist outside a running Eclipse - so antdetect searched a folder called literally
+       "${eclipse.home}/plugins" and reported every Actifsource library as missing.
+
+       These are set from the caller's `-D` too, which wins over anything here; the defaults below just
+       keep the file runnable on its own.
+       ============================================================================================ -->
+  <property name="ch.actifsource.antdetect.bundleFolders" value="${cleon.bundle.folders}"/>
+  <property name="ch.actifsource.antdetect.bundleFiles" value=""/>
+  <property name="ch.actifsource.antdetect.projectFiles" value=""/>
+
+  <property name="ch.actifsource.antdetect.projectFolders" value="${cleon.project.folders}"/>
+  <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin"/>
+
   <import file="${ch.actifsource.ant.latest}/actifsource.tasks.detect.xml"/>
 
   <!-- The six system properties below are repeated on every task. Ant cannot factor nested elements

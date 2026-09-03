@@ -53,6 +53,9 @@ build:
     # empty map here is a working build - this is the override seam, not a requirement.
     properties:
       cleon.java.target: "21"
+      # Turn on to have the generator say what it loaded and why something was not found. Long, but the
+      # alternative when a generation fails is guessing - which has cost several CI runs already.
+      cleon.generate.verbose: "true"
 
   # WHAT IS BUILT. The site project is the root of the derivation: it names the features, they name the
   # plugins, and nothing else is compiled (orchestrator/deliverables.py).

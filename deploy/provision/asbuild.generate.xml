@@ -30,7 +30,17 @@
         message="cleon.bundle.folders is required: the eclipse/plugins directory of an unpacked asbundle bundle, which supplies ch.actifsource.*"/>
   <fail unless="cleon.project.folders"
         message="cleon.project.folders is required: the directory holding the projects to load (this checkout)"/>
-  <property name="cleon.workspace.root" value="${cleon.project.folders}"/>
+  <!-- The workspace root is the REPOSITORY root, not src/. The root project - the one `resourcescope`
+       names - IS this directory: `.project` here says
+       `cleonproject.deliverables.architecture.model.architecture`, and its model lives in `asrc/`. The
+       generated projects are what live under `src/`, and `cleon.project.folders` points there.
+       Conflating the two put the workspace one level below the project it had to find. -->
+  <property name="cleon.workspace.root" value="${basedir}"/>
+
+  <!-- Where generation writes. `.asproject` declares `<targetpath><path>src</path>` for exactly the
+       three build configurations below, so this is that path made absolute. `generate2` requires the
+       attribute and says so plainly - `missing attribute: outputroot` (cleon run 33725170649). -->
+  <property name="cleon.output.root" value="${basedir}/src"/>
 
   <!-- Relative to each project. Matches .classpath's output folder. -->
   <property name="cleon.project.classes.output" value="bin"/>
@@ -99,7 +109,8 @@
   <target name="generate-source">
     <generate2 threadcapacity="1" verbose="false"
                resourcescope="project:${cleon.root.project}"
-               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.src.BuildConfig_Source_Full">
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.src.BuildConfig_Source_Full"
+               outputroot="${cleon.output.root}">
       <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
@@ -112,7 +123,8 @@
   <target name="generate-features" depends="generate-source">
     <generate2 threadcapacity="1" verbose="false"
                resourcescope="project:${cleon.root.project}"
-               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.feature.BuildConfig_Feature_Full">
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.feature.BuildConfig_Feature_Full"
+               outputroot="${cleon.output.root}">
       <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
@@ -125,7 +137,8 @@
   <target name="generate-site" depends="generate-features">
     <generate2 threadcapacity="1" verbose="false"
                resourcescope="project:${cleon.root.project}"
-               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.site.BuildConfig_Site">
+               buildConfig="cleon.applications.actifsource.metamodel.template.eclipse.site.BuildConfig_Site"
+               outputroot="${cleon.output.root}">
       <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${cleon.workspace.root}"/>
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>

@@ -88,7 +88,7 @@ def _environment(overrides: dict):
                 os.environ[key] = value
 
 
-def _antdetect_properties(eclipse: Path, project_folders: Path) -> dict:
+def _antdetect_properties(eclipse: Path, project_folders: Path, project_files: Path) -> dict:
     """The `ch.actifsource.antdetect.*` half of Actifsource's configuration.
 
     There are TWO namespaces and both are required. `ch.actifsource.platform.*` is passed to each task
@@ -100,15 +100,24 @@ def _antdetect_properties(eclipse: Path, project_folders: Path) -> dict:
     literally `${eclipse.home}/plugins` and reported every Actifsource library as missing.
 
     Passed as `-D` rather than left to the `<property>` defaults in the build files: a command-line
-    property is set before anything else runs and cannot be overridden, whereas a top-level `<property>`
-    depends on Ant executing it before the imported file's own top-level tasks. That ordering is
-    documented, but it is not worth another CI run to rely on.
+    property is set before anything else runs and cannot be overridden.
+
+    THAT IS ALSO THE TRAP. Because -D wins, every one of these keys must carry a real value here - a
+    key passed as empty SILENTLY DEFEATS the build file's default. Run 33726013045 lost a whole run to
+    exactly that: the fix that named the root project in the build file was overridden by
+    `-Dch.actifsource.antdetect.projectFiles=` from this function, and the error was identical to the
+    one before the fix. Keeping the same value in two places where one quietly wins is worse than
+    keeping it in one; this function is the one.
+
+    `project_files` is the ROOT project's own directory. The workspace root contributes no projects -
+    Actifsource's example config says so in a comment - so the project `resourcescope` addresses has to
+    be named individually, and `project_folders` covers only the generated ones under src/.
     """
     return {
         "ch.actifsource.antdetect.bundleFolders": str(antbuild.plugins_directory(eclipse)),
         "ch.actifsource.antdetect.bundleFiles": "",
         "ch.actifsource.antdetect.projectFolders": str(project_folders),
-        "ch.actifsource.antdetect.projectFiles": "",
+        "ch.actifsource.antdetect.projectFiles": str(project_files),
         "ch.actifsource.antdetect.projectClassesOutput": "bin",
     }
 
@@ -345,7 +354,8 @@ def generate() -> None:
          ant_settings.get("generate_targets") or ["generate"],
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.project.folders": str(paths.ROOT / "src"),
-          **_antdetect_properties(eclipse, paths.ROOT / "src")})
+          "cleon.project.files": str(paths.ROOT),
+          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT)})
 
 
 def package() -> None:
@@ -370,7 +380,8 @@ def package() -> None:
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
           "cleon.feature.entries": ";".join(resolved.feature_entries()),
-          **_antdetect_properties(eclipse, paths.ROOT / "src")})
+          "cleon.project.files": str(paths.ROOT),
+          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT)})
 
 
 def up() -> None:

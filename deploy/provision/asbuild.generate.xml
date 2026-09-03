@@ -42,6 +42,9 @@
        attribute and says so plainly - `missing attribute: outputroot` (cleon run 33725170649). -->
   <property name="cleon.output.root" value="${basedir}/src"/>
 
+  <!-- The root project's own location. See the projectFiles note below. -->
+  <property name="cleon.project.files" value="${basedir}"/>
+
   <!-- Relative to each project. Matches .classpath's output folder. -->
   <property name="cleon.project.classes.output" value="bin"/>
 
@@ -80,7 +83,15 @@
        ============================================================================================ -->
   <property name="ch.actifsource.antdetect.bundleFolders" value="${cleon.bundle.folders}"/>
   <property name="ch.actifsource.antdetect.bundleFiles" value=""/>
-  <property name="ch.actifsource.antdetect.projectFiles" value=""/>
+
+  <!-- The ROOT project, named individually. The vendor's own config says why, in a comment beside its
+       workspaceRootFolder: "No projects from this folder are included inside the platform, use
+       'ch.actifsource.antdetect.projectFiles'."
+       So the workspace root contributes NOTHING to the project set. `projectFolders` covers the
+       generated projects under src/, and the root project - which IS this repository directory, and
+       which `resourcescope` addresses - has to be listed here or it is not found
+       (cleon run 33725593633: `project:cleonproject...architecture not found`). -->
+  <property name="ch.actifsource.antdetect.projectFiles" value="${cleon.project.files}"/>
 
   <property name="ch.actifsource.antdetect.projectFolders" value="${cleon.project.folders}"/>
   <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin"/>
@@ -115,7 +126,7 @@
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
       <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
-      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${cleon.project.files}"/>
       <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
     </generate2>
   </target>
@@ -129,7 +140,7 @@
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
       <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
-      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${cleon.project.files}"/>
       <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
     </generate2>
   </target>
@@ -143,7 +154,7 @@
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
       <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
-      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${cleon.project.files}"/>
       <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
     </generate2>
   </target>
@@ -159,7 +170,7 @@
       <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
       <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
       <sysproperty key="ch.actifsource.platform.projectFolders" value="${cleon.project.folders}"/>
-      <sysproperty key="ch.actifsource.platform.projectFiles" value=""/>
+      <sysproperty key="ch.actifsource.platform.projectFiles" value="${cleon.project.files}"/>
       <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="${cleon.project.classes.output}"/>
     </validate2>
   </target>

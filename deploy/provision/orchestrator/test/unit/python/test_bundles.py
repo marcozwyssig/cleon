@@ -97,3 +97,34 @@ def test_the_version_is_read_from_a_jar_this_build_produced():
 def test_a_jar_name_without_a_version_is_refused():
     with pytest.raises(ValueError, match="cannot read a version"):
         bundles.version_from_jar("nonsense.jar")
+
+
+# --- permissions the archive records ----------------------------------------------------------------
+# Run 33720226519 died one step after a 591 MB download with
+#   PermissionError: [Errno 13] Permission denied: .../build/bundle/ant/bin/ant
+# `zipfile.extractall` creates every file 0644 and drops the modes the archive stored.
+
+def test_an_executable_mode_is_read_back_from_the_entry():
+    external_attr = 0o100755 << 16          # what ZipInfo.from_file writes for `chmod 755`
+
+    mode = bundles.recorded_mode(external_attr)
+
+    assert mode == 0o755
+
+
+def test_a_plain_file_keeps_its_own_mode():
+    external_attr = 0o100644 << 16
+
+    mode = bundles.recorded_mode(external_attr)
+
+    assert mode == 0o644
+
+
+def test_an_archive_built_on_windows_records_nothing_usable():
+    """0 means "this archive has no opinion", and the caller must then leave the file alone rather
+    than invent a mode. A Windows bundle is only ever unpacked on Windows anyway."""
+    external_attr = 0
+
+    mode = bundles.recorded_mode(external_attr)
+
+    assert mode == 0

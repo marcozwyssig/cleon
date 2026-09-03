@@ -90,6 +90,23 @@ def feature_group_ids(feature_ids: Sequence[str]) -> List[str]:
     return [f"{feature_id}.feature.group" for feature_id in feature_ids]
 
 
+def recorded_mode(external_attr: int) -> int:
+    """The Unix mode a zip entry recorded, or 0 if it recorded none.
+
+    `zipfile.extractall` DROPS these. The bits are there - `shutil.make_archive` writes them through
+    `ZipInfo.from_file` - but extraction creates every file 0644, so an unpacked bundle has no
+    executable in it. That is not a theory: run 33720226519 died on
+    `PermissionError: [Errno 13] Permission denied: .../build/bundle/ant/bin/ant`.
+
+    The first attempt at this chmod'd files NAMED `java` and `eclipse`, which is guessing. The archive
+    already knows; the fix is to ask it.
+
+    An archive built on Windows records no useful mode, and 0 says so - the caller then leaves the file
+    alone, which is right, because a Windows bundle is only ever unpacked on Windows.
+    """
+    return (external_attr >> 16) & 0o7777
+
+
 def version_from_jar(jar_name: str) -> str:
     """`cleon.x_0.4.149.qualifier.jar` -> `0.4.149.qualifier`.
 

@@ -180,14 +180,7 @@ def fetch_bundle() -> None:
             f"expected exactly one zip in {scratch}, found {[a.name for a in archives]}")
 
     directory.mkdir(parents=True)
-    with zipfile.ZipFile(archives[0]) as archive:
-        archive.extractall(directory)
-
-    # The zip carries no permission bits that tar would; the launcher and java must be executable or
-    # every later step fails with "Permission denied" from a program nobody named.
-    for executable in list(directory.rglob("java")) + list(directory.rglob("eclipse")):
-        if executable.is_file():
-            executable.chmod(0o755)
+    _extract_preserving_modes(archives[0], directory)
 
     # Record which tag this tree came from. `bundle` names the artefact after it, and recomputing
     # "the newest tag" at publish time could name it after a bundle it does not contain.
@@ -195,6 +188,26 @@ def fetch_bundle() -> None:
 
     eclipse = antbuild.eclipse_home(directory, bundle.get("plugin_candidates") or ["plugins"])
     log.ok(f"cleon: unpacked {tag} into {eclipse}")
+
+
+def _extract_preserving_modes(archive_path: Path, destination: Path) -> int:
+    """Unpack a zip and restore the Unix modes it recorded. Returns how many were restored.
+
+    `zipfile.extractall` creates every file 0644 and drops what the archive stored, so an unpacked
+    bundle contains no executable at all - `ant`, `java`, `javac`, the Eclipse launcher, every shim in
+    the JDK. Run 33720226519 failed on exactly that, one step after the download it had waited a day
+    for.
+    """
+    restored = 0
+    with zipfile.ZipFile(archive_path) as archive:
+        for entry in archive.infolist():
+            extracted = Path(archive.extract(entry, destination))
+            mode = bundles.recorded_mode(entry.external_attr)
+            if mode and not entry.is_dir():
+                extracted.chmod(mode)
+                restored += 1
+    log.info(f"cleon: unpacked {archive_path.name}, restored {restored} file mode(s)")
+    return restored
 
 
 def install() -> None:

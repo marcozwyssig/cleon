@@ -88,7 +88,57 @@ def _environment(overrides: dict):
                 os.environ[key] = value
 
 
-def _antdetect_properties(eclipse: Path, project_folders: Path, project_files: Path) -> dict:
+def _link(target: Path, link: Path) -> None:
+    """Link `link` -> `target`, as a directory link that works without privileges on every host.
+
+    `os.symlink` needs Developer Mode or an elevated shell on Windows, so a directory JUNCTION is used
+    there instead - `mklink /J`, which any user may create. Junctions are directory-only, which is all
+    this needs.
+    """
+    if os.name == "nt":
+        rc = run.run(["cmd", "/c", "mklink", "/J", str(link), str(target)], capture=True).rc
+        if rc != 0:
+            raise typer.BadParameter(f"could not create a junction {link} -> {target}")
+    else:
+        link.symlink_to(target, target_is_directory=True)
+
+
+def _workspace() -> Path:
+    """A directory in which every project sits under its own NAME, and nothing else does.
+
+    Actifsource addresses a project as `project:<name>` and finds it by directory name. That works by
+    accident for the 106 generated projects, whose directories are named after themselves, and not at
+    all for the root project: its directory is `cleon` and its name is
+    `cleonproject.deliverables.architecture.model.architecture`. Runs 33725593633 through 33726956842
+    all died on `project:cleonproject... not found`, having tried the root's directory and its
+    `.project` file in `projectFiles`; neither is what the platform looks at.
+
+    So this builds what Actifsource expects and Eclipse would have: a workspace of links, one per
+    project, each named after the project it is. It is rebuilt every time - a stale entry would point
+    at a project that no longer exists, and Actifsource would load it.
+    """
+    workspace = _resolve("build/workspace")
+    shutil.rmtree(workspace, ignore_errors=True)
+    workspace.mkdir(parents=True)
+
+    root_name = bundles.project_name((paths.ROOT / ".project").read_text(encoding="utf-8"))
+    _link(paths.ROOT, workspace / root_name)
+
+    linked = 1
+    for candidate in sorted((paths.ROOT / "src").iterdir()):
+        marker = candidate / ".project"
+        if marker.is_file():
+            name = bundles.project_name(marker.read_text(encoding="utf-8", errors="ignore"))
+            destination = workspace / name
+            if not destination.exists():
+                _link(candidate, destination)
+                linked += 1
+
+    log.info(f"cleon: workspace at {workspace} with {linked} project(s), each under its own name")
+    return workspace
+
+
+def _antdetect_properties(eclipse: Path, project_folders: Path) -> dict:
     """The `ch.actifsource.antdetect.*` half of Actifsource's configuration.
 
     There are TWO namespaces and both are required. `ch.actifsource.platform.*` is passed to each task
@@ -109,10 +159,9 @@ def _antdetect_properties(eclipse: Path, project_folders: Path, project_files: P
     one before the fix. Keeping the same value in two places where one quietly wins is worse than
     keeping it in one; this function is the one.
 
-    `project_files` is the ROOT project's `.project` FILE, not its directory. The property is named
-    "Files" against "Folders", and folders are what get scanned - so a file is what names one project.
-    A directory was tried first and the project stayed unfound (run 33726434796), with the value
-    demonstrably arriving.
+    `projectFiles` is deliberately empty now: every project, the root one included, lives in the
+    workspace `project_folders` points at, under its own name. Naming the root separately was tried
+    twice - as a directory and as its `.project` file - and neither was found.
 
     The workspace root contributes no projects -
     Actifsource's example config says so in a comment - so the project `resourcescope` addresses has to
@@ -122,7 +171,7 @@ def _antdetect_properties(eclipse: Path, project_folders: Path, project_files: P
         "ch.actifsource.antdetect.bundleFolders": str(antbuild.plugins_directory(eclipse)),
         "ch.actifsource.antdetect.bundleFiles": "",
         "ch.actifsource.antdetect.projectFolders": str(project_folders),
-        "ch.actifsource.antdetect.projectFiles": str(project_files),
+        "ch.actifsource.antdetect.projectFiles": "",
         "ch.actifsource.antdetect.projectClassesOutput": "bin",
     }
 
@@ -354,13 +403,14 @@ def generate() -> None:
     """Run Actifsource headless: sources, features, update site, then validate the model."""
     ant_settings = _settings().get("ant") or {}
     eclipse = _eclipse_home()
+    workspace = _workspace()
     _ant(eclipse,
          ant_settings.get("generate_file", "deploy/provision/asbuild.generate.xml"),
          ant_settings.get("generate_targets") or ["generate"],
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
-          "cleon.project.folders": str(paths.ROOT / "src"),
-          "cleon.project.files": str(paths.ROOT / ".project"),
-          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT / ".project")})
+          "cleon.project.folders": str(workspace),
+          "cleon.workspace.root": str(workspace),
+          **_antdetect_properties(eclipse, workspace)})
 
 
 def package() -> None:
@@ -385,8 +435,7 @@ def package() -> None:
          {"cleon.bundle.folders": str(antbuild.plugins_directory(eclipse)),
           "cleon.plugin.entries": ";".join(resolved.plugin_entries()),
           "cleon.feature.entries": ";".join(resolved.feature_entries()),
-          "cleon.project.files": str(paths.ROOT / ".project"),
-          **_antdetect_properties(eclipse, paths.ROOT / "src", paths.ROOT / ".project")})
+          **_antdetect_properties(eclipse, _workspace())})
 
 
 def up() -> None:

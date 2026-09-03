@@ -128,3 +128,30 @@ def test_an_archive_built_on_windows_records_nothing_usable():
     mode = bundles.recorded_mode(external_attr)
 
     assert mode == 0
+
+
+# --- project names ----------------------------------------------------------------------------------
+# Actifsource addresses a project as `project:<name>` and finds it by DIRECTORY name. That works by
+# accident for the 106 generated projects and not at all for the root one, whose directory is `cleon`.
+
+def test_the_project_name_is_read_from_the_project_file():
+    dot_project = ("<projectDescription>"
+                   "<name>cleonproject.deliverables.architecture.model.architecture</name>"
+                   "<comment></comment></projectDescription>")
+
+    name = bundles.project_name(dot_project)
+
+    assert name == "cleonproject.deliverables.architecture.model.architecture"
+
+
+def test_surrounding_whitespace_is_dropped():
+    dot_project = "<projectDescription>\n  <name>  cleon.common.doc  </name>\n</projectDescription>"
+
+    name = bundles.project_name(dot_project)
+
+    assert name == "cleon.common.doc"
+
+
+def test_a_project_file_without_a_name_is_refused():
+    with pytest.raises(ValueError, match="no <name>"):
+        bundles.project_name("<projectDescription/>")

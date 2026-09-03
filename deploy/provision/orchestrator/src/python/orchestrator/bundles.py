@@ -90,6 +90,21 @@ def feature_group_ids(feature_ids: Sequence[str]) -> List[str]:
     return [f"{feature_id}.feature.group" for feature_id in feature_ids]
 
 
+def project_name(dot_project: str) -> str:
+    """The Eclipse project name from a `.project` file.
+
+    Needed because Actifsource addresses a project by NAME and finds it by DIRECTORY, and for this
+    repository the two differ: the directory is `cleon`, the project is
+    `cleonproject.deliverables.architecture.model.architecture`. Every GENERATED project has a
+    directory named exactly like itself, and so does the vendor's example - the root project is the one
+    place they part company, which is why nothing found it.
+    """
+    match = re.search(r"<name>([^<]+)</name>", dot_project or "")
+    if not match:
+        raise ValueError("no <name> in the .project file")
+    return match.group(1).strip()
+
+
 def recorded_mode(external_attr: int) -> int:
     """The Unix mode a zip entry recorded, or 0 if it recorded none.
 

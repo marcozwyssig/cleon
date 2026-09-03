@@ -84,7 +84,7 @@
   <property name="ch.actifsource.antdetect.bundleFiles" value=""/>
   <!-- The root project, for the same reason as in asbuild.generate.xml: the workspace root
        contributes no projects, so it is named individually here. -->
-  <property name="ch.actifsource.antdetect.projectFiles" value="${basedir}"/>
+  <property name="ch.actifsource.antdetect.projectFiles" value="${basedir}/.project"/>
 
   <property name="ch.actifsource.antdetect.projectFolders" value="${basedir}/src"/>
   <property name="ch.actifsource.antdetect.projectClassesOutput" value="bin"/>
@@ -143,11 +143,11 @@
       <exportdependency verbose="false"
                         resourcescope="project:${project.name}"
                         classpathproperty="project.classpath">
-        <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${basedir}"/>
+        <sysproperty key="ch.actifsource.platform.workspaceRootFolder" value="${basedir}/.project"/>
         <sysproperty key="ch.actifsource.platform.bundleFolders" value="${cleon.bundle.folders}"/>
         <sysproperty key="ch.actifsource.platform.bundleFiles" value=""/>
         <sysproperty key="ch.actifsource.platform.projectFolders" value="${basedir}/src"/>
-        <sysproperty key="ch.actifsource.platform.projectFiles" value="${basedir}"/>
+        <sysproperty key="ch.actifsource.platform.projectFiles" value="${basedir}/.project"/>
         <sysproperty key="ch.actifsource.platform.projectClassesOutput" value="bin"/>
       </exportdependency>
       <mkdir dir="@{dir}/bin"/>

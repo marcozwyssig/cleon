@@ -1,8 +1,9 @@
 # cleon
 
-An Actifsource project, and the build that turns it into a ready-to-use IDE: an Eclipse carrying a
-JDK, Ant, Actifsource Enterprise **and cleon already installed**, published as one archive per
-platform.
+A collection of Actifsource metamodels that support automation — architecture methods, modelling
+languages, publishing, building — and the build that turns them into a ready-to-use IDE: an Eclipse
+carrying a JDK, Ant, Actifsource Enterprise **and cleon already installed**, published as one archive
+per platform.
 
 Someone unpacking it starts modelling immediately and picks up later cleon releases through the
 ordinary update mechanism, rather than adding an update site by hand.
@@ -13,7 +14,7 @@ This repository holds two levels, and the distinction decides the build order:
 
 | | what it is | where |
 |---|---|---|
-| **cleon** | the metamodels and templates | `src/` — 89 projects, 50 of them OSGi bundles |
+| **cleon** | the metamodels themselves, with their templates | `src/` — 89 projects, 50 of them OSGi bundles |
 | **the cleon project** | the model that *uses* cleon | the repository root itself |
 
 The root is the Eclipse project `cleonproject.deliverables.architecture.model.architecture`; its model

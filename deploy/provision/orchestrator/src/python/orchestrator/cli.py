@@ -218,21 +218,45 @@ def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
         raise typer.Exit(rc)
 
 
+# The scopes `gh auth login` does NOT request. Named here because the failure they cause -
+# `denied: permission_denied: read_package` - points at the package, not at the token.
+_PACKAGE_SCOPES = ("read:packages", "write:packages")
+
+
+def _github_token() -> str:
+    """The token: from the environment, or from `gh` when it is not there.
+
+    Someone already logged in with `gh` should not have to mint and export a second credential to build
+    on their own machine. Actions sets GITHUB_TOKEN and wins; locally, `gh auth token` answers.
+    """
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        return token
+    result = run.run(["gh", "auth", "token"], capture=True)
+    if result.rc == 0 and result.out.strip():
+        log.info("cleon: using the token from `gh auth token` (GITHUB_TOKEN is not set)")
+        return result.out.strip()
+    raise typer.BadParameter(
+        "no GitHub token: GITHUB_TOKEN is not set and `gh auth token` did not provide one. "
+        "Either export a token or run `gh auth login`.")
+
+
 def _oras_login(registry: str) -> None:
     """Log in to the registry, with the token on STDIN.
 
     Never as an argv element: argv is world-readable in /proc, which is the same reason the P2
     repository URL no longer carries credentials either.
     """
-    token = os.environ.get("GITHUB_TOKEN", "")
+    token = _github_token()
     user = os.environ.get("GITHUB_ACTOR") or os.environ.get("GITHUB_USERNAME") or "x"
-    if not token:
-        raise typer.BadParameter("GITHUB_TOKEN is not set; it is needed to reach the registry")
     host = registry.split("/")[0]
     result = run.run(["oras", "login", host, "-u", user, "--password-stdin"],
                      capture=True, input_text=token)
     if result.rc != 0:
-        raise typer.BadParameter(f"oras login to {host} failed: {result.err or result.out}")
+        raise typer.BadParameter(
+            f"oras login to {host} failed: {result.err or result.out}\n"
+            f"If the token came from `gh`, it has no package permission - `gh auth login` does not "
+            f"request it. Run:\n    gh auth refresh -h github.com -s {','.join(_PACKAGE_SCOPES)}")
 
 
 def _require_oras() -> None:
@@ -262,7 +286,13 @@ def fetch_bundle() -> None:
         listed = run.run(["oras", "repo", "tags", f"{registry.rstrip('/')}/{repository}"],
                          capture=True)
         if listed.rc != 0:
-            raise typer.BadParameter(f"could not list tags: {listed.err or listed.out}")
+            raise typer.BadParameter(
+                f"could not list tags: {listed.err or listed.out}\n"
+                f"`permission_denied: read_package` here usually means the token lacks the package "
+                f"scopes - `gh auth login` does not request them. Run:\n"
+                f"    gh auth refresh -h github.com -s {','.join(_PACKAGE_SCOPES)}\n"
+                f"If the scopes are right, the asbundle-bundle package has to grant this repository "
+                f"read access; GHCR does not do that across repositories automatically.")
         tag = bundles.select_tag(listed.out.split(), key)
         log.info(f"cleon: newest bundle for {key[0]}/{key[1]} is {tag}")
 

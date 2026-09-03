@@ -167,10 +167,15 @@
            and Actifsource fell back to the project directory, which is why generation got FURTHER
            before this step was added than after.
 
-           What is copied is exactly build.properties' `bin.includes`. Eclipse's own builder does the
-           same thing; javac does not know about it. -->
+           ONLY `asrc/`, and that restriction is not an optimisation. The generator STAGES its output
+           in `bin/` and moves it into the project: copying `plugin.xml` there produced
+
+             Cannot move file .../bin/plugin.xml to .../plugin.xml, destination file already exists!
+
+           (run 33729860629). `META-INF/MANIFEST.MF` is generated too and would collide the same way.
+           `asrc/` cannot: it is model SOURCE, never generated, so nothing ever moves onto it. -->
       <copy todir="@{dir}/bin">
-        <fileset dir="@{dir}" includes="META-INF/**,plugin.xml,asrc/**,ico/**"/>
+        <fileset dir="@{dir}" includes="asrc/**"/>
       </copy>
     </sequential>
   </macrodef>
@@ -198,11 +203,13 @@
     <for list="${cleon.plugin.entries}" delimiter=";" param="entry">
       <sequential>
         <split-entry entry="@{entry}"/>
-        <!-- ONE fileset now: `bin/` already carries the resources, because compile puts them there so
-             Actifsource can read the model from it. Packing them from the project as well would put
-             every entry in the jar twice. -->
+        <!-- Two filesets, and they do not overlap: `bin/` holds the classes and `asrc/` (compile puts
+             the model there for Actifsource to read), the project holds the rest of what
+             build.properties' `bin.includes` names. `asrc` is excluded from the second so no entry is
+             packed twice. -->
         <jar destfile="${cleon.site.dir}/plugins/${entry.jar}">
           <fileset dir="${entry.dir}/bin"/>
+          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml,ico/**"/>
         </jar>
       </sequential>
     </for>

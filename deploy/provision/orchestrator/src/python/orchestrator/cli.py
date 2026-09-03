@@ -116,6 +116,19 @@ def _workspace() -> Path:
     So this builds what Actifsource expects and Eclipse would have: a workspace of links, one per
     project, each named after the project it is. It is rebuilt every time - a stale entry would point
     at a project that no longer exists, and Actifsource would load it.
+
+    ONLY OSGi BUNDLES GO IN. Actifsource installs every project in this folder as a bundle while it
+    initialises, and a project without `META-INF/MANIFEST.MF` throws `invalid or old bundle format`.
+    That is not cosmetic: run 33728767788 shows the loading loop hitting one and unwinding through
+    PlatformBundleManager.installBundle, so whatever had not loaded yet never loads. Its 39 errors are
+    exactly the 39 projects here that are not bundles - the 32 features, the site and the samples.
+
+    It also explains why two runs of the same commit disagreed about whether
+    `BuildConfig_Source_Full` existed: whether the metamodel project loaded before or after the first
+    non-bundle one depended on directory order. A build that flips on iteration order is worse than one
+    that fails.
+
+    The features and the site are GENERATION OUTPUT. Nothing needs to load them to produce them.
     """
     workspace = _resolve("build/workspace")
     shutil.rmtree(workspace, ignore_errors=True)
@@ -124,17 +137,22 @@ def _workspace() -> Path:
     root_name = bundles.project_name((paths.ROOT / ".project").read_text(encoding="utf-8"))
     _link(paths.ROOT, workspace / root_name)
 
-    linked = 1
+    linked, skipped = 1, 0
     for candidate in sorted((paths.ROOT / "src").iterdir()):
         marker = candidate / ".project"
-        if marker.is_file():
-            name = bundles.project_name(marker.read_text(encoding="utf-8", errors="ignore"))
-            destination = workspace / name
-            if not destination.exists():
-                _link(candidate, destination)
-                linked += 1
+        if not marker.is_file():
+            continue
+        if not (candidate / "META-INF" / "MANIFEST.MF").is_file():
+            skipped += 1                    # a feature, the site, a sample: not a bundle, not loadable
+            continue
+        name = bundles.project_name(marker.read_text(encoding="utf-8", errors="ignore"))
+        destination = workspace / name
+        if not destination.exists():
+            _link(candidate, destination)
+            linked += 1
 
-    log.info(f"cleon: workspace at {workspace} with {linked} project(s), each under its own name")
+    log.info(f"cleon: workspace at {workspace} with {linked} bundle project(s), "
+             f"{skipped} non-bundle project(s) left out")
     return workspace
 
 

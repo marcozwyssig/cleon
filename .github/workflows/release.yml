@@ -19,16 +19,49 @@ permissions:
   packages: write         # pulls the asbundle bundle, pushes the combined one
 
 jobs:
+  # Which cells to publish. A `plan` job rather than an `if` on the build job, because the `matrix`
+  # context is NOT available in a job-level `if` - `runs-on` gets it, `if` does not.
+  #
+  # This exists because the `only` input previously sat here doing NOTHING: the matrix was hardcoded
+  # and nobody read the input. Dispatching with only=ubuntu-24.04 published one cell and paid for five,
+  # four of which failed on stale bundles (run 33732625947). The same dead-input trap was removed from
+  # asbundle's ci.yml and reintroduced here.
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      cells: ${{ steps.select.outputs.cells }}
+    steps:
+      - id: select
+        env:
+          ONLY: ${{ inputs.only != 'all' && inputs.only || '' }}
+        run: |
+          cells='[
+            {"os":"ubuntu-24.04",    "arch":"x86_64", "shell":"bash","entry":"./cleon.sh","timeout":45},
+            {"os":"ubuntu-24.04-arm","arch":"aarch64","shell":"bash","entry":"./cleon.sh","timeout":45},
+            {"os":"macos-15-intel",  "arch":"x86_64", "shell":"bash","entry":"./cleon.sh","timeout":60},
+            {"os":"macos-15",        "arch":"arm64",  "shell":"bash","entry":"./cleon.sh","timeout":60},
+            {"os":"windows-2025",    "arch":"amd64",  "shell":"cmd", "entry":"cleon.cmd","timeout":75}
+          ]'
+          if [ -n "$ONLY" ]; then
+            # Exact match, never a substring: "ubuntu-24.04" is a prefix of "ubuntu-24.04-arm".
+            cells=$(printf '%s' "$cells" | jq -c --arg only "$ONLY" \
+              '($only | split(",") | map(gsub("^ +| +$";""))) as $want
+               | [ .[] | select(.os as $o | $want | index($o)) ]')
+            [ "$(printf '%s' "$cells" | jq 'length')" -gt 0 ] || {
+              echo "::error::the 'only' input matched no cell: $ONLY" >&2; exit 1; }
+          else
+            cells=$(printf '%s' "$cells" | jq -c .)
+          fi
+          echo "cells=$cells" >> "$GITHUB_OUTPUT"
+          printf '%s' "$cells" | jq -r '.[] | "  will publish \(.os) (\(.arch)), cap \(.timeout) min"'
+
   build:
+    needs: plan
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - { os: ubuntu-24.04,     arch: x86_64,  shell: bash, entry: "./cleon.sh", timeout: 45 }
-          - { os: ubuntu-24.04-arm, arch: aarch64, shell: bash, entry: "./cleon.sh", timeout: 45 }
-          - { os: macos-15-intel,   arch: x86_64,  shell: bash, entry: "./cleon.sh", timeout: 60 }
-          - { os: macos-15,         arch: arm64,   shell: bash, entry: "./cleon.sh", timeout: 60 }
-          - { os: windows-2025,     arch: amd64,   shell: cmd,  entry: "cleon.cmd",  timeout: 75 }
+        include: ${{ fromJSON(needs.plan.outputs.cells) }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: ${{ matrix.timeout }}
     defaults:

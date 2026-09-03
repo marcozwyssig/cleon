@@ -186,3 +186,38 @@ def test_a_plus_is_removed_because_a_reference_cannot_hold_one():
 
     assert "+" not in tag
     assert tag == tag.lower()
+
+
+# --- the build number -------------------------------------------------------------------------------
+# `0.4.149.qualifier` is a PLACEHOLDER that Eclipse's build replaces and ours did not, so every
+# artefact carried the word `qualifier` where a build number belongs.
+
+def test_the_qualifier_carries_the_commit_time_and_its_sha():
+    commit_timestamp, short_sha = "v20260903-0816", "a1b2c3d"
+
+    qualifier = bundles.build_qualifier(commit_timestamp, short_sha)
+
+    assert qualifier == "v20260903-0816-a1b2c3d"
+
+
+def test_a_missing_input_is_refused_rather_than_guessed():
+    """Deriving from the clock instead would produce versions that are not reproducible, quietly."""
+    with pytest.raises(ValueError, match="required"):
+        bundles.build_qualifier("", "a1b2c3d")
+
+
+def test_the_placeholder_is_replaced_in_a_version():
+    qualifier = "v20260903-0816-a1b2c3d"
+
+    version = bundles.apply_qualifier("0.4.149.qualifier", qualifier)
+
+    assert version == "0.4.149.v20260903-0816-a1b2c3d"
+
+
+def test_a_version_that_decided_already_is_left_alone():
+    """Substituting into it would silently rewrite someone's deliberate choice."""
+    qualifier = "v20260903-0816-a1b2c3d"
+
+    version = bundles.apply_qualifier("1.2.3", qualifier)
+
+    assert version == "1.2.3"

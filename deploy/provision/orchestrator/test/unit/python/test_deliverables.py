@@ -353,3 +353,37 @@ def test_entries_pair_each_directory_with_its_own_jar():
     # The Ant side splits on ";" between entries and "|" within one.
     assert all(entry.count("|") == 1 and ";" not in entry
                for entry in entries + result.feature_entries())
+
+
+# --- the build number in the derived names -----------------------------------------------------------
+
+@pytest.mark.repository
+def test_the_qualifier_reaches_every_jar_name():
+    """All four places - manifest, feature definition, site and filename - must agree, or p2 looks for
+    a version nothing carries and reports it as "could not be found"."""
+    qualifier = "v20260903-0816-a1b2c3d"
+
+    result = deliverables.resolve(ROOT, qualifier=qualifier)
+
+    assert all(qualifier in jar for jar in result.feature_jars)
+    assert all(qualifier in jar for jar in result.plugin_jars)
+    assert not any("qualifier.jar" in jar for jar in result.feature_jars + result.plugin_jars)
+
+
+@pytest.mark.repository
+def test_without_a_qualifier_the_placeholder_survives():
+    """The Ant file defaults to leaving it alone too, so a standalone run still produces what it did."""
+    result = deliverables.resolve(ROOT)
+
+    assert all(jar.endswith("_0.4.149.qualifier.jar") for jar in result.feature_jars)
+
+
+@pytest.mark.repository
+def test_the_site_cross_check_still_holds_with_a_qualifier():
+    """site.xml holds the placeholder; the Ant build substitutes it there at the same moment. If the
+    comparison were made against the raw site, every feature would look mismatched."""
+    qualifier = "v20260903-0816-a1b2c3d"
+
+    result = deliverables.resolve(ROOT, qualifier=qualifier)
+
+    assert len(result.feature_jars) == 32          # resolve() raises on a mismatch, so this is the check

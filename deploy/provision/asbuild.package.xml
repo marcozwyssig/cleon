@@ -44,6 +44,12 @@
        every MANIFEST's Bundle-RequiredExecutionEnvironment. Not a choice made here. -->
   <property name="cleon.java.target" value="21"/>
 
+  <!-- The build number. `0.4.149.qualifier` is a PLACEHOLDER - Eclipse's own build replaces it and
+       ours did not, so every artefact carried the word `qualifier` where a build number belongs.
+       The orchestrator derives it from the git commit and passes it in; the default here leaves the
+       placeholder alone, so this file still runs standalone and produces what it always produced. -->
+  <property name="cleon.qualifier" value="qualifier"/>
+
   <target name="clean">
     <delete dir="${cleon.out}"/>
   </target>
@@ -203,6 +209,20 @@
     <for list="${cleon.plugin.entries}" delimiter=";" param="entry">
       <sequential>
         <split-entry entry="@{entry}"/>
+        <!-- The version-bearing files are STAGED with the placeholder replaced, because the jar's
+             MANIFEST.MF must carry the same Bundle-Version as the jar's NAME. Substituting in the
+             working tree instead would leave a dirty checkout behind.
+
+             Only text files pass through the filter: `ico/**` is packed straight from the project,
+             since a replacement filter would corrupt a binary. -->
+        <var name="stage" value="${cleon.out}/stage/${entry.jar}"/>
+        <delete dir="${stage}"/>
+        <mkdir dir="${stage}"/>
+        <copy todir="${stage}">
+          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml"/>
+          <filterchain><replacestring from=".qualifier" to=".${cleon.qualifier}"/></filterchain>
+        </copy>
+
         <!-- `manifest=` IS REQUIRED, and a fileset cannot replace it. Ant's `<jar>` always writes its
              own MANIFEST.MF and silently DISCARDS one that arrives through a fileset. Verified
              directly: packing META-INF from a fileset produced a manifest carrying only
@@ -220,22 +240,35 @@
              `bin/` holds the classes and `asrc/`; the project holds the rest of what
              build.properties' `bin.includes` names. -->
         <jar destfile="${cleon.site.dir}/plugins/${entry.jar}"
-             manifest="${entry.dir}/META-INF/MANIFEST.MF">
+             manifest="${stage}/META-INF/MANIFEST.MF">
           <fileset dir="${entry.dir}/bin"/>
-          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml,ico/**"
-                   excludes="META-INF/MANIFEST.MF"/>
+          <fileset dir="${stage}" excludes="META-INF/MANIFEST.MF"/>
+          <fileset dir="${entry.dir}" includes="ico/**"/>
         </jar>
       </sequential>
     </for>
     <for list="${cleon.feature.entries}" delimiter=";" param="entry">
       <sequential>
         <split-entry entry="@{entry}"/>
-        <jar destfile="${cleon.site.dir}/features/${entry.jar}">
+        <!-- A feature.xml carries its OWN version and the version of every plugin it ships, so the
+             placeholder has to go here too or the feature asks for versions no jar has. -->
+        <var name="stage" value="${cleon.out}/stage/${entry.jar}"/>
+        <delete dir="${stage}"/>
+        <mkdir dir="${stage}"/>
+        <copy todir="${stage}">
           <fileset dir="${entry.dir}" includes="feature.xml,feature.properties,license.html,epl-v10.html"/>
-        </jar>
+          <filterchain><replacestring from=".qualifier" to=".${cleon.qualifier}"/></filterchain>
+        </copy>
+        <jar destfile="${cleon.site.dir}/features/${entry.jar}" basedir="${stage}"/>
       </sequential>
     </for>
-    <copy file="${basedir}/src/cleon.site/site.xml" todir="${cleon.site.dir}"/>
+    <!-- And site.xml, which names every feature jar by url AND by version. All four places - manifest,
+         feature definition, site and filename - have to agree, or p2 looks for something nothing
+         carries. That failure reads as "could not be found", which is the least informative message
+         p2 has. -->
+    <copy file="${basedir}/src/cleon.site/site.xml" todir="${cleon.site.dir}">
+      <filterchain><replacestring from=".qualifier" to=".${cleon.qualifier}"/></filterchain>
+    </copy>
   </target>
 
   <!-- ============================================================================================

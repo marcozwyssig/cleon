@@ -79,6 +79,11 @@ class Deliverables(NamedTuple):
         return [f"{d}|{j}" for d, j in zip(self.plugin_dirs, self.plugin_jars)]
 
 
+def _qualified(text: str, qualifier: str) -> str:
+    """Replace the placeholder `.qualifier` with the build number, if one was given."""
+    return text.replace(".qualifier", f".{qualifier}") if qualifier else text
+
+
 def site_feature_ids(site_xml: str) -> List[str]:
     """The feature ids an update site aggregates, deduplicated and sorted."""
     return sorted(set(_SITE_FEATURE.findall(site_xml or "")))
@@ -190,13 +195,17 @@ def _index_plugins(source_root: Path, skip: tuple = ()) -> Dict[str, Path]:
 
 
 def resolve(repository_root: Path, site_project: str = "cleon.site",
-            skip_directories: tuple = ()) -> Deliverables:
+            skip_directories: tuple = (), qualifier: str = "") -> Deliverables:
     """The features and plugins to build, derived from the update site outwards.
 
     Fails loudly on a dangling reference. A feature the site names but the repository does not contain,
     or a plugin a feature names and nobody provides, means the generated tree and the site definition
     disagree - and the honest moment to say so is before compiling, not when the site turns out to be
     missing a jar.
+
+    `qualifier`, when given, replaces the literal `.qualifier` in every jar name. The same value has to
+    reach the manifests, the feature definitions and site.xml - the Ant build does those - or p2 looks
+    for a version nothing carries.
     """
     source_root = repository_root / "src"
     site_xml = (source_root / site_project / "site.xml").read_text(encoding="utf-8", errors="ignore")
@@ -212,7 +221,8 @@ def resolve(repository_root: Path, site_project: str = "cleon.site",
             continue
         feature_xml = (directory / "feature.xml").read_text(encoding="utf-8", errors="ignore")
         feature_dirs.append(directory)
-        feature_jars.append(f"{feature_id}_{feature_version(feature_xml)}.jar")
+        version = feature_version(feature_xml)
+        feature_jars.append(f"{feature_id}_{_qualified(version, qualifier)}.jar")
         plugin_ids.update(feature_plugin_ids(feature_xml))
 
     if missing_features:
@@ -230,9 +240,13 @@ def resolve(repository_root: Path, site_project: str = "cleon.site",
     # The site names the jar it expects. Comparing against it turns "the version we derived" from an
     # assumption into a checked fact - and catches a feature whose own version has drifted from the
     # generated site, which otherwise surfaces as an update site missing exactly one feature.
+    #
+    # Compared with the qualifier applied to BOTH sides: site.xml still holds the placeholder here, and
+    # the Ant build substitutes it there at the same moment it substitutes it in the feature jars.
     mismatched = [f"{jar} (site expects {expected_urls[fid]})"
                   for fid, jar in zip(feature_ids, feature_jars)
-                  if fid in expected_urls and expected_urls[fid] != f"features/{jar}"]
+                  if fid in expected_urls
+                  and _qualified(expected_urls[fid], qualifier) != f"features/{jar}"]
     if mismatched:
         raise ValueError(
             f"{len(mismatched)} feature jar name(s) disagree with {site_project}/site.xml: "
@@ -242,7 +256,8 @@ def resolve(repository_root: Path, site_project: str = "cleon.site",
                  for p in plugin_ids}
     ordered_plugins = compile_order({p: required_bundles(m) for p, m in manifests.items()})
     plugin_dirs = [index[p] for p in ordered_plugins]
-    plugin_jars = [f"{p}_{bundle_version(manifests[p])}.jar" for p in ordered_plugins]
+    plugin_jars = [f"{p}_{_qualified(bundle_version(manifests[p]), qualifier)}.jar"
+                   for p in ordered_plugins]
 
     return Deliverables(
         feature_dirs=feature_dirs,

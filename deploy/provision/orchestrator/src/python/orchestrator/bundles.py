@@ -136,6 +136,35 @@ def version_from_jar(jar_name: str) -> str:
     return version
 
 
+def build_qualifier(commit_timestamp: str, short_sha: str) -> str:
+    """The build number that replaces the literal `qualifier` in every version.
+
+    `0.4.149.qualifier` is not a version, it is a PLACEHOLDER that Eclipse's own build replaces. Ours
+    did not, so every artefact this project published carried the word `qualifier` where a build number
+    belongs - in the jar names, the manifests, the update site and the registry tag.
+
+    Derived from the COMMIT rather than the clock: the same commit produces the same version, so a
+    rebuild is comparable and a version identifies a source state rather than the moment someone
+    happened to run a build. The timestamp keeps versions ordered - `v20260903-0816` sorts after
+    `v20260902-2312` - and the short sha separates two commits made in the same minute.
+
+    `v<yyyyMMdd>-<HHmm>` is Eclipse's own shape, so the result still reads as an OSGi qualifier.
+    """
+    if not commit_timestamp or not short_sha:
+        raise ValueError("both the commit timestamp and the short sha are required")
+    return f"{commit_timestamp}-{short_sha}"
+
+
+def apply_qualifier(version: str, qualifier: str) -> str:
+    """`0.4.149.qualifier` -> `0.4.149.v20260903-0816-a1b2c3d`. Any other version is left alone.
+
+    Left alone rather than forced: a version that does not end in `.qualifier` has already been decided,
+    and substituting into it would silently rewrite someone's choice.
+    """
+    suffix = ".qualifier"
+    return version[: -len(suffix)] + "." + qualifier if version.endswith(suffix) else version
+
+
 def combined_tag(cleon_version: str, source_tag: str) -> str:
     """The registry tag for the combined bundle: cleon's version AND the base it was built on.
 

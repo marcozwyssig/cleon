@@ -108,6 +108,13 @@ ghcr.io/marcozwyssig/asbundle-bundle : <eclipse>-<jdk>-<os>-<arch>       (consum
 ghcr.io/marcozwyssig/cleon-bundle    : <cleon>-<eclipse>-<jdk>-<os>-<arch> (produced)
 ```
 
+cleon's version carries a real build number, derived from the git commit:
+`0.4.149.v20260903-0816-a1b2c3d`. `qualifier` in the source is a placeholder — Eclipse's own build
+replaces it, and so does this one, in the manifests, the feature definitions, `site.xml` and the jar
+names at once. All four have to agree or p2 reports `could not be found`.
+
+From the commit rather than the clock, so the same source produces the same version.
+
 The produced tag names the base it was built on, because the artefact is not reproducible from cleon's
 version alone — it carries a particular Eclipse, JDK and Actifsource.
 

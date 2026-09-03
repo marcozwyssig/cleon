@@ -402,8 +402,9 @@ def publish() -> None:
     _oras_login(registry)
 
     version = bundles.version_from_jar(deliverables.resolve(paths.ROOT).feature_jars[0])
-    key = bundles.host_key()
-    tag = f"{version}-{key[0]}-{key[1]}".replace("+", "-").lower()
+    # The SOURCE tag - recorded when the bundle was pulled - already ends in the host, so the combined
+    # tag needs no separate host segment.
+    tag = bundles.combined_tag(version, _source_tag())
     reference = bundles.reference(registry, repository, tag)
 
     log.info(f"cleon: pushing {archive.name} to {reference}")

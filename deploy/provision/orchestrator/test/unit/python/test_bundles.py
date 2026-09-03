@@ -155,3 +155,34 @@ def test_surrounding_whitespace_is_dropped():
 def test_a_project_file_without_a_name_is_refused():
     with pytest.raises(ValueError, match="no <name>"):
         bundles.project_name("<projectDescription/>")
+
+
+# --- the registry tag -------------------------------------------------------------------------------
+# The filename always carried both versions; the tag carried only cleon's, so two builds of the same
+# cleon on different bases shared one tag and the second silently replaced the first.
+
+def test_the_tag_names_the_base_it_was_built_on():
+    source_tag = "4.40-25.0.4-0-linux-x86_64"
+
+    tag = bundles.combined_tag("0.4.149.qualifier", source_tag)
+
+    assert tag == "0.4.149.qualifier-4.40-25.0.4-0-linux-x86_64"
+
+
+def test_the_architecture_survives_normalisation():
+    """A docker reference admits `_`. Replacing it would turn x86_64 into x86-64 - a different
+    architecture name, in a tag consumers select by."""
+    source_tag = "4.40-25.0.4-0-linux-x86_64"
+
+    tag = bundles.combined_tag("0.4.149.qualifier", source_tag)
+
+    assert tag.endswith("linux-x86_64")
+
+
+def test_a_plus_is_removed_because_a_reference_cannot_hold_one():
+    source_tag = "4.40-25.0.4+0-linux-x86_64"
+
+    tag = bundles.combined_tag("0.4.149.QUALIFIER", source_tag)
+
+    assert "+" not in tag
+    assert tag == tag.lower()

@@ -136,6 +136,23 @@ def version_from_jar(jar_name: str) -> str:
     return version
 
 
+def combined_tag(cleon_version: str, source_tag: str) -> str:
+    """The registry tag for the combined bundle: cleon's version AND the base it was built on.
+
+    The base belongs in the tag for the same reason it belongs in the filename: this artefact is not
+    reproducible from cleon's version alone - it carries a particular Eclipse, JDK and Actifsource.
+
+    Without it, two builds of the same cleon on different bases share one tag and the second silently
+    replaces the first, while the file INSIDE still claims to be the other one. The filename got this
+    right and the tag did not; they now say the same thing.
+
+    A docker reference admits no uppercase and no `+`. It DOES admit `_`, and that matters here: the
+    source tag ends in a host like `linux-x86_64`, and replacing the underscore would rename the
+    architecture. asbundle keeps it for the same reason.
+    """
+    return f"{cleon_version}-{source_tag}".replace("+", "-").lower()
+
+
 def combined_bundle_name(cleon_version: str, key: HostKey, source_tag: str) -> str:
     """The filename of what cleon publishes: the asbundle bundle with cleon already installed.
 

@@ -203,13 +203,27 @@
     <for list="${cleon.plugin.entries}" delimiter=";" param="entry">
       <sequential>
         <split-entry entry="@{entry}"/>
-        <!-- Two filesets, and they do not overlap: `bin/` holds the classes and `asrc/` (compile puts
-             the model there for Actifsource to read), the project holds the rest of what
-             build.properties' `bin.includes` names. `asrc` is excluded from the second so no entry is
-             packed twice. -->
-        <jar destfile="${cleon.site.dir}/plugins/${entry.jar}">
+        <!-- `manifest=` IS REQUIRED, and a fileset cannot replace it. Ant's `<jar>` always writes its
+             own MANIFEST.MF and silently DISCARDS one that arrives through a fileset. Verified
+             directly: packing META-INF from a fileset produced a manifest carrying only
+             Manifest-Version, Ant-Version and Created-By - no Bundle-SymbolicName, no Bundle-Version.
+
+             So every plugin jar was not an OSGi bundle at all, and p2 said exactly that:
+
+               Missing requirement: ... requires 'org.eclipse.equinox.p2.iu;
+               cleon.architecturestylesandpatterns.eda.metamodel.builtin 0.0.0'
+               but it could not be found
+
+             The jar was there, on disk, with the right name. It just was not a bundle (run
+             33731171484). MANIFEST.MF is excluded from the fileset so it is not packed twice.
+
+             `bin/` holds the classes and `asrc/`; the project holds the rest of what
+             build.properties' `bin.includes` names. -->
+        <jar destfile="${cleon.site.dir}/plugins/${entry.jar}"
+             manifest="${entry.dir}/META-INF/MANIFEST.MF">
           <fileset dir="${entry.dir}/bin"/>
-          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml,ico/**"/>
+          <fileset dir="${entry.dir}" includes="META-INF/**,plugin.xml,ico/**"
+                   excludes="META-INF/MANIFEST.MF"/>
         </jar>
       </sequential>
     </for>

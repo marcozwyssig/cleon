@@ -1,0 +1,25 @@
+# Line endings, decided once (netctl-style: the reason, not just the rule).
+#
+# WHAT WENT WRONG WITHOUT THIS. The repository stores CRLF - it was populated from Windows - and the
+# Actifsource generator writes LF. So `cleon build` rewrote 452 files with no content change whatsoever
+# and left them "modified": `git status` became unreadable after every build, `git checkout <branch>`
+# refused to switch, and a drift gate over generated sources could never have told a real change from
+# an end-of-line.
+#
+# `text=auto` makes Git normalise to LF IN THE REPOSITORY and compare normalised, so a working tree that
+# holds either kind is clean. It does not force the working tree: a Windows checkout with the usual
+# core.autocrlf=true still gets CRLF, which is what tools there expect.
+#
+# Committing this needed one renormalising commit (`git add --renormalize .`). That is why a single
+# commit touches thousands of files and changes not one character of content.
+* text=auto
+
+# Binary by declaration rather than by detection. Git guesses well, but a guess that goes wrong here
+# corrupts an artefact rather than producing a noisy diff.
+*.zip   binary
+*.jar   binary
+*.png   binary
+*.gif   binary
+*.jpg   binary
+*.ico   binary
+*.pdf   binary

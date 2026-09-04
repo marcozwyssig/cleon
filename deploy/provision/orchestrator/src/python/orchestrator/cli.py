@@ -287,6 +287,13 @@ def fetch_bundle() -> None:
     _resolve("build/bundle-source-tag").write_text(tag, encoding="utf-8")
 
     eclipse = antbuild.eclipse_home(directory, bundle.get("plugin_candidates") or ["plugins"])
+
+    # The one file this build will execute out of the bundle, made executable if the archive did not
+    # record the bit. The darwin bundle does not: Apache Ant ships as a .zip and a zip carries no Unix
+    # modes, so `_extract_preserving_modes` faithfully restores a 0644 launcher that then cannot run.
+    if antbuild.ensure_executable(antbuild.ant_executable(eclipse, windows=os.name == "nt")):
+        log.info("cleon: the bundle recorded no executable bit on Ant's launcher; added it")
+
     log.ok(f"cleon: unpacked {tag} into {eclipse}")
 
 

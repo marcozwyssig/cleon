@@ -4,6 +4,7 @@ Every case here builds a bundle SHAPE on disk rather than mocking the filesystem
 is a set of assumptions about how asbundle lays a bundle out, and a mock would only ever confirm the
 assumption back to me.
 """
+import os
 from pathlib import Path
 
 import pytest
@@ -97,6 +98,25 @@ def test_the_bundled_jdk_is_used_rather_than_whatever_is_on_path(tmp_path):
         antbuild.java_home(_eclipse(tmp_path / "other", jdk=False))
 
 
+def test_a_macos_jdk_is_a_bundle_whose_java_home_is_inside_it(tmp_path):
+    """On macOS the JDK is a .jdk BUNDLE: the binaries live in Contents/Home/bin, and `jdk/bin` does
+    not exist at all. Returning `jdk` there is not a missing directory anyone notices - it exists - so
+    the build fails much later, inside Ant, with "We cannot run Java" and a path nobody put there."""
+    eclipse = _eclipse(tmp_path, jdk=False)
+    (eclipse / "jdk" / "Contents" / "Home" / "bin").mkdir(parents=True)
+
+    assert antbuild.java_home(eclipse) == eclipse / "jdk" / "Contents" / "Home"
+
+
+def test_a_jdk_directory_that_is_neither_shape_says_so(tmp_path):
+    # An empty `jdk/` is the shape a half-unpacked or truncated bundle leaves behind.
+    eclipse = _eclipse(tmp_path, jdk=False)
+    (eclipse / "jdk").mkdir()
+
+    with pytest.raises(FileNotFoundError, match="no JDK"):
+        antbuild.java_home(eclipse)
+
+
 # --- the command line -----------------------------------------------------------------------------
 
 def test_argv_is_a_list_so_no_shell_ever_reparses_a_path(tmp_path):
@@ -147,3 +167,38 @@ def test_a_long_property_is_truncated_but_keeps_its_length():
     long_line = next(line for line in lines if line.startswith("  -Dlong="))
     assert "(400 chars)" in long_line
     assert len(long_line) < 120
+
+
+# --- the executable bit the archive did not carry --------------------------------------------------
+
+def test_the_ant_launcher_is_made_executable_when_the_archive_dropped_the_bit(tmp_path):
+    """Apache Ant ships as a .zip, and a zip carries no Unix modes - so the bundle records ant/bin/ant
+    as 0644 and an unpacked bundle cannot run it. cleon knows exactly which file it is about to
+    execute, so making THAT file executable is precise rather than a guess by name."""
+    eclipse = _eclipse(tmp_path)
+    launcher = eclipse / "ant" / "bin" / "ant"
+    launcher.chmod(0o644)
+
+    changed = antbuild.ensure_executable(launcher)
+
+    assert changed is True
+    assert os.access(launcher, os.X_OK)
+
+
+def test_an_already_executable_launcher_is_left_alone(tmp_path):
+    eclipse = _eclipse(tmp_path)
+    launcher = eclipse / "ant" / "bin" / "ant"
+    launcher.chmod(0o755)
+
+    assert antbuild.ensure_executable(launcher) is False
+
+
+def test_the_read_bits_survive_being_made_executable(tmp_path):
+    # +x is added to what is there; it never replaces the mode wholesale.
+    eclipse = _eclipse(tmp_path)
+    launcher = eclipse / "ant" / "bin" / "ant"
+    launcher.chmod(0o640)
+
+    antbuild.ensure_executable(launcher)
+
+    assert launcher.stat().st_mode & 0o777 == 0o750

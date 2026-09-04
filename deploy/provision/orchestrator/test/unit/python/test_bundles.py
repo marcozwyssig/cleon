@@ -221,3 +221,49 @@ def test_a_version_that_decided_already_is_left_alone():
     version = bundles.apply_qualifier("1.2.3", qualifier)
 
     assert version == "1.2.3"
+
+
+# --- picking the archive to install ------------------------------------------------------------------
+
+def test_the_newest_archive_wins():
+    """`deploy install` takes what was built last. The version is generated INTO the filename by the
+    model, so nobody can name the artefact in advance - which is why this picks rather than asks."""
+    entries = [("cleon_0.4.148_on_4.40.zip", 100.0),
+               ("cleon_0.4.149_on_4.40.zip", 300.0),
+               ("cleon_0.4.147_on_4.40.zip", 200.0)]
+
+    assert bundles.newest_archive(entries) == "cleon_0.4.149_on_4.40.zip"
+
+
+def test_a_tie_is_broken_by_the_name_so_the_answer_is_never_a_coin_toss():
+    """Two files written in the same clock tick is not exotic on a fast disk, and an arbitrary winner
+    would make the same command install different bundles on two runs."""
+    entries = [("cleon_0.4.148_on_4.40.zip", 100.0), ("cleon_0.4.149_on_4.40.zip", 100.0)]
+
+    assert bundles.newest_archive(entries) == "cleon_0.4.149_on_4.40.zip"
+
+
+def test_nothing_to_install_says_what_produces_one():
+    """An empty build-out/ means the build was never run here, and the message has to say so - the
+    alternative is an IndexError from inside a max()."""
+    with pytest.raises(ValueError, match="build bundle"):
+        bundles.newest_archive([])
+
+
+def test_a_directory_holding_a_previous_install_may_be_replaced():
+    """Installing replaces what is there. That is right for a directory this command wrote before."""
+    assert bundles.replaceable(["Eclipse.app", "build-out"]) is True
+    assert bundles.replaceable(["plugins", "ant", "jdk"]) is True
+
+
+def test_an_empty_directory_may_be_used():
+    assert bundles.replaceable([]) is True
+
+
+def test_a_directory_full_of_something_else_is_not_deleted():
+    """`deploy install <dir>` takes a path from the command line and then DELETES it. A typo, a shell
+    completion that landed one directory too high, `~` instead of `~/eclipse` - the cost of being wrong
+    here is somebody's files, so anything that does not look like an unpacked bundle is refused rather
+    than replaced."""
+    assert bundles.replaceable(["Documents", "Desktop", ".ssh"]) is False
+    assert bundles.replaceable(["src", "README.md", "cleon.yaml"]) is False

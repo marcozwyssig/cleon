@@ -122,6 +122,41 @@ def recorded_mode(external_attr: int) -> int:
     return (external_attr >> 16) & 0o7777
 
 
+def newest_archive(entries: Sequence[Tuple[str, float]]) -> str:
+    """The archive to install, out of (filename, modification time) pairs. Pure.
+
+    `deploy install` unpacks what the build produced, and what it produced cannot be named in advance:
+    cleon's version is generated INTO the filename by the model (see combined_bundle_name), so a caller
+    would have to read the directory to write the argument it was being asked for. It picks instead.
+
+    A tie goes to the greater NAME rather than to whichever entry came first. Two archives written in
+    the same clock tick is ordinary on a fast disk, and an arbitrary winner would let the same command
+    install different bundles on two runs - the kind of difference nobody looks for.
+    """
+    if not entries:
+        raise ValueError("no bundle archive to install; run `cleon build bundle` to produce one")
+    return max(entries, key=lambda entry: (entry[1], entry[0]))[0]
+
+
+# What an unpacked bundle looks like from outside: the macOS app wrapper, or the three siblings the
+# Linux and Windows layouts put at the top. Any ONE of them is enough - a half-deleted install still has
+# to be replaceable, or the command that failed halfway can never be re-run.
+_BUNDLE_MARKERS = frozenset({"Eclipse.app", "plugins", "eclipse", "eclipse.exe", "eclipse.ini",
+                             "jdk", "ant"})
+
+
+def replaceable(entries: Sequence[str]) -> bool:
+    """Whether a destination directory holding `entries` may be deleted and rewritten. Pure.
+
+    `deploy install <dir>` takes a path from the command line and then REMOVES it, so the cost of the
+    caller being wrong is somebody's files - a typo, a shell completion that landed one directory too
+    high, `~` where `~/eclipse` was meant. Empty is fine, an unpacked bundle is fine, and anything else
+    is refused rather than replaced: this command has no business deciding that a directory it does not
+    recognise is disposable.
+    """
+    return not entries or bool(_BUNDLE_MARKERS.intersection(entries))
+
+
 def version_from_jar(jar_name: str) -> str:
     """`cleon.x_0.4.149.qualifier.jar` -> `0.4.149.qualifier`.
 

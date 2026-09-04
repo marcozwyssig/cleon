@@ -122,6 +122,11 @@ tasks:
   publish:  { impl: "orchestrator.cli:publish",
               help: "Push the combined cleon+Actifsource bundle to the registry." }
   up:       { impl: "orchestrator.cli:up",   help: "Deploy the product to the target environment (placeholder)." }
+  # The counterpart of `build bundle`: that produces the artefact, this puts it where someone can start
+  # it. Same shape as asbundle's `deploy install`, because it is the same act one layer up.
+  install:  { impl: "orchestrator.cli:install_bundle",
+              help: "Extract the packaged cleon bundle into a directory on this machine.",
+              params: { directory: { help: "directory to extract the bundle into", argument: true } } }
   down:     { impl: "orchestrator.cli:down", help: "Tear the deployment down (placeholder)." }
 
 # The command tree along the CI/CD loop: group -> commands -> { task | depends_on }. The key order
@@ -155,8 +160,9 @@ groups:
       publish: { task: publish }
   deploy:
     commands:
-      up:   { task: up }
-      down: { task: down }
+      up:      { task: up }
+      install: { task: install }
+      down:    { task: down }
       all:  { help: "Run build then deploy up end to end (the build->up dependency plan).",
               depends_on: [build, up], stop_on_failure: false }
 

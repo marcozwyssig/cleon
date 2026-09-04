@@ -1,14 +1,28 @@
-# Host-Python deps for the cleon delivery orchestrator, scaffolded on the delivery kernel
-# (netctl#651 strand 4). Installed into a host venv by cleon.sh via the shared launcher.
+# Host-Python deps for the cleon delivery orchestrator. Installed into a host venv by cleon.sh (and by
+# launch.py on Windows).
 #
-# The delivery KERNEL owns its own dependency declaration (typer/click/PyYAML/rich/textual/pydantic drive
-# manifest assembly + the split-pane step TUI); reference it here with -r rather than re-pinning it, so a
-# kernel dep bump lands in ONE place and this file carries ONLY cleon-product deps (netctl#730). pip
-# resolves the -r path relative to THIS file: the kernel is vendored at <root>/lib/platform and this file is
-# <root>/orchestrator/requirements.txt, so a single `../` reaches the root. (Relocate the orchestrator dir
-# deeper and this is the one path to re-tune - one `../` per extra level - the Python side self-locates.)
--r ../../../lib/platform/src/delivery/requirements.txt
+# The delivery kernel is an ORDINARY DEPENDENCY now: `simplon` on PyPI, pinned below. Nothing is
+# vendored, nothing is included by path, and a fresh clone needs no `git submodule update` - the
+# reference here used to be `-r ../../../lib/platform/src/delivery/requirements.txt`, which only worked
+# because the kernel was a submodule at a path this file had to count `../` hops to.
+#
+# A FLOOR, not a pin: cleon tracks the newest kernel release rather than a version someone has to
+# remember to bump. 0.1.4 is the floor because it is the first release carrying the oras gate and the
+# `support install` / `support git auth-scopes` commands cleon's manifest and CI rely on - below it the
+# CLI still assembles, which is what makes a floor worth stating rather than leaving the name bare.
+#
+# The price, stated because it is invisible otherwise: a build is no longer reproducible from this file
+# alone. Two runs a week apart can resolve different kernels. Write `simplon==<version>` here the day a
+# release has to be pinned down (a bisect, a regression, a shipped artefact that must be rebuildable).
+#
+# Both launchers install with --upgrade, so a resolve actually moves forward; without it pip keeps an
+# already-satisfied requirement and "latest" would silently mean "whatever was installed first". A
+# resolve happens when this file is newer than <venv>/.deps-stamp - delete the stamp to force one.
+#
+# Declaring the `test:typecheck-python` gate? Its mypy is an optional extra: write
+# `simplon[typecheck]>=...` instead.
+simplon>=0.1.4
 
 # --- cleon-product-only deps ---
 # Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's
-# CLI/TUI stack is already covered by the -r reference above; do not re-pin it here.
+# CLI/TUI stack (typer/click/PyYAML/textual/pydantic/jinja2) comes with the pin above; do not re-pin it.

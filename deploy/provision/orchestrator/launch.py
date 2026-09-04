@@ -1,9 +1,8 @@
-"""The Windows host-venv bootstrap: what lib/platform's launch.sh does, in stdlib Python.
+"""The Windows host-venv bootstrap: what cleon.sh does, in stdlib Python.
 
-WHY THIS EXISTS (#3). The delivery kernel's launcher is POSIX-only - it needs `python3` on PATH and
-hardcodes `$VENV/bin/pip` and `$VENV/bin/python`, while a Windows venv puts them in `Scripts\\`. The
-kernel ships no Windows entry point, so without this the Windows half of the six-cell matrix (#12) has
-no way in.
+WHY THIS EXISTS (#3). cleon.sh is POSIX-only - it needs `python3` on PATH and hardcodes `$VENV/bin/pip`
+and `$VENV/bin/python`, while a Windows venv puts them in `Scripts\\`. Without this the Windows half of
+the six-cell matrix (#12) has no way in.
 
 WHY PYTHON AND NOT A SHELL SCRIPT. Batch cannot compare two file timestamps without contortions, and
 PowerShell is ruled out. But every one of these steps - create a venv, compare two mtimes, run pip,
@@ -38,7 +37,7 @@ def _repo_root(start: Path) -> Path:
 
     A MARKER WALK, not a fixed number of `.parent` hops. This file used to take the block dir's parent,
     which was the root only while the block sat at the top level; moving it to `src/orchestrator/`
-    silently made ROOT point at `src/`. The marker is the same one delivery.context.bootstrap walks to,
+    silently made ROOT point at `src/`. The marker is the same one simplon.context.bootstrap walks to,
     so both halves of the product agree on where the root is and relocating the block again needs no
     edit here.
     """
@@ -51,7 +50,6 @@ def _repo_root(start: Path) -> Path:
 
 
 ROOT = _repo_root(ORCH_DIR)
-PLATFORM_SRC = ROOT / "lib" / "platform" / "src" / "delivery" / "src" / "python"
 VENV_DIR = ORCH_DIR / ".venv"
 REQUIREMENTS = ORCH_DIR / "requirements.txt"
 STAMP = VENV_DIR / ".deps-stamp"
@@ -93,22 +91,23 @@ def ensure_venv() -> None:
 
 
 def ensure_dependencies() -> None:
-    """Install requirements when they are newer than the stamp; a venv rebuild drops the stamp with it."""
+    """Install requirements when they are newer than the stamp; a venv rebuild drops the stamp with it.
+
+    --upgrade mirrors cleon.sh: the kernel is declared as a floor rather than a pin, and pip leaves an
+    already-satisfied requirement alone - so without it this venv would keep the first simplon it ever
+    installed while a fresh CI venv resolved the newest."""
     if STAMP.exists() and STAMP.stat().st_mtime >= REQUIREMENTS.stat().st_mtime:
         return
     print(f"{PRODUCT}: installing dependencies from {REQUIREMENTS.name}", file=sys.stderr)
     result = subprocess.run(
-        [str(venv_bin("pip")), "install", "-q", "--disable-pip-version-check", "-r", str(REQUIREMENTS)])
+        [str(venv_bin("pip")), "install", "-q", "--upgrade", "--disable-pip-version-check",
+         "-r", str(REQUIREMENTS)])
     if result.returncode != 0:
         die(f"dependency installation failed (rc={result.returncode})")
     STAMP.touch()
 
 
 def main(argv: list[str]) -> int:
-    if not (PLATFORM_SRC / "delivery").is_dir():
-        print(f"{PRODUCT}: delivery kernel not found at {PLATFORM_SRC}", file=sys.stderr)
-        die("run: git submodule update --init lib/platform")
-
     ensure_venv()
     ensure_dependencies()
 
@@ -119,13 +118,15 @@ def main(argv: list[str]) -> int:
     # aggregate step - so the FIRST failure on Windows died with a UnicodeEncodeError traceback that
     # buried the actual error message underneath it.
     #
-    # Set only when unset, so an operator can still override. Not needed in cleon.sh: the kernel's
-    # launcher inherits a POSIX locale that is already UTF-8, and both Linux cells and both macOS cells
+    # Set only when unset, so an operator can still override. Not needed in cleon.sh: it inherits a
+    # POSIX locale that is already UTF-8, and both Linux cells and both macOS cells
     # print the same character without complaint.
     env.setdefault("PYTHONIOENCODING", "utf-8")
     env.setdefault("PYTHONUTF8", "1")
 
-    parts = [str(PLATFORM_SRC), str(ORCH_DIR / "src" / "python")]
+    # Only the product's own package: the kernel is the installed `simplon` distribution in the venv,
+    # not a source tree this has to point at.
+    parts = [str(ORCH_DIR / "src" / "python")]
     if env.get("PYTHONPATH"):
         parts.append(env["PYTHONPATH"])
     env["PYTHONPATH"] = os.pathsep.join(parts)

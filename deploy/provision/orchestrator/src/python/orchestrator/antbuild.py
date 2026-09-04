@@ -12,6 +12,7 @@ list lives in cleon.yaml, so a sixth layout is a manifest edit rather than a cod
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -55,16 +56,51 @@ def ant_executable(eclipse: Path, *, windows: bool) -> Path:
     return executable
 
 
+def ensure_executable(path: Path) -> bool:
+    """Give `path` the executable bit if it lacks it; True when something changed.
+
+    WHY THIS IS NOT THE JOB OF THE UNPACKER. `fetch-bundle` restores exactly the modes the archive
+    RECORDS, which is the honest thing to do and the reason a bundle unpacks with 4455 correct modes.
+    But the darwin bundle records `ant/bin/ant` as 0644, because Apache Ant is distributed as a .zip and
+    a zip carries no Unix modes - so what was faithfully preserved was the absence of the bit. The
+    Eclipse launcher and the JDK binaries come from archives that do carry them, which is why only Ant
+    is affected and why this is not a general "chmod everything" pass.
+
+    Narrow BY CONSTRUCTION: the caller passes the file it is about to execute (ant_executable), so this
+    never guesses which files in a bundle ought to be runnable - the earlier attempt at that chmod'd
+    everything named `java` or `eclipse`, and guessing is what it was.
+
+    The bit is ADDED to the mode that is there, mirroring `chmod +x`: replacing the mode wholesale would
+    hand a 0600 file to every user on the machine.
+    """
+    mode = path.stat().st_mode
+    if os.access(path, os.X_OK):
+        return False
+    path.chmod(mode | ((mode & 0o444) >> 2))
+    return True
+
+
 def java_home(eclipse: Path) -> Path:
-    """The bundled JDK.
+    """The bundled JDK's JAVA_HOME - `jdk/`, or `jdk/Contents/Home` where the JDK is a macOS bundle.
 
     Used rather than whatever `java` is on PATH: the plugins declare JavaSE-21 and a runner's default
     JDK is not a thing this build should depend on. The bundle exists precisely so it does not.
+
+    THE macOS SHAPE IS NOT A VARIANT OF THE SAME DIRECTORY, it is a different one. A macOS JDK is an
+    application bundle: the binaries are in `jdk/Contents/Home/bin` and there is no `jdk/bin` at all. So
+    `jdk/` passes an is_dir() check and is still the wrong answer, and nothing says so until Ant reports
+    "We cannot run Java" against a path nobody wrote - which is exactly how this was found.
+
+    Proven by `bin/`, not by the operating system this happens to run on: what decides is the shape of
+    the bundle being consumed, and a bundle is downloaded, not built here.
     """
-    home = eclipse / "jdk"
-    if not home.is_dir():
-        raise FileNotFoundError(f"no JDK at {home} - the bundle should carry it next to plugins/")
-    return home
+    root = eclipse / "jdk"
+    for home in (root, root / "Contents" / "Home"):
+        if (home / "bin").is_dir():
+            return home
+    raise FileNotFoundError(
+        f"no JDK at {root}: neither bin/ nor Contents/Home/bin/ is there - the bundle should carry a "
+        f"JDK next to plugins/")
 
 
 def ant_argv(executable: Path, build_file: Path, targets: Sequence[str],

@@ -94,31 +94,71 @@ release:
   registry: ghcr.io/marcozwyssig
   repository: cleon-bundle
 
+# WHAT CLEON'S COMMANDS ARE (the command-tree form, netctl#1469). A body is declared ONCE here, under
+# `tasks:`, and a command instantiates it with `task:`. That indirection is what buys the group tree
+# below: writing the groups this way merges cleon's commands onto the KERNEL's own command tree, so
+# cleon inherits the general commands Simplon places for every product - `support install` (the host
+# tooling the kernel needs, today oras) and `support git` (the version-control chores, including
+# `auth-scopes` for the GHCR package permissions). In the previous, flat form (`impl:` written straight
+# on the command) none of that existed here: the kernel tree is merged only for a manifest that
+# declares at least one group this way.
+tasks:
+  fetch-bundle: { impl: "orchestrator.cli:fetch_bundle",
+                  help: "Pull the asbundle bundle for this host from the registry and unpack it." }
+  compile:  { impl: "orchestrator.cli:compile",
+              help: "Compile the model plugins, so the generator can load their Java functions." }
+  # NOT `generate` and NOT `install`, though that is what the bodies do: both are names the KERNEL's own
+  # command tree already owns (`support tasks generate` regenerates a product's CLI module, `support
+  # install` provisions host tooling), and an aggregate's `depends_on` takes a BARE command name - so a
+  # duplicate name is not a shadowed command, it is a plan that cannot be resolved at all.
+  generate-sources: { impl: "orchestrator.cli:generate",
+              help: "Run Actifsource headless: generate the plugin sources, features and update site, then validate." }
+  package:  { impl: "orchestrator.cli:package",
+              help: "Compile, jar the plugins and features, and publish the P2 update site." }
+  install-features: { impl: "orchestrator.cli:install",
+              help: "Install the freshly built cleon features into the bundle's Eclipse." }
+  bundle:   { impl: "orchestrator.cli:bundle",
+              help: "Zip the bundle, now carrying cleon, into a publishable archive." }
+  publish:  { impl: "orchestrator.cli:publish",
+              help: "Push the combined cleon+Actifsource bundle to the registry." }
+  up:       { impl: "orchestrator.cli:up",   help: "Deploy the product to the target environment (placeholder)." }
+  down:     { impl: "orchestrator.cli:down", help: "Tear the deployment down (placeholder)." }
+
+# The command tree along the CI/CD loop: group -> commands -> { task | depends_on }. The key order
+# within a group is its membership order. `build` is a group whose member shares its name, so it
+# collapses to ONE flat top-level command (`cleon build`); `deploy` is env-first (the kernel's tree
+# declares it so, and env_groups below states it for this manifest too).
+#
+# `build` and `all` are task-less AGGREGATES (#895/#896): they declare no task, only `depends_on`, and
+# the kernel binds them at assembly time (assemble(step_context=...) in orchestrator/cli.py) to run
+# their dependency plan as live-streamed `./cleon.sh <cmd>` steps.
+#
+# `build` sets `stop_on_failure: true` and `all` leaves it false, and the difference is not cosmetic:
+# packaging a failed generation compiles a stale tree and publishes an update site that looks fine, so
+# that chain must stop at the first red. Deploy's `all` reports every step instead, which is what you
+# want from a status sweep.
 groups:
   build:
-    fetch-bundle: { impl: "orchestrator.cli:fetch_bundle",
-                   help: "Pull the asbundle bundle for this host from the registry and unpack it." }
-    compile:  { impl: "orchestrator.cli:compile",
-                help: "Compile the model plugins, so the generator can load their Java functions." }
-    generate: { impl: "orchestrator.cli:generate",
-                help: "Run Actifsource headless: generate the plugin sources, features and update site, then validate." }
-    package:  { impl: "orchestrator.cli:package",
-                help: "Compile, jar the plugins and features, and publish the P2 update site." }
-    install:  { impl: "orchestrator.cli:install",
-                help: "Install the freshly built cleon features into the bundle's Eclipse." }
-    bundle:   { impl: "orchestrator.cli:bundle",
-                help: "Zip the bundle, now carrying cleon, into a publishable archive." }
-    build:    { help: "The whole build: fetch, compile, generate, package, install, zip.",
-                depends_on: [fetch-bundle, compile, generate, package, install, bundle],
-                stop_on_failure: true }
+    commands:
+      fetch-bundle: { task: fetch-bundle }
+      compile:      { task: compile }
+      generate-sources: { task: generate-sources }
+      package:      { task: package }
+      install-features: { task: install-features }
+      bundle:       { task: bundle }
+      build:        { help: "The whole build: fetch, compile, generate, package, install, zip.",
+                      depends_on: [fetch-bundle, compile, generate-sources, package, install-features,
+                                   bundle],
+                      stop_on_failure: true }
   release:
-    publish:  { impl: "orchestrator.cli:publish",
-                help: "Push the combined cleon+Actifsource bundle to the registry." }
+    commands:
+      publish: { task: publish }
   deploy:
-    up:   { impl: "orchestrator.cli:up",     help: "Deploy the product to the target environment (placeholder)." }
-    down: { impl: "orchestrator.cli:down",   help: "Tear the deployment down (placeholder)." }
-    all:  { help: "Run build then deploy up end to end (the build->up dependency plan).",
-            depends_on: [build, up], stop_on_failure: false }
+    commands:
+      up:   { task: up }
+      down: { task: down }
+      all:  { help: "Run build then deploy up end to end (the build->up dependency plan).",
+              depends_on: [build, up], stop_on_failure: false }
 
 # The env-first CD groups: `cleon <env> deploy up` (default env below). Every other group is
 # environment-agnostic and rejects an env prefix.

@@ -1,35 +1,40 @@
 #!/usr/bin/env bash
 #
-# cleon.sh - thin shim onto the shared delivery launcher (scaffolded, netctl#651 strand 4).
+# cleon.sh - the cleon entry point.
 #
-# Its ONLY job is to declare cleon's product parameters (ROOT, the orchestrator dir, the module, the
-# name), export the PYTHONPATH it wants, and delegate the whole host-venv bootstrap + exec to lib/platform's
-# launch.sh. Every command lives in Python under deploy/provision/orchestrator/src/python/orchestrator. Run
-# `./cleon.sh help` for the command list; edit cleon.yaml to grow the CLI.
+# It declares cleon's four parameters, provisions the host venv, and execs the CLI. The delivery kernel
+# arrives as an ordinary dependency (the `simplon` package on PyPI, pinned in the orchestrator's
+# requirements.txt), so there is nothing to vendor and no submodule to init: a fresh clone plus this
+# script is the whole setup. Every command lives in Python under
+# deploy/provision/orchestrator/src/python/orchestrator. Run `./cleon.sh help` for the command list;
+# edit cleon.yaml to grow the CLI.
 #
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT"
 
-# The delivery kernel, vendored as a git submodule at lib/platform. The launcher lives INSIDE it, so its
-# absence means the submodule was never populated. Add it once with:
-#   git submodule add https://github.com/marcozwyssig/platform.git lib/platform
-# and re-init a fresh checkout with `git submodule update --init lib/platform`.
-PLATFORM_SRC="$ROOT/lib/platform/src/delivery/src/python"
-LAUNCH="$ROOT/lib/platform/src/delivery/src/sh/launch.sh"
-if [ ! -f "$LAUNCH" ]; then
-    printf 'cleon: delivery launcher not found at %s\n' "$LAUNCH" >&2
-    printf 'cleon: run: git submodule update --init lib/platform\n' >&2
-    exit 1
+LAUNCH_PRODUCT=cleon
+LAUNCH_ROOT="$ROOT"
+LAUNCH_ORCH_DIR="$ROOT/deploy/provision/orchestrator"
+LAUNCH_MODULE=orchestrator
+
+VENV="$LAUNCH_ORCH_DIR/.venv"
+REQ="$LAUNCH_ORCH_DIR/requirements.txt"
+STAMP="$VENV/.deps-stamp"
+PY="$VENV/bin/python"
+
+[ -x "$PY" ] || python3 -m venv "$VENV"
+
+# Reinstall only when requirements.txt is newer than the last successful install. Without the stamp
+# every invocation pays a pip resolve. --upgrade because the kernel is declared as a floor, not a pin:
+# pip leaves an already-satisfied requirement alone, so without it this venv would keep the first
+# simplon it ever installed while a fresh CI venv resolved the newest - the two drifting apart silently.
+if [ ! -f "$STAMP" ] || [ "$REQ" -nt "$STAMP" ]; then
+    "$VENV/bin/pip" install -q --upgrade --disable-pip-version-check -r "$REQ"
+    touch "$STAMP"
 fi
 
-# The kernel source + this product's orchestrator package, prepended to PYTHONPATH; the launcher execs the
-# venv python with it inherited.
-export PYTHONPATH="$PLATFORM_SRC:$ROOT/deploy/provision/orchestrator/src/python${PYTHONPATH:+:$PYTHONPATH}"
-
-LAUNCH_PRODUCT=cleon \
-LAUNCH_ROOT="$ROOT" \
-LAUNCH_ORCH_DIR="$ROOT/deploy/provision/orchestrator" \
-LAUNCH_MODULE=orchestrator \
-    exec "$LAUNCH" "$@"
+export PYTHONPATH="$LAUNCH_ORCH_DIR/src/python${PYTHONPATH:+:$PYTHONPATH}"
+export LAUNCH_PRODUCT LAUNCH_ROOT LAUNCH_ORCH_DIR LAUNCH_MODULE
+exec "$PY" -u -m "$LAUNCH_MODULE" "$@"

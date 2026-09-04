@@ -374,6 +374,48 @@ def bundle() -> None:
     log.ok(f"cleon: {archive} ({archive.stat().st_size} bytes)")
 
 
+def install_bundle(directory: str) -> None:
+    """Extract the packaged cleon bundle into a directory on this machine.
+
+    The counterpart of `build bundle`: that produces the artefact, this puts it where someone can start
+    it. Deliberately the same shape as asbundle's `deploy install`, because it is the same act one layer
+    up - asbundle installs an Eclipse with Actifsource, this installs one that also carries cleon.
+
+    WHICH ARCHIVE: the newest in build-out/. cleon's version is generated INTO the filename by the model
+    (bundles.combined_bundle_name), so a caller asked to name the file would have to read the directory
+    first - which is what this does instead.
+    """
+    settings = _settings()
+    output = _resolve(settings.get("output", "build-out"))
+    entries = [(item.name, item.stat().st_mtime) for item in output.glob("cleon_*_on_*.zip")]
+    try:
+        archive = output / bundles.newest_archive(entries)
+    except ValueError as absent:
+        raise typer.BadParameter(str(absent)) from absent
+
+    destination = Path(directory).expanduser()
+    if destination.exists() and not destination.is_dir():
+        raise typer.BadParameter(f"{destination} exists and is not a directory")
+    existing = [item.name for item in destination.iterdir()] if destination.is_dir() else []
+    if not bundles.replaceable(existing):
+        raise typer.BadParameter(
+            f"{destination} is not empty and does not look like an unpacked bundle "
+            f"({', '.join(sorted(existing)[:5])}...). Installing REPLACES the directory, so this one is "
+            f"left alone - name an empty directory, or remove that one yourself if you meant it.")
+
+    log.info(f"cleon: installing {archive.name}")
+    if existing:
+        log.info(f"cleon: {destination} holds a previous install, replacing it")
+        shutil.rmtree(destination)
+    destination.mkdir(parents=True, exist_ok=True)
+    _extract_preserving_modes(archive, destination)
+
+    eclipse = antbuild.eclipse_home(destination, _settings().get("bundle", {}).get(
+        "plugin_candidates") or ["plugins"])
+    antbuild.ensure_executable(antbuild.ant_executable(eclipse, windows=os.name == "nt"))
+    log.ok(f"cleon: installed into {destination}")
+
+
 def _source_tag() -> str:
     """The asbundle tag this bundle came from, recorded by fetch-bundle.
 

@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: "Runner labels to build, comma-separated. Defaults to one Linux cell. Pass 'all' for every cell."
+        description: "Runner labels to build, comma-separated. Defaults to one Linux cell. Add macos-15,macos-15-intel for macOS (the expensive half), or pass 'all' for every cell."
         type: string
         # Linux-only BY DEFAULT so a dispatch made without thinking is cheap. macOS is roughly eight
         # times a Linux minute, and asbundle's spending limit was reached paying for it to ride along.
@@ -63,7 +63,19 @@ jobs:
       - id: select
         env:
           ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.only != 'all' && inputs.only || '' }}
+          EVENT: ${{ github.event_name }}
         run: |
+          # A TAG PUSH IS NOT A REASON TO PAY FOR macOS. An empty ONLY means "every cell", which is the
+          # right reading of an explicit `all` and the wrong one for a tag: the two macOS cells are the
+          # expensive part of this matrix, and asbundle reached this account's spending limit paying for
+          # exactly that to ride along automatically. So a tag builds the three cheap cells, and macOS
+          # stays a decision someone makes - `only: all`, or the two labels by name.
+          #
+          # This has never fired: the matrix is gated on `v*` and the only tag in this repository is
+          # `0.2.7`. The first `v` tag would have built all five.
+          if [ "$EVENT" != "workflow_dispatch" ]; then
+            ONLY="ubuntu-24.04,ubuntu-24.04-arm,windows-2025"
+          fi
           # Runner labels are PINNED, never `-latest`: `macos-latest` silently moved from Intel to
           # Apple Silicon, which is how three of asbundle's cells came to be missing unnoticed.
           #

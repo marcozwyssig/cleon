@@ -35,6 +35,7 @@ from . import bundles
 from . import deliverables
 from . import environments
 from . import paths
+from . import shim
 
 # What cleon publishes. The MEDIA TYPE is a product's own statement about its artefact; the mechanics
 # of moving it are the kernel's (simplon.githubpackages).
@@ -556,7 +557,12 @@ _MANIFEST = paths.CONTEXT.manifest()
 # lets the kernel verify that step i really is the step for plan leaf i. A factory that does not stamp
 # leaves that pairing unverifiable, and the kernel then drops the whole plan tree - taking every subtree's
 # `stop_on_failure` with it, so a failing gate no longer stops the chain that declared it (#42).
-_STEP_CONTEXT = StepFactoryContext.for_shim("cleon", paths.ROOT / "cleon.sh", _MANIFEST)
+#
+# The SHIM is chosen per host (orchestrator.shim), not written in: `for_shim` builds each step as
+# `[<script>, <command>]`, and a hardcoded `cleon.sh` made the Windows cell try to execute a shell
+# script - `WinError 193: %1 is not a valid Win32 application`, after the bundle had already been
+# downloaded, unpacked and compiled.
+_STEP_CONTEXT = StepFactoryContext.for_shim("cleon", paths.ROOT / shim.shim_name(os.name), _MANIFEST)
 
 
 # Assemble the CLI from the manifest via the delivery binding layer. Runs at import (like netctl's cli.py):

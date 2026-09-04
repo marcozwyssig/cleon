@@ -44,9 +44,11 @@ cleon.cmd build                              # Windows
 ```
 
 The first run bootstraps a host virtualenv under `deploy/provision/orchestrator/.venv`. Nothing else
-needs initialising: the delivery kernel is the `simplon` package from PyPI, pinned in
+needs initialising: the delivery kernel is the `simplon` package from PyPI, declared in
 `deploy/provision/orchestrator/requirements.txt`, and pip installs it into that venv like any other
-dependency. It used to be a git submodule at `lib/platform`, which is why a fresh clone needed one
+dependency. It is declared as a FLOOR (`simplon>=0.1.4`), so cleon tracks the newest kernel release
+instead of waiting for someone to bump a pin - at the price that a build is not reproducible from that
+file alone. Pin an exact version there the day one has to be. It used to be a git submodule at `lib/platform`, which is why a fresh clone needed one
 extra command; it no longer does.
 
 The build needs `oras` (it moves the bundle in and out of the registry) and a GitHub token carrying

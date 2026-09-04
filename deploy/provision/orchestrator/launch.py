@@ -91,12 +91,17 @@ def ensure_venv() -> None:
 
 
 def ensure_dependencies() -> None:
-    """Install requirements when they are newer than the stamp; a venv rebuild drops the stamp with it."""
+    """Install requirements when they are newer than the stamp; a venv rebuild drops the stamp with it.
+
+    --upgrade mirrors cleon.sh: the kernel is declared as a floor rather than a pin, and pip leaves an
+    already-satisfied requirement alone - so without it this venv would keep the first simplon it ever
+    installed while a fresh CI venv resolved the newest."""
     if STAMP.exists() and STAMP.stat().st_mtime >= REQUIREMENTS.stat().st_mtime:
         return
     print(f"{PRODUCT}: installing dependencies from {REQUIREMENTS.name}", file=sys.stderr)
     result = subprocess.run(
-        [str(venv_bin("pip")), "install", "-q", "--disable-pip-version-check", "-r", str(REQUIREMENTS)])
+        [str(venv_bin("pip")), "install", "-q", "--upgrade", "--disable-pip-version-check",
+         "-r", str(REQUIREMENTS)])
     if result.returncode != 0:
         die(f"dependency installation failed (rc={result.returncode})")
     STAMP.touch()

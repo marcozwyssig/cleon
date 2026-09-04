@@ -27,9 +27,11 @@ PY="$VENV/bin/python"
 [ -x "$PY" ] || python3 -m venv "$VENV"
 
 # Reinstall only when requirements.txt is newer than the last successful install. Without the stamp
-# every invocation pays a pip resolve.
+# every invocation pays a pip resolve. --upgrade because the kernel is declared as a floor, not a pin:
+# pip leaves an already-satisfied requirement alone, so without it this venv would keep the first
+# simplon it ever installed while a fresh CI venv resolved the newest - the two drifting apart silently.
 if [ ! -f "$STAMP" ] || [ "$REQ" -nt "$STAMP" ]; then
-    "$VENV/bin/pip" install -q --disable-pip-version-check -r "$REQ"
+    "$VENV/bin/pip" install -q --upgrade --disable-pip-version-check -r "$REQ"
     touch "$STAMP"
 fi
 

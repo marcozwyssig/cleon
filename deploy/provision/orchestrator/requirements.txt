@@ -6,9 +6,22 @@
 # reference here used to be `-r ../../../lib/platform/src/delivery/requirements.txt`, which only worked
 # because the kernel was a submodule at a path this file had to count `../` hops to.
 #
-# Bump the pin to move to a new kernel. Declaring the `test:typecheck-python` gate? Its mypy is an
-# optional extra, so write `simplon[typecheck]==...` instead.
-simplon==0.1.2
+# A FLOOR, not a pin: cleon tracks the newest kernel release rather than a version someone has to
+# remember to bump. 0.1.4 is the floor because it is the first release carrying the oras gate and the
+# `support install` / `support git auth-scopes` commands cleon's manifest and CI rely on - below it the
+# CLI still assembles, which is what makes a floor worth stating rather than leaving the name bare.
+#
+# The price, stated because it is invisible otherwise: a build is no longer reproducible from this file
+# alone. Two runs a week apart can resolve different kernels. Write `simplon==<version>` here the day a
+# release has to be pinned down (a bisect, a regression, a shipped artefact that must be rebuildable).
+#
+# Both launchers install with --upgrade, so a resolve actually moves forward; without it pip keeps an
+# already-satisfied requirement and "latest" would silently mean "whatever was installed first". A
+# resolve happens when this file is newer than <venv>/.deps-stamp - delete the stamp to force one.
+#
+# Declaring the `test:typecheck-python` gate? Its mypy is an optional extra: write
+# `simplon[typecheck]>=...` instead.
+simplon>=0.1.4
 
 # --- cleon-product-only deps ---
 # Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's

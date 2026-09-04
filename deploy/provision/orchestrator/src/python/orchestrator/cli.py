@@ -1,14 +1,14 @@
 """The cleon host CLI (Typer), assembled from cleon.yaml by the delivery kernel.
 
-Scaffolded by `python -m delivery.bootstrap` (netctl#651 strand 4). This is the product's composition root:
+Scaffolded by `python -m simplon.bootstrap` (netctl#651 strand 4). This is the product's composition root:
 it creates the root Typer app, ships the command-impl callables the manifest's "module:function" refs
 resolve to, and hands the app + product context + environments + aliases to the delivery binding layer
-(delivery.cli). The generic assembly (a sub-app per group, hidden flat aliases, the flat-group collapse,
+(simplon.cli). The generic assembly (a sub-app per group, hidden flat aliases, the flat-group collapse,
 the CI/CD panels) and the env-first dispatch live in the kernel, driven entirely by the manifest - so a
 fresh product adds groups/commands in cleon.yaml and impl callables HERE, and nowhere else.
 
 Replace the placeholder commands (build/up/down) with your own; keep them as module-level callables so the
-manifest's impl refs resolve (delivery.orchestrator.manifest.resolve_impl imports THIS module and getattrs
+manifest's impl refs resolve (simplon.orchestrator.manifest.resolve_impl imports THIS module and getattrs
 the function named after the `:`). The `all` command in cleon.yaml is a WORKING example of an
 impl-less AGGREGATE (#895/#896): it carries only `depends_on: [build, up]` and the kernel binds it at
 assembly time via the step context below, so a fresh product sees the pattern live instead of a dead
@@ -24,11 +24,11 @@ from pathlib import Path
 
 import typer
 
-from delivery import cli as delivery_cli
-from delivery import githubpackages
-from delivery import log
-from delivery import run
-from delivery.orchestrator.product import StepFactoryContext
+from simplon import cli as simplon_cli
+from simplon import githubpackages
+from simplon import log
+from simplon import run
+from simplon.orchestrator.product import StepFactoryContext
 
 from . import antbuild
 from . import bundles
@@ -37,7 +37,7 @@ from . import environments
 from . import paths
 
 # What cleon publishes. The MEDIA TYPE is a product's own statement about its artefact; the mechanics
-# of moving it are the kernel's (delivery.githubpackages).
+# of moving it are the kernel's (simplon.githubpackages).
 _MEDIA_TYPE = "application/vnd.actifsource.cleon.bundle.v1+zip"
 
 
@@ -499,8 +499,8 @@ _MANIFEST = paths.CONTEXT.manifest()
 # The step-factory seam (#895/#896): a command NAME becomes a live-streamed `./cleon.sh <cmd>` step,
 # so the manifest's impl-less aggregates (`all`: depends_on build->up) run as DATA through the shared
 # runner - no product Python per aggregate. Built once; StepFactoryContext is
-# delivery.orchestrator.product's step-factory seam (kept distinct from the identity context in
-# delivery.context, netctl#737).
+# simplon.orchestrator.product's step-factory seam (kept distinct from the identity context in
+# simplon.context, netctl#737).
 #
 # `for_shim` is the kernel's own factory for this shape, and using it is not a style choice: it STAMPS
 # each step with the planned command's exact-command identity (`build.build`, `deploy.up`), which is what
@@ -515,12 +515,12 @@ _STEP_CONTEXT = StepFactoryContext.for_shim("cleon", paths.ROOT / "cleon.sh", _M
 # already be defined; step_context lets the kernel synthesize the callback for each impl-less aggregate
 # (`all` runs its build->up dependency plan, reachable as `cleon all` or `cleon <env> deploy
 # all`). The product name only shapes the usage hints.
-delivery_cli.assemble(app, _MANIFEST, product=paths.CONTEXT.name, step_context=_STEP_CONTEXT)
+simplon_cli.assemble(app, _MANIFEST, product=paths.CONTEXT.name, step_context=_STEP_CONTEXT)
 
 
 def main() -> None:
     """Entry point (`python -m orchestrator`): env-first dispatch via the delivery binding layer. The
-    product context, the environments module and the alias map are injected, so delivery.cli hardcodes
+    product context, the environments module and the alias map are injected, so simplon.cli hardcodes
     nothing product-specific."""
-    delivery_cli.main(app=app, context=paths.CONTEXT, environments=environments.PROVIDER,
+    simplon_cli.main(app=app, context=paths.CONTEXT, environments=environments.PROVIDER,
                       aliases=_ALIASES)

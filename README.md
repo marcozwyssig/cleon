@@ -38,13 +38,20 @@ projects Eclipse cannot even import.
 ```bash
 git clone https://github.com/marcozwyssig/cleon.git
 cd cleon
-git submodule update --init lib/platform     # the delivery kernel
 
 ./cleon.sh build                             # Linux / macOS
 cleon.cmd build                              # Windows
 ```
 
-The first run bootstraps a host virtualenv under `deploy/provision/orchestrator/.venv`.
+The first run bootstraps a host virtualenv under `deploy/provision/orchestrator/.venv`. Nothing else
+needs initialising: the delivery kernel is the `simplon` package from PyPI, pinned in
+`deploy/provision/orchestrator/requirements.txt`, and pip installs it into that venv like any other
+dependency. It used to be a git submodule at `lib/platform`, which is why a fresh clone needed one
+extra command; it no longer does.
+
+The build needs `oras` (it moves the bundle in and out of the registry) and a GitHub token carrying
+`read:packages`. `./cleon.sh support install` provisions the first, `./cleon.sh support git
+auth-scopes` grants the second - and the build provisions oras itself if it is missing.
 
 ### What it needs
 
@@ -66,9 +73,9 @@ fetch-bundle → compile → generate → package → install → bundle
 |---|---|
 | `fetch-bundle` | pull the newest asbundle bundle **for this host** from the registry, unpack it |
 | `compile` | compile the model plugins, so the generator can load their Java functions |
-| `generate` | Actifsource, headless: sources, features, update site, then validate |
+| `generate-sources` | Actifsource, headless: sources, features, update site, then validate |
 | `package` | jar the plugins and features, publish the P2 site into `build-out/site` |
-| `install` | install those 32 features into the bundle's Eclipse from `file:` |
+| `install-features` | install those 32 features into the bundle's Eclipse from `file:` |
 | `bundle` | zip the result |
 
 `./cleon.sh build` runs all six and stops at the first failure. Each is also a command on its own:
@@ -128,7 +135,6 @@ cleon.yaml                        the one manifest: command tree + build paramet
 cleon.sh / cleon.cmd              entry points (POSIX / Windows)
 asrc/                             the cleon PROJECT's model
 src/                              cleon itself: metamodels, templates, features, site
-lib/platform/                     the delivery kernel, as a git submodule
 deploy/provision/
   asbuild.generate.xml            Actifsource, headless
   asbuild.package.xml             compile, jar, publish the P2 site

@@ -1,14 +1,15 @@
-# Host-Python deps for the cleon delivery orchestrator, scaffolded on the delivery kernel
-# (netctl#651 strand 4). Installed into a host venv by cleon.sh via the shared launcher.
+# Host-Python deps for the cleon delivery orchestrator. Installed into a host venv by cleon.sh (and by
+# launch.py on Windows).
 #
-# The delivery KERNEL owns its own dependency declaration (typer/click/PyYAML/rich/textual/pydantic drive
-# manifest assembly + the split-pane step TUI); reference it here with -r rather than re-pinning it, so a
-# kernel dep bump lands in ONE place and this file carries ONLY cleon-product deps (netctl#730). pip
-# resolves the -r path relative to THIS file: the kernel is vendored at <root>/lib/platform and this file is
-# <root>/orchestrator/requirements.txt, so a single `../` reaches the root. (Relocate the orchestrator dir
-# deeper and this is the one path to re-tune - one `../` per extra level - the Python side self-locates.)
--r ../../../lib/platform/src/delivery/requirements.txt
+# The delivery kernel is an ORDINARY DEPENDENCY now: `simplon` on PyPI, pinned below. Nothing is
+# vendored, nothing is included by path, and a fresh clone needs no `git submodule update` - the
+# reference here used to be `-r ../../../lib/platform/src/delivery/requirements.txt`, which only worked
+# because the kernel was a submodule at a path this file had to count `../` hops to.
+#
+# Bump the pin to move to a new kernel. Declaring the `test:typecheck-python` gate? Its mypy is an
+# optional extra, so write `simplon[typecheck]==...` instead.
+simplon==0.1.2
 
 # --- cleon-product-only deps ---
 # Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's
-# CLI/TUI stack is already covered by the -r reference above; do not re-pin it here.
+# CLI/TUI stack (typer/click/PyYAML/textual/pydantic/jinja2) comes with the pin above; do not re-pin it.

@@ -7,7 +7,13 @@ on:
   pull_request:
   push:
     branches: [master]
-    tags: ["v*"]
+    # BOTH spellings. This repository tags releases WITHOUT the `v` (the only tag here is `0.2.7`),
+    # while the workflow only ever listened for `v*` - so the build matrix has never once fired on a
+    # tag, and the Windows and macOS cells were never built. Three defects came out of that gap in one
+    # day: the POSIX shim on Windows, Ant's 8191-character command line, and the macOS JDK layout.
+    #
+    # `[0-9]*` matches the scheme actually in use; `v*` stays, so a future `v0.2.8` works too.
+    tags: ["v*", "[0-9]*"]
   workflow_dispatch:
     inputs:
       only:
@@ -54,7 +60,7 @@ jobs:
   # available in a job-level `if` (`runs-on` gets it, `if` does not - a documented asymmetry).
   plan:
     needs: check
-    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     outputs:

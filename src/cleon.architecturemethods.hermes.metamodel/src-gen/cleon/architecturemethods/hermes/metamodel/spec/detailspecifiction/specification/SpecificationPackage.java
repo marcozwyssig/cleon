@@ -34,4 +34,4 @@ public class SpecificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification,EAhBogFdn2pXMHHrDKZHtZeUlm8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.specification,nR4HHy4g+Rq1TQ6VOBA6xCzOZXY=] */

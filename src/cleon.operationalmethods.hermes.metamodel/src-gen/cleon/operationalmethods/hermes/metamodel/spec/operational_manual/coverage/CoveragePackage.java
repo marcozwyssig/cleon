@@ -27,4 +27,4 @@ public class CoveragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.operationalmethods.hermes.metamodel.spec.operational_manual.coverage,TCRF2awAdgvEqoP4aajq01m/JWQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.operationalmethods.hermes.metamodel.spec.operational_manual.coverage,OGZIq7N0N1se2Gu36B0Ui5ZjIMs=] */

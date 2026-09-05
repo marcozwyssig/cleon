@@ -30,4 +30,4 @@ public class LanguagesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languages,Bf8mDkcrYCw7nBFYN0C3MFtcSNo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec.languages,WK/74/d7Wq+NmVHjfsPhvmi4k0E=] */

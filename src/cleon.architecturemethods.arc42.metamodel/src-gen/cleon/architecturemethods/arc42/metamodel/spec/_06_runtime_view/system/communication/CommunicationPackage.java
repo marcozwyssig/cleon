@@ -79,4 +79,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication,CQJjEMchXUQmplLKPSHtY5mSk9M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication,CND2jA+V//2GXCa0oozDxjWc4aY=] */

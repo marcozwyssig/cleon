@@ -66,4 +66,4 @@ public class Win_polycom_wsusPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,MQaMg3uzLrVhOIlOSb7oYGdqm/Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_wsus,3YlOx/k5GDzstdcHh+e5YdSD5LY=] */

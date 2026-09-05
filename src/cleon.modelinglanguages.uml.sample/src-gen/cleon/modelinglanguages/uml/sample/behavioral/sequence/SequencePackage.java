@@ -23,4 +23,4 @@ public class SequencePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.sample.behavioral.sequence,IW29v+vhTktU+I8ja6qFHb7yrAY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.sample.behavioral.sequence,Q7153u+c/fvWQohKW9/bpLXjFNg=] */

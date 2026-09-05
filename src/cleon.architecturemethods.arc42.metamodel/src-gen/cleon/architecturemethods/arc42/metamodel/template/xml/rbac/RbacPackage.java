@@ -28,4 +28,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xml.rbac,ApZj3ZUabP/gqu4Bbf8Ns/V1Z44=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.xml.rbac,KSU73Vm46c7nz0WwnMLjDPzOf7c=] */

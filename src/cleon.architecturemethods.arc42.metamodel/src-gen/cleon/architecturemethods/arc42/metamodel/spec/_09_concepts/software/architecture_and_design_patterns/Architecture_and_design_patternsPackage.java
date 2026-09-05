@@ -26,4 +26,4 @@ public class Architecture_and_design_patternsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns,Wg34T/7mYeceojtcLds60S9ataI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._09_concepts.software.architecture_and_design_patterns,aeb1V6rUeKP61O5bQXMzAziztdU=] */

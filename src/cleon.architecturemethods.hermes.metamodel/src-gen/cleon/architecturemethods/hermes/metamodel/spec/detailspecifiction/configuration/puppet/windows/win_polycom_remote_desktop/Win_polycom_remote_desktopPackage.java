@@ -32,4 +32,4 @@ public class Win_polycom_remote_desktopPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_remote_desktop,dCQ8UkdywGZm+DJArXV74+y855A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.puppet.windows.win_polycom_remote_desktop,ppa1ykN5UG9w1jjtbi6xOWW9W+8=] */

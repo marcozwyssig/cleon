@@ -25,4 +25,4 @@ public class DiagramsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.template.python.diagrams,+uaTg/hBKrkZUBcuqcPyBB5ZG/4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.template.python.diagrams,fqEauVEHjsvRbQqIpQuX2/oUhhc=] */

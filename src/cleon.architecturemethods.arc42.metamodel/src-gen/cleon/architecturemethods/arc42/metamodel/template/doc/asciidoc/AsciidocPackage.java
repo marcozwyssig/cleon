@@ -97,4 +97,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,6m8lB8x0wnVQVz+I/nG4Sy5zTpE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.doc.asciidoc,MEVHaVYsVDO1yeYbG1ZSFssnx58=] */

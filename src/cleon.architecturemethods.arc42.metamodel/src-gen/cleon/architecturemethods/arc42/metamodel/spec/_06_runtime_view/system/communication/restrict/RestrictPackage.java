@@ -31,4 +31,4 @@ public class RestrictPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.restrict,THguFxbQKKpYf3AAGaeTUCkuNts=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._06_runtime_view.system.communication.restrict,lhroJNs7KXHeI4kZNfGT0Q9cxmY=] */

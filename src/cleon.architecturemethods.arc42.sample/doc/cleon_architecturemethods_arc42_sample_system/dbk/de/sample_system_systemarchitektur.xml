@@ -68,10 +68,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins IKT in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_1: IKT (IKT) &lt;System&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_1: IKT (IKT) &lt;System&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_1__IKT__IKT___System___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_1__IKT__IKT___System___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -129,10 +129,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Application in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: Application (Application) &lt;SystemLayer&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_2: Application (Application) &lt;SystemLayer&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_2__Application__Application___SystemLayer___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_2__Application__Application___SystemLayer___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -168,10 +168,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Infrastruture in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_2: Infrastruture (Infrastruture) &lt;SystemLayer&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_2: Infrastruture (Infrastruture) &lt;SystemLayer&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_2__Infrastruture__Infrastruture___SystemLayer___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_2__Infrastruture__Infrastruture___SystemLayer___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -240,10 +240,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Operating System in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_3: Operating System &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_3: Operating System &lt;SystemComponent&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Operating_System__SystemComponent___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_3__Operating_System__SystemComponent___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -279,10 +279,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Servers in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_3: Servers &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_3: Servers &lt;SystemComponent&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Servers__SystemComponent___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_3__Servers__SystemComponent___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -318,10 +318,10 @@
 				<db:title>Aggregation</db:title>
 				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Virtualization in einer Abbildung dargestellt:</db:para>
 				<db:figure>
-				  <db:title>Level_3: Virtualization &lt;SystemComponent&gt; (Whitebox)</db:title>
+				  <db:title>Ebene_3: Virtualization &lt;SystemComponent&gt; (Whitebox)</db:title>
 				  <db:mediaobject>
 				    <db:imageobject>
-						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Level_3__Virtualization__SystemComponent___Whitebox_.png" format="PNG"/>
+						<db:imagedata fileref="../../img/cleon_architecturemethods_arc42_sample_system/BuildingBlockOverviewDiagram_Ebene_3__Virtualization__SystemComponent___Whitebox_.png" format="PNG"/>
 				    </db:imageobject>
 				  </db:mediaobject>
 				</db:figure>
@@ -394,7 +394,7 @@
 			<db:para>Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:</db:para>
 			<db:itemizedlist>
 				<db:listitem>
-					<db:para>PROD-Environment [<db:xref linkend="ea.58a3b203-bedc-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/>]</db:para>
+					<db:para>PROD-Umgebung [<db:xref linkend="ea.58a3b203-bedc-11ef-b498-058ee446f8e7" xrefstyle="template:%n"/>]</db:para>
 				</db:listitem>	
 			</db:itemizedlist>
 			<db:section xml:id="ea.58a3b203-bedc-11ef-b498-058ee446f8e7">

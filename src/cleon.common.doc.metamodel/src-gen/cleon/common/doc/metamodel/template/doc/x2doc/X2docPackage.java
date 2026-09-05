@@ -60,4 +60,4 @@ public class X2docPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.doc.x2doc,3BTNkdM2L66cIJiiaKJ3pbc8l3M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.doc.x2doc,KkQfMOq6buhz6rSAhMZ0IPZIdPU=] */

@@ -36,4 +36,4 @@ public class SequencePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence,39HegI0UQykxPpmMYxCCRrhCK2U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.sequence,R1Xq3+5dbxAb6xGS5/Ey8Q/3YCY=] */

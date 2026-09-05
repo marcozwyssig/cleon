@@ -65,4 +65,4 @@ public class ViewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view,+9VfSvc6bJ3r3qZnjue47Xfk7+Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_data_view.view,2lz3zO6/HdgrPWDoTnMpBp6FErM=] */

@@ -29,4 +29,4 @@ public class ManualPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.manual,2s7EgwtIwieKOHIvX8yrlTbTfVg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.hermes.metamodel.spec.detailspecifiction.configuration.manual,oJ84mT1cfC9FcN0hnfj6sIlT1X4=] */

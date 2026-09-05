@@ -109,7 +109,17 @@ jobs:
             exit 0
           fi
 
-          unzip -q /tmp/p2/cleon-updatesite_*.zip -d build-out/website/p2
+          # WHATEVER the one archive is called. It used to be `cleon-updatesite_<version>.zip`, because
+          # cleon zipped it itself; since the publishing moved to the kernel's `release:artifact` the
+          # name comes from the directory - `build-out/site` makes `site.zip`. A glob on the publisher's
+          # naming is a coupling that breaks silently on the consumer's side, which is exactly what it
+          # did: the pull succeeded and the unzip found nothing.
+          archive="$(find /tmp/p2 -maxdepth 1 -name '*.zip' | head -1)"
+          if [ -z "$archive" ]; then
+            echo "::error::pulled $tag but it contains no archive"
+            exit 1
+          fi
+          unzip -q "$archive" -d build-out/website/p2
 
           # An archive that arrived and is not a p2 repository IS a failure: serving a directory that
           # answers 200 to Eclipse and holds no metadata is worse than serving nothing. Spelled with an

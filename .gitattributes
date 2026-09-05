@@ -14,6 +14,15 @@
 # commit touches thousands of files and changes not one character of content.
 * text=auto
 
+# BATCH FILES ARE CRLF IN THE WORKING TREE, ALWAYS. `cmd.exe` reads a script by byte offset, and a
+# `goto` in an LF-only file is the documented way to make it jump somewhere else - cleon.cmd has 20
+# labels and gotos in it. The repository stored it LF-only even before the normalisation above, so this
+# has been one `core.autocrlf=false` away from breaking on any Windows host, including the runner: what
+# saved it so far is that Git for Windows defaults to converting on checkout. `eol=crlf` stops it being
+# a default someone else controls.
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+
 # Binary by declaration rather than by detection. Git guesses well, but a guess that goes wrong here
 # corrupts an artefact rather than producing a noisy diff.
 *.zip   binary

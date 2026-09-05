@@ -3,11 +3,18 @@ title: Getting started
 weight: 3
 ---
 
-## The artefacts are not public
+## What is public and what is not
 
-cleon's source is; its builds are not. The bundle and the update site live in the GitHub Container
-Registry as OCI artifacts, and every read is authenticated — an anonymous pull gets `403`. If you are
-entitled to them, you need a GitHub token carrying `read:packages`:
+| | where | who |
+|---|---|---|
+| Source | [github.com/marcozwyssig/cleon](https://github.com/marcozwyssig/cleon) | everyone |
+| Update site | `https://marcozwyssig.github.io/cleon/p2/` | everyone |
+| Bundle (Eclipse + Actifsource + cleon) | GitHub Packages, private | on request |
+
+The bundle is restricted for a reason that is not ours to waive: it carries **Actifsource Enterprise**,
+and that licence belongs to Actifsource. Everything cleon itself produces is public.
+
+To pull the bundle once you are entitled to it, you need a GitHub token carrying `read:packages`:
 
 ```bash
 gh auth refresh -h github.com -s read:packages     # once
@@ -31,22 +38,28 @@ built archive for you, preserving the executable bits a plain `unzip` drops.
 
 ## Updating an installed cleon
 
-The update site is published as its own package:
+The update site is public. In Eclipse, *Help → Install New Software → Add*, and paste:
+
+```
+https://marcozwyssig.github.io/cleon/p2/
+```
+
+No token, no download, no archive to keep track of — the same URL always carries the newest published
+cleon.
+
+The site is also published as a package (`ghcr.io/marcozwyssig/cleon-updatesite:<version>`), which is
+what the URL above is served from and what to pull if you need a *specific* version rather than the
+current one:
 
 ```bash
 oras pull ghcr.io/marcozwyssig/cleon-updatesite:<cleon version>
+# then: Help -> Install New Software -> Add -> Archive
 ```
 
-Then add the pulled archive in Eclipse under *Help → Install New Software → Add → Archive*, or by URL:
-
-```
-jar:file:/path/to/cleon-updatesite_<version>.zip!/
-```
-
-**Why a download and not a URL to paste.** p2 speaks HTTP and file, not OCI, so Eclipse cannot read
-ghcr.io directly. Serving the site over GitHub Pages would give you that URL — and would make these
-artefacts readable by everyone, because Pages on a public repository is public. The manual step is what
-keeps the access rule; it is a deliberate trade, not an oversight.
+**The update site is public, the bundle is not**, and the line between them is a licence rather than a
+policy: the update site carries cleon's own features and plugins, while the bundle carries Actifsource
+Enterprise, which is not ours to hand out. That is why one is a URL anyone can paste and the other is
+handed over on request.
 
 ## Building it yourself
 

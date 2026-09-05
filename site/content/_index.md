@@ -32,10 +32,6 @@ layout: hextra-home
     subtitle="arc42, TOGAF, HERMES and EAMOD as metamodels: the structure is checked while you model, not reviewed afterwards."
   >}}
   {{< hextra/feature-card
-    title="One archive per platform"
-    subtitle="Eclipse, a JDK, Ant, Actifsource Enterprise and cleon in one download. Unpack it and start modelling."
-  >}}
-  {{< hextra/feature-card
     title="Documents come out of the model"
     subtitle="AsciiDoc, static sites and collaboration formats are generated from what was modelled, so they cannot drift from it."
   >}}

@@ -78,8 +78,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ACTOR: ${{ github.actor }}
         run: |
+          # `set +e` FIRST, and it is not redundant: GitHub runs a `run:` step as `bash -e {0}`, so the
+          # shell arrives with errexit already on and a `set -uo pipefail` of one's own does not turn it
+          # off. Measured: the run died one line after "Login Succeeded", before the warning below could
+          # be printed - the step handled the failure it was written to handle and never got to say so.
+          set +e
           set -uo pipefail
-          printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin || true
+          printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin
 
           # `oras repo tags` lists oldest first, so the last line is the newest publish.
           tag="$(oras repo tags ghcr.io/marcozwyssig/cleon-updatesite 2>/dev/null | tail -1)"
@@ -99,10 +104,16 @@ jobs:
           fi
 
           unzip -q /tmp/p2/cleon-updatesite_*.zip -d build-out/website/p2
+
           # An archive that arrived and is not a p2 repository IS a failure: serving a directory that
-          # answers 200 to Eclipse and holds no metadata is worse than serving nothing.
-          test -f build-out/website/p2/site.xml
-          test -f build-out/website/p2/content.jar
+          # answers 200 to Eclipse and holds no metadata is worse than serving nothing. Spelled with an
+          # explicit exit because errexit is off above - `test` alone would only set the status of the
+          # last line, and a missing content.jar would sail through as a green step.
+          if [ ! -f build-out/website/p2/site.xml ] || [ ! -f build-out/website/p2/content.jar ]; then
+            echo "::error::the pulled archive is not a p2 repository (no site.xml / content.jar)"
+            exit 1
+          fi
+          echo "/p2/ serves update site $tag"
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -157,6 +157,25 @@ def replaceable(entries: Sequence[str]) -> bool:
     return not entries or bool(_BUNDLE_MARKERS.intersection(entries))
 
 
+def updatesite_name(cleon_version: str) -> str:
+    """The filename of the published P2 update site. Pure.
+
+    The version is IN the name for the reason combined_bundle_name states: someone holding two of these
+    has to tell them apart without unzipping either.
+    """
+    return f"cleon-updatesite_{cleon_version}.zip"
+
+
+def updatesite_tag(cleon_version: str) -> str:
+    """The registry tag for an update site: the version, and nothing else. Pure.
+
+    Unlike the bundle, an update site carries no Eclipse and no JDK - it is platform-independent p2
+    metadata plus jars. A host segment in the tag would promise a difference that is not there, and
+    would make consumers choose between four identical artefacts.
+    """
+    return cleon_version
+
+
 def version_from_jar(jar_name: str) -> str:
     """`cleon.x_0.4.149.qualifier.jar` -> `0.4.149.qualifier`.
 

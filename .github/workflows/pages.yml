@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: read
+  packages: read          # the update site under /p2/ is pulled from GHCR, not rebuilt here
   pages: write
   id-token: write
 
@@ -43,6 +44,36 @@ jobs:
       # docker is on the ubuntu runner already; the Hugo image brings hugo, go and git with it.
       - name: Build the site
         run: ./cleon.sh support site
+
+      # The P2 update site, served under /p2/ so Eclipse can point at a URL instead of a downloaded
+      # archive: p2 speaks HTTP and file, not OCI, and this is the only HTTP host cleon has.
+      #
+      # It comes from the PUBLISHED package rather than from a build here. `cleon build package` needs
+      # the base bundle, a compile and a headless Actifsource run - half an hour to reproduce an artefact
+      # that already exists, and one that could differ from the one people were told to install.
+      #
+      # WHAT THIS COSTS, stated where someone might change it: Pages on a public repository is public, so
+      # everything unpacked below is readable by anyone. That is deliberate and it stops here. The BUNDLE
+      # is not published this way and must not be - it carries Actifsource Enterprise, whose licence is
+      # not ours to hand out, so it stays a private package handed over on request. What goes public here
+      # is cleon's own features and plugins.
+      - name: Serve the published update site under /p2/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          set -euo pipefail
+          ./cleon.sh support install                       # brings oras if the runner has none
+          printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin
+          # `oras repo tags` lists oldest first, so the last line is the newest publish.
+          tag="$(oras repo tags ghcr.io/marcozwyssig/cleon-updatesite | tail -1)"
+          echo "serving update site $tag"
+          mkdir -p /tmp/p2 build-out/website/p2
+          oras pull "ghcr.io/marcozwyssig/cleon-updatesite:$tag" -o /tmp/p2
+          unzip -q /tmp/p2/cleon-updatesite_*.zip -d build-out/website/p2
+          # A p2 repository without these is not one, and a 200 on a directory listing would hide that.
+          test -f build-out/website/p2/site.xml
+          test -f build-out/website/p2/content.jar
 
       - uses: actions/upload-pages-artifact@v3
         with:

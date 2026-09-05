@@ -93,6 +93,11 @@ build:
 release:
   registry: ghcr.io/marcozwyssig
   repository: cleon-bundle
+  # The P2 update site, published as its own package. NOT GitHub Pages: this repository is public, so a
+  # Pages site is public too, and these artefacts are only for the people entitled to them. GHCR
+  # authenticates every read - which is also why Eclipse cannot point at it directly (p2 speaks HTTP and
+  # file, not OCI), so a consumer pulls the archive with `oras` and adds it as a local repository.
+  updatesite_repository: cleon-updatesite
 
 # WHAT CLEON'S COMMANDS ARE (the command-tree form, netctl#1469). A body is declared ONCE here, under
 # `tasks:`, and a command instantiates it with `task:`. That indirection is what buys the group tree
@@ -121,6 +126,8 @@ tasks:
               help: "Zip the bundle, now carrying cleon, into a publishable archive." }
   publish:  { impl: "orchestrator.cli:publish",
               help: "Push the combined cleon+Actifsource bundle to the registry." }
+  publish-updatesite: { impl: "orchestrator.cli:publish_updatesite",
+              help: "Push the P2 update site to the registry, for updating an installed cleon." }
   up:       { impl: "orchestrator.cli:up",   help: "Deploy the product to the target environment (placeholder)." }
   # The counterpart of `build bundle`: that produces the artefact, this puts it where someone can start
   # it. Same shape as asbundle's `deploy install`, because it is the same act one layer up.
@@ -171,6 +178,7 @@ groups:
   release:
     commands:
       publish: { task: publish }
+      publish-updatesite: { task: publish-updatesite }
   # The website is documentation, so it sits where the kernel places documentation commands rather than
   # in `build`: it produces no artefact the build chain depends on, and a red site must not stop a bundle.
   support:

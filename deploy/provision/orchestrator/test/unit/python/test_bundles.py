@@ -267,3 +267,18 @@ def test_a_directory_full_of_something_else_is_not_deleted():
     than replaced."""
     assert bundles.replaceable(["Documents", "Desktop", ".ssh"]) is False
     assert bundles.replaceable(["src", "README.md", "cleon.yaml"]) is False
+
+
+# --- the update site as a package --------------------------------------------------------------------
+
+def test_the_update_site_archive_is_named_after_the_version_inside_it():
+    """Someone holding two of these has to tell them apart without unzipping either - the same reason
+    combined_bundle_name carries its source tag."""
+    assert bundles.updatesite_name("0.4.149.v20260905-0949-6f2e766") == \
+        "cleon-updatesite_0.4.149.v20260905-0949-6f2e766.zip"
+
+
+def test_the_update_site_tag_is_the_version_alone():
+    """Unlike the bundle, an update site carries no Eclipse and no JDK: it is platform-independent p2
+    metadata plus jars, so a host segment in the tag would promise a difference that is not there."""
+    assert bundles.updatesite_tag("0.4.149.v20260905-0949-6f2e766") == "0.4.149.v20260905-0949-6f2e766"

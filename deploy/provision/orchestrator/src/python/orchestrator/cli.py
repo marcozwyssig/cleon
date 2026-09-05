@@ -39,6 +39,10 @@ from . import paths
 # What cleon publishes. The MEDIA TYPE is a product's own statement about its artefact; the mechanics
 # of moving it are the kernel's (simplon.githubpackages).
 _MEDIA_TYPE = "application/vnd.actifsource.cleon.bundle.v1+zip"
+# The P2 update site, published beside the bundle. Its own media type: a consumer pulling one of these
+# gets a p2 repository to point Eclipse at, not an IDE to unpack, and the two must not be confused by
+# anything that reads the manifest rather than the filename.
+_UPDATESITE_MEDIA_TYPE = "application/vnd.actifsource.cleon.updatesite.v1+zip"
 
 
 app = typer.Typer(add_completion=False, no_args_is_help=True,
@@ -460,6 +464,48 @@ def publish() -> None:
     reference = bundles.reference(registry, repository, tag)
 
     githubpackages.push(reference, str(archive), _MEDIA_TYPE)
+    log.ok(f"cleon: published {reference}")
+
+
+def publish_updatesite() -> None:
+    """Push the P2 update site to the registry, so an installed cleon can be updated from it.
+
+    WHY THE REGISTRY AND NOT GITHUB PAGES. The update site used to be served from Pages, and Pages on a
+    public repository is public - there is no setting that restricts it to the people entitled to these
+    artefacts. GHCR authenticates every read, which is the requirement. The cost is stated rather than
+    hidden: p2 speaks HTTP and file, not OCI, so Eclipse cannot point at ghcr.io directly. A consumer
+    pulls the archive with `oras` and adds it locally (`jar:file:/path/cleon-updatesite_<version>.zip!/`),
+    which is one manual step and the only shape that keeps the access rule.
+
+    The tag is the version ALONE - see bundles.updatesite_tag: a p2 repository is platform-independent,
+    and four identical artefacts under four host tags would be four ways to pick the same thing.
+    """
+    settings = _settings()
+    release = paths.CONTEXT.manifest_data().get("release") or {}
+    registry = release.get("registry", "")
+    repository = release.get("updatesite_repository", "")
+    if not repository:
+        raise typer.BadParameter(
+            "no `release.updatesite_repository` in cleon.yaml; that is the package the update site is "
+            "published to, and there is no sensible default for someone else's registry")
+
+    output = _resolve(settings.get("output", "build-out"))
+    site_dir = output / "site"
+    if not (site_dir / "site.xml").is_file():
+        raise typer.BadParameter(f"no update site at {site_dir}; run `cleon build package` first")
+
+    version = bundles.version_from_jar(
+        deliverables.resolve(paths.ROOT, qualifier=_qualifier()).feature_jars[0])
+    archive = output / bundles.updatesite_name(version)
+    # Rebuilt every time rather than reused: the archive IS the site directory, and a stale one would
+    # publish a version's number over another version's content.
+    archive.unlink(missing_ok=True)
+    shutil.make_archive(str(archive)[: -len(".zip")], "zip", site_dir)
+    log.info(f"cleon: packed {site_dir} into {archive.name} ({archive.stat().st_size} bytes)")
+
+    githubpackages.login(registry)
+    reference = bundles.reference(registry, repository, bundles.updatesite_tag(version))
+    githubpackages.push(reference, str(archive), _UPDATESITE_MEDIA_TYPE)
     log.ok(f"cleon: published {reference}")
 
 

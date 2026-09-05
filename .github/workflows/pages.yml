@@ -44,6 +44,12 @@ jobs:
         with:
           python-version: "3.13"
 
+      # The reference is REGENERATED here, not taken from the checkout: it describes the assembled CLI,
+      # and the committed copy is only as fresh as the last person who remembered to run it. Generating
+      # before every publish makes the page an output rather than a document someone maintains.
+      - name: Regenerate the command reference
+        run: ./cleon.sh support reference
+
       # docker is on the ubuntu runner already; the Hugo image brings hugo, go and git with it.
       - name: Build the site
         run: ./cleon.sh support site

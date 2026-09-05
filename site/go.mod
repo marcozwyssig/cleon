@@ -5,4 +5,4 @@ module github.com/marcozwyssig/cleon/site
 
 go 1.21
 
-require github.com/imfing/hextra v0.9.6 // indirect
+require github.com/imfing/hextra v0.12.3 // indirect

@@ -93,11 +93,23 @@ build:
 release:
   registry: ghcr.io/marcozwyssig
   repository: cleon-bundle
-  # The P2 update site, published as its own package. NOT GitHub Pages: this repository is public, so a
-  # Pages site is public too, and these artefacts are only for the people entitled to them. GHCR
-  # authenticates every read - which is also why Eclipse cannot point at it directly (p2 speaks HTTP and
-  # file, not OCI), so a consumer pulls the archive with `oras` and adds it as a local repository.
-  updatesite_repository: cleon-updatesite
+
+# --- what is published as an OCI artifact -------------------------------------------------------------
+# Read by the kernel's `release:artifact` task (simplon.tasks.artifact): registry, package, directory and
+# media type are cleon's DATA; zipping, logging in and pushing are the kernel's mechanics, shared with
+# every other product that publishes a folder.
+#
+# No `tag:` here, and that absence is the point: cleon's version is generated INTO a feature jar by the
+# model and is only readable after a build, so no key in this file could hold it. `orchestrator.cli`
+# resolves it and passes it to the same task.
+artifacts:
+  updatesite:
+    registry: ghcr.io/marcozwyssig
+    repository: cleon-updatesite
+    source: build-out/site
+    # Its own media type: pulling one of these gets a p2 repository to point Eclipse at, not an IDE to
+    # unpack, and nothing reading the manifest rather than the filename should have to guess which.
+    media_type: application/vnd.actifsource.cleon.updatesite.v1+zip
 
 # WHAT CLEON'S COMMANDS ARE (the command-tree form, netctl#1469). A body is declared ONCE here, under
 # `tasks:`, and a command instantiates it with `task:`. That indirection is what buys the group tree
@@ -127,7 +139,7 @@ tasks:
   publish:  { impl: "orchestrator.cli:publish",
               help: "Push the combined cleon+Actifsource bundle to the registry." }
   publish-updatesite: { impl: "orchestrator.cli:publish_updatesite",
-              help: "Push the P2 update site to the registry, for updating an installed cleon." }
+              help: "Push the P2 update site to the registry (mechanics: the kernel's release:artifact)." }
   up:       { impl: "orchestrator.cli:up",   help: "Deploy the product to the target environment (placeholder)." }
   # The counterpart of `build bundle`: that produces the artefact, this puts it where someone can start
   # it. Same shape as asbundle's `deploy install`, because it is the same act one layer up.
@@ -159,7 +171,7 @@ site:
   image: "hugomods/hugo:exts-0.148.2"
   source: site
   output: build-out/website
-  theme: "github.com/imfing/hextra@v0.9.6"
+  theme: "github.com/imfing/hextra@v0.12.3"
   base_url: "https://marcozwyssig.github.io/cleon/"
 
 groups:
@@ -184,6 +196,15 @@ groups:
   support:
     commands:
       site: { task: "docs:site" }
+      # The command reference, generated from the app that is RUNNING rather than from this file: what a
+      # reader can type is the assembled CLI, and a hand-written list of it is a second copy that goes
+      # stale without anything going red. Beside `site` under support, because the kernel owns which
+      # groups exist and `docs` is not one of them - documentation commands are host tooling here.
+      reference:
+        task: "docs:reference"
+        with:
+          output: site/content/docs/reference.md
+          title: cleon command reference
   deploy:
     commands:
       up:      { task: up }

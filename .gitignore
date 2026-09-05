@@ -19,3 +19,7 @@ deploy/provision/orchestrator/.venv/
 __pycache__/
 build-out/
 build/
+
+# Hugo module cache and build lock, written into site/ by the containerised build.
+site/.hugo_build.lock
+site/resources/

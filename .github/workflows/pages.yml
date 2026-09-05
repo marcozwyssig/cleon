@@ -67,20 +67,40 @@ jobs:
       # PATH, and that is what this action is for; cleon's ci.yml already uses it for the same reason.
       - uses: oras-project/setup-oras@v1
 
+      # NOT `set -e` on the pull, and the reason is a fortnight of stale pages: this step failing kept
+      # the WEBSITE from deploying, so a corrected page stayed unpublished because an unrelated package
+      # was unreachable. The site is the point of this workflow; /p2/ rides along. So a missing or
+      # unreadable update site is a warning and the run continues - the same rule the kernel applies to
+      # a missing tool. What is NOT tolerated is a half-unpacked one: the checks below still fail the
+      # step if the archive arrived and is not a p2 repository.
       - name: Serve the published update site under /p2/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ACTOR: ${{ github.actor }}
         run: |
-          set -euo pipefail
-          printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin
+          set -uo pipefail
+          printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin || true
+
           # `oras repo tags` lists oldest first, so the last line is the newest publish.
-          tag="$(oras repo tags ghcr.io/marcozwyssig/cleon-updatesite | tail -1)"
+          tag="$(oras repo tags ghcr.io/marcozwyssig/cleon-updatesite 2>/dev/null | tail -1)"
+          if [ -z "$tag" ]; then
+            echo "::warning::no readable cleon-updatesite package, so /p2/ is not served by this run."
+            echo "::warning::the package must be connected to this repository (package settings ->"
+            echo "::warning::Connect repository) or be public; the website itself is unaffected."
+            exit 0
+          fi
+
           echo "serving update site $tag"
           mkdir -p /tmp/p2 build-out/website/p2
-          oras pull "ghcr.io/marcozwyssig/cleon-updatesite:$tag" -o /tmp/p2
+          if ! oras pull "ghcr.io/marcozwyssig/cleon-updatesite:$tag" -o /tmp/p2; then
+            echo "::warning::pulling $tag failed, so /p2/ is not served by this run"
+            rmdir build-out/website/p2 2>/dev/null || true
+            exit 0
+          fi
+
           unzip -q /tmp/p2/cleon-updatesite_*.zip -d build-out/website/p2
-          # A p2 repository without these is not one, and a 200 on a directory listing would hide that.
+          # An archive that arrived and is not a p2 repository IS a failure: serving a directory that
+          # answers 200 to Eclipse and holds no metadata is worse than serving nothing.
           test -f build-out/website/p2/site.xml
           test -f build-out/website/p2/content.jar
 

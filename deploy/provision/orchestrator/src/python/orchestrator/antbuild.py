@@ -103,21 +103,37 @@ def java_home(eclipse: Path) -> Path:
         f"JDK next to plugins/")
 
 
+def properties_file_text(properties: Dict[str, str]) -> str:
+    """The properties, as the text of a Java `.properties` file. Pure.
+
+    BACKSLASHES ARE DOUBLED, and that is the whole reason this is a function rather than a join:
+    `java.util.Properties` treats `\\` as an escape, so a Windows path written verbatim arrives with its
+    separators eaten - `D:\\a\\cleon` becomes `D:acleon`, and the build then looks for a directory nobody
+    named. Nothing else needs escaping here: `=` and `:` are only separators in a KEY, and these keys are
+    plain dotted names.
+
+    Sorted, for the same reason the argv was: two runs of the same build produce the same file, so a
+    green run and a red one can be diffed.
+    """
+    return "".join(f"{key}={value.replace(chr(92), chr(92) * 2)}\n"
+                   for key, value in sorted(properties.items()))
+
+
 def ant_argv(executable: Path, build_file: Path, targets: Sequence[str],
-             properties: Dict[str, str]) -> List[str]:
+             property_file: Path) -> List[str]:
     """The argv for one Ant run.
 
-    A LIST, never a shell string: these properties carry filesystem paths, and on Windows they carry
-    backslashes and spaces. Every value is passed as its own `-Dkey=value` argument, so nothing is ever
-    re-parsed by a shell.
+    The properties arrive in a FILE, not as `-D` arguments. They used to be one argument each, which is
+    correct on every host that has no command-line limit - and Windows has one, 8191 characters, which
+    `cleon.plugin.entries` (4405) and `cleon.feature.entries` (3481) exceed between them. cmd.exe
+    answers "The command line is too long." and names neither Ant nor the property that grew; the
+    Windows cell died there on the first run that ever reached it.
 
-    Properties are emitted in sorted order so two runs of the same build produce the same command line -
-    which is what makes a logged command line comparable between a green run and a red one.
+    A LIST, never a shell string: the paths in these values carry backslashes and spaces, and nothing
+    here is ever re-parsed by a shell.
     """
-    argv = [str(executable), "-f", str(build_file)]
-    argv += [f"-D{key}={value}" for key, value in sorted(properties.items())]
-    argv += list(targets)
-    return argv
+    return [str(executable), "-f", str(build_file),
+            "-propertyfile", str(property_file), *targets]
 
 
 def describe(build_file: Path, targets: Sequence[str], properties: Dict[str, str],

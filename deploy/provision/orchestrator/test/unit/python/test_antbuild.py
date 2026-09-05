@@ -119,24 +119,19 @@ def test_a_jdk_directory_that_is_neither_shape_says_so(tmp_path):
 
 # --- the command line -----------------------------------------------------------------------------
 
-def test_argv_is_a_list_so_no_shell_ever_reparses_a_path(tmp_path):
-    """These properties carry absolute paths - on Windows, with backslashes and spaces in them.
+def test_argv_is_a_list_so_no_shell_ever_reparses_a_path():
+    """Every element stays whole - the Ant launcher, the build file and the property file are all
+    absolute paths, and on Windows they carry backslashes and spaces. A shell string would split
+    `C:\\Program Files\\...` in half."""
+    argv = antbuild.ant_argv(Path("/b/ant"), Path("/dir with spaces/build.xml"), ["package"],
+                             Path("/dir with spaces/ant.properties"))
 
-    Each becomes ONE argv element. A shell string would split `C:\\Program Files\\...` in half.
-    """
-    argv = antbuild.ant_argv(Path("/b/ant"), Path("/b/build.xml"), ["package"],
-                             {"a.path": "/some/dir with spaces/x"})
-    assert argv == ["/b/ant", "-f", "/b/build.xml", "-Da.path=/some/dir with spaces/x", "package"]
-
-
-def test_properties_are_ordered_so_two_runs_produce_the_same_command_line():
-    """Which is what makes a green run's command line comparable to a red one's."""
-    argv = antbuild.ant_argv(Path("ant"), Path("b.xml"), ["t"], {"z": "1", "a": "2", "m": "3"})
-    assert argv[3:-1] == ["-Da=2", "-Dm=3", "-Dz=1"]
+    assert argv == ["/b/ant", "-f", "/dir with spaces/build.xml",
+                    "-propertyfile", "/dir with spaces/ant.properties", "package"]
 
 
 def test_targets_come_last():
-    argv = antbuild.ant_argv(Path("ant"), Path("b.xml"), ["compile", "jar"], {"k": "v"})
+    argv = antbuild.ant_argv(Path("ant"), Path("b.xml"), ["compile", "jar"], Path("p.properties"))
     assert argv[-2:] == ["compile", "jar"]
 
 
@@ -202,3 +197,30 @@ def test_the_read_bits_survive_being_made_executable(tmp_path):
     antbuild.ensure_executable(launcher)
 
     assert launcher.stat().st_mode & 0o777 == 0o750
+
+
+# --- the properties go in a FILE, because Windows has a command-line limit -------------------------
+
+def test_the_run_names_a_property_file_instead_of_carrying_the_properties():
+    """`cleon.plugin.entries` is 4405 characters and `cleon.feature.entries` 3481. Passed as -D
+    arguments they exceed cmd.exe's 8191-character command line, and Windows answers "The command line
+    is too long." - which names neither Ant nor the property that grew."""
+    argv = antbuild.ant_argv(Path("ant"), Path("b.xml"), ["compile"], Path("build/ant.properties"))
+
+    assert argv == ["ant", "-f", "b.xml", "-propertyfile", "build/ant.properties", "compile"]
+
+
+def test_a_property_file_escapes_the_backslashes_windows_paths_are_full_of():
+    """A .properties file is read by java.util.Properties, where `\` is an ESCAPE: `D:\a\cleon`
+    would arrive as `D:acleon`, and the build would look for a directory nobody named."""
+    text = antbuild.properties_file_text({"cleon.bundle.folders": "D:\\a\\cleon\\build"})
+
+    assert text == "cleon.bundle.folders=D:\\\\a\\\\cleon\\\\build\n"
+
+
+def test_properties_are_written_in_sorted_order():
+    """Same reason the argv was sorted: two runs of the same build produce the same file, so a green
+    run and a red one can be diffed."""
+    text = antbuild.properties_file_text({"z": "1", "a": "2"})
+
+    assert text == "a=2\nz=1\n"

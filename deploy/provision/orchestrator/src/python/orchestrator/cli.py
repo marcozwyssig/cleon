@@ -232,8 +232,17 @@ def _ant(eclipse: Path, build_file: str, targets, properties: dict) -> None:
     merged = dict(ant_settings.get("properties") or {})
     merged.update(properties)
     resolved_file = _resolve(build_file)
+
+    # The properties go to Ant in a FILE. As `-D` arguments they exceeded cmd.exe's 8191-character
+    # command line - `cleon.plugin.entries` is 4405 characters on its own - and Windows answered "The
+    # command line is too long.", naming neither Ant nor the property that grew. Written per run rather
+    # than accumulated: the file IS the run's inputs, and a stale one would describe a different build.
+    property_file = _resolve("build/ant.properties")
+    property_file.parent.mkdir(parents=True, exist_ok=True)
+    property_file.write_text(antbuild.properties_file_text(merged), encoding="utf-8")
+
     argv = antbuild.ant_argv(antbuild.ant_executable(eclipse, windows=os.name == "nt"),
-                             resolved_file, targets, merged)
+                             resolved_file, targets, property_file)
 
     for line in antbuild.describe(resolved_file, targets, merged):
         log.info(f"cleon: {line}")

@@ -35,7 +35,6 @@ from . import bundles
 from . import deliverables
 from . import environments
 from . import paths
-from . import shim
 
 # What cleon publishes. The MEDIA TYPE is a product's own statement about its artefact; the mechanics
 # of moving it are the kernel's (simplon.githubpackages).
@@ -567,11 +566,12 @@ _MANIFEST = paths.CONTEXT.manifest()
 # leaves that pairing unverifiable, and the kernel then drops the whole plan tree - taking every subtree's
 # `stop_on_failure` with it, so a failing gate no longer stops the chain that declared it (#42).
 #
-# The SHIM is chosen per host (orchestrator.shim), not written in: `for_shim` builds each step as
-# `[<script>, <command>]`, and a hardcoded `cleon.sh` made the Windows cell try to execute a shell
-# script - `WinError 193: %1 is not a valid Win32 application`, after the bundle had already been
-# downloaded, unpacked and compiled.
-_STEP_CONTEXT = StepFactoryContext.for_shim("cleon", paths.ROOT / shim.shim_name(os.name), _MANIFEST)
+# `for_module`, not `for_shim`: cleon.sh and cleon.cmd exist to BOOTSTRAP - venv, requirements, exec
+# Python - and by the time a plan runs, this process already IS that Python. Re-entering through the
+# script repeated the bootstrap per step and made the product choose between two spellings of its own
+# entry point; choosing wrong is what killed the Windows cell with `WinError 193` on the first run that
+# ever reached it. There is one interpreter now, and it is the one already running (simplon 0.1.8).
+_STEP_CONTEXT = StepFactoryContext.for_module("cleon", "orchestrator", _MANIFEST)
 
 
 # Assemble the CLI from the manifest via the delivery binding layer. Runs at import (like netctl's cli.py):

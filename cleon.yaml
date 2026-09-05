@@ -196,6 +196,15 @@ groups:
   support:
     commands:
       site: { task: "docs:site" }
+      # The command reference, generated from the app that is RUNNING rather than from this file: what a
+      # reader can type is the assembled CLI, and a hand-written list of it is a second copy that goes
+      # stale without anything going red. Beside `site` under support, because the kernel owns which
+      # groups exist and `docs` is not one of them - documentation commands are host tooling here.
+      reference:
+        task: "docs:reference"
+        with:
+          output: site/content/docs/reference.md
+          title: cleon command reference
   deploy:
     commands:
       up:      { task: up }

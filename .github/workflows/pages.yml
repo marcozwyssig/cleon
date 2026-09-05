@@ -57,13 +57,19 @@ jobs:
       # is not published this way and must not be - it carries Actifsource Enterprise, whose licence is
       # not ours to hand out, so it stays a private package handed over on request. What goes public here
       # is cleon's own features and plugins.
+      # `oras` from the action, not from `./cleon.sh support install`. The gate puts its download on the
+      # PATH of ITS OWN process, which is right for the kernel's own package operations and useless to
+      # the next line of a shell script - measured here as `oras: command not found`, exit 127, one line
+      # after the gate reported success. A workflow that calls oras itself has to have it on the job's
+      # PATH, and that is what this action is for; cleon's ci.yml already uses it for the same reason.
+      - uses: oras-project/setup-oras@v1
+
       - name: Serve the published update site under /p2/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
-          ./cleon.sh support install                       # brings oras if the runner has none
           printf '%s' "$GITHUB_TOKEN" | oras login ghcr.io -u "$ACTOR" --password-stdin
           # `oras repo tags` lists oldest first, so the last line is the newest publish.
           tag="$(oras repo tags ghcr.io/marcozwyssig/cleon-updatesite | tail -1)"

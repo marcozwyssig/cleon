@@ -25,7 +25,8 @@ on:
 
 permissions:
   contents: read
-  packages: read          # the build PULLS the asbundle bundle from the registry
+  packages: write         # PULLS the asbundle bundle, and PUSHES the update site after a green build
+  actions: write          # asks the pages workflow to refresh /p2/ with what was just published
 
 jobs:
   # --- fast lane, every push and PR -----------------------------------------------------------------
@@ -158,6 +159,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: ${{ matrix.entry }} build
+
+      # ONE cell publishes the update site, and it is the cheapest one. A p2 repository carries no
+      # Eclipse and no JDK - the five cells produce five identical ones, so publishing from each would
+      # be four pushes overwriting the same tag with the same bytes, and the last one to finish would
+      # decide which. Linux/x86_64 is arbitrary but fixed, which is what matters.
+      #
+      # Then the pages workflow is asked to refresh /p2/. It could listen for this workflow instead, but
+      # `workflow_run` fires on every ci completion - including the fast lane that builds nothing - and
+      # would republish an unchanged site on every push. Dispatching here fires exactly when there is
+      # something new to serve.
+      - name: Publish the update site and refresh /p2/
+        if: matrix.os == 'ubuntu-24.04' && matrix.arch == 'x86_64'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          set -euo pipefail
+          ./cleon.sh release publish-updatesite
+          gh workflow run pages.yml --ref master
 
       - name: Upload the combined bundle
         uses: actions/upload-artifact@v4

@@ -18,6 +18,9 @@ on:
       - "site/**"
       - "cleon.yaml"
       - ".github/workflows/pages.yml"
+  # ci.yml dispatches this after a green build has published a new update site, which is what keeps
+  # /p2/ current: the pages run serves the newest published package, so it has to run after a publish
+  # and not only when a page changes.
   workflow_dispatch:
 
 permissions:

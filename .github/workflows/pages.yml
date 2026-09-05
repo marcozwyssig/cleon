@@ -1,0 +1,60 @@
+# cleon's product website -> GitHub Pages.
+#
+# On every push to master, not on a tag: the site describes what cleon IS, not which version you can
+# download, so it should follow the repository rather than the release. The one page that names a
+# version - Getting started - names an example tag, and an example does not go stale the way a claim does.
+#
+# The site is built by the SAME command a developer runs (`./cleon.sh support site`), which is the
+# kernel's Hugo-in-Docker task: no hugo, go or git is installed here, and the runner therefore cannot
+# build it differently than a laptop does.
+name: pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      # Only when the site or the way it is built changes. A model change does not alter these pages,
+      # and rebuilding the site for it would publish an identical artefact on every commit.
+      - "site/**"
+      - "cleon.yaml"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time, and never cancel one in flight: a half-published site is worse than an old one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # docker is on the ubuntu runner already; the Hugo image brings hugo, go and git with it.
+      - name: Build the site
+        run: ./cleon.sh support site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build-out/website
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

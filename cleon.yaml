@@ -142,6 +142,19 @@ tasks:
 # packaging a failed generation compiles a stale tree and publishes an update site that looks fine, so
 # that chain must stop at the first red. Deploy's `all` reports every step instead, which is what you
 # want from a status sweep.
+# --- the product website ------------------------------------------------------------------------------
+# Read by the kernel's `docs:site` task (simplon.tasks.site), never by the CLI engine. Hugo, Go and Git
+# all live in the pinned image, so changing a page needs docker and nothing else.
+#
+# `output` is build-out/website and NOT build-out/site: that name is taken by the P2 update site this
+# build publishes, and pointing a wipe-before-build task at it would delete the update site.
+site:
+  image: "hugomods/hugo:exts-0.148.2"
+  source: site
+  output: build-out/website
+  theme: "github.com/imfing/hextra@v0.9.6"
+  base_url: "https://marcozwyssig.github.io/cleon/"
+
 groups:
   build:
     commands:
@@ -158,6 +171,11 @@ groups:
   release:
     commands:
       publish: { task: publish }
+  # The website is documentation, so it sits where the kernel places documentation commands rather than
+  # in `build`: it produces no artefact the build chain depends on, and a red site must not stop a bundle.
+  support:
+    commands:
+      site: { task: "docs:site" }
   deploy:
     commands:
       up:      { task: up }

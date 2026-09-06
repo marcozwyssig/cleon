@@ -198,6 +198,14 @@ groups:
   # The website is documentation, so it sits where the kernel places documentation commands rather than
   # in `build`: it produces no artefact the build chain depends on, and a red site must not stop a bundle.
   support:
+    # HIDDEN, not removed. cleon vendors nothing since the kernel became a PyPI package, so this command
+    # has nothing to initialise - and its own help still names `lib/platform`. Hiding is the product's
+    # say over a command the kernel places for everyone: it stays invokable for whoever knows it, and
+    # stops being offered to everyone who does not.
+    groups:
+      git:
+        commands:
+          submodules: { task: "vcs:submodules", hidden: true }
     commands:
       site: { task: "docs:site" }
       # The command reference, generated from the app that is RUNNING rather than from this file: what a

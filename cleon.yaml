@@ -233,9 +233,11 @@ groups:
       all:  { help: "Run build then deploy up end to end (the build->up dependency plan).",
               depends_on: [build, up], stop_on_failure: false }
 
-# The env-first CD groups: `cleon <env> deploy up` (default env below). Every other group is
-# environment-agnostic and rejects an env prefix.
-env_groups: [deploy]
+# NO `env_groups:` here. `deploy` is a PLATFORM group and the catalogue already declares it
+# `env_first: true`, so restating it said nothing - and si#43 closed the door it was leaning on: a
+# product switching env_first on a platform group is what `merge` forbids everywhere else.
+#
+# `cleon <env> deploy <cmd>` still works, and works because the kernel says so.
 
 # The deployment environment matrix (#15, folded into the one manifest per #651 strand 1): one env per row,
 # `backend` decides HOW it is realised (`local` today; add a cloud backend and widen _VALID_BACKENDS in

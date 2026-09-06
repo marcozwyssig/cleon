@@ -107,6 +107,10 @@ artifacts:
     registry: ghcr.io/marcozwyssig
     repository: cleon-updatesite
     source: build-out/site
+    # What the published file is CALLED. Without it the kernel names the archive after the directory,
+    # so `build-out/site` publishes as `site.zip` - a name that says where it was built and nothing
+    # about what it holds, to whoever pulls it by hand.
+    archive: cleon-updatesite
     # Its own media type: pulling one of these gets a p2 repository to point Eclipse at, not an IDE to
     # unpack, and nothing reading the manifest rather than the filename should have to guess which.
     media_type: application/vnd.actifsource.cleon.updatesite.v1+zip

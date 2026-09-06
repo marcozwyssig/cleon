@@ -21,7 +21,7 @@
 #
 # Declaring the `test:typecheck-python` gate? Its mypy is an optional extra: write
 # `simplon[typecheck]>=...` instead.
-simplon>=0.1.8
+simplon>=0.2.1
 
 # --- cleon-product-only deps ---
 # Add cleon's OWN runtime deps below (HTTP clients, template engines, cloud SDKs, ...). The kernel's

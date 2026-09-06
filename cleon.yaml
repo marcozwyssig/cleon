@@ -198,15 +198,14 @@ groups:
   # The website is documentation, so it sits where the kernel places documentation commands rather than
   # in `build`: it produces no artefact the build chain depends on, and a red site must not stop a bundle.
   support:
-    # REFINING a placed command, not declaring a new one: the kernel places `support tasks generate`
-    # for every product, and only the product knows where its module goes. Pinning `target` here is what
-    # lets the command - and the drift gate that runs it with --check - take no argument at all.
+    # HIDDEN, not removed. cleon vendors nothing since the kernel became a PyPI package, so this command
+    # has nothing to initialise - and its own help still names `lib/platform`. Hiding is the product's
+    # say over a command the kernel places for everyone: it stays invokable for whoever knows it, and
+    # stops being offered to everyone who does not.
     groups:
-      tasks:
+      git:
         commands:
-          generate:
-            task: "tasks:generate"
-            with: { target: deploy/provision/orchestrator/src/python/orchestrator/generated_cli.py }
+          submodules: { task: "vcs:submodules", hidden: true }
     commands:
       site: { task: "docs:site" }
       # The command reference, generated from the app that is RUNNING rather than from this file: what a
@@ -228,11 +227,6 @@ groups:
 
 # The env-first CD groups: `cleon <env> deploy up` (default env below). Every other group is
 # environment-agnostic and rejects an env prefix.
-# WHICH GROUPS THE CLI MODULE RENDERS. `support tasks generate` writes them into a committed Python
-# module, and `--check` reports drift instead of writing - which is what makes a manifest change that
-# nobody regenerated a red CI step rather than a surprise at the next invocation.
-generate: [build, release, deploy, support, support.git, support.tasks]
-
 env_groups: [deploy]
 
 # The deployment environment matrix (#15, folded into the one manifest per #651 strand 1): one env per row,

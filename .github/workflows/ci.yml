@@ -52,9 +52,12 @@ jobs:
       - name: CLI assembles and every impl resolves
         run: ./cleon.sh help
 
-      # NOT YET: `./cleon.sh support tasks generate --check`. cleon.yaml declares no `generate:` block
-      # and there is no committed CLI module, so the drift gate has nothing to compare. Add both
-      # together (see asbundle for the shape).
+      # The drift gate. The CLI module is COMMITTED, not built at import, so the manifest and the module
+      # can disagree - and a disagreement nobody notices is a command that exists in one place and not
+      # the other. `--check` writes nothing and returns 1 on drift, which is what makes "somebody
+      # forgot to regenerate" a red step here rather than a surprise at the next invocation.
+      - name: Generated CLI module is not stale
+        run: ./cleon.sh support tasks generate --check
 
   # --- which cells to build -------------------------------------------------------------------------
   # The cell table lives here as JSON because it has to be filterable, and the `matrix` context is NOT

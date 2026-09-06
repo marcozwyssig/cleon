@@ -34,10 +34,14 @@ An Actifsource metamodel needs Actifsource, which needs a matching Eclipse, whic
 to build anything. Distributed as an update site, that is four installations with four ways to be
 subtly wrong — and a first day spent on versions rather than on architecture.
 
-So cleon publishes what it is used with: **one archive per platform**, carrying Eclipse, a JDK, Ant,
-Actifsource Enterprise and cleon already installed. Unpack it and model. Later cleon releases arrive
-through the ordinary update mechanism, so the bundle is a starting point rather than a fork of the
-tooling.
+So cleon is built together with what it is used with: **one archive per platform**, carrying Eclipse, a
+JDK, Ant, Actifsource Enterprise and cleon already installed. Unpack it and model. Later cleon releases
+arrive through the ordinary update mechanism, so the archive is a starting point rather than a fork of
+the tooling.
+
+That archive is not distributed here. It contains Actifsource Enterprise, and that licence is
+Actifsource's to grant — so the bundle is handed over in person, to people whose licence covers it,
+while everything cleon itself produces stays public: the source, and the update site.
 
 ## Where the boundary is
 

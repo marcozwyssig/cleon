@@ -9,32 +9,23 @@ weight: 3
 |---|---|---|
 | Source | [github.com/marcozwyssig/cleon](https://github.com/marcozwyssig/cleon) | everyone |
 | Update site | `https://marcozwyssig.github.io/cleon/p2/` | everyone |
-| Bundle (Eclipse + Actifsource + cleon) | GitHub Packages, private | on request |
+| Bundle (Eclipse + Actifsource + cleon) | not distributed | handed over in person |
 
-The bundle is restricted for a reason that is not ours to waive: it carries **Actifsource Enterprise**,
-and that licence belongs to Actifsource. Everything cleon itself produces is public.
+Everything cleon itself produces is public. The **bundle** is not, and it is not a matter of a
+credential: it carries **Actifsource Enterprise**, whose licence belongs to Actifsource and is not ours
+to pass on. So there is no registry to log into and no access to request — it is handed over
+personally, to people whose Actifsource licence covers it.
 
-To pull the bundle once you are entitled to it, you need a GitHub token carrying `read:packages`:
-
-```bash
-gh auth refresh -h github.com -s read:packages     # once
-oras login ghcr.io -u <your-user> --password-stdin <<< "$(gh auth token)"
-```
-
-If you are not, everything below the fold still works: the repository is public and builds a bundle of
-its own.
+If that is not you, nothing below is closed off: the source is public and builds a bundle of its own,
+and the update site is a URL anyone can paste.
 
 ## The bundle: an Eclipse with cleon already in it
 
-One archive per platform, carrying Eclipse, a JDK, Ant, Actifsource Enterprise and cleon:
+One archive per platform, carrying Eclipse, a JDK, Ant, Actifsource Enterprise and cleon. Unpack it and
+start Eclipse: there is no update site to add and no Actifsource installation to do first, which is the
+point of shipping it this way.
 
-```bash
-oras pull ghcr.io/marcozwyssig/cleon-bundle:<cleon version>-<eclipse/jdk version>-<os>-<arch>
-```
-
-Unpack it and start Eclipse. There is no update site to add and no Actifsource installation to do
-first — that is the point of shipping it this way. `./cleon.sh deploy install <directory>` unpacks a
-built archive for you, preserving the executable bits a plain `unzip` drops.
+Ask for it directly — a licence question is a conversation, not a download button.
 
 ## Updating an installed cleon
 
@@ -59,7 +50,7 @@ oras pull ghcr.io/marcozwyssig/cleon-updatesite:<cleon version>
 **The update site is public, the bundle is not**, and the line between them is a licence rather than a
 policy: the update site carries cleon's own features and plugins, while the bundle carries Actifsource
 Enterprise, which is not ours to hand out. That is why one is a URL anyone can paste and the other is
-handed over on request.
+handed over in person, rather than by granting access to somewhere.
 
 ## Building it yourself
 
